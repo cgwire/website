@@ -1,0 +1,42 @@
+{
+  "name": "cgwire-site",
+  "version": "1.0.0",
+  "description": "Assets and templates to build the CGWire website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node output.js --dev",
+    "build": "node output.js && node output-fr.js",
+    "build:en": "node output.js",
+    "build:fr": "node output.js --fr"
+  },
+  "author": "CGWire <frank@cg-wire.côm> (https://cg-wire.com/)",
+  "repository": "https://github.com/cgwire/website",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "async": "2.2.0",
+    "handlebars": "4.0.6",
+    "jstransformer-handlebars": "1.0.0",
+    "metalsmith": "2.3.0",
+    "metalsmith-assets": "0.1.0",
+    "metalsmith-autoprefixer": "1.1.1",
+    "metalsmith-browser-sync": "1.1.1",
+    "metalsmith-build-date": "0.2.0",
+    "metalsmith-engine-jstransformer": "0.1.1",
+    "metalsmith-filenames": "1.0.0",
+    "metalsmith-fingerprint": "1.0.3",
+    "metalsmith-i18n": "0.2.0",
+    "metalsmith-ignore": "0.1.2",
+    "metalsmith-imagemin": "4.0.0",
+    "metalsmith-in-place": "2.0.1",
+    "metalsmith-layouts": "1.8.0",
+    "metalsmith-mapsite": "1.0.4",
+    "metalsmith-permalinks": "0.5.0",
+    "metalsmith-rename": "1.0.0",
+    "metalsmith-stylus": "3.0.0",
+    "metalsmith-uglify": "1.5.1",
+    "minimist": "1.2.0",
+    "normalize-styl": "4.1.1",
+    "printit": "0.1.20",
+    "request-json-light": "0.5.25"
+  }
+}
