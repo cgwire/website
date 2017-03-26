@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node output.js --dev",
-    "build": "node output.js && node output-fr.js",
+    "build": "node output.js && node output.js --fr",
     "build:en": "node output.js",
     "build:fr": "node output.js --fr"
   },
@@ -13,7 +13,6 @@
   "repository": "https://github.com/cgwire/website",
   "license": "AGPL-3.0",
   "dependencies": {
-    "async": "2.2.0",
     "handlebars": "4.0.6",
     "jstransformer-handlebars": "1.0.0",
     "metalsmith": "2.3.0",
@@ -36,7 +35,6 @@
     "metalsmith-uglify": "1.5.1",
     "minimist": "1.2.0",
     "normalize-styl": "4.1.1",
-    "printit": "0.1.20",
-    "request-json-light": "0.5.25"
+    "printit": "0.1.20"
   }
 }
