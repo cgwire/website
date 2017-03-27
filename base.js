@@ -71,7 +71,8 @@ module.exports = {
         partials: "src/partials"
       }))
       .use(inPlace({
-        directory: 'src'
+        directory: 'src',
+        pattern: '*.handlebars'
       }))
 
       // Misc

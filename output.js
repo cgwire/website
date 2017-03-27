@@ -15,7 +15,7 @@ if (argv.dev) {
     server : "build",
     files  : ["src/**/*.*"],
     open: false
-  }))
+  }));
 }
 
 metalsmith.build(function(err) {
