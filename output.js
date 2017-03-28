@@ -12,7 +12,7 @@ if (argv.fr) {
 
 if (argv.dev) {
   metalsmith.use(browserSync({
-    server : "build",
+    server : "dist",
     files  : ["src/**/*.*"],
     open: false
   }));
