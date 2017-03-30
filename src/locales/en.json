@@ -1,6 +1,23 @@
 {
-	"main title": "Main title",
-	"home sub title": "home sub title",
-	"Synchronisez votre pipeline avec votre gestion de production": "Synchronisez votre pipeline avec votre gestion de production",
-	"Bien gérer une production et avoir un pipeline efficace sont deux challenges chez les studios qui fabriquent des films ou des séries d'animation. Au début on s'en sort avec de l'organisation et du bon sens. Mais quand les prods sont plus conséquentes ou que les délais raccourcissent, on se retrouve vite submergé.": "Bien gérer une production et avoir un pipeline efficace sont deux challenges chez les studios qui fabriquent des films ou des séries d'animation. Au début on s'en sort avec de l'organisation et du bon sens. Mais quand les prods sont plus conséquentes ou que les délais raccourcissent, on se retrouve vite submergé."
+	"main title": "Synchronise your pipeline with your production management",
+	"main tagline": "Making an animation movie is more than an artistic challenge.",
+	"main explaination one": "Managing well a production and having an efficient pipeline are two challenges animation studios face when they scale. At the beginning, with a good sense of organisation,  everything runs well. But when productions are bigger or when delays shorten you can feel quickly overwhelmed. Graphists lose time looking for the right files, validation tracking becomes hard and repetitive tasks without artistic values are numerous.",
+	"main explaination two": "Then comes the idea to gather a technical team to build your own tools. Unfortunately, getting organized to make good software, is complicated and results come slowly. Your business is to make beautiful movies, so doing software is not natural to you.",
+	"main explaination three": "The good news is that CGWire knows well all theses problematics. From our our experience in studios and as software engineers, we can give you a hand.",
+	"main services title": "How can we help you ?",
+	"main services intro": "To assist you we propose the following services:",
+	"main services one": "We propose you our open source tools to manage your production and your files efficiently.",
+	"main services two": "We help you to get organized by applying best practices for your software developments (agile, versioning, continous integration).",
+	"main services three": "We develop features and tools around our open source solutions to automate your reccuring tasks.",
+	"main contact title": "Interested ?",
+	"main contact introduction": "If you want to talk about it, send us a message ! We could come and meet you to talk about it.",
+	"main contact cta": "Contact us",
+	"main solutions title": "Discover our free and open source solutions",
+	"main solutions introduction": "To assist you in your pipeline setup, we are working on open source tools that will make your life easier: ",
+	"main solutions api": "An API to store and manage your prod data.",
+	"main solutions frontend": "A web UI for you production management.",
+	"main solutions client": "A Python client to connect your tools to the Zou API.",
+	"main newsletter title": "To follow our progress subscribe to our newsletter:",
+	"main newsletter button": "Subscribe",
+	"main newsletter input": "Email adress"
 }
