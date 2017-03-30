@@ -14,10 +14,21 @@ const stylus = require('metalsmith-stylus');
 const autoprefixer = require('metalsmith-autoprefixer');
 const assets = require('metalsmith-assets');
 
+var handlebars = require('handlebars');
+handlebars.registerHelper('if_eq',  function (a, b, opts) {
+  if (a === b) {
+    return opts.fn(this);
+  } else {
+    return opts.inverse(this);
+  }
+});
 
 module.exports = {
   getMetalsmith: function (locale) {
-    const destination = 'dist/' + locale;
+    let destination = 'dist/';
+    if (locale !== 'en')
+      destination += locale;
+
     const metalsmith = new Metalsmith(__dirname)
 
       // Config
