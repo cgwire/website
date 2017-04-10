@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node output.js --dev",
+    "dev:fr": "node output.js --dev --fr",
     "build": "node output.js && node output.js --fr",
     "build:en": "node output.js",
     "build:fr": "node output.js --fr"
