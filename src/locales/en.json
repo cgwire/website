@@ -14,7 +14,7 @@
 	"main contact cta": "Contact us",
 	"main solutions title": "Discover our free and open source solutions",
 	"main solutions introduction": "To assist you in your pipeline setup, we are working on open source tools that will make your life easier: ",
-	"main solutions api": "An API to store and manage your prod data.",
+	"main solutions api": "An API to store and manage your production data.",
 	"main solutions frontend": "A web UI for you production management.",
 	"main solutions client": "A Python client to connect your tools to the Zou API.",
 	"main newsletter title": "To follow our progress subscribe to our newsletter:",
