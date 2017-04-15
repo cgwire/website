@@ -1,5 +1,5 @@
 {
-	"main title": "Synchronise your pipeline with your production management",
+	"main title": "CG Graphists should be able to focus on the artistic work only.",
 	"main tagline": "Making an animation movie is more than an artistic challenge.",
 	"main explaination one": "Managing a production well and having an efficient pipeline are two challenges animation studios face when they scale. At the beginning, with a good sense of organisation,  everything runs well. But when productions are bigger or when delays are shorter you can be quickly overwhelmed. Graphists lose time looking for the right files, validation tracking becomes harder and repetitive tasks without artistic values are flooding.",
 	"main explaination two": "Then, comes an idea to gather a technical team to build your own tools. Unfortunately, getting organized to create a good software, is complicated and results are slow. Your business is to make beautiful movies, so creating a whole new software in a limited amount of time might not be what feels most natural to you.",
@@ -17,6 +17,7 @@
 	"main solutions api": "An API to store and manage your production data.",
 	"main solutions frontend": "A web UI for you production management.",
 	"main solutions client": "A Python client to connect your tools to the Zou API.",
+	"main solutions see": "Learn more...",
 	"main newsletter title": "To follow our progress, subscribe to our newsletter:",
 	"main newsletter button": "Subscribe",
 	"main newsletter input": "Email adress"

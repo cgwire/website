@@ -55,20 +55,6 @@ from: home
   </ul>
   </section>
 
-  <section class="section content has-text-centered">
-    <h2 class="subtitle">
-      {{__ 'main contact title'}}
-    </h2>
-    <p>
-      {{__ 'main contact introduction'}}
-    </p>
-    <p>
-      <a href="mailto:contact@cg-wire.com" class="button is-large">
-      {{__ 'main contact cta'}}
-      </a>
-    </p>
-  </section>
-
   <section class="section content">
     <h2 class="subtitle">
       {{__ 'main solutions title'}}
@@ -89,7 +75,7 @@ from: home
         </p>
         <p>
           <a href="https://github.com/cgwire/cgwire-api">
-             See source
+              {{__ 'main solutions see'}}
           </a>
         </p>
       </div>
@@ -105,13 +91,13 @@ from: home
         </p>
         <p>
           <a href="https://github.com/cgwire/cgwire-frontend">
-             See source
+             {{__ 'main solutions see'}}
           </a>
         </p>
       </div>
       <div class="column app">
         <p class="has-text-centered">
-          <a href="https://github.com/cgwire/cgwire-api-client">
+          <a href="https://gazu.cg-wire.com/">
             <img src="images/gazeru.png" />
           </a>
         </p>
@@ -120,46 +106,26 @@ from: home
           {{__ 'main solutions client'}}
         </p>
         <p>
-          <a href="https://github.com/cgwire/cgwire-frontend">
-             See source
+          <a href="https://gazu.cg-wire.com/">
+             {{__ 'main solutions see'}}
           </a>
         </p>
       </div>
     </div>
   </section>
 
-  <section>
-  <!-- Begin MailChimp Signup Form -->
-    <style type="text/css">
-      #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-    </style>
-    <div id="mc_embed_signup" class="has-text-centered">
-      <form action="//cgwire.us15.list-manage.com/subscribe/post?u=68d637ad575c15300c7a34adc&amp;id=ac6f83c87e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-        <div>
-          <h2 class="subtitle">
-          {{__ 'main newsletter title'}}
-          </h2>
-        </div>
-        <div class="has-text-centered level newsletter-form">
-          <div class="level-item has-text-centered">
-            <div class="">
-                <input 
-                    type="email" value="" name="EMAIL" class="email input" 
-                    id="mce-EMAIL" placeholder="{{__ 'main newsletter input'}}" required>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            </div>
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_68d637ad575c15300c7a34adc_ac6f83c87e" tabindex="-1" value=""></div>
-            <div class="submit-button">
-                <input type="submit" value="{{__ 'main newsletter button'}}" name="subscribe"
-          
-                id="mc-embedded-subscribe" class="button">
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-  <!--End mc_embed_signup-->
+  <section class="section content has-text-centered">
+    <h2 class="subtitle">
+      {{__ 'main contact title'}}
+    </h2>
+    <p>
+      {{__ 'main contact introduction'}}
+    </p>
+    <p>
+      <a href="mailto:contact@cg-wire.com" class="button is-large">
+      {{__ 'main contact cta'}}
+      </a>
+    </p>
   </section>
 
 {{> footer }}

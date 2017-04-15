@@ -1,5 +1,5 @@
 {
-	"main title": "Synchronisez votre pipeline avec votre gestion de production",
+	"main title": "Les graphistes devraient pouvoir se concentrer sur l'artistique seulement",
 	"main tagline": "Fabriquer un film d'animation, c'est plus qu'un challenge artistique",
 	"main explaination one": "Bien gérer une production et avoir un pipeline efficace sont deux challenges chez les studios qui fabriquent des films ou des séries d'animation. Au début on s'en sort avec de l'organisation et du bon sens. Mais quand les prods sont plus conséquentes ou que les délais raccourcissent, on se retrouve vite submergé. Les graphistes recherchent toujours leurs fichiers, le suivi des validations devient difficile et on ne compte plus le nombre de tâches répétitives sans valeur artistique.",
 	"main explaination two": "Alors vient l'idée de monter une équipe technique pour se constituer une série d'outils. Malheureusement, s'organiser pour réaliser de bons développement informatique, ce n'est pas trivial et les résultats sont longs à percevoir. D'autant plus que votre coeur de métier c'est l'image et non le logiciel.",
@@ -18,6 +18,7 @@
 	"main solutions frontend": "une interface web de gestion de prod pour un meilleur suivi.",
 	"main solutions client": "un client Python pour booster vos outils en les connectant à Zou.",
 	"main newsletter title": "Pour suivre l'avancée de ces outils, inscrivez vous à notre newsletter",
+	"main solutions see": "En savoir plus...",
 	"main newsletter input": "Adresse email",
 	"main newsletter button": "S'inscrire"
 }
