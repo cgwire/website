@@ -24,6 +24,7 @@
     <meta name="twitter:image" content="https://cgwire.com/images/logo.svg">
 
     <link rel="stylesheet" href="css/bulma.min.css" media="all">
+    <link rel="stylesheet" href="css/pyramid.css" media="all">
     <link rel="stylesheet" href="styles/app.css" media="all">
   </head>
 
@@ -41,6 +42,29 @@
     "http://www.twitter.com/cgwirenews"
   ]
 }
+    </script>
+
+    <script>
+    // Javascript required by Bulma to manage the top menu on mobile.
+    document.addEventListener('DOMContentLoaded', function () {
+
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  if ($navbarBurgers.length > 0) {
+
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+});
     </script>
 
   </body>
