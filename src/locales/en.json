@@ -1,9 +1,8 @@
 {
-	"main title": "Facilitating CG artists to focus more on the artistic",
+	"main title": "Help your CG artists to focus more on the artistic",
 	"main tagline": "Making an animation movie is more than an artistic challenge.",
 	"main explaination one": "Managing a production well and having an efficient pipeline are two challenges animation studios face when they scale. At the beginning, with a good sense of organisation,  everything runs well. But when productions are bigger or when delays are shorter you can be quickly overwhelmed. Graphists lose time looking for the right files, validation tracking becomes harder and repetitive tasks without artistic values are flooding.",
-	"main explaination two": "Then, comes an idea to gather a technical team to build your own tools. Unfortunately, getting organized to create a good software, is complicated and results are slow. Your business is to make beautiful movies, so creating a whole new software in a limited amount of time might not be what feels most natural to you.",
-	"main explaination three": "CGWire knows these problematic complications based on our experience in studios and as software engineers, and the good news: We can give you a hand.",
+	"main explaination two": "CGWire knows these problems well. We have an extensive experience in studios and as software engineers. And the good news: we can give you a hand.",
 	"main services title": "How can we help you ?",
 	"main services intro": "To assist you we offer the following services:",
 	"main services one": "We propose our open source tools to manage your production and your files efficiently.",
@@ -20,5 +19,6 @@
 	"main solutions see": "Learn more...",
 	"main newsletter title": "To follow our progress, subscribe to our newsletter:",
 	"main newsletter button": "Subscribe",
-	"main newsletter input": "Email adress"
+	"main newsletter input": "Email adress",
+	"main explaination three": "main explaination three"
 }
