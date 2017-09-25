@@ -1,0 +1,54 @@
+---
+layout: base.html
+
+metaTitle: community title
+metaDescription: community explaination one
+permalink: false
+
+locale:
+pathTo: .
+---
+
+{{> header }}
+
+  <section class="section content">
+    <h2 class="subtitle">
+      {{__ 'community tagline'}}
+    </h2>
+  
+    <p>
+      {{__ 'community explaination one'}}
+    </p>
+
+    <div class="columns block">
+      <div class="column">
+      </div>
+      <div class="column">
+      <p>
+        {{__ 'community forum explaination'}}
+      </p>
+      </div>
+    </div>
+
+    <div class="columns block">
+      <div class="column">
+      </div>
+      <div class="column">
+      <p>
+        {{__ 'community slack explaination'}}
+      </p>
+      </div>
+    </div>
+
+    <div class="columns block">
+      <div class="column">
+      </div>
+      <div class="column">
+        <p>
+          {{__ 'community github explaination'}}
+        </p>
+      </div>
+    </div>
+  </section>
+
+{{> footer }}
