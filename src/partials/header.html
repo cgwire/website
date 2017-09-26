@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar" role="navigation" arial-label="dropdown navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/">
+      <a class="navbar-item" href="/{{ locale }}">
         <img class="main-logo" src="images/logo.svg" alt="CGWire logo"/>
       </a>
     <div class="burger navbar-burger" data-target="top-menu">
@@ -19,19 +19,19 @@
             Solutions
           </a>
           <div class="navbar-dropdown">
-            <a class="navbar-item" href="/kitsu.html">
+            <a class="navbar-item" href="/{{ locale }}/kitsu.html">
                 Kitsu - CG Production Manager
             </a>
-            <a class="navbar-item" href="/zou.html">
+            <a class="navbar-item" href="/{{ locale }}/zou.html">
                 Zou - CG Production API
             </a>
-            <a class="navbar-item" href="/gazu.html">
+            <a class="navbar-item" href="/{{ locale }}/gazu.html">
                 Gazu - API Python Client 
             </a>
           </div>
         </div>
 
-        <a class="navbar-item" href="/community.html">Community</a>
+        <a class="navbar-item" href="/{{ locale }}/community.html">Community</a>
         <a class="navbar-item" href="https://medium.com/@cgwire">Blog</a>
         <div class="navbar-item">
             <a class="navbar-lang-item" href="/">EN</a> &nbsp;|&nbsp;
