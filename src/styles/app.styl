@@ -47,10 +47,6 @@ h2.subtitle
     text-align: center
     font-weight: 500
 
-p
-li
-    font-size: 16px
-
 .button
 .button:focus
     color: white
@@ -99,6 +95,34 @@ footer
     img
         margin 0 1em 0em 0
 
+.section
+    .level
+        display flex
+        margin-top 5em
+        margin-bottom 2em
+
+    .level-item
+        width 50%
+
+        p
+            padding 2em
+
+    img.smaller
+        width 200px
+
+.community
+    img
+        width 150px
+
+    .level
+        display flex
+
+    .level-item
+        width 50%
+
+        img
+            width 100px
+
 .newsletter-form .submit-button
     margin-left 0.5em
 
@@ -110,6 +134,22 @@ footer
     padding 1.5em
     margin 0.8em
     border-radius 1em
+
+.filler
+    margin-bottom 14em
+
+.ppl
+    width 150px
+    border-radius 50%
+
+.level > .level-item.ppl-image
+    width 150px
+    margin-right 2em
+    flex-grow inherit
+
+.ppl-description
+    flex 1
+
 
 footer img.logo
     height 40px
