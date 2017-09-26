@@ -49,9 +49,9 @@
 	"kitsu usecase one": "With Kitsu your CG artists can easily shared their progress. Everyone is on the same page all the time. You can provide feedback easily too. Because Kitsu includes the Zou API, you can plug your pipeline on it.",
 	"kitsu contact introduction": "Do you want to use Kitsu?",
 	"kitsu contact documentation": "Or read the documentation",
-	"gazu title": "Boost your CG tools with your production data",
+	"gazu title": "With Gazu, boost your CG tools with your production data",
 	"gazu explaination one": "With Gazu, it is super easy to query Zou. We wanted a Python client that is simple to understand and start with. Write your code like you would write plain text and enjoy adding value to your CG tools.",
-	"gazu tagline": "Boost your CG tools with your production data",
+	"gazu tagline": "With Gazu, boost your CG tools with your production data",
 	"gazu why one": "We noticed that tools from major production and asset management solution were complex to use. This could lead to frustration and errors. That's why we want to make our Python client simple and intuitive.",
 	"gazu features one": "Intuitive functions to fetch production data.",
 	"gazu usecase one": "Displaying the CG artist task and files directly in his DCC solution has never been easier. Include the Gazu client to your app and your UIs will access to your production data in a second.",
@@ -62,7 +62,7 @@
 	"footers title company": "Company",
 	"footers title solutions": "Solutions",
 	"zou features two": "Generate and store file path based on production information.",
-	"zou features three": "Host your data inside your studio and be compliant with US companies requirements zou ",
+	"zou features three": "Host your data inside your studio and be compliant with US companies requirements. ",
 	"zou features four": "Update your UIs in realtime through our event stream.",
 	"kitsu features two": "Track validations through comments and previews.",
 	"kitsu features three": "Have an overview of your production state.",
@@ -84,6 +84,6 @@
 	"header title kitsu": "Kitsu - CG Production Manager",
 	"header title zou": "Zou - CG Production API Server",
 	"header title gazu": "Gazu - CG Production API Client",
-	"header title community": "Communauté",
+	"header title community": "Community",
 	"header title blog": "Blog"
 }
