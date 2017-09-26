@@ -16,23 +16,27 @@
       <div class="navbar-end">
         <div class="navbar-item has-drodown is-hoverable">
           <a class="navbar-link">
-            Solutions
+            {{__ 'header title solutions'}}
           </a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="/{{ locale }}/kitsu.html">
-                Kitsu - CG Production Manager
+              {{__ 'header title kitsu'}}
             </a>
             <a class="navbar-item" href="/{{ locale }}/zou.html">
-                Zou - CG Production API
+              {{__ 'header title zou'}}
             </a>
             <a class="navbar-item" href="/{{ locale }}/gazu.html">
-                Gazu - API Python Client 
+              {{__ 'header title gazu'}}
             </a>
           </div>
         </div>
 
-        <a class="navbar-item" href="/{{ locale }}/community.html">Community</a>
-        <a class="navbar-item" href="https://medium.com/@cgwire">Blog</a>
+        <a class="navbar-item" href="/{{ locale }}/community.html">
+          {{__ 'header title community'}}
+        </a>
+        <a class="navbar-item" href="https://medium.com/@cgwire">
+          {{__ 'header title blog'}}
+        </a>
         <div class="navbar-item">
             <a class="navbar-lang-item" href="/">EN</a> &nbsp;|&nbsp;
             <a class="navbar-lang-item" href="/fr">FR</a>
