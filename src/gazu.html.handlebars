@@ -22,18 +22,19 @@ pathTo: .
       {{__ 'gazu explaination one'}}
     </p>
       
-    <div class="columns">
-      <div class="column">
+    <div class="level">
+      <div class="level-item">
+        <img src="/images/simple.png" />
       </div>
-      <div class="column">
+      <div class="level-item">
         <p>
           {{__ 'gazu why one'}}
         </p>
       </div>
     </div>
   
-    <div class="columns">
-      <div class="column">
+    <div class="level">
+      <div class="level-item">
         <ul>
           <li>
             {{__ 'gazu features one'}}
@@ -50,23 +51,33 @@ pathTo: .
         </ul>
  
       </div>
-      <div class="column">
+      <div class="level-item">
+        <pre>
+import gazu
+
+gazu.log_in("john", os.getenv("PASSWORD", "default"))
+project = gazu.project.get_by_name("Big Buck Bunny")
+assets = gazu.asset.all_assets_for_project(project)
+        </pre>
       </div>
     </div>
    
-    <div class="columns">
-      <div class="column">
+    <div class="level">
+      <div class="level-item">
+        <img src="/images/fast.png" />
       </div>
-      <div class="column">
+      <div class="level-item">
         <p>
           {{__ 'gazu usecase one'}}
         </p>
       </div>
     </div>
+  </section>
   
-    <p class="has-text-centered">
+  <section class="section content">
+    <h2 class="subtitle has-text-centered">
       {{__ 'gazu contact introduction'}}
-    </p>
+    </h2>
     <p class="has-text-centered">
       <a href="mailto:contact@cg-wire.com" class="button is-large">
         {{__ 'main contact cta'}}
@@ -76,9 +87,7 @@ pathTo: .
       <a href="https://gazu.cg-wire.com">
         {{__ 'gazu contact documentation'}}
       </a>
-    
     </p>
-
   </section>
 
 {{> footer }}
