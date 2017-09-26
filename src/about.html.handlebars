@@ -1,0 +1,54 @@
+---
+layout: base.html
+
+metaTitle: about title
+metaDescription: about explaination one
+permalink: false
+
+locale:
+pathTo: .
+---
+
+{{> header }}
+
+  <section class="section content">
+  <h2 class="subtitle">
+    {{__ 'about tagline'}}
+  </h2>
+  <p>
+    {{__ 'about explaination one'}}
+  </p>
+  </section>
+
+  <section class="section content">
+  <h2 class="subtitle">
+    {{__ 'about team title'}}
+  </h2>
+    
+  <div class="level">
+    <div class="level-item ppl-image">
+      <img class="ppl" src="/images/frank.jpg">
+    </div>
+    <div class="level-item ppl-description">
+      <p>
+        {{__ 'about team explaination'}}
+      </p>
+    </div>
+  </div>
+  </section>
+
+  <section class="section content">
+  <h2 class="subtitle">
+    {{__ 'about partners title'}}
+  </h2>
+  <p>
+    <a href="http://www.unit-image.fr/">
+      <img src="images/logo-unit-image.png">
+    </a>
+    <a href="http://www.tunouszapasvus.fr/">
+      <img src="images/logo-tnzpv.png">
+    </a>
+  </p>
+  </section>
+
+{{> footer }}

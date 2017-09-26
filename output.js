@@ -4,20 +4,35 @@ const minimist = require('minimist');
 
 const argv = minimist(process.argv.slice(2));
 
-if (argv.fr) {
-  metalsmith = base.getMetalsmith('fr');
-} else {
-  metalsmith = base.getMetalsmith('en');
-}
 
 if (argv.dev) {
+  metalsmith = base.getMetalsmith('en');
   metalsmith.use(browserSync({
     server : "dist",
-    files  : ["src/**/*.*"],
+    files  : ["src/en/**/*.*"],
     open: false
   }));
-}
+  metalsmith.build(function(err) {
+    if (err) throw err;
+  });
 
-metalsmith.build(function(err) {
-  if (err) throw err;
-});
+} else {
+  if (argv.fr) {
+    metalsmith = base.getMetalsmith('fr');
+    metalsmith.build(function(err) {
+      if (err) throw err;
+    });
+  }
+
+  if (!argv.dev) {
+    metalsmith = base.getMetalsmith('');
+    metalsmith.build(function(err) {
+      if (err) throw err;
+    });
+  }
+
+  metalsmith = base.getMetalsmith('en');
+  metalsmith.build(function(err) {
+    if (err) throw err;
+  });
+}

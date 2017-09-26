@@ -1,18 +1,96 @@
-    <footer class="has-text-centered">
-      <div class="section">
-        <div>
-          <a href="https://twitter.com/cgwirenews">
-            <img src="images/twitter.png" />
-          </a>
-          <a href="https://medium.com/@cgwire">
-            <img src="images/medium.png" />
-          </a>
-          <a href="https://github.com/cgwire">
-            <img src="images/github.png" />
-          </a>
+   <footer class="">
+      <div class="columns">
+
+        <div class="column logo-column">
+          <p>
+            <a href="/" class="level">
+              <img class="logo" src="images/logo.svg" />
+            </a>
+          </p>
         </div>
-        <div>
-          <img class="logo" src="images/logo.svg" />
+
+        <div class="column">
+          <p class="footer-title">
+            {{__ 'footers title media'}}
+          </p>
+          <ul>
+            <li>
+              <a href="https://twitter.com/cgwirenews" class="level">
+                <img src="images/twitter.png" class="level-item"/>
+                <span class="level-item">
+                  Twitter
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://medium.com/@cgwire" class="level">
+                <img src="images/medium.png" class="level-item" />
+                <span>
+                  Blog
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/cgwire" class="level">
+                <img src="images/github.png" class="level-item" />
+                <span>
+                  Github
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
+
+        <div class="column">
+          <p class="footer-title">
+            {{__ 'footers title company'}}
+          </p>
+          <ul>
+            <li>
+              <a href="/{{ locale }}/about.html" class="level">
+                <span class="level-item">
+                  {{__ 'footers link about'}}
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/{{ locale }}/contact.html" class="level">
+                <span class="level-item">
+                  {{__ 'footers link contact'}}
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <p class="footer-title">
+            {{__ 'footers title solutions'}}
+          </p>
+          <ul>
+            <li>
+              <a href="/{{ locale }}/zou.html" class="level">
+                <span class="level-item">
+                  Zou 
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/{{ locale }}/kitsu.html" class="level">
+                <span class="level-item">
+                  Kitsu 
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="/{{ locale }}/gazu.html" class="level">
+                <span class="level-item">
+                  Gazu 
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </footer>

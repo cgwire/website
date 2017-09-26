@@ -1,0 +1,63 @@
+---
+layout: base.html
+
+metaTitle: community title
+metaDescription: community explaination one
+permalink: false
+
+locale:
+pathTo: .
+---
+
+{{> header }}
+
+  <section class="section content community">
+    <h2 class="subtitle">
+      {{__ 'community tagline'}}
+    </h2>
+  
+    <p>
+      {{__ 'community explaination one'}}
+    </p>
+
+    <div class="level block">
+      <div class="level-item has-text-centered">
+        <a href="https://forum.cg-wire.com">
+          <img src="/images/forum.png" alt="Forum icon" />
+        </a>
+      </div>
+      <div class="level-item is-centered">
+      <p>
+        {{__ 'community forum explaination'}}
+      </p>
+      </div>
+    </div>
+
+    <div class="level block">
+      <div class="level-item">
+        <a href="mailto:contact@cg-wire.com?subject=I want an invitation for the Slack channel">
+          <img src="/images/chat.png" alt="Forum icon" />
+        </a>
+      </div>
+      <div class="level-item">
+      <p>
+        {{__ 'community slack explaination'}}
+      </p>
+      </div>
+    </div>
+
+    <div class="level block">
+      <div class="level-item">
+        <a href="https://github.com/cgwire">
+          <img src="/images/big-github.png" alt="Forum icon" />
+        </a>
+      </div>
+      <div class="level-item">
+        <p>
+          {{__ 'community github explaination'}}
+        </p>
+      </div>
+    </div>
+  </section>
+
+{{> footer }}

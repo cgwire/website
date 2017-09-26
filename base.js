@@ -26,8 +26,7 @@ handlebars.registerHelper('if_eq',  function (a, b, opts) {
 module.exports = {
   getMetalsmith: function (locale) {
     let destination = 'dist/';
-    if (locale !== 'en')
-      destination += locale;
+    destination += locale;
 
     const metalsmith = new Metalsmith(__dirname)
 
@@ -63,13 +62,13 @@ module.exports = {
 
       // Translation
       .use(i18n({
-        default: locale,
+        default: locale === '' ? 'en' : locale,
         locales: ['en', 'fr'],
         directory: 'src/locales'
       }))
       .use(function locales(files, metalsmith, done) {
           for (let file in files) {
-            files[file].locale = locale;
+            files[file].locale = locale === '' ? 'en' : locale;
             done();
           };
         }

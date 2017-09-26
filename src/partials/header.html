@@ -1,7 +1,7 @@
 <header>
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" arial-label="dropdown navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="http://cg-wire.com">
+      <a class="navbar-item" href="/{{ locale }}">
         <img class="main-logo" src="images/logo.svg" alt="CGWire logo"/>
       </a>
     <div class="burger navbar-burger" data-target="top-menu">
@@ -14,7 +14,29 @@
       <div class="navbar-start">
       </div>
       <div class="navbar-end">
-        <a class="navbar-item" href="https://medium.com/@cgwire">Blog</a>
+        <div class="navbar-item has-drodown is-hoverable">
+          <a class="navbar-link">
+            {{__ 'header title solutions'}}
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="/{{ locale }}/kitsu.html">
+              {{__ 'header title kitsu'}}
+            </a>
+            <a class="navbar-item" href="/{{ locale }}/zou.html">
+              {{__ 'header title zou'}}
+            </a>
+            <a class="navbar-item" href="/{{ locale }}/gazu.html">
+              {{__ 'header title gazu'}}
+            </a>
+          </div>
+        </div>
+
+        <a class="navbar-item" href="/{{ locale }}/community.html">
+          {{__ 'header title community'}}
+        </a>
+        <a class="navbar-item" href="https://medium.com/@cgwire">
+          {{__ 'header title blog'}}
+        </a>
         <div class="navbar-item">
             <a class="navbar-lang-item" href="/">EN</a> &nbsp;|&nbsp;
             <a class="navbar-lang-item" href="/fr">FR</a>

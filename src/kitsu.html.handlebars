@@ -1,0 +1,86 @@
+---
+layout: base.html
+
+metaTitle: kitsu title
+metaDescription: kitsu explaination one
+permalink: false
+
+locale:
+pathTo: .
+---
+
+{{> header }}
+
+  <section class="section wide content">
+    <div class="has-text-centered">
+      <img src="images/kitsu.png" />
+    </div>
+    <h2 class="subtitle">
+      {{__ 'kitsu tagline'}}
+    </h2>
+    <p>
+      {{__ 'kitsu explaination one'}}
+    </p>
+      
+    <div class="level">
+      <div class="level-item">
+        <img src="/images/kitsu-prods.png" />
+      </div>
+      <div class="level-item">
+        <p>
+          {{__ 'kitsu why one'}}
+        </p>
+      </div>
+    </div>
+  
+    <div class="level">
+      <div class="level-item">
+        <ul>
+          <li>
+            {{__ 'kitsu features one'}}
+          </li>
+          <li>
+            {{__ 'kitsu features two'}}
+          </li>
+          <li>
+            {{__ 'kitsu features three'}}
+          </li>
+          <li>
+            {{__ 'kitsu features four'}}
+          </li>
+        </ul>
+      </div>
+      <div class="level-item">
+        <img src="/images/kitsu-shots.png" />
+      </div>
+    </div>
+   
+    <div class="level">
+      <div class="level-item">
+        <img src="/images/kitsu-validation.png" />
+      </div>
+      <div class="level-item">
+        <p>
+          {{__ 'kitsu usecase one'}}
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section content">
+    <h2 class="subtitle has-text-centered">
+      {{__ 'kitsu contact introduction'}}
+    </h2>
+    <p class="has-text-centered">
+      <a href="mailto:contact@cg-wire.com" class="button is-large">
+        {{__ 'main contact cta'}}
+      </a>
+    </p>
+    <p class="has-text-centered">
+      <a href="https://kitsu.cg-wire.com">
+        {{__ 'kitsu contact documentation'}}
+      </a>
+    </p>
+  </section>
+
+{{> footer }}
