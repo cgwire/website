@@ -9,7 +9,7 @@ if (argv.dev) {
   metalsmith = base.getMetalsmith('en');
   metalsmith.use(browserSync({
     server : "dist",
-    files  : ["src/en/**/*.*"],
+    files  : ["src/**/*.*"],
     open: false
   }));
   metalsmith.build(function(err) {
