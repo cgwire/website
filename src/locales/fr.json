@@ -78,7 +78,6 @@
 	"community forum explaination": "Discutez de sujets variés à propos de l'animation en général ou simplement demandez de l'aide sur un de nos produits. Postez sur notre forum pour posez vos questions.",
 	"community slack explaination": "Rejoignez notre channel Slack privé. Des professionals de l'industrie partagent et échangent à propos de pipeline et de développement logiciel !",
 	"community github explaination": "Publiez vos rapports de bugs ou vos demandes de fonctionnalité sur notre dépôt Github. Regardez et auditez le code pour assurer la sécurité de vos données.",
-	"zou features title": "zou features title",
 	"header title solutions": "Solutions",
 	"header title kitsu": "Kitsu - Gestion de production",
 	"header title zou": "Zou - API pour le pipeline",
@@ -86,5 +85,14 @@
 	"header title community": "Communauté",
 	"header title blog": "Blog",
 	"about values title": "about values title",
-ee
+	"kitsu why title": "Tenir compte de la simplicité",
+	"kitsu features title": "Fonctionnalités principales",
+	"kitsu usecase title": "Garder tout le monde sur la même page",
+	"zou why title": "Une base de donnée pour tout le studio",
+	"zou features title": "Fonctionnalités principales",
+	"zou usecase title": "Synchronisez Zou avec vos outils",
+	"gazu why title": "Profitez de votre base de données",
+	"gazu features title": "Fonctionnalités principales",
+	"gazu usecase title": "Augmentez vos outils",
+	"try cgwire docker": "Essayez CGWire avec Docker"
 }
