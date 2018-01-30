@@ -1,5 +1,5 @@
 {
-	"main title": "Facilitating CG artists to focus more on the artistic",
+	"main title": "Simple CG Production Management",
 	"main tagline": "Making an animation movie is more than an artistic challenge",
 	"main explaination one": "Managing a production well and having an efficient pipeline are two challenges animation studios face when they scale. At the beginning, with a good sense of organisation,  everything runs well. But when productions are bigger or when delays are shorter you can be quickly overwhelmed. Graphists lose time looking for the right files, validation tracking becomes harder and repetitive tasks without artistic values are flooding.",
 	"main explaination two": "CGWire knows these problems well. We have an extensive experience in studios and as software engineers. And the good news: we can give you a hand.",
@@ -7,7 +7,7 @@
 	"main services intro": "To assist you we offer the following services:",
 	"main services one": "We propose our open source tools to manage your production and your files efficiently.",
 	"main services two": "We develop features and tools around our open source solutions to automate your reccuring tasks.",
-	"main services three": "We help get you organized by applying best practices for your software developments (agile, versioning, continuous integration).",
+	"main services three": "We provide hosting services if you don't want to care about the IT while using CGWire.",
 	"main contact title": "Interested ?",
 	"main contact introduction": "Curious to know more? Send us a message ! We will be glad to meet you to talk about it.",
 	"main contact cta": "Contact us",
