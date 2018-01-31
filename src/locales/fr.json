@@ -84,7 +84,10 @@
 	"header title gazu": "Gazu - Client Python",
 	"header title community": "Communauté",
 	"header title blog": "Blog",
-	"about values title": "about values title",
+	"about values title": "Nos valeurs",
+	"about values one": "Simplicité: plus nos outils sont légers, plus nous sommes agiles. Notre esprit est libéré et les choses sont plus rapides à faire.",
+	"about values two": "Collaboration: quand les idées et le travail sont partagés, nous apprenons plus vite et nous réalisons plus.",
+	"about values three": "Artisanat: les choses bien faites durent plus longent. Ca nous rend heureux de travailler dessus et cela fait de meilleurs logiciels.",
 	"kitsu why title": "Tenir compte de la simplicité",
 	"kitsu features title": "Fonctionnalités principales",
 	"kitsu usecase title": "Garder tout le monde sur la même page",
@@ -95,4 +98,5 @@
 	"gazu features title": "Fonctionnalités principales",
 	"gazu usecase title": "Augmentez vos outils",
 	"try cgwire docker": "Essayez CGWire avec Docker"
+
 }
