@@ -10,13 +10,15 @@ header
     .navbar-link:after
         border-color #00B242
 
+    .navbar-link
+        margin-left 0
+        padding-left 0
+
 section
     max-width: 950px
     margin: auto
 
     &.introduction
-        margin-top 3em
-
         img
             width 100% 
 
@@ -187,12 +189,14 @@ footer img.logo
     flex-direction row
     margin-top 4em
     margin-bottom 2em
+    flex-wrap wrap
 
 .pricing-block
     flex 1
     text-align center
     margin 1em
     min-height 400px
+    min-width 200px
     box-shadow 0 4px 16px rgba(0, 50, 0, 0.2)
     background white
     border-radius 1em
@@ -251,3 +255,34 @@ footer img.logo
 .pricing-details
     color #999
     font-style italic
+
+pre.docker
+    font-size 1.1em
+    padding 1em
+    border-radius 1em
+    margin auto
+
+@media(max-width: 800px)
+    h1.title
+        font-size 1.8em
+        margin-bottom 0
+
+    .section.content
+        padding 1em
+
+    .home
+        background url('/images/cgwire-background-800.jpg') no-repeat
+
+    pre
+        padding 1em 0
+        font-size 0.5em
+
+    .block
+        flex-wrap wrap
+
+        .flexrow-item
+            min-width 300px
+            width 100%
+
+        .level-item
+            width 100%
