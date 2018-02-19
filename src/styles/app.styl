@@ -181,3 +181,73 @@ footer img.logo
 
 .community a:hover
     color inherit
+
+.pricings
+    display flex
+    flex-direction row
+    margin-top 4em
+    margin-bottom 2em
+
+.pricing-block
+    flex 1
+    text-align center
+    margin 1em
+    min-height 400px
+    box-shadow 0 4px 16px rgba(0, 50, 0, 0.2)
+    background white
+    border-radius 1em
+    display flex
+    flex-direction column
+
+    .pricing-title
+        font-size 1.3em
+        font-weight bold
+        color #999
+        padding 0.8em
+
+    .pricing-price
+        .pricing-currency
+            font-size 0.9em
+
+        .pricing-value
+            font-size 1.8em
+
+    .pricing-features
+        flex 1
+        padding 1em
+
+        ul
+            margin 0
+            list-style-type none
+
+        li
+            padding 0.5em 0 
+            font-size 0.9em
+            color #888
+            border-bottom 1px solid #EEE
+
+    .pricing-text
+        align-items center
+        display flex
+        color #999
+
+    .pricing-cta
+        padding 1em
+
+        .button.is-outlined
+            border 1px solid #00B242
+            background white
+            color #00B242
+            width 100%
+            transition transform 0.3s ease
+
+        .button.is-outlined:hover
+            transform scale(1.05)
+
+.pricing-emphasize
+    transform: scale(1.05)
+    border 1px solid #00B242
+
+.pricing-details
+    color #999
+    font-style italic

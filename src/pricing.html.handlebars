@@ -1,0 +1,159 @@
+---
+layout: base.html
+
+metaTitle: pricing title
+metaDescription: pricing explaination one
+permalink: false
+
+locale:
+pathTo: .
+---
+
+{{> header }}
+
+  <section class="section content pricing">
+    <h2 class="subtitle">
+      {{__ 'pricing tagline'}}
+    </h2>
+  
+    <p class="has-text-centered">
+      {{__ 'pricing explaination one'}}
+    </p>
+
+    <div class="pricings">
+      <div class="pricing-block">
+        <div class="pricing-title">
+          {{__ 'pricing title free'}}
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-currency">€</span>
+          <span class="pricing-value">0</span>
+          {{__ 'pricing value month'}}
+        </div>
+        <div class="pricing-features">
+          <ul>
+            <li>
+              {{__ 'pricing features free one'}}
+            </li>
+            <li>
+              {{__ 'pricing features free two'}}
+            </li>
+            <li>
+              {{__ 'pricing features free three'}}
+            </li>
+            <li>
+              {{__ 'pricing features free four'}}
+            </li>
+          </ul>
+        </div>
+        <div class="pricing-cta">
+          <a href="https://zou.cg-wire.com" class="button is-outlined">
+            {{__ 'pricing button cta'}}
+          </a>
+        </div>
+      </div>
+
+      <div class="pricing-block pricing-emphasize">
+        <div class="pricing-title">
+          {{__ 'pricing title basic' }}
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-currency">€</span>
+          <span class="pricing-value">299</span>
+          {{__ 'pricing value month'}}
+        </div>
+        <div class="pricing-features">
+          <ul>
+            <li>
+              {{__ 'pricing features basic one'}}
+            </li>
+            <li>
+              {{__ 'pricing features basic two'}}
+            </li>
+            <li>
+              {{__ 'pricing features basic three'}}
+            </li>
+            <li>
+              {{__ 'pricing features basic four'}}
+            </li>
+            <li>
+              {{__ 'pricing features basic five'}}
+            </li>
+          </ul>
+        </div>
+        <div class="pricing-cta">
+          <a href="mailto:sales@cg-wire.com?subject=Basic Plan Subscription" class="button is-outlined">
+            {{__ 'pricing button cta'}}
+          </a>
+        </div>
+      </div>
+
+      <div class="pricing-block">
+        <div class="pricing-title">
+          {{__ 'pricing title medium' }}
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-currency">€</span>
+          <span class="pricing-value">799</span>
+          {{__ 'pricing value month'}}
+        </div>
+        <div class="pricing-features">
+          <ul>
+            <li>
+              {{__ 'pricing features medium one'}}
+            </li>
+            <li>
+              {{__ 'pricing features medium two'}}
+            </li>
+            <li>
+              {{__ 'pricing features medium three'}}
+            </li>
+            <li>
+              {{__ 'pricing features medium four'}}
+            </li>
+            <li>
+              {{__ 'pricing features medium five'}}
+            </li>
+          </ul>
+        </div>
+        <div class="pricing-cta">
+          <a href="mailto:sales@cg-wire.com?subject=Medium Plan subscription" class="button is-outlined">
+            {{__ 'pricing button cta'}}
+          </a>
+        </div>
+      </div>
+
+      <div class="pricing-block">
+        <div class="pricing-title">
+          {{__ 'pricing title big' }}
+        </div>
+        <div class="pricing-price">
+        </div>
+        <div class="pricing-features pricing-text">
+          <p>{{__ 'pricing notgoodidea'}}</p>
+        </div>
+        <div class="pricing-cta">
+        </div>
+      </div>
+    </div>
+    <p class="has-text-centered pricing-details">
+      {{__ 'pricing discount details'}}
+    </p>
+  </section>
+
+  
+  <section class="section content">
+    <h2 class="subtitle has-text-centered">
+      {{__ 'pricing contact introduction'}}
+    </h2>
+    <p class="has-text-centered">
+      {{__ 'pricing contact explaination'}}
+    </p>
+    <p class="has-text-centered">
+      <a href="mailto:contact@cg-wire.com" class="button is-large">
+        {{__ 'main contact cta'}}
+      </a>
+    </p>
+  </section>
+
+{{> footer }}
