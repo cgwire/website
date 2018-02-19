@@ -12,13 +12,15 @@ from: home
 
 {{> header }}
 
+  <div class="home">
   <section class="section has-text-centered content introduction">
+   <h1 class="title">{{__ 'main title'}}</h1>
+   <h2 class="main-subtitle">{{__ 'main subtitle'}}</h1>
    <div>
      <a href="/{{ locale }}/kitsu.html">
        <img class="screenshot" src="/images/kitsu-title.png" />
      </a>
    </div>
-   <h1 class="title">{{__ 'main title'}}</h1>
   </section>
 
   <section class="section content">
@@ -96,8 +98,8 @@ from: home
       <h4>
        {{__ 'try cgwire docker'}}
       </h4>
-      <pre style="margin: auto; padding: 1em; border-radius: 1em; font-size: 1.1em">
-        docker run -d -p 80:80 --name cgwire cgwire/cgwire</pre>
+      <pre class="docker">
+docker run -d -p 80:80 --name cgwire cgwire/cgwire</pre>
     </div>
   </section>
 
@@ -135,5 +137,6 @@ from: home
       </a>
     </p>
   </section>
+  </div>
 
 {{> footer }}
