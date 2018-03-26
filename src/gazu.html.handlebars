@@ -36,11 +36,21 @@ pathTo: .
       </div>
     </div>
   
-    <div class="flexrow block">
-      <div class="flexrow-item">
+    <div class="block middle-block">
+      <div class="block">
         <h3>
           {{__ 'gazu features title'}}
         </h3>
+        <pre>
+import gazu
+
+gazu.log_in("john", os.getenv("PASSWORD", "default"))
+project = gazu.project.get_by_name("Big Buck Bunny")
+assets = gazu.asset.all_assets_for_project(project)
+        </pre>
+      </div>
+
+      <div class="">
         <ul>
           <li>
             {{__ 'gazu features one'}}
@@ -55,16 +65,6 @@ pathTo: .
             {{__ 'gazu features four'}}
           </li>
         </ul>
-      </div>
-
-      <div class="flexrow-item block">
-        <pre>
-import gazu
-
-gazu.log_in("john", os.getenv("PASSWORD", "default"))
-project = gazu.project.get_by_name("Big Buck Bunny")
-assets = gazu.asset.all_assets_for_project(project)
-        </pre>
       </div>
     </div>
    
