@@ -52,7 +52,7 @@
 	"gazu title": "With Gazu, boost your CG tools with your production data",
 	"gazu explaination one": "With Gazu, it is super easy to query Zou. We wanted a Python client that is simple to understand and start with. Write your code like you would write plain text and enjoy adding value to your CG tools.",
 	"gazu tagline": "With Gazu, boost your CG tools with your production data",
-	"gazu why one": "We noticed that tools from major production and asset management solutions were complex to use. When dealing with the many data fof CG production, it can lead to frustration and errors. That's why we made a simple Python client. That way you can easily query and find the information you need.",
+	"gazu why one": "We noticed that tools from major production and asset management solutions are complex to use. When dealing with the many data of CG production, it can lead to frustration and errors. That's why we made a simple Python client. That way you can easily query and find the information you need.",
 	"gazu features one": "Intuitive functions to fetch production data.",
 	"gazu usecase one": "Displaying the CG artist tasks and files directly in his DCC solution has never been easier. Include the Gazu client to your app and your tools and plugins will access to your production data in a second.",
 	"gazu contact introduction": "Do you want more information?",
