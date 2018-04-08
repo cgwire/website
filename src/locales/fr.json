@@ -11,6 +11,7 @@
 	"main contact title": "Intéressé(e) ?",
 	"main contact introduction": "Si vous voulez en discuter, le plus simple c'est de nous envoyer un message ! Nous pourrons venir à votre rencontre pour en parler avec vous.",
 	"main contact cta": "Contactez nous",
+	"main plans cta": "Consultez nos tarifs",
 	"main solutions title": "Découvrez nos solutions libres et open source",
 	"main solutions introduction": "Pour vous aider nous travaillons sur une série de logiciels pour vous enrichir votre pipeline :",
 	"main solutions api": "une base de données pour stocker les données de vos prods.",
@@ -42,7 +43,7 @@
 	"gazu why one": "Nous avons remarqué que les solutions majeures du marché pour la gestion de production sont complexes à utiliser. Ce qui peut amener à des frustrations et des erreurs. C'est pourquoi nous voulons vous proposer un client Python simple et léger pour votre pipeline.",
 	"gazu features one": "Des fonctions intuitives pour récupérer les données de votre production.",
 	"gazu usecase one": "Affichez les tâches et les fichiers de vos artistes directement dans vos outils de 3D n'a jamais été aussi facile. Incorporez le client Gazu dans vos appliactions et vos interfaces auront accès aux données de la production en une seconde. ",
-	"gazu contact introduction": "Voulez vous plus d'informations ?",
+	"gazu contact introduction": "Êtes vous intéressé ?",
 	"gazu contact documentation": "Ou lisez la documentation",
 	"about partners title": "Nous travaillons avec eux",
 	"footers title media": "Medias",
@@ -124,8 +125,11 @@
 	"pricing features medium five": "48h de temps de réponse",
 	"pricing title big": "Grand",
 	"pricing notgoodidea": "Notre solution n'est pas recommandée pour les grands studios. Regardez plutôt du côté de Ftrack, Shotgun ou NIM.",
-	"pricing discount details": "Offre d'essai de 30 jours, réduction de 10% pour un abonnement annuel et de 50% pour les écoles",
+	"pricing discount details": "Offre d'essai de 30 jours et réduction de 10% pour un abonnement annuel",
 	"pricing contact introduction": "Vous souhaitez un devis?",
 	"pricing contact explaination": "Nous pouvons vous proposer une formule adaptée à vos besoins",
-	"main subtitle": "Suivi de validation, todo-list pour artistes et dépouillement réunis" 
+	"main subtitle": "Suivi de validation, todo-list pour artistes et dépouillement réunis" ,
+	"about design title": "Illustrations du site",
+	"about design information": "Tous les dessins présents sur ce site en dehors du logo sont réalisés par Ev Style. Visitez son site pour plus d'informations !",
+	"pricing school details": "Nous proposons 50% de réductions pour les écoles de 3D et d'animation"
 }
