@@ -45,8 +45,15 @@ pathTo: .
 import gazu
 
 gazu.log_in("john", os.getenv("PASSWORD", "default"))
+
 project = gazu.project.get_by_name("Big Buck Bunny")
 assets = gazu.asset.all_assets_for_project(project)
+
+modeling = gazu.task.get_task_type_by_name("Modeling")
+tasks = gazu.task.get_task_by_task_type(assets[0], modeling)
+
+gazu.files.build_file_path(tasks[0])
+> "/productions/bbb/assets/characters/bunny/modeling/bbb_bunny_modeling_v001"
         </pre>
       </div>
 
