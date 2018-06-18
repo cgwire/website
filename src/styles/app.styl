@@ -1,8 +1,15 @@
 html
 body
     margin 0
+    font-family 'Lato', sans-serif
+    font-size 18px
 
 header 
+    .navbar
+        max-width 950px
+        margin auto
+        font-size 1em
+
     a.navbar-lang-item 
         font-size 0.8em
         color #BBB
@@ -14,16 +21,30 @@ header
         margin-left 0
         padding-left 0
 
+
 section
-    max-width: 950px
-    margin: auto
+    max-width 950px
+    margin auto
 
     &.introduction
-        img
-            width 100% 
+        padding-top 5em
 
-    &.wide
-        max-width 1080px
+        h1.title
+            font-weight bold
+            font-size 2.2em
+            line-height 1.3em
+
+        h2.main-subtitle
+            font-size 1.1em
+            font-weight 400
+            color #1F1F28 
+            line-height 1.5em
+
+        a.button
+            font-weight bold
+            font-size 1.1em
+            border-radius 2em
+            padding 1.2em
 
     &.partners
         padding 0
@@ -39,9 +60,6 @@ section
         
         h3
             margin-top: 1em
-
-        .screenshot
-            box-shadow 0px 0px 4px #DDD
 
         &.middle-block
             margin-top 6em
@@ -59,17 +77,8 @@ section
     margin-right 2em
 
 
-h1.title
-    margin-top 1em
-    font-size 3.2em
-    font-weight 500
-    color white
-    margin-bottom 0
-
-
 h2.main-subtitle
     font-size 1.2em
-    color white
     margin-bottom 2em
 
 
@@ -85,11 +94,17 @@ h2.subtitle
     color: white
     background-color: #00B242
     border: 1px solid #00B242
+    border-radius 1em
+    padding 1.2em
 
 .button:hover
     color: white
     background-color: #67BE4B
     border: 1px solid #67BE4B
+
+.button.is-large
+    font-size 1.2em
+    font-weight bold
 
 .input:focus
     border: 1px solid #00B242
@@ -145,7 +160,6 @@ footer
     padding-top 0
     background-color white
     background-repeat no-repeat
-    background url('/images/cgwire-background.jpg') no-repeat
 
     img.screenshot 
         border-radius 1em
@@ -304,9 +318,6 @@ pre.docker
 
         h3
             margin-top 0.2em
-
-    .home
-        background url('/images/cgwire-background-800.jpg') no-repeat
 
     pre
         padding 1em 0
