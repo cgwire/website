@@ -1,6 +1,4 @@
 ---
-layout: base.html
-
 metaTitle: main title
 metaDescription: main explaination one
 permalink: false
@@ -13,27 +11,33 @@ from: home
 {{> header }}
 
   <div class="home">
-  <section class="section has-text-centered content introduction">
-   <h1 class="title">{{__ 'main title'}}</h1>
-   <h2 class="main-subtitle">{{__ 'main subtitle'}}</h1>
-   <div>
-     <a href="/{{ locale }}/kitsu.html">
-       <img class="screenshot" src="/images/kitsu-title.png" />
-     </a>
+
+  <section class="section content introduction">
+   <div class="flexrow">
+     <div class="flexrow-item title-text">
+       <h1 class="title">{{__ 'main title'}}</h1>
+       <h2 class="main-subtitle">{{__ 'main subtitle'}}</h1>
+         <a class="button" href="/{{ locale }}/pricing.html">
+           {{__ 'main plans cta'}}
+         </a>
+     </div>
+     <div class="flexrow-item">
+       <img src="/images/studio.png" />
+     </div>
    </div>
   </section>
 
   <section class="section content">
-  <h2 class="subtitle">
-    {{__ 'main tagline'}}
-  </h2>
-  <p>
-    {{__ 'main explaination one'}}
-  </p>
-    
-  <p>
-    {{__ 'main explaination two'}}
-  </p>
+    <h2 class="subtitle">
+      {{__ 'main tagline'}}
+    </h2>
+    <p>
+      {{__ 'main explaination one'}}
+    </p>
+      
+    <p>
+      {{__ 'main explaination two'}}
+    </p>
   </section>
 
   <section class="section content">
