@@ -24,13 +24,6 @@ if (argv.dev) {
     });
   }
 
-  if (!argv.dev) {
-    metalsmith = base.getMetalsmith('');
-    metalsmith.build(function(err) {
-      if (err) throw err;
-    });
-  }
-
   metalsmith = base.getMetalsmith('en');
   metalsmith.build(function(err) {
     if (err) throw err;

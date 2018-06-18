@@ -1,7 +1,8 @@
-const Metalsmith   = require('metalsmith');
+const metalsmith = require('metalsmith');
 const filenames = require("metalsmith-filenames");
 const date = require('metalsmith-build-date');
 const layouts = require('metalsmith-layouts');
+const discoverPartials = require('metalsmith-discover-partials')
 const i18n = require('metalsmith-i18n');
 const mapsite = require('metalsmith-mapsite');
 const permalinks = require('metalsmith-permalinks');
@@ -23,17 +24,17 @@ handlebars.registerHelper('if_eq',  function (a, b, opts) {
   }
 });
 
+
 module.exports = {
   getMetalsmith: function (locale) {
     let destination = 'dist/';
     destination += locale;
 
-    const metalsmith = new Metalsmith(__dirname)
+    const metalsmithInstance = metalsmith(__dirname)
 
       // Config
       .use(filenames)
       .use(ignore([
-        "layouts/*",
         "locales/*",
         "partials/*",
         "styles/mixins/*",
@@ -43,10 +44,9 @@ module.exports = {
 
        //Javascript
       .use(uglify({
-        filter: ['js/**/*.js'],
+        filter: (name) => name.match(/js2\/.+\.js$/),
         removeOriginal: true,
         sourceMap: true,
-        order: ['js/vendors/**/*.js', 'js/*.js'],
         concat: 'js/main.min.js'
       }))
 
@@ -76,13 +76,19 @@ module.exports = {
 
       // HTML
       .use(layouts({
-        engine: 'handlebars',
-        directory: 'src/layouts',
-        partials: "src/partials"
+        directory: 'src',
+        pattern: '*.hbs',
+        default: 'layouts/base.hbs'
       }))
+
+      .use(discoverPartials({
+        directory: 'src/partials',
+        pattern: /\.html/
+      }))
+
       .use(inPlace({
         directory: 'src',
-        pattern: '*.handlebars'
+        pattern: '*.hbs'
       }))
 
       // Misc
@@ -97,6 +103,6 @@ module.exports = {
 
       .destination(destination);
 
-    return metalsmith;
+    return metalsmithInstance;
   }
 }
