@@ -14,123 +14,96 @@ from: home
 
   <section class="section content introduction">
    <div class="flexrow">
-     <div class="flexrow-item title-text">
+     <div class="flexrow-item introduction-text">
        <h1 class="title">{{__ 'main title'}}</h1>
        <h2 class="main-subtitle">{{__ 'main subtitle'}}</h1>
          <a class="button" href="/{{ locale }}/pricing.html">
            {{__ 'main plans cta'}}
          </a>
      </div>
-     <div class="flexrow-item">
+     <div class="flexrow-item introduction-picture">
        <img src="/images/studio.png" />
      </div>
    </div>
   </section>
 
   <section class="section content">
-    <h2 class="subtitle">
+    <h2 class="subtitle tagline">
       {{__ 'main tagline'}}
     </h2>
-    <p>
+    <p class="has-text-centered tagline-explaination">
       {{__ 'main explaination one'}}
     </p>
-      
-    <p>
-      {{__ 'main explaination two'}}
-    </p>
   </section>
 
-  <section class="section content">
-    <h2 class="subtitle">
-      {{__ 'main solutions title'}}
-    </h2>
-    <p>
-      {{__ 'main solutions introduction'}}
-    </p>
-    <div class="columns">
-      <div class="column app">
-        <p class="has-text-centered">
-          <a href="/{{ locale }}/zou.html">
-            <img src="images/zou.png" />
-          </a>
-        </p>
+  <section class="section content landing-block">
+    <div class="flexrow">
+      <div class="flexrow-item landing-text">
+        <h2 class="subtitle">
+          {{__ 'main explaination title one'}}
+        </h2>
         <p>
-          <strong>Zou</strong>, 
-          {{__ 'main solutions api'}}
-        </p>
-        <p>
-          <a href="/{{ locale }}/zou.html">
-              {{__ 'main solutions see'}}
-          </a>
+          {{__ 'main explaination text one'}}
         </p>
       </div>
+      <div class="flexrow-item landing-picture">
+        <img src="/images/landing-overview.png" />
+      </div>
+    </div>
+  </section>
 
-      <div class="column app">
-        <p class="has-text-centered">
-          <a href="/{{ locale }}/kitsu.html">
-            <img src="images/kitsu.png" />
-          </a>
-        </p>
-        <p>
-          <strong>Kitsu</strong>, 
-          {{__ 'main solutions frontend'}}
-        </p>
-        <p>
-          <a href="/{{ locale }}/kitsu.html">
-             {{__ 'main solutions see'}}
-          </a>
-        </p>
+  <section class="section content landing-block">
+    <div class="flexrow reverse">
+      <div class="flexrow-item landing-picture">
+        <img src="/images/landing-data.png" />
       </div>
-      <div class="column app">
-        <p class="has-text-centered">
-          <a href="/{{ locale }}/gazu.html">
-            <img src="images/gazeru.png" />
-          </a>
-        </p>
+      <div class="flexrow-item landing-text">
+        <h2 class="subtitle">
+          {{__ 'main explaination title two'}}
+        </h2>
         <p>
-          <strong>Gazu</strong>, 
-          {{__ 'main solutions client'}}
-        </p>
-        <p>
-          <a href="/{{ locale }}/gazu.html">
-             {{__ 'main solutions see'}}
-          </a>
+          {{__ 'main explaination text two'}}
         </p>
       </div>
     </div>
-    <div class="has-text-centered">
-      <h4>
-       {{__ 'try cgwire docker'}}
-      </h4>
-      <pre class="docker">
-docker run -d -p 80:80 --name cgwire cgwire/cgwire</pre>
+  </section>
+
+  <section class="section content landing-block">
+    <div class="flexrow">
+      <div class="flexrow-item landing-text">
+        <h2 class="subtitle">
+          {{__ 'main explaination title three'}}
+        </h2>
+        <p>
+          {{__ 'main explaination text three'}}
+        </p>
+      </div>
+      <div class="flexrow-item landing-picture">
+        <img src="/images/landing-faster.png" />
+      </div>
     </div>
   </section>
 
-  <section class="section content">
-  <h2 class="subtitle">
-    {{__ 'main services title'}}
-  </h2>
-  <p>
-    {{__ 'main services intro'}}
-  </p>
-
-  <ul>
-    <li> 
-    {{__ 'main services one'}}
-    </li>
-    <li>
-    {{__ 'main services two'}}
-    </li>
-    <li>
-    {{__ 'main services three'}}
-    </li>
-  </ul>
+  <section class="section content landing-block">
+    <div class="flexrow reverse">
+      <div class="flexrow-item landing-picture">
+        <img src="/images/landing-together.png" />
+      </div>
+      <div class="flexrow-item landing-text">
+        <h2 class="subtitle">
+          {{__ 'main explaination title four'}}
+        </h2>
+        <p>
+          {{__ 'main explaination text four'}}
+        </p>
+      </div>
+    </div>
   </section>
+
 
   <section class="section content has-text-centered">
     <h2 class="subtitle">
-      {{__ 'main contact title'}}
+      {{__ 'zou contact introduction'}}
     </h2>
     <p>
       <a href="/{{ locale }}/pricing.html" class="button is-large">
@@ -140,4 +113,18 @@ docker run -d -p 80:80 --name cgwire cgwire/cgwire</pre>
   </section>
   </div>
 
+  <section class="section content conclusion conclusion-text">
+    <h2 class="subtitle tagline">
+      {{__ 'main conclusion tagline'}}
+    </h2>
+    <p class="has-text-centered tagline-explaination">
+      {{__ 'main conclusion text'}}
+    </p>
+  </section>
+
+  <section 
+    class="section content has-text-centered conclusion conclusion-picture"
+  >
+    <img src="/images/studio_collaboration.png" />
+  </section>
 {{> footer }}

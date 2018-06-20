@@ -1,3 +1,6 @@
+darkgrey = #1F1F28 
+cgwiregreen = #00B242
+
 html
 body
     margin 0
@@ -21,6 +24,24 @@ header
         margin-left 0
         padding-left 0
 
+    .navbar-link
+    .navbar-item
+        color darkgrey
+
+        img.icon
+            max-width 25px
+            margin-right 1em
+
+    .navbar-link:hover
+    .navbar-item:hover
+        background transparent
+        color darkgrey
+
+    .navbar-dropdown
+        border-top 0px
+
+    .navbar img
+        max-height 2.5em
 
 section
     max-width 950px
@@ -39,12 +60,30 @@ section
             font-weight 400
             color #1F1F28 
             line-height 1.5em
+            margin-bottom 2em
 
         a.button
             font-weight bold
             font-size 1.1em
             border-radius 2em
-            padding 1.2em
+            padding 1.3em
+
+    &.conclusion
+        padding-bottom 0
+        margin-bottom 0
+
+        img
+            top 35px
+            position relative
+
+        &.conclusion-text.content
+            margin-bottom 0
+
+        &.conclusion-picture.content
+            margin-bottom 0
+            margin-top 0
+            padding-top 0
+            
 
     &.partners
         padding 0
@@ -66,6 +105,24 @@ section
             margin-bottom 4em
 
 
+.landing-block
+    &.content
+        margin-bottom 2em
+        padding-bottom 1em
+
+    .landing-text
+        p 
+            max-width 300px
+            margin auto
+
+        h2.subtitle
+            max-width 300px
+            font-weight bold
+            line-height 1.4em
+            text-align left
+            margin 0em auto 1em auto
+
+
 .flexrow
     display flex
     align-items center
@@ -77,23 +134,31 @@ section
     margin-right 2em
 
 
-h2.main-subtitle
-    font-size 1.2em
-    margin-bottom 2em
+h2.subtitle.tagline
+    font-size 1.9em
+    line-height 1.3em
+    max-width 550px
+    margin auto
+    font-weight bold
+    margin-bottom 1em
 
+p.tagline-explaination
+    font-size 1.1em
+    color #1F1F28 
+    line-height 1.5em
+    margin-bottom 2em
 
 h2.subtitle
     margin-top: 1em
     margin-bottom: 1em
     font-size: 1.5em
     text-align: center
-    font-weight: 500
 
 .button
 .button:focus
     color: white
-    background-color: #00B242
-    border: 1px solid #00B242
+    background-color: cgwiregreen
+    border: 1px solid cgwiregreen
     border-radius 1em
     padding 1.2em
 
@@ -104,22 +169,28 @@ h2.subtitle
 
 .button.is-large
     font-size 1.2em
-    font-weight bold
 
 .input:focus
     border: 1px solid #00B242
 
 
 footer
-    background #EEE
-    padding-bottom 2em
+    background cgwiregreen
+    color white
+    font-size 1.1em
 
     a
-        color #999
+        color white
+
+        &:hover
+            color white
+            text-decoration underline
 
     .columns
+        padding-top 2em
+        padding-bottom 2em
         max-width: 920px
-        margin: 4em auto
+        margin: 0 auto 
 
     .address
         color #999
@@ -132,9 +203,12 @@ footer
         padding-top 1.2em
 
     .footer-title
+        font-weight bold
         text-transform capitalize
         font-style capitalize
         margin-bottom 1em
+        font-size 1.15em
+        padding 0
 
     li
         display flex
@@ -142,6 +216,11 @@ footer
 
     img
         margin 0 1em 0em 0
+
+    .footer-of-footer
+        background white
+        color darkgrey
+        padding 1em
 
 .section
     .level
@@ -210,9 +289,6 @@ footer
 .ppl-description
     flex 1
 
-
-footer img.logo
-    height 40px
 
 #mc_embed_signup
     padding 1em
@@ -310,8 +386,11 @@ pre.docker
 
 @media(max-width: 800px)
     h1.title
-        font-size 1.8em
+        font-size 1.6em
         margin-bottom 0
+
+    h2.subtitle.tagline
+        font-size 1.6em
 
     .section.content
         padding 1em
@@ -322,6 +401,23 @@ pre.docker
     pre
         padding 1em 0
         font-size 0.7em
+
+    .landing-block
+    .introduction
+        .flexrow
+            flex-direction column
+
+        .flexrow.reverse
+            flex-direction column-reverse
+
+        .flexrow-item
+            width 100%
+            margin-right 0
+
+        .landing-text
+        .landing-picture
+        .introduction-text
+            margin-bottom 2em
 
     .block
         flex-wrap wrap

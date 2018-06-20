@@ -2,7 +2,7 @@
 	"main title": "We make Production Management easy",
 	"main subtitle": "CGWire is a production tracking solution aimed for small to mid-size studios. Dispatch tasks, send feedback and validate the work done.",
 	"main tagline": "Making an animation movie is more than an artistic challenge",
-	"main explaination one": "Managing a production well and having an efficient pipeline are two challenges animation studios face when they scale. At the beginning, with a good sense of organisation,  everything runs well. But when productions are bigger or when delays are shorter you can be quickly overwhelmed. Graphists lose time looking for the right files, validation tracking becomes harder and repetitive tasks without artistic values are flooding.",
+	"main explaination one": "Managing a production well and having an efficient pipeline is a difficult task. Current software is often hard to handle, time-consuming and expensive. With CGWire, we help you to focus on your work while saving money for your studio.",
 	"main explaination two": "CGWire knows these problems well. We have an extensive experience in studios and as software engineers. And the good news: we can give you a hand.",
 	"main services title": "How can we help you ?",
 	"main services intro": "To assist you we offer the following services:",
@@ -132,5 +132,17 @@
 	"pricing value month": "/ month",
 	"about design title": "Website illustrations",
 	"about design information": "All artworks except logos are made by Ev Style. Visit her website for more information!",
-	"pricing school details": "We offer 50% discounts for CG Artist Schools"
+	"pricing school details": "We offer 50% discounts for CG Artist Schools",
+	"footers conclusion text1": "Made with",
+	"footers conclusion text2": "in France",
+	"main conclusion tagline": "By Studios for Studios",
+	"main conclusion text": "CGWire is developed in collaboration with CG studios. Our solution has been built iteratively during running productions: all features and user interfaces have been validated by real-life use cases. ",
+	"main explaination title one": "Stay ahead of your production",
+	"main explaination text one": "Always have an overview about what is going on. On a big and small scale, find the information you need.",
+	"main explaination title two": "Store all your data in one place",
+	"main explaination text two": "Your data is stored securely and will always be accessible for you, your team and your pipeline tooling.",
+	"main explaination title three": "Get things done from Day 1",
+	"main explaination text three": "We believe in slick and uncluttered software. That does not only make CGWire faster, but also easier to start with. No need of consultancy or intensive training.",
+	"main explaination title four": "Together is better",
+	"main explaination text four": "CGWire make collaboration easier than ever. Save time and be more efficient while working as a team. Plug it to your pipeline to put your studio on steroids!"
 }

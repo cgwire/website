@@ -20,6 +20,26 @@ header .navbar-link {
   margin-left: 0;
   padding-left: 0;
 }
+header .navbar-link,
+header .navbar-item {
+  color: #1f1f28;
+}
+header .navbar-link img.icon,
+header .navbar-item img.icon {
+  max-width: 25px;
+  margin-right: 1em;
+}
+header .navbar-link:hover,
+header .navbar-item:hover {
+  background: transparent;
+  color: #1f1f28;
+}
+header .navbar-dropdown {
+  border-top: 0px;
+}
+header .navbar img {
+  max-height: 2.5em;
+}
 section {
   max-width: 950px;
   margin: auto;
@@ -37,12 +57,29 @@ section.introduction h2.main-subtitle {
   font-weight: 400;
   color: #1f1f28;
   line-height: 1.5em;
+  margin-bottom: 2em;
 }
 section.introduction a.button {
   font-weight: bold;
   font-size: 1.1em;
   border-radius: 2em;
-  padding: 1.2em;
+  padding: 1.3em;
+}
+section.conclusion {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+section.conclusion img {
+  top: 35px;
+  position: relative;
+}
+section.conclusion.conclusion-text.content {
+  margin-bottom: 0;
+}
+section.conclusion.conclusion-picture.content {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 section.partners {
   padding: 0;
@@ -63,6 +100,21 @@ section .block.middle-block {
   margin-top: 6em;
   margin-bottom: 4em;
 }
+.landing-block.content {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+.landing-block .landing-text p {
+  max-width: 300px;
+  margin: auto;
+}
+.landing-block .landing-text h2.subtitle {
+  max-width: 300px;
+  font-weight: bold;
+  line-height: 1.4em;
+  text-align: left;
+  margin: 0em auto 1em auto;
+}
 .flexrow {
   display: flex;
   align-items: center;
@@ -72,8 +124,18 @@ section .block.middle-block {
   align-items: center;
   margin-right: 2em;
 }
-h2.main-subtitle {
-  font-size: 1.2em;
+h2.subtitle.tagline {
+  font-size: 1.9em;
+  line-height: 1.3em;
+  max-width: 550px;
+  margin: auto;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+p.tagline-explaination {
+  font-size: 1.1em;
+  color: #1f1f28;
+  line-height: 1.5em;
   margin-bottom: 2em;
 }
 h2.subtitle {
@@ -81,7 +143,6 @@ h2.subtitle {
   margin-bottom: 1em;
   font-size: 1.5em;
   text-align: center;
-  font-weight: 500;
 }
 .button,
 .button:focus {
@@ -98,21 +159,27 @@ h2.subtitle {
 }
 .button.is-large {
   font-size: 1.2em;
-  font-weight: bold;
 }
 .input:focus {
   border: 1px solid #00b242;
 }
 footer {
-  background: #eee;
-  padding-bottom: 2em;
+  background: #00b242;
+  color: #fff;
+  font-size: 1.1em;
 }
 footer a {
-  color: #999;
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 footer .columns {
+  padding-top: 2em;
+  padding-bottom: 2em;
   max-width: 920px;
-  margin: 4em auto;
+  margin: 0 auto;
 }
 footer .address {
   color: #999;
@@ -125,9 +192,12 @@ footer .logo-column {
   padding-top: 1.2em;
 }
 footer .footer-title {
+  font-weight: bold;
   text-transform: capitalize;
   font-style: capitalize;
   margin-bottom: 1em;
+  font-size: 1.15em;
+  padding: 0;
 }
 footer li {
   display: flex;
@@ -135,6 +205,11 @@ footer li {
 }
 footer img {
   margin: 0 1em 0em 0;
+}
+footer .footer-of-footer {
+  background: #fff;
+  color: #1f1f28;
+  padding: 1em;
 }
 .section .level {
   display: flex;
@@ -198,9 +273,6 @@ footer img {
 }
 .ppl-description {
   flex: 1;
-}
-footer img.logo {
-  height: 40px;
 }
 #mc_embed_signup {
   padding: 1em;
@@ -297,8 +369,11 @@ pre.docker {
 }
 @media (max-width: 800px) {
   h1.title {
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin-bottom: 0;
+  }
+  h2.subtitle.tagline {
+    font-size: 1.6em;
   }
   .section.content {
     padding: 1em;
@@ -309,6 +384,27 @@ pre.docker {
   pre {
     padding: 1em 0;
     font-size: 0.7em;
+  }
+  .landing-block .flexrow,
+  .introduction .flexrow {
+    flex-direction: column;
+  }
+  .landing-block .flexrow.reverse,
+  .introduction .flexrow.reverse {
+    flex-direction: column-reverse;
+  }
+  .landing-block .flexrow-item,
+  .introduction .flexrow-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .landing-block .landing-text,
+  .introduction .landing-text,
+  .landing-block .landing-picture,
+  .introduction .landing-picture,
+  .landing-block .introduction-text,
+  .introduction .introduction-text {
+    margin-bottom: 2em;
   }
   .block {
     flex-wrap: wrap;
