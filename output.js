@@ -17,6 +17,11 @@ if (argv.dev) {
   });
 
 } else {
+  metalsmith = base.getMetalsmith('');
+  metalsmith.build(function(err) {
+    if (err) throw err;
+  });
+
   if (argv.fr) {
     metalsmith = base.getMetalsmith('fr');
     metalsmith.build(function(err) {
