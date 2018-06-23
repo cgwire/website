@@ -14,16 +14,24 @@
       <div class="navbar-start">
       </div>
       <div class="navbar-end">
-        <div class="navbar-item has-drodown is-hoverable">
+        <div class="navbar-item has-drodown is-hoverable {{#if_eq name "solution"}}active{{/if_eq}}">
           <a class="navbar-link">
-            {{__ 'header title solutions'}}
+            <span class="navbar-item-title">
+              {{__ 'header title solutions'}}
+            </span>
           </a>
           <div class="navbar-dropdown">
-            <a class="navbar-item flexrow" href="/{{ locale }}/kitsu.html">
+            <a 
+              class="navbar-item flexrow" 
+              href="/{{ locale }}/kitsu.html"
+            >
               <img class="flexrow-item icon" src="/images/kitsu.png">
               <span class="flexrow-item">{{__ 'header title kitsu'}}</span>
             </a>
-            <a class="navbar-item flexrow" href="/{{ locale }}/zou.html">
+            <a 
+              class="navbar-item flexrow"  
+              href="/{{ locale }}/zou.html"
+            >
               <img class="flexrow-item icon" src="/images/zou.png">
               <span class="flexrow-item">{{__ 'header title zou'}}</span>
             </a>
@@ -34,18 +42,34 @@
           </div>
         </div>
 
-        <a class="navbar-item" href="/{{ locale }}/pricing.html">
-          {{__ 'header title pricing'}}
+        <a 
+          class="navbar-item {{#if_eq name "pricing"}}active{{/if_eq}}" 
+          href="/{{ locale }}/pricing.html"
+        >
+          <span class="navbar-item-title">
+            {{__ 'header title pricing'}}
+          </span>
         </a>
-        <a class="navbar-item" href="/{{ locale }}/community.html">
-          {{__ 'header title community'}}
+        <a 
+          class="navbar-item {{#if_eq name "community"}}active{{/if_eq}}"
+          href="/{{ locale }}/community.html">
+          <span class="navbar-item-title">
+            {{__ 'header title community'}}
+          </span>
         </a>
         <a class="navbar-item" href="https://medium.com/cgwire">
           {{__ 'header title blog'}}
         </a>
         <div class="navbar-item">
-            <a class="navbar-lang-item" href="/">EN</a> &nbsp;|&nbsp;
-            <a class="navbar-lang-item" href="/fr">FR</a>
+            <a
+              class="navbar-lang-item {{#if_eq locale "en"}}active{{/if_eq}}" 
+              href="/"
+            >EN</a> &nbsp;|&nbsp;
+            <a 
+              class="navbar-lang-item {{#if_eq locale "fr"}}active{{/if_eq}}" 
+              href="/fr"
+              {{#if_eq locale "fr"}}class="active"{{/if_eq}}
+            >FR</a>
         </div">
       </div>
     </div>

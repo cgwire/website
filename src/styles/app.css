@@ -34,11 +34,17 @@ header .navbar-item:hover {
   background: transparent;
   color: #1f1f28;
 }
+header .navbar-item.active {
+  border-bottom: 3px solid #00b242;
+}
 header .navbar-dropdown {
   border-top: 0px;
 }
 header .navbar img {
   max-height: 2.5em;
+}
+header .navbar-lang-item.active {
+  color: #000;
 }
 section {
   max-width: 950px;

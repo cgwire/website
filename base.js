@@ -15,12 +15,15 @@ const stylus = require('metalsmith-stylus');
 const autoprefixer = require('metalsmith-autoprefixer');
 const assets = require('metalsmith-assets');
 
-var handlebars = require('handlebars');
+const handlebars = require('handlebars');
+const handlebarsUtils = require('handlebars-utils');
+
 handlebars.registerHelper('if_eq',  function (a, b, opts) {
   if (a === b) {
-    return opts.fn(this);
+    console.log("ok", a, b)
+    return handlebarsUtils.value(true, this, opts);
   } else {
-    return opts.inverse(this);
+    return '';
   }
 });
 
