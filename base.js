@@ -20,7 +20,6 @@ const handlebarsUtils = require('handlebars-utils');
 
 handlebars.registerHelper('if_eq',  function (a, b, opts) {
   if (a === b) {
-    console.log("ok", a, b)
     return handlebarsUtils.value(true, this, opts);
   } else {
     return '';
