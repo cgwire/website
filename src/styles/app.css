@@ -149,7 +149,7 @@ h2.subtitle {
   color: #fff;
   background-color: #00b242;
   border: 1px solid #00b242;
-  border-radius: 1em;
+  border-radius: 2em;
   padding: 1.2em;
 }
 .button:hover {
