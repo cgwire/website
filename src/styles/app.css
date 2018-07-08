@@ -4,6 +4,80 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
 }
+section {
+  max-width: 950px;
+  margin: auto;
+}
+section a {
+  color: #00b242;
+}
+section a:hover {
+  color: #67be4b;
+}
+section .block {
+  margin: 4em 0 0 0;
+}
+section .block h3 {
+  margin-top: 1em;
+}
+section .block.middle-block {
+  margin-top: 6em;
+  margin-bottom: 4em;
+}
+.filler {
+  margin-bottom: 14em;
+}
+.flexrow {
+  display: flex;
+  align-items: center;
+}
+.flexrow-item {
+  flex: 1;
+  align-items: center;
+  margin-right: 2em;
+}
+.team-info .ppl-image {
+  max-width: 150px;
+}
+h2.subtitle {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  text-align: center;
+}
+h2.subtitle.tagline {
+  font-size: 1.9em;
+  line-height: 1.3em;
+  max-width: 550px;
+  margin: auto;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+p.tagline-explaination {
+  font-size: 1.1em;
+  color: #1f1f28;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+}
+.button,
+.button:focus {
+  color: #fff;
+  background-color: #00b242;
+  border: 1px solid #00b242;
+  border-radius: 2em;
+  padding: 1.2em;
+}
+.button:hover {
+  color: #fff;
+  background-color: #67be4b;
+  border: 1px solid #67be4b;
+}
+.button.is-large {
+  font-size: 1.2em;
+}
+.input:focus {
+  border: 1px solid #00b242;
+}
 header .navbar {
   max-width: 950px;
   margin: auto;
@@ -34,8 +108,9 @@ header .navbar-item:hover {
   background: transparent;
   color: #1f1f28;
 }
-header .navbar-item.active {
-  border-bottom: 3px solid #00b242;
+header .navbar-item.active span.navbar-item-title {
+  box-sizing: border-box;
+  box-shadow: inset 0 -3px 0 0 #00b242;
 }
 header .navbar-dropdown {
   border-top: 0px;
@@ -45,10 +120,6 @@ header .navbar img {
 }
 header .navbar-lang-item.active {
   color: #000;
-}
-section {
-  max-width: 950px;
-  margin: auto;
 }
 section.introduction {
   padding-top: 5em;
@@ -87,25 +158,6 @@ section.conclusion.conclusion-picture.content {
   margin-top: 0;
   padding-top: 0;
 }
-section.partners {
-  padding: 0;
-}
-section a {
-  color: #00b242;
-}
-section a:hover {
-  color: #67be4b;
-}
-section .block {
-  margin: 4em 0 0 0;
-}
-section .block h3 {
-  margin-top: 1em;
-}
-section .block.middle-block {
-  margin-top: 6em;
-  margin-bottom: 4em;
-}
 .landing-block.content {
   margin-bottom: 2em;
   padding-bottom: 1em;
@@ -120,123 +172,6 @@ section .block.middle-block {
   line-height: 1.4em;
   text-align: left;
   margin: 0em auto 1em auto;
-}
-.flexrow {
-  display: flex;
-  align-items: center;
-}
-.flexrow-item {
-  flex: 1;
-  align-items: center;
-  margin-right: 2em;
-}
-h2.subtitle.tagline {
-  font-size: 1.9em;
-  line-height: 1.3em;
-  max-width: 550px;
-  margin: auto;
-  font-weight: bold;
-  margin-bottom: 1em;
-}
-p.tagline-explaination {
-  font-size: 1.1em;
-  color: #1f1f28;
-  line-height: 1.5em;
-  margin-bottom: 2em;
-}
-h2.subtitle {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1.5em;
-  text-align: center;
-}
-.button,
-.button:focus {
-  color: #fff;
-  background-color: #00b242;
-  border: 1px solid #00b242;
-  border-radius: 2em;
-  padding: 1.2em;
-}
-.button:hover {
-  color: #fff;
-  background-color: #67be4b;
-  border: 1px solid #67be4b;
-}
-.button.is-large {
-  font-size: 1.2em;
-}
-.input:focus {
-  border: 1px solid #00b242;
-}
-footer {
-  background: #00b242;
-  color: #fff;
-  font-size: 1.1em;
-}
-footer a {
-  color: #fff;
-}
-footer a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-footer .columns {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  max-width: 920px;
-  margin: 0 auto;
-}
-footer .address {
-  color: #999;
-  padding-left: 20px;
-}
-footer .column {
-  padding-top: 1.8em;
-}
-footer .logo-column {
-  padding-top: 1.2em;
-}
-footer .footer-title {
-  font-weight: bold;
-  text-transform: capitalize;
-  font-style: capitalize;
-  margin-bottom: 1em;
-  font-size: 1.15em;
-  padding: 0;
-}
-footer li {
-  display: flex;
-  margin-bottom: 1em;
-}
-footer img {
-  margin: 0 1em 0em 0;
-}
-footer .footer-of-footer {
-  background: #fff;
-  color: #1f1f28;
-  padding: 1em;
-}
-.section .level {
-  display: flex;
-  margin-top: 5em;
-  margin-bottom: 2em;
-}
-.section .level-item {
-  width: 50%;
-}
-.section .level-item p {
-  padding: 2em;
-}
-.home {
-  margin-top: 0;
-  padding-top: 0;
-  background-color: #fff;
-  background-repeat: no-repeat;
-}
-.home img.screenshot {
-  border-radius: 1em;
-  box-shadow: 0 4px 16px rgba(0,50,0,0.2);
 }
 .community img {
   width: 250px;
@@ -253,35 +188,15 @@ footer .footer-of-footer {
 .community .level.block {
   margin: 0.5em 0;
 }
-.newsletter-form .submit-button {
-  margin-left: 0.5em;
-}
-.email {
-  margin-right: 1em;
-}
-.app {
-  background: #efeff8;
-  padding: 1.5em;
-  margin: 0.8em;
-  border-radius: 1em;
-}
-.filler {
-  margin-bottom: 14em;
-}
 .ppl {
   width: 150px;
   border-radius: 50%;
 }
-.level > .level-item.ppl-image {
-  width: 150px;
-  margin-right: 2em;
-  flex-grow: inherit;
-}
 .ppl-description {
   flex: 1;
 }
-#mc_embed_signup {
-  padding: 1em;
+section.partners {
+  padding: 0;
 }
 .community a {
   color: inherit;
@@ -367,11 +282,53 @@ footer .footer-of-footer {
   color: #999;
   font-style: italic;
 }
-pre.docker {
+footer {
+  background: #00b242;
+  color: #fff;
   font-size: 1.1em;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+footer .columns {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  max-width: 920px;
+  margin: 0 auto;
+}
+footer .address {
+  color: #999;
+  padding-left: 20px;
+}
+footer .column {
+  padding-top: 1.8em;
+}
+footer .logo-column {
+  padding-top: 1.2em;
+}
+footer .footer-title {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-style: capitalize;
+  margin-bottom: 1em;
+  font-size: 1.15em;
+  padding: 0;
+}
+footer .footer-of-footer {
+  background: #fff;
+  color: #1f1f28;
   padding: 1em;
-  border-radius: 1em;
-  margin: auto;
+}
+footer li {
+  display: flex;
+  margin-bottom: 1em;
+}
+footer img {
+  margin: 0 1em 0em 0;
 }
 @media (max-width: 800px) {
   h1.title {
@@ -425,6 +382,15 @@ pre.docker {
   }
   .block .level-item {
     width: 100%;
+  }
+  .team-info {
+    flex-direction: column;
+  }
+  .team-info .flexrow-item {
+    margin-right: 0;
+  }
+  .team-info .ppl-image {
+    margin-bottom: 1em;
   }
   .community .description p {
     padding-left: 0;

@@ -7,6 +7,86 @@ body
     font-family 'Lato', sans-serif
     font-size 18px
 
+// Base
+
+section
+    max-width 950px
+    margin auto
+
+    a
+        color #00B242
+
+    a:hover
+        color #67BE4B
+
+    .block
+        margin 4em 0 0 0
+        
+        h3
+            margin-top: 1em
+
+        &.middle-block
+            margin-top 6em
+            margin-bottom 4em
+
+.filler
+    margin-bottom 14em
+
+.flexrow
+    display flex
+    align-items center
+
+.flexrow-item
+    flex 1
+    align-items center
+    margin-right 2em
+
+.team-info
+    .ppl-image
+        max-width 150px
+
+h2.subtitle
+    margin-top: 1em
+    margin-bottom: 1em
+    font-size: 1.5em
+    text-align: center
+
+h2.subtitle.tagline
+    font-size 1.9em
+    line-height 1.3em
+    max-width 550px
+    margin auto
+    font-weight bold
+    margin-bottom 1em
+
+p.tagline-explaination
+    font-size 1.1em
+    color #1F1F28 
+    line-height 1.5em
+    margin-bottom 2em
+
+.button
+.button:focus
+    color: white
+    background-color: cgwiregreen
+    border: 1px solid cgwiregreen
+    border-radius 2em
+    padding 1.2em
+
+.button:hover
+    color: white
+    background-color: #67BE4B
+    border: 1px solid #67BE4B
+
+.button.is-large
+    font-size 1.2em
+
+.input:focus
+    border: 1px solid #00B242
+
+
+// Pages and partials
+
 header 
     .navbar
         max-width 950px
@@ -52,9 +132,6 @@ header
         color black
 
 section
-    max-width 950px
-    margin auto
-
     &.introduction
         padding-top 5em
 
@@ -91,27 +168,6 @@ section
             margin-bottom 0
             margin-top 0
             padding-top 0
-            
-
-    &.partners
-        padding 0
-
-    a
-        color #00B242
-
-    a:hover
-        color #67BE4B
-
-    .block
-        margin 4em 0 0 0
-        
-        h3
-            margin-top: 1em
-
-        &.middle-block
-            margin-top 6em
-            margin-bottom 4em
-
 
 .landing-block
     &.content
@@ -130,131 +186,6 @@ section
             text-align left
             margin 0em auto 1em auto
 
-
-.flexrow
-    display flex
-    align-items center
-
-
-.flexrow-item
-    flex 1
-    align-items center
-    margin-right 2em
-
-.team-info
-    .ppl-image
-        max-width 150px
-
-h2.subtitle.tagline
-    font-size 1.9em
-    line-height 1.3em
-    max-width 550px
-    margin auto
-    font-weight bold
-    margin-bottom 1em
-
-p.tagline-explaination
-    font-size 1.1em
-    color #1F1F28 
-    line-height 1.5em
-    margin-bottom 2em
-
-h2.subtitle
-    margin-top: 1em
-    margin-bottom: 1em
-    font-size: 1.5em
-    text-align: center
-
-.button
-.button:focus
-    color: white
-    background-color: cgwiregreen
-    border: 1px solid cgwiregreen
-    border-radius 2em
-    padding 1.2em
-
-.button:hover
-    color: white
-    background-color: #67BE4B
-    border: 1px solid #67BE4B
-
-.button.is-large
-    font-size 1.2em
-
-.input:focus
-    border: 1px solid #00B242
-
-
-footer
-    background cgwiregreen
-    color white
-    font-size 1.1em
-
-    a
-        color white
-
-        &:hover
-            color white
-            text-decoration underline
-
-    .columns
-        padding-top 2em
-        padding-bottom 2em
-        max-width: 920px
-        margin: 0 auto 
-
-    .address
-        color #999
-        padding-left 20px
-
-    .column
-        padding-top 1.8em
-
-    .logo-column
-        padding-top 1.2em
-
-    .footer-title
-        font-weight bold
-        text-transform capitalize
-        font-style capitalize
-        margin-bottom 1em
-        font-size 1.15em
-        padding 0
-
-    li
-        display flex
-        margin-bottom 1em
-
-    img
-        margin 0 1em 0em 0
-
-    .footer-of-footer
-        background white
-        color darkgrey
-        padding 1em
-
-.section
-    .level
-        display flex
-        margin-top 5em
-        margin-bottom 2em
-
-    .level-item
-        width 50%
-
-        p
-            padding 2em
-
-.home
-    margin-top 0
-    padding-top 0
-    background-color white
-    background-repeat no-repeat
-
-    img.screenshot 
-        border-radius 1em
-        box-shadow 0 4px 16px rgba(0, 50, 0, 0.2)
-
 .community
     img
         width 250px
@@ -272,37 +203,15 @@ footer
     .level.block
         margin 0.5em 0
 
-
-.newsletter-form .submit-button
-    margin-left 0.5em
-
-.email
-    margin-right 1em
-
-.app
-    background #EFEFF8
-    padding 1.5em
-    margin 0.8em
-    border-radius 1em
-
-.filler
-    margin-bottom 14em
-
 .ppl
     width 150px
     border-radius 50%
 
-.level > .level-item.ppl-image
-    width 150px
-    margin-right 2em
-    flex-grow inherit
-
 .ppl-description
     flex 1
 
-
-#mc_embed_signup
-    padding 1em
+section.partners
+    padding 0
 
 .community a
     color inherit
@@ -389,11 +298,57 @@ footer
     color #999
     font-style italic
 
-pre.docker
+
+footer
+    background cgwiregreen
+    color white
     font-size 1.1em
-    padding 1em
-    border-radius 1em
-    margin auto
+
+    a
+        color white
+
+        &:hover
+            color white
+            text-decoration underline
+
+    .columns
+        padding-top 2em
+        padding-bottom 2em
+        max-width: 920px
+        margin: 0 auto 
+
+    .address
+        color #999
+        padding-left 20px
+
+    .column
+        padding-top 1.8em
+
+    .logo-column
+        padding-top 1.2em
+
+    .footer-title
+        font-weight bold
+        text-transform capitalize
+        font-style capitalize
+        margin-bottom 1em
+        font-size 1.15em
+        padding 0
+
+    .footer-of-footer
+        background white
+        color darkgrey
+        padding 1em
+
+    li
+        display flex
+        margin-bottom 1em
+
+    img
+        margin 0 1em 0em 0
+
+
+// Responsive
 
 @media(max-width: 800px)
     h1.title
