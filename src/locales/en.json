@@ -111,7 +111,7 @@
 	"pricing title basic": "Basic",
 	"pricing title medium": "Medium",
 	"pricing title big": "Big",
-	"pricing button cta": "Request a 30-days trial",
+	"pricing button cta": "Start your 30-days trial",
 	"pricing notgoodidea": "Using CGWire for a big studio is not recommended. Ftrack, Shotgun or NIM are better suited for that.",
 	"pricing discount details": "All plans come with 30 days trials and 10% discount for an annual subscription.",
 	"pricing features free one": "Maintained by your IT",
@@ -146,5 +146,6 @@
 	"main explaination title four": "Together is better",
 	"main explaination text four": "With CGWire, collaboration is easier than ever. Save time and increase efficiency while working as a team. Plug it to your pipeline to put your studio on steroids!",
 	"header sign in": "Sign in",
-	"header sign up": "Try it free"
+	"header sign up": "Try it free",
+	"pricing install cta": "Install it"
 }

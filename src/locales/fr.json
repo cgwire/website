@@ -111,7 +111,7 @@
 	"pricing features free two": "Projets illimités",
 	"pricing features free three": "Support sur le forum",
 	"pricing features free four": "Support sur Slack",
-	"pricing button cta": "Demander 30j d'essai",
+	"pricing button cta": "Démarrer 30j d'essai",
 	"pricing title basic": "Basique",
 	"pricing features basic one": "1 à 25 utilisateurs",
 	"pricing features basic two": "Projets illimités",
@@ -145,5 +145,6 @@
 	"main explaination title four": "Ensemble c'est mieux",
 	"main explaination text four": "CGWire rend la collaboration plus facile que jamais. Gagnez du temps et soyez plus efficaces en travaillant en équipe. Branchez votre pipeline dessus et mettez votre studio sous stéroïdes !",
 	"header sign in": "Se connecter",
-	"header sign up": "Essayer CGWire"
+	"header sign up": "Essayer CGWire",
+	"pricing install cta": "Installation"
 }
