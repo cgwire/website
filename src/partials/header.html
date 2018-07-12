@@ -60,17 +60,12 @@
         <a class="navbar-item" href="https://medium.com/cgwire">
           {{__ 'header title blog'}}
         </a>
-        <div class="navbar-item">
-            <a
-              class="navbar-lang-item {{#if_eq locale "en"}}active{{/if_eq}}" 
-              href="/"
-            >EN</a> &nbsp;|&nbsp;
-            <a 
-              class="navbar-lang-item {{#if_eq locale "fr"}}active{{/if_eq}}" 
-              href="/fr"
-              {{#if_eq locale "fr"}}class="active"{{/if_eq}}
-            >FR</a>
-        </div">
+        <a class="navbar-item signin" href="https://account.cg-wire.com/login">
+          {{__ 'header sign in'}}
+        </a>
+        <a class="navbar-item signup" href="https://account.cg-wire.com/signup">
+          {{__ 'header sign up'}}
+        </a>
       </div>
     </div>
   </div>
