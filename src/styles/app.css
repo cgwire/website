@@ -149,6 +149,9 @@ section.introduction a.button {
   border-radius: 2em;
   padding: 1.3em;
 }
+section.clients img {
+  width: 150px;
+}
 section.conclusion {
   padding-bottom: 0;
   margin-bottom: 0;
