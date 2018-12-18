@@ -40,7 +40,7 @@
 	"kitsu annotations title": "Commentez et annotez vos previz",
 	"kitsu annotations one": "Chaque fois qu'un artiste termine son travail, il peut uploader une previz (image, video, pdf, obj ou une archive). Le superviseur ou réalisateur peut ensuite commenter et annoter le travail effectué. Et, grâce au moteur temps-réel, tout se met à jour instantanément.",
 	"kitsu timesheets title": "Suivez le temps passé sur les tâches",
-    "kitsu timesheets one": "Depuis leur todo-list, les artistes peuvent voir sur quoi ils ont passé du temps. Vous pouvez ainsi savoir où ils en sont de leurs heures et quel asset ou shot a coûté le plus.",
+	"kitsu timesheets one": "Depuis leur todo-list, les artistes peuvent voir sur quoi ils ont passé du temps. Vous pouvez ainsi savoir où ils en sont de leurs heures et quel asset ou shot a coûté le plus.",
 	"kitsu team title": "Gérez vos équipes par projets",
 	"kitsu team one": "Montez une équipe par projet. Ainsi, vous vous asurrerez qu'ils ne peuvent voir que les projets sur lesquels ils travaillent. Gardez les informations de contact de vos employés pour les joindre si vous avez besoin qu'ils reviennent.",
 	"kitsu contact introduction": "Est-ce que vous voulez utiliser Kitsu?",
@@ -80,7 +80,7 @@
 	"zou tagline": "Avec Zou, synchronisez votre production",
 	"zou why one": "Fabriquer un film est une tâche difficile qui implique beaucoup de données: le dépouillement d'assets, les assignations de tâches, les emplacement des fichiers et plus encore. Toutes ces informations doivent être partagées avec tous les départements. Zou répond à cela en fournissant un dépôt central de stockage pour toutes vos données.",
 	"zou features one": "Stockez les informations de votre équipe et suivez l'avancement.",
-    "zou usecase one": "Zou est fait pour s'intégrer dans votre pipeline. Les plugins de vos outils de fabrication peuvent être facilement connectés dessus. Vous pouvez héberger Zou en interne pour un accès plus rapide à vos données et continuer à l'utiliser même quand votre connexion internet est tombée.",
+	"zou usecase one": "Zou est fait pour s'intégrer dans votre pipeline. Les plugins de vos outils de fabrication peuvent être facilement connectés dessus. Vous pouvez héberger Zou en interne pour un accès plus rapide à vos données et continuer à l'utiliser même quand votre connexion internet est tombée.",
 	"community title": "Communauté",
 	"community explaination one": "Derrière tout projet libre et open source, vous pouvez trouver des gens partageant des idées et des conseils. Les outils CGWire ne font pas exception. Ils ont réuni une communauté de TDs Pipeline enthousiastes.",
 	"community tagline": "Rencontrez notre communauté",
@@ -154,5 +154,13 @@
 	"main explaination text four": "CGWire rend la collaboration plus facile que jamais. Gagnez du temps et soyez plus efficaces en travaillant en équipe. Branchez votre pipeline dessus et mettez votre studio sous stéroïdes !",
 	"header sign in": "Se connecter",
 	"header sign up": "Essayer CGWire",
-	"pricing install cta": "Installation"
+	"pricing install cta": "Installation",
+	"header title spreadsheets": "Spreadsheets",
+	"spreadsheets title": "Spreadsheets",
+	"spreadsheets explaination one": "Mettez en place votre workflow avec nos spreadsheets",
+	"spreadsheets tagline": "Nous savons que vous êtes habitué aux spreadsheets et que démarrer sur un nouvel outil n'est pas facile. Même si vous n'êtes pas prêts à utiliser Kitsu, nous voulons vous aider. Nous avons donc préparé pour vous des feuilles de production éprouvées sur le terrain. Vous pouvez vous en servir comme point de départ pour votre workflow ou les garder tout au long de votre production. Tout est gratuit et sous licence Creative Commons by-nc-sa 2.0. On vous laisse apprécier !",
+
+	"spreadsheets short planning title": "Montez votre planning (Court métrage)",
+	"spreadsheets tvshow planning title": "Montez votre planning (Série)",
+	"spreadsheets breakdown title": "Gérez votre casting"
 }
