@@ -65,7 +65,7 @@ module.exports = {
       // Translation
       .use(i18n({
         default: locale === '' ? 'en' : locale,
-        locales: ['en', 'fr'],
+        locales: ['en', 'fr', 'cn'],
         directory: 'src/locales'
       }))
       .use(function locales(files, metalsmith, done) {

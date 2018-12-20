@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "node output.js --dev",
     "dev:fr": "node output.js --dev --fr",
-    "build": "node output.js && node output.js --fr",
+    "dev:cn": "node output.js --dev --cn",
+    "build": "node output.js && node output.js --fr && node output.js --cn",
     "build:en": "node output.js",
-    "build:fr": "node output.js --fr"
+    "build:fr": "node output.js --fr",
+    "build:cn": "node output.js --cn"
   },
   "author": "CGWire <frank@cg-wire.côm> (https://cg-wire.com/)",
   "repository": "https://github.com/cgwire/website",
