@@ -22,19 +22,15 @@ if (argv.dev) {
     if (err) throw err;
   });
 
-  if (argv.fr) {
-    metalsmith = base.getMetalsmith('fr');
-    metalsmith.build(function(err) {
-      if (err) throw err;
-    });
-  }
+  metalsmith = base.getMetalsmith('fr');
+  metalsmith.build(function(err) {
+    if (err) throw err;
+  });
 
-  if (argv.cn) {
-    metalsmith = base.getMetalsmith('cn');
-    metalsmith.build(function(err) {
-      if (err) throw err;
-    });
-  }
+  metalsmith = base.getMetalsmith('cn');
+  metalsmith.build(function(err) {
+    if (err) throw err;
+  });
 
   metalsmith = base.getMetalsmith('en');
   metalsmith.build(function(err) {
