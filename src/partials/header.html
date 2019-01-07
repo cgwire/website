@@ -4,14 +4,17 @@
       <a class="navbar-item" href="/{{ locale }}">
         <img class="main-logo" src="images/logo.svg" alt="CGWire logo"/>
       </a>
-    <div class="burger navbar-burger" data-target="top-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <div class="burger navbar-burger" data-target="top-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
     <div class="navbar-menu" id="top-menu">
-      <div class="navbar-start">
+      <div class="navbar-start flexrow">
+        <span class="flexrow-item">FR</span>
+        <span class="flexrow-item">EN</span>
+        <span class="flexrow-item">CN</span>
       </div>
       <div class="navbar-end">
         <div class="navbar-item has-drodown is-hoverable {{#if_eq name "solution"}}active{{/if_eq}}">
