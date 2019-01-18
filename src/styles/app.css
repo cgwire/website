@@ -24,6 +24,9 @@ section .block.middle-block {
   margin-top: 6em;
   margin-bottom: 4em;
 }
+.mt2 {
+  margin-top: 2em;
+}
 .filler {
   margin-bottom: 14em;
 }
@@ -85,7 +88,10 @@ header .navbar {
 }
 header a.navbar-lang-item {
   font-size: 0.8em;
+  margin: 0.1em;
+  width: 30px;
   color: #bbb;
+  text-align: center;
 }
 header .navbar-link:after {
   border-color: #00b242;
@@ -198,6 +204,9 @@ section.conclusion.conclusion-picture.content {
 .community .level.block {
   margin: 0.5em 0;
 }
+.community .community-link {
+  color: #00b242;
+}
 .ppl {
   width: 150px;
   border-radius: 50%;
@@ -207,6 +216,9 @@ section.conclusion.conclusion-picture.content {
 }
 section.partners {
   padding: 0;
+}
+section.partners img {
+  width: 200px;
 }
 .community a {
   color: inherit;
@@ -357,6 +369,9 @@ footer img {
   pre {
     padding: 1em 0;
     font-size: 0.7em;
+  }
+  header a.navbar-lang-item {
+    text-align: center;
   }
   .landing-block .flexrow,
   .introduction .flexrow {
