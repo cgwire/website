@@ -121,12 +121,12 @@
 	"pricing button cta": "Start your 14-day trial",
 	"pricing notgoodidea": "Using CGWire for a big studio is not recommended. Ftrack, Shotgun or NIM are better suited for that.",
 	"pricing discount details": "All plans come with 14-day trials and 10% discount for an annual subscription.",
-	"pricing features free one": "1-5 users",
+	"pricing features free one": "1 - 10 users",
 	"pricing features free two": "Unlimited projects",
 	"pricing features free three": "200GB storage",
 	"pricing features free four": "Forum support",
 	"pricing features free five": "Access to support engineers",
-	"pricing features basic one": "6 - 50 users",
+	"pricing features basic one": "11 - 50 users",
 	"pricing features basic two": "Unlimited projects",
 	"pricing features basic three": "1TB of storage",
 	"pricing features basic four": "Skype support",
@@ -164,5 +164,8 @@
 	"spreadsheets short planning title": "Set up your schedule (Short)",
 	"spreadsheets tvshow planning title": "Set up your schedule (TV Show)",
 	"header title locales": "Locales",
-	"spreadsheets retake title": "Retake tracking"
+	"spreadsheets retake title": "Retake tracking",
+	"pricing support license title": "Support License For Local Installations",
+	"pricing support license details": "Same pricing are available for studios which want assistance to set up, monitor and manage their local installation of Kitsu.",
+	"pricing school title": "Pricing for schools"
 }
