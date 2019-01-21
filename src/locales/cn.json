@@ -164,5 +164,11 @@
 	"spreadsheets tvshow planning title": "Set up your schedule (TV Show)",
 	"header title locales": "Locales",
 	"header title spreadsheets": "Spreadsheets",
-	"spreadsheets retake title": "Retake tracking"
+	"spreadsheets retake title": "Retake tracking",
+	"api title documentation": "api title documentation",
+	"client title documentation": "client title documentation",
+	"kitsu title documentation": "kitsu title documentation",
+	"pricing support license title": "pricing support license title",
+	"pricing support license details": "pricing support license details",
+	"pricing school title": "pricing school title"
 }
