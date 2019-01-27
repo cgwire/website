@@ -168,5 +168,6 @@
 	"kitsu title documentation": "Accédez à la documentation de Kitsu",
 	"api title documentation": "Accédez à la documentation d'installation",
 	"client title documentation": "Accédez à la documentation du client Python",
-	"zou title": "Une API pour votre studio"
+	"zou title": "Une API pour votre studio",
+	"zou testimonials introduction": "En production chez de nombreux studios"
 }

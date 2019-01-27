@@ -71,7 +71,7 @@
 	"footers title company": "Company",
 	"footers title solutions": "Solutions",
 	"zou features two": "Generate and store file path based on production information.",
-	"zou features three": "Synchronize your data with Kitsu or Shotgun and manage validations.",
+	"zou features three": "Synchronize your data with Shotgun and manage validations.",
 	"zou features four": "Run custom script when events occur.",
 	"kitsu features three": "Track validations through comments and previews.",
 	"kitsu features four": "Store and browse your shot castings.",
@@ -168,7 +168,8 @@
 	"pricing support license title": "Support License For Local Installations",
 	"pricing support license details": "Same pricing are available for studios which want assistance to set up, monitor and manage their local installation of Kitsu.",
 	"pricing school title": "Pricing For Schools",
-	"kitsu title documentation": "Access to Kitsu documentation",
-	"api title documentation": "Access to API installation documentation",
-	"client title documentation": "Access to client documentation"
+	"kitsu title documentation": "Access to Kitsu tutorials",
+	"api title documentation": "Access to API documentation",
+	"client title documentation": "Access to client documentation",
+	"zou testimonials introduction": "Running in production in many studios"
 }
