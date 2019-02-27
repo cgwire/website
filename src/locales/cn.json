@@ -172,5 +172,11 @@
 	"kitsu title documentation": "访问Kitsu教程",
 	"api title documentation": "访问API文档",
 	"client title documentation": "访问Client教程",
-	"zou testimonials introduction": "很多工作室的制作中都有CG Wire应用的身影"
+	"zou testimonials introduction": "很多工作室的制作中都有CG Wire应用的身影",
+    "terms title": "Terms of Service",
+	"about terms one": "By using the CGWire Hosting provided by CGWire, you are agreeing to be bound by the following terms and conditions.",
+	"footers link terms ": "Terms",
+	"footers link privacy ": "Privacy",
+	"privacy title": "Privacy Policy",
+	"about privacy one": "This Policy describes the information we collect from you, how we use that information and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us. "
 }

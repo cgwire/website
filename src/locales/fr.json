@@ -170,5 +170,11 @@
 	"client title documentation": "Accédez à la documentation du client Python",
 	"zou title": "Une API pour votre studio",
 	"zou testimonials introduction": "En production chez de nombreux studios",
-	"footers link terms ": "CGU / CGV"
+	"terms title": "Terms of Service",
+	"about terms one": "By using the CGWire Hosting provided by CGWire, you are agreeing to be bound by the following terms and conditions.",
+	"footers link terms ": "CGU / CGV",
+	"footers link privacy ": "Vie privée",
+	"privacy title": "Privacy Policy",
+	"about privacy one": "This Policy describes the information we collect from you, how we use that information and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us. "
+
 }
