@@ -165,7 +165,7 @@
 	"pricing support license title": "Licences support pour installation locales",
 	"pricing support license details": "L'aide à l'installation, le monitoring et la gestion d'une instance locale de Kitsu est disponible au même prix.",
 	"pricing school title": "Prix pour les Écoles d'Animation",
-	"kitsu title documentation": "Accédez à la documentation de Kitsu",
+	"kitsu title documentation": "Accédez à la documentation",
 	"api title documentation": "Accédez à la documentation d'installation",
 	"client title documentation": "Accédez à la documentation du client Python",
 	"zou title": "Une API pour votre studio",
@@ -175,6 +175,7 @@
 	"footers link terms ": "CGU / CGV",
 	"footers link privacy ": "Vie privée",
 	"privacy title": "Privacy Policy",
-	"about privacy one": "This Policy describes the information we collect from you, how we use that information and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us. "
-
+	"about privacy one": "This Policy describes the information we collect from you, how we use that information and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us. ",
+	"kitsu video tutorial1 ": "Démarrer en tant que Chargé de Production",
+	"kitsu video tutorial2 ": "Démarrer en tant que Graphiste"
 }
