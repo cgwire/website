@@ -33,6 +33,37 @@
   <body>
     {{{ contents }}}
 
+    <div style="" id="cookie-consent" class="cookie-consent flexrow">
+      <p class="flexrow-item">
+         {{__ 'main cookies consent'}}
+      </p>
+      <button id="cookie-ok" class="flexrow-item button default">
+         {{__ 'main yes'}}
+      </button>
+      <button id="cookie-ko" class="flexrow-item button">
+         {{__ 'main no'}}
+      </button>
+    </div>
+
+    <script>
+    const elementCookieConsent = document.getElementById('cookie-consent')
+    const cookieConsent = localStorage.getItem('cookie-consent')
+    if (cookieConsent !== null) {
+      elementCookieConsent.style.display = 'none'
+    }
+
+    const elementYes = document.getElementById('cookie-ok')
+    const elementNo = document.getElementById('cookie-ko')
+    elementYes.addEventListener('click', function () {
+      localStorage.setItem('cookie-consent', 'true')
+      elementCookieConsent.style.display = 'none'
+    })
+    elementNo.addEventListener('click', function () {
+      localStorage.setItem('cookie-consent', 'false')
+      window.location.reload()
+    })
+    </script>
+
     <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
@@ -65,22 +96,29 @@
 });
     </script>
     <script type="text/javascript">
-      var _paq = _paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//cgwire.innocraft.cloud/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '1']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
+      var isOk = localStorage.getItem('cookie-consent');
+      if (isOk !== 'false') {
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//cgwire.innocraft.cloud/";
+          _paq.push(['setTrackerUrl', u+'piwik.php']);
+          _paq.push(['setSiteId', '1']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+      }
     </script>
     <!-- End Piwik Code -->
 
     <!-- Begin Crisp Code -->
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="11e8be84-486e-45f1-b03c-64fcd817ee7f";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+    <script type="text/javascript">
+      var isOk = localStorage.getItem('cookie-consent');
+      if (isOk !== 'false') {
+        window.$crisp=[];window.CRISP_WEBSITE_ID="11e8be84-486e-45f1-b03c-64fcd817ee7f";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+      }
     </script>
     <!-- End Crisp Code -->
   </body>

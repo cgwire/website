@@ -91,7 +91,6 @@ header a.navbar-lang-item {
   margin: 0.1em;
   width: 30px;
   color: #bbb;
-  text-align: center;
 }
 header .navbar-link:after {
   border-color: #00b242;
@@ -351,6 +350,30 @@ footer li {
 }
 footer img {
   margin: 0 1em 0em 0;
+}
+.cookie-consent {
+  background: #00b242;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1em;
+  position: fixed;
+  max-height: 70px;
+  align-item: center;
+}
+.cookie-consent p {
+  flex: 1;
+}
+.cookie-consent button,
+.cookie-consent button:focus,
+.cookie-consent button:active {
+  max-width: 100px;
+  border-radius: 0;
+  padding: 0;
+}
+.cookie-consent .default {
+  border: 2px solid #fff;
 }
 @media (max-width: 800px) {
   h1.title {
