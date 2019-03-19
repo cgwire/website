@@ -380,15 +380,24 @@ footer
     max-height 70px
     align-item center
 
-    p
+    .flexrow-item
+        flex auto
+
+    p.text
         flex 1
+
+    p.choice
+        max-width 150px
+        padding 0
+        margin-right 100px
 
     button,
     button:focus,
     button:active
         max-width 100px
         border-radius 0
-        padding 0
+        padding 0.3em
+        margin-left 1em
 
     .default
         border 2px solid white
@@ -396,6 +405,19 @@ footer
 // Responsive
 
 @media(max-width: 800px)
+
+    .cookie-consent
+        max-height 100%
+        overflow-y auto
+        flex-direction column
+
+        button
+            padding 0.5em
+
+        p.choice
+            margin-top 0.5em
+            margin-right 0
+
     h1.title
         font-size 1.6em
         margin-bottom 0

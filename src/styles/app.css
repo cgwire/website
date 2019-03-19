@@ -362,20 +362,41 @@ footer img {
   max-height: 70px;
   align-item: center;
 }
-.cookie-consent p {
+.cookie-consent .flexrow-item {
+  flex: auto;
+}
+.cookie-consent p.text {
   flex: 1;
+}
+.cookie-consent p.choice {
+  max-width: 150px;
+  padding: 0;
+  margin-right: 100px;
 }
 .cookie-consent button,
 .cookie-consent button:focus,
 .cookie-consent button:active {
   max-width: 100px;
   border-radius: 0;
-  padding: 0;
+  padding: 0.3em;
+  margin-left: 1em;
 }
 .cookie-consent .default {
   border: 2px solid #fff;
 }
 @media (max-width: 800px) {
+  .cookie-consent {
+    max-height: 100%;
+    overflow-y: auto;
+    flex-direction: column;
+  }
+  .cookie-consent button {
+    padding: 0.5em;
+  }
+  .cookie-consent p.choice {
+    margin-top: 0.5em;
+    margin-right: 0;
+  }
   h1.title {
     font-size: 1.6em;
     margin-bottom: 0;

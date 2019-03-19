@@ -34,15 +34,17 @@
     {{{ contents }}}
 
     <div style="" id="cookie-consent" class="cookie-consent flexrow">
-      <p class="flexrow-item">
+      <p class="flexrow-item text">
          {{__ 'main cookies consent'}}
       </p>
-      <button id="cookie-ok" class="flexrow-item button default">
-         {{__ 'main yes'}}
-      </button>
-      <button id="cookie-ko" class="flexrow-item button">
-         {{__ 'main no'}}
-      </button>
+      <p class="flexrow-item choice">
+        <button id="cookie-ok" class="button default">
+           {{__ 'main yes'}}
+        </button>
+        <button id="cookie-ko" class="button">
+           {{__ 'main no'}}
+        </button>
+      </p>
     </div>
 
     <script>
