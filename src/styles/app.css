@@ -4,6 +4,9 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
 }
+.hidden {
+  display: none;
+}
 section {
   max-width: 950px;
   margin: auto;
@@ -225,6 +228,9 @@ section.partners img {
 .community a:hover {
   color: inherit;
 }
+section.pricing {
+  max-width: 1200px;
+}
 .pricings {
   display: flex;
   flex-direction: row;
@@ -237,8 +243,8 @@ section.partners img {
   text-align: center;
   margin: 1em;
   min-height: 400px;
-  min-width: 200px;
-  box-shadow: 0 4px 16px rgba(0,50,0,0.2);
+  min-width: 180px;
+  box-shadow: 0 4px 16px rgba(0,100,0,0.2);
   background: #fff;
   border-radius: 1em;
   display: flex;
@@ -255,6 +261,11 @@ section.partners img {
 }
 .pricing-block .pricing-price .pricing-value {
   font-size: 1.8em;
+}
+.pricing-block .pricing-price-info {
+  font-size: 0.8em;
+  color: #999;
+  font-style: italic;
 }
 .pricing-block .pricing-features {
   flex: 1;

@@ -15,9 +15,14 @@ pathTo: .
       {{__ 'pricing tagline'}}
     </h2>
   
-    <!--p class="has-text-centered">
-      {{__ 'pricing explaination one'}}
-    </p-->
+    <p class="has-text-centered mt2">
+      <button class="button frequence" id="monthly-button">
+        {{__ 'pricing monthly'}}
+      </button>
+      <button class="button frequence active" id="yearly-button">
+        {{__ 'pricing yearly'}}
+      </button>
+    </p>
 
     <div class="pricings">
       <div class="pricing-block">
@@ -26,7 +31,8 @@ pathTo: .
         </div>
         <div class="pricing-price">
           <span class="pricing-currency">€</span>
-          <span class="pricing-value">24</span>
+          <span class="pricing-value yearly">24</span>
+          <span class="pricing-value monthly hidden">29</span>
           {{__ 'pricing value month'}}
         </div>
         <div class="pricing-price-info">
@@ -79,7 +85,8 @@ pathTo: .
         </div>
         <div class="pricing-price">
           <span class="pricing-currency">€</span>
-          <span class="pricing-value">159</span>
+          <span class="pricing-value yearly">159</span>
+          <span class="pricing-value monthly hidden">199</span>
           {{__ 'pricing value month'}}
         </div>
         <div class="pricing-price-info">
@@ -132,7 +139,8 @@ pathTo: .
         </div>
         <div class="pricing-price">
           <span class="pricing-currency">€</span>
-          <span class="pricing-value">479</span>
+          <span class="pricing-value yearly">479</span>
+          <span class="pricing-value monthly hidden">599</span>
           {{__ 'pricing value month'}}
         </div>
         <div class="pricing-price-info">
@@ -182,7 +190,8 @@ pathTo: .
         </div>
         <div class="pricing-price">
           <span class="pricing-currency">€</span>
-          <span class="pricing-value">1599</span>
+          <span class="pricing-value yearly">1599</span>
+          <span class="pricing-value monthly hidden">1999</span>
           {{__ 'pricing value month'}}
         </div>
         <div class="pricing-price-info">
@@ -299,4 +308,37 @@ pathTo: .
   >
     <img src="/images/studio_collaboration.png" />
   </section>
+
+  <script>
+  function hideByClassName (className) {
+    var els = document.getElementsByClassName(className)
+    for (i = 0 ; i < els.length ; i++) {
+      els[i].className += ' hidden'
+    }
+  }
+
+  function showByClassName (className) {
+    var els = document.getElementsByClassName(className)
+    for (i = 0 ; i < els.length ; i++) {
+      els[i].className = els[i].className.replace(' hidden', '')
+    }
+  }
+
+  var monthlyButton = document.getElementById('monthly-button')
+  var yearlyButton = document.getElementById('yearly-button')
+  monthlyButton.addEventListener('click', function () {
+    hideByClassName('yearly')
+    hideByClassName('pricing-price-info')
+    showByClassName('monthly')
+    monthlyButton.className += ' active'
+    yearlyButton.className = yearlyButton.className.replace(' active', '')
+  })
+  yearlyButton.addEventListener('click', function () {
+    hideByClassName('monthly')
+    showByClassName('pricing-price-info')
+    showByClassName('yearly')
+    yearlyButton.className += ' active'
+    monthlyButton.className = monthlyButton.className.replace(' active', '')
+  })
+  </script>
 {{> footer }}

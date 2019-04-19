@@ -203,5 +203,7 @@
 	"pricing features common one": "Task Management",
 	"pricing features common two": "Timesheets",
 	"pricing features common three": "Playlists",
-	"pricing features common four": "API Access"
+	"pricing features common four": "API Access",
+	"pricing monthly": "monthly",
+	"pricing yearly": "yearly"
 }

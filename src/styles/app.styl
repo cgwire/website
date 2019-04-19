@@ -9,6 +9,10 @@ body
 
 // Base
 
+.hidden
+    display none
+
+
 section
     max-width 950px
     margin auto
@@ -244,10 +248,20 @@ section.partners
 section.pricing
     max-width 1200px
 
+    .frequence
+        padding 0.5em
+        height auto
+        background white
+        color cgwiregreen
+
+        &.active
+            background cgwiregreen
+            color white
+
 .pricings
     display flex
     flex-direction row
-    margin-top 4em
+    margin-top 2em
     margin-bottom 2em
     flex-wrap wrap
 
@@ -257,7 +271,8 @@ section.pricing
     margin 1em
     min-height 400px
     min-width 180px
-    box-shadow 0 4px 16px rgba(0, 50, 0, 0.2)
+    max-width 225px
+    box-shadow 0 4px 16px rgba(0, 100, 0, 0.2)
     background white
     border-radius 1em
     display flex
