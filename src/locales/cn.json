@@ -216,5 +216,8 @@
 	"pricing features common three": "Playlists",
 	"pricing features common four": "API Access",
 	"pricing monthly": "monthly",
-	"pricing yearly": "yearly"
+	"pricing yearly": "yearly",
+	"pricing opensource title": "Free and Open Source",
+	"pricing opensource details": "Kitsu is free and open source, which means that it can be freely used and modified by your team on your own infrastructure.",
+	"pricing opensource install": "Installation instructions"
 }

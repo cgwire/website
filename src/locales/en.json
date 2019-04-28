@@ -133,7 +133,7 @@
 	"footers conclusion text1": "Made with",
 	"footers conclusion text2": "in France",
 	"main conclusion tagline": "By Studios for Studios",
-	"main conclusion text": "CGWire is developed in collaboration with CG studios. Our solution has been built iteratively during running productions: all features and user interfaces have been validated by real-life use cases. ",
+	"main conclusion text": "CGWire software is open source and developed in collaboration with CG studios. Our solution has been built iteratively during running productions: all features and user interfaces have been validated by real-life use cases. ",
 	"main explaination title one": "Stay ahead of your production",
 	"main explaination text one": "Always have an overview about what is going on. In both big and small scale, find the information you need.",
 	"main explaination title two": "Store all your data in one place",
@@ -205,5 +205,8 @@
 	"pricing features common three": "Playlists",
 	"pricing features common four": "API Access",
 	"pricing monthly": "monthly",
-	"pricing yearly": "yearly"
+	"pricing yearly": "yearly",
+	"pricing opensource title": "Free and Open Source",
+	"pricing opensource details": "Kitsu is free and open source, which means that it can be freely used and modified by your team on your own infrastructure.",
+	"pricing opensource install": "Installation instructions"
 }

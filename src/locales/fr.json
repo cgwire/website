@@ -203,5 +203,8 @@
 	"pricing features common four": "Accès à l'API",
 	"pricing title basic": "Intermédiaire",
 	"pricing monthly": "mensuel",
-	"pricing yearly": "annuel"
+	"pricing yearly": "annuel",
+	"pricing opensource title": "Libre et Open Source",
+	"pricing opensource details": "Kitsu est libre et open source, ce qui signifie qu'il peut être utilisé et modifié par vos équipes librement.",
+	"pricing opensource install": "Instructions d'installation"
 }

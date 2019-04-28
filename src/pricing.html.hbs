@@ -301,6 +301,18 @@ pathTo: .
     <p class="has-text-centered">
       {{__ 'pricing school details'}}
     </p>
+
+    <h2 class="subtitle has-text-centered">
+      {{__ 'pricing opensource title'}}
+    </h2>
+    <p class="has-text-centered">
+      {{__ 'pricing opensource details'}}
+    </p>
+    <p class="has-text-centered">
+      <a href="https://zou.cg-wire.com">
+        {{__ 'pricing opensource install'}}
+      </a>
+    </p>
   </section>
 
   <section 
@@ -327,18 +339,22 @@ pathTo: .
   var monthlyButton = document.getElementById('monthly-button')
   var yearlyButton = document.getElementById('yearly-button')
   monthlyButton.addEventListener('click', function () {
-    hideByClassName('yearly')
-    hideByClassName('pricing-price-info')
-    showByClassName('monthly')
-    monthlyButton.className += ' active'
-    yearlyButton.className = yearlyButton.className.replace(' active', '')
+    if (monthlyButton.className.indexOf('active') < 0) {
+      hideByClassName('yearly')
+      hideByClassName('pricing-price-info')
+      showByClassName('monthly')
+      monthlyButton.className += ' active'
+      yearlyButton.className = yearlyButton.className.replace(' active', '')
+    }
   })
   yearlyButton.addEventListener('click', function () {
-    hideByClassName('monthly')
-    showByClassName('pricing-price-info')
-    showByClassName('yearly')
-    yearlyButton.className += ' active'
-    monthlyButton.className = monthlyButton.className.replace(' active', '')
+    if (yearlyButton.className.indexOf('active') < 0) {
+        hideByClassName('monthly')
+        showByClassName('pricing-price-info')
+        showByClassName('yearly')
+        yearlyButton.className += ' active'
+        monthlyButton.className = monthlyButton.className.replace(' active', '')
+    }
   })
   </script>
 {{> footer }}
