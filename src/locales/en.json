@@ -209,5 +209,14 @@
 	"pricing opensource title": "Free and Open Source",
 	"pricing opensource details": "Kitsu is free and open source, which means that it can be freely used and modified by your team on your own infrastructure.",
 	"pricing opensource install": "Installation instructions",
-	"about support title": "They support us"
+	"about support title": "They support us",
+	"header title usecase": "Use Cases",
+	"header title short": "3D Shorts",
+	"header title tvshow": "2D TV Shows",
+	"header title featurefilm": "VFX Feature Films",
+	"header title school": "CG Schools",
+	"3d title": "3d title",
+	"3dshorts title": "3dshorts title",
+	"3Dshorts title": "3Dshorts title",
+	"3Dshorts supervisor title": "3Dshorts supervisor title"
 }
