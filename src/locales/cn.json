@@ -220,5 +220,9 @@
 	"pricing opensource title": "Free and Open Source",
 	"pricing opensource details": "Kitsu is free and open source, which means that it can be freely used and modified by your team on your own infrastructure.",
 	"pricing opensource install": "Installation instructions",
-	"about support title": "about support title"
+	"about support title": "about support title",
+	"pricing features tinyplus one": "4-10 users",
+	"pricing features tinyplus two": "Unlimited projects",
+	"pricing features tinyplus three": "1TB",
+	"pricing title tinyplus": "Tiny+"
 }
