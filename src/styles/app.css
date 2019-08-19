@@ -27,6 +27,11 @@ section .block.middle-block {
   margin-top: 6em;
   margin-bottom: 4em;
 }
+section .block .screenshot {
+  border-radius: 0.5em;
+  border: 1px solid #eee;
+  box-shadow: 0 0 6px 3px #f6f6f6;
+}
 .mt2 {
   margin-top: 2em;
 }
@@ -231,10 +236,20 @@ section.partners img {
 section.pricing {
   max-width: 1200px;
 }
+section.pricing .frequence {
+  padding: 0.5em;
+  height: auto;
+  background: #fff;
+  color: #00b242;
+}
+section.pricing .frequence.active {
+  background: #00b242;
+  color: #fff;
+}
 .pricings {
   display: flex;
   flex-direction: row;
-  margin-top: 4em;
+  margin-top: 2em;
   margin-bottom: 2em;
   flex-wrap: wrap;
 }
@@ -244,6 +259,7 @@ section.pricing {
   margin: 1em;
   min-height: 400px;
   min-width: 180px;
+  max-width: 225px;
   box-shadow: 0 4px 16px rgba(0,100,0,0.2);
   background: #fff;
   border-radius: 1em;
