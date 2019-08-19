@@ -226,7 +226,9 @@
 	"kitsu news title": "Never miss anything",
 	"kitsu news one": "Thanks to the news feed, you will never miss any comments or new preview. Everyone in the studio will know what is happening. It will be easier to anticipate problems.",
 	"kitsu stats title": "Get the big picture",
-	"kitsu stats one": "With the statistic pages, you will have the overall progress of the production. Better, you will be able to provide precise information to your producers.",
+	"kitsu stats one": "With the statistic pages, you will have the overall progress of the production. Better, you will be able to provide your producers with precise reports.",
 	"kitsu schedule title": "Share a clear schedule",
-	"kitsu schedule one": "From the schedule module, you will be able to set the main duration and milestones of your project. It will allow you to build budgets more quickly."
+	"kitsu schedule one": "From the schedule module, you will be able to set the main duration and milestones of your project. It will allow you to build budgets more quickly.",
+	"kitsu playlist title": "Review your shots in a row",
+	"kitsu playlist one": "With Kitsu, you can build review playlists in a glimpse. You can comment all shots right from the playlist and compare them with a previous building step."
 }
