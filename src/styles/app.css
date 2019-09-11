@@ -17,6 +17,9 @@ section a {
 section a:hover {
   color: #67be4b;
 }
+section .intro-video {
+  max-width: 90%;
+}
 section .block {
   margin: 4em 0 0 0;
 }
@@ -140,6 +143,10 @@ header .navbar img {
 }
 header .navbar-lang-item.active {
   color: #000;
+}
+section .tutorial-links a {
+  margin-top: 1em;
+  margin-right: 1em;
 }
 section.introduction {
   padding-top: 5em;
@@ -465,6 +472,10 @@ footer img {
   .introduction .introduction-text {
     margin-bottom: 2em;
   }
+  .tutorial-links a {
+    margin-right: 0;
+    font-size: 0.8em;
+  }
   .block {
     flex-wrap: wrap;
   }
@@ -487,6 +498,9 @@ footer img {
   }
   .team-info .ppl-image {
     margin-bottom: 1em;
+  }
+  .content table {
+    font-size: 0.7em;
   }
   .community .description p {
     padding-left: 0;
