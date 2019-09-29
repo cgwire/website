@@ -16,22 +16,22 @@
         <a href="/en" class="flexrow-item navbar-lang-item">EN</a>
       </div>
       <div class="navbar-end">
-        <div class="navbar-item has-drodown is-hoverable {{#if_eq name "solution"}}active{{/if_eq}}">
+        <div class="navbar-item has-dropdown is-hoverable {{#if_eq name "solution"}}active{{/if_eq}}">
           <a class="navbar-link">
             <span class="navbar-item-title">
               {{__ 'header title solutions'}}
             </span>
           </a>
           <div class="navbar-dropdown">
-            <a 
-              class="navbar-item flexrow" 
+            <a
+              class="navbar-item flexrow"
               href="/{{ locale }}/kitsu.html"
             >
               <img class="flexrow-item icon" src="/images/kitsu.png">
               <span class="flexrow-item">{{__ 'header title kitsu'}}</span>
             </a>
-            <a 
-              class="navbar-item flexrow"  
+            <a
+              class="navbar-item flexrow"
               href="/{{ locale }}/api.html"
             >
               <img class="flexrow-item icon" src="/images/api.png">
@@ -41,26 +41,56 @@
               <img class="flexrow-item icon" src="/images/spreadsheets.png">
               <span class="flexrow-item">{{__ 'header title spreadsheets'}}</span>
             </a>
+            <a class="navbar-item flexrow" href="https://cg-jobs.com">
+              <img class="flexrow-item icon" src="/images/job-board.svg">
+              <span class="flexrow-item">Job Board</span>
+            </a>
           </div>
         </div>
 
-        <a 
-          class="navbar-item {{#if_eq name "pricing"}}active{{/if_eq}}" 
+        <div class="navbar-item has-dropdown is-hoverable {{#if_eq name "usecase"}}active{{/if_eq}}">
+          <a class="navbar-link">
+            <span class="navbar-item-title">
+              {{__ 'header title usecase'}}
+            </span>
+          </a>
+
+          <div class="navbar-dropdown">
+            <a
+              class="navbar-item flexrow"
+              href="/{{ locale }}/3d.html"
+            >
+              <span class="flexrow-item">{{__ 'header title short'}}</span>
+            </a>
+            <a
+              class="navbar-item flexrow"
+              href="/{{ locale }}/2d.html"
+            >
+              <span class="flexrow-item">{{__ 'header title tvshow'}}</span>
+            </a>
+            <!--a class="navbar-item flexrow" href="/{{ locale }}/vfx.html">
+              <span class="flexrow-item">{{__ 'header title featurefilm'}}</span>
+            </a-->
+            <a class="navbar-item flexrow" href="/{{ locale }}/schools.html">
+              <span class="flexrow-item">{{__ 'header title school'}}</span>
+            </a>
+          </div>
+        </div>
+
+        <a
+          class="navbar-item {{#if_eq name "pricing"}}active{{/if_eq}}"
           href="/{{ locale }}/pricing.html"
         >
           <span class="navbar-item-title">
             {{__ 'header title pricing'}}
           </span>
         </a>
-        <a 
+        <a
           class="navbar-item {{#if_eq name "community"}}active{{/if_eq}}"
           href="/{{ locale }}/community.html">
           <span class="navbar-item-title">
             {{__ 'header title community'}}
           </span>
-        </a>
-        <a class="navbar-item" href="https://medium.com/cgwire">
-          {{__ 'header title blog'}}
         </a>
         <a class="navbar-item signin" href="https://account.cg-wire.com/login">
           {{__ 'header sign in'}}

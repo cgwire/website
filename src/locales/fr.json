@@ -208,16 +208,9 @@
 	"pricing opensource details": "Kitsu est libre et open source, ce qui signifie qu'il peut être utilisé et modifié par vos équipes librement.",
 	"pricing opensource install": "Instructions d'installation",
 	"about support title": "Ils nous aident",
-	"pricing features tinyplus one": "4-10 utilisateurs",
-	"pricing features tinyplus two": "Projets Illimités",
-	"pricing features tinyplus three": "Jusqu'à 1To",
-	"pricing title tinyplus": "Mini+",
-	"kitsu schedule title": "Partagez un planning clair",
-	"kitsu schedule one": "Depuis le module de plannification, vous pourrez positionner des durées et des deadlines. Cela facilitera aussi les choses pour vos budgets.",
-	"kitsu news title": "Ne manquez plus rien",
-	"kitsu news one": "Avec le flux d'actualité, vous ne manquerez jamais aucun commentaire ou previz. Tout le monde dans le studio sait ce qu'il se passe. Résultat : vous réagissez plus vite et anticipez mieux les problèmes.",
-	"kitsu stats title": "Ayez une vue globale",
-	"kitsu stats one": "Avec la page de statistiques, you avez une vue complète de la production. Vous pourrez aussi transmettre rapidement des rapports précis à votre producteur.",
-	"kitsu playlist title": "Générez des bout à bout",
-	"kitsu playlist one": "Avec Kitsu, en un clin d'oeil vous créerez des playlists de revue. Vous pourrez commentez les shots directement depuis la playlist et les comparer avec l'étape de fabrication précédente."
+	"header title usecase": "header title usecase",
+	"header title short": "header title short",
+	"header title tvshow": "header title tvshow",
+	"header title featurefilm": "header title featurefilm",
+	"header title school": "header title school"
 }

@@ -221,16 +221,9 @@
 	"pricing opensource details": "Kitsu is free and open source, which means that it can be freely used and modified by your team on your own infrastructure.",
 	"pricing opensource install": "Installation instructions",
 	"about support title": "about support title",
-	"pricing features tinyplus one": "4-10 users",
-	"pricing features tinyplus two": "Unlimited projects",
-	"pricing features tinyplus three": "1TB",
-	"pricing title tinyplus": "Tiny+",
-	"kitsu schedule title": "kitsu schedule title",
-	"kitsu schedule one": "kitsu schedule one",
-	"kitsu news title": "kitsu news title",
-	"kitsu news one": "kitsu news one",
-	"kitsu stats title": "kitsu stats title",
-	"kitsu stats one": "kitsu stats one",
-	"kitsu playlist title": "kitsu playlist title",
-	"kitsu playlist one": "kitsu playlist one"
+	"header title usecase": "header title usecase",
+	"header title short": "header title short",
+	"header title tvshow": "header title tvshow",
+	"header title featurefilm": "header title featurefilm",
+	"header title school": "header title school"
 }
