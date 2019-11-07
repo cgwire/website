@@ -2,6 +2,7 @@
 metaTitle: schools title
 metaDescription: about explaination one
 permalink: false
+tabs: true
 
 locale:
 pathTo: .
@@ -9,96 +10,91 @@ pathTo: .
 
 {{> header }}
 
-  <section class="section content">
-    <h2 class="title has-text-centered">
-      {{__ 'schools title'}}
-    </h2>
-  </section>
-
-  <section class="section content flexrow use-case">
-    <div class="flexrow-item">
-      <h2 class="subtitle">
-        For Directors of Studies
-      </h2>
-      <p>  
-      Directors of studies follows the final student projects. They want to
-      know which project is going well.
-      </p>
-      <p>
-      Director of Studies will be able to know the status of a project in one
-      look and see if the assignments of the tasks are fair or not.  All the
-      project will have the same structure which makes the tracking easier.
-      </p>
-      <p>
-    </div>
-    <span 
-      class="flexrow-item"
-      style="width: 300px; height: 200px; background-color: grey;">
-    </span>
-
-  </section>
-
-  <section class="section content flexrow use-case">
-    <span 
-      class="flexrow-item"
-      style="width: 300px; height: 200px; background-color: grey;">
-    </span>
-
-    <div class="flexrow-item">
-      <h2 class="subtitle">
-        For teachers
-      </h2>
-      <p>
-        Teacher will focus on their speciality. They won’t miss a request 
-        for feedback or a new preview. They will be able to see which student
-        group require assistance.
-      </p>
-      <p>
-        Movie reviews will be easier thanks to the playlist module which allow
-        to compare previous versions or with previous building stage.
-      </p>
-    </div>
-  </section>
-
-  <section class="section content flexrow use-case">
-
-    <div class="flexrow-item">
-      <h2 class="subtitle">
-        For Students
-      </h2>
-
-      <p>
-        Students will have a dedicated place to work together, to
-        share all the information and works. It will give you a frame to 
-        be properly organized.
-      </p>
-      <p>
-        Students receive information directly from their teachers.
-        Via the notifications, you will know when teachers provide a
-        feedback.
-      </p>
-      <p>
-        Students learn to use a production tracker that runs in real studios.
-        They will acquire early a good sense of professional communication
-        and priorities.
-      </p>
-      <p>
-    </div>
-    <span 
-      class="flexrow-item"
-      style="width: 300px; height: 200px; background-color: grey;">
-    </span>
-  </section>
-  
   <section class="section content use-case">
-    <h2 class="subtitle has-text-centered">
-      {{__ 'kitsu contact introduction'}}
+    <h2>
+      <span class="use-case-subtitle">{{__ 'schools subtitle'}}</span>
+      <span class="use-case-title">{{__ 'schools title'}}</span>
     </h2>
-    <p class="has-text-centered">
+    <div class="js-tabs" data-existing-hx="h3" data-tabs-prefix-class="example-tabs">
+      <ul class="js-tablist">
+        <li class="js-tablist__item">
+          <a href="#students" class="js-tablist__link"><img src="/images/avatars/avatar-4.svg" alt="">{{__ 'schools people title 1'}}</a>
+        </li>
+        <li class="js-tablist__item">
+          <a href="#teachers" class="js-tablist__link"><img src="/images/avatars/avatar-10.svg" alt="">{{__ 'schools people title 2'}}</a>
+        </li>
+        <li class="js-tablist__item">
+          <a href="#directors" class="js-tablist__link"><img src="/images/avatars/avatar-7.svg" alt="">{{__ 'schools people title 3'}}</a>
+        </li>
+      </ul>
+     <div id="students" class="js-tabcontent">
+      <h3>{{__ 'schools people title 1'}}</h3>
+      <p>
+        {{__ 'schools people desc 1-1'}}
+      </p>
+      <p>
+        {{__ 'schools people desc 1-2'}}
+      </p>
+      <p>
+        {{__ 'schools people desc 1-3'}}
+      </p>
+     </div>
+     <div id="teachers" class="js-tabcontent">
+      <h3>{{__ 'schools people title 2'}}</h3>
+      <p>
+        {{__ 'schools people desc 2-1'}}
+      </p>
+      <p>
+        {{__ 'schools people desc 2-2'}}
+      </p>
+     </div>
+     <div id="directors" class="js-tabcontent">
+      <h3>{{__ 'schools people title 3'}}</h3>
+      <p>
+        {{__ 'schools people desc 3-1'}}
+      </p>
+      <p>
+        {{__ 'schools people desc 3-2'}}
+      </p>
+     </div>
+    </div>
+  </section>
+
+  <div class="quote">
+    <section>
+      <blockquote class="quote-text">
+        <p>{{__ 'schools quote'}}</p>
+        <footer class="quote-author"><img class="quote-avatar" src="https://fakeimg.pl/50x50/?text=:-)"> {{__ 'schools quote author'}}</footer>
+      </blockquote>
+    </section>
+  </div>
+
+  <section class="section">
+    <h2 class="title">{{__ 'schools reasons title'}}</h2>
+    <ul class="check-list">
+      <li>{{__ 'schools reasons item 1'}}</li>
+      <li>{{__ 'schools reasons item 2'}}</li>
+      <li>{{__ 'schools reasons item 3'}}</li>
+    </ul>
+    <p>
+      <a class="button button--alt is-large" href="/contact.html">
+        {{__ 'schools button info'}}
+      </a>
       <a class="button is-large" href="https://account.cg-wire.com/signup">
-        {{__ 'main plans cta'}}
+        {{__ 'schools button demo'}}
       </a>
     </p>
+  </section>
+
+  <section class="section">
+    <ul class="customers">
+      <li class="customers-item"><img src="/images/logo-ecole_nouvelles_images-invert.png" alt="École des nouvelles images"></li>
+      <li class="customers-item"><img src="/images/logo-lisaa-invert.svg" alt="LISAA"></li>
+      <li class="customers-item"><img src="/images/logo-esra-invert.png" alt="ESRA"></li>
+      <li class="customers-item"><img src="/images/logo-artfx.png" alt="ArtFX"></li>
+      <li class="customers-item"><img src="/images/logo-bellecour-invert.png" alt="Bellecour"></li>
+      <li class="customers-item"><img src="/images/logo-pole3d.png" alt="Pôle 3D"></li>
+    </ul>
   </section>
 
 {{> footer }}

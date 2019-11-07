@@ -1,5 +1,13 @@
-darkgrey = #1F1F28 
+lightgrey = #F5F5F5
+darkgrey = #1F1F28
 cgwiregreen = #00B242
+rainbow-1 = #FF6BC2
+rainbow-2 = #C149C4
+rainbow-3 = #8A53D1
+rainbow-4 = #92D277
+rainbow-5 = #2BD1B8
+rainbow-6 = cgwiregreen
+
 
 html
 body
@@ -27,7 +35,7 @@ section
 
     .block
         margin 4em 0 0 0
-        
+
         h3
             margin-top 1em
 
@@ -75,7 +83,7 @@ h2.subtitle.tagline
 
 p.tagline-explaination
     font-size 1.1em
-    color #1F1F28 
+    color #1F1F28
     line-height 1.5em
     margin-bottom 2em
 
@@ -92,6 +100,17 @@ p.tagline-explaination
     background-color #67BE4B
     border 1px solid #67BE4B
 
+.button--alt
+.button--alt:focus
+    color cgwiregreen
+    background-color white
+    border 1px solid cgwiregreen
+
+.button--alt:hover
+    color cgwiregreen
+    background-color alpha(cgwiregreen, .1)
+    border-color cgwiregreen
+
 .button.is-large
     font-size 1.2em
 
@@ -101,13 +120,13 @@ p.tagline-explaination
 
 // Pages and partials
 
-header 
+header
     .navbar
         max-width 950px
         margin auto
         font-size 1em
 
-    a.navbar-lang-item 
+    a.navbar-lang-item
         font-size 0.8em
         margin 0.1em
         width 30px
@@ -133,7 +152,7 @@ header
         background transparent
         color darkgrey
 
-    .navbar-item.active 
+    .navbar-item.active
         span.navbar-item-title
             box-sizing border-box
             box-shadow inset 0 -3px 0 0 cgwiregreen
@@ -174,7 +193,7 @@ section
         h2.main-subtitle
             font-size 1.1em
             font-weight 400
-            color #1F1F28 
+            color #1F1F28
             line-height 1.5em
             margin-bottom 2em
 
@@ -184,7 +203,7 @@ section
             border-radius 2em
             padding 1.3em
 
-    &.clients 
+    &.clients
         img
             width 150px
 
@@ -214,7 +233,7 @@ section
         padding-bottom 1em
 
     .landing-text
-        p 
+        p
             max-width 300px
             margin auto
 
@@ -234,11 +253,11 @@ section
 
     .level-item
         width 50%
-    
+
     .description
         p
             padding-top 0
-        
+
     .level.block
         margin 0.5em 0
 
@@ -324,7 +343,7 @@ section.pricing
             list-style-type none
 
         li
-            padding 0.5em 0 
+            padding 0.5em 0
             font-size 0.9em
             color #888
             border-bottom 1px solid #EEE
@@ -363,10 +382,138 @@ section.pricing
     font-style italic
 
 
-footer
+.use-case-title
+    display block
+    font-weight 900
+    font-size 2em
+    margin-bottom 3.5rem
+.use-case .subtitle
+    display block
+    margin-bottom .9rem
+    font-size .65em
+    letter-spacing .22em
+    text-transform uppercase
+    color #54656F
+
+.js-tabs
+    display flex
+    align-items flex-start
+    .js-tablist
+        box-sizing border-box
+        flex 0 0 33%
+        list-style none
+        padding 0 1em 0 0
+        margin 0
+    .js-tablist__link
+        display flex
+        align-items center
+        justify-content flex-start
+        padding .5rem 1rem
+        background-color alpha(cgwiregreen, .1)
+        border-radius .55rem
+        opacity .1
+        color darkgrey
+        font-size 1.1em
+        font-weight bold
+
+        &[aria-selected=true]
+            opacity 1
+
+        img
+            margin-right 1.28rem
+            width 2.8rem
+            flex 0 0 auto
+
+    .js-tabcontent
+        box-sizing border-box
+        flex: 1 1 66%
+        background-color lightgrey
+        border-radius .55rem
+        padding 2.22rem
+
+.quote
+    background-color lightgrey
+    padding 6.5rem
+
+.quote-text
+    border-left 8px solid cgwiregreen
+    padding-left 2.22rem
+    line-height 1.3
+    font-size 2em
+    font-weight bold
+    color #54656F
+
+    p:before
+        content "“"
+
+    p:after
+        content "”"
+
+.quote-author
+    display flex
+    align-items center
+    margin-top .8rem
+    font-size 1.45rem
+    color cgwiregreen
+    font-weight normal
+
+.quote-avatar
+    border-radius 50%
+    margin-right .8rem
+    flex 0 0 auto
+
+.check-list
+    list-style none
+    margin 0 0 2.5rem
+    padding 0
+    font-size 1.22em
+    line-height 1.8
+
+    li::before
+        content ""
+        display inline-block
+        width 1.25rem
+        height 1rem
+        margin-right .8rem
+        background url('/images/check.svg') 0 0 / contain no-repeat
+
+.customers
+    list-style none
+    margin 0
+    padding 0
+    display flex
+    align-items flex-start
+    flex-wrap wrap
+
+.customers-item
+    flex 0 0 auto
+    width 9.95rem
+    height 9.95rem
+    margin 0
+    padding 1rem
+    display flex
+    align-items center
+    justify-content center
+    color white
+
+    &:nth-child(1)
+        background-color rainbow-1
+    &:nth-child(2)
+        background-color rainbow-2
+    &:nth-child(3)
+        background-color rainbow-3
+    &:nth-child(4)
+        background-color rainbow-4
+    &:nth-child(5)
+        background-color rainbow-5
+    &:nth-child(6)
+        background-color rainbow-6
+
+.footer
     background cgwiregreen
     color white
     font-size 1.1em
+    padding 0
 
     a
         color white
@@ -379,7 +526,7 @@ footer
         padding-top 2em
         padding-bottom 2em
         max-width: 920px
-        margin: 0 auto 
+        margin: 0 auto
 
     .address
         color #999
@@ -444,6 +591,10 @@ footer
     .default
         border 2px solid white
 
+.js-tabs
+    [aria-hidden]
+        display none
+
 // Responsive
 
 @media(max-width: 800px)
@@ -477,8 +628,8 @@ footer
         padding 1em 0
         font-size 0.7em
 
-    header 
-        a.navbar-lang-item 
+    header
+        a.navbar-lang-item
             text-align center
 
     .landing-block
@@ -533,3 +684,12 @@ footer
             p
                 padding-left 0
                 padding-right 0
+
+    .js-tabs
+        flex-direction column
+
+    .js-tablist
+        flex-basis 100%
+        display flex
+        flex-wrap wrap
+        padding 0

@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="css/bulma.min.css" media="all">
     <link rel="stylesheet" href="styles/app.css" media="all">
     <!--link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Lato"--> 
+        href="https://fonts.googleapis.com/css?family=Lato"-->
   </head>
 
   <body>
@@ -78,6 +78,10 @@
   ]
 }
     </script>
+
+    {{#if tabs}}
+    <script src="js/van11y-accessible-tab-panel-aria.min.js"></script>
+    {{/if}}
 
     <script>
     // Javascript required by Bulma to manage the top menu on mobile.
