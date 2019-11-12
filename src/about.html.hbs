@@ -22,24 +22,37 @@ pathTo: .
     </p>
   </section>
 
-  <section class="section content">
-  <h2 class="subtitle">
-    {{__ 'about values title'}}
-  </h2>
+  <div class="block-colored">
+    <section class="section">
+      <h2>
+        <span class="section-title has-text-centered">{{__ 'about values title'}}</span>
+      </h2>
+      <ul class="section-list tile is-ancestor">
+        <li class="section-item tile is-4 is-vertical">
+          <div class="section-item-img">
+            <img src="/images/illustration-simplicity.svg" alt="">
+          </div>
+          <h3 class="section-item-title">{{__ 'about values title one'}}</h3>
+          <p class="section-item-text">{{__ 'about values text one'}}</p>
+        </li>
+        <li class="section-item tile is-4 is-vertical">
+          <div class="section-item-img">
+            <img src="/images/illustration-handshake.svg" alt="">
+          </div>
+          <h3 class="section-item-title">{{__ 'about values title two'}}</h3>
+          <p class="section-item-text">{{__ 'about values text two'}}</p>
+        </li>
+        <li class="section-item tile is-4 is-vertical">
+          <div class="section-item-img">
+            <img src="/images/illustration-craftmanship.svg" alt="">
+          </div>
+          <h3 class="section-item-title">{{__ 'about values title three'}}</h3>
+          <p class="section-item-text">{{__ 'about values text three'}}</p>
+        </li>
+      </ul>
+    </section>
+  </div>
 
-  <ul>
-    <li>
-      {{__ 'about values one'}}
-    </li>
-    <li>
-      {{__ 'about values two'}}
-    </li>
-    <li>
-      {{__ 'about values three'}}
-    </li>
-  </ul>
-  </section>
- 
   <section class="section content">
     <h2 class="subtitle">
       {{__ 'about team title'}}
