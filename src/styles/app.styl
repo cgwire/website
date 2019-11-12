@@ -19,6 +19,9 @@ body
 .hidden
     display none
 
+.block-colored
+    background-color lightgrey
+
 section
     max-width 950px
     margin auto
@@ -46,6 +49,48 @@ section
             border-radius 0.5em
             border 1px solid #EEE
             box-shadow 0 0 6px 3px #F6F6F6
+
+.section-list
+    list-style none
+    padding 0
+    margin 0
+
+.section-item
+    padding 1.5rem
+    text-align center
+
+.section-item-img
+    display flex
+    align-items center
+    justify-content center
+    position relative
+    min-height 10rem
+    margin-bottom 1rem
+
+    &:before
+        position absolute
+        z-index 1
+        top 50%
+        left 50%
+        transform translateX(-50%) translateY(-50%)
+        content ""
+        display block
+        width 10rem
+        height 10rem
+        background-color white
+        border-radius 50%
+
+    img
+        position relative
+        z-index 1
+
+.section-item-title
+    margin-bottom .5rem
+    font-size 1.5rem
+    font-weight bold
+
+.section-item-text
+    font-size 1.1rem
 
 .mt2
     margin-top 2em
