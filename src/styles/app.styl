@@ -1,4 +1,5 @@
 lightgrey = #F5F5F5
+mediumgrey = #999999
 darkgrey = #1F1F28
 cgwiregreen = #00B242
 rainbow-1 = #FF6BC2
@@ -106,10 +107,6 @@ section
     flex 1
     align-items center
     margin-right 2em
-
-.team-info
-    .ppl-image
-        max-width 150px
 
 h2.subtitle
     margin-top 1em
@@ -309,8 +306,27 @@ section
         color cgwiregreen
 
 .ppl
-    width 150px
-    border-radius 50%
+    padding 1.5rem
+
+.ppl-image
+    margin 0 auto
+    max-width 150px
+    img
+        width 150px
+        border-radius 50%
+
+.ppl-id
+    margin 1.3rem 0 1.5rem
+    text-align center
+
+    .ppl-id-name
+        margin-bottom 0
+        font-size 1.5rem
+        font-weight bold
+
+    .ppl-id-role
+        font-size 1.1rem
+        color: mediumgrey
 
 .ppl-description
     flex 1
@@ -717,7 +733,7 @@ section.pricing
         .level-item
             width 100%
 
-    .team-info
+    .ppl
         flex-direction column
 
         .flexrow-item
