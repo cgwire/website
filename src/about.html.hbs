@@ -10,16 +10,23 @@ pathTo: .
 {{> header }}
 
   <section class="section content">
-    <h2>
-      <span class="section-subtitle">{{__ 'shorts subtitle'}}</span>
-      <span class="section-title">{{__ 'about tagline'}}</span>
-    </h2>
-    <p>
-      {{__ 'about explaination one'}}
-    </p>
-    <p>
-      {{__ 'about explaination two'}}
-    </p>
+    <div class="tile">
+      <div class="tile is-6 is-child">
+        <h2>
+          <span class="section-subtitle">{{__ 'shorts subtitle'}}</span>
+          <span class="section-title">{{__ 'about tagline'}}</span>
+        </h2>
+        <p>
+          {{__ 'about explaination one'}}
+        </p>
+        <p>
+          {{__ 'about explaination two'}}
+        </p>
+      </div>
+      <div class="tile is-6 is-hidden-mobile pl1">
+        <img src="/images/story.svg" alt="" />
+      </div>
+    </div>
   </section>
 
   <div class="block-colored">
