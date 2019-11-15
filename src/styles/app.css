@@ -7,6 +7,9 @@ body {
 .hidden {
   display: none;
 }
+.block-colored {
+  background-color: #f5f5f5;
+}
 section {
   max-width: 950px;
   margin: auto;
@@ -35,8 +38,53 @@ section .block .screenshot {
   border: 1px solid #eee;
   box-shadow: 0 0 6px 3px #f6f6f6;
 }
+.section-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.section-item {
+  padding: 1.5rem;
+  text-align: center;
+}
+.section-item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 10rem;
+  margin-bottom: 1rem;
+}
+.section-item-img:before {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.section-item-img img {
+  position: relative;
+  z-index: 1;
+}
+.section-item-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.section-item-text {
+  font-size: 1.1rem;
+}
+.pl1 {
+  padding-left: 1rem;
+}
 .mt2 {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 .filler {
   margin-bottom: 14em;
@@ -49,9 +97,6 @@ section .block .screenshot {
   flex: 1;
   align-items: center;
   margin-right: 2em;
-}
-.team-info .ppl-image {
-  max-width: 150px;
 }
 h2.subtitle {
   margin-top: 1em;
@@ -239,11 +284,37 @@ section.use-case h2.subtitle {
   color: #00b242;
 }
 .ppl {
+  padding: 1.5rem;
+}
+.ppl-image {
+  margin: 0 auto;
+  max-width: 150px;
+}
+.ppl-image img {
   width: 150px;
   border-radius: 50%;
 }
+.ppl-id {
+  margin: 1.3rem 0 1.5rem;
+  text-align: center;
+}
+.ppl-id .ppl-id-name {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.ppl-id .ppl-id-role {
+  font-size: 1.1rem;
+  color: #999;
+}
 .ppl-description {
   flex: 1;
+}
+.advisors .ppl-id .ppl-id-name {
+  font-size: 1em;
+}
+.advisors .ppl-id .ppl-id-role {
+  font-size: 1em;
 }
 section.partners {
   padding: 0;
@@ -354,16 +425,16 @@ section.pricing .frequence.active {
   color: #999;
   font-style: italic;
 }
-.use-case-title {
+.section-title {
   display: block;
   font-weight: 900;
-  font-size: 2em;
-  margin-bottom: 3.5rem;
+  font-size: 3.33rem;
+  margin-bottom: 2rem;
 }
-.use-case .subtitle {
+.section-subtitle {
   display: block;
   margin-bottom: 0.9rem;
-  font-size: 0.65em;
+  font-size: 1.11rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: #54656f;
@@ -371,6 +442,7 @@ section.pricing .frequence.active {
 .js-tabs {
   display: flex;
   align-items: flex-start;
+  margin-top: 3.5rem;
 }
 .js-tabs .js-tablist {
   box-sizing: border-box;
@@ -476,23 +548,50 @@ section.pricing .frequence.active {
   justify-content: center;
   color: #fff;
 }
-.customers-item:nth-child(6n+1) {
+.customers-item:nth-child(14n+1) {
   background-color: #ff6bc2;
 }
-.customers-item:nth-child(6n+2) {
+.customers-item:nth-child(14n+2) {
   background-color: #c149c4;
 }
-.customers-item:nth-child(6n+3) {
+.customers-item:nth-child(14n+3) {
   background-color: #8a53d1;
 }
-.customers-item:nth-child(6n+4) {
+.customers-item:nth-child(14n+4) {
   background-color: #92d277;
 }
-.customers-item:nth-child(6n+5) {
+.customers-item:nth-child(14n+5) {
   background-color: #2bd1b8;
 }
-.customers-item:nth-child(6n+6) {
-  background-color: #00b242;
+.customers-item:nth-child(14n+6) {
+  background-color: #24c15e;
+}
+.customers-item:nth-child(14n+7) {
+  background-color: #257cde;
+}
+.customers-item:nth-child(14n+8) {
+  background-color: #4c4ba2;
+}
+.customers-item:nth-child(14n+9) {
+  background-color: #ffab0d;
+}
+.customers-item:nth-child(14n+10) {
+  background-color: #25b1f3;
+}
+.customers-item:nth-child(14n+11) {
+  background-color: #ff700d;
+}
+.customers-item:nth-child(14n+12) {
+  background-color: #9bbe27;
+}
+.customers-item:nth-child(14n+13) {
+  background-color: #ff195e;
+}
+.customers-item:nth-child(14n+14) {
+  background-color: #ce2358;
+}
+.customers--spread .customers-item {
+  flex: 1 1 9.95rem;
 }
 .footer {
   background: #00b242;
@@ -651,13 +750,13 @@ section.pricing .frequence.active {
   .block .level-item {
     width: 100%;
   }
-  .team-info {
+  .ppl {
     flex-direction: column;
   }
-  .team-info .flexrow-item {
+  .ppl .flexrow-item {
     margin-right: 0;
   }
-  .team-info .ppl-image {
+  .ppl .ppl-image {
     margin-bottom: 1em;
   }
   .content table {
