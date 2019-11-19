@@ -2,6 +2,7 @@
 metaTitle: kitsu title
 metaDescription: kitsu explaination one
 permalink: false
+modal: true
 
 name: solution
 locale:
@@ -10,42 +11,89 @@ pathTo: .
 
 {{> header }}
 
-  <section class="section wide content">
-    <div class="has-text-centered">
-      <img src="images/kitsu.png" />
+  <section class="section">
+    <div class="tile">
+      <div class="tile is-6 is-child content">
+        <h2>
+          <span class="section-subtitle">{{__ 'kitsu subtitle'}}</span>
+          <span class="section-title">{{__ 'kitsu tagline'}}</span>
+        </h2>
+        <p>
+          {{__ 'kitsu explaination one'}}
+        </p>
+        <p>
+          <a href="#kitsu-video" class="toggleModal button button--with-icon is-large">
+            <img src="/images/play.svg" alt=""><span>{{__ 'kitsu watch cta'}}</span>
+          </a>
+        </p>
+      </div>
+      <div class="tile is-6 is-hidden-mobile pl1">
+        <img src="/images/productivity.svg" alt="" />
+      </div>
     </div>
-    <h2 class="subtitle">
-      {{__ 'kitsu tagline'}}
-    </h2>
-    <p class="has-text-centered">
-      <iframe 
-        class="intro-video"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/Ss0Ta5FjjGM" 
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen
-      ></iframe>
-    </p>
-    <p>
-      {{__ 'kitsu explaination one'}}
-    </p>
+    <div class="tile mt2 choice-wrapper">
+      <div class="tile is-6 is-vertical has-text-centered pr0-5">
+        <div class="choice">
+          <h2 class="title">{{__ 'kitsu choice manager title'}}</h2>
+          <div>
+            <ul class="check-list">
+              <li>{{__ 'kitsu choice manager item 1'}}</li>
+              <li>{{__ 'kitsu choice manager item 2'}}</li>
+            </ul>
+            <div>
+              <a href="https://www.youtube.com/watch?v=_rTXdnw7-bg" class="button button--alt is-large is-multiline">
+                {{__ 'kitsu video tutorial1 '}}
+              </a>
+            </div>
+            <div>
+              <a href="https://kitsu.cg-wire.com" class="button button--transparent is-large">
+                {{__ 'kitsu title documentation'}}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-6 is-vertical has-text-centered pl0-5">
+        <div class="choice">
+          <h2 class="title">{{__ 'kitsu choice artists title'}}</h2>
+          <div>
+            <ul class="check-list">
+              <li>{{__ 'kitsu choice artists item 1'}}</li>
+              <li>{{__ 'kitsu choice artists item 2'}}</li>
+            </ul>
+            <div>
+              <a href="https://www.youtube.com/watch?v=RBpO_GVRBtw" class="button button--alt is-large">
+                {{__ 'kitsu video tutorial2 '}}
+              </a>
+            </div>
+            <div>
+              <a href="https://kitsu.cg-wire.com" class="button button--transparent is-large">
+                {{__ 'kitsu title documentation'}}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="has-text-centered tutorial-links">
-      <a href="https://www.youtube.com/watch?v=_rTXdnw7-bg" class="button">
-        {{__ 'kitsu video tutorial1 '}}
-      </a>
-      <a href="https://www.youtube.com/watch?v=RBpO_GVRBtw" class="button">
-        {{__ 'kitsu video tutorial2 '}}
-      </a>
+  <div class="modal" id="kitsu-video">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <p class="image is-16by9">
+        <iframe
+          class="intro-video"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/Ss0Ta5FjjGM"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </p>
     </div>
-
-    <div class="has-text-centered mt2">
-      <a href="https://kitsu.cg-wire.com" class="">
-        {{__ 'kitsu title documentation'}}
-      </a>
-    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
 
     <div class="block">
       <div>

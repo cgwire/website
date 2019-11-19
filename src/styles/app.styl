@@ -2,6 +2,7 @@ lightgrey = #F5F5F5
 mediumgrey = #999999
 darkgrey = #1F1F28
 cgwiregreen = #00B242
+cgwiregreen-alt = #67BE4B
 rainbow-1 = #FF6BC2
 rainbow-2 = #C149C4
 rainbow-3 = #8A53D1
@@ -29,18 +30,17 @@ body
 .hidden
     display none
 
-.block-colored
-    background-color lightgrey
-
-section
-    max-width 950px
-    margin auto
-
+body
     a
-        color #00B242
+        color cgwiregreen
 
     a:hover
-        color #67BE4B
+        color cgwiregreen-alt
+
+.section
+    max-width calc(960px + 1.5rem * 2)
+    margin auto
+
 
     .intro-video
         max-width 90%
@@ -102,6 +102,15 @@ section
 .section-item-text
     font-size 1.1rem
 
+.pr0-5
+    padding-right .5rem
+
+.pr1
+    padding-right 1rem
+
+.pl0-5
+    padding-left .5rem
+
 .pl1
     padding-left 1rem
 
@@ -150,8 +159,8 @@ p.tagline-explaination
 
 .button:hover
     color white
-    background-color #67BE4B
-    border 1px solid #67BE4B
+    background-color cgwiregreen-alt
+    border 1px solid cgwiregreen-alt
 
 .button--alt
 .button--alt:focus
@@ -164,18 +173,51 @@ p.tagline-explaination
     background-color alpha(cgwiregreen, .1)
     border-color cgwiregreen
 
+.button--transparent
+.button--transparent:focus
+    color cgwiregreen
+    background-color transparent
+    border 1px solid transparent
+
+.button--transparent:hover
+    color cgwiregreen-alt
+    background-color transparent
+    border-color transparent
+
+.button--with-icon
+    display inline-flex
+    justify-content space-between
+    img
+        margin-right .5rem
+
 .button.is-large
     font-size 1.2em
 
-.input:focus
-    border 1px solid #00B242
+.button.is-multiline
+    white-space normal
+    padding .5em 1.2em
+    height auto
 
+.input:focus
+    border 1px solid cgwiregreen-alt
+
+.choice-wrapper
+    align-items stretch
+
+.choice
+    display flex
+    flex-direction column
+    justify-content space-between
+    height 100%
+    border 1px solid cgwiregreen
+    border-radius 1.11rem
+    padding 2.4rem 1.2rem
 
 // Pages and partials
 
 header
     .navbar
-        max-width 950px
+        max-width 960px
         margin auto
         font-size 1em
 
@@ -186,7 +228,7 @@ header
         color #BBB
 
     .navbar-link:after
-        border-color #00B242
+        border-color cgwiregreen-alt
 
     .navbar-link
         margin-left 0
@@ -436,9 +478,9 @@ section.pricing
         padding 1em
 
         .button.is-outlined
-            border 1px solid #00B242
+            border 1px solid cgwiregreen-alt
             background white
-            color #00B242
+            color cgwiregreen-alt
             width 100%
             transition transform 0.3s ease
 
@@ -447,7 +489,7 @@ section.pricing
 
 .pricing-emphasize
     transform: scale(1.05)
-    border 1px solid #00B242
+    border 1px solid cgwiregreen-alt
 
 .school-details
     box-shadow 0 4px 16px rgba(0, 50, 0, 0.2)
@@ -613,6 +655,31 @@ section.pricing
 .customers--spread
     .customers-item
         flex 1 1 9.95rem
+
+.trial
+    position relative
+
+    &:after
+        content ''
+        position absolute
+        bottom 0
+        left 0
+        right 0
+        height 7.2%
+        background-color cgwiregreen
+        z-index 1
+
+.trial-content
+    position relative
+    bottom 0
+    z-index 2
+    background transparent url('/images/illustration-free-trial.svg') bottom center / contain no-repeat
+
+.modal
+    iframe
+        position absolute
+        top 0
+        left 0
 
 .footer
     background cgwiregreen

@@ -81,6 +81,33 @@
     {{#if tabs}}
     <script src="js/van11y-accessible-tab-panel-aria.min.js"></script>
     {{/if}}
+    {{#if modal}}
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var modalTogglers = Array.prototype.slice.call(document.querySelectorAll('.toggleModal'), 0);
+      var modalClosers = Array.prototype.slice.call(document.querySelectorAll('.modal-close'), 0);
+      console.log(modalClosers);
+      if (modalTogglers.length > 0) {
+        modalTogglers.forEach(function (el) {
+          el.addEventListener('click', function () {
+
+            var target = el.getAttribute("href").substr(1);
+            var targetEl = document.getElementById(target);
+
+            targetEl.classList.toggle('is-active');
+          });
+        });
+      }
+      if (modalClosers.length > 0) {
+        modalClosers.forEach(function (el) {
+          el.addEventListener('click', function () {
+            this.parentNode.classList.remove('is-active');
+          });
+        });
+      }
+    });
+    </script>
+    {{/if}}
 
     <script>
     // Javascript required by Bulma to manage the top menu on mobile.
