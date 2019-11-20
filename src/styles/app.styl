@@ -245,6 +245,13 @@ p.tagline-explaination
 .choice-wrapper
     align-items stretch
 
+.choice-tile
+    padding-right .5rem
+
+    & + &
+        padding-right 0
+        padding-left .5rem
+
 .choice
     display flex
     flex-direction column
@@ -722,6 +729,16 @@ section.pricing
     z-index 2
     background transparent url('/images/illustration-free-trial.svg') bottom center / contain no-repeat
 
+.content-image
+    padding-left 2rem
+
+.content-reverse
+    flex-direction row-reverse
+
+    .content-image
+        padding-left 0
+        padding-right 2rem
+
 .modal
     iframe
         position absolute
@@ -925,3 +942,14 @@ section.pricing
 
     .trial-content
         background none
+
+    .choice-tile
+        padding 0 0 1rem 0
+
+        & + &
+            padding 0 0 1rem 0
+
+    .content-image
+    .content-reverse .content-image
+        padding 2rem 0 0 0
+

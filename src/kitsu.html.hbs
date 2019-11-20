@@ -32,7 +32,7 @@ pathTo: .
       </div>
     </div>
     <div class="tile mt2 choice-wrapper">
-      <div class="tile is-6 is-vertical has-text-centered pr0-5">
+      <div class="tile is-6 is-vertical has-text-centered choice-tile">
         <div class="choice">
           <h2 class="title">{{__ 'kitsu choice manager title'}}</h2>
           <div>
@@ -53,7 +53,7 @@ pathTo: .
           </div>
         </div>
       </div>
-      <div class="tile is-6 is-vertical has-text-centered pl0-5">
+      <div class="tile is-6 is-vertical has-text-centered choice-tile">
         <div class="choice">
           <h2 class="title">{{__ 'kitsu choice artists title'}}</h2>
           <div>
@@ -62,7 +62,7 @@ pathTo: .
               <li>{{__ 'kitsu choice artists item 2'}}</li>
             </ul>
             <div>
-              <a href="https://www.youtube.com/watch?v=RBpO_GVRBtw" class="button button--alt is-large">
+              <a href="https://www.youtube.com/watch?v=RBpO_GVRBtw" class="button button--alt is-large is-multiline">
                 {{__ 'kitsu video tutorial2 '}}
               </a>
             </div>
@@ -112,7 +112,7 @@ pathTo: .
             </a>
           </p>
         </div>
-        <div class="tile is-7 is-child pl1">
+        <div class="tile is-7 is-child content-image">
           <img class="screenshot" src="/images/kitsu-shots.png" />
         </div>
       </div>
@@ -120,10 +120,7 @@ pathTo: .
   </div>
 
   <section class="section">
-    <div class="tile flex-aic">
-      <div class="tile is-7 is-child pr1">
-        <img class="screenshot" src="/images/kitsu-annotations.png" />
-      </div>
+    <div class="tile flex-aic content-reverse">
       <div class="tile is-5 is-child content">
         <h2>
           <span class="section-subtitle">{{__ 'kitsu preview subtitle'}}</span>
@@ -137,6 +134,9 @@ pathTo: .
             {{__ 'kitsu preview cta'}}
           </a>
         </p>
+      </div>
+      <div class="tile is-7 is-child content-image">
+        <img class="screenshot" src="/images/kitsu-annotations.png" />
       </div>
     </div>
   </section>
@@ -158,7 +158,7 @@ pathTo: .
             </a>
           </p>
         </div>
-        <div class="tile is-7 is-child pl1">
+        <div class="tile is-7 is-child content-image">
           <img class="screenshot" src="/images/kitsu-schedule.png" />
         </div>
       </div>
@@ -166,10 +166,7 @@ pathTo: .
   </div>
 
   <section class="section">
-    <div class="tile flex-aic">
-      <div class="tile is-7 is-child pr1">
-        <img class="screenshot" src="/images/kitsu-news.png" />
-      </div>
+    <div class="tile flex-aic content-reverse">
       <div class="tile is-5 is-child content">
         <h2>
           <span class="section-subtitle">{{__ 'kitsu news subtitle'}}</span>
@@ -184,51 +181,8 @@ pathTo: .
           </a>
         </p>
       </div>
-    </div>
-  </section>
-
-  <div class="block-colored">
-    <section class="section">
-      <div class="tile flex-aic">
-        <div class="tile is-5 is-child content">
-          <h2>
-            <span class="section-subtitle">{{__ 'kitsu todos subtitle'}}</span>
-            <span class="section-title">{{__ 'kitsu todos title'}}</span>
-          </h2>
-          <p>
-            {{__ 'kitsu todos text one'}}
-          </p>
-          <p>
-            <a href="#" class="button button--alt is-large">
-              {{__ 'kitsu todos cta'}}
-            </a>
-          </p>
-        </div>
-        <div class="tile is-7 is-child pl1">
-          <img class="screenshot" src="/images/kitsu-todos.png" />
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <section class="section">
-    <div class="tile flex-aic">
-      <div class="tile is-7 is-child pr1">
-        <img class="screenshot" src="/images/kitsu-playlist.png" />
-      </div>
-      <div class="tile is-5 is-child content">
-        <h2>
-          <span class="section-subtitle">{{__ 'kitsu playlist subtitle'}}</span>
-          <span class="section-title">{{__ 'kitsu playlist title'}}</span>
-        </h2>
-        <p>
-          {{__ 'kitsu playlist text one'}}
-        </p>
-        <p>
-          <a href="#" class="button button--alt is-large">
-            {{__ 'kitsu playlist cta'}}
-          </a>
-        </p>
+      <div class="tile is-7 is-child content-image">
+        <img class="screenshot" src="/images/kitsu-news.png" />
       </div>
     </div>
   </section>
@@ -250,7 +204,7 @@ pathTo: .
             </a>
           </p>
         </div>
-        <div class="tile is-7 is-child pl1">
+        <div class="tile is-7 is-child content-image">
           <img class="screenshot" src="/images/kitsu-todos.png" />
         </div>
       </div>
@@ -258,10 +212,7 @@ pathTo: .
   </div>
 
   <section class="section">
-    <div class="tile flex-aic">
-      <div class="tile is-7 is-child pr1">
-        <img class="screenshot" src="/images/kitsu-playlist.png" />
-      </div>
+    <div class="tile flex-aic content-reverse">
       <div class="tile is-5 is-child content">
         <h2>
           <span class="section-subtitle">{{__ 'kitsu playlist subtitle'}}</span>
@@ -275,6 +226,55 @@ pathTo: .
             {{__ 'kitsu playlist cta'}}
           </a>
         </p>
+      </div>
+      <div class="tile is-7 is-child content-image">
+        <img class="screenshot" src="/images/kitsu-playlist.png" />
+      </div>
+    </div>
+  </section>
+
+  <div class="block-colored">
+    <section class="section">
+      <div class="tile flex-aic">
+        <div class="tile is-5 is-child content">
+          <h2>
+            <span class="section-subtitle">{{__ 'kitsu todos subtitle'}}</span>
+            <span class="section-title">{{__ 'kitsu todos title'}}</span>
+          </h2>
+          <p>
+            {{__ 'kitsu todos text one'}}
+          </p>
+          <p>
+            <a href="#" class="button button--alt is-large">
+              {{__ 'kitsu todos cta'}}
+            </a>
+          </p>
+        </div>
+        <div class="tile is-7 is-child content-image">
+          <img class="screenshot" src="/images/kitsu-todos.png" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="tile flex-aic content-reverse">
+      <div class="tile is-5 is-child content">
+        <h2>
+          <span class="section-subtitle">{{__ 'kitsu playlist subtitle'}}</span>
+          <span class="section-title">{{__ 'kitsu playlist title'}}</span>
+        </h2>
+        <p>
+          {{__ 'kitsu playlist text one'}}
+        </p>
+        <p>
+          <a href="#" class="button button--alt is-large">
+            {{__ 'kitsu playlist cta'}}
+          </a>
+        </p>
+      </div>
+      <div class="tile is-7 is-child content-image">
+        <img class="screenshot" src="/images/kitsu-playlist.png" />
       </div>
     </div>
   </section>
@@ -296,7 +296,7 @@ pathTo: .
             </a>
           </p>
         </div>
-        <div class="tile is-7 is-child pl1">
+        <div class="tile is-7 is-child content-image">
           <img class="screenshot" src="/images/kitsu-stats.png" />
         </div>
       </div>
@@ -304,10 +304,7 @@ pathTo: .
   </div>
 
   <section class="section">
-    <div class="tile flex-aic">
-      <div class="tile is-7 is-child pr1">
-        <img class="screenshot" src="/images/kitsu-timesheet.png" />
-      </div>
+    <div class="tile flex-aic content-reverse">
       <div class="tile is-5 is-child content">
         <h2>
           <span class="section-subtitle">{{__ 'kitsu timesheet subtitle'}}</span>
@@ -321,6 +318,9 @@ pathTo: .
             {{__ 'kitsu timesheet cta'}}
           </a>
         </p>
+      </div>
+      <div class="tile is-7 is-child content-image">
+        <img class="screenshot" src="/images/kitsu-timesheet.png" />
       </div>
     </div>
   </section>
@@ -342,7 +342,7 @@ pathTo: .
             </a>
           </p>
         </div>
-        <div class="tile is-7 is-child pl1">
+        <div class="tile is-7 is-child content-image">
           <img class="screenshot" src="/images/kitsu-team.png" />
         </div>
       </div>
@@ -351,10 +351,7 @@ pathTo: .
 
   <div class="block-colored--dark">
     <section class="section">
-      <div class="tile flex-aic">
-        <div class="tile is-7 is-child pr1">
-          <img class="screenshot" src="/images/kitsu-todos.png" />
-        </div>
+      <div class="tile flex-aic content-reverse">
         <div class="tile is-5 is-child content">
           <h2>
             <span class="section-subtitle">{{__ 'kitsu dark subtitle'}}</span>
@@ -368,6 +365,9 @@ pathTo: .
               {{__ 'kitsu dark cta'}}
             </a>
           </p>
+        </div>
+        <div class="tile is-7 is-child content-image">
+          <img class="screenshot" src="/images/kitsu-todos.png" />
         </div>
       </div>
     </section>
