@@ -10,19 +10,14 @@ pathTo: .
 
 {{> header }}
 
+<div class="pricing-page">
   <section class="section content pricing">
-    <h2 class="subtitle">
+    <div class="section-subtitle has-text-centered">
       {{__ 'pricing tagline'}}
+    </div>
+    <h2 class="section-title has-text-centered">
+      {{__ 'pricing subtitle'}}
     </h2>
-  
-    <p class="has-text-centered mt2">
-      <button class="button frequence" id="monthly-button">
-        {{__ 'pricing monthly'}}
-      </button>
-      <button class="button frequence active" id="yearly-button">
-        {{__ 'pricing yearly'}}
-      </button>
-    </p>
 
     <div class="pricings">
       <div class="pricing-block">
@@ -295,41 +290,56 @@ pathTo: .
           </a>
         </div>
       </div>
+    </div>
 
-      <!--div class="pricing-block">
+    <p class="has-text-centered mt2">
+      <button class="button frequence" id="monthly-button">
+        {{__ 'pricing monthly'}}
+      </button>
+      <button class="button frequence active" id="yearly-button">
+        {{__ 'pricing yearly'}}
+      </button>
+    </p>
+
+    <p class="has-text-centered pricing-details">
+      {{__ 'pricing discount details'}}
+    </p>
+
+    <div class="section-subtitle has-text-centered">
+      {{__ 'pricing sucesspack title'}}
+    </div>
+    <h2 class="section-title has-text-centered">
+      {{__ 'pricing sucesspack subtitle'}}
+    </h2>
+
+    <div class="pricings">
+      <div class="pricing-block">
         <div class="pricing-title">
-          {{__ 'pricing title enterprise' }}
+          {{__ 'pricing title bronze'}}
         </div>
         <div class="pricing-price">
           <span class="pricing-currency">€</span>
-          <span class="pricing-value">7999</span>
-          {{__ 'pricing value month'}}
-        </div>
-        <div class="pricing-price-info">
-         {{__ 'pricing billed annualy'}}
+          <span class="pricing-value">1199</span>
         </div>
         <div class="pricing-features">
           <ul>
             <li>
-              {{__ 'pricing features entreprise one'}}
+              10h
             </li>
             <li>
-              {{__ 'pricing features enterprise two'}}
+              {{__ 'pricing features successpack one'}}
             </li>
             <li>
-              {{__ 'pricing features enterprise three'}}
+              {{__ 'pricing features successpack two'}}
             </li>
             <li>
-              {{__ 'pricing features enterprise four'}}
+              {{__ 'pricing features successpack three'}}
             </li>
             <li>
-              {{__ 'pricing features enterprise five'}}
+              {{__ 'pricing features successpack four'}}
             </li>
             <li>
-              {{__ 'pricing features enterprise six'}}
-            </li>
-            <li>
-              {{__ 'pricing features enterprise seven'}}
+              {{__ 'pricing features successpack five'}}
             </li>
           </ul>
         </div>
@@ -338,39 +348,118 @@ pathTo: .
             {{__ 'pricing button cta'}}
           </a>
         </div>
-      </div-->
-
+      </div>
+      <div class="pricing-block pricing-emphasize">
+        <div class="pricing-title">
+          {{__ 'pricing title silver'}}
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-currency">€</span>
+          <span class="pricing-value">2799</span>
+        </div>
+        <div class="pricing-features">
+          <ul>
+            <li>
+              25h
+            </li>
+            <li>
+              {{__ 'pricing features successpack one'}}
+            </li>
+            <li>
+              {{__ 'pricing features successpack two'}}
+            </li>
+            <li>
+              {{__ 'pricing features successpack three'}}
+            </li>
+            <li>
+              {{__ 'pricing features successpack four'}}
+            </li>
+            <li>
+              {{__ 'pricing features successpack five'}}
+            </li>
+            <li>
+              {{__ 'pricing features successpack six'}}
+            </li>
+          </ul>
+        </div>
+        <div class="pricing-cta">
+          <a href="https://account.cg-wire.com/signup" class="button is-outlined">
+            {{__ 'pricing button cta'}}
+          </a>
+        </div>
+      </div>
+      <div class="pricing-block">
+        <div class="pricing-title">
+          {{__ 'pricing title gold'}}
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-currency">€</span>
+          <span class="pricing-value">4999</span>
+        </div>
+        <div class="pricing-features">
+          <ul>
+            <li>
+              50h
+            </li>
+            <li>
+              {{__ 'pricing features successpack one'}}
+            </li>
+            <li>
+              {{__ 'pricing features successpack two'}}
+            </li>
+            <li>
+              {{__ 'pricing features successpack three'}}
+            </li>
+            <li>
+              {{__ 'pricing features successpack four'}}
+            </li>
+            <li>
+              {{__ 'pricing features successpack five'}}
+            </li>
+            <li>
+              {{__ 'pricing features successpack six'}}
+            </li>
+          </ul>
+        </div>
+        <div class="pricing-cta">
+          <a href="https://account.cg-wire.com/signup" class="button is-outlined">
+            {{__ 'pricing button cta'}}
+          </a>
+        </div>
+      </div>
     </div>
 
-    <p class="has-text-centered pricing-details">
-      {{__ 'pricing discount details'}}
-    </p>
+    <div class="extra-block alinea">
+      <div class="section-subtitle has-text-centered">
+        {{__ 'pricing support license title'}}
+      </div>
+      <p class="has-text-centered">
+         {{__ 'pricing support license details'}}
+      </p>
+    </div>
 
-    <h2 class="subtitle has-text-centered">
-      {{__ 'pricing support license title'}}
-    </h2>
-    <p class="has-text-centered">
-       {{__ 'pricing support license details'}}
-    </p>
+    <div class="extra-block">
+      <div class="section-subtitle has-text-centered">
+        {{__ 'pricing school title'}}
+      </div>
+      <p class="has-text-centered">
+        {{__ 'pricing school details'}}
+      </p>
+    </div>
 
-    <h2 class="subtitle has-text-centered">
-      {{__ 'pricing school title'}}
-    </h2>
-    <p class="has-text-centered">
-      {{__ 'pricing school details'}}
-    </p>
-
-    <h2 class="subtitle has-text-centered">
-      {{__ 'pricing opensource title'}}
-    </h2>
-    <p class="has-text-centered">
-      {{__ 'pricing opensource details'}}
-    </p>
-    <p class="has-text-centered">
-      <a href="https://zou.cg-wire.com">
-        {{__ 'pricing opensource install'}}
-      </a>
-    </p>
+    <div class="extra-block">
+      <div class="section-subtitle has-text-centered">
+        {{__ 'pricing opensource title'}}
+      </div>
+      <p class="has-text-centered">
+        {{__ 'pricing opensource details'}}
+      </p>
+      <p class="has-text-centered">
+        <a href="https://zou.cg-wire.com">
+          {{__ 'pricing opensource install'}}
+        </a>
+      </p>
+    </div>
   </section>
 
   <section 
@@ -415,4 +504,5 @@ pathTo: .
     }
   })
   </script>
+</div>
 {{> footer }}
