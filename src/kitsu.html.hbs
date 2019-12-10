@@ -28,11 +28,11 @@ pathTo: .
           </a>
         </p>
       </div>
-      <div class="tile is-6 is-hidden-mobile pl1">
-        <img src="/images/productivity.svg" alt="" />
+      <div class="is-6 is-hidden-mobile pl1 mt2">
+        <img src="/images/landing-overview.png" alt="" />
       </div>
     </div>
-    <div class="tile choice-wrapper">
+    <!--div class="tile choice-wrapper">
       <div class="tile is-6 is-vertical has-text-centered choice-tile">
         <div class="choice">
           <h2 class="title">{{__ 'kitsu choice manager title'}}</h2>
@@ -75,7 +75,7 @@ pathTo: .
           </div>
         </div>
       </div>
-    </div>
+    </div-->
   </section>
 
   <div class="modal" id="kitsu-video">
@@ -138,6 +138,18 @@ pathTo: .
       </div>
       <div class="tile is-7 is-child content-image">
         <img class="screenshot" src="/images/kitsu-annotations.png" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="tile flex-jcfe">
+      <div class="tile is-child is-12">
+        <blockquote class="quote-text quote-text--alt">
+          <p>{{__ 'tvshows quote'}}</p>
+          <footer class="quote-author"><img class="quote-avatar"
+          src="/images/testimonials/cecilehergaux.png"> {{__ 'tvshows quote author'}}</footer>
+        </blockquote>
       </div>
     </div>
   </section>
@@ -230,6 +242,18 @@ pathTo: .
       </div>
       <div class="tile is-7 is-child content-image">
         <img class="screenshot" src="/images/kitsu-playlist.png" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="tile">
+      <div class="tile is-child is-12">
+        <blockquote class="quote-text">
+          <p>{{__ 'shorts quote'}}</p>
+          <footer class="quote-author"><img class="quote-avatar"
+              src="/images/testimonials/roynietereau.png"> {{__ 'shorts quote author'}}</footer>
+        </blockquote>
       </div>
     </div>
   </section>
@@ -327,29 +351,6 @@ pathTo: .
       </div>
     </section>
   </div>
-
-  <section class="section">
-    <div class="tile">
-      <div class="tile is-child is-8">
-        <blockquote class="quote-text">
-          <p>{{__ 'shorts quote'}}</p>
-          <footer class="quote-author"><img class="quote-avatar"
-              src="/images/testimonials/roynietereau.png"> {{__ 'shorts quote author'}}</footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="tile flex-jcfe">
-      <div class="tile is-child is-8">
-        <blockquote class="quote-text quote-text--alt">
-          <p>{{__ 'tvshows quote'}}</p>
-          <footer class="quote-author"><img class="quote-avatar"
-          src="/images/testimonials/cecilehergaux.png"> {{__ 'tvshows quote author'}}</footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
 </div>
 
 {{> trial }}
