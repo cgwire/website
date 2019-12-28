@@ -409,6 +409,7 @@
 	"zou usecase subtitle": "Integrations",
 	"gazu why subtitle": "Python Client",
 	"gazu features subtitle": "Clean Code",
-	"gazu usecase subtitle": "gazu usecase subtitle",
-	"gazu title documentation": "gazu title documentation"
+	"header title documentation": "Documentation",
+	"header title docker": "Docker",
+	"header title tutorials": "Tutorials"
 }
