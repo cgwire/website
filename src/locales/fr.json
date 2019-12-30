@@ -398,5 +398,8 @@
 	"zou features subtitle": "Workflow automatisé",
 	"zou usecase subtitle": "Intégrations",
 	"gazu why subtitle": "Client Python",
-	"gazu features subtitle": "Du code propre"
+	"gazu features subtitle": "Du code propre",
+	"header title documentation": "Documentation",
+	"header title docker": "Docker",
+	"header title tutorials": "Tutoriels"
 }
