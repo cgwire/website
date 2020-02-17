@@ -76,15 +76,6 @@
           </div>
         </div>
 
-        <a
-          class="navbar-item {{#if_eq name "pricing"}}active{{/if_eq}}"
-          href="/{{ locale }}/pricing.html"
-        >
-          <span class="navbar-item-title">
-            {{__ 'header title pricing'}}
-          </span>
-        </a>
-
         <div class="navbar-item has-dropdown is-hoverable {{#if_eq name "community"}}active{{/if_eq}}">
           <a class="navbar-link">
             <span class="navbar-item-title">
@@ -116,6 +107,15 @@
             </a>
           </div>
         </div>
+
+        <a
+          class="navbar-item {{#if_eq name "pricing"}}active{{/if_eq}}"
+          href="/{{ locale }}/pricing.html"
+        >
+          <span class="navbar-item-title">
+            {{__ 'header title pricing'}}
+          </span>
+        </a>
 
         <a class="navbar-item signin" href="https://account.cg-wire.com/login">
           {{__ 'header sign in'}}
