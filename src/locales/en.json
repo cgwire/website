@@ -411,5 +411,7 @@
 	"gazu features subtitle": "Clean Code",
 	"header title documentation": "Documentation",
 	"header title docker": "Docker",
-	"header title tutorials": "Tutorials"
+	"header title tutorials": "Tutorials",
+	"footer title usecase": "footer title usecase",
+	"header title about": "header title about"
 }
