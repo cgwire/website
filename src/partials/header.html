@@ -76,7 +76,7 @@
           </div>
         </div>
 
-        <div class="navbar-item has-dropdown is-hoverable {{#if_eq name "community"}}active{{/if_eq}}">
+        <div class="navbar-item has-dropdown is-hoverable {{#if_eq name "community"}}active{{/if_eq}} {{#if_eq name "about"}}active{{/if_eq}}">
           <a class="navbar-link">
             <span class="navbar-item-title">
               {{__ 'footers title company'}}
@@ -85,23 +85,23 @@
 
           <div class="navbar-dropdown">
             <a
-              class="navbar-item {{#if_eq name "community"}}active{{/if_eq}}"
+              class="navbar-item"
               href="/{{ locale }}/community.html">
-              <span class="navbar-item-title">
+              <span>
                 {{__ 'header title community'}}
               </span>
             </a>
             <a
-              class="navbar-item {{#if_eq name "community"}}active{{/if_eq}}"
+              class="navbar-item"
               href="https://medium.com/cgwire">
-              <span class="navbar-item-title">
+              <span>
                 Blog
               </span>
             </a>
             <a
-              class="navbar-item {{#if_eq name "community"}}active{{/if_eq}}"
+              class="navbar-item"
               href="/{{ locale }}/about.html">
-              <span class="navbar-item-title">
+              <span>
                 {{__ 'footers link about'}}
               </span>
             </a>
