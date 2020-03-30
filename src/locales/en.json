@@ -165,7 +165,8 @@
 	"contact emails": "Contact Emails",
 	"about team title": "Who we are",
 	"header title solutions": "Solutions",
-	"header title kitsu": "Production Manager",
+	"header title resources": "Resources",
+	"header title kitsu": "Production Tracker",
 	"header title zou": "Studio API",
 	"header title gazu": "Python Client",
 	"header title community": "Community",
@@ -412,6 +413,10 @@
 	"header title documentation": "Documentation",
 	"header title docker": "Docker",
 	"header title tutorials": "Tutorials",
-	"footer title usecase": "footer title usecase",
-	"header title about": "header title about"
+	"footer title usecase": "Use cases",
+	"header title about": "About",
+	"footers title resources": "Resources",
+	"community slack cta": "Share tips with 380+ TDs",
+	"community meetup cta": "Join 500+ Animation enthusiasts",
+	"community github cta": "Contribute to our source code"
 }

@@ -83,6 +83,7 @@
 	"community slack explaination": "Rejoignez notre channel Slack privé. Des professionals de l'industrie partagent et échangent à propos de pipeline et de développement logiciel !",
 	"community github explaination": "Publiez vos rapports de bugs ou vos demandes de fonctionnalité sur notre dépôt Github. Regardez et auditez le code pour assurer la sécurité de vos données.",
 	"header title solutions": "Solutions",
+	"header title resources": "Ressources",
 	"header title kitsu": "Suivi de production",
 	"header title zou": "API pour studio",
 	"header title gazu": "Client Python",
@@ -206,7 +207,7 @@
 	"header title tvshow": "Séries Télé",
 	"header title featurefilm": "Long métrage",
 	"header title school": "Écoles",
-	"usecase demo": "Fait avec Kitsu par",
+	"usecase demo": "Suivi avec Kitsu par",
 	"schools title": "Kitsu pour les écoles",
 	"schools subtitle": "Projets étudiants",
 	"schools people title 1": "Étudiants",
@@ -402,5 +403,8 @@
 	"gazu features subtitle": "Du code propre",
 	"header title documentation": "Documentation",
 	"header title docker": "Docker",
-	"header title tutorials": "Tutoriels"
+	"header title tutorials": "Tutoriels",
+	"community slack cta": "Partagez avec 380 TDs",
+	"community meetup cta": "Rejoignez 500 enthousiastes de l'animation",
+	"community github cta": "Contribuez à notre code source"
 }

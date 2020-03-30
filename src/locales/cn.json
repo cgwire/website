@@ -432,5 +432,9 @@
 	"header title documentation": "header title documentation",
 	"header title tutorials": "header title tutorials",
 	"header title docker": "header title docker",
-	"usecase demo": "usecase demo"
+	"usecase demo": "usecase demo",
+	"header title resources": "header title resources",
+	"community slack cta": "community slack cta",
+	"community meetup cta": "community meetup cta",
+	"community github cta": "community github cta"
 }
