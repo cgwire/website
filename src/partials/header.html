@@ -27,19 +27,15 @@
               class="navbar-item flexrow"
               href="/{{ locale }}/kitsu.html"
             >
-              <img class="flexrow-item icon" src="/images/kitsu.png">
+              <img class="flexrow-item icon" src="/images/check-circle.svg">
               <span class="flexrow-item">{{__ 'header title kitsu'}}</span>
             </a>
             <a
               class="navbar-item flexrow"
               href="/{{ locale }}/api.html"
             >
-              <img class="flexrow-item icon" src="/images/api.png">
+              <img class="flexrow-item icon" src="/images/database.svg">
               <span class="flexrow-item">{{__ 'header title zou'}}</span>
-            </a>
-            <a class="navbar-item flexrow" href="/{{ locale }}/spreadsheets.html">
-              <img class="flexrow-item icon" src="/images/spreadsheets.png">
-              <span class="flexrow-item">{{__ 'header title spreadsheets'}}</span>
             </a>
           </div>
         </div>
@@ -76,34 +72,44 @@
           </div>
         </div>
 
-        <div class="navbar-item has-dropdown is-hoverable {{#if_eq name "community"}}active{{/if_eq}} {{#if_eq name "about"}}active{{/if_eq}}">
+        <div class="navbar-item has-dropdown is-hoverable {{#if_eq name "community"}}active{{/if_eq}} {{#if_eq name "spreadsheets"}}active{{/if_eq}}">
           <a class="navbar-link">
             <span class="navbar-item-title">
-              {{__ 'footers title company'}}
+              {{__ 'header title resources'}}
             </span>
           </a>
 
           <div class="navbar-dropdown">
             <a
+              class="navbar-item flexrow"
+              href="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnQgZ4TCrAt7smxesaDo29"
+            >
+              <img class="flexrow-item icon" src="/images/help-circle.svg">
+              <span class="flexrow-item">{{__ 'header title tutorials'}}</span>
+            </a>
+
+            <a
               class="navbar-item"
-              href="/{{ locale }}/community.html">
+              href="/{{ locale }}/community.html"
+            >
+                <img class="flexrow-item icon" src="/images/users.svg">
               <span>
                 {{__ 'header title community'}}
               </span>
             </a>
+
             <a
               class="navbar-item"
               href="https://medium.com/cgwire">
+              <img class="flexrow-item icon" src="/images/feather.svg">
               <span>
                 Blog
               </span>
             </a>
-            <a
-              class="navbar-item"
-              href="/{{ locale }}/about.html">
-              <span>
-                {{__ 'footers link about'}}
-              </span>
+
+            <a class="navbar-item flexrow" href="/{{ locale }}/spreadsheets.html">
+              <img class="flexrow-item icon" src="/images/file-text.svg">
+              <span class="flexrow-item">{{__ 'header title spreadsheets'}}</span>
             </a>
           </div>
         </div>
