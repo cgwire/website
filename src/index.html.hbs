@@ -17,14 +17,55 @@ pathTo: .
      <div class="flexrow-item introduction-text">
        <h1 class="title">{{__ 'main title'}}</h1>
        <h2 class="main-subtitle">{{__ 'main subtitle'}}</h1>
-         <a class="button" href="https://account.cg-wire.com/signup">
-           {{__ 'main plans cta'}}
-         </a>
+        <a href="#kitsu-video" class="toggleModal button button--with-icon is-large">
+          <img src="/images/play.svg" alt=""><span>{{__ 'kitsu watch cta'}}</span>
+        </a>
      </div>
      <div class="flexrow-item introduction-picture">
        <img src="/images/studio.png" />
      </div>
    </div>
+  </section>
+
+  <div class="modal" id="kitsu-video">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <p class="image is-16by9">
+        <iframe
+          class="intro-video"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/Ss0Ta5FjjGM"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </p>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <section class="section content trusted">
+    <h4 class="section-subtitle has-text-centered">
+      {{__ 'main explaination trusted'}}
+    </h4>
+    <div class="flexrow mt2">
+      <div class="flexrow-item">
+        <img src="/images/logo-cube.png">
+      </div>
+      <div class="flexrow-item">
+        <img src="/images/logo-miyu.png">
+      </div>
+      <div class="flexrow-item">
+        <img src="/images/logo-tnzpv.png">
+      </div>
+      <div class="flexrow-item">
+        <img src="/images/logo-colorbleed.png">
+      </div>
+      <div class="flexrow-item">
+        <img src="/images/logo-gobelins-black.png">
+      </div>
+    </div>
   </section>
 
   <section class="section content">
