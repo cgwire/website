@@ -88,6 +88,16 @@
               <span class="flexrow-item">{{__ 'header title tutorials'}}</span>
             </a>
 
+            {{#if_eq locale "fr"}}
+            <a
+              class="navbar-item flexrow"
+              href="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnJK6wKf2GIu964KsbqCqJ"
+            >
+              <img class="flexrow-item icon" src="/images/mic.svg">
+              <span class="flexrow-item">{{__ 'header title conferences'}}</span>
+            </a>
+            {{/if_eq}}
+
             <a
               class="navbar-item"
               href="/{{ locale }}/community.html"
