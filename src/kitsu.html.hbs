@@ -22,114 +22,76 @@ pathTo: .
         <p>
           {{__ 'kitsu explaination one'}}
         </p>
-        <p>
-          <a href="#kitsu-video" class="toggleModal button button--with-icon is-large">
-            <img src="/images/play.svg" alt=""><span>{{__ 'kitsu watch cta'}}</span>
-          </a>
-        </p>
       </div>
-      <div class="is-6 is-hidden-mobile pl1 mt2">
+      <div class="is-6 is-hidden-mobile pl1 mt4">
         <img src="/images/landing-overview.png" alt="" />
       </div>
     </div>
-  </section>
-
-  <div class="modal" id="kitsu-video">
-    <div class="modal-background"></div>
-    <div class="modal-content">
-      <p class="image is-16by9">
-        <iframe
-          class="intro-video"
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/Ss0Ta5FjjGM"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </p>
-    </div>
-    <button class="modal-close is-large" aria-label="close"></button>
-  </div>
-
-  <div class="block-colored">
-    <section class="section">
-      <div class="tile flex-aic">
-        <div class="tile is-5 is-child content">
-          <h2>
-            <span class="section-subtitle">{{__ 'kitsu dashboard subtitle'}}</span>
-            <span class="section-title">{{__ 'kitsu dashboard title'}}</span>
-          </h2>
-          <p>
-            {{__ 'kitsu dashboard text one'}}
-          </p>
-          <p>
-            <a href="https://account.cg-wire.com/signup" class="button button--alt is-large">
-              {{__ 'kitsu dashboard cta'}}
-            </a>
-          </p>
-        </div>
-        <div class="tile is-7 is-child content-image">
-          <img class="screenshot" src="/images/kitsu-shots.png" />
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <section class="section">
-    <div class="tile flex-aic content-reverse">
-      <div class="tile is-5 is-child content">
-        <h2>
-          <span class="section-subtitle">{{__ 'kitsu preview subtitle'}}</span>
-          <span class="section-title">{{__ 'kitsu preview title'}}</span>
-        </h2>
+    <div class="flexrow mt2 has-text-centered highlights">
+      <div class="flexrow-item">
+        <img src="/images/connect.svg" />
         <p>
-          {{__ 'kitsu preview text one'}}
-        </p>
-        <p>
-          <a href="https://account.cg-wire.com/signup" class="button button--alt is-large">
-            {{__ 'kitsu preview cta'}}
-          </a>
+          {{__ 'kitsu highlight one'}}
         </p>
       </div>
-      <div class="tile is-7 is-child content-image">
-        <img class="screenshot" src="/images/kitsu-annotations.png" />
+      <div class="flexrow-item">
+        <img src="/images/film.svg" />
+        <p>
+          {{__ 'kitsu highlight two'}}
+        </p>
+      </div>
+      <div class="flexrow-item">
+        <img src="/images/home.svg" />
+        <p>
+          {{__ 'kitsu highlight three'}}
+        </p>
       </div>
     </div>
   </section>
+
 
   <section class="block-colored">
     <section class="section">
       <div class="tile flex-aic content">
         <div class="tile is-5 is-child content">
           <h2>
-            <span class="section-subtitle">{{__ 'kitsu playlist subtitle'}}</span>
-            <span class="section-title">{{__ 'kitsu playlist title'}}</span>
+            <span class="section-subtitle">{{__ 'kitsu preview subtitle'}}</span>
+            <span class="section-title">{{__ 'kitsu preview title'}}</span>
           </h2>
           <p>
-            {{__ 'kitsu playlist text one'}}
+            {{__ 'kitsu preview text one'}}
           </p>
           <p>
             <a href="https://account.cg-wire.com/signup" class="button button--alt is-large">
-              {{__ 'kitsu playlist cta'}}
+              {{__ 'kitsu preview cta'}}
             </a>
           </p>
         </div>
         <div class="tile is-7 is-child content-image">
-          <img class="screenshot" src="/images/kitsu-playlist.png" />
+          <img class="screenshot" src="/images/kitsu-annotations.png" />
         </div>
       </div>
     </section>
   </section>
 
   <section class="section">
-    <div class="tile flex-jcfe">
-      <div class="tile is-child is-12">
-        <blockquote class="quote-text quote-text--alt">
-          <p>{{__ 'tvshows quote'}}</p>
-          <footer class="quote-author"><img class="quote-avatar"
-          src="/images/testimonials/cecilehergaux.png"> {{__ 'tvshows quote author'}}</footer>
-        </blockquote>
+    <div class="tile flex-aic content-reverse">
+      <div class="tile is-5 is-child content">
+        <h2>
+          <span class="section-subtitle">{{__ 'kitsu playlist subtitle'}}</span>
+          <span class="section-title">{{__ 'kitsu playlist title'}}</span>
+        </h2>
+        <p>
+          {{__ 'kitsu playlist text one'}}
+        </p>
+        <p>
+          <a href="https://account.cg-wire.com/signup" class="button button--alt is-large">
+            {{__ 'kitsu playlist cta'}}
+          </a>
+        </p>
+      </div>
+      <div class="tile is-7 is-child content-image">
+        <img class="screenshot" src="/images/kitsu-playlists.png" />
       </div>
     </div>
   </section>
@@ -153,6 +115,42 @@ pathTo: .
         </div>
         <div class="tile is-7 is-child content-image">
           <img class="screenshot" src="/images/kitsu-todos.png" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="tile flex-jcfe">
+      <div class="tile is-child is-12">
+        <blockquote class="quote-text quote-text--alt">
+          <p>{{__ 'tvshows quote'}}</p>
+          <footer class="quote-author"><img class="quote-avatar"
+          src="/images/testimonials/cecilehergaux.png"> {{__ 'tvshows quote author'}}</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <div class="block-colored">
+    <section class="section">
+      <div class="tile flex-aic">
+        <div class="tile is-5 is-child content">
+          <h2>
+            <span class="section-subtitle">{{__ 'kitsu statistics subtitle'}}</span>
+            <span class="section-title">{{__ 'kitsu statistics title'}}</span>
+          </h2>
+          <p>
+            {{__ 'kitsu statistics text one'}}
+          </p>
+          <p>
+            <a href="https://account.cg-wire.com/signup" class="button button--alt is-large">
+              {{__ 'kitsu statistics cta'}}
+            </a>
+          </p>
+        </div>
+        <div class="tile is-7 is-child content-image">
+          <img class="screenshot" src="/images/kitsu-stats.png" />
         </div>
       </div>
     </section>
@@ -185,24 +183,25 @@ pathTo: .
       <div class="tile flex-aic">
         <div class="tile is-5 is-child content">
           <h2>
-            <span class="section-subtitle">{{__ 'kitsu statistics subtitle'}}</span>
-            <span class="section-title">{{__ 'kitsu statistics title'}}</span>
+            <span class="section-subtitle">{{__ 'kitsu breakdown subtitle'}}</span>
+            <span class="section-title">{{__ 'kitsu breakdown title'}}</span>
           </h2>
           <p>
-            {{__ 'kitsu statistics text one'}}
+            {{__ 'kitsu breakdown text one'}}
           </p>
           <p>
             <a href="https://account.cg-wire.com/signup" class="button button--alt is-large">
-              {{__ 'kitsu statistics cta'}}
+              {{__ 'kitsu breakdown cta'}}
             </a>
           </p>
         </div>
         <div class="tile is-7 is-child content-image">
-          <img class="screenshot" src="/images/kitsu-stats.png" />
+          <img class="screenshot" src="/images/kitsu-breakdown.png" />
         </div>
       </div>
     </section>
   </div>
+
 
   <section class="section">
     <div class="tile">
@@ -280,7 +279,7 @@ pathTo: .
           </p>
         </div>
         <div class="tile is-7 is-child content-image">
-          <img class="screenshot" src="/images/kitsu-team.png" />
+          <img class="screenshot" src="/images/kitsu-quotas.png" />
         </div>
       </div>
     </section>
