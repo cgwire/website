@@ -17,17 +17,32 @@ pathTo: .
           <span class="section-subtitle">{{__ 'zou subtitle'}}</span>
           <span class="section-title">{{__ 'zou tagline'}}</span>
         </h2>
-        <p>
+        <p class="pr1">
           {{__ 'zou explaination one'}}
-        </p>
-        <p>
-          <a href="https://gazu.cg-wire.com" class="button">
-            {{__ 'client title documentation'}}
-          </a>
         </p>
       </div>
       <div class="is-6 is-hidden-mobile pl1 mt4">
         <img src="/images/landing-data.png" alt="" />
+      </div>
+    </div>
+    <div class="flexrow mt4 has-text-centered highlights">
+      <div class="flexrow-item">
+        <img src="/images/code.svg" />
+        <p>
+          {{__ 'api highlight one'}}
+        </p>
+      </div>
+      <div class="flexrow-item">
+        <img src="/images/cloud.svg" />
+        <p>
+          {{__ 'api highlight two'}}
+        </p>
+      </div>
+      <div class="flexrow-item">
+        <img src="/images/codepen.svg" />
+        <p>
+          {{__ 'api highlight three'}}
+        </p>
       </div>
     </div>
   </section>
@@ -38,18 +53,23 @@ pathTo: .
         <div class="tile is-5 is-child content">
           <h2>
             <span class="section-subtitle">
-              {{__ 'zou why subtitle'}}
+              {{__ 'zou usecase subtitle'}}
             </span>
             <span class="section-title">
-              {{__ 'zou why title'}}
+              {{__ 'zou usecase title'}}
             </span>
           </h2>
           <p>
-            {{__ 'zou why one'}}
+            {{__ 'zou usecase one'}}
+          </p>
+          <p>
+            <a href="https://gazu.cg-wire.com" class="button button--alt is-large">
+              {{__ 'api button cta'}}
+            </a>
           </p>
         </div>
         <div class="tile is-7 is-child content-image">
-          <img class="smaller" src="/images/central.png" />
+          <img src="/images/softwares.png" />
         </div>
       </div>
     </section>
@@ -82,53 +102,14 @@ pathTo: .
             </li>
           </ul>
         </p>
+          <p>
+            <a href="https://gazu.cg-wire.com" class="button button--alt is-large">
+              {{__ 'api button cta'}}
+            </a>
+          </p>
       </div>
       <div class="tile is-7 is-child content-image">
         <img class="smaller" src="/images/pipeline.png" />
-      </div>
-    </div>
-  </section>
-
-  <div class="block-colored">
-    <section class="section">
-      <div class="tile flex-aic">
-        <div class="tile is-5 is-child content">
-          <h2>
-            <span class="section-subtitle">
-              {{__ 'zou usecase subtitle'}}
-            </span>
-            <span class="section-title">
-              {{__ 'zou usecase title'}}
-            </span>
-          </h2>
-          <p>
-            {{__ 'zou usecase one'}}
-          </p>
-        </div>
-        <div class="tile is-7 is-child content-image">
-          <img src="/images/softwares.png" />
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <section class="section">
-    <div class="tile flex-aic content-reverse">
-      <div class="tile is-5 is-child content">
-        <h2>
-          <span class="section-subtitle">
-            {{__ 'gazu why subtitle'}}
-          </span>
-          <span class="section-title">
-            {{__ 'gazu why title'}}
-          </span>
-        </h2>
-        <p>
-          {{__ 'gazu why one'}}
-        </p>
-      </div>
-      <div class="tile is-7 is-child content-image">
-        <img class="smaller" src="/images/simple.png" />
       </div>
     </div>
   </section>
@@ -159,6 +140,11 @@ pathTo: .
                 {{__ 'gazu features four'}}
               </li>
             </ul>
+            <p>
+            <a href="https://gazu.cg-wire.com" class="button button--alt is-large">
+              {{__ 'api button cta'}}
+            </a>
+            </p>
         </div>
         <div class="tile is-7 is-child content-image">
         <pre>
@@ -181,6 +167,59 @@ gazu.files.build_working_file_path(tasks[0])
     </section>
   </div>
 
+  <section class="section">
+    <div class="tile flex-aic content-reverse">
+      <div class="tile is-5 is-child content">
+        <h2>
+          <span class="section-subtitle">
+            {{__ 'gazu why subtitle'}}
+          </span>
+          <span class="section-title">
+            {{__ 'gazu why title'}}
+          </span>
+        </h2>
+        <p>
+          {{__ 'gazu why one'}}
+        </p>
+        <p>
+          <a href="https://gazu.cg-wire.com" class="button button--alt is-large">
+            {{__ 'api button cta'}}
+          </a>
+        </p>
+      </div>
+      <div class="tile is-7 is-child content-image">
+        <img class="smaller" src="/images/simple.png" />
+      </div>
+    </div>
+  </section>
+
+  <div class="block-colored">
+    <section class="section">
+      <div class="tile flex-aic">
+        <div class="tile is-5 is-child content">
+          <h2>
+            <span class="section-subtitle">
+              {{__ 'zou why subtitle'}}
+            </span>
+            <span class="section-title">
+              {{__ 'zou why title'}}
+            </span>
+          </h2>
+          <p>
+            {{__ 'zou why one'}}
+          </p>
+          <p>
+            <a href="https://gazu.cg-wire.com" class="button button--alt is-large">
+              {{__ 'api button cta'}}
+            </a>
+          </p>
+        </div>
+        <div class="tile is-7 is-child content-image">
+          <img class="smaller" src="/images/central.png" />
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
 
 {{> trial }}
