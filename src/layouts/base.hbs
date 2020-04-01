@@ -86,11 +86,9 @@
     document.addEventListener('DOMContentLoaded', function () {
       var modalTogglers = Array.prototype.slice.call(document.querySelectorAll('.toggleModal'), 0);
       var modalClosers = Array.prototype.slice.call(document.querySelectorAll('.modal-close'), 0);
-      console.log(modalClosers);
       if (modalTogglers.length > 0) {
         modalTogglers.forEach(function (el) {
           el.addEventListener('click', function () {
-
             var target = el.getAttribute("href").substr(1);
             var targetEl = document.getElementById(target);
 
