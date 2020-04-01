@@ -436,5 +436,18 @@
 	"header title resources": "header title resources",
 	"community slack cta": "community slack cta",
 	"community meetup cta": "community meetup cta",
-	"community github cta": "community github cta"
+	"community github cta": "community github cta",
+	"kitsu breakdown subtitle": "kitsu breakdown subtitle",
+	"kitsu breakdown title": "kitsu breakdown title",
+	"kitsu breakdown text one": "kitsu breakdown text one",
+	"kitsu breakdown cta": "kitsu breakdown cta",
+	"kitsu highlight one": "kitsu highlight one",
+	"kitsu highlight two": "kitsu highlight two",
+	"kitsu highlight three": "kitsu highlight three",
+	"community subtitle": "community subtitle",
+	"main explaination trusted": "main explaination trusted",
+	"api highlight one": "api highlight one",
+	"api highlight two": "api highlight two",
+	"api highlight three": "api highlight three",
+	"api button cta": "api button cta"
 }
