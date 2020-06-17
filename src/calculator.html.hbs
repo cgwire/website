@@ -13,69 +13,85 @@ pathTo: .
 
 <section class="section">
 <h1 class="subtitle has-text-centered">
-Calculator
+  Kitsu Hosting Price Calculator
 </h1>
-
-
-<div class="columns">
-<div class="column">
-<p>
-<label class="label">
-Duration:
-</label>
-<div class="select">
-<select id="duration">
-  <option value="5">0 - 5 months</option>
-  <option value="11">6 - 11 months (-10%)</option>
-  <option value="17">12 - 17 months (-20%)</option>
-  <option value="24">18 - 24 months (-30%)</option>
-</select>
-</div>
-<p class="mt2">
-<label class="label">
-Expected staff members:
+<p class="has-text-centered">
+Define a price from your staff presence all along the production.
 </p>
-<div id="staff">
-  <p>Month 1: <input class="staffnumber" type="number" size="3" value="0" min="0" /></p>
-  <p>Month 2: <input class="staffnumber" type="number" size="3" value="0" min="0" /></p>
-  <p>Month 3: <input class="staffnumber" type="number" size="3" value="0" min="0" /></p>
-  <p>Month 4: <input class="staffnumber" type="number" size="3" value="0" min="0" /></p>
-  <p>Month 5: <input class="staffnumber" type="number" size="3" value="0" min="0" /></p>
-</div>
-<p>
-<p class="mt2">
+
+
+<div class="columns calculator mt2">
+  <div class="column">
+  <p>
   <label class="label">
-  Storage:
+    Duration
   </label>
-  1TB for free + <input id="storage" type="number" size="2" value="0" min="0" /> TB x 30€ / month
-</p>
-<p class="mt2">
-  <label class="label">
-    Hosting:
-  </label>
-<div class="select">
-  <select id="hosting" value="0">
-    <option value="0">Cloud hosting (+0€)</option>
-    <option value="999">On-premise (+999€)</option>
-  </select>
-</div>
-</p>
+  <div class="select">
+    <select id="duration">
+      <option value="5">0 - 5 months</option>
+      <option value="11">6 - 11 months (-10%)</option>
+      <option value="17">12 - 17 months (-20%)</option>
+      <option value="24">18 - 24 months (-30%)</option>
+    </select>
+  </div>
+  <p class="mt2">
+    <label class="label">
+      Expected staff members
+    </p>
+    <div id="staff">
+      <p>Month 1: <input class="staffnumber input" type="number" size="3" value="0" min="0" /></p>
+      <p>Month 2: <input class="staffnumber input" type="number" size="3" value="0" min="0" /></p>
+      <p>Month 3: <input class="staffnumber input" type="number" size="3" value="0" min="0" /></p>
+      <p>Month 4: <input class="staffnumber input" type="number" size="3" value="0" min="0" /></p>
+      <p>Month 5: <input class="staffnumber input" type="number" size="3" value="0" min="0" /></p>
+    </div>
+    <p class="mt2">
+      <label class="label">
+        Storage
+      </label>
+      <div class="flexrow">
+        1TB for free + <input id="storage" class="input" type="number" size="2" value="0" min="0" /> TB x 30€ / month
+    </div>
+    </p>
+    <p class="mt2">
+      <label class="label">
+        Hosting
+      </label>
+      <div class="select">
+        <select id="hosting" value="0">
+          <option value="0">Cloud hosting (+0€)</option>
+          <option value="999">On-premise (+999€)</option>
+        </select>
+      </div>
+    </p>
+  </div>
 
+  <div class="column">
+    <strong>
+      Price for your production
+    </strong>
+    <table class="result">
+    <tr>
+      <td></td><td>Staff members</td><td><span id="totalstaff">0</span>€</td>
+    </tr>
+    <tr>
+      <td>+</td><td>Storage</td><td><span id="totalstorage">0</span>€</td>
+    </tr>
+    <tr>
+      <td>+</td><td>Setup cost</td><td><span id="totalhosting">0</span>€</td>
+    </tr>
+    <tr>
+      <td>-</td><td>Discount</td><td><span id="totaldiscount">0</span>€</td>
+    </tr>
+    <tr>
+      <td>=</td><td>Total</td><td><span id="total">0</span>€</td>
+    </tr>
+    </table>
+  </div>
 </div>
-<div class="column">
-<strong>
-Price for your production
-</strong>
-<div>Staff members: <span id="totalstaff">0</span>€</div>
-<div>+ Storage: <span id="totalstorage">0</span>€</div>
-<div>+ Setup cost: <span id="totalhosting">0</span>€</div>
-<div>- Discount: <span id="totaldiscount">0€ (0%)</span></div>
-<div>= Total: <span id="total">0</span>€</div>
 </section>
-</div>
-</div>
 
-  <script>
+<script>
   var durationSelect = document.getElementById('duration')
   var staffDiv = document.getElementById('staff')
   var staffTotalSpan = document.getElementById('totalstaff')
@@ -149,7 +165,7 @@ Price for your production
     else if (nbStorageMonths < 18) discount = 20
     else discount = 30 
     var minus = Math.ceil((discount * total) / 100)
-	discountSpan.innerHTML = minus + '€ (' + discount + '%)'
+	discountSpan.innerHTML = minus
     total = total - minus
 
     totalSpan.innerHTML = total
@@ -160,7 +176,7 @@ Price for your production
     for (var i = 1; i <= nbMonths; i++) {
       var num = '' + i
       if (i < 10) num = '0' + i
-      html += '<p>Month ' + num + ': <input class="staffnumber" type="number"'
+      html += '<p class="flexrow">Month ' + num + ': <input class="staffnumber input" type="number"'
               + ' size="3" value="0" min="0" /><span>+ 0€ (empty)</span></p>'
     }
 	staffDiv.innerHTML = html

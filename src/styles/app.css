@@ -897,8 +897,38 @@ section.pricing .frequence.active {
 .js-tabs [aria-hidden] {
   display: none;
 }
-.staffnumber {
+.announcement {
+  margin-top: 1em;
+  padding: 0.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: #dee0ff;
+  border-radius: 1em;
+  color: #5e60ba;
+  border: 1px solid #5e60ba;
+  text-align: center;
+}
+.calculator .staffnumber {
   margin-right: 10px;
+}
+.calculator input.input {
+  max-width: 5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+.calculator .result {
+  margin-top: 1em;
+}
+.calculator .result td {
+  padding-right: 1em;
+  vertical-align: middle;
+  text-align: right;
+}
+.calculator .result td:first-child {
+  font-size: 1.5em;
+}
+.calculator .result tr:last-child {
+  border-top: 1px solid #ccc;
 }
 @media (max-width: 800px) {
   .cookie-consent {
