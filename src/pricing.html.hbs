@@ -18,6 +18,11 @@ pathTo: .
     <h2 class="section-title has-text-centered">
       {{__ 'pricing subtitle'}}
     </h2>
+    <div class="has-text-centered">
+      <a href="/{{ locale }}/calculator.html">
+        calculator
+      </a>
+    </div>
 
     <div class="pricings">
       <div class="pricing-block">
@@ -475,11 +480,11 @@ pathTo: .
   })
   yearlyButton.addEventListener('click', function () {
     if (yearlyButton.className.indexOf('active') < 0) {
-        hideByClassName('monthly')
-        showByClassName('pricing-price-info')
-        showByClassName('yearly')
-        yearlyButton.className += ' active'
-        monthlyButton.className = monthlyButton.className.replace(' active', '')
+      hideByClassName('monthly')
+      showByClassName('pricing-price-info')
+      showByClassName('yearly')
+      yearlyButton.className += ' active'
+      monthlyButton.className = monthlyButton.className.replace(' active', '')
     }
   })
   </script>
