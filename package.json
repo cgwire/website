@@ -11,7 +11,7 @@
   "repository": "https://github.com/cgwire/website",
   "license": "AGPL-3.0",
   "dependencies": {
-    "handlebars": "4.4.5",
+    "handlebars": "4.5.3",
     "handlebars-utils": "1.0.6",
     "jstransformer-handlebars": "1.1.0",
     "jstransformer-mini-handlebars": "0.5.0",
