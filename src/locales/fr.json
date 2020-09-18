@@ -89,6 +89,7 @@
 	"header title gazu": "Client Python",
 	"header title community": "Communauté",
 	"header title blog": "Blog",
+	"header title translations": "Traductions",
 	"about values title": "Nos valeurs",
 	"kitsu why title": "Simple et efficace",
 	"kitsu features title": "Fonctionnalités principales",
@@ -420,5 +421,7 @@
 	"api highlight two": "Dans le cloud ou sur vos serveurs",
 	"api highlight three": "Intégrés à vos outils de dessin",
 	"api button cta": "Lire la doc du client Python",
-    "pricing calculator": "Essayez notre calculateur de prix sur mesure"
+    "pricing calculator": "Essayez notre calculateur de prix sur mesure",
+	"api quote": "Kitsu et sont client Python c'est vraiment top pour un TD. Je code par dessus des outils aux petits oignons pour la prod et les leads, ca nous aide beaucoup. Merci à vous d'avoir laisser le soft ouvert!",
+	"api quote author": "Jérôme Brack, Technical Director at DogHouse Films"
 }

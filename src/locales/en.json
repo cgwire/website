@@ -171,6 +171,7 @@
 	"header title gazu": "Python Client",
 	"header title community": "Community",
 	"header title blog": "Blog",
+	"header title translations": "Translations",
 	"about values title": "Our values",
 	"about values title one": "Simplicity",
 	"about values text one": "The more lightweight our tools are, the more agile we are. It clears our mind and make everything faster.",
@@ -432,5 +433,7 @@
 	"api highlight one": "Fast to learn Python client",
 	"api highlight two": "Cloud-based or on-premises",
 	"api highlight three": "Integrations with your DCC tools",
-	"pricing calculator": "Try our tailor-made pricing calculator"
+	"pricing calculator": "Try our tailor-made pricing calculator",
+	"api quote": "The Python cilent for Kitsu is really useful for a TD. I was able to code quickly tailor-made tools for production and leads. Thank you for leaving Kitsu open to other software!",
+	"api quote author": "Jérôme Brack, Technical Director at DogHouse Films"
 }
