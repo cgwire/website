@@ -2,7 +2,7 @@ const metalsmith = require('metalsmith');
 const filenames = require("metalsmith-filenames");
 const date = require('metalsmith-build-date');
 const layouts = require('metalsmith-layouts');
-const discoverPartials = require('metalsmith-discover-partials')
+const discoverPartials = require('metalsmith-discover-partials');
 const i18n = require('metalsmith-i18n');
 const mapsite = require('metalsmith-mapsite');
 const permalinks = require('metalsmith-permalinks');
@@ -100,7 +100,7 @@ module.exports = {
       }))
       .use(permalinks({
         pattern: ':title',
-        relative: false
+        relative: false;
       }))
 
       .destination(destination);
