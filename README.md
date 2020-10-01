@@ -45,4 +45,4 @@ inside the `src/locales` folder.
 
 ## Credits
 
-Icons come from [iconfinder.com](https://www.iconfinder.com)
+Icons came from [iconfinder.com](https://www.iconfinder.com)
