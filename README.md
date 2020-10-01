@@ -2,15 +2,15 @@
 
 ## Development
 
-*setup*
+*Setup*
 
-Clone this repository then install dependencies:
+You should Clone this repository then install dependencies:
 
 ```bash
 npm i
 ```
 
-*build*
+*Build*
 
 To run the build properly you will need at least Node.js v4.0. 
 
@@ -32,17 +32,19 @@ This command will run:
 * a watcher that will rebuild your files and update your locale keys eacht time you change something.
 
 
-## Locales
+## Locales: -
 
 We use JSON key-value files to store all the locales. These files are located
 inside the `src/locales` folder. 
 
-## Extra information
+## Extra information: - 
 
 * The build engine of the website is based on [Metalsmith](http://metalsmith.io/) (a static website generator). 
 * The templates are written with [Handlebars](http://handlebarsjs.com/). 
 * Stylesheets are written with [Stylus](http://stylus-lang.com/)
 
-## Credits
+## Credits:-
 
-Icons come from [iconfinder.com](https://www.iconfinder.com)
+Icons is from [iconfinder.com](https://www.iconfinder.com)
+
+Thank You And have a nice day!
