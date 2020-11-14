@@ -432,5 +432,6 @@
 	"api highlight three": "Integrations with your DCC tools",
 	"pricing calculator": "Try our tailor-made pricing calculator",
 	"api quote": "The Python client for Kitsu is really useful for a TD. I was able to code quickly tailor-made tools for production and leads. Thank you for leaving Kitsu open to other software!",
-	"api quote author": "Jérôme Brack, Technical Director at DogHouse Films"
+	"api quote author": "Jérôme Brack, Technical Director at DogHouse Films",
+	"footers link metrics ": "Metrics "
 }
