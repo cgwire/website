@@ -2,6 +2,7 @@ lightgrey = #F5F5F5
 mediumgrey = #999999
 darkgrey = #1F1F28
 cgwiregreen = #00B242
+cgwiregreentransparent = #00B242CC
 cgwiregreen-alt = #67BE4B
 cgwiregreen-light = #7AE3A0
 rainbow-1 = #FF6BC2
@@ -327,6 +328,10 @@ header
     .navbar-lang-item.active
         color black
 
+    .navbar hr
+        margin auto
+        margin 1em
+
 section
     .tutorial-links a
         margin-top 1em
@@ -433,6 +438,55 @@ section
             border-radius 50%
             padding 0.2em 
             padding-top 0.3em
+
+.studios
+    section:first-child
+        padding-bottom 0
+
+    section:second-child
+        margin-top 0
+
+    h2:first-child
+        margin-top 2em
+        margin-bottom 0
+
+    .productions
+        img
+            border-radius 1em
+        ul
+            list-style none
+            margin 0
+            padding 0
+            display flex
+            align-items flex-start
+            flex-wrap wrap
+
+            .production 
+                border-radius 1em
+                margin-right 1em
+                position relative
+                flex-direction column
+                display inline-flex
+                margin-top 2em
+                transition box-shadow 0.3s ease
+
+                span
+                    background cgwiregreentransparent
+                    border-bottom-left-radius 1em
+                    border-bottom-right-radius 1em
+                    bottom 0
+                    color white
+                    left 0
+                    opacity 0
+                    padding 0.5em 1em
+                    position absolute
+                    right 0
+                    transition opacity 0.3s ease
+
+                &:hover
+                    box-shadow 0 0 5px 0 #AAA
+                    span
+                        opacity 1
 
 .ppl
     padding 1.5rem
@@ -770,6 +824,10 @@ section.pricing
     align-items center
     justify-content center
     color white
+    transition transform 0.2s ease
+
+    &:hover
+        transform scale(1.1)
 
     &:nth-child(14n+1)
         background-color rainbow-1
