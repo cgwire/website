@@ -421,26 +421,32 @@ section.use-case h2.subtitle {
   flex-wrap: wrap;
 }
 .studios .productions ul .production {
+  border-radius: 1em;
   margin-right: 1em;
   position: relative;
   flex-direction: column;
   display: inline-flex;
   margin-top: 2em;
+  transition: box-shadow 0.3s ease;
 }
 .studios .productions ul .production span {
-  display: none;
   background: rgba(0,178,66,0.8);
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
   bottom: 0;
   color: #fff;
-  padding: 0.5em 1em;
   left: 0;
-  right: 0;
+  opacity: 0;
+  padding: 0.5em 1em;
   position: absolute;
+  right: 0;
+  transition: opacity 0.3s ease;
+}
+.studios .productions ul .production:hover {
+  box-shadow: 0 0 5px 0 #aaa;
 }
 .studios .productions ul .production:hover span {
-  display: block;
+  opacity: 1;
 }
 .ppl {
   padding: 1.5rem;
@@ -777,6 +783,10 @@ section.pricing .frequence.active {
   align-items: center;
   justify-content: center;
   color: #fff;
+  transition: transform 0.2s ease;
+}
+.customers-item:hover {
+  transform: scale(1.1);
 }
 .customers-item:nth-child(14n+1) {
   background-color: #ff6bc2;
@@ -1135,5 +1145,24 @@ section.pricing .frequence.active {
   }
   .community .community-link {
     font-size: 0.9em;
+  }
+  .studios .section-title {
+    font-size: 2.8em;
+    padding-right: 1em;
+  }
+  .studios .section-subtitle {
+    margin-bottom: 0;
+  }
+  .studios .customers-item {
+    width: 7.95rem;
+    height: 7.95rem;
+  }
+  header .navbar .navbar-dropdown {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  header .navbar hr {
+    display: none;
   }
 }
