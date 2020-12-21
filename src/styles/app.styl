@@ -319,7 +319,7 @@ header
     .navbar-dropdown
         border 1px solid lightgrey - 5%
         border-radius 1em
-        border-top-left-radius 0 
+        border-top-left-radius 0
         box-shadow 0 2px 4px rgba(10, 10, 10, 0.1)
 
     .navbar img
@@ -402,42 +402,66 @@ section
 .trusted
     div
         text-align center
-    img 
+    img
         max-width 120px
 
 .community
-    img
-        width 250px
+    .flexrow-item:last-child
+        margin 0
 
-    .level
-        display flex
+    &.community-header
+    &.community-footer
+        max-width 1250px
 
-    .level-item
-        width 50%
-
-    .description
+    &.community-code
         p
-            padding-top 0
+            margin-bottom: 1.5em
 
-    .level.block
-        margin 0.5em 0
+    &.community-info
+        max-width 1100px
+
+        h2
+            margin-bottom 0.5em
+
+        .section-subtitle
+            font-size 0.52em
+            margin-bottom 0.5em
+
+        .section-title
+            font-size 1.5em
+            margin-bottom 0em
+
+        img
+            box-shadow 0 0 15px 0 #CCD6CC
+
+    img
+        border-radius 0.5em
+        box-shadow 0 0 5px 0 #99B
+
+    .illustration
+        flex 0
+        img
+            max-width 420px
+
+    .community-cta
+        margin-top 1.5em
 
     .community-link
-        padding 0.5em 0.5em 0.5em 0.9em
         border-radius 5em
-        background cgwiregreen-light - 30%
-        color white
+        border 2px solid cgwiregreen-light - 30%
+        color cgwiregreen-light - 30%
         font-size 1.1em
-        
+        font-weight 800
+        padding 0.5em 0.5em 0.5em 0.9em
+
         &:hover
-            color white
+            color cgwiregreen-light - 30%
+            background cgwiregreen-light + 95%
 
         span
-            font-weight bold
-            margin-left 0.3em
-            border-radius 50%
-            padding 0.2em 
-            padding-top 0.3em
+            margin-left 0.5em
+            margin-right 0.5em
+
 
 .studios
     section:first-child
@@ -461,7 +485,7 @@ section
             align-items flex-start
             flex-wrap wrap
 
-            .production 
+            .production
                 border-radius 1em
                 margin-right 1em
                 position relative
@@ -999,7 +1023,7 @@ section.pricing
 
 .calculator
 
-  .staffnumber 
+  .staffnumber
     margin-right 10px
 
   input.input
@@ -1014,13 +1038,13 @@ section.pricing
       padding-right 1em
       vertical-align middle
       text-align right
-    
+
       &:first-child
         font-size 1.5em
 
     tr:last-child
       border-top 1px solid #CCC
-        
+
 
 // Responsive
 
@@ -1201,8 +1225,43 @@ section.pricing
         .navbar
             .navbar-dropdown
                 border 0
-                border-radius 0 
+                border-radius 0
                 box-shadow none
 
-            hr 
+            hr
                 display none
+
+
+@media(max-width: 960px)
+    .introduction-picture
+        text-align center
+        margin-top 2em
+
+    .community
+        img 
+            width 100%
+
+        h2
+            .section-title
+                font-size 1.6em
+
+        .flexrow-item
+            margin 0
+
+        .flexrow
+            flex-direction column
+
+        &.community-info
+            .section-title
+                font-size 1.1em
+  
+        .community-header
+            img
+                margin-bottom 2em
+
+        .illustration
+            width 100%
+
+            img
+                margin-top 2em
+                max-width 600px

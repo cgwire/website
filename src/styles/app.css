@@ -367,14 +367,34 @@ section.use-case h2.subtitle {
 .trusted img {
   max-width: 120px;
 }
-.community img {
-  width: 250px;
+.community {
+  max-width: 1300px;
 }
-.community .level {
-  display: flex;
+.community .community-header img {
+  border-radius: 0.5em;
+  box-shadow: 0 0 5px 0 #99c;
 }
-.community .level-item {
-  width: 50%;
+.community.community-info {
+  max-width: 1100px;
+}
+.community.community-info h2 {
+  margin-bottom: 0.5em;
+}
+.community.community-info .section-subtitle {
+  font-size: 0.6em;
+  margin-bottom: 0.5em;
+}
+.community.community-info .section-title {
+  font-size: 1.5em;
+  margin-bottom: 0em;
+}
+.community .illustration {
+  flex: 0;
+}
+.community .illustration img {
+  max-width: 420px;
+  border-radius: 0.5em;
+  box-shadow: 0 0 5px 0 #99c;
 }
 .community .description p {
   padding-top: 0;
