@@ -237,13 +237,17 @@ p.tagline-explaination {
   padding: 2.4rem 1.2rem;
 }
 header .navbar {
-  max-width: 960px;
+  max-width: 1000px;
   margin: auto;
   font-size: 1em;
+}
+header .navbar .navbar-brand .navbar-item {
+  padding-left: 0;
 }
 header a.navbar-lang-item {
   font-size: 0.8em;
   margin: 0.1em;
+  padding-top: 3px;
   width: 30px;
   color: #bbb;
 }
@@ -305,6 +309,9 @@ section .tutorial-links a {
 }
 section.introduction {
   padding-top: 5em;
+  padding-bottom: 1em;
+  width: auto;
+  max-width: 1200px;
 }
 section.introduction h1.title {
   font-weight: bold;
@@ -323,6 +330,15 @@ section.introduction a.button {
   font-size: 1.1em;
   border-radius: 2em;
   padding: 1.3em;
+}
+section.introduction .introduction-picture {
+  flex-basis: 57%;
+  margin: 0;
+}
+section.introduction .introduction-text {
+  flex-basis: 43%;
+  padding: 0 0.4em;
+  margin: 0;
 }
 section.clients img {
   width: 150px;
@@ -367,12 +383,15 @@ section.use-case h2.subtitle {
 .trusted img {
   max-width: 120px;
 }
-.community {
-  max-width: 1300px;
+.community .flexrow-item:last-child {
+  margin: 0;
 }
-.community .community-header img {
-  border-radius: 0.5em;
-  box-shadow: 0 0 5px 0 #99c;
+.community.community-header,
+.community.community-footer {
+  max-width: 1250px;
+}
+.community.community-code p {
+  margin-bottom: 1.5em;
 }
 .community.community-info {
   max-width: 1100px;
@@ -381,43 +400,44 @@ section.use-case h2.subtitle {
   margin-bottom: 0.5em;
 }
 .community.community-info .section-subtitle {
-  font-size: 0.6em;
+  font-size: 0.52em;
   margin-bottom: 0.5em;
 }
 .community.community-info .section-title {
   font-size: 1.5em;
   margin-bottom: 0em;
 }
+.community.community-info img {
+  box-shadow: 0 0 15px 0 #ccd6cc;
+}
+.community img {
+  border-radius: 0.5em;
+  box-shadow: 0 0 5px 0 #99b;
+}
 .community .illustration {
   flex: 0;
 }
 .community .illustration img {
   max-width: 420px;
-  border-radius: 0.5em;
-  box-shadow: 0 0 5px 0 #99c;
 }
-.community .description p {
-  padding-top: 0;
-}
-.community .level.block {
-  margin: 0.5em 0;
+.community .community-cta {
+  margin-top: 1.5em;
 }
 .community .community-link {
-  padding: 0.5em 0.5em 0.5em 0.9em;
   border-radius: 5em;
-  background: #2aca64;
-  color: #fff;
+  border: 2px solid #2aca64;
+  color: #2aca64;
   font-size: 1.1em;
+  font-weight: 800;
+  padding: 0.5em 0.5em 0.5em 0.9em;
 }
 .community .community-link:hover {
-  color: #fff;
+  color: #2aca64;
+  background: #f8fefa;
 }
 .community .community-link span {
-  font-weight: bold;
-  margin-left: 0.3em;
-  border-radius: 50%;
-  padding: 0.2em;
-  padding-top: 0.3em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 .studios section:first-child {
   padding-bottom: 0;
@@ -1184,5 +1204,53 @@ section.pricing .frequence.active {
   }
   header .navbar hr {
     display: none;
+  }
+}
+.about .is-ancestor .is-3 {
+  width: 20%;
+}
+@media (max-width: 960px) {
+  section.introduction .flexrow {
+    flex-direction: column-reverse;
+  }
+  section.introduction .introduction-picture {
+    flex-basis: auto;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  section.introduction .introduction-text {
+    flex-basis: auto;
+    max-width: inherit;
+    padding: 1em;
+  }
+  section.introduction .flexrow-item {
+    width: 100%;
+    margin-right: 0;
+  }
+  .community img {
+    width: 100%;
+  }
+  .community h2 .section-title {
+    font-size: 1.6em;
+  }
+  .community .flexrow-item {
+    margin: 0;
+  }
+  .community .flexrow {
+    flex-direction: column;
+  }
+  .community.community-info .section-title {
+    font-size: 1.1em;
+  }
+  .community .community-header img {
+    margin-bottom: 2em;
+  }
+  .community .illustration {
+    width: 100%;
+  }
+  .community .illustration img {
+    margin-top: 2em;
+    max-width: 600px;
   }
 }

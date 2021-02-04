@@ -269,13 +269,18 @@ p.tagline-explaination
 
 header
     .navbar
-        max-width 960px
+        max-width 1000px
         margin auto
         font-size 1em
+
+        .navbar-brand
+            .navbar-item
+                padding-left 0
 
     a.navbar-lang-item
         font-size 0.8em
         margin 0.1em
+        padding-top 3px
         width 30px
         color #BBB
 
@@ -339,6 +344,9 @@ section
 
     &.introduction
         padding-top 5em
+        padding-bottom 1em
+        width auto
+        max-width 1200px
 
         h1.title
             font-weight bold
@@ -357,6 +365,15 @@ section
             font-size 1.1em
             border-radius 2em
             padding 1.3em
+
+        .introduction-picture
+            flex-basis 57% 
+            margin 0
+
+        .introduction-text
+            flex-basis 43% 
+            padding 0 0.4em
+            margin 0
 
     &.clients
         img
@@ -1238,9 +1255,24 @@ section.pricing
 
 
 @media(max-width: 960px)
-    .introduction-picture
-        text-align center
-        margin-top 2em
+    section.introduction
+        .flexrow
+            flex-direction column-reverse
+
+        .introduction-picture
+            flex-basis auto
+            text-align center
+            margin-top 2em
+            margin-bottom 2em
+
+        .introduction-text
+            flex-basis auto
+            max-width inherit
+            padding 1em
+
+        .flexrow-item
+            width 100%
+            margin-right 0
 
     .community
         img 

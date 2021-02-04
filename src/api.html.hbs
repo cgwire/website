@@ -188,7 +188,25 @@ pathTo: .
   <div class="block">
     <section class="section">
       <div class="tile flex-aic">
-        <div class="tile is-5 is-child content">
+        <div class="tile is-7 is-child content mr1">
+        <pre>
+import gazu
+
+gazu.log_in("john", os.getenv("PASSWORD", "default"))
+
+project = gazu.project.get_project_by_name("Big Buck Bunny")
+assets = gazu.asset.all_assets_for_project(project)
+
+modeling = gazu.task.get_task_type_by_name("Modeling")
+tasks = gazu.task.all_tasks_for_entity_and_task_type(assets[0], modeling)
+
+gazu.files.build_working_file_path(tasks[0])
+> "/productions/bbb/assets/characters/bunny/modeling/bbb_bunny_modeling_v001"
+        </pre>
+
+        </div>
+
+        <div class="tile is-5 is-child content pl1">
           <h2>
             <span class="section-subtitle">
               {{__ 'gazu features subtitle'}}
@@ -216,23 +234,6 @@ pathTo: .
               {{__ 'api button cta'}}
             </a>
             </p>
-        </div>
-        <div class="tile is-7 is-child content-image">
-        <pre>
-import gazu
-
-gazu.log_in("john", os.getenv("PASSWORD", "default"))
-
-project = gazu.project.get_project_by_name("Big Buck Bunny")
-assets = gazu.asset.all_assets_for_project(project)
-
-modeling = gazu.task.get_task_type_by_name("Modeling")
-tasks = gazu.task.all_tasks_for_entity_and_task_type(assets[0], modeling)
-
-gazu.files.build_working_file_path(tasks[0])
-> "/productions/bbb/assets/characters/bunny/modeling/bbb_bunny_modeling_v001"
-        </pre>
-
         </div>
       </div>
     </section>
