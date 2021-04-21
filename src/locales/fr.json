@@ -416,7 +416,7 @@
 	"kitsu highlight two": "Un stockage cloud pour tous vos previews",
 	"kitsu highlight three": "Le meilleur choix pour le télétravail",
 	"community subtitle": "Rejoignez vos pairs",
-	"main explaination trusted": "Rejoignez de nombreux studios",
+	"main explaination trusted": "Rejoignez plus de 50 studios et écoles",
 	"api highlight one": "Un client Python facile à maîtriser",
 	"api highlight two": "Dans le cloud ou sur vos serveurs",
 	"api highlight three": "Intégrés à vos outils de dessin",
@@ -446,5 +446,7 @@
 	"community translate explaination": "Kitsu est déjà disponible en six langues. Avec votre aide, nous pouvons aller plus loin. Traduisez Kitsu dans votre langue et permettez à plus de monde d'accéder à nos technologies open source !",
 	"community translate cta": "Devenez un traducteur de Kitsu",
 	"about team id matthieu": "Matthieu Aubry",
-	"about team role matthieu": "CEO chez Innocraft"
+	"about team role matthieu": "CEO chez Innocraft",
+	"jobs title": "jobs title",
+	"meta jobs": "meta jobs"
 }
