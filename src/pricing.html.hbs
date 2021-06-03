@@ -243,9 +243,9 @@ pathTo: .
         </div>
         <div class="pricing-price">
           <span class="pricing-currency">€</span>
-          <span class="pricing-value yearly">20</span>
-          <span class="pricing-value monthly hidden">25</span>
-          {{__ 'pricing value month'}} / user
+          <span class="pricing-value yearly">1899</span>
+          <span class="pricing-value monthly hidden">1519</span>
+            {{__ 'pricing value month'}} 
         </div>
         <div class="pricing-price-info">
          {{__ 'pricing billed annualy'}}
@@ -292,6 +292,10 @@ pathTo: .
       </div>
     </div>
 
+    <p class="has-text-centered pricing-details">
+      {{__ 'pricing discount details'}}
+    </p>
+
     <p class="has-text-centered mt2">
       <button class="button frequence" id="monthly-button">
         {{__ 'pricing monthly'}}
@@ -301,9 +305,92 @@ pathTo: .
       </button>
     </p>
 
-    <p class="has-text-centered pricing-details">
-      {{__ 'pricing discount details'}}
-    </p>
+
+    <div class="section-subtitle has-text-centered">
+      On-Premise
+    </div>
+    <h2 class="section-title has-text-centered">
+      {{__ 'pricing support license title'}}
+    </h2>
+    <div class="has-text-centered">
+      <p style="max-width: 800px; margin: auto;">
+        {{__ 'pricing support license details'}}
+      </p>
+    </div>
+
+    <div class="pricings">
+      <div class="pricing-block">
+        <div class="pricing-title">
+          {{__ 'pricing support license setup'}}
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-currency">€</span>
+          <span class="pricing-value monthly">1000</span>
+          <div class="pricing-features">
+            <ul>
+              <li>
+                {{__ 'pricing support license ubuntu'}}
+              </li>
+            </ul>
+            <ul>
+              <li>
+                {{__ 'pricing support license ssh'}}
+              </li>
+            </ul>
+            <ul>
+              <li>
+                {{__ 'pricing support license domain'}}
+              </li>
+            </ul>
+            <ul>
+              <li>
+                {{__ 'pricing support license ports'}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-block">
+        <div class="pricing-title">
+          {{__ 'pricing support license directory'}}
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-currency">€</span>
+          <span class="pricing-value monthly">300</span>
+          <div class="pricing-features">
+            <ul>
+              <li>
+                {{__ 'pricing support license ldap'}}
+              </li>
+              <li>
+                {{__ 'pricing support license ad'}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-block">
+        <div class="pricing-title">
+          {{__ 'pricing support license migration'}}
+        </div>
+        <div class="pricing-price">
+          <span class="pricing-currency">€</span>
+          <span class="pricing-value monthly">500</span>
+          <div class="pricing-features">
+            <ul>
+              <li>
+                {{__ 'pricing support license migration cloud'}}
+              </li>
+            </ul>
+            <ul>
+              <li>
+                {{__ 'pricing support license migation onpremise'}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="section-subtitle has-text-centered">
       {{__ 'pricing sucesspack title'}}
@@ -415,15 +502,6 @@ pathTo: .
     </div>
 
     <div class="extra-block alinea">
-      <div class="section-subtitle has-text-centered">
-        {{__ 'pricing support license title'}}
-      </div>
-      <p class="has-text-centered">
-         {{__ 'pricing support license details'}}
-      </p>
-    </div>
-
-    <div class="extra-block">
       <div class="section-subtitle has-text-centered">
         {{__ 'pricing school title'}}
       </div>

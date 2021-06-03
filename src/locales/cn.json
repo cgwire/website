@@ -486,5 +486,16 @@
 	"about team id matthieu": "about team id matthieu",
 	"about team role matthieu": "about team role matthieu",
 	"jobs title": "jobs title",
-	"meta jobs": "meta jobs"
+	"meta jobs": "meta jobs",
+	"pricing support license setup": "pricing support license setup",
+	"pricing support license ubuntu": "pricing support license ubuntu",
+	"pricing support license ssh": "pricing support license ssh",
+	"pricing support license domain": "pricing support license domain",
+	"pricing support license ports": "pricing support license ports",
+	"pricing support license directory": "pricing support license directory",
+	"pricing support license ldap": "pricing support license ldap",
+	"pricing support license ad": "pricing support license ad",
+	"pricing support license migration": "pricing support license migration",
+	"pricing support license migration cloud": "pricing support license migration cloud",
+	"pricing support license migation onpremise": "pricing support license migation onpremise"
 }
