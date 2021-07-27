@@ -7,6 +7,15 @@ body {
 .hidden {
   display: none;
 }
+.w150 {
+  width: 150px;
+}
+.supporters h2 {
+  margin: 0;
+}
+.supporters .flexrow-item.mr0 {
+  margin-right: 0;
+}
 body a {
   color: #00b242;
 }
