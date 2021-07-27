@@ -145,16 +145,27 @@ pathTo: .
     </div>
   </section>
 
-  <div class="mt2">
-    &nbsp;
-  </div>
+  <section class="section supporters">
+    <h2 class="subtitle tagline">
+      {{__ 'about supporters title'}}
+    </h2>
+    <ul class="flexrow has-text-centered">
+      <li class="flexrow-item w150 mr0"><a href="https://www.cnc.fr"><img src="/images/logo-cnc.png" alt="CNC"></a></li>
+      <li class="flexrow-item w150 mr0"><a
+      href="https://www.unrealengine.com/en-US/megagrants"><img src="/images/logo-epic-games.png" alt="Epic Games"></a></li>
+      <li class="flexrow-item w150 mr0"><a href="https://www.ovh.com"><img src="/images/logo-ovhdlp.png" alt="OVH Digital Launch Pad"></a></li>
+    </ul>
+  </section>
 
   <section class="section content has-text-centered">
     <h2 class="subtitle">
       {{__ 'zou contact introduction'}}
     </h2>
     <p>
-      <a class="button is-large" href="https://account.cg-wire.com/{{ locale }}/signup">
+      <a 
+        class="button is-large" 
+        href="https://account.cg-wire.com/{{ locale }}/signup"
+      >
         {{__ 'main plans cta' }}
       </a>
     </p>
