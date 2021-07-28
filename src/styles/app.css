@@ -16,6 +16,9 @@ body {
 .supporters .flexrow-item.mr0 {
   margin-right: 0;
 }
+.trusted .flexrow-item.mr0 {
+  margin-right: 0;
+}
 body a {
   color: #00b242;
 }
