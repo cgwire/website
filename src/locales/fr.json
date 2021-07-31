@@ -459,6 +459,9 @@
 	"pricing support license ports": "Requis: ports standards ouverts (80/443)",
 	"pricing support license migration cloud": "Récupérez vos productions depuis une instance cloud Kitsu",
 	"pricing support license migation onpremise": "Récupérez vos productions depuis une instance Kitsu locale",
-	"pricing support license directory": "User Directory"
-
+	"pricing support license directory": "User Directory",
+	"contact resellers": "Revendeurs",
+	"contact spain": "Espagne",
+	"contact france": "France (Écoles)",
+	"contact resellers": "contact resellers"
 }

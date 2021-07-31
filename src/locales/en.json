@@ -468,5 +468,8 @@
 	"pricing support license ports": "Needs: standard ports open (80/443)",
 	"pricing support license migration cloud": "Retrieve productions from a Kitsu cloud instance",
 	"pricing support license migation onpremise": "Retrieve productions from a Kitsu local instance",
-	"pricing support license directory": "User Directory"
+	"pricing support license directory": "User Directory",
+	"contact resellers": "Resellers",
+	"contact spain": "Spain",
+	"contact france": "France (Schools)"
 }
