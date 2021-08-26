@@ -47,6 +47,28 @@ body a:hover {
   border: 1px solid #eee;
   box-shadow: 0 0 6px 3px #f1f1f1;
 }
+.customer-story.landing-block {
+  padding-top: 1.5em;
+  border-radius: 2em;
+  border: 1px solid #7ae3a0;
+  background: #fcfefd;
+  box-shadow: 0 0 6px 3px #f1f1f1;
+}
+.customer-story.landing-block img {
+  max-width: 400px;
+  border-radius: 2em;
+  box-shadow: 0 0 6px 3px #e1e1e1;
+}
+.customer-story.landing-block .section-subtitle {
+  color: #54656f;
+  font-size: 1.3em;
+}
+.customer-story.landing-block .landing-text p {
+  color: #1f1f28;
+  max-width: 500px;
+  margin: 0;
+  padding: 0;
+}
 .section-list {
   list-style: none;
   padding: 0;

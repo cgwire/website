@@ -318,7 +318,7 @@
 	"about team role gooz": "Développeur UI et accroc aux CSS",
 	"about team explaination gooz": "Jean-Christophe développe des interfaces pour des sites ou des applications web depuis plus de 10 ans. Il aime les interfaces efficaces au service de leurs utilisateurs. Ce qui explique son penchant pour l'accessibilité et le travail bien fait.",
 	"about team id nico": "Nicolas Ledez",
-	"about team role nico": "Devops chez Square Scale",
+	"about team role nico": "Devops chez SquareScale",
 	"about team id ev": "Ev Henke",
 	"about team role ev": "Senior UX Designer",
 	"about team id jc": "Jean-Christophe Deperraz",
@@ -463,5 +463,6 @@
 	"contact resellers": "Revendeurs",
 	"contact spain": "Espagne",
 	"contact france": "France (Écoles)",
-	"contact resellers": "contact resellers"
+	"contact resellers": "contact resellers",
+	"main customer story one": "Nous voulions un outil pour lier les tâches et les livrabres visuels. Nous voulions quelque chose de simple et plaisant pour les équipes. Notamment pour les réalisateurs, qui devaient accéder aux bout-à-bout des plans tout le temps. Et bien sûr, tout en permettant aux chargés de productin de faire leur suivi aisément."
 }
