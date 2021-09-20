@@ -14,8 +14,6 @@
       <div class="navbar-start flexrow locales">
         <a href="/fr" class="flexrow-item navbar-lang-item">FR</a>
         <a href="/en" class="flexrow-item navbar-lang-item">EN</a>
-      </div>
-      <div class="navbar-end">
         <div class="navbar-item has-dropdown is-hoverable {{#if_eq name "solution"}}active{{/if_eq}}">
           <a class="navbar-link">
             <span class="navbar-item-title">
@@ -138,6 +136,8 @@
           </span>
         </a>
 
+      </div>
+      <div class="navbar-end">
         <a class="navbar-item signin" href="https://account.cg-wire.com/{{ locale }}/login">
           {{__ 'header sign in'}}
         </a>

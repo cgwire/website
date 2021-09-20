@@ -275,6 +275,12 @@ header .navbar {
   margin: auto;
   font-size: 1em;
 }
+header .navbar .navbar-link,
+header .navbar .navbar-item-title,
+header .navbar .navbar-item.sign-in {
+  font-size: 17px;
+  font-weight: bold;
+}
 header .navbar .navbar-brand .navbar-item {
   padding-left: 0;
 }
