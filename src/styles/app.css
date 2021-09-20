@@ -278,6 +278,7 @@ header .navbar {
 header .navbar .navbar-link,
 header .navbar .navbar-item-title,
 header .navbar .navbar-item.sign-in {
+  margin-top: 2px;
   font-size: 17px;
   font-weight: bold;
 }
@@ -948,20 +949,19 @@ section.pricing .frequence.active {
   left: 0;
 }
 .footer {
-  background: #00b242;
-  color: #fff;
-  font-size: 1em;
+  border-top: 5px solid #00b242;
+  font-size: 0.9em;
   padding: 0;
 }
 .footer a {
-  color: #fff;
+  color: #1f1f28;
 }
 .footer a:hover {
-  color: #fff;
+  color: #1f1f28;
   text-decoration: underline;
 }
 .footer .columns {
-  padding-top: 2em;
+  padding-top: 1em;
   padding-bottom: 2em;
   max-width: 920px;
   margin: 0 auto;
@@ -977,11 +977,11 @@ section.pricing .frequence.active {
   padding-top: 1.2em;
 }
 .footer .footer-title {
+  color: #008000;
   font-weight: bold;
-  text-transform: capitalize;
-  font-style: capitalize;
-  margin-bottom: 1em;
-  font-size: 1.15em;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  font-size: 0.9em;
   padding: 0;
 }
 .footer .footer-of-footer {
