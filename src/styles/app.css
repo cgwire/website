@@ -709,6 +709,8 @@ section.pricing .frequence.active {
   margin-bottom: 1rem;
 }
 .kitsu-page .highlights {
+  margin-bottom: 1em;
+  margin-top: 2em;
   color: #8a8a8a;
 }
 .kitsu-page .highlights img {
