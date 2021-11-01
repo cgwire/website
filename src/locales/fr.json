@@ -310,11 +310,11 @@
 	"about values title three": "Artisanat",
 	"about values text three": "Les choses bien faites durent plus longtemps. Nous sommes heureux de travailler dessus et nous obtenons de meilleurs logiciels.",
 	"about team id frank": "Frank Rousseau",
-	"about team role frank": "CEO et ceinture noire de code",
-	"about team explaination frank": "Frank a travaillé pour des studios d'animation et a déjà cofondé une entreprise. A travers cette expérience il a pu monter une équipe technique conséquente. Il a les compétences pour rassembler les bonnes personnes et les bonnes technologies pour votre pipeline.",
+	"about team role frank": "Responsable Vision, Finances et Partenariats",
+	"about team explaination frank": "Avant CGWire, Frank a travaillé pour des studios d'animation et a co-fondé une entreprise. Aujourd'hui il définit la vision de CGWire et réunit les bonnes personnes et technologies pour la construire.",
 	"about team id gwen": "Gwenaëlle Dupré",
-	"about team role gwen": "CPO et couteau-suisse",
-	"about team explaination gwen": "Gwenaëlle Dupré a travaillé plus de 10 ans en tant que directrice de production sur des projets 2D, 3D, de séries, de courts et de publicités, dans des petites et des grandes équipes. Naturellement, chez CGWire, elle s'occupe de tous les aspects du produit.",
+	"about team role gwen": "Responsable Produit et Ventes",
+	"about team explaination gwen": "Gwenaëlle Dupré a travaillé plus de 10 ans en tant que directrice de production. Chez CGWire, elle s'occupe de tous les aspects du produit et ventes. Elle s'assure que l'implémentation de Kitsu dans votre studio soit toujours un succès.",
 	"about team id gooz": "JC Pagnon",
 	"about team role gooz": "Développeur UI et accroc aux CSS",
 	"about team explaination gooz": "Jean-Christophe développe des interfaces pour des sites ou des applications web depuis plus de 10 ans. Il aime les interfaces efficaces au service de leurs utilisateurs. Ce qui explique son penchant pour l'accessibilité et le travail bien fait.",
@@ -466,5 +466,12 @@
 	"contact france": "France (Écoles)",
 	"main customer story one": "Nous voulions un outil pour lier les tâches et les livrabres visuels. Nous voulions quelque chose de simple et plaisant pour les équipes. Notamment pour les réalisateurs, qui devaient accéder aux bout-à-bout des plans tout le temps. Et bien sûr, tout en permettant aux chargés de productin de faire leur suivi aisément.",
 	"newsletter title": "Newsletter",
-	"newsletter description": "Recevez les dernières nouvelles de CGWire et Kitsu, la plateforme de collaboration pour les studios d'animation."
+	"newsletter description": "Recevez les dernières nouvelles de CGWire et Kitsu, la plateforme de collaboration pour les studios d'animation.",
+	"about team id evan": "Evan Blaudy",
+	"about team role evan": "Responsable Développement",
+	"about team explaination evan": "Evan est un développeur Python et Javscript expérimenté qui intervient uniquement sur des projets open source. Avec nous, Il travaille sur la maintenance de Kitsu et sur les intégrations dans les logiciels de création.",
+	"about team id nicolas": "Nicolas Ledez",
+	"about team role nicolas": "Responsable Infrastructure",
+	"about team explaination nicolas": "Nicolas est un administrateur système reconnu dans le milieu du cloud. Il gère nos infrastructures cloud et on-premise. Grâce à lui votre instance Kitsu est toujours en état de fonctionnement."
+
 }
