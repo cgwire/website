@@ -82,7 +82,28 @@
     <script src="js/van11y-accessible-tab-panel-aria.min.js"></script>
     {{/if}}
     {{#if modal}}
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('youtube-player', {
+        height: '100%',
+        width: '100%',
+        videoId: 'EH3RbmHykrE',
+        events: {}
+      });
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
       var modalTogglers = Array.prototype.slice.call(document.querySelectorAll('.toggleModal'), 0);
       var modalClosers = Array.prototype.slice.call(document.querySelectorAll('.modal-close'), 0);
@@ -91,14 +112,15 @@
           el.addEventListener('click', function () {
             var target = el.getAttribute("href").substr(1);
             var targetEl = document.getElementById(target);
-
             targetEl.classList.toggle('is-active');
+            player.playVideo();
           });
         });
       }
       if (modalClosers.length > 0) {
         modalClosers.forEach(function (el) {
           el.addEventListener('click', function () {
+            player.pauseVideo();
             this.parentNode.classList.remove('is-active');
           });
         });
