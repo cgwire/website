@@ -1251,6 +1251,9 @@ section.pricing .frequence.active {
 .about .is-ancestor .is-3 {
   width: 25%;
 }
+.modal-content {
+  width: 90%;
+}
 @media (max-width: 960px) {
   section.introduction .flexrow {
     flex-direction: column-reverse;
