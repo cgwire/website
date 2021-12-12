@@ -480,5 +480,11 @@
 	"pricing firsteps cta2": "Regardez nos packs succés",
 	"pricing features tiny support": "Support basique",
 	"pricing support onpremise title": "Options On-Premises",
-	"pricing sucesspack explaination": "Notre équipe vous aidera à definir et démarrer une implémentation sur-mesure de Kitsu dans votre studio."
+	"pricing sucesspack explaination": "Notre équipe vous aidera à definir et démarrer une implémentation sur-mesure de Kitsu dans votre studio.",
+	"pricing metadata": "pricing metadata",
+	"pricing firsteps subttile": "pricing firsteps subttile",
+	"pricing cloud explaination": "pricing cloud explaination"
+	"pricing metadata": "Regardez comment nous pouvons vous aider à migrer sous Kitsu et découvrez nos abonnement d'hébergement (cloud ou on-premise).",
+	"pricing firsteps subttile": "Démarrer avec Kitsu",
+	"pricing cloud explaination": "Nous gérons tout le gros du travail pour vous et adaptons le matériel et le support à la taille de votre studio."
 }
