@@ -1,6 +1,6 @@
 {
 	"main title": "Collaboration Platform For Animation Studios",
-	"main subtitle": "CGWire helps you to deliver animated content on a tight budget. It allows to dispatch tasks, perform reviews and manage shots from anywhere.",
+	"main subtitle": "CGWire develops Kitsu to help you to deliver animated content on a tight budget. Kitsu allows to dispatch tasks, perform reviews and manage shots from anywhere.",
 	"main tagline": "Bring Your Productions To The Next Step",
 	"main explaination one": "With our solutions, you keep track of validations and you store every version of each preview. Everyone knows in real-time what is going on. Therefore, you enable efficient collaboration between different sites and with people working from home. You take better decisions and deliver pictures faster.",
 	"main explaination two": "CGWire knows these problems well. We have extensive experience in studios and as software engineers. And the good news: we can give you a hand.",
@@ -491,5 +491,7 @@
 	"pricing metadata": "See how we can help you to migrate to Kitsu and discover our hosting plans (cloud or on-premise).",
 	"pricing firsteps subttile": "Starting with Kitsu",
 	"pricing cloud explaination": "We handle all the hosting heavy-lifting for you and we adapt our hardware and support to your studio size.",
-	"main customer story fost": "With Kitsu, people think first about the time saved but what matters more to me is the serenity you get by having everything in order. It gave you more space in your brain to focus on other elements of your production. "
+	"main customer story fost": "With Kitsu, people think first about the time saved but what matters more to me is the serenity you get by having everything in order. It gave you more space in your brain to focus on other elements of your production. ",
+	"header title integrations": "Integrations",
+	"header title integrations:e": "header title integrations:e"
 }
