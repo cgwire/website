@@ -10,6 +10,18 @@ body {
 .w150 {
   width: 150px;
 }
+.w25pe {
+  width: 25%;
+}
+.w50pe {
+  width: 50%;
+}
+.w75pe {
+  width: 75%;
+}
+.w90pe {
+  width: 90%;
+}
 .supporters h2.subtitle.tagline {
   margin-bottom: 2em;
 }
@@ -123,11 +135,20 @@ body a:hover {
 .pl1 {
   padding-left: 1rem;
 }
+.pt0 {
+  padding-top: 0rem;
+}
+.mt0 {
+  margin-top: 0rem;
+}
 .mt2 {
   margin-top: 2rem;
 }
 .mt4 {
   margin-top: 4rem;
+}
+.mb4 {
+  margin-bottom: 4rem;
 }
 .filler {
   margin-bottom: 14em;
@@ -479,6 +500,38 @@ section.use-case h2.subtitle {
 .community .community-link span {
   margin-left: 0.5em;
   margin-right: 0.5em;
+}
+.integrations .flexrow {
+  align-items: stretch;
+}
+.integrations .software {
+  background: #f5f5f5;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  display: flex;
+  flex: 1 1;
+  justify-content: center;
+  padding: 2em;
+  position: relative;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.integrations .software:hover {
+  border: 1px solid #00b242;
+  box-shadow: 0 4px 12px rgba(0,100,0,0.2);
+}
+.integrations .software .made-by-community {
+  background: #e8ddf6;
+  border-radius: 16px;
+  bottom: 10px;
+  color: #8a53d1;
+  font-size: 0.6em;
+  padding: 0.2em 0.8em;
+  position: absolute;
+  right: 10px;
+}
+.integrations h2.section-title {
+  font-size: 1.7em;
 }
 .studios section:first-child {
   padding-bottom: 0;

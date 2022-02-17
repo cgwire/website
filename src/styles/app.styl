@@ -5,6 +5,7 @@ cgwiregreen = #00B242
 cgwiregreentransparent = #00B242CC
 cgwiregreen-alt = #67BE4B
 cgwiregreen-light = #7AE3A0
+purple = #8a53d1
 rainbow-1 = #FF6BC2
 rainbow-2 = #C149C4
 rainbow-3 = #8A53D1
@@ -34,6 +35,18 @@ body
 
 .w150
     width 150px
+
+.w25pe
+    width 25%
+ 
+.w50pe
+    width 50%
+    
+.w75pe
+    width 75%
+  
+.w90pe
+    width 90%
 
 .supporters
     h2.subtitle.tagline
@@ -155,11 +168,20 @@ body
 .pl1
     padding-left 1rem
 
+.pt0
+    padding-top 0rem
+
+.mt0
+    margin-top 0rem
+
 .mt2
     margin-top 2rem
 
 .mt4
     margin-top 4rem
+
+.mb4
+    margin-bottom 4rem
 
 .filler
     margin-bottom 14em
@@ -525,6 +547,40 @@ section
             margin-left 0.5em
             margin-right 0.5em
 
+
+.integrations
+    .flexrow
+        align-items stretch
+
+    .software
+        background lightgrey
+        border 1px solid transparent
+        border-radius 10px
+        display flex
+        flex 1 1 
+        justify-content center
+        padding 2em
+        position: relative
+        text-align center
+        transition all 0.5s ease
+
+        &:hover
+          border 1px solid cgwiregreen
+          box-shadow 0 4px 12px rgba(0, 100, 0, 0.2)
+          
+        .made-by-community
+          background purple + 80%
+          // border 1px solid purple
+          border-radius 16px
+          bottom 10px
+          color purple
+          font-size 0.6em
+          padding 0.2em 0.8em
+          position absolute
+          right 10px
+
+    h2.section-title
+        font-size 1.7em
 
 .studios
     section:first-child
