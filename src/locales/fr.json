@@ -486,6 +486,16 @@
 	"pricing cloud explaination": "Nous gérons tout le gros du travail pour vous et adaptons le matériel et le support à la taille de votre studio.",
 	"main customer story fost": "On pense souvent au temps gagné avec Kitsu mais ce qui compte le plus pour moi c'est la sérénité qu'il fournit en ayant tout au clair. Cela soulage le cerveau et permet de se concentrer sur les autres éléments de la production.",
 	"header title integrations": "header title integrations",
-	"contact title": "contact title",
-	"contact explaination one": "contact explaination one"
+	"contact title": "Contacts",
+	"contact explaination one": "Veuillez trouver ici la liste des emails pour nous contacter que ce soit au sujet du support, des ventes ou des partenariats.",
+	"integrations subtitle": "Intégrations logiciels",
+	"integrations tagline": "Connectez tous vous outils",
+	"integrations explaination one": "Vos données circulent dans tout votre pipeline. C'est pourquoi nous proposons des intégrations pour faciliter la communication entre vos outils. Nous permettons ainsi à vos artistes de publier leurs livrable depuis leur outils. Mais aussi, votre équipe peut envoyer des notifications dans vos application de chats. Et enfin, nous permettons de requêter notre API directement depuis votre code.",
+	"integrations title dcc": "Publiez depuis vos outils de création",
+	"integrations title chats": "Envoyez des notifications dans vos applications de chats",
+	"integrations title software": "Integrez Kitsu directement dans votre code",
+	"integrations subtitle dcc": "Envoyez des previews plus rapidement",
+	"integrations subtitle chats": "Gardez tout le monde à jour",
+	"integrations subtitle software": "Utilisez les données de Kitsu dans vos outils"
+
 }
