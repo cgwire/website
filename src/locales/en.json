@@ -503,5 +503,6 @@
 	"integrations title software": "Integrate Kitsu directly into Your Code",
 	"integrations subtitle dcc": "Make it faster to send previews",
 	"integrations subtitle chats": "Keep people up to date",
-	"integrations subtitle software": "Use Kitsu data in your tools"
+	"integrations subtitle software": "Use Kitsu data in your tools",
+	"integrations title": "Plug Kitsu into your tools"
 }
