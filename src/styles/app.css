@@ -517,8 +517,8 @@ section.use-case h2.subtitle {
   transition: all 0.5s ease;
 }
 .integrations .software:hover {
-  border: 1px solid #00b242;
-  box-shadow: 0 4px 12px rgba(0,100,0,0.2);
+  border: 1px solid #8a53d1;
+  box-shadow: 0 0 12px rgba(138,83,209,0.4);
 }
 .integrations .software .made-by-community {
   background: #e8ddf6;
@@ -531,7 +531,10 @@ section.use-case h2.subtitle {
   right: 10px;
 }
 .integrations h2.section-title {
-  font-size: 1.7em;
+  font-size: 1.5em;
+}
+.integrations .section-subtitle {
+  margin-bottom: 0.2em;
 }
 .studios section:first-child {
   padding-bottom: 0;
