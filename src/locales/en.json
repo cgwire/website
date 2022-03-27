@@ -504,5 +504,6 @@
 	"integrations subtitle dcc": "Make it faster to send previews",
 	"integrations subtitle chats": "Keep people up to date",
 	"integrations subtitle software": "Use Kitsu data in your tools",
-	"integrations title": "Plug Kitsu into your tools"
+	"integrations title": "Plug Kitsu into your tools",
+	"main customer story miyu": "A few days are enough to understand the features require to run a production. Everyone starts quickly, especially artists who really enjoy it. We didn't notice this enthusiasm with the previous tools we used."
 }
