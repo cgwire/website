@@ -1110,6 +1110,12 @@ section.pricing .frequence.active {
   padding: 0.5em;
   text-align: center;
 }
+.changelog-button {
+  border: 1px solid #00b242;
+  border-radius: 10px;
+  font-size: 1em;
+  padding: 0.5em;
+}
 .calculator .staffnumber {
   margin-right: 10px;
 }
