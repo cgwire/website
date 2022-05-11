@@ -1,8 +1,17 @@
 html,
 body {
+  background: #3d4048;
+  color: #fff;
   margin: 0;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
+}
+.content h1,
+.content h2,
+.content h3,
+.content p,
+.content div {
+  color: #fff;
 }
 .hidden {
   display: none;
@@ -63,20 +72,18 @@ body a:hover {
   padding-top: 1.5em;
   border-radius: 2em;
   border: 1px solid #7ae3a0;
-  background: #fcfefd;
-  box-shadow: 0 0 6px 3px #f1f1f1;
+  background: #4e5159;
+  box-shadow: 0 0 6px 3px #1f1f28;
 }
 .customer-story.landing-block img {
   max-width: 400px;
   border-radius: 2em;
-  box-shadow: 0 0 6px 3px #e1e1e1;
+  box-shadow: 0 0 6px 3px #1f1f28;
 }
 .customer-story.landing-block .section-subtitle {
-  color: #54656f;
   font-size: 1.3em;
 }
 .customer-story.landing-block .landing-text p {
-  color: #1f1f28;
   max-width: 500px;
   margin: 0;
   padding: 0;
@@ -150,6 +157,9 @@ body a:hover {
 .mb4 {
   margin-bottom: 4rem;
 }
+.pb4 {
+  padding-bottom: 4rem;
+}
 .filler {
   margin-bottom: 14em;
 }
@@ -184,7 +194,6 @@ h2.subtitle.tagline {
 }
 p.tagline-explaination {
   font-size: 1.1em;
-  color: #1f1f28;
   line-height: 1.5em;
   margin-bottom: 2em;
 }
@@ -414,7 +423,7 @@ section.conclusion img {
   position: relative;
 }
 section.conclusion.conclusion-text.content {
-  margin-bottom: 0;
+  margin-bottom: 6rem;
 }
 section.conclusion.conclusion-picture.content {
   margin-bottom: 0;
@@ -661,7 +670,7 @@ section.pricing {
 }
 section.pricing .button.is-outlined {
   border: 1px solid #67be4b;
-  background: #fff;
+  background: #4e5159;
   color: #67be4b;
   font-weight: bold;
   transition: transform 0.3s ease;
@@ -669,7 +678,7 @@ section.pricing .button.is-outlined {
 section.pricing .frequence {
   padding: 0.5em;
   height: auto;
-  background: #fff;
+  background: #4e5159;
   color: #00b242;
 }
 section.pricing .frequence.active {
@@ -691,7 +700,7 @@ section.pricing .frequence.active {
   min-width: 180px;
   max-width: 225px;
   box-shadow: 0 4px 16px rgba(0,100,0,0.2);
-  background: #fff;
+  background: #4e5159;
   border-radius: 1em;
   display: flex;
   flex-direction: column;
@@ -737,7 +746,7 @@ section.pricing .frequence.active {
 }
 .pricing-block .pricing-cta .button.is-outlined {
   border: 1px solid #67be4b;
-  background: #fff;
+  background: #4e5159;
   color: #67be4b;
   width: 100%;
   transition: transform 0.3s ease;
@@ -1016,12 +1025,12 @@ section.pricing .frequence.active {
   border-top: 5px solid #00b242;
   font-size: 0.9em;
   padding: 0;
+  background: #1f1f28;
 }
 .footer a {
-  color: #1f1f28;
+  color: #fff;
 }
 .footer a:hover {
-  color: #1f1f28;
   text-decoration: underline;
 }
 .footer .columns {
@@ -1049,8 +1058,7 @@ section.pricing .frequence.active {
   padding: 0;
 }
 .footer .footer-of-footer {
-  background: #fff;
-  color: #1f1f28;
+  background: #3d4048;
   padding: 1em;
 }
 .footer li {

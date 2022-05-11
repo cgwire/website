@@ -11,10 +11,6 @@
       </div>
     </div>
     <div class="navbar-menu" id="top-menu">
-      <div class="navbar-start flexrow locales">
-        <a href="/fr" class="flexrow-item navbar-lang-item">FR</a>
-        <a href="/en" class="flexrow-item navbar-lang-item">EN</a>
-        </div>
         <div class="navbar-item has-dropdown is-hoverable {{#if_eq name "solution"}}active{{/if_eq}}">
           <a class="navbar-link">
             <span class="navbar-item-title">
@@ -43,43 +39,6 @@
             >
               <img class="flexrow-item icon" src="/images/integrations.svg">
               <span class="flexrow-item">{{__ 'header title integrations'}}</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="navbar-item has-dropdown is-hoverable {{#if_eq name "usecase"}}active{{/if_eq}}">
-          <a class="navbar-link">
-            <span class="navbar-item-title">
-              {{__ 'header title usecase'}}
-            </span>
-          </a>
-
-          <div class="navbar-dropdown">
-            <a
-              class="navbar-item flexrow"
-              href="/{{ locale }}/shorts.html"
-            >
-              <img class="flexrow-item icon" src="/images/shorts.svg">
-              <span class="flexrow-item">{{__ 'header title short'}}</span>
-            </a>
-            <a
-              class="navbar-item flexrow"
-              href="/{{ locale }}/tvshows.html"
-            >
-              <img class="flexrow-item icon" src="/images/tvshows.svg">
-              <span class="flexrow-item">{{__ 'header title tvshow'}}</span>
-            </a>
-            <!--a class="navbar-item flexrow" href="/{{ locale }}/vfx.html">
-              <span class="flexrow-item">{{__ 'header title featurefilm'}}</span>
-            </a-->
-            <a class="navbar-item flexrow" href="/{{ locale }}/schools.html">
-              <img class="flexrow-item icon" src="/images/schools.svg">
-              <span class="flexrow-item">{{__ 'header title school'}}</span>
-            </a>
-            <hr />
-            <a class="navbar-item flexrow" href="/{{ locale }}/studios.html">
-              <img class="flexrow-item icon" src="/images/studios.svg">
-              <span class="flexrow-item">{{__ 'header title studios'}}</span>
             </a>
           </div>
         </div>
@@ -127,11 +86,6 @@
               <span>
                 Blog
               </span>
-            </a>
-            
-            <a class="navbar-item flexrow" href="/{{ locale }}/spreadsheets.html">
-              <img class="flexrow-item icon" src="/images/file-text.svg">
-              <span class="flexrow-item">{{__ 'header title spreadsheets'}}</span>
             </a>
           </div>
         </div>

@@ -20,13 +20,27 @@ rainbow-11 = #FF700D
 rainbow-12 = #9BBE27
 rainbow-13 = #FF195E
 rainbow-14 = #CE2358
+greybg = #3D4048
+greydark = #1F1F28
+greyalt = #4E5159
 
 
 html
 body
+    background greybg
+    color white
     margin 0
     font-family 'Lato', sans-serif
     font-size 18px
+
+.content
+
+    h1,
+    h2,
+    h3,
+    p,
+    div
+        color white
 
 // Base
 
@@ -94,21 +108,19 @@ body
     padding-top 1.5em
     border-radius 2em
     border 1px solid cgwiregreen-light
-    background cgwiregreen-light + 98%
-    box-shadow 0 0 6px 3px #F1F1F1
+    background greyalt
+    box-shadow 0 0 6px 3px greydark
 
     img 
         max-width 400px   
         border-radius 2em
-        box-shadow 0 0 6px 3px #E1E1E1
+        box-shadow 0 0 6px 3px greydark
 
     .section-subtitle
-        color #54656F
         font-size 1.3em
 
     .landing-text 
         p
-            color darkgrey
             max-width 500px
             margin 0
             padding 0
@@ -183,6 +195,9 @@ body
 .mb4
     margin-bottom 4rem
 
+.pb4
+    padding-bottom 4rem
+
 .filler
     margin-bottom 14em
 
@@ -219,7 +234,6 @@ h2.subtitle.tagline
 
 p.tagline-explaination
     font-size 1.1em
-    color #1F1F28
     line-height 1.5em
     margin-bottom 2em
 
@@ -456,7 +470,7 @@ section
             position relative
 
         &.conclusion-text.content
-            margin-bottom 0
+            margin-bottom 6rem
 
         &.conclusion-picture.content
             margin-bottom 0
@@ -713,7 +727,7 @@ section.pricing
 
     .button.is-outlined
         border 1px solid cgwiregreen-alt
-        background white
+        background greyalt
         color cgwiregreen-alt
         font-weight bold
         transition transform 0.3s ease
@@ -721,7 +735,7 @@ section.pricing
     .frequence
         padding 0.5em
         height auto
-        background white
+        background greyalt
         color cgwiregreen
 
         &.active
@@ -743,7 +757,7 @@ section.pricing
     min-width 180px
     max-width 225px
     box-shadow 0 4px 16px rgba(0, 100, 0, 0.2)
-    background white
+    background greyalt
     border-radius 1em
     display flex
     flex-direction column
@@ -790,7 +804,7 @@ section.pricing
 
         .button.is-outlined
             border 1px solid cgwiregreen-alt
-            background white
+            background greyalt
             color cgwiregreen-alt
             width 100%
             transition transform 0.3s ease
@@ -1056,12 +1070,12 @@ section.pricing
     border-top 5px solid cgwiregreen
     font-size 0.9em
     padding 0
+    background greydark
 
     a
-        color darkgrey
+        color white
 
         &:hover
-            color darkgrey
             text-decoration underline
 
     .columns
@@ -1089,8 +1103,7 @@ section.pricing
         padding 0
 
     .footer-of-footer
-        background white
-        color darkgrey
+        background greybg
         padding 1em
 
     li
