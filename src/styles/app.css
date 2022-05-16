@@ -32,6 +32,7 @@ body {
   width: 90%;
 }
 .supporters h2.subtitle.tagline {
+  color: #f5f5f5;
   margin-bottom: 2em;
 }
 .supporters .flexrow-item.mr0 {
@@ -40,11 +41,17 @@ body {
 .trusted .flexrow-item.mr0 {
   margin-right: 0;
 }
+.trusted h4.section-subtitle {
+  color: #fff;
+}
 body a {
   color: #00b242;
 }
 body a:hover {
   color: #67be4b;
+}
+.main-logo {
+  width: 80px;
 }
 .section {
   max-width: calc(960px + 1.5rem * 2);
@@ -65,13 +72,12 @@ body a:hover {
 }
 .section .screenshot {
   border-radius: 0.5em;
-  border: 1px solid #eee;
-  box-shadow: 0 0 6px 3px #f1f1f1;
+  box-shadow: 0 0 6px 3px #323241;
 }
 .customer-story.landing-block {
   padding-top: 1.5em;
   border-radius: 2em;
-  border: 1px solid #7ae3a0;
+  border: 1px solid #00b242;
   background: #4e5159;
   box-shadow: 0 0 6px 3px #1f1f28;
 }
@@ -198,10 +204,10 @@ p.tagline-explaination {
   margin-bottom: 2em;
 }
 .block-colored {
-  background-color: #f5f5f5;
+  background-color: #4e5159;
 }
 .block-colored .button--alt {
-  background-color: #f5f5f5;
+  background-color: #4e5159;
 }
 .block-colored--dark {
   background-color: #1f1f28;
@@ -211,17 +217,6 @@ p.tagline-explaination {
 .block-colored--dark .section-title {
   color: #fff;
 }
-.block-colored--dark .button--alt,
-.block-colored--dark .button--alt:focus {
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-}
-.block-colored--dark .button--alt:hover {
-  color: #1f1f28;
-  background-color: #fff;
-  border-color: #fff;
-}
 .block-colored--dark .screenshot {
   box-shadow: 0 0 6px 3px #1c1c24;
   border: 1px solid #1f1f28;
@@ -230,31 +225,37 @@ p.tagline-explaination {
 .button:focus {
   color: #fff;
   background-color: #00b242;
-  border: 1px solid #00b242;
+  border: 2px solid #00b242;
   border-radius: 2em;
   padding: 1.2em;
 }
 .button:hover {
   color: #fff;
-  background-color: #67be4b;
-  border: 1px solid #67be4b;
+  background-color: #00b242;
+  border: 2px solid #00b242;
 }
 .button--alt,
 .button--alt:focus {
   color: #00b242;
-  background-color: #fff;
-  border: 1px solid #00b242;
+  font-weight: 500;
+  background-color: transparent;
+  border: 2px solid #00b242;
 }
 .button--alt:hover {
   color: #00b242;
-  background-color: rgba(0,178,66,0.1);
+  background-color: transparent;
   border-color: #00b242;
+  transition: background 0.3s ease;
+}
+.button--alt:hover:hover {
+  color: #00b242;
+  background: #eefff5;
 }
 .button--transparent,
 .button--transparent:focus {
   color: #00b242;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 .button--transparent:hover {
   color: #67be4b;
@@ -277,7 +278,7 @@ p.tagline-explaination {
   height: auto;
 }
 .input:focus {
-  border: 1px solid #67be4b;
+  border: 2px solid #00b242;
 }
 .choice-wrapper {
   align-items: stretch;
@@ -301,6 +302,7 @@ p.tagline-explaination {
   padding: 2.4rem 1.2rem;
 }
 header .navbar {
+  background: #3d4048;
   max-width: 1000px;
   margin: auto;
   font-size: 1em;
@@ -315,7 +317,11 @@ header .navbar .navbar-item.sign-in {
 header .navbar .navbar-brand .navbar-item {
   padding-left: 0;
 }
+header .navbar .navbar-item.has-dropdown:hover .navbar-link {
+  background: #4e5159;
+}
 header a.navbar-lang-item {
+  background: #3d4048;
   font-size: 0.8em;
   margin: 0.1em;
   padding-top: 3px;
@@ -323,7 +329,7 @@ header a.navbar-lang-item {
   color: #bbb;
 }
 header .navbar-link:after {
-  border-color: #67be4b;
+  border-color: #00b242;
 }
 header .navbar-link {
   margin-left: 0;
@@ -331,7 +337,8 @@ header .navbar-link {
 }
 header .navbar-link,
 header .navbar-item {
-  color: #1f1f28;
+  background: #3d4048;
+  color: #fff;
 }
 header .navbar-link img.icon,
 header .navbar-item img.icon {
@@ -341,8 +348,8 @@ header .navbar-item img.icon {
 }
 header .navbar-link:hover,
 header .navbar-item:hover {
-  background: transparent;
-  color: #1f1f28;
+  background: #3d4048;
+  color: #fff;
 }
 header .navbar-item.active span.navbar-item-title {
   box-sizing: border-box;
@@ -359,16 +366,24 @@ header .navbar-item.signup {
   padding: 0.5em 1em;
 }
 header .navbar-dropdown {
-  border: 1px solid #e9e9e9;
+  background: #4e5159;
+  border: 1px solid #4e5159;
   border-radius: 1em;
   border-top-left-radius: 0;
-  box-shadow: 0 2px 4px rgba(10,10,10,0.1);
+  box-shadow: 0 2px 4px #1f1f28;
+}
+header .navbar-dropdown .navbar-item {
+  background: #4e5159;
+}
+header .navbar-dropdown .navbar-item:hover {
+  background: #5e626b;
+  color: #fff;
 }
 header .navbar img {
   max-height: 2.5em;
 }
 header .navbar-lang-item.active {
-  color: #000;
+  color: #fff;
 }
 header .navbar hr {
   margin: auto;
@@ -379,6 +394,7 @@ section .tutorial-links a {
   margin-right: 1em;
 }
 section.introduction {
+  border-radius: 2em;
   padding-top: 5em;
   padding-bottom: 1em;
   width: auto;
@@ -392,7 +408,7 @@ section.introduction h1.title {
 section.introduction h2.main-subtitle {
   font-size: 1.1em;
   font-weight: 400;
-  color: #1f1f28;
+  color: #fff;
   line-height: 1.5em;
   margin-bottom: 2em;
 }
@@ -479,11 +495,11 @@ section.use-case h2.subtitle {
   margin-bottom: 0em;
 }
 .community.community-info img {
-  box-shadow: 0 0 15px 0 #ccd6cc;
+  box-shadow: 0 0 15px 0 graydark;
 }
 .community img {
   border-radius: 0.5em;
-  box-shadow: 0 0 5px 0 #99b;
+  box-shadow: 0 0 5px 0 graydark;
 }
 .community .illustration {
   flex: 0;
@@ -496,27 +512,45 @@ section.use-case h2.subtitle {
 }
 .community .community-link {
   border-radius: 5em;
-  border: 2px solid #2aca64;
-  color: #2aca64;
+  border: 2px solid #00b242;
+  color: #00b242;
   font-size: 1.1em;
   font-weight: 800;
   padding: 0.5em 0.5em 0.5em 0.9em;
+  transition: background 0.3s ease;
 }
 .community .community-link:hover {
-  color: #2aca64;
-  background: #f8fefa;
+  color: #00b242;
+  background: #eefff5;
 }
 .community .community-link span {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
+.api .content-image {
+  align-items: center;
+  background: #fff;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  padding: 0;
+  width: 500px;
+}
+.api .content-image img {
+  margin: auto;
+}
+.api pre {
+  border-radius: 1em;
+}
 .integrations .flexrow {
   align-items: stretch;
 }
 .integrations .software {
-  background: #f5f5f5;
-  border: 1px solid transparent;
+  background: #dadcdf;
+  border: 3px solid transparent;
   border-radius: 10px;
+  box-shadow: 0 0 12px #1f1f28;
   display: flex;
   flex: 1 1;
   justify-content: center;
@@ -526,8 +560,8 @@ section.use-case h2.subtitle {
   transition: all 0.5s ease;
 }
 .integrations .software:hover {
-  border: 1px solid #8a53d1;
-  box-shadow: 0 0 12px rgba(138,83,209,0.4);
+  border: 3px solid #b998e3;
+  box-shadow: 0 0 16px rgba(138,83,209,0.4);
 }
 .integrations .software .made-by-community {
   background: #e8ddf6;
@@ -652,7 +686,7 @@ section.partners img {
   margin-top: 3em;
 }
 .pricing-page .extra-block {
-  background: #f5f5f5;
+  background: #4e5159;
   border-radius: 1em;
   padding: 1em;
   max-width: 900px;
@@ -669,21 +703,31 @@ section.pricing {
   padding-top: 1em;
 }
 section.pricing .button.is-outlined {
-  border: 1px solid #67be4b;
-  background: #4e5159;
-  color: #67be4b;
+  border: 2px solid #00b242;
+  background: transparent;
+  color: #00b242;
   font-weight: bold;
   transition: transform 0.3s ease;
+  transition: background 0.3s ease;
+}
+section.pricing .button.is-outlined:hover {
+  color: #00b242;
+  background: #eefff5;
 }
 section.pricing .frequence {
   padding: 0.5em;
   height: auto;
-  background: #4e5159;
+  background: transparent;
   color: #00b242;
+  transition: background 0.3s ease;
 }
 section.pricing .frequence.active {
   background: #00b242;
   color: #fff;
+}
+section.pricing .frequence:hover {
+  color: #00b242;
+  background: #eefff5;
 }
 .pricings {
   display: flex;
@@ -719,7 +763,7 @@ section.pricing .frequence.active {
 }
 .pricing-block .pricing-price-info {
   font-size: 0.8em;
-  color: #999;
+  color: #f5f5f5;
   font-style: italic;
 }
 .pricing-block .pricing-features {
@@ -733,40 +777,43 @@ section.pricing .frequence.active {
 .pricing-block .pricing-features li {
   padding: 0.5em 0;
   font-size: 0.9em;
-  color: #888;
+  color: #fff;
   border-bottom: 1px solid #eee;
 }
 .pricing-block .pricing-text {
   align-items: center;
   display: flex;
-  color: #999;
+  color: #f5f5f5;
 }
 .pricing-block .pricing-cta {
   padding: 1em;
 }
 .pricing-block .pricing-cta .button.is-outlined {
-  border: 1px solid #67be4b;
+  border: 2px solid #00b242;
+  font-weight: 500;
   background: #4e5159;
   color: #67be4b;
   width: 100%;
   transition: transform 0.3s ease;
+  transition: background 0.3s ease;
 }
 .pricing-block .pricing-cta .button.is-outlined:hover {
-  transform: scale(1.05);
+  color: #00b242;
+  background: #eefff5;
 }
 .pricing-emphasize {
   transform: scale(1.05);
-  border: 1px solid #67be4b;
+  border: 2px solid #00b242;
 }
 .school-details {
   box-shadow: 0 4px 16px rgba(0,50,0,0.2);
   border-radius: 5px;
   padding: 0.6em;
   margin: 0 1em;
-  color: #666;
+  color: #fff;
 }
 .pricing-details {
-  color: #999;
+  color: #f5f5f5;
   font-style: italic;
 }
 .section-title {
@@ -782,7 +829,7 @@ section.pricing .frequence.active {
 .kitsu-page .highlights {
   margin-bottom: 1em;
   margin-top: 2em;
-  color: #8a8a8a;
+  color: #f5f5f5;
 }
 .kitsu-page .highlights img {
   width: 110px;
@@ -797,7 +844,7 @@ section.pricing .frequence.active {
   font-size: 1.11rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #54656f;
+  color: #f5f5f5;
 }
 .js-tabs {
   display: flex;
@@ -866,7 +913,7 @@ section.pricing .frequence.active {
   text-decoration: none;
 }
 .quote {
-  background-color: #f5f5f5;
+  background-color: #5e626b;
   padding: 6.5rem;
 }
 .quote-text {
@@ -875,7 +922,7 @@ section.pricing .frequence.active {
   line-height: 1.3;
   font-size: 2em;
   font-weight: bold;
-  color: #54656f;
+  color: #f5f5f5;
 }
 .quote-text p:before {
   content: "“";
@@ -1014,7 +1061,7 @@ section.pricing .frequence.active {
 }
 .content-reverse .content-image {
   padding-left: 0;
-  padding-right: 3rem;
+  margin-right: 3rem;
 }
 .modal iframe {
   position: absolute;
@@ -1040,7 +1087,7 @@ section.pricing .frequence.active {
   margin: 0 auto;
 }
 .footer .address {
-  color: #999;
+  color: #fff;
   padding-left: 20px;
 }
 .footer .column {
@@ -1110,7 +1157,7 @@ section.pricing .frequence.active {
   background: #dee0ff;
   border: 1px solid #5e60ba;
   border-radius: 1em;
-  color: #5e60ba;
+  color: #f5f5f5;
   font-size: 1.2em;
   font-weight: bold;
   margin-top: 1em;

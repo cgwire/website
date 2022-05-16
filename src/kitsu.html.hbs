@@ -27,12 +27,6 @@ pathTo: .
       </div>
     </div>
 
-    <div class="has-text-centered">
-      <a href="https://cgwire.canny.io/changelog" class="changelog-button">
-      {{__ 'kitsu changelog explaination'}}
-      </a>
-    </div>
-
     <div class="flexrow mt4 has-text-centered highlights">
       <div class="flexrow-item">
         <img src="/images/icons/collaboration.png" />
@@ -53,29 +47,6 @@ pathTo: .
         </p>
       </div>
     </div>
-  </section>
-
-  <section class="section content landing-block customer-story">
-    <a href="https://blog.cg-wire.com/customer-story-miyu-studio/">
-    <div class="flexrow reverse">
-        <div class="flexrow-item landing-picture">
-          <img src="/images/photo-customer-story-miyu.png" />
-        </div>
-        <div class="flexrow-item landing-text">
-          <h2 class="section-subtitle">
-            Customer Story:<br/> Miyu Studio
-          </h2>
-          <p>
-            <em>
-              "{{__ 'main customer story miyu'}}"
-            </em><br />
-          </p>
-          <p class="mt1">
-            Carole Faure, Production Manager
-          </p>
-        </div>
-    </div>
-    </a>
   </section>
 
   <section class="block-colored">
@@ -118,7 +89,8 @@ pathTo: .
           </a>
         </p>
       </div>
-      <div class="tile is-7 is-child content-image">
+      <div class="tile is-1 is-child"></div>
+      <div class="tile is-6 is-child content-image">
         <img class="screenshot" src="/images/kitsu-playlists.png" />
       </div>
     </div>
@@ -154,7 +126,7 @@ pathTo: .
         <blockquote class="quote-text quote-text--alt">
           <p>{{__ 'tvshows quote'}}</p>
           <footer class="quote-author"><img class="quote-avatar"
-          src="/images/testimonials/cecilehergaux.png"> {{__ 'tvshows quote author'}}</footer>
+          src="/images/testimonials/petedraper.png"> {{__ 'tvshows quote author'}}</footer>
         </blockquote>
       </div>
     </div>
@@ -200,7 +172,8 @@ pathTo: .
           </a>
         </p>
       </div>
-      <div class="tile is-7 is-child content-image">
+      <div class="tile is-1 is-child"></div>
+      <div class="tile is-6 is-child content-image">
         <img class="screenshot" src="/images/kitsu-news.png" />
       </div>
     </div>
@@ -278,64 +251,20 @@ pathTo: .
           {{__ 'kitsu timesheet text one'}}
         </p>
         <p>
-          <a href="https://account.cg-wire.com/{{ locale }}/signup" class="button button--alt is-large">
+          <a
+            href="https://account.cg-wire.com/{{ locale }}/signup" 
+            class="button button--alt is-large"
+          >
             {{__ 'kitsu timesheet cta'}}
           </a>
         </p>
       </div>
-      <div class="tile is-7 is-child content-image">
+      <div class="tile is-1 is-child"></div>
+      <div class="tile is-6 is-child content-image">
         <img class="screenshot" src="/images/kitsu-timesheet.png" />
       </div>
     </div>
   </section>
-
-  <div class="block-colored">
-    <section class="section">
-      <div class="tile flex-aic">
-        <div class="tile is-5 is-child content">
-          <h2>
-            <span class="section-subtitle">{{__ 'kitsu team subtitle'}}</span>
-            <span class="section-title">{{__ 'kitsu team title'}}</span>
-          </h2>
-          <p>
-            {{__ 'kitsu team text one'}}
-          </p>
-          <p>
-            <a href="https://account.cg-wire.com/{{ locale }}/signup" class="button button--alt is-large">
-              {{__ 'kitsu team cta'}}
-            </a>
-          </p>
-        </div>
-        <div class="tile is-7 is-child content-image">
-          <img class="screenshot" src="/images/kitsu-quotas.png" />
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <div class="block-colored--dark">
-    <section class="section">
-      <div class="tile flex-aic content-reverse">
-        <div class="tile is-5 is-child content">
-          <h2>
-            <span class="section-subtitle">{{__ 'kitsu dark subtitle'}}</span>
-            <span class="section-title">{{__ 'kitsu dark title'}}</span>
-          </h2>
-          <p>
-            {{__ 'kitsu dark text one'}}
-          </p>
-          <p>
-            <a href="https://account.cg-wire.com/{{ locale }}/signup" class="button button--alt is-large">
-              {{__ 'kitsu dark cta'}}
-            </a>
-          </p>
-        </div>
-        <div class="tile is-7 is-child content-image">
-          <img class="screenshot" src="/images/kitsu-todos.png" />
-        </div>
-      </div>
-    </section>
-  </div>
 </div>
 
 {{> trial }}

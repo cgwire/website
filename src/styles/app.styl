@@ -64,6 +64,7 @@ body
 
 .supporters
     h2.subtitle.tagline
+        color lightgrey
         margin-bottom 2em
 
     .flexrow-item.mr0
@@ -73,6 +74,9 @@ body
     .flexrow-item.mr0
         margin-right 0
 
+    h4.section-subtitle
+        color white
+
 
 body
     a
@@ -80,6 +84,9 @@ body
 
     a:hover
         color cgwiregreen-alt
+
+.main-logo
+    width 80px
 
 .section
     max-width calc(960px + 1.5rem * 2)
@@ -101,13 +108,12 @@ body
 
     .screenshot
         border-radius 0.5em
-        border 1px solid #EEE
-        box-shadow 0 0 6px 3px #F1F1F1
+        box-shadow 0 0 6px 3px greydark + 10%
 
 .customer-story.landing-block
     padding-top 1.5em
     border-radius 2em
-    border 1px solid cgwiregreen-light
+    border 1px solid cgwiregreen
     background greyalt
     box-shadow 0 0 6px 3px greydark
 
@@ -238,10 +244,10 @@ p.tagline-explaination
     margin-bottom 2em
 
 .block-colored
-    background-color lightgrey
+    background-color greyalt
 
     .button--alt
-        background-color lightgrey
+        background-color greyalt
 
 
 .block-colored--dark
@@ -252,17 +258,6 @@ p.tagline-explaination
     .section-title
         color white
 
-    .button--alt
-    .button--alt:focus
-        color white
-        background-color transparent
-        border 1px solid white
-
-    .button--alt:hover
-        color darkgrey
-        background-color white
-        border-color white
-
     .screenshot
         box-shadow 0 0 6px 3px darkgrey - 10%
         border 1px solid darkgrey
@@ -270,32 +265,38 @@ p.tagline-explaination
 .button
 .button:focus
     color white
-    background-color: cgwiregreen
-    border 1px solid cgwiregreen
+    background-color cgwiregreen
+    border 2px solid cgwiregreen
     border-radius 2em
     padding 1.2em
 
 .button:hover
     color white
-    background-color cgwiregreen-alt
-    border 1px solid cgwiregreen-alt
+    background-color cgwiregreen
+    border 2px solid cgwiregreen
 
 .button--alt
 .button--alt:focus
     color cgwiregreen
-    background-color white
-    border 1px solid cgwiregreen
+    font-weight 500
+    background-color transparent
+    border 2px solid cgwiregreen
 
 .button--alt:hover
     color cgwiregreen
-    background-color alpha(cgwiregreen, .1)
+    background-color transparent
     border-color cgwiregreen
+    transition background 0.3s ease
+
+    &:hover
+        color cgwiregreen
+        background cgwiregreen + 95%
 
 .button--transparent
 .button--transparent:focus
     color cgwiregreen
     background-color transparent
-    border 1px solid transparent
+    border 2px solid transparent
 
 .button--transparent:hover
     color cgwiregreen-alt
@@ -317,7 +318,7 @@ p.tagline-explaination
     height auto
 
 .input:focus
-    border 1px solid cgwiregreen-alt
+    border 2px solid cgwiregreen
 
 .choice-wrapper
     align-items stretch
@@ -344,6 +345,7 @@ p.tagline-explaination
 
 header
     .navbar
+        background greybg
         max-width 1000px
         margin auto
         font-size 1em
@@ -359,7 +361,11 @@ header
             .navbar-item
                 padding-left 0
 
+        .navbar-item.has-dropdown:hover .navbar-link
+            background greyalt
+
     a.navbar-lang-item
+        background greybg
         font-size 0.8em
         margin 0.1em
         padding-top 3px
@@ -367,7 +373,7 @@ header
         color #BBB
 
     .navbar-link:after
-        border-color cgwiregreen-alt
+        border-color cgwiregreen
 
     .navbar-link
         margin-left 0
@@ -375,7 +381,8 @@ header
 
     .navbar-link
     .navbar-item
-        color darkgrey
+        background greybg
+        color white
 
         img.icon
             max-width 20px
@@ -384,8 +391,8 @@ header
 
     .navbar-link:hover
     .navbar-item:hover
-        background transparent
-        color darkgrey
+        background greybg
+        color white
 
     .navbar-item.active
         span.navbar-item-title
@@ -404,16 +411,24 @@ header
         padding 0.5em 1em
 
     .navbar-dropdown
-        border 1px solid lightgrey - 5%
+        background greyalt
+        border 1px solid greyalt
         border-radius 1em
         border-top-left-radius 0
-        box-shadow 0 2px 4px rgba(10, 10, 10, 0.1)
+        box-shadow 0 2px 4px greydark
+
+        .navbar-item
+            background greyalt
+            
+            &:hover
+                background greyalt + 10%
+                color white
 
     .navbar img
         max-height 2.5em
 
     .navbar-lang-item.active
-        color black
+        color white
 
     .navbar hr
         margin auto
@@ -425,6 +440,7 @@ section
         margin-right 1em
 
     &.introduction
+        border-radius 2em
         padding-top 5em
         padding-bottom 1em
         width auto
@@ -438,7 +454,7 @@ section
         h2.main-subtitle
             font-size 1.1em
             font-weight 400
-            color #1F1F28
+            color white
             line-height 1.5em
             margin-bottom 2em
 
@@ -531,11 +547,11 @@ section
             margin-bottom 0em
 
         img
-            box-shadow 0 0 15px 0 #CCD6CC
+            box-shadow 0 0 15px 0 graydark
 
     img
         border-radius 0.5em
-        box-shadow 0 0 5px 0 #99B
+        box-shadow 0 0 5px 0 graydark
 
     .illustration
         flex 0
@@ -547,29 +563,48 @@ section
 
     .community-link
         border-radius 5em
-        border 2px solid cgwiregreen-light - 30%
-        color cgwiregreen-light - 30%
+        border 2px solid cgwiregreen
+        color cgwiregreen
         font-size 1.1em
         font-weight 800
         padding 0.5em 0.5em 0.5em 0.9em
+        transition background 0.3s ease
 
         &:hover
-            color cgwiregreen-light - 30%
-            background cgwiregreen-light + 95%
+            color cgwiregreen
+            background cgwiregreen + 95%
 
         span
             margin-left 0.5em
             margin-right 0.5em
 
 
+.api
+    .content-image
+        align-items center
+        background white
+        border-radius 1em
+        display flex
+        justify-content center
+        height 500px
+        padding 0
+        width 500px
+
+        img
+            margin auto
+
+    pre
+        border-radius 1em
+
 .integrations
     .flexrow
         align-items stretch
 
     .software
-        background lightgrey
-        border 1px solid transparent
+        background greyalt + 80%
+        border 3px solid transparent
         border-radius 10px
+        box-shadow 0 0 12px greydark
         display flex
         flex 1 1 
         justify-content center
@@ -579,8 +614,8 @@ section
         transition all 0.5s ease
 
         &:hover
-          border 1px solid purple
-          box-shadow 0 0 12px rgba(138, 83, 209, 0.4)
+          border 3px solid purple + 40%
+          box-shadow 0 0 16px rgba(138, 83, 209, 0.4)
           
         .made-by-community
           background purple + 80%
@@ -707,7 +742,7 @@ section.partners
         margin-top 3em
 
     .extra-block
-        background lightgrey
+        background greyalt
         border-radius 1em
         padding 1em
         max-width 900px
@@ -726,21 +761,33 @@ section.pricing
     padding-top 1em
 
     .button.is-outlined
-        border 1px solid cgwiregreen-alt
-        background greyalt
-        color cgwiregreen-alt
+        border 2px solid cgwiregreen
+        background transparent
+        color cgwiregreen
         font-weight bold
         transition transform 0.3s ease
+        transition background 0.3s ease
+
+        &:hover
+            color cgwiregreen
+            background cgwiregreen + 95%
 
     .frequence
         padding 0.5em
         height auto
-        background greyalt
+        background transparent
         color cgwiregreen
+        transition background 0.3s ease
 
         &.active
             background cgwiregreen
             color white
+
+        &:hover
+            color cgwiregreen
+            background cgwiregreen + 95%
+
+
 
 .pricings
     display flex
@@ -777,7 +824,7 @@ section.pricing
 
     .pricing-price-info
         font-size 0.8em
-        color mediumgrey
+        color lightgrey
         font-style italic
 
     .pricing-features
@@ -791,40 +838,43 @@ section.pricing
         li
             padding 0.5em 0
             font-size 0.9em
-            color #888
+            color white
             border-bottom 1px solid #EEE
 
     .pricing-text
         align-items center
         display flex
-        color mediumgrey
+        color lightgrey
 
     .pricing-cta
         padding 1em
 
         .button.is-outlined
-            border 1px solid cgwiregreen-alt
+            border 2px solid cgwiregreen
+            font-weight 500
             background greyalt
             color cgwiregreen-alt
             width 100%
             transition transform 0.3s ease
+            transition background 0.3s ease
 
-        .button.is-outlined:hover
-            transform scale(1.05)
+            &:hover
+                color cgwiregreen
+                background cgwiregreen + 95%
 
 .pricing-emphasize
     transform: scale(1.05)
-    border 1px solid cgwiregreen-alt
+    border 2px solid cgwiregreen
 
 .school-details
     box-shadow 0 4px 16px rgba(0, 50, 0, 0.2)
     border-radius 5px
     padding 0.6em
     margin 0 1em
-    color #666
+    color white
 
 .pricing-details
-    color mediumgrey
+    color lightgrey
     font-style italic
 
 .section-title
@@ -847,7 +897,7 @@ section.pricing
         p
             padding 1em
             text-transform uppercase
-        color mediumgrey - 10%
+        color lightgrey
 
 .section-subtitle
     display block
@@ -855,7 +905,7 @@ section.pricing
     font-size 1.11rem
     letter-spacing .22em
     text-transform uppercase
-    color #54656F
+    color lightgrey
 
 .js-tabs
     display flex
@@ -922,7 +972,7 @@ section.pricing
         text-decoration none
 
 .quote
-    background-color lightgrey
+    background-color greyalt + 10%
     padding 6.5rem
 
 .quote-text
@@ -931,7 +981,7 @@ section.pricing
     line-height 1.3
     font-size 2em
     font-weight bold
-    color #54656F
+    color lightgrey
 
     p:before
         content "“"
@@ -1058,7 +1108,7 @@ section.pricing
 
     .content-image
         padding-left 0
-        padding-right 3rem
+        margin-right 3rem
 
 .modal
     iframe
@@ -1085,7 +1135,7 @@ section.pricing
         margin: 0 auto
 
     .address
-        color #999
+        color white
         padding-left 20px
 
     .column
@@ -1156,7 +1206,7 @@ section.pricing
     background #DEE0FF
     border 1px solid #5e60ba
     border-radius 1em
-    color #5e60ba
+    color lightgrey
     font-size 1.2em
     font-weight bold
     margin-top 1em
@@ -1340,7 +1390,7 @@ section.pricing
 
     .trusted
         .flexrow-item
-          margin-right 0.2em
+            margin-right 0.2em
         img
             max-width 60px
 
