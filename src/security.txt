@@ -1,0 +1,25 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:security@cg-wire.com
+Expires: 2022-12-15T13:30:00.000Z
+Encryption: https://www.cg-wire.com/pgp-key.txt
+Preferred-Languages: fr, en
+Canonical: https://www.cg-wire.com/.well-know/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iQJJBAEBCAAzFiEEcG9gxpBRIvGEcICi5aGalzrxkhkFAmLEnnsVHHNlY3VyaXR5
+QGNnLXdpcmUuY29tAAoJEOWhmpc68ZIZol0P/RREooRX4Zo1WyXCZ79Bebtwwsa7
+daZt2ajdUp3uPhpLIAOYMVyLlFl7uHxi2n85spRQPWEZuhMDUdZm/ZFEyuFQXV5A
+K6Xt2uMiSNZvn7UBG70FCbZdR1JeVFEsObhSs1ovd+xOKEqIsPjGKw62AvhnrLkg
+DPTFHXN/ERAxPSTEgnSC/jiKfxwi+dzX5FzPlNrajRiViY0s8Xg1QsWttJTZynRN
+Tk4CLujWCOK2tRXjTNRiKvUPDlizQWu5dXYw08qQdUYXdc+/OVmUaA1Md+M8uqd2
+lZLTz5JHxt9znpuwzd4HEfILp9b60fncGAyd9NE8+luuqofaRMCe8q0p5eFBjZE+
+d7xXVluTCZw0qM655aEpFVU7uTAxXm3U1Yqh8VoMYcF0aaWaCxUDNRCN1JvqAQvZ
+ekuQc47NRzk8Sp1NQvMu4ZgIVOF73UEcKqWB/HfvTxJpsRMQ/6kJz9fd3N/FBIy4
+lstqUJUn4jc7pz0zzCWCRyHNy9Brh3cTsgyUetqpYX3tydRJBC6O7hSlE/Co8oNZ
+pu8r7DYKrIzXNWAQYRtSXts+ZNCZDYQsI8YHd39w2gUXqMR++M8c883nT8UNkuAH
+JfzyTOhT8Y4m14xX8X4dnuNXRw+cC5MFIhFOOBY+Y1qKL1ZRo4qljCUbGvJeuOa4
+Wq/jPjZ2c1sJed05
+=EFiT
+-----END PGP SIGNATURE-----
