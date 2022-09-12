@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CGWire - {{__ metaTitle}}</title>
+    <meta name="description" content="{{__ metaDescription }}">
+    <meta name="keywords" content="production management pipeline cg cgi blender nuke 3dsmax maya animation movie vfx tracking shotgun alternative">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <meta property="og:title" content="CGWire - {{__ metaTitle }}">
+    <meta property="og:description" content="{{__ metaDescription }}">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:image" content="https://cgwire.com/images/logo.svg">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://twitter.com/cgwirenews/">
+    <meta name="twitter:title" content="CGWire - {{__ metaTitle }}">
+    <meta name="twitter:description" content="{{__ metaDescription }}">
+    <meta name="twitter:image" content="https://cgwire.com/images/logo.svg">
+
+    <link rel="stylesheet" href="css/bulma.min.css" media="all">
+    <link rel="stylesheet" href="styles/app.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  </head>
+
+  <body>
+    {{{ contents }}}
+
+    <div style="" id="cookie-consent" class="cookie-consent flexrow">
+      <p class="flexrow-item text">
+         {{__ 'main cookies consent'}}
+      </p>
+      <p class="flexrow-item cookie-choice">
+        <button id="cookie-ok" class="button default">
+           {{__ 'main yes'}}
+        </button>
+        <button id="cookie-ko" class="button">
+           {{__ 'main no'}}
+        </button>
+      </p>
+    </div>
+
+    <script>
+    const elementCookieConsent = document.getElementById('cookie-consent')
+    const cookieConsent = localStorage.getItem('cookie-consent')
+    if (cookieConsent !== null) {
+      elementCookieConsent.style.display = 'none'
+    }
+
+    const elementYes = document.getElementById('cookie-ok')
+    const elementNo = document.getElementById('cookie-ko')
+    elementYes.addEventListener('click', function () {
+      localStorage.setItem('cookie-consent', 'true')
+      elementCookieConsent.style.display = 'none'
+    })
+    elementNo.addEventListener('click', function () {
+      localStorage.setItem('cookie-consent', 'false')
+      window.location.reload()
+    })
+    </script>
+
+    <script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "CGWire",
+  "url" : "https://www.cgwire.com",
+  "logo" : "https://www.cgwire.com/images/logo.svg",
+  "sameAs" : [
+    "http://www.twitter.com/cgwirenews"
+  ]
+}
+    </script>
+
+    {{#if tabs}}
+    <script src="js/van11y-accessible-tab-panel-aria.min.js"></script>
+    {{/if}}
+    {{#if modal}}
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('youtube-player', {
+        height: '100%',
+        width: '100%',
+        videoId: '2HNnFffAADU',
+        events: {}
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var modalTogglers = Array.prototype.slice.call(document.querySelectorAll('.toggleModal'), 0);
+      var modalClosers = Array.prototype.slice.call(document.querySelectorAll('.modal-close'), 0);
+      if (modalTogglers.length > 0) {
+        modalTogglers.forEach(function (el) {
+          el.addEventListener('click', function () {
+            var target = el.getAttribute("href").substr(1);
+            var targetEl = document.getElementById(target);
+            targetEl.classList.toggle('is-active');
+            player.playVideo();
+          });
+        });
+      }
+      if (modalClosers.length > 0) {
+        modalClosers.forEach(function (el) {
+          el.addEventListener('click', function () {
+            player.pauseVideo();
+            this.parentNode.classList.remove('is-active');
+          });
+        });
+      }
+    });
+    </script>
+    {{/if}}
+
+    <script>
+    // Javascript required by Bulma to manage the top menu on mobile.
+    document.addEventListener('DOMContentLoaded', function () {
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+      });
+    });
+  }
+});
+    </script>
+    <script type="text/javascript">
+      var isOk = localStorage.getItem('cookie-consent');
+      if (isOk !== 'false') {
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//cgwire.innocraft.cloud/";
+          _paq.push(['setTrackerUrl', u+'piwik.php']);
+          _paq.push(['setSiteId', '1']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+      }
+    </script>
+    <!-- End Piwik Code -->
+
+    <!-- Begin Crisp Code -->
+    <script type="text/javascript">
+      var isOk = localStorage.getItem('cookie-consent');
+      if (isOk !== 'false') {
+        window.$crisp=[];window.CRISP_WEBSITE_ID="11e8be84-486e-45f1-b03c-64fcd817ee7f";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+      }
+    </script>
+    <!-- End Crisp Code -->
+
+    <!-- Linkedin Code -->
+    <!--script type="text/javascript">
+      _linkedin_partner_id = "3700514";
+      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script><script type="text/javascript">
+    (function(l) {
+    if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+    window.lintrk.q=[]}
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);})(window.lintrk);
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=3700514&fmt=gif" />
+    </noscript-->
+    <!-- End Linkedin Code -->
+
+    <!-- Google Analytics -->
+<!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-219912887-1">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-219912887-1');
+</script-->
+    <!-- End Google Analytics Code -->
+  </body>
+</html>
