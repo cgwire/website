@@ -17,7 +17,7 @@
           KITSU
         </span>
         <span class="flex-1"></span>
-        <a class="text-xl mr-8" href="https://www.cg-wire.com/fr/kitsu.html">
+        <!--a class="text-xl mr-8" href="https://www.cg-wire.com/fr/kitsu.html">
           Solutions
         </a>
         <a class="text-xl mr-8" href="https://www.cg-wire.com/fr/pricing.html">
@@ -25,7 +25,7 @@
         </a>
         <a class="signup text-xl" href="https://account.cg-wire.com/fr/">
           Essayer
-        </a>
+        </a-->
       </div>
 
       <div class="mx-auto max-w-7xl px-4 lg:px-32 pt-16 content">
