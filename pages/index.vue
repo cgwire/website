@@ -11,16 +11,16 @@
     </Head>
     <main class="pb-8">
 
-      <div class="header mx-auto max-w-7xl px-32 flex mt-6">
+      <div class="header mx-auto flex mt-6 px-4 lg:max-w-7xl lg:px-32">
         <img src="/assets/kitsu.svg" class="w-12" />
         <span class="pl-4 text-4xl mt-1">
           KITSU
         </span>
       </div>
 
-      <div class="mx-auto max-w-7xl px-32 pt-16 content">
-        <div class="columns-2">
-          <div class="pt-20 mt-2">
+      <div class="mx-auto max-w-7xl px-4 lg:px-32 pt-16 content">
+        <div class="lg:columns-2">
+          <div class="lg:pt-20 mt-2">
             <h1 class="font-bold text-4xl">
               Plateforme Collaborative Pour Studios d'Animation
             </h1>
@@ -36,7 +36,7 @@ depuis chez vous.
         </div>
       </div>
 
-      <div class="welcome mx-auto max-w-7xl px-48 mt-16 text-xl content">
+      <div class="welcome mx-auto max-w-7xl px-4 lg:px-48 mt-16 text-xl content">
       <p class="text-xl">
         <strong>Bienvenue à vous, lecteur d'Écran Total !</strong>
       </p>
@@ -56,11 +56,11 @@ depuis chez vous.
       </p>
       <p>
       Mais le plus simple reste de prendre rendez-vous
-      pour nous exposer vos besoins et d'assister à une démo.
+      pour nous exposer vos besoins et assister à une démo.
       Vous pouvez le faire via le calendrier situé juste en dessous !
       </p>
       </div>
-      <section class="mx-auto max-w-7xl px-32 pt-16">
+      <section class="mx-auto max-w-7xl px-4 lg:px-32 pt-16">
         <div>
           <h2 class="text-2xl">
             Réservez une démonstration
@@ -141,5 +141,5 @@ a.official-site
 .references
   img
     margin auto
-    max-width 150px
+    max-width 100%
 </style>
