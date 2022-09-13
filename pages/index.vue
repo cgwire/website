@@ -84,6 +84,14 @@ depuis chez vous.
           <img src="/assets/logos/logo-tnzpv.png" />
         </div>
       </section>
+      <!-- Matomo Image Tracker-->
+      <img
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://cgwire.innocraft.cloud/matomo.php?idsite=2&amp;rec=1"
+        style="border:0"
+        alt=""
+      />
+      <!-- End Matomo -->
     </main>
   </div>
 </template>
