@@ -16,6 +16,16 @@
         <span class="pl-4 text-4xl mt-1">
           KITSU
         </span>
+        <span class="flex-1"></span>
+        <a class="text-xl mr-8" href="https://www.cg-wire.com/fr/kitsu.html">
+          Solutions
+        </a>
+        <a class="text-xl mr-8" href="https://www.cg-wire.com/fr/pricing.html">
+          Tarifs
+        </a>
+        <a class="signup text-xl" href="https://account.cg-wire.com/fr/">
+          Essayer
+        </a>
       </div>
 
       <div class="mx-auto max-w-7xl px-4 lg:px-32 pt-16 content">
@@ -29,6 +39,11 @@ Kitsu vous aide à livrer du contenu animé avec un budget serré. Répartissez
 les tâches, faites vos revues et gérez vos plans depuis n'importequel site ou
 depuis chez vous.
             </p>
+            <!--p class="pt-8 text-xl">
+              <a class="video-button" href="https://www.youtube.com/watch?v=2HNnFffAADU">
+                Regarder la vidéo
+              </a>
+            </p-->
           </div>
           <div class="text-center">
             <img src="/assets/collaboration.svg" class="" />
@@ -73,9 +88,10 @@ depuis chez vous.
           </div>
           <!-- Calendly inline widget end -->
         </div>
-        <h2 class="text-2xl mt-16">
+        <h2 class="text-lg md:text-xl lg:text-2xl mt-16">
           Rejoignez plus de 75 studios
         </h2>
+        <a href="https://www.cg-wire.com/fr/studios.html">
         <div class="columns-5 align-middle references">
           <img src="/assets/logos/logo-cube.png" />
           <img src="/assets/logos/logo-miyu.png" />
@@ -83,6 +99,7 @@ depuis chez vous.
           <img src="/assets/logos/logo-bobbypills.png" />
           <img src="/assets/logos/logo-tnzpv.png" />
         </div>
+        </a>
       </section>
       <!-- Matomo Image Tracker-->
       <img
@@ -146,8 +163,18 @@ a.official-site
 .calendly-inline-widget
   overflow-y none
 
+.video-button
+  border 2px solid green
+  border-radius 2em
+  color green
+  padding .8em
+
+.signup
+  border-radius 2em
+  color green
+
 .references
   img
     margin auto
-    max-width 100%
+    max-width 80%
 </style>
