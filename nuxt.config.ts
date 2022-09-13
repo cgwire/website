@@ -19,6 +19,7 @@ export default defineNuxtConfig({
       ]
     }
   },
+  css: ['stylus'],
   modules: [
     '@nuxtjs/tailwindcss'
   ]

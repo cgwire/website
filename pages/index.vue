@@ -9,16 +9,18 @@
         content="Kitsu vous aide à livrer du contenu animé avec un petit budget. Répartissez les tâches, faites vos revues et gérez vos plans depuis partout."
       />
     </Head>
-    <main class="">
+    <main class="pb-8">
+
       <div class="header mx-auto max-w-7xl px-32 flex mt-6">
         <img src="/assets/kitsu.svg" class="w-12" />
         <span class="pl-4 text-4xl mt-1">
           KITSU
         </span>
       </div>
-      <div class="mx-auto max-w-7xl px-32 pt-32">
+
+      <div class="mx-auto max-w-7xl px-32 pt-16 content">
         <div class="columns-2">
-          <div class="pt-20">
+          <div class="pt-20 mt-2">
             <h1 class="font-bold text-4xl">
               Plateforme Collaborative Pour Studios d'Animation
             </h1>
@@ -32,16 +34,56 @@ depuis chez vous.
             <img src="/assets/collaboration.svg" class="" />
           </div>
         </div>
-        </div>
+      </div>
+
+      <div class="welcome mx-auto max-w-7xl px-48 mt-16 text-xl content">
+      <p class="text-xl">
+        <strong>Bienvenue à vous, lecteur d'Écran Total !</strong>
+      </p>
+      <p>
+        Kitsu est développé par CGWire
+        une société dont le but est de faciliter la collaboration dans les
+        studios d'animation. Vous trouverez plus d'informations sur Kitsu
+        via notre site officiel :
+      </p>
+      <p>
+        <a
+          class="official-site"
+          href="https://cg-wire.com/fr"
+        >
+          www.cg-wire.com
+        </a>
+      </p>
+      <p>
+      Mais le plus simple reste de prendre rendez-vous
+      pour nous exposer vos besoins et d'assister à une démo.
+      Vous pouvez le faire via le calendrier situé juste en dessous !
+      </p>
+      </div>
+      <section class="mx-auto max-w-7xl px-32 pt-16">
         <div>
-        <!-- Calendly inline widget begin -->
-        <div
-          class="calendly-inline-widget"
-          data-url="https://calendly.com/cgwire?hide_landing_page_details=1&hide_gdpr_banner=1"
-          style="min-width:320px;height:630px;">
+          <h2 class="text-2xl">
+            Réservez une démonstration
+          </h2>
+          <!-- Calendly inline widget begin -->
+          <div
+            class="calendly-inline-widget"
+            data-url="https://calendly.com/cgwire/kitsu-demo?hide_landing_page_details=1&hide_gdpr_banner=1"
+            style="min-width:320px;height:630px;">
+          </div>
+          <!-- Calendly inline widget end -->
         </div>
-        <!-- Calendly inline widget end -->
+        <h2 class="text-2xl mt-16">
+          Rejoignez plus de 75 studios
+        </h2>
+        <div class="columns-5 align-middle references">
+          <img src="/assets/logos/logo-cube.png" />
+          <img src="/assets/logos/logo-miyu.png" />
+          <img src="/assets/logos/logo-fost.png" />
+          <img src="/assets/logos/logo-bobbypills.png" />
+          <img src="/assets/logos/logo-tnzpv.png" />
         </div>
+      </section>
     </main>
   </div>
 </template>
@@ -60,3 +102,44 @@ depuis chez vous.
     }
   }
 </script>
+
+<style lang="stylus">
+green = #00B242
+
+h2
+  color #666
+  font-width bold
+  letter-spacing .2em
+  text-align center
+  text-transform uppercase
+
+.welcome
+  border-radius 2em
+  padding-bottom 1em
+  padding-top 1em
+  text-align center
+
+  strong
+    font-size 1.2em
+
+a.official-site
+  color green
+  font-weight bold
+  font-size 1.4em
+  margin 2em 0
+
+.content
+  p
+    margin-bottom 1em
+
+  h1
+    line-height 1.3em
+
+.calendly-inline-widget
+  overflow-y none
+
+.references
+  img
+    margin auto
+    max-width 150px
+</style>
