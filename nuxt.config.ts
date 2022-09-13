@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       script: [
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: '/assets/favicon.png' },
+        { rel: 'icon', href: '/assets/kitsu.svg' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato' }
       ],
       style: [
