@@ -516,5 +516,7 @@
 	"pricing features partner five": "AD/LDAP integration",
 	"pricing features partner six": "Staging environment",
 	"pricing features partner seven": "Local Object Storage",
-	"pricing features partner eight": "Local video computing cluster"
+	"pricing features partner eight": "Local video computing cluster",
+	"pricing ranch credits": "Ranch Computing credits for free",
+	"pricing ranch explaination": "New: All our subscriptions come with free render farm credits and discount from our partner Ranch Computing!"
 }
