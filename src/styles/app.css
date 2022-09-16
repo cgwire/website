@@ -693,10 +693,8 @@ section.partners img {
   background: #f9f6fd;
   border: 2px solid #8a53d1;
   border-radius: 1em;
-  padding: 1em;
-}
-.pricing-page .ranch-offer a {
   color: #8a53d1;
+  padding: 1em;
 }
 .pricing-page .extra-block {
   background: #f5f5f5;
