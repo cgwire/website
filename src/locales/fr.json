@@ -475,7 +475,7 @@
 	"about team explaination nicolas": "Nicolas est un administrateur système reconnu dans le milieu du cloud. Il gère nos infrastructures cloud et on-premise. Grâce à lui votre instance Kitsu est toujours en état de fonctionnement.",
 	"pricing firsteps ttile": "Premiers pas",
 	"pricing firsteps question1": "Vous vous posez des questions sur comment démarrer ?",
-	"pricing firsteps cta1": "Réservez un rendez-vous ou une démo",
+	"pricing firsteps cta1": "Réservez une démo",
 	"pricing firsteps question2": "Vous ne savez pas comment mettre en place vos productions et migrer vos données ?",
 	"pricing firsteps cta2": "Regardez nos packs succès",
 	"pricing features tiny support": "Support basique",
@@ -509,5 +509,7 @@
 	"pricing features partner five": "Intégration AD/LDAP",
 	"pricing features partner six": "Environnement de staging",
 	"pricing features partner seven": "Object Storage local",
-	"pricing features partner eight": "Cluster de calcul vidéos local"
+	"pricing features partner eight": "Cluster de calcul vidéos local",
+	"pricing ranch credits": "Crédits Ranch Computing gratuits",
+	"pricing ranch explaination": "Nouveau: Tout nos abonnements viennent avec des crédits gratuits et des réductions pour utiliser la ferme de rendu de notre partenaire Ranch Computing !"
 }
