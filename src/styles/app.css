@@ -7,6 +7,9 @@ body {
 .hidden {
   display: none;
 }
+.w120 {
+  width: 120px;
+}
 .w150 {
   width: 150px;
 }
@@ -58,7 +61,7 @@ body {
   width: 90%;
 }
 .supporters h2.subtitle.tagline {
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 .supporters .flexrow-item.mr0 {
   margin-right: 0;
@@ -181,6 +184,9 @@ body a:hover {
 }
 .mt4 {
   margin-top: 4rem;
+}
+.mb0 {
+  margin-bottom: 0rem;
 }
 .mb4 {
   margin-bottom: 4rem;
