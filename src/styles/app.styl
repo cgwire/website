@@ -531,6 +531,21 @@ section
     img
         max-width 120px
 
+.kitsu
+    .flexrow-item
+        padding 2em
+        margin-right 0
+
+.api
+    .flexrow-item
+        padding 2em
+        margin-right 0
+
+    .spec-link
+        border 1px solid cgwiregreen
+        border-radius 10px
+        padding .5em
+
 .community
     .flexrow-item:last-child
         margin 0
@@ -1040,6 +1055,16 @@ section.pricing
     justify-content center
     color white
     transition transform 0.2s ease
+
+    &.only-name
+        height 5rem
+
+        a 
+            color white
+            font-size .8em
+            font-weight bold
+            text-align center
+            text-transform uppercase
 
     &:hover
         transform scale(1.1)
