@@ -2,13 +2,11 @@
   <div>
     <Head>
       <Title>
-        Kitsu - Platforme de collaboration pour studios d'animation
+        Kitsu - Collaboration Platform for animation studios
       </Title>
       <Meta
         name="description"
-        content="Kitsu helps you deliver animated content on a tight budget.
-        Kitsu allows to dispatch tasks, perform reviews and manage shots from
-        anywhere."
+        content="Kitsu - Collaboration Platform for animation studios"
       />
     </Head>
     <main class="pb-8">
@@ -37,7 +35,7 @@
               Plateforme Collaborative Pour Studios d'Animation
             </h1>
             <p class="pt-8 text-xl">
-Kitsu helps you deliver animated content on a tight budget. Kitsu allows to dispatch tasks, perform reviews and manage shots from anywhere.
+            Kitsu is developed by CGWire, a company that aims at improving collaboration inside animation studios. You will find more information on our official website:
             </p>
             <!--p class="pt-8 text-xl">
               <a class="video-button" href="https://www.youtube.com/watch?v=2HNnFffAADU">
@@ -53,10 +51,10 @@ Kitsu helps you deliver animated content on a tight budget. Kitsu allows to disp
 
       <div class="welcome mx-auto max-w-7xl px-4 lg:px-48 mt-16 text-xl content">
       <p class="text-xl">
-        <strong>Welcome to you, Animation Magazine Reader!</strong>
+        <strong>Welcome to you, Animation Magazine reader!</strong>
       </p>
       <p>
-        Kitsu is developped by CGWire a company who aims at imporving
+        Kitsu is developped by CGWire a company who aims at improving
         collaboration inside the animation studios.
         You will find more information about our official website:
       </p>
@@ -69,8 +67,8 @@ Kitsu helps you deliver animated content on a tight budget. Kitsu allows to disp
         </a>
       </p>
       <p>
-      But the best option to know more Kitsu is to book a meeting with us.
-      You will be able to talk about your needs and we wil show a demo of
+      The best option to know more about Kitsu is to book a meeting with us.
+      You will be able to talk about your needs and we will show a demo of
       Kitsu.
       Please, pick a day in the below calendar:
       </p>
