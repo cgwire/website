@@ -6,7 +6,9 @@
       </Title>
       <Meta
         name="description"
-        content="Kitsu vous aide à livrer du contenu animé avec un petit budget. Répartissez les tâches, faites vos revues et gérez vos plans depuis partout."
+        content="Kitsu helps you deliver animated content on a tight budget.
+        Kitsu allows to dispatch tasks, perform reviews and manage shots from
+        anywhere."
       />
     </Head>
     <main class="pb-8">
@@ -35,9 +37,7 @@
               Plateforme Collaborative Pour Studios d'Animation
             </h1>
             <p class="pt-8 text-xl">
-Kitsu vous aide à livrer du contenu animé avec un budget serré. Répartissez
-les tâches, faites vos revues et gérez vos plans depuis n'importequel site ou
-depuis chez vous.
+Kitsu helps you deliver animated content on a tight budget. Kitsu allows to dispatch tasks, perform reviews and manage shots from anywhere.
             </p>
             <!--p class="pt-8 text-xl">
               <a class="video-button" href="https://www.youtube.com/watch?v=2HNnFffAADU">
@@ -53,13 +53,12 @@ depuis chez vous.
 
       <div class="welcome mx-auto max-w-7xl px-4 lg:px-48 mt-16 text-xl content">
       <p class="text-xl">
-        <strong>Bienvenue à vous, lecteur d'Écran Total !</strong>
+        <strong>Welcome to you, Animation Magazine Reader!</strong>
       </p>
       <p>
-        Kitsu est développé par CGWire
-        une société dont le but est de faciliter la collaboration dans les
-        studios d'animation. Vous trouverez plus d'informations sur Kitsu
-        via notre site officiel :
+        Kitsu is developped by CGWire a company who aims at imporving
+        collaboration inside the animation studios.
+        You will find more information about our official website:
       </p>
       <p>
         <a
@@ -70,15 +69,16 @@ depuis chez vous.
         </a>
       </p>
       <p>
-      Mais le plus simple reste de prendre rendez-vous
-      pour nous exposer vos besoins et assister à une démo.
-      Vous pouvez le faire via le calendrier situé juste en dessous !
+      But the best option to know more Kitsu is to book a meeting with us.
+      You will be able to talk about your needs and we wil show a demo of
+      Kitsu.
+      Please, pick a day in the below calendar:
       </p>
       </div>
       <section class="mx-auto max-w-7xl px-4 lg:px-32 pt-16">
         <div>
           <h2 class="text-2xl">
-            Réservez une démonstration
+            Book a demo
           </h2>
           <!-- Calendly inline widget begin -->
           <div
