@@ -32,7 +32,7 @@
         <div class="lg:columns-2">
           <div class="lg:pt-20 mt-2">
             <h1 class="font-bold text-4xl">
-              Collaboration Platform for animation studios
+              Collaboration Platform For Animation Studios
             </h1>
             <p class="pt-8 text-xl">
             Kitsu is developed by CGWire, a company that aims at improving collaboration inside animation studios. You will find more information on our official website:
