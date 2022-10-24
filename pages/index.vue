@@ -89,7 +89,7 @@ Kitsu helps you deliver animated content on a tight budget. Kitsu allows to disp
           <!-- Calendly inline widget end -->
         </div>
         <h2 class="text-lg md:text-xl lg:text-2xl mt-16">
-          Rejoignez plus de 75 studios
+          Join more than 75 studios
         </h2>
         <a href="https://www.cg-wire.com/fr/studios.html">
         <div class="columns-5 align-middle references">
