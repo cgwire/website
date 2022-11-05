@@ -14,7 +14,7 @@
       <div class="navbar-start flexrow locales">
         <a href="/fr" class="flexrow-item navbar-lang-item">FR</a>
         <a href="/en" class="flexrow-item navbar-lang-item">EN</a>
-        </div>
+      </div>
         <div class="navbar-item has-dropdown is-hoverable {{#if_eq name "solution"}}active{{/if_eq}}">
           <a class="navbar-link">
             <span class="navbar-item-title">
@@ -23,26 +23,31 @@
           </a>
           <div class="navbar-dropdown">
             <a
-              class="navbar-item flexrow"
+              class="navbar-item flexcolumn subnav-element"
               href="/{{ locale }}/kitsu.html"
             >
-              <img class="flexrow-item icon" src="/images/check-circle.svg">
-              <span class="flexrow-item">{{__ 'header title kitsu'}}</span>
+              <span class="flexrow-item subnav-title">{{__ 'header title kitsu'}}</span>
+              <span class="flexrow-item subnav-text">
+                Connect your teams, stay informed and ship faster
+              <span>
             </a>
             <a
-              class="navbar-item flexrow"
+              class="navbar-item flexcolumn subnav-element"
               href="/{{ locale }}/api.html"
             >
-              <img class="flexrow-item icon" src="/images/database.svg">
-              <span class="flexrow-item">{{__ 'header title zou'}}</span>
+              <span class="flexrow-item subnav-title">{{__ 'header title zou'}}</span>
+              <span class="flexrow-item subnav-text">Boost your pipeline with
+              your production data</span>
             </a>
-            <a
-              class="navbar-item flexrow"
-              href="/{{ locale }}/integrations.html"
 
+            <a
+              class="navbar-item flexcolumn subnav-element"
+              href="/{{ locale }}/integrations.html"
             >
-              <img class="flexrow-item icon" src="/images/integrations.svg">
-              <span class="flexrow-item">{{__ 'header title integrations'}}</span>
+              <span class="flexrow-item subnav-title">{{__ 'header title integrations'}}</span>
+              <span class="flexrow-item subnav-text">
+                Plug your production tracking with your main tools
+              <span>
             </a>
           </div>
         </div>
@@ -55,31 +60,44 @@
           </a>
 
           <div class="navbar-dropdown">
-            <a
-              class="navbar-item flexrow"
-              href="/{{ locale }}/shorts.html"
-            >
-              <img class="flexrow-item icon" src="/images/shorts.svg">
-              <span class="flexrow-item">{{__ 'header title short'}}</span>
-            </a>
-            <a
-              class="navbar-item flexrow"
-              href="/{{ locale }}/tvshows.html"
-            >
-              <img class="flexrow-item icon" src="/images/tvshows.svg">
-              <span class="flexrow-item">{{__ 'header title tvshow'}}</span>
-            </a>
-            <!--a class="navbar-item flexrow" href="/{{ locale }}/vfx.html">
-              <span class="flexrow-item">{{__ 'header title featurefilm'}}</span>
-            </a-->
-            <a class="navbar-item flexrow" href="/{{ locale }}/schools.html">
-              <img class="flexrow-item icon" src="/images/schools.svg">
-              <span class="flexrow-item">{{__ 'header title school'}}</span>
+          <a 
+            class="navbar-item flexcolumn subnav-element" 
+            href="/{{ locale }}/studios.html"
+          >
+              <span class="flexrow-item subnav-title">{{__ 'header title studios'}}</span>
+              <span class="flexrow-item subnav-text">
+              Studios using Kitsu and their productions
+              <span>
             </a>
             <hr />
-            <a class="navbar-item flexrow" href="/{{ locale }}/studios.html">
-              <img class="flexrow-item icon" src="/images/studios.svg">
-              <span class="flexrow-item">{{__ 'header title studios'}}</span>
+            <a
+              class="navbar-item flexcolumn subnav-element" 
+              href="/{{ locale }}/tvshows.html"
+            >
+              <span class="flexrow-item subnav-title">{{__ 'header title tvshow'}}</span>
+              <span class="flexrow-item subnav-text">
+                Dealing with the heavy load of TV series
+              <span>
+            </a>
+
+            <a
+              class="navbar-item flexcolumn subnav-element" 
+              href="/{{ locale }}/shorts.html"
+            >
+              <span class="flexrow-item subnav-title">{{__ 'header title short'}}</span>
+              <span class="flexrow-item subnav-text">
+                Managing shorts and commercials
+              <span>
+            </a>
+
+            <a 
+              class="navbar-item flexcolumn subnav-element" 
+              href="/{{ locale }}/schools.html"
+            >
+              <span class="flexrow-item subnav-title">{{__ 'header title school'}}</span>
+              <span class="flexrow-item subnav-text">
+              Improving the training of your students
+              <span>
             </a>
           </div>
         </div>
@@ -92,46 +110,70 @@
           </a>
 
           <div class="navbar-dropdown">
+
             <a
-              class="navbar-item flexrow"
-              href="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnQgZ4TCrAt7smxesaDo29"
+              class="navbar-item flexcolumn subnav-element"
+              href="https://blog.cg-wire.com"
+              target="_blank"
             >
-              <img class="flexrow-item icon" src="/images/help-circle.svg">
-              <span class="flexrow-item">{{__ 'header title tutorials'}}</span>
+              <span class="flexrow-item subnav-title">
+                {{__ 'header title blog'}}
+              </span>
+              <span class="flexrow-item subnav-text">
+                Production and pipeline best practices
+              <span>
+            </a>
+  
+            <a
+              class="navbar-item flexcolumn subnav-element"
+              href="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnQgZ4TCrAt7smxesaDo29"
+              target="_blank"
+            >
+              <span class="flexrow-item subnav-title">
+                {{__ 'header title tutorials'}}
+              </span>
+              <span class="flexrow-item subnav-text">
+                Short videos to help you with Kitsu
+              <span>
             </a>
 
             {{#if_eq locale "fr"}}
             <a
-              class="navbar-item flexrow"
+              class="navbar-item flexcolumn subnav-element"
               href="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnJK6wKf2GIu964KsbqCqJ"
+              target="_blank"
             >
-              <img class="flexrow-item icon" src="/images/mic.svg">
-              <span class="flexrow-item">{{__ 'header title conferences'}}</span>
+              <span class="flexrow-item subnav-title">
+                {{__ 'header title conferences'}}
+              </span>
+              <span class="flexrow-item subnav-text">
+                Conferences about best practices
+              <span>
             </a>
             {{/if_eq}}
 
             <a
-              class="navbar-item"
+              class="navbar-item flexcolumn subnav-element"
               href="/{{ locale }}/community.html"
             >
-                <img class="flexrow-item icon" src="/images/users.svg">
-              <span>
+              <span class="flexrow-item subnav-title">
                 {{__ 'header title community'}}
               </span>
-            </a>
-
-            <a
-              class="navbar-item"
-              href="https://blog.cg-wire.com">
-              <img class="flexrow-item icon" src="/images/feather.svg">
+              <span class="flexrow-item subnav-text">
+                Places to contribute and meet other users 
               <span>
-                Blog
-              </span>
             </a>
-            
-            <a class="navbar-item flexrow" href="/{{ locale }}/spreadsheets.html">
-              <img class="flexrow-item icon" src="/images/file-text.svg">
-              <span class="flexrow-item">{{__ 'header title spreadsheets'}}</span>
+          
+            <a 
+              class="navbar-item flexcolumn subnav-element"
+              href="/{{ locale }}/spreadsheets.html"
+            >
+              <span class="flexrow-item subnav-title">
+                {{__ 'header title spreadsheets'}}
+              </span>
+              <span class="flexrow-item subnav-text">
+                Templates for your spreadsheets
+              <span>
             </a>
           </div>
         </div>
@@ -156,3 +198,4 @@
     </div>
   </div>
 </header>
+<div class="header-padding"></div>

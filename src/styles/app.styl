@@ -28,6 +28,9 @@ body
     font-family 'Lato', sans-serif
     font-size 18px
 
+.header-padding
+    height 40px
+
 // Base
 
 .hidden
@@ -212,6 +215,9 @@ body
 .mt0
     margin-top 0rem
 
+.mt1
+    margin-top 1rem
+
 .mt2
     margin-top 2rem
 
@@ -230,6 +236,12 @@ body
 .flexrow
     display flex
     align-items center
+
+.flexcolumn
+    display flex
+    align-items center
+    flex-direction column
+
 
 .flexrow-item
     flex 1
@@ -370,16 +382,48 @@ p.tagline-explaination
 // Pages and partials
 
 header
+    background white
+    position fixed
+    width 100%
+    z-index 2000
+
     .navbar
-        max-width 1000px
+        max-width 1200px
         margin auto
         font-size 1em
 
+        .navbar-item.subnav-element.flexcolumn
+            align-items flex-start
+            border-radius 5px
+            font-size 0.95em
+            flex-wrap: wrap;
+            margin 5px
+            width 300px
+            padding .5em .8em
+            text-align left
+            white-space initial
+            .subnav-title
+                padding 0
+                margin 0
+                font-weight bold
+            .subnav-text
+                text-align left
+                padding 0
+                margin 0
+                color grey
+
+
+        .navbar-start
+            margin-right 1em
+
         .navbar-link
         .navbar-item-title
-        .navbar-item.sign-in
+            text-transform uppercase
+            font-size 14px
             margin-top 2px
-            font-size 17px
+            font-weight bold
+
+        .navbar-item.sign-in
             font-weight bold
 
         .navbar-brand
@@ -435,6 +479,7 @@ header
         border-radius 1em
         border-top-left-radius 0
         box-shadow 0 2px 4px rgba(10, 10, 10, 0.1)
+        padding 0
 
     .navbar img
         max-height 2.5em
@@ -739,6 +784,21 @@ section.partners
     color inherit
 
 .pricing-page
+    .first-steps
+        background cgwiregreen-light + 90%
+        border-radius 20px
+        border 1px solid cgwiregreen
+        padding 1em 2em
+
+        .section-subtitle
+            margin-top 0
+
+        p
+            margin-top .5em
+
+        .flexrow-item:last-child
+            flex 2
+
     section.section
         padding-bottom 0
 
@@ -754,9 +814,9 @@ section.partners
     .ranch-credits
         box-shadow 0 4px 16px rgba(80, 0, 100, 0.4)
         color purple
-        letter-spacing 0.1em
         font-size 0.8em
-        padding .5em
+        letter-spacing 0.1em
+        padding .5em 1em
         border-bottom-left-radius 1em
         border-bottom-right-radius 1em
 
@@ -815,8 +875,8 @@ section.pricing
     text-align center
     margin 1em
     min-height 400px
-    min-width 180px
-    max-width 225px
+    min-width 240px
+    max-width 280px
     box-shadow 0 4px 16px rgba(0, 100, 0, 0.2)
     background white
     border-radius 1em

@@ -536,6 +536,12 @@
 	"pricing faq question10": "Comment est-ce que j'annule mon abonnement ?",
 	"pricing faq answer10": "Les abonnement mensuels peuvent être annulés via l'interface. Pour les abonnements annuels, contactez nous, nous ferons l'ajustement dans le système de facturation.",
 	"pricing faq question11": "Ma production va durer X mois, est-ce que vous pouvez me proposer quelque chose ?",
-	"pricing faq answer11": "Oui, nous pouvons proposer des plans sur-mesure qui correspondent à votre production."
-
+	"pricing faq answer11": "Oui, nous pouvons proposer des plans sur-mesure qui correspondent à votre production.",
+	"comparison shotgrid subtitle": "comparison shotgrid subtitle",
+	"comparison shotgrid title": "comparison shotgrid title",
+	"comparison ftrack subtitle": "comparison ftrack subtitle",
+	"comparison ftrack title": "comparison ftrack title",
+	"pricing firsteps question3": "pricing firsteps question3",
+	"pricing firsteps cta3": "pricing firsteps cta3",
+	"pricing button contactcta": "pricing button contactcta"
 }

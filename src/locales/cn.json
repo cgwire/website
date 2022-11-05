@@ -547,6 +547,7 @@
 	"pricing features partner five": "pricing features partner five",
 	"pricing features partner six": "pricing features partner six",
 	"pricing features partner seven": "pricing features partner seven",
+<<<<<<< Updated upstream
 	"pricing features partner eight": "pricing features partner eight",
 	"pricing ranch explaination": "pricing ranch explaination",
 	"pricing ranch credits": "pricing ranch credits",
@@ -574,5 +575,15 @@
 	"pricing faq question10": "pricing faq question10",
 	"pricing faq answer10": "pricing faq answer10",
 	"pricing faq question11": "pricing faq question11",
-	"pricing faq answer11": "pricing faq answer11"
+	"pricing faq answer11": "pricing faq answer11",
+	"comparison shotgrid subtitle": "comparison shotgrid subtitle",
+	"comparison shotgrid title": "comparison shotgrid title",
+	"comparison ftrack subtitle": "comparison ftrack subtitle",
+	"comparison ftrack title": "comparison ftrack title",
+	"pricing firsteps question3": "pricing firsteps question3",
+	"pricing firsteps cta3": "pricing firsteps cta3",
+	"pricing button contactcta": "pricing button contactcta"
+=======
+	"pricing features partner eight": "pricing features partner eight"
+>>>>>>> Stashed changes
 }
