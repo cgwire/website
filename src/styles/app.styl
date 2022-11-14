@@ -29,7 +29,7 @@ body
     font-size 18px
 
 .header-padding
-    height 40px
+    height 60px
 
 // Base
 
@@ -1299,6 +1299,7 @@ section.pricing
 .changelog-button 
     border 1px solid cgwiregreen
     border-radius 10px
+    display block
     font-size 1em
     padding 0.5em
 
@@ -1331,6 +1332,8 @@ section.pricing
 // Responsive
 
 @media(max-width: 800px)
+    .main-logo
+        margin-left .5em
 
     .cookie-consent
         max-height 100%
@@ -1542,8 +1545,30 @@ section.pricing
             margin-top 0
             padding .5em
 
+.compare-page
+    .section-subtitle
+        margin-bottom 0
+
+    h2.section-title
+        font-size 2.3em
+        margin-bottom 1.5em
+        margin-top .2em
 
 @media(max-width: 960px)
+    .subnav-text
+        display none
+
+    header .navbar .navbar-item.subnav-element.flexcolumn
+        padding-bottom 0.2em
+        margin-bottom 0
+        margin-top 0
+
+    header .navbar .navbar-item.subnav-element.flexcolumn .subnav-title
+        font-weight normal
+
+    header .navbar .navbar-link
+        padding-bottom 0
+
     section.introduction
         .flexrow
             flex-direction column-reverse
@@ -1605,3 +1630,8 @@ section.pricing
             margin-right 1em
         .flexrow-item.mr0:last-child
             margin-right 0em
+
+    .pricing-page
+        .first-steps
+            padding 1em
+            flex-direction column
