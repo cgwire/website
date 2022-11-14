@@ -555,5 +555,6 @@
   "zou usecase title": "Vos données dans vos outils",
   "zou why one": "Fabriquer un film est une tâche difficile qui implique beaucoup de données: le dépouillement d'assets, les assignations de tâches, les emplacements des fichiers et plus encore. Toutes ces informations doivent être partagées avec tous les départements. L'API de Kitsu répond à cela en fournissant un dépôt central de stockage pour toutes vos données. API qui peut être requếtée depuis n'importe où.",
   "zou why subtitle": "API HTTP",
-  "zou why title": "La base de données du studio"
+  "zou why title": "La base de données du studio",
+  "main title tab": "Platforme Collaborative pour Studios d'Animation"
 }
