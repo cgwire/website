@@ -1,0 +1,23 @@
+<template>
+<div class="trial">
+  <section class="section content trial-content">
+    <h2 class="subtitle has-text-centered">
+      {{ $t('kitsu contact introduction') }}
+    </h2>
+    <p class="has-text-centered">
+      <a class="button is-large" href="https://account.cg-wire.com/{{ locale }}/signup">
+        {{ $t('main plans cta') }}
+      </a>
+    </p>
+    <p class="has-text-centered">
+      &nbsp;
+    </p>
+  </section>
+</div>
+</template>
+
+<script>
+</script>
+
+<style lang="stylus" scoped>
+</style>

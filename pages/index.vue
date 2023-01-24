@@ -1,114 +1,229 @@
 <template>
-  <div>
-    <Head>
-      <Title>
-        Kitsu - Collaboration Platform for animation studios
-      </Title>
-      <Meta
-        name="description"
-        content="Kitsu - Collaboration Platform for animation studios"
-      />
-    </Head>
-    <main class="pb-8">
+  <Head>
+    <Title>{{ $t('main title') }}</Title>
+    <Meta
+      name="description"
+      content="Kitsu - Collaboration Platform for animation studios"
+    ></Meta>
+  </Head>
+  <div class="home">
 
-      <div class="header mx-auto flex mt-6 px-4 lg:max-w-7xl lg:px-32">
-        <img src="/assets/kitsu.svg" class="w-12" />
-        <span class="pl-4 text-4xl mt-1">
-          KITSU
-        </span>
-        <span class="flex-1"></span>
-        <!--a class="text-xl mr-8" href="https://www.cg-wire.com/fr/kitsu.html">
-          Solutions
+  <section class="section content introduction">
+   <div class="flexrow">
+     <div class="flexrow-item introduction-text">
+       <h1 class="title">{{ $t('main title') }}</h1>
+       <h2 class="main-subtitle">{{ $t('main subtitle') }}</h2>
+        <a href="#kitsu-video" class="toggleModal button button--with-icon is-large">
+          <img src="~/assets/images/play.svg" alt=""><span>{{ $t('kitsu watch cta') }}</span>
         </a>
-        <a class="text-xl mr-8" href="https://www.cg-wire.com/fr/pricing.html">
-          Tarifs
-        </a>
-        <a class="signup text-xl" href="https://account.cg-wire.com/fr/">
-          Essayer
-        </a-->
-      </div>
+     </div>
+     <div class="flexrow-item introduction-picture">
+       <img src="~/assets/images/collaboration.svg" />
+     </div>
+   </div>
+  </section>
 
-      <div class="mx-auto max-w-7xl px-4 lg:px-32 pt-16 content">
-        <div class="lg:columns-2">
-          <div class="lg:pt-20 mt-2">
-            <h1 class="font-bold text-4xl">
-              Collaboration Platform For Animation Studios
-            </h1>
-            <p class="pt-8 text-xl">
-            Kitsu is developed by CGWire, a company that aims at improving collaboration inside animation studios. You will find more information on our official website:
-            </p>
-            <!--p class="pt-8 text-xl">
-              <a class="video-button" href="https://www.youtube.com/watch?v=2HNnFffAADU">
-                Regarder la vidéo
-              </a>
-            </p-->
-          </div>
-          <div class="text-center">
-            <img src="/assets/collaboration.svg" class="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="welcome mx-auto max-w-7xl px-4 lg:px-48 mt-16 text-xl content">
-      <p class="text-xl">
-        <strong>Welcome to you, Animation Magazine reader!</strong>
+  <div class="modal" id="kitsu-video">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <p class="image is-16by9">
+        <div id="youtube-player"></div>
       </p>
-      <p>
-        Kitsu is developped by CGWire a company who aims at improving
-        collaboration inside the animation studios.
-        You will find more information about our official website:
-      </p>
-      <p>
-        <a
-          class="official-site"
-          href="https://cg-wire.com/fr"
-        >
-          www.cg-wire.com
-        </a>
-      </p>
-      <p>
-      The best option to know more about Kitsu is to book a meeting with us.
-      You will be able to talk about your needs and we will show a demo of
-      Kitsu.
-      Please, pick a day in the below calendar:
-      </p>
-      </div>
-      <section class="mx-auto max-w-7xl px-4 lg:px-32 pt-16">
-        <div>
-          <h2 class="text-2xl">
-            Book a demo
-          </h2>
-          <!-- Calendly inline widget begin -->
-          <div
-            class="calendly-inline-widget"
-            data-url="https://calendly.com/cgwire/kitsu-demo?hide_landing_page_details=1&hide_gdpr_banner=1"
-            style="min-width:320px;height:630px;">
-          </div>
-          <!-- Calendly inline widget end -->
-        </div>
-        <h2 class="text-lg md:text-xl lg:text-2xl mt-16">
-          Join more than 75 studios
-        </h2>
-        <a href="https://www.cg-wire.com/fr/studios.html">
-        <div class="columns-5 align-middle references">
-          <img src="/assets/logos/logo-cube.png" />
-          <img src="/assets/logos/logo-miyu.png" />
-          <img src="/assets/logos/logo-fost.png" />
-          <img src="/assets/logos/logo-bobbypills.png" />
-          <img src="/assets/logos/logo-tnzpv.png" />
-        </div>
-        </a>
-      </section>
-      <!-- Matomo Image Tracker-->
-      <img
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://cgwire.innocraft.cloud/matomo.php?idsite=2&amp;rec=1"
-        style="border:0"
-        alt=""
-      />
-      <!-- End Matomo -->
-    </main>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
   </div>
+
+  <section class="section content trusted">
+
+    <h4 class="section-subtitle has-text-centered">
+      {{ $t('main explaination trusted') }}
+    </h4>
+    <div>
+      <a :to="localePath('studios')" class="flexrow mt2">
+        <div class="flexrow-item mr0">
+          <img src="~/assets/images/logo-cube.png">
+        </div>
+        <div class="flexrow-item mr0">
+          <img src="~/assets/images/logo-miyu.png">
+        </div>
+        <div class="flexrow-item mr0">
+          <img src="~/assets/images/logo-fost.png" />
+        </div>
+        <div class="flexrow-item mr0">
+          <img src="~/assets/images/studios/logo-bobbypills.png">
+        </div>
+        <div class="flexrow-item mr0">
+          <img src="~/assets/images/logo-tnzpv.png">
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section content">
+    <h2 class="subtitle tagline">
+      {{ $t('main tagline') }}
+    </h2>
+    <p class="has-text-centered tagline-explaination">
+      {{ $t('main explaination one') }}
+    </p>
+  </section>
+
+  <section class="section content landing-block customer-story mt2">
+    <a href="https://blog.cg-wire.com/customer-story-fost-studio/">
+    <div class="flexrow reverse">
+        <div class="flexrow-item landing-picture">
+          <img src="~/assets/images/photo-customer-story-fost.png" />
+        </div>
+        <div class="flexrow-item landing-text">
+          <h2 class="section-subtitle">
+            Customer Story:<br/> Fost Studio
+          </h2>
+          <p>
+            <em>
+              "{{ $t('main customer story fost') }}"
+            </em><br />
+          </p>
+          <p class="mt1">
+            Céline Durieux, Head of Studio
+          </p>
+        </div>
+    </div>
+    </a>
+  </section>
+
+  <section class="section content landing-block">
+    <div class="flexrow">
+      <div class="flexrow-item landing-text">
+        <h2 class="subtitle">
+          {{ $t('main explaination title one') }}
+        </h2>
+        <p>
+          {{ $t('main explaination text one') }}
+        </p>
+      </div>
+      <div class="flexrow-item landing-picture">
+        <img src="~/assets/images/landing-overview.png" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section content landing-block">
+    <div class="flexrow reverse">
+      <div class="flexrow-item landing-picture">
+        <img src="~/assets/images/landing-data.png" />
+      </div>
+      <div class="flexrow-item landing-text">
+        <h2 class="subtitle">
+          {{ $t('main explaination title two') }}
+        </h2>
+        <p>
+          {{ $t('main explaination text two') }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section content landing-block">
+    <div class="flexrow">
+      <div class="flexrow-item landing-text">
+        <h2 class="subtitle">
+          {{ $t('main explaination title three') }}
+        </h2>
+        <p>
+          {{ $t('main explaination text three') }}
+        </p>
+      </div>
+      <div class="flexrow-item landing-picture">
+        <img src="~/assets/images/landing-faster.png" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section content landing-block">
+    <div class="flexrow reverse">
+      <div class="flexrow-item landing-picture">
+        <img src="~/assets/images/landing-together.png" />
+      </div>
+      <div class="flexrow-item landing-text">
+        <h2 class="subtitle">
+          {{ $t('main explaination title four') }}
+        </h2>
+        <p>
+          {{ $t('main explaination text four') }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section content landing-block customer-story mt2">
+    <a href="https://blog.cg-wire.com/customer-story-autour-de-minuit/">
+    <div class="flexrow reverse">
+        <div class="flexrow-item landing-picture">
+          <img src="~/assets/images/photo-customer-story-adm.jpg" />
+        </div>
+        <div class="flexrow-item landing-text">
+          <h2 class="section-subtitle">
+            Customer Story:<br/> Autour de Minuit
+          </h2>
+          <p>
+            <em>
+              "{{ $t('main customer story one') }}"
+            </em><br />
+          </p>
+          <p class="mt1">
+          Fiona Cohen, Production Manager
+          </p>
+        </div>
+    </div>
+    </a>
+  </section>
+
+  <section class="section supporters">
+    <h2 class="subtitle tagline mb0">
+      {{ $t('about supporters title') }}
+    </h2>
+    <ul class="flexrow has-text-centered">
+      <li class="flexrow-item w120 mr0"><a href="https://www.cnc.fr"><img src="~/assets/images/logo-cnc.png" alt="CNC"></a></li>
+      <li class="flexrow-item w120 mr0"><a
+      href="https://www.unrealengine.com/en-US/megagrants"><img src="~/assets/images/logo-epic-games.png" alt="Epic Games"></a></li>
+      <li class="flexrow-item w120 mr05"><a href="https://www.ovh.com"><img src="~/assets/images/logo-ovhdlp.png" alt="OVH Digital Launch Pad"></a></li>
+      <li class="flexrow-item w120 mr0">
+        <a href="https://studio.blender.org/">
+          <img src="~/assets/images/logo-blender.png" alt="Blender Studio">
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section content has-text-centered">
+    <h2 class="subtitle">
+      {{ $t('zou contact introduction') }}
+    </h2>
+    <p>
+      <a
+        class="button is-large"
+        href="https://account.cg-wire.com/{{ locale }}/signup"
+      >
+        {{ $t('main plans cta')  }}
+      </a>
+    </p>
+  </section>
+  </div>
+
+  <section class="section content conclusion conclusion-text">
+    <h2 class="subtitle tagline">
+      {{ $t('main conclusion tagline') }}
+    </h2>
+    <p class="has-text-centered tagline-explaination">
+      {{ $t('main conclusion text') }}
+    </p>
+  </section>
+
+  <section
+    class="section content has-text-centered conclusion conclusion-picture"
+  >
+    <img src="~/assets/images/studio_collaboration.png" />
+  </section>
 </template>
 
 <script>
@@ -116,10 +231,6 @@
     head() {
       return {
         script: [
-          {
-            src: 'https://assets.calendly.com/assets/external/widget.js',
-            body: true
-          }
         ],
       }
     }
@@ -127,52 +238,4 @@
 </script>
 
 <style lang="stylus">
-green = #00B242
-
-h2
-  color #666
-  font-width bold
-  letter-spacing .2em
-  text-align center
-  text-transform uppercase
-
-.welcome
-  border-radius 2em
-  padding-bottom 1em
-  padding-top 1em
-  text-align center
-
-  strong
-    font-size 1.2em
-
-a.official-site
-  color green
-  font-weight bold
-  font-size 1.4em
-  margin 2em 0
-
-.content
-  p
-    margin-bottom 1em
-
-  h1
-    line-height 1.3em
-
-.calendly-inline-widget
-  overflow-y none
-
-.video-button
-  border 2px solid green
-  border-radius 2em
-  color green
-  padding .8em
-
-.signup
-  border-radius 2em
-  color green
-
-.references
-  img
-    margin auto
-    max-width 80%
 </style>

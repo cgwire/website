@@ -8,9 +8,12 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^5.3.3",
-    "nuxt": "3.0.0-rc.9",
-    "stylus": "^0.59.0",
-    "stylus-loader": "^7.0.0"
+    "@nuxtjs/i18n": "^8.0.0-beta.7",
+    "nuxt": "3.0.0"
+  },
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "stylus-loader": "^7.1.0",
+    "sass": "^1.57.1"
   }
 }

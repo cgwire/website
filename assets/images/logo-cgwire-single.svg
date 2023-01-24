@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" enable-background="new 0 0 512 512" version="1.2" baseProfile="tiny-ps" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-46)" clip-rule="evenodd" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2.6131" stroke-width="7.9999">
+  <path d="m244 142v84l-72 42-72-42v-84l72-42 36 21z"/>
+  <path d="m412 142v84l-72 42-72-42v-84l72-42 36 21z"/>
+  <path d="m328 286v84l-72 42-72-42v-84l72-42 36 21z"/>
+ </g>
+</svg>
