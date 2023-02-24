@@ -369,7 +369,7 @@
   "pricing features partner two": "Utilisateurs illimités",
   "pricing features small five": "1 x Dual Core",
   "pricing features small four": "Réponse < 48h",
-  "pricing features small one": "1 - 30 utilisateurs",
+  "pricing features small one": "11 - 30 utilisateurs",
   "pricing features small three": "Jusqu'à 1To",
   "pricing features small two": "Réponse < 48h",
   "pricing features successpack five": "Développements",
@@ -557,4 +557,9 @@
   "zou why subtitle": "API HTTP",
   "zou why title": "La base de données du studio",
   "main title tab": "Platforme Collaborative pour Studios d'Animation"
+  "pricing title team": "Team",
+  "pricing features team one": "1 - 10 utilisateurs",
+  "pricing features team three": "Jusqu'à 500Go",
+  "pricing features team five": "1 x Single Core VM",
+  "pricing features team four": "Réponse < 72h"
 }

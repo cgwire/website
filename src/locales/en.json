@@ -361,10 +361,10 @@
 	"pricing features partner seven": "Local Object Storage",
 	"pricing features partner six": "Staging environment",
 	"pricing features partner three": "Everything in Studio",
-	"pricing features partner two": "Unlimited users",
+	"pricing features partner two": "Studio-wide Dashboards",
 	"pricing features small five": "1 x Dual Core VM",
 	"pricing features small four": "< 48h response time",
-	"pricing features small one": "1 - 30 users",
+	"pricing features small one": "11 - 30 users",
 	"pricing features small three": "1TB storage",
 	"pricing features small two": "Unlimited projects",
 	"pricing features successpack five": "Pipeline Assistance",
@@ -554,5 +554,10 @@
 	"zou why one": "Building a movie involves a lot of data: assets, shots, casting, task assignation, file locations and more. All this information must be shared among all the departments. Kitsu API provides you with central storage for all this data. And it can be queried from anywhere.",
 	"zou why subtitle": "HTTP API",
 	"zou why title": "Share your data with all the studio",
-	"main title tab": "Collaboration Platform for Animation Studios"
+	"main title tab": "Collaboration Platform for Animation Studios",
+	"pricing title team": "Team",
+	"pricing features team one": "1 - 10 users",
+	"pricing features team three": "500GB storage",
+	"pricing features team five": "1 x Single Core VM",
+	"pricing features team four": "< 72h Response time"
 }
