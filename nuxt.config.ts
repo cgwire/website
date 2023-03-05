@@ -62,6 +62,9 @@ export default defineNuxtConfig({
   },
   vite: {
   },
+  plugins: [
+    { src: '~/plugins/aos', mode: 'client', ssr: false }
+  ],
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   }
