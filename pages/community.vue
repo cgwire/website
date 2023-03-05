@@ -174,3 +174,14 @@
   </div>
 </section>
 </template>
+
+<script setup>
+const name = 'Community'
+const { t } = useI18n()
+useHead({
+  title: 'CGWire | ' + t('header title community'),
+  meta: [
+    { name: 'description', content: t('community explaination one')}
+  ]
+})
+</script>

@@ -63,7 +63,50 @@
   <div class="pricings">
     <div class="pricing-block">
       <div class="pricing-title">
-        {{ $t('pricing title free') }}
+        {{ $t('pricing title team') }}
+      </div>
+      <div class="pricing-price">
+        <span class="pricing-currency">€</span>
+        <span class="pricing-value monthly" v-if="monthly">349</span>
+        <span class="pricing-value yearly" v-else>279</span>
+        {{ $t('pricing value month') }}
+      </div>
+      <div class="pricing-price-info">
+        {{ $t('pricing billed annualy') }}
+      </div>
+      <div class="pricing-features">
+        <ul>
+          <li>
+            {{ $t('pricing features small one') }}
+          </li>
+          <li>
+            {{ $t('pricing features tiny support') }}
+          </li>
+          <li>
+            {{ $t('pricing features small four') }}
+          </li>
+          <li>
+            {{ $t('pricing features common three') }}
+          </li>
+          <li>
+            {{ $t('pricing features common four') }}
+          </li>
+          <li>
+            {{ $t('pricing features small three') }}
+          </li>
+          <li>
+            {{ $t('pricing features small five') }}
+          </li>
+        </ul>
+      </div>
+      <div class="ranch-credits">
+        100 {{ $t('pricing ranch credits') }}
+      </div>
+    </div>
+
+    <div class="pricing-block">
+      <div class="pricing-title">
+        {{ $t('pricing title agency') }}
       </div>
       <div class="pricing-price">
         <span class="pricing-currency">€</span>
@@ -108,13 +151,13 @@
         </a>
       </div>
       <div class="ranch-credits">
-        20 {{ $t('pricing ranch credits') }}
+        200 {{ $t('pricing ranch credits') }}
       </div>
     </div>
 
     <div class="pricing-block pricing-emphasize">
       <div class="pricing-title">
-        {{ $t('pricing title basic') }}
+        {{ $t('pricing title production') }}
       </div>
       <div class="pricing-price">
         <span class="pricing-currency">€</span>
@@ -165,7 +208,7 @@
 
     <div class="pricing-block">
       <div class="pricing-title">
-        {{ $t('pricing title medium' ) }}
+        {{ $t('pricing title studio' ) }}
       </div>
       <div class="pricing-price">
         <span class="pricing-currency">€</span>
@@ -213,7 +256,7 @@
         </a>
       </div>
       <div class="ranch-credits">
-        {{ $t('pricing ranch credits') }}
+        1000 {{ $t('pricing ranch credits') }}
       </div>
     </div>
 

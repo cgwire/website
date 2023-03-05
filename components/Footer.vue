@@ -7,26 +7,48 @@ t<template>
       </p>
       <ul>
         <li>
-          <nuxt-link :to="localePath('kitsu')">
+          <nuxt-link :to="localePath('teamcollaboration')">
             <span class="level-item">
-              {{ $t('header title kitsu') }}
+              {{ $t('header title teamcollaboration') }}
+            </span>
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('productiontracker')">
+            <span class="level-item">
+              {{ $t('header title productiontracker') }}
+            </span>
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('review')">
+            <span class="level-item">
+              {{ $t('header title review') }}
+            </span>
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link :to="localePath('breakdown')">
+            <span class="level-item">
+              {{ $t('header title breakdown') }}
             </span>
           </nuxt-link>
         </li>
         <li>
           <nuxt-link :to="localePath('api')">
             <span class="level-item">
-              {{ $t('header title zou') }}
+              {{ $t('header title api') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <a href="https://cgwire.canny.io/">
+          <nuxt-link :to="localePath('integrations')">
             <span class="level-item">
-              Roadmap
+              {{ $t('header title integrations') }}
             </span>
-          </a>
+          </nuxt-link>
         </li>
+
         <li>
           <nuxt-link :to="localePath('shotgrid')">
             <span class="level-item">
@@ -70,6 +92,15 @@ t<template>
             </span>
           </a>
         </li>
+
+        <li>
+          <a href="https://cgwire.canny.io/changelog">
+            <span class="level-item">
+              Changelog
+            </span>
+          </a>
+        </li>
+
         <li>
           <a href="https://poeditor.com/join/project?hash=fpUejpWDVo">
             <span cl9ass="level-item">

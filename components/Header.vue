@@ -36,102 +36,17 @@
         <div class="navbar-dropdown">
           <div class="columns">
             <div class="column">
-              <nuxt-link
-                class="navbar-item flexcolumn subnav-element"
-                :to="localePath('kitsu')"
-              >
-                <span class="flexrow-item subnav-title">Team Collaboration</span>
-                <span class="flexrow-item subnav-text">
-                    Dispatch tasks, set status and communicate with artists.
-                </span>
-              </nuxt-link>
-              <nuxt-link
-                class="navbar-item flexcolumn subnav-element"
-                :to="localePath('productiontracker')"
-              >
-                <span class="flexrow-item subnav-title">Production Tracker</span>
-                <span class="flexrow-item subnav-text">
-                  Schedule projects, track progress and build production reports
-                </span>
-              </nuxt-link>
-              <nuxt-link
-                class="navbar-item flexcolumn subnav-element"
-                :to="localePath('review')"
-              >
-                <span class="flexrow-item subnav-title">Review Engine</span>
-                <span class="flexrow-item subnav-text">
-                  Collect previews and run collaborative feedback sessions
-                </span>
-              </nuxt-link>
-              <nuxt-link
-                class="navbar-item flexcolumn subnav-element"
-                :to="localePath('breakdown')"
-              >
-                <span class="flexrow-item subnav-title">Casting Management</span>
-                <span class="flexrow-item subnav-text">
-                  Set your breakdown and know when shots are ready
-                </span>
-              </nuxt-link>
-
-              <nuxt-link
-                class="navbar-item flexcolumn subnav-element"
-                :to="localePath('api')"
-              >
-                <span class="flexrow-item subnav-title">
-                  {{ $t('header title zou') }}
-                </span>
-                <span class="flexrow-item subnav-text">
-                  {{ $t('header text database') }}
-                </span>
-              </nuxt-link>
-
-              <nuxt-link
-                class="navbar-item flexcolumn subnav-element"
-                :to="localePath('integrations')"
-              >
-                <span class="flexrow-item subnav-title">
-                  {{ $t('header title integrations') }}
-                </span>
-                <span class="flexrow-item subnav-text">
-                  {{ $t('header text integrations') }}
-                </span>
-              </nuxt-link>
+              <SubNavElement elementKey="teamcollaboration" />
+              <SubNavElement elementKey="productiontracker" />
+              <SubNavElement elementKey="review" />
+              <SubNavElement elementKey="breakdown" />
+              <SubNavElement elementKey="api" />
+              <SubNavElement elementKey="integrations" />
             </div>
             <div class="column hosting-solutions">
-              <nuxt-link
-                class="navbar-item flexcolumn subnav-element"
-                :to="localePath('support')"
-              >
-                <span class="flexrow-item subnav-title">
-                  Top-notch Support
-                </span>
-                <span class="flexrow-item subnav-text">
-                  User support handled by professionals from the industry
-                </span>
-              </nuxt-link>
-              <nuxt-link
-                class="navbar-item flexcolumn subnav-element"
-                :to="localePath('hosting')"
-              >
-                <span class="flexrow-item subnav-title">
-                  Elite Hosting
-                </span>
-                <span class="flexrow-item subnav-text">
-                  Strong security, high uptime and automatic udpates
-                </span>
-              </nuxt-link>
-              <nuxt-link
-                class="navbar-item flexcolumn subnav-element"
-                :to="localePath('architectures')"
-              >
-                <span class="flexrow-item subnav-title">
-                  Tailor-made Architectures
-                </span>
-                <span class="flexrow-item subnav-text">
-                  Multi-instances, authentication integrations and
-                  object storage
-                </span>
-              </nuxt-link>
+              <SubNavElement elementKey="support" />
+              <SubNavElement elementKey="hosting" />
+              <SubNavElement elementKey="architectures" />
             </div>
           </div>
         </div>
@@ -238,6 +153,19 @@
             </span>
             <span class="flexrow-item subnav-text">
               {{ $t('header text tutorials') }}
+            </span>
+          </a>
+
+          <a
+            class="navbar-item flexcolumn subnav-element"
+            href="https://cgwire.canny.io/changelog"
+            target="_blank"
+          >
+            <span class="flexrow-item subnav-title">
+              {{ $t('header title changelog') }}
+            </span>
+            <span class="flexrow-item subnav-text">
+              {{ $t('header text changelog') }}
             </span>
           </a>
 

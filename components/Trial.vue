@@ -2,7 +2,7 @@
 <div class="trial">
   <section class="section content trial-content">
     <h2 class="subtitle has-text-centered">
-      {{ $t('kitsu contact introduction') }}
+      {{ $t('kitsu cta') }}
     </h2>
     <p class="has-text-centered">
       <a class="button is-large" href="https://account.cg-wire.com/{{ locale }}/signup">

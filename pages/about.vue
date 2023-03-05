@@ -1,5 +1,13 @@
 <template>
 <section class="section content about">
+    <div class="has-text-centered">
+      <img
+        alt=""
+        src="~/assets/images/illustrations/about.png"
+        width="600"
+      />
+    </div>
+
   <div class="tile has-text-centered">
     <div class="pa2 is-child mt2">
       <h2>
@@ -195,28 +203,13 @@
 </div>
 </template>
 
-<script>
-export default {
-  data() { return {} },
-  head() {
-    const { t } = useI18n({  useScope: 'local'})
-    return {
-      title: t('about title'),
-      meta: [
-        {
-          name: 'description',
-          content: t('about description')
-        },
-        {
-          name: 'og:description',
-          content: t('about description')
-        },
-        {
-          name: 'twitter:description',
-          content: t('about description')
-        }
-      ]
-    }
-  }
-}
+<script setup>
+const name = 'About'
+const { t } = useI18n()
+useHead({
+  title: 'CGWire | ' + t('about title'),
+  meta: [
+    { name: 'description', content: t('about description') }
+  ]
+})
 </script>
