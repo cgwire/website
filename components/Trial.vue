@@ -5,7 +5,10 @@
       {{ $t('kitsu cta') }}
     </h2>
     <p class="has-text-centered">
-      <a class="button is-large" href="https://account.cg-wire.com/{{ locale }}/signup">
+      <a
+        class="button is-large"
+        :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
+      >
         {{ $t('main plans cta') }}
       </a>
     </p>

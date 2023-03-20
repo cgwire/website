@@ -253,3 +253,14 @@ by CGWire Hosting customers:</p>
 
 </section>
 </template>
+
+<script setup>
+const name = 'Terms'
+const { t } = useI18n()
+useHead({
+  title: 'CGWire | ' + t('footers link privacy'),
+  meta: [
+    { name: 'description', content: 'Privacy Policy' }
+  ]
+})
+</script>

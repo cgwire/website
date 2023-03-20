@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       script: [
       ],
       link: [
-        { rel: 'icon', href: '/assets/kitsu.svg' },
+        { rel: 'icon', href: '~/assets/kitsu.svg' },
         { 
           rel: 'stylesheet', 
           href: 'https://fonts.googleapis.com/css?family=Lato' 

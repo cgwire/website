@@ -7,37 +7,37 @@ t<template>
       </p>
       <ul>
         <li>
-          <nuxt-link :to="localePath('teamcollaboration')">
+          <nuxt-link :to="localePath('team-collaboration')">
             <span class="level-item">
-              {{ $t('header title teamcollaboration') }}
+              {{ $t('header title team-collaboration') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('productiontracker')">
+          <nuxt-link :to="localePath('production-tracker')">
             <span class="level-item">
-              {{ $t('header title productiontracker') }}
+              {{ $t('header title production-tracker') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('review')">
+          <nuxt-link :to="localePath('review-engine')">
             <span class="level-item">
               {{ $t('header title review') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('breakdown')">
+          <nuxt-link :to="localePath('casting-management')">
             <span class="level-item">
-              {{ $t('header title breakdown') }}
+              {{ $t('header title casting-management') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('api')">
+          <nuxt-link :to="localePath('studio-database')">
             <span class="level-item">
-              {{ $t('header title api') }}
+              {{ $t('header title studio-database') }}
             </span>
           </nuxt-link>
         </li>
@@ -147,21 +147,21 @@ t<template>
         <li>
           <a href="https://metrics.cg-wire.com">
             <span class="level-item">
-              {{ $t('footers link metrics ') }}
+              {{ $t('footers link metrics') }}
             </span>
           </a>
         </li>
         <li>
           <nuxt-link :to="localePath('terms')">
             <span class="level-item">
-              {{ $t('footers link terms ') }}
+              {{ $t('footers link terms') }}
             </span>
           </nuxt-link>
         </li>
         <li>
           <nuxt-link :to="localePath('privacy')">
             <span class="level-item">
-              {{ $t('footers link privacy ') }}
+              {{ $t('footers link privacy') }}
             </span>
           </nuxt-link>
         </li>

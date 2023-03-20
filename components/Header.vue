@@ -6,13 +6,23 @@
 
         <img class="main-logo" src="~/assets/images/logo.svg" alt="CGWire logo"/>
       </nuxt-link>
-      <div class="burger navbar-burger" data-target="top-menu">
+      <div
+        @click="toggleNav"
+        class="burger navbar-burger"
+        data-target="top-menu"
+      >
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
-    <div class="navbar-menu" id="top-menu">
+    <div
+      :class="{
+        'navbar-menu': true,
+        'is-active': navOn
+      }"
+      id="top-menu"
+    >
       <div class="navbar-start flexrow locales">
         <nuxt-link
           class="flexrow-item navbar-lang-item"
@@ -36,17 +46,17 @@
         <div class="navbar-dropdown">
           <div class="columns">
             <div class="column">
-              <SubNavElement elementKey="teamcollaboration" />
-              <SubNavElement elementKey="productiontracker" />
-              <SubNavElement elementKey="review" />
-              <SubNavElement elementKey="breakdown" />
-              <SubNavElement elementKey="api" />
-              <SubNavElement elementKey="integrations" />
+              <SubNavElement elementKey="team-collaboration" />
+              <SubNavElement elementKey="production-tracker" />
+              <SubNavElement elementKey="review-engine" />
+              <SubNavElement elementKey="casting-management" />
+              <SubNavElement elementKey="studio-database" />
+              <SubNavElement elementKey="software-integrations" />
             </div>
             <div class="column hosting-solutions">
-              <SubNavElement elementKey="support" />
-              <SubNavElement elementKey="hosting" />
-              <SubNavElement elementKey="architectures" />
+              <SubNavElement elementKey="top-notch-support" />
+              <SubNavElement elementKey="elite-hosting" />
+              <SubNavElement elementKey="tailor-made-architecture" />
             </div>
           </div>
         </div>
@@ -221,13 +231,13 @@
       <div class="navbar-end">
         <a
           class="navbar-item signin"
-          href="https://account.cg-wire.com/{{ locale }}/login"
+          :href="`https://account.cg-wire.com/${$i18n.locale}/login`"
         >
           {{ $t('header sign in') }}
         </a>
         <a
           class="navbar-item signup"
-          href="https://account.cg-wire.com/{{ locale }}/signup"
+          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
         >
           {{ $t('header sign up') }}
         </a>
@@ -241,11 +251,30 @@
 <script>
 export default {
   name: 'Header',
+  data () {
+    return {
+      navOn: false
+    }
+  },
+  mounted () {
+    var $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll('.navbar-burger'), 0
+    )
+    if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function () {})
+      })
+    }
+  },
   methods: {
     isActivePage (pages) {
       return pages.includes(
         this.$route.name.substring(0, this.$route.name.length - 5)
       )
+    },
+
+    toggleNav () {
+      this.navOn = !this.navOn
     }
   }
 }

@@ -20,14 +20,14 @@
       >
         <h2>
           <span class="section-subtitle">
-            {{ subtitle }}
+            {{ $t(`${sectionKey} ${featureKey} subtitle`) }}
           </span>
           <span class="section-title">
-            {{ title }}
+            {{ $t(`${sectionKey} ${featureKey} title`) }}
           </span>
         </h2>
         <p>
-          {{ content }}
+          {{ $t(`${sectionKey} ${featureKey} content`) }}
         </p>
       </div>
       <div
@@ -35,7 +35,7 @@
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <img class="screenshot" :src="useAsset(imagePath)" />
+        <img class="screenshot" :src="useAsset(`kitsu-${featureKey}.png`)" />
       </div>
     </div>
   </section>
@@ -44,10 +44,8 @@
 
 <script setup>
 const props = defineProps({
-  subtitle: String,
-  title: String,
-  content: String,
-  imagePath: String,
+  sectionKey: String,
+  featureKey: String,
   colored: {
     type: Boolean,
     default: false
@@ -63,7 +61,7 @@ function useAsset(path) {
     eager: true,
     import: 'default',
   })
-  return assets['/assets/images/' + path]
+  return assets['/assets/images/screenshots/' + path]
 }
 </script>
 

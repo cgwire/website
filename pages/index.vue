@@ -1,13 +1,5 @@
 <template>
-  <Head>
-    <Title>{{ $t('main title') }}</Title>
-    <Meta
-      name="description"
-      content="Kitsu - Collaboration Platform for animation studios"
-    ></Meta>
-  </Head>
-  <div class="home">
-
+<div class="home">
   <section class="section content introduction">
    <div class="flexrow">
      <div class="flexrow-item introduction-text">
@@ -226,15 +218,15 @@
   </section>
 </template>
 
-<script>
-  export default {
-    head() {
-      return {
-        script: [
-        ],
-      }
-    }
-  }
+<script setup>
+const name = 'Index'
+const { t } = useI18n()
+useHead({
+  title: 'CGWire | ' + t('main title'),
+  meta: [
+    { name: 'description', content: 'main subtitle' }
+  ]
+})
 </script>
 
 <style lang="stylus">

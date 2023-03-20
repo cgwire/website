@@ -29,3 +29,14 @@ N° RCS: Paris 831 995 303
 </p>
 </section>
 </template>
+
+<script setup>
+const name = 'Contact'
+const { t } = useI18n()
+useHead({
+  title: 'CGWire | ' + t('footers link contact'),
+  meta: [
+    { name: 'description', content: t('contact tagline') }
+  ]
+})
+</script>

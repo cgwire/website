@@ -41,7 +41,8 @@
         <p class="">
           <a
             class="button is-outlined"
-            href="#success-packs">
+            href="#success-packs"
+          >
             {{ $t('pricing firsteps cta2') }}
           </a>
         </p>
@@ -77,13 +78,13 @@
       <div class="pricing-features">
         <ul>
           <li>
-            {{ $t('pricing features small one') }}
+            {{ $t('pricing features team users') }}
           </li>
           <li>
-            {{ $t('pricing features tiny support') }}
+            {{ $t('pricing features team support') }}
           </li>
           <li>
-            {{ $t('pricing features small four') }}
+            {{ $t('pricing features team supporttime') }}
           </li>
           <li>
             {{ $t('pricing features common three') }}
@@ -92,7 +93,7 @@
             {{ $t('pricing features common four') }}
           </li>
           <li>
-            {{ $t('pricing features small three') }}
+            {{ $t('pricing features team storage') }}
           </li>
           <li>
             {{ $t('pricing features small five') }}
@@ -275,12 +276,6 @@
             {{ $t('pricing features partner one') }}
           </li>
           <li>
-            {{ $t('pricing features partner two') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner three') }}
-          </li>
-          <li>
             {{ $t('pricing features partner four') }}
           </li>
           <li>
@@ -294,6 +289,9 @@
           </li>
           <li>
             {{ $t('pricing features partner eight') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner three') }}
           </li>
         </ul>
       </div>

@@ -323,3 +323,14 @@ Any new features that augment or enhance the current Service, including the rele
 </p>
 </section>
 </template>
+
+<script setup>
+const name = 'Terms'
+const { t } = useI18n()
+useHead({
+  title: 'CGWire | ' + t('footers link terms'),
+  meta: [
+    { name: 'description', content: 'Usage terms' }
+  ]
+})
+</script>
