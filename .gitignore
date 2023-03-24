@@ -13,4 +13,7 @@ node_modules
 build
 dist
 
+.nuxt
+.output
+
 TODO
