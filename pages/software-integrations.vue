@@ -1,35 +1,140 @@
 <template>
-<div class="kitsu-page software-integrations">
+<div class="kitsu-page software-integrations integrations">
 
   <SolutionHeaderBlock
     page-key="software-integrations"
   />
 
-  <FeatureBlock
-    section-key="software-integrations"
-    feature-key="report"
-    colored
-  />
+  <section class="section mt0 pt0">
+    <div class="section-subtitle has-text-centered">
+      {{ $t('integrations subtitle dcc') }}
+    </div>
+    <h2 class="section-title has-text-centered">
+     {{ $t('integrations title dcc') }}
+    </h2>
 
-  <FeatureBlock
-    section-key="software-integrations"
-    feature-key="schedule"
-    reverted
-  />
+    <div class="flexrow mt2">
+      <a
+        href="https://github.com/cgwire/kitsu-publisher-next#readme"
+        class="software flexrow-item"
+      >
+        <img
+          class="w75pe"
+          src="~/assets/images/integrations/logo-blender.png"
+          alt="Blender Logo"
+        />
+      </a>
+      <a
+        href="https://github.com/cgwire/kitsu-publisher-next#readme"
+        class="software flexrow-item"
+      >
+        <img
+          class="w50pe"
+          src="~/assets/images/integrations/logo-harmony.png"
+          alt="Harmony Logo"
+        />
+      </a>
+      <a
+        href="https://github.com/cgwire/kitsu-publisher-next#readme"
+        class="software flexrow-item"
+      >
+        <img
+          class="w50pe"
+          src="~/assets/images/integrations/logo-unreal-engine.png"
+          alt="Unreal Engine"
+        />
+      </a>
+    </div>
+    <div class="flexrow mt2 mb4 has-text-centered">
+      <a
+        href="https://github.com/EmberLightVFX/Kitsu-for-Prism"
+        class="software flexrow-item"
+      >
+        <img
+          class="w50pe"
+          src="~/assets/images/integrations/logo-prism.png"
+          alt="Prism Logo" />
+        <span class="made-by-community">
+          {{ $t('community contribution') }}
+        </span>
+      </a>
+      <a
+        href="https://github.com/pypeclub/OpenPype/tree/798930e5b633358c3ce284b63983ab90cf42e54b/openpype/modules/kitsu"
+        class="software flexrow-item openpype"
+      >
+        <img
+          class="w50pe openpype"
+          src="~/assets/images/integrations/logo-open-pype.svg"
+          alt="OpenPype Logo" />
+        <span class="made-by-community">
+          {{ $t('community contribution') }}
+        </span>
+      </a>
+    </div>
 
-  <FeatureBlock
-    section-key="software-integrations"
-    feature-key="quotas"
-    colored
-  />
+    <div class="section-subtitle has-text-centered mt2">
+      {{ $t('integrations subtitle chats') }}
+    </div>
+    <h2 class="section-title has-text-centered">
+      {{ $t('integrations title chats') }}
+    </h2>
+    <div class="flexrow mt2 mb4">
+      <a
+        href="https://kitsu.cg-wire.com/slack/"
+        class="software flexrow-item"
+      >
+        <img
+          class="w75pe"
+           src="~/assets/images/integrations/logo-slack.png"
+          alt="Slack Logo"
+        />
+      </a>
+      <a
+        href="https://kitsu.cg-wire.com/mattermost/"
+        class="software flexrow-item"
+      >
+        <img
+          class="w75pe"
+          src="~/assets/images/integrations/logo-mattermost.png"
+          alt="Mattermost Logo"
+        />
+      </a>
+      <a
+        href="https://kitsu.cg-wire.com/discord/"
+        class="software flexrow-item"
+      >
+        <img class="w75pe" src="~/assets/images/integrations/logo-discord.png" alt="Discord Logo" />
+      </a>
+    </div>
 
-  <CustomerStoryBlock
-    studio-name="Fost studio"
-    story-key="fost"
-    interviewee-key="Céline Durieux, Head Of Studio"
-    image-path="photo-customer-story-fost.png"
-    story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
-  />
+    <div class="section-subtitle has-text-centered mt2">
+      {{ $t('integrations subtitle software') }}
+    </div>
+    <h2 class="section-title has-text-centered">
+      {{ $t('integrations title software') }}
+    </h2>
+    <div class="flexrow mt2">
+      <a
+        href="https://gazu.cg-wire.com"
+        class="software flexrow-item"
+      >
+        <img
+          class="w50pe"
+          src="~/assets/images/integrations/logo-python.png"
+          alt="Python Logo"
+        />
+      </a>
+      <a
+        href="https://github.com/cgwire/kitsu-client-js"
+        class="software flexrow-item"
+      >
+        <img
+          class="w25pe"
+          src="~/assets/images/integrations/logo-javascript.png"
+          alt="Javascript Logo" />
+      </a>
+    </div>
+  </section>
 
   <Trial />
 </div>
@@ -45,3 +150,10 @@ useHead({
   ]
 })
 </script>
+
+<style>
+.openpype {
+  max-height: 220px;
+  padding: 20px;
+}
+</style>

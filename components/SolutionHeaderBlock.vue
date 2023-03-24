@@ -15,7 +15,14 @@
       </p>
     </div>
     <div class="is-6 pl1">
-      <img :src="useAsset('illustrations/' + pageKey + '.png')" alt="" />
+      <video
+        :src="useAsset('illustrations/' + pageKey + '.mp4')"
+        autoplay
+        muted
+        loop
+        v-if="isVideo"
+      />
+      <img :src="useAsset('illustrations/' + pageKey + '.png')" alt="" v-else />
     </div>
   </div>
 </section>
@@ -24,7 +31,8 @@
 <script setup>
 const props = defineProps({
   pageKey: String,
-  imagePath: String
+  imagePath: String,
+  isVideo: Boolean
 })
 
 function useAsset(path) {
@@ -37,4 +45,7 @@ function useAsset(path) {
 </script>
 
 <style lang="stylus" scoped>
+video {
+  border-radius: 2em;
+}
 </style>

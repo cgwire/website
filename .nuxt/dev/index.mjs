@@ -14,22 +14,32 @@ import destr from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud
 import { createCall, createFetch } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/unenv/runtime/fetch/index.mjs';
 import { createHooks } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/hookable/dist/index.mjs';
 import { snakeCase } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/scule/dist/index.mjs';
+import defu, { defuFn } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/defu/dist/defu.mjs';
 import { hash } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/ohash/dist/index.mjs';
 import { parseURL, withoutBase, joinURL, withQuery } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/ufo/dist/index.mjs';
-import { createStorage } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/unstorage/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/unstorage/dist/index.mjs';
 import unstorage_47drivers_47fs from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/unstorage/drivers/fs.mjs';
-import defu from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/defu/dist/defu.mjs';
 import { toRouteMatcher, createRouter } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/radix3/dist/index.mjs';
+
+const inlineAppConfig = {};
+
+
+
+const appConfig = defuFn(inlineAppConfig);
 
 const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
-const getEnv = (key) => {
+overrideConfig(_runtimeConfig);
+const runtimeConfig = deepFreeze(_runtimeConfig);
+const useRuntimeConfig = () => runtimeConfig;
+deepFreeze(appConfig);
+function getEnv(key) {
   const envKey = snakeCase(key).toUpperCase();
   return destr(
     process.env[ENV_PREFIX + envKey] ?? process.env[ENV_PREFIX_ALT + envKey]
   );
-};
+}
 function isObject(input) {
   return typeof input === "object" && !Array.isArray(input);
 }
@@ -47,9 +57,6 @@ function overrideConfig(obj, parentKey = "") {
     }
   }
 }
-overrideConfig(_runtimeConfig);
-const config$1 = deepFreeze(_runtimeConfig);
-const useRuntimeConfig = () => config$1;
 function deepFreeze(object) {
   const propNames = Object.getOwnPropertyNames(object);
   for (const name of propNames) {
@@ -71,8 +78,6 @@ for (const asset of serverAssets) {
 
 const storage = createStorage({});
 
-const useStorage = () => storage;
-
 storage.mount('/assets', assets);
 
 storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud","ignore":["**/node_modules/**","**/.git/**"]}));
@@ -80,16 +85,20 @@ storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"ba
 storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
 storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
+function useStorage(base = "") {
+  return base ? prefixStorage(storage, base) : storage;
+}
+
 const defaultCacheOptions = {
   name: "_",
   base: "/cache",
   swr: true,
   maxAge: 1
 };
-function defineCachedFunction(fn, opts) {
+function defineCachedFunction(fn, opts = {}) {
   opts = { ...defaultCacheOptions, ...opts };
   const pending = {};
-  const group = opts.group || "nitro";
+  const group = opts.group || "nitro/functions";
   const name = opts.name || fn.name || "_";
   const integrity = hash([opts.integrity, fn, opts]);
   const validate = opts.validate || (() => true);
@@ -104,7 +113,7 @@ function defineCachedFunction(fn, opts) {
     const _resolve = async () => {
       const isPending = pending[key];
       if (!isPending) {
-        if (entry.value !== void 0 && (opts.staleMaxAge || 0) >= 0) {
+        if (entry.value !== void 0 && (opts.staleMaxAge || 0) >= 0 && opts.swr === false) {
           entry.value = void 0;
           entry.integrity = void 0;
           entry.mtime = void 0;
@@ -112,7 +121,14 @@ function defineCachedFunction(fn, opts) {
         }
         pending[key] = Promise.resolve(resolver());
       }
-      entry.value = await pending[key];
+      try {
+        entry.value = await pending[key];
+      } catch (error) {
+        if (!isPending) {
+          delete pending[key];
+        }
+        throw error;
+      }
       if (!isPending) {
         entry.mtime = Date.now();
         entry.integrity = integrity;
@@ -610,8 +626,8 @@ const _template = (messages) => _render({ messages: { ..._messages, ...messages 
 const template = _template;
 
 const errorDev = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  template: template
+      __proto__: null,
+      template: template
 });
 
 const appRootId = "__nuxt";
@@ -811,14 +827,14 @@ function splitPayload(ssrContext) {
 }
 
 const renderer$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  default: renderer
+      __proto__: null,
+      default: renderer
 });
 
 const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"keywords\" content=\"production management pipeline cg cgi blender nuke 3dsmax maya animation movie vfx tracking shotgun alternative\">\n<meta name=\"og:title\" content=\"CGWire - Collaboration Platform for Animation studios\">\n<meta name=\"og:locale\" content=\"en_US\">\n<meta name=\"og:locale:alternate\" content=\"fr_FR\">\n<meta name=\"og:image\" content=\"https://cgwire.com/images/logo.svg\">\n<meta name=\"og:description\" content=\"{{__ metaDescription }}\">\n<meta name=\"twitter:card\" content=\"summary\">\n<meta name=\"twitter:url\" content=\"http://twitter.com/cgwirenews/\">\n<meta name=\"twitter:title\" content=\"CGWire - Collaboration Platform for Animation studios\">\n<meta name=\"twitter:description\" content=\"{{__ metaDescription }}\">\n<meta name=\"twitter:image\" content=\"https://cgwire.com/assets/images/logo.svg\">\n<link rel=\"icon\" href=\"~/assets/kitsu.svg\">\n<link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Lato\">\n<noscript>Javascript is required</noscript>","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
 
 const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  default: _virtual__headStatic
+      __proto__: null,
+      default: _virtual__headStatic
 });
 //# sourceMappingURL=index.mjs.map

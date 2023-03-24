@@ -14,6 +14,8 @@
 /// <reference path="components.d.ts" />
 /// <reference path="types/imports.d.ts" />
 /// <reference path="imports.d.ts" />
+/// <reference path="nuxt-config-schema" />
+/// <reference path="schema/nuxt.schema.d.ts" />
 /// <reference path="types/nitro.d.ts" />
 
 export {}

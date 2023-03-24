@@ -7,28 +7,23 @@
 
   <FeatureBlock
     section-key="tailor-made-architecture"
-    feature-key="report"
+    feature-key="onpremise"
+    :shadow="false"
     colored
   />
 
   <FeatureBlock
     section-key="tailor-made-architecture"
-    feature-key="schedule"
+    feature-key="multiinstance"
+    :shadow="false"
     reverted
   />
 
   <FeatureBlock
     section-key="tailor-made-architecture"
-    feature-key="quotas"
+    feature-key="extra"
+    :shadow="false"
     colored
-  />
-
-  <CustomerStoryBlock
-    studio-name="Fost studio"
-    story-key="fost"
-    interviewee-key="Céline Durieux, Head Of Studio"
-    image-path="photo-customer-story-fost.png"
-    story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
   />
 
   <Trial />

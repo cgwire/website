@@ -24,11 +24,11 @@
   />
 
   <CustomerStoryBlock
-    studio-name="Miyu studio"
-    story-key="miyu"
-    interviewee-key="Carole Faure, Production Manager"
-    image-path="photo-customer-story-miyu.png"
-    story-url="https://blog.cg-wire.com/customer-story-miyu/"
+    studio-name="Makuta VFX"
+    story-key="makuta"
+    interviewee="Pete Draper, Head of VFX"
+    image-path="photo-customer-story-makuta.png"
+    story-url="https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
   />
 
   <Trial />
@@ -36,12 +36,13 @@
 </template>
 
 <script setup>
+
 const name = 'Review Engine'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('review-engine header tagline'),
   meta: [
-    { name: 'description', content: t('review-engine explaination one')}
+    { name: 'description', content: t('review-engine header explaination')}
   ]
 })
 </script>

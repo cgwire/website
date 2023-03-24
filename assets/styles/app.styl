@@ -686,7 +686,7 @@ div.body
             flex 1 1 
             justify-content center
             padding 2em
-            position: relative
+            position relative
             text-align center
             transition all 0.5s ease
 
@@ -709,10 +709,14 @@ div.body
               right 10px
 
         h2.section-title
-            font-size 1.5em
+            font-size 2em
 
         .section-subtitle
+            margin-top 6em
             margin-bottom 0.2em
+
+            &:first-child
+                margin-top 1em
 
     .studios
         section:first-child
@@ -1220,10 +1224,9 @@ div.body
             padding-right 3rem
 
     .modal
-        iframe
-            position absolute
-            top 0
-            left 0
+        position absolute
+        top 0
+        left 0
 
     .footer
         border-top 5px solid cgwiregreen

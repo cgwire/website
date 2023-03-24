@@ -23,7 +23,7 @@ t<template>
         <li>
           <nuxt-link :to="localePath('review-engine')">
             <span class="level-item">
-              {{ $t('header title review') }}
+              {{ $t('header title review-engine') }}
             </span>
           </nuxt-link>
         </li>
@@ -44,7 +44,7 @@ t<template>
         <li>
           <nuxt-link :to="localePath('integrations')">
             <span class="level-item">
-              {{ $t('header title integrations') }}
+              {{ $t('header title software-integrations') }}
             </span>
           </nuxt-link>
         </li>

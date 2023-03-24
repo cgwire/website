@@ -7,19 +7,20 @@
 
   <FeatureBlock
     section-key="elite-hosting"
-    feature-key="tasks"
+    feature-key="security"
     colored
   />
 
   <FeatureBlock
     section-key="elite-hosting"
-    feature-key="todos"
+    feature-key="availability"
     reverted
   />
 
   <FeatureBlock
     section-key="elite-hosting"
-    feature-key="news"
+    feature-key="performance"
+    :shadow="false"
     colored
   />
 
@@ -33,7 +34,7 @@ const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('elite-hosting header tagline'),
   meta: [
-    { name: 'description', content: t('elite-hosting explaination one')}
+    { name: 'description', content: t('elite-hosting header explaination')}
   ]
 })
 </script>

@@ -5,4 +5,4 @@ const inlineConfig = {}
 
 
 
-export default defuFn(inlineConfig)
+export default /* #__PURE__ */ defuFn(inlineConfig)

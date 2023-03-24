@@ -3,7 +3,8 @@ import { fileURLToPath } from 'url'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  static: true,
+  target: 'static',
+  ssr: true,
   app: {
     head: {
       meta: [
@@ -37,7 +38,11 @@ export default defineNuxtConfig({
       ]
     }
   },
-  css: [{ src: '~/assets/styles/app.styl', lang: 'styl'}, 'bulma'],
+  css: [
+      { src: '~/assets/styles/app.styl', lang: 'styl'}, 
+      'bulma'
+      // '~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'
+  ],
   components: true,
   modules: [
     '@nuxtjs/i18n'
@@ -60,12 +65,12 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: 'locales'
   },
-  vite: {
-  },
   plugins: [
-    { src: '~/plugins/aos', mode: 'client', ssr: false }
+    { src: '~/plugins/aos', mode: 'client', ssr: false },
+    { src: '~/plugins/youtube', mode: 'client', ssr: false },
+    { src: "~/plugins/crisp.js", mode: "client" }
   ],
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
-  }
+  },
 })

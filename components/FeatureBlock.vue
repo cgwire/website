@@ -35,7 +35,10 @@
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <img class="screenshot" :src="useAsset(`kitsu-${featureKey}.png`)" />
+        <img
+          :class="{ screenshot: shadow }"
+          :src="useAsset(`kitsu-${featureKey}.png`)"
+        />
       </div>
     </div>
   </section>
@@ -53,7 +56,11 @@ const props = defineProps({
   reverted: {
     type: Boolean,
     default: false
-  }
+  },
+  shadow: {
+    type: Boolean,
+    default: true
+  },
 })
 
 function useAsset(path) {

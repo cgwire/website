@@ -15,12 +15,12 @@
    </div>
   </section>
 
-  <div class="modal" id="kitsu-video">
+  <div class="modal is-active" id="kitsu-video">
     <div class="modal-background"></div>
     <div class="modal-content">
-      <p class="image is-16by9">
+      <div class="image is-16by9">
         <div id="youtube-player"></div>
-      </p>
+      </div>
     </div>
     <button class="modal-close is-large" aria-label="close"></button>
   </div>
@@ -60,28 +60,13 @@
     </p>
   </section>
 
-  <section class="section content landing-block customer-story mt2">
-    <a href="https://blog.cg-wire.com/customer-story-fost-studio/">
-    <div class="flexrow reverse">
-        <div class="flexrow-item landing-picture">
-          <img src="~/assets/images/photo-customer-story-fost.png" />
-        </div>
-        <div class="flexrow-item landing-text">
-          <h2 class="section-subtitle">
-            Customer Story:<br/> Fost Studio
-          </h2>
-          <p>
-            <em>
-              "{{ $t('main customer story fost') }}"
-            </em><br />
-          </p>
-          <p class="mt1">
-            Céline Durieux, Head of Studio
-          </p>
-        </div>
-    </div>
-    </a>
-  </section>
+  <CustomerStoryBlock
+    studio-name="Fost studio"
+    story-key="fost"
+    interviewee-key="Céline Durieux, Head Of Studio"
+    image-path="photo-customer-story-fost.png"
+    story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
+  />
 
   <section class="section content landing-block">
     <div class="flexrow">
@@ -147,28 +132,13 @@
     </div>
   </section>
 
-  <section class="section content landing-block customer-story mt2">
-    <a href="https://blog.cg-wire.com/customer-story-autour-de-minuit/">
-    <div class="flexrow reverse">
-        <div class="flexrow-item landing-picture">
-          <img src="~/assets/images/photo-customer-story-adm.jpg" />
-        </div>
-        <div class="flexrow-item landing-text">
-          <h2 class="section-subtitle">
-            Customer Story:<br/> Autour de Minuit
-          </h2>
-          <p>
-            <em>
-              "{{ $t('main customer story one') }}"
-            </em><br />
-          </p>
-          <p class="mt1">
-          Fiona Cohen, Production Manager
-          </p>
-        </div>
-    </div>
-    </a>
-  </section>
+  <CustomerStoryBlock
+    studio-name="Autour De Minuit"
+    story-key="adm"
+    interviewee-key="Fiona Cohen, Production Manager"
+    image-path="photo-customer-story-adm.jpg"
+    story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
+  />
 
   <section class="section supporters">
     <h2 class="subtitle tagline mb0">
@@ -189,7 +159,7 @@
 
   <section class="section content has-text-centered">
     <h2 class="subtitle">
-      {{ $t('zou contact introduction') }}
+      {{ $t('main contact title') }}
     </h2>
     <p>
       <a
@@ -220,12 +190,55 @@
 
 <script setup>
 const name = 'Index'
+import { onMounted } from 'vue'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | ' + t('main title'),
   meta: [
     { name: 'description', content: 'main subtitle' }
   ]
+})
+
+const videoId = '2HNnFffAADU'
+
+onMounted(() => {
+  let player
+  setTimeout(() => {
+    player = new YT.Player('youtube-player', {
+      height: '100%',
+      width: '100%',
+      videoId: '2HNnFffAADU',
+      events: {}
+    })
+    console.log(player)
+  }, 1000)
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var modalTogglers = Array.prototype.slice.call(
+      document.querySelectorAll('.toggleModal'), 0
+    );
+    var modalClosers = Array.prototype.slice.call(
+      document.querySelectorAll('.modal-close'), 0
+    );
+    if (modalTogglers.length > 0) {
+      modalTogglers.forEach(function (el) {
+        el.addEventListener('click', function () {
+          var target = el.getAttribute("href").substr(1)
+          var targetEl = document.getElementById(target)
+          targetEl.classList.toggle('is-active')
+          player.playVideo()
+        })
+      })
+    }
+    if (modalClosers.length > 0) {
+      modalClosers.forEach(function (el) {
+        el.addEventListener('click', function () {
+          player.pauseVideo()
+          this.parentNode.classList.remove('is-active')
+        })
+      })
+    }
+  })
 })
 </script>
 
