@@ -7,7 +7,7 @@
         <img class="main-logo" src="~/assets/images/logo.svg" alt="CGWire logo"/>
       </nuxt-link>
       <div
-        @click="toggleNav"
+        @click="() => toggleNav()"
         class="burger navbar-burger"
         data-target="top-menu"
       >
@@ -37,7 +37,22 @@
           FR
         </nuxt-link>
       </div>
-      <div class="navbar-item has-dropdown is-hoverable">
+      <div v-bind:class="{
+        'navbar-item': true,
+        'has-dropdown': true,
+        'is-hoverable': true,
+        active: isActivePage([
+          'team-collaboration',
+          'production-tracker',
+          'review-engine',
+          'casting-management',
+          'studio-database',
+          'software-integrations',
+          'top-notch-support',
+          'elite-hosting',
+          'tailor-made-architecture',
+        ])
+      }">
         <a class="navbar-link">
           <span class="navbar-item-title">
             {{ $t('header title solutions') }}
@@ -248,35 +263,21 @@
 <div class="header-padding"></div>
 </template>
 
-<script>
-export default {
-  name: 'Header',
-  data () {
-    return {
-      navOn: false
-    }
-  },
-  mounted () {
-    var $navbarBurgers = Array.prototype.slice.call(
-      document.querySelectorAll('.navbar-burger'), 0
-    )
-    if ($navbarBurgers.length > 0) {
-      $navbarBurgers.forEach(function ($el) {
-        $el.addEventListener('click', function () {})
-      })
-    }
-  },
-  methods: {
-    isActivePage (pages) {
-      return pages.includes(
-        this.$route.name.substring(0, this.$route.name.length - 5)
-      )
-    },
+<script setup>
+import { ref } from 'vue'
+import { useRoute } from 'vue-router'
+const name = 'Header'
+let navOn = ref(false)
 
-    toggleNav () {
-      this.navOn = !this.navOn
-    }
-  }
+function isActivePage (pages) {
+  const route = useRoute()
+  return pages.includes(
+    route.name.substring(0, route.name.length - 5)
+  )
+}
+
+function toggleNav () {
+  this.navOn = !this.navOn
 }
 </script>
 

@@ -68,7 +68,8 @@ export default defineNuxtConfig({
   plugins: [
     { src: '~/plugins/aos', mode: 'client', ssr: false },
     { src: '~/plugins/youtube', mode: 'client', ssr: false },
-    { src: "~/plugins/crisp.js", mode: "client" }
+    { src: "~/plugins/crisp.js", mode: "client" },
+    { src: "~/plugins/matomo.js", mode: "client" }
   ],
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'

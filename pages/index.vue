@@ -5,9 +5,13 @@
      <div class="flexrow-item introduction-text">
        <h1 class="title">{{ $t('main title') }}</h1>
        <h2 class="main-subtitle">{{ $t('main subtitle') }}</h2>
-        <a href="#kitsu-video" class="toggleModal button button--with-icon is-large">
-          <img src="~/assets/images/play.svg" alt=""><span>{{ $t('kitsu watch cta') }}</span>
-        </a>
+        <button
+          @click="() => showVideoModal()"
+          class="toggleModal button button--with-icon is-large"
+        >
+          <img src="~/assets/images/play.svg" alt="">
+          <span>{{ $t('kitsu watch cta') }}</span>
+        </button>
      </div>
      <div class="flexrow-item introduction-picture">
        <img src="~/assets/images/collaboration.svg" />
@@ -15,18 +19,26 @@
    </div>
   </section>
 
-  <div class="modal is-active" id="kitsu-video">
+  <div
+    :class="{
+      modal: true,
+      'is-active': isVideoModalActive
+    }"
+    id="kitsu-video"
+  >
     <div class="modal-background"></div>
     <div class="modal-content">
-      <div class="image is-16by9">
-        <div id="youtube-player"></div>
-      </div>
+      <div id="youtube-player"></div>
     </div>
-    <button class="modal-close is-large" aria-label="close"></button>
+    <button
+      class="modal-close close-video is-large"
+      aria-label="close"
+      @click="() => hideVideoModal()"
+    >
+    </button>
   </div>
 
   <section class="section content trusted">
-
     <h4 class="section-subtitle has-text-centered">
       {{ $t('main explaination trusted') }}
     </h4>
@@ -189,8 +201,8 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
 const name = 'Index'
-import { onMounted } from 'vue'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | ' + t('main title'),
@@ -199,10 +211,10 @@ useHead({
   ]
 })
 
+let player
+let isVideoModalActive = ref(false)
 const videoId = '2HNnFffAADU'
-
 onMounted(() => {
-  let player
   setTimeout(() => {
     player = new YT.Player('youtube-player', {
       height: '100%',
@@ -210,37 +222,25 @@ onMounted(() => {
       videoId: '2HNnFffAADU',
       events: {}
     })
-    console.log(player)
   }, 1000)
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var modalTogglers = Array.prototype.slice.call(
-      document.querySelectorAll('.toggleModal'), 0
-    );
-    var modalClosers = Array.prototype.slice.call(
-      document.querySelectorAll('.modal-close'), 0
-    );
-    if (modalTogglers.length > 0) {
-      modalTogglers.forEach(function (el) {
-        el.addEventListener('click', function () {
-          var target = el.getAttribute("href").substr(1)
-          var targetEl = document.getElementById(target)
-          targetEl.classList.toggle('is-active')
-          player.playVideo()
-        })
-      })
-    }
-    if (modalClosers.length > 0) {
-      modalClosers.forEach(function (el) {
-        el.addEventListener('click', function () {
-          player.pauseVideo()
-          this.parentNode.classList.remove('is-active')
-        })
-      })
-    }
-  })
 })
+
+function showVideoModal () {
+  this.isVideoModalActive = true
+  player.playVideo()
+}
+
+function hideVideoModal () {
+  this.isVideoModalActive = false
+  player.pauseVideo()
+}
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
+.modal-content {
+  height: 80vh;
+}
+.modal-close.close-video {
+  top: 80px;
+}
 </style>

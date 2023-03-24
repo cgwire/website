@@ -27,6 +27,12 @@
     <li class="customers-item"><a href="https://www.gobelins.fr"><img src="~/assets/images/logo-gobelins.png" alt="Les Gobelins"></a></li>
     <li class="customers-item"><a href="https://lanimea.com/"><img src="~/assets/images/logo-lanimea.png" alt="Lanimea"></a></li>
     <li class="customers-item"><a href="https://www.ecolegeorgesmelies.fr"><img src="~/assets/images/studios/logo-georges-melies.png" alt="Ecole Georges Méliès"></a></li>
+    <li class="customers-item">
+     <a href="https://www.institutartline.com/">
+       <img src="~/assets/images/logo-artline.svg"
+            alt="Institut ArtLine">
+      </a>
+    </li>
     <li class="customers-item only-name">
       <a href="">3Dar</a>
     </li>
@@ -518,3 +524,6 @@
 </section>
 </div>
 </template>
+
+<style scoped>
+</style>

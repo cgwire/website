@@ -1,0 +1,58 @@
+<template>
+<div
+  :class="{
+    hidden: isActive
+  }"
+  id="cookie-consent"
+  class="cookie-consent flexrow"
+>
+  <p class="flexrow-item text">
+     {{ $t('main cookies consent') }}
+  </p>
+  <p class="flexrow-item cookie-choice">
+    <button
+      id="cookie-ok"
+      class="button default"
+      @click="() => acceptCookies()"
+   >
+       {{ $t('main yes') }}
+    </button>
+    <button
+      id="cookie-ko"
+      class="button"
+      @click="() => refuseCookies()"
+    >
+       {{ $t('main no') }}
+    </button>
+  </p>
+</div>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+let isActive = ref(true)
+
+if(process.client) {
+  const cookieConsent = localStorage.getItem('cookie-consent')
+  if (cookieConsent !== null) {
+    isActive = false
+  }
+}
+
+function acceptCookies () {
+  localStorage.setItem('cookie-consent', 'true')
+  this.isActive = false
+  window.location.reload()
+}
+function refuseCookies () {
+  localStorage.setItem('cookie-consent', 'false')
+  this.isActive = false
+  window.location.reload()
+}
+</script>
+
+<style scoped>
+.cookie-consent.hidden {
+  display: none;
+}
+</style>

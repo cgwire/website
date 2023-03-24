@@ -1,9 +1,10 @@
 <template>
-  <div>
-    <Header />
-    <slot />
-    <Footer />
-  </div>
+<div>
+  <Header />
+  <slot />
+  <Footer />
+  <CookieConsent />
+</div>
 </template>
 
 <script>
