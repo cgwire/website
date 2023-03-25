@@ -4,7 +4,7 @@
       {{ $t('spreadsheets tagline') }}
     </h2>
     <p>
-      {{ $t('spreadsheets explaination one') }}
+      {{ $t('spreadsheets explanation one') }}
     </p>
   </section>
 

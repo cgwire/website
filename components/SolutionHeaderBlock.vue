@@ -11,7 +11,7 @@
         </span>
       </h2>
       <p>
-        {{ $t(pageKey + ' header explaination') }}
+        {{ $t(pageKey + ' header explanation') }}
       </p>
     </div>
     <div class="is-6 pl1">

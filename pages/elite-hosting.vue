@@ -34,7 +34,7 @@ const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('elite-hosting header tagline'),
   meta: [
-    { name: 'description', content: t('elite-hosting header explaination')}
+    { name: 'description', content: t('elite-hosting header explanation')}
   ]
 })
 </script>

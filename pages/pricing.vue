@@ -57,7 +57,7 @@
     </h2>
 
     <p class="has-text-centered mt1">
-      {{ $t('pricing cloud explaination') }}
+      {{ $t('pricing cloud explanation') }}
     </p>
   </section>
 
@@ -310,7 +310,7 @@
 
     <a href="https://www.ranchcomputing.com/en/renderfarm">
       <p class="has-text-centered mt1 ranch-offer">
-        {{ $t('pricing ranch explaination') }}
+        {{ $t('pricing ranch explanation') }}
       </p>
     </a>
 
@@ -351,7 +351,7 @@
       {{ $t('pricing sucesspack subtitle') }}
     </h2>
     <p class="has-text-centered">
-      {{ $t('pricing sucesspack explaination') }}
+      {{ $t('pricing sucesspack explanation') }}
     </p>
 
     <div class="pricings">
@@ -607,7 +607,7 @@ const isExpanded = ref({})
 useHead({
   title: 'CGWire | ' + t('pricing title'),
   meta: [
-    { name: 'description', content: t('pricing explaination one')}
+    { name: 'description', content: t('pricing explanation one')}
   ]
 })
 

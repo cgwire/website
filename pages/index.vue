@@ -40,7 +40,7 @@
 
   <section class="section content trusted">
     <h4 class="section-subtitle has-text-centered">
-      {{ $t('main explaination trusted') }}
+      {{ $t('main explanation trusted') }}
     </h4>
     <div>
       <a :to="localePath('studios')" class="flexrow mt2">
@@ -67,8 +67,8 @@
     <h2 class="subtitle tagline">
       {{ $t('main tagline') }}
     </h2>
-    <p class="has-text-centered tagline-explaination">
-      {{ $t('main explaination one') }}
+    <p class="has-text-centered tagline-explanation">
+      {{ $t('main explanation one') }}
     </p>
   </section>
 
@@ -84,10 +84,10 @@
     <div class="flexrow">
       <div class="flexrow-item landing-text">
         <h2 class="subtitle">
-          {{ $t('main explaination title one') }}
+          {{ $t('main explanation title one') }}
         </h2>
         <p>
-          {{ $t('main explaination text one') }}
+          {{ $t('main explanation text one') }}
         </p>
       </div>
       <div class="flexrow-item landing-picture">
@@ -103,10 +103,10 @@
       </div>
       <div class="flexrow-item landing-text">
         <h2 class="subtitle">
-          {{ $t('main explaination title two') }}
+          {{ $t('main explanation title two') }}
         </h2>
         <p>
-          {{ $t('main explaination text two') }}
+          {{ $t('main explanation text two') }}
         </p>
       </div>
     </div>
@@ -116,10 +116,10 @@
     <div class="flexrow">
       <div class="flexrow-item landing-text">
         <h2 class="subtitle">
-          {{ $t('main explaination title three') }}
+          {{ $t('main explanation title three') }}
         </h2>
         <p>
-          {{ $t('main explaination text three') }}
+          {{ $t('main explanation text three') }}
         </p>
       </div>
       <div class="flexrow-item landing-picture">
@@ -135,10 +135,10 @@
       </div>
       <div class="flexrow-item landing-text">
         <h2 class="subtitle">
-          {{ $t('main explaination title four') }}
+          {{ $t('main explanation title four') }}
         </h2>
         <p>
-          {{ $t('main explaination text four') }}
+          {{ $t('main explanation text four') }}
         </p>
       </div>
     </div>
@@ -188,7 +188,7 @@
     <h2 class="subtitle tagline">
       {{ $t('main conclusion tagline') }}
     </h2>
-    <p class="has-text-centered tagline-explaination">
+    <p class="has-text-centered tagline-explanation">
       {{ $t('main conclusion text') }}
     </p>
   </section>

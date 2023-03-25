@@ -14,7 +14,7 @@
         </span>
       </h2>
       <p>
-        {{ $t('community explaination one') }}
+        {{ $t('community explanation one') }}
       </p>
     </div>
   </div>
@@ -36,7 +36,7 @@
       </h2>
       <p>
         <a href="https://discord.gg/VbCxtKN">
-          {{ $t('community slack explaination') }}
+          {{ $t('community slack explanation') }}
         </a>
       </p>
       <p class="community-cta">
@@ -69,7 +69,7 @@
       </h2>
       <p>
         <a href="https://www.meetup.com/Infrastructure-et-film-danimation/">
-          {{ $t('community meetup explaination') }}
+          {{ $t('community meetup explanation') }}
         </a>
       </p>
       <p class="community-cta">
@@ -106,7 +106,7 @@
       </h2>
       <p>
         <a href="https://github.com/cgwire/kitsu">
-          {{ $t('community github explaination') }}
+          {{ $t('community github explanation') }}
         </a>
       </p>
       <p class="community-cta">
@@ -139,7 +139,7 @@
       </h2>
       <p>
         <a href="https://cgwire.canny.io">
-          {{ $t('community feedback explaination') }}
+          {{ $t('community feedback explanation') }}
         </a>
       </p>
       <p class="community-cta">
@@ -172,7 +172,7 @@
       </h2>
       <p>
         <a href="https://github.com/cgwire/kitsu">
-          {{ $t('community translate explaination') }}
+          {{ $t('community translate explanation') }}
         </a>
       </p>
       <p class="community-cta">
@@ -196,7 +196,7 @@ const { t } = useI18n()
 useHead({
   title: 'CGWire | ' + t('header title community'),
   meta: [
-    { name: 'description', content: t('community explaination one')}
+    { name: 'description', content: t('community explanation one')}
   ]
 })
 </script>

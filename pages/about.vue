@@ -15,13 +15,13 @@
         <span class="section-title">{{ $t('about tagline') }}</span>
       </h2>
       <p>
-        {{ $t('about explaination one') }}
+        {{ $t('about explanation one') }}
       </p>
       <p>
-        {{ $t('about explaination two') }}
+        {{ $t('about explanation two') }}
       </p>
       <p>
-        {{ $t('about explaination three') }}
+        {{ $t('about explanation three') }}
       </p>
     </div>
   </div>
@@ -75,7 +75,7 @@
       </div>
       <div class="ppl-description">
         <p>
-          {{ $t('about team explaination frank') }}
+          {{ $t('about team explanation frank') }}
         </p>
       </div>
     </div>
@@ -89,7 +89,7 @@
       </div>
       <div class="ppl-description">
         <p>
-          {{ $t('about team explaination gwen') }}
+          {{ $t('about team explanation gwen') }}
         </p>
       </div>
     </div>
@@ -105,7 +105,7 @@
       </div>
       <div class="ppl-description">
         <p>
-          {{ $t('about team explaination evan') }}
+          {{ $t('about team explanation evan') }}
         </p>
       </div>
     </div>
@@ -119,7 +119,7 @@
       </div>
       <div class="ppl-description">
         <p>
-          {{ $t('about team explaination nicolas') }}
+          {{ $t('about team explanation nicolas') }}
         </p>
       </div>
     </div>

@@ -41,7 +41,7 @@ const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('production-tracker header tagline'),
   meta: [
-    { name: 'description', content: t('production-tracker explaination one')}
+    { name: 'description', content: t('production-tracker explanation one')}
   ]
 })
 </script>

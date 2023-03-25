@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# CGWire Website
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+This website is based on [Nuxt 3](https://v3.nuxtjs.org).
 
 ## Setup
 

@@ -27,8 +27,8 @@
 
     <p>
     Ftrack is a toolbox. So, to start with Ftrack, you must hire several
-    people dedicated to designing, configuring UIs and plugging the whole
-    to your pipeline.
+    people dedicated to designing, configuring UIs, and plugging the whole
+    into your pipeline.
     You will end up with something tailor-made but at the price of a lot of
     effort. These developments will require a lot of maintenance in the
     future. Last but not least, you will need internal training sessions
@@ -37,10 +37,10 @@
 
     <p>
     Kitsu works great right out of the box. All UIs are designed with ease of
-    use in mind.  It's easy to start with it, and your users are autonomous. Our
-    dedicated support help you to set up things if needed.
+    use in mind. It's easy to start with it, and your users are autonomous. Our
+    dedicated support helps you to set up things if needed.
     Nevertheless, you will still need a TD to plug your pipeline to Kitsu and
-    take advantage of its database. Athough it provides flexibility to define
+    take advantage of its database. Although it provides flexibility to define
     different workflows, Kitsu may not fit with very particular projects.
     </p>
 
@@ -48,8 +48,8 @@
     <h3>Simplicity vs. Exhaustivity</h3>
 
     <p>
-    Ftrack is thought to be able to work on any kind of projects at fine-grain
-    level. It's great to deal with any situation but it comes with a lot
+    Ftrack is thought to be able to work on any projects at fine-grain
+    level. It's great to deal with any situation, but it comes with a lot
     of complexity. Despite that, it may be too hard for your teams to get the
     full benefits. Moreover, projects that need this level of specificity are
     rare.
@@ -68,15 +68,14 @@
 
     <p>
     Ftrack has a strong review engine that performs great with high-end shots
-    (you can load you own LUT for instance).
-    Nevertheless, it's still hard to browse the preview database and compare
-    the versions properly.
+    (you can load your own LUT, for instance).
+    Nevertheless, browsing the preview database and comparing the versions is still hard.
     </p>
     <p>
     Kitsu proposes a strong playlist system that allows you to view and
-    compare all shots of your database easily in real time. But it doesn't have
-    all the advanced features Ftrack review on coloring capabilities. It may
-    not be the perfect solution for very high-end shots.
+    compare all shots of your database easily in real-time. But it doesn't have
+    all the advanced features Ftrack review on coloring capabilities. There may
+    be better solutions for very high-end shots.
     </p>
 
     <h3>Security</h3>
@@ -84,21 +83,21 @@
     <p>
     Ftrack qualifies for many security certifications and provides on-premise
     installations (with an extra cost). But its code is proprietary.
-    There is no certainty that your data stay private.
+    There is no certainty that your data will stay private.
     </p>
 
     <p>
-    Kitsu is open-source, can be fully audited and installed on-premise with
-    very little extra-cost. We can ensure that your data stay private and
-    secure.  We take security very seriously, and while not having
-    certifications yet, we apply all best practices to make your data safe.
+    Kitsu is open-source and can be fully audited and installed on-premise with
+    very little extra cost. We can ensure that your data stay private and
+    secure. We take security very seriously, and while still waiting for
+    certifications, we apply all best practices to make your data safe.
     </p>
 
     <p>
     CGWire engineers have a strong track record in cloud hosting and apply all
     the protocols to ensure the security of your data (HTTPS, strict
     password management politics, strong SSH key management, background checks,
-    etc.). It's a matter of time before we qualify for the needed security
+    etc.). It's time before we qualify for the needed security
     certifications.
     </p>
 
@@ -110,8 +109,8 @@
 
     <p>
     But, Kitsu proposes a much better user experience: tutorials, beautiful UIs
-    and dedicated support.  And because every stakeholder uses it properly, the
-    return on investment of Kitsu on animation or VFX production is much
+    , and dedicated support. And because every stakeholder uses it properly, the
+    return on investment of Kitsu in animation or VFX production is much
     better.
     </p>
 
@@ -120,9 +119,9 @@
     Ftrack provides documentation about its usage and its Python client.
     </p>
     <p>
-    Kitsu offers an easy to follow documentation, a search engine, and tutorial
+    Kitsu offers an easy to follow the documentation, a search engine, and tutorial
     videos. A training offer is available too.
-    Last but no least, the Python client and the REST API are fully documented.
+    Last but not least, the Python client and the REST API are fully documented.
     It's much easier for a Pipeline TD to work with Kitsu.
     </p>
   </section>
