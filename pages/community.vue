@@ -21,7 +21,10 @@
 </section>
 
 <section class="section content community community-info">
-  <div class="flexrow">
+  <div
+    class="flexrow"
+    data-aos="fade-up"
+  >
     <div class="flexrow-item description flexrow-filler">
       <h2>
         <span class="section-subtitle">
@@ -51,7 +54,10 @@
 </section>
 
 <section class="section content community community-info">
-  <div class="flexrow">
+  <div
+    class="flexrow"
+    data-aos="fade-up"
+  >
     <div class="flexrow-item description flexrow-filler">
       <h2>
         <span class="section-subtitle">
@@ -84,7 +90,10 @@
   <hr />
 </section>
 
-<section class="section content community community-info">
+<section
+  class="section content community community-info"
+  data-aos="fade-up"
+>
   <div class="flexrow">
     <div class="flexrow-item description flexrow-filler">
       <h2>
@@ -114,7 +123,10 @@
   </div>
 </section>
 
-<section class="section content community community-info">
+<section
+  class="section content community community-info"
+  data-aos="fade-up"
+>
   <div class="flexrow">
     <div class="flexrow-item description flexrow-filler">
       <h2>
@@ -144,7 +156,10 @@
   </div>
 </section>
 
-<section class="section content community community-info">
+<section
+  class="section content community community-info"
+  data-aos="fade-up"
+>
   <div class="flexrow">
     <div class="flexrow-item description flexrow-filler">
       <h2>

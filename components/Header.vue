@@ -183,6 +183,19 @@
 
           <a
             class="navbar-item flexcolumn subnav-element"
+            href="https://kitsu.cg-wire.com"
+            target="_blank"
+          >
+            <span class="flexrow-item subnav-title">
+              {{ $t('header title documentation') }}
+            </span>
+            <span class="flexrow-item subnav-text">
+              {{ $t('header text documentation') }}
+            </span>
+          </a>
+
+          <a
+            class="navbar-item flexcolumn subnav-element"
             href="https://cgwire.canny.io/changelog"
             target="_blank"
           >

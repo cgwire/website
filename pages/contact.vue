@@ -1,5 +1,5 @@
 <template>
-<section class="section content">
+<section class="section content narrower">
 <h2 class="subtitle">
   {{ $t('contact tagline') }}
 </h2>

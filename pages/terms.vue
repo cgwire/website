@@ -1,5 +1,5 @@
 <template>
-<section class="section content">
+<section class="section content narrower">
 
 <h1 class="title">Terms of Service</h1>
 

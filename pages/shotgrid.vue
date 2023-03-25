@@ -1,6 +1,6 @@
 <template>
 <div class="compare-page">
-  <section class="section content">
+  <section class="section content narrower">
     <div class="section-subtitle has-text-centered">
      {{ $t('comparison shotgrid subtitle') }}
     </div>
