@@ -23,6 +23,9 @@
       <p>
         {{ $t('about explanation three') }}
       </p>
+      <p>
+        {{ $t('about explanation four') }}
+      </p>
     </div>
   </div>
 </section>
@@ -33,21 +36,21 @@
       <span class="section-title has-text-centered">{{ $t('about values title') }}</span>
     </h2>
     <ul class="section-list tile is-ancestor">
-      <li class="section-item tile is-4 is-vertical">
+      <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
         <div class="section-item-img">
           <img src="~/assets/images/illustration-simplicity.svg" alt="">
         </div>
         <h3 class="section-item-title">{{ $t('about values title one') }}</h3>
         <p class="section-item-text">{{ $t('about values text one') }}</p>
       </li>
-      <li class="section-item tile is-4 is-vertical">
+      <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
         <div class="section-item-img">
           <img src="~/assets/images/illustration-handshake.svg" alt="">
         </div>
         <h3 class="section-item-title">{{ $t('about values title two') }}</h3>
         <p class="section-item-text">{{ $t('about values text two') }}</p>
       </li>
-      <li class="section-item tile is-4 is-vertical">
+      <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
         <div class="section-item-img">
           <img src="~/assets/images/illustration-craftmanship.svg" alt="">
         </div>
@@ -59,12 +62,16 @@
 </div>
 
 <section class="section content about">
-  <h2>
-    <span class="section-title has-text-centered">{{ $t('about team title') }}</span>
+  <h2 data-aos="fade-up">
+    <span class="section-title has-text-centered">
+      {{ $t('about team title') }}
+    </span>
   </h2>
-  <p class="has-text-centered">{{ $t('about team intro') }}</p>
+  <p class="has-text-centered" data-aos="fade-up">
+    {{ $t('about team intro') }}
+  </p>
 
-  <div class="tile is-ancestor">
+  <div class="tile is-ancestor" data-aos="fade-up">
     <div class="tile is-6 is-vertical ppl">
       <div class="ppl-image">
         <img src="~/assets/images/frank.jpg" alt="">
@@ -79,7 +86,7 @@
         </p>
       </div>
     </div>
-    <div class="tile is-6 is-vertical ppl">
+    <div class="tile is-6 is-vertical ppl" data-aos="fade-up">
       <div class="ppl-image">
         <img src="~/assets/images/gwen.png" alt="">
       </div>
@@ -94,7 +101,7 @@
       </div>
     </div>
   </div>
-  <div class="tile is-ancestor">
+  <div class="tile is-ancestor" data-aos="fade-up">
     <div class="tile is-6 is-vertical ppl">
       <div class="ppl-image">
         <img src="~/assets/images/evan.png" alt="">
@@ -109,7 +116,7 @@
         </p>
       </div>
     </div>
-    <div class="tile is-6 is-vertical ppl">
+    <div class="tile is-6 is-vertical ppl" data-aos="fade-up">
       <div class="ppl-image">
         <img src="~/assets/images/nico.jpg" alt="">
       </div>
@@ -125,8 +132,10 @@
     </div>
   </div>
 
-  <h2 class="title has-text-centered">{{ $t('about team advisors') }}</h2>
-  <div class="tile is-ancestor advisors">
+  <h2 class="title has-text-centered" data-aos="fade-up">
+    {{ $t('about team advisors') }}
+  </h2>
+  <div class="tile is-ancestor advisors" data-aos="fade-up">
     <div class="tile is-3 is-vertical ppl">
       <div class="ppl-image">
         <img src="~/assets/images/ev.jpg" alt="">
@@ -168,10 +177,12 @@
 
 <div class="block-colored">
   <section class="section">
-    <h2>
-      <span class="section-title has-text-centered">{{ $t('about work title') }}</span>
+    <h2 data-aos="fade-up">
+      <span class="section-title has-text-centered">
+        {{ $t('about work title') }}
+      </span>
     </h2>
-    <ul class="section-list tile is-ancestor">
+    <ul class="section-list tile is-ancestor" data-aos="fade-up">
       <li class="section-item tile is-4 is-vertical">
         <div class="section-item-img">
           <img src="~/assets/images/illustration-open.svg" alt="">
