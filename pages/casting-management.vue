@@ -26,7 +26,7 @@
   <CustomerStoryBlock
     studio-name="Autour De Minuit"
     story-key="adm"
-    interviewee-key="Fiona Cohen, Production Manager"
+    interviewee="Fiona Cohen, Production Manager"
     image-path="photo-customer-story-adm.jpg"
     story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
   />

@@ -75,7 +75,7 @@
   <CustomerStoryBlock
     studio-name="Fost studio"
     story-key="fost"
-    interviewee-key="Céline Durieux, Head Of Studio"
+    interviewee="Céline Durieux, Head Of Studio"
     image-path="photo-customer-story-fost.png"
     story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
   />
@@ -147,7 +147,7 @@
   <CustomerStoryBlock
     studio-name="Autour De Minuit"
     story-key="adm"
-    interviewee-key="Fiona Cohen, Production Manager"
+    interviewee="Fiona Cohen, Production Manager"
     image-path="photo-customer-story-adm.jpg"
     story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
   />

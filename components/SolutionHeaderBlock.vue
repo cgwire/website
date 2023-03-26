@@ -14,7 +14,7 @@
         {{ $t(pageKey + ' header explanation') }}
       </p>
     </div>
-    <div class="is-6 pl1">
+    <div class="is-6">
       <video
         :src="useAsset('illustrations/' + pageKey + '.mp4')"
         autoplay

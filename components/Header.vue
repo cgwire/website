@@ -37,28 +37,40 @@
           FR
         </nuxt-link>
       </div>
-      <div v-bind:class="{
-        'navbar-item': true,
-        'has-dropdown': true,
-        'is-hoverable': true,
-        active: isActivePage([
-          'team-collaboration',
-          'production-tracker',
-          'review-engine',
-          'casting-management',
-          'studio-database',
-          'software-integrations',
-          'top-notch-support',
-          'elite-hosting',
-          'tailor-made-architecture',
-        ])
-      }">
-        <a class="navbar-link">
+      <div
+        :class="{
+          'navbar-item': true,
+          'has-dropdown': true,
+          'is-hoverable': true,
+          active: isActivePage([
+            'team-collaboration',
+            'production-tracker',
+            'review-engine',
+            'casting-management',
+            'studio-database',
+            'software-integrations',
+            'top-notch-support',
+            'elite-hosting',
+            'tailor-made-architecture',
+          ])
+        }"
+        @mouseover="solutionMenuOn = true"
+        @mouseout="solutionMenuOn = false"
+      >
+        <a
+          class="navbar-link"
+          @click="solutionMenuOn = !solutionMenuOn"
+        >
           <span class="navbar-item-title">
             {{ $t('header title solutions') }}
           </span>
         </a>
-        <div class="navbar-dropdown">
+        <div
+          :class="{
+            'navbar-dropdown': true,
+            hidden: !solutionMenuOn
+          }"
+        >
           <div class="columns">
             <div class="column">
               <SubNavElement elementKey="team-collaboration" />
@@ -77,19 +89,31 @@
         </div>
       </div>
 
-      <div v-bind:class="{
-        'navbar-item': true,
-        'has-dropdown': true,
-        'is-hoverable': true,
-        active: isActivePage(['studios', 'shorts', 'tvshows', 'schools'])
-      }">
-        <a class="navbar-link">
+      <div
+        :class="{
+          'navbar-item': true,
+          'has-dropdown': true,
+          'is-hoverable': true,
+          active: isActivePage(['studios', 'shorts', 'tvshows', 'schools'])
+        }"
+        @mouseover="useCaseMenuOn = true"
+        @mouseout="useCaseMenuOn = false"
+      >
+        <a
+          class="navbar-link"
+          @click="useCaseMenuOn = !useCaseMenuOn"
+        >
           <span class="navbar-item-title">
             {{ $t('header title usecase') }}
           </span>
         </a>
 
-        <div class="navbar-dropdown">
+        <div
+          :class="{
+            'navbar-dropdown': true,
+            hidden: !useCaseMenuOn
+          }"
+        >
           <nuxt-link
             class="navbar-item flexcolumn subnav-element"
             :to="localePath('studios')"
@@ -141,19 +165,31 @@
         </div>
       </div>
 
-      <div :class="{
-        'navbar-item': true,
-        'has-dropdown': true,
-        'is-hoverable': true,
-        active: isActivePage(['community', 'spreadsheets'])
-      }">
-        <a class="navbar-link">
+      <div
+        :class="{
+          'navbar-item': true,
+          'has-dropdown': true,
+          'is-hoverable': true,
+          active: isActivePage(['community', 'spreadsheets'])
+        }"
+        @mouseover="resourceMenuOn = true"
+        @mouseout="resourceMenuOn = false"
+      >
+        <a
+          class="navbar-link"
+          @click="resourceMenuOn = !resourceMenuOn"
+        >
           <span class="navbar-item-title">
             {{ $t('header title resources') }}
           </span>
         </a>
 
-        <div class="navbar-dropdown">
+        <div
+          :class="{
+            'navbar-dropdown': true,
+            hidden: !resourceMenuOn
+          }"
+        >
 
           <a
             class="navbar-item flexcolumn subnav-element"
@@ -277,10 +313,13 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 const name = 'Header'
 let navOn = ref(false)
+let solutionMenuOn = ref(false)
+let useCaseMenuOn = ref(false)
+let resourceMenuOn = ref(false)
 
 function isActivePage (pages) {
   const route = useRoute()
@@ -289,12 +328,34 @@ function isActivePage (pages) {
   )
 }
 
-function toggleNav () {
-  this.navOn = !this.navOn
+const toggleNav = async () => {
+  navOn.value = !navOn.value
 }
+
+const route = useRoute()
+watch(
+  () => route.path,
+  () => {
+    navOn.value = false
+    solutionMenuOn.value = false
+    useCaseMenuOn.value = false
+    resourceMenuOn.value = false
+  }
+)
 </script>
 
 <style lang="stylus" scoped>
 .subnav-element:hover
   background red
+
+.hidden
+  display none
+
+html body header .navigation .navbar-menu .navbar-item .navbar-dropdown.hidden,
+html body header .navigation .navbar-menu .navbar-item.is-hoverable:focus .navbar-dropdowon .navbar-dropdown.hidden,
+.navbar-item.is-active .navbar-dropdown.hidden,
+.navbar-item.is-hoverable:focus .navbar-dropdown.hidden,
+.navbar-item.is-hoverable:focus-within .navbar-dropdown.hidden,
+.navbar-item.is-hoverable:hover .navbar-dropdown.hidden
+  display none
 </style>

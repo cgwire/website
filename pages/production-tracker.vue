@@ -26,7 +26,7 @@
   <CustomerStoryBlock
     studio-name="Fost studio"
     story-key="fost"
-    interviewee-key="Céline Durieux, Head Of Studio"
+    interviewee="Céline Durieux, Head Of Studio"
     image-path="photo-customer-story-fost.png"
     story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
   />

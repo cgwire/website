@@ -49,7 +49,7 @@
   <CustomerStoryBlock
     studio-name="Miyu studio"
     story-key="miyu"
-    interviewee-key="Carole Faure, Production Manager"
+    interviewee="Carole Faure, Production Manager"
     image-path="photo-customer-story-miyu.png"
     story-url="https://blog.cg-wire.com/customer-story-miyu/"
   />
