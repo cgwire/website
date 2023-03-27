@@ -102,20 +102,6 @@
     </div>
   </div>
   <div class="tile is-ancestor" data-aos="fade-up">
-    <div class="tile is-6 is-vertical ppl">
-      <div class="ppl-image">
-        <img src="~/assets/images/evan.png" alt="">
-      </div>
-      <div class="ppl-id">
-        <h3 class="ppl-id-name">{{ $t('about team id evan') }}</h3>
-        <p class="ppl-id-role">{{ $t('about team role evan') }}</p>
-      </div>
-      <div class="ppl-description">
-        <p>
-          {{ $t('about team explanation evan') }}
-        </p>
-      </div>
-    </div>
     <div class="tile is-6 is-vertical ppl" data-aos="fade-up">
       <div class="ppl-image">
         <img src="~/assets/images/nico.jpg" alt="">
@@ -127,6 +113,36 @@
       <div class="ppl-description">
         <p>
           {{ $t('about team explanation nicolas') }}
+        </p>
+      </div>
+    </div>
+    <div class="tile is-6 is-vertical ppl" data-aos="fade-up">
+      <div class="ppl-image">
+        <img src="~/assets/images/nicopennec.png" alt="">
+      </div>
+      <div class="ppl-id">
+        <h3 class="ppl-id-name">{{ $t('about team id nicolaspennec') }}</h3>
+        <p class="ppl-id-role">{{ $t('about team role nicolaspennec') }}</p>
+      </div>
+      <div class="ppl-description">
+        <p>
+          {{ $t('about team explanation nicolaspennec') }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="tile is-ancestor" data-aos="fade-up">
+    <div class="tile is-6 is-vertical ppl">
+      <div class="ppl-image">
+        <img src="~/assets/images/evan.png" alt="">
+      </div>
+      <div class="ppl-id">
+        <h3 class="ppl-id-name">{{ $t('about team id evan') }}</h3>
+        <p class="ppl-id-role">{{ $t('about team role evan') }}</p>
+      </div>
+      <div class="ppl-description">
+        <p>
+          {{ $t('about team explanation evan') }}
         </p>
       </div>
     </div>
