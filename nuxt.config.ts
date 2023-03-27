@@ -15,11 +15,9 @@ export default defineNuxtConfig({
           { name:'og:locale', content: 'en_US' },
           { name:'og:locale:alternate', content: 'fr_FR' },
           { name:'og:image', content: 'https://cgwire.com/images/logo.svg' },
-          { name:'og:description', content: '{{__ metaDescription }}' },
           { name:'twitter:card', content: 'summary' },
           { name:'twitter:url', content: 'http://twitter.com/cgwirenews/' },
           { name:'twitter:title', content: 'CGWire - Collaboration Platform for Animation studios' },
-          { name:'twitter:description', content: '{{__ metaDescription }}' },
           { name:'twitter:image', content: 'https://cgwire.com/assets/images/logo.svg' }
       ],
       script: [

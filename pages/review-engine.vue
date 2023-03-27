@@ -24,7 +24,7 @@
   />
 
   <CustomerStoryBlock
-    studio-name="Makuta VFX"
+    studio-name="Makuta VFX (RRR Movie)"
     story-key="makuta"
     interviewee="Pete Draper, Head of VFX"
     image-path="photo-customer-story-makuta.png"
