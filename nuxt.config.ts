@@ -48,6 +48,7 @@ export default defineNuxtConfig({
   i18n: {    
     baseUrl: 'https://www.cg-wire.com',
     defaultLocale: 'en',
+    fallbackLocale: 'en',
     locales: [
       {
         code: 'en',

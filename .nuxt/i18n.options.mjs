@@ -32,6 +32,7 @@ export const resolveNuxtI18nOptions = async (context) => {
   nuxtI18nOptions.onLanguageSwitched = (() => null)
   nuxtI18nOptions.types = undefined
   nuxtI18nOptions.debug = false
+  nuxtI18nOptions.fallbackLocale = "en"
   return nuxtI18nOptions
 }
 
