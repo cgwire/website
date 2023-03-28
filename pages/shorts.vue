@@ -155,7 +155,10 @@
     </li>
   </ul>
   <p>
-    <a class="button button--alt is-large" href="https://account.cg-wire.com/{{ locale }}/signup">
+    <a
+      class="button button--alt is-large"
+      href="https://account.cg-wire.com/${$i18n.locale}/signup"
+    >
       {{ $t('shorts button demo') }}
     </a>
   </p>
@@ -202,6 +205,6 @@ useHead({
 })
 let panel = ref('productionmanager')
 function selectPanel (section) {
-  this.panel = section
+  panel.value = section
 }
 </script>

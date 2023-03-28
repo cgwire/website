@@ -10,14 +10,14 @@ export default defineNuxtConfig({
       meta: [
           { charset: 'utf-8' },
           { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-          { name: 'keywords', content:'production management pipeline cg cgi blender nuke 3dsmax maya animation movie vfx tracking shotgun alternative' },
-          { name:'og:title', content: 'CGWire - Collaboration Platform for Animation studios' },
+          { name: 'keywords', content:'production management pipeline cg cg blender nuke 3dsmax maya animation movie vfx tracking shotgun alternative 2D 3D' },
+          { name:'og:title', content: 'CGWire - Collaboration Platform for Animation and VFX studios' },
           { name:'og:locale', content: 'en_US' },
           { name:'og:locale:alternate', content: 'fr_FR' },
           { name:'og:image', content: 'https://cgwire.com/images/logo.svg' },
           { name:'twitter:card', content: 'summary' },
           { name:'twitter:url', content: 'http://twitter.com/cgwirenews/' },
-          { name:'twitter:title', content: 'CGWire - Collaboration Platform for Animation studios' },
+          { name:'twitter:title', content: 'CGWire - Collaboration Platform for Animation and VFX studios' },
           { name:'twitter:image', content: 'https://cgwire.com/assets/images/logo.svg' }
       ],
       script: [

@@ -177,7 +177,7 @@
         >
         {{ $t('tvshows quote author') }}
       </footer>
-    </blockquote>  
+    </blockquote>
   </section>
 </div>
 
@@ -199,7 +199,7 @@
   <p>
     <a
       class="button button--alt is-large"
-      href="https://account.cg-wire.com/{{ locale }}/signup">
+      href="https://account.cg-wire.com/${$i18n.locale}/signup">
       {{ $t('tvshows button demo') }}
     </a>
   </p>
@@ -256,6 +256,6 @@ useHead({
 })
 let panel = ref('producer')
 function selectPanel (section) {
-  this.panel = section
+  panel = section
 }
 </script>

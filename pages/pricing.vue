@@ -145,7 +145,7 @@
       </div>
       <div class="pricing-cta">
         <a
-          href="https://account.cg-wire.com/{{ locale }}/signup"
+          href="https://account.cg-wire.com/${$i18n.locale}/signup"
           class="button is-outlined"
         >
           {{ $t('pricing button cta') }}
@@ -198,7 +198,7 @@
         </ul>
       </div>
       <div class="pricing-cta">
-        <a href="https://account.cg-wire.com/{{ locale }}/signup" class="button is-outlined">
+        <a href="https://account.cg-wire.com/${$i18n.locale}/signup" class="button is-outlined">
           {{ $t('pricing button cta') }}
         </a>
       </div>
@@ -252,7 +252,7 @@
         </ul>
       </div>
       <div class="pricing-cta">
-        <a href="https://account.cg-wire.com/{{ locale }}/signup" class="button is-outlined">
+        <a href="https://account.cg-wire.com/${$i18n.locale}/signup" class="button is-outlined">
           {{ $t('pricing button cta') }}
         </a>
       </div>
@@ -603,7 +603,7 @@
 let monthly = ref(false)
 const name = 'Pricing'
 const { t } = useI18n()
-const isExpanded = ref({})
+const isExpanded = reactive({})
 useHead({
   title: 'CGWire | ' + t('pricing title'),
   meta: [
@@ -612,6 +612,6 @@ useHead({
 })
 
 function setExpanded (index) {
-  this.isExpanded['faq' + index] = true
+  isExpanded['faq' + index] = true
 }
 </script>

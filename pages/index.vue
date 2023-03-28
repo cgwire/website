@@ -207,7 +207,7 @@ const { t } = useI18n()
 useHead({
   title: 'CGWire | ' + t('main title'),
   meta: [
-    { name: 'description', content: 'main subtitle' }
+    { name: 'description', content: t('main subtitle') }
   ]
 })
 
