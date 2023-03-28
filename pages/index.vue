@@ -80,7 +80,8 @@
     story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
   />
 
-  <section class="section content landing-block">
+  <section class="section content landing-block" data-aos="fade-up">
+
     <div class="flexrow">
       <div class="flexrow-item landing-text">
         <h2 class="subtitle">
@@ -96,7 +97,7 @@
     </div>
   </section>
 
-  <section class="section content landing-block">
+  <section class="section content landing-block" data-aos="fade-up">
     <div class="flexrow reverse">
       <div class="flexrow-item landing-picture">
         <img src="~/assets/images/landing-data.png" />
@@ -112,7 +113,7 @@
     </div>
   </section>
 
-  <section class="section content landing-block">
+  <section class="section content landing-block" data-aos="fade-up">
     <div class="flexrow">
       <div class="flexrow-item landing-text">
         <h2 class="subtitle">
@@ -128,7 +129,7 @@
     </div>
   </section>
 
-  <section class="section content landing-block">
+  <section class="section content landing-block" data-aos="fade-up">
     <div class="flexrow reverse">
       <div class="flexrow-item landing-picture">
         <img src="~/assets/images/landing-together.png" />
@@ -176,7 +177,7 @@
     <p>
       <a
         class="button is-large"
-        href="https://account.cg-wire.com/{{ locale }}/signup"
+        :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
       >
         {{ $t('main plans cta')  }}
       </a>
@@ -226,12 +227,12 @@ onMounted(() => {
 })
 
 function showVideoModal () {
-  this.isVideoModalActive = true
+  isVideoModalActive.value = true
   player.playVideo()
 }
 
 function hideVideoModal () {
-  this.isVideoModalActive = false
+  isVideoModalActive.value = false
   player.pauseVideo()
 }
 </script>

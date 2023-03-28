@@ -14,7 +14,7 @@ export default defineNuxtConfig({
           { name:'og:title', content: 'CGWire - Collaboration Platform for Animation and VFX studios' },
           { name:'og:locale', content: 'en_US' },
           { name:'og:locale:alternate', content: 'fr_FR' },
-          { name:'og:image', content: 'https://cgwire.com/images/logo.svg' },
+          { name:'og:image', content: 'https://cgwire.com/assets/images/logo.svg' },
           { name:'twitter:card', content: 'summary' },
           { name:'twitter:url', content: 'http://twitter.com/cgwirenews/' },
           { name:'twitter:title', content: 'CGWire - Collaboration Platform for Animation and VFX studios' },
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
       script: [
       ],
       link: [
-        { rel: 'icon', href: '~/assets/kitsu.svg' },
+        { rel: 'icon', href: '_nuxt/assets/favicon.png' },
         { 
           rel: 'stylesheet', 
           href: 'https://fonts.googleapis.com/css?family=Lato' 

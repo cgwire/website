@@ -51,7 +51,7 @@
     story-key="miyu"
     interviewee="Carole Faure, Production Manager"
     image-path="photo-customer-story-miyu.png"
-    story-url="https://blog.cg-wire.com/customer-story-miyu/"
+    story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
   />
 
   <Trial />

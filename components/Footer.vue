@@ -42,7 +42,7 @@ t<template>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('integrations')">
+          <nuxt-link :to="localePath('software-integrations')">
             <span class="level-item">
               {{ $t('header title software-integrations') }}
             </span>
