@@ -100,9 +100,6 @@
           </li>
         </ul>
       </div>
-      <div class="ranch-credits">
-        100 {{ $t('pricing ranch credits') }}
-      </div>
     </div>
 
     <div class="pricing-block">
@@ -151,9 +148,6 @@
           {{ $t('pricing button cta') }}
         </a>
       </div>
-      <div class="ranch-credits">
-        200 {{ $t('pricing ranch credits') }}
-      </div>
     </div>
 
     <div class="pricing-block pricing-emphasize">
@@ -201,9 +195,6 @@
         <a href="https://account.cg-wire.com/${$i18n.locale}/signup" class="button is-outlined">
           {{ $t('pricing button cta') }}
         </a>
-      </div>
-      <div class="ranch-credits">
-        500 {{ $t('pricing ranch credits') }}
       </div>
     </div>
 
@@ -256,9 +247,6 @@
           {{ $t('pricing button cta') }}
         </a>
       </div>
-      <div class="ranch-credits">
-        1000 {{ $t('pricing ranch credits') }}
-      </div>
     </div>
 
     <div class="pricing-block">
@@ -300,19 +288,10 @@
           {{ $t('pricing button contactcta') }}
         </a>
       </div>
-      <div class="ranch-credits">
-        {{ $t('pricing ranch credits') }}
-      </div>
     </div>
   </div>
 
   <section class="section content pricing">
-
-    <a href="https://www.ranchcomputing.com/en/renderfarm">
-      <p class="has-text-centered mt1 ranch-offer">
-        {{ $t('pricing ranch explanation') }}
-      </p>
-    </a>
 
     <p class="has-text-centered mt1">
       <button

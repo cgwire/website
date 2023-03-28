@@ -5,6 +5,10 @@
     page-key="review-engine"
   />
 
+  <h2 class="subtitle">
+    Already over 2 000 000 videos reviewed with Kitsu!
+  </h2>
+
   <FeatureBlock
     section-key="review-engine"
     feature-key="playlists"
@@ -36,7 +40,6 @@
 </template>
 
 <script setup>
-
 const name = 'Review Engine'
 const { t } = useI18n()
 useHead({
@@ -46,3 +49,12 @@ useHead({
   ]
 })
 </script>
+
+<style lang="stylus" scoped>
+.subtitle
+  font-size 2em
+  font-weight bold
+  margin-bottom 0
+  position relative
+  top 40px
+</style>

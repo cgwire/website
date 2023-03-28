@@ -72,80 +72,15 @@
   </p>
 
   <div class="tile is-ancestor" data-aos="fade-up">
-    <div class="tile is-6 is-vertical ppl">
-      <div class="ppl-image">
-        <img src="~/assets/images/frank.jpg" alt="">
-      </div>
-      <div class="ppl-id">
-        <h3 class="ppl-id-name">{{ $t('about team id frank') }}</h3>
-        <p class="ppl-id-role">{{ $t('about team role frank') }}</p>
-      </div>
-      <div class="ppl-description">
-        <p>
-          {{ $t('about team explanation frank') }}
-        </p>
-      </div>
-    </div>
-    <div class="tile is-6 is-vertical ppl" data-aos="fade-up">
-      <div class="ppl-image">
-        <img src="~/assets/images/gwen.png" alt="">
-      </div>
-      <div class="ppl-id">
-        <h3 class="ppl-id-name">{{ $t('about team id gwen') }}</h3>
-        <p class="ppl-id-role">{{ $t('about team role gwen') }}</p>
-      </div>
-      <div class="ppl-description">
-        <p>
-          {{ $t('about team explanation gwen') }}
-        </p>
-      </div>
-    </div>
+    <TeamMember member-key="frank" />
+    <TeamMember member-key="gwen" />
   </div>
   <div class="tile is-ancestor" data-aos="fade-up">
-    <div class="tile is-6 is-vertical ppl" data-aos="fade-up">
-      <div class="ppl-image">
-        <img src="~/assets/images/nico.jpg" alt="">
-      </div>
-      <div class="ppl-id">
-        <h3 class="ppl-id-name">{{ $t('about team id nicolas') }}</h3>
-        <p class="ppl-id-role">{{ $t('about team role nicolas') }}</p>
-      </div>
-      <div class="ppl-description">
-        <p>
-          {{ $t('about team explanation nicolas') }}
-        </p>
-      </div>
-    </div>
-    <div class="tile is-6 is-vertical ppl" data-aos="fade-up">
-      <div class="ppl-image">
-        <img src="~/assets/images/nicopennec.png" alt="">
-      </div>
-      <div class="ppl-id">
-        <h3 class="ppl-id-name">{{ $t('about team id nicolaspennec') }}</h3>
-        <p class="ppl-id-role">{{ $t('about team role nicolaspennec') }}</p>
-      </div>
-      <div class="ppl-description">
-        <p>
-          {{ $t('about team explanation nicolaspennec') }}
-        </p>
-      </div>
-    </div>
+    <TeamMember member-key="nicolas" />
+    <TeamMember member-key="nicolaspennec" />
   </div>
   <div class="tile is-ancestor" data-aos="fade-up">
-    <div class="tile is-6 is-vertical ppl">
-      <div class="ppl-image">
-        <img src="~/assets/images/evan.png" alt="">
-      </div>
-      <div class="ppl-id">
-        <h3 class="ppl-id-name">{{ $t('about team id evan') }}</h3>
-        <p class="ppl-id-role">{{ $t('about team role evan') }}</p>
-      </div>
-      <div class="ppl-description">
-        <p>
-          {{ $t('about team explanation evan') }}
-        </p>
-      </div>
-    </div>
+    <TeamMember member-key="evan" />
   </div>
 
   <h2 class="title has-text-centered" data-aos="fade-up">
@@ -154,7 +89,7 @@
   <div class="tile is-ancestor advisors" data-aos="fade-up">
     <div class="tile is-3 is-vertical ppl">
       <div class="ppl-image">
-        <img src="~/assets/images/ev.jpg" alt="">
+        <img src="~/assets/images/team/ev.jpg" alt="">
       </div>
       <div class="ppl-id">
         <h3 class="ppl-id-name">{{ $t('about team id ev') }}</h3>
@@ -163,7 +98,7 @@
     </div>
     <div class="tile is-3 is-vertical ppl">
       <div class="ppl-image">
-        <img src="~/assets/images/jc.jpg" alt="">
+        <img src="~/assets/images/team/jc.jpg" alt="">
       </div>
       <div class="ppl-id">
         <h3 class="ppl-id-name">{{ $t('about team id jc') }}</h3>
@@ -172,7 +107,7 @@
     </div>
     <div class="tile is-3 is-vertical ppl">
       <div class="ppl-image">
-        <img src="~/assets/images/frank2.jpg" alt="">
+        <img src="~/assets/images/team/frank2.jpg" alt="">
       </div>
       <div class="ppl-id">
         <h3 class="ppl-id-name">{{ $t('about team id frank2') }}</h3>
@@ -181,7 +116,7 @@
     </div>
     <div class="tile is-3 is-vertical ppl">
       <div class="ppl-image">
-        <img src="~/assets/images/matthieu.png" alt="">
+        <img src="~/assets/images/team/matthieu.png" alt="">
       </div>
       <div class="ppl-id">
         <h3 class="ppl-id-name">{{ $t('about team id matthieu') }}</h3>
@@ -234,9 +169,9 @@
 const name = 'About'
 const { t } = useI18n()
 useHead({
-  title: 'CGWire | ' + t('about title'),
+  title: 'CGWire | ' + t('about tagline'),
   meta: [
-    { name: 'description', content: t('about description') }
+    { name: 'description', content: t('about explanation one') }
   ]
 })
 </script>

@@ -45,7 +45,9 @@ function useAsset(path) {
 </script>
 
 <style lang="stylus" scoped>
-video {
-  border-radius: 2em;
-}
+video
+  border-radius 2em
+
+section
+  padding-bottom 0
 </style>

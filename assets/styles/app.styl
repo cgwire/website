@@ -1,4 +1,6 @@
+lightblue = #F4F8FF
 lightgrey = #F5F5F5
+lightgreen = #F4FFF8
 mediumgrey = #999999
 darkgrey = #1F1F28
 cgwiregreen = #00B242
@@ -143,10 +145,20 @@ div.body
     .customer-story.landing-block
         padding-top 1.5em
         border-radius 2em
-        border 1px solid cgwiregreen-light
-        background cgwiregreen-light + 98%
-        box-shadow 0 0 6px 3px #F1F1F1
+        background lightblue
+        border 1px solid lightblue - 10%
+        padding-left 1.5em
+        margin auto
+        max-width 1000px
 
+        .flexrow-item:first-child
+            margin-right 2em
+      
+        .supporters
+            .flexrow-item.mr0
+                margin-right 1em
+            .flexrow-item.mr0:last-child
+                margin-right 0em
         img 
             max-width 400px   
             border-radius 2em
@@ -285,11 +297,19 @@ div.body
         line-height 1.5em
         margin-bottom 2em
 
+    .block,
     .block-colored
-        background-color lightgrey
+        margin 0
+        padding-top 2em
+
+        svg
+            top -20px
+
+    .block-colored
+        background-color lightblue
 
         .button--alt
-            background-color lightgrey
+            background-color lightblue
 
 
     .block-colored--dark
@@ -818,9 +838,9 @@ div.body
 
     .pricing-page
         .first-steps
-            background cgwiregreen-light + 90%
+            background lightblue
             border-radius 20px
-            border 1px solid cgwiregreen
+            border 1px solid lightblue - 10%
             padding 1em 2em
 
             .section-subtitle
@@ -1661,18 +1681,13 @@ div.body
                     max-width 600px
 
         .customer-story.landing-block
+            margin 1em
             padding-top 2em
             padding-bottom 0em
-            margin 0.5em
 
             img 
                 width 100%
-      
-        .supporters
-            .flexrow-item.mr0
-                margin-right 1em
-            .flexrow-item.mr0:last-child
-                margin-right 0em
+                margin-left 1em
 
         .pricing-page
             .first-steps
