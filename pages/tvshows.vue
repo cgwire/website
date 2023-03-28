@@ -256,6 +256,6 @@ useHead({
 })
 let panel = ref('producer')
 function selectPanel (section) {
-  panel = section
+  panel.value = section
 }
 </script>
