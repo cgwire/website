@@ -3,8 +3,7 @@
   <nav class="navbar" role="navigation" arial-label="dropdown navigation">
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" :to="localePath('index')">
-
-        <img class="main-logo" src="~/assets/images/logo.svg" alt="CGWire logo"/>
+      <img class="main-logo" src="~/assets/images/logo.svg" alt="CGWire logo"/>
       </nuxt-link>
       <div
         @click="() => toggleNav()"
@@ -126,6 +125,18 @@
             </span>
           </nuxt-link>
 
+          <nuxt-link
+            class="navbar-item flexcolumn subnav-element"
+            :to="localePath('customer-stories')"
+          >
+            <span class="flexrow-item subnav-title">
+              {{ $t('header title customer-stories') }}
+            </span>
+            <span class="flexrow-item subnav-text">
+              {{ $t('header text customer-stories')  }}
+            </span>
+          </nuxt-link>
+
           <hr />
           <nuxt-link
             class="navbar-item flexcolumn subnav-element"
@@ -136,6 +147,18 @@
             </span>
             <span class="flexrow-item subnav-text">
               {{ $t('header text tvshow')  }}
+            </span>
+          </nuxt-link>
+
+          <nuxt-link
+            class="navbar-item flexcolumn subnav-element"
+            :to="localePath('feature-films')"
+          >
+            <span class="flexrow-item subnav-title">
+              {{ $t('header title feature-films') }}
+            </span>
+            <span class="flexrow-item subnav-text">
+              {{ $t('header text feature-films')  }}
             </span>
           </nuxt-link>
 
