@@ -111,6 +111,7 @@
   </div>
   <div class="tile is-ancestor" data-aos="fade-up">
     <TeamMember member-key="evan" />
+    <TeamMember member-key="elsa" />
   </div>
 
   <p>
