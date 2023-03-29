@@ -1,0 +1,78 @@
+<template>
+<div class="kitsu-page customer-stories">
+
+  <div class="section-title has-text-centered mt4 mb4">
+    {{ $t('header title customer-stories') }}
+  </div>
+
+  <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
+    Feature Films, Shorts (2D)
+  </div>
+
+  <CustomerStoryBlock
+    studio-name="Miyu studio"
+    story-key="miyu"
+    interviewee="Carole Faure, Production Manager"
+    image-path="photo-customer-story-miyu.png"
+    story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
+  />
+
+  <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
+    TV Series (2D)
+  </div>
+
+  <CustomerStoryBlock
+    studio-name="Fost studio"
+    story-key="fost"
+    interviewee="Céline Durieux, Head Of Studio"
+    image-path="photo-customer-story-fost.png"
+    story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
+  />
+
+  <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
+    TV Series, Feature Fims (2D, 3D)
+  </div>
+
+  <CustomerStoryBlock
+    studio-name="Autour De Minuit"
+    story-key="adm"
+    interviewee="Fiona Cohen, Production Manager"
+    image-path="photo-customer-story-adm.jpg"
+    story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
+  />
+
+  <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
+    Feature Fims (VFX)
+  </div>
+
+  <CustomerStoryBlock
+    studio-name="Makuta VFX (RRR Movie)"
+    story-key="makuta"
+    interviewee="Pete Draper, Head of VFX"
+    image-path="photo-customer-story-makuta.png"
+    story-url="https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
+  />
+
+  <Trial />
+</div>
+</template>
+
+<script setup>
+const name = 'Review Engine'
+const { t } = useI18n()
+useHead({
+  title: 'CGWire | Kitsu / ' + t('review-engine header tagline'),
+  meta: [
+    { name: 'description', content: t('review-engine header explanation')}
+  ]
+})
+</script>
+
+<style lang="stylus" scoped>
+.subtitle
+  font-size 2em
+  font-weight bold
+  margin-bottom 0
+  position relative
+  top 40px
+</style>
