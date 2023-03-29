@@ -296,6 +296,7 @@
     <p class="has-text-centered mt1">
       <button
         class="button frequence"
+        style="margin-right: 0.5em;"
         :class="{
           button: true,
           frequence: true,
@@ -322,6 +323,15 @@
     <p class="has-text-centered pricing-details mt1">
       {{ $t('pricing discount details') }}
     </p>
+
+    <div class="extra-block alinea infos">
+      <div class="section-subtitle has-text-centered">
+        {{ $t('pricing school title') }}
+      </div>
+      <p class="has-text-centered">
+        {{ $t('pricing school details') }}
+      </p>
+    </div>
 
     <div class="section-subtitle has-text-centered" id="success-packs">
       {{ $t('pricing sucesspack title') }}
@@ -550,16 +560,7 @@
       />
     </div>
 
-    <div class="extra-block alinea">
-      <div class="section-subtitle has-text-centered">
-        {{ $t('pricing school title') }}
-      </div>
-      <p class="has-text-centered">
-        {{ $t('pricing school details') }}
-      </p>
-    </div>
-
-    <div class="extra-block">
+    <!--div class="extra-block infos">
       <div class="section-subtitle has-text-centered">
         {{ $t('pricing opensource title') }}
       </div>
@@ -571,7 +572,7 @@
           {{ $t('pricing opensource install') }}
         </a>
       </p>
-    </div>
+    </div-->
   </section>
 </div>
 
