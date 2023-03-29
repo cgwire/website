@@ -22,6 +22,7 @@
     section-key="top-notch-support"
     feature-key="experts"
     colored
+    gradient
   />
 
   <Trial />

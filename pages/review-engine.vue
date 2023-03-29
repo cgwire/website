@@ -25,6 +25,7 @@
     section-key="review-engine"
     feature-key="room"
     colored
+    gradient
   />
 
   <CustomerStoryBlock

@@ -21,30 +21,8 @@
     section-key="team-collaboration"
     feature-key="news"
     colored
+    gradient
   />
-
-  <!--div class="block-colored-dark">
-    <section class="section">
-      <div class="tile flex-aic content-reverse">
-        <div class="tile is-5 is-child content" data-aos="fade-up">
-          <h2>
-            <span class="section-subtitle">
-              {{ $t('team-collaboration dark subtitle') }}
-            </span>
-            <span class="section-title">
-              {{ $t('team-collaboration dark title') }}
-            </span>
-          </h2>
-          <p>
-              {{ $t('team-collaboration dark text one') }}
-          </p>
-        </div>
-        <div class="tile is-7 is-child content-image" data-aos="fade-up">
-          <img class="screenshot" src="~/assets/images/kitsu-dark.png" />
-        </div>
-      </div>
-    </section>
-  </div-->
 
   <CustomerStoryBlock
     studio-name="Miyu studio"

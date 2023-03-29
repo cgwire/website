@@ -22,6 +22,7 @@
     feature-key="performance"
     :shadow="false"
     colored
+    gradient
   />
 
   <Trial />

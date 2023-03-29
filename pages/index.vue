@@ -72,14 +72,6 @@
     </p>
   </section>
 
-  <CustomerStoryBlock
-    studio-name="Fost studio"
-    story-key="fost"
-    interviewee="Céline Durieux, Head Of Studio"
-    image-path="photo-customer-story-fost.png"
-    story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
-  />
-
   <section class="section content landing-block" data-aos="fade-up">
 
     <div class="flexrow">
@@ -144,14 +136,6 @@
       </div>
     </div>
   </section>
-
-  <CustomerStoryBlock
-    studio-name="Autour De Minuit"
-    story-key="adm"
-    interviewee="Fiona Cohen, Production Manager"
-    image-path="photo-customer-story-adm.jpg"
-    story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
-  />
 
   <section class="section supporters">
     <h2 class="subtitle tagline mb0">

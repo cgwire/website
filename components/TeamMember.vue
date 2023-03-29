@@ -32,8 +32,8 @@ function useAsset(path) {
 <style lang="stylus" scoped>
 .ppl
   background #F4F8FF
-  border 1px solid #C4C8EF
-  border-radius 1em
+  border-radius 1.5em
+  border-radius 50px 50px 50px 50px / 25px 25px 25px 25px
   margin 1em
 
 img

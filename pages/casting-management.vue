@@ -21,6 +21,7 @@
     section-key="casting-management"
     feature-key="export"
     colored
+    gradient
   />
 
   <CustomerStoryBlock

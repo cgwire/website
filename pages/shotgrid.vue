@@ -8,6 +8,7 @@
      {{ $t('comparison shotgrid title') }}
     </h2>
 
+    <div class="block">
     <h3>Target audience</h3>
 
     <p>
@@ -23,6 +24,7 @@
     That's why you should consider this aspect before choosing your
     reference solution.
     </p>
+    </div>
 
     <h3>Resource needed</h3>
 
@@ -125,3 +127,6 @@ useHead({
   ]
 })
 </script>
+
+<style lang="stylus" scoped>
+</style>

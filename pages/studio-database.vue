@@ -23,6 +23,7 @@
     section-key="studio-database"
     feature-key="python"
     colored
+    gradient
   />
 
   <Trial />

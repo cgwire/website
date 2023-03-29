@@ -24,6 +24,7 @@
     feature-key="extra"
     :shadow="false"
     colored
+    gradient
   />
 
   <Trial />

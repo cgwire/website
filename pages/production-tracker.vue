@@ -21,6 +21,7 @@
     section-key="production-tracker"
     feature-key="quotas"
     colored
+    gradient
   />
 
   <CustomerStoryBlock
