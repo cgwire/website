@@ -30,7 +30,7 @@
   </div>
 </section>
 
-<div class="block-colored about">
+<div class="block-colored--grey about mt4 values">
   <section class="section">
     <h2>
       <span class="section-title has-text-centered">{{ $t('about values title') }}</span>
@@ -58,10 +58,40 @@
         <p class="section-item-text">{{ $t('about values text three') }}</p>
       </li>
     </ul>
+    <h2 data-aos="fade-up">
+      <span class="section-title has-text-centered">
+        {{ $t('about work title') }}
+      </span>
+    </h2>
+
+    <ul class="section-list tile is-ancestor" data-aos="fade-up">
+      <li class="section-item tile is-4 is-vertical">
+        <div class="section-item-img">
+          <img src="~/assets/images/illustration-open.svg" alt="">
+        </div>
+        <h3 class="section-item-title">{{ $t('about work title one') }}</h3>
+        <p class="section-item-text">{{ $t('about work text one') }}</p>
+      </li>
+      <li class="section-item tile is-4 is-vertical">
+        <div class="section-item-img">
+          <img src="~/assets/images/illustration-remote.svg" alt="">
+        </div>
+        <h3 class="section-item-title">{{ $t('about work title two') }}</h3>
+        <p class="section-item-text">{{ $t('about work text two') }}</p>
+      </li>
+      <li class="section-item tile is-4 is-vertical">
+        <div class="section-item-img">
+          <img src="~/assets/images/illustration-deliberate.svg" alt="">
+        </div>
+        <h3 class="section-item-title">{{ $t('about work title three') }}</h3>
+        <p class="section-item-text">{{ $t('about work text three') }}</p>
+      </li>
+    </ul>
+
   </section>
 </div>
 
-<section class="section content about">
+<section class="section content about mt8">
   <h2 data-aos="fade-up">
     <span class="section-title has-text-centered">
       {{ $t('about team title') }}
@@ -83,10 +113,14 @@
     <TeamMember member-key="evan" />
   </div>
 
-  <h2 class="title has-text-centered" data-aos="fade-up">
+  <p>
+  &nbsp;
+  </p>
+
+  <h2 class="section-title has-text-centered mt4" data-aos="fade-up">
     {{ $t('about team advisors') }}
   </h2>
-  <div class="tile is-ancestor advisors" data-aos="fade-up">
+  <div class="tile is-ancestor advisors mt2" data-aos="fade-up">
     <div class="tile is-3 is-vertical ppl">
       <div class="ppl-image">
         <img src="~/assets/images/team/ev.jpg" alt="">
@@ -126,40 +160,9 @@
   </div>
 </section>
 
-<div class="block-colored">
+<div class="block">
   <section class="section">
-    <h2 data-aos="fade-up">
-      <span class="section-title has-text-centered">
-        {{ $t('about work title') }}
-      </span>
-    </h2>
-    <ul class="section-list tile is-ancestor" data-aos="fade-up">
-      <li class="section-item tile is-4 is-vertical">
-        <div class="section-item-img">
-          <img src="~/assets/images/illustration-open.svg" alt="">
-        </div>
-        <h3 class="section-item-title">{{ $t('about work title one') }}</h3>
-        <p class="section-item-text">{{ $t('about work text one') }}</p>
-      </li>
-      <li class="section-item tile is-4 is-vertical">
-        <div class="section-item-img">
-          <img src="~/assets/images/illustration-remote.svg" alt="">
-        </div>
-        <h3 class="section-item-title">{{ $t('about work title two') }}</h3>
-        <p class="section-item-text">{{ $t('about work text two') }}</p>
-      </li>
-      <li class="section-item tile is-4 is-vertical">
-        <div class="section-item-img">
-          <img src="~/assets/images/illustration-deliberate.svg" alt="">
-        </div>
-        <h3 class="section-item-title">{{ $t('about work title three') }}</h3>
-        <p class="section-item-text">{{ $t('about work text three') }}</p>
-      </li>
-    </ul>
     <p class="has-text-centered">
-      <a class="button is-large" href="mailto:jobs@cg-wire.com">
-        {{ $t('about work cta') }}
-      </a>
     </p>
   </section>
 </div>
@@ -175,3 +178,8 @@ useHead({
   ]
 })
 </script>
+
+<style lang="stylus" scoped>
+.values
+  border-radius 400px 400px 400px 400px / 25px 25px 25px 25px
+</style>
