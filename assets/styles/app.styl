@@ -124,7 +124,6 @@ div.body
         &.narrower
             max-width calc(960px + 1.5rem * 2)
 
-
         .intro-video
             max-width 90%
 
@@ -142,6 +141,11 @@ div.body
             border-radius 0.5em
             border 1px solid #EEE
             box-shadow 0 0 6px 3px #F1F1F1
+
+        .solution-metrics
+            color grey
+            font-size 1.1em
+            font-style italic
 
     .customer-story.landing-block
         padding-top 1.5em
@@ -707,6 +711,9 @@ div.body
         .flexrow
             align-items stretch
 
+            .flexrow-item:last-child
+                margin-right 0
+
         .software
             background lightgrey
             border 1px solid transparent
@@ -1134,8 +1141,8 @@ div.body
         border-radius 50%
         margin-right .8rem
         flex 0 0 auto
-        width 50px
-        height 50px
+        width 80px
+        height 80px
 
     .quote-text--alt
         border-color rainbow-3
@@ -1160,7 +1167,6 @@ div.body
 
     .customers
         list-style none
-        margin auto
         max-width 800px
         padding 0
         display flex
@@ -1600,8 +1606,7 @@ div.body
                 border 1px solid lightblue - 5%
                 border-radius 8px
                 color grey - 20%
-                font-weight bold
-                font-size 1.1em
+                font-size 1.2em
                 margin-bottom .5em
                 padding .8em
 
@@ -1716,3 +1721,17 @@ div.body
                 margin-top 0
                 padding-left .8em
                 padding-top 0
+
+        .integrations
+            img
+                max-width 150px
+                max-height 150px
+            .flexrow
+                flex-direction column
+
+                .flexrow-item
+                    margin-bottom 1em
+
+            .software
+                width: 100%;
+                padding 0.5em

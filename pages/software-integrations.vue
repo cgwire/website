@@ -5,7 +5,7 @@
     page-key="software-integrations"
   />
 
-  <section class="section mt0 pt0">
+  <section class="section mt8 pt0">
     <div class="section-subtitle has-text-centered">
       {{ $t('integrations subtitle dcc') }}
     </div>
@@ -72,7 +72,7 @@
       </a>
     </div>
 
-    <div class="section-subtitle has-text-centered mt2">
+    <div class="section-subtitle has-text-centered mt4">
       {{ $t('integrations subtitle chats') }}
     </div>
     <h2 class="section-title has-text-centered">
@@ -107,7 +107,7 @@
       </a>
     </div>
 
-    <div class="section-subtitle has-text-centered mt2">
+    <div class="section-subtitle has-text-centered mt4">
       {{ $t('integrations subtitle software') }}
     </div>
     <h2 class="section-title has-text-centered">

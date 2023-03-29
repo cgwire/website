@@ -1,7 +1,10 @@
 <template>
-<div class="kitsu-page top-notch-support">
+<div
+  class="kitsu-page top-notch-support"
+>
 
   <SolutionHeaderBlock
+    class="mt8"
     page-key="top-notch-support"
     is-video
   />

@@ -525,5 +525,7 @@
 </div>
 </template>
 
-<style scoped>
+<style lang="stylus" scoped>
+.customers
+  margin auto
 </style>

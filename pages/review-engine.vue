@@ -5,10 +5,6 @@
     page-key="review-engine"
   />
 
-  <h2 class="subtitle">
-    Already over 2 000 000 videos reviewed with Kitsu!
-  </h2>
-
   <FeatureBlock
     section-key="review-engine"
     feature-key="playlists"

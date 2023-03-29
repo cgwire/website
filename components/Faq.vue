@@ -1,16 +1,17 @@
 <template>
-<p class="question">
+<p
+  class="question"
+  @click="$emit(isExpanded ? 'unexpand' : 'expand', index)"
+>
   {{ $t('pricing faq question' + index) }}
   <span
     class="contract"
-    @click="$emit('unexpand', index)"
     v-if="isExpanded"
   >
   -
   </span>
   <span
     class="contract"
-    @click="$emit('expand', index)"
     v-if="!isExpanded"
   >
   +
@@ -33,3 +34,8 @@ const props = defineProps({
   }
 })
 </script>
+
+<style lang="stylus" scoped>
+.question
+  cursor pointer
+</style>

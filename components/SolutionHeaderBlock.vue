@@ -13,6 +13,9 @@
       <p>
         {{ $t(pageKey + ' header explanation') }}
       </p>
+      <p class="solution-metrics">
+        {{ $t(pageKey + ' header metrics') }}
+      </p>
     </div>
     <div class="is-6">
       <video
@@ -30,9 +33,9 @@
 
 <script setup>
 const props = defineProps({
-  pageKey: String,
   imagePath: String,
-  isVideo: Boolean
+  isVideo: Boolean,
+  pageKey: String
 })
 
 function useAsset(path) {
@@ -50,4 +53,7 @@ video
 
 section
   padding-bottom 0
+
+.solution-metrics
+  display none
 </style>
