@@ -30,7 +30,7 @@
   />
 
   <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
-    TV Series, Feature Fims (2D, 3D)
+    TV Series, Feature Films (2D, 3D)
   </div>
 
   <CustomerStoryBlock
