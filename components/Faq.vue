@@ -18,7 +18,7 @@
   </span>
 </p>
 <p class="answer" v-show="isExpanded">
-  {{ $t('pricing faq answer1') }}
+  {{ $t('pricing faq answer' + index) }}
 </p>
 </template>
 
