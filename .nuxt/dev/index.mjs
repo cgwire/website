@@ -1,7 +1,7 @@
 globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { join as join$1 } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
 import { provider, isWindows } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/std-env/dist/index.mjs';
@@ -20,6 +20,19 @@ import { parseURL, withoutBase, joinURL, withQuery } from 'file:///home/frankrou
 import { createStorage, prefixStorage } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/unstorage/dist/index.mjs';
 import unstorage_47drivers_47fs from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/unstorage/drivers/fs.mjs';
 import { toRouteMatcher, createRouter } from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/radix3/dist/index.mjs';
+import { createRequire } from 'module';
+import { promisify } from 'util';
+import AsyncCache from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/async-cache/ac.js';
+import unionBy from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/lodash.unionby/index.js';
+import generateETag from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/etag/index.js';
+import fresh from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/fresh/index.js';
+import { hostname } from 'os';
+import { join } from 'path';
+import { URL as URL$1 } from 'url';
+import isHTTPS from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/is-https/dist/index.mjs';
+import * as sm from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/sitemap/dist/index.js';
+import consola from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/unenv/runtime/npm/consola.mjs';
+import Minimatch from 'file:///home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/minimatch/minimatch.js';
 
 const inlineAppConfig = {};
 
@@ -27,7 +40,7 @@ const inlineAppConfig = {};
 
 const appConfig = defuFn(inlineAppConfig);
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{},"sitemap":{"options":"{\"/sitemap.xml\": {\"path\": '/sitemap.xml', \"hostname\": null, \"exclude\": [], \"routes\": [], \"cacheTime\": 900000, \"etag\": {\"weak\": true}, \"filter\": null, \"gzip\": false, \"xmlNs\": null, \"xslUrl\": null, \"trailingSlash\": false, \"lastmod\": null, \"i18n\": null, \"defaults\": {}, \"base\": '/', \"generateOnBuild\": true, \"pathGzip\": '/sitemap.xml'}}","staticRoutes":[{"name":"about___en","path":"/about","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/about.vue","children":[],"url":"/about"},{"name":"about___fr","path":"/fr/about","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/about.vue","children":[],"url":"/fr/about"},{"name":"casting-management___en","path":"/casting-management","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/casting-management.vue","children":[],"url":"/casting-management"},{"name":"casting-management___fr","path":"/fr/casting-management","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/casting-management.vue","children":[],"url":"/fr/casting-management"},{"name":"community___en","path":"/community","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/community.vue","children":[],"url":"/community"},{"name":"community___fr","path":"/fr/community","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/community.vue","children":[],"url":"/fr/community"},{"name":"contact___en","path":"/contact","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/contact.vue","children":[],"url":"/contact"},{"name":"contact___fr","path":"/fr/contact","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/contact.vue","children":[],"url":"/fr/contact"},{"name":"customer-stories___en","path":"/customer-stories","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/customer-stories.vue","children":[],"url":"/customer-stories"},{"name":"customer-stories___fr","path":"/fr/customer-stories","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/customer-stories.vue","children":[],"url":"/fr/customer-stories"},{"name":"elite-hosting___en","path":"/elite-hosting","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/elite-hosting.vue","children":[],"url":"/elite-hosting"},{"name":"elite-hosting___fr","path":"/fr/elite-hosting","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/elite-hosting.vue","children":[],"url":"/fr/elite-hosting"},{"name":"feature-films___en","path":"/feature-films","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/feature-films.vue","children":[],"url":"/feature-films"},{"name":"feature-films___fr","path":"/fr/feature-films","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/feature-films.vue","children":[],"url":"/fr/feature-films"},{"name":"ftrack___en","path":"/ftrack","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/ftrack.vue","children":[],"url":"/ftrack"},{"name":"ftrack___fr","path":"/fr/ftrack","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/ftrack.vue","children":[],"url":"/fr/ftrack"},{"name":"index___en","path":"/","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/index.vue","children":[],"url":"/"},{"name":"index___fr","path":"/fr","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/index.vue","children":[],"url":"/fr"},{"name":"pricing___en","path":"/pricing","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/pricing.vue","children":[],"url":"/pricing"},{"name":"pricing___fr","path":"/fr/pricing","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/pricing.vue","children":[],"url":"/fr/pricing"},{"name":"privacy___en","path":"/privacy","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/privacy.vue","children":[],"url":"/privacy"},{"name":"privacy___fr","path":"/fr/privacy","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/privacy.vue","children":[],"url":"/fr/privacy"},{"name":"production-tracker___en","path":"/production-tracker","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/production-tracker.vue","children":[],"url":"/production-tracker"},{"name":"production-tracker___fr","path":"/fr/production-tracker","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/production-tracker.vue","children":[],"url":"/fr/production-tracker"},{"name":"review-engine___en","path":"/review-engine","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/review-engine.vue","children":[],"url":"/review-engine"},{"name":"review-engine___fr","path":"/fr/review-engine","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/review-engine.vue","children":[],"url":"/fr/review-engine"},{"name":"schools___en","path":"/schools","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/schools.vue","children":[],"url":"/schools"},{"name":"schools___fr","path":"/fr/schools","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/schools.vue","children":[],"url":"/fr/schools"},{"name":"shorts___en","path":"/shorts","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/shorts.vue","children":[],"url":"/shorts"},{"name":"shorts___fr","path":"/fr/shorts","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/shorts.vue","children":[],"url":"/fr/shorts"},{"name":"shotgrid___en","path":"/shotgrid","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/shotgrid.vue","children":[],"url":"/shotgrid"},{"name":"shotgrid___fr","path":"/fr/shotgrid","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/shotgrid.vue","children":[],"url":"/fr/shotgrid"},{"name":"software-integrations___en","path":"/software-integrations","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/software-integrations.vue","children":[],"url":"/software-integrations"},{"name":"software-integrations___fr","path":"/fr/software-integrations","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/software-integrations.vue","children":[],"url":"/fr/software-integrations"},{"name":"spreadsheets___en","path":"/spreadsheets","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/spreadsheets.vue","children":[],"url":"/spreadsheets"},{"name":"spreadsheets___fr","path":"/fr/spreadsheets","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/spreadsheets.vue","children":[],"url":"/fr/spreadsheets"},{"name":"studio-database___en","path":"/studio-database","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/studio-database.vue","children":[],"url":"/studio-database"},{"name":"studio-database___fr","path":"/fr/studio-database","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/studio-database.vue","children":[],"url":"/fr/studio-database"},{"name":"studios___en","path":"/studios","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/studios.vue","children":[],"url":"/studios"},{"name":"studios___fr","path":"/fr/studios","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/studios.vue","children":[],"url":"/fr/studios"},{"name":"tailor-made-architecture___en","path":"/tailor-made-architecture","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/tailor-made-architecture.vue","children":[],"url":"/tailor-made-architecture"},{"name":"tailor-made-architecture___fr","path":"/fr/tailor-made-architecture","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/tailor-made-architecture.vue","children":[],"url":"/fr/tailor-made-architecture"},{"name":"team-collaboration___en","path":"/team-collaboration","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/team-collaboration.vue","children":[],"url":"/team-collaboration"},{"name":"team-collaboration___fr","path":"/fr/team-collaboration","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/team-collaboration.vue","children":[],"url":"/fr/team-collaboration"},{"name":"terms___en","path":"/terms","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/terms.vue","children":[],"url":"/terms"},{"name":"terms___fr","path":"/fr/terms","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/terms.vue","children":[],"url":"/fr/terms"},{"name":"top-notch-support___en","path":"/top-notch-support","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/top-notch-support.vue","children":[],"url":"/top-notch-support"},{"name":"top-notch-support___fr","path":"/fr/top-notch-support","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/top-notch-support.vue","children":[],"url":"/fr/top-notch-support"},{"name":"tvshows___en","path":"/tvshows","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/tvshows.vue","children":[],"url":"/tvshows"},{"name":"tvshows___fr","path":"/fr/tvshows","file":"/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/pages/tvshows.vue","children":[],"url":"/fr/tvshows"}]}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 overrideConfig(_runtimeConfig);
@@ -500,10 +513,219 @@ const errorHandler = (async function errorhandler(error, event) {
   event.node.res.end(await res.text());
 });
 
+function createRoutesCache(globalCache, options) {
+  const cache = new AsyncCache({
+    maxAge: options.cacheTime,
+    async load(_, callback) {
+      try {
+        let routes = await Promise.all(await promisifyRoute(options.routes));
+        routes = joinRoutes(globalCache.staticRoutes ? globalCache.staticRoutes() : [], routes);
+        callback(null, routes);
+      } catch (err) {
+        callback(err);
+      }
+    }
+  });
+  cache.get = promisify(cache.get);
+  return cache;
+}
+function promisifyRoute(fn) {
+  if (Array.isArray(fn)) {
+    return Promise.resolve(
+      fn.map(async (r) => {
+        if (typeof r === "function") {
+          return await promisifyRoute(r);
+        }
+        return r;
+      })
+    );
+  }
+  if (fn.length === 1) {
+    return new Promise((resolve, reject) => {
+      fn(function(err, routeParams) {
+        if (err) {
+          reject(err);
+        }
+        resolve(routeParams);
+      });
+    });
+  }
+  let promise = fn();
+  if (!promise || !(promise instanceof Promise) && typeof promise.then !== "function") {
+    promise = Promise.resolve(promise);
+  }
+  return promise;
+}
+function joinRoutes(staticRoutes, dynamicRoutes) {
+  staticRoutes = staticRoutes.map(ensureIsValidRoute);
+  dynamicRoutes = dynamicRoutes.map(ensureIsValidRoute);
+  return unionBy(dynamicRoutes, staticRoutes, "url");
+}
+function ensureIsValidRoute(route) {
+  let _route = typeof route === "object" ? { ...route } : route;
+  _route = typeof _route === "object" ? _route.route ? { url: _route.route } : _route : { url: _route };
+  _route.url = String(_route.url);
+  return _route;
+}
+function validHttpCache(entity, options, req, res) {
+  if (!options) {
+    return false;
+  }
+  const { hash } = options;
+  const etag = hash ? hash(entity, options) : generateETag(entity, options);
+  if (fresh(req.headers, { etag })) {
+    res.statusCode = 304;
+    res.end();
+    return true;
+  }
+  res.setHeader("ETag", etag);
+  return false;
+}
+
+function warn(message, options = null) {
+  consola.warn({
+    message: `[sitemap-module] ${message}`,
+    additional: options ? JSON.stringify(options, null, 2) : null
+  });
+}
+function fatal(message, options = null) {
+  consola.fatal({
+    message: `[sitemap-module] ${message}`,
+    additional: options ? JSON.stringify(options, null, 2) : null
+  });
+}
+const logger = { success: consola.success, info: consola.info, fatal, warn };
+
+function createSitemap(options, routes, base = null, req = null) {
+  const sitemapConfig = { cacheTime: null, hostname: null, xmlNs: null, xslUrl: null, urls: null };
+  sitemapConfig.cacheTime = options.cacheTime || 0;
+  sitemapConfig.hostname = getHostname(options, req, base);
+  sitemapConfig.xmlNs = options.xmlNs;
+  sitemapConfig.xslUrl = options.xslUrl;
+  routes = routes.map((route) => ({ ...options.defaults, ...route }));
+  if (options.trailingSlash) {
+    routes = routes.map((route) => {
+      if (!route.url.endsWith("/")) {
+        route.url = `${route.url}/`;
+      }
+      return route;
+    });
+  }
+  if (options.i18n) {
+    const { locales, routesNameSeparator } = options.i18n;
+    routes.reduce((i18nRoutes, route) => {
+      if (!route.name) {
+        return i18nRoutes;
+      }
+      const [page, lang, isDefault = false] = route.name.split(routesNameSeparator);
+      if (!lang) {
+        return i18nRoutes;
+      }
+      const link = {
+        lang,
+        url: join(".", route.url)
+      };
+      if (isDefault) {
+        link.lang = "x-default";
+      } else {
+        const locale = locales.find(({ code }) => code === lang);
+        if (locale && locale.iso) {
+          link.lang = locale.iso;
+        }
+      }
+      if (!i18nRoutes[page]) {
+        i18nRoutes[page] = [];
+      }
+      const langs = i18nRoutes[page].map(({ lang: lang2 }) => lang2);
+      langs.push(link.lang);
+      const index = langs.sort().indexOf(link.lang);
+      i18nRoutes[page].splice(index, 0, link);
+      route.links = i18nRoutes[page];
+      return i18nRoutes;
+    }, {});
+  }
+  if (typeof options.filter === "function") {
+    routes = options.filter({
+      options: { ...sitemapConfig },
+      routes
+    });
+  }
+  routes = routes.map((route) => {
+    const { chunkName, component, name, path, ...sitemapOptions } = route;
+    return {
+      ...sitemapOptions,
+      url: join(".", String(sitemapOptions.url))
+    };
+  });
+  sitemapConfig.urls = routes;
+  return sm.createSitemap(sitemapConfig);
+}
+function getHostname(options, req, base) {
+  if (!options.hostname && !req) {
+    logger.fatal("The `hostname` option is mandatory in your config on `spa` or `generate` build mode", options);
+  }
+  const href = new URL$1(
+    base || "",
+    options.hostname || req && `${isHTTPS(req) ? "https" : "http"}://${req.headers.host}` || `http://${hostname()}`
+  ).href;
+  return href.slice(-1) === "/" ? href : href + "/";
+}
+
+function excludeRoutes(patterns, routes) {
+  patterns.forEach((pattern) => {
+    const minimatch = new Minimatch.Minimatch(pattern);
+    minimatch.negate = true;
+    routes = routes.filter(({ url }) => minimatch.match(url));
+  });
+  return routes;
+}
+
+const globalCache = { cache: {  }, staticRoutes: null };
+
+const _a7EiZz = eventHandler(async (event) => {
+  const runtimeConfig = useRuntimeConfig();
+  const res = event.res;
+  const req = event.req;
+
+  const require = createRequire(globalThis._importMeta_.url);
+  if (!require) {
+    console.log('cant use require in middleware');
+  }
+  // eslint-disable-next-line no-new-func,no-eval
+  const options = eval('(' + runtimeConfig.sitemap.options + ')')[event.req.url];
+  const staticRoutes = runtimeConfig.sitemap.staticRoutes;
+
+  // Init cache
+  if (!globalCache.staticRoutes) {
+    globalCache.staticRoutes = () => excludeRoutes(options.exclude, staticRoutes);
+  }
+
+  if(!globalCache.cache[event.req.url]) {
+    globalCache.cache[event.req.url] = createRoutesCache(globalCache, options);
+  }
+
+  try {
+    // Init sitemap
+    const routes = await globalCache.cache[event.req.url].get('routes');
+    const xml = createSitemap(options, routes, options.base, req).toXML();
+    // Check cache headers
+    if (validHttpCache(xml, options.etag, req, res)) {
+      return
+    }
+    // Send http response
+    res.setHeader('Content-Type', 'application/xml');
+    res.end(xml);
+  } catch (err) {
+    /* istanbul ignore next */
+    return err
+  }
+});
+
 const _lazy_sCwHHq = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
   { route: '/__nuxt_error', handler: _lazy_sCwHHq, lazy: true, middleware: false, method: undefined },
+  { route: '/sitemap.xml', handler: _a7EiZz, lazy: false, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_sCwHHq, lazy: true, middleware: false, method: undefined }
 ];
 
@@ -578,11 +800,11 @@ function getAddress() {
   }
   const socketName = `worker-${process.pid}-${threadId}.sock`;
   if (isWindows) {
-    return join("\\\\.\\pipe\\nitro", socketName);
+    return join$1("\\\\.\\pipe\\nitro", socketName);
   } else {
-    const socketDir = join(tmpdir(), "nitro");
+    const socketDir = join$1(tmpdir(), "nitro");
     mkdirSync(socketDir, { recursive: true });
-    return join(socketDir, socketName);
+    return join$1(socketDir, socketName);
   }
 }
 const listenAddress = getAddress();

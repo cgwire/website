@@ -77,6 +77,12 @@
       "#i18n": [
         "node_modules/@nuxtjs/i18n/dist/runtime/composables"
       ],
+      "~sitemap": [
+        "node_modules/@funken-studio/sitemap-nuxt-3/dist"
+      ],
+      "~sitemap/*": [
+        "node_modules/@funken-studio/sitemap-nuxt-3/dist/*"
+      ],
       "@vueuse/head": [
         "node_modules/@unhead/vue/dist/index"
       ],

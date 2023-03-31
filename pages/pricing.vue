@@ -3,6 +3,10 @@
   <section class="section content pricing">
     <div class="flexrow first-steps mt2">
       <div class="flexrow-item">
+        <div class="flexrow-item">
+          <img src="~/assets/images/illustrations/kitsu-with-body.png"
+          width=180>
+        </div>
         <div class="section-subtitle">
           {{ $t('pricing firsteps ttile') }}
         </div>
@@ -50,7 +54,7 @@
     </div>
 
     <div class="section-subtitle has-text-centered">
-      {{ $t('pricing tagline') }}
+      Software-as-a-Service
     </div>
     <h2 class="section-title has-text-centered">
       {{ $t('pricing subtitle') }}
@@ -267,16 +271,7 @@
             {{ $t('pricing features partner four') }}
           </li>
           <li>
-            {{ $t('pricing features partner five') }}
-          </li>
-          <li>
             {{ $t('pricing features partner six') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner seven') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner eight') }}
           </li>
           <li>
             {{ $t('pricing features partner three') }}
@@ -333,117 +328,145 @@
       </p>
     </div>
 
-    <div class="section-subtitle has-text-centered" id="success-packs">
-      {{ $t('pricing sucesspack title') }}
+    <div class="section-subtitle has-text-centered">
+      Deployed on your private cloud
     </div>
     <h2 class="section-title has-text-centered">
-      {{ $t('pricing sucesspack subtitle') }}
+      Kitsu On-Premise
     </h2>
-    <p class="has-text-centered">
-      {{ $t('pricing sucesspack explanation') }}
-    </p>
+    <div class="has-text-centered">
+      <p style="max-width: 800px; margin: auto;">
+        {{ $t('pricing support license details') }}
+      </p>
+    </div>
 
-    <div class="pricings">
-      <div class="pricing-block">
-        <div class="pricing-title">
-          {{ $t('pricing title bronze') }}
-        </div>
-        <div class="pricing-price">
-          <span class="pricing-currency">€</span>
-          <span class="pricing-value">1199</span>
-        </div>
-        <div class="pricing-features">
-          <ul>
-            <li>
-              10h
-            </li>
-            <li>
-              {{ $t('pricing features successpack one') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack two') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack three') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack four') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack five') }}
-            </li>
-          </ul>
-        </div>
+  <div class="pricings">
+    <div class="pricing-block">
+      <div class="pricing-title">
+        {{ $t('pricing title production') }}
       </div>
-      <div class="pricing-block pricing-emphasize">
-        <div class="pricing-title">
-          {{ $t('pricing title silver') }}
-        </div>
-        <div class="pricing-price">
-          <span class="pricing-currency">€</span>
-          <span class="pricing-value">2799</span>
-        </div>
-        <div class="pricing-features">
-          <ul>
-            <li>
-              25h
-            </li>
-            <li>
-              {{ $t('pricing features successpack one') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack two') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack three') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack four') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack five') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack six') }}
-            </li>
-          </ul>
-        </div>
+      <div class="pricing-price">
+        <span class="pricing-currency">€</span>
+        <span class="pricing-value yearly">2999</span>
+        {{ $t('pricing value month') }}
       </div>
-      <div class="pricing-block">
-        <div class="pricing-title">
-          {{ $t('pricing title gold') }}
-        </div>
-        <div class="pricing-price">
-          <span class="pricing-currency">€</span>
-          <span class="pricing-value">4999</span>
-        </div>
-        <div class="pricing-features">
-          <ul>
-            <li>
-              50h
-            </li>
-            <li>
-              {{ $t('pricing features successpack one') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack two') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack three') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack four') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack five') }}
-            </li>
-            <li>
-              {{ $t('pricing features successpack six') }}
-            </li>
-          </ul>
-        </div>
+      <div class="pricing-price-info">
+        {{ $t('pricing billed annualy') }}
+      </div>
+      <div class="pricing-features">
+        <ul>
+          <li>
+            {{ $t('pricing features medium one') }}
+          </li>
+          <li>
+            {{ $t('pricing features common two') }}
+          </li>
+          <li>
+            {{ $t('pricing features medium four') }}
+          </li>
+          <li>
+            {{ $t('pricing features common three') }}
+          </li>
+          <li>
+            {{ $t('pricing features common four') }}
+          </li>
+          <li>
+            {{ $t('pricing features medium two') }}
+          </li>
+        </ul>
+      </div>
+      <div class="pricing-cta">
+        <a href="https://account.cg-wire.com/${$i18n.locale}/signup" class="button is-outlined">
+          {{ $t('pricing button cta') }}
+        </a>
       </div>
     </div>
+
+    <div class="pricing-block pricing-emphasize">
+      <div class="pricing-title">
+        {{ $t('pricing title studio' ) }}
+      </div>
+      <div class="pricing-price">
+        <span class="pricing-currency">€</span>
+        <span class="pricing-value yearly">4999</span>
+          {{ $t('pricing value month') }}
+      </div>
+      <div class="pricing-price-info">
+        {{ $t('pricing billed annualy') }}
+      </div>
+      <div class="pricing-features">
+        <ul>
+          <li>
+            {{ $t('pricing features large one') }}
+          </li>
+          <li>
+            {{ $t('pricing features large two') }}
+          </li>
+          <li>
+            {{ $t('pricing features large four') }}
+          </li>
+          <li>
+            {{ $t('pricing features common three') }}
+          </li>
+          <li>
+            {{ $t('pricing features common four') }}
+          </li>
+          <li>
+            {{ $t('pricing features medium two') }}
+          </li>
+          <li>
+            {{ $t('pricing features large five') }}
+          </li>
+        </ul>
+      </div>
+      <div class="pricing-cta">
+        <a href="https://account.cg-wire.com/${$i18n.locale}/signup" class="button is-outlined">
+          {{ $t('pricing button cta') }}
+        </a>
+      </div>
+    </div>
+
+    <div class="pricing-block">
+      <div class="pricing-title">
+        {{ $t('pricing title partner') }}
+      </div>
+      <div class="pricing-price">
+        <span class="pricing-value">
+          {{ $t('pricing title quote' ) }}
+        </span>
+      </div>
+      <div class="pricing-features">
+        <ul>
+          <li>
+            {{ $t('pricing features partner one') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner four') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner five') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner six') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner seven') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner eight') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner three') }}
+          </li>
+        </ul>
+      </div>
+      <div class="pricing-cta">
+        <a href="mailto:sales@cg-wire.com" class="button is-outlined">
+          {{ $t('pricing button contactcta') }}
+        </a>
+      </div>
+    </div>
+  </div>
 
     <div class="section-subtitle has-text-centered">
       {{ $t('pricing support onpremise title') }}
@@ -451,11 +474,6 @@
     <h2 class="section-title has-text-centered">
       {{ $t('pricing support license title') }}
     </h2>
-    <div class="has-text-centered">
-      <p style="max-width: 800px; margin: auto;">
-        {{ $t('pricing support license details') }}
-      </p>
-    </div>
 
     <div class="pricings">
       <div class="pricing-block pricing-emphasize">
@@ -464,7 +482,7 @@
         </div>
         <div class="pricing-price">
           <span class="pricing-currency">€</span>
-          <span class="pricing-value">2000</span>
+          <span class="pricing-value">4999</span>
           <div class="pricing-features">
             <ul>
               <li>
@@ -495,7 +513,7 @@
         </div>
         <div class="pricing-price">
           <span class="pricing-currency">€</span>
-          <span class="pricing-value">500</span>
+          <span class="pricing-value">999</span>
           <div class="pricing-features">
             <ul>
               <li>
@@ -514,7 +532,7 @@
         </div>
         <div class="pricing-price">
           <span class="pricing-currency">€</span>
-          <span class="pricing-value">1000</span>
+          <span class="pricing-value">1999</span>
           <div class="pricing-features">
             <ul>
               <li>
@@ -531,19 +549,6 @@
       </div>
     </div>
 
-    <!--div class="section-subtitle has-text-centered">
-      Included with your subscription
-    </div>
-    <h2 class="section-title has-text-centered">
-      Kitsu Features
-    </h2>
-    <div class="faq">
-      <p class="feature-header">
-      </p>
-      <div class="feature-block">
-      </div>
-    </div-->
-
     <div class="section-subtitle has-text-centered">
       {{ $t('pricing faq subtitle') }}
     </div>
@@ -559,20 +564,6 @@
         v-for="i in Array.from(Array(10).keys())"
       />
     </div>
-
-    <!--div class="extra-block infos">
-      <div class="section-subtitle has-text-centered">
-        {{ $t('pricing opensource title') }}
-      </div>
-      <p class="has-text-centered">
-        {{ $t('pricing opensource details') }}
-      </p>
-      <p class="has-text-centered">
-        <a href="https://zou.cg-wire.com">
-          {{ $t('pricing opensource install') }}
-        </a>
-      </p>
-    </div-->
   </section>
 </div>
 
