@@ -5,7 +5,6 @@ import { fileURLToPath } from 'url'
 export default defineNuxtConfig({
   target: 'static',
   ssr: true,
-  hostname: 'www.cg-wire.com',
   app: {
     head: {
       meta: [
@@ -71,4 +70,7 @@ export default defineNuxtConfig({
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
+  sitemap: {
+    hostname: 'https://www.cg-wire.com'
+  }
 })
