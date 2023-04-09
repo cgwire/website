@@ -64,7 +64,7 @@
       >
         <img
           class="w50pe openpype"
-          src="~/assets/images/integrations/logo-open-pype.svg"
+          src="~/assets/images/integrations/logo-open-pype.png"
           alt="OpenPype Logo" />
         <span class="made-by-community">
           {{ $t('community contribution') }}
@@ -152,8 +152,4 @@ useHead({
 </script>
 
 <style>
-.openpype {
-  max-height: 220px;
-  padding: 20px;
-}
 </style>

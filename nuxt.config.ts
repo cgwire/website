@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url'
 export default defineNuxtConfig({
   target: 'static',
   ssr: true,
+  hostname: 'www.cg-wire.com',
   app: {
     head: {
       meta: [

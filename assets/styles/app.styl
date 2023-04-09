@@ -170,7 +170,7 @@ div.body
 
     .customer-story.landing-block
         padding-top 1.5em
-        border-radius 4em
+        border-radius 2em
         background lightpurple
         border 1px solid lightpurple - 10%
         padding-left 1.5em
@@ -1744,9 +1744,11 @@ div.body
                 padding-top 0
 
         .integrations
-            img
-                max-width 150px
-                max-height 150px
+            .software 
+                height 150px
+                img
+                    max-width 150px
+                    max-height 150px
             .flexrow
                 flex-direction column
 
@@ -1754,5 +1756,28 @@ div.body
                     margin-bottom 1em
 
             .software
-                width: 100%;
+                width 100%
                 padding 0.5em
+
+        section.supporters
+            text-align center
+
+            h2.subtitle.tagline
+                margin-bottom 2em
+
+            ul.flexrow.supporter-list
+                flex-direction column
+
+                li
+                    display block
+                    height 200px
+                    margin-bottom 1em
+
+        .navbar-item.kitsu
+            padding-bottom 0
+            margin-left 3px
+
+        .about .advisors
+            .tile
+                width 100%
+

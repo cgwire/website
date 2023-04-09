@@ -44,6 +44,7 @@
       <nuxt-link
         :class="{
           'navbar-item': true,
+          kitsu: true,
           active: isActivePage([
             'kitsu',
           ])

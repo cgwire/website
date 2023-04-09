@@ -138,15 +138,15 @@
   </section>
 
   <section class="section supporters">
-    <h2 class="subtitle tagline mb0">
+    <h2 class="subtitle tagline mb1">
       {{ $t('about supporters title') }}
     </h2>
-    <ul class="flexrow has-text-centered">
-      <li class="flexrow-item w120 mr0"><a href="https://www.cnc.fr"><img src="~/assets/images/logo-cnc.png" alt="CNC"></a></li>
-      <li class="flexrow-item w120 mr0"><a
+    <ul class="flexrow supporter-list">
+      <li class="flexrow-item mr0"><a href="https://www.cnc.fr"><img src="~/assets/images/logo-cnc.png" alt="CNC"></a></li>
+      <li class="flexrow-item mr0"><a
       href="https://www.unrealengine.com/en-US/megagrants"><img src="~/assets/images/logo-epic-games.png" alt="Epic Games"></a></li>
-      <li class="flexrow-item w120 mr05"><a href="https://www.ovh.com"><img src="~/assets/images/logo-ovhdlp.png" alt="OVH Digital Launch Pad"></a></li>
-      <li class="flexrow-item w120 mr0">
+      <li class="flexrow-item mr0"><a href="https://www.ovh.com"><img src="~/assets/images/logo-ovhdlp.png" alt="OVH Digital Launch Pad"></a></li>
+      <li class="flexrow-item mr0">
         <a href="https://studio.blender.org/">
           <img src="~/assets/images/logo-blender.png" alt="Blender Studio">
         </a>
@@ -178,11 +178,11 @@
     </p>
   </section>
 
-  <section
+  <!--section
     class="section content has-text-centered conclusion conclusion-picture"
   >
     <img src="~/assets/images/studio_collaboration.png" />
-  </section>
+  </section-->
 </template>
 
 <script setup>
