@@ -1,5 +1,5 @@
 
-import { defuFn } from '/home/frankrousseau/Projets/cg-wire/online/kitsu-cloud/node_modules/defu/dist/defu.mjs'
+import { defuFn } from '/home/frank/Projets/cgwire/website/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 

@@ -23,11 +23,7 @@ export default defineNuxtConfig({
       script: [
       ],
       link: [
-        { rel: 'icon', href: '_nuxt/assets/favicon.png' },
-        { 
-          rel: 'stylesheet', 
-          href: 'https://fonts.googleapis.com/css?family=Lato' 
-        }
+        { rel: 'icon', href: '_nuxt/assets/favicon.png' }
       ],
       style: [
       ],

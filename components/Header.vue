@@ -3,7 +3,11 @@
   <nav class="navbar" role="navigation" arial-label="dropdown navigation">
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" :to="localePath('index')">
-      <img class="main-logo" src="~/assets/images/logo.svg" alt="CGWire logo"/>
+      <img
+        class="main-logo"
+        src="~/assets/images/logo.svg"
+        alt="CGWire logo"
+      />
       </nuxt-link>
       <div
         @click="() => toggleNav()"
@@ -36,6 +40,21 @@
           FR
         </nuxt-link>
       </div>
+
+      <nuxt-link
+        :class="{
+          'navbar-item': true,
+          active: isActivePage([
+            'kitsu',
+          ])
+        }"
+        :to="localePath('kitsu')"
+      >
+        <span class="navbar-item-title">
+          Kitsu
+        </span>
+      </nuxt-link>
+
       <div
         :class="{
           'navbar-item': true,
@@ -198,6 +217,7 @@
         @mouseover="resourceMenuOn = true"
         @mouseout="resourceMenuOn = false"
       >
+
         <a
           class="navbar-link"
           @click="resourceMenuOn = !resourceMenuOn"
@@ -307,7 +327,12 @@
       </div>
 
       <nuxt-link
-        class="navbar-item"
+        :class="{
+          'navbar-item': true,
+          active: isActivePage([
+            'pricing',
+          ])
+        }"
         :to="localePath('pricing')"
       >
         <span class="navbar-item-title">
