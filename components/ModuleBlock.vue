@@ -1,9 +1,9 @@
 <template>
 <nuxt-link
+  class="module-block"
   :to="localePath(sectionKey)"
 >
   <section
-    class="module-block"
   >
     <div class="has-text-centered">
       <img :src="useAsset(sectionKey + '.png')" />
@@ -11,15 +11,17 @@
     <h2>
       {{ $t(`${sectionKey} header tagline`) }}
     </h2>
-    <div class="module-description">
-      {{ $t(`${sectionKey} ${feature1Key} title`) }}
-    </div>
-    <div class="module-description">
-      {{ $t(`${sectionKey} ${feature2Key} title`) }}
-    </div>
-    <div class="module-description">
-      {{ $t(`${sectionKey} ${feature3Key} title`) }}
-    </div>
+    <ul>
+      <li class="module-description">
+        {{ $t(`${sectionKey} ${feature1Key} title`) }}
+      </li>
+      <li class="module-description">
+        {{ $t(`${sectionKey} ${feature2Key} title`) }}
+      </li>
+      <li class="module-description">
+        {{ $t(`${sectionKey} ${feature3Key} title`) }}
+      </li>
+    </ul>
   </section>
 </nuxt-link>
 </template>
@@ -42,4 +44,13 @@ function useAsset(path) {
 </script>
 
 <style lang="stylus" scoped>
+ul
+  margin-left 0em
+  list-style none
+
+ul li:before
+  content '✓ '
+
+.module-block h2
+  margin-top 0.5em
 </style>

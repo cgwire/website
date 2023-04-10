@@ -114,7 +114,7 @@ div.body
 
     .modules
         margin auto
-        margin-bottom 2em
+        margin-bottom 10px
 
         .module-block
             flex 1
@@ -125,6 +125,9 @@ div.body
             border 1px solid lightblue - 10%
             height 560px
             padding 1em
+
+            &:last-child
+                margin-right 0px
 
             .module-description
                 color grey
@@ -258,6 +261,12 @@ div.body
 
     .pt0
         padding-top 0rem
+
+    .flex
+        display flex
+
+    .mauto
+        margin auto
 
     .mt0
         margin-top 0rem
@@ -451,6 +460,9 @@ div.body
             max-width 1200px
             margin auto
             font-size 1em
+
+            .kitsu
+                padding-top 10px
 
             .navbar-item.subnav-element.flexcolumn
                 align-items flex-start
@@ -1713,6 +1725,17 @@ div.body
                     margin-top 2em
                     max-width 600px
 
+        .kitsu-page
+            .modules
+                flex-direction column
+
+                .module-block
+                    max-width 360px
+                    margin 0 0 1em 0
+
+                .customer-story.landing-block
+                    margin 0 1em 1em 1em
+
         .customer-story.landing-block
             margin 1em
             padding-top 2em
@@ -1721,6 +1744,10 @@ div.body
             img 
                 width 100%
                 margin-left 1em
+
+            &.small-block
+                img 
+                    margin-left 0
 
         .pricing-page
             .first-steps

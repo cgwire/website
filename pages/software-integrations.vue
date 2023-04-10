@@ -10,7 +10,7 @@
       {{ $t('integrations subtitle dcc') }}
     </div>
     <h2 class="section-title has-text-centered">
-     {{ $t('integrations title dcc') }}
+      {{ $t('integrations title dcc') }}
     </h2>
 
     <div class="flexrow mt2">

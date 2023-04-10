@@ -3,95 +3,148 @@
 
   <section>
     <div class="kitsu-header flexrow">
-      <img class="logo flexrow-item" src="~/assets/images/logo-kitsu.svg" />
+      <div class="flexcolum flexrow-item logo-wrapper mr2">
+        <img class="logo" src="~/assets/images/logo-kitsu.svg" />
+        <h2 class="logo-name">Kitsu</h2>
+      </div>
       <div>
-        <span>Kitsu</span>
+        <span>{{ $t('kitsu title') }}</span>
         <div class="kitsu-explanation">
-          Kitsu is a collaboration platform for Animation and VFX studios. With it,
-          you deliver better content faster.
+          {{ $t('kitsu description') }}
         </div>
       </div>
     </div>
 
-
     <div class="section-subtitle has-text-centered">
-      Designed with on the ground use-cases in mind
+      {{ $t('kitsu modules subtitle') }}
     </div>
     <h2 class="section-title has-text-centered">
-      5 modules as pillars of your productions
+      {{ $t('kitsu modules title') }}
     </h2>
-
-    <p>
-      Kitsu is made of 5 modules that will help you to manage your productions
-      efficiently.
-
-      These six parts are the result of continuous iterations with hundreds of
-      studios. See below all our modules:
-    </p>
-    <div class="modules flexrow">
-      <ModuleBlock
-        section-key="team-collaboration"
-        feature1-key="tasks"
-        feature2-key="todos"
-        feature3-key="news"
-      />
-      <ModuleBlock
-        section-key="production-tracker"
-        feature1-key="report"
-        feature2-key="schedule"
-        feature3-key="quotas"
-      />
-      <ModuleBlock
-        section-key="review-engine"
-        feature1-key="playlists"
-        feature2-key="compare"
-        feature3-key="room"
-      />
+    <div class="section-explanation">
+      {{ $t('kitsu modules description') }}
     </div>
 
-    <div class="modules flexrow">
-      <ModuleBlock
-        section-key="casting-management"
-        feature1-key="tables"
-        feature2-key="asset-links"
-        feature3-key="export"
-      />
-      <ModuleBlock
-        section-key="studio-database"
-        feature1-key="api"
-        feature2-key="boost"
-        feature3-key="python"
-      />
+    <div class="flex" data-aos="fade-up">
+      <div class="modules flexrow">
+        <ModuleBlock
+          section-key="team-collaboration"
+          feature1-key="tasks"
+          feature2-key="todos"
+          feature3-key="news"
+        />
+        <ModuleBlock
+          section-key="production-tracker"
+          feature1-key="report"
+          feature2-key="schedule"
+          feature3-key="quotas"
+        />
+        <ModuleBlock
+          section-key="review-engine"
+          feature1-key="playlists"
+          feature2-key="compare"
+          feature3-key="room"
+        />
+      </div>
     </div>
 
-    <div class="section-subtitle has-text-centered">
-      An outstanding user experierce
-    </div>
-    <h2 class="section-title has-text-centered">
-      Strong services to support your production
-    </h2>
-
-    <div class="modules flexrow">
-      <ModuleBlock
-        section-key="top-notch-support"
-        feature1-key="fast"
-        feature2-key="chat"
-        feature3-key="experts"
-      />
-      <ModuleBlock
-        section-key="elite-hosting"
-        feature1-key="security"
-        feature2-key="availability"
-        feature3-key="performance"
-      />
-      <ModuleBlock
-        section-key="tailor-made-architecture"
-        feature1-key="onpremise"
-        feature2-key="multiinstance"
-        feature3-key="extra"
-      />
+    <div class="flex" data-aos="fade-up">
+      <div class="modules flexrow has-text-left mt0">
+        <ModuleBlock
+          section-key="casting-management"
+          feature1-key="tables"
+          feature2-key="asset-links"
+          feature3-key="export"
+        />
+        <ModuleBlock
+          section-key="studio-database"
+          feature1-key="api"
+          feature2-key="boost"
+          feature3-key="python"
+        />
+      </div>
     </div>
 
+    <div data-aos="fade-up">
+      <div class="section-subtitle has-text-centered">
+        {{ $t('kitsu services subtitle') }}
+      </div>
+      <h2 class="section-title has-text-centered">
+        {{ $t('kitsu services title') }}
+      </h2>
+      <div class="section-explanation">
+        {{ $t('kitsu services description') }}
+      </div>
+    </div>
+
+    <div class="flex" data-aos="fade-up">
+      <div class="modules flexrow">
+        <ModuleBlock
+          section-key="top-notch-support"
+          feature1-key="fast"
+          feature2-key="chat"
+          feature3-key="experts"
+        />
+        <ModuleBlock
+          section-key="elite-hosting"
+          feature1-key="security"
+          feature2-key="availability"
+          feature3-key="performance"
+        />
+        <ModuleBlock
+          section-key="tailor-made-architecture"
+          feature1-key="onpremise"
+          feature2-key="multiinstance"
+          feature3-key="extra"
+        />
+      </div>
+    </div>
+
+    <div data-aos="fade-up">
+      <div class="section-subtitle has-text-centered">
+        {{ $t('kitsu stories subtitle') }}
+      </div>
+      <h2 class="section-title has-text-centered">
+        {{ $t('kitsu stories title') }}
+      </h2>
+      <div class="section-explanation">
+        {{ $t('kitsu stories description') }}
+      </div>
+    </div>
+
+    <div class="flex" data-aos="fade-up">
+    <div class="modules">
+      <CustomerStorySmallBlock
+        studio-name="Miyu studio"
+        story-key="miyu"
+        image-path="photo-customer-story-miyu.png"
+        story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
+      />
+
+      <CustomerStorySmallBlock
+        studio-name="Fost studio"
+        story-key="fost"
+        image-path="photo-customer-story-fost.png"
+        story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
+      />
+
+      <CustomerStorySmallBlock
+        studio-name="Autour De Minuit"
+        story-key="adm"
+        interviewee="Fiona Cohen, Production Manager"
+        image-path="photo-customer-story-adm.jpg"
+        story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
+      />
+
+      <CustomerStorySmallBlock
+        studio-name="Makuta VFX"
+        story-key="makuta"
+        interviewee="Pete Draper, Head of VFX"
+        image-path="photo-customer-story-makuta.png"
+        story-url="https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
+      />
+    </div>
+    </div>
   </section>
 </div>
 <Trial />
@@ -119,25 +172,66 @@ useHead({
 
         h2.section-title
             margin-top 0.5em
-            margin-bottom 1em
 
-.kitsu-header
-    max-width 700px
+    .section-explanation
+        margin auto
+        margin-bottom 3em
+        max-width 800px
+        text-align center
+
+.kitsu-header.flexrow
+    max-width 800px
     margin auto
     margin-bottom 2em
     margin-top 6em
     align-items center
-
-    .logo
-        width 200px
 
     .kitsu-explanation
         font-size 1.2em
 
     span
         flex 1
-        font-size 4em
+        font-size 3em
         font-weight bold
-        text-transform uppercase
+        line-height 1.2em
+        margin-bottom 1em
 
+    .logo-wrapper
+        min-width 150px
+        margin-right 2em
+        .logo
+            width 200px
+
+        h2.logo-name
+          font-size 2em
+          font-weight bold
+          text-align center
+          text-transform uppercase
+          margin-top 0.5em
+
+
+.slogan
+    max-width 700px
+    font-size 4.5em
+    font-weight bold
+    line-height 1.2em
+    text-transform uppercase
+    text-align center
+    margin auto
+    margin-top 2em
+    margin-bottom 2em
+
+.modules
+    display inline-flex
+    margin-bottom 10px
+
+    &.2-modules
+        margin auto
+        text-align center
+        margin-bottom 10px
+
+@media(max-width: 800px)
+  .modules
+    .small-block
+      margin-bottom 1em
 </style>

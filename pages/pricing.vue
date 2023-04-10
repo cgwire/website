@@ -329,7 +329,7 @@
     </div>
 
     <div class="section-subtitle has-text-centered">
-      Deployed on your private cloud
+      {{ $t('pricing support license subtitle') }}
     </div>
     <h2 class="section-title has-text-centered">
       Kitsu On-Premise

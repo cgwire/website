@@ -159,7 +159,19 @@
       </div>
     </div>
   </div>
+
+  <div class="has-text-centered">
+    <div class="pa2 is-child mt2">
+      <h2>
+        <span class="section-title">{{ $t('about design title') }}</span>
+      </h2>
+      <p>
+        {{ $t('about design information') }}
+      </p>
+    </div>
+  </div>
 </section>
+
 
 <div class="block">
   <section class="section">
