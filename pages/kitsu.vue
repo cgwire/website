@@ -156,7 +156,7 @@ const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu',
   meta: [
-    { name: 'description', content: t('kitsu header explanation')}
+    { name: 'description', content: t('kitsu description')}
   ]
 })
 </script>
