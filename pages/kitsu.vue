@@ -4,7 +4,7 @@
   <section>
     <div class="kitsu-header flexrow">
       <div class="flexcolum flexrow-item logo-wrapper mr2">
-        <img class="logo" src="~/assets/images/logo-kitsu.svg" />
+        <img class="logo" src="~/assets/images/logo-kitsu.png" />
         <h2 class="logo-name">Kitsu</h2>
       </div>
       <div>
