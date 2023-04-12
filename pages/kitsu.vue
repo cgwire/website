@@ -1,20 +1,24 @@
 <template>
 <div class="kitsu-page content">
 
-  <section>
-    <div class="kitsu-header flexrow">
-      <div class="flexcolum flexrow-item logo-wrapper mr2">
-        <img class="logo" src="~/assets/images/logo-kitsu.png" />
-        <h2 class="logo-name">Kitsu</h2>
-      </div>
-      <div>
-        <span>{{ $t('kitsu title') }}</span>
-        <div class="kitsu-explanation">
-          {{ $t('kitsu description') }}
+  <div class="kitsu-header-wrapper">
+    <section>
+      <div class="kitsu-header flexrow">
+        <div class="flexcolum flexrow-item logo-wrapper mr2">
+          <img class="logo" src="~/assets/images/logo-kitsu.png" />
+          <h2 class="logo-name">Kitsu</h2>
+        </div>
+        <div class="main-title">
+          <span>{{ $t('kitsu title') }}</span>
+          <div class="kitsu-explanation">
+            {{ $t('kitsu description') }}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+  </div>
 
+  <section>
     <div class="section-subtitle has-text-centered">
       {{ $t('kitsu modules subtitle') }}
     </div>
@@ -113,37 +117,37 @@
     </div>
 
     <div class="flex" data-aos="fade-up">
-    <div class="modules">
-      <CustomerStorySmallBlock
-        studio-name="Miyu studio"
-        story-key="miyu"
-        image-path="photo-customer-story-miyu.png"
-        story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
-      />
+      <div class="modules">
+        <CustomerStorySmallBlock
+          studio-name="Miyu studio"
+          story-key="miyu"
+          image-path="photo-customer-story-miyu.png"
+          story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
+        />
 
-      <CustomerStorySmallBlock
-        studio-name="Fost studio"
-        story-key="fost"
-        image-path="photo-customer-story-fost.png"
-        story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
-      />
+        <CustomerStorySmallBlock
+          studio-name="Fost studio"
+          story-key="fost"
+          image-path="photo-customer-story-fost.png"
+          story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
+        />
 
-      <CustomerStorySmallBlock
-        studio-name="Autour De Minuit"
-        story-key="adm"
-        interviewee="Fiona Cohen, Production Manager"
-        image-path="photo-customer-story-adm.jpg"
-        story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
-      />
+        <CustomerStorySmallBlock
+          studio-name="Autour De Minuit"
+          story-key="adm"
+          interviewee="Fiona Cohen, Production Manager"
+          image-path="photo-customer-story-adm.jpg"
+          story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
+        />
 
-      <CustomerStorySmallBlock
-        studio-name="Makuta VFX"
-        story-key="makuta"
-        interviewee="Pete Draper, Head of VFX"
-        image-path="photo-customer-story-makuta.png"
-        story-url="https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
-      />
-    </div>
+        <CustomerStorySmallBlock
+          studio-name="Makuta VFX"
+          story-key="makuta"
+          interviewee="Pete Draper, Head of VFX"
+          image-path="photo-customer-story-makuta.png"
+          story-url="https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
+        />
+      </div>
     </div>
   </section>
 </div>
@@ -178,6 +182,16 @@ useHead({
         margin-bottom 3em
         max-width 800px
         text-align center
+
+.kitsu-page
+  padding-top 0
+
+.kitsu-header-wrapper
+  border-radius 0px 0px 400px 400px / 25px 25px 25px 25px
+  box-shadow 2px 2px 8px rgba(0, 0, 0, 0.1)
+  background linear-gradient(0deg, rgba(249,246,253,1) 35%, rgba(244,248,255,1) 100%)
+  padding-bottom 3em
+  padding-top 3em
 
 .kitsu-header.flexrow
     max-width 800px
@@ -231,6 +245,15 @@ useHead({
         margin-bottom 10px
 
 @media(max-width: 800px)
+  section
+    padding 1em
+
+  .kitsu-header.flexrow
+    flex-direction column
+
+    .main-title
+      padding 2em
+
   .modules
     .small-block
       margin-bottom 1em
