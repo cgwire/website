@@ -6,11 +6,14 @@
   <a :href="storyUrl">
     <div class="flexcolumn">
       <div class="flexrow-item story-picture">
-        <img :src="useAsset(imagePath)" width="150"/>
+        <img :src="useAsset(imagePath)" :width="isBig ? 240 : 150"/>
       </div>
       <h2 class="story-title">
         {{ studioName }}
       </h2>
+      <p class="interviewee" v-if="isBig">
+        {{ interviewee }}
+      </p>
     </div>
   </a>
 </section>
@@ -18,10 +21,12 @@
 
 <script setup>
 const props = defineProps({
+  interviewee: String,
   imagePath: String,
   storyKey: String,
   studioName: String,
   storyUrl: String,
+  isBig: Boolean
 })
 
 function useAsset(path) {
@@ -46,8 +51,16 @@ div.body .customer-story.landing-block
       border-radius 1em
 
   .story-title
-    font-size .9em
+    font-size 1.1em
     margin-bottom 0
     margin-top .3em
 
+  p.interviewee
+    color #666
+    font-size 0.9em
+    font-style italic
+    margin-bottom 0
+    margin-top .3em
+    text-align center
+    font-size 0.8em
 </style>

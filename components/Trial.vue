@@ -6,7 +6,11 @@
     </h2>
     <p class="has-text-centered">
       <a
-        class="button is-large"
+        :class="{
+          button: true,
+          'is-large': true,
+          'is-big': isBig
+        }"
         :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
       >
         {{ $t('main plans cta') }}
@@ -19,8 +23,18 @@
 </div>
 </template>
 
-<script>
+<script setup>
+const props = defineProps({
+  isBig: Boolean
+})
 </script>
 
 <style lang="stylus" scoped>
+.button.is-large.is-big
+  font-size 1.7em
+  margin-bottom 4em
+
+@media(max-width: 600px)
+  .button.is-large.is-big
+    font-size 1.4em
 </style>

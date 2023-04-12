@@ -94,13 +94,19 @@ div.body
         width 90%
 
     .supporters
+        padding-top 6em
+        background lightgrey 
+        border-radius 5em
+
         h2.subtitle.tagline
             margin-bottom 0.5em
 
         .flexrow-item.mr0
             margin-right 0
 
-    .trusted
+    section.section.trusted
+        max-width 100%
+
         .flexrow-item.mr0
             margin-right 0
 
@@ -628,10 +634,6 @@ div.body
             padding-bottom 0
             margin-bottom 0
 
-            img
-                top 35px
-                position relative
-
             &.conclusion-text.content
                 margin-bottom 0
 
@@ -640,9 +642,50 @@ div.body
                 margin-top 0
                 padding-top 0
 
+                img 
+                    margin-bottom 2em
+                    margin-top 2em
+                    border-radius 1em
+                    box-shadow 0 0 15px 0 #CCD6CC
+
         &.use-case
             h2.subtitle
                 text-align left
+
+        .tabs
+            align-items flex-start
+            background linear-gradient(0deg, rgba(249,246,253,1) 35%, rgba(244,248,255,1) 100%)
+            border-radius 1em
+            border 1px solid purple + 50%
+            border-radius 1em
+            max-width 900px
+            margin auto
+            padding 2em
+
+            .tab
+                border-bottom 3px solid transparent
+                cursor pointer
+                color purple - 10%
+                font-size 1.4em
+                font-weight bold
+                transition all .6s ease
+
+                &.selected
+                    border-bottom 3px solid purple
+
+            .tab-list
+                padding-bottom 0.4em
+
+            .tab-info
+                padding-top 1em
+
+                p
+                    font-size 1.3em
+                    padding-bottom .3em
+
+                img
+                    border-radius 1em
+                    box-shadow 0 0 5px 0 #CCD6CC
 
     .landing-block
         &.content
@@ -660,12 +703,6 @@ div.body
                 line-height 1.4em
                 text-align left
                 margin 0em auto 1em auto
-
-    .trusted
-        div
-            text-align center
-        img
-            max-width 120px
 
     .kitsu
         .flexrow-item
@@ -1573,12 +1610,6 @@ div.body
         .kitsu-page
             .section-title
                 font-size 2rem
-
-        .trusted
-            .flexrow-item
-              margin-right 0.2em
-            img
-                max-width 60px
 
         .kitsu-page
             .highlights
