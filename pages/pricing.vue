@@ -45,7 +45,7 @@
         <p class="">
           <a
             class="button is-outlined"
-            href="#success-packs"
+            href="https://kitsu.cg-wire.com"
           >
             {{ $t('pricing firsteps cta2') }}
           </a>
@@ -76,7 +76,7 @@
         <span class="pricing-value yearly" v-else>279</span>
         {{ $t('pricing value month') }}
       </div>
-      <div class="pricing-price-info">
+      <div class="pricing-price-info" v-if="!monthly">
         {{ $t('pricing billed annualy') }}
       </div>
       <div class="pricing-features">
@@ -104,6 +104,14 @@
           </li>
         </ul>
       </div>
+      <div class="pricing-cta">
+        <a
+          href="https://account.cg-wire.com/${$i18n.locale}/signup"
+          class="button is-outlined"
+        >
+          {{ $t('pricing button cta') }}
+        </a>
+      </div>
     </div>
 
     <div class="pricing-block">
@@ -116,7 +124,7 @@
         <span class="pricing-value yearly" v-else>799</span>
         {{ $t('pricing value month') }}
       </div>
-      <div class="pricing-price-info">
+      <div class="pricing-price-info" v-if="!monthly">
         {{ $t('pricing billed annualy') }}
       </div>
       <div class="pricing-features">
@@ -164,7 +172,7 @@
         <span class="pricing-value yearly" v-else>1999</span>
         {{ $t('pricing value month') }}
       </div>
-      <div class="pricing-price-info">
+      <div class="pricing-price-info" v-if="!monthly">
         {{ $t('pricing billed annualy') }}
       </div>
       <div class="pricing-features">
@@ -212,7 +220,7 @@
         <span class="pricing-value yearly" v-else>3999</span>
           {{ $t('pricing value month') }}
       </div>
-      <div class="pricing-price-info">
+      <div class="pricing-price-info" v-if="!monthly">
         {{ $t('pricing billed annualy') }}
       </div>
       <div class="pricing-features">
