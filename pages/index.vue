@@ -599,7 +599,7 @@ div.body
   position relative
   height 100px
 
-  --animationspeed 45s
+  --animationspeed 95s
   --animationdelay calc(var(--animationspeed) / 2)
 
 
