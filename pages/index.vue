@@ -107,6 +107,37 @@
             <img src="~/assets/images/studios/logo-mindseye.png">
           </div>
 
+          <div class="logo-div">
+            <img src="~/assets/images/logo-cube.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/logo-miyu.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/logo-fost.png" />
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-bobbypills.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/logo-tnzpv.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-gizmo.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-mikrofilm.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-blender.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-gobelins-black.png" />
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-mindseye.png">
+          </div>
+
         </div>
       </div>
     </div>
