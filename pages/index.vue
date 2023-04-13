@@ -153,7 +153,7 @@
         </p>
       </div>
       <div class="flexrow-item landing-picture">
-        <img src="~/assets/images/landing-overview.png" />
+        <img src="~/assets/images/illustrations/kitsu-decisions.png" />
       </div>
     </div>
   </section>
@@ -161,7 +161,7 @@
   <section class="section content landing-block" data-aos="fade-up">
     <div class="flexrow reverse">
       <div class="flexrow-item landing-picture">
-        <img src="~/assets/images/landing-data.png" />
+        <img src="~/assets/images/illustrations/kitsu-everywhere.png" />
       </div>
       <div class="flexrow-item landing-text">
         <h2 class="subtitle">
@@ -185,7 +185,7 @@
         </p>
       </div>
       <div class="flexrow-item landing-picture">
-        <img src="~/assets/images/landing-faster.png" />
+        <img src="~/assets/images/illustrations/kitsu-start.png" />
       </div>
     </div>
   </section>
