@@ -1,21 +1,16 @@
-export default defineNuxtPlugin(NuxtApp => {
-  var isOk = localStorage.getItem('cookie-consent');
-  if (isOk !== 'false') {
-    var _paq = []
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u = "//cgwire.innocraft.cloud/";
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', '1']);
-      var d = document,
-          g = d.createElement('script'),
-          s = d.getElementsByTagName('script')[0];
-      g.type='text/javascript';
-      g.async=true;
-      g.defer=true;
-      g.src=u+'piwik.js';
-      s.parentNode.insertBefore(g,s)
-    })()
-  }
+import { defineNuxtPlugin } from '#app'
+import VueMatomo from 'vue-matomo'
+
+export default defineNuxtPlugin(nuxtApp => {
+  nuxtApp.vueApp.use(VueMatomo, {
+    host: 'https://cgwire.innocraft.cloud',
+    siteId: 1,
+    // Enables automatically registering pageviews on the router
+    router: nuxtApp.$router,
+    enableLinkTracking: true,
+    requireConsent: false,
+    trackInitialView: true,
+    disableCookies: true,
+    requireCookieConsent: false,
+  })
 })

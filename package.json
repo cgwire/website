@@ -18,6 +18,7 @@
     "lite-youtube-embed": "^0.2.0",
     "sass": "1.59.3",
     "stylus-loader": "7.1.0",
-    "vue-i18n": "^9.3.0-beta.14-77e850b"
+    "vue-i18n": "^9.3.0-beta.14-77e850b",
+    "vue-matomo": "^4.2.0"
   }
 }
