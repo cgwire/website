@@ -45,7 +45,7 @@ div.body .customer-story.landing-block
   margin 0
   margin-right 1em
 
-  .story-picture
+  .story-picture.flexrow-item
     margin-right 0
     img
       border-radius 1em
