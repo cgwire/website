@@ -168,6 +168,9 @@
       <p>
         {{ $t('about design information') }}
       </p>
+      <p>
+        {{ $t('about blender information') }}
+      </p>
     </div>
   </div>
 </section>

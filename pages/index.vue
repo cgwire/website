@@ -243,7 +243,7 @@
     </p>
   </section>
 
-  <section class="mt4">
+  <section class="mt4 features">
     <div class="tabs flexcolumn">
       <div class="flexrow tab-list">
         <div
@@ -295,9 +295,11 @@
           <p>
             {{ $t('kitsu scale todos-text') }}
           </p>
-          <img
-            src="~/assets/images/screenshots/kitsu-todos-light.png"
-          />
+          <div class="feature-img-wrapper">
+            <img
+              src="~/assets/images/screenshots/kitsu-todos-light.png"
+            />
+          </div>
         </div>
         <div
           v-else-if="featureTab === 'reports'"
@@ -305,9 +307,11 @@
           <p>
             {{ $t('kitsu scale reports-text') }}
           </p>
-          <img
-            src="~/assets/images/screenshots/kitsu-reports-light.png"
-          />
+          <div class="feature-img-wrapper">
+            <img
+              src="~/assets/images/screenshots/kitsu-reports-light.png"
+            />
+          </div>
         </div>
 
         <div
@@ -316,10 +320,12 @@
           <p>
             {{ $t('kitsu scale reviews-text') }}
           </p>
-          <img
-            src="~/assets/images/screenshots/kitsu-compare-light.png"
-            v-if="featureTab === 'reviews'"
-          />
+          <div class="feature-img-wrapper">
+            <img
+              src="~/assets/images/screenshots/kitsu-compare-light.png"
+              v-if="featureTab === 'reviews'"
+            />
+          </div>
         </div>
         <div
           v-else-if="featureTab === 'api'"
@@ -327,10 +333,12 @@
           <p>
             {{ $t('kitsu scale api-text') }}
           </p>
-          <img
-            src="~/assets/images/screenshots/kitsu-python-light.png"
-            v-if="featureTab === 'api'"
-          />
+          <div class="feature-img-wrapper">
+            <img
+              src="~/assets/images/screenshots/kitsu-python-light.png"
+              v-if="featureTab === 'api'"
+            />
+          </div>
         </div>
       </Transition>
       </div>
@@ -619,7 +627,7 @@ div.body
     top -80px
 
 
-// Whee widget
+// Wheel widget
 
 .brand-wheel-container
   max-width 960px
@@ -695,6 +703,10 @@ div.body
     width 150px
     max-width 150px
     min-width 150px
+
+
+.features
+    min-height 300px
 
 
 @keyframes translation
