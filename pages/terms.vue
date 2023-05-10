@@ -101,7 +101,7 @@ Payment, Refunds, Upgrading and Downgrading Terms
     The number of Seats purchased by Customer in the Service plan must be used during the applicable term and any unused Seats at the end of such term are forfeited. For a Service plan purchased for a yearly term, the Seats can be used anytime during the year.
   </li>
   <li>
-    In the event the usage of Seats exceeds the Service plan you selected during a term, the Company will charge additional overage fees and the Customer shall be obligated to pay any overage fees in the next term. The overage fees are displayed in your Account page in CGWire Account website and on the pricing page at www.cg-wire.com/en/pricing.html.
+    In the event the usage of Seats exceeds the Service plan you selected during a term, the Company will charge additional overage fees and the Customer shall be obligated to pay any overage fees in the next term. The overage fees are displayed in your Account page in CGWire Account website and on the pricing page at www.cg-wire.com/pricing.
   </li>
   <li>
     Upgrade or downgrade in the Service plan level will result in the new rate being charged at the next billing cycle.
@@ -269,7 +269,11 @@ General Conditions
 Your use of the Service is at your sole risk. The service is provided on an “as is” and “as available” basis.
 </li>
 <li>
-Technical support is provided by email or Chat or Skype to paying Customers. Email responses are provided on the reasonable effort basis with a 48h response time. Chat is done through the Slack service (https://cgwire.cslack.com). Skype call requires to set up an appointment via email firs.
+Technical support is provided by email or Chat or Skype to paying Customers.
+  Email responses are provided on the reasonable effort basis with a 48h
+response time. Chat is done through the Crisp application available in the
+Kitsu application or via the Discord service. Zoom call requires to set up an
+appointment via the Calendly service first.
 </li>
 <li>
 You understand that the Company may access your account, or information associated with your account, to provide support or maintenance, for security-related reasons, or any other business purpose.
