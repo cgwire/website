@@ -227,18 +227,53 @@ by CGWire Hosting customers:</p>
             <p><a href="https://www.stripe.com">Stripe</a></p>
         </td>
         <td>
-            <p>To receive payments</p>
+            <p>To receive credit card payments</p>
         </td>
         <td>
             <p>USA</p>
         </td>
         <td>
-            <p>Payment transactions details</p>
-        </td>
-        <td>
             <p><a href="https://www.stripe.com">https://www.stripe.com</a></p>
         </td>
+        <td>
+            <p>Payment transactions details</p>
+        </td>
     </tr>
+    <tr>
+        <td>
+            <p><a href="https://www.chargebee.com">Chargebee</a></p>
+        </td>
+        <td>
+            <p>To manage billing and subscriptions</p>
+        </td>
+        <td>
+            <p>India</p>
+        </td>
+        <td>
+            <p>Payment transactions details, billing information</p>
+        </td>
+        <td>
+            <p><a href="https://www.chargebee.com">https://www.chargebee.com</a></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p><a href="https://www.canny.io">Canny</a></p>
+        </td>
+        <td>
+            <p>Collect feedback and publish the changelog</p>
+        </td>
+        <td>
+            <p>USA</p>
+        </td>
+        <td>
+            <p>Email, last news read</p>
+        </td>
+        <td>
+            <p><a href="https://www.canny.io">https://www.canny.io</a></p>
+        </td>
+    </tr>
+
   </tbody>
 </table>
 <h2 class="subtitle" id="retention">Retention of data</h2>
