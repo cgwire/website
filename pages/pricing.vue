@@ -284,6 +284,12 @@
           <li>
             {{ $t('pricing features partner three') }}
           </li>
+          <li>
+            {{ $t('pricing features partner encryption') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner gpu') }}
+          </li>
         </ul>
       </div>
       <div class="pricing-cta">
