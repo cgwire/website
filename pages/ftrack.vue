@@ -14,8 +14,8 @@
     The target audiences of Ftrack are big VFX facilities.
     </p>
     <p>
-    The Kitsu audience is animation and VFX studios with a team of up to 500
-    users.
+    The Kitsu audience are animation and VFX studios with distributed teams
+    and productions involving several studios (with a focus on TV series).
     </p>
     <p>
     Features and roadmaps are designed accordingly to these two different goals.
