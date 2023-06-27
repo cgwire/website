@@ -27,10 +27,12 @@
     <h3>Resource needed</h3>
 
     <p>
-    Shotgrid is a toolbox. It only works right out of the box. So, to start
+    Shotgrid is a toolbox. It doesn't work right out of the box. So, to start
     with Shotgrid, consider hiring several people dedicated to
-    designing and configuring UIs in Shotgrid. Then you have to plug the whole into your pipeline.
-    You will end up with something tailor-made but at the price of a lot of
+    designing and configuring UIs in Shotgrid. Then you have to plug the whole
+    into your pipeline.
+    You will end up with something tailor-made but at the
+    price of a lot of
     effort. These developments will require a lot of maintenance in the
     future. Last, you will need training sessions that present
     your version of Shotgrid.
@@ -96,6 +98,11 @@
     we maintain the quality and the service. Our support is
     recognized to be much more reactive than the one from Autodesk, and Kitsu
     performs better when used in animation or VFX production.
+    </p>
+
+    <p>
+    Note that Shotgrid will require to hire several consultants to make it work
+    properly.
     </p>
 
     <h3>Documentation</h3>
