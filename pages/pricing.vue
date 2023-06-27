@@ -335,11 +335,16 @@
 
     <div class="extra-block alinea infos">
       <div class="section-subtitle has-text-centered">
-        Ranch Computing Render Farm offer
+        <a
+          class="ranch-link"
+          href="https://www.ranchcomputing.com"
+        >
+          Ranch Computing
+        </a>
+        {{ $t('pricing ranch title') }}
       </div>
       <p class="has-text-centered">
-        Get free rendering credits by getting a Kitsu subscription.
-        Contact us for more details!
+        {{ $t('pricing ranch explanation') }}
       </p>
     </div>
 
@@ -610,3 +615,10 @@ function setExpanded (index) {
   isExpanded['faq' + index] = true
 }
 </script>
+
+<style scoped>
+.ranch-link {
+  color: inherit;
+  font-weight: bold;
+}
+</style>
