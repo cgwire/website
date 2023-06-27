@@ -252,7 +252,7 @@
       <a href="https://www.miyu.fr/production/linda-veut-du-poulet/"
          class="production">
         <img src="~/assets/images/productions/linda-poulet.png" />
-        <span>Linda Poulet</span>
+        <span>Linda veut du poulet</span>
       </a>
     </li>
     <li>
@@ -335,7 +335,7 @@
       <a href="https://www.technicoloranimationproductions.com/fr/production.php"
          class="production">
         <img src="~/assets/images/productions/cooptroop.png" />
-        <span>The Coop Troop (running)</span>
+        <span>The Coop Troop</span>
       </a>
     </li>
     <li>
@@ -356,7 +356,7 @@
       <a href="https://www.bobbypills.com/work/captainlaserhawk"
          class="production">
         <img src="~/assets/images/productions/laserhawk.png" />
-        <span>Captain Laserhawk: A Blood Dragon Remix (running)</span>
+        <span>Captain Laserhawk: A Blood Dragon Remix</span>
       </a>
     </li>
     <li>
@@ -370,14 +370,14 @@
       <a href="http://www.filmfund.lu/fr/film-catalogue/films/le-petit-nicolas"
          class="production">
         <img src="~/assets/images/productions/le-petit-nicolas.png" />
-        <span>Le Petit Nicolas (running)</span>
+        <span>Le Petit Nicolas</span>
       </a>
     </li>
     <li>
       <a href="https://www.kickstarter.com/projects/ankamaanimations/wakfu-the-animated-series-season-4"
          class="production">
         <img src="~/assets/images/productions/wakfu.png" />
-        <span>Wakfu Season 4 (running)</span>
+        <span>Wakfu Season 4</span>
       </a>
     </li>
     <li>
@@ -412,7 +412,7 @@
       <a href="https://www.unifrance.org/film/49486/princesse-dragon"
          class="production">
         <img src="~/assets/images/productions/princesse_dragon.png" />
-        <span>Princesse Dragon (running)</span>
+        <span>Princesse Dragon</span>
       </a>
     </li>
     <li>
@@ -461,7 +461,7 @@
       <a href="https://blog.autourdeminuit.com/coming-soon/unicorn-wars/"
          class="production">
         <img src="~/assets/images/productions/unicornwars.png" />
-        <span>Unicorn Wars (running)</span>
+        <span>Unicorn Wars</span>
       </a>
     </li>
     <li>
@@ -475,7 +475,7 @@
       <a href="https://www.miyu.fr/production/en/blind-willow-sleeping-woman/"
          class="production">
         <img src="~/assets/images/productions/blindwillow.png" />
-        <span>Blind Willow, sleeping Woman (running)</span>
+        <span>Blind Willow, sleeping Woman</span>
       </a>
     </li>
     <li>
@@ -496,14 +496,14 @@
       <a href="https://fr.wikipedia.org/wiki/Foot_2_rue"
          class="production">
         <img src="~/assets/images/productions/f2r.png" />
-        <span>Foot 2 Rue (running)</span>
+        <span>Foot 2 Rue</span>
       </a>
     </li>
     <li>
       <a href="https://www.lezappingdupaf.com/2019/06/moi-a-ton-age-nouvelle-serie-d-animation-en-developpement-pour-france-televisions.html"
          class="production">
         <img src="~/assets/images/productions/mat.png" />
-        <span>Moi à Ton Âge (running)</span>
+        <span>Moi à Ton Âge</span>
       </a>
     </li>
     <li>
