@@ -357,6 +357,78 @@
       </p>
     </div>
 
+  <div class="estimator">
+    <div class="section-subtitle has-text-centered">
+      Estimate your subscription
+    </div>
+    <h2 class="section-title has-text-centered">
+      Price calculator
+    </h2>
+    <p>
+      <label class="label">Select how many users you will need</label>
+    </p>
+    <p class="flexrow">
+      <span class="flexrow-item users">{{ nbUsers }}</span>
+      <input
+        class="slider is-fullwidth flexrow-item"
+        step="10"
+        min="0"
+        max="200"
+        type="range"
+        v-model="nbUsers"
+        @change="changeNbUsers"
+      />
+    </p>
+    <p class="label">
+      Choose your options
+    </p>
+    <div class="columns">
+      <div class="column">
+        <PricingOption
+          label="Media encryption (1999€ / month)"
+          v-model="isMediaEncryption"
+        />
+        <PricingOption
+          label="GPU video processing (1999€ / month)"
+          v-model="isGPU"
+        />
+        <PricingOption
+          label="Staging environment (999€ / month)"
+          v-model="isStaging"
+        />
+        <PricingOption
+          label="On Premise installation (999€ / month)"
+          v-model="isOnPremise"
+        />
+      </div>
+      <div class="column">
+        <PricingOption
+          label="Monthly Payment (22% increase)"
+          v-model="isMonthly"
+        />
+        <PricingOption
+          label="3 years commitment (5% discount)"
+          v-model="is3YearsCommitment"
+        />
+        <PricingOption
+          label="2 years upfront payment (10% discount)"
+          v-model="is2YearsUpfront"
+        />
+        <PricingOption
+          label="3 years upfront payment (15% discount)"
+          v-model="is3YearsUpfront"
+        />
+      </div>
+    </div>
+    <p class="mt2 has-text-centered">
+      <label class="label">Price per month (yearly billing)</label>
+    </p>
+    <p class="price has-text-centered">
+     {{ price }} € / month
+    </p>
+  </div>
+
+
     <div class="section-subtitle has-text-centered">
       {{ $t('pricing support license subtitle') }}
     </div>
@@ -490,7 +562,10 @@
         </ul>
       </div>
       <div class="pricing-cta">
-        <a href="mailto:sales@cg-wire.com" class="button is-outlined">
+        <a
+          href="mailto:sales@cg-wire.com"
+          class="button is-outlined"
+        >
           {{ $t('pricing button contactcta') }}
         </a>
       </div>
@@ -604,6 +679,17 @@ let monthly = ref(false)
 const name = 'Pricing'
 const { t } = useI18n()
 const isExpanded = reactive({})
+let nbUsers = ref(80)
+let price = ref(1999)
+let isMediaEncryption = ref(false)
+let isGPU = ref(false)
+let isStaging = ref(false)
+let isOnPremise = ref(false)
+let is3YearsCommitment = ref(false)
+let is2YearsUpfront = ref(false)
+let is3YearsUpfront = ref(false)
+let isMonthly = ref(false)
+
 useHead({
   title: 'CGWire | ' + t('pricing title'),
   meta: [
@@ -614,11 +700,109 @@ useHead({
 function setExpanded (index) {
   isExpanded['faq' + index] = true
 }
+
+watch(nbUsers, updatePrice)
+watch(isMediaEncryption, updatePrice)
+watch(isGPU, updatePrice)
+watch(isStaging, updatePrice)
+watch(isOnPremise, updatePrice)
+watch(is3YearsCommitment, updatePrice)
+watch(is2YearsUpfront, updatePrice)
+watch(is3YearsUpfront, updatePrice)
+watch(isMonthly, updatePrice)
+
+function updatePrice () {
+  console.log('ok')
+  const users = parseInt(nbUsers.value)
+  if (users === 10) {
+    price.value = 279
+  } else if (users === 20) {
+    price.value = 539
+  } else if (users === 30) {
+    price.value = 799
+  } else if (users === 40) {
+    price.value = 1059
+  } else if (users === 50) {
+    price.value = 1329
+  } else if (users === 60) {
+    price.value = 1559
+  } else if (users === 70) {
+    price.value = 1820
+  } else if (users === 80) {
+    price.value = 1999
+  } else if (users === 90) {
+    price.value = 2249
+  } else if (users === 100) {
+    price.value = 2399
+  } else if (users === 110) {
+    price.value = 2649
+  } else if (users === 120) {
+    price.value = 2759
+  } else if (users === 130) {
+    price.value = 2999
+  } else if (users === 140) {
+    price.value = 3079
+  } else if (users === 150) {
+    price.value = 3299
+  } else if (users === 160) {
+    price.value = 3519
+  } else if (users === 170) {
+    price.value = 3589
+  } else if (users === 180) {
+    price.value = 3779
+  } else if (users === 190) {
+    price.value = 3799
+  } else if (users === 200) {
+    price.value = 3999
+  }
+
+  if (isMediaEncryption.value) {
+    price.value += 1999
+  }
+  if (isGPU.value) {
+    price.value += 1999
+  }
+  if (isStaging.value) {
+    price.value += 999
+  }
+  if (isOnPremise.value) {
+    price.value += 999
+  }
+  if (is3YearsCommitment.value) {
+    price.value = Math.round(price.value * 0.95)
+    is2YearsUpfront.value = false
+    is3YearsUpfront.value = false
+  }
+  if (is2YearsUpfront.value) {
+    price.value = Math.round(price.value * 0.9)
+    is3YearsCommitment.value = false
+    is3YearsUpfront.value = false
+  }
+  if (is3YearsUpfront.value) {
+    price.value = Math.round(price.value * 0.85)
+    is3YearsCommitment.value = false
+    is2YearsUpfront.value = false
+  }
+  if (isMonthly.value) {
+    price.value = Math.round(price.value * 1.25)
+  }
+}
 </script>
 
 <style scoped>
 .ranch-link {
-  color: inherit;
-  font-weight: bold;
+    color: inherit;
+    font-weight: bold;
+}
+
+.users {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.price {
+    font-size: 1.6em;
+    font-weight: bold;
 }
 </style>

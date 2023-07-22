@@ -39,7 +39,7 @@
     </p>
 
     <p>
-    Kitsu will require that you have at least one TD in your team. Kitsu works
+    Kitsu works
     great right out of the box. All UIs are designed with ease of use in mind.
     It's easy to start with it, and your users are autonomous. Nevertheless, you
     will still need a TD to plug your pipeline into Kitsu and exploit
@@ -53,8 +53,7 @@
     <p>
     Shotgrid is thought to be able to work on any kind of project at fine-grain
     level. It's great to deal with any situation but it comes with a lot
-    of complexity. It may be too hard for your teams to get the full benefits
-    .
+    of complexity. It may be too hard for your teams to get the full benefits.
     </p>
 
     <p>
@@ -74,9 +73,9 @@
     </p>
 
     <p>
-    Kitsu doesn't have any security certifications. But it is open-source, can
-    be fully audited, and can be installed on-premise with very little extra-cost.
-    Its open-source aspect ensures that your data stay private and secure.
+    Kitsu is open-source and can be fully audited. It can be installed
+    on-premise with very little extra-cost. Its open-source aspect ensures
+    that your data stay private and secure.
     </p>
 
     <p>
@@ -90,14 +89,14 @@
     <h3>Pricing</h3>
 
     <p>
-    Kitsu has lower pricing (~25$/user/month) than Shotgrid (~30$/user/month).
+    Kitsu and Shotgrid have similar pricing.
     </p>
 
     <p>
-    The only reason behind this choice is the challenger position of Kitsu. But
-    we maintain the quality and the service. Our support is
+    But we provide more services. Our support is
     recognized to be much more reactive than the one from Autodesk, and Kitsu
-    performs better when used in animation or VFX production.
+    performs better when used with animation or VFX productions. Installations
+    can be more customised too.
     </p>
 
     <p>
@@ -112,9 +111,8 @@
     <p>
     Kitsu provides an easy to follow the documentation, a search engine, tutorial
     videos.
-    Its Python client is fully documented.
-    Its data model and its REST API are fully documented. It's much easier for
-    a Pipeline TD to work with Kitsu.
+    Its Python and its REST API are fully documented. It's much easier for
+    everyone to work with Kitsu.
     </p>
   </section>
 
