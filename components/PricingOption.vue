@@ -1,7 +1,7 @@
 <template>
   <p class="flexrow">
     <input
-      class="is-checkradio flexrow-item"
+      class="is-checkradio flexrow-item is-success"
       type="checkbox"
       @change="updateValue"
       :checked="modelValue"
@@ -28,4 +28,7 @@ function updateValue(event) {
 .label
     flex 1
     font-weight normal
+
+input
+    cursor pointer
 </style>

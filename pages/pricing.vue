@@ -357,7 +357,7 @@
       </p>
     </div>
 
-  <div class="estimator">
+  <div class="estimator" v-if="$i18n.locale === 'en'">
     <div class="section-subtitle has-text-centered">
       Estimate your subscription
     </div>
@@ -385,6 +385,10 @@
     <div class="columns">
       <div class="column">
         <PricingOption
+          label="On Premise installation (999€ / month)"
+          v-model="isOnPremise"
+        />
+        <PricingOption
           label="Media encryption (1999€ / month)"
           v-model="isMediaEncryption"
         />
@@ -395,10 +399,6 @@
         <PricingOption
           label="Staging environment (999€ / month)"
           v-model="isStaging"
-        />
-        <PricingOption
-          label="On Premise installation (999€ / month)"
-          v-model="isOnPremise"
         />
       </div>
       <div class="column">
@@ -712,7 +712,6 @@ watch(is3YearsUpfront, updatePrice)
 watch(isMonthly, updatePrice)
 
 function updatePrice () {
-  console.log('ok')
   const users = parseInt(nbUsers.value)
   if (users === 10) {
     price.value = 279
