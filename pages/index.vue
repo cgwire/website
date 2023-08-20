@@ -419,16 +419,18 @@
     <h2 class="subtitle tagline mb1">
       {{ $t('about supporters title') }}
     </h2>
-    <ul class="flexrow supporter-list has-text-centered">
-      <li class="flexrow-item mr0"><a href="https://www.cnc.fr"><img src="~/assets/images/logo-cnc.png" alt="CNC"></a></li>
-      <li class="flexrow-item mr0"><a
-      href="https://www.unrealengine.com/en-US/megagrants"><img src="~/assets/images/logo-epic-games.png" alt="Epic Games"></a></li>
-      <li class="flexrow-item mr0">
-        <a href="https://studio.blender.org/">
-          <img src="~/assets/images/studios/logo-blender-black.png" alt="Blender Studio">
-        </a>
-      </li>
-    </ul>
+    <div>
+      <ul class="flexrow supporter-list has-text-centered">
+        <li class="flexrow-item mr0"><a href="https://www.cnc.fr"><img src="~/assets/images/logo-cnc.png" alt="CNC"></a></li>
+        <li class="flexrow-item mr0"><a
+        href="https://www.unrealengine.com/en-US/megagrants"><img src="~/assets/images/logo-epic-games.png" alt="Epic Games"></a></li>
+        <li class="flexrow-item mr0">
+          <a href="https://studio.blender.org/">
+            <img src="~/assets/images/studios/logo-blender-black.png" alt="Blender Studio">
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <section class="section content conclusion conclusion-text mt8">
@@ -746,5 +748,19 @@ div.body
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+.landing-text {
+  flex: 1;
+}
+
+.landing-picture {
+  max-width: 600px
+}
+
+.supporter-list {
+  .flexrow-item {
+    flex: 1;
+  }
 }
 </style>
