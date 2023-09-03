@@ -46,7 +46,34 @@
       <div class="brand-wheel">
         <div class="brand-slide">
           <div class="logo-div">
-            <img src="~/assets/images/logo-cube.png">
+            <img src="~/assets/images/logo-miyu.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/logo-fost.png" />
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-bobbypills.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/logo-tnzpv.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-gizmo.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-mikrofilm.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-blender.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-gobelins-black.png" />
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-mindseye.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-yuga-labs.png">
           </div>
           <div class="logo-div">
             <img src="~/assets/images/logo-miyu.png">
@@ -75,69 +102,9 @@
           <div class="logo-div">
             <img src="~/assets/images/studios/logo-mindseye.png">
           </div>
-
           <div class="logo-div">
-            <img src="~/assets/images/logo-cube.png">
+            <img src="~/assets/images/studios/logo-yuga-labs.png">
           </div>
-          <div class="logo-div">
-            <img src="~/assets/images/logo-miyu.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/logo-fost.png" />
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-bobbypills.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/logo-tnzpv.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-gizmo.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-mikrofilm.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-blender.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-gobelins-black.png" />
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-mindseye.png">
-          </div>
-
-          <div class="logo-div">
-            <img src="~/assets/images/logo-cube.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/logo-miyu.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/logo-fost.png" />
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-bobbypills.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/logo-tnzpv.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-gizmo.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-mikrofilm.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-blender.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-gobelins-black.png" />
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-mindseye.png">
-          </div>
-
         </div>
       </div>
     </div>
@@ -677,10 +644,7 @@ div.body
 .brand-slide
   flex-shrink 0
   position absolute
-  animation-name slidelogo
-  animation-duration var(--animationspeed)
-  animation-timing-function linear
-  animation-iteration-count infinite
+  animation: scrolling 30s linear infinite
   min-width 100%
   display flex
   justify-content space-around
@@ -711,9 +675,14 @@ div.body
     min-height 300px
 
 
-@keyframes translation
-    from {margin-left: 0%}
-    to {margin-left: -100%}
+@keyframes scrolling {
+  from {
+    transform translateX(0%)
+  }
+  to {
+    transform translateX(-50%)
+  }
+}
 
 @keyframes fade-in {
   0% {
@@ -723,22 +692,6 @@ div.body
     opacity: 1;
   }
 }
-
-@keyframes slidelogo
-  from {
-    transform translateX(0%)
-  }
-  to {
-    transform translateX(-100%)
-  }
-
-@keyframes slidelogo2
-  from {
-    transform: translateX(100%)
-  }
-  to {
-    transform: translateX(0%)
-  }
 
 .fade-enter-active,
 .fade-leave-active {
