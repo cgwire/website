@@ -443,7 +443,7 @@ onMounted(() => {
     player = new YT.Player('youtube-player', {
       height: '100%',
       width: '100%',
-      videoId: '2HNnFffAADU',
+      videoId: 'YJQJ3OciGR0',
       events: {}
     })
   }, 1000)
