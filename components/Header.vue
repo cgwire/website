@@ -5,8 +5,9 @@
       <nuxt-link class="navbar-item" :to="localePath('index')">
       <img
         class="main-logo"
-        src="~/assets/images/logo.svg"
+        src="~/assets/images/logo.png"
         alt="CGWire logo"
+        width="100"
       />
       </nuxt-link>
       <div
@@ -45,6 +46,7 @@
         :class="{
           'navbar-item': true,
           kitsu: true,
+          top: true,
           active: isActivePage([
             'kitsu',
           ])
@@ -330,6 +332,7 @@
       <nuxt-link
         :class="{
           'navbar-item': true,
+          top: true,
           active: isActivePage([
             'pricing',
           ])
@@ -343,7 +346,7 @@
 
       <div class="navbar-end">
         <a
-          class="navbar-item signin"
+          class="navbar-item top signin"
           :href="`https://account.cg-wire.com/${$i18n.locale}/login`"
         >
           {{ $t('header sign in') }}

@@ -468,20 +468,20 @@ div.body
             .kitsu
                 padding-top 10px
 
+            .navbar-item
+                margin-right 6px
+
             .navbar-item.subnav-element.flexcolumn
                 align-items flex-start
                 border-radius 5px
                 font-size 0.95em
-                flex-wrap: wrap;
+                flex-wrap wrap
                 margin 5px
                 width 300px
                 padding .5em .8em
                 text-align left
                 white-space initial
                 font-size 1em
-
-                &:hover
-                    background #F4F4F4
 
                 .subnav-title
                     padding 0
@@ -495,14 +495,55 @@ div.body
 
 
             .navbar-start
+                margin-left 1rem
                 margin-right 1em
 
             .navbar-link
             .navbar-item-title
-                text-transform uppercase
-                font-size 14px
+                font-size 16px
                 margin-top 2px
                 font-weight bold
+
+            .navbar-item.top
+                margin-left 4px
+
+                .navbar-item-title
+                    padding .5em
+
+                &:active,
+                &:focus
+                    background transparent
+
+                &:hover
+                    background transparent
+
+                    .navbar-item-title
+                        padding .5rem
+                        background #F4F4F4
+                        border-radius 5px
+
+                &.active:hover
+                    .navbar-item-title
+                        border-bottom-left-radius 0
+                        border-bottom-right-radius 0
+
+
+            .navbar-item.is-hoverable.has-dropdown
+                .navbar-item-title
+                    padding .5rem
+
+                &:hover
+                    .navbar-link:first-child
+                        background transparent
+                        .navbar-item-title
+                            background #F4F4F4
+                            border-radius 5px
+
+                &.active:hover
+                    .navbar-link:first-child
+                        .navbar-item-title
+                            border-bottom-left-radius 0
+                            border-bottom-right-radius 0
 
             .navbar-item.sign-in
                 font-weight bold
@@ -536,7 +577,6 @@ div.body
 
         .navbar-link:hover
         .navbar-item:hover
-            background transparent
             color darkgrey
 
         .navbar-item.active
@@ -558,8 +598,8 @@ div.body
         .navbar-dropdown
             border 1px solid lightgrey - 5%
             border-radius 1em
-            border-top-left-radius 0
             box-shadow 0 2px 4px rgba(10, 10, 10, 0.1)
+            margin-top 2px
             padding 0
 
             .columns
@@ -1470,6 +1510,23 @@ div.body
     @media(max-width: 800px)
         .main-logo
             margin-left .5em
+            width 110px
+
+        header .navbar .navbar-item.subnav-element.flexcolumn
+            margin-left 1.5rem
+
+        .introduction-text
+            text-align center
+
+        .landing-block
+            margin-left .5em
+            margin-right .5em
+
+            .landing-text
+                h2.subtitle
+                p
+                    max-width 100%
+
 
         .cookie-consent
             max-height 100%
@@ -1488,13 +1545,18 @@ div.body
             margin-bottom 0
 
         h2.subtitle.tagline
-            font-size 1.6em
+            font-size 1.4em
 
         .section.content
             padding 1em
 
             h3
                 margin-top 0.2em
+
+            h2.section-title
+                font-weight bold
+                font-size 2.6em
+
 
         pre
             padding 1em 0
@@ -1609,7 +1671,11 @@ div.body
             .section-title
                 font-size 2rem
 
+
         .kitsu-page
+            .solution-title .section-title
+                font-size 2.6rem
+
             .highlights
                 flex-direction column
 
@@ -1658,7 +1724,7 @@ div.body
         width 90%
 
     .content
-        .faq
+        div.faq
             max-width 650px
             margin auto
             margin-top 3em
@@ -1668,9 +1734,11 @@ div.body
                 border 1px solid lightblue - 5%
                 border-radius 8px
                 color grey - 20%
-                font-size 1.2em
+                font-size 1em
                 margin-bottom .5em
                 padding .8em
+                padding-right 1.6em
+                position relative
 
             p.answer
                 margin-top 0
@@ -1678,9 +1746,11 @@ div.body
 
             .contract
             .expand
-                cursor: pointer;
-                float: right
-                width: 25px;
+                cursor pointer
+                position absolute
+                right 0px
+                top 16px
+                width 25px
 
     .compare-page
         .section-subtitle
@@ -1782,9 +1852,6 @@ div.body
             .first-steps
                 padding 1em
                 flex-direction column
-
-            .content .faq .question
-                font-size 1em
 
         header .navbar-dropdown .columns
             flex-direction column

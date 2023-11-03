@@ -313,8 +313,8 @@
   </section>
 
 
-  <section class="mt8 flexcolumn">
-    <h2 class="subtitle tagline">
+  <section class="flexcolumn landing-block mt8">
+    <h2 class="subtitle main-tagline">
       {{ $t('kitsu scale stories') }}
     </h2>
     <p class="has-text-centered tagline-explanation" data-aos="fade-up">
@@ -476,15 +476,28 @@ div.body
     .tagline-explanation
         font-size 1.3em
 
-    @media(max-width 600px)
+    @media(max-width 800px)
+
+        .features
+            .tabs
+              padding-left 1rem
+              padding-top 1rem
+
+        .introduction h1.title
+            font-size 2.8em
+
         h2.subtitle.main-tagline
-            font-size 3em
+            font-weight bold
+            font-size 2.6em
+
+        .main-tagline-explanation
+            margin-bottom 2em
 
         h2.subtitle.tagline
             font-size 2em
 
         .main-tagline-explanation
-            font-size 1.2em
+            font-size 1.1em
 
         .tagline-explanation
             font-size 1.2em
