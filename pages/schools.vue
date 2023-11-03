@@ -20,16 +20,6 @@
           {{ $t('schools people title 1') }}
         </a>
       </li>
-      <li class="js-tablist__item">
-        <a
-          class="js-tablist__link"
-          :aria-selected="panel === 'teachers'"
-          @click="() => selectPanel('teachers')"
-        >
-          <img src="~/assets/images/avatars/avatar-9.svg" alt="">
-          {{ $t('schools people title 3') }}
-        </a>
-      </li>
       <li class="js-tablist__item"
       >
         <a
@@ -38,6 +28,16 @@
           :aria-selected="panel === 'directors'"
         >
           <img src="~/assets/images/avatars/avatar-7.svg" alt="">
+          {{ $t('schools people title 3') }}
+        </a>
+      </li>
+      <li class="js-tablist__item">
+        <a
+          class="js-tablist__link"
+          :aria-selected="panel === 'teachers'"
+          @click="() => selectPanel('teachers')"
+        >
+          <img src="~/assets/images/avatars/avatar-9.svg" alt="">
           {{ $t('schools people title 2') }}
         </a>
       </li>
@@ -128,11 +128,40 @@
 
 <section class="section">
   <ul class="customers">
-    <li class="customers-item"><a href="https://www.esra.edu"><img src="~/assets/images/logo-esra-invert.png" alt="ESRA"></a></li>
-    <li class="customers-item"><a href="https://www.gobelins.fr"><img src="~/assets/images/logo-gobelins.png" alt="Les gobelins"></a></li>
-    <li class="customers-item"><a href="https://www.institutartline.com/"><img src="~/assets/images/logo-artline.svg" alt="Institut ArtLine"></a></li>
-    <li class="customers-item"><a href="https://lanimea.com/"><img src="~/assets/images/logo-lanimea.png" alt="Lanimea"></a></li>
-    <li class="customers-item"><a href="https://www.ecolegeorgesmelies.fr"><img src="~/assets/images/studios/logo-georges-melies.png" alt="Ecole Georges Méliès"></a></li>
+    <li class="customers-item">
+      <a href="https://www.gobelins.fr">
+        <img src="~/assets/images/logo-gobelins.png" alt="Les gobelins"></a>
+    </li>
+    <li class="customers-item">
+      <a href="https://www.esra.edu">
+        <img src="~/assets/images/logo-esra.png" alt="ESRA"></a>
+      </li>
+    <li class="customers-item">
+      <a href="https://lanimea.com/">
+      <img src="~/assets/images/logo-lanimea.png" alt="Lanimea"></a>
+    </li>
+    <li class="customers-item">
+      <a href="https://www.ecolegeorgesmelies.fr">
+      <img
+        src="~/assets/images/studios/logo-georges-melies.png"
+        alt="Ecole Georges Méliès">
+      </a>
+    </li>
+    <li class="customers-item">
+      <a href="https://www.ecv.fr/lecole/bordeaux/">
+        <img src="~/assets/images/logo-ecv.png" alt="ECV">
+      </a>
+    </li>
+    <li class="customers-item">
+      <a href="https://www.lidembarcelona.com/fr/">
+        <img src="~/assets/images/logo-lidem.png" alt="L'idem">
+      </a>
+    </li>
+    <li class="customers-item">
+      <a href="https://www.hslu.ch/">
+        <img src="~/assets/images/logo-hslu.png" alt="Hochschule Luzern">
+      </a>
+    </li>
   </ul>
 </section>
 
@@ -163,7 +192,7 @@
 const name = 'Schools'
 const { t } = useI18n()
 useHead({
-  title: t('schools subtitle'),
+  title: t('schools title'),
   meta: [
     { name: 'description', content: t('schools title')}
   ]
