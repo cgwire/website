@@ -4,8 +4,10 @@
     <div class="flexrow first-steps mt2">
       <div class="flexrow-item">
         <div class="flexrow-item">
-          <img src="~/assets/images/illustrations/kitsu-with-body.png"
-          width=180>
+          <img
+            src="~/assets/images/illustrations/kitsu-with-body.png"
+            width=180
+          >
         </div>
         <div class="section-subtitle">
           {{ $t('pricing firsteps ttile') }}
@@ -15,18 +17,6 @@
         </h2>
       </div>
       <div class="flexrow-item">
-        <p class="pricing-cta mt2">
-          {{ $t('pricing firsteps question1') }}
-        </p>
-        <p class="">
-          <a
-            class="button is-outlined"
-            href="https://calendly.com/cgwire"
-            target="_blank"
-          >
-            {{ $t('pricing firsteps cta1') }}
-          </a>
-        </p>
         <p class="pricing-cta mt2">
           {{ $t('pricing firsteps question3') }}
         </p>
@@ -40,12 +30,24 @@
           </a>
         </p>
         <p class="pricing-cta mt2">
+          {{ $t('pricing firsteps question1') }}
+        </p>
+        <p class="">
+          <a
+            class="button is-outlined"
+            href="https://calendly.com/cgwire"
+            target="_blank"
+          >
+            {{ $t('pricing firsteps cta1') }}
+          </a>
+        </p>
+        <p class="pricing-cta mt2">
           {{ $t('pricing firsteps question2') }}
         </p>
         <p class="">
           <a
             class="button is-outlined"
-            href="https://kitsu.cg-wire.com"
+            href="https://discord.com/invite/VbCxtKN"
           >
             {{ $t('pricing firsteps cta2') }}
           </a>
@@ -54,10 +56,108 @@
     </div>
 
     <div class="section-subtitle has-text-centered">
-      Software-as-a-Service
+      {{ $t('pricing kitsulight subtitle') }}
     </div>
     <h2 class="section-title has-text-centered">
-      {{ $t('pricing subtitle') }}
+      Kitsu Cloud Light
+    </h2>
+    <p class="has-text-centered mt1">
+      {{ $t('pricing kitsulight explaination') }}
+    </p>
+
+  <div class="pricings">
+    <PricingBlock
+      title="pricing title freelancer"
+      :price="monthly ? 25 : 20"
+      :monthly="monthly"
+      :per-user="true"
+      user-range="1 - 4"
+      :storage="10 + $t('pricing features gbstorage')"
+      :features="[
+        $t('pricing features community'),
+        $t('pricing features common four'),
+        $t('pricing features mutualize'),
+      ]"
+    />
+
+    <PricingBlock
+      title="pricing title team"
+      :emphasize="true"
+      :price="monthly ? 20 : 16"
+      :monthly="monthly"
+      user-range="5 - 10"
+      :per-user="true"
+      :storage="200 + $t('pricing features gbstorage')"
+      :features="[
+        $t('pricing features community'),
+        $t('pricing features common four'),
+        $t('pricing features small five'),
+      ]"
+    />
+
+    <PricingBlock
+      title="pricing title agency"
+      :price="monthly ? 19 : 15"
+      :monthly="monthly"
+      :per-user="true"
+      user-range="11 - 30"
+      :storage="500 + $t('pricing features gbstorage')"
+      :features="[
+        $t('pricing features community'),
+        $t('pricing features common four'),
+        $t('pricing features small five'),
+      ]"
+    />
+  </div>
+
+    <div class="extra-block alinea infos">
+      <div class="section-subtitle has-text-centered">
+        <a
+          class="ranch-link"
+          href="https://www.ranchcomputing.com"
+        >
+          Ranch Computing
+        </a>
+        {{ $t('pricing ranch title') }}
+      </div>
+      <p class="has-text-centered">
+        {{ $t('pricing ranch explanation') }}
+      </p>
+    </div>
+
+    <p class="has-text-centered mt1">
+      <button
+        class="button frequence"
+        style="margin-right: 0.5em;"
+        :class="{
+          button: true,
+          frequence: true,
+          active: monthly
+        }"
+        id="monthly-button"
+        @click="monthly = true"
+      >
+        {{ $t('pricing monthly') }}
+      </button>
+      <button
+        :class="{
+          button: true,
+          frequence: true,
+          active: !monthly
+        }"
+        id="yearly-button"
+        @click="monthly = false"
+      >
+        {{ $t('pricing yearly') }}
+      </button>
+    </p>
+
+
+    <div class="section-subtitle has-text-centered">
+      {{ $t('pricing kitsu subtitle') }}
+    </div>
+    <h2 class="section-title has-text-centered">
+      {{ $t('pricing kitsu title') }}
     </h2>
 
     <p class="has-text-centered mt1">
@@ -66,54 +166,6 @@
   </section>
 
   <div class="pricings">
-    <div class="pricing-block">
-      <div class="pricing-title">
-        {{ $t('pricing title team') }}
-      </div>
-      <div class="pricing-price">
-        <span class="pricing-currency">€</span>
-        <span class="pricing-value monthly" v-if="monthly">349</span>
-        <span class="pricing-value yearly" v-else>279</span>
-        {{ $t('pricing value month') }}
-      </div>
-      <div class="pricing-price-info" v-if="!monthly">
-        {{ $t('pricing billed annualy') }}
-      </div>
-      <div class="pricing-features">
-        <ul>
-          <li>
-            {{ $t('pricing features team users') }}
-          </li>
-          <li>
-            {{ $t('pricing features team support') }}
-          </li>
-          <li>
-            {{ $t('pricing features team supporttime') }}
-          </li>
-          <li>
-            {{ $t('pricing features common three') }}
-          </li>
-          <li>
-            {{ $t('pricing features common four') }}
-          </li>
-          <li>
-            {{ $t('pricing features team storage') }}
-          </li>
-          <li>
-            {{ $t('pricing features small five') }}
-          </li>
-        </ul>
-      </div>
-      <div class="pricing-cta">
-        <a
-          href="https://account.cg-wire.com/${$i18n.locale}/signup"
-          class="button is-outlined"
-        >
-          {{ $t('pricing button cta') }}
-        </a>
-      </div>
-    </div>
-
     <div class="pricing-block">
       <div class="pricing-title">
         {{ $t('pricing title agency') }}
@@ -130,7 +182,7 @@
       <div class="pricing-features">
         <ul>
           <li>
-            {{ $t('pricing features small one') }}
+            {{ $t('pricing features agency one') }}
           </li>
           <li>
             {{ $t('pricing features tiny support') }}
@@ -139,10 +191,16 @@
             {{ $t('pricing features small four') }}
           </li>
           <li>
+            {{ $t('pricing features common four') }}
+          </li>
+          <li>
             {{ $t('pricing features common three') }}
           </li>
           <li>
-            {{ $t('pricing features common four') }}
+            {{ $t('pricing features common searchengine') }}
+          </li>
+          <li>
+            {{ $t('pricing features common playlistbuilder') }}
           </li>
           <li>
             {{ $t('pricing features small three') }}
@@ -196,6 +254,12 @@
             {{ $t('pricing features medium two') }}
           </li>
           <li>
+            {{ $t('pricing features common searchengine') }}
+          </li>
+          <li>
+            {{ $t('pricing features common playlistbuilder') }}
+          </li>
+          <li>
             {{ $t('pricing features medium three') }}
           </li>
           <li>
@@ -244,7 +308,10 @@
             {{ $t('pricing features medium two') }}
           </li>
           <li>
-            {{ $t('pricing features large five') }}
+            {{ $t('pricing features common searchengine') }}
+          </li>
+          <li>
+            {{ $t('pricing features common playlistbuilder') }}
           </li>
           <li>
             {{ $t('pricing features large three') }}
@@ -301,7 +368,6 @@
   </div>
 
   <section class="section content pricing">
-
     <p class="has-text-centered mt1">
       <button
         class="button frequence"
@@ -335,99 +401,12 @@
 
     <div class="extra-block alinea infos">
       <div class="section-subtitle has-text-centered">
-        <a
-          class="ranch-link"
-          href="https://www.ranchcomputing.com"
-        >
-          Ranch Computing
-        </a>
-        {{ $t('pricing ranch title') }}
-      </div>
-      <p class="has-text-centered">
-        {{ $t('pricing ranch explanation') }}
-      </p>
-    </div>
-
-    <div class="extra-block alinea infos">
-      <div class="section-subtitle has-text-centered">
         {{ $t('pricing school title') }}
       </div>
       <p class="has-text-centered">
         {{ $t('pricing school details') }}
       </p>
     </div>
-
-  <div class="estimator" v-if="$i18n.locale === 'en'">
-    <div class="section-subtitle has-text-centered">
-      Estimate your subscription
-    </div>
-    <h2 class="section-title has-text-centered">
-      Price calculator
-    </h2>
-    <p>
-      <label class="label">Select how many users you will need</label>
-    </p>
-    <p class="flexrow">
-      <span class="flexrow-item users">{{ nbUsers }}</span>
-      <input
-        class="slider is-fullwidth flexrow-item"
-        step="10"
-        min="0"
-        max="200"
-        type="range"
-        v-model="nbUsers"
-        @change="changeNbUsers"
-      />
-    </p>
-    <p class="label">
-      Choose your options
-    </p>
-    <div class="columns">
-      <div class="column">
-        <PricingOption
-          label="On Premise installation (999€ / month)"
-          v-model="isOnPremise"
-        />
-        <PricingOption
-          label="Media encryption (1999€ / month)"
-          v-model="isMediaEncryption"
-        />
-        <PricingOption
-          label="GPU video processing (1999€ / month)"
-          v-model="isGPU"
-        />
-        <PricingOption
-          label="Staging environment (999€ / month)"
-          v-model="isStaging"
-        />
-      </div>
-      <div class="column">
-        <PricingOption
-          label="Monthly Payment (22% increase)"
-          v-model="isMonthly"
-        />
-        <PricingOption
-          label="3 years commitment (5% discount)"
-          v-model="is3YearsCommitment"
-        />
-        <PricingOption
-          label="2 years upfront payment (10% discount)"
-          v-model="is2YearsUpfront"
-        />
-        <PricingOption
-          label="3 years upfront payment (15% discount)"
-          v-model="is3YearsUpfront"
-        />
-      </div>
-    </div>
-    <p class="mt2 has-text-centered">
-      <label class="label">Price per month (yearly billing)</label>
-    </p>
-    <p class="price has-text-centered">
-     {{ price }} € / month
-    </p>
-  </div>
-
 
     <div class="section-subtitle has-text-centered">
       {{ $t('pricing support license subtitle') }}
@@ -651,6 +630,77 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="estimator" v-if="$i18n.locale === 'en'">
+      <div class="section-subtitle has-text-centered">
+        Estimate your subscription
+      </div>
+      <h2 class="section-title has-text-centered">
+        Price calculator
+      </h2>
+      <p>
+        <label class="label">Select how many users you will need</label>
+      </p>
+      <p class="flexrow">
+        <span class="flexrow-item users">{{ nbUsers }}</span>
+        <input
+          class="slider is-fullwidth flexrow-item"
+          step="10"
+          min="0"
+          max="200"
+          type="range"
+          v-model="nbUsers"
+          @change="changeNbUsers"
+        />
+      </p>
+      <p class="label">
+        Choose your options
+      </p>
+      <div class="columns">
+        <div class="column">
+          <PricingOption
+            label="On Premise installation (999€ / month)"
+            v-model="isOnPremise"
+          />
+          <PricingOption
+            label="Media encryption (1999€ / month)"
+            v-model="isMediaEncryption"
+          />
+          <PricingOption
+            label="GPU video processing (1999€ / month)"
+            v-model="isGPU"
+          />
+          <PricingOption
+            label="Staging environment (999€ / month)"
+            v-model="isStaging"
+          />
+        </div>
+        <div class="column">
+          <PricingOption
+            label="Monthly Payment (22% increase)"
+            v-model="isMonthly"
+          />
+          <PricingOption
+            label="3 years commitment (5% discount)"
+            v-model="is3YearsCommitment"
+          />
+          <PricingOption
+            label="2 years upfront payment (10% discount)"
+            v-model="is2YearsUpfront"
+          />
+          <PricingOption
+            label="3 years upfront payment (15% discount)"
+            v-model="is3YearsUpfront"
+          />
+        </div>
+      </div>
+      <p class="mt2 has-text-centered">
+        <label class="label">Price per month (yearly billing)</label>
+      </p>
+      <p class="price has-text-centered">
+       {{ price }} € / month
+      </p>
     </div>
 
     <div class="section-subtitle has-text-centered">
