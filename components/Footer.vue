@@ -63,6 +63,13 @@ t<template>
             </span>
           </nuxt-link>
         </li>
+        <li>
+          <nuxt-link :to="localePath('self-hosted')">
+            <span class="level-item">
+              Cloud vs Self-Hosted
+            </span>
+          </nuxt-link>
+        </li>
       </ul>
     </div>
 
