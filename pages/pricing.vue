@@ -212,7 +212,7 @@
       </div>
       <div class="pricing-cta">
         <a
-          href="https://account.cg-wire.com/${$i18n.locale}/signup"
+          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
           class="button is-outlined"
         >
           {{ $t('pricing button cta') }}
@@ -268,7 +268,10 @@
         </ul>
       </div>
       <div class="pricing-cta">
-        <a href="https://account.cg-wire.com/${$i18n.locale}/signup" class="button is-outlined">
+        <a
+          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
+          class="button is-outlined"
+        >
           {{ $t('pricing button cta') }}
         </a>
       </div>
@@ -322,7 +325,10 @@
         </ul>
       </div>
       <div class="pricing-cta">
-        <a href="https://account.cg-wire.com/${$i18n.locale}/signup" class="button is-outlined">
+        <a
+          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
+          class="button is-outlined"
+        >
           {{ $t('pricing button cta') }}
         </a>
       </div>
@@ -456,7 +462,10 @@
         </ul>
       </div>
       <div class="pricing-cta">
-        <a href="https://account.cg-wire.com/${$i18n.locale}/signup" class="button is-outlined">
+        <a
+          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
+          class="button is-outlined"
+        >
           {{ $t('pricing button cta') }}
         </a>
       </div>
@@ -500,7 +509,10 @@
         </ul>
       </div>
       <div class="pricing-cta">
-        <a href="https://account.cg-wire.com/${$i18n.locale}/signup" class="button is-outlined">
+        <a
+          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
+          class="button is-outlined"
+        >
           {{ $t('pricing button cta') }}
         </a>
       </div>
