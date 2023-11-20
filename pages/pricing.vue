@@ -254,6 +254,9 @@
             {{ $t('pricing features medium two') }}
           </li>
           <li>
+             1 x {{ $t('pricing features training') }}
+          </li>
+          <li>
             {{ $t('pricing features common searchengine') }}
           </li>
           <li>
@@ -311,6 +314,9 @@
             {{ $t('pricing features medium two') }}
           </li>
           <li>
+             2 x {{ $t('pricing features training') }}
+          </li>
+          <li>
             {{ $t('pricing features common searchengine') }}
           </li>
           <li>
@@ -362,6 +368,9 @@
           </li>
           <li>
             {{ $t('pricing features partner gpu') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner contract') }}
           </li>
         </ul>
       </div>
