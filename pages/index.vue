@@ -9,12 +9,17 @@
           @click="() => showVideoModal()"
           class="toggleModal button button--with-icon is-large"
         >
-          <img src="~/assets/images/play.svg" alt="">
+          <img src="~/assets/images/play.svg" alt="" />
           <span>{{ $t('kitsu watch cta') }}</span>
         </button>
      </div>
      <div class="flexrow-item introduction-picture">
-       <img src="~/assets/images/collaboration.svg" />
+       <video
+         src="~/assets/teaser.mp4"
+         poster="~/assets/teaser.png"
+         autoplay
+         loop
+       />
      </div>
    </div>
   </section>
@@ -446,6 +451,7 @@ onMounted(() => {
       videoId: 'YJQJ3OciGR0',
       events: {}
     })
+    document.querySelector('video').play()
   }, 1000)
 })
 
@@ -729,4 +735,13 @@ div.body
     flex: 1;
   }
 }
+
+video {
+   -webkit-filter: brightness(101.5%);
+   width: 100%;
+   max-width: 550px;
+}
+
+.introduction
+  max-width 1200px
 </style>

@@ -1,7 +1,10 @@
 <template>
 <div class="compare-page">
   <section class="section content narrower">
-    <div class="section-subtitle has-text-centered">
+    <div>
+      <img src="~/assets/images/illustrations/vsftrack.png" />
+    </div>
+    <div class="section-subtitle has-text-centered mt2">
      {{ $t('comparison ftrack subtitle') }}
     </div>
     <h2 class="section-title has-text-centered">

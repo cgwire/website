@@ -1,7 +1,10 @@
 <template>
 <div class="compare-page">
   <section class="section content narrower">
-    <div class="section-subtitle has-text-centered">
+    <div>
+      <img src="~/assets/images/illustrations/vsshotgrid.png" />
+    </div>
+    <div class="section-subtitle has-text-centered mt2">
      {{ $t('comparison shotgrid subtitle') }}
     </div>
     <h2 class="section-title has-text-centered">
