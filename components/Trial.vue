@@ -1,7 +1,7 @@
 <template>
 <div class="trial">
   <section class="section content trial-content">
-    <h2 class="subtitle has-text-centered">
+    <h2 class="subtitle has-text-centered" :class="{ hidden: !cta }">
       {{ $t('kitsu cta') }}
     </h2>
     <p class="has-text-centered">
@@ -9,12 +9,16 @@
         :class="{
           button: true,
           'is-large': true,
-          'is-big': isBig
+          'is-big': isBig,
+          'hidden': !cta
         }"
         :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
       >
         {{ $t('main plans cta') }}
       </a>
+    </p>
+    <p class="has-text-centered" v-if="!cta">
+      &nbsp;
     </p>
     <p class="has-text-centered">
       &nbsp;
@@ -25,7 +29,11 @@
 
 <script setup>
 const props = defineProps({
-  isBig: Boolean
+  isBig: Boolean,
+  cta: {
+    type: Boolean,
+    default: true
+  }
 })
 </script>
 

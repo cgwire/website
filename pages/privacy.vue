@@ -287,6 +287,8 @@ by CGWire Hosting customers:</p>
 <p>Contact form: <a href="https://www.cg-wire.com/#contact">cg-wire.com/#contact</a></p>
 
 </section>
+
+<Trial class="mt4" :cta="false" />
 </template>
 
 <script setup>

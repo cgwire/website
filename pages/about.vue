@@ -182,6 +182,8 @@
     </p>
   </section>
 </div>
+
+<Trial :cta="false" />
 </template>
 
 <script setup>

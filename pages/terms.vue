@@ -326,6 +326,8 @@ Questions about the Terms of Service should be sent to support@cg-wire.com.
 Any new features that augment or enhance the current Service, including the release of new tools and resources, shall be subject to the Terms of Service. Continued use of the Service after any such changes shall constitute your consent to such changes.
 </p>
 </section>
+
+<Trial class="mt4" :cta="false" />
 </template>
 
 <script setup>

@@ -523,6 +523,8 @@
   </ul>
 </section>
 </div>
+
+<Trial />
 </template>
 
 <style lang="stylus" scoped>

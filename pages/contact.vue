@@ -24,10 +24,9 @@ France
 <p>
 N° RCS: Paris 831 995 303
 </p>
-
-<p class="filler">
-</p>
 </section>
+
+<Trial class="mt4" :cta="false" />
 </template>
 
 <script setup>

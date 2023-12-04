@@ -188,6 +188,8 @@
     </div>
   </div>
 </section>
+
+<Trial class="mt4" :cta="false" />
 </template>
 
 <script setup>

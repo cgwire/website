@@ -248,6 +248,8 @@
     </div>
   </section>
 </div>
+
+<Trial />
 </template>
 
 <script setup>
