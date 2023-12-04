@@ -19,6 +19,7 @@
          poster="~/assets/teaser.png"
          autoplay
          loop
+         muted
        />
      </div>
    </div>

@@ -38,21 +38,21 @@
     <ul class="section-list tile is-ancestor">
       <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
         <div class="section-item-img">
-          <img src="~/assets/images/illustration-simplicity.svg" alt="">
+          <img src="~/assets/images/illustration-simplicity.png" alt="">
         </div>
         <h3 class="section-item-title">{{ $t('about values title one') }}</h3>
         <p class="section-item-text">{{ $t('about values text one') }}</p>
       </li>
       <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
         <div class="section-item-img">
-          <img src="~/assets/images/illustration-handshake.svg" alt="">
+          <img src="~/assets/images/illustration-handshake.png" alt="">
         </div>
         <h3 class="section-item-title">{{ $t('about values title two') }}</h3>
         <p class="section-item-text">{{ $t('about values text two') }}</p>
       </li>
       <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
         <div class="section-item-img">
-          <img src="~/assets/images/illustration-craftmanship.svg" alt="">
+          <img src="~/assets/images/illustration-craftmanship.png" alt="">
         </div>
         <h3 class="section-item-title">{{ $t('about values title three') }}</h3>
         <p class="section-item-text">{{ $t('about values text three') }}</p>
@@ -67,21 +67,21 @@
     <ul class="section-list tile is-ancestor" data-aos="fade-up">
       <li class="section-item tile is-4 is-vertical">
         <div class="section-item-img">
-          <img src="~/assets/images/illustration-open.svg" alt="">
+          <img src="~/assets/images/illustration-open.png" alt="">
         </div>
         <h3 class="section-item-title">{{ $t('about work title one') }}</h3>
         <p class="section-item-text">{{ $t('about work text one') }}</p>
       </li>
       <li class="section-item tile is-4 is-vertical">
         <div class="section-item-img">
-          <img src="~/assets/images/illustration-remote.svg" alt="">
+          <img src="~/assets/images/illustration-remote.png" alt="">
         </div>
         <h3 class="section-item-title">{{ $t('about work title two') }}</h3>
         <p class="section-item-text">{{ $t('about work text two') }}</p>
       </li>
       <li class="section-item tile is-4 is-vertical">
         <div class="section-item-img">
-          <img src="~/assets/images/illustration-deliberate.svg" alt="">
+          <img src="~/assets/images/illustration-deliberate.png" alt="">
         </div>
         <h3 class="section-item-title">{{ $t('about work title three') }}</h3>
         <p class="section-item-text">{{ $t('about work text three') }}</p>
@@ -198,4 +198,7 @@ useHead({
 <style lang="stylus" scoped>
 .values
   border-radius 400px 400px 400px 400px / 25px 25px 25px 25px
+
+  img
+    max-width 300px
 </style>
