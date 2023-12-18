@@ -12,7 +12,7 @@
           'is-big': isBig,
           'hidden': !cta
         }"
-        :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
+        :href="`https://account.cg-wire.com/signup`"
       >
         {{ $t('main plans cta') }}
       </a>

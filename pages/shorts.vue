@@ -157,7 +157,7 @@
   <p>
     <a
       class="button button--alt is-large"
-      :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
+      href="https://account.cg-wire.com/signup"
     >
       {{ $t('shorts button demo') }}
     </a>

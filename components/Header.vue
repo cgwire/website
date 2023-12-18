@@ -347,13 +347,13 @@
       <div class="navbar-end">
         <a
           class="navbar-item top signin"
-          :href="`https://account.cg-wire.com/${$i18n.locale}/login`"
+          :href="`https://account.cg-wire.com/signin`"
         >
           {{ $t('header sign in') }}
         </a>
         <a
           class="navbar-item signup"
-          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
+          :href="`https://account.cg-wire.com/signup`"
         >
           {{ $t('header sign up') }}
         </a>
