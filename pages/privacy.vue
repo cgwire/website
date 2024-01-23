@@ -155,7 +155,7 @@ by CGWire Hosting customers:</p>
     </tr>
     <tr>
         <td>
-            <p><a href="http://www.innocraft.cloud/">Innocraft Cloud</a></p>
+            <p><a href="http://www.innocraft.cloud/">Matomo Cloud</a></p>
         </td>
         <td>
             <p>To collect and analyse information about how you interact with our websites (web analytics), and to recognize and stop any misuse</p>
@@ -179,7 +179,7 @@ by CGWire Hosting customers:</p>
             time sensitive email.</p>
         </td>
         <td>
-            <p>USA</p>
+            <p>EU/USA</p>
         </td>
         <td>
             <p>Email, IP address</p>
@@ -254,23 +254,6 @@ by CGWire Hosting customers:</p>
         </td>
         <td>
             <p><a href="https://www.chargebee.com">https://www.chargebee.com</a></p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p><a href="https://www.canny.io">Canny</a></p>
-        </td>
-        <td>
-            <p>Collect feedback and publish the changelog</p>
-        </td>
-        <td>
-            <p>USA</p>
-        </td>
-        <td>
-            <p>Email, last news read</p>
-        </td>
-        <td>
-            <p><a href="https://www.canny.io">https://www.canny.io</a></p>
         </td>
     </tr>
 
