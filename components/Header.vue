@@ -135,78 +135,13 @@
             hidden: !useCaseMenuOn
           }"
         >
-          <nuxt-link
-            class="navbar-item flexcolumn subnav-element"
-            :to="localePath('studios')"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title studios') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text studios')  }}
-            </span>
-          </nuxt-link>
-
-          <nuxt-link
-            class="navbar-item flexcolumn subnav-element"
-            :to="localePath('customer-stories')"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title customer-stories') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text customer-stories')  }}
-            </span>
-          </nuxt-link>
-
+          <SubNavElement elementKey="studios" />
+          <SubNavElement elementKey="customer-stories" />
           <hr />
-          <nuxt-link
-            class="navbar-item flexcolumn subnav-element"
-            :to="localePath('tvshows')"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title tvshow') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text tvshow')  }}
-            </span>
-          </nuxt-link>
-
-          <nuxt-link
-            class="navbar-item flexcolumn subnav-element"
-            :to="localePath('feature-films')"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title feature-films') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text feature-films')  }}
-            </span>
-          </nuxt-link>
-
-          <nuxt-link
-            class="navbar-item flexcolumn subnav-element"
-            :to="localePath('shorts')"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title short') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text short')  }}
-            </span>
-          </nuxt-link>
-
-          <nuxt-link
-            class="navbar-item flexcolumn subnav-element"
-            :to="localePath('schools')"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title school') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text schools')  }}
-            </span>
-          </nuxt-link>
+          <SubNavElement elementKey="tvshows" />
+          <SubNavElement elementKey="feature-films" />
+          <SubNavElement elementKey="shorts" />
+          <SubNavElement elementKey="schools" />
         </div>
       </div>
 
@@ -236,96 +171,33 @@
             hidden: !resourceMenuOn
           }"
         >
-
-          <a
-            class="navbar-item flexcolumn subnav-element"
-            href="https://blog.cg-wire.com"
-            target="_blank"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title blog') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text blog') }}
-            </span>
-          </a>
-
-          <a
-            class="navbar-item flexcolumn subnav-element"
-            href="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnQgZ4TCrAt7smxesaDo29"
-            target="_blank"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title tutorials') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text tutorials') }}
-            </span>
-          </a>
-
-          <a
-            class="navbar-item flexcolumn subnav-element"
-            href="https://kitsu.cg-wire.com"
-            target="_blank"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title documentation') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text documentation') }}
-            </span>
-          </a>
-
-          <a
-            class="navbar-item flexcolumn subnav-element"
-            href="https://cgwire.canny.io/changelog"
-            target="_blank"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title changelog') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text changelog') }}
-            </span>
-          </a>
-
-          <a
-            class="navbar-item flexcolumn subnav-element"
-            href="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnJK6wKf2GIu964KsbqCqJ"
-            target="_blank"
+          <SubNavElement
+            element-key="blog"
+            link="https://blog.cg-wire.com"
+          />
+          <SubNavElement
+            element-key="tutorials"
+            link="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnQgZ4TCrAt7smxesaDo29"
+          />
+          <SubNavElement
+            element-key="documentation"
+            link="https://kitsu.cg-wire.com"
+          />
+          <SubNavElement
+            element-key="changelog"
+            link="https://cgwire.canny.io/changelog"
+          />
+          <SubNavElement
+            element-key="conferences"
+            link="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnJK6wKf2GIu964KsbqCqJ"
             v-if="$i18n.locale === 'fr'"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title conferences') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text conferences') }}
-            </span>
-          </a>
-
-          <nuxt-link
-            class="navbar-item flexcolumn subnav-element"
-            :to="localePath('community')"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title community') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text community') }}
-            </span>
-          </nuxt-link>
-
-          <nuxt-link
-            class="navbar-item flexcolumn subnav-element"
-            :to="localePath('spreadsheets')"
-          >
-            <span class="flexrow-item subnav-title">
-              {{ $t('header title spreadsheets') }}
-            </span>
-            <span class="flexrow-item subnav-text">
-              {{ $t('header text spreadsheets') }}
-            </span>
-          </nuxt-link>
+          />
+          <SubNavElement
+            element-key="community"
+          />
+          <SubNavElement
+            element-key="spreadsheets"
+          />
         </div>
       </div>
 
@@ -397,9 +269,6 @@ watch(
 </script>
 
 <style lang="stylus" scoped>
-.subnav-element:hover
-  background red
-
 .hidden
   display none
 
