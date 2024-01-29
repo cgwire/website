@@ -166,12 +166,36 @@
 
 <section class="section">
   <ul class="customers">
-    <li class="customers-item"><a href="https://www.supamonks.com/"><img src="~/assets/images/studios/logo-supamonks-invert.png" alt="Supamonks"></a></li>
-    <li class="customers-item"><a href="https://gizmosite.tv/"><img src="~/assets/images/studios/logo-gizmo-invert.png" alt="Supamonks"></a></li>
-    <li class="customers-item"><a href="http://les-fees-speciales.coop/"><img src="~/assets/images/logo-les-fees-speciales-invert.png" alt="Les Fées Spéciales"></a></li>
-    <li class="customers-item"><a href="https://www.miyu.fr"><img src="~/assets/images/logo-miyu-invert.png" alt="Miyu"></a></li>
-    <li class="customers-item"><a href="https://www.polycat.com/"><img src="~/assets/images/logo-polycat.png" alt="Polycat"></a></li>
-    <li class="customers-item"><a href="http://www.mikrofilm.no/"><img src="~/assets/images/logo-mikrofilm.png" alt="Mikrofilm"></a></li>
+    <CustomerLogoBlock
+      link="https://studio.blender.org/"
+      element-key="blender-invert"
+      name="Blender"
+    />
+    <CustomerLogoBlock
+      link="https://www.supamonks.com/"
+      element-key="supamonks-invert"
+      name="Supamonks"
+    />
+    <CustomerLogoBlock
+      link="https://www.gizmosite.tv/"
+      element-key="gizmo-invert"
+      name="Gizmosite"
+    />
+    <CustomerLogoBlock
+      link="https://www.miyu.fr/"
+      element-key="miyu-invert"
+      name="Miyu"
+    />
+    <CustomerLogoBlock
+      link="https://www.polycat.com/"
+      element-key="polycat"
+      name="Polycat"
+    />
+    <CustomerLogoBlock
+      link="https://www.mikrofilm.no/"
+      element-key="mikrofilm"
+      name="Mikrofilm"
+    />
     <CustomerLogoBlock
       link="https://bartmaalderink.nl/"
       element-key="bart-invert"
@@ -238,11 +262,6 @@
       name="Novanima"
     />
     <CustomerLogoBlock
-      link="https://www.splitstudio.tv/"
-      element-key="splitstudio"
-      name="Split Studio"
-    />
-    <CustomerLogoBlock
       link="https://www.squarefilms.fr/"
       element-key="squarefilms"
       name="Square Films"
@@ -254,23 +273,19 @@
     />
     <CustomerLogoBlock
       link="https://www.warriorsvfx.com.br/"
-      element-key="Warriors VFX"
+      element-key="warriorsvfx"
       name="Warriors VFX"
     />
-
     <CustomerLogoBlock
       link="https://www.imagovfx.com/"
-      element-key="Outlook OVFX"
-      name="Warriors VFX"
+      element-key="imagovfx"
+      name="Imago VFX"
     />
     <CustomerLogoBlock
       link="https://www.ovfx.com/"
-      element-key="Outlook OVFX"
+      element-key="outlookvfx"
       name="Outlook VFX"
     />
-
-
-
   </ul>
 </section>
 

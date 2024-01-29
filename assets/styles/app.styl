@@ -1274,7 +1274,7 @@ div.body
 
     .customers
         list-style none
-        max-width 800px
+        max-width 1000px
         padding 0
         display flex
         align-items flex-start
@@ -1291,6 +1291,8 @@ div.body
         justify-content center
         color white
         transition transform 0.2s ease
+        border-radius 1rem
+        margin 1em
 
         &.only-name
             height 5rem
@@ -1304,6 +1306,7 @@ div.body
 
         &:hover
             transform scale(1.1)
+            border-radius 1rem
 
         &:nth-child(14n+1)
             background-color rainbow-1
