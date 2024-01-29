@@ -172,8 +172,105 @@
     <li class="customers-item"><a href="https://www.miyu.fr"><img src="~/assets/images/logo-miyu-invert.png" alt="Miyu"></a></li>
     <li class="customers-item"><a href="https://www.polycat.com/"><img src="~/assets/images/logo-polycat.png" alt="Polycat"></a></li>
     <li class="customers-item"><a href="http://www.mikrofilm.no/"><img src="~/assets/images/logo-mikrofilm.png" alt="Mikrofilm"></a></li>
-    <li class="customers-item"><a href="https://bartmaalderink.nl/"><img src="~/assets/images/studios/logo-bart-invert.png" alt="Bart Maalderink"></a></li>
-    <li class="customers-item"><a href="http://www.enclume-animation.com/"><img src="~/assets/images/studios/logo-enclume-invert.png" alt="Enclume"></a></li>
+    <CustomerLogoBlock
+      link="https://bartmaalderink.nl/"
+      element-key="bart-invert"
+      name="Bart Maalderink"
+    />
+    <CustomerLogoBlock
+      link="http://www.enclume-animation.com/"
+      element-key="enclume-invert"
+      name="Enclume"
+    />
+    <CustomerLogoBlock
+      link="https://nki.tv/"
+      element-key="nki"
+      name="NKI"
+    />
+    <CustomerLogoBlock
+      link="https://woodblock.tv/"
+      element-key="woodblock"
+      name="Wooblock"
+    />
+    <CustomerLogoBlock
+      link="https://www.stimstudio.com/en/"
+      element-key="stim"
+      name="Stim Studio"
+    />
+    <CustomerLogoBlock
+      link="https://www.viridianfx.co.uk/"
+      element-key="viridian"
+      name="ViridianVFX"
+    />
+    <CustomerLogoBlock
+      link="https://www.dirtylooks.co.uk/"
+      element-key="dirty-looks"
+      name="Dirty Looks"
+    />
+    <CustomerLogoBlock
+      link="https://heckler.tv/"
+      element-key="heckler"
+      name="Heckler"
+    />
+    <CustomerLogoBlock
+      link="https://rabbitsfootstudios.se/"
+      element-key="rabbitsfoot"
+      name="Rabbit's Foot"
+    />
+    <CustomerLogoBlock
+      link="https://animaskin.no/"
+      element-key="animaskin"
+      name="Animaskin"
+    />
+    <CustomerLogoBlock
+      link="https://animaltank.com/"
+      element-key="animaltank"
+      name="Animaltank"
+    />
+    <CustomerLogoBlock
+      link="https://floating-rock.com/"
+      element-key="floatingrock"
+      name="Floating Rock"
+    />
+    <CustomerLogoBlock
+      link="https://novanima.eu/"
+      element-key="novanima"
+      name="Novanima"
+    />
+    <CustomerLogoBlock
+      link="https://www.splitstudio.tv/"
+      element-key="splitstudio"
+      name="Split Studio"
+    />
+    <CustomerLogoBlock
+      link="https://www.squarefilms.fr/"
+      element-key="squarefilms"
+      name="Square Films"
+    />
+    <CustomerLogoBlock
+      link="https://wizz.fr/en"
+      element-key="wizz"
+      name="Wizz"
+    />
+    <CustomerLogoBlock
+      link="https://www.warriorsvfx.com.br/"
+      element-key="Warriors VFX"
+      name="Warriors VFX"
+    />
+
+    <CustomerLogoBlock
+      link="https://www.imagovfx.com/"
+      element-key="Outlook OVFX"
+      name="Warriors VFX"
+    />
+    <CustomerLogoBlock
+      link="https://www.ovfx.com/"
+      element-key="Outlook OVFX"
+      name="Outlook VFX"
+    />
+
+
+
   </ul>
 </section>
 
@@ -181,12 +278,13 @@
   <section class="section">
     <div class="flexrow">
       <div class="flex-item">
-        <iframe src="https://player.vimeo.com/video/358274259?color=ffc12f&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://player.vimeo.com/video/896197533?h=f2b5ed3c94&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       </div>
       <div class="flex-item video-text">
         <p>
-          {{ $t('usecase demo') }}
-          <a href="https://colorbleed.nl">Colorbleed.nl</a>
+          "27" {{ $t('usecase demo') }}
+          <a href="https://miyu-prod.cg-wire.com/">Miyu Productions</a>
+          - Cannes Palme D'or 2024
         </p>
       </div>
     </div>
