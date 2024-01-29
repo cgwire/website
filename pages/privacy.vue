@@ -73,86 +73,213 @@ may contact CGWire&rsquo;s support team: <a
 href="mailto:support@cg-wire.com">support@cg-wire.com</a></p>
 <p>In addition, you have the right to lodge a complaint with the data protection authority in your jurisdiction.</p>
 
-<h2 class="subtitle" id="subprocessors">Subprocessors (CGWire Hosting)</h2>
+<h2 class="subtitle" id="subprocessors">Subprocessors</h2>
+
 <p>We use a select number of trusted external service providers for certain technical data processing and/or service offerings. These service providers are carefully selected and meet high data protection and security standards. We only share information with them that is required for the services offered and we contractually bind them to keep any information we share with them as confidential and to process Personal Data only according to our instructions.</p>
+
+<h3 class="subtitle" id="subprocessors">Kitsu Hosting</h3>
+
 <p>CGWire uses the following subprocessors to process the data collected
-by CGWire Hosting customers:</p>
+by Kitsu installations. CGWire acts a data processor for this service:</p>
+
 <table>
   <tbody>
+    <SubProcessorsHead />
+    <tr>
+      <td>
+          <p><a href="https://www.ovh.com/en/">OVH</a></p>
+      </td>
+      <td>
+          <p>Secure Hosting Infrastructure for instances hosting and databases and logs</p>
+      </td>
+      <td>
+          <p>EU (France) by default, other regions available</p>
+      </td>
+      <td>
+        <p>
+          First and last name, email address, phone number, assigned tasks,
+          time spents, logins, vacation, comments, deliveries
+        </p>
+      </td>
+      <td>
+        <p><a href="https://www.ovhcloud.com/en/terms-and-conditions/privacy-policy/">https://www.ovhcloud.com/en/terms-and-conditions/privacy-policy/</a></p>
+      </td>
+    </tr>
       <tr>
-        <td>
-            <p><strong>Subprocessor</strong></p>
-        </td>
-        <td>
-            <p><strong>Data location and security</strong></p>
-        </td>
-        <td>
-            <p><strong>Service</strong></p>
-        </td>
+          <td>
+              <p><a href="https://www.mailgun.com">Mailgun</a></p>
+          </td>
+          <td>
+            <p>This is a transactional email provider: we use it to send
+            time sensitive email.</p>
+          </td>
+          <td>
+            <p>EU/USA</p>
+          </td>
+          <td>
+            <p>Email</p>
+          </td>
+          <td>
+            <p><a href="https://www.mailgun.com/privacy-policy">https://www.mailgun.com/privacy-policy</a></p>
+          </td>
       </tr>
       <tr>
         <td>
-            <p><a href="https://www.ovh.com/en/">OVH</a></p>
+            <p><a href="https://www.crisp.com/">Crisp</a></p>
         </td>
         <td>
-            <p>France</p>
+            <p>This is a chat provider: we use it to communicate with our users on this website.</p>
         </td>
         <td>
-            <p>Secure Hosting Infrastructure for instances hosting and databases and logs</p>
+            <p>EU</p>
+        </td>
+        <td>
+            <p>Email, IP</p>
+        </td>
+        <td>
+            <p><a href="https://crisp.chat/fr/privacy/">https://crisp.chat/fr/privacy/</a></p>
         </td>
       </tr>
+    </tbody>
+</table>
+
+<p></p>
+<p>Terms &amp; Conditions: <a href="https://www.cg-wire.com/terms">https://www.cg-wire.com/terms</a></p>
+
+
+<h3 class="subtitle" id="subprocessors">Subscription Management (account.cg-wire.com)</h3>
+
+<p>CGWire uses the following subprocessors to process the data collected
+by the subscription management application. CGWire acts a data controller for this service:</p>
+
+<table>
+  <tbody>
+      <SubProcessorsHead />
       <tr>
         <td>
             <p><a href="https://heroku.com/">Heroku</a></p>
         </td>
         <td>
-            <p>US</p>
+          <p>
+              Secure Platform-as-a-Service to manage service subscritption
+              and billing.
+          </p>
+        </td>
+        <td>
+            <p>USA</p>
+        </td>
+        <td>
+            <p>Email, billing information, invoices, installation status</p>
+        </td>
+        <td>
+          <a href="https://devcenter.heroku.com/articles/security-privacy-compliance">
+          https://devcenter.heroku.com/articles/security-privacy-compliance
+          </a>
+        </td>
+      </tr>
+      <tr>
+          <td>
+              <p><a href="https://www.stripe.com">Stripe</a></p>
+          </td>
+          <td>
+              <p>To receive credit card payments</p>
+          </td>
+          <td>
+              <p>USA</p>
+          </td>
+          <td>
+              <p>Payment transactions details</p>
+          </td>
+          <td>
+              <p><a href="https://www.stripe.com">https://www.stripe.com</a></p>
+          </td>
+      </tr>
+      <tr>
+        <td>
+            <p><a href="https://www.chargebee.com">Chargebee</a></p>
+        </td>
+        <td>
+            <p>To manage billing and subscriptions</p>
+        </td>
+        <td>
+            <p>USA/India</p>
+        </td>
+        <td>
+            <p>Payment transactions details, billing information</p>
         </td>
         <td>
           <p>
-
-              Secure Platform-as-a-Service to manage service subscritption
-              and billing.
-
+            <a href="https://www.chargebee.com/privacy/">
+              https://www.chargebee.com/privacy/
+            </a>
           </p>
         </td>
       </tr>
       <tr>
+          <td>
+              <p><a href="https://www.mailgun.com">Mailgun</a></p>
+          </td>
+          <td>
+            <p>This is a transactional email provider: we use it to send
+            time sensitive email.</p>
+          </td>
+          <td>
+            <p>EU/USA</p>
+          </td>
+          <td>
+            <p>Email</p>
+          </td>
+          <td>
+            <p><a href="https://www.mailgun.com/privacy-policy">https://www.mailgun.com/privacy-policy</a></p>
+          </td>
+      </tr>
+
+      <tr>
         <td>
-          <p><a href="https://www.netlify.com">Netlify</a></p>
+            <p><a href="https://www.crisp.com/">Crisp</a></p>
         </td>
         <td>
-          <p>US</p>
+            <p>This is a chat provider: we use it to communicate with our users on this website.</p>
         </td>
         <td>
-          <p>Hosting services for static websites</p>
+            <p>EU</p>
+        </td>
+        <td>
+            <p>Email, IP</p>
+        </td>
+        <td>
+            <p><a href="https://crisp.chat/fr/privacy/">https://crisp.chat/fr/privacy/</a></p>
         </td>
       </tr>
     </tbody>
 </table>
-<p></p>
-<p>Terms &amp; Conditions: <a href="https://www.cg-wire.com/terms">https://www.cg-wire.com/terms</a></p>
-<h2 class="subtitle" id="3rdparty">Third party services we use</h2>
-<p>When you visit our websites, or purchase products or services, we use the following third party services which may collect personal data:</p>
+
+<h3 class="subtitle" id="3rdparty">Website (www.cg-wire.com)</h3>
+<p>When you visit our websites, we use the following third party services which
+may collect personal data:</p>
 <table>
     <tbody>
+    <SubProcessorsHead />
     <tr>
-        <td>
-            <p><strong>Recipient</strong></p>
-        </td>
-        <td>
-            <p><strong>Purpose of processing</strong></p>
-        </td>
-        <td>
-            <p><strong>Data location and security</strong></p>
-        </td>
-        <td>
-            <p><strong>Personal data collected by the third party</strong></p>
-        </td>
-        <td>
-            <p><strong>Privacy policy</strong></p>
-        </td>
+      <td>
+        <p><a href="https://www.netlify.com">Netlify</a></p>
+      </td>
+      <td>
+        <p>Hosting services for static websites</p>
+      </td>
+      <td>
+        <p>USA</p>
+      </td>
+      <td>
+        IP address, visited pages
+      </td>
+      <td>
+        <p>
+          <a href="https://www.netlify.com/privacy/">https://www.netlify.com/privacy/</a>
+        </p>
+      </td>
     </tr>
+
     <tr>
         <td>
             <p><a href="http://www.innocraft.cloud/">Matomo Cloud</a></p>
@@ -168,24 +295,6 @@ by CGWire Hosting customers:</p>
         </td>
         <td>
             <p><a href="https://www.innocraft.cloud/privacy">https://www.cg-wire.com/privacy</a></p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p><a href="https://www.mailgun.com">Mailgun</a></p>
-        </td>
-        <td>
-            <p>This is a transactional email provider: we use it to send
-            time sensitive email.</p>
-        </td>
-        <td>
-            <p>EU/USA</p>
-        </td>
-        <td>
-            <p>Email, IP address</p>
-        </td>
-        <td>
-            <p><a href="https://www.mailgun.com/privacy-policy">https://www.mailgun.com/privacy-policy</a></p>
         </td>
     </tr>
     <tr>
@@ -216,44 +325,10 @@ by CGWire Hosting customers:</p>
             <p>EU</p>
         </td>
         <td>
-            <p>Email, IP</p>
+            <p>Email, IP address</p>
         </td>
         <td>
             <p><a href="https://crisp.chat/fr/privacy/">https://crisp.chat/fr/privacy/</a></p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p><a href="https://www.stripe.com">Stripe</a></p>
-        </td>
-        <td>
-            <p>To receive credit card payments</p>
-        </td>
-        <td>
-            <p>USA</p>
-        </td>
-        <td>
-            <p><a href="https://www.stripe.com">https://www.stripe.com</a></p>
-        </td>
-        <td>
-            <p>Payment transactions details</p>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <p><a href="https://www.chargebee.com">Chargebee</a></p>
-        </td>
-        <td>
-            <p>To manage billing and subscriptions</p>
-        </td>
-        <td>
-            <p>India</p>
-        </td>
-        <td>
-            <p>Payment transactions details, billing information</p>
-        </td>
-        <td>
-            <p><a href="https://www.chargebee.com">https://www.chargebee.com</a></p>
         </td>
     </tr>
 
