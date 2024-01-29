@@ -1,7 +1,7 @@
 <template>
 <div
   :class="{
-    hidden: isActive
+    hidden: !isActive.value
   }"
   id="cookie-consent"
   class="cookie-consent flexrow"
@@ -30,23 +30,23 @@
 
 <script setup>
 import { ref } from 'vue'
-let isActive = ref(true)
+const isActive = ref(true)
 
 if(process.client) {
   const cookieConsent = localStorage.getItem('cookie-consent')
   if (cookieConsent !== null) {
-    isActive = false
+    isActive.value = false
   }
 }
 
 function acceptCookies () {
   localStorage.setItem('cookie-consent', 'true')
-  this.isActive = false
+  isActive.value = false
   window.location.reload()
 }
 function refuseCookies () {
   localStorage.setItem('cookie-consent', 'false')
-  this.isActive = false
+  isActive.value = false
   window.location.reload()
 }
 </script>
