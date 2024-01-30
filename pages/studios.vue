@@ -15,12 +15,12 @@
   <ul class="customers">
     <li class="customers-item"><a href="http://www.cube-creative.com"><img src="~/assets/images/logo-cube-invert.png" alt="Cube"></a></li>
     <li class="customers-item"><a href="https://nousvoir.com"><img src="~/assets/images/logo-tnzpv-invert.png" alt="TNZPV"></a></li>
-    <li class="customers-item"><a href="https://www.miyu.fr"><img src="~/assets/images/logo-miyu-invert.png" alt="Miyu"></a></li>
+    <li class="customers-item"><a href="https://www.miyu.fr"><img src="~/assets/images/studios/logo-miyu-invert.png" alt="Miyu"></a></li>
     <li class="customers-item"><a href="https://cloud.blender.org/films/"><img src="~/assets/images/studios/logo-blender-invert.png" alt="Blender Studios"></a></li>
     <li class="customers-item"><a href="http://www.madlab-animations.com"><img src="~/assets/images/logo-madlab-invert.png" alt="Madlab"></a></li>
     <li class="customers-item"><a href="http://les-fees-speciales.coop/"><img src="~/assets/images/logo-les-fees-speciales-invert.png" alt="Les Fées Spéciales"></a></li>
     <li class="customers-item"><a href="http://www.malil-art.com"><img src="~/assets/images/logo-malilart.png" alt="Malilart"></a></li>
-    <li class="customers-item"><a href="http://www.mikrofilm.no/"><img src="~/assets/images/logo-mikrofilm.png" alt="Mikrofilm"></a></li>
+    <li class="customers-item"><a href="http://www.mikrofilm.no/"><img src="~/assets/images/studios/logo-mikrofilm.png" alt="Mikrofilm"></a></li>
     <li class="customers-item"><a href="https://gizmosite.tv/"><img src="~/assets/images/studios/logo-gizmo-invert.png" alt="Supamonks"></a></li>
     <li class="customers-item"><a href="https://www.supamonks.com/"><img src="~/assets/images/studios/logo-supamonks-invert.png" alt="Supamonks"></a></li>
     <li class="customers-item"><a href="https://www.esra.edu"><img src="~/assets/images/logo-esra-invert.png" alt="ESRA"></a></li>

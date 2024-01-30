@@ -215,7 +215,6 @@
     <li class="customers-item"><a href="http://www.cartuna.com"><img src="~/assets/images/logo-cartuna.png" alt="Cartuna"></a></li>
     <li class="customers-item"><a href="https://www.ankama.com/fr/animations"><img src="~/assets/images/logo-ankama.png" alt="Ankama Animations"></a></li>
     <li class="customers-item"><a href="https://www.folivari.com"><img src="~/assets/images/logo-folivari.png" alt="Folivari / Fost"></a></li>
-    <li class="customers-item"><a href="https://www.ankama.com/fr/animations"><img src="~/assets/images/logo-ankama.png" alt="Ankama Animations"></a></li>
     <li class="customers-item"><a href="https://cottonwood.tv/"><img src="~/assets/images/studios/logo-cottonwood-invert.png" alt="Cottonwood Media"></a></li>
   </ul>
 </section>
