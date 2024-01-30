@@ -162,6 +162,22 @@
         <img src="~/assets/images/logo-hslu.png" alt="Hochschule Luzern">
       </a>
     </li>
+    <CustomerLogoBlock
+      link="https://www.atelierdesevres.com/"
+      element-key="atelier-de-sevres"
+      name="Atelier de Sèvres"
+    />
+    <CustomerLogoBlock
+      link="https://www.a.com/"
+      element-key="make-animation-school"
+      name="Make Animation School"
+    />
+    <CustomerLogoBlock
+      link="https://www.nextgenskillsacademy.com/"
+      element-key="nextgen-academy"
+      name="Nextgen School Academy"
+    />
+
   </ul>
 </section>
 
