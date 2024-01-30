@@ -193,7 +193,7 @@
     />
     <CustomerLogoBlock
       link="https://www.mikrofilm.no/"
-      element-key="mikrofilm"
+      element-key="mikrofilm-invert"
       name="Mikrofilm"
     />
     <CustomerLogoBlock
