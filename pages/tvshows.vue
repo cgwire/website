@@ -208,14 +208,53 @@
 
 <section class="section">
   <ul class="customers">
+    <CustomerLogoBlock
+      link="https://fost.studio"
+      element-key="fost-invert"
+      name="Fost"
+    />
     <li class="customers-item"><a href="http://www.cube-creative.com"><img src="~/assets/images/logo-cube-invert.png" alt="Cube"></a></li>
     <li class="customers-item"><a href="https://nousvoir.com"><img src="~/assets/images/logo-tnzpv-invert.png" alt="TNZPV"></a></li>
     <li class="customers-item"><a href="http://www.madlab-animations.com"><img src="~/assets/images/logo-madlab-invert.png" alt="Madlab"></a></li>
     <li class="customers-item"><a href="http://www.malilart.com"><img src="~/assets/images/logo-malilart.png" alt="Malilart"></a></li>
-    <li class="customers-item"><a href="http://www.cartuna.com"><img src="~/assets/images/logo-cartuna.png" alt="Cartuna"></a></li>
     <li class="customers-item"><a href="https://www.ankama.com/fr/animations"><img src="~/assets/images/logo-ankama.png" alt="Ankama Animations"></a></li>
     <li class="customers-item"><a href="https://www.folivari.com"><img src="~/assets/images/logo-folivari.png" alt="Folivari / Fost"></a></li>
     <li class="customers-item"><a href="https://cottonwood.tv/"><img src="~/assets/images/studios/logo-cottonwood-invert.png" alt="Cottonwood Media"></a></li>
+    <CustomerLogoBlock
+      link="https://www.mindseyecreative.ca/"
+      element-key="mindseye-creative"
+      name="MindsEye Creative"
+    />
+    <CustomerLogoBlock
+      link="https://www.cabongstudios.com.br/"
+      element-key="cabong-studios"
+      name="Cabong Studios"
+    />
+    <CustomerLogoBlock
+      link="https://mamoncillo.co/"
+      element-key="mamoncillo"
+      name="Mamoncillo"
+    />
+    <CustomerLogoBlock
+      link="https://www.monello.fr/"
+      element-key="monello"
+      name="Monello"
+    />
+    <CustomerLogoBlock
+      link="https://www.ellipseanimation.com/"
+      element-key="ellipse"
+      name="Ellipse"
+    />
+    <CustomerLogoBlock
+      link="https://www.a.com/"
+      element-key="tant-mieux-prod"
+      name="Tant Mieux Prod"
+    />
+    <CustomerLogoBlock
+      link="http://www.cartuna.com"
+      element-key="cartuna"
+      name="Cartuna"
+    />
   </ul>
 </section>
 
