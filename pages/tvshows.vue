@@ -213,13 +213,41 @@
       element-key="fost-invert"
       name="Fost"
     />
-    <li class="customers-item"><a href="http://www.cube-creative.com"><img src="~/assets/images/logo-cube-invert.png" alt="Cube"></a></li>
-    <li class="customers-item"><a href="https://nousvoir.com"><img src="~/assets/images/logo-tnzpv-invert.png" alt="TNZPV"></a></li>
-    <li class="customers-item"><a href="http://www.madlab-animations.com"><img src="~/assets/images/logo-madlab-invert.png" alt="Madlab"></a></li>
-    <li class="customers-item"><a href="http://www.malilart.com"><img src="~/assets/images/logo-malilart.png" alt="Malilart"></a></li>
-    <li class="customers-item"><a href="https://www.ankama.com/fr/animations"><img src="~/assets/images/logo-ankama.png" alt="Ankama Animations"></a></li>
-    <li class="customers-item"><a href="https://www.folivari.com"><img src="~/assets/images/logo-folivari.png" alt="Folivari / Fost"></a></li>
-    <li class="customers-item"><a href="https://cottonwood.tv/"><img src="~/assets/images/studios/logo-cottonwood-invert.png" alt="Cottonwood Media"></a></li>
+    <CustomerLogoBlock
+      link="https://www.cube-creative.com"
+      element-key="cube-creative"
+      name="Cube Creative"
+    />
+    <CustomerLogoBlock
+      link="https://nousvoir.com"
+      element-key="tnzpv-invert"
+      name="TNZPV"
+    />
+    <CustomerLogoBlock
+      link="https://madlab-animations.com"
+      element-key="madlab-invert"
+      name="Madlab"
+    />
+    <CustomerLogoBlock
+      link="https://malilart.com"
+      element-key="malilart"
+      name="Malilart"
+    />
+    <CustomerLogoBlock
+      link="https://www.ankama.com/fr/animations"
+      element-key="ankama"
+      name="Ankama Animations"
+    />
+    <CustomerLogoBlock
+      link="https://www.folivari.com"
+      element-key="folivari"
+      name="Folivari"
+    />
+    <CustomerLogoBlock
+      link="https://www.cottonwood.tv"
+      element-key="cottonwood-invert"
+      name="Cottonwood Media"
+    />
     <CustomerLogoBlock
       link="https://www.mindseyecreative.ca/"
       element-key="mindseye-creative"
@@ -246,14 +274,39 @@
       name="Ellipse"
     />
     <CustomerLogoBlock
-      link="https://www.a.com/"
+      link="https://www.tantmieuxprod.net/"
       element-key="tant-mieux-prod"
       name="Tant Mieux Prod"
     />
     <CustomerLogoBlock
-      link="http://www.cartuna.com"
+      link="http://www.cartuna.com/"
       element-key="cartuna"
       name="Cartuna"
+    />
+    <CustomerLogoBlock
+      link="https://normaal.fr/"
+      element-key="normaal"
+      name="Normaal"
+    />
+    <CustomerLogoBlock
+      link="https://www.bobbypills.com/"
+      element-key="bobbypills"
+      name="Bobby Pills"
+    />
+    <CustomerLogoBlock
+      link="https://www.embuscadefilms.com/"
+      element-key="embuscade"
+      name="Embuscade Films"
+    />
+    <CustomerLogoBlock
+      link="https://www.banijay.com/company/zodiak-kids-family-studio-france/"
+      element-key="zodiak"
+      name="Zodiak Kids"
+    />
+    <CustomerLogoBlock
+      link="https://www.banijay.com/company/zodiak-kids-family-studio-france/"
+      element-key="philmcgi"
+      name="Philm CGI"
     />
   </ul>
 </section>

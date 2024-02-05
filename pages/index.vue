@@ -52,8 +52,7 @@
       <div class="brand-wheel">
         <div class="brand-slide">
           <div class="logo-div">
-            <img src="~/assets/images/logo-miyu.png">
-          </div>
+            <img src="~/assets/images/logo-miyu.png"> </div>
           <div class="logo-div">
             <img src="~/assets/images/logo-fost.png" />
           </div>
