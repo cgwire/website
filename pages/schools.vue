@@ -177,7 +177,11 @@
       element-key="nextgen-academy"
       name="Nextgen School Academy"
     />
-
+    <CustomerLogoBlock
+      link="https://creativeseeds.fr/"
+      element-key="creative-seeds"
+      name="Creative Seeds"
+    />
   </ul>
 </section>
 
