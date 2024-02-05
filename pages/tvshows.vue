@@ -215,7 +215,7 @@
     />
     <CustomerLogoBlock
       link="https://www.cube-creative.com"
-      element-key="cube-creative"
+      element-key="cube-invert"
       name="Cube Creative"
     />
     <CustomerLogoBlock
