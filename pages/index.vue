@@ -5,13 +5,14 @@
      <div class="flexrow-item introduction-text">
        <h1 class="title">{{ $t('main title') }}</h1>
        <h2 class="main-subtitle">{{ $t('main subtitle') }}</h2>
-        <button
-          @click="() => showVideoModal()"
-          class="toggleModal button button--with-icon is-large"
+        <a
+          href="https://www.youtube.com/watch?v=YJQJ3OciGR0"
+          target="_blank"
+          class="button button--with-icon is-large"
         >
           <img src="~/assets/images/play.svg" alt="" />
           <span>{{ $t('kitsu watch cta') }}</span>
-        </button>
+        </a>
      </div>
      <div class="flexrow-item introduction-picture">
        <video
@@ -438,32 +439,7 @@ useHead({
   ]
 })
 
-let player
-let isVideoModalActive = ref(false)
 let featureTab = ref('todos')
-
-const videoId = '2HNnFffAADU'
-onMounted(() => {
-  setTimeout(() => {
-    player = new YT.Player('youtube-player', {
-      height: '100%',
-      width: '100%',
-      videoId: 'YJQJ3OciGR0',
-      events: {}
-    })
-    document.querySelector('video').play()
-  }, 1000)
-})
-
-function showVideoModal () {
-  isVideoModalActive.value = true
-  player.playVideo()
-}
-
-function hideVideoModal () {
-  isVideoModalActive.value = false
-  player.pauseVideo()
-}
 </script>
 
 <style lang="stylus" scoped>

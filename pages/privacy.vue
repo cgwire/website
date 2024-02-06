@@ -331,7 +331,25 @@ may collect personal data:</p>
             <p><a href="https://crisp.chat/fr/privacy/">https://crisp.chat/fr/privacy/</a></p>
         </td>
     </tr>
-
+    <tr>
+        <td>
+            <p><a href="https://www.vimeo.com/">Vimeo</a></p>
+        </td>
+        <td>
+            <p>
+              Vimeo provides a widget to display some videos made by our customers.
+            </p>
+        </td>
+        <td>
+            <p>US</p>
+        </td>
+        <td>
+            <p>IP address</p>
+        </td>
+        <td>
+            <p><a href="https://vimeo.com/privacy">https://vimeo.com/privacy</a></p>
+        </td>
+    </tr>
   </tbody>
 </table>
 <h2 class="subtitle" id="retention">Retention of data</h2>
