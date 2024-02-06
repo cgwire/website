@@ -32,13 +32,13 @@
 import { ref } from 'vue'
 const isActive = ref(true)
 
-const cookieConsent = localStorage.getItem('cookie-consent')
-console.log('cookieConsent', cookieConsent)
-if (cookieConsent !== null) {
-  isActive.value = false
+if(process.client) {
+  const cookieConsent = localStorage.getItem('cookie-consent')
+  console.log('cookieConsent', cookieConsent)
+  if (cookieConsent !== null) {
+    isActive.value = false
+  }
 }
-
-console.log('isActive', isActive.value)
 
 function acceptCookies () {
   localStorage.setItem('cookie-consent', 'true')
