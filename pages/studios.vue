@@ -52,6 +52,49 @@
 
   <ul>
     <li>
+      <a href="https://www.miyu.fr/production/le-parfum-dirak/"
+         class="production">
+        <img src="~/assets/images/productions/le-parfum-dirak.png" />
+        <span>Le Parfum d'Irak</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.miyu.fr/production/anzu-chat-fantome/"
+         class="production">
+        <img src="~/assets/images/productions/anzu.png" />
+        <span>Anzu</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="https://fost.studio/portfolio/7-bears/"
+         class="production">
+        <img src="~/assets/images/productions/seven-bears.png" />
+        <span>Seven Bears</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://fost.studio/portfolio/splinter-cell/"
+         class="production">
+        <img src="~/assets/images/productions/splinter-cell.png" />
+        <span>Splinter Cell</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.unifrance.org/film/57590/woolly-woolly"
+         class="production">
+        <img src="~/assets/images/productions/woolly-woolly.png" />
+        <span>Woolly Woolly</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.3point0studio.com/la-plus-precieuse-des-marchandises/"
+         class="production">
+        <img src="~/assets/images/productions/la-plus-precieuse-des-marchandises.png" />
+        <span>La plus précieuse des marchandises</span>
+      </a>
+    </li>
+    <li>
       <a href="https://www.tf1.fr/tf1/pfffirates"
          class="production">
         <img src="~/assets/images/productions/pfffirates.png" />
@@ -69,7 +112,7 @@
       <a href="https://www.miyu.fr/production/christopher-at-sea-2/"
          class="production">
         <img src="~/assets/images/productions/christopher-at-sea.png" />
-        <span>Christophert At Sea</span>
+        <span>Christopher At Sea</span>
       </a>
     </li>
     <li>
