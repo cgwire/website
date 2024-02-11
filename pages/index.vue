@@ -26,25 +26,6 @@
    </div>
   </section>
 
-  <div
-    :class="{
-      modal: true,
-      'is-active': isVideoModalActive
-    }"
-    id="kitsu-video"
-  >
-    <div class="modal-background"></div>
-      <div class="modal-content">
-        <div id="youtube-player"></div>
-      </div>
-      <button
-        class="modal-close close-video is-large"
-        aria-label="close"
-        @click="() => hideVideoModal()"
-      >
-    </button>
-  </div>
-
   <section class="section content trusted pa1">
     <h4 class="section-subtitle has-text-centered">
       {{ $t('main explanation trusted') }}
@@ -53,7 +34,8 @@
       <div class="brand-wheel">
         <div class="brand-slide">
           <div class="logo-div">
-            <img src="~/assets/images/logo-miyu.png"> </div>
+            <img src="~/assets/images/logo-miyu.png">
+          </div>
           <div class="logo-div">
             <img src="~/assets/images/logo-fost.png" />
           </div>

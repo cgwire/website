@@ -12,208 +12,32 @@
 </section>
 
 <section class="section mt0">
-  <ul class="customers">
-    <li class="customers-item"><a href="http://www.cube-creative.com"><img src="~/assets/images/studios/logo-cube-invert.png" alt="Cube"></a></li>
-    <li class="customers-item"><a href="https://nousvoir.com"><img src="~/assets/images/studios/logo-tnzpv-invert.png" alt="TNZPV"></a></li>
-    <li class="customers-item"><a href="https://www.miyu.fr"><img src="~/assets/images/studios/logo-miyu-invert.png" alt="Miyu"></a></li>
-    <li class="customers-item"><a href="https://cloud.blender.org/films/"><img src="~/assets/images/studios/logo-blender-invert.png" alt="Blender Studios"></a></li>
-    <li class="customers-item"><a href="http://www.madlab-animations.com"><img src="~/assets/images/studios/logo-madlab-invert.png" alt="Madlab"></a></li>
-    <li class="customers-item"><a href="http://les-fees-speciales.coop/"><img src="~/assets/images/studios/logo-les-fees-speciales-invert.png" alt="Les Fées Spéciales"></a></li>
-    <li class="customers-item"><a href="http://www.malil-art.com"><img src="~/assets/images/studios/logo-malilart.png" alt="Malilart"></a></li>
-    <li class="customers-item"><a href="http://www.mikrofilm.no/"><img src="~/assets/images/studios/logo-mikrofilm-invert.png" alt="Mikrofilm"></a></li>
-    <li class="customers-item"><a href="https://gizmosite.tv/"><img src="~/assets/images/studios/logo-gizmo-invert.png" alt="Supamonks"></a></li>
-    <li class="customers-item"><a href="https://www.supamonks.com/"><img src="~/assets/images/studios/logo-supamonks-invert.png" alt="Supamonks"></a></li>
-    <li class="customers-item"><a href="https://www.esra.edu"><img src="~/assets/images/logo-esra-invert.png" alt="ESRA"></a></li>
-    <li class="customers-item"><a href="https://www.gobelins.fr"><img src="~/assets/images/logo-gobelins.png" alt="Les Gobelins"></a></li>
-    <li class="customers-item"><a href="https://lanimea.com/"><img src="~/assets/images/logo-lanimea.png" alt="Lanimea"></a></li>
-    <li class="customers-item"><a href="https://www.ecolegeorgesmelies.fr"><img src="~/assets/images/studios/logo-georges-melies.png" alt="Ecole Georges Méliès"></a></li>
-    <li class="customers-item">
-     <a href="https://www.institutartline.com/">
-       <img src="~/assets/images/logo-artline.svg"
-            alt="Institut ArtLine">
-      </a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">3Dar</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">3Pers</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Animal Tank</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Aparat</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Atelier VFX</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Akami</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Bobby Pills</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Buck Design Amsterdam</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Cabong Studios</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="http://www.cartuna.com">Cartuna</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Cine Venture</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Circle Studios</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Cotton Wood Media</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Danger Studio</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Dirty Looks</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Ellipse</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Emberlight</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Embuscade Films</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Enclume Animation</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Eone</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Equinox</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Floating Rock</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Fokys Studio</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Fost Studio</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Grupok</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">IIW</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Karlab</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Karandash</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Lardux</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Leader Entertainment</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Les Films du Poisson Rouge</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Lighthouse</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">L'Idem Barcelona</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Minds Eye Creative</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Monello Production</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">NFB</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Noone</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Normaal</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Novanima</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Ogresse</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Onyx Studios</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Parrallel 14</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Hochschule Luzern</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Philm CGI</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Pikkulala</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Politeknik Batam</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Polycat</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Pyjama</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Space Between The Gaps</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Split Studio</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Studio Seufz</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Tant Mieux Prod</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Teidees</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">The Frank Barton Company</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Traumhaus</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">V4 GMBH</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">ViridianFX</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Wizz</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Woodblock</a>
-    </li>
-    <li class="customers-item only-name">
-      <a href="">Zodiak Kids Studios</a>
-    </li>
-  </ul>
+
+  <h2 class="section-subtitle has-text-centered user-title">
+  {{ $t('header title tvshows') }}
+  </h2>
+  <StudiosTVShows />
+
+  <h2 class="section-subtitle has-text-centered user-title">
+  {{ $t('header title feature-films') }}
+  </h2>
+  <StudiosFeature />
+
+  <h2 class="section-subtitle has-text-centered user-title">
+  {{ $t('header title shorts') }}
+  </h2>
+  <StudiosShorts />
+
+  <h2 class="section-subtitle has-text-centered user-title">
+  {{ $t('header title videogames') }}
+  </h2>
+  <StudiosVideoGames />
+
+  <h2 class="section-subtitle has-text-centered user-title">
+  {{ $t('header title schools') }}
+  </h2>
+  <StudiosSchools />
+
 </section>
 
 <section class="section productions">
@@ -530,4 +354,11 @@
 <style lang="stylus" scoped>
 .customers
   margin auto
+
+.body h2.section-subtitle.user-title
+  margin-bottom 1em
+  margin-top 3em
+
+.body h2.section-subtitle.user-title:first-child
+  margin-top 0
 </style>
