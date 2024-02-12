@@ -52,6 +52,20 @@
 
   <ul>
     <li>
+      <a href="https://www.netflix.com/title/81044590"
+         class="production">
+        <img src="~/assets/images/productions/carol-and-the-end-of-the-world.png" />
+        <span>Carol and the End of the World</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.monello.fr/series/les-gardes-chimeres"
+         class="production">
+        <img src="~/assets/images/productions/les-gardes-chimeres.png" />
+        <span>Les Gardes Chimères</span>
+      </a>
+    </li>
+    <li>
       <a href="https://www.miyu.fr/production/le-parfum-dirak/"
          class="production">
         <img src="~/assets/images/productions/le-parfum-dirak.png" />
@@ -65,7 +79,6 @@
         <span>Anzu</span>
       </a>
     </li>
-
     <li>
       <a href="https://fost.studio/portfolio/7-bears/"
          class="production">

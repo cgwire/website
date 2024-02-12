@@ -121,9 +121,9 @@
       name="Outlook VFX"
     />
     <CustomerLogoBlock
-      link="https://www.ovfx.com/"
-      element-key="outlookvfx"
-      name="Outlook VFX"
+      link="https://tetsuoanimation.com/"
+      element-key="tetsuo"
+      name="Tetsuo Animation"
     />
     <CustomerLogoBlock
       link="https://www.holybird.fr/"
