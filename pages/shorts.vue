@@ -178,7 +178,7 @@
         <p>
           "27" {{ $t('usecase demo') }}
           <a href="https://miyu-prod.cg-wire.com/">Miyu Productions</a>
-          - Cannes Palme D'or 2024
+          - Cannes Palme D'or 2023
         </p>
       </div>
     </div>
