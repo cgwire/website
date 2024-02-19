@@ -185,5 +185,25 @@
       element-key="aparat"
       name="Aparat"
     />
+    <CustomerLogoBlock
+      link="https://www.odcreate.me"
+      element-key="odee"
+      name="Odee"
+    />
+    <CustomerLogoBlock
+      link="https://www.monkeys.tv/"
+      element-key="monkeys"
+      name="Monkeys"
+    />
+    <CustomerLogoBlock
+      link="https://rockinvfx.com/"
+      element-key="rockinvfx"
+      name="Rockin VFX"
+    />
+    <CustomerLogoBlock
+      link="https://cousinbizarre.com/"
+      element-key="cousin-bizarre"
+      name="Cousin Bizarre"
+    />
   </ul>
 </template>
