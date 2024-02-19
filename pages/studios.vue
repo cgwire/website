@@ -66,6 +66,20 @@
       </a>
     </li>
     <li>
+      <a href="https://tetsuoanimation.com/work-detail/fall-guys-doraemon-cx/"
+         class="production">
+        <img src="~/assets/images/productions/fall-guys.png" />
+        <span>Fall Guys</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://emberlight.se/project/ufo-sweden"
+         class="production">
+        <img src="~/assets/images/productions/ufo-sweden.png" />
+        <span>UFO Sweden</span>
+      </a>
+    </li>
+    <li>
       <a href="https://www.miyu.fr/production/le-parfum-dirak/"
          class="production">
         <img src="~/assets/images/productions/le-parfum-dirak.png" />
