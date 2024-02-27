@@ -32,7 +32,7 @@
 import { ref } from 'vue'
 const isActive = ref(true)
 
-if(process.browser) {
+if(!process || process.browser) {
   const cookieConsent = localStorage.getItem('cookie-consent')
   console.log('cookieConsent', cookieConsent)
   if (cookieConsent !== null) {
