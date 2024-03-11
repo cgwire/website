@@ -59,5 +59,10 @@
       element-key="parallel14"
       name="Parallel 14"
     />
+    <CustomerLogoBlock
+      link="https://www.ritcs.be"
+      element-key="ritcs"
+      name="RITCS School of Art"
+    />
   </ul>
 </template>

@@ -205,5 +205,25 @@
       element-key="cousin-bizarre"
       name="Cousin Bizarre"
     />
+    <CustomerLogoBlock
+      link="http://www.signos.com.co/"
+      element-key="signos"
+      name="Signos"
+    />
+    <CustomerLogoBlock
+      link="https://naive.se/"
+      element-key="naive"
+      name="Naive"
+    />
+    <CustomerLogoBlock
+      link="https://www.werlenmeyer.com/"
+      element-key="werlen-meyer"
+      name="Werlen Meyer"
+    />
+    <CustomerLogoBlock
+      link="https://nikopicto.com/"
+      element-key="niko-picto"
+      name="Niko Picto"
+    />
   </ul>
 </template>
