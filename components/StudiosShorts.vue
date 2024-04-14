@@ -225,5 +225,25 @@
       element-key="niko-picto"
       name="Niko Picto"
     />
+    <CustomerLogoBlock
+      link="https://www.abduct.studio/"
+      element-key="abduct"
+      name="Abduct Studio"
+    />
+    <CustomerLogoBlock
+      link="https://weloveabattle.com/"
+      element-key="welab"
+      name="We Love a Battle"
+    />
+    <CustomerLogoBlock
+      link="https://www.polenord.studio/"
+      element-key="pole-nord"
+      name="Pôle Nord Studio"
+    />
+    <CustomerLogoBlock
+      link="https://www.impossible-objects.co/"
+      element-key="impossible-objects"
+      name="Impossible Objects"
+    />
   </ul>
 </template>

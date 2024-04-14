@@ -33,10 +33,15 @@ export default defineNuxtConfig({
     }
   },
   css: [
-      { src: '~/assets/styles/app.styl', lang: 'styl'}, 
+      '~/public/app.styl',
+      '~/public/bulma-slider.min.css',
       'bulma'
-      // '~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'
   ],
+  vite: {
+    optimizeDeps: {
+      exclude: ['*app.styl', '*bulma-slider.min.css', '*bulma.css']
+    }
+  },
   components: true,
   modules: [
     '@nuxtjs/i18n',

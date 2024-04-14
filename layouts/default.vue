@@ -6,6 +6,3 @@
   <CookieConsent />
 </div>
 </template>
-
-<script>
-</script>
