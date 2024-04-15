@@ -76,9 +76,6 @@
             <img src="~/assets/images/logo-tnzpv.png">
           </div>
           <div class="logo-div">
-            <img src="~/assets/images/studios/logo-gizmo.png">
-          </div>
-          <div class="logo-div">
             <img src="~/assets/images/studios/logo-mikrofilm.png">
           </div>
           <div class="logo-div">
@@ -89,6 +86,9 @@
           </div>
           <div class="logo-div">
             <img src="~/assets/images/studios/logo-mindseye.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-supercell-black.png">
           </div>
           <div class="logo-div">
             <img src="~/assets/images/studios/logo-yuga-labs.png">
