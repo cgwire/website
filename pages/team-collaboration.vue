@@ -42,7 +42,11 @@ const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('team-collaboration header tagline'),
   meta: [
-    { name: 'description', content: t('team-collaboration header explanation')}
-  ]
+    { name: 'description', content: t('team-collaboration header explanation') },
+    { name: 'og:description', content: t('team-collaboration header explanation') },
+    { name: 'og:title', content: t('team-collaboration header tagline') },
+    { name: 'og:type', content: 'website' },
+    { name: 'og:url', content: 'https://www.cg-wire.com'},
+    { name: 'og:image', content: 'https://www.cg-wire.com/_nuxt/team-collaboration.83584c91.png'},
 })
 </script>
