@@ -48,5 +48,6 @@ useHead({
     { name: 'og:type', content: 'website' },
     { name: 'og:url', content: 'https://www.cg-wire.com'},
     { name: 'og:image', content: 'https://www.cg-wire.com/_nuxt/team-collaboration.83584c91.png'},
+  ]
 })
 </script>
