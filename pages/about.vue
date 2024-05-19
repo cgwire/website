@@ -193,12 +193,16 @@ useHead({
   title: 'CGWire | ' + t('about tagline'),
   meta: [
     { name: 'description', content: t('about explanation one') },
-    { name: 'og:description', content: t('about explanation one') },
-    { name: 'og:title', content: t('team-collaboration header tagline') },
     { name: 'og:type', content: 'website' },
-    { name: 'og:url', content: 'https://www.cg-wire.com'},
+    { name: 'og:description', content: t('about explanation one') },
+    { name: 'og:title', content: t('about tagline') },
+    { name: 'og:url', content: 'https://www.cg-wire.com/about'},
     { name: 'og:image', content: 'https://www.cg-wire.com/_nuxt/about.107a8a01.png'},
-    { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:description', content: t('about explanation one') },
+    { name: 'twitter:title', content: t('about tagline') },
+    { name: 'twitter:url', content: 'https://www.cg-wire.com/about'},
+    { name: 'twitter:image', content: 'https://www.cg-wire.com/_nuxt/about.107a8a01.png'},
+    { name: 'twitter:card', content: 'summary_large_image' },
   ]
 })
 </script>
