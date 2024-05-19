@@ -192,7 +192,13 @@ const { t } = useI18n()
 useHead({
   title: 'CGWire | ' + t('about tagline'),
   meta: [
-    { name: 'description', content: t('about explanation one') }
+    { name: 'description', content: t('about explanation one') },
+    { name: 'og:description', content: t('about explanation one') },
+    { name: 'og:title', content: t('team-collaboration header tagline') },
+    { name: 'og:type', content: 'website' },
+    { name: 'og:url', content: 'https://www.cg-wire.com'},
+    { name: 'og:image', content: 'https://www.cg-wire.com/_nuxt/about.107a8a01.png'},
+    { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
   ]
 })
 </script>
