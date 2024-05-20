@@ -156,7 +156,7 @@ useHead({
   meta: buildPageMeta(
     t,
     'spreadsheets tagline',
-    'spreadsheets eplanation one',
+    'spreadsheets explanation one',
     'spreadsheets',
     'spreadsheet-planning-short.1f30ad66.png'
   )

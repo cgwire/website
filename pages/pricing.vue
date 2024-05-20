@@ -766,7 +766,7 @@ useHead({
   meta: buildPageMeta(
     t,
     'pricing kitsu title',
-    'pricing kitsu explaination',
+    'pricing cloud explanation',
     'pricing',
   )
 })

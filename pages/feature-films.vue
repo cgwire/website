@@ -245,8 +245,7 @@ useHead({
     t,
     'feature-films title',
     'feature-films subtitle',
-    'feature-films',
-    'team-collaboration.83584c91.png'
+    'feature-films'
   )
 })
 
