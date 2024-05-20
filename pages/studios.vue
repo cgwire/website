@@ -429,7 +429,7 @@ useHead({
   meta: buildPageMeta(
     t,
     'studios title',
-    'studios subtitle',
+    'studios tagline',
     'studios',
   )
 })

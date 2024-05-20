@@ -67,7 +67,7 @@ useHead({
     'header title customer-stories',
     'Feature Films, TV Series, VFX Studios',
     'customer-stories',
-    'assets/images/photo-customer-story-fost.png'
+    'photo-customer-story-fost.801872d5.png'
   )
 })
 </script>
