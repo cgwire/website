@@ -41,8 +41,12 @@ const name = 'Production Tracker'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('production-tracker header tagline'),
-  meta: [
-    { name: 'description', content: t('production-tracker header explanation')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'production-tracker header tagline',
+    'production-tracker header explanation',
+    'production-tracker',
+    'production-tracker.d8312992.png'
+  )
 })
 </script>

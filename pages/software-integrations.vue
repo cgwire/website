@@ -145,9 +145,13 @@ const name = 'Software Integrations'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('software-integrations header tagline'),
-  meta: [
-    { name: 'description', content: t('software-integrations header explanation')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'software-integrations header tagline',
+    'software-integrations header explanation',
+    'software-integrations',
+    'software-integrations.f91a84a5.png'
+  )
 })
 </script>
 

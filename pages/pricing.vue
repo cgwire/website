@@ -763,9 +763,12 @@ let isMonthly = ref(false)
 
 useHead({
   title: 'CGWire | ' + t('pricing title'),
-  meta: [
-    { name: 'description', content: t('pricing explanation one')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'pricing kitsu title',
+    'pricing kitsu explaination',
+    'pricing',
+  )
 })
 
 function setExpanded (index) {

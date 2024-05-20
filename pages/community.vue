@@ -197,8 +197,12 @@ const name = 'Community'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | ' + t('header title community'),
-  meta: [
-    { name: 'description', content: t('community explanation one')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'community header tagline',
+    'casting-management explanation one',
+    'community',
+    'meetup.af7c0c6c.jpg'
+  )
 })
 </script>

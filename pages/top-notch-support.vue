@@ -37,8 +37,11 @@ const name = 'Top Notch Support'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('top-notch-support header tagline'),
-  meta: [
-    { name: 'description', content: t('top-notch-support header explanation')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'top-notch-support header tagline',
+    'top-notch-support header explanation',
+    'top-notch-support',
+  )
 })
 </script>

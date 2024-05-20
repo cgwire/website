@@ -36,8 +36,12 @@ const name = 'Production Tracker'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('tailor-made-architecture header tagline'),
-  meta: [
-    { name: 'description', content: t('tailor-made-architecture explanation one')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'tailor-made-architecture header tagline',
+    'tailor-made-architecture header explanation',
+    'tailor-made-architecture',
+    'tailor-made-architecture.2a218deb.png'
+  )
 })
 </script>

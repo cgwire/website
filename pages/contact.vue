@@ -34,8 +34,12 @@ const name = 'Contact'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | ' + t('footers link contact'),
-  meta: [
-    { name: 'description', content: t('contact tagline') }
-  ]
+  meta: buildPageMeta(
+    t,
+    'contact tagline',
+    'contact tagline',
+    'contact',
+    'assets/images/logo.png'
+  )
 })
 </script>

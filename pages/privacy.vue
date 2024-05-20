@@ -372,8 +372,11 @@ const name = 'Terms'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | ' + t('footers link privacy'),
-  meta: [
-    { name: 'description', content: 'Privacy Policy' }
-  ]
+  meta: buildPageMeta(
+    t,
+    'Privacy',
+    'This Policy describes the information we collect from you, how we use that information and our legal basis for doing so. It also covers whether and how that information may be shared and your rights and choices regarding the information you provide to us.',
+    'privacy',
+  )
 })
 </script>

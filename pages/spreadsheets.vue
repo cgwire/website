@@ -147,3 +147,18 @@
     </p>
   </section>
 </template>
+
+<script setup>
+const name = 'Spreadsheets'
+const { t } = useI18n()
+useHead({
+  title: 'CGWire | Kitsu / ' + t('studios title'),
+  meta: buildPageMeta(
+    t,
+    'spreadsheets tagline',
+    'spreadsheets eplanation one',
+    'spreadsheets',
+    'spreadsheet-planning-short.1f30ad66.png'
+  )
+})
+</script>

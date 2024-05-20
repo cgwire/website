@@ -41,18 +41,12 @@ const name = 'Team Collaboration'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('team-collaboration header tagline'),
-  meta: [
-    { name: 'description', content: t('team-collaboration header explanation') },
-    { name: 'og:description', content: t('team-collaboration header explanation') },
-    { name: 'og:title', content: t('team-collaboration header tagline') },
-    { name: 'og:type', content: 'website' },
-    { name: 'og:url', content: 'https://www.cg-wire.com/team-collaboration'},
-    { name: 'og:image', content: 'https://www.cg-wire.com/_nuxt/team-collaboration.83584c91.png'},
-    { name: 'twitter:title', content: t('team-collaboration header tagline') },
-    { name: 'twitter:description', content: t('team-collaboration header explanation') },
-    { name: 'twitter:url', content: 'https://www.cg-wire.com/team-collaboration'},
-    { name: 'twitter:image', content: 'https://www.cg-wire.com/_nuxt/team-collaboration.83584c91.png'},
-    { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
-  ]
+  meta: buildPageMeta(
+    t,
+    'team-collaboration header tagline',
+    'team-collaboration header explanation',
+    'team-collaboration',
+    'team-collaboration.83584c91.png'
+  )
 })
 </script>

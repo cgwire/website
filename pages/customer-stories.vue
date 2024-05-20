@@ -58,13 +58,17 @@
 </template>
 
 <script setup>
-const name = 'Review Engine'
+const name = 'Customer Stories'
 const { t } = useI18n()
 useHead({
-  title: 'CGWire | Kitsu / ' + t('review-engine header tagline'),
-  meta: [
-    { name: 'description', content: t('review-engine header explanation')}
-  ]
+  title: 'CGWire | Kitsu / ' + t('header title customer-stories'),
+  meta: buildPageMeta(
+    t,
+    'header title customer-stories',
+    'Feature Films, TV Series, VFX Studios',
+    'customer-stories',
+    'assets/images/photo-customer-story-fost.png'
+  )
 })
 </script>
 

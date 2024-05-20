@@ -159,9 +159,13 @@ const name = 'Kitsu'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu',
-  meta: [
-    { name: 'description', content: t('kitsu description')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'kitsu title',
+    'kitsu description',
+    'kitsu',
+    'teaser.d579992c.png'
+  )
 })
 </script>
 

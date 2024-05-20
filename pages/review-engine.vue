@@ -41,9 +41,13 @@ const name = 'Review Engine'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('review-engine header tagline'),
-  meta: [
-    { name: 'description', content: t('review-engine header explanation')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'review-engine header tagline',
+    'review-engine header explanation',
+    'review-engine',
+    'review-engine.131abbc7.png'
+  )
 })
 </script>
 

@@ -192,10 +192,13 @@
 const name = 'Shorts'
 const { t } = useI18n()
 useHead({
-  title: t('shorts subtitle'),
-  meta: [
-    { name: 'description', content: t('shorts title')}
-  ]
+  title: 'CGWire | Kitsu / ' + t('shorts subtitle'),
+  meta: buildPageMeta(
+    t,
+    'shorts title',
+    'shorts subtitle',
+    'shorts'
+  )
 })
 let panel = ref('productionmanager')
 function selectPanel (section) {

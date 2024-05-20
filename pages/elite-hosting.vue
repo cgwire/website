@@ -30,12 +30,16 @@
 </template>
 
 <script setup>
-const name = 'Team Collaboration'
+const name = 'Elite Hosting'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('elite-hosting header tagline'),
-  meta: [
-    { name: 'description', content: t('elite-hosting header explanation')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'elite-hosting header tagline',
+    'elite-hosting header explanation',
+    'elite-hosting',
+    'elite-hosting.41201633.png'
+  )
 })
 </script>

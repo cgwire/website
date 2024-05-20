@@ -242,9 +242,12 @@ const name = 'TV Shows'
 const { t } = useI18n()
 useHead({
   title: t('tvshows subtitle'),
-  meta: [
-    { name: 'description', content: t('tvshows title')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'tvshows title',
+    'tvshows subtitle',
+    'tvshows',
+  )
 })
 let panel = ref('producer')
 function selectPanel (section) {

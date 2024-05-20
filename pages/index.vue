@@ -413,12 +413,13 @@ const name = 'Index'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | ' + t('main title'),
-  meta: [
-    { name: 'description', content: t('main subtitle') },
-    { name:'og:title', content: 'CGWire | ' + t('main title') },
-    { name:'og:image', content: 'https://cgwire.com/assets/images/logo.svg' },
-    { name:'twitter:title', content: 'CGWire | ' + t('main title') },
-  ]
+  meta: buildPageMeta(
+    t,
+    'main title',
+    'main subtitle',
+    '',
+    'teaser.d579992c.png'
+  )
 })
 
 let featureTab = ref('todos')

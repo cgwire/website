@@ -128,9 +128,13 @@ const name = 'Shotgrid'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu vs Shotgrid',
-  meta: [
-    { name: 'description', content: 'The target audience of Shotgrid are big facilities: AutoCAD customers and very big studios like ILM, Weta or Disney.' }
-  ]
+  meta: buildPageMeta(
+    t,
+    'comparison shotgrid title',
+    'comparison shotgrid subtitle',
+    'shotgrid',
+    'vsshotgrid.128c271a.png'
+  )
 })
 </script>
 

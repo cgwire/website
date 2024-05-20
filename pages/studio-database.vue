@@ -35,8 +35,12 @@ const name = 'Team Collaboration'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('studio-database header tagline'),
-  meta: [
-    { name: 'description', content: t('studio-database header explanation')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'studio-database header tagline',
+    'studio-database header explanation',
+    'studio-database',
+    'studio-database.0c519a6b.png'
+  )
 })
 </script>

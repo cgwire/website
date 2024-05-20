@@ -159,10 +159,13 @@
 const name = 'Schools'
 const { t } = useI18n()
 useHead({
-  title: t('schools title'),
-  meta: [
-    { name: 'description', content: t('schools title')}
-  ]
+  title: 'CGWire | Kitsu / ' + t('schools subtitle'),
+  meta: buildPageMeta(
+    t,
+    'schools title',
+    'schools subtitle',
+    'schools'
+  )
 })
 let panel = ref('students')
 function selectPanel (section) {

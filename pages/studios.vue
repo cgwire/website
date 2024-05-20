@@ -421,6 +421,20 @@
 <Trial />
 </template>
 
+<script setup>
+const name = 'Studios'
+const { t } = useI18n()
+useHead({
+  title: 'CGWire | Kitsu / ' + t('studios title'),
+  meta: buildPageMeta(
+    t,
+    'studios title',
+    'studios subtitle',
+    'studios',
+  )
+})
+</script>
+
 <style lang="stylus" scoped>
 .customers
   margin auto

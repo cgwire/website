@@ -138,8 +138,12 @@ const name = 'Ftrack'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu vs Ftrack',
-  meta: [
-    { name: 'description', content: 'The target audience of Shotgrid are big facilities The Kitsu audience is animation and VFX studios with a team of up to 500 users.' }
-  ]
+  meta: buildPageMeta(
+    t,
+    'comparison ftrack title',
+    'comparison ftrack subtitle',
+    'ftrack',
+    'vsftrack.935e487c.png'
+  )
 })
 </script>

@@ -160,9 +160,12 @@ const features = ref([
 
 useHead({
   title: 'CGWire | Cloud vs Self-Hosted',
-  meta: [
-    { name: 'description', content: 'If you are a big studio, you will need support and maintenance. have a critical project with, your studio can\'t afford to be blocked.' }
-  ]
+  meta: buildPageMeta(
+    t,
+    'comparison selfhosted title',
+    'comparison selfhosted subtitle',
+    'self-hosted'
+  )
 })
 </script>
 

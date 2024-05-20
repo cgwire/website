@@ -41,8 +41,12 @@ const name = 'Casting Management'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | Kitsu / ' + t('casting-management header tagline'),
-  meta: [
-    { name: 'description', content: t('casting-management header explanation')}
-  ]
+  meta: buildPageMeta(
+    t,
+    'casting-management header tagline',
+    'casting-management header explanation',
+    'casting-management',
+    'casting-management.d4e833f8.png'
+  )
 })
 </script>

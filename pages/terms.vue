@@ -335,8 +335,11 @@ const name = 'Terms'
 const { t } = useI18n()
 useHead({
   title: 'CGWire | ' + t('footers link terms'),
-  meta: [
-    { name: 'description', content: 'Usage terms' }
-  ]
+  meta: buildPageMeta(
+    t,
+    'Terms Of Service',
+    'By using the CGWire Hosting (“Service”) provided by CGWire (“Company”), you are agreeing to be bound by the following terms and conditions (“Terms of Service”). If you do not agree to these Terms of Service, do not use this Service. By accepting these Terms of Service below or by using the Service in any manner, you and the entity you represent (“Customer”) agree that you have read and agree to be bound by this agreement to the exclusion of all other terms.',
+    'terms',
+  )
 })
 </script>
