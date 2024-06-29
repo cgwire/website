@@ -15,7 +15,7 @@
 
     <p>
     The target audience of Shotgrid is big facilities: AutoCAD customers and
-    very big studios like ILM, Weta, or Disney.
+    large studios like ILM, Weta, or Disney.
     </p>
     <p>
     The Kitsu audience are animation and VFX studios with distributed teams
