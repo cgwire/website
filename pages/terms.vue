@@ -137,14 +137,14 @@ Cancellation and Termination
 
 <ol>
   <li>
-    You are solely responsible for properly canceling your account. An email to cancel your account is not considered cancellation. You can cancel your account at any time by clicking on the Profile link in Administration area of CGWire. The Profile screen provides a simple no-questions-asked cancellation link.
+    You are solely responsible for properly canceling your account. An email to cancel your account is not considered cancellation. You can cancel your account at any time by clicking on subscription section in Acount area of CGWire website. The Profile screen provides a simple no-questions-asked cancellation link.
   </li>
   <li>
     All of your content will be inaccessible from the Service immediately upon
     cancellation. Within 30 days, all CGWire content will be permanently deleted from all backups and logs. This information can not be recovered once it has been permanently deleted.
   </li>
   <li>
-    If you cancel the Service before the end of your current paid up month, your cancellation will take effect at the end of the current billing cycle, and you will not be charged again. But there will not be any prorating of unused time in the last billing cycle.
+    If you cancel the Service before the end of your current paid-up month, your cancellation will take effect at the end of the current billing cycle, and you will not be charged again. But there will not be any prorating of unused time in the last billing cycle.
   </li>
   <li>
     The Company, in its sole discretion, has the right to suspend or terminate your account and refuse any and all current or future use of the Service for any reason at any time. Such termination of the Service will result in the deactivation or deletion of your Account or your access to your Account, and the forfeiture and relinquishment of all content in your account. The Company reserves the right to refuse service to anyone for any reason at any time.
@@ -159,13 +159,13 @@ Modifications to the Service and Prices
   <li>
     The Company reserves the right at any time and from time to time to modify or discontinue, temporarily or permanently, any part of the Service with or without notice.
   </li>
-  <li>
+  <lzi>
     Prices of all Services are subject to change upon 30 days notice from us.
     Such notice may be provided at any time by posting the changes to the
     CGWire website at www.cg-wire.com or the Service itself.
   </li>
   <li>
-    The Company shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.
+    The Company shall not be liable to you or to any third party for any modification, price change, suspension, or discontinuance of the Service.
   </li>
 </ol>
 
@@ -187,7 +187,7 @@ Content Ownership, Copyright and Trademark
     The look and feel of the Service is copyright© CGWire SAS All rights reserved. You may not duplicate, copy, or reuse any portion of the HTML, CSS, JavaScript, or visual design elements without express written permission from the Company.
   </li>
   <li>
-    “CGWire”, the CGWire logo, “Kitsu”, the Kitsu logo and any other product or service name or slogan displayed on the Service are trademarks of the Company or its affiliates, and its licensors, and may not be copied, imitated or used, in whole or in part, without the prior written permission of the Company or the applicable trademark holder.
+    “CGWire”, the CGWire logo, “Kitsu”, the Kitsu logo, and any other product or service name or slogan displayed on the Service are trademarks of the Company or its affiliates, and its licensors and may not be copied, imitated or used, in whole or in part, without the prior written permission of the Company or the applicable trademark holder.
   </li>
 </ol>
 
@@ -219,7 +219,7 @@ You agree to not use the Service to send to the Company sensitive information wh
 
 </li>
 <li>
-    Credit card information including credit card numbers, CIV numbers (three digit codes for Visa and MasterCard, four digit code for American Express) and magnetic stripe information
+    Credit card information, including credit card numbers, CIV numbers (three-digit codes for Visa and MasterCard, four-digit code for American Express) and magnetic stripe information
 </li>
 <li>
     Social Security Numbers
@@ -231,7 +231,7 @@ You agree to not use the Service to send to the Company sensitive information wh
     Passport Numbers
 </li>
 <li>
-    Government Issued Identification Numbers
+    Government-issued Identification Numbers
 </li>
 <li>
     Financial Account Information
@@ -246,10 +246,10 @@ You agree to not use the Service to send to the Company sensitive information wh
     Personally identifiable information knowingly collected from children under the age of 13 or from online services directed toward children, and
 </li>
 <li>
-    Real time geolocation data which can identify an individual.
+    Real-time geolocation data can identify an individual.
 </li>
 <li>
-    Business secrets deemed highly confidential (e.g., highly-confidential business strategies and communications, sensitive attorney-client privileged and confidential communications).
+    Business secrets are deemed highly confidential (e.g., highly confidential business strategies and communications, sensitive attorney-client privileged and confidential communications).
 </li>
 <li>
 You agree that the Company may monitor the activity of any account on the Service. Any such data shall be only used for the purpose of providing and improving the Service.
@@ -291,7 +291,7 @@ You must not modify another website so as to falsely imply that it is associated
 You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service without the express written permission by the Company.
 </li>
 <li>
-We may, but have no obligation to, remove content and accounts that we determine in our sole discretion are unlawful or violates any party’s intellectual property or these Terms of Service.
+We may, but have no obligation to, remove content and accounts that we determine in our sole discretion are unlawful or violate any party’s intellectual property or these Terms of Service.
 </li>
 <li>
 Verbal, physical, written or other abuse (including threats of abuse or retribution) of any Service customer, Company employee or officer may result in immediate account termination.
@@ -303,7 +303,7 @@ You understand that the technical processing and transmission of the Service, in
 We reserve the right to temporarily disable your account if your usage significantly exceeds the average usage of other Service customers. Of course, we’ll reach out to the account owner before taking any action except in rare cases where the level of use may negatively impact the performance of the Service for other customers.
 </li>
 <li>
-This Agreement shall be governed by the laws of Frank, and the courts of France shall have exclusive jurisdiction to hear and determine all issues that may arise under or in relation to this Agreement.
+This Agreement shall be governed by the laws of France, and the courts of France shall have exclusive jurisdiction to hear and determine all issues that may arise under or in relation to this Agreement.
 </li>
 <li>
 The Company does not warrant that (i) the service will meet your specific requirements, (ii) the service will be uninterrupted, timely, secure, or error-free, (iii) the results that may be obtained from the use of the service will be accurate or reliable, (iv) the quality of any products, services, information, or other material purchased or obtained by you through the service will meet your expectations, and (v) any errors in the Service will be corrected. Nevertheless due to the criticity of the production data, we'll do our best to keep the best uptime possilbe with a goal of 99.99%.
@@ -312,10 +312,10 @@ The Company does not warrant that (i) the service will meet your specific requir
 You expressly understand and agree that the Company shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if the Company has been advised of the possibility of such damages), resulting from: (i) the use or the inability to use the service; (ii) the cost of procurement of substitute goods and services resulting from any goods, data, information or services purchased or obtained or messages received or transactions entered into through or from the service; (iii) unauthorized access to or alteration of your transmissions or data; (iv) statements or conduct of any third-party on the service; (v) or any other matter relating to the service.
 </li>
 <li>
-The failure of the Company to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitutes the entire agreement between you and the Company and govern your use of the Service, superseding any prior agreements between you and the Company (including, but not limited to, any prior versions of the Terms of Service).
+The failure of the Company to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision. The Terms of Service constitute the entire agreement between you and the Company and govern your use of the Service, superseding any prior agreements between you and the Company (including, but not limited to, any prior versions of the Terms of Service).
 </li>
 <li>
-The Company reserves the right to update and change these Terms of Service without notice. Customer will be notified by email of any material change.
+The Company reserves the right to update and change these Terms of Service without notice. Customers will be notified by email of any material change.
 </li>
 <li>
 Questions about the Terms of Service should be sent to support@cg-wire.com.
