@@ -655,7 +655,7 @@
 
     <div class="estimator" v-if="$i18n.locale === 'en'">
       <div class="section-subtitle has-text-centered">
-        Estimate your subscription
+        Determine Your Subscription Cost
       </div>
       <h2 class="section-title has-text-centered">
         Price calculator
