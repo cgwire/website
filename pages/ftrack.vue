@@ -11,97 +11,79 @@
      {{ $t('comparison ftrack title') }}
     </h2>
 
-    <h3>Target audience</h3>
+    <h3>Target Audience</h3>
 
     <p>
-    The target audiences of Ftrack are big VFX facilities.
+    Ftrack is aimed at large VFX facilities.
     </p>
     <p>
-    The Kitsu audience are animation and VFX studios with distributed teams
-    and productions involving several studios (with a focus on TV series).
+    Kitsu is designed for smaller animation and VFX studios with distributed teams, especially those involved in productions across multiple studios, with a focus on TV series.
     </p>
     <p>
-    Features and roadmaps are designed accordingly to these two different goals.
-    That's why it's important to consider this aspect before choosing your
-    production management solution.
+    Our features and roadmaps are tailored to meet these distinct needs. Therefore, it’s important to consider this aspect when choosing your production management solution.
     </p>
 
-    <h3>Resource needed</h3>
+    <h3>Resources Needed</h3>
 
     <p>
-    Ftrack is a toolbox. So, to start with Ftrack, you must hire several
-    people dedicated to designing, configuring UIs, and plugging the whole
-    into your pipeline.
-    You will end up with something tailor-made but at the price of a lot of
-    effort. These developments will require a lot of maintenance in the
-    future. Last but not least, you will need internal training sessions
-    for your version of Ftrack.
+    Ftrack is an expansive toolbox. To get started with Ftrack, you must hire 
+    several people dedicated to customizing UIs, and integrating it into your pipeline. 
+    You will end up with something tailor-made, but it will require a lot of effort. 
+    These developments may also need significant maintenance in the future. 
+    Lastly, you will need internal training sessions for your customized version of Ftrack.
     </p>
 
     <p>
-    Kitsu works great right out of the box. All UIs are designed with ease of
-    use in mind. It's easy to start with it, and your users are autonomous. Our
-    dedicated support helps you to set up things if needed.
-    Nevertheless, you will still need a TD to plug your pipeline to Kitsu and
-    take advantage of its database. Although it provides flexibility to define
-    different workflows, Kitsu may not fit with very particular projects.
+    In contrast, Kitsu works great right out of the box. All UIs are designed with ease of use in mind, 
+    making it easy to get started. Our dedicated support team is available to assist with setup if needed.
+    However, to fully integrate Kitsu with your pipeline and take advantage of its database, you may need a pipeline TD. 
+    While Kitsu provides flexibility to define different workflows, it may not be suitable for projects with highly specialized pipelines.
     </p>
 
 
-    <h3>Simplicity vs. Exhaustivity</h3>
+    <h3>Simplicity vs. Comprehensiveness</h3>
 
     <p>
-    Ftrack is thought to be able to work on any projects at fine-grain
-    level. It's great to deal with any situation, but it comes with a lot
-    of complexity. Despite that, it may be too hard for your teams to get the
-    full benefits. Moreover, projects that need this level of specificity are
-    rare.
+    Ftrack is designed to work on any project at a fine-grain level. 
+    It's great at adapting to any situation, but it comes with a lot of complexity. As a result, 
+    the added time taken to learn and customize the system may counter the benefits gained from it. 
+    Moreover, projects that require this level of specificity are rare.
     </p>
 
     <p>
-    Kitsu focuses on animation and VFX projects. From our discussions with
-    hundreds of studios, we made the best choices to propose
-    something efficient but flexible enough to adapt to most situations.
-    Our goal is to ensure that everyone in the studio can use Kitsu from
-    day 1. You may not be able to handle every edge case, but you will
-    ensure that everyone in the studio is at ease with Kitsu.
+    Kitsu focuses on animation and VFX projects. 
+    Through close collaboration with hundreds of studios, we have designed a system that is efficient yet flexible enough to adapt to most situations. 
+    Our goal is to ensure that everyone in the studio can use Kitsu from day one. 
+    While there may be some very specialized use cases that aren't suitable, you can be confident that everyone in the studio will be comfortable with Kitsu.
     </p>
 
-    <h3>Review engine</h3>
+    <h3>Review Engine</h3>
 
     <p>
-    Ftrack has a strong review engine that performs great with high-end shots
-    (you can load your own LUT, for instance).
-    Nevertheless, browsing the preview database and comparing the versions is still hard.
+    Ftrack has a strong review engine that performs well when reviewing high-end shots online. 
+    Nevertheless, organising reviews and comparing versions is still challenging.
     </p>
     <p>
-    Kitsu proposes a strong playlist system that allows you to view and
-    compare all shots of your database easily in real-time. But it doesn't have
-    all the advanced features Ftrack review on coloring capabilities. There may
-    be better solutions for very high-end shots.
+    Kitsu offers a robust playlist system that allows you to view and compare all shots in your database easily in real-time.
     </p>
 
     <h3>Security</h3>
 
     <p>
-    Ftrack qualifies for many security certifications and provides on-premise
-    installations (with an extra cost). But its code is proprietary.
-    There is no certainty that your data will stay private.
+    Ftrack qualifies for many security certifications and offers on-premise installations (at an additional cost). 
+    However, its code is proprietary, so there is no guarntee that features or functionality might change or break in the future.
     </p>
 
     <p>
-    Kitsu is open-source and can be fully audited and installed on-premise with
-    very little extra cost. We can ensure that your data stay private and
-    secure. We take security very seriously, and while still waiting for
-    certifications, we apply all best practices to make your data safe.
+    Kitsu is open-source and can be fully audited and installed on-premise with very little extra cost. 
+    We ensure that your data remains private and secure. 
+    We take security very seriously and, while still waiting for certifications, we apply all best practices to keep your data safe.
     </p>
 
     <p>
-    CGWire engineers have a strong track record in cloud hosting and apply all
-    the protocols to ensure the security of your data (HTTPS, strict
-    password management politics, strong SSH key management, background checks,
-    etc.). It's time before we qualify for the needed security
-    certifications.
+    CGWire engineers have a strong track record in cloud hosting and apply all protocols to ensure the security of your data (HTTPS, 
+    strict password management policies, strong SSH key management, background checks, etc.). 
+    It is only a matter of time before we qualify for the necessary security certifications.
     </p>
 
     <h3>Pricing</h3>
@@ -111,10 +93,8 @@
     </p>
 
     <p>
-    But, Kitsu proposes a much better user experience: tutorials, beautiful UIs
-    , and dedicated support. And because every stakeholder uses it properly, the
-    return on investment of Kitsu in animation or VFX production is much
-    better.
+    However, Kitsu offers a much better user experience with tutorials, beautiful UIs, and dedicated support. 
+    Because every stakeholder uses it effectively, the return on investment for Kitsu in animation or VFX production is significantly higher.
     </p>
 
     <h3>Documentation</h3>
@@ -122,10 +102,10 @@
     Ftrack provides documentation about its usage and its Python client.
     </p>
     <p>
-    Kitsu offers an easy to follow the documentation, a search engine, and tutorial
-    videos. A training offer is available too.
-    Last but not least, the Python client and the REST API are fully documented.
-    It's much easier for a Pipeline TD to work with Kitsu.
+    Kitsu offers easy-to-follow documentation, a search engine, and tutorial videos. 
+    Training options for getting your team onboarded are also available. 
+    Finally, the Python client and the REST API are fully documented, making it much easier for a Pipeline TD to work with Kitsu.
+      
     </p>
   </section>
 </div>
