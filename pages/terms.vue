@@ -159,7 +159,7 @@ Modifications to the Service and Prices
   <li>
     The Company reserves the right at any time and from time to time to modify or discontinue, temporarily or permanently, any part of the Service with or without notice.
   </li>
-  <lzi>
+  <li>
     Prices of all Services are subject to change upon 30 days notice from us.
     Such notice may be provided at any time by posting the changes to the
     CGWire website at www.cg-wire.com or the Service itself.
