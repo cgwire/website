@@ -58,6 +58,16 @@
         </span>
       </nuxt-link>
 
+      <a
+        href="https://discord.com/invite/VbCxtKN"
+        target="_blank"
+        class="navbar-item discord"
+      >
+        <span class="navbar-item-title">
+          <img width="24" src="~/assets/images/discord.svg" alt="Discord" />
+        </span>
+      </a>
+
       <div
         :class="{
           'navbar-item': true,
@@ -279,4 +289,8 @@ html body header .navigation .navbar-menu .navbar-item.is-hoverable:focus .navba
 .navbar-item.is-hoverable:focus-within .navbar-dropdown.hidden,
 .navbar-item.is-hoverable:hover .navbar-dropdown.hidden
   display none
+
+.discord
+  margin-top 0.5rem
+  margin-left 0
 </style>
