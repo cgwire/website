@@ -61,7 +61,7 @@
       <a
         href="https://discord.com/invite/VbCxtKN"
         target="_blank"
-        class="navbar-item discord"
+        class="navbar-item top discord desktop"
       >
         <span class="navbar-item-title">
           <img width="24" src="~/assets/images/discord.svg" alt="Discord" />
@@ -291,6 +291,17 @@ html body header .navigation .navbar-menu .navbar-item.is-hoverable:focus .navba
   display none
 
 .discord
-  margin-top 0.5rem
+  padding 0
   margin-left 0
+
+  img
+    margin-top 0.5rem
+
+html header .navbar .navbar-item.top:hover .navbar-item-title, body header .navbar .navbar-item.top:hover .navbar-item-title, div.body header .navbar .navbar-item.top:hover .navbar-item-title
+    padding-bottom 0
+    padding-top 0
+
+@media(max-width: 1024px)
+  .discord
+    display none
 </style>
