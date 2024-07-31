@@ -115,5 +115,10 @@
       element-key="eone"
       name="EOne"
     />
+    <CustomerLogoBlock
+      link="https://redefine.co/fr/redefine-originals/"
+      element-key="redefine"
+      name="Redefine Originals"
+    />
   </ul>
 </template>

@@ -4,14 +4,15 @@
       <a href="https://www.gobelins.fr">
         <img src="~/assets/images/logo-gobelins.png" alt="Les gobelins"></a>
     </li>
+    <CustomerLogoBlock
+      link="https://www.rubika-edu.com/"
+      element-key="rubika"
+      name="Rubika"
+    />
     <li class="customers-item">
       <a href="https://www.esra.edu">
         <img src="~/assets/images/logo-esra.png" alt="ESRA"></a>
       </li>
-    <li class="customers-item">
-      <a href="https://lanimea.com/">
-      <img src="~/assets/images/logo-lanimea.png" alt="Lanimea"></a>
-    </li>
     <li class="customers-item">
       <a href="https://www.ecolegeorgesmelies.fr">
       <img
@@ -23,6 +24,10 @@
       <a href="https://www.ecv.fr/lecole/bordeaux/">
         <img src="~/assets/images/logo-ecv.png" alt="ECV">
       </a>
+    </li>
+    <li class="customers-item">
+      <a href="https://lanimea.com/">
+      <img src="~/assets/images/logo-lanimea.png" alt="Lanimea"></a>
     </li>
     <li class="customers-item">
       <a href="https://www.lidembarcelona.com/fr/">

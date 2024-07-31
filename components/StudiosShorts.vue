@@ -11,11 +11,6 @@
       name="Supamonks"
     />
     <CustomerLogoBlock
-      link="https://www.gizmosite.tv/"
-      element-key="gizmo-invert"
-      name="Gizmosite"
-    />
-    <CustomerLogoBlock
       link="https://www.miyu.fr/"
       element-key="miyu-invert"
       name="Miyu"
@@ -244,6 +239,26 @@
       link="https://www.impossible-objects.co/"
       element-key="impossible-objects"
       name="Impossible Objects"
+    />
+    <CustomerLogoBlock
+      link="http://amopix.com/"
+      element-key="amopix"
+      name="Amopix"
+    />
+    <CustomerLogoBlock
+      link="https://www.nocroma.com/"
+      element-key="nocroma"
+      name="Nocroma"
+    />
+    <CustomerLogoBlock
+      link="https://www.silverspoonanimation.com/"
+      element-key="silverspoon"
+      name="Silver Spoon Animation"
+    />
+    <CustomerLogoBlock
+      link="https://www.manicmonday.tv/"
+      element-key="manic-monday"
+      name="Manic Monday"
     />
   </ul>
 </template>
