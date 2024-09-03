@@ -425,7 +425,7 @@
 const name = 'Studios'
 const { t } = useI18n()
 useHead({
-  title: 'CGWire | Kitsu / ' + t('studios title'),
+  title: 'CGWire | Kitsu / ' + t('studios tagline'),
   meta: buildPageMeta(
     t,
     'studios title',
