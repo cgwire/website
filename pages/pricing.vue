@@ -699,6 +699,10 @@
             v-model="isGPU"
           />
           <PricingOption
+            label="Single Sign On (999€ / month)"
+            v-model="isSSO"
+          />
+          <PricingOption
             label="Staging environment (999€ / month)"
             v-model="isStaging"
           />
@@ -760,6 +764,7 @@ let nbUsers = ref(80)
 let price = ref(1999)
 let isMediaEncryption = ref(false)
 let isGPU = ref(false)
+let isSSO = ref(false)
 let isStaging = ref(false)
 let isOnPremise = ref(false)
 let is3YearsCommitment = ref(false)
@@ -784,6 +789,7 @@ function setExpanded (index) {
 watch(nbUsers, updatePrice)
 watch(isMediaEncryption, updatePrice)
 watch(isGPU, updatePrice)
+watch(isSSO, updatePrice)
 watch(isStaging, updatePrice)
 watch(isOnPremise, updatePrice)
 watch(is3YearsCommitment, updatePrice)
@@ -840,6 +846,9 @@ function updatePrice () {
   }
   if (isGPU.value) {
     price.value += 1999
+  }
+  if (isSSO.value) {
+    price.value += 999
   }
   if (isStaging.value) {
     price.value += 999
