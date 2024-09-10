@@ -100,7 +100,7 @@
       :price="monthly ? 19 : 15"
       :monthly="monthly"
       :per-user="true"
-      user-range="11 - 30"
+      user-range="11 - 20"
       :storage="500 + $t('pricing features gbstorage')"
       :features="[
         $t('pricing features community'),
@@ -372,6 +372,9 @@
           <li>
             {{ $t('pricing features partner contract') }}
           </li>
+          <li>
+            Single Sign On
+          </li>
         </ul>
       </div>
       <div class="pricing-cta">
@@ -558,6 +561,9 @@
           </li>
           <li>
             {{ $t('pricing features partner three') }}
+          </li>
+          <li>
+            Single Sign On
           </li>
         </ul>
       </div>
