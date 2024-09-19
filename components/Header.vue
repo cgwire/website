@@ -40,6 +40,12 @@
         >
           FR
         </nuxt-link>
+        <nuxt-link
+          class="flexrow-item navbar-lang-item"
+          :to="switchLocalePath('ja')"
+        >
+          JN
+        </nuxt-link>
       </div>
 
       <nuxt-link
@@ -152,6 +158,7 @@
           <SubNavElement elementKey="feature-films" />
           <SubNavElement elementKey="shorts" />
           <SubNavElement elementKey="schools" />
+          <SubNavElement elementKey="video-games" />
         </div>
       </div>
 
@@ -297,8 +304,8 @@ html body header .navigation .navbar-menu .navbar-item.is-hoverable:focus .navba
   img
     margin-top 0.5rem
 
-html header .navbar .navbar-item.top.discord:hover .navbar-item-title, 
-body header .navbar .navbar-item.top.discord:hover .navbar-item-title, 
+html header .navbar .navbar-item.top.discord:hover .navbar-item-title,
+body header .navbar .navbar-item.top.discord:hover .navbar-item-title,
 div.body header .navbar .navbar-item.discord.top:hover .navbar-item-title
     padding-bottom 0
     padding-top 0
