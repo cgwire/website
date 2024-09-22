@@ -45,6 +45,16 @@
       name="Atelier de Sèvres"
     />
     <CustomerLogoBlock
+      link="https://creativeseeds.fr/"
+      element-key="creative-seeds"
+      name="Creative Seeds"
+    />
+    <CustomerLogoBlock
+      link="https://www.ynov.com/"
+      element-key="ynov"
+      name="Ynov"
+    />
+    <CustomerLogoBlock
       link="https://www.a.com/"
       element-key="make-animation-school"
       name="Make Animation School"
@@ -53,11 +63,6 @@
       link="https://www.nextgenskillsacademy.com/"
       element-key="nextgen-academy"
       name="Nextgen School Academy"
-    />
-    <CustomerLogoBlock
-      link="https://creativeseeds.fr/"
-      element-key="creative-seeds"
-      name="Creative Seeds"
     />
     <CustomerLogoBlock
       link="https://parallel14.com/"
