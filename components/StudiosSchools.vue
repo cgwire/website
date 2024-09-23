@@ -55,6 +55,11 @@
       name="Ynov"
     />
     <CustomerLogoBlock
+      link="https://campus.ina.fr/"
+      element-key="ina-campus"
+      name="INA Campus"
+    />
+    <CustomerLogoBlock
       link="https://www.a.com/"
       element-key="make-animation-school"
       name="Make Animation School"

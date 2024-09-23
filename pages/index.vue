@@ -37,6 +37,9 @@
             <img src="~/assets/images/logo-miyu.png">
           </div>
           <div class="logo-div">
+            <img src="~/assets/images/logo-xilam.png">
+          </div>
+          <div class="logo-div">
             <img src="~/assets/images/logo-fost.png" />
           </div>
           <div class="logo-div">
@@ -55,9 +58,6 @@
             <img src="~/assets/images/studios/logo-gobelins-black.png" />
           </div>
           <div class="logo-div">
-            <img src="~/assets/images/studios/logo-mindseye.png">
-          </div>
-          <div class="logo-div">
             <img src="~/assets/images/studios/logo-supercell-black.png">
           </div>
           <div class="logo-div">
@@ -65,6 +65,9 @@
           </div>
           <div class="logo-div">
             <img src="~/assets/images/logo-miyu.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/logo-xilam.png">
           </div>
           <div class="logo-div">
             <img src="~/assets/images/logo-fost.png" />
