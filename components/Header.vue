@@ -158,7 +158,6 @@
           <SubNavElement elementKey="feature-films" />
           <SubNavElement elementKey="shorts" />
           <SubNavElement elementKey="schools" />
-          <SubNavElement elementKey="video-games" />
         </div>
       </div>
 
