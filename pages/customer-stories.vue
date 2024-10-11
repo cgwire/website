@@ -6,6 +6,18 @@
   </div>
 
   <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
+    TV Series (2D)
+  </div>
+
+  <CustomerStoryBlock
+    studio-name="Tant Mieux Prod"
+    story-key="tant-mieux"
+    interviewee="Tristan Mercier, Production Director"
+    image-path="photo-customer-story-tant-mieux.png"
+    story-url="https://blog.cg-wire.com/customer-story-tant-mieux-prod/"
+  />
+
+  <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
     Feature Films, Shorts (2D)
   </div>
 
