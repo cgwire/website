@@ -5,10 +5,15 @@
       element-key="supercell"
       name="Supercell"
     />
-   <CustomerLogoBlock
+    <CustomerLogoBlock
       link="https://studiomdhr.com/"
       element-key="mdhr"
       name="Studio MDHR"
+    />
+    <CustomerLogoBlock
+      link="https://metacoregames.com/"
+      element-key="metacore"
+      name="Metacore"
     />
     <CustomerLogoBlock
       link="https://yuga.com/"
@@ -19,6 +24,11 @@
       link="https://www.pudgypenguins.com/"
       element-key="pudgy-penguins"
       name="Pudgy Penguins"
+    />
+    <CustomerLogoBlock
+      link="https://thetrailerfarm.com/"
+      element-key="trailer-frarm"
+      name="The Trailer Farm"
     />
     <CustomerLogoBlock
       link="https://www.crosstheages.com/"
