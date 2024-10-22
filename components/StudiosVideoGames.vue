@@ -27,7 +27,7 @@
     />
     <CustomerLogoBlock
       link="https://thetrailerfarm.com/"
-      element-key="trailer-frarm"
+      element-key="trailer-farm"
       name="The Trailer Farm"
     />
     <CustomerLogoBlock
