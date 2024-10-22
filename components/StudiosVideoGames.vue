@@ -5,6 +5,11 @@
       element-key="supercell"
       name="Supercell"
     />
+   <CustomerLogoBlock
+      link="https://studiomdhr.com/"
+      element-key="mdhr"
+      name="Studio MDHR"
+    />
     <CustomerLogoBlock
       link="https://yuga.com/"
       element-key="yuga-labs-invert"
