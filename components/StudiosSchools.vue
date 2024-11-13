@@ -25,6 +25,11 @@
         <img src="~/assets/images/logo-ecv.png" alt="ECV">
       </a>
     </li>
+    <CustomerLogoBlock
+      link="https://www.iim.fr/"
+      element-key="iim"
+      name="IIM"
+    />
     <li class="customers-item">
       <a href="https://lanimea.com/">
       <img src="~/assets/images/logo-lanimea.png" alt="Lanimea"></a>
