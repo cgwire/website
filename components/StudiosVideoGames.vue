@@ -21,19 +21,9 @@
       name="Yuga Labs"
     />
     <CustomerLogoBlock
-      link="https://www.pudgypenguins.com/"
-      element-key="pudgy-penguins"
-      name="Pudgy Penguins"
-    />
-    <CustomerLogoBlock
       link="https://thetrailerfarm.com/"
       element-key="trailer-farm"
       name="The Trailer Farm"
-    />
-    <CustomerLogoBlock
-      link="https://www.crosstheages.com/"
-      element-key="cross-the-ages"
-      name="Cross The Ages"
     />
   </ul>
 </template>
