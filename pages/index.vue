@@ -37,19 +37,13 @@
             <img src="~/assets/images/logo-miyu.png">
           </div>
           <div class="logo-div">
-            <img src="~/assets/images/logo-xilam.png">
-          </div>
-          <div class="logo-div">
             <img src="~/assets/images/logo-fost.png" />
           </div>
           <div class="logo-div">
             <img src="~/assets/images/studios/logo-bobbypills.png">
           </div>
           <div class="logo-div">
-            <img src="~/assets/images/logo-tnzpv.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-mikrofilm.png">
+            <img src="~/assets/images/studios/logo-lofi-studio.png">
           </div>
           <div class="logo-div">
             <img src="~/assets/images/studios/logo-blender.png">
@@ -59,6 +53,12 @@
           </div>
           <div class="logo-div">
             <img src="~/assets/images/studios/logo-supercell-black.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-metacore-black.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-mdhr-black.png">
           </div>
           <div class="logo-div">
             <img src="~/assets/images/studios/logo-yuga-labs.png">
@@ -67,19 +67,13 @@
             <img src="~/assets/images/logo-miyu.png">
           </div>
           <div class="logo-div">
-            <img src="~/assets/images/logo-xilam.png">
-          </div>
-          <div class="logo-div">
             <img src="~/assets/images/logo-fost.png" />
           </div>
           <div class="logo-div">
             <img src="~/assets/images/studios/logo-bobbypills.png">
           </div>
           <div class="logo-div">
-            <img src="~/assets/images/logo-tnzpv.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-mikrofilm.png">
+            <img src="~/assets/images/studios/logo-lofi-studio.png">
           </div>
           <div class="logo-div">
             <img src="~/assets/images/studios/logo-blender.png">
@@ -88,10 +82,13 @@
             <img src="~/assets/images/studios/logo-gobelins-black.png" />
           </div>
           <div class="logo-div">
-            <img src="~/assets/images/studios/logo-mindseye.png">
+            <img src="~/assets/images/studios/logo-supercell-black.png">
           </div>
           <div class="logo-div">
-            <img src="~/assets/images/studios/logo-supercell-black.png">
+            <img src="~/assets/images/studios/logo-metacore-black.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-mdhr-black.png">
           </div>
           <div class="logo-div">
             <img src="~/assets/images/studios/logo-yuga-labs.png">

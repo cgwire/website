@@ -6,6 +6,11 @@
       name="Blender"
     />
     <CustomerLogoBlock
+      link="https://lofistudio.com/"
+      element-key="lofi-studio-invert"
+      name="Lofi Studio"
+    />
+    <CustomerLogoBlock
       link="https://www.supamonks.com/"
       element-key="supamonks-invert"
       name="Supamonks"
