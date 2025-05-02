@@ -29,7 +29,7 @@
   <StudiosShorts />
 
   <h2 class="section-subtitle has-text-centered user-title">
-  {{ $t('header title videogames') }}
+  {{ $t('header title video-games') }}
   </h2>
   <StudiosVideoGames />
 
@@ -51,13 +51,13 @@
   </h2>
 
   <ul>
-    <li>
-      <a href="https://www.netflix.com/title/81044590"
-         class="production">
-        <img src="~/assets/images/productions/carol-and-the-end-of-the-world.png" />
-        <span>Carol and the End of the World</span>
-      </a>
-    </li>
+    <production
+      v-for="(production, index) in productions"
+      :key="index"
+      :picture="production.picture"
+      :title="production.title"
+      :url="production.url"
+    />
     <li>
       <a href="https://www.monello.fr/series/les-gardes-chimeres"
          class="production">
@@ -424,6 +424,86 @@
 <script setup>
 const name = 'Studios'
 const { t } = useI18n()
+
+
+const productions = [
+  {
+    picture: 'substance',
+    title: 'The Substance',
+    url: 'https://www.imdb.com/fr/title/tt17526714/'
+  },
+  {
+    picture: 'the-zone-of-interest',
+    title: 'The Zone of Interest',
+    url: 'https://www.imdb.com/fr/title/tt7160372/'
+  },
+  {
+    picture: 'becoming-karl-lagerfeld',
+    title: 'Becoming Karl Lagerfeld',
+    url: 'https://www.imdb.com/fr/title/tt27052740/'
+  },
+  {
+    picture: 'les-trois-mousquetaires-2',
+    title: 'Les Trois Mousquetaires - Milady',
+    url: 'https://www.imdb.com/fr/title/tt12672620'
+  },
+  {
+    picture: 'les-trois-mousquetaires-1',
+    title: 'Les Trois Mousquetaires - D\'Artagnan',
+    url: 'https://www.imdb.com/fr/title/tt12672536'
+  },
+  {
+    picture: 'the-swedish-torpedo',
+    title: 'The Swedish Torpedo',
+    url: 'https://www.imdb.com/fr/title/tt9861200/'
+  },
+  {
+    picture: 'bestiale',
+    title: 'Bestiale',
+    url: 'https://www.allocine.fr/series/ficheserie_gen_cserie=34834.html'
+  },
+  {
+    picture: 'planetes',
+    title: 'Planètes',
+    url: 'https://www.miyu.fr/production/planetes/'
+  },
+  {
+    picture: 'daisys-life',
+    title: 'Daisys Life',
+    url: 'https://www.annecyfestival.com/le-festival/rencontres-festival/work-progress/wip-longs-metrages/daisys-life'
+  },
+  {
+    picture: 'prends-garde-a-toi',
+    title: 'Prends Garde à Toi',
+    url: 'https://www.annecyfestival.com/le-festival/rencontres-festival/work-progress/wip-longs-metrages/prends-garde-toi'
+  },
+  {
+    picture: 'lucy-lost',
+    title: 'Lucy Lost',
+    url: 'https://www.imdb.com/fr/title/tt10569744/'
+  },
+  {
+    picture: 'flow',
+    title: 'Flow',
+    url: 'https://www.imdb.com/fr/title/tt4772188/'
+  },
+  {
+    picture: 'arco',
+    title: 'Arco',
+    url: 'https://www.allocine.fr/film/fichefilm_gen_cfilm=317579.html'
+  },
+  {
+    picture: 'lecorset',
+    title: 'Le Corset (Fallen)',
+    url: 'https://www.senscritique.com/film/le_corset/63414650'
+  },
+  {
+    picture: 'carol-and-the-end-of-the-world',
+    title: 'Carol and the End of the World',
+    url: 'https://www.netflix.com/title/81044590'
+  }
+]
+
 useHead({
   title: 'CGWire | Kitsu / ' + t('studios tagline'),
   meta: buildPageMeta(

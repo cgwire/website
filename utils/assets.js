@@ -5,4 +5,3 @@ export const useAsset = (path) => {
   })
   return assets['/assets/' + path]
 }
-
