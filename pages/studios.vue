@@ -508,7 +508,7 @@ useHead({
   title: 'CGWire | Kitsu / ' + t('studios tagline'),
   meta: buildPageMeta(
     t,
-    'studios title',
+    'studios subtitle',
     'studios tagline',
     'studios',
   )
