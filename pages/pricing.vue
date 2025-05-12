@@ -74,7 +74,7 @@
       user-range="1 - 4"
       :storage="10 + $t('pricing features gbstorage')"
       :features="[
-        $t('pricing features community'),
+        $t('pricing features tiny support'),
         $t('pricing features common four'),
         $t('pricing features mutualize'),
       ]"
@@ -83,13 +83,13 @@
     <PricingBlock
       title="pricing title team"
       :emphasize="true"
-      :price="monthly ? 20 : 16"
+      :price="monthly ? 25 : 20"
       :monthly="monthly"
       user-range="5 - 10"
       :per-user="true"
-      :storage="200 + $t('pricing features gbstorage')"
+      :storage="50 + $t('pricing features gbstorage')"
       :features="[
-        $t('pricing features community'),
+        $t('pricing features tiny support'),
         $t('pricing features common four'),
         $t('pricing features small five'),
       ]"
@@ -97,13 +97,13 @@
 
     <PricingBlock
       title="pricing title agency"
-      :price="monthly ? 19 : 15"
+      :price="monthly ? 25 : 20"
       :monthly="monthly"
       :per-user="true"
       user-range="11 - 20"
-      :storage="500 + $t('pricing features gbstorage')"
+      :storage="100 + $t('pricing features gbstorage')"
       :features="[
-        $t('pricing features community'),
+        $t('pricing features tiny support'),
         $t('pricing features common four'),
         $t('pricing features small five'),
       ]"
