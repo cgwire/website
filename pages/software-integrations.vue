@@ -59,13 +59,13 @@
         </span>
       </a>
       <a
-        href="https://github.com/pypeclub/OpenPype/tree/798930e5b633358c3ce284b63983ab90cf42e54b/openpype/modules/kitsu"
+        href="https://github.com/ynput/ayon-kitsu"
         class="software flexrow-item openpype"
       >
         <img
           class="w50pe openpype"
-          src="~/assets/images/integrations/logo-open-pype.png"
-          alt="OpenPype Logo" />
+          src="~/assets/images/integrations/logo-ayon.png"
+          alt="Ayon Logo" />
         <span class="made-by-community">
           {{ $t('community contribution') }}
         </span>
