@@ -8,9 +8,8 @@
     {{ $t(title) }}
   </div>
   <div class="pricing-price">
-    <span class="pricing-currency">€</span>
-    <span class="pricing-value monthly" v-if="monthly">{{ price }}</span>
-    <span class="pricing-value yearly" v-else>{{ price }}</span>
+    <span class="pricing-value monthly" v-if="monthly">€{{ price }}</span>
+    <span class="pricing-value yearly" v-else>€{{ price }}</span>
     <span v-if="perUser">
       {{ $t('pricing value month') }} / {{ $t('pricing features user') }}
     </span>
@@ -18,8 +17,11 @@
       {{ $t('pricing value month') }}
     </span>
   </div>
-  <div class="pricing-price-info" v-if="!monthly">
-    {{ $t('pricing billed annualy') }}
+  <div class="pricing-price-info">
+    {{ monthly ? '&nbsp;' : $t('pricing billed annualy') }}
+  </div>
+  <div class="for-info">
+    {{ useCaseLabel }}
   </div>
   <div class="pricing-features">
     <ul>
@@ -67,6 +69,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  useCaseLabel: {
+   type: String,
+   default: '',
+  },
   userRange: {
     type: String,
     default: '',
@@ -82,5 +88,11 @@ const props = defineProps({
 })
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
+.for-info
+  font-size: 0.8em
+  color: #666
+  margin-top: 1em
+  padding: 1em 2em
+  font-style: italic
 </style>

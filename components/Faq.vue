@@ -25,14 +25,16 @@
 <script setup>
 const props = defineProps({
   index: {
-    type: Number,
+    type: Number,
     required: true
   },
-  isExpanded: {
-    type: Boolean,
+  isExpanded: {
+    type: Boolean,
     default: false
-  }
+  }
 })
+
+const emit = defineEmits(['expand', 'unexpand'])
 </script>
 
 <style lang="stylus" scoped>

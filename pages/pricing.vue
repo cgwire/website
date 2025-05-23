@@ -1,157 +1,6 @@
 <template>
 <div class="pricing-page">
   <section class="section content pricing">
-    <div class="flexrow first-steps mt2">
-      <div class="flexrow-item">
-        <div class="flexrow-item">
-          <img
-            src="~/assets/images/illustrations/kitsu-with-body.png"
-            width=180
-          >
-        </div>
-        <div class="section-subtitle">
-          {{ $t('pricing firsteps ttile') }}
-        </div>
-        <h2 class="section-title">
-          {{ $t('pricing firsteps subttile') }}
-        </h2>
-      </div>
-      <div class="flexrow-item">
-        <p class="pricing-cta mt2">
-          {{ $t('pricing firsteps question3') }}
-        </p>
-        <p class="">
-          <a
-            class="button is-outlined"
-            href="https://account.cg-wire.com"
-            target="_blank"
-          >
-            {{ $t('pricing firsteps cta3') }}
-          </a>
-        </p>
-        <p class="pricing-cta mt2">
-          {{ $t('pricing firsteps question1') }}
-        </p>
-        <p class="">
-          <a
-            class="button is-outlined"
-            href="https://calendly.com/cgwire"
-            target="_blank"
-          >
-            {{ $t('pricing firsteps cta1') }}
-          </a>
-        </p>
-        <p class="pricing-cta mt2">
-          {{ $t('pricing firsteps question2') }}
-        </p>
-        <p class="">
-          <a
-            class="button is-outlined"
-            href="https://discord.com/invite/VbCxtKN"
-          >
-            {{ $t('pricing firsteps cta2') }}
-          </a>
-        </p>
-      </div>
-    </div>
-
-    <div class="section-subtitle has-text-centered">
-      {{ $t('pricing kitsulight subtitle') }}
-    </div>
-    <h2 class="section-title has-text-centered">
-      Kitsu Cloud Light
-    </h2>
-    <p class="has-text-centered mt1">
-      {{ $t('pricing kitsulight explaination') }}
-    </p>
-
-  <div class="pricings">
-    <PricingBlock
-      title="pricing title freelancer"
-      :price="monthly ? 25 : 20"
-      :monthly="monthly"
-      :per-user="true"
-      user-range="1 - 4"
-      :storage="10 + $t('pricing features gbstorage')"
-      :features="[
-        $t('pricing features tiny support'),
-        $t('pricing features common four'),
-        $t('pricing features mutualize'),
-      ]"
-    />
-
-    <PricingBlock
-      title="pricing title team"
-      :emphasize="true"
-      :price="monthly ? 25 : 20"
-      :monthly="monthly"
-      user-range="5 - 10"
-      :per-user="true"
-      :storage="50 + $t('pricing features gbstorage')"
-      :features="[
-        $t('pricing features tiny support'),
-        $t('pricing features common four'),
-        $t('pricing features small five'),
-      ]"
-    />
-
-    <PricingBlock
-      title="pricing title agency"
-      :price="monthly ? 25 : 20"
-      :monthly="monthly"
-      :per-user="true"
-      user-range="11 - 20"
-      :storage="100 + $t('pricing features gbstorage')"
-      :features="[
-        $t('pricing features tiny support'),
-        $t('pricing features common four'),
-        $t('pricing features small five'),
-      ]"
-    />
-  </div>
-
-    <div class="extra-block alinea infos">
-      <div class="section-subtitle has-text-centered">
-        <a
-          class="ranch-link"
-          href="https://www.ranchcomputing.com"
-        >
-          Ranch Computing
-        </a>
-        {{ $t('pricing ranch title') }}
-      </div>
-      <p class="has-text-centered">
-        {{ $t('pricing ranch explanation') }}
-      </p>
-    </div>
-
-    <p class="has-text-centered mt1">
-      <button
-        class="button frequence"
-        style="margin-right: 0.5em;"
-        :class="{
-          button: true,
-          frequence: true,
-          active: monthly
-        }"
-        id="monthly-button"
-        @click="monthly = true"
-      >
-        {{ $t('pricing monthly') }}
-      </button>
-      <button
-        :class="{
-          button: true,
-          frequence: true,
-          active: !monthly
-        }"
-        id="yearly-button"
-        @click="monthly = false"
-      >
-        {{ $t('pricing yearly') }}
-      </button>
-    </p>
-
 
     <div class="section-subtitle has-text-centered">
       {{ $t('pricing kitsu subtitle') }}
@@ -163,182 +12,71 @@
     <p class="has-text-centered mt1">
       {{ $t('pricing cloud explanation') }}
     </p>
+
+    <div class="has-text-centered mt1">
+        <ToggleButton label="Billed annually, save 20%" v-model="yearly" />
+    </div>
   </section>
 
   <div class="pricings">
-    <div class="pricing-block">
-      <div class="pricing-title">
-        {{ $t('pricing title agency') }}
-      </div>
-      <div class="pricing-price">
-        <span class="pricing-currency">€</span>
-        <span class="pricing-value monthly" v-if="monthly">999</span>
-        <span class="pricing-value yearly" v-else>799</span>
-        {{ $t('pricing value month') }}
-      </div>
-      <div class="pricing-price-info" v-if="!monthly">
-        {{ $t('pricing billed annualy') }}
-      </div>
-      <div class="pricing-features">
-        <ul>
-          <li>
-            {{ $t('pricing features agency one') }}
-          </li>
-          <li>
-            {{ $t('pricing features tiny support') }}
-          </li>
-          <li>
-            {{ $t('pricing features small four') }}
-          </li>
-          <li>
-            {{ $t('pricing features common four') }}
-          </li>
-          <li>
-            {{ $t('pricing features common three') }}
-          </li>
-          <li>
-            {{ $t('pricing features common searchengine') }}
-          </li>
-          <li>
-            {{ $t('pricing features common playlistbuilder') }}
-          </li>
-          <li>
-            {{ $t('pricing features small three') }}
-          </li>
-          <li>
-            {{ $t('pricing features small five') }}
-          </li>
-        </ul>
-      </div>
-      <div class="pricing-cta">
-        <a
-          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
-          class="button is-outlined"
-        >
-          {{ $t('pricing button cta') }}
-        </a>
-      </div>
-    </div>
+    <PricingBlock
+      title="pricing title agency"
+      :price="yearly ? 20 : 25"
+      :monthly="!yearly"
+      :per-user="true"
+      user-range="1 - 20"
+      :storage="100 + $t('pricing features gbstorage')"
+      :use-case-label="$t('pricing usecase agency')"
+      :features="[
+        $t('pricing features tiny support'),
+        $t('pricing features small four'),
+        $t('pricing features common four'),
+        $t('pricing features mutualize'),
+      ]"
+    />
 
-    <div class="pricing-block pricing-emphasize">
-      <div class="pricing-title">
-        {{ $t('pricing title production') }}
-      </div>
-      <div class="pricing-price">
-        <span class="pricing-currency">€</span>
-        <span class="pricing-value monthly" v-if="monthly">2499</span>
-        <span class="pricing-value yearly" v-else>1999</span>
-        {{ $t('pricing value month') }}
-      </div>
-      <div class="pricing-price-info" v-if="!monthly">
-        {{ $t('pricing billed annualy') }}
-      </div>
-      <div class="pricing-features">
-        <ul>
-          <li>
-            {{ $t('pricing features medium one') }}
-          </li>
-          <li>
-            {{ $t('pricing features common two') }}
-          </li>
-          <li>
-            {{ $t('pricing features medium four') }}
-          </li>
-          <li>
-            {{ $t('pricing features common three') }}
-          </li>
-          <li>
-            {{ $t('pricing features common four') }}
-          </li>
-          <li>
-            {{ $t('pricing features medium two') }}
-          </li>
-          <li>
-             1 x {{ $t('pricing features training') }}
-          </li>
-          <li>
-            {{ $t('pricing features common searchengine') }}
-          </li>
-          <li>
-            {{ $t('pricing features common playlistbuilder') }}
-          </li>
-          <li>
-            {{ $t('pricing features medium three') }}
-          </li>
-          <li>
-            {{ $t('pricing features medium five') }}
-          </li>
-        </ul>
-      </div>
-      <div class="pricing-cta">
-        <a
-          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
-          class="button is-outlined"
-        >
-          {{ $t('pricing button cta') }}
-        </a>
-      </div>
-    </div>
+    <PricingBlock
+      title="pricing title production"
+      :emphasize="true"
+      :price="yearly ? 30 : 36"
+      :monthly="!yearly"
+      :per-user="true"
+      user-range="1 - 100"
+      :storage="3 + $t('pricing features tbstorage')"
+      :use-case-label="$t('pricing usecase production')"
+      :features="[
+        $t('pricing features common two'),
+        $t('pricing features medium four'),
+        $t('pricing features medium five'),
+        $t('pricing features common three'),
+        $t('pricing features common four'),
+        $t('pricing features medium two'),
+        $t('pricing features training'),
+        $t('pricing features common searchengine'),
+        $t('pricing features common playlistbuilder'),
+      ]"
+    />
 
-    <div class="pricing-block">
-      <div class="pricing-title">
-        {{ $t('pricing title studio' ) }}
-      </div>
-      <div class="pricing-price">
-        <span class="pricing-currency">€</span>
-        <span class="pricing-value monthly" v-if="monthly">4999</span>
-        <span class="pricing-value yearly" v-else>3999</span>
-          {{ $t('pricing value month') }}
-      </div>
-      <div class="pricing-price-info" v-if="!monthly">
-        {{ $t('pricing billed annualy') }}
-      </div>
-      <div class="pricing-features">
-        <ul>
-          <li>
-            {{ $t('pricing features large one') }}
-          </li>
-          <li>
-            {{ $t('pricing features large two') }}
-          </li>
-          <li>
-            {{ $t('pricing features large four') }}
-          </li>
-          <li>
-            {{ $t('pricing features common three') }}
-          </li>
-          <li>
-            {{ $t('pricing features common four') }}
-          </li>
-          <li>
-            {{ $t('pricing features medium two') }}
-          </li>
-          <li>
-             2 x {{ $t('pricing features training') }}
-          </li>
-          <li>
-            {{ $t('pricing features common searchengine') }}
-          </li>
-          <li>
-            {{ $t('pricing features common playlistbuilder') }}
-          </li>
-          <li>
-            {{ $t('pricing features large three') }}
-          </li>
-          <li>
-            {{ $t('pricing features large six') }}
-          </li>
-        </ul>
-      </div>
-      <div class="pricing-cta">
-        <a
-          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
-          class="button is-outlined"
-        >
-          {{ $t('pricing button cta') }}
-        </a>
-      </div>
-    </div>
+    <PricingBlock
+      title="pricing title studio"
+      :price="yearly ? 35 : 45"
+      :monthly="!yearly"
+      :per-user="true"
+      user-range="1 - 300"
+      :storage="10 + $t('pricing features tbstorage')"
+      :use-case-label="$t('pricing usecase studio')"
+      :features="[
+        $t('pricing features large two'),
+        $t('pricing features large four'),
+        $t('pricing features large six'),
+        $t('pricing features common three'),
+        $t('pricing features common four'),
+        $t('pricing features medium two'),
+        $t('pricing features training'),
+        $t('pricing features common searchengine'),
+        $t('pricing features common playlistbuilder')
+      ]"
+    />
 
     <div class="pricing-block">
       <div class="pricing-title">
@@ -349,25 +87,19 @@
           {{ $t('pricing title quote' ) }}
         </span>
       </div>
+      <div class="for-info">
+          {{ $t('pricing usecase partner' ) }}
+      </div>
       <div class="pricing-features">
         <ul>
           <li>
             {{ $t('pricing features partner one') }}
           </li>
           <li>
-            {{ $t('pricing features partner four') }}
+            {{ $t('pricing features partner onpremise') }}
           </li>
           <li>
-            {{ $t('pricing features partner six') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner three') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner encryption') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner gpu') }}
+            {{ $t('pricing features partner unlimited') }}
           </li>
           <li>
             {{ $t('pricing features partner contract') }}
@@ -375,7 +107,22 @@
           <li>
             Single Sign On
           </li>
-        </ul>
+          <li v-if="$i18n.locale === 'en'">
+            Contractor Synchronization
+          </li>
+          <li>
+            {{ $t('pricing features partner four') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner three') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner six') }}
+          </li>
+          <li>
+            {{ $t('pricing features partner encryption') }}
+          </li>
+       </ul>
       </div>
       <div class="pricing-cta">
         <a href="mailto:sales@cg-wire.com" class="button is-outlined">
@@ -386,33 +133,6 @@
   </div>
 
   <section class="section content pricing">
-    <p class="has-text-centered mt1">
-      <button
-        class="button frequence"
-        style="margin-right: 0.5em;"
-        :class="{
-          button: true,
-          frequence: true,
-          active: monthly
-        }"
-        id="monthly-button"
-        @click="monthly = true"
-      >
-        {{ $t('pricing monthly') }}
-      </button>
-      <button
-        :class="{
-          button: true,
-          frequence: true,
-          active: !monthly
-        }"
-        id="yearly-button"
-        @click="monthly = false"
-      >
-        {{ $t('pricing yearly') }}
-      </button>
-    </p>
-
     <p class="has-text-centered pricing-details mt1">
       {{ $t('pricing discount details') }}
     </p>
@@ -426,313 +146,9 @@
       </p>
     </div>
 
-    <div class="section-subtitle has-text-centered">
-      {{ $t('pricing support license subtitle') }}
-    </div>
-    <h2 class="section-title has-text-centered">
-      Kitsu On-Premise
-    </h2>
-    <div class="has-text-centered">
-      <p style="max-width: 800px; margin: auto;">
-        {{ $t('pricing support license details') }}
-      </p>
-    </div>
+    <UserLogos :with-title="false" />
 
-  <div class="pricings">
-    <div class="pricing-block">
-      <div class="pricing-title">
-        {{ $t('pricing title production') }}
-      </div>
-      <div class="pricing-price">
-        <span class="pricing-currency">€</span>
-        <span class="pricing-value yearly">2999</span>
-        {{ $t('pricing value month') }}
-      </div>
-      <div class="pricing-price-info">
-        {{ $t('pricing billed annualy') }}
-      </div>
-      <div class="pricing-features">
-        <ul>
-          <li>
-            {{ $t('pricing features medium one') }}
-          </li>
-          <li>
-            {{ $t('pricing features common two') }}
-          </li>
-          <li>
-            {{ $t('pricing features medium four') }}
-          </li>
-          <li>
-            {{ $t('pricing features common three') }}
-          </li>
-          <li>
-            {{ $t('pricing features common four') }}
-          </li>
-          <li>
-            {{ $t('pricing features medium two') }}
-          </li>
-        </ul>
-      </div>
-      <div class="pricing-cta">
-        <a
-          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
-          class="button is-outlined"
-        >
-          {{ $t('pricing button cta') }}
-        </a>
-      </div>
-    </div>
-
-    <div class="pricing-block pricing-emphasize">
-      <div class="pricing-title">
-        {{ $t('pricing title studio' ) }}
-      </div>
-      <div class="pricing-price">
-        <span class="pricing-currency">€</span>
-        <span class="pricing-value yearly">4999</span>
-          {{ $t('pricing value month') }}
-      </div>
-      <div class="pricing-price-info">
-        {{ $t('pricing billed annualy') }}
-      </div>
-      <div class="pricing-features">
-        <ul>
-          <li>
-            {{ $t('pricing features large one') }}
-          </li>
-          <li>
-            {{ $t('pricing features large two') }}
-          </li>
-          <li>
-            {{ $t('pricing features large four') }}
-          </li>
-          <li>
-            {{ $t('pricing features common three') }}
-          </li>
-          <li>
-            {{ $t('pricing features common four') }}
-          </li>
-          <li>
-            {{ $t('pricing features medium two') }}
-          </li>
-          <li>
-            {{ $t('pricing features large five') }}
-          </li>
-        </ul>
-      </div>
-      <div class="pricing-cta">
-        <a
-          :href="`https://account.cg-wire.com/${$i18n.locale}/signup`"
-          class="button is-outlined"
-        >
-          {{ $t('pricing button cta') }}
-        </a>
-      </div>
-    </div>
-
-    <div class="pricing-block">
-      <div class="pricing-title">
-        {{ $t('pricing title partner') }}
-      </div>
-      <div class="pricing-price">
-        <span class="pricing-value">
-          {{ $t('pricing title quote' ) }}
-        </span>
-      </div>
-      <div class="pricing-features">
-        <ul>
-          <li>
-            {{ $t('pricing features partner one') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner four') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner five') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner six') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner seven') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner eight') }}
-          </li>
-          <li>
-            {{ $t('pricing features partner three') }}
-          </li>
-          <li>
-            Single Sign On
-          </li>
-        </ul>
-      </div>
-      <div class="pricing-cta">
-        <a
-          href="mailto:sales@cg-wire.com"
-          class="button is-outlined"
-        >
-          {{ $t('pricing button contactcta') }}
-        </a>
-      </div>
-    </div>
-  </div>
-
-    <div class="section-subtitle has-text-centered">
-      {{ $t('pricing support onpremise title') }}
-    </div>
-    <h2 class="section-title has-text-centered">
-      {{ $t('pricing support license title') }}
-    </h2>
-
-    <div class="pricings">
-      <div class="pricing-block pricing-emphasize">
-        <div class="pricing-title">
-          {{ $t('pricing support license setup') }}
-        </div>
-        <div class="pricing-price">
-          <span class="pricing-currency">€</span>
-          <span class="pricing-value">4999</span>
-          <div class="pricing-features">
-            <ul>
-              <li>
-                {{ $t('pricing support license ubuntu') }}
-              </li>
-            </ul>
-            <ul>
-              <li>
-                {{ $t('pricing support license ssh') }}
-              </li>
-            </ul>
-            <ul>
-              <li>
-                {{ $t('pricing support license domain') }}
-              </li>
-            </ul>
-            <ul>
-              <li>
-                {{ $t('pricing support license ports') }}
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="pricing-block">
-        <div class="pricing-title">
-          {{ $t('pricing support license directory') }}
-        </div>
-        <div class="pricing-price">
-          <span class="pricing-currency">€</span>
-          <span class="pricing-value">999</span>
-          <div class="pricing-features">
-            <ul>
-              <li>
-                {{ $t('pricing support license ldap') }}
-              </li>
-              <li>
-                {{ $t('pricing support license ad') }}
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="pricing-block">
-        <div class="pricing-title">
-          {{ $t('pricing support license migration') }}
-        </div>
-        <div class="pricing-price">
-          <span class="pricing-currency">€</span>
-          <span class="pricing-value">1999</span>
-          <div class="pricing-features">
-            <ul>
-              <li>
-                {{ $t('pricing support license migration cloud') }}
-              </li>
-            </ul>
-            <ul>
-              <li>
-                {{ $t('pricing support license migation onpremise') }}
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="estimator" v-if="$i18n.locale === 'en'">
-      <div class="section-subtitle has-text-centered">
-        Determine Your Subscription Cost
-      </div>
-      <h2 class="section-title has-text-centered">
-        Price calculator
-      </h2>
-      <p>
-        <label class="label">Select how many users you will need</label>
-      </p>
-      <p class="flexrow">
-        <span class="flexrow-item users">{{ nbUsers }}</span>
-        <input
-          class="slider is-fullwidth flexrow-item"
-          step="10"
-          min="0"
-          max="200"
-          type="range"
-          v-model="nbUsers"
-          @change="changeNbUsers"
-        />
-      </p>
-      <p class="label">
-        Choose your options
-      </p>
-      <div class="columns">
-        <div class="column">
-          <PricingOption
-            label="On Premise installation (999€ / month)"
-            v-model="isOnPremise"
-          />
-          <PricingOption
-            label="Media encryption (1999€ / month)"
-            v-model="isMediaEncryption"
-          />
-          <PricingOption
-            label="GPU video processing (1999€ / month)"
-            v-model="isGPU"
-          />
-          <PricingOption
-            label="Single Sign On (999€ / month)"
-            v-model="isSSO"
-          />
-          <PricingOption
-            label="Staging environment (999€ / month)"
-            v-model="isStaging"
-          />
-        </div>
-        <div class="column">
-          <PricingOption
-            label="Monthly Payment (22% increase)"
-            v-model="isMonthly"
-          />
-          <PricingOption
-            label="3 years commitment (5% discount)"
-            v-model="is3YearsCommitment"
-          />
-          <PricingOption
-            label="2 years upfront payment (10% discount)"
-            v-model="is2YearsUpfront"
-          />
-          <PricingOption
-            label="3 years upfront payment (15% discount)"
-            v-model="is3YearsUpfront"
-          />
-        </div>
-      </div>
-      <p class="mt2 has-text-centered">
-        <label class="label">Price per month (yearly billing)</label>
-      </p>
-      <p class="price has-text-centered">
-       {{ price }} € / month
-      </p>
-    </div>
+    <PriceEstimator v-if="$i18n.locale === 'en'" />
 
     <div class="section-subtitle has-text-centered">
       {{ $t('pricing faq subtitle') }}
@@ -756,21 +172,10 @@
 </template>
 
 <script setup>
-let monthly = ref(false)
+let yearly = ref(true)
 const name = 'Pricing'
 const { t } = useI18n()
 const isExpanded = reactive({})
-let nbUsers = ref(80)
-let price = ref(1999)
-let isMediaEncryption = ref(false)
-let isGPU = ref(false)
-let isSSO = ref(false)
-let isStaging = ref(false)
-let isOnPremise = ref(false)
-let is3YearsCommitment = ref(false)
-let is2YearsUpfront = ref(false)
-let is3YearsUpfront = ref(false)
-let isMonthly = ref(false)
 
 useHead({
   title: 'CGWire | ' + t('pricing title'),
@@ -784,96 +189,6 @@ useHead({
 
 function setExpanded (index) {
   isExpanded['faq' + index] = true
-}
-
-watch(nbUsers, updatePrice)
-watch(isMediaEncryption, updatePrice)
-watch(isGPU, updatePrice)
-watch(isSSO, updatePrice)
-watch(isStaging, updatePrice)
-watch(isOnPremise, updatePrice)
-watch(is3YearsCommitment, updatePrice)
-watch(is2YearsUpfront, updatePrice)
-watch(is3YearsUpfront, updatePrice)
-watch(isMonthly, updatePrice)
-
-function updatePrice () {
-  const users = parseInt(nbUsers.value)
-  if (users === 10) {
-    price.value = 279
-  } else if (users === 20) {
-    price.value = 539
-  } else if (users === 30) {
-    price.value = 799
-  } else if (users === 40) {
-    price.value = 1059
-  } else if (users === 50) {
-    price.value = 1329
-  } else if (users === 60) {
-    price.value = 1559
-  } else if (users === 70) {
-    price.value = 1820
-  } else if (users === 80) {
-    price.value = 1999
-  } else if (users === 90) {
-    price.value = 2249
-  } else if (users === 100) {
-    price.value = 2399
-  } else if (users === 110) {
-    price.value = 2649
-  } else if (users === 120) {
-    price.value = 2759
-  } else if (users === 130) {
-    price.value = 2999
-  } else if (users === 140) {
-    price.value = 3079
-  } else if (users === 150) {
-    price.value = 3299
-  } else if (users === 160) {
-    price.value = 3519
-  } else if (users === 170) {
-    price.value = 3589
-  } else if (users === 180) {
-    price.value = 3779
-  } else if (users === 190) {
-    price.value = 3799
-  } else if (users === 200) {
-    price.value = 3999
-  }
-
-  if (isMediaEncryption.value) {
-    price.value += 1999
-  }
-  if (isGPU.value) {
-    price.value += 1999
-  }
-  if (isSSO.value) {
-    price.value += 999
-  }
-  if (isStaging.value) {
-    price.value += 999
-  }
-  if (isOnPremise.value) {
-    price.value += 999
-  }
-  if (is3YearsCommitment.value) {
-    price.value = Math.round(price.value * 0.95)
-    is2YearsUpfront.value = false
-    is3YearsUpfront.value = false
-  }
-  if (is2YearsUpfront.value) {
-    price.value = Math.round(price.value * 0.9)
-    is3YearsCommitment.value = false
-    is3YearsUpfront.value = false
-  }
-  if (is3YearsUpfront.value) {
-    price.value = Math.round(price.value * 0.85)
-    is3YearsCommitment.value = false
-    is2YearsUpfront.value = false
-  }
-  if (isMonthly.value) {
-    price.value = Math.round(price.value * 1.25)
-  }
 }
 </script>
 
