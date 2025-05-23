@@ -107,7 +107,7 @@
           <li>
             Single Sign On
           </li>
-          <li v-if="$i18n.locale === 'en'">
+          <li>
             Contractor Synchronization
           </li>
           <li>
@@ -148,7 +148,7 @@
 
     <UserLogos :with-title="false" />
 
-    <PriceEstimator v-if="$i18n.locale === 'en'" />
+    <PriceEstimator />
 
     <div class="section-subtitle has-text-centered">
       {{ $t('pricing faq subtitle') }}
