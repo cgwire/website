@@ -195,13 +195,6 @@ t<template>
           </a>
         </li>
         <li>
-          <a href="https://facebook.com/cgwire">
-            <span>
-              Facebook
-            </span>
-          </a>
-        </li>
-        <li>
           <a href="https://instagram.com/cgwire">
             <span>
               Instagram
