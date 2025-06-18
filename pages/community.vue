@@ -53,7 +53,7 @@
   </div>
 </section>
 
-<section class="section content community community-info">
+<!--section class="section content community community-info">
   <div
     class="flexrow"
     data-aos="fade-up"
@@ -88,7 +88,7 @@
 
 <section class="section content community community-info">
   <hr />
-</section>
+</section-->
 
 <section
   class="section content community community-info"
