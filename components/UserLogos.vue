@@ -41,6 +41,9 @@
             <img src="~/assets/images/studios/logo-miraculous.png">
           </div>
           <div class="logo-div">
+            <img src="~/assets/images/studios/logo-zuru.png">
+          </div>
+          <div class="logo-div">
             <img src="~/assets/images/logo-miyu.png">
           </div>
           <div class="logo-div">
@@ -72,6 +75,9 @@
           </div>
           <div class="logo-div">
             <img src="~/assets/images/studios/logo-miraculous.png">
+          </div>
+          <div class="logo-div">
+            <img src="~/assets/images/studios/logo-zuru.png">
           </div>
         </div>
       </div>
