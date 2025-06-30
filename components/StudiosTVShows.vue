@@ -6,16 +6,6 @@
       name="Fost"
     />
     <CustomerLogoBlock
-      link="https://xilam.com"
-      element-key="xilam"
-      name="Xilam"
-    />
-    <CustomerLogoBlock
-      link="https://www.cube-creative.com"
-      element-key="cube-invert"
-      name="Cube Creative"
-    />
-    <CustomerLogoBlock
       link="https://nousvoir.com"
       element-key="tnzpv-invert"
       name="TNZPV"
