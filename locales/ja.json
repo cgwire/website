@@ -254,7 +254,6 @@
   "header title tutorials": "チュートリアル",
   "header title tvshows": "TV番組",
   "header title usecase": "ユースケース",
-  "header title videogames": "ビデオゲーム/NFT",
   "integrations subtitle chats": "チームを最新の状態に保つ",
   "integrations subtitle dcc": "プレビューを迅速に送信",
   "integrations subtitle software": "ツール内でKitsuデータにアクセス",
@@ -710,5 +709,12 @@
   "video-games reasons item 3": "クリエイティブチームに特化したコラボレーション機能、KitsuはアーティストのためのJiraのようなもの。",
   "video-games reasons title": "ゲーム制作にKitsuを使うべき理由",
   "video-games subtitle": "クリエイティブ・アセット、予告編、シネマティクス",
-  "video-games title": "ビデオゲーム用キツ"
+  "video-games title": "ビデオゲーム用キツ",
+  "kitsu scale forecast": "予想",
+  "kitsu scale forecast-text": "シナリオをテストし、プロダクションがどのように進化するかを確認する。",
+  "kitsu stats title": "300以上のスタジオに信頼されている",
+  "kitsu stats text": "世界中のクリエーターがKitsuを利用して制作物を管理している。",
+  "kitsu stats countries": "国名",
+  "kitsu stats hours saved": "節約時間／日",
+  "kitsu stats video reviews": "kitsuスタッツビデオレビュー"
 }
