@@ -6,12 +6,12 @@
   <a :href="storyUrl">
     <div class="flexcolumn">
       <div class="flexrow-item story-picture">
-        <img :src="useAsset(imagePath)" :width="isBig ? 240 : 150"/>
+        <img :src="useAsset(imagePath)" :width="isBig ? 240 : 480"/>
       </div>
       <h2 class="story-title">
         {{ studioName }}
       </h2>
-      <p class="interviewee" v-if="isBig">
+      <p class="interviewee">
         {{ interviewee }}
       </p>
     </div>

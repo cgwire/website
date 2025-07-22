@@ -8,7 +8,7 @@
         <a
           href="https://www.youtube.com/watch?v=YJQJ3OciGR0"
           target="_blank"
-          class="button button--with-icon is-large"
+          class="button button--with-icon is-large watch-button"
         >
           <img src="~/assets/images/play.svg" alt="" />
           <span>{{ $t('kitsu watch cta') }}</span>
@@ -28,7 +28,7 @@
 
   <UserLogos />
 
-  <div class="production-success" id="unicornwars">
+  <div class="production-success" id="flow">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path
     fill="#fff" fill-opacity="1" class="shadow" d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,154.7C672,117,768,75,864,96C960,117,1056,203,1152,202.7C1248,203,1344,117,1392,74.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
@@ -42,8 +42,8 @@
   </div>
 
   <div class="production-type">
-    Unicorn Wars - 2D Feature Film, 1h32 <br />
-    <em>Autour de Minuit</em> <br />
+    Flow - 3D Feature Film, 1h 25'<br />
+    <em>Dream Well Studio</em> <br />
     {{ $t('kitsu tracked') }}
   </div>
 
@@ -106,7 +106,7 @@
     </div>
   </section>
 
-  <div class="production-success" id="gigabears">
+  <div class="production-success" id="sevenbears">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path
       fill="#fff" fill-opacity="1" class="shadow" d="M0,32L48,37.3C96,43,192,53,288,53.3C384,53,480,43,576,58.7C672,75,768,117,864,133.3C960,149,1056,139,1152,149.3C1248,160,1344,192,1392,208L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="second-wave">
@@ -114,10 +114,11 @@
     </svg>
   </div>
   <div class="production-type">
-    Three Gigabears, Commercial - 35 seconds<br />
-    <em>Gigabyte / Woodblock</em><br />
+    7 bears - 3D Netflix Series - 10x27'<br />
+    <em>Folivari</em><br />
     {{ $t('kitsu tracked') }}
   </div>
+
 
   <section class="section content landing-block" data-aos="fade-up">
     <h2 class="subtitle main-tagline">
@@ -135,6 +136,17 @@
           :class="{
             tab: true,
             'flexrow-item': true,
+            selected: featureTab === 'forecast'
+          }"
+          @click="featureTab = 'forecast'"
+        >
+          {{ $t('kitsu scale forecast') }}
+        </div>
+
+        <div
+          :class="{
+            tab: true,
+            'flexrow-item': true,
             selected: featureTab === 'todos'
           }"
           @click="featureTab = 'todos'"
@@ -145,21 +157,21 @@
           :class="{
             tab: true,
             'flexrow-item': true,
-            selected: featureTab === 'reports'
-          }"
-          @click="featureTab = 'reports'"
-        >
-          {{ $t('kitsu scale reports') }}
-        </div>
-        <div
-          :class="{
-            tab: true,
-            'flexrow-item': true,
             selected: featureTab === 'reviews'
           }"
           @click="featureTab = 'reviews'"
         >
           {{ $t('kitsu scale reviews') }}
+        </div>
+       <div
+          :class="{
+            tab: true,
+            'flexrow-item': true,
+            selected: featureTab === 'reports'
+          }"
+          @click="featureTab = 'reports'"
+        >
+          {{ $t('kitsu scale reports') }}
         </div>
         <div
           :class="{
@@ -177,7 +189,7 @@
         <div
           v-if="featureTab === 'todos'"
         >
-          <p>
+          <p class="has-text-centered">
             {{ $t('kitsu scale todos-text') }}
           </p>
           <div class="feature-img-wrapper">
@@ -186,10 +198,24 @@
             />
           </div>
         </div>
+
+        <div
+          v-else-if="featureTab === 'forecast'"
+        >
+          <p class="has-text-centered">
+            {{ $t('kitsu scale forecast-text') }}
+          </p>
+          <div class="feature-img-wrapper">
+            <img
+              src="~/assets/images/screenshots/kitsu-schedule-light.png"
+            />
+          </div>
+        </div>
+
         <div
           v-else-if="featureTab === 'reports'"
         >
-          <p>
+          <p class="has-text-centered"  >
             {{ $t('kitsu scale reports-text') }}
           </p>
           <div class="feature-img-wrapper">
@@ -202,7 +228,7 @@
         <div
           v-else-if="featureTab === 'reviews'"
         >
-          <p>
+          <p class="has-text-centered">
             {{ $t('kitsu scale reviews-text') }}
           </p>
           <div class="feature-img-wrapper">
@@ -215,7 +241,7 @@
         <div
           v-else-if="featureTab === 'api'"
         >
-          <p>
+          <p class="has-text-centered">
             {{ $t('kitsu scale api-text') }}
           </p>
           <div class="feature-img-wrapper">
@@ -231,6 +257,31 @@
   </section>
 
 
+  <section class="section content landing-block" data-aos="fade-up">
+    <h2 class="subtitle main-tagline">
+      {{ $t('kitsu stats title') }}
+    </h2>
+    <p class="has-text-centered main-tagline-explanation">
+      {{ $t('kitsu stats text') }}
+    </p>
+
+    <div class="flexrow number-blocks">
+      <div class="flexcolumn flexrow-item number-block">
+        <p class="number-block-number">9,600+</p>
+        <p class="number-block-title">{{ $t('kitsu stats hours saved') }}</p>
+      </div>
+      <div class="flexcolumn flexrow-item number-block">
+        <p class="number-block-number">10,000+</p>
+        <p class="number-block-title">{{ $t('kitsu stats video reviews') }}</p>
+      </div>
+      <div class="flexcolumn flexrow-item number-block">
+        <p class="number-block-number">30+</p>
+        <p class="number-block-title">{{ $t('kitsu stats countries') }}</p>
+      </div>
+    </div>
+  </section>
+
+
   <section class="flexcolumn landing-block mt8">
     <h2 class="subtitle main-tagline">
       {{ $t('kitsu scale stories') }}
@@ -239,7 +290,7 @@
       {{ $t('kitsu scale stories-text') }}
     </p>
 
-    <div class="mt4 mb4" data-aos="fade-up">
+    <div class="mt4 mb1" data-aos="fade-up">
       <div class="flexrow stories">
         <CustomerStorySmallBlock
           studio-name="Miyu studio"
@@ -247,7 +298,6 @@
           image-path="photo-customer-story-miyu.png"
           interviewee="Carole Faure, Production Manager"
           story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
-          is-big
         />
 
         <CustomerStorySmallBlock
@@ -256,16 +306,17 @@
           image-path="photo-customer-story-fost.png"
           interviewee="Céline Durieux, Head Of Studio"
           story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
-          is-big
         />
-
+      </div>
+    </div>
+    <div class="mt1 mb4" data-aos="fade-up">
+      <div class="flexrow stories">
         <CustomerStorySmallBlock
           studio-name="Autour De Minuit"
           story-key="adm"
           interviewee="Fiona Cohen, Production Manager"
           image-path="photo-customer-story-adm.jpg"
           story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
-          is-big
         />
 
         <CustomerStorySmallBlock
@@ -274,7 +325,6 @@
           interviewee="Pete Draper, Head of VFX"
           image-path="photo-customer-story-makuta.png"
           story-url="https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
-          is-big
         />
       </div>
     </div>
@@ -371,6 +421,35 @@ div.body
     .tagline-explanation
         font-size 1.3em
 
+    .tab-list
+        margin auto
+
+    .watch-button
+        display none
+
+    .number-blocks
+        display grid
+        margin-top 4em
+        width 100%
+        grid-template-columns 1fr 1fr 1fr
+        gap 1em
+
+        .number-block
+            display flexcolumn
+            align-items center
+            justify-content center
+
+        .number-block-title
+            color #888
+            font-size 1.2em
+            text-transform uppercase
+            font-weight bold
+
+        .number-block-number
+            font-weight bold
+            font-size 3em
+            margin-bottom 0.2em
+
     @media(max-width 800px)
 
         .features
@@ -403,25 +482,26 @@ div.body
             section.customer-story
                 margin 0 1em 1em 1em
 
-        section.content.trusted
-            h4.section-subtitle
-                line-height 2em
+
+        .number-blocks
+            grid-template-columns 1fr
+            gap 2em
 
         .tabs
             padding .5em
             margin 1em
 
             .tab
-                font-size 0.9em
+                font-size 0.8em
 
             .tab-info
               p
-                  display none
+                  font-size 0.75em
 
               img
-                  max-width 100%
-                  min-width 100%
-                  width 100%
+                  max-width 98%
+                  min-width 98%
+                  width 98%
 
 .modal-content
     height 80vh
@@ -441,13 +521,13 @@ div.body
     background-size cover
     background-position: 0 -150px
 
-#gigabears
-    background url('~/assets/images/gigabears.jpg')
+#sevenbears
+    background url('~/assets/images/sevenbears.png')
     background-size cover
     background-position: 0 -100px
 
-#unicornwars
-    background url('~/assets/images/unicornwars.png')
+#flow
+    background url('~/assets/images/flow.png')
     background-size cover
     background-position: 0 80px
 
@@ -456,7 +536,7 @@ div.body
     #mushmush
         background-position: 0 -100px
 
-    #unicornwars
+    #flow
         background-position: 0 60px
 
 
@@ -467,10 +547,10 @@ div.body
     #mushmush
         background-position: 0 -40px
 
-    #gigabears
+    #sevenbears
         background-position: 0 -100px
 
-    #unicornwars
+    #flow
         background-position: 0 40px
 
 
@@ -479,10 +559,10 @@ div.body
     #mushmush
         background-position: 0 0px
 
-    #gigabears
+    #sevenbears
         background-position: 0 -20px
 
-    #unicornwars
+    #flow
         background-position: 0 20px
 
 

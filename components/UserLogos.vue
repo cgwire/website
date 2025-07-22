@@ -195,4 +195,9 @@ const props = defineProps({
 .fade-leave-to {
   opacity: 0;
 }
+
+@media (max-width: 768px)
+  .trusted
+      .section-subtitle
+          display none
 </style>
