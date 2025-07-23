@@ -1,22 +1,20 @@
 <template>
 <div class="kitsu-page content">
 
-  <div class="kitsu-header-wrapper">
-    <section>
       <div class="kitsu-header flexrow">
-        <div class="flexcolum flexrow-item logo-wrapper mr2">
-          <img class="logo" src="~/assets/images/logo-kitsu.png" />
-          <h2 class="logo-name">Kitsu</h2>
-        </div>
         <div class="main-title">
           <span>{{ $t('kitsu title') }}</span>
           <div class="kitsu-explanation">
             {{ $t('kitsu description') }}
           </div>
         </div>
-      </div>
+        </div>
+ 
+  <div class="kitsu-header-wrapper">
+    <section>
     </section>
   </div>
+
 
   <section>
     <div class="section-subtitle has-text-centered">
@@ -106,6 +104,21 @@
 
     <div data-aos="fade-up">
       <div class="section-subtitle has-text-centered">
+        Fullfill your ambitions
+      </div>
+
+      <h2 class="section-title has-text-centered">
+        Kitus is the biggest supporter of your success
+      </h2>
+      <div class="section-explanation">
+        Productions tracked with Kitsu won all the major awards:
+        Oscars, Emmys, Cannes Palme d'Or, Annecy Cristal, César, and more.
+      </div>
+      <img src="~/assets/images/illustrations/success-supporter.png" />
+    </div>
+
+    <div data-aos="fade-up">
+      <div class="section-subtitle has-text-centered">
         {{ $t('kitsu stories subtitle') }}
       </div>
       <h2 class="section-title has-text-centered">
@@ -116,12 +129,14 @@
       </div>
     </div>
 
-    <div class="flex" data-aos="fade-up">
-      <div class="modules">
+
+    <div class="mt4 mb1" data-aos="fade-up">
+      <div class="flexrow stories">
         <CustomerStorySmallBlock
           studio-name="Miyu studio"
           story-key="miyu"
           image-path="photo-customer-story-miyu.png"
+          interviewee="Carole Faure, Production Manager"
           story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
         />
 
@@ -129,10 +144,15 @@
           studio-name="Fost studio"
           story-key="fost"
           image-path="photo-customer-story-fost.png"
+          interviewee="Céline Durieux, Head Of Studio"
           story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
         />
-
+      </div>
+    </div>
+    <div class="mt1 mb4" data-aos="fade-up">
+      <div class="flexrow stories">
         <CustomerStorySmallBlock
+          class="customer-story mb1"
           studio-name="Autour De Minuit"
           story-key="adm"
           interviewee="Fiona Cohen, Production Manager"
@@ -141,6 +161,7 @@
         />
 
         <CustomerStorySmallBlock
+          class="customer-story"
           studio-name="Makuta VFX"
           story-key="makuta"
           interviewee="Pete Draper, Head of VFX"
@@ -151,7 +172,8 @@
     </div>
   </section>
 </div>
-<Trial />
+
+<Trial class="mt4" :is-big="true" />
 </template>
 
 <script setup>
@@ -191,17 +213,22 @@ useHead({
   padding-top 0
 
 .kitsu-header-wrapper
-  border-radius 0px 0px 400px 400px / 25px 25px 25px 25px
-  box-shadow 2px 2px 8px rgba(0, 0, 0, 0.1)
-  background linear-gradient(0deg, rgba(249,246,253,1) 35%, rgba(244,248,255,1) 100%)
+  background-image url('~/assets/images/illustrations/kitsu-header.png')
+  background-size 100%
+  background-position: 0px 0px
+  height 600px
+  background-repeat: no-repeat
   padding-bottom 3em
   padding-top 3em
 
-.kitsu-header.flexrow
-    max-width 800px
+.stories
+  justify-content center
+
+.content .kitsu-header.flexrow
+    max-width 1000px
     margin auto
-    margin-bottom 2em
-    margin-top 6em
+    margin-bottom 3em
+    margin-top 2em
     align-items center
 
     .kitsu-explanation
@@ -248,17 +275,50 @@ useHead({
         text-align center
         margin-bottom 10px
 
-@media(max-width: 800px)
-  section
-    padding 1em
+.kitsu-header.flexrow
+  padding: 2em
+  margin: auto
+  text-align center
+  margin-bottom: 10em
 
-  .kitsu-header.flexrow
-    flex-direction column
+.main-title
+  margin-top 4em
 
-    .main-title
-      padding 2em
 
-  .modules
-    .small-block
-      margin-bottom 1em
+div.body
+  @media(max-width: 1200px)
+    .kitsu-header-wrapper
+      height 500px
+
+  @media(max-width: 500px)
+    .kitsu-header-wrapper
+      height 300px
+
+  @media(max-width: 600px)
+    .kitsu-header-wrapper
+      height 400px
+
+  @media(max-width: 800px)
+    section
+      padding 1em
+
+    .kitsu-header-wrapper
+      background-size 200%
+      background-position: 80%
+
+    .kitsu-header.flexrow
+      flex-direction column
+
+      .main-title
+        padding 2em
+
+    .modules
+      .small-block
+        margin-bottom 1em
+
+    .stories
+        flex-direction column
+
+        section.customer-story
+            margin 0 1em 1em 1em
 </style>
