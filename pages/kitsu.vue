@@ -233,6 +233,7 @@ useHead({
 
     .kitsu-explanation
         font-size 1.2em
+        margin-top 0.5em
 
     span
         flex 1

@@ -482,7 +482,6 @@ div.body
             section.customer-story
                 margin 0 1em 1em 1em
 
-
         .number-blocks
             grid-template-columns 1fr
             gap 2em

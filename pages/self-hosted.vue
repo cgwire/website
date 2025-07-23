@@ -88,6 +88,16 @@
       :features="supportFeatures"
     />
 
+    <h3>Supporting an Indie project</h3>
+
+    <p>
+      CGWire is an indie company committed to keeping Kitsu free and open-source.
+      By subscribing to our cloud version, you are supporting the development of Kitsu and 
+      ensuring its continued improvement.
+      We don't have any investors to keep our decision-making independent,
+      so your support is crucial for us to continue maintaining Kitsu.
+    </p>
+  
   </section>
 
   <Trial />
