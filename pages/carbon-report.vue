@@ -107,20 +107,133 @@
         <div class="container">
           <h2 class="content-title">
           Notre bilan par catégories
-        </h2>
+          </h2>
 
         <p class="content-description">
-            Les résultats montrent la répartition de nos émissions,
-            le transport avec le voyage au Japon représente plus de 50% de nos émissions totales.
+          Les résultats montrent la répartition de nos émissions,
+          le transport avec le voyage au Japon représente plus de 50% de nos émissions totales.
           </p>
+
+        <p>
+          <img
+            src="~/assets/images/carbon-report/graph-with-plane-travels.png"
+            alt="Graph showing carbon emissions by category with flights"
+            v-if="dataWithFlights"
+          />
+          <img
+            src="~/assets/images/carbon-report/graph-without-plane-travels.png"
+            alt="Graph showing carbon emissions by category with flights"
+            v-else
+          />
+        </p>
+        </div>
+
+        <div class="data-cards" v-if="dataWithFlights">
+          <div class="data-card category-card">
+            <img 
+              class="card-big-icon"
+              src="~/assets/images/carbon-report/japan-small.png"
+              alt="Japan icon"
+            />
+            <div class="category-card-data">
+              <div class="card-value">
+                54%
+              </div>
+              <div class="card-description">Voyage au Japon</div>
+              <div class="card-info">14 tonnes d'équivalent CO2</div>
+            </div>
+          </div>
+          <div class="data-card category-card">
+            <img 
+              class="card-big-icon"
+              src="~/assets/images/carbon-report/cloud-small.png"
+              alt="Cloud icon"
+            />
+            <div class="category-card-data">
+              <div class="card-value">
+                30%
+              </div>
+              <div class="card-description">Infrastructure Cloud</div>
+              <div class="card-info">7,7 tonnes d'équivalent CO2</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-cards" v-else>
+          <div class="data-card category-card">
+            <img 
+              class="card-big-icon"
+              src="~/assets/images/carbon-report/cloud-small.png"
+              alt="Japan icon"
+            />
+            <div class="category-card-data">
+              <div class="card-value">
+                64%
+              </div>
+              <div class="card-description">Infrastructure Cloud</div>
+              <div class="card-info">7,7 tonnes d'équivalent CO2</div>
+            </div>
+          </div>
+          <div class="data-card category-card">
+            <img 
+              class="card-big-icon"
+              src="~/assets/images/carbon-report/food-small.png"
+              alt="Cloud icon"
+            />
+            <div class="category-card-data">
+              <div class="card-value">
+                16%
+              </div>
+              <div class="card-description">Alimentation</div>
+              <div class="card-info">1,9 tonnes d'équivalent CO2</div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
+
+
+    <div class="section conclusion">
+          <h2 class="content-title">
+          Nous sommes une entreprise du secteur des industries culturelles et créatives
+          </h2>
+        <p class="content-description">
+        Nous permettons aux studios créatifs de mieux collaborer pour faire de
+              meilleures réalisations. Pour que cet apport soit durable, nous
+              nous efforçons d'appliquer au mieux les bonnes pratiques de vie en
+              communauté sur tous les plans: logiciel open-source, transparence
+              comptable et analyse de notre impact environnemental. Note but est
+              d'inclure au mieux notre entreprise dans notre société et notre
+              environnement.
+          </p>
+
+
+    <NuxtLink
+      class="btn btn-primary"
+      :to="localePath('about')"
+    >
+      En savoir plus sur nous
+    </NuxtLink>
+    </div>
+
+    <Trial :cta="false" />
   </div>
 </template>
 
 <script setup>
 const name =  "CarbonReport"
+
+const { t } = useI18n()
+useHead({
+  title: 'CGWire | ' + t('carbon-report title'),
+  meta: buildPageMeta(
+    t,
+    'carbon-report title',
+    'carbon-report explanation one',
+    'carbon-report',
+    'carbon.107a8a01.png'
+  )
+})
 
 const dataWithFlights = ref(true)
 
@@ -263,6 +376,11 @@ text-light = #868686
   &:hover
     transform translateY(-5px)
 
+  &.category-card
+    display flex
+    align-items center
+    border-color: #79ADE5
+
 .data-card-header
   display flex
   align-items center
@@ -273,6 +391,12 @@ text-light = #868686
   margin-right 4px
   width 28px
   height 28px
+
+.card-big-icon
+  border-radius 20px
+  height 138px
+  margin-right 20px
+  width 138px
 
 .card-label
   font-size 20px
@@ -285,6 +409,16 @@ text-light = #868686
   color text-color
   margin-bottom 0.5rem
   vertical-align bottom
+
+.category-card 
+  .card-value
+    line-height 65px
+    margin-bottom 0
+  .card-description
+    font-size 20px
+    font-weight 700
+    color text-color
+    margin-bottom 0.5rem
 
 .card-unit
   font-size 20px
@@ -299,6 +433,10 @@ text-light = #868686
 .carbon-categories
   background-color light-blue
   padding: 4rem 0
+
+.conclusion
+  .content-title
+    font-size 28px
 
 @media (max-width: 768px)
   .content-title
