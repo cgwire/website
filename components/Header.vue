@@ -46,6 +46,15 @@
         >
           JN
         </nuxt-link>
+        <a
+          href="https://discord.com/invite/VbCxtKN"
+          target="_blank"
+          class="navbar-item top discord desktop"
+        >
+          <span class="navbar-item-title">
+            <img width="24" src="~/assets/images/discord.svg" alt="Discord" />
+          </span>
+        </a>
       </div>
 
       <nuxt-link
@@ -63,16 +72,6 @@
           Kitsu
         </span>
       </nuxt-link>
-
-      <a
-        href="https://discord.com/invite/VbCxtKN"
-        target="_blank"
-        class="navbar-item top discord desktop"
-      >
-        <span class="navbar-item-title">
-          <img width="24" src="~/assets/images/discord.svg" alt="Discord" />
-        </span>
-      </a>
 
       <div
         :class="{

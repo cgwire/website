@@ -152,6 +152,13 @@ t<template>
           </nuxt-link>
         </li>
         <li>
+          <nuxt-link :to="localePath('carbon-report')">
+            <span class="level-item">
+              {{ $t('footers link carbon') }}
+            </span>
+          </nuxt-link>
+        </li>
+        <li>
           <a href="https://metrics.cg-wire.com">
             <span class="level-item">
               {{ $t('footers link metrics') }}
@@ -205,11 +212,11 @@ t<template>
     </div>
   </div>
 
-  <div class="has-text-centered footer-of-footer">
+  <!--div class="has-text-centered footer-of-footer">
     {{ $t('footers conclusion text1')  }}
     <span style="color: red;">&hearts;</span>
     {{ $t('footers conclusion text2')  }}
-  </div>
+  </div-->
 </footer>
 </template>
 
