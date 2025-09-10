@@ -587,25 +587,26 @@ div.body
     min-height 300px
 
 
-.landing-text {
-  flex: 1;
-}
+.landing-text
+  flex: 1
 
-.landing-picture {
+
+.landing-picture
   max-width: 600px
-}
 
-.supporter-list {
-  .flexrow-item {
-    flex: 1;
-  }
-}
 
-video {
-   -webkit-filter: brightness(101.5%);
-   width: 100%;
-   max-width: 550px;
-}
+.supporter-list
+  .flexrow-item
+    flex: 1
+
+.feature-img-wrapper img
+  border: 10px solid #EEEEEE11
+
+
+video
+   -webkit-filter: brightness(101.5%)
+   width: 100%
+   max-width: 550px
 
 .introduction
   max-width 1200px

@@ -10,7 +10,7 @@
       :key="tab"
       @click="toggleTab(tab)"
     >
-      {{ tab }}
+      {{ $t('tabs ' + tab) }}
     </button>
   </div>
 </template>
@@ -25,7 +25,7 @@ defineProps({
   },
   tabs: {
     type: Array,
-    default: () => ['2D', '3D'],
+    default: () => [],
   },
 })
 
@@ -78,5 +78,14 @@ text-light = #868686
     border-radius: 50px
 
     &:hover
-      background: background-hover
+      background: light-grey
+
+@media (max-width: 768px)
+  .tabs
+    margin: 0.3em
+
+    .btn
+      padding: 0.5em 0.5em
+      font-size: 0.75em
+      width: 100%
 </style>
