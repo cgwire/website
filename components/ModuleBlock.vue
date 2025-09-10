@@ -53,4 +53,5 @@ ul li:before
 
 .module-block h2
   margin-top 0.5em
+  font-size 1.3rem
 </style>
