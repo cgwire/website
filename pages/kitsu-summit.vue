@@ -250,7 +250,7 @@ const conferences = ref([
   },
   {
     time: '09:45',
-    speaker: 'Audrey Toudre',
+    speaker: 'Audrey Tondre',
     company: 'Remembers',
     title: t('kitsu-summit conference remembers title'),
     description: t('kitsu-summit conference remembers description'),
@@ -387,6 +387,17 @@ function useAsset(path) {
   })
   return assets['/assets/images/summit/' + path]
 }
+
+useHead({
+  title: "CGWire | Kitsu",
+  meta: buildPageMeta(
+    t,
+    "kitsu-summit title",
+    "kitsu-summit description",
+    "kitsu-summit",
+    "meetup.af7c0c6c.jpg"
+  ),
+})
 </script>
 
 <style scoped lang="stylus">
