@@ -120,7 +120,8 @@
             </div>
             <div class="registration-price">
               <span class="price-label">{{ $t('kitsu-summit price label') }}</span>
-              <span class="price-amount">120€</span>
+              <span class="price-amount">100€</span>
+              <span class="price-info">+ taxes</span>
             </div>
             <div class="registration-buttons mt1">
             <a class="btn-primary" href="https://widget.weezevent.com/ticket/E1391473/?code=47941&locale=fr-FR&width_auto=1&color_primary=0032FA" onclick="var w=window.open('https://widget.weezevent.com/ticket/E1391473/?code=47941&locale=fr-FR&width_auto=1&color_primary=0032FA', 'Billetterie Weezevent', 'width=650, height=600, top=100, left=100, toolbar=no, resizable=yes, scrollbars=yes, status=no'); w.focus(); return false;" style="text-decoration: none;color: #ffffff;background: #00b242;padding: .4em 1em;border-radius: 5px;">
@@ -146,27 +147,27 @@
          <div class="access-venue access-venue-info">
           <div class="access-venue-info-content">
            <h2 class="small">
-             Venue: Cap Digital
+             Cap Digital
            </h2>
            <p>
              14 rue alexandre parodi 75010 paris
            </p>
 
            <p>
-             <i>RER stations</i> <br>
-             RER B or D to Gare du Nord <br>
-             RER E to Gare de l'Est
+             <i>RER</i> <br>
+             Gare du Nord (RER B or D)<br>
+             Gare de l'Est (RER E)
            </p>
 
            <p>
-             <i>Metro stations</i> <br>
+             <i>Metro</i> <br>
              Gare de l'Est (L5, L7) <br>
              Colonel Fabien (L2)<br>
              République (L3, L5, L8, L9)<br>
            </p>
 
            <p>
-             <i>Buses</i> <br>
+             <i>Bus</i> <br>
              46 - Canal Saint Martin<br>
              26 - Louis Blanc<br>
              54 - Chaudron - Saint Martin
@@ -189,21 +190,21 @@
          </div>
 
         <h2 class="small">
-          Recommended Hotels
+          {{ $t('kitsu-summit access recommended hotels') }}
         </h2>
 
         <div class="access-hotels">
           <a href="https://lecitizenhotel.com/" target="_blank">
             <img width="300" src="~/assets/images/community/citizen.jpg" /><br>
-            Citizen Hotel - 100€ / night
+            Citizen Hotel - 100€ / {{ $t('kitsu-summit access night') }}
           </a>
           <a href="https://www.lerobinetdor.com/" target="_blank">
             <img width="300" src="~/assets/images/community/le-robinet-dor.jpg" /><br>
-            Le Robinet Dor - 200€ / night
+            Le Robinet Dor - 200€ / {{ $t('kitsu-summit access night') }}
           </a>
           <a href="https://staygenerator.com/hostels/paris" target="_blank">
             <img width="300" src="~/assets/images/community/generator.jpg" /><br>
-            Generator Hostel - 20€-100€ / night
+            Generator Hostel - 20€-100€ / {{ $t('kitsu-summit access night') }}
           </a>
         </div>
       </div>
@@ -227,6 +228,8 @@
 </template>
 
 <script setup>
+const { t } = useI18n()
+
 definePageMeta({
   layout: 'default',
   title: 'Kitsu Summit 2026 - Paris',
@@ -237,133 +240,87 @@ definePageMeta({
 const conferences = ref([
   {
     time: '09:00',
-    title: 'Producing cutting-edge short films at Blender Studio',
     speaker: 'Fiona Cohen',
     company: 'Blender Studio',
-    description: 'Discover how Blender Studio leverages Kitsu to produce innovative and open short films.',
+    title: t('kitsu-summit conference blender title'),
+    description: t('kitsu-summit conference blender description'),
     category: 'animation3d',
     categoryLabel: '3D',
     file: 'fiona.jpg'
   },
   {
     time: '09:45',
-    title: 'Producing a first feature film and get the Annecy Cristal',
     speaker: 'Audrey Toudre',
     company: 'Remembers',
-    description: 'Learn how Remembers used Kitsu to manage their first feature film production and achieve recognition at Annecy.',
+    title: t('kitsu-summit conference remembers title'),
+    description: t('kitsu-summit conference remembers description'),
     category: 'animation2d',
     categoryLabel: '2D',
     file: 'audrey.jpg'
-  },/*,
-  {
-    time: '10:30',
-    title: 'Reaching new highs with a modern pipeline',
-    speaker: 'Nicolas Delatoile',
-    company: 'Flow Movie',
-    description: 'How Flow Movie implemented a modern production pipeline using Kitsu to scale their 3D animation projects.',
-    category: 'animation3d',
-    categoryLabel: '3D'
   },
   {
-    time: '11:15',
-    title: 'Dealing with 2D animation pre-schools',
-    speaker: 'Koukie',
-    company: 'Malilart',
-    description: 'Educational approaches to teaching 2D animation production management using Kitsu in academic settings.',
-    category: 'animation2d',
-    categoryLabel: '2D'
-  }*/
-  {
     time: '12:00',
-    title: 'Managing hundreds of projects with ease',
     speaker: 'Pete Draper',
     company: 'Ryff',
-    description: 'Scaling VFX production management across hundreds of projects using Kitsu\'s powerful organizational tools.',
+    title: t('kitsu-summit conference ryff title'),
+    description: t('kitsu-summit conference ryff description'),
     category: 'vfx',
     categoryLabel: 'VFX',
     file: 'pete.webp'
   },
   {
     time: '12:45',
-    title: 'Running next-gen animation reviews',
     speaker: 'Chris Unterberg',
     company: 'Tetsuo',
-    description: 'Modernizing the review process with Kitsu\'s advanced review tools for next-generation animation workflows.',
+    description: t('kitsu-summit conference tetsuo description'),
+    title: t('kitsu-summit conference tetsuo title'),
     category: 'vfx',
     categoryLabel: 'VFX',
     file: 'chris.jpg'
   },
   {
     time: '14:00',
-    title: '2D/3D Production Workflows',
     speaker: 'Flavio Perez',
     company: 'Les Fées Spéciales',
-    description: 'Exploring advanced 2D/3D production techniques and pipeline optimization.',
+    description: t('kitsu-summit conference les-fees-spéciales description'),
+    title: t('kitsu-summit conference les-fees-spéciales title'),
     category: 'animation3d',
     categoryLabel: '3D',
     file: 'flavio.jpg'
   },
-  /*
-  {
-    time: '14:45',
-    title: 'VFX Pipeline Excellence',
-    speaker: 'Julie Bellemar',
-    company: 'Wizz',
-    description: 'Achieving VFX pipeline excellence through strategic use of Kitsu\'s collaboration and asset management features.',
-    category: 'vfx',
-    categoryLabel: 'VFX'
-  },*/
   {
     time: '15:30',
-    title: 'A new point of view on asset management',
+    title: t('kitsu-summit conference cube creative title'),
     speaker: 'Axel Tillement',
     company: 'Cube Creative',
-    description: 'Simplified and revolutionary approaches to 3D asset management.',
+    description: t('kitsu-summit conference cube creative description'),
     category: 'animation3d',
     categoryLabel: '3D',
     file: 'axel.jpg'
-  },/*
-  {
-    time: '16:15',
-    title: 'Intense output deliveries while preserving quality',
-    speaker: 'Céline Durieux',
-    company: 'Fost',
-    description: 'Maintaining high quality standards during intensive production schedules with Kitsu\'s efficient workflow tools.',
-    category: 'animation2d',
-    categoryLabel: '2D'
-  },*/
+  },
   {
     time: '17:00',
-    title: 'Production Management at the service of creativity',
+    title: t('kitsu-summit conference miyu title'),
     speaker: 'Carole Faure',
     company: 'Miyu',
-    description: 'How Miyu balances creative freedom with production efficiency using Kitsu\'s flexible management tools.',
+    description: t('kitsu-summit conference miyu description'),
     category: 'animation2d',
     categoryLabel: '2D',
     file: 'carole.webp'
   },
-  /*{
-    time: '17:45',
-    title: 'Digital asset management for video-games',
-    speaker: 'Ariel McKay',
-    company: 'MDHR',
-    description: 'Specialized approaches to digital asset management in video game development using Kitsu\'s versatile platform.',
-    category: 'games',
-    categoryLabel: 'Games'
-  },*/
   {
     time: '17:45',
-    title: 'Reaching new highs with a modern pipeline',
+    title: t('kitsu-summit conference fost title'),
     speaker: 'To be confirmed',
     company: 'To be confirmed',
-    description: 'How to reach a large audience with a modern production pipeline and a tight budget.',
+    description: t('kitsu-summit conference fost description'),
     category: 'animation3d',
-    categoryLabel: 'Games',
+    categoryLabel: '3D',
     file: 'waiting.jpg'
   },
   {
     time: '17:45',
-    title: 'Digital asset management for Video Games',
+    title: 'Managing digital assets for Video Games',
     speaker: 'To be confirmed',
     company: 'To be confirmed',
     description: 'Dealing with tons of animation loop and environments in production.',
@@ -373,10 +330,10 @@ const conferences = ref([
   },
   {
     time: '17:45',
-    title: 'Creating outstanding 2D shorts',
+    title: 'Giving life to outstanding 2D shorts',
     speaker: 'To be confirmed',
     company: 'To be confirmed',
-    description: 'Dealing with artists, directors, and clients to deliver quickly and efficiently.',
+    description: 'Dealing with artists, directors, and clients to deliver on time.',
     category: 'animation2d',
     categoryLabel: '2D',
     file: 'waiting.jpg'
@@ -388,17 +345,17 @@ const conferences = ref([
     company: 'To be confirmed',
     description: 'Leveraging Kitsu efficiency for 2D TV series with 20 years of experience in the animation industry.',
     category: 'animation2d',
-    categoryLabel: 'Games',
+    categoryLabel: '2D',
     file: 'waiting.jpg'
   },
   {
     time: '17:45',
-    title: 'Intense output deliveries while preserving quality',
+    title: 'Providing intense output deliveries while preserving quality',
     speaker: 'To be confirmed',
     company: 'To be confirmed',
     description: 'Maintaining high quality standards during intensive production schedules.',
     category: 'animation2d',
-    categoryLabel: 'Games',
+    categoryLabel: '2D',
     file: 'waiting.jpg'
   },
   {
@@ -890,6 +847,10 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     grid-template-columns: repeat(3, 1fr)
     gap: 2rem
     align-items: center
+    font-size: 0.9rem
+
+    a
+      color: text-dark
 
     img
       border-radius: 15px
