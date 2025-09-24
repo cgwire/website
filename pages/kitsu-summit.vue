@@ -123,6 +123,9 @@
               <span class="price-amount">100€</span>
               <span class="price-info">+ taxes</span>
             </div>
+            <div>
+              <span class="price-label">{{ $t('kitsu-summit price availability') }}</span>
+            </div>
             <div class="registration-buttons mt1">
             <a class="btn-primary" href="https://widget.weezevent.com/ticket/E1391473/?code=47941&locale=fr-FR&width_auto=1&color_primary=0032FA" onclick="var w=window.open('https://widget.weezevent.com/ticket/E1391473/?code=47941&locale=fr-FR&width_auto=1&color_primary=0032FA', 'Billetterie Weezevent', 'width=650, height=600, top=100, left=100, toolbar=no, resizable=yes, scrollbars=yes, status=no'); w.focus(); return false;" style="text-decoration: none;color: #ffffff;background: #00b242;padding: .4em 1em;border-radius: 5px;">
               {{ $t('kitsu-summit register cta') }}
@@ -340,10 +343,10 @@ const conferences = ref([
   },
   {
     time: '17:45',
-    title: 'Leading 2D animation TV series with minimal resources',
+    title: 'A feature film long for The Sphere in Las Vegas',
     speaker: 'To be confirmed',
     company: 'To be confirmed',
-    description: 'Leveraging Kitsu efficiency for 2D TV series with 20 years of experience in the animation industry.',
+    description: 'Smart usage of Kitsu to deal with a new kind of video content.',
     category: 'animation2d',
     categoryLabel: '2D',
     file: 'waiting.jpg'
@@ -774,15 +777,18 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
       color: text-dark
       font-weight: 500
 
+
+.registration-content
+
+  .price-label
+    font-size: 1.2rem
+    color: text-light
+
 .registration-price
   display: flex
   align-items: center
   gap: 1rem
   margin-top: 2rem
-
-  .price-label
-    font-size: 1.2rem
-    color: text-light
 
   .price-amount
     font-size: 2.5rem
@@ -919,6 +925,9 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     .container
       grid-template-columns: 1fr
       gap: 2rem
+
+    .hero-logo
+      margin-top 4rem
 
     .hero-title
       font-size: 2.5rem
