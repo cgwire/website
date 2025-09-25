@@ -323,16 +323,6 @@ const conferences = ref([
   },
   {
     time: '17:45',
-    speaker: 'To be confirmed',
-    speaker: 'To be confirmed',
-    company: 'To be confirmed',
-    description: 'To be defined',
-    category: 'games',
-    categoryLabel: 'Games',
-    file: 'waiting.jpg'
-  },
-  {
-    time: '17:45',
     title: 'Giving life to outstanding 2D shorts',
     speaker: 'To be confirmed',
     company: 'To be confirmed',
@@ -343,20 +333,30 @@ const conferences = ref([
   },
   {
     time: '17:45',
-    title: 'To be defined',
+    title: 'Providing intense output deliveries while preserving quality',
     speaker: 'To be confirmed',
     company: 'To be confirmed',
-    description: 'To be defined',
+    description: 'Maintaining high quality standards during intensive production schedules.',
     category: 'animation2d',
     categoryLabel: '2D',
     file: 'waiting.jpg'
   },
   {
     time: '17:45',
-    title: 'Providing intense output deliveries while preserving quality',
+    title: 'To be defined',
     speaker: 'To be confirmed',
     company: 'To be confirmed',
-    description: 'Maintaining high quality standards during intensive production schedules.',
+    description: 'To be defined',
+    category: 'vfx',
+    categoryLabel: 'VFX',
+    file: 'waiting.jpg'
+  },
+  {
+    time: '17:45',
+    title: 'To be defined',
+    speaker: 'To be confirmed',
+    company: 'To be confirmed',
+    description: 'To be defined',
     category: 'animation2d',
     categoryLabel: '2D',
     file: 'waiting.jpg'
