@@ -54,7 +54,7 @@
             <div class="stat-label">{{ $t('kitsu-summit stat attendees') }}</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">2 rooms</div>
+            <div class="stat-number"> 2 {{ $t('kitsu-summit stat rooms') }}</div>
             <div class="stat-label">{{ $t('kitsu-summit stat duration') }}</div>
           </div>
         </div>
