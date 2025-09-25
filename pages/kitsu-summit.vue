@@ -323,10 +323,10 @@ const conferences = ref([
   },
   {
     time: '17:45',
-    title: 'Managing digital assets for Video Games',
+    speaker: 'To be confirmed',
     speaker: 'To be confirmed',
     company: 'To be confirmed',
-    description: 'Dealing with tons of animation loop and environments in production.',
+    description: 'To be defined',
     category: 'games',
     categoryLabel: 'Games',
     file: 'waiting.jpg'
@@ -343,10 +343,10 @@ const conferences = ref([
   },
   {
     time: '17:45',
-    title: 'A feature film long for The Sphere in Las Vegas',
+    title: 'To be defined',
     speaker: 'To be confirmed',
     company: 'To be confirmed',
-    description: 'Smart usage of Kitsu to deal with a new kind of video content.',
+    description: 'To be defined',
     category: 'animation2d',
     categoryLabel: '2D',
     file: 'waiting.jpg'
