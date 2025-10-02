@@ -313,12 +313,12 @@ const conferences = ref([
   },
   {
     time: '17:45',
-    title: t('kitsu-summit conference fost title'),
+    title: 'Growing with Kitsu',
     speaker: 'To be confirmed',
-    company: 'To be confirmed',
-    description: t('kitsu-summit conference fost description'),
-    category: 'animation3d',
-    categoryLabel: '3D',
+    company: 'Fost',
+    description: 'How Fost scaled their production with Kitsu and how Fost helped Kitsu to grow.',
+    category: 'animation2d',
+    categoryLabel: '2D',
     file: 'waiting.jpg'
   },
   {
@@ -331,22 +331,12 @@ const conferences = ref([
     categoryLabel: '2D',
     file: 'waiting.jpg'
   },
-  {
+ {
     time: '17:45',
-    title: 'Providing intense output deliveries while preserving quality',
+    title: 'Cloud rendering for a TV Series (sponsor)',
     speaker: 'To be confirmed',
     company: 'To be confirmed',
-    description: 'Maintaining high quality standards during intensive production schedules.',
-    category: 'animation2d',
-    categoryLabel: '2D',
-    file: 'waiting.jpg'
-  },
-  {
-    time: '17:45',
-    title: 'To be defined',
-    speaker: 'To be confirmed',
-    company: 'To be confirmed',
-    description: 'To be defined',
+    description: 'How to deal with heavy cloud rendering for a TV series production.',
     category: 'vfx',
     categoryLabel: 'VFX',
     file: 'waiting.jpg'
@@ -359,6 +349,16 @@ const conferences = ref([
     description: 'To be defined',
     category: 'animation2d',
     categoryLabel: '2D',
+    file: 'waiting.jpg'
+  },
+  {
+    time: '17:45',
+    title: 'To be defined',
+    speaker: 'To be confirmed',
+    company: 'To be confirmed',
+    description: 'To be defined',
+    category: 'animation3d',
+    categoryLabel: '3D',
     file: 'waiting.jpg'
   },
   {
