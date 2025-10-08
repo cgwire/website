@@ -854,5 +854,19 @@
   "kitsu-summit cta register": "チケットを入手する",
   "kitsu-summit cta contact": "お問い合わせ",
   "kitsu-summit title": "木津サミット2026",
-  "kitsu-summit description": "2026年2月12日 - フランス、パリ - 未来の制作コラボレーションに参加しませんか"
+  "kitsu-summit description": "2026年2月12日 - フランス、パリ - 未来の制作コラボレーションに参加しませんか",
+  "kitsu-summit conference keynote title": "なぜキツなのか",
+  "kitsu-summit conference keynote description": "Kitsuの起源、実績、そしてビジョン。",
+  "kitsu-summit conference roadmap title": "キツの未来",
+  "kitsu-summit conference roadmap description": "来年のロードマップ。",
+  "kitsu-summit conference normaal title": "テレビシリーズのための完全なオープンソースパイプライン",
+  "kitsu-summit conference normaal description": "生産性を最大化するために完全なオープンソース パイプラインを設定します。",
+  "kitsu-summit conference autour-de-minuit title": "KitsuでBlenderを活用する",
+  "kitsu-summit conference autour-de-minuit description": "Blender を Kitsu と組み合わせて使用し、さまざまなスタイルのアニメーションを処理する方法を説明します。",
+  "kitsu-summit conference wizz title": "傑出した2D短編映画に命を吹き込む",
+  "kitsu-summit conference wizz description": "アーティスト、ディレクター、クライアントと交渉し、期限通りに納品します。",
+  "kitsu-summit conference ranch-computing title": "テレビシリーズのクラウドレンダリング（スポンサー）",
+  "kitsu-summit conference ranch-computing description": "テレビシリーズ制作における大量のクラウド レンダリングに対処する方法。",
+  "kitsu-summit price availability": "2025年12月1日まで利用可能",
+  "kitsu-summit stat rooms": "客室"
 }
