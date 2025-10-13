@@ -28,7 +28,10 @@
             </div>
           </div>
           <div class="hero-cta">
-            <a class="btn-primary" href="https://widget.weezevent.com/ticket/E1405792/?code=30048&locale=fr-FR&width_auto=1&color_primary=0032FA" onclick="var w=window.open('https://widget.weezevent.com/ticket/E1405792/?code=30048&locale=fr-FR&width_auto=1&color_primary=0032FA', 'Billetterie Weezevent', 'width=650, height=600, top=100, left=100, toolbar=no, resizable=yes, scrollbars=yes, status=no'); w.focus(); return false;" style="text-decoration: none;color: #ffffff;background: #00b242;padding: .4em 1em;border-radius: 5px;">
+            <a 
+              class="btn-primary"
+              href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
+            >
               {{ $t('kitsu-summit register cta') }}
             </a>
           </div>
@@ -127,7 +130,10 @@
               <span class="price-label">{{ $t('kitsu-summit price availability') }}</span>
             </div>
             <div class="registration-buttons mt1">
-            <a class="btn-primary" href="https://widget.weezevent.com/ticket/E1405792/?code=30048&locale=fr-FR&width_auto=1&color_primary=0032FA" onclick="var w=window.open('https://widget.weezevent.com/ticket/E1405792/?code=30048&locale=fr-FR&width_auto=1&color_primary=0032FA', 'Billetterie Weezevent', 'width=650, height=600, top=100, left=100, toolbar=no, resizable=yes, scrollbars=yes, status=no'); w.focus(); return false;" style="text-decoration: none;color: #ffffff;background: #00b242;padding: .4em 1em;border-radius: 5px;">
+            <a 
+              class="btn-primary"
+              href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
+            >
               {{ $t('kitsu-summit register cta') }}
             </a>
           </div>
@@ -220,7 +226,10 @@
           <h2>{{ $t('kitsu-summit cta title') }}</h2>
           <p>{{ $t('kitsu-summit cta description') }}</p>
           <div class="cta-buttons">
-            <a class="btn-primary btn-large" href="https://widget.weezevent.com/ticket/E1405792/?code=30048&locale=fr-FR&width_auto=1&color_primary=0032FA" onclick="var w=window.open('https://widget.weezevent.com/ticket/E1405792/?code=30048&locale=fr-FR&width_auto=1&color_primary=0032FA', 'Billetterie Weezevent', 'width=650, height=600, top=100, left=100, toolbar=no, resizable=yes, scrollbars=yes, status=no'); w.focus(); return false;">
+            <a 
+              class="btn-primary"
+              href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
+            >
               {{ $t('kitsu-summit register cta') }}
             </a>
           </div>
