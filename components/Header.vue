@@ -248,7 +248,7 @@
       </div>
     </div>
   </nav>
-  <div class="summit-banner">
+  <div class="summit-banner" v-if="!route.name.startsWith('kitsu-summit')">
     <a href="https://cg-wire.com/kitsu-summit" class="has-text-centered summit-link">
       Join the Kitsu Summit 2026 on February 12th!
     </a>
@@ -261,7 +261,9 @@
 <script setup>
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+
 const name = 'Header'
+
 let navOn = ref(false)
 let solutionMenuOn = ref(false)
 let useCaseMenuOn = ref(false)
