@@ -28,7 +28,7 @@
             </div>
           </div>
           <div class="hero-cta">
-            <a 
+            <a
               class="btn-primary"
               href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
             >
@@ -130,7 +130,7 @@
               <span class="price-label">{{ $t('kitsu-summit price availability') }}</span>
             </div>
             <div class="registration-buttons mt1">
-            <a 
+            <a
               class="btn-primary"
               href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
             >
@@ -226,7 +226,7 @@
           <h2>{{ $t('kitsu-summit cta title') }}</h2>
           <p>{{ $t('kitsu-summit cta description') }}</p>
           <div class="cta-buttons">
-            <a 
+            <a
               class="btn-primary"
               href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
             >
@@ -375,7 +375,7 @@ const conferences = ref([
     title: t('kitsu-summit conference keynote title'),
     speaker: 'Frank Rousseau',
     company: 'CGWire CEO',
-    description: t('kitsu-summit conference keynote title'),
+    description: t('kitsu-summit conference keynote description'),
     category: 'kitsu',
     categoryLabel: 'Kitsu',
     file: 'frank.jpg'
@@ -385,7 +385,7 @@ const conferences = ref([
     title: t('kitsu-summit conference roadmap title'),
     speaker: 'Gwénaëlle Dupré',
     company: 'CGWire CPO',
-    description: t('kitsu-summit conference roadmap title'),
+    description: t('kitsu-summit conference roadmap description'),
     category: 'kitsu',
     categoryLabel: 'Kitsu',
     file: 'gwen.png'
