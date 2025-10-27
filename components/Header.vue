@@ -248,8 +248,14 @@
       </div>
     </div>
   </nav>
+  <div class="summit-banner">
+    <a href="https://cg-wire.com/kitsu-summit" class="has-text-centered summit-link">
+      Join the Kitsu Summit 2026 on February 12th!
+    </a>
+  </div>
 </header>
-<div class="header-padding"></div>
+<div class="header-padding">
+</div>
 </template>
 
 <script setup>
@@ -308,6 +314,20 @@ body header .navbar .navbar-item.top.discord:hover .navbar-item-title,
 div.body header .navbar .navbar-item.discord.top:hover .navbar-item-title
     padding-bottom 0
     padding-top 0
+
+.summit-banner
+  background-color #ffdd57
+  color #363636
+  font-weight bold
+  padding 0.5rem
+  font-size 1rem
+  text-align center
+
+  .summit-link
+    color #363636
+    text-decoration underline
+    text-align center
+    width 100%
 
 @media(max-width: 1024px)
   .discord

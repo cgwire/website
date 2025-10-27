@@ -13,7 +13,7 @@
       <section></section>
     </div>
 
-    <div style="position: fixed; top: 80px; left: 0; right: 0; z-index: 1000">
+    <div style="position: fixed; top: 120px; left: 0; right: 0; z-index: 1000">
       <Tabs
         :currentTab="currentTab"
         :tabs="['2D', '3D', 'VFX', 'Games', 'Schools']"
