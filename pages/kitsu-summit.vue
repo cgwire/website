@@ -273,7 +273,7 @@ const conferences = ref([
   {
     time: '12:00',
     speaker: 'Pete Draper',
-    company: 'Ryff',
+    company: 'VFX Supervisor',
     title: t('kitsu-summit conference ryff title'),
     description: t('kitsu-summit conference ryff description'),
     category: 'vfx',
