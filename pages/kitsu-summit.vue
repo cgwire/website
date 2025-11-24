@@ -294,6 +294,12 @@
       </div>
     </section>
 
+    <section class="background-transition-section">
+      <div class="container">
+        &nbsp;
+      </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
@@ -751,6 +757,15 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   backdrop-filter: blur(3px)
 
   .hero-logo
+    background: white
+    border-radius: 50%
+    box-shadow: 0 4px 15px rgba(194, 240, 171, 0.3)
+    width: 200px
+    height: 200px
+    margin: auto
+    display: flex
+    align-items: center
+    justify-content: center
     margin-bottom: 2rem
 
   .container
@@ -776,29 +791,16 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
   .hero-badge
     display: inline-block
-    background: linear-gradient(135deg, #c2f0ab 0%, #FaF3F1 50%, #E0E0ff 100%)
+    background: white
     color: #2C3E50
-    padding: 0.5rem 1rem
+    padding: 1rem 1.5rem
     border-radius: 20px
-    font-size: 2.5rem
+    font-size: 3.5rem
     font-weight: 600
     margin-bottom: 1.5rem
     box-shadow: 0 4px 15px rgba(194, 240, 171, 0.4)
     position: relative
     overflow: hidden
-
-    &::before
-      content: ''
-      position: absolute
-      top: 0
-      left: -100%
-      width: 100%
-      height: 100%
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent)
-      transition: left 0.5s ease
-
-    &:hover::before
-      left: 100%
 
   .hero-title
     font-size: 4rem
@@ -1138,11 +1140,12 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
   .sponsor-item
     text-align: center
+
     img
-      height: 200px
-      max-width: 200px
-      max-height: 200px
-      width: 200px
+      box-shadow: shadow-light
+      border-radius: 15px
+      height: 250px
+      width: 250px
 
   .tvpaint
     img
@@ -1227,14 +1230,8 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   &:last-child
     border-bottom: none
 
-  &:hover
-    background: #F8F9FA
-
   &:nth-child(even)
     background: #FAFAFA
-
-    &:hover
-      background: #F0F0F0
 
 .schedule-time
   font-weight: 700
@@ -1307,6 +1304,10 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     color: text-dark
     font-size: 1.5rem
     font-weight: 600
+
+.background-transition-section
+  background: linear-gradient(rgb(248, 249, 250), #d4e5f7)
+  height: 100px
 
 // ========================================
 // RESPONSIVE DESIGN
