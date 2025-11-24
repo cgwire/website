@@ -47,7 +47,7 @@
           JN
         </nuxt-link>
         <a
-          href="https://discord.com/invite/VbCxtKN"
+          href="https://discord.gg/kitsu-community"
           target="_blank"
           class="navbar-item top discord desktop"
         >
