@@ -61,6 +61,23 @@
             <div class="stat-label">{{ $t('kitsu-summit stat duration') }}</div>
           </div>
         </div>
+        <div class="section-header sponsors-title">
+          <h2>
+            {{ $t('kitsu-summit sponsors title') }}
+          </h2>
+        </div>
+        <div class="sponsors-grid">
+          <div class="sponsor-item">
+            <a href="https://ranchcomputing.com/" target="_blank">
+              <img src="~/assets/images/summit/logo-ranch-computing.png" alt="Ranch Computing" />
+            </a>
+          </div>
+          <div class="sponsor-item tvpaint">
+            <a href="https://tvpaint.com/" target="_blank">
+              <img src="~/assets/images/summit/logo-tvpaint.png" alt="Wizz" />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -183,7 +200,6 @@
            </p>
            </div>
 
-           <!-- Google Maps Widget -->
            <div class="map-container">
              <iframe
                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8450719325956!2d2.363525074679729!3d48.88022993315248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720693076c39%3A0xd6cdb47cbd9a505f!2sCap%20Digital!5e0!3m2!1sfr!2sfr!4v1758033567612!5m2!1sfr!2sfr"
@@ -248,7 +264,6 @@ definePageMeta({
   description: 'Join us for the first Kitsu Summit in Paris on February 12, 2026. 12 conferences showcasing real-world experiences using Kitsu for animation and video game production.',
 })
 
-// Real speaker data from Kitsu Summit 2026
 const conferences = ref([
   {
     time: '09:00',
@@ -353,22 +368,22 @@ const conferences = ref([
   {
     time: '17:45',
     title: t('kitsu-summit conference wizz title'),
-    speaker: 'To be confirmed',
-    company: 'To be confirmed',
+    speaker: 'Guilhem Compain',
+    company: 'Wizz',
     description: t('kitsu-summit conference wizz description'),
     category: 'animation2d',
     categoryLabel: '2D',
-    file: 'waiting.jpg'
+    file: 'guilhem.png'
   },
   {
     time: '17:45',
     title: t('kitsu-summit conference ranch-computing title'),
-    speaker: 'To be confirmed',
+    speaker: 'Christophe Bicchierai',
     company: 'Ranch Computing',
     description: t('kitsu-summit conference ranch-computing description'),
     category: 'vfx',
     categoryLabel: 'VFX',
-    file: 'waiting.jpg'
+    file: 'christophe.png'
   },
   {
     time: '18:00',
@@ -881,6 +896,28 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     img
       border-radius: 15px
 
+
+.sponsors-title
+  margin-top: 5rem
+
+.sponsors-grid
+  display: grid
+  margin-top: 2rem
+  grid-template-columns: repeat(2, 1fr)
+  gap: 2rem
+
+  .sponsor-item
+    text-align: center
+    img
+      height: 200px
+      max-width: 200px
+      max-height: 200px
+      width: 200px
+
+  .tvpaint
+    img
+      background: black
+      border-radius: 15px
 
 // ========================================
 // CTA SECTION
