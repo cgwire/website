@@ -113,6 +113,65 @@
       </div>
     </section>
 
+    <!-- Schedule Section -->
+    <section class="schedule-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>{{ $t('kitsu-summit schedule title') }}</h2>
+          <p>{{ $t('kitsu-summit schedule description') }}</p>
+        </div>
+
+        <div class="schedule-container">
+          <div class="schedule-header">
+            <div class="schedule-time-header">{{ $t('kitsu-summit schedule time') }}</div>
+            <div class="schedule-room-header">{{ $t('kitsu-summit schedule room') }} 1 🇬🇧</div>
+            <div class="schedule-room-header">{{ $t('kitsu-summit schedule room') }} 2 🇫🇷</div>
+          </div>
+
+          <div
+            class="schedule-row"
+            :class="{ 'schedule-row-break': timeSlot.type === 'break' }"
+            v-for="(timeSlot, index) in schedule"
+            :key="index"
+          >
+            <div class="schedule-time" v-if="timeSlot.type !== 'break'">{{ timeSlot.time }}</div>
+            <div
+              class="schedule-room"
+              :class="{ 'schedule-break-content': timeSlot.type === 'break' }"
+              v-if="timeSlot.type === 'break'"
+              colspan="2"
+            >
+              <div class="schedule-break-label">{{ timeSlot.time }} - {{ timeSlot.label }}</div>
+            </div>
+            <template v-else>
+              <div class="schedule-room">
+                <div
+                  class="schedule-item"
+                  v-for="(item, itemIndex) in timeSlot.room1"
+                  :key="itemIndex"
+                >
+                  <div class="schedule-company">{{ item.company }}</div>
+                  <div class="schedule-speaker">{{ item.speaker }}</div>
+                  <div class="schedule-title">{{ item.title }}</div>
+                </div>
+              </div>
+              <div class="schedule-room">
+                <div
+                  class="schedule-item"
+                  v-for="(item, itemIndex) in timeSlot.room2"
+                  :key="itemIndex"
+                >
+                  <div class="schedule-company">{{ item.company }}</div>
+                  <div class="schedule-speaker">{{ item.speaker }}</div>
+                  <div class="schedule-title">{{ item.title }}</div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Registration Section -->
     <section class="registration-section">
       <div class="container">
@@ -404,6 +463,170 @@ const conferences = ref([
     category: 'kitsu',
     categoryLabel: 'Kitsu',
     file: 'gwen.png'
+  }
+])
+
+const schedule = ref([
+  {
+    time: '09:00',
+    type: 'break',
+    label: t('kitsu-summit schedule breakfast'),
+    room1: [],
+    room2: []
+  },
+  {
+    time: '09:30',
+    room1: [
+      {
+        company: 'CGWire',
+        speaker: 'Frank Rousseau',
+        title: 'Origins and Mission'
+      }
+    ],
+    room2: []
+  },
+  {
+    time: '10:00',
+    room1: [
+      {
+        company: 'Blender Studio',
+        speaker: 'Fiona Cohen',
+        title: 'Producing cutting-edge short films at Blender Studio'
+      }
+    ],
+    room2: [
+      {
+        company: 'Wizz',
+        speaker: 'Guilhem Compain',
+        title: 'Giving life to outstanding 2D shorts'
+      }
+    ]
+  },
+  {
+    time: '10:45',
+    room1: [
+      {
+        company: 'Remembers',
+        speaker: 'Audrey Tondre',
+        title: 'Producing a first feature film and get the Annecy Cristal'
+      }
+    ],
+    room2: [
+      {
+        company: 'Cube Creative',
+        speaker: 'Axel Tillement',
+        title: 'A new point of view on asset management'
+      }
+    ]
+  },
+  {
+    time: '11:30',
+    room1: [
+      {
+        company: 'Fost',
+        speaker: 'Céline Durieux',
+        title: 'Leveraging Blender with Kitsu'
+      }
+    ],
+    room2: [
+      {
+        company: 'Autour De Minuit',
+        speaker: 'Mario Hawat',
+        title: 'Intense output deliveries while preserving quality'
+      }
+    ]
+  },
+  {
+    time: '12:15',
+    room1: [
+      {
+        company: 'Ranch Computing',
+        speaker: 'Christophe Bicchierai',
+        title: 'Cloud rendering for a TV Series'
+      }
+    ],
+    room2: []
+  },
+  {
+    time: '12:45',
+    type: 'break',
+    label: t('kitsu-summit schedule lunch'),
+    room1: [],
+    room2: []
+  },
+  {
+    time: '14:00',
+    room1: [
+      {
+        company: 'CGWire',
+        speaker: 'Gwénaëlle Dupré',
+        title: "What's Next for Kitsu"
+      }
+    ],
+    room2: []
+  },
+  {
+    time: '14:30',
+    room1: [
+      {
+        company: 'Ryff',
+        speaker: 'Pete Draper',
+        title: 'Managing hundreds of projects with ease'
+      }
+    ],
+    room2: [
+      {
+        company: 'Miyu',
+        speaker: 'Carole Faure',
+        title: 'Production Management at the service of creativity'
+      }
+    ]
+  },
+  {
+    time: '15:15',
+    room1: [
+      {
+        company: 'Tetsuo',
+        speaker: 'Chris',
+        title: 'Running next-gen animation reviews'
+      }
+    ],
+    room2: [
+      {
+        company: 'Normaal',
+        speaker: 'Félix David',
+        title: 'A full open-source pipeline for a TV Series'
+      }
+    ]
+  },
+  {
+    time: '16:00',
+    room1: [
+      {
+        company: 'Les Fées Spéciales',
+        speaker: 'Flavio Perez',
+        title: 'Dealing with 2D/3D production workflows'
+      }
+    ],
+    room2: []
+  },
+  {
+    time: '16:45',
+    room1: [
+      {
+        company: 'CGWire',
+        speaker: 'Frank Rousseau',
+        title: 'Closing and Thanks'
+      }
+    ],
+    room2: []
+  },
+  {
+    time: '17:00',
+    type: 'break',
+    label: t('kitsu-summit schedule cocktail') + ' 🥳',
+    room1: [],
+    room2: []
   }
 ])
 
@@ -959,6 +1182,129 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
         background: white
         color: primary-color
 
+
+// ========================================
+// SCHEDULE SECTION
+// ========================================
+.schedule-section
+  padding: 6rem 0
+  background: white
+
+.schedule-container
+  max-width: 1000px
+  margin: 0 auto
+  border-radius: 15px
+  overflow: hidden
+  box-shadow: shadow-light
+
+.schedule-header
+  display: grid
+  grid-template-columns: 120px 1fr 1fr
+  background: #e4e9ff
+  color: #668
+  font-weight: 700
+  padding: 1.5rem
+  gap: 1rem
+
+  .schedule-time-header
+    font-size: 1.1rem
+
+  .schedule-room-header
+    font-size: 1.1rem
+    text-align: center
+
+.schedule-row
+  display: grid
+  grid-template-columns: 120px 1fr 1fr
+  gap: 1rem
+  padding: 1.5rem
+  border-bottom: 1px solid border-color
+  transition: background 0.2s ease
+
+  &:last-child
+    border-bottom: none
+
+  &:hover
+    background: #F8F9FA
+
+  &:nth-child(even)
+    background: #FAFAFA
+
+    &:hover
+      background: #F0F0F0
+
+.schedule-time
+  font-weight: 700
+  font-size: 1.1rem
+  display: flex
+  align-items: center
+
+.schedule-room
+  display: flex
+  flex-direction: column
+  gap: 1rem
+
+  &:first-of-type
+    border-right: 2px solid border-color
+    padding-right: 1rem
+
+  &:last-of-type
+    padding-left: 1rem
+
+.schedule-item
+  background: secondary-color
+  padding: 1rem
+  border-bottom-right-radius: 10px
+  border-top-right-radius: 10px
+  border-left: 4px solid primary-color
+  box-shadow: shadow-light
+  transition: transform 0.2s ease
+
+  &:hover
+    transform: translateX(5px)
+    box-shadow: shadow-light
+
+.schedule-company
+  font-weight: 700
+  color: primary-color
+  font-size: 1rem
+  margin-bottom: 0.25rem
+
+.schedule-speaker
+  font-weight: 600
+  color: text-dark
+  font-size: 0.95rem
+  margin-bottom: 0.5rem
+
+.schedule-title
+  color: text-light
+  font-size: 0.9rem
+  line-height: 1.4
+
+.schedule-row-break
+  grid-column: 1 / -1
+  text-align: center
+  padding: 1.5rem
+  background: #F0F0F0
+  border-bottom: 1px solid border-color
+  font-weight: 700
+  font-size: 1.1rem
+  color: text-dark
+
+.schedule-break-content
+  grid-column: 1 / -1
+  text-align: center
+  font-weight: 700
+  font-size: 1.1rem
+  color: text-dark
+  display: flex
+  align-items: center
+  justify-content: center
+
+  .schedule-break-label
+    color: text-dark
+    font-size: 1.5rem
+    font-weight: 600
 
 // ========================================
 // RESPONSIVE DESIGN
