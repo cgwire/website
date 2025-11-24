@@ -29,7 +29,7 @@
           </div>
           <div class="hero-cta">
             <a
-              class="btn-primary"
+              class="btn-primary btn-green"
               href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
             >
               {{ $t('kitsu-summit register cta') }}
@@ -302,12 +302,15 @@
           <p>{{ $t('kitsu-summit cta description') }}</p>
           <div class="cta-buttons">
             <a
-              class="btn-primary"
+              class="btn-primary btn-green"
               href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
             >
               {{ $t('kitsu-summit register cta') }}
             </a>
           </div>
+        </div>
+        <div class="cta-image">
+          <img src="~/assets/images/summit/kitsu-summit.png" alt="Kitsu Summit 2026" />
         </div>
       </div>
     </section>
@@ -703,6 +706,11 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   display: inline-block
   box-shadow: 0 4px 15px rgba(194, 240, 171, 0.3)
 
+  &.btn-green
+    background: primary-color
+    color: white
+    box-shadow: 0 4px 15px rgba(194, 240, 171, 0.3)
+
   &:hover
     transform: translateY(-2px)
     box-shadow: 0 6px 20px rgba(194, 240, 171, 0.4)
@@ -868,7 +876,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   .stat-number
     font-size: 3rem
     font-weight: 800
-    color: primary-color
     margin-bottom: 0.5rem
 
   .stat-label
@@ -1146,9 +1153,8 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 // CTA SECTION
 // ========================================
 .cta-section
-  padding: 6rem 0
-  background: linear-gradient(135deg, primary-color 0%, darken(primary-color, 10%) 100%)
-  color: white
+  padding: 4em 0 0 0
+  background: #d4e5f7
   text-align: center
 
   .cta-content
@@ -1168,11 +1174,8 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     justify-content: center
 
     .btn-primary
-      background: white
-      color: primary-color
-
-      &:hover
-        background: #F8F9FA
+      font-size: 1.5rem
+      box-shadow: 0 4px 15px rgba(194, 240, 171, 0.3)
 
     .btn-secondary
       border-color: white
@@ -1245,7 +1248,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   gap: 1rem
 
   &:first-of-type
-    border-right: 2px solid border-color
     padding-right: 1rem
 
   &:last-of-type
