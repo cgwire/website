@@ -35,7 +35,7 @@
         </span>
       </h2>
       <p>
-        <a href="https://discord.gg/VbCxtKN">
+        <a href="https://discord.gg/kitsu-community">
           {{ $t('community slack explanation') }}
         </a>
       </p>
