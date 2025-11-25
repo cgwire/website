@@ -534,14 +534,14 @@ const schedule = ref([
       {
         company: 'Fost',
         speaker: 'Céline Durieux',
-        title: 'Leveraging Blender with Kitsu'
+        title: 'Intense output deliveries while preserving quality'
       }
     ],
     room2: [
       {
         company: 'Autour De Minuit',
         speaker: 'Mario Hawat',
-        title: 'Intense output deliveries while preserving quality'
+        title: 'Leveraging Blender with Kitsu'
       }
     ]
   },
