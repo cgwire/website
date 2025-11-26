@@ -207,7 +207,7 @@
             </div>
             <div class="registration-buttons mt1">
             <a
-              class="btn-primary"
+              class="btn-primary btn-green"
               href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
             >
               {{ $t('kitsu-summit register cta') }}
@@ -489,7 +489,7 @@ const schedule = ref([
       {
         company: 'CGWire',
         speaker: 'Frank Rousseau',
-        title: 'Origins and Mission'
+        title: t('kitsu-summit conference keynote title')
       }
     ],
     room2: []
@@ -500,14 +500,14 @@ const schedule = ref([
       {
         company: 'Blender Studio',
         speaker: 'Fiona Cohen',
-        title: 'Producing cutting-edge short films at Blender Studio'
+        title: t('kitsu-summit conference blender title')
       }
     ],
     room2: [
       {
         company: 'Wizz',
         speaker: 'Guilhem Compain',
-        title: 'Giving life to outstanding 2D shorts'
+        title: t('kitsu-summit conference wizz title')
       }
     ]
   },
@@ -517,14 +517,14 @@ const schedule = ref([
       {
         company: 'Remembers',
         speaker: 'Audrey Tondre',
-        title: 'Producing a first feature film and get the Annecy Cristal'
+        title: t('kitsu-summit conference remembers title')
       }
     ],
     room2: [
       {
         company: 'Cube Creative',
         speaker: 'Axel Tillement',
-        title: 'A new point of view on asset management'
+        title: t('kitsu-summit conference cube creative title')
       }
     ]
   },
@@ -534,14 +534,14 @@ const schedule = ref([
       {
         company: 'Fost',
         speaker: 'Céline Durieux',
-        title: 'Intense output deliveries while preserving quality'
+        title: t('kitsu-summit conference fost title')
       }
     ],
     room2: [
       {
         company: 'Autour De Minuit',
         speaker: 'Mario Hawat',
-        title: 'Leveraging Blender with Kitsu'
+        title: t('kitsu-summit conference autour-de-minuit title')
       }
     ]
   },
@@ -551,7 +551,7 @@ const schedule = ref([
       {
         company: 'Ranch Computing',
         speaker: 'Christophe Bicchierai',
-        title: 'Cloud rendering for a TV Series'
+        title: t('kitsu-summit conference ranch-computing title')
       }
     ],
     room2: []
@@ -569,7 +569,7 @@ const schedule = ref([
       {
         company: 'CGWire',
         speaker: 'Gwénaëlle Dupré',
-        title: "What's Next for Kitsu"
+        title: t('kitsu-summit conference roadmap title')
       }
     ],
     room2: []
@@ -580,14 +580,14 @@ const schedule = ref([
       {
         company: 'Ryff',
         speaker: 'Pete Draper',
-        title: 'Managing hundreds of projects with ease'
+        title: t('kitsu-summit conference ryff title')
       }
     ],
     room2: [
       {
         company: 'Miyu',
         speaker: 'Carole Faure',
-        title: 'Production Management at the service of creativity'
+        title: t('kitsu-summit conference miyu title')
       }
     ]
   },
@@ -597,14 +597,14 @@ const schedule = ref([
       {
         company: 'Tetsuo',
         speaker: 'Chris',
-        title: 'Running next-gen animation reviews'
+        title: t('kitsu-summit conference tetsuo title')
       }
     ],
     room2: [
       {
         company: 'Normaal',
         speaker: 'Félix David',
-        title: 'A full open-source pipeline for a TV Series'
+        title: t('kitsu-summit conference normaal title')
       }
     ]
   },
@@ -614,7 +614,7 @@ const schedule = ref([
       {
         company: 'Les Fées Spéciales',
         speaker: 'Flavio Perez',
-        title: 'Dealing with 2D/3D production workflows'
+        title: t('kitsu-summit conference les-fees-spéciales title')
       }
     ],
     room2: []
@@ -625,7 +625,7 @@ const schedule = ref([
       {
         company: 'CGWire',
         speaker: 'Frank Rousseau',
-        title: 'Closing and Thanks'
+        title: t('kitsu-summit conference closing title')
       }
     ],
     room2: []
@@ -906,6 +906,16 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   transition: all 0.3s ease
   position: relative
   overflow: hidden
+
+  img
+    margin: auto
+    display: block
+
+  .conference-content
+    .conference-speaker
+      text-align: center
+    .conference-company
+      text-align: center
 
   &:hover
     transform: translateY(-5px)
