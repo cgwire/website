@@ -868,5 +868,14 @@
   "kitsu-summit conference ranch-computing title": "テレビシリーズのクラウドレンダリング（スポンサー）",
   "kitsu-summit conference ranch-computing description": "テレビシリーズ制作における大量のクラウド レンダリングに対処する方法。",
   "kitsu-summit price availability": "2025年12月1日まで利用可能",
-  "kitsu-summit stat rooms": "客室"
+  "kitsu-summit stat rooms": "客室",
+  "kitsu-summit sponsors title": "彼らはイベントを支持している",
+  "kitsu-summit schedule title": "会議スケジュール",
+  "kitsu-summit schedule description": "詳細な会議スケジュールで一日を計画しましょう",
+  "kitsu-summit schedule time": "時間",
+  "kitsu-summit schedule room": "部屋",
+  "kitsu-summit schedule breakfast": "朝食",
+  "kitsu-summit schedule lunch": "お昼休み",
+  "kitsu-summit schedule cocktail": "エンディングカクテル",
+  "kitsu-summit conference closing title": "終わりと感謝"
 }
