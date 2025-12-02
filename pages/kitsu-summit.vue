@@ -199,12 +199,12 @@
             </div>
             <div class="registration-price">
               <span class="price-label">{{ $t('kitsu-summit price label') }}</span>
-              <span class="price-amount">80€</span>
+              <span class="price-amount">100€</span>
               <span class="price-info">+ taxes</span>
             </div>
-            <div>
+            <!--div>
               <span class="price-label">{{ $t('kitsu-summit price availability') }}</span>
-            </div>
+            </div-->
             <div class="registration-buttons mt1">
             <a
               class="btn-primary btn-green"
