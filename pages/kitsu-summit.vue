@@ -515,9 +515,9 @@ const schedule = ref([
     time: '10:45',
     room1: [
       {
-        company: 'Remembers',
-        speaker: 'Audrey Tondre',
-        title: t('kitsu-summit conference remembers title')
+        company: 'Les Fées Spéciales',
+        speaker: 'Flavio Perez',
+        title: t('kitsu-summit conference les-fees-spéciales title')
       }
     ],
     room2: [
@@ -539,9 +539,9 @@ const schedule = ref([
     ],
     room2: [
       {
-        company: 'Autour De Minuit',
-        speaker: 'Mario Hawat',
-        title: t('kitsu-summit conference autour-de-minuit title')
+        company: 'Remembers',
+        speaker: 'Audrey Tondre',
+        title: t('kitsu-summit conference remembers title')
       }
     ]
   },
@@ -612,9 +612,9 @@ const schedule = ref([
     time: '16:00',
     room1: [
       {
-        company: 'Les Fées Spéciales',
-        speaker: 'Flavio Perez',
-        title: t('kitsu-summit conference les-fees-spéciales title')
+        company: 'Autour De Minuit',
+        speaker: 'Mario Hawat',
+        title: t('kitsu-summit conference autour-de-minuit title')
       }
     ],
     room2: []
