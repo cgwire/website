@@ -213,9 +213,18 @@
               {{ $t('kitsu-summit register cta') }}
             </a>
           </div>
+            <div class="food">
+              <h2>{{ $t('kitsu-summit food title') }}</h2>
+              <div>
+                <a href="https://www.instagram.com/mariejuliencuisine/">
+                  <img src="~/assets/images/summit/food.jpg" />
+                </a>
+                <span>{{ $t('kitsu-summit food note') }}</span>
+              </div>
+            </div>
           </div>
           <div class="registration-picture">
-            <img width="350" src="~/assets/images/community/capdigital.jpg" alt="Cap Digital" />
+            <img width="450" src="~/assets/images/community/capdigital.jpg" alt="Cap Digital" />
           </div>
         </div>
       </div>
@@ -334,16 +343,6 @@ definePageMeta({
 
 const conferences = ref([
   {
-    time: '09:00',
-    speaker: 'Fiona Cohen',
-    company: 'Blender Studio',
-    title: t('kitsu-summit conference blender title'),
-    description: t('kitsu-summit conference blender description'),
-    category: 'animation3d',
-    categoryLabel: '3D',
-    file: 'fiona.jpg'
-  },
-  {
     time: '09:45',
     speaker: 'Audrey Tondre',
     company: 'Remembers',
@@ -396,12 +395,12 @@ const conferences = ref([
   {
     time: '17:00',
     title: t('kitsu-summit conference miyu title'),
-    speaker: 'Carole Faure',
+    speaker: 'Cléa Gonnay',
     company: 'Miyu',
     description: t('kitsu-summit conference miyu description'),
     category: 'animation2d',
     categoryLabel: '2D',
-    file: 'carole.webp'
+    file: 'clea.jpg'
   },
   {
     time: '17:45',
@@ -446,12 +445,12 @@ const conferences = ref([
   {
     time: '17:45',
     title: t('kitsu-summit conference ranch-computing title'),
-    speaker: 'Christophe Bicchierai',
-    company: 'Ranch Computing',
+    speaker: 'Anne-Laure Armand / Laurent Dijoux / Dominique Coco',
+    company: 'Ranch Computing & TAT Production',
     description: t('kitsu-summit conference ranch-computing description'),
     category: 'vfx',
     categoryLabel: 'VFX',
-    file: 'christophe.png'
+    file: 'anne-laure.jpg'
   },
   {
     time: '18:00',
@@ -498,9 +497,9 @@ const schedule = ref([
     time: '10:00',
     room1: [
       {
-        company: 'Blender Studio',
-        speaker: 'Fiona Cohen',
-        title: t('kitsu-summit conference blender title')
+        company: 'Autour De Minuit',
+        speaker: 'Mario Hawat',
+        title: t('kitsu-summit conference autour-de-minuit title')
       }
     ],
     room2: [
@@ -522,9 +521,9 @@ const schedule = ref([
     ],
     room2: [
       {
-        company: 'Cube Creative',
-        speaker: 'Axel Tillement',
-        title: t('kitsu-summit conference cube creative title')
+        company: 'Normaal',
+        speaker: 'Félix David',
+        title: t('kitsu-summit conference normaal title')
       }
     ]
   },
@@ -549,8 +548,8 @@ const schedule = ref([
     time: '12:15',
     room1: [
       {
-        company: 'Ranch Computing',
-        speaker: 'Christophe Bicchierai',
+        company: 'Ranch Computing & TAT Production',
+        speaker: 'Anne-Laure Armand / Laurent Dijoux / Dominique Coco',
         title: t('kitsu-summit conference ranch-computing title')
       }
     ],
@@ -586,7 +585,7 @@ const schedule = ref([
     room2: [
       {
         company: 'Miyu',
-        speaker: 'Carole Faure',
+        speaker: 'Cléa Gonnay',
         title: t('kitsu-summit conference miyu title')
       }
     ]
@@ -601,20 +600,15 @@ const schedule = ref([
       }
     ],
     room2: [
-      {
-        company: 'Normaal',
-        speaker: 'Félix David',
-        title: t('kitsu-summit conference normaal title')
-      }
     ]
   },
   {
     time: '16:00',
     room1: [
       {
-        company: 'Autour De Minuit',
-        speaker: 'Mario Hawat',
-        title: t('kitsu-summit conference autour-de-minuit title')
+        company: 'Cube Creative',
+        speaker: 'Axel Tillement',
+        title: t('kitsu-summit conference cube creative title')
       }
     ],
     room2: []
@@ -654,7 +648,7 @@ useHead({
     "kitsu-summit title",
     "kitsu-summit description",
     "kitsu-summit",
-    "meetup.af7c0c6c.jpg"
+    "kitsu-summit.c5cf3542.png"
   ),
 })
 </script>
@@ -1318,6 +1312,30 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 .background-transition-section
   background: linear-gradient(rgb(248, 249, 250), #d4e5f7)
   height: 100px
+
+.food
+  margin-top 2rem
+  text-align left
+
+  h2
+    color #999
+    font-size 0.9rem
+    font-weight bold
+    text-transform uppercase
+
+  div 
+    display flex
+  img
+    border-radius: 15px
+    box-shadow: shadow-light
+    width: 100%
+    max-width: 300px
+
+  span
+    align-self: center
+    font-style italic
+    margin-left: 1rem
+    max-width 40%
 
 // ========================================
 // RESPONSIVE DESIGN
