@@ -370,7 +370,7 @@ const conferences = ref([
     title: t('kitsu-summit conference tetsuo title'),
     category: 'vfx',
     categoryLabel: 'VFX',
-    file: 'chris.jpg'
+    file: 'chris.png'
   },
   {
     time: '14:00',
@@ -441,6 +441,16 @@ const conferences = ref([
     category: 'animation2d',
     categoryLabel: '2D',
     file: 'guilhem.png'
+  },
+  {
+    time: '17:45',
+    title: t('kitsu-summit conference mastodon title'),
+    speaker: 'Artur Aloyan',
+    company: 'Mastodon Production',
+    description: t('kitsu-summit conference mastodon description'),
+    category: 'ai',
+    categoryLabel: 'AI',
+    file: 'artur.png'
   },
   {
     time: '17:45',
@@ -531,9 +541,9 @@ const schedule = ref([
     time: '11:30',
     room1: [
       {
-        company: 'Fost',
-        speaker: 'Céline Durieux',
-        title: t('kitsu-summit conference fost title')
+        company: 'Magic Studio',
+        speaker: 'Artur Aloyan',
+        title: t('kitsu-summit conference magic title')
       }
     ],
     room2: [
@@ -595,11 +605,16 @@ const schedule = ref([
     room1: [
       {
         company: 'Tetsuo',
-        speaker: 'Chris',
+        speaker: 'Chris Unterberg',
         title: t('kitsu-summit conference tetsuo title')
       }
     ],
     room2: [
+      {
+        company: 'Fost',
+        speaker: 'Céline Durieux',
+        title: t('kitsu-summit conference fost title')
+      }
     ]
   },
   {
@@ -986,7 +1001,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
       color: #2C3E50
       background: #F4F8FF
 
-    &.games
+    &.ai
       color: #00B242
       background: #E8F5E8
 
