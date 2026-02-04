@@ -445,12 +445,22 @@ const conferences = ref([
   {
     time: '17:45',
     title: t('kitsu-summit conference mastodon title'),
-    speaker: 'Artur Aloyan',
+    speaker: 'Arthur Aloyan',
     company: 'Mastodon Production',
     description: t('kitsu-summit conference mastodon description'),
     category: 'ai',
     categoryLabel: 'AI',
     file: 'artur.png'
+  },
+  {
+    time: '17:45',
+    title: t('kitsu-summit conference bigcompany title'),
+    speaker: 'Tristan Languebien',
+    company: 'Big Company',
+    description: t('kitsu-summit conference bigcompany description'),
+    category: '2d',
+    categoryLabel: '2D',
+    file: 'tristan.png'
   },
   {
     time: '17:45',
@@ -542,8 +552,8 @@ const schedule = ref([
     room1: [
       {
         company: 'Magic Studio',
-        speaker: 'Artur Aloyan',
-        title: t('kitsu-summit conference magic title')
+        speaker: 'Arthur Aloyan',
+        title: t('kitsu-summit conference mastodon title')
       }
     ],
     room2: [
@@ -626,7 +636,13 @@ const schedule = ref([
         title: t('kitsu-summit conference cube creative title')
       }
     ],
-    room2: []
+    room2: [
+      {
+        company: 'Big Company',
+        speaker: 'Tristan Languebien',
+        title: t('kitsu-summit conference bigcompany title')
+      }
+    ]
   },
   {
     time: '16:45',
