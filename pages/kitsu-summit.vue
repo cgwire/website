@@ -72,6 +72,11 @@
               <img src="~/assets/images/summit/logo-ranch-computing.png" alt="Ranch Computing" />
             </a>
           </div>
+          <div class="sponsor-item">
+            <a href="https://lenovo.com/" target="_blank">
+              <img src="~/assets/images/summit/logo-lenovo.png" alt="Lenovo" />
+            </a>
+          </div>
           <div class="sponsor-item tvpaint">
             <a href="https://tvpaint.com/" target="_blank">
               <img src="~/assets/images/summit/logo-tvpaint.png" alt="Wizz" />
@@ -1170,7 +1175,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 .sponsors-grid
   display: grid
   margin-top: 2rem
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: repeat(3, 1fr)
   gap: 2rem
 
   .sponsor-item
@@ -1184,7 +1189,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
   .tvpaint
     img
-      background: black
       border-radius: 15px
 
 // ========================================
