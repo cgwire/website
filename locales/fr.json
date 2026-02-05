@@ -879,5 +879,9 @@
   "kitsu-summit schedule cocktail": "Cocktail de clôture",
   "kitsu-summit conference closing title": "Conclusion et remerciements",
   "kitsu-summit food title": "Traiteur",
-  "kitsu-summit food note": "La nourriture sera servie par Marie Julien Cuisine. Un buffet gourmet vous sera proposé avec des options végétariennes."
+  "kitsu-summit food note": "La nourriture sera servie par Marie Julien Cuisine. Un buffet gourmet vous sera proposé avec des options végétariennes.",
+  "kitsu-summit conference mastodon title": "L'IA dans les mains des artistes",
+  "kitsu-summit conference mastodon description": "Là où l'IA peut s'intégrer dans des workflows où l'humain reste central.",
+  "kitsu-summit conference bigcompany title": "Le meilleur de la 3D appliqué à la 2D",
+  "kitsu-summit conference bigcompany description": "La création d'un pipeline 2D depuis une page blanche en utilisant les techniques de la 3D."
 }
