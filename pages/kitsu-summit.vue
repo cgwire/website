@@ -581,7 +581,18 @@ const schedule = ref([
     room2: []
   },
   {
-    time: '12:45',
+    time: '12:40',
+    room1: [
+      {
+        company: 'Lenovo',
+        speaker: 'Mesa Takaoka',
+        title: t('kitsu-summit conference lenovo title')
+      }
+    ],
+    room2: []
+  },
+  {
+    time: '13:00',
     type: 'break',
     label: t('kitsu-summit schedule lunch'),
     room1: [],
