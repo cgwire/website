@@ -329,7 +329,7 @@
             </a>
           </div>
         </div>
-        <div class="cta-image">
+        <div class="cta-image mt2">
           <img src="~/assets/images/summit/kitsu-summit.png" alt="Kitsu Summit 2026" />
         </div>
       </div>
@@ -1186,17 +1186,24 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 .sponsors-grid
   display: grid
   margin-top: 2rem
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: repeat(3, minmax(0, 1fr))
   gap: 2rem
+  align-items: center
+  justify-items: center
 
   .sponsor-item
     text-align: center
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
 
     img
+      max-width: 300px
+      width: 100%
+      height: auto
       box-shadow: shadow-light
       border-radius: 15px
-      height: 250px
-      width: 250px
 
   .tvpaint
     img
@@ -1369,7 +1376,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     font-weight bold
     text-transform uppercase
 
-  div 
+  div
     display flex
   img
     border-radius: 15px
@@ -1441,6 +1448,33 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
       width: 100%
       grid-template-columns: repeat(1, 1fr)
 
+  .schedule-header
+    display: none
+
+  .schedule-container
+    box-shadow: none
+
+  .schedule-row
+    grid-template-columns: 1fr
+    padding: 1rem
+
+  .schedule-time
+    margin-bottom: 0.5rem
+
+  .schedule-room
+    padding: 0
+
+  .schedule-row-break
+    grid-column: auto
+    padding: 1rem
+
+  .schedule-break-content
+    grid-column: auto
+    padding: 0
+
+  .sponsors-grid
+    grid-template-columns: repeat(2, 1fr)
+
 @media (max-width: 600px)
   .hero-section
 
@@ -1453,6 +1487,10 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     .hero-title
       font-size: 1.5rem
       padding: 0 1rem
+
+  .sponsors-grid
+    grid-template-columns: 1fr
+    justify-items: center
 
 
 </style>
