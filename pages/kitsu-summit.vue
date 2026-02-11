@@ -546,9 +546,9 @@ const schedule = ref([
     ],
     room2: [
       {
-        company: 'Normaal',
-        speaker: 'Félix David',
-        title: t('kitsu-summit conference normaal title')
+        company: 'Cube Creative',
+        speaker: 'Axel Tillement',
+        title: t('kitsu-summit conference cube creative title')
       }
     ]
   },
@@ -647,9 +647,9 @@ const schedule = ref([
     time: '16:00',
     room1: [
       {
-        company: 'Cube Creative',
-        speaker: 'Axel Tillement',
-        title: t('kitsu-summit conference cube creative title')
+        company: 'Normaal',
+        speaker: 'Félix David',
+        title: t('kitsu-summit conference normaal title')
       }
     ],
     room2: [
