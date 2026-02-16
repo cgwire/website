@@ -248,11 +248,11 @@
       </div>
     </div>
   </nav>
-  <div class="summit-banner" v-if="!route.name.startsWith('kitsu-summit')">
+  <!--div class="summit-banner" v-if="!route.name.startsWith('kitsu-summit')">
     <a href="https://cg-wire.com/kitsu-summit" class="has-text-centered summit-link">
       Join the Kitsu Summit 2026 on February 12th!
     </a>
-  </div>
+  </div-->
 </header>
 <div class="header-padding">
 </div>
