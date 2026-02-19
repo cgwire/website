@@ -7,42 +7,42 @@ t<template>
       </p>
       <ul>
         <li>
-          <nuxt-link :to="localePath('team-collaboration')">
+          <nuxt-link :to="$localePath('team-collaboration')">
             <span class="level-item">
               {{ $t('header title team-collaboration') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('production-tracker')">
+          <nuxt-link :to="$localePath('production-tracker')">
             <span class="level-item">
               {{ $t('header title production-tracker') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('review-engine')">
+          <nuxt-link :to="$localePath('review-engine')">
             <span class="level-item">
               {{ $t('header title review-engine') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('casting-management')">
+          <nuxt-link :to="$localePath('casting-management')">
             <span class="level-item">
               {{ $t('header title casting-management') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('studio-database')">
+          <nuxt-link :to="$localePath('studio-database')">
             <span class="level-item">
               {{ $t('header title studio-database') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('software-integrations')">
+          <nuxt-link :to="$localePath('software-integrations')">
             <span class="level-item">
               {{ $t('header title software-integrations') }}
             </span>
@@ -50,21 +50,21 @@ t<template>
         </li>
 
         <li>
-          <nuxt-link :to="localePath('shotgrid')">
+          <nuxt-link :to="$localePath('shotgrid')">
             <span class="level-item">
               Kitsu vs Shotgrid
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('ftrack')">
+          <nuxt-link :to="$localePath('ftrack')">
             <span class="level-item">
               Kitsu vs Ftrack
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('self-hosted')">
+          <nuxt-link :to="$localePath('self-hosted')">
             <span class="level-item">
               Cloud vs Self-Hosted
             </span>
@@ -138,21 +138,21 @@ t<template>
       </p>
       <ul>
         <li>
-          <nuxt-link :to="localePath('about')">
+          <nuxt-link :to="$localePath('about')">
             <span class="level-item">
               {{ $t('footers link about') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('contact')">
+          <nuxt-link :to="$localePath('contact')">
             <span class="level-item">
               {{ $t('footers link contact') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('carbon-report')">
+          <nuxt-link :to="$localePath('carbon-report')">
             <span class="level-item">
               {{ $t('footers link carbon') }}
             </span>
@@ -166,14 +166,14 @@ t<template>
           </a>
         </li>
         <li>
-          <nuxt-link :to="localePath('terms')">
+          <nuxt-link :to="$localePath('terms')">
             <span class="level-item">
               {{ $t('footers link terms') }}
             </span>
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link :to="localePath('privacy')">
+          <nuxt-link :to="$localePath('privacy')">
             <span class="level-item">
               {{ $t('footers link privacy') }}
             </span>

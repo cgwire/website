@@ -39,7 +39,7 @@ const props = defineProps({
 })
 
 function useAsset(path) {
-  const assets = import.meta.glob('~/assets/**/*', {
+  const assets = import.meta.glob('~/assets/images/*', {
     eager: true,
     import: 'default',
   })
