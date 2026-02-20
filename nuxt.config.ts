@@ -1,11 +1,8 @@
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "url";
 
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  // target:"static",
   compatibilityDate: "2026-02-19",
-  ssr: true,
   app: {
     head: {
       meta: [
@@ -44,8 +41,8 @@ export default defineNuxtConfig({
   },
   css: [
     // "bulma",
-    '~/assets/styles/app.styl',
-    '~/assets/styles/bulma.css',
+    "~/assets/styles/app.styl",
+    "~/assets/styles/bulma.css",
     // { src: "~/assets/styles/app.styl", lang: "stylus" },
     // '~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'
   ],
@@ -53,6 +50,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/i18n",
     ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
+    "nuxt-aos",
   ],
   i18n: {
     baseUrl: "https://www.cg-wire.com",
@@ -79,7 +77,6 @@ export default defineNuxtConfig({
     langDir: "locales/",
   },
   plugins: [
-    { src: "~/plugins/aos", mode: "client", ssr: false },
     { src: "~/plugins/youtube", mode: "client", ssr: false },
     { src: "~/plugins/crisp.js", mode: "client" },
     { src: "~/plugins/matomo.js", mode: "client", ssr: false },
@@ -89,5 +86,9 @@ export default defineNuxtConfig({
   },
   sitemap: {
     hostname: "https://www.cg-wire.com",
+  },
+  aos: {
+    startEvent: "DOMContentLoaded",
+    useClassNames: false,
   },
 });
