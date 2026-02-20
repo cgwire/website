@@ -2,7 +2,7 @@
 <li class="customers-item">
   <a :href="link">
     <img
-      :src="useAsset(`images/studios/logo-${elementKey}.png`)"
+      :src="useAsset(`logo-${elementKey}.png`)"
       :alt="name"
     />
   </a>
@@ -18,6 +18,14 @@ const props = defineProps({
     default: ''
   }
 })
+
+function useAsset(path) {
+  const assets = import.meta.glob('~/assets/images/studios/*', {
+    eager: true,
+    import: 'default',
+  })
+  return assets['/assets/images/studios/' + path]
+}
 </script>
 
 <style lang="stylus" scoped>

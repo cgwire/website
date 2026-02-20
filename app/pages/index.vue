@@ -292,7 +292,7 @@
 
     <div class="mt4 mb1" data-aos="fade-up">
       <div class="flexrow stories">
-        <CustomerStorySmallBlock
+         <CustomerStorySmallBlock
           studio-name="Miyu studio"
           story-key="miyu"
           image-path="photo-customer-story-miyu.png"
@@ -311,7 +311,7 @@
     </div>
     <div class="mt1 mb4" data-aos="fade-up">
       <div class="flexrow stories">
-        <CustomerStorySmallBlock
+         <CustomerStorySmallBlock
           studio-name="Autour De Minuit"
           story-key="adm"
           interviewee="Fiona Cohen, Production Manager"

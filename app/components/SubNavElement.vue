@@ -1,12 +1,12 @@
 <template>
 <nuxt-link
   class="navbar-item flexrow subnav-element"
-  :to="localePath(elementKey)"
+  :to="$localePath(elementKey)"
   v-if="link === ''"
 >
   <img
     class="flexrow-item tablet"
-    :src="useAsset('icons/' + elementKey + '.svg')"
+    :src="useAsset(elementKey + '.svg')"
   />
   <div class="flexrow-item flexcolumn text">
     <span class="flexrow-item subnav-title">
@@ -26,7 +26,7 @@
 >
   <img
     class="flexrow-item tablet"
-    :src="useAsset('icons/' + elementKey + '.svg')"
+    :src="useAsset(elementKey + '.svg')"
   />
   <div class="flexrow-item flexcolumn text">
     <span class="flexrow-item subnav-title">
@@ -47,6 +47,15 @@ const props = defineProps({
     default: ''
   }
 })
+
+function useAsset(path) {
+  const assets = import.meta.glob('~/assets/icons/*', {
+    eager: true,
+    import: 'default',
+  })
+
+  return assets['/assets/icons/' + path]
+}
 </script>
 
 <style lang="stylus" scoped>

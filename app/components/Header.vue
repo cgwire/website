@@ -2,7 +2,7 @@
 <header>
   <nav class="navbar" role="navigation" arial-label="dropdown navigation">
     <div class="navbar-brand">
-      <nuxt-link class="navbar-item" :to="localePath('index')">
+      <nuxt-link class="navbar-item" :to="$localePath('index')">
       <img
         class="main-logo"
         src="~/assets/images/logo.png"
@@ -30,19 +30,19 @@
       <div class="navbar-start flexrow locales">
         <nuxt-link
           class="flexrow-item navbar-lang-item"
-          :to="switchLocalePath('en')"
+          :to="$switchLocalePath('en')"
         >
           EN
         </nuxt-link>
         <nuxt-link
           class="flexrow-item navbar-lang-item"
-          :to="switchLocalePath('fr')"
+          :to="$switchLocalePath('fr')"
         >
           FR
         </nuxt-link>
         <nuxt-link
           class="flexrow-item navbar-lang-item"
-          :to="switchLocalePath('ja')"
+          :to="$switchLocalePath('ja')"
         >
           JN
         </nuxt-link>
@@ -66,7 +66,7 @@
             'kitsu',
           ])
         }"
-        :to="localePath('kitsu')"
+        :to="$localePath('kitsu')"
       >
         <span class="navbar-item-title">
           Kitsu
@@ -225,7 +225,7 @@
             'pricing',
           ])
         }"
-        :to="localePath('pricing')"
+        :to="$localePath('pricing')"
       >
         <span class="navbar-item-title">
           {{ $t('header title pricing') }}

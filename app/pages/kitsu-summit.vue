@@ -681,7 +681,7 @@ const schedule = ref([
 ])
 
 function useAsset(path) {
-  const assets = import.meta.glob('~/assets/**/*', {
+  const assets = import.meta.glob('~/assets/images/summit/*', {
     eager: true,
     import: 'default',
   })

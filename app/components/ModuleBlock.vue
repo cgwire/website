@@ -1,7 +1,7 @@
 <template>
 <nuxt-link
   class="module-block"
-  :to="localePath(sectionKey)"
+  :to="$localePath(sectionKey)"
 >
   <section
   >
@@ -35,7 +35,7 @@ const props = defineProps({
 })
 
 function useAsset(path) {
-  const assets = import.meta.glob('~/assets/**/*', {
+  const assets = import.meta.glob('~/assets/images/illustrations/*', {
     eager: true,
     import: 'default',
   })

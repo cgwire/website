@@ -423,7 +423,7 @@
         {{ $t("carbon-report conclusion explanation") }}
       </p>
 
-      <NuxtLink class="btn btn-primary" :to="localePath('about')">
+      <NuxtLink class="btn btn-primary" :to="$localePath('about')">
         {{ $t("carbon-report conclusion button") }}
       </NuxtLink>
     </div>

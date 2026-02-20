@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "cgwire-website-staging",
+  "compatibility_date": "2026-02-20",
+  "assets": {
+    "directory": "./.output/public",
+  },
+}
