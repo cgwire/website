@@ -49,8 +49,11 @@ export default defineNuxtConfig({
   components: true,
   modules: [
     "@nuxtjs/i18n",
-    ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
+    // ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
     "nuxt-aos",
+    "@nuxt/image",
+    "nuxt-vitalizer",
+    "@nuxtjs/sitemap",
   ],
   i18n: {
     baseUrl: "https://www.cg-wire.com",
@@ -91,4 +94,18 @@ export default defineNuxtConfig({
     startEvent: "DOMContentLoaded",
     useClassNames: false,
   },
+  image: {
+    dir: "assets/",
+    format: ["webp"],
+    screens: {
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      "2xl": 1536,
+    },
+  },
+  // vitalizer: {
+  //   disableStylesheets: "entry",
+  // },
 });

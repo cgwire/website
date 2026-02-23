@@ -1,99 +1,170 @@
 <template>
-<section class="section content trusted pa1">
-    <h4 class="section-subtitle has-text-centered" v-if="withTitle">
-      {{ $t('main explanation trusted') }}
-    </h4>
+    <section class="section content trusted pa1">
+        <h4 class="section-subtitle has-text-centered" v-if="withTitle">
+            {{ $t("main explanation trusted") }}
+        </h4>
 
-    <div class="brand-wheel-container">
-      <div class="brand-wheel">
-        <div class="brand-slide">
-          <div class="logo-div">
-            <img src="~/assets/images/logo-miyu.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/logo-fost.png" />
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-bobbypills.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-lofi-studio.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-blender.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-gobelins-black.png" />
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-supercell-black.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-metacore-black.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-mdhr-black.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-yuga-labs.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-miraculous.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-zuru.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/logo-miyu.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/logo-fost.png" />
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-bobbypills.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-lofi-studio.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-blender.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-gobelins-black.png" />
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-supercell-black.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-metacore-black.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-mdhr-black.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-yuga-labs.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-miraculous.png">
-          </div>
-          <div class="logo-div">
-            <img src="~/assets/images/studios/logo-zuru.png">
-          </div>
+        <div class="brand-wheel-container">
+            <div class="brand-wheel">
+                <div class="brand-slide">
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/logo-miyu.png"
+                            width="40"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/logo-fost.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-bobbypills.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-lofi-studio.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-blender.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-gobelins-black.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-supercell-black.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-metacore-black.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-mdhr-black.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-yuga-labs.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-miraculous.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-zuru.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/logo-miyu.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/logo-fost.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-bobbypills.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-lofi-studio.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-blender.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-gobelins-black.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-supercell-black.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-metacore-black.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-mdhr-black.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-yuga-labs.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-miraculous.png"
+                            format="webp"
+                        />
+                    </div>
+                    <div class="logo-div">
+                        <NuxtPicture
+                            src="/images/studios/logo-zuru.png"
+                            format="webp"
+                        />
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 </template>
 
 <script setup>
 const props = defineProps({
-  withTitle: {
-    type: Boolean,
-    default: true
-  }
-})
-
-
+    withTitle: {
+        type: Boolean,
+        default: true,
+    },
+});
 </script>
 
 <style lang="stylus" scoped>
@@ -163,7 +234,7 @@ const props = defineProps({
   animation fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards
   padding 0 20px 0 20px
 
-  img
+  picture
     width 120px
     max-width 120px
     min-width 120px

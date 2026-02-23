@@ -1,61 +1,52 @@
 <template>
-<nuxt-link
-  class="navbar-item flexrow subnav-element"
-  :to="$localePath(elementKey)"
-  v-if="link === ''"
->
-  <img
-    class="flexrow-item tablet"
-    :src="useAsset(elementKey + '.svg')"
-  />
-  <div class="flexrow-item flexcolumn text">
-    <span class="flexrow-item subnav-title">
-      {{ $t('header title ' + elementKey)}}
-    </span>
-    <span class="flexrow-item subnav-text">
-      {{ $t('header text ' + elementKey)}}
-    </span>
-  </div>
-</nuxt-link>
-<a
-  class="navbar-item flexrow subnav-element"
-  :href="link"
+    <nuxt-link
+        class="navbar-item flexrow subnav-element"
+        :to="$localePath(elementKey)"
+        v-if="link === ''"
+    >
+        <NuxtPicture
+            class="flexrow-item tablet"
+            :src="'/icons/' + elementKey + '.svg'"
+        />
+        <div class="flexrow-item flexcolumn text">
+            <span class="flexrow-item subnav-title">
+                {{ $t("header title " + elementKey) }}
+            </span>
+            <span class="flexrow-item subnav-text">
+                {{ $t("header text " + elementKey) }}
+            </span>
+        </div>
+    </nuxt-link>
+    <a
+        class="navbar-item flexrow subnav-element"
+        :href="link"
+        target="_blank"
+        v-else
+    >
+        <NuxtPicture
+            class="flexrow-item tablet"
+            :src="'/icons/' + elementKey + '.svg'"
+        />
 
-  target="_blank"
-  v-else
->
-  <img
-    class="flexrow-item tablet"
-    :src="useAsset(elementKey + '.svg')"
-  />
-  <div class="flexrow-item flexcolumn text">
-    <span class="flexrow-item subnav-title">
-      {{ $t('header title ' + elementKey)}}
-    </span>
-    <span class="flexrow-item subnav-text">
-      {{ $t('header text ' + elementKey)}}
-    </span>
-  </div>
-</a>
+        <div class="flexrow-item flexcolumn text">
+            <span class="flexrow-item subnav-title">
+                {{ $t("header title " + elementKey) }}
+            </span>
+            <span class="flexrow-item subnav-text">
+                {{ $t("header text " + elementKey) }}
+            </span>
+        </div>
+    </a>
 </template>
 
 <script setup>
 const props = defineProps({
-  elementKey: String,
-  link: {
-    type: String,
-    default: ''
-  }
-})
-
-function useAsset(path) {
-  const assets = import.meta.glob('~/assets/icons/*', {
-    eager: true,
-    import: 'default',
-  })
-
-  return assets['/assets/icons/' + path]
-}
+    elementKey: String,
+    link: {
+        type: String,
+        default: "",
+    },
+});
 </script>
 
 <style lang="stylus" scoped>
