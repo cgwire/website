@@ -1,0 +1,65 @@
+{
+  "slug": "schools",
+  "i18n": {
+    "titleKey": "schools subtitle",
+    "metaTitleKey": "schools title",
+    "metaDescriptionKey": "schools subtitle"
+  },
+
+  "hero": {
+    "subtitleKey": "schools subtitle",
+    "titleKey": "schools title"
+  },
+
+  "quote": {
+    "textKey": "schools quote",
+    "authorKey": "schools quote author",
+    "avatar": "carlosdecarvalho.png"
+  },
+
+  "video": {
+    "vimeoId": "465411602",
+    "partnerName": "Gobelins",
+    "partnerUrl": "https://www.gobelins.fr/"
+  },
+
+  "panels": [
+    {
+      "id": "students",
+      "avatar": "avatar-4.svg",
+      "titleKey": "schools people title 1",
+      "descriptionKeys": [
+        "schools people desc 1-1",
+        "schools people desc 1-2",
+        "schools people desc 1-3"
+      ]
+    },
+    {
+      "id": "directors",
+      "avatar": "avatar-7.svg",
+      "titleKey": "schools people title 3",
+      "descriptionKeys": [
+        "schools people desc 3-1",
+        "schools people desc 3-2",
+        "schools people desc 3-3"
+      ]
+    },
+    {
+      "id": "teachers",
+      "avatar": "avatar-9.svg",
+      "titleKey": "schools people title 2",
+      "descriptionKeys": ["schools people desc 2-1", "schools people desc 2-2"]
+    }
+  ],
+
+  "reasons": {
+    "titleKey": "schools reasons title",
+    "items": [
+      "schools reasons item 1",
+      "schools reasons item 2",
+      "schools reasons item 3"
+    ],
+    "ctaKey": "schools button demo",
+    "ctaUrl": "https://account.cg-wire.com/signup"
+  }
+}

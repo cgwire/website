@@ -51,6 +51,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
     "nuxt-aos",
+    "@nuxt/content",
   ],
   i18n: {
     baseUrl: "https://www.cg-wire.com",
