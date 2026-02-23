@@ -85,7 +85,7 @@ t<template>
             </span>
           </a>
         </li>
-        <li>
+       <li>
           <a href="https://blog.cg-wire.com">
             <span>
               Blog
@@ -101,6 +101,14 @@ t<template>
         </li>
 
         <li>
+          <a href="https://dev.kitsu.cloud">
+            <span class="level-item">
+              {{ $t('header title dev') }}
+            </span>
+          </a>
+        </li>
+ 
+        <li>
           <a href="https://cgwire.canny.io/changelog">
             <span class="level-item">
               Changelog
@@ -110,7 +118,7 @@ t<template>
 
         <li>
           <a href="https://poeditor.com/join/project?hash=fpUejpWDVo">
-            <span cl9ass="level-item">
+            <span class="level-item">
               {{ $t('header title translations') }}
             </span>
           </a>
