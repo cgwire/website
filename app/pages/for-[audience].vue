@@ -26,10 +26,10 @@
                             :aria-selected="panel === item.id"
                             @click="selectPanel(item.id)"
                         >
-                            <!-- <NuxtPicture
+                            <NuxtPicture
                                 :src="`/images/avatars/${item.avatar}`"
                                 alt=""
-                            /> -->
+                            />
                             {{ t(item.titleKey) }}
                         </a>
                     </li>
@@ -54,12 +54,12 @@
                         {{ t(audience.quote.textKey) }}
                     </p>
                     <footer class="quote-author">
-                        <!-- <NuxtPicture
+                        <NuxtPicture
                             class="quote-avatar"
                             :src="
                                 '/images/testimonials/' + audience.quote.avatar
                             "
-                        /> -->
+                        />
                         {{ t(audience.quote.authorKey) }}
                     </footer>
                 </blockquote>

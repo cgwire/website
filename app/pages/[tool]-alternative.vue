@@ -2,10 +2,10 @@
     <div v-if="comparison" class="compare-page">
         <section class="section content narrower">
             <div>
-                <!-- <NuxtPicture
+                <NuxtPicture
                     :src="'/images/illustrations/' + comparison.image"
                     :alt="`Kitsu vs ${comparison.tool}`"
-                /> -->
+                />
             </div>
 
             <div class="section-subtitle has-text-centered mt2">

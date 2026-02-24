@@ -485,6 +485,7 @@
 import { ref, onMounted } from "vue";
 const name = "Index";
 const { t } = useI18n();
+
 useHead({
     title: "CGWire | " + t("main title"),
     meta: buildPageMeta(

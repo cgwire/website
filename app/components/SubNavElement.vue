@@ -1,7 +1,7 @@
 <template>
     <nuxt-link
         class="navbar-item flexrow subnav-element"
-        :to="$localePath(elementKey)"
+        :to="$localePath(pathObject ?? elementKey)"
         v-if="link === ''"
     >
         <NuxtPicture
@@ -42,6 +42,7 @@
 <script setup>
 const props = defineProps({
     elementKey: String,
+    pathObject: Object,
     link: {
         type: String,
         default: "",
