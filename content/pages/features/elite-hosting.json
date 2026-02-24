@@ -1,0 +1,21 @@
+{
+  "name": "Elite Hosting",
+  "pageKey": "elite-hosting",
+  "image": "elite-hosting.png",
+  "features": [
+    {
+      "key": "security",
+      "colored": true
+    },
+    {
+      "key": "availability",
+      "reverted": true
+    },
+    {
+      "key": "performance",
+      "colored": true,
+      "gradient": true,
+      "shadow": false
+    }
+  ]
+}

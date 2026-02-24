@@ -1,0 +1,27 @@
+{
+  "name": "Team Collaboration",
+  "pageKey": "team-collaboration",
+  "image": "team-collaboration.png",
+  "features": [
+    {
+      "key": "tasks",
+      "colored": true
+    },
+    {
+      "key": "todos",
+      "reverted": true
+    },
+    {
+      "key": "news",
+      "colored": true,
+      "gradient": true
+    }
+  ],
+  "customerStory": {
+    "studioName": "Miyu studio",
+    "storyKey": "miyu",
+    "interviewee": "Carole Faure, Production Manager",
+    "imagePath": "photo-customer-story-miyu.png",
+    "storyUrl": "https://blog.cg-wire.com/customer-story-miyu-studio/"
+  }
+}

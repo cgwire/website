@@ -26,7 +26,7 @@
                             :aria-selected="panel === item.id"
                             @click="selectPanel(item.id)"
                         >
-                            <!-- <img
+                            <!-- <NuxtPicture
                                 :src="`/images/avatars/${item.avatar}`"
                                 alt=""
                             /> -->
@@ -88,7 +88,15 @@
         </section>
 
         <section class="section">
-            <StudiosSchools />
+            <ul class="customers">
+                <CustomerLogoBlock
+                    v-for="studio in audience.studios"
+                    :key="studio.elementKey"
+                    :name="studio.name"
+                    :element-key="studio.elementKey"
+                    :link="studio.link"
+                />
+            </ul>
         </section>
 
         <div class="video">
@@ -102,6 +110,27 @@
                             frameborder="0"
                             allow="autoplay; fullscreen"
                             allowfullscreen
+                            v-if="audience.video.vimeoId"
+                        />
+                        <iframe
+                            style="border-radius: 20px"
+                            width="640"
+                            height="480"
+                            :src="`https://www.youtube.com/embed/${audience.video.youtubeId}`"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="
+                                accelerometer;
+                                autoplay;
+                                clipboard-write;
+                                encrypted-media;
+                                gyroscope;
+                                picture-in-picture;
+                                web-share;
+                            "
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen
+                            v-else
                         />
                     </div>
 

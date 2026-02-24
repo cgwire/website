@@ -1,0 +1,22 @@
+{
+  "name": "Studio Database",
+  "pageKey": "studio-database",
+  "image": "studio-database.png",
+  "features": [
+    {
+      "key": "boost",
+      "colored": true,
+      "shadow": false
+    },
+    {
+      "key": "api",
+      "reverted": true,
+      "shadow": false
+    },
+    {
+      "key": "python",
+      "colored": true,
+      "gradient": true
+    }
+  ]
+}

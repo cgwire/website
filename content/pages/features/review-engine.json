@@ -1,0 +1,27 @@
+{
+  "name": "Review Engine",
+  "pageKey": "review-engine",
+  "image": "review-engine.png",
+  "features": [
+    {
+      "key": "playlists",
+      "colored": true
+    },
+    {
+      "key": "compare",
+      "reverted": true
+    },
+    {
+      "key": "room",
+      "colored": true,
+      "gradient": true
+    }
+  ],
+  "customerStory": {
+    "studioName": "Makuta VFX (RRR Movie)",
+    "storyKey": "makuta",
+    "interviewee": "Pete Draper, Head of VFX",
+    "imagePath": "photo-customer-story-makuta.png",
+    "storyUrl": "https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
+  }
+}

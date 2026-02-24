@@ -19,7 +19,7 @@
             <div
                 v-for="(section, index) in comparison.sections"
                 :key="index"
-                class="subsection"
+                class="section"
             >
                 <h3>{{ section.title }}</h3>
 

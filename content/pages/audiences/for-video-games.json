@@ -1,0 +1,94 @@
+{
+  "slug": "video-games",
+  "i18n": {
+    "titleKey": "video-games subtitle",
+    "metaTitleKey": "video-games title",
+    "metaDescriptionKey": "video-games subtitle"
+  },
+  "hero": {
+    "subtitleKey": "video-games subtitle",
+    "titleKey": "video-games title"
+  },
+  "quote": {
+    "textKey": "video-games quote",
+    "authorKey": "video-games quote author",
+    "avatar": "arielmckay.png"
+  },
+  "video": {
+    "youtubeId": "Fik4Rp6S1Bs?si=s8CYqpf5MsyX1eZ0",
+    "partnerName": "Supercell",
+    "partnerUrl": "http://www.supercell.com/"
+  },
+  "panels": [
+    {
+      "id": "supervisor",
+      "avatar": "avatar-2.svg",
+      "titleKey": "video-games people title 2",
+      "descriptionKeys": [
+        "video-games people desc 2-1",
+        "video-games people desc 2-2",
+        "video-games people desc 2-3",
+        "video-games people desc 2-4"
+      ]
+    },
+    {
+      "id": "artist",
+      "avatar": "avatar-3.svg",
+      "titleKey": "video-games people title 3",
+      "descriptionKeys": [
+        "video-games people desc 3-1",
+        "video-games people desc 3-2",
+        "video-games people desc 3-3",
+        "video-games people desc 3-4",
+        "video-games people desc 3-5"
+      ]
+    },
+    {
+      "id": "productionmanager",
+      "avatar": "avatar-1.svg",
+      "titleKey": "video-games people title 1",
+      "descriptionKeys": [
+        "video-games people desc 1-1",
+        "video-games people desc 1-2",
+        "video-games people desc 1-3"
+      ]
+    }
+  ],
+  "reasons": {
+    "titleKey": "video-games reasons title",
+    "items": [
+      "video-games reasons item 1",
+      "video-games reasons item 2",
+      "video-games reasons item 3"
+    ],
+    "ctaKey": "video-games button demo",
+    "ctaUrl": "https://account.cg-wire.com/signup"
+  },
+  "studios": [
+    {
+      "link": "https://supercell.com/",
+      "elementKey": "supercell",
+      "name": "Supercell"
+    },
+    {
+      "link": "https://studiomdhr.com/",
+      "elementKey": "mdhr",
+      "name": "Studio MDHR"
+    },
+    {
+      "link": "https://metacoregames.com/",
+      "elementKey": "metacore",
+      "name": "Metacore"
+    },
+    {
+      "link": "https://yuga.com/",
+      "elementKey": "yuga-labs-invert",
+      "name": "Yuga Labs"
+    },
+    {
+      "link": "https://thetrailerfarm.com/",
+      "elementKey": "trailer-farm",
+      "name": "The Trailer Farm"
+    }
+  ]
+}

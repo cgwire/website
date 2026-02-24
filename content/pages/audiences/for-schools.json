@@ -5,24 +5,20 @@
     "metaTitleKey": "schools title",
     "metaDescriptionKey": "schools subtitle"
   },
-
   "hero": {
     "subtitleKey": "schools subtitle",
     "titleKey": "schools title"
   },
-
   "quote": {
     "textKey": "schools quote",
     "authorKey": "schools quote author",
     "avatar": "carlosdecarvalho.png"
   },
-
   "video": {
     "vimeoId": "465411602",
     "partnerName": "Gobelins",
     "partnerUrl": "https://www.gobelins.fr/"
   },
-
   "panels": [
     {
       "id": "students",
@@ -51,7 +47,6 @@
       "descriptionKeys": ["schools people desc 2-1", "schools people desc 2-2"]
     }
   ],
-
   "reasons": {
     "titleKey": "schools reasons title",
     "items": [
@@ -61,5 +56,80 @@
     ],
     "ctaKey": "schools button demo",
     "ctaUrl": "https://account.cg-wire.com/signup"
-  }
+  },
+  "studios": [
+    {
+      "link": "https://www.gobelins.fr",
+      "elementKey": "gobelins",
+      "name": "Les gobelins"
+    },
+    {
+      "link": "https://www.rubika-edu.com/",
+      "elementKey": "rubika",
+      "name": "Rubika"
+    },
+    { "link": "https://www.esra.edu", "elementKey": "esra", "name": "ESRA" },
+    {
+      "link": "https://www.ecolegeorgesmelies.fr",
+      "elementKey": "ecole-georges-melies",
+      "name": "Ecole Georges Méliès"
+    },
+    {
+      "link": "https://www.ecv.fr/lecole/bordeaux/",
+      "elementKey": "ecv",
+      "name": "ECV"
+    },
+    { "link": "https://www.iim.fr/", "elementKey": "iim", "name": "IIM" },
+    {
+      "link": "https://lanimea.com/",
+      "elementKey": "lanimea",
+      "name": "Lanimea"
+    },
+    {
+      "link": "https://www.lidembarcelona.com/fr/",
+      "elementKey": "lidem",
+      "name": "L'idem"
+    },
+    {
+      "link": "https://www.hslu.ch/",
+      "elementKey": "hslu",
+      "name": "Hochschule Luzern"
+    },
+    {
+      "link": "https://www.atelierdesevres.com/",
+      "elementKey": "atelier-de-sevres",
+      "name": "Atelier de Sèvres"
+    },
+    {
+      "link": "https://creativeseeds.fr/",
+      "elementKey": "creative-seeds",
+      "name": "Creative Seeds"
+    },
+    { "link": "https://www.ynov.com/", "elementKey": "ynov", "name": "Ynov" },
+    {
+      "link": "https://campus.ina.fr/",
+      "elementKey": "ina-campus",
+      "name": "INA Campus"
+    },
+    {
+      "link": "https://www.a.com/",
+      "elementKey": "make-animation-school",
+      "name": "Make Animation School"
+    },
+    {
+      "link": "https://www.nextgenskillsacademy.com/",
+      "elementKey": "nextgen-academy",
+      "name": "Nextgen School Academy"
+    },
+    {
+      "link": "https://parallel14.com/",
+      "elementKey": "parallel14",
+      "name": "Parallel 14"
+    },
+    {
+      "link": "https://www.ritcs.be",
+      "elementKey": "ritcs",
+      "name": "RITCS School of Art"
+    }
+  ]
 }

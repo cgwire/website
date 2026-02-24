@@ -1,0 +1,23 @@
+{
+  "name": "Tailor-Made Architecture",
+  "pageKey": "tailor-made-architecture",
+  "image": "tailor-made-architecture.png",
+  "features": [
+    {
+      "key": "onpremise",
+      "colored": true,
+      "shadow": false
+    },
+    {
+      "key": "multiinstance",
+      "reverted": true,
+      "shadow": false
+    },
+    {
+      "key": "extra",
+      "colored": true,
+      "gradient": true,
+      "shadow": false
+    }
+  ]
+}

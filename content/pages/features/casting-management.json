@@ -1,0 +1,27 @@
+{
+  "name": "Casting Management",
+  "pageKey": "casting-management",
+  "image": "casting-management.png",
+  "features": [
+    {
+      "key": "tables",
+      "colored": true
+    },
+    {
+      "key": "asset-links",
+      "reverted": true
+    },
+    {
+      "key": "export",
+      "colored": true,
+      "gradient": true
+    }
+  ],
+  "customerStory": {
+    "studioName": "Autour De Minuit",
+    "storyKey": "adm",
+    "interviewee": "Fiona Cohen, Production Manager",
+    "imagePath": "photo-customer-story-adm.jpg",
+    "storyUrl": "https://blog.cg-wire.com/customer-story-autour-de-minuit/"
+  }
+}
