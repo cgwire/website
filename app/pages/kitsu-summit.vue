@@ -1,703 +1,788 @@
 <template>
-  <div class="kitsu-summit-page">
-    <!-- Hero Section -->
-    <section class="hero-section">
-
-      <div class="blur-background">
-      <div class="container">
-        <div class="hero-content">
-
-          <div class="hero-logo">
-            <img src="~/assets/images/logo-kitsu.png" alt="Kitsu Summit 2026" />
-          </div>
-          <div class="hero-badge">
-            <span class="badge-text">KITSU SUMMIT 2026</span>
-          </div>
-          <h1 class="hero-title">
-            {{ $t('kitsu-summit hero title') }}
-          </h1>
-          <div class="hero-details">
-            <div class="detail-item">
-              <span>{{ $t('kitsu-summit date') }}</span>
-            </div>
-            <div class="detail-item">
-              <span>{{ $t('kitsu-summit location') }}</span>
-            </div>
-            <div class="detail-item">
-              <span>{{ $t('kitsu-summit conferences') }}</span>
-            </div>
-          </div>
-          <div class="hero-cta">
-            <a
-              class="btn-primary btn-green"
-              href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
-            >
-              {{ $t('kitsu-summit register cta') }}
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>{{ $t('kitsu-summit about title') }}</h2>
-          <p>{{ $t('kitsu-summit about description') }}</p>
-        </div>
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="stat-number">12</div>
-            <div class="stat-label">{{ $t('kitsu-summit stat conferences') }}</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number">100+</div>
-            <div class="stat-label">{{ $t('kitsu-summit stat attendees') }}</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number"> 2 {{ $t('kitsu-summit stat rooms') }}</div>
-            <div class="stat-label">{{ $t('kitsu-summit stat duration') }}</div>
-          </div>
-        </div>
-        <div class="section-header sponsors-title">
-          <h2>
-            {{ $t('kitsu-summit sponsors title') }}
-          </h2>
-        </div>
-        <div class="sponsors-grid">
-          <div class="sponsor-item">
-            <a href="https://ranchcomputing.com/" target="_blank">
-              <img src="~/assets/images/summit/logo-ranch-computing.png" alt="Ranch Computing" />
-            </a>
-          </div>
-          <div class="sponsor-item">
-            <a href="https://lenovo.com/" target="_blank">
-              <img src="~/assets/images/summit/logo-lenovo.png" alt="Lenovo" />
-            </a>
-          </div>
-          <div class="sponsor-item tvpaint">
-            <a href="https://tvpaint.com/" target="_blank">
-              <img src="~/assets/images/summit/logo-tvpaint.png" alt="Wizz" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Conferences Section -->
-    <section class="conferences-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>{{ $t('kitsu-summit conferences title') }}</h2>
-          <p>{{ $t('kitsu-summit conferences description') }}</p>
-        </div>
-
-        <div class="conferences-grid mt1">
-          <div
-            class="conference-card"
-            v-for="(conference, index) in conferences"
-            :key="index"
-          >
-            <div class="conference-content">
-              <img
-                :src="useAsset(conference.file)" alt="conference.speaker photo"
-                v-if="conference.file"
-              />
-              <p class="conference-speaker">{{ conference.speaker }}</p>
-              <p class="conference-company">{{ conference.company }}</p>
-              <h3>{{ conference.title }}</h3>
-              <p class="conference-description">{{ conference.description }}</p>
-            </div>
-            <div class="conference-category" :class="conference.category">
-              {{ conference.categoryLabel }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Schedule Section -->
-    <section class="schedule-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>{{ $t('kitsu-summit schedule title') }}</h2>
-          <p>{{ $t('kitsu-summit schedule description') }}</p>
-        </div>
-
-        <div class="schedule-container">
-          <div class="schedule-header">
-            <div class="schedule-time-header">{{ $t('kitsu-summit schedule time') }}</div>
-            <div class="schedule-room-header">{{ $t('kitsu-summit schedule room') }} 1 🇬🇧</div>
-            <div class="schedule-room-header">{{ $t('kitsu-summit schedule room') }} 2 🇫🇷</div>
-          </div>
-
-          <div
-            class="schedule-row"
-            :class="{ 'schedule-row-break': timeSlot.type === 'break' }"
-            v-for="(timeSlot, index) in schedule"
-            :key="index"
-          >
-            <div class="schedule-time" v-if="timeSlot.type !== 'break'">{{ timeSlot.time }}</div>
-            <div
-              class="schedule-room"
-              :class="{ 'schedule-break-content': timeSlot.type === 'break' }"
-              v-if="timeSlot.type === 'break'"
-              colspan="2"
-            >
-              <div class="schedule-break-label">{{ timeSlot.time }} - {{ timeSlot.label }}</div>
-            </div>
-            <template v-else>
-              <div class="schedule-room">
-                <div
-                  class="schedule-item"
-                  v-for="(item, itemIndex) in timeSlot.room1"
-                  :key="itemIndex"
-                >
-                  <div class="schedule-company">{{ item.company }}</div>
-                  <div class="schedule-speaker">{{ item.speaker }}</div>
-                  <div class="schedule-title">{{ item.title }}</div>
+    <div class="kitsu-summit-page">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="blur-background">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <img
+                                src="~/assets/images/logo-kitsu.png"
+                                alt="Kitsu Summit 2026"
+                            />
+                        </div>
+                        <div class="hero-badge">
+                            <span class="badge-text">KITSU SUMMIT 2026</span>
+                        </div>
+                        <h1 class="hero-title">
+                            {{ $t("kitsu-summit hero title") }}
+                        </h1>
+                        <div class="hero-details">
+                            <div class="detail-item">
+                                <span>{{ $t("kitsu-summit date") }}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>{{ $t("kitsu-summit location") }}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>{{
+                                    $t("kitsu-summit conferences")
+                                }}</span>
+                            </div>
+                        </div>
+                        <div class="hero-cta">
+                            <a
+                                class="btn-primary btn-green"
+                                href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
+                            >
+                                {{ $t("kitsu-summit register cta") }}
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="schedule-room">
-                <div
-                  class="schedule-item"
-                  v-for="(item, itemIndex) in timeSlot.room2"
-                  :key="itemIndex"
-                >
-                  <div class="schedule-company">{{ item.company }}</div>
-                  <div class="schedule-speaker">{{ item.speaker }}</div>
-                  <div class="schedule-title">{{ item.title }}</div>
-                </div>
-              </div>
-            </template>
-          </div>
-        </div>
-      </div>
-    </section>
+            </div>
+        </section>
 
-    <!-- Registration Section -->
-    <section class="registration-section">
-      <div class="container">
-        <div class="registration-content">
-          <div class="registration-info">
-            <h2>{{ $t('kitsu-summit registration title') }}</h2>
-            <p>{{ $t('kitsu-summit registration description') }}</p>
-            <div class="registration-benefits">
-              <div class="benefit-item">
-                <span class="icon">•</span>
-                <span>{{ $t('kitsu-summit benefit access') }}</span>
-              </div>
-              <div class="benefit-item">
-                <span class="icon">•</span>
-                <span>{{ $t('kitsu-summit benefit lunch') }}</span>
-              </div>
-              <div class="benefit-item">
-                <span class="icon">•</span>
-                <span>{{ $t('kitsu-summit benefit swag') }}</span>
-              </div>
-              <div class="benefit-item">
-                <span class="icon">•</span>
-                <span>{{ $t('kitsu-summit benefit networking') }}</span>
-              </div>
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>{{ $t("kitsu-summit about title") }}</h2>
+                    <p>{{ $t("kitsu-summit about description") }}</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">
+                            {{ $t("kitsu-summit stat conferences") }}
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">
+                            {{ $t("kitsu-summit stat attendees") }}
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">
+                            2 {{ $t("kitsu-summit stat rooms") }}
+                        </div>
+                        <div class="stat-label">
+                            {{ $t("kitsu-summit stat duration") }}
+                        </div>
+                    </div>
+                </div>
+                <div class="section-header sponsors-title">
+                    <h2>
+                        {{ $t("kitsu-summit sponsors title") }}
+                    </h2>
+                </div>
+                <div class="sponsors-grid">
+                    <div class="sponsor-item">
+                        <a href="https://ranchcomputing.com/" target="_blank">
+                            <img
+                                src="~/assets/images/summit/logo-ranch-computing.png"
+                                alt="Ranch Computing"
+                            />
+                        </a>
+                    </div>
+                    <div class="sponsor-item">
+                        <a href="https://lenovo.com/" target="_blank">
+                            <img
+                                src="~/assets/images/summit/logo-lenovo.png"
+                                alt="Lenovo"
+                            />
+                        </a>
+                    </div>
+                    <div class="sponsor-item tvpaint">
+                        <a href="https://tvpaint.com/" target="_blank">
+                            <img
+                                src="~/assets/images/summit/logo-tvpaint.png"
+                                alt="Wizz"
+                            />
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="registration-price">
-              <span class="price-label">{{ $t('kitsu-summit price label') }}</span>
-              <span class="price-amount">100€</span>
-              <span class="price-info">+ taxes</span>
+        </section>
+
+        <!-- Conferences Section -->
+        <section class="conferences-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>{{ $t("kitsu-summit conferences title") }}</h2>
+                    <p>{{ $t("kitsu-summit conferences description") }}</p>
+                </div>
+
+                <div class="conferences-grid mt1">
+                    <div
+                        class="conference-card"
+                        v-for="(conference, index) in conferences"
+                        :key="index"
+                    >
+                        <div class="conference-content">
+                            <NuxtPicture
+                                :src="'/images/summit/' + conference.file"
+                                :alt="conference.speaker + 'photo'"
+                                v-if="conference.file"
+                            />
+                            <p class="conference-speaker">
+                                {{ conference.speaker }}
+                            </p>
+                            <p class="conference-company">
+                                {{ conference.company }}
+                            </p>
+                            <h3>{{ conference.title }}</h3>
+                            <p class="conference-description">
+                                {{ conference.description }}
+                            </p>
+                        </div>
+                        <div
+                            class="conference-category"
+                            :class="conference.category"
+                        >
+                            {{ conference.categoryLabel }}
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section class="schedule-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>{{ $t("kitsu-summit schedule title") }}</h2>
+                    <p>{{ $t("kitsu-summit schedule description") }}</p>
+                </div>
+
+                <div class="schedule-container">
+                    <div class="schedule-header">
+                        <div class="schedule-time-header">
+                            {{ $t("kitsu-summit schedule time") }}
+                        </div>
+                        <div class="schedule-room-header">
+                            {{ $t("kitsu-summit schedule room") }} 1 🇬🇧
+                        </div>
+                        <div class="schedule-room-header">
+                            {{ $t("kitsu-summit schedule room") }} 2 🇫🇷
+                        </div>
+                    </div>
+
+                    <div
+                        class="schedule-row"
+                        :class="{
+                            'schedule-row-break': timeSlot.type === 'break',
+                        }"
+                        v-for="(timeSlot, index) in schedule"
+                        :key="index"
+                    >
+                        <div
+                            class="schedule-time"
+                            v-if="timeSlot.type !== 'break'"
+                        >
+                            {{ timeSlot.time }}
+                        </div>
+                        <div
+                            class="schedule-room"
+                            :class="{
+                                'schedule-break-content':
+                                    timeSlot.type === 'break',
+                            }"
+                            v-if="timeSlot.type === 'break'"
+                            colspan="2"
+                        >
+                            <div class="schedule-break-label">
+                                {{ timeSlot.time }} - {{ timeSlot.label }}
+                            </div>
+                        </div>
+                        <template v-else>
+                            <div class="schedule-room">
+                                <div
+                                    class="schedule-item"
+                                    v-for="(item, itemIndex) in timeSlot.room1"
+                                    :key="itemIndex"
+                                >
+                                    <div class="schedule-company">
+                                        {{ item.company }}
+                                    </div>
+                                    <div class="schedule-speaker">
+                                        {{ item.speaker }}
+                                    </div>
+                                    <div class="schedule-title">
+                                        {{ item.title }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="schedule-room">
+                                <div
+                                    class="schedule-item"
+                                    v-for="(item, itemIndex) in timeSlot.room2"
+                                    :key="itemIndex"
+                                >
+                                    <div class="schedule-company">
+                                        {{ item.company }}
+                                    </div>
+                                    <div class="schedule-speaker">
+                                        {{ item.speaker }}
+                                    </div>
+                                    <div class="schedule-title">
+                                        {{ item.title }}
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section class="registration-section">
+            <div class="container">
+                <div class="registration-content">
+                    <div class="registration-info">
+                        <h2>{{ $t("kitsu-summit registration title") }}</h2>
+                        <p>{{ $t("kitsu-summit registration description") }}</p>
+                        <div class="registration-benefits">
+                            <div class="benefit-item">
+                                <span class="icon">•</span>
+                                <span>{{
+                                    $t("kitsu-summit benefit access")
+                                }}</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="icon">•</span>
+                                <span>{{
+                                    $t("kitsu-summit benefit lunch")
+                                }}</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="icon">•</span>
+                                <span>{{
+                                    $t("kitsu-summit benefit swag")
+                                }}</span>
+                            </div>
+                            <div class="benefit-item">
+                                <span class="icon">•</span>
+                                <span>{{
+                                    $t("kitsu-summit benefit networking")
+                                }}</span>
+                            </div>
+                        </div>
+                        <div class="registration-price">
+                            <span class="price-label">{{
+                                $t("kitsu-summit price label")
+                            }}</span>
+                            <span class="price-amount">100€</span>
+                            <span class="price-info">+ taxes</span>
+                        </div>
+                        <!--div>
               <span class="price-label">{{ $t('kitsu-summit price availability') }}</span>
             </div-->
-            <div class="registration-buttons mt1">
-            <a
-              class="btn-primary btn-green"
-              href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
-            >
-              {{ $t('kitsu-summit register cta') }}
-            </a>
-          </div>
-            <div class="food">
-              <h2>{{ $t('kitsu-summit food title') }}</h2>
-              <div>
-                <a href="https://www.instagram.com/mariejuliencuisine/">
-                  <img src="~/assets/images/summit/food.jpg" />
-                </a>
-                <span>{{ $t('kitsu-summit food note') }}</span>
-              </div>
+                        <div class="registration-buttons mt1">
+                            <a
+                                class="btn-primary btn-green"
+                                href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
+                            >
+                                {{ $t("kitsu-summit register cta") }}
+                            </a>
+                        </div>
+                        <div class="food">
+                            <h2>{{ $t("kitsu-summit food title") }}</h2>
+                            <div>
+                                <a
+                                    href="https://www.instagram.com/mariejuliencuisine/"
+                                >
+                                    <img
+                                        src="~/assets/images/summit/food.jpg"
+                                    />
+                                </a>
+                                <span>{{ $t("kitsu-summit food note") }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="registration-picture">
+                        <img
+                            width="450"
+                            src="~/assets/images/community/capdigital.jpg"
+                            alt="Cap Digital"
+                        />
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="registration-picture">
-            <img width="450" src="~/assets/images/community/capdigital.jpg" alt="Cap Digital" />
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Access Section -->
-    <section class="access-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>{{ $t('kitsu-summit access title') }}</h2>
-          <p>{{ $t('kitsu-summit access description') }}</p>
-        </div>
+        <!-- Access Section -->
+        <section class="access-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>{{ $t("kitsu-summit access title") }}</h2>
+                    <p>{{ $t("kitsu-summit access description") }}</p>
+                </div>
 
-         <div class="access-venue access-venue-info">
-          <div class="access-venue-info-content">
-           <h2 class="small">
-             Cap Digital
-           </h2>
-           <p>
-             14 rue alexandre parodi 75010 paris
-           </p>
+                <div class="access-venue access-venue-info">
+                    <div class="access-venue-info-content">
+                        <h2 class="small">Cap Digital</h2>
+                        <p>14 rue alexandre parodi 75010 paris</p>
 
-           <p>
-             <i>RER</i> <br>
-             Gare du Nord (RER B or D)<br>
-             Gare de l'Est (RER E)
-           </p>
+                        <p>
+                            <i>RER</i> <br />
+                            Gare du Nord (RER B or D)<br />
+                            Gare de l'Est (RER E)
+                        </p>
 
-           <p>
-             <i>Metro</i> <br>
-             Gare de l'Est (L5, L7) <br>
-             Colonel Fabien (L2)<br>
-             République (L3, L5, L8, L9)<br>
-           </p>
+                        <p>
+                            <i>Metro</i> <br />
+                            Gare de l'Est (L5, L7) <br />
+                            Colonel Fabien (L2)<br />
+                            République (L3, L5, L8, L9)<br />
+                        </p>
 
-           <p>
-             <i>Bus</i> <br>
-             46 - Canal Saint Martin<br>
-             26 - Louis Blanc<br>
-             54 - Chaudron - Saint Martin
-           </p>
-           </div>
+                        <p>
+                            <i>Bus</i> <br />
+                            46 - Canal Saint Martin<br />
+                            26 - Louis Blanc<br />
+                            54 - Chaudron - Saint Martin
+                        </p>
+                    </div>
 
-           <div class="map-container">
-             <iframe
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8450719325956!2d2.363525074679729!3d48.88022993315248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720693076c39%3A0xd6cdb47cbd9a505f!2sCap%20Digital!5e0!3m2!1sfr!2sfr!4v1758033567612!5m2!1sfr!2sfr"
-               width="100%"
-               height="450"
-               style="border:0;"
-               allowfullscreen=""
-               loading="lazy"
-               referrerpolicy="no-referrer-when-downgrade"
-               title="Cap Digital Location - 14 rue Alexandre Parodi, 75010 Paris"
-             ></iframe>
-           </div>
-         </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8450719325956!2d2.363525074679729!3d48.88022993315248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720693076c39%3A0xd6cdb47cbd9a505f!2sCap%20Digital!5e0!3m2!1sfr!2sfr!4v1758033567612!5m2!1sfr!2sfr"
+                            width="100%"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Cap Digital Location - 14 rue Alexandre Parodi, 75010 Paris"
+                        ></iframe>
+                    </div>
+                </div>
 
-        <h2 class="small">
-          {{ $t('kitsu-summit access recommended hotels') }}
-        </h2>
+                <h2 class="small">
+                    {{ $t("kitsu-summit access recommended hotels") }}
+                </h2>
 
-        <div class="access-hotels">
-          <a href="https://lecitizenhotel.com/" target="_blank">
-            <img width="300" src="~/assets/images/community/citizen.jpg" /><br>
-            Citizen Hotel - 100€ / {{ $t('kitsu-summit access night') }}
-          </a>
-          <a href="https://www.lerobinetdor.com/" target="_blank">
-            <img width="300" src="~/assets/images/community/le-robinet-dor.jpg" /><br>
-            Le Robinet Dor - 200€ / {{ $t('kitsu-summit access night') }}
-          </a>
-          <a href="https://staygenerator.com/hostels/paris" target="_blank">
-            <img width="300" src="~/assets/images/community/generator.jpg" /><br>
-            Generator Hostel - 20€-100€ / {{ $t('kitsu-summit access night') }}
-          </a>
-        </div>
-      </div>
-    </section>
+                <div class="access-hotels">
+                    <a href="https://lecitizenhotel.com/" target="_blank">
+                        <img
+                            width="300"
+                            src="~/assets/images/community/citizen.jpg"
+                        /><br />
+                        Citizen Hotel - 100€ /
+                        {{ $t("kitsu-summit access night") }}
+                    </a>
+                    <a href="https://www.lerobinetdor.com/" target="_blank">
+                        <img
+                            width="300"
+                            src="~/assets/images/community/le-robinet-dor.jpg"
+                        /><br />
+                        Le Robinet Dor - 200€ /
+                        {{ $t("kitsu-summit access night") }}
+                    </a>
+                    <a
+                        href="https://staygenerator.com/hostels/paris"
+                        target="_blank"
+                    >
+                        <img
+                            width="300"
+                            src="~/assets/images/community/generator.jpg"
+                        /><br />
+                        Generator Hostel - 20€-100€ /
+                        {{ $t("kitsu-summit access night") }}
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <section class="background-transition-section">
-      <div class="container">
-        &nbsp;
-      </div>
-    </section>
+        <section class="background-transition-section">
+            <div class="container">&nbsp;</div>
+        </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-content">
-          <h2>{{ $t('kitsu-summit cta title') }}</h2>
-          <p>{{ $t('kitsu-summit cta description') }}</p>
-          <div class="cta-buttons">
-            <a
-              class="btn-primary btn-green"
-              href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
-            >
-              {{ $t('kitsu-summit register cta') }}
-            </a>
-          </div>
-        </div>
-        <div class="cta-image mt2">
-          <img src="~/assets/images/summit/kitsu-summit.png" alt="Kitsu Summit 2026" />
-        </div>
-      </div>
-    </section>
-  </div>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>{{ $t("kitsu-summit cta title") }}</h2>
+                    <p>{{ $t("kitsu-summit cta description") }}</p>
+                    <div class="cta-buttons">
+                        <a
+                            class="btn-primary btn-green"
+                            href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
+                        >
+                            {{ $t("kitsu-summit register cta") }}
+                        </a>
+                    </div>
+                </div>
+                <div class="cta-image mt2">
+                    <img
+                        src="~/assets/images/summit/kitsu-summit.png"
+                        alt="Kitsu Summit 2026"
+                    />
+                </div>
+            </div>
+        </section>
+    </div>
 </template>
 
 <script setup>
-const { t } = useI18n()
+const { t } = useI18n();
 
 definePageMeta({
-  layout: 'default',
-  title: 'Kitsu Summit 2026 - Paris',
-  description: 'Join us for the first Kitsu Summit in Paris on February 12, 2026. 12 conferences showcasing real-world experiences using Kitsu for animation and video game production.',
-})
+    layout: "default",
+    title: "Kitsu Summit 2026 - Paris",
+    description:
+        "Join us for the first Kitsu Summit in Paris on February 12, 2026. 12 conferences showcasing real-world experiences using Kitsu for animation and video game production.",
+});
 
 const conferences = ref([
-  {
-    time: '09:45',
-    speaker: 'Audrey Tondre',
-    company: 'Remembers',
-    title: t('kitsu-summit conference remembers title'),
-    description: t('kitsu-summit conference remembers description'),
-    category: 'animation2d',
-    categoryLabel: '2D',
-    file: 'audrey.jpg'
-  },
-  {
-    time: '12:00',
-    speaker: 'Pete Draper',
-    company: 'VFX Supervisor',
-    title: t('kitsu-summit conference ryff title'),
-    description: t('kitsu-summit conference ryff description'),
-    category: 'vfx',
-    categoryLabel: 'VFX',
-    file: 'pete.webp'
-  },
-  {
-    time: '12:45',
-    speaker: 'Chris Unterberg',
-    company: 'Tetsuo',
-    description: t('kitsu-summit conference tetsuo description'),
-    title: t('kitsu-summit conference tetsuo title'),
-    category: 'vfx',
-    categoryLabel: 'VFX',
-    file: 'chris.png'
-  },
-  {
-    time: '14:00',
-    speaker: 'Flavio Perez',
-    company: 'Les Fées Spéciales',
-    description: t('kitsu-summit conference les-fees-spéciales description'),
-    title: t('kitsu-summit conference les-fees-spéciales title'),
-    category: 'animation3d',
-    categoryLabel: '3D',
-    file: 'flavio.jpg'
-  },
-  {
-    time: '15:30',
-    title: t('kitsu-summit conference cube creative title'),
-    speaker: 'Axel Tillement',
-    company: 'Cube Creative',
-    description: t('kitsu-summit conference cube creative description'),
-    category: 'animation3d',
-    categoryLabel: '3D',
-    file: 'axel.jpg'
-  },
-  {
-    time: '17:00',
-    title: t('kitsu-summit conference miyu title'),
-    speaker: 'Cléa Gonnay',
-    company: 'Miyu',
-    description: t('kitsu-summit conference miyu description'),
-    category: 'animation2d',
-    categoryLabel: '2D',
-    file: 'clea.jpg'
-  },
-  {
-    time: '17:45',
-    title: t('kitsu-summit conference fost title'),
-    speaker: 'Céline Durieux',
-    company: 'Fost',
-    description: t('kitsu-summit conference fost description'),
-    category: 'animation2d',
-    categoryLabel: '2D',
-    file: 'celine.png'
-  },
-  {
-    time: '17:45',
-    title: t('kitsu-summit conference normaal title'),
-    speaker: 'Félix David',
-    company: 'Normaal',
-    description: t('kitsu-summit conference normaal description'),
-    category: 'animation2d',
-    categoryLabel: '2D',
-    file: 'felix.jpg'
-  },
-  {
-    time: '17:45',
-    title: t('kitsu-summit conference autour-de-minuit title'),
-    speaker: 'Mario Hawat',
-    company: 'Autour De Minuit',
-    description: t('kitsu-summit conference autour-de-minuit description'),
-    category: 'animation3d',
-    categoryLabel: '3D',
-    file: 'mario.png'
-  },
-  {
-    time: '17:45',
-    title: t('kitsu-summit conference wizz title'),
-    speaker: 'Guilhem Compain',
-    company: 'Wizz',
-    description: t('kitsu-summit conference wizz description'),
-    category: 'animation2d',
-    categoryLabel: '2D',
-    file: 'guilhem.png'
-  },
-  {
-    time: '17:45',
-    title: t('kitsu-summit conference mastodon title'),
-    speaker: 'Arthur Aloyan',
-    company: 'Mastodon Production',
-    description: t('kitsu-summit conference mastodon description'),
-    category: 'ai',
-    categoryLabel: 'AI',
-    file: 'artur.png'
-  },
-  {
-    time: '17:45',
-    title: t('kitsu-summit conference bigcompany title'),
-    speaker: 'Tristan Languebien',
-    company: 'Big Company',
-    description: t('kitsu-summit conference bigcompany description'),
-    category: '2d',
-    categoryLabel: '2D',
-    file: 'tristan.png'
-  },
-  {
-    time: '17:45',
-    title: t('kitsu-summit conference ranch-computing title'),
-    speaker: 'Anne-Laure Armand / Laurent Dijoux / Dominique Coco',
-    company: 'Ranch Computing & TAT Production',
-    description: t('kitsu-summit conference ranch-computing description'),
-    category: 'vfx',
-    categoryLabel: 'VFX',
-    file: 'anne-laure.jpg'
-  },
-  {
-    time: '18:00',
-    title: t('kitsu-summit conference keynote title'),
-    speaker: 'Frank Rousseau',
-    company: 'CGWire CEO',
-    description: t('kitsu-summit conference keynote description'),
-    category: 'kitsu',
-    categoryLabel: 'Kitsu',
-    file: 'frank.jpg'
-  },
-  {
-    time: '18:00',
-    title: t('kitsu-summit conference roadmap title'),
-    speaker: 'Gwénaëlle Dupré',
-    company: 'CGWire CPO',
-    description: t('kitsu-summit conference roadmap description'),
-    category: 'kitsu',
-    categoryLabel: 'Kitsu',
-    file: 'gwen.png'
-  }
-])
+    {
+        time: "09:45",
+        speaker: "Audrey Tondre",
+        company: "Remembers",
+        title: t("kitsu-summit conference remembers title"),
+        description: t("kitsu-summit conference remembers description"),
+        category: "animation2d",
+        categoryLabel: "2D",
+        file: "audrey.jpg",
+    },
+    {
+        time: "12:00",
+        speaker: "Pete Draper",
+        company: "VFX Supervisor",
+        title: t("kitsu-summit conference ryff title"),
+        description: t("kitsu-summit conference ryff description"),
+        category: "vfx",
+        categoryLabel: "VFX",
+        file: "pete.webp",
+    },
+    {
+        time: "12:45",
+        speaker: "Chris Unterberg",
+        company: "Tetsuo",
+        description: t("kitsu-summit conference tetsuo description"),
+        title: t("kitsu-summit conference tetsuo title"),
+        category: "vfx",
+        categoryLabel: "VFX",
+        file: "chris.png",
+    },
+    {
+        time: "14:00",
+        speaker: "Flavio Perez",
+        company: "Les Fées Spéciales",
+        description: t(
+            "kitsu-summit conference les-fees-spéciales description",
+        ),
+        title: t("kitsu-summit conference les-fees-spéciales title"),
+        category: "animation3d",
+        categoryLabel: "3D",
+        file: "flavio.jpg",
+    },
+    {
+        time: "15:30",
+        title: t("kitsu-summit conference cube creative title"),
+        speaker: "Axel Tillement",
+        company: "Cube Creative",
+        description: t("kitsu-summit conference cube creative description"),
+        category: "animation3d",
+        categoryLabel: "3D",
+        file: "axel.jpg",
+    },
+    {
+        time: "17:00",
+        title: t("kitsu-summit conference miyu title"),
+        speaker: "Cléa Gonnay",
+        company: "Miyu",
+        description: t("kitsu-summit conference miyu description"),
+        category: "animation2d",
+        categoryLabel: "2D",
+        file: "clea.jpg",
+    },
+    {
+        time: "17:45",
+        title: t("kitsu-summit conference fost title"),
+        speaker: "Céline Durieux",
+        company: "Fost",
+        description: t("kitsu-summit conference fost description"),
+        category: "animation2d",
+        categoryLabel: "2D",
+        file: "celine.png",
+    },
+    {
+        time: "17:45",
+        title: t("kitsu-summit conference normaal title"),
+        speaker: "Félix David",
+        company: "Normaal",
+        description: t("kitsu-summit conference normaal description"),
+        category: "animation2d",
+        categoryLabel: "2D",
+        file: "felix.jpg",
+    },
+    {
+        time: "17:45",
+        title: t("kitsu-summit conference autour-de-minuit title"),
+        speaker: "Mario Hawat",
+        company: "Autour De Minuit",
+        description: t("kitsu-summit conference autour-de-minuit description"),
+        category: "animation3d",
+        categoryLabel: "3D",
+        file: "mario.png",
+    },
+    {
+        time: "17:45",
+        title: t("kitsu-summit conference wizz title"),
+        speaker: "Guilhem Compain",
+        company: "Wizz",
+        description: t("kitsu-summit conference wizz description"),
+        category: "animation2d",
+        categoryLabel: "2D",
+        file: "guilhem.png",
+    },
+    {
+        time: "17:45",
+        title: t("kitsu-summit conference mastodon title"),
+        speaker: "Arthur Aloyan",
+        company: "Mastodon Production",
+        description: t("kitsu-summit conference mastodon description"),
+        category: "ai",
+        categoryLabel: "AI",
+        file: "artur.png",
+    },
+    {
+        time: "17:45",
+        title: t("kitsu-summit conference bigcompany title"),
+        speaker: "Tristan Languebien",
+        company: "Big Company",
+        description: t("kitsu-summit conference bigcompany description"),
+        category: "2d",
+        categoryLabel: "2D",
+        file: "tristan.png",
+    },
+    {
+        time: "17:45",
+        title: t("kitsu-summit conference ranch-computing title"),
+        speaker: "Anne-Laure Armand / Laurent Dijoux / Dominique Coco",
+        company: "Ranch Computing & TAT Production",
+        description: t("kitsu-summit conference ranch-computing description"),
+        category: "vfx",
+        categoryLabel: "VFX",
+        file: "anne-laure.jpg",
+    },
+    {
+        time: "18:00",
+        title: t("kitsu-summit conference keynote title"),
+        speaker: "Frank Rousseau",
+        company: "CGWire CEO",
+        description: t("kitsu-summit conference keynote description"),
+        category: "kitsu",
+        categoryLabel: "Kitsu",
+        file: "frank.jpg",
+    },
+    {
+        time: "18:00",
+        title: t("kitsu-summit conference roadmap title"),
+        speaker: "Gwénaëlle Dupré",
+        company: "CGWire CPO",
+        description: t("kitsu-summit conference roadmap description"),
+        category: "kitsu",
+        categoryLabel: "Kitsu",
+        file: "gwen.png",
+    },
+]);
 
 const schedule = ref([
-  {
-    time: '09:00',
-    type: 'break',
-    label: t('kitsu-summit schedule breakfast'),
-    room1: [],
-    room2: []
-  },
-  {
-    time: '09:30',
-    room1: [
-      {
-        company: 'CGWire',
-        speaker: 'Frank Rousseau',
-        title: t('kitsu-summit conference keynote title')
-      }
-    ],
-    room2: []
-  },
-  {
-    time: '10:00',
-    room1: [
-      {
-        company: 'Autour De Minuit',
-        speaker: 'Mario Hawat',
-        title: t('kitsu-summit conference autour-de-minuit title')
-      }
-    ],
-    room2: [
-      {
-        company: 'Wizz',
-        speaker: 'Guilhem Compain',
-        title: t('kitsu-summit conference wizz title')
-      }
-    ]
-  },
-  {
-    time: '10:45',
-    room1: [
-      {
-        company: 'Les Fées Spéciales',
-        speaker: 'Flavio Perez',
-        title: t('kitsu-summit conference les-fees-spéciales title')
-      }
-    ],
-    room2: [
-      {
-        company: 'Cube Creative',
-        speaker: 'Axel Tillement',
-        title: t('kitsu-summit conference cube creative title')
-      }
-    ]
-  },
-  {
-    time: '11:30',
-    room1: [
-      {
-        company: 'Magic Studio',
-        speaker: 'Arthur Aloyan',
-        title: t('kitsu-summit conference mastodon title')
-      }
-    ],
-    room2: [
-      {
-        company: 'Remembers',
-        speaker: 'Audrey Tondre',
-        title: t('kitsu-summit conference remembers title')
-      }
-    ]
-  },
-  {
-    time: '12:15',
-    room1: [
-      {
-        company: 'Ranch Computing & TAT Production',
-        speaker: 'Anne-Laure Armand / Laurent Dijoux / Dominique Coco',
-        title: t('kitsu-summit conference ranch-computing title')
-      }
-    ],
-    room2: []
-  },
-  {
-    time: '12:40',
-    room1: [
-      {
-        company: 'Lenovo',
-        speaker: 'Mesa Takaoka',
-        title: t('kitsu-summit conference lenovo title')
-      }
-    ],
-    room2: []
-  },
-  {
-    time: '13:00',
-    type: 'break',
-    label: t('kitsu-summit schedule lunch'),
-    room1: [],
-    room2: []
-  },
-  {
-    time: '14:00',
-    room1: [
-      {
-        company: 'CGWire',
-        speaker: 'Gwénaëlle Dupré',
-        title: t('kitsu-summit conference roadmap title')
-      }
-    ],
-    room2: []
-  },
-  {
-    time: '14:30',
-    room1: [
-      {
-        company: 'Ryff',
-        speaker: 'Pete Draper',
-        title: t('kitsu-summit conference ryff title')
-      }
-    ],
-    room2: [
-      {
-        company: 'Miyu',
-        speaker: 'Cléa Gonnay',
-        title: t('kitsu-summit conference miyu title')
-      }
-    ]
-  },
-  {
-    time: '15:15',
-    room1: [
-      {
-        company: 'Tetsuo',
-        speaker: 'Chris Unterberg',
-        title: t('kitsu-summit conference tetsuo title')
-      }
-    ],
-    room2: [
-      {
-        company: 'Fost',
-        speaker: 'Céline Durieux',
-        title: t('kitsu-summit conference fost title')
-      }
-    ]
-  },
-  {
-    time: '16:00',
-    room1: [
-      {
-        company: 'Normaal',
-        speaker: 'Félix David',
-        title: t('kitsu-summit conference normaal title')
-      }
-    ],
-    room2: [
-      {
-        company: 'Big Company',
-        speaker: 'Tristan Languebien',
-        title: t('kitsu-summit conference bigcompany title')
-      }
-    ]
-  },
-  {
-    time: '16:45',
-    room1: [
-      {
-        company: 'CGWire',
-        speaker: 'Frank Rousseau',
-        title: t('kitsu-summit conference closing title')
-      }
-    ],
-    room2: []
-  },
-  {
-    time: '17:00',
-    type: 'break',
-    label: t('kitsu-summit schedule cocktail') + ' 🥳',
-    room1: [],
-    room2: []
-  }
-])
-
-function useAsset(path) {
-  const assets = import.meta.glob('~/assets/images/summit/*', {
-    eager: true,
-    import: 'default',
-  })
-  return assets['/assets/images/summit/' + path]
-}
+    {
+        time: "09:00",
+        type: "break",
+        label: t("kitsu-summit schedule breakfast"),
+        room1: [],
+        room2: [],
+    },
+    {
+        time: "09:30",
+        room1: [
+            {
+                company: "CGWire",
+                speaker: "Frank Rousseau",
+                title: t("kitsu-summit conference keynote title"),
+            },
+        ],
+        room2: [],
+    },
+    {
+        time: "10:00",
+        room1: [
+            {
+                company: "Autour De Minuit",
+                speaker: "Mario Hawat",
+                title: t("kitsu-summit conference autour-de-minuit title"),
+            },
+        ],
+        room2: [
+            {
+                company: "Wizz",
+                speaker: "Guilhem Compain",
+                title: t("kitsu-summit conference wizz title"),
+            },
+        ],
+    },
+    {
+        time: "10:45",
+        room1: [
+            {
+                company: "Les Fées Spéciales",
+                speaker: "Flavio Perez",
+                title: t("kitsu-summit conference les-fees-spéciales title"),
+            },
+        ],
+        room2: [
+            {
+                company: "Cube Creative",
+                speaker: "Axel Tillement",
+                title: t("kitsu-summit conference cube creative title"),
+            },
+        ],
+    },
+    {
+        time: "11:30",
+        room1: [
+            {
+                company: "Magic Studio",
+                speaker: "Arthur Aloyan",
+                title: t("kitsu-summit conference mastodon title"),
+            },
+        ],
+        room2: [
+            {
+                company: "Remembers",
+                speaker: "Audrey Tondre",
+                title: t("kitsu-summit conference remembers title"),
+            },
+        ],
+    },
+    {
+        time: "12:15",
+        room1: [
+            {
+                company: "Ranch Computing & TAT Production",
+                speaker: "Anne-Laure Armand / Laurent Dijoux / Dominique Coco",
+                title: t("kitsu-summit conference ranch-computing title"),
+            },
+        ],
+        room2: [],
+    },
+    {
+        time: "12:40",
+        room1: [
+            {
+                company: "Lenovo",
+                speaker: "Mesa Takaoka",
+                title: t("kitsu-summit conference lenovo title"),
+            },
+        ],
+        room2: [],
+    },
+    {
+        time: "13:00",
+        type: "break",
+        label: t("kitsu-summit schedule lunch"),
+        room1: [],
+        room2: [],
+    },
+    {
+        time: "14:00",
+        room1: [
+            {
+                company: "CGWire",
+                speaker: "Gwénaëlle Dupré",
+                title: t("kitsu-summit conference roadmap title"),
+            },
+        ],
+        room2: [],
+    },
+    {
+        time: "14:30",
+        room1: [
+            {
+                company: "Ryff",
+                speaker: "Pete Draper",
+                title: t("kitsu-summit conference ryff title"),
+            },
+        ],
+        room2: [
+            {
+                company: "Miyu",
+                speaker: "Cléa Gonnay",
+                title: t("kitsu-summit conference miyu title"),
+            },
+        ],
+    },
+    {
+        time: "15:15",
+        room1: [
+            {
+                company: "Tetsuo",
+                speaker: "Chris Unterberg",
+                title: t("kitsu-summit conference tetsuo title"),
+            },
+        ],
+        room2: [
+            {
+                company: "Fost",
+                speaker: "Céline Durieux",
+                title: t("kitsu-summit conference fost title"),
+            },
+        ],
+    },
+    {
+        time: "16:00",
+        room1: [
+            {
+                company: "Normaal",
+                speaker: "Félix David",
+                title: t("kitsu-summit conference normaal title"),
+            },
+        ],
+        room2: [
+            {
+                company: "Big Company",
+                speaker: "Tristan Languebien",
+                title: t("kitsu-summit conference bigcompany title"),
+            },
+        ],
+    },
+    {
+        time: "16:45",
+        room1: [
+            {
+                company: "CGWire",
+                speaker: "Frank Rousseau",
+                title: t("kitsu-summit conference closing title"),
+            },
+        ],
+        room2: [],
+    },
+    {
+        time: "17:00",
+        type: "break",
+        label: t("kitsu-summit schedule cocktail") + " 🥳",
+        room1: [],
+        room2: [],
+    },
+]);
 
 useHead({
-  title: "CGWire | Kitsu",
-  meta: buildPageMeta(
-    t,
-    "kitsu-summit title",
-    "kitsu-summit description",
-    "kitsu-summit",
-    "kitsu-summit.c5cf3542.png"
-  ),
-})
+    title: "CGWire | Kitsu",
+    meta: buildPageMeta(
+        t,
+        "kitsu-summit title",
+        "kitsu-summit description",
+        "kitsu-summit",
+        "kitsu-summit.c5cf3542.png",
+    ),
+});
 </script>
 
 <style scoped lang="stylus">
@@ -1491,6 +1576,4 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   .sponsors-grid
     grid-template-columns: 1fr
     justify-items: center
-
-
 </style>

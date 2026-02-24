@@ -19,13 +19,18 @@
             </div>
             <div class="is-6">
                 <video
-                    :src="useAsset(pageKey + '.mp4')"
+                    :src="useAsset(pageKey + '.webm')"
                     autoplay
                     muted
                     loop
                     v-if="isVideo"
                 />
-                <img :src="useAsset(pageKey + '.png')" alt="" v-else />
+                <NuxtPicture
+                    :src="'/images/illustrations/' + pageKey + '.png'"
+                    format="webp"
+                    alt=""
+                    v-else
+                />
             </div>
         </div>
     </section>
@@ -43,7 +48,7 @@ function useAsset(path) {
         eager: true,
         import: "default",
     });
-    console.log(assets);
+
     return assets["/assets/images/illustrations/" + path];
 }
 </script>

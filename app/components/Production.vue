@@ -1,37 +1,30 @@
 <template>
-<li>
-  <a :href="url" class="production">
-    <img :src="useAsset(picture + '.png')" />
-    <span>{{ title }}</span>
-  </a>
-</li>
-
+    <li>
+        <a :href="url" class="production">
+            <NuxtPicture
+                :src="'/images/productions/' + picture + '.png'"
+                format="webp"
+            />
+            <span>{{ title }}</span>
+        </a>
+    </li>
 </template>
 
 <script setup>
 const props = defineProps({
-  picture: {
-    type: String,
-    required: true,
-  },
-  title: {
-    type: String,
-    required: true,
-  },
-  url: {
-    type: String,
-    required: true,
-  },
-})
-
-function useAsset(path) {
-  const assets = import.meta.glob('~/assets/images/productions/*', {
-    eager: true,
-    import: 'default',
-  })
-  return assets['/assets/images/productions/' + path]
-}
+    picture: {
+        type: String,
+        required: true,
+    },
+    title: {
+        type: String,
+        required: true,
+    },
+    url: {
+        type: String,
+        required: true,
+    },
+});
 </script>
 
-<style lang="stylus" scoped>
-</style>
+<style lang="stylus" scoped></style>

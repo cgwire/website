@@ -1,5 +1,6 @@
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "url";
+import i18nRoutes from "./i18n/routes.js";
 
 export default defineNuxtConfig({
   compatibilityDate: "2026-02-19",
@@ -20,7 +21,10 @@ export default defineNuxtConfig({
         },
         { name: "og:locale", content: "en_US" },
         { name: "og:locale:alternate", content: "fr_FR" },
-        { name: "og:image", content: "https://cgwire.com/images/logo.svg" },
+        {
+          name: "og:image",
+          content: "https://www.cg-wire.com/images/logo.svg",
+        },
         { name: "twitter:card", content: "summary" },
         { name: "twitter:url", content: "http://twitter.com/cgwirekitsu/" },
         {
@@ -30,7 +34,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "https://cgwire.com/images/logo.svg",
+          content: "https://www.cg-wire.com/images/logo.svg",
         },
       ],
       script: [],
@@ -49,28 +53,33 @@ export default defineNuxtConfig({
   components: true,
   modules: [
     "@nuxtjs/i18n",
-    ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
+    // ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
     "nuxt-aos",
     "@nuxt/content",
+    "@nuxt/image",
+    "nuxt-vitalizer",
+    "@nuxtjs/sitemap",
   ],
   i18n: {
     baseUrl: "https://www.cg-wire.com",
     defaultLocale: "en",
     fallbackLocale: "en",
+    customRoutes: "config",
+    pages: i18nRoutes,
     locales: [
       {
         code: "en",
-        iso: "en-US",
+        language: "en-US",
         file: "en.json",
       },
       {
         code: "fr",
-        iso: "fr-FR",
+        language: "fr-FR",
         file: "fr.json",
       },
       {
         code: "ja",
-        iso: "ja-JP",
+        language: "ja-JP",
         file: "ja.json",
       },
     ],
@@ -92,4 +101,18 @@ export default defineNuxtConfig({
     startEvent: "DOMContentLoaded",
     useClassNames: false,
   },
+  image: {
+    dir: "assets/",
+    format: ["webp"],
+    screens: {
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      "2xl": 1536,
+    },
+  },
+  // vitalizer: {
+  //   disableStylesheets: "entry",
+  // },
 });
