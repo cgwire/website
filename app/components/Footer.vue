@@ -9,14 +9,7 @@ t
                 <ul>
                     <li>
                         <nuxt-link
-                            :to="
-                                $localePath({
-                                    name: 'features-slug',
-                                    params: {
-                                        slug: $t('slug team-collaboration'),
-                                    },
-                                })
-                            "
+                            :to="$localePath('features-team-collaboration')"
                         >
                             <span class="level-item">
                                 {{ $t("header title team-collaboration") }}
@@ -25,14 +18,7 @@ t
                     </li>
                     <li>
                         <nuxt-link
-                            :to="
-                                $localePath({
-                                    name: 'features-slug',
-                                    params: {
-                                        slug: $t('slug production-tracker'),
-                                    },
-                                })
-                            "
+                            :to="$localePath('features-production-tracker')"
                         >
                             <span class="level-item">
                                 {{ $t("header title production-tracker") }}
@@ -40,16 +26,7 @@ t
                         </nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link
-                            :to="
-                                $localePath({
-                                    name: 'features-slug',
-                                    params: {
-                                        slug: $t('slug review-engine'),
-                                    },
-                                })
-                            "
-                        >
+                        <nuxt-link :to="$localePath('features-review-engine')">
                             <span class="level-item">
                                 {{ $t("header title review-engine") }}
                             </span>
@@ -57,14 +34,7 @@ t
                     </li>
                     <li>
                         <nuxt-link
-                            :to="
-                                $localePath({
-                                    name: 'features-slug',
-                                    params: {
-                                        slug: $t('slug casting-management'),
-                                    },
-                                })
-                            "
+                            :to="$localePath('features-casting-management')"
                         >
                             <span class="level-item">
                                 {{ $t("header title casting-management") }}
@@ -73,14 +43,7 @@ t
                     </li>
                     <li>
                         <nuxt-link
-                            :to="
-                                $localePath({
-                                    name: 'features-slug',
-                                    params: {
-                                        slug: $t('slug studio-database'),
-                                    },
-                                })
-                            "
+                            :to="$localePath('features-studio-database')"
                         >
                             <span class="level-item">
                                 {{ $t("header title studio-database") }}
@@ -96,27 +59,33 @@ t
                     </li>
 
                     <li>
-                        <nuxt-link
-                            :to="
-                                $localePath({
-                                    name: 'tool-alternative',
-                                    params: { tool: 'shotgrid' },
-                                })
-                            "
-                        >
+                        <nuxt-link :to="$localePath('shotgrid-alternative')">
                             <span class="level-item"> Kitsu vs Shotgrid </span>
                         </nuxt-link>
                     </li>
                     <li>
-                        <NuxtLink
-                            :to="
-                                $localePath({
-                                    name: 'tool-alternative',
-                                    params: { tool: 'ftrack' },
-                                })
-                            "
-                        >
+                        <NuxtLink :to="$localePath('ftrack-alternative')">
                             <span class="level-item"> Kitsu vs Ftrack </span>
+                        </NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink :to="$localePath('faq-ip-protection')">
+                            <span class="level-item">IP Protection</span>
+                        </NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink :to="$localePath('faq-migration')">
+                            <span class="level-item">Migration</span>
+                        </NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink :to="$localePath('faq-change-management')">
+                            <span class="level-item">Change Management</span>
+                        </NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink :to="$localePath('faq-custom-integration')">
+                            <span class="level-item">Custom Integration</span>
                         </NuxtLink>
                     </li>
                     <li>

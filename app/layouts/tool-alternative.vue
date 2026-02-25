@@ -37,9 +37,16 @@
 const route = useRoute();
 const { t } = useI18n();
 
-const slug = `${route.params.tool}-alternative`;
+const props = defineProps({
+    tool: {
+        type: String,
+        required: true,
+    },
+});
 
-const { data } = await useAsyncData(() =>
+const slug = `${props.tool}-alternative`;
+
+const { data } = await useAsyncData(slug, () =>
     queryCollection("pages").path(`/pages/alternatives/${slug}`).first(),
 );
 

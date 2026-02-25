@@ -42,7 +42,7 @@
 <script setup>
 const props = defineProps({
     elementKey: String,
-    pathObject: Object,
+    pathObject: String,
     link: {
         type: String,
         default: "",

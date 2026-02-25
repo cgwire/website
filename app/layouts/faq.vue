@@ -16,17 +16,7 @@
                 {{ t(page.titleKey) }}
             </h2>
 
-            <div
-                v-for="(section, index) in page.sections"
-                :key="index"
-                class="section"
-            >
-                <h3>{{ section.title }}</h3>
-
-                <p v-for="(paragraph, pIndex) in section.content" :key="pIndex">
-                    {{ paragraph }}
-                </p>
-            </div>
+            <ContentRenderer :value="content" class="section" />
         </section>
     </div>
 
@@ -37,13 +27,21 @@
 const route = useRoute();
 const { t } = useI18n();
 
-const slug = route.params.slug;
+const props = defineProps({
+    slug: {
+        type: String,
+        required: true,
+    },
+});
 
-const { data } = await useAsyncData(() =>
+const slug = props.slug;
+
+const { data } = await useAsyncData(slug, () =>
     queryCollection("pages").path(`/pages/faq/${slug}`).first(),
 );
 
 const page = data.value.meta;
+const content = data.value;
 
 useHead({
     title: `CGWire | ${page.pageTitle}`,

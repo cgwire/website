@@ -29,9 +29,16 @@
 const route = useRoute();
 const { t, locale } = useI18n();
 
-const slug = route.params.slug;
+const props = defineProps({
+    slug: {
+        type: String,
+        required: true,
+    },
+});
 
-const { data } = await useAsyncData(() =>
+const slug = props.slug;
+
+const { data } = await useAsyncData(slug, () =>
     queryCollection("pages").path(`/pages/features/${slug}`).first(),
 );
 const featurePage = data.value.meta;

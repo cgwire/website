@@ -154,9 +154,16 @@
 const route = useRoute();
 const { t, locale } = useI18n();
 
-const slug = `for-${route.params.audience}`;
+const props = defineProps({
+    audience: {
+        type: String,
+        required: true,
+    },
+});
 
-const { data } = await useAsyncData(() =>
+const slug = `for-${props.audience}`;
+
+const { data } = await useAsyncData(slug, () =>
     queryCollection("pages").path(`/pages/audiences/${slug}`).first(),
 );
 const audience = data.value.meta;

@@ -110,48 +110,23 @@
                         <div class="columns">
                             <div class="column">
                                 <SubNavElement
-                                    :pathObject="{
-                                        name: 'features-slug',
-                                        params: {
-                                            slug: $t('slug team-collaboration'),
-                                        },
-                                    }"
+                                    pathObject="features-team-collaboration"
                                     elementKey="team-collaboration"
                                 />
                                 <SubNavElement
-                                    :pathObject="{
-                                        name: 'features-slug',
-                                        params: {
-                                            slug: $t('slug production-tracker'),
-                                        },
-                                    }"
+                                    pathObject="features-production-tracker"
                                     elementKey="production-tracker"
                                 />
                                 <SubNavElement
-                                    :pathObject="{
-                                        name: 'features-slug',
-                                        params: {
-                                            slug: $t('slug review-engine'),
-                                        },
-                                    }"
+                                    pathObject="features-review-engine"
                                     elementKey="review-engine"
                                 />
                                 <SubNavElement
-                                    :pathObject="{
-                                        name: 'features-slug',
-                                        params: {
-                                            slug: $t('slug casting-management'),
-                                        },
-                                    }"
+                                    pathObject="features-casting-management"
                                     elementKey="casting-management"
                                 />
                                 <SubNavElement
-                                    :pathObject="{
-                                        name: 'features-slug',
-                                        params: {
-                                            slug: $t('slug studio-database'),
-                                        },
-                                    }"
+                                    pathObject="features-studio-database"
                                     elementKey="studio-database"
                                 />
                                 <SubNavElement
@@ -160,32 +135,15 @@
                             </div>
                             <div class="column hosting-solutions">
                                 <SubNavElement
-                                    :pathObject="{
-                                        name: 'features-slug',
-                                        params: {
-                                            slug: $t('slug top-notch-support'),
-                                        },
-                                    }"
+                                    pathObject="features-top-notch-support"
                                     elementKey="top-notch-support"
                                 />
                                 <SubNavElement
-                                    :pathObject="{
-                                        name: 'features-slug',
-                                        params: {
-                                            slug: $t('slug elite-hosting'),
-                                        },
-                                    }"
+                                    pathObject="features-elite-hosting"
                                     elementKey="elite-hosting"
                                 />
                                 <SubNavElement
-                                    :pathObject="{
-                                        name: 'features-slug',
-                                        params: {
-                                            slug: $t(
-                                                'slug tailor-made-architecture',
-                                            ),
-                                        },
-                                    }"
+                                    pathObject="features-tailor-made-architecture"
                                     elementKey="tailor-made-architecture"
                                 />
                             </div>
@@ -227,48 +185,23 @@
                         <SubNavElement elementKey="customer-stories" />
                         <hr />
                         <SubNavElement
-                            :pathObject="{
-                                name: 'for-audience',
-                                params: {
-                                    audience: $t('slug tvshows'),
-                                },
-                            }"
+                            pathObject="for-tvshows"
                             elementKey="tvshows"
                         />
                         <SubNavElement
-                            :pathObject="{
-                                name: 'for-audience',
-                                params: {
-                                    audience: $t('slug feature-films'),
-                                },
-                            }"
+                            pathObject="for-feature-films"
                             elementKey="feature-films"
                         />
                         <SubNavElement
-                            :pathObject="{
-                                name: 'for-audience',
-                                params: {
-                                    audience: $t('slug shorts'),
-                                },
-                            }"
+                            pathObject="for-shorts"
                             elementKey="shorts"
                         />
                         <SubNavElement
-                            :pathObject="{
-                                name: 'for-audience',
-                                params: {
-                                    audience: $t('slug schools'),
-                                },
-                            }"
+                            pathObject="for-schools"
                             elementKey="schools"
                         />
                         <SubNavElement
-                            :pathObject="{
-                                name: 'for-audience',
-                                params: {
-                                    audience: $t('slug video-games'),
-                                },
-                            }"
+                            pathObject="for-video-games"
                             elementKey="video-games"
                         />
                     </div>
