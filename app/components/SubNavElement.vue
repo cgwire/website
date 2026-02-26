@@ -4,7 +4,7 @@
         :to="$localePath(pathObject ?? elementKey)"
         v-if="link === ''"
     >
-        <NuxtPicture
+        <img
             class="flexrow-item tablet"
             :src="'/icons/' + elementKey + '.svg'"
         />
@@ -23,7 +23,7 @@
         target="_blank"
         v-else
     >
-        <NuxtPicture
+        <img
             class="flexrow-item tablet"
             :src="'/icons/' + elementKey + '.svg'"
         />

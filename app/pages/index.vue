@@ -22,9 +22,12 @@
                     <video
                         src="~/assets/teaser.webm"
                         :poster="videoPoster"
-                        autoplay
                         loop
                         muted
+                        preload="none"
+                        width="800"
+                        height="800"
+                        autoplay
                     />
                 </div>
             </div>
