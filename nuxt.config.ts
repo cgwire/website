@@ -55,6 +55,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     // ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
     "nuxt-aos",
+    "@nuxt/content",
     "@nuxt/image",
     "nuxt-vitalizer",
     "@nuxtjs/sitemap",
@@ -107,8 +108,6 @@ export default defineNuxtConfig({
       sm: 640,
       md: 768,
       lg: 1024,
-      xl: 1280,
-      "2xl": 1536,
     },
   },
   // vitalizer: {

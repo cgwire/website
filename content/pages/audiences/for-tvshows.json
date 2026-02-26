@@ -1,0 +1,200 @@
+{
+  "slug": "tvshows",
+  "i18n": {
+    "titleKey": "tvshows subtitle",
+    "metaTitleKey": "tvshows title",
+    "metaDescriptionKey": "tvshows subtitle"
+  },
+  "hero": {
+    "subtitleKey": "tvshows subtitle",
+    "titleKey": "tvshows title"
+  },
+  "quote": {
+    "textKey": "tvshows quote",
+    "authorKey": "tvshows quote author",
+    "avatar": "cecilehergaux.png"
+  },
+  "video": {
+    "vimeoId": "179292184",
+    "partnerName": "La Cabane / Cube Creative",
+    "partnerUrl": "http://lacabaneproductions.com/"
+  },
+  "panels": [
+    {
+      "id": "producer",
+      "avatar": "avatar-5.svg",
+      "titleKey": "tvshows people title 4",
+      "descriptionKeys": [
+        "tvshows people desc 4-1",
+        "tvshows people desc 4-2",
+        "tvshows people desc 4-3"
+      ]
+    },
+    {
+      "id": "productionmanager",
+      "avatar": "avatar-1.svg",
+      "titleKey": "tvshows people title 3",
+      "descriptionKeys": [
+        "tvshows people desc 3-1",
+        "tvshows people desc 3-2",
+        "tvshows people desc 3-3",
+        "tvshows people desc 3-4",
+        "tvshows people desc 3-5"
+      ]
+    },
+    {
+      "id": "director",
+      "avatar": "avatar-6.svg",
+      "titleKey": "tvshows people title 2",
+      "descriptionKeys": ["tvshows people desc 2-1", "tvshows people desc 2-2"]
+    },
+    {
+      "id": "supervisor",
+      "avatar": "avatar-2.svg",
+      "titleKey": "tvshows people title 5",
+      "descriptionKeys": [
+        "tvshows people desc 5-1",
+        "tvshows people desc 5-2",
+        "tvshows people desc 5-3"
+      ]
+    },
+    {
+      "id": "artist",
+      "avatar": "avatar-3.svg",
+      "titleKey": "tvshows people title 1",
+      "descriptionKeys": [
+        "tvshows people desc 1-1",
+        "tvshows people desc 1-2",
+        "tvshows people desc 1-3",
+        "tvshows people desc 1-4"
+      ]
+    }
+  ],
+  "reasons": {
+    "titleKey": "tvshows reasons title",
+    "items": [
+      "tvshows reasons item 1",
+      "tvshows reasons item 2",
+      "tvshows reasons item 3"
+    ],
+    "ctaKey": "tvshows button demo",
+    "ctaUrl": "https://account.cg-wire.com/signup"
+  },
+  "studios": [
+    {
+      "link": "https://fost.studio",
+      "elementKey": "fost-invert",
+      "name": "Fost"
+    },
+    {
+      "link": "https://nousvoir.com",
+      "elementKey": "tnzpv-invert",
+      "name": "TNZPV"
+    },
+    {
+      "link": "https://madlab-animations.com",
+      "elementKey": "madlab-invert",
+      "name": "Madlab"
+    },
+    {
+      "link": "https://malilart.com",
+      "elementKey": "malilart",
+      "name": "Malilart"
+    },
+    {
+      "link": "https://www.ankama.com/fr/animations",
+      "elementKey": "ankama",
+      "name": "Ankama Animations"
+    },
+    {
+      "link": "https://www.folivari.com",
+      "elementKey": "folivari",
+      "name": "Folivari"
+    },
+    {
+      "link": "https://www.cottonwood.tv",
+      "elementKey": "cottonwood-invert",
+      "name": "Cottonwood Media"
+    },
+    {
+      "link": "https://www.mindseyecreative.ca/",
+      "elementKey": "mindseye-creative",
+      "name": "MindsEye Creative"
+    },
+    {
+      "link": "https://www.cabongstudios.com.br/",
+      "elementKey": "cabong-studios",
+      "name": "Cabong Studios"
+    },
+    {
+      "link": "https://mamoncillo.co/",
+      "elementKey": "mamoncillo",
+      "name": "Mamoncillo"
+    },
+    {
+      "link": "https://www.monello.fr/",
+      "elementKey": "monello",
+      "name": "Monello"
+    },
+    {
+      "link": "https://www.millimages.com/",
+      "elementKey": "millimages",
+      "name": "Millimages"
+    },
+    {
+      "link": "https://www.ellipseanimation.com/",
+      "elementKey": "ellipse",
+      "name": "Ellipse"
+    },
+    {
+      "link": "https://www.tantmieuxprod.net/",
+      "elementKey": "tant-mieux-prod",
+      "name": "Tant Mieux Prod"
+    },
+    {
+      "link": "http://www.cartuna.com/",
+      "elementKey": "cartuna",
+      "name": "Cartuna"
+    },
+    {
+      "link": "https://normaal.fr/",
+      "elementKey": "normaal",
+      "name": "Normaal"
+    },
+    {
+      "link": "https://www.bobbypills.com/",
+      "elementKey": "bobbypills-invert",
+      "name": "Bobby Pills"
+    },
+    {
+      "link": "https://www.embuscadefilms.com/",
+      "elementKey": "embuscade",
+      "name": "Embuscade Films"
+    },
+    {
+      "link": "https://www.banijay.com/company/zodiak-kids-family-studio-france/",
+      "elementKey": "zodiak",
+      "name": "Zodiak Kids"
+    },
+    {
+      "link": "https://philmcgi.com/",
+      "elementKey": "philmcgi",
+      "name": "Philm CGI"
+    },
+    {
+      "link": "https://www.youtube.com/c/elreinoinfantil",
+      "elementKey": "el-reino-infantil",
+      "name": "El Reino Infantil"
+    },
+    {
+      "link": "https://www.entertainmentone.com/",
+      "elementKey": "eone",
+      "name": "EOne"
+    },
+    {
+      "link": "https://redefine.co/fr/redefine-originals/",
+      "elementKey": "redefine",
+      "name": "Redefine Originals"
+    }
+  ]
+}

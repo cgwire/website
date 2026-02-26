@@ -22,9 +22,12 @@
                     <video
                         src="~/assets/teaser.webm"
                         :poster="videoPoster"
-                        autoplay
                         loop
                         muted
+                        preload="none"
+                        width="800"
+                        height="800"
+                        autoplay
                     />
                 </div>
             </div>
@@ -485,6 +488,7 @@
 import { ref, onMounted } from "vue";
 const name = "Index";
 const { t } = useI18n();
+
 useHead({
     title: "CGWire | " + t("main title"),
     meta: buildPageMeta(

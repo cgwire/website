@@ -1,0 +1,312 @@
+{
+  "slug": "shorts",
+  "i18n": {
+    "titleKey": "shorts subtitle",
+    "metaTitleKey": "shorts title",
+    "metaDescriptionKey": "shorts subtitle"
+  },
+  "hero": {
+    "subtitleKey": "shorts subtitle",
+    "titleKey": "shorts title"
+  },
+  "quote": {
+    "textKey": "shorts quote",
+    "authorKey": "shorts quote author",
+    "avatar": "christian.png"
+  },
+  "video": {
+    "vimeoId": "896197533",
+    "partnerName": "Miyu Productions",
+    "partnerUrl": "https://miyu-prod.cg-wire.com/"
+  },
+  "panels": [
+    {
+      "id": "productionmanager",
+      "avatar": "avatar-10.svg",
+      "titleKey": "shorts people title 4",
+      "descriptionKeys": [
+        "shorts people desc 4-1",
+        "shorts people desc 4-2",
+        "shorts people desc 4-3",
+        "shorts people desc 4-4",
+        "shorts people desc 4-5"
+      ]
+    },
+    {
+      "id": "director",
+      "avatar": "avatar-6.svg",
+      "titleKey": "shorts people title 3",
+      "descriptionKeys": [
+        "shorts people desc 3-1",
+        "shorts people desc 3-2",
+        "shorts people desc 3-3"
+      ]
+    },
+    {
+      "id": "supervisor",
+      "avatar": "avatar-2.svg",
+      "titleKey": "shorts people title 1",
+      "descriptionKeys": [
+        "shorts people desc 1-1",
+        "shorts people desc 1-2",
+        "shorts people desc 1-3",
+        "shorts people desc 1-4"
+      ]
+    },
+    {
+      "id": "artist",
+      "avatar": "avatar-12.svg",
+      "titleKey": "shorts people title 2",
+      "descriptionKeys": ["shorts people desc 2-1", "shorts people desc 2-2"]
+    }
+  ],
+  "reasons": {
+    "titleKey": "shorts reasons title",
+    "items": [
+      "shorts reasons item 1",
+      "shorts reasons item 2",
+      "shorts reasons item 3"
+    ],
+    "ctaKey": "shorts button demo",
+    "ctaUrl": "https://account.cg-wire.com/signup"
+  },
+  "studios": [
+    {
+      "link": "https://studio.blender.org/",
+      "elementKey": "blender-invert",
+      "name": "Blender"
+    },
+    {
+      "link": "https://lofistudio.com/",
+      "elementKey": "lofi-studio-invert",
+      "name": "Lofi Studio"
+    },
+    {
+      "link": "https://www.supamonks.com/",
+      "elementKey": "supamonks-invert",
+      "name": "Supamonks"
+    },
+    {
+      "link": "https://www.miyu.fr/",
+      "elementKey": "miyu-invert",
+      "name": "Miyu"
+    },
+    {
+      "link": "https://www.polycat.com/",
+      "elementKey": "polycat",
+      "name": "Polycat"
+    },
+    {
+      "link": "https://www.mikrofilm.no/",
+      "elementKey": "mikrofilm-invert",
+      "name": "Mikrofilm"
+    },
+    {
+      "link": "https://bartmaalderink.nl/",
+      "elementKey": "bart-invert",
+      "name": "Bart Maalderink"
+    },
+    {
+      "link": "http://www.enclume-animation.com/",
+      "elementKey": "enclume-invert",
+      "name": "Enclume"
+    },
+    { "link": "https://nki.tv/", "elementKey": "nki", "name": "NKI" },
+    {
+      "link": "https://woodblock.tv/",
+      "elementKey": "woodblock",
+      "name": "Wooblock"
+    },
+    {
+      "link": "https://www.stimstudio.com/en/",
+      "elementKey": "stim",
+      "name": "Stim Studio"
+    },
+    {
+      "link": "https://www.viridianfx.co.uk/",
+      "elementKey": "viridian",
+      "name": "ViridianVFX"
+    },
+    {
+      "link": "https://www.dirtylooks.co.uk/",
+      "elementKey": "dirty-looks",
+      "name": "Dirty Looks"
+    },
+    {
+      "link": "https://heckler.tv/",
+      "elementKey": "heckler",
+      "name": "Heckler"
+    },
+    {
+      "link": "https://rabbitsfootstudios.se/",
+      "elementKey": "rabbitsfoot",
+      "name": "Rabbit's Foot"
+    },
+    {
+      "link": "https://animaskin.no/",
+      "elementKey": "animaskin",
+      "name": "Animaskin"
+    },
+    {
+      "link": "https://animaltank.com/",
+      "elementKey": "animaltank",
+      "name": "Animaltank"
+    },
+    {
+      "link": "https://floating-rock.com/",
+      "elementKey": "floatingrock",
+      "name": "Floating Rock"
+    },
+    {
+      "link": "https://novanima.eu/",
+      "elementKey": "novanima",
+      "name": "Novanima"
+    },
+    {
+      "link": "https://www.squarefilms.fr/",
+      "elementKey": "squarefilms",
+      "name": "Square Films"
+    },
+    { "link": "https://wizz.fr/en", "elementKey": "wizz", "name": "Wizz" },
+    {
+      "link": "https://www.warriorsvfx.com.br/",
+      "elementKey": "warriorsvfx",
+      "name": "Warriors VFX"
+    },
+    {
+      "link": "https://www.imagovfx.com/",
+      "elementKey": "imagovfx",
+      "name": "Imago VFX"
+    },
+    {
+      "link": "https://www.ovfx.com/",
+      "elementKey": "outlookvfx",
+      "name": "Outlook VFX"
+    },
+    {
+      "link": "https://tetsuoanimation.com/",
+      "elementKey": "tetsuo",
+      "name": "Tetsuo Animation"
+    },
+    {
+      "link": "https://www.holybird.fr/",
+      "elementKey": "holybird",
+      "name": "Holy Bird"
+    },
+    { "link": "https://www.3dar.com/", "elementKey": "3dar", "name": "3DAR" },
+    {
+      "link": "http://www.ateliervfx.com/",
+      "elementKey": "atelier-vfx",
+      "name": "Atelier VFX"
+    },
+    {
+      "link": "https://www.emberlight.se/",
+      "elementKey": "emberlight",
+      "name": "Emberlight"
+    },
+    { "link": "https://www.nfb.ca/", "elementKey": "nfb", "name": "NFB" },
+    {
+      "link": "https://pikkukala.com/",
+      "elementKey": "pikkukala",
+      "name": "Pikkukala"
+    },
+    {
+      "link": "https://pyjama.fi/",
+      "elementKey": "pyjama",
+      "name": "Pyjama Studios"
+    },
+    {
+      "link": "https://circlestudio.com.my/",
+      "elementKey": "circle",
+      "name": "Circle Studios"
+    },
+    {
+      "link": "https://bus.group/",
+      "elementKey": "busgroup",
+      "name": "Bus Group"
+    },
+    {
+      "link": "https://lesfilmsdupoissonrouge.com/",
+      "elementKey": "les-films-du-poisson-rouge",
+      "name": "Les films du poisson rouge"
+    },
+    {
+      "link": "https://krndsh.com/",
+      "elementKey": "karendash",
+      "name": "Karendash"
+    },
+    {
+      "link": "https://www.aparat-studio.com/",
+      "elementKey": "aparat",
+      "name": "Aparat"
+    },
+    { "link": "https://www.odcreate.me", "elementKey": "odee", "name": "Odee" },
+    {
+      "link": "https://www.monkeys.tv/",
+      "elementKey": "monkeys",
+      "name": "Monkeys"
+    },
+    {
+      "link": "https://rockinvfx.com/",
+      "elementKey": "rockinvfx",
+      "name": "Rockin VFX"
+    },
+    {
+      "link": "https://cousinbizarre.com/",
+      "elementKey": "cousin-bizarre",
+      "name": "Cousin Bizarre"
+    },
+    {
+      "link": "http://www.signos.com.co/",
+      "elementKey": "signos",
+      "name": "Signos"
+    },
+    { "link": "https://naive.se/", "elementKey": "naive", "name": "Naive" },
+    {
+      "link": "https://www.werlenmeyer.com/",
+      "elementKey": "werlen-meyer",
+      "name": "Werlen Meyer"
+    },
+    {
+      "link": "https://nikopicto.com/",
+      "elementKey": "niko-picto",
+      "name": "Niko Picto"
+    },
+    {
+      "link": "https://www.abduct.studio/",
+      "elementKey": "abduct",
+      "name": "Abduct Studio"
+    },
+    {
+      "link": "https://weloveabattle.com/",
+      "elementKey": "welab",
+      "name": "We Love a Battle"
+    },
+    {
+      "link": "https://www.polenord.studio/",
+      "elementKey": "pole-nord",
+      "name": "Pôle Nord Studio"
+    },
+    {
+      "link": "https://www.impossible-objects.co/",
+      "elementKey": "impossible-objects",
+      "name": "Impossible Objects"
+    },
+    { "link": "http://amopix.com/", "elementKey": "amopix", "name": "Amopix" },
+    {
+      "link": "https://www.nocroma.com/",
+      "elementKey": "nocroma",
+      "name": "Nocroma"
+    },
+    {
+      "link": "https://www.silverspoonanimation.com/",
+      "elementKey": "silverspoon",
+      "name": "Silver Spoon Animation"
+    },
+    {
+      "link": "https://www.manicmonday.tv/",
+      "elementKey": "manic-monday",
+      "name": "Manic Monday"
+    }
+  ]
+}

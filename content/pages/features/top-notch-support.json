@@ -1,0 +1,21 @@
+{
+  "name": "Top Notch Support",
+  "pageKey": "top-notch-support",
+  "image": "top-notch-support.png",
+  "isVideo": true,
+  "features": [
+    {
+      "key": "fast",
+      "colored": true
+    },
+    {
+      "key": "chat",
+      "reverted": true
+    },
+    {
+      "key": "experts",
+      "colored": true,
+      "gradient": true
+    }
+  ]
+}

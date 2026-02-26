@@ -1,0 +1,27 @@
+{
+  "name": "Production Tracker",
+  "pageKey": "production-tracker",
+  "image": "production-tracker.png",
+  "features": [
+    {
+      "key": "report",
+      "colored": true
+    },
+    {
+      "key": "schedule",
+      "reverted": true
+    },
+    {
+      "key": "quotas",
+      "colored": true,
+      "gradient": true
+    }
+  ],
+  "customerStory": {
+    "studioName": "Fost studio",
+    "storyKey": "fost",
+    "interviewee": "Céline Durieux, Head Of Studio",
+    "imagePath": "photo-customer-story-fost.png",
+    "storyUrl": "https://blog.cg-wire.com/customer-story-fost-studio/"
+  }
+}

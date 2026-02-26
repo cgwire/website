@@ -885,5 +885,18 @@
   "kitsu-summit conference bigcompany title": "3Dの最高のものを2Dに適用",
   "kitsu-summit conference bigcompany description": "3D技術を使用してゼロから2Dパイプラインを作成する",
   "kitsu-summit conference lenovo title": "レノボのワークステーションとAI",
-  "kitsu-summit conference lenovo description": "AI開発に適したワークステーションの選び方"
+  "kitsu-summit conference lenovo description": "AI開発に適したワークステーションの選び方",
+  "slug tailor-made-architecture": "専用構成",
+  "slug casting-management": "配役管理",
+  "slug elite-hosting": "高品質ホスティング",
+  "slug production-tracker": "プロダクショントラッカー",
+  "slug review-engine": "承認ワークフロー",
+  "slug studio-database": "スタジオ情報管理",
+  "slug team-collaboration": "チーム協業",
+  "slug top-notch-support": "専任サポート",
+  "slug schools": "教育機関向け",
+  "slug shorts": "短編映像",
+  "slug tvshows": "テレビ番組",
+  "slug video-games": "ゲーム制作",
+  "slug feature-films": "長編映像"
 }

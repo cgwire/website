@@ -1,0 +1,154 @@
+{
+  "slug": "feature-films",
+  "i18n": {
+    "titleKey": "feature-films subtitle",
+    "metaTitleKey": "feature-films title",
+    "metaDescriptionKey": "feature-films subtitle"
+  },
+  "hero": {
+    "subtitleKey": "feature-films subtitle",
+    "titleKey": "feature-films title"
+  },
+  "quote": {
+    "textKey": "feature-films quote",
+    "authorKey": "feature-films quote author",
+    "avatar": "petedraper.png"
+  },
+  "video": {
+    "vimeoId": "756453236",
+    "partnerName": "Mediawan",
+    "partnerUrl": "https://www.mediawan.com"
+  },
+  "panels": [
+    {
+      "id": "producer",
+      "avatar": "avatar-5.svg",
+      "titleKey": "feature-films people title 4",
+      "descriptionKeys": [
+        "feature-films people desc 4-1",
+        "feature-films people desc 4-2",
+        "feature-films people desc 4-3"
+      ]
+    },
+    {
+      "id": "productionmanager",
+      "avatar": "avatar-1.svg",
+      "titleKey": "feature-films people title 3",
+      "descriptionKeys": [
+        "feature-films people desc 3-1",
+        "feature-films people desc 3-2",
+        "feature-films people desc 3-3",
+        "feature-films people desc 3-4",
+        "feature-films people desc 3-5"
+      ]
+    },
+    {
+      "id": "director",
+      "avatar": "avatar-6.svg",
+      "titleKey": "feature-films people title 2",
+      "descriptionKeys": [
+        "feature-films people desc 2-1",
+        "feature-films people desc 2-2"
+      ]
+    },
+    {
+      "id": "supervisor",
+      "avatar": "avatar-2.svg",
+      "titleKey": "feature-films people title 5",
+      "descriptionKeys": [
+        "feature-films people desc 5-1",
+        "feature-films people desc 5-2",
+        "feature-films people desc 5-3"
+      ]
+    },
+    {
+      "id": "artist",
+      "avatar": "avatar-3.svg",
+      "titleKey": "feature-films people title 1",
+      "descriptionKeys": [
+        "feature-films people desc 1-1",
+        "feature-films people desc 1-2",
+        "feature-films people desc 1-3",
+        "feature-films people desc 1-4"
+      ]
+    }
+  ],
+  "reasons": {
+    "titleKey": "feature-films reasons title",
+    "items": [
+      "feature-films reasons item 1",
+      "feature-films reasons item 2",
+      "feature-films reasons item 3"
+    ],
+    "ctaKey": "feature-films button demo",
+    "ctaUrl": "https://account.cg-wire.com/signup"
+  },
+  "studios": [
+    {
+      "link": "https://www.ankama.com/fr/animations",
+      "elementKey": "ankama",
+      "name": "Ankama Animations"
+    },
+    {
+      "link": "https://www.autourdeminuit.com/",
+      "elementKey": "autour-de-minuit-invert",
+      "name": "Autour De Minuit"
+    },
+    {
+      "link": "https://les-fees-speciales.coop/",
+      "elementKey": "les-fees-speciales-invert",
+      "name": "Les Fées Spéciales"
+    },
+    {
+      "link": "https://www.supamonks.com/",
+      "elementKey": "supamonks-invert",
+      "name": "Supamonks"
+    },
+    {
+      "link": "http://www.onyx-productions.com/onyx/index.php",
+      "elementKey": "onyx",
+      "name": "Onyx Films"
+    },
+    {
+      "link": "https://www.miyu.fr/",
+      "elementKey": "miyu-invert",
+      "name": "Miyu"
+    },
+    {
+      "link": "https://www.uniko.com.es/",
+      "elementKey": "uniko",
+      "name": "Uniko"
+    },
+    {
+      "link": "https://www.3point0studio.com/",
+      "elementKey": "30studio",
+      "name": "3.0 Studio"
+    },
+    {
+      "link": "https://lesvalseurs.com/",
+      "elementKey": "lesvalseurs",
+      "name": "Les Valseurs"
+    },
+    {
+      "link": "https://www.parmilesluciolesfilms.fr/",
+      "elementKey": "parmi-les-lucioles",
+      "name": "Parmi les lucioles"
+    },
+    {
+      "link": "https://traumhaus-studios.de/",
+      "elementKey": "traumhaus-invert",
+      "name": "Traumhaus"
+    },
+    {
+      "link": "https://makutavfx.com/",
+      "elementKey": "makuta",
+      "name": "Makuta"
+    },
+    {
+      "link": "https://www.albasotorra.com/",
+      "elementKey": "alba-sotorra",
+      "name": "Alba Sotorra"
+    },
+    { "link": "https://www.iiwstudio.fr/", "elementKey": "iiw", "name": "IIW" }
+  ]
+}

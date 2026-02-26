@@ -885,5 +885,18 @@
   "kitsu-summit conference bigcompany title": "Le meilleur de la 3D appliqué à la 2D",
   "kitsu-summit conference bigcompany description": "La création d'un pipeline 2D depuis une page blanche en utilisant les techniques de la 3D.",
   "kitsu-summit conference lenovo title": "Station de travail Lenovo",
-  "kitsu-summit conference lenovo description": "Performances pour adaptées pour l'entrainement d'IA"
+  "kitsu-summit conference lenovo description": "Performances pour adaptées pour l'entrainement d'IA",
+  "slug tailor-made-architecture": "architecture-sur-mesure",
+  "slug casting-management": "gestion-des-castings",
+  "slug elite-hosting": "hebergement-premium",
+  "slug production-tracker": "suivi-de-production",
+  "slug review-engine": "moteur-de-revision",
+  "slug studio-database": "base-de-donnees-studio",
+  "slug team-collaboration": "collaboration-equipe",
+  "slug top-notch-support": "support-premium",
+  "slug schools": "ecoles",
+  "slug shorts": "courts-metrages",
+  "slug tvshows": "emissions-tv",
+  "slug video-games": "jeux-video",
+  "slug feature-films": "longs-metrages"
 }
