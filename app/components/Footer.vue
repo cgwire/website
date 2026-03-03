@@ -4,60 +4,9 @@ t
         <div class="columns">
             <div class="column">
                 <p class="footer-title">
-                    {{ $t("footers title solutions") }}
+                    {{ $t("pricing faq title") }}
                 </p>
                 <ul>
-                    <li>
-                        <nuxt-link
-                            :to="$localePath('features-team-collaboration')"
-                        >
-                            <span class="level-item">
-                                {{ $t("header title team-collaboration") }}
-                            </span>
-                        </nuxt-link>
-                    </li>
-                    <li>
-                        <nuxt-link
-                            :to="$localePath('features-production-tracker')"
-                        >
-                            <span class="level-item">
-                                {{ $t("header title production-tracker") }}
-                            </span>
-                        </nuxt-link>
-                    </li>
-                    <li>
-                        <nuxt-link :to="$localePath('features-review-engine')">
-                            <span class="level-item">
-                                {{ $t("header title review-engine") }}
-                            </span>
-                        </nuxt-link>
-                    </li>
-                    <li>
-                        <nuxt-link
-                            :to="$localePath('features-casting-management')"
-                        >
-                            <span class="level-item">
-                                {{ $t("header title casting-management") }}
-                            </span>
-                        </nuxt-link>
-                    </li>
-                    <li>
-                        <nuxt-link
-                            :to="$localePath('features-studio-database')"
-                        >
-                            <span class="level-item">
-                                {{ $t("header title studio-database") }}
-                            </span>
-                        </nuxt-link>
-                    </li>
-                    <li>
-                        <nuxt-link :to="$localePath('software-integrations')">
-                            <span class="level-item">
-                                {{ $t("header title software-integrations") }}
-                            </span>
-                        </nuxt-link>
-                    </li>
-
                     <li>
                         <nuxt-link :to="$localePath('shotgrid-alternative')">
                             <span class="level-item"> Kitsu vs Shotgrid </span>
