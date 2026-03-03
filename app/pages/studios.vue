@@ -56,512 +56,6 @@
                     :title="production.title"
                     :url="production.url"
                 />
-                <li>
-                    <a
-                        href="https://www.monello.fr/series/les-gardes-chimeres"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/les-gardes-chimeres.png"
-                        />
-                        <span>Les Gardes Chimères</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://tetsuoanimation.com/work-detail/fall-guys-doraemon-cx/"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/fall-guys.png" />
-                        <span>Fall Guys</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://emberlight.se/project/ufo-sweden"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/ufo-sweden.png" />
-                        <span>UFO Sweden</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.miyu.fr/production/le-parfum-dirak/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/le-parfum-dirak.png"
-                        />
-                        <span>Le Parfum d'Irak</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.miyu.fr/production/anzu-chat-fantome/"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/anzu.png" />
-                        <span>Anzu</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://fost.studio/portfolio/7-bears/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/seven-bears.png"
-                        />
-                        <span>Seven Bears</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://fost.studio/portfolio/splinter-cell/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/splinter-cell.png"
-                        />
-                        <span>Splinter Cell</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.unifrance.org/film/57590/woolly-woolly"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/woolly-woolly.png"
-                        />
-                        <span>Woolly Woolly</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.3point0studio.com/la-plus-precieuse-des-marchandises/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/la-plus-precieuse-des-marchandises.png"
-                        />
-                        <span>La plus précieuse des marchandises</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.tf1.fr/tf1/pfffirates"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/pfffirates.png" />
-                        <span>Pfffirates</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.france.tv/enfants/six-huit-ans/t-es-ou-chicky/"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/chicky.png" />
-                        <span>Chicky</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.miyu.fr/production/christopher-at-sea-2/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/christopher-at-sea.png"
-                        />
-                        <span>Christopher At Sea</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.miyu.fr/production/linda-veut-du-poulet/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/linda-poulet.png"
-                        />
-                        <span>Linda veut du poulet</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.imdb.com/title/tt8780012/"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/twende.png" />
-                        <span>Twende</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.france.tv/enfants/trois-cinq-ans/jasmine-jambo/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/jasmine-and-jambo.png"
-                        />
-                        <span>Jasmine and Jambo</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.ankama.com/fr/lance-dur"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/lancedur.png" />
-                        <span>Lancedur</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://fr.sports.yahoo.com/news/totally-spies-saison-in%C3%A9dite-changement-123900978.html"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/totally-spies.png"
-                        />
-                        <span>Totally Spies</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.parmilesluciolesfilms.fr/film/les-contes-du-herisson"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/contes-herisson.png"
-                        />
-                        <span>Les contes du hérisson</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="http://www.artemisproductions.com/fr/films/Trois_contes"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/trois-contes.png"
-                        />
-                        <span>3 contes pour le plaisir</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="http://www.dargaudmedia.com/fr/les-filles-de-dad.html"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/dad.png" />
-                        <span>Les Filles de Dad</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="http://fost.studio/portfolio/stillwater/"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/stillwater.png" />
-                        <span>Stillwater</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="http://fost.studio/portfolio/tobie-lolness/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/tobie-lolness.png"
-                        />
-                        <span>Tobie Lolness</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="http://fost.studio/portfolio/samsam-season-3/"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/samsam.png" />
-                        <span>Sam Sam (S03)</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://folivari.com/en/projet/ernest-celestine-la-collection-saison-2/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/ernest-celestine.png"
-                        />
-                        <span>Ernest et Célestine (S02)</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.technicoloranimationproductions.com/fr/production.php"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/cooptroop.png" />
-                        <span>The Coop Troop</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://cloud.blender.org/films/sprite-fright/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/sprite-fright.png"
-                        />
-                        <span>Sprite Fright</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.miyu.fr/production/en/mussels-and-fries/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/moules-frites.png"
-                        />
-                        <span>Moules Frites</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.bobbypills.com/work/captainlaserhawk"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/laserhawk.png" />
-                        <span>Captain Laserhawk: A Blood Dragon Remix</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://rabbids.fandom.com/wiki/Rabbids_Invasion_Mission_To_Mars"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/rabbids-invasion.png"
-                        />
-                        <span>Rabbids Invasion: Mission To Mars</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="http://www.filmfund.lu/fr/film-catalogue/films/le-petit-nicolas"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/le-petit-nicolas.png"
-                        />
-                        <span>Le Petit Nicolas</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.kickstarter.com/projects/ankamaanimations/wakfu-the-animated-series-season-4"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/wakfu.png" />
-                        <span>Wakfu Season 4</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://lacabaneproductions.com/portfolio/mush-mush-and-the-mushables/"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/mush_mush.png" />
-                        <span>Mush Mush and the Mushables</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.miyu.fr/production/la-vie-de-chateau/"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/ldvc.png" />
-                        <span>La Vie de Château</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://xilam.com/media/de-gaulle-a-la-plage/"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/degaulle.png" />
-                        <span>De Gaulle à la Plage</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.technicoloranimationproductions.com/fr/production.php"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/gus.png" />
-                        <span>Gus, Le Chevalier Minus</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.unifrance.org/film/49486/princesse-dragon"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/princesse_dragon.png"
-                        />
-                        <span>Princesse Dragon</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://blog.autourdeminuit.com/production/non-non-retrecit/"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/non_non.png" />
-                        <span>Non Non</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="http://traumhaus-studios.de/portfolio/meine_freundin_conni"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/conni.png" />
-                        <span
-                            >Meine Freundin Conni - Secret of Mau, the Cat</span
-                        >
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://leefilm.se/news-all/theapestar"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/apestar.png" />
-                        <span>The Ape Star</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.cartuna.com/magical-girl-friendship-squad"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/mgfs.png" />
-                        <span>Magical Girl Friendship Squad</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.cartuna.com/loafy" class="production">
-                        <NuxtPicture src="/images/productions/loafy.png" />
-                        <span>Loafy</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="http://www.cube-creative.com/film/trangranimo"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/tangranimo.png" />
-                        <span>Tangranimo</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://blog.autourdeminuit.com/coming-soon/unicorn-wars/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/unicornwars.png"
-                        />
-                        <span>Unicorn Wars</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.miyu.fr/distribution/deux-oiseaux/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/deux_oiseaux.png"
-                        />
-                        <span>Deux Oiseaux</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.miyu.fr/production/en/blind-willow-sleeping-woman/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/blindwillow.png"
-                        />
-                        <span>Blind Willow, sleeping Woman</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.phantavision.com/film/filmpost/18/68#ad-image-0"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/pim_pom.png" />
-                        <span>Pim & Pom in Het Museum</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.elreinoinfantil.com/serie/1/la-granja-de-zenon"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/zenon.png" />
-                        <span>La Granja de Zenon</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://fr.wikipedia.org/wiki/Foot_2_rue"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/f2r.png" />
-                        <span>Foot 2 Rue</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://www.lezappingdupaf.com/2019/06/moi-a-ton-age-nouvelle-serie-d-animation-en-developpement-pour-france-televisions.html"
-                        class="production"
-                    >
-                        <NuxtPicture src="/images/productions/mat.png" />
-                        <span>Moi à Ton Âge</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://periple.fr/video/lepopee-temporelle/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/oggy-next-gen.png"
-                        />
-                        <span>Oggy Next Generation</span>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="https://xilam.com/media/oggy-et-les-cafards-next-gen/"
-                        class="production"
-                    >
-                        <NuxtPicture
-                            src="/images/productions/epopee-temporelle.png"
-                        />
-                        <span>Épopée temporelle</span>
-                    </a>
-                </li>
             </ul>
         </section>
     </div>
@@ -648,6 +142,261 @@ const productions = [
         picture: "carol-and-the-end-of-the-world",
         title: "Carol and the End of the World",
         url: "https://www.netflix.com/title/81044590",
+    },
+    {
+        picture: "les-gardes-chimeres",
+        title: "Les Gardes Chimères",
+        url: "https://www.monello.fr/series/les-gardes-chimeres",
+    },
+    {
+        picture: "fall-guys",
+        title: "Fall Guys",
+        url: "https://tetsuoanimation.com/work-detail/fall-guys-doraemon-cx/",
+    },
+    {
+        picture: "ufo-sweden",
+        title: "UFO Sweden",
+        url: "https://emberlight.se/project/ufo-sweden",
+    },
+    {
+        picture: "le-parfum-dirak",
+        title: "Le Parfum d'Irak",
+        url: "https://www.miyu.fr/production/le-parfum-dirak/",
+    },
+    {
+        picture: "anzu",
+        title: "Anzu",
+        url: "https://www.miyu.fr/production/anzu-chat-fantome/",
+    },
+    {
+        picture: "seven-bears",
+        title: "Seven Bears",
+        url: "https://fost.studio/portfolio/7-bears/",
+    },
+    {
+        picture: "splinter-cell",
+        title: "Splinter Cell",
+        url: "https://fost.studio/portfolio/splinter-cell/",
+    },
+    {
+        picture: "woolly-woolly",
+        title: "Woolly Woolly",
+        url: "https://www.unifrance.org/film/57590/woolly-woolly",
+    },
+    {
+        picture: "la-plus-precieuse-des-marchandises",
+        title: "La plus précieuse des marchandises",
+        url: "https://www.3point0studio.com/la-plus-precieuse-des-marchandises/",
+    },
+    {
+        picture: "pfffirates",
+        title: "Pfffirates",
+        url: "https://www.tf1.fr/tf1/pfffirates",
+    },
+    {
+        picture: "chicky",
+        title: "Chicky",
+        url: "https://www.france.tv/enfants/six-huit-ans/t-es-ou-chicky/",
+    },
+    {
+        picture: "christopher-at-sea",
+        title: "Christopher At Sea",
+        url: "https://www.miyu.fr/production/christopher-at-sea-2/",
+    },
+    {
+        picture: "linda-poulet",
+        title: "Linda veut du poulet",
+        url: "https://www.miyu.fr/production/linda-veut-du-poulet/",
+    },
+    {
+        picture: "twende",
+        title: "Twende",
+        url: "https://www.imdb.com/title/tt8780012/",
+    },
+    {
+        picture: "jasmine-and-jambo",
+        title: "Jasmine and Jambo",
+        url: "https://www.france.tv/enfants/trois-cinq-ans/jasmine-jambo/",
+    },
+    {
+        picture: "lancedur",
+        title: "Lancedur",
+        url: "https://www.ankama.com/fr/lance-dur",
+    },
+    {
+        picture: "totally-spies",
+        title: "Totally Spies",
+        url: "https://fr.sports.yahoo.com/news/totally-spies-saison-in%C3%A9dite-changement-123900978.html",
+    },
+    {
+        picture: "contes-herisson",
+        title: "Les contes du hérisson",
+        url: "https://www.parmilesluciolesfilms.fr/film/les-contes-du-herisson",
+    },
+    {
+        picture: "trois-contes",
+        title: "3 contes pour le plaisir",
+        url: "http://www.artemisproductions.com/fr/films/Trois_contes",
+    },
+    {
+        picture: "dad",
+        title: "Les Filles de Dad",
+        url: "http://www.dargaudmedia.com/fr/les-filles-de-dad.html",
+    },
+    {
+        picture: "stillwater",
+        title: "Stillwater",
+        url: "http://fost.studio/portfolio/stillwater/",
+    },
+    {
+        picture: "tobie-lolness",
+        title: "Tobie Lolness",
+        url: "http://fost.studio/portfolio/tobie-lolness/",
+    },
+    {
+        picture: "samsam",
+        title: "Sam Sam (S03)",
+        url: "http://fost.studio/portfolio/samsam-season-3/",
+    },
+    {
+        picture: "ernest-celestine",
+        title: "Ernest et Célestine (S02)",
+        url: "https://folivari.com/en/projet/ernest-celestine-la-collection-saison-2/",
+    },
+    {
+        picture: "cooptroop",
+        title: "The Coop Troop",
+        url: "https://www.technicoloranimationproductions.com/fr/production.php",
+    },
+    {
+        picture: "sprite-fright",
+        title: "Sprite Fright",
+        url: "https://cloud.blender.org/films/sprite-fright/",
+    },
+    {
+        picture: "moules-frites",
+        title: "Moules Frites",
+        url: "https://www.miyu.fr/production/en/mussels-and-fries/",
+    },
+    {
+        picture: "laserhawk",
+        title: "Captain Laserhawk: A Blood Dragon Remix",
+        url: "https://www.bobbypills.com/work/captainlaserhawk",
+    },
+    {
+        picture: "rabbids-invasion",
+        title: "Rabbids Invasion: Mission To Mars",
+        url: "https://rabbids.fandom.com/wiki/Rabbids_Invasion_Mission_To_Mars",
+    },
+    {
+        picture: "le-petit-nicolas",
+        title: "Le Petit Nicolas",
+        url: "http://www.filmfund.lu/fr/film-catalogue/films/le-petit-nicolas",
+    },
+    {
+        picture: "wakfu",
+        title: "Wakfu Season 4",
+        url: "https://www.kickstarter.com/projects/ankamaanimations/wakfu-the-animated-series-season-4",
+    },
+    {
+        picture: "mush_mush",
+        title: "Mush Mush and the Mushables",
+        url: "https://lacabaneproductions.com/portfolio/mush-mush-and-the-mushables/",
+    },
+    {
+        picture: "ldvc",
+        title: "La Vie de Château",
+        url: "https://www.miyu.fr/production/la-vie-de-chateau/",
+    },
+    {
+        picture: "degaulle",
+        title: "De Gaulle à la Plage",
+        url: "https://xilam.com/media/de-gaulle-a-la-plage/",
+    },
+    {
+        picture: "gus",
+        title: "Gus, Le Chevalier Minus",
+        url: "https://www.technicoloranimationproductions.com/fr/production.php",
+    },
+    {
+        picture: "princesse_dragon",
+        title: "Princesse Dragon",
+        url: "https://www.unifrance.org/film/49486/princesse-dragon",
+    },
+    {
+        picture: "non_non",
+        title: "Non Non",
+        url: "https://blog.autourdeminuit.com/production/non-non-retrecit/",
+    },
+    {
+        picture: "conni",
+        title: "Meine Freundin Conni - Secret of Mau, the Cat",
+        url: "http://traumhaus-studios.de/portfolio/meine_freundin_conni",
+    },
+    {
+        picture: "apestar",
+        title: "The Ape Star",
+        url: "https://leefilm.se/news-all/theapestar",
+    },
+    {
+        picture: "mgfs",
+        title: "Magical Girl Friendship Squad",
+        url: "https://www.cartuna.com/magical-girl-friendship-squad",
+    },
+    {
+        picture: "loafy",
+        title: "Loafy",
+        url: "https://www.cartuna.com/loafy",
+    },
+    {
+        picture: "tangranimo",
+        title: "Tangranimo",
+        url: "http://www.cube-creative.com/film/trangranimo",
+    },
+    {
+        picture: "unicornwars",
+        title: "Unicorn Wars",
+        url: "https://blog.autourdeminuit.com/coming-soon/unicorn-wars/",
+    },
+    {
+        picture: "deux_oiseaux",
+        title: "Deux Oiseaux",
+        url: "https://www.miyu.fr/distribution/deux-oiseaux/",
+    },
+    {
+        picture: "blindwillow",
+        title: "Blind Willow, sleeping Woman",
+        url: "https://www.miyu.fr/production/en/blind-willow-sleeping-woman/",
+    },
+    {
+        picture: "pim_pom",
+        title: "Pim & Pom in Het Museum",
+        url: "https://www.phantavision.com/film/filmpost/18/68#ad-image-0",
+    },
+    {
+        picture: "zenon",
+        title: "La Granja de Zenon",
+        url: "https://www.elreinoinfantil.com/serie/1/la-granja-de-zenon",
+    },
+    {
+        picture: "f2r",
+        title: "Foot 2 Rue",
+        url: "https://fr.wikipedia.org/wiki/Foot_2_rue",
+    },
+    {
+        picture: "mat",
+        title: "Moi à Ton Âge",
+        url: "https://www.lezappingdupaf.com/2019/06/moi-a-ton-age-nouvelle-serie-d-animation-en-developpement-pour-france-televisions.html",
+    },
+    {
+        picture: "oggy-next-gen",
+        title: "Oggy Next Generation",
+        url: "https://periple.fr/video/lepopee-temporelle/",
+    },
+    {
+        picture: "epopee-temporelle",
+        title: "Épopée temporelle",
+        url: "https://xilam.com/media/oggy-et-les-cafards-next-gen/",
     },
 ];
 

@@ -4,6 +4,7 @@
             <NuxtPicture
                 :src="'/images/productions/' + picture + '.png'"
                 format="webp"
+                width="400"
             />
             <span>{{ title }}</span>
         </a>
@@ -24,7 +25,7 @@ const props = defineProps({
         type: String,
         required: true,
     },
-});
+})
 </script>
 
 <style lang="stylus" scoped></style>

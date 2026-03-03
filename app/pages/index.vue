@@ -241,7 +241,6 @@
                             <div class="feature-img-wrapper">
                                 <NuxtPicture
                                     src="/images/screenshots/kitsu-todos-light.png"
-                                    width="450"
                                     alt=""
                                     format="webp"
                                 />
@@ -255,7 +254,6 @@
                             <div class="feature-img-wrapper">
                                 <NuxtPicture
                                     src="/images/screenshots/kitsu-schedule-light.png"
-                                    width="450"
                                     alt=""
                                     format="webp"
                                 />
@@ -269,7 +267,6 @@
                             <div class="feature-img-wrapper">
                                 <NuxtPicture
                                     src="/images/screenshots/kitsu-reports-light.png"
-                                    width="450"
                                     alt=""
                                     format="webp"
                                 />
@@ -283,8 +280,6 @@
                             <div class="feature-img-wrapper">
                                 <NuxtPicture
                                     src="/images/screenshots/kitsu-compare-light.png"
-                                    width="450"
-                                    v-if="featureTab === 'reviews'"
                                     alt=""
                                     format="webp"
                                 />
@@ -296,11 +291,9 @@
                             </p>
                             <div class="feature-img-wrapper">
                                 <NuxtPicture
-                                    src="/images/screenshots/kitsu-python-light.png"
-                                    width="450"
-                                    v-if="featureTab === 'api'"
-                                    alt=""
-                                    format="webp"
+                                  src="/images/screenshots/kitsu-python-light.png"
+                                  alt=""
+                                  format="webp"
                                 />
                             </div>
                         </div>
@@ -436,6 +429,7 @@
                                 src="/images/logo-cnc.png"
                                 alt="CNC"
                                 format="webp"
+                                width="180"
                             />
                         </a>
                     </li>
@@ -445,6 +439,7 @@
                                 src="/images/logo-epic-games.png"
                                 alt="Epic Games"
                                 format="webp"
+                                width="200"
                             />
                         </a>
                     </li>
@@ -454,6 +449,7 @@
                                 src="/images/studios/logo-blender-black.png"
                                 alt="Blender Studio"
                                 format="webp"
+                                width="250"
                             />
                         </a>
                     </li>
@@ -551,6 +547,13 @@ div.body
 
     .tab-list
         margin auto
+
+    .tabs
+        .tab-info
+            width 100%
+            img
+                border-radius 1em
+                box-shadow 0 0 5px 0 #CCD6CC
 
     .watch-button
         display none
@@ -679,6 +682,10 @@ div.body
 .supporter-list
   .flexrow-item
     flex: 1
+
+.feature-img-wrapper
+  display flex
+  justify-content center
 
 .feature-img-wrapper img
   border: 10px solid #EEEEEE11
