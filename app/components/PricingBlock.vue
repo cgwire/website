@@ -38,7 +38,7 @@
   </div>
   <div class="pricing-cta">
     <a
-      :href="`https://account.cg-wire.com/signup`"
+      :href="`https://account.cg-wire.com/signup?locale=${$i18n.locale}`"
       class="button is-outlined"
     >
       {{ $t('pricing button cta') }}

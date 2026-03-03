@@ -274,13 +274,13 @@
                 <div class="navbar-end">
                     <a
                         class="navbar-item top signin"
-                        :href="`https://account.cg-wire.com/signin`"
+                        :href="`https://account.cg-wire.com/signin?locale=${$i18n.locale}`"
                     >
                         {{ $t("header sign in") }}
                     </a>
                     <a
                         class="navbar-item signup"
-                        :href="`https://account.cg-wire.com/signup`"
+                        :href="`https://account.cg-wire.com/signup?locale=${$i18n.locale}`"
                     >
                         {{ $t("header sign up") }}
                     </a>
