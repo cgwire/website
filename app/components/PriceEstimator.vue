@@ -13,7 +13,6 @@
           label="pricing calculator users"
           :min="1"
           :max="300"
-          @update:modelValue="updatePrice"
           v-model="nbUsers"
         />
 
@@ -21,11 +20,9 @@
           label="pricing calculator months"
           :min="1"
           :max="36"
-          @update:modelValue="updateMonths"
           v-model="nbMonths"
         />
       </div>
-
     </div>
 
     <div class="pricing-table">
@@ -66,17 +63,14 @@ const price = ref(1500)
 const discount = ref(30)
 const perUserPrice = ref(30)
 
-
 const updatePrice = () => {
   const users = parseInt(nbUsers.value)
   const months = parseInt(nbMonths.value)
   let discountedPrice = 25
-  if (users > 20) {
-    discountedPrice = 35
-  } else if (users > 100) {
+  if (users > 100) {
     discountedPrice = 44
-  } else {
-    discountedPrice = 25
+  } else if (users > 20) {
+    discountedPrice = 35
   }
 
   discount.value = 0
@@ -91,11 +85,9 @@ const updatePrice = () => {
     }
   } else if (months >= 10 && months < 21) {
     discount.value = 20
-    console.log(users)
     if (users > 20 && users <= 100) {
       discountedPrice = 30
     } else if (users > 100) {
-      console.log('here')
       discountedPrice = 35
     } else {
       discountedPrice = 20
@@ -124,12 +116,10 @@ const updatePrice = () => {
   price.value = perUserPrice.value * users
 }
 
-const updateMonths = () => {
-  console.log(nbMonths.value)
-}
-
 watch(nbUsers, updatePrice)
 watch(nbMonths, updatePrice)
+
+updatePrice()
 </script>
 
 <style scoped>
@@ -156,51 +146,6 @@ watch(nbMonths, updatePrice)
   align-items: center;
   gap: 1rem;
   margin: 1rem 0;
-}
-
-.flexrow-item {
-  flex: 1;
-}
-
-.users {
-  min-width: 3rem;
-  text-align: center;
-  font-weight: bold;
-}
-
-.columns {
-  display: flex;
-  gap: 2rem;
-  margin: 1rem 0;
-}
-
-.column {
-  flex: 1;
-}
-
-.mt2 {
-  margin-top: 2rem;
-}
-
-.price {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4CAF50;
-}
-
-.prices {
-  align-items: end;
-  border-radius: 20px;
-  border: 2px solid #ddd;
-  padding: 1em 2em;
-  margin-left: 2rem;
-  gap: 1rem;
-  width: 400px;
-}
-
-.label {
-  font-weight: 500;
-  margin-bottom: 0.5rem;
 }
 
 .settings {
