@@ -5,7 +5,7 @@
       type="checkbox"
       @change="updateValue"
       :checked="modelValue"
-    >
+    />
     <label class="label">
       {{ label }}
     </label>
@@ -15,7 +15,7 @@
 <script setup>
 const props = defineProps({
   label: String,
-  modelValue: Boolean,
+  modelValue: Boolean
 })
 const emit = defineEmits(['update:modelValue'])
 

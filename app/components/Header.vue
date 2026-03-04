@@ -1,331 +1,299 @@
 <template>
-    <header>
-        <nav class="navbar" role="navigation" arial-label="dropdown navigation">
-            <div class="navbar-brand">
-                <nuxt-link class="navbar-item" :to="$localePath('index')">
-                    <img
-                        class="main-logo"
-                        src="~/assets/images/logo.png"
-                        alt="CGWire logo"
-                        width="100"
-                    />
-                </nuxt-link>
-                <div
-                    @click="() => toggleNav()"
-                    class="burger navbar-burger"
-                    data-target="top-menu"
-                >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+  <header>
+    <nav class="navbar" role="navigation" arial-label="dropdown navigation">
+      <div class="navbar-brand">
+        <nuxt-link class="navbar-item" :to="$localePath('index')">
+          <img
+            class="main-logo"
+            src="~/assets/images/logo.png"
+            alt="CGWire logo"
+            width="100"
+          />
+        </nuxt-link>
+        <div
+          @click="() => toggleNav()"
+          class="burger navbar-burger"
+          data-target="top-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div
+        :class="{
+          'navbar-menu': true,
+          'is-active': navOn
+        }"
+        id="top-menu"
+      >
+        <div class="navbar-start flexrow locales">
+          <nuxt-link
+            class="flexrow-item navbar-lang-item"
+            :to="$switchLocalePath('en')"
+          >
+            EN
+          </nuxt-link>
+          <nuxt-link
+            class="flexrow-item navbar-lang-item"
+            :to="$switchLocalePath('fr')"
+          >
+            FR
+          </nuxt-link>
+          <nuxt-link
+            class="flexrow-item navbar-lang-item"
+            :to="$switchLocalePath('ja')"
+          >
+            JN
+          </nuxt-link>
+          <a
+            href="https://discord.gg/kitsu-community"
+            target="_blank"
+            class="navbar-item top discord desktop"
+          >
+            <span class="navbar-item-title">
+              <img width="24" src="~/assets/images/discord.svg" alt="Discord" />
+            </span>
+          </a>
+        </div>
+
+        <nuxt-link
+          :class="{
+            'navbar-item': true,
+            kitsu: true,
+            top: true,
+            active: isActivePage(['kitsu'])
+          }"
+          :to="$localePath('kitsu')"
+        >
+          <span class="navbar-item-title"> Kitsu </span>
+        </nuxt-link>
+
+        <div
+          :class="{
+            'navbar-item': true,
+            'has-dropdown': true,
+            'is-hoverable': true,
+            active: isActivePage([
+              'team-collaboration',
+              'production-tracker',
+              'review-engine',
+              'casting-management',
+              'studio-database',
+              'software-integrations',
+              'top-notch-support',
+              'elite-hosting',
+              'tailor-made-architecture'
+            ])
+          }"
+          @mouseover="solutionMenuOn = true"
+          @mouseout="solutionMenuOn = false"
+        >
+          <a class="navbar-link" @click="solutionMenuOn = !solutionMenuOn">
+            <span class="navbar-item-title">
+              {{ $t('header title solutions') }}
+            </span>
+          </a>
+          <div
+            :class="{
+              'navbar-dropdown': true,
+              hidden: !solutionMenuOn
+            }"
+          >
+            <div class="columns">
+              <div class="column">
+                <SubNavElement
+                  path-object="features-team-collaboration"
+                  element-key="team-collaboration"
+                />
+                <SubNavElement
+                  path-object="features-production-tracker"
+                  element-key="production-tracker"
+                />
+                <SubNavElement
+                  path-object="features-review-engine"
+                  element-key="review-engine"
+                />
+                <SubNavElement
+                  path-object="features-casting-management"
+                  element-key="casting-management"
+                />
+                <SubNavElement
+                  path-object="features-studio-database"
+                  element-key="studio-database"
+                />
+                <SubNavElement element-key="software-integrations" />
+              </div>
+              <div class="column hosting-solutions">
+                <SubNavElement
+                  path-object="features-top-notch-support"
+                  element-key="top-notch-support"
+                />
+                <SubNavElement
+                  path-object="features-elite-hosting"
+                  element-key="elite-hosting"
+                />
+                <SubNavElement
+                  path-object="features-tailor-made-architecture"
+                  element-key="tailor-made-architecture"
+                />
+              </div>
             </div>
-            <div
-                :class="{
-                    'navbar-menu': true,
-                    'is-active': navOn,
-                }"
-                id="top-menu"
-            >
-                <div class="navbar-start flexrow locales">
-                    <nuxt-link
-                        class="flexrow-item navbar-lang-item"
-                        :to="$switchLocalePath('en')"
-                    >
-                        EN
-                    </nuxt-link>
-                    <nuxt-link
-                        class="flexrow-item navbar-lang-item"
-                        :to="$switchLocalePath('fr')"
-                    >
-                        FR
-                    </nuxt-link>
-                    <nuxt-link
-                        class="flexrow-item navbar-lang-item"
-                        :to="$switchLocalePath('ja')"
-                    >
-                        JN
-                    </nuxt-link>
-                    <a
-                        href="https://discord.gg/kitsu-community"
-                        target="_blank"
-                        class="navbar-item top discord desktop"
-                    >
-                        <span class="navbar-item-title">
-                            <img
-                                width="24"
-                                src="~/assets/images/discord.svg"
-                                alt="Discord"
-                            />
-                        </span>
-                    </a>
-                </div>
+          </div>
+        </div>
 
-                <nuxt-link
-                    :class="{
-                        'navbar-item': true,
-                        kitsu: true,
-                        top: true,
-                        active: isActivePage(['kitsu']),
-                    }"
-                    :to="$localePath('kitsu')"
-                >
-                    <span class="navbar-item-title"> Kitsu </span>
-                </nuxt-link>
+        <div
+          :class="{
+            'navbar-item': true,
+            'has-dropdown': true,
+            'is-hoverable': true,
+            active: isActivePage(['studios', 'shorts', 'tvshows', 'schools'])
+          }"
+          @mouseover="useCaseMenuOn = true"
+          @mouseout="useCaseMenuOn = false"
+        >
+          <a class="navbar-link" @click="useCaseMenuOn = !useCaseMenuOn">
+            <span class="navbar-item-title">
+              {{ $t('header title usecase') }}
+            </span>
+          </a>
 
-                <div
-                    :class="{
-                        'navbar-item': true,
-                        'has-dropdown': true,
-                        'is-hoverable': true,
-                        active: isActivePage([
-                            'team-collaboration',
-                            'production-tracker',
-                            'review-engine',
-                            'casting-management',
-                            'studio-database',
-                            'software-integrations',
-                            'top-notch-support',
-                            'elite-hosting',
-                            'tailor-made-architecture',
-                        ]),
-                    }"
-                    @mouseover="solutionMenuOn = true"
-                    @mouseout="solutionMenuOn = false"
-                >
-                    <a
-                        class="navbar-link"
-                        @click="solutionMenuOn = !solutionMenuOn"
-                    >
-                        <span class="navbar-item-title">
-                            {{ $t("header title solutions") }}
-                        </span>
-                    </a>
-                    <div
-                        :class="{
-                            'navbar-dropdown': true,
-                            hidden: !solutionMenuOn,
-                        }"
-                    >
-                        <div class="columns">
-                            <div class="column">
-                                <SubNavElement
-                                    pathObject="features-team-collaboration"
-                                    elementKey="team-collaboration"
-                                />
-                                <SubNavElement
-                                    pathObject="features-production-tracker"
-                                    elementKey="production-tracker"
-                                />
-                                <SubNavElement
-                                    pathObject="features-review-engine"
-                                    elementKey="review-engine"
-                                />
-                                <SubNavElement
-                                    pathObject="features-casting-management"
-                                    elementKey="casting-management"
-                                />
-                                <SubNavElement
-                                    pathObject="features-studio-database"
-                                    elementKey="studio-database"
-                                />
-                                <SubNavElement
-                                    elementKey="software-integrations"
-                                />
-                            </div>
-                            <div class="column hosting-solutions">
-                                <SubNavElement
-                                    pathObject="features-top-notch-support"
-                                    elementKey="top-notch-support"
-                                />
-                                <SubNavElement
-                                    pathObject="features-elite-hosting"
-                                    elementKey="elite-hosting"
-                                />
-                                <SubNavElement
-                                    pathObject="features-tailor-made-architecture"
-                                    elementKey="tailor-made-architecture"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div
+            :class="{
+              'navbar-dropdown': true,
+              hidden: !useCaseMenuOn
+            }"
+          >
+            <SubNavElement element-key="studios" />
+            <SubNavElement element-key="customer-stories" />
+            <hr />
+            <SubNavElement path-object="for-tvshows" element-key="tvshows" />
+            <SubNavElement
+              path-object="for-feature-films"
+              element-key="feature-films"
+            />
+            <SubNavElement path-object="for-shorts" element-key="shorts" />
+            <SubNavElement path-object="for-schools" element-key="schools" />
+            <SubNavElement
+              path-object="for-video-games"
+              element-key="video-games"
+            />
+          </div>
+        </div>
 
-                <div
-                    :class="{
-                        'navbar-item': true,
-                        'has-dropdown': true,
-                        'is-hoverable': true,
-                        active: isActivePage([
-                            'studios',
-                            'shorts',
-                            'tvshows',
-                            'schools',
-                        ]),
-                    }"
-                    @mouseover="useCaseMenuOn = true"
-                    @mouseout="useCaseMenuOn = false"
-                >
-                    <a
-                        class="navbar-link"
-                        @click="useCaseMenuOn = !useCaseMenuOn"
-                    >
-                        <span class="navbar-item-title">
-                            {{ $t("header title usecase") }}
-                        </span>
-                    </a>
+        <div
+          :class="{
+            'navbar-item': true,
+            'has-dropdown': true,
+            'is-hoverable': true,
+            active: isActivePage(['community', 'spreadsheets'])
+          }"
+          @mouseover="resourceMenuOn = true"
+          @mouseout="resourceMenuOn = false"
+        >
+          <a class="navbar-link" @click="resourceMenuOn = !resourceMenuOn">
+            <span class="navbar-item-title">
+              {{ $t('header title resources') }}
+            </span>
+          </a>
 
-                    <div
-                        :class="{
-                            'navbar-dropdown': true,
-                            hidden: !useCaseMenuOn,
-                        }"
-                    >
-                        <SubNavElement elementKey="studios" />
-                        <SubNavElement elementKey="customer-stories" />
-                        <hr />
-                        <SubNavElement
-                            pathObject="for-tvshows"
-                            elementKey="tvshows"
-                        />
-                        <SubNavElement
-                            pathObject="for-feature-films"
-                            elementKey="feature-films"
-                        />
-                        <SubNavElement
-                            pathObject="for-shorts"
-                            elementKey="shorts"
-                        />
-                        <SubNavElement
-                            pathObject="for-schools"
-                            elementKey="schools"
-                        />
-                        <SubNavElement
-                            pathObject="for-video-games"
-                            elementKey="video-games"
-                        />
-                    </div>
-                </div>
+          <div
+            :class="{
+              'navbar-dropdown': true,
+              hidden: !resourceMenuOn
+            }"
+          >
+            <SubNavElement element-key="blog" link="https://blog.cg-wire.com" />
+            <SubNavElement
+              element-key="tutorials"
+              link="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnQgZ4TCrAt7smxesaDo29"
+            />
+            <SubNavElement
+              element-key="documentation"
+              link="https://kitsu.cg-wire.com"
+            />
+            <SubNavElement
+              element-key="changelog"
+              link="https://cgwire.canny.io/changelog"
+            />
+            <SubNavElement
+              element-key="conferences"
+              link="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnJK6wKf2GIu964KsbqCqJ"
+              v-if="$i18n.locale === 'fr'"
+            />
+            <SubNavElement element-key="community" />
+            <SubNavElement element-key="spreadsheets" />
+          </div>
+        </div>
 
-                <div
-                    :class="{
-                        'navbar-item': true,
-                        'has-dropdown': true,
-                        'is-hoverable': true,
-                        active: isActivePage(['community', 'spreadsheets']),
-                    }"
-                    @mouseover="resourceMenuOn = true"
-                    @mouseout="resourceMenuOn = false"
-                >
-                    <a
-                        class="navbar-link"
-                        @click="resourceMenuOn = !resourceMenuOn"
-                    >
-                        <span class="navbar-item-title">
-                            {{ $t("header title resources") }}
-                        </span>
-                    </a>
+        <nuxt-link
+          :class="{
+            'navbar-item': true,
+            top: true,
+            active: isActivePage(['pricing'])
+          }"
+          :to="$localePath('pricing')"
+        >
+          <span class="navbar-item-title">
+            {{ $t('header title pricing') }}
+          </span>
+        </nuxt-link>
 
-                    <div
-                        :class="{
-                            'navbar-dropdown': true,
-                            hidden: !resourceMenuOn,
-                        }"
-                    >
-                        <SubNavElement
-                            element-key="blog"
-                            link="https://blog.cg-wire.com"
-                        />
-                        <SubNavElement
-                            element-key="tutorials"
-                            link="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnQgZ4TCrAt7smxesaDo29"
-                        />
-                        <SubNavElement
-                            element-key="documentation"
-                            link="https://kitsu.cg-wire.com"
-                        />
-                        <SubNavElement
-                            element-key="changelog"
-                            link="https://cgwire.canny.io/changelog"
-                        />
-                        <SubNavElement
-                            element-key="conferences"
-                            link="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnJK6wKf2GIu964KsbqCqJ"
-                            v-if="$i18n.locale === 'fr'"
-                        />
-                        <SubNavElement element-key="community" />
-                        <SubNavElement element-key="spreadsheets" />
-                    </div>
-                </div>
-
-                <nuxt-link
-                    :class="{
-                        'navbar-item': true,
-                        top: true,
-                        active: isActivePage(['pricing']),
-                    }"
-                    :to="$localePath('pricing')"
-                >
-                    <span class="navbar-item-title">
-                        {{ $t("header title pricing") }}
-                    </span>
-                </nuxt-link>
-
-                <div class="navbar-end">
-                    <a
-                        class="navbar-item top signin"
-                        :href="`https://account.cg-wire.com/signin?locale=${$i18n.locale}`"
-                    >
-                        {{ $t("header sign in") }}
-                    </a>
-                    <a
-                        class="navbar-item signup"
-                        :href="`https://account.cg-wire.com/signup?locale=${$i18n.locale}`"
-                    >
-                        {{ $t("header sign up") }}
-                    </a>
-                </div>
-            </div>
-        </nav>
-        <!--div class="summit-banner" v-if="!route.name.startsWith('kitsu-summit')">
+        <div class="navbar-end">
+          <a
+            class="navbar-item top signin"
+            :href="`https://account.cg-wire.com/signin?locale=${$i18n.locale}`"
+          >
+            {{ $t('header sign in') }}
+          </a>
+          <a
+            class="navbar-item signup"
+            :href="`https://account.cg-wire.com/signup?locale=${$i18n.locale}`"
+          >
+            {{ $t('header sign up') }}
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--div class="summit-banner" v-if="!route.name.startsWith('kitsu-summit')">
     <a href="https://cg-wire.com/kitsu-summit" class="has-text-centered summit-link">
-      Join the Kitsu Summit 2026 on February 12th!
+      Join the Kitsu Summit 2026 on February 12th!
     </a>
   </div-->
-    </header>
-    <div class="header-padding"></div>
+  </header>
+  <div class="header-padding"></div>
 </template>
 
 <script setup>
-import { ref, watch } from "vue";
-import { useRoute } from "vue-router";
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 
-const name = "Header";
+const name = 'Header'
 
-let navOn = ref(false);
-let solutionMenuOn = ref(false);
-let useCaseMenuOn = ref(false);
-let resourceMenuOn = ref(false);
+const navOn = ref(false)
+const solutionMenuOn = ref(false)
+const useCaseMenuOn = ref(false)
+const resourceMenuOn = ref(false)
 
 function isActivePage(pages) {
-    const route = useRoute();
-    return pages.includes(route.name.substring(0, route.name.length - 5));
+  const route = useRoute()
+  return pages.includes(route.name.substring(0, route.name.length - 5))
 }
 
 const toggleNav = async () => {
-    navOn.value = !navOn.value;
-};
+  navOn.value = !navOn.value
+}
 
-const route = useRoute();
+const route = useRoute()
 watch(
-    () => route.path,
-    () => {
-        navOn.value = false;
-        solutionMenuOn.value = false;
-        useCaseMenuOn.value = false;
-        resourceMenuOn.value = false;
-    },
-);
+  () => route.path,
+  () => {
+    navOn.value = false
+    solutionMenuOn.value = false
+    useCaseMenuOn.value = false
+    resourceMenuOn.value = false
+  }
+)
 </script>
 
 <style lang="stylus" scoped>

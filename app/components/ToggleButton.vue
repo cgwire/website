@@ -56,7 +56,7 @@ defineEmits(['update:modelValue'])
 }
 
 .toggle-button.is-active {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .toggle-slider {

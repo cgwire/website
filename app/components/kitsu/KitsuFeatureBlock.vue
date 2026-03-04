@@ -1,37 +1,37 @@
 <template>
-    <div
-        class="flexrow kitsu-feature-block"
-        :class="direction === 'right' ? 'flexrow-reverse' : ''"
-    >
-        <div class="kitsu-feature-block-content">
-            <h1>
-                {{ $t(`kitsu feature ${featureKey} title`) }}
-            </h1>
-            <p>
-                {{ $t(`kitsu feature ${featureKey} content`) }}
-            </p>
-        </div>
-        <div>
-            <div class="feature-img-wrapper" :class="color">
-                <NuxtPicture
-                    :src="'/images/kitsu/' + featureKey + '.png'"
-                    alt=""
-                    format="webp"
-                />
-            </div>
-        </div>
+  <div
+    class="flexrow kitsu-feature-block"
+    :class="direction === 'right' ? 'flexrow-reverse' : ''"
+  >
+    <div class="kitsu-feature-block-content">
+      <h1>
+        {{ $t(`kitsu feature ${featureKey} title`) }}
+      </h1>
+      <p>
+        {{ $t(`kitsu feature ${featureKey} content`) }}
+      </p>
     </div>
+    <div>
+      <div class="feature-img-wrapper" :class="color">
+        <NuxtPicture
+          :src="'/images/kitsu/' + featureKey + '.png'"
+          alt=""
+          format="webp"
+        />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
 const props = defineProps({
-    featureKey: String,
-    direction: String,
-    color: {
-        type: String,
-        default: "green",
-    },
-});
+  featureKey: String,
+  direction: String,
+  color: {
+    type: String,
+    default: 'green'
+  }
+})
 </script>
 
 <style scoped lang="stylus">

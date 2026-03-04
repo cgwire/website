@@ -18,7 +18,7 @@
     <CustomerLogoBlock
       link="https://yuga.com/"
       element-key="yuga-labs-invert"
-      name="Yuga Labs"
+      name="Yuga Labs"
     />
     <CustomerLogoBlock
       link="https://thetrailerfarm.com/"

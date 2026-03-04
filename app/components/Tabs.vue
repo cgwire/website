@@ -1,5 +1,5 @@
 <template>
-<div class="tabs">
+  <div class="tabs">
     <button
       class="btn"
       :class="{
@@ -16,22 +16,22 @@
 </template>
 
 <script setup>
-const emit = defineEmits(['toggleTab'])
+const emit = defineEmits(['toggle-tab'])
 
 defineProps({
   currentTab: {
     type: String,
-    default: false,
+    default: ''
   },
   tabs: {
     type: Array,
-    default: () => [],
-  },
+    default: () => []
+  }
 })
 
-const toggleTab = (tab) => {
-  emit('toggleTab', tab);
-};
+const toggleTab = tab => {
+  emit('toggle-tab', tab)
+}
 </script>
 
 <style lang="stylus" scoped>

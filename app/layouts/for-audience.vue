@@ -1,192 +1,187 @@
 <template>
-    <div v-if="audience">
-        <section class="section content use-case">
-            <h2>
-                <span class="section-subtitle">
-                    {{ t(audience.hero.subtitleKey) }}
-                </span>
-                <span class="section-title">
-                    {{ t(audience.hero.titleKey) }}
-                </span>
-            </h2>
+  <div v-if="audiencePage">
+    <section class="section content use-case">
+      <h2>
+        <span class="section-subtitle">
+          {{ t(audiencePage.hero.subtitleKey) }}
+        </span>
+        <span class="section-title">
+          {{ t(audiencePage.hero.titleKey) }}
+        </span>
+      </h2>
 
-            <div
-                class="js-tabs"
-                data-existing-hx="h3"
-                data-tabs-prefix-class="example-tabs"
+      <div
+        class="js-tabs"
+        data-existing-hx="h3"
+        data-tabs-prefix-class="example-tabs"
+      >
+        <ul class="js-tablist">
+          <li
+            v-for="item in audiencePage.panels"
+            :key="item.id"
+            class="js-tablist__item"
+          >
+            <a
+              class="js-tablist__link"
+              :aria-selected="panel === item.id"
+              @click="selectPanel(item.id)"
             >
-                <ul class="js-tablist">
-                    <li
-                        v-for="item in audience.panels"
-                        :key="item.id"
-                        class="js-tablist__item"
-                    >
-                        <a
-                            class="js-tablist__link"
-                            :aria-selected="panel === item.id"
-                            @click="selectPanel(item.id)"
-                        >
-                            <NuxtPicture
-                                :src="`/images/avatars/${item.avatar}`"
-                                alt=""
-                            />
-                            {{ t(item.titleKey) }}
-                        </a>
-                    </li>
-                </ul>
+              <NuxtPicture :src="`/images/avatars/${item.avatar}`" alt="" />
+              {{ t(item.titleKey) }}
+            </a>
+          </li>
+        </ul>
 
-                <div v-for="tab in audience.panels" :key="tab.id">
-                    <div class="js-tabcontent" v-if="panel === tab.id">
-                        <h3>{{ t(tab.titleKey) }}</h3>
+        <div v-for="tab in audiencePage.panels" :key="tab.id">
+          <div class="js-tabcontent" v-if="panel === tab.id">
+            <h3>{{ t(tab.titleKey) }}</h3>
 
-                        <p v-for="desc in tab.descriptionKeys" :key="desc">
-                            {{ t(desc) }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="quote">
-            <section>
-                <blockquote class="quote-text">
-                    <p>
-                        {{ t(audience.quote.textKey) }}
-                    </p>
-                    <footer class="quote-author">
-                        <NuxtPicture
-                            class="quote-avatar"
-                            :src="
-                                '/images/testimonials/' + audience.quote.avatar
-                            "
-                        />
-                        {{ t(audience.quote.authorKey) }}
-                    </footer>
-                </blockquote>
-            </section>
-        </div>
-
-        <section class="section">
-            <h2 class="title">
-                {{ t(audience.reasons.titleKey) }}
-            </h2>
-
-            <ul class="check-list">
-                <li v-for="reason in audience.reasons.items" :key="reason">
-                    {{ t(reason) }}
-                </li>
-            </ul>
-
-            <p>
-                <a
-                    class="button button--alt is-large"
-                    :href="audience.reasons.ctaUrl"
-                >
-                    {{ t(audience.reasons.ctaKey) }}
-                </a>
+            <p v-for="desc in tab.descriptionKeys" :key="desc">
+              {{ t(desc) }}
             </p>
-        </section>
-
-        <section class="section">
-            <ul class="customers">
-                <CustomerLogoBlock
-                    v-for="studio in audience.studios"
-                    :key="studio.elementKey"
-                    :name="studio.name"
-                    :element-key="studio.elementKey"
-                    :link="studio.link"
-                />
-            </ul>
-        </section>
-
-        <div class="video">
-            <section class="section">
-                <div class="flexrow">
-                    <div class="flex-item">
-                        <iframe
-                            :src="`https://player.vimeo.com/video/${audience.video.vimeoId}`"
-                            width="640"
-                            height="360"
-                            frameborder="0"
-                            allow="autoplay; fullscreen"
-                            allowfullscreen
-                            v-if="audience.video.vimeoId"
-                        />
-                        <iframe
-                            style="border-radius: 20px"
-                            width="640"
-                            height="480"
-                            :src="`https://www.youtube.com/embed/${audience.video.youtubeId}`"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="
-                                accelerometer;
-                                autoplay;
-                                clipboard-write;
-                                encrypted-media;
-                                gyroscope;
-                                picture-in-picture;
-                                web-share;
-                            "
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen
-                            v-else
-                        />
-                    </div>
-
-                    <div class="flex-item video-text">
-                        <p>
-                            {{ t("usecase demo") }}
-                            <a :href="audience.video.partnerUrl">
-                                {{ audience.video.partnerName }}
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </section>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <Trial />
+    <div class="quote">
+      <section>
+        <blockquote class="quote-text">
+          <p>
+            {{ t(audiencePage.quote.textKey) }}
+          </p>
+          <footer class="quote-author">
+            <NuxtPicture
+              class="quote-avatar"
+              :src="'/images/testimonials/' + audiencePage.quote.avatar"
+            />
+            {{ t(audiencePage.quote.authorKey) }}
+          </footer>
+        </blockquote>
+      </section>
     </div>
+
+    <section class="section">
+      <h2 class="title">
+        {{ t(audiencePage.reasons.titleKey) }}
+      </h2>
+
+      <ul class="check-list">
+        <li v-for="reason in audiencePage.reasons.items" :key="reason">
+          {{ t(reason) }}
+        </li>
+      </ul>
+
+      <p>
+        <a
+          class="button button--alt is-large"
+          :href="audiencePage.reasons.ctaUrl"
+        >
+          {{ t(audiencePage.reasons.ctaKey) }}
+        </a>
+      </p>
+    </section>
+
+    <section class="section">
+      <ul class="customers">
+        <CustomerLogoBlock
+          v-for="studio in audiencePage.studios"
+          :key="studio.elementKey"
+          :name="studio.name"
+          :element-key="studio.elementKey"
+          :link="studio.link"
+        />
+      </ul>
+    </section>
+
+    <div class="video">
+      <section class="section">
+        <div class="flexrow">
+          <div class="flex-item">
+            <iframe
+              :src="`https://player.vimeo.com/video/${audiencePage.video.vimeoId}`"
+              width="640"
+              height="360"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+              v-if="audiencePage.video.vimeoId"
+            />
+            <iframe
+              style="border-radius: 20px"
+              width="640"
+              height="480"
+              :src="`https://www.youtube.com/embed/${audiencePage.video.youtubeId}`"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              v-else
+            />
+          </div>
+
+          <div class="flex-item video-text">
+            <p>
+              {{ t('usecase demo') }}
+              <a :href="audiencePage.video.partnerUrl">
+                {{ audiencePage.video.partnerName }}
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <Trial />
+  </div>
 </template>
 
 <script setup>
-const route = useRoute();
-const { t, locale } = useI18n();
+const route = useRoute()
+const { t } = useI18n()
 
 const props = defineProps({
-    audience: {
-        type: String,
-        required: true,
-    },
-});
+  audience: {
+    type: String,
+    required: true
+  }
+})
 
-const slug = `for-${props.audience}`;
+const slug = `for-${props.audience}`
 
 const { data } = await useAsyncData(slug, () =>
-    queryCollection("pages").path(`/pages/audiences/${slug}`).first(),
-);
-const audience = data.value.meta;
+  queryCollection('pages').path(`/pages/audiences/${slug}`).first()
+)
+const audiencePage = data.value.meta
 
 useHead(() => ({
-    title: `CGWire | Kitsu / ${t(audience.i18n.titleKey)}`,
-    meta: buildPageMeta(
-        t,
-        audience.i18n.metaTitleKey,
-        audience.i18n.metaDescriptionKey,
-        route.params.audience,
-    ),
-}));
+  title: `CGWire | Kitsu / ${t(audiencePage.i18n.titleKey)}`,
+  meta: buildPageMeta(
+    t,
+    audiencePage.i18n.metaTitleKey,
+    audiencePage.i18n.metaDescriptionKey,
+    route.params.audience
+  )
+}))
 
-const panel = ref(null);
+const panel = ref(null)
 
 watchEffect(() => {
-    if (audience.panels?.length) {
-        panel.value = audience.panels[0].id;
-    }
-});
+  if (audiencePage.panels?.length) {
+    panel.value = audiencePage.panels[0].id
+  }
+})
 
 function selectPanel(section) {
-    panel.value = section;
+  panel.value = section
 }
 </script>

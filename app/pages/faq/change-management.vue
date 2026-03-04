@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout name="faq" slug="change-management">
-        <NuxtPage />
-    </NuxtLayout>
+  <NuxtLayout name="faq" slug="change-management">
+    <NuxtPage />
+  </NuxtLayout>
 </template>

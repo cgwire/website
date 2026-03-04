@@ -181,13 +181,13 @@ updatePrice()
 .pricing-row.total {
   margin-top: 0.5rem;
   padding-top: 1rem;
-  border-top: 2px solid #4CAF50;
+  border-top: 2px solid #4caf50;
 }
 
 .pricing-row.total .pricing-label,
 .pricing-row.total .pricing-value {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #4CAF50;
+  color: #4caf50;
 }
 </style>

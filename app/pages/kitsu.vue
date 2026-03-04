@@ -2,9 +2,9 @@
   <div class="kitsu-page content">
     <div class="kitsu-header flexrow">
       <div class="main-title">
-        <span>{{ $t("kitsu title") }}</span>
+        <span>{{ $t('kitsu title') }}</span>
         <div class="kitsu-explanation">
-          {{ $t("kitsu description") }}
+          {{ $t('kitsu description') }}
         </div>
       </div>
     </div>
@@ -15,9 +15,9 @@
 
     <div style="position: fixed; top: 120px; left: 0; right: 0; z-index: 1000">
       <Tabs
-        :currentTab="currentTab"
+        :current-tab="currentTab"
         :tabs="['2D', '3D', 'VFX', 'Games', 'Schools']"
-        @toggleTab="toggleTab"
+        @toggle-tab="toggleTab"
       />
     </div>
 
@@ -66,13 +66,13 @@
 
       <div data-aos="fade-up">
         <div class="section-subtitle has-text-centered">
-          {{ $t("kitsu services subtitle") }}
+          {{ $t('kitsu services subtitle') }}
         </div>
         <h2 class="section-title has-text-centered">
-          {{ $t("kitsu services title") }}
+          {{ $t('kitsu services title') }}
         </h2>
         <div class="section-explanation">
-          {{ $t("kitsu services description") }}
+          {{ $t('kitsu services description') }}
         </div>
       </div>
 
@@ -109,10 +109,7 @@
 
       <!-- faq -->
 
-      <div
-        data-aos="fade-up"
-        v-if="['2D', '3D', 'VFX'].includes(currentTab)"
-      >
+      <div data-aos="fade-up" v-if="['2D', '3D', 'VFX'].includes(currentTab)">
         <TextBlock
           :subtitle="$t('kitsu stories subtitle')"
           :title="$t('kitsu stories title')"
@@ -178,20 +175,20 @@
 </template>
 
 <script setup>
-const name = "Kitsu";
-const { t } = useI18n();
-const router = useRouter();
-const route = useRoute();
+const name = 'Kitsu'
+const { t } = useI18n()
+const router = useRouter()
+const route = useRoute()
 
 useHead({
-  title: "CGWire | Kitsu",
+  title: 'CGWire | Kitsu',
   meta: buildPageMeta(
     t,
-    "kitsu title",
-    "kitsu description",
-    "kitsu",
-    "teaser.d579992c.png"
-  ),
+    'kitsu title',
+    'kitsu description',
+    'kitsu',
+    'teaser.d579992c.png'
+  )
 })
 
 onMounted(() => {
@@ -202,8 +199,8 @@ onMounted(() => {
   }
 })
 
-const currentTab = ref("2D")
-const toggleTab = (tab) => {
+const currentTab = ref('2D')
+const toggleTab = tab => {
   currentTab.value = tab
   router.push({ query: { tab } })
 }

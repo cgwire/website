@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout name="features" slug="review-engine">
-        <NuxtPage />
-    </NuxtLayout>
+  <NuxtLayout name="features" slug="review-engine">
+    <NuxtPage />
+  </NuxtLayout>
 </template>

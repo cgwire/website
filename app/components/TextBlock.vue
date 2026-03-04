@@ -1,15 +1,15 @@
 <template>
-<div class="text-block">
+  <div class="text-block">
     <div class="section-subtitle has-text-centered">
-        {{ subtitle }}
-      </div>
+      {{ subtitle }}
+    </div>
     <h2 class="section-title has-text-centered">
-        {{ title }}
+      {{ title }}
     </h2>
     <div class="section-explanation">
-        {{ content }}
+      {{ content }}
     </div>
-</div>
+  </div>
 </template>
 
 <script setup>
@@ -22,9 +22,9 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .text-block {
-    margin-top: 8em;
-    margin-bottom: 4em;
-    text-align: center;
-    padding: 1em
+  margin-top: 8em;
+  margin-bottom: 4em;
+  text-align: center;
+  padding: 1em;
 }
 </style>

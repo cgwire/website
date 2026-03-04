@@ -1,20 +1,22 @@
 <template>
-<table>
-  <thead>
-    <tr>
-      <th scope="col" class="feature-cell">Feature</th>
-      <th scope="col" class="cloud-cell">Cloud</th>
-      <th scope="col" class="self-hosted-cell">Self-hosted</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr v-for="feature in features">
-      <td class="feature-cell">{{ feature.name }}</td>
-      <td class="cloud-cell">{{ feature.cloud ? '✔️ ' : '❌' }}</td>
-      <td class="self-hosted-cell">{{ feature.selfhosted ? '✔️ ' : '❌' }}</td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col" class="feature-cell">Feature</th>
+        <th scope="col" class="cloud-cell">Cloud</th>
+        <th scope="col" class="self-hosted-cell">Self-hosted</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="feature in features" :key="feature.name">
+        <td class="feature-cell">{{ feature.name }}</td>
+        <td class="cloud-cell">{{ feature.cloud ? '✔️ ' : '❌' }}</td>
+        <td class="self-hosted-cell">
+          {{ feature.selfhosted ? '✔️ ' : '❌' }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </template>
 
 <script setup>

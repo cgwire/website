@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout name="for-audience" audience="shorts">
-        <NuxtPage />
-    </NuxtLayout>
+  <NuxtLayout name="for-audience" audience="shorts">
+    <NuxtPage />
+  </NuxtLayout>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <NuxtLayout name="features" slug="production-tracker">
-        <NuxtPage />
-    </NuxtLayout>
+  <NuxtLayout name="features" slug="production-tracker">
+    <NuxtPage />
+  </NuxtLayout>
 </template>

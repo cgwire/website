@@ -1,39 +1,39 @@
 <template>
-    <section
-        class="section content landing-block customer-story small-block"
-        data-aos="fade-up"
-    >
-        <a :href="storyUrl">
-            <div class="flexcolumn">
-                <div class="flexrow-item story-picture">
-                    <NuxtPicture
-                        :src="'/images/' + imagePath"
-                        format="webp"
-                        :alt="studioName"
-                        width="320"
-                        height="240"
-                    />
-                </div>
-                <h2 class="story-title">
-                    {{ studioName }}
-                </h2>
-                <p class="interviewee">
-                    {{ interviewee }}
-                </p>
-            </div>
-        </a>
-    </section>
+  <section
+    class="section content landing-block customer-story small-block"
+    data-aos="fade-up"
+  >
+    <a :href="storyUrl">
+      <div class="flexcolumn">
+        <div class="flexrow-item story-picture">
+          <NuxtPicture
+            :src="'/images/' + imagePath"
+            format="webp"
+            :alt="studioName"
+            width="320"
+            height="240"
+          />
+        </div>
+        <h2 class="story-title">
+          {{ studioName }}
+        </h2>
+        <p class="interviewee">
+          {{ interviewee }}
+        </p>
+      </div>
+    </a>
+  </section>
 </template>
 
 <script setup>
 const props = defineProps({
-    interviewee: String,
-    imagePath: String,
-    storyKey: String,
-    studioName: String,
-    storyUrl: String,
-    isBig: Boolean,
-});
+  interviewee: String,
+  imagePath: String,
+  storyKey: String,
+  studioName: String,
+  storyUrl: String,
+  isBig: Boolean
+})
 </script>
 
 <style lang="stylus" scoped>

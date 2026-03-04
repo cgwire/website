@@ -40,11 +40,7 @@
       element-key="enclume-invert"
       name="Enclume"
     />
-    <CustomerLogoBlock
-      link="https://nki.tv/"
-      element-key="nki"
-      name="NKI"
-    />
+    <CustomerLogoBlock link="https://nki.tv/" element-key="nki" name="NKI" />
     <CustomerLogoBlock
       link="https://woodblock.tv/"
       element-key="woodblock"
@@ -228,7 +224,7 @@
     <CustomerLogoBlock
       link="https://www.abduct.studio/"
       element-key="abduct"
-      name="Abduct Studio"
+      name="Abduct Studio"
     />
     <CustomerLogoBlock
       link="https://weloveabattle.com/"

@@ -16,44 +16,44 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed } from 'vue'
 
 const props = defineProps({
   label: {
     type: String,
-    default: "users",
+    default: 'users'
   },
   modelValue: {
     type: [Number, String],
-    required: true,
+    required: true
   },
   min: {
     type: Number,
-    default: 1,
+    default: 1
   },
   max: {
     type: Number,
-    default: 300,
-  },
-});
+    default: 300
+  }
+})
 
 const sliderStyle = computed(() => {
-  const value = Number(props.modelValue);
-  const min = props.min;
-  const max = props.max;
+  const value = Number(props.modelValue)
+  const min = props.min
+  const max = props.max
 
   if (Number.isNaN(value) || max <= min) {
-    return {};
+    return {}
   }
 
-  const percentage = ((value - min) * 100) / (max - min);
+  const percentage = ((value - min) * 100) / (max - min)
 
   return {
-    background: `linear-gradient(to right, #22c55e 0%, #22c55e ${percentage}%, #e5e7eb ${percentage}%, #e5e7eb 100%)`,
-  };
-});
+    background: `linear-gradient(to right, #22c55e 0%, #22c55e ${percentage}%, #e5e7eb ${percentage}%, #e5e7eb 100%)`
+  }
+})
 
-defineEmits(["update:modelValue"]);
+defineEmits(['update:modelValue'])
 </script>
 
 <style scoped>

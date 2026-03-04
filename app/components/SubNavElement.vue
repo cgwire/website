@@ -1,53 +1,47 @@
 <template>
-    <nuxt-link
-        class="navbar-item flexrow subnav-element"
-        :to="$localePath(pathObject ?? elementKey)"
-        v-if="link === ''"
-    >
-        <img
-            class="flexrow-item tablet"
-            :src="'/icons/' + elementKey + '.svg'"
-        />
-        <div class="flexrow-item flexcolumn text">
-            <span class="flexrow-item subnav-title">
-                {{ $t("header title " + elementKey) }}
-            </span>
-            <span class="flexrow-item subnav-text">
-                {{ $t("header text " + elementKey) }}
-            </span>
-        </div>
-    </nuxt-link>
-    <a
-        class="navbar-item flexrow subnav-element"
-        :href="link"
-        target="_blank"
-        v-else
-    >
-        <img
-            class="flexrow-item tablet"
-            :src="'/icons/' + elementKey + '.svg'"
-        />
+  <nuxt-link
+    class="navbar-item flexrow subnav-element"
+    :to="$localePath(pathObject ?? elementKey)"
+    v-if="link === ''"
+  >
+    <img class="flexrow-item tablet" :src="'/icons/' + elementKey + '.svg'" />
+    <div class="flexrow-item flexcolumn text">
+      <span class="flexrow-item subnav-title">
+        {{ $t('header title ' + elementKey) }}
+      </span>
+      <span class="flexrow-item subnav-text">
+        {{ $t('header text ' + elementKey) }}
+      </span>
+    </div>
+  </nuxt-link>
+  <a
+    class="navbar-item flexrow subnav-element"
+    :href="link"
+    target="_blank"
+    v-else
+  >
+    <img class="flexrow-item tablet" :src="'/icons/' + elementKey + '.svg'" />
 
-        <div class="flexrow-item flexcolumn text">
-            <span class="flexrow-item subnav-title">
-                {{ $t("header title " + elementKey) }}
-            </span>
-            <span class="flexrow-item subnav-text">
-                {{ $t("header text " + elementKey) }}
-            </span>
-        </div>
-    </a>
+    <div class="flexrow-item flexcolumn text">
+      <span class="flexrow-item subnav-title">
+        {{ $t('header title ' + elementKey) }}
+      </span>
+      <span class="flexrow-item subnav-text">
+        {{ $t('header text ' + elementKey) }}
+      </span>
+    </div>
+  </a>
 </template>
 
 <script setup>
 const props = defineProps({
-    elementKey: String,
-    pathObject: String,
-    link: {
-        type: String,
-        default: "",
-    },
-});
+  elementKey: String,
+  pathObject: String,
+  link: {
+    type: String,
+    default: ''
+  }
+})
 </script>
 
 <style lang="stylus" scoped>
