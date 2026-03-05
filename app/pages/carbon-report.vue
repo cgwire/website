@@ -484,14 +484,12 @@ const toggleData = () => {
 // VARIABLES
 // ========================================
 background-hover = #F8F9FA
-cgwire-green = #00B242
 light-grey = #E5E5E5
 light-green = #ECFFD9
 light-blue = #D4E5F7
 light-purple = #F9F6FD
 border-purple = #C5A9E8
 text-color = #363636
-text-info = #666
 text-light = #868686
 
 // ========================================
@@ -530,7 +528,7 @@ text-light = #868686
 
   .carbon-title
     align-items: center
-    color: cgwire-green
+    color: cgwiregreen
     display: flex
     font-size: 18px
     gap: 1rem
@@ -596,12 +594,12 @@ text-light = #868686
   width: 50%
 
   &.btn-primary
-    background: cgwire-green
+    background: cgwiregreen
     color: white
     border-radius: 50px
 
     &.active
-      background: cgwire-green
+      background: cgwiregreen
 
   &.btn-secondary
     background: white
@@ -621,7 +619,7 @@ text-light = #868686
   margin-top: 2rem
 
 .data-card
-  border: 1px solid cgwire-green
+  border: 1px solid cgwiregreen
   border-radius: 20px
   padding: 30px
   text-align: left
@@ -683,7 +681,7 @@ text-light = #868686
 
 .card-info
   font-size: 0.9rem
-  color: text-info
+  color: text-medium
   font-style: italic
 
 // ========================================

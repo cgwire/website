@@ -125,5 +125,3 @@ usePageHead({
   path: 'self-hosted'
 })
 </script>
-
-<style lang="stylus" scoped></style>

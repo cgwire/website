@@ -183,20 +183,17 @@ function setExpanded(index) {
 }
 </script>
 
-<style scoped>
-.ranch-link {
-  color: inherit;
-  font-weight: bold;
-}
+<style lang="stylus" scoped>
+.ranch-link
+  color inherit
+  font-weight bold
 
-.users {
-  font-size: 1.8em;
-  font-weight: bold;
-  margin-right: 5px;
-}
+.users
+  font-size 1.8em
+  font-weight bold
+  margin-right 5px
 
-.price {
-  font-size: 1.6em;
-  font-weight: bold;
-}
+.price
+  font-size 1.6em
+  font-weight bold
 </style>

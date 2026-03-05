@@ -641,7 +641,7 @@ div.body
 
 
 .production-type
-    background #F4F8FF
+    background lightblue
     border-radius 1em
     width 350px
     float right

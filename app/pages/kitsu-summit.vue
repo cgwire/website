@@ -423,8 +423,6 @@ usePageHead({
 // ========================================
 // VARIABLES
 // ========================================
-primary-color = #00B242
-secondary-color = #F4F8FF
 accent-color = #FF6B35
 text-dark = #2C3E50
 text-light = #7F8C8D
@@ -473,7 +471,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   box-shadow: 0 4px 15px rgba(194, 240, 171, 0.3)
 
   &.btn-green
-    background: primary-color
+    background: cgwiregreen
     color: white
     box-shadow: 0 4px 15px rgba(194, 240, 171, 0.3)
 
@@ -483,8 +481,8 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
 .btn-secondary
   background: transparent
-  color: primary-color
-  border: 2px solid primary-color
+  color: cgwiregreen
+  border: 2px solid cgwiregreen
   padding: 1rem 2rem
   border-radius: 8px
   font-weight: 600
@@ -494,7 +492,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   display: inline-block
 
   &:hover
-    background: primary-color
+    background: cgwiregreen
     color: white
     transform: translateY(-2px)
 
@@ -628,7 +626,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 .stat-item
   text-align: center
   padding: 2rem
-  background: secondary-color
+  background: lightblue
   border-radius: 15px
   transition: transform 0.3s ease
 
@@ -697,7 +695,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     position: absolute
     top: 1rem
     right: 1rem
-    background: primary-color
+    background: cgwiregreen
     color: white
     padding: 0.5rem 1rem
     border-radius: 20px
@@ -718,7 +716,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
     .conference-speaker
       font-weight: 600
-      color: primary-color
+      color: cgwiregreen
 
     .conference-company
       color: text-light
@@ -745,15 +743,15 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
       background: #DBEAFE
 
     &.animation3d
-      color: #00b242
+      color: cgwiregreen
       background: #E8F5E8
 
     &.vfx
-      color: #2C3E50
-      background: #F4F8FF
+      color: text-dark
+      background: lightblue
 
     &.ai
-      color: #00B242
+      color: cgwiregreen
       background: #E8F5E8
 
     &.kitsu
@@ -819,10 +817,10 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   .price-amount
     font-size: 2.5rem
     font-weight: 800
-    color: primary-color
+    color: cgwiregreen
 
 .registration-form
-  background: secondary-color
+  background: lightblue
   padding: 2rem
   border-radius: 15px
 
@@ -845,7 +843,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
       &:focus
         outline: none
-        border-color: primary-color
+        border-color: cgwiregreen
 
 .access-section
   padding: 6rem 0
@@ -962,7 +960,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
       &:hover
         background: white
-        color: primary-color
+        color: cgwiregreen
 
 
 // ========================================
@@ -1027,11 +1025,11 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     padding-left: 1rem
 
 .schedule-item
-  background: secondary-color
+  background: lightblue
   padding: 1rem
   border-bottom-right-radius: 10px
   border-top-right-radius: 10px
-  border-left: 4px solid primary-color
+  border-left: 4px solid cgwiregreen
   box-shadow: shadow-light
   transition: transform 0.2s ease
 
@@ -1041,7 +1039,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
 .schedule-company
   font-weight: 700
-  color: primary-color
+  color: cgwiregreen
   font-size: 1rem
   margin-bottom: 0.25rem
 

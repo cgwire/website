@@ -151,5 +151,3 @@ usePageHead({
   image: 'software-integrations.f91a84a5.png'
 })
 </script>
-
-<style></style>
