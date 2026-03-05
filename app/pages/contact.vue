@@ -30,16 +30,11 @@
 </template>
 
 <script setup>
-const name = 'Contact'
-const { t } = useI18n()
-useHead({
-  title: 'CGWire | ' + t('footers link contact'),
-  meta: buildPageMeta(
-    t,
-    'contact tagline',
-    'contact tagline',
-    'contact',
-    'assets/images/logo.png'
-  )
+usePageHead({
+  title: 'CGWire | ' + useI18n().t('footers link contact'),
+  titleKey: 'contact tagline',
+  descriptionKey: 'contact tagline',
+  path: 'contact',
+  image: 'assets/images/logo.png'
 })
 </script>

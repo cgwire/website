@@ -169,18 +169,13 @@
 
 <script setup>
 const yearly = ref(true)
-const name = 'Pricing'
-const { t } = useI18n()
 const isExpanded = reactive({})
 
-useHead({
-  title: 'CGWire | ' + t('pricing title'),
-  meta: buildPageMeta(
-    t,
-    'pricing kitsu title',
-    'pricing cloud explanation',
-    'pricing'
-  )
+usePageHead({
+  title: 'CGWire | ' + useI18n().t('pricing title'),
+  titleKey: 'pricing kitsu title',
+  descriptionKey: 'pricing cloud explanation',
+  path: 'pricing'
 })
 
 function setExpanded(index) {

@@ -87,10 +87,10 @@ const props = defineProps({
 })
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .for-info
   font-size: 0.8em
-  color: #666
+  color: text-medium
   margin-top: 1em
   padding: 1em 2em
   font-style: italic

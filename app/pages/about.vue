@@ -236,17 +236,12 @@
 </template>
 
 <script setup>
-const name = 'About'
-const { t } = useI18n()
-useHead({
-  title: 'CGWire | ' + t('about tagline'),
-  meta: buildPageMeta(
-    t,
-    'about tagline',
-    'about explanation one',
-    'about',
-    'about.107a8a01.png'
-  )
+usePageHead({
+  title: 'CGWire | ' + useI18n().t('about tagline'),
+  titleKey: 'about tagline',
+  descriptionKey: 'about explanation one',
+  path: 'about',
+  image: 'about.107a8a01.png'
 })
 </script>
 

@@ -122,72 +122,61 @@ watch(nbMonths, updatePrice)
 updatePrice()
 </script>
 
-<style scoped>
-.estimator {
-  padding: 0 2rem 0 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
+<style lang="stylus" scoped>
+.estimator
+  padding: 0 2rem 0 2rem
+  max-width: 800px
+  margin: 0 auto
 
-.section-subtitle {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 0.5rem;
-}
+.section-subtitle
+  font-size: 1.2rem
+  color: text-medium
+  margin-bottom: 0.5rem
 
-.section-title {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
+.section-title
+  font-size: 2rem
+  font-weight: bold
+  margin-bottom: 2rem
 
-.flexrow {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
+.flexrow
+  display: flex
+  align-items: center
+  gap: 1rem
+  margin: 1rem 0
 
-.settings {
-  align-items: left;
-  width: 100%;
-}
+.settings
+  align-items: left
+  width: 100%
 
-.pricing-table {
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background: #f8f9fa;
-  border-radius: 8px;
-}
+.pricing-table
+  margin: 2rem 0
+  padding: 1.5rem
+  background: #f8f9fa
+  border-radius: 8px
 
-.pricing-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.75rem 0;
-}
+.pricing-row
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0.75rem 0
 
-.pricing-label {
-  font-size: 1.1rem;
-  color: #666;
-}
+.pricing-label
+  font-size: 1.1rem
+  color: text-medium
 
-.pricing-value {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #333;
-}
+.pricing-value
+  font-size: 1.2rem
+  font-weight: 600
+  color: #333
 
-.pricing-row.total {
-  margin-top: 0.5rem;
-  padding-top: 1rem;
-  border-top: 2px solid #4caf50;
-}
+.pricing-row.total
+  margin-top: 0.5rem
+  padding-top: 1rem
+  border-top: 2px solid cgwiregreen
 
 .pricing-row.total .pricing-label,
-.pricing-row.total .pricing-value {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #4caf50;
-}
+.pricing-row.total .pricing-value
+  font-size: 1.3rem
+  font-weight: bold
+  color: cgwiregreen
 </style>

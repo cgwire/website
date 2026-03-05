@@ -69,17 +69,12 @@
 </template>
 
 <script setup>
-const name = 'Customer Stories'
-const { t } = useI18n()
-useHead({
-  title: 'CGWire | Kitsu / ' + t('header title customer-stories'),
-  meta: buildPageMeta(
-    t,
-    'header title customer-stories',
-    'Feature Films, TV Series, VFX Studios',
-    'customer-stories',
-    'photo-customer-story-fost.801872d5.png'
-  )
+usePageHead({
+  title: 'CGWire | Kitsu / ' + useI18n().t('header title customer-stories'),
+  titleKey: 'header title customer-stories',
+  descriptionKey: 'Feature Films, TV Series, VFX Studios',
+  path: 'customer-stories',
+  image: 'photo-customer-story-fost.801872d5.png'
 })
 </script>
 

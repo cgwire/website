@@ -473,19 +473,12 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-const name = 'Index'
-const { t } = useI18n()
-
-useHead({
-  title: 'CGWire | ' + t('main title'),
-  meta: buildPageMeta(
-    t,
-    'main title',
-    'main subtitle',
-    '',
-    'teaser.d579992c.png'
-  )
+usePageHead({
+  title: 'CGWire | ' + useI18n().t('main title'),
+  titleKey: 'main title',
+  descriptionKey: 'main subtitle',
+  path: '',
+  image: 'teaser.d579992c.png'
 })
 
 const img = useImage()

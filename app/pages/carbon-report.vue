@@ -433,18 +433,14 @@
 </template>
 
 <script setup>
-const name = 'CarbonReport'
+const { locale } = useI18n()
 
-const { t, locale } = useI18n()
-useHead({
-  title: 'CGWire | ' + t('carbon-report title'),
-  meta: buildPageMeta(
-    t,
-    'carbon-report title',
-    'carbon-report explanation one',
-    'carbon-report',
-    'carbon.107a8a01.png'
-  )
+usePageHead({
+  title: 'CGWire | ' + useI18n().t('carbon-report title'),
+  titleKey: 'carbon-report title',
+  descriptionKey: 'carbon-report explanation one',
+  path: 'carbon-report',
+  image: 'carbon.107a8a01.png'
 })
 
 const dataWithFlights = ref(true)

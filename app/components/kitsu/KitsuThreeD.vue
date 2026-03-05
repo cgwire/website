@@ -24,12 +24,10 @@
 
 <script></script>
 
-<style scoped lang="scss">
-.best-supporter {
-  margin-bottom: 8em;
-}
+<style scoped lang="stylus">
+.best-supporter
+  margin-bottom: 8em
 
-.features {
-  margin-top: 8em;
-}
+.features
+  margin-top: 8em
 </style>

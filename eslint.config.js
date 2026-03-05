@@ -67,7 +67,8 @@ export default defineConfig([
         useI18n: 'readonly',
         useLocaleHead: 'readonly',
         // Project utils (auto-imported)
-        buildPageMeta: 'readonly'
+        buildPageMeta: 'readonly',
+        usePageHead: 'readonly'
       }
     },
     rules: {

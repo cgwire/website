@@ -20,11 +20,10 @@ const props = defineProps({
 })
 </script>
 
-<style lang="scss" scoped>
-.text-block {
-  margin-top: 8em;
-  margin-bottom: 4em;
-  text-align: center;
-  padding: 1em;
-}
+<style lang="stylus" scoped>
+.text-block
+  margin-top: 8em
+  margin-bottom: 4em
+  text-align: center
+  padding: 1em
 </style>

@@ -142,17 +142,13 @@
 </template>
 
 <script setup>
-const name = 'Software Integrations'
-const { t } = useI18n()
-useHead({
-  title: 'CGWire | Kitsu / ' + t('software-integrations header tagline'),
-  meta: buildPageMeta(
-    t,
-    'software-integrations header tagline',
-    'software-integrations header explanation',
-    'software-integrations',
-    'software-integrations.f91a84a5.png'
-  )
+usePageHead({
+  title:
+    'CGWire | Kitsu / ' + useI18n().t('software-integrations header tagline'),
+  titleKey: 'software-integrations header tagline',
+  descriptionKey: 'software-integrations header explanation',
+  path: 'software-integrations',
+  image: 'software-integrations.f91a84a5.png'
 })
 </script>
 

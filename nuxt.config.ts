@@ -2,6 +2,8 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "url";
 import i18nRoutes from "./i18n/routes.js";
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 export default defineNuxtConfig({
   compatibilityDate: "2026-02-19",
   app: {
@@ -108,6 +110,15 @@ export default defineNuxtConfig({
       sm: 640,
       md: 768,
       lg: 1024,
+    },
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        stylus: {
+          additionalData: `@import "${resolve(__dirname, 'app/assets/styles/variables.styl')}"\n`,
+        },
+      },
     },
   },
   // vitalizer: {

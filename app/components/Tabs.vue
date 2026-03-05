@@ -35,7 +35,6 @@ const toggleTab = tab => {
 </script>
 
 <style lang="stylus" scoped>
-cgwire-green = #00B242
 light-grey = #E5E5E5
 text-light = #868686
 
@@ -65,12 +64,12 @@ text-light = #868686
   width: 50%
 
   &.btn-primary
-    background: cgwire-green
+    background: cgwiregreen
     color: white
     border-radius: 50px
 
     &.active
-      background: cgwire-green
+      background: cgwiregreen
 
   &.btn-secondary
     background: white

@@ -150,16 +150,11 @@
 </template>
 
 <script setup>
-const name = 'Spreadsheets'
-const { t } = useI18n()
-useHead({
-  title: 'CGWire | Kitsu / ' + t('studios title'),
-  meta: buildPageMeta(
-    t,
-    'spreadsheets tagline',
-    'spreadsheets explanation one',
-    'spreadsheets',
-    'spreadsheet-planning-short.1f30ad66.png'
-  )
+usePageHead({
+  title: 'CGWire | Kitsu / ' + useI18n().t('studios title'),
+  titleKey: 'spreadsheets tagline',
+  descriptionKey: 'spreadsheets explanation one',
+  path: 'spreadsheets',
+  image: 'spreadsheet-planning-short.1f30ad66.png'
 })
 </script>

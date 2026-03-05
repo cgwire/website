@@ -25,11 +25,9 @@
 
 <script></script>
 
-<style lang="scss" scoped>
-body .successes {
-  img {
-    padding: 0;
-    border-radius: 30px;
-  }
-}
+<style lang="stylus" scoped>
+body .successes
+  img
+    padding: 0
+    border-radius: 30px
 </style>

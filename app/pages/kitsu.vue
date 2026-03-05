@@ -175,20 +175,15 @@
 </template>
 
 <script setup>
-const name = 'Kitsu'
-const { t } = useI18n()
 const router = useRouter()
 const route = useRoute()
 
-useHead({
+usePageHead({
   title: 'CGWire | Kitsu',
-  meta: buildPageMeta(
-    t,
-    'kitsu title',
-    'kitsu description',
-    'kitsu',
-    'teaser.d579992c.png'
-  )
+  titleKey: 'kitsu title',
+  descriptionKey: 'kitsu description',
+  path: 'kitsu',
+  image: 'teaser.d579992c.png'
 })
 
 onMounted(() => {

@@ -201,17 +201,12 @@
 </template>
 
 <script setup>
-const name = 'Community'
-const { t } = useI18n()
-useHead({
-  title: 'CGWire | ' + t('header title community'),
-  meta: buildPageMeta(
-    t,
-    'community header tagline',
-    'casting-management explanation one',
-    'community',
-    'meetup.af7c0c6c.jpg'
-  )
+usePageHead({
+  title: 'CGWire | ' + useI18n().t('header title community'),
+  titleKey: 'community header tagline',
+  descriptionKey: 'casting-management explanation one',
+  path: 'community',
+  image: 'meetup.af7c0c6c.jpg'
 })
 </script>
 
