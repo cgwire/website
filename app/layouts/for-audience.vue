@@ -85,7 +85,7 @@
     <section class="section">
       <ul class="customers">
         <CustomerLogoBlock
-          v-for="studio in audiencePage.studios"
+          v-for="studio in studios"
           :key="studio.elementKey"
           :name="studio.name"
           :element-key="studio.elementKey"
@@ -147,7 +147,8 @@
 
 <script setup>
 const route = useRoute()
-const { t } = useI18n()
+const { t, locale } = useI18n()
+import { ref } from 'vue'
 
 const props = defineProps({
   audience: {
@@ -162,6 +163,15 @@ const { data } = await useAsyncData(slug, () =>
   queryCollection('pages').path(`/pages/audiences/${slug}`).first()
 )
 const audiencePage = data.value.meta
+
+let type = ref(props.audience)
+
+const { buildStudiosQuery } = useStudios(locale, type)
+var { data: studios, error } = await useAsyncData(
+  () => `studios-${type.value}-${locale.value}`,
+  buildStudiosQuery,
+  { watch: [locale, type] }
+)
 
 useHead(() => ({
   title: `CGWire | Kitsu / ${t(audiencePage.i18n.titleKey)}`,

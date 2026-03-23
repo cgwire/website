@@ -1,10 +1,23 @@
-import { defineContentConfig, defineCollection } from "@nuxt/content";
+import { defineContentConfig, defineCollection } from '@nuxt/content'
+import { z } from 'zod'
 
 export default defineContentConfig({
   collections: {
     pages: defineCollection({
-      type: "page",
-      source: "pages/**/*.{md,json}",
+      type: 'page',
+      source: 'pages/**/*.{md,json}'
     }),
-  },
-});
+    studios: defineCollection({
+      type: 'page',
+      source: 'studios/**/*.json',
+      schema: z.object({
+        name: z.string(),
+        elementKey: z.string(),
+        type: z.union([z.array(z.string()), z.string()]),
+        link: z.string(),
+        case_study: z.union([z.array(z.string()), z.string()]).default('')
+      }),
+      indexes: [{ columns: ['elementKey'] }]
+    })
+  }
+})

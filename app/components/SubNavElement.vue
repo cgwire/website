@@ -1,7 +1,12 @@
 <template>
   <nuxt-link
     class="navbar-item flexrow subnav-element"
-    :to="$localePath(pathObject ?? elementKey)"
+    :to="
+      $localePath({
+        name: pathObject ?? elementKey,
+        params: { slug: $t(`slugs.${elementKey}`) }
+      })
+    "
     v-if="link === ''"
   >
     <img class="flexrow-item tablet" :src="'/icons/' + elementKey + '.svg'" />
