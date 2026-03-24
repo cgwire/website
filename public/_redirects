@@ -1,3 +1,20 @@
+/schools /for/schools/
+/shorts /for/shorts/
+/studios /for/studios/
+/tvshows /for/tvshows/
+/video-games /for/video-games/
+/feature-films /for/feature-films/
+/tailor-made-architecture /features/tailor-made-architecture/
+/casting-management /features/casting-management/
+/elite-hosting /features/elite-hosting/
+/production-tracker /features/production-tracker/
+/review-engine /features/review-engine/
+/studio-database /features/studio-database/
+/team-collaboration /features/team-collaboration/
+/top-notch-support /features/top-notch-support/
+/shotgrid /shotgrid-alternative/
+/ftrack /ftrack-alternative/
+
 /fr/about /fr/a-propos
 /fr/customer-stories /fr/temoignages-clients
 /fr/pricing /fr/tarifs
@@ -17,6 +34,14 @@
 /fr/studio-database /fr/fonctionnalités/base-de-donnees-studio
 /fr/team-collaboration /fr/fonctionnalités/collaboration-equipe
 /fr/top-notch-support /fr/fonctionnalités/support-premium
+/fr/architecture-sur-mesure /fr/fonctionnalités/architecture-sur-mesure
+/fr/gestion-des-castings /fr/fonctionnalités/gestion-des-castings
+/fr/hebergement-premium /fr/fonctionnalités/hebergement-premium
+/fr/suivi-de-production /fr/fonctionnalités/suivi-de-production
+/fr/moteur-de-revision /fr/fonctionnalités/moteur-de-revision
+/fr/base-de-donnees-studio /fr/fonctionnalités/base-de-donnees-studio
+/fr/collaboration-equipe /fr/fonctionnalités/collaboration-equipe
+/fr/support-premium /fr/fonctionnalités/support-premium
 
 /fr/features/tailor-made-architecture /fr/fonctionnalités/architecture-sur-mesure
 /fr/features/casting-management /fr/fonctionnalités/gestion-des-castings

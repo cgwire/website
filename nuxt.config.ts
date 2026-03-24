@@ -1,127 +1,132 @@
-import { resolve, dirname } from "node:path";
-import { fileURLToPath } from "url";
-import i18nRoutes from "./i18n/routes.js";
+import { resolve, dirname } from 'node:path'
+import { fileURLToPath } from 'url'
+import i18nRoutes from './i18n/routes.js'
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineNuxtConfig({
-  compatibilityDate: "2026-02-19",
+  compatibilityDate: '2026-02-19',
   app: {
     head: {
       meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
-          name: "keywords",
+          name: 'keywords',
           content:
-            "production management pipeline cg cg blender nuke 3dsmax maya animation movie vfx tracking shotgun alternative 2D 3D",
+            'production management pipeline cg cg blender nuke 3dsmax maya animation movie vfx tracking shotgun alternative 2D 3D'
         },
         {
-          name: "og:title",
+          name: 'og:title',
           content:
-            "CGWire - Collaboration Platform for Animation and VFX studios",
+            'CGWire - Collaboration Platform for Animation and VFX studios'
         },
-        { name: "og:locale", content: "en_US" },
-        { name: "og:locale:alternate", content: "fr_FR" },
+        { name: 'og:locale', content: 'en_US' },
+        { name: 'og:locale:alternate', content: 'fr_FR' },
         {
-          name: "og:image",
-          content: "https://www.cg-wire.com/images/logo.svg",
+          name: 'og:image',
+          content: 'https://www.cg-wire.com/images/logo.svg'
         },
-        { name: "twitter:card", content: "summary" },
-        { name: "twitter:url", content: "http://twitter.com/cgwirekitsu/" },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:url', content: 'http://twitter.com/cgwirekitsu/' },
         {
-          name: "twitter:title",
+          name: 'twitter:title',
           content:
-            "CGWire - Collaboration Platform for Animation and VFX studios",
+            'CGWire - Collaboration Platform for Animation and VFX studios'
         },
         {
-          name: "twitter:image",
-          content: "https://www.cg-wire.com/images/logo.svg",
-        },
+          name: 'twitter:image',
+          content: 'https://www.cg-wire.com/images/logo.svg'
+        }
       ],
       script: [],
-      link: [{ rel: "icon", href: "/favicon.png" }],
+      link: [{ rel: 'icon', href: '/favicon.png' }],
       style: [],
-      noscript: [{ children: "Javascript is required" }],
-    },
+      noscript: [{ children: 'Javascript is required' }]
+    }
   },
   css: [
     // "bulma",
-    "~/assets/styles/app.styl",
-    "~/assets/styles/bulma.css",
+    '~/assets/styles/app.styl',
+    '~/assets/styles/bulma.css'
     // { src: "~/assets/styles/app.styl", lang: "stylus" },
     // '~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'
   ],
   components: true,
   modules: [
-    "@nuxtjs/i18n",
+    '@nuxtjs/i18n',
     // ["@funken-studio/sitemap-nuxt-3", { generateOnBuild: true }],
-    "nuxt-aos",
-    "@nuxt/content",
-    "@nuxt/image",
-    "nuxt-vitalizer",
-    "@nuxtjs/sitemap",
+    'nuxt-aos',
+    '@nuxt/content',
+    '@nuxt/image',
+    'nuxt-vitalizer',
+    '@nuxtjs/sitemap'
   ],
   i18n: {
-    baseUrl: "https://www.cg-wire.com",
-    defaultLocale: "en",
-    fallbackLocale: "en",
-    customRoutes: "config",
+    baseUrl: 'https://www.cg-wire.com',
+    defaultLocale: 'en',
+    fallbackLocale: 'en',
+    customRoutes: 'config',
     pages: i18nRoutes,
     locales: [
       {
-        code: "en",
-        language: "en-US",
-        file: "en.json",
+        code: 'en',
+        language: 'en-US',
+        file: 'en.json'
       },
       {
-        code: "fr",
-        language: "fr-FR",
-        file: "fr.json",
+        code: 'fr',
+        language: 'fr-FR',
+        file: 'fr.json'
       },
       {
-        code: "ja",
-        language: "ja-JP",
-        file: "ja.json",
-      },
+        code: 'ja',
+        language: 'ja-JP',
+        file: 'ja.json'
+      }
     ],
     lazy: true,
-    langDir: "locales/",
+    langDir: 'locales/'
   },
   plugins: [
-    { src: "~/plugins/youtube", mode: "client", ssr: false },
-    { src: "~/plugins/crisp.js", mode: "client" },
-    { src: "~/plugins/matomo.js", mode: "client", ssr: false },
+    { src: '~/plugins/youtube', mode: 'client', ssr: false },
+    { src: '~/plugins/crisp.js', mode: 'client' },
+    { src: '~/plugins/matomo.js', mode: 'client', ssr: false }
   ],
   env: {
-    baseUrl: process.env.BASE_URL || "http://localhost:3000",
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   sitemap: {
-    hostname: "https://www.cg-wire.com",
+    hostname: 'https://www.cg-wire.com'
   },
   aos: {
-    startEvent: "DOMContentLoaded",
-    useClassNames: false,
+    startEvent: 'DOMContentLoaded',
+    useClassNames: false
   },
   image: {
-    dir: "assets/",
-    format: ["webp"],
+    dir: 'assets/',
+    format: ['webp'],
     screens: {
       sm: 640,
       md: 768,
-      lg: 1024,
-    },
+      lg: 1024
+    }
   },
   vite: {
     css: {
       preprocessorOptions: {
         stylus: {
-          additionalData: `@import "${resolve(__dirname, 'app/assets/styles/variables.styl')}"\n`,
-        },
-      },
-    },
+          additionalData: `@import "${resolve(__dirname, 'app/assets/styles/variables.styl')}"\n`
+        }
+      }
+    }
   },
+  nitro: {
+    prerender: {
+      failOnError: false
+    }
+  }
   // vitalizer: {
   //   disableStylesheets: "entry",
   // },
-});
+})

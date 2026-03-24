@@ -103,38 +103,38 @@
             <div class="columns">
               <div class="column">
                 <SubNavElement
-                  path-object="features-team-collaboration"
+                  path-object="features-slug"
                   element-key="team-collaboration"
                 />
                 <SubNavElement
-                  path-object="features-production-tracker"
+                  path-object="features-slug"
                   element-key="production-tracker"
                 />
                 <SubNavElement
-                  path-object="features-review-engine"
+                  path-object="features-slug"
                   element-key="review-engine"
                 />
                 <SubNavElement
-                  path-object="features-casting-management"
+                  path-object="features-slug"
                   element-key="casting-management"
                 />
                 <SubNavElement
-                  path-object="features-studio-database"
+                  path-object="features-slug"
                   element-key="studio-database"
                 />
                 <SubNavElement element-key="software-integrations" />
               </div>
               <div class="column hosting-solutions">
                 <SubNavElement
-                  path-object="features-top-notch-support"
+                  path-object="features-slug"
                   element-key="top-notch-support"
                 />
                 <SubNavElement
-                  path-object="features-elite-hosting"
+                  path-object="features-slug"
                   element-key="elite-hosting"
                 />
                 <SubNavElement
-                  path-object="features-tailor-made-architecture"
+                  path-object="features-slug"
                   element-key="tailor-made-architecture"
                 />
               </div>
@@ -167,17 +167,11 @@
             <SubNavElement element-key="studios" />
             <SubNavElement element-key="customer-stories" />
             <hr />
-            <SubNavElement path-object="for-tvshows" element-key="tvshows" />
-            <SubNavElement
-              path-object="for-feature-films"
-              element-key="feature-films"
-            />
-            <SubNavElement path-object="for-shorts" element-key="shorts" />
-            <SubNavElement path-object="for-schools" element-key="schools" />
-            <SubNavElement
-              path-object="for-video-games"
-              element-key="video-games"
-            />
+            <SubNavElement path-object="for-slug" element-key="tvshows" />
+            <SubNavElement path-object="for-slug" element-key="feature-films" />
+            <SubNavElement path-object="for-slug" element-key="shorts" />
+            <SubNavElement path-object="for-slug" element-key="schools" />
+            <SubNavElement path-object="for-slug" element-key="video-games" />
           </div>
         </div>
 
