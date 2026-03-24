@@ -90,6 +90,7 @@
           :name="studio.name"
           :element-key="studio.elementKey"
           :link="studio.link"
+          :case-study="studio.case_study"
         />
       </ul>
     </section>

@@ -896,6 +896,10 @@
   "kitsu-summit schedule cocktail": "Ending Cocktail",
   "kitsu-summit title": "Kitsu Summit 2026",
   "kitsu-summit conference closing title": "Closing and Thanks",
+  "studio": {
+    "visitWebsite": "Visit Website",
+    "viewCaseStudy": "View Case Study"
+  },
   "slugs": {
     "tailor-made-architecture": "tailor-made-architecture",
     "casting-management": "casting-management",
@@ -915,6 +919,10 @@
     "ip-protection": "ip-protection",
     "migration": "migration",
     "change-management": "change-management",
-    "custom-integration": "custom-integration"
+    "custom-integration": "custom-integration",
+    "fost": "fost",
+    "miyu": "miyu",
+    "makuta": "makuta",
+    "autour-de-minuit": "autour-de-minuit"
   }
 }

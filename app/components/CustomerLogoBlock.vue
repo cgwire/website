@@ -1,6 +1,6 @@
 <template>
   <li class="customers-item">
-    <a :href="link">
+    <a :href="caseStudy ? `/studios/${elementKey}` : link">
       <NuxtPicture
         :src="'/images/studios/logo-' + elementKey + '.png'"
         format="webp"
@@ -14,6 +14,7 @@
 const props = defineProps({
   name: String,
   elementKey: String,
+  caseStudy: String,
   link: {
     type: String,
     default: ''
