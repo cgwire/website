@@ -4,7 +4,7 @@
     :to="
       $localePath({
         name: pathObject ?? elementKey,
-        params: { slug: $t(`slugs.${elementKey}`) }
+        params: pathObject ? { slug: $t(`slugs.${elementKey}`) } : {}
       })
     "
     v-if="link === ''"
