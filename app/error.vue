@@ -1,6 +1,6 @@
 <template>
   <div class="section content has-text-centered mt4">
-    <NuxtPicture src="/images/404.png" width="900" format="webp" />
+    <NuxtImg src="/images/404.png" width="900" format="webp" />
 
     <h1 class="mt4" v-if="error.statusCode === 404">
       The page you were looking for could not be found...

@@ -2,22 +2,22 @@
   <div v-if="comparison" class="compare-page">
     <section class="section content narrower">
       <div>
-        <NuxtPicture
-          :src="'/images/illustrations/' + comparison.image"
-          :alt="`Kitsu vs ${comparison.tool}`"
+        <NuxtImg
+          :src="'/images/illustrations/' + comparison.meta.image"
+          :alt="`Kitsu vs ${comparison.meta.tool}`"
         />
       </div>
 
       <div class="section-subtitle has-text-centered mt2">
-        {{ t(comparison.i18n.subtitleKey) }}
+        {{ comparison.meta.subtitle }}
       </div>
 
       <h2 class="section-title has-text-centered">
-        {{ t(comparison.i18n.titleKey) }}
+        {{ comparison.title }}
       </h2>
 
       <div
-        v-for="(section, index) in comparison.sections"
+        v-for="(section, index) in comparison.meta.sections"
         :key="index"
         class="section"
       >
@@ -34,31 +34,29 @@
 </template>
 
 <script setup>
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
-const props = defineProps({
-  tool: {
-    type: String,
-    required: true
-  }
-})
+let { slug } = await useI18NSlug()
 
-const slug = `${props.tool}-alternative`
-
-const { data } = await useAsyncData(slug, () =>
-  queryCollection('pages').path(`/pages/alternatives/${slug}`).first()
+const { data } = await useAsyncData(
+  slug.value,
+  () =>
+    queryCollection('alternatives')
+      .path(`/alternatives/${locale.value}/${slug.value}`)
+      .first(),
+  { watch: [locale, slug] }
 )
 
-const comparison = data.value.meta
+const comparison = data.value
 
 useHead({
-  title: `CGWire | Kitsu vs ${comparison.tool}`,
+  title: `CGWire | Kitsu vs ${comparison.meta.tool}`,
   meta: buildPageMeta(
     t,
-    comparison.i18n.titleKey,
-    comparison.i18n.subtitleKey,
+    comparison.title,
+    comparison.meta.subtitle,
     slug,
-    comparison.image
+    comparison.meta.image
   )
 })
 </script>

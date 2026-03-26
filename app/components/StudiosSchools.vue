@@ -2,7 +2,7 @@
   <ul class="customers">
     <li class="customers-item">
       <a href="https://www.gobelins.fr">
-        <NuxtPicture
+        <NuxtImg
           src="/images/logo-gobelins.png"
           alt="Les gobelins"
           format="webp"
@@ -16,7 +16,7 @@
     />
     <li class="customers-item">
       <a href="https://www.esra.edu">
-        <NuxtPicture src="/images/logo-esra.png" alt="ESRA" format="webp"
+        <NuxtImg src="/images/logo-esra.png" alt="ESRA" format="webp"
       /></a>
     </li>
     <li class="customers-item">
@@ -30,7 +30,7 @@
     </li>
     <li class="customers-item">
       <a href="https://www.ecv.fr/lecole/bordeaux/">
-        <NuxtPicture src="/images/logo-ecv.png" alt="ECV" format="webp" />
+        <NuxtImg src="/images/logo-ecv.png" alt="ECV" format="webp" />
       </a>
     </li>
     <CustomerLogoBlock
@@ -40,17 +40,17 @@
     />
     <li class="customers-item">
       <a href="https://lanimea.com/">
-        <NuxtPicture src="/images/logo-lanimea.png" alt="Lanimea" format="webp"
+        <NuxtImg src="/images/logo-lanimea.png" alt="Lanimea" format="webp"
       /></a>
     </li>
     <li class="customers-item">
       <a href="https://www.lidembarcelona.com/fr/">
-        <NuxtPicture src="/images/logo-lidem.png" alt="L'idem" format="webp" />
+        <NuxtImg src="/images/logo-lidem.png" alt="L'idem" format="webp" />
       </a>
     </li>
     <li class="customers-item">
       <a href="https://www.hslu.ch/">
-        <NuxtPicture
+        <NuxtImg
           src="/images/logo-hslu.png"
           alt="Hochschule Luzern"
           format="webp"

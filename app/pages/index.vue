@@ -10,7 +10,7 @@
             target="_blank"
             class="button button--with-icon is-large watch-button"
           >
-            <NuxtPicture src="/images/play.svg" alt="" format="webp" />
+            <NuxtImg src="/images/play.svg" alt="" format="webp" />
             <span>{{ $t('kitsu watch cta') }}</span>
           </a>
         </div>
@@ -83,7 +83,7 @@
           </p>
         </div>
         <div class="flexrow-item landing-picture">
-          <NuxtPicture
+          <NuxtImg
             src="/images/illustrations/kitsu-decisions.png"
             alt=""
             format="webp"
@@ -95,7 +95,7 @@
     <section class="section content landing-block" data-aos="fade-up">
       <div class="flexrow reverse">
         <div class="flexrow-item landing-picture">
-          <NuxtPicture
+          <NuxtImg
             src="/images/illustrations/kitsu-everywhere.png"
             alt=""
             format="webp"
@@ -123,7 +123,7 @@
           </p>
         </div>
         <div class="flexrow-item landing-picture">
-          <NuxtPicture
+          <NuxtImg
             src="/images/illustrations/kitsu-start.png"
             alt=""
             format="webp"
@@ -235,7 +235,7 @@
                 {{ $t('kitsu scale todos-text') }}
               </p>
               <div class="feature-img-wrapper">
-                <NuxtPicture
+                <NuxtImg
                   src="/images/screenshots/kitsu-todos-light.png"
                   alt=""
                   format="webp"
@@ -248,7 +248,7 @@
                 {{ $t('kitsu scale forecast-text') }}
               </p>
               <div class="feature-img-wrapper">
-                <NuxtPicture
+                <NuxtImg
                   src="/images/screenshots/kitsu-schedule-light.png"
                   alt=""
                   format="webp"
@@ -261,7 +261,7 @@
                 {{ $t('kitsu scale reports-text') }}
               </p>
               <div class="feature-img-wrapper">
-                <NuxtPicture
+                <NuxtImg
                   src="/images/screenshots/kitsu-reports-light.png"
                   alt=""
                   format="webp"
@@ -274,7 +274,7 @@
                 {{ $t('kitsu scale reviews-text') }}
               </p>
               <div class="feature-img-wrapper">
-                <NuxtPicture
+                <NuxtImg
                   src="/images/screenshots/kitsu-compare-light.png"
                   alt=""
                   format="webp"
@@ -286,7 +286,7 @@
                 {{ $t('kitsu scale api-text') }}
               </p>
               <div class="feature-img-wrapper">
-                <NuxtPicture
+                <NuxtImg
                   src="/images/screenshots/kitsu-python-light.png"
                   alt=""
                   format="webp"
@@ -417,7 +417,7 @@
         <ul class="flexrow supporter-list has-text-centered">
           <li class="flexrow-item mr0">
             <a href="https://www.cnc.fr">
-              <NuxtPicture
+              <NuxtImg
                 src="/images/logo-cnc.png"
                 alt="CNC"
                 format="webp"
@@ -427,7 +427,7 @@
           </li>
           <li class="flexrow-item mr0">
             <a href="https://www.unrealengine.com/en-US/megagrants">
-              <NuxtPicture
+              <NuxtImg
                 src="/images/logo-epic-games.png"
                 alt="Epic Games"
                 format="webp"
@@ -437,7 +437,7 @@
           </li>
           <li class="flexrow-item mr0">
             <a href="https://studio.blender.org/">
-              <NuxtPicture
+              <NuxtImg
                 src="/images/studios/logo-blender-black.png"
                 alt="Blender Studio"
                 format="webp"
@@ -462,11 +462,7 @@
       class="section content has-text-centered conclusion conclusion-picture mb4"
       data-aos="fade-up"
     >
-      <NuxtPicture
-        src="/images/screenshots/kitsu-tasks.png"
-        alt=""
-        format="webp"
-      />
+      <NuxtImg src="/images/screenshots/kitsu-tasks.png" alt="" format="webp" />
     </section>
   </div>
   <Trial class="mt4" :is-big="true" />

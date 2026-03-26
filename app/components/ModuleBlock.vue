@@ -2,7 +2,7 @@
   <nuxt-link class="module-block" :to="$localePath(sectionKey)">
     <section>
       <div class="has-text-centered">
-        <NuxtPicture
+        <NuxtImg
           :src="'/images/illustrations/' + sectionKey + '.png'"
           format="webp"
         />

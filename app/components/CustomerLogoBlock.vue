@@ -1,7 +1,7 @@
 <template>
   <li class="customers-item">
     <a :href="caseStudy ? `/studios/${elementKey}` : link">
-      <NuxtPicture
+      <NuxtImg
         :src="'/images/studios/logo-' + elementKey + '.png'"
         format="webp"
         :alt="name"

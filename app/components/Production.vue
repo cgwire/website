@@ -1,7 +1,7 @@
 <template>
   <li>
     <a :href="url" class="production">
-      <NuxtPicture
+      <NuxtImg
         :src="'/images/productions/' + picture + '.png'"
         format="webp"
         width="400"

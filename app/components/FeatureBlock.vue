@@ -46,7 +46,7 @@
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <NuxtPicture
+          <NuxtImg
             :class="{ screenshot: shadow }"
             :src="'/images/screenshots/kitsu-' + featureKey + '.png'"
             format="webp"

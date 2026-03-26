@@ -1,4 +1,5 @@
 export async function useI18NSlug() {
+  const isReady = ref(false)
   const { locale, t, loadLocaleMessages } = useI18n()
   const route = useRoute()
   const setI18nParams = useSetI18nParams()
@@ -20,5 +21,7 @@ export async function useI18NSlug() {
 
   setI18nParams({ en: { slug: slug.value }, ...i18nParams })
 
-  return { slug }
+  isReady.value = true
+
+  return { slug, isReady }
 }

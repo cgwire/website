@@ -26,19 +26,14 @@
 </template>
 
 <script setup>
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
-const props = defineProps({
-  slug: {
-    type: String,
-    required: true
-  }
-})
+let { slug } = await useI18NSlug()
 
-const slug = props.slug
-
-const { data } = await useAsyncData(slug, () =>
-  queryCollection('pages').path(`/pages/features/${slug}`).first()
+const { data } = await useAsyncData(
+  slug.value,
+  () => queryCollection('pages').path(`/pages/features/${slug.value}`).first(),
+  { watch: [locale, slug] }
 )
 const featurePage = data.value.meta
 

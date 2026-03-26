@@ -28,24 +28,7 @@
         id="top-menu"
       >
         <div class="navbar-start flexrow locales">
-          <nuxt-link
-            class="flexrow-item navbar-lang-item"
-            :to="$switchLocalePath('en')"
-          >
-            EN
-          </nuxt-link>
-          <nuxt-link
-            class="flexrow-item navbar-lang-item"
-            :to="$switchLocalePath('fr')"
-          >
-            FR
-          </nuxt-link>
-          <nuxt-link
-            class="flexrow-item navbar-lang-item"
-            :to="$switchLocalePath('ja')"
-          >
-            JN
-          </nuxt-link>
+          <LanguageSwitcher />
           <a
             href="https://discord.gg/kitsu-community"
             target="_blank"
@@ -261,6 +244,7 @@
 <script setup>
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+const { locales } = useI18n()
 
 const name = 'Header'
 

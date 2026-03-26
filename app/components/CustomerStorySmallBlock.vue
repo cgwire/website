@@ -6,7 +6,7 @@
     <a :href="storyUrl">
       <div class="flexcolumn">
         <div class="flexrow-item story-picture">
-          <NuxtPicture
+          <NuxtImg
             :src="'/images/' + imagePath"
             format="webp"
             :alt="studioName"

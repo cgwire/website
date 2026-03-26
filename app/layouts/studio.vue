@@ -53,7 +53,6 @@ const slug = props.slug
 const { data } = await useAsyncData(slug, () =>
   queryCollection('studios').path(`/studios/${locale.value}/${slug}`).first()
 )
-console.log(data.value)
 
 const studio = data.value
 const content = data.value

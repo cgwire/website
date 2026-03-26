@@ -1,9 +1,7 @@
 ---
-slug: "ip-protection"
-pageTitle: "\"We Can't Put Our IP In The Cloud\""
+title: "\"We Can't Put Our IP In The Cloud\""
+subtitle: "How Kitsu Handles Security & Data Control For IP Protection"
 image: "security-kitsu-cloud.png"
-titleKey: "ip protection page title"
-subtitleKey: "ip protection page subtitle"
 ---
 
 ## Data Ownership

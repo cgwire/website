@@ -58,8 +58,8 @@ const props = defineProps({
 
 .subnav-element
   border-radius 0.5rem
-  width: 380px
-  margin-left: 5px
+  width 380px
+  margin-left 5px
 
 img.flexrow-item
   min-width 48px

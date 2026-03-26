@@ -1,9 +1,7 @@
 ---
-slug: "migration-made-easy"
-pageTitle: "\"Switching Production Tracking Tools Sounds Risky\""
+title: "\"Switching Production Tracking Tools Sounds Risky\""
+subtitle: "How Kitsu Helps You Migrate Your Data"
 image: "migration-kitsu-cloud.png"
-titleKey: "migration page title"
-subtitleKey: "migration page subtitle"
 ---
 
 ## Switching Without Disruption

@@ -2,7 +2,7 @@
   <section class="section content community community-header">
     <div class="flexrow community-header">
       <div class="flexrow-item illustration">
-        <NuxtPicture src="/images/community/meetup.jpg" format="webp" />
+        <NuxtImg src="/images/community/meetup.jpg" format="webp" />
       </div>
       <div class="flexrow-item">
         <h2>
@@ -44,7 +44,7 @@
       </div>
       <div class="flexrow-item illustration">
         <a class="" href="https://discord.com/invite/VbCxtKN">
-          <NuxtPicture
+          <NuxtImg
             src="/images/community/discord.png"
             alt="Discord Group"
             format="webp"
@@ -81,7 +81,7 @@
     </div>
     <div class="flexrow-item illustration">
       <a class="" href="https://www.meetup.com/Infrastructure-et-film-danimation/">
-        <NuxtPicture src="/images/community/meetupcom.png" alt="Meetup.com Group" /><br />
+        <NuxtImg src="/images/community/meetupcom.png" alt="Meetup.com Group" /><br />
       </a>
     </div>
   </div>
@@ -115,7 +115,7 @@
       </div>
       <div class="flexrow-item illustration">
         <a class="" href="https://github.com/cgwire/kitsu">
-          <NuxtPicture
+          <NuxtImg
             src="/images/community/github.png"
             alt="Github repository"
             format="webp"
@@ -149,7 +149,7 @@
       </div>
       <div class="flexrow-item illustration">
         <a class="" href="https://cgwire.canny.io">
-          <NuxtPicture
+          <NuxtImg
             src="/images/community/canny.png"
             alt="Canny page"
             format="webp"
@@ -187,7 +187,7 @@
       </div>
       <div class="flexrow-item illustration">
         <a class="" href="https://poeditor.com/join/project?hash=fpUejpWDVo">
-          <NuxtPicture
+          <NuxtImg
             src="/images/community/poeditor.png"
             alt="POEditor project"
             format="webp"

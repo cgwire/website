@@ -71,8 +71,8 @@ export const routes = {
   },
   'faq-slug': {
     en: '/faq/[slug]',
-    fr: '/faq/[slug]',
-    ja: '/faq/[slug]'
+    fr: '/questions-frequentes/[slug]',
+    ja: '/よくある質問/[slug]'
   }
 }
 

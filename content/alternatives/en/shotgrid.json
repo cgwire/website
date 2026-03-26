@@ -2,10 +2,8 @@
   "tool": "Shotgrid",
   "slug": "shotgrid",
   "image": "vsshotgrid.png",
-  "i18n": {
-    "titleKey": "comparison shotgrid title",
-    "subtitleKey": "comparison shotgrid subtitle"
-  },
+  "title": "Kitsu compared to Autodesk Flow",
+  "subtitle": "When to use Kitsu and Autodesk Flow",
   "sections": [
     {
       "title": "Target audience",
