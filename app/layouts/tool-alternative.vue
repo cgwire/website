@@ -1,5 +1,5 @@
 <template>
-  <div v-if="comparison" class="compare-page">
+  <div class="compare-page">
     <section class="section content narrower">
       <div>
         <NuxtImg
@@ -35,11 +35,13 @@
 
 <script setup>
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
+const route = useRoute()
 
 let { slug } = await useI18NSlug()
 
-const { data } = await useAsyncData(
-  slug.value,
+let { data: comparison } = await useAsyncData(
+  `comparison-${locale.value}-${slug.value}`,
   () =>
     queryCollection('alternatives')
       .path(`/alternatives/${locale.value}/${slug.value}`)
@@ -47,16 +49,35 @@ const { data } = await useAsyncData(
   { watch: [locale, slug] }
 )
 
-const comparison = data.value
+const title = `CGWire | Kitsu vs ${comparison.value.meta.tool}`
+const description = comparison.value.meta.subtitle
+const path = localePath(route.name)
+const url = `https://www.cg-wire.com${path}`
 
 useHead({
-  title: `CGWire | Kitsu vs ${comparison.meta.tool}`,
-  meta: buildPageMeta(
-    t,
-    comparison.title,
-    comparison.meta.subtitle,
-    slug,
-    comparison.meta.image
-  )
+  title,
+  meta: [
+    { name: 'description', content: description },
+    { name: 'og:description', content: description },
+    { name: 'og:title', content: title },
+    { name: 'og:type', content: 'website' },
+    { name: 'og:url', content: url },
+    // {
+    //   name: 'og:image',
+    //   content: imgPath
+    //     ? 'https://www.cg-wire.com/_nuxt/' + imgPath
+    //     : 'https://www.cg-wire.com/_nuxt/team-collaboration.83584c91.png'
+    // },
+    { name: 'twitter:title', content: title },
+    { name: 'twitter:description', content: description },
+    { name: 'twitter:url', content: url },
+    // {
+    //   name: 'twitter:image',
+    //   content: imgPath
+    //     ? 'https://www.cg-wire.com/_nuxt/' + imgPath
+    //     : 'https://www.cg-wire.com/_nuxt/team-collaboration.83584c91.png'
+    // },
+    { name: 'twitter:card', content: 'summary_large_image' }
+  ]
 })
 </script>

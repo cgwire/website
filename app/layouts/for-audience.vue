@@ -149,6 +149,8 @@
 <script setup>
 const route = useRoute()
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
+
 import { ref } from 'vue'
 
 let { slug } = await useI18NSlug()
@@ -170,15 +172,33 @@ var { data: studios, error } = await useAsyncData(
   { watch: [locale, type] }
 )
 
-useHead(() => ({
-  title: `CGWire | Kitsu / ${t(audiencePage.i18n.titleKey)}`,
-  meta: buildPageMeta(
-    t,
-    audiencePage.i18n.metaTitleKey,
-    audiencePage.i18n.metaDescriptionKey,
-    route.params.slug
-  )
-}))
+const title = `CGWire | Kitsu / ${t(audiencePage.i18n.titleKey)}`
+const description = t(audiencePage.i18n.metaDescriptionKey)
+const path = localePath(route.name)
+const url = `https://www.cg-wire.com${path}`
+
+useHead({
+  title,
+  meta: [
+    { name: 'description', content: description },
+    { name: 'og:description', content: description },
+    { name: 'og:title', content: title },
+    { name: 'og:type', content: 'website' },
+    { name: 'og:url', content: url },
+    // {
+    //   name: 'og:image',
+    //   content: 'https://www.cg-wire.com/_nuxt/' + imgPath
+    // },
+    { name: 'twitter:title', content: title },
+    { name: 'twitter:description', content: description },
+    { name: 'twitter:url', content: url },
+    // {
+    //   name: 'twitter:image',
+    //   content: 'https://www.cg-wire.com/_nuxt/' + imgPath
+    // },
+    { name: 'twitter:card', content: 'summary_large_image' }
+  ]
+})
 
 const panel = ref(null)
 
