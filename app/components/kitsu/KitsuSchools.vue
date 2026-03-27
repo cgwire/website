@@ -11,9 +11,9 @@
     />
 
     <div class="successes">
-      <NuxtPicture src="/images/kitsu/gobelins.png" format="webp" />
-      <NuxtPicture src="/images/kitsu/rubika.png" format="webp" />
-      <NuxtPicture src="/images/kitsu/melies.png" format="webp" />
+      <NuxtImg src="/images/kitsu/gobelins.png" format="webp" />
+      <NuxtImg src="/images/kitsu/rubika.png" format="webp" />
+      <NuxtImg src="/images/kitsu/melies.png" format="webp" />
     </div>
   </div>
 

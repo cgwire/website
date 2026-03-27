@@ -10,7 +10,7 @@
         :title="$t('kitsu supporter title')"
         :content="$t('kitsu supporter content')"
       />
-      <NuxtPicture
+      <NuxtImg
         src="/images/illustrations/success-supporter.png"
         format="webp"
       />

@@ -2,10 +2,8 @@
   "tool": "Ftrack",
   "slug": "ftrack",
   "image": "vsftrack.png",
-  "i18n": {
-    "titleKey": "comparison ftrack title",
-    "subtitleKey": "comparison ftrack subtitle"
-  },
+  "title": "Kitsu compared to Ftrack",
+  "subtitle": "When to use Kitsu and Ftrack",
   "sections": [
     {
       "title": "Target Audience",

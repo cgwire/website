@@ -111,7 +111,7 @@
             :key="index"
           >
             <div class="conference-content">
-              <NuxtPicture
+              <NuxtImg
                 :src="'/images/summit/' + conference.file"
                 :alt="conference.speaker + 'photo'"
                 v-if="conference.file"

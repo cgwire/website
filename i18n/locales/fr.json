@@ -108,10 +108,6 @@
   "community translate explanation": "Kitsu est déjà disponible en six langues. Avec votre aide, nous pouvons aller plus loin. Traduisez Kitsu dans votre langue et permettez à plus de monde d'accéder à nos technologies open source !",
   "community translate subtitle": "POEditor",
   "community translate title": "Traduisez Kitsu",
-  "comparison ftrack subtitle": "Quand utiliser Kitsu ou Ftrack",
-  "comparison ftrack title": "Kitsu comparé à Ftrack",
-  "comparison shotgrid subtitle": "Quand utiliser Kitsu ou Shotgrid",
-  "comparison shotgrid title": "Kitsu comparé à Shotgrid",
   "comparison selfhosted subtitle": "Quand souscrire à notre offre cloud",
   "comparison selfhosted title": "Kitsu Cloud vs Auto-hébergé",
   "contact address": "Adresse",
@@ -887,6 +883,10 @@
   "kitsu-summit conference bigcompany description": "La création d'un pipeline 2D depuis une page blanche en utilisant les techniques de la 3D.",
   "kitsu-summit conference lenovo title": "Station de travail Lenovo",
   "kitsu-summit conference lenovo description": "Performances pour adaptées pour l'entrainement d'IA",
+  "studio": {
+    "visitWebsite": "Visiter le site web",
+    "viewCaseStudy": "Voir l'étude de cas"
+  },
   "slugs": {
     "tailor-made-architecture": "architecture-sur-mesure",
     "casting-management": "gestion-des-castings",
@@ -923,6 +923,10 @@
     "protection-ip": "ip-protection",
     "migration": "migration",
     "gestion-du-changement": "change-management",
-    "integration-personnalisee": "custom-integration"
+    "integration-personnalisee": "custom-integration",
+    "fost": "fost",
+    "miyu": "miyu",
+    "makuta": "makuta",
+    "autour-de-minuit": "autour-de-minuit"
   }
 }

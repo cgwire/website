@@ -97,7 +97,8 @@ export default defineNuxtConfig({
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   sitemap: {
-    hostname: 'https://www.cg-wire.com'
+    hostname: 'https://www.cg-wire.com',
+    zeroRuntime: true
   },
   aos: {
     startEvent: 'DOMContentLoaded',
@@ -110,6 +111,13 @@ export default defineNuxtConfig({
       sm: 640,
       md: 768,
       lg: 1024
+    },
+    densities: [1],
+    presets: {
+      default: {
+        modifiers: { quality: 80, format: 'webp' },
+        sizes: 'sm:100vw md:800px'
+      }
     }
   },
   vite: {
@@ -125,6 +133,9 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false
     }
+  },
+  experimental: {
+    scanPageMeta: true
   }
   // vitalizer: {
   //   disableStylesheets: "entry",

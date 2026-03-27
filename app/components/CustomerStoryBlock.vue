@@ -6,7 +6,7 @@
     <a :href="storyUrl">
       <div class="flexrow reverse">
         <div class="flexrow-item landing-picture">
-          <NuxtPicture
+          <NuxtImg
             :src="'/images/' + imagePath"
             format="webp"
             width="320"

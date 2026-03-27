@@ -36,7 +36,7 @@
       <ul class="section-list tile is-ancestor">
         <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
           <div class="section-item-img">
-            <NuxtPicture
+            <NuxtImg
               src="/images/illustration-simplicity.png"
               alt=""
               format="webp"
@@ -51,7 +51,7 @@
         </li>
         <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
           <div class="section-item-img">
-            <NuxtPicture
+            <NuxtImg
               src="/images/illustration-handshake.png"
               alt=""
               format="webp"
@@ -66,7 +66,7 @@
         </li>
         <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
           <div class="section-item-img">
-            <NuxtPicture
+            <NuxtImg
               src="/images/illustration-craftmanship.png"
               alt=""
               format="webp"
@@ -89,11 +89,7 @@
       <ul class="section-list tile is-ancestor" data-aos="fade-up">
         <li class="section-item tile is-4 is-vertical">
           <div class="section-item-img">
-            <NuxtPicture
-              src="/images/illustration-open.png"
-              alt=""
-              format="webp"
-            />
+            <NuxtImg src="/images/illustration-open.png" alt="" format="webp" />
           </div>
           <h3 class="section-item-title">
             {{ $t('about work title one') }}
@@ -104,7 +100,7 @@
         </li>
         <li class="section-item tile is-4 is-vertical">
           <div class="section-item-img">
-            <NuxtPicture
+            <NuxtImg
               src="/images/illustration-remote.png"
               alt=""
               format="webp"
@@ -119,7 +115,7 @@
         </li>
         <li class="section-item tile is-4 is-vertical">
           <div class="section-item-img">
-            <NuxtPicture
+            <NuxtImg
               src="/images/illustration-deliberate.png"
               alt=""
               format="webp"
@@ -167,7 +163,7 @@
     <div class="tile is-ancestor advisors mt2" data-aos="fade-up">
       <div class="tile is-3 is-vertical ppl">
         <div class="ppl-image">
-          <NuxtPicture src="/images/team/ev.jpg" alt="" format="webp" />
+          <NuxtImg src="/images/team/ev.jpg" alt="" format="webp" />
         </div>
         <div class="ppl-id">
           <h3 class="ppl-id-name">{{ $t('about team id ev') }}</h3>
@@ -176,7 +172,7 @@
       </div>
       <div class="tile is-3 is-vertical ppl">
         <div class="ppl-image">
-          <NuxtPicture src="/images/team/jc.jpg" alt="" format="webp" />
+          <NuxtImg src="/images/team/jc.jpg" alt="" format="webp" />
         </div>
         <div class="ppl-id">
           <h3 class="ppl-id-name">{{ $t('about team id jc') }}</h3>
@@ -185,7 +181,7 @@
       </div>
       <div class="tile is-3 is-vertical ppl">
         <div class="ppl-image">
-          <NuxtPicture src="/images/team/frank2.jpg" alt="" format="webp" />
+          <NuxtImg src="/images/team/frank2.jpg" alt="" format="webp" />
         </div>
         <div class="ppl-id">
           <h3 class="ppl-id-name">
@@ -198,7 +194,7 @@
       </div>
       <div class="tile is-3 is-vertical ppl">
         <div class="ppl-image">
-          <NuxtPicture src="/images/team/matthieu.png" alt="" format="webp" />
+          <NuxtImg src="/images/team/matthieu.png" alt="" format="webp" />
         </div>
         <div class="ppl-id">
           <h3 class="ppl-id-name">

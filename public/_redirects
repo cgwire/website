@@ -63,7 +63,11 @@
 /fr/for/studios /fr/pour-studios
 /fr/for/tvshows /fr/pour-emissions-tv
 /fr/for/video-games /fr/pour-jeux-video
-/fr/for/feature-films /fr/pour-longs-metrages
+/fr/ecoles /fr/pour-ecoles
+/fr/courts-metrages /fr/pour-courts-metrages
+/fr/emissions-tv /fr/pour-emissions-tv
+/fr/jeux-video /fr/pour-jeux-video
+/fr/longs-metrages /fr/pour-longs-metrages
 
 /ja/about /ja/%E4%BC%81%E6%A5%AD%E6%83%85%E5%A0%B1
 /ja/contact /ja/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B

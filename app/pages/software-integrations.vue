@@ -102,7 +102,7 @@
           href="https://kitsu.cg-wire.com/discord/"
           class="software flexrow-item"
         >
-          <NuxtPicture
+          <NuxtImg
             src="/images/integrations/logo-discord.png"
             class="w75pe"
             alt="Discord Logo"

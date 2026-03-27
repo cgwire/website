@@ -25,7 +25,7 @@
           loop
           v-if="isVideo"
         />
-        <NuxtPicture
+        <NuxtImg
           :src="'/images/illustrations/' + pageKey + '.png'"
           format="webp"
           alt=""

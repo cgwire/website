@@ -13,7 +13,7 @@
     </div>
     <div>
       <div class="feature-img-wrapper" :class="color">
-        <NuxtPicture
+        <NuxtImg
           :src="'/images/kitsu/' + featureKey + '.png'"
           alt=""
           format="webp"

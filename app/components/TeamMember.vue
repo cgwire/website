@@ -1,7 +1,7 @@
 <template>
   <div class="tile is-6 is-vertical ppl">
     <div class="ppl-image">
-      <NuxtPicture :src="'/images/team/' + memberKey + '.png'" alt="" />
+      <NuxtImg :src="'/images/team/' + memberKey + '.png'" alt="" />
     </div>
     <div class="ppl-id">
       <h3 class="ppl-id-name">{{ $t(`about team id ${memberKey}`) }}</h3>

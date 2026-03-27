@@ -1,9 +1,7 @@
 ---
-slug: "change-management"
-pageTitle: "\"Our Team Won’t Adopt Another Tool\""
+title: "\"Our Team Won’t Adopt Another Tool\""
+subtitle: "How Kitsu Helps You With Training & Adoption"
 image: "change-management-kitsu.png"
-titleKey: "change management page title"
-subtitleKey: "change management page subtitle"
 ---
 
 ## The Real Risk Isn’t the Software. It’s Adoption.

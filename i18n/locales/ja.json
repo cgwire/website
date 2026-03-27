@@ -108,10 +108,6 @@
   "community translate explanation": "Kitsuはすでに6つの言語で利用可能です。皆様のご協力により、さらに多くの言語に対応できるようになります。あなたの言語にKitsuを翻訳し、より多くの人々が弊社のオープンソース技術にアクセスできるようにしましょう。",
   "community translate subtitle": "POEditor",
   "community translate title": "Kitsuを翻訳する",
-  "comparison ftrack subtitle": "KitsuとFtrackを使うタイミング",
-  "comparison ftrack title": "KitsuとFtrackの比較",
-  "comparison shotgrid subtitle": "KitsuとAutodesk Flowを使うタイミング",
-  "comparison shotgrid title": "KitsuとAutodesk Flowの比較",
   "comparison selfhosted subtitle": "クラウドオファーに登録するタイミング",
   "comparison selfhosted title": "Kitsu Cloud vs セルフホスティング",
   "contact address": "住所",
@@ -887,6 +883,10 @@
   "kitsu-summit conference bigcompany description": "3D技術を使用してゼロから2Dパイプラインを作成する",
   "kitsu-summit conference lenovo title": "レノボのワークステーションとAI",
   "kitsu-summit conference lenovo description": "AI開発に適したワークステーションの選び方",
+  "studio": {
+    "visitWebsite": "ウェブサイトを見る",
+    "viewCaseStudy": "ケーススタディを見る"
+  },
   "slugs": {
     "tailor-made-architecture": "専用構成",
     "casting-management": "配役管理",
@@ -923,6 +923,10 @@
     "ip保護": "ip-protection",
     "移行": "migration",
     "変更管理": "change-management",
-    "カスタム統合": "custom-integration"
+    "カスタム統合": "custom-integration",
+    "fost": "fost",
+    "miyu": "miyu",
+    "makuta": "makuta",
+    "autour-de-minuit": "autour-de-minuit"
   }
 }

@@ -10,12 +10,9 @@
       :content="$t('kitsu supporter vfx')"
     />
     <div class="successes">
-      <NuxtPicture
-        src="/images/kitsu/les-trois-mousquetaires.png"
-        format="webp"
-      />
-      <NuxtPicture src="/images/kitsu/rrr.png" format="webp" />
-      <NuxtPicture src="/images/kitsu/substance.png" format="webp" />
+      <NuxtImg src="/images/kitsu/les-trois-mousquetaires.png" format="webp" />
+      <NuxtImg src="/images/kitsu/rrr.png" format="webp" />
+      <NuxtImg src="/images/kitsu/substance.png" format="webp" />
     </div>
   </div>
 

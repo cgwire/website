@@ -13,9 +13,9 @@
     :content="$t('kitsu supporter games')"
   />
   <div class="successes">
-    <NuxtPicture src="/images/kitsu/brawl-stars.png" format="webp" />
-    <NuxtPicture src="/images/kitsu/merge-mansion.png" format="webp" />
-    <NuxtPicture src="/images/kitsu/cuphead.png" format="webp" />
+    <NuxtImg src="/images/kitsu/brawl-stars.png" format="webp" />
+    <NuxtImg src="/images/kitsu/merge-mansion.png" format="webp" />
+    <NuxtImg src="/images/kitsu/cuphead.png" format="webp" />
   </div>
 
   <KitsuFeatureBlock feature-key="search" />

@@ -188,7 +188,7 @@ usePageHead({
 
 onMounted(() => {
   const tab = route.query.tab
-  console.log(tab)
+
   if (tab) {
     currentTab.value = tab
   }

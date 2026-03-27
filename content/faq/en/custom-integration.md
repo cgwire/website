@@ -1,9 +1,7 @@
 ---
-slug: "custom-integration"
-pageTitle: "\"Will It Fit Into Our Pipeline?\""
+title: "\"Will It Fit Into Our Pipeline?\""
+subtitle: "How To Integrate Kitsu"
 image: "custom-integration-kitsu.png"
-titleKey: "custom integration page title"
-subtitleKey: "custom integration page subtitle"
 ---
 
 ## Built for Pipeline Teams
