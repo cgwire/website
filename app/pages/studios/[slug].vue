@@ -1,9 +1,5 @@
 <template>
-  <NuxtLayout name="studio" :slug="slug">
+  <NuxtLayout name="studio">
     <NuxtPage />
   </NuxtLayout>
 </template>
-
-<script setup>
-let { slug } = await useI18NSlug()
-</script>
