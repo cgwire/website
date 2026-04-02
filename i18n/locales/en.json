@@ -884,6 +884,14 @@
   "kitsu-summit schedule cocktail": "Ending Cocktail",
   "kitsu-summit title": "Kitsu Summit 2026",
   "kitsu-summit conference closing title": "Closing and Thanks",
+  "search": {
+    "open": "Open Search Modal",
+    "placeholder": "Search",
+    "hint": "0 results",
+    "noResults": "0 results",
+    "resultsCount": "result | results",
+    "close": "Close Search Modal"
+  },
   "studio": {
     "visitWebsite": "Visit Website",
     "viewCaseStudy": "View Case Study"

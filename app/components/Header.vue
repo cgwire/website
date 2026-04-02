@@ -216,6 +216,8 @@
           </span>
         </nuxt-link>
 
+        <SearchForm />
+
         <div class="navbar-end">
           <a
             class="navbar-item top signin"

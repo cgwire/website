@@ -883,6 +883,14 @@
   "kitsu-summit conference bigcompany description": "La création d'un pipeline 2D depuis une page blanche en utilisant les techniques de la 3D.",
   "kitsu-summit conference lenovo title": "Station de travail Lenovo",
   "kitsu-summit conference lenovo description": "Performances pour adaptées pour l'entrainement d'IA",
+  "search": {
+    "open": "Open Search Modal",
+    "placeholder": "Search",
+    "hint": "0 results",
+    "noResults": "0 results",
+    "resultsCount": "result | results",
+    "close": "Close Search Modal"
+  },
   "studio": {
     "visitWebsite": "Visiter le site web",
     "viewCaseStudy": "Voir l'étude de cas"
