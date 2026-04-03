@@ -1,0 +1,59 @@
+{
+  "title": "Join the Future of Production Collaboration",
+  "slug": "kitsu-summit",
+  "hero": {
+    "title": "Join the Future of Production Collaboration",
+    "date": "February 12, 2026",
+    "location": "Paris, France",
+    "conferences": "12 Conferences",
+    "registerCta": "Get your ticket"
+  },
+  "about": {
+    "title": "About Kitsu Summit 2026",
+    "description": "The first-ever Kitsu Summit brings together production professionals, technical directors, and studio managers to share their experiences using Kitsu for animation and video game production.",
+    "stats": {
+      "conferences": "Expert Conferences",
+      "attendees": "Expected Attendees",
+      "rooms": "Rooms",
+      "duration": "Full Day Event"
+    },
+    "sponsorsTitle": "They support the event"
+  },
+  "conferences": {
+    "title": "Conference Program",
+    "description": "12 inspiring presentations from industry leaders showcasing real-world implementations of Kitsu across different production types. In addition, there will be two keynote speeches from the founders of Kitsu."
+  },
+  "schedule": {
+    "title": "Conference Schedule",
+    "description": "Plan your day with our detailed schedule of conferences",
+    "time": "Time",
+    "room": "Room"
+  },
+  "registration": {
+    "title": "Secure Your Spot",
+    "description": "Join us for an unforgettable day of learning, networking, and discovering the future of production collaboration.",
+    "benefits": {
+      "access": "Access to all 12 conferences",
+      "lunch": "Breakfast, lunch, and closing cocktail",
+      "swag": "Exclusive Kitsu Summit merchandise",
+      "networking": "Networking opportunities with industry peers"
+    },
+    "price": {
+      "label": "Early Bird Price"
+    },
+    "food": {
+      "title": "Catering",
+      "note": "The food will be served by Marie Julien Cuisine. It will feature a selection of gourmet dishes, including vegetarian options."
+    }
+  },
+  "access": {
+    "title": "How To Access The Venue",
+    "description": "The venue is located in the heart of Paris, close to the Gare de l'Est and the Gare du Nord. It is easily accessible by public transport.",
+    "recommendedHotels": "Recommended Hotels",
+    "night": "night"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Production?",
+    "description": "Don't miss this unique opportunity to learn from the best and connect with your industry peers."
+  }
+}

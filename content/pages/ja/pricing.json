@@ -1,0 +1,64 @@
+{
+  "title": "Kitsu Cloud plans for studios of all sizes",
+  "slug": "pricing",
+  "pricing": {
+    "kitsu": {
+      "subtitle": "Connect your teams and tools",
+      "title": "Kitsu Cloud plans for studios of all sizes"
+    },
+    "cloud": {
+      "explanation": "We provide a cloud installation with user support, trainings, extra features, plugins deployment, and contractor synchronization."
+    },
+    "features": {
+      "gbstorage": "GB storage",
+      "tbstorage": "TB storage",
+      "tinySupport": "Basic support",
+      "smallFour": "< 48h response time",
+      "commonFour": "Strong security",
+      "mutualize": "Mutualized hosting",
+      "commonTwo": "Premium Support",
+      "mediumFour": "< 24h response time",
+      "mediumFive": "High activity support",
+      "commonThree": "High availability",
+      "mediumTwo": "Priority for bug fixes",
+      "training": "Training session",
+      "commonSearchengine": "Search engine",
+      "commonPlaylistbuilder": "Playlist builder",
+      "largeTwo": "Diamond support",
+      "largeFour": "< 12h response time",
+      "largeSix": "Intense activity support",
+      "partnerOne": "Everything in Studio",
+      "partnerOnpremise": "On-premise installation",
+      "partnerUnlimited": "Unlimited users",
+      "partnerContract": "Custom contract",
+      "partnerFour": "Multiple instances",
+      "partnerThree": "Multiple regions",
+      "partnerSix": "Staging environment",
+      "partnerEncryption": "Media encryption"
+    },
+    "usecase": {
+      "agency": "For shorts, commercials, and light productions",
+      "production": "For TV series, feature films, and video games",
+      "studio": "For studios running multiple productions",
+      "partner": "For large studios or TPN compliance"
+    },
+    "title": {
+      "partner": "Partner",
+      "quote": "On Quote"
+    },
+    "button": {
+      "contactcta": "Contact us"
+    },
+    "discount": {
+      "details": "All plans come with a two weeks trial"
+    },
+    "school": {
+      "title": "Pricing For Schools",
+      "details": "We offer a unique price of 3999€ a year for Artist Schools (up to 100 students)."
+    },
+    "faq": {
+      "subtitle": "Additional information",
+      "title": "Frequently Asked Questions"
+    }
+  }
+}

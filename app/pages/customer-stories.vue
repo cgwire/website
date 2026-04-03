@@ -1,13 +1,11 @@
 <template>
   <div class="kitsu-page customer-stories">
     <div class="section-title has-text-centered mt4 mb4">
-      {{ $t('header title customer-stories') }}
+      {{ page.meta.customerStories.header.title }}
     </div>
-
     <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
       TV Series (2D)
     </div>
-
     <CustomerStoryBlock
       studio-name="Tant Mieux Prod"
       story-key="tant-mieux"
@@ -15,11 +13,9 @@
       image-path="photo-customer-story-tant-mieux.png"
       story-url="https://blog.cg-wire.com/customer-story-tant-mieux-prod/"
     />
-
     <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
       Feature Films, Shorts (2D)
     </div>
-
     <CustomerStoryBlock
       studio-name="Miyu studio"
       story-key="miyu"
@@ -27,11 +23,9 @@
       image-path="photo-customer-story-miyu.png"
       story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
     />
-
     <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
       TV Series (2D)
     </div>
-
     <CustomerStoryBlock
       studio-name="Fost studio"
       story-key="fost"
@@ -39,11 +33,9 @@
       image-path="photo-customer-story-fost.png"
       story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
     />
-
     <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
       TV Series, Feature Films (2D, 3D)
     </div>
-
     <CustomerStoryBlock
       studio-name="Autour De Minuit"
       story-key="adm"
@@ -51,11 +43,9 @@
       image-path="photo-customer-story-adm.jpg"
       story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
     />
-
     <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
       Feature Fims (VFX)
     </div>
-
     <CustomerStoryBlock
       studio-name="Makuta VFX (RRR Movie)"
       story-key="makuta"
@@ -63,12 +53,22 @@
       image-path="photo-customer-story-makuta.png"
       story-url="https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
     />
-
     <Trial />
   </div>
 </template>
 
 <script setup>
+const { locale } = useI18n()
+const slug = ref('customer-stories')
+
+const { pageQuery } = usePage(locale, slug)
+
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
+
 usePageHead({
   title: 'CGWire | Kitsu / ' + useI18n().t('header title customer-stories'),
   titleKey: 'header title customer-stories',

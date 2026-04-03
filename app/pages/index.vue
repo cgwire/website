@@ -3,15 +3,15 @@
     <section class="section content introduction">
       <div class="flexrow">
         <div class="flexrow-item introduction-text">
-          <h1 class="title">{{ $t('main title') }}</h1>
-          <h2 class="main-subtitle">{{ $t('main subtitle') }}</h2>
+          <h1 class="title">{{ page.meta.main.title }}</h1>
+          <h2 class="main-subtitle">{{ page.meta.main.subtitle }}</h2>
           <a
             href="https://www.youtube.com/watch?v=YJQJ3OciGR0"
             target="_blank"
             class="button button--with-icon is-large watch-button"
           >
             <NuxtImg src="/images/play.svg" alt="" format="webp" />
-            <span>{{ $t('kitsu watch cta') }}</span>
+            <span>{{ page.meta.kitsu.watch.cta }}</span>
           </a>
         </div>
         <div class="flexrow-item introduction-picture">
@@ -60,15 +60,15 @@
     <div class="production-type">
       Flow - 3D Feature Film, 1h 25'<br />
       <em>Dream Well Studio</em> <br />
-      {{ $t('kitsu tracked') }}
+      {{ page.meta.kitsu.tracked }}
     </div>
 
     <section class="section content">
       <h2 class="subtitle main-tagline">
-        {{ $t('main tagline') }}
+        {{ page.meta.main.tagline }}
       </h2>
       <p class="has-text-centered main-tagline-explanation">
-        {{ $t('main explanation one') }}
+        {{ page.meta.main.explanation.one }}
       </p>
     </section>
 
@@ -76,10 +76,10 @@
       <div class="flexrow">
         <div class="flexrow-item landing-text">
           <h2 class="subtitle">
-            {{ $t('main explanation title one') }}
+            {{ page.meta.main.explanation.title.one }}
           </h2>
           <p>
-            {{ $t('main explanation text one') }}
+            {{ page.meta.main.explanation.text.one }}
           </p>
         </div>
         <div class="flexrow-item landing-picture">
@@ -103,10 +103,10 @@
         </div>
         <div class="flexrow-item landing-text">
           <h2 class="subtitle">
-            {{ $t('main explanation title two') }}
+            {{ page.meta.main.explanation.title.two }}
           </h2>
           <p>
-            {{ $t('main explanation text two') }}
+            {{ page.meta.main.explanation.text.two }}
           </p>
         </div>
       </div>
@@ -116,10 +116,10 @@
       <div class="flexrow">
         <div class="flexrow-item landing-text">
           <h2 class="subtitle">
-            {{ $t('main explanation title three') }}
+            {{ page.meta.main.explanation.title.three }}
           </h2>
           <p>
-            {{ $t('main explanation text three') }}
+            {{ page.meta.main.explanation.text.three }}
           </p>
         </div>
         <div class="flexrow-item landing-picture">
@@ -161,15 +161,15 @@
     <div class="production-type">
       7 bears - 3D Netflix Series - 10x27'<br />
       <em>Folivari</em><br />
-      {{ $t('kitsu tracked') }}
+      {{ page.meta.kitsu.tracked }}
     </div>
 
     <section class="section content landing-block" data-aos="fade-up">
       <h2 class="subtitle main-tagline">
-        {{ $t('main explanation title four') }}
+        {{ page.meta.main.explanation.title.four }}
       </h2>
       <p class="has-text-centered main-tagline-explanation">
-        {{ $t('main explanation text four') }}
+        {{ page.meta.main.explanation.text.four }}
       </p>
     </section>
 
@@ -184,7 +184,7 @@
             }"
             @click="featureTab = 'forecast'"
           >
-            {{ $t('kitsu scale forecast') }}
+            {{ page.meta.kitsu.scale.forecast }}
           </div>
 
           <div
@@ -195,7 +195,7 @@
             }"
             @click="featureTab = 'todos'"
           >
-            {{ $t('kitsu scale todos') }}
+            {{ page.meta.kitsu.scale.todos }}
           </div>
           <div
             :class="{
@@ -205,7 +205,7 @@
             }"
             @click="featureTab = 'reviews'"
           >
-            {{ $t('kitsu scale reviews') }}
+            {{ page.meta.kitsu.scale.reviews }}
           </div>
           <div
             :class="{
@@ -215,7 +215,7 @@
             }"
             @click="featureTab = 'reports'"
           >
-            {{ $t('kitsu scale reports') }}
+            {{ page.meta.kitsu.scale.reports }}
           </div>
           <div
             :class="{
@@ -225,14 +225,14 @@
             }"
             @click="featureTab = 'api'"
           >
-            {{ $t('kitsu scale api') }}
+            {{ page.meta.kitsu.scale.api }}
           </div>
         </div>
         <div class="tab-info">
           <Transition name="fade" mode="out-in">
             <div v-if="featureTab === 'todos'">
               <p class="has-text-centered">
-                {{ $t('kitsu scale todos-text') }}
+                {{ page.meta.kitsu.scale.todosText }}
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
@@ -245,7 +245,7 @@
 
             <div v-else-if="featureTab === 'forecast'">
               <p class="has-text-centered">
-                {{ $t('kitsu scale forecast-text') }}
+                {{ page.meta.kitsu.scale.forecastText }}
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
@@ -258,7 +258,7 @@
 
             <div v-else-if="featureTab === 'reports'">
               <p class="has-text-centered">
-                {{ $t('kitsu scale reports-text') }}
+                {{ page.meta.kitsu.scale.reportsText }}
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
@@ -271,7 +271,7 @@
 
             <div v-else-if="featureTab === 'reviews'">
               <p class="has-text-centered">
-                {{ $t('kitsu scale reviews-text') }}
+                {{ page.meta.kitsu.scale.reviewsText }}
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
@@ -283,7 +283,7 @@
             </div>
             <div v-else-if="featureTab === 'api'">
               <p class="has-text-centered">
-                {{ $t('kitsu scale api-text') }}
+                {{ page.meta.kitsu.scale.apiText }}
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
@@ -300,29 +300,29 @@
 
     <section class="section content landing-block" data-aos="fade-up">
       <h2 class="subtitle main-tagline">
-        {{ $t('kitsu stats title') }}
+        {{ page.meta.kitsu.stats.title }}
       </h2>
       <p class="has-text-centered main-tagline-explanation">
-        {{ $t('kitsu stats text') }}
+        {{ page.meta.kitsu.stats.text }}
       </p>
 
       <div class="flexrow number-blocks">
         <div class="flexcolumn flexrow-item number-block">
           <p class="number-block-number">9,600+</p>
           <p class="number-block-title">
-            {{ $t('kitsu stats hours saved') }}
+            {{ page.meta.kitsu.stats.hoursSaved }}
           </p>
         </div>
         <div class="flexcolumn flexrow-item number-block">
           <p class="number-block-number">10,000+</p>
           <p class="number-block-title">
-            {{ $t('kitsu stats video reviews') }}
+            {{ page.meta.kitsu.stats.videoReviews }}
           </p>
         </div>
         <div class="flexcolumn flexrow-item number-block">
           <p class="number-block-number">30+</p>
           <p class="number-block-title">
-            {{ $t('kitsu stats countries') }}
+            {{ page.meta.kitsu.stats.countries }}
           </p>
         </div>
       </div>
@@ -330,10 +330,10 @@
 
     <section class="flexcolumn landing-block mt8">
       <h2 class="subtitle main-tagline">
-        {{ $t('kitsu scale stories') }}
+        {{ page.meta.kitsu.scale.stories }}
       </h2>
       <p class="has-text-centered tagline-explanation" data-aos="fade-up">
-        {{ $t('kitsu scale stories-text') }}
+        {{ page.meta.kitsu.scale.storiesText }}
       </p>
 
       <div class="mt4 mb1" data-aos="fade-up">
@@ -406,12 +406,12 @@
       Mush Mush, 3D TV Series - 52x11 minutes <br />
       2 seasons<br />
       <em>La Cabane</em><br />
-      {{ $t('kitsu tracked') }}
+      {{ page.meta.kitsu.tracked }}
     </div>
 
     <section class="section supporters mt8" data-aos="fade-up">
       <h2 class="subtitle tagline mb1">
-        {{ $t('about supporters title') }}
+        {{ page.meta.about.supporters.title }}
       </h2>
       <div>
         <ul class="flexrow supporter-list has-text-centered">
@@ -451,10 +451,10 @@
 
     <section class="section content conclusion conclusion-text mt8">
       <h2 class="subtitle tagline" data-aos="fade-up">
-        {{ $t('main conclusion tagline') }}
+        {{ page.meta.main.conclusion.tagline }}
       </h2>
       <p class="has-text-centered tagline-explanation" data-aos="fade-up">
-        {{ $t('main conclusion text') }}
+        {{ page.meta.main.conclusion.text }}
       </p>
     </section>
 
@@ -469,12 +469,21 @@
 </template>
 
 <script setup>
-usePageHead({
-  title: 'CGWire | ' + useI18n().t('main title'),
-  titleKey: 'main title',
-  descriptionKey: 'main subtitle',
-  path: '',
-  image: 'teaser.d579992c.png'
+const { locale } = useI18n()
+const slug = ref('index')
+
+const { pageQuery } = usePage(locale, slug)
+
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
+
+useSEO({
+  title: 'CGWire | ' + page.value.meta.main.title,
+  description: page.value.meta.main.subtitle,
+  imagePath: 'teaser.png'
 })
 
 const img = useImage()

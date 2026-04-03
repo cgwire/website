@@ -1,0 +1,33 @@
+{
+  "title": "Communauté",
+  "slug": "community",
+  "community": {
+    "subtitle": "Rejoignez vos pairs",
+    "tagline": "Rencontrez notre communauté",
+    "explanationOne": "Plus nous progressons sur CGWire, plus nous observons le besoin d'avoir plus de collaborations entre les studios. C'est pourquoi nous alimentons des communautés de professionnels de l'animation en ligne et hors ligne. Les sujets vont au delà de Kitsu. Les TDs et chargés de production se rencontrent et partagent des bonnes pratiques pour résoudre leurs défis du quotidien. Dans la suite, vous trouverez toutes les plateformes que nous utilisons pour cela.",
+    "chat": {
+      "subtitle": "Discord",
+      "title": "Discutez avec nous",
+      "explanation": "Rejoignez notre channel Discord. Des professionnels de l'industrie partagent et échangent à propos de Kitsu et des pipelines de VFX et animation !",
+      "cta": "Partagez avec plus de 1000 experts"
+    },
+    "github": {
+      "subtitle": "Github",
+      "title": "Contribuez à Kitsu",
+      "explanation": "Publiez vos rapports de bugs ou vos demandes de fonctionnalité sur notre dépôt Github. Regardez comment nous procédons et participez à la discussion. Ou encore mieux participez au code !",
+      "cta": "Contribuez à notre code source"
+    },
+    "feedback": {
+      "subtitle": "Canny",
+      "title": "Faites vos retours",
+      "explanation": "Envoyez vos demandes de fonctionnalités ou votez pour celles déjà existantes. Suivez les développements en cours et participez au futur de Kitsu !",
+      "cta": "Votez pour des fonctionnalités"
+    },
+    "translate": {
+      "subtitle": "POEditor",
+      "title": "Traduisez Kitsu",
+      "explanation": "Kitsu est déjà disponible en six langues. Avec votre aide, nous pouvons aller plus loin. Traduisez Kitsu dans votre langue et permettez à plus de monde d'accéder à nos technologies open source !",
+      "cta": "Devenez un traducteur de Kitsu"
+    }
+  }
+}

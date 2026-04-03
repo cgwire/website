@@ -1,0 +1,12 @@
+{
+  "title": "Build your workflow with our spreadsheets",
+  "slug": "spreadsheets",
+  "spreadsheets": {
+    "tagline": "Build your workflow with our spreadsheets",
+    "explanationOne": "We understand that you are accustomed to spreadsheets and that transitioning to a new tool can be challenging. Even if you are not ready to use Kitsu, we want to assist you. That's why we've prepared production-ready spreadsheets for you. You can use them as a starting point to build your workflow or keep them throughout your production. Everything is free and licensed under Creative Commons BY-NC-SA 2.0. Enjoy!",
+    "shortPlanningTitle": "Set up your schedule (Short)",
+    "tvshowPlanningTitle": "Set up your schedule (TV Show)",
+    "breakdownTitle": "Manage your casting",
+    "retakeTitle": "Retake tracking"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Integrations",
+  "slug": "software-integrations",
+  "integrations": {
+    "subtitleDcc": "Quickly send previews",
+    "titleDcc": "Publish from your Favorite Digital Content Creation Tools",
+    "subtitleChats": "Keep your team up to date",
+    "titleChats": "Push notifications to your chat applications",
+    "subtitleSoftware": "Access Kitsu data in your tools",
+    "titleSoftware": "Integrate Kitsu directly into Your Code"
+  },
+  "communityContribution": "Community contribution"
+}

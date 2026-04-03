@@ -3,16 +3,16 @@
     <section class="hero-section">
       <div class="container">
         <div class="carbon-title">
-          <h1 class="main-title">{{ $t('carbon-report title') }}</h1>
+          <h1 class="main-title">{{ page.meta.carbonReport.title }}</h1>
           <div class="year-selector">2024</div>
         </div>
 
         <h2 class="section-title">
-          {{ $t('carbon-report subtitle') }}
+          {{ page.meta.carbonReport.subtitle }}
         </h2>
 
         <p class="hero-description">
-          {{ $t('carbon-report explanation one') }}
+          {{ page.meta.carbonReport.explanationOne }}
         </p>
 
         <div class="hero-illustration">
@@ -29,11 +29,11 @@
     <section class="section">
       <div class="container">
         <h2 class="content-title">
-          {{ $t('carbon-report consumption title') }}
+          {{ page.meta.carbonReport.consumption.title }}
         </h2>
 
         <p class="content-description">
-          {{ $t('carbon-report consumption explanation') }}
+          {{ page.meta.carbonReport.consumption.explanation }}
         </p>
 
         <div class="toggle-buttons" @click="toggleData">
@@ -44,7 +44,7 @@
               'btn-secondary': !dataWithFlights
             }"
           >
-            {{ $t('carbon-report consumption with-flights') }}
+            {{ page.meta.carbonReport.consumption.withFlights }}
           </button>
           <button
             class="btn"
@@ -53,7 +53,7 @@
               'btn-secondary': dataWithFlights
             }"
           >
-            {{ $t('carbon-report consumption without-flights') }}
+            {{ page.meta.carbonReport.consumption.withoutFlights }}
           </button>
         </div>
 
@@ -66,7 +66,7 @@
                 alt="Globe icon"
               />
               <span class="card-label">{{
-                $t('carbon-report consumption total')
+                page.meta.carbonReport.consumption.total
               }}</span>
             </div>
             <div class="card-value">
@@ -83,7 +83,7 @@
                 alt="Users icon"
               />
               <span class="card-label">{{
-                $t('carbon-report consumption per-employee')
+                page.meta.carbonReport.consumption.perEmployee
               }}</span>
             </div>
             <div class="card-value">
@@ -91,7 +91,7 @@
               <span class="card-unit">tCO₂e</span>
             </div>
             <div class="card-info">
-              {{ $t('carbon-report consumption per-employee-info') }} 1,4 - 3,9
+              {{ page.meta.carbonReport.consumption.perEmployeeInfo }} 1,4 - 3,9
               TCO₂e
             </div>
           </div>
@@ -104,7 +104,7 @@
                 alt="Dollar icon"
               />
               <span class="card-label">{{
-                $t('carbon-report consumption per-1000e')
+                page.meta.carbonReport.consumption.per1000e
               }}</span>
             </div>
             <div class="card-value">
@@ -112,7 +112,7 @@
               <span class="card-unit">kCO₂e</span>
             </div>
             <div class="card-info">
-              {{ $t('carbon-report consumption per-1000e-info') }} 75 Kg / K€
+              {{ page.meta.carbonReport.consumption.per1000eInfo }} 75 Kg / K€
             </div>
           </div>
         </div>
@@ -123,11 +123,11 @@
       <section class="section">
         <div class="container">
           <h2 class="content-title">
-            {{ $t('carbon-report categories title') }}
+            {{ page.meta.carbonReport.categories.title }}
           </h2>
 
           <p class="content-description">
-            {{ $t('carbon-report categories explanation') }}
+            {{ page.meta.carbonReport.categories.explanation }}
           </p>
 
           <div class="toggle-buttons" @click="toggleData">
@@ -138,7 +138,7 @@
                 'btn-secondary': !dataWithFlights
               }"
             >
-              {{ $t('carbon-report consumption with-flights') }}
+              {{ page.meta.carbonReport.consumption.withFlights }}
             </button>
             <button
               class="btn"
@@ -147,7 +147,7 @@
                 'btn-secondary': dataWithFlights
               }"
             >
-              {{ $t('carbon-report consumption without-flights') }}
+              {{ page.meta.carbonReport.consumption.withoutFlights }}
             </button>
           </div>
 
@@ -246,10 +246,10 @@
             <div class="category-card-data">
               <div class="card-value">46%</div>
               <div class="card-description">
-                {{ $t('carbon-report categories japan') }}
+                {{ page.meta.carbonReport.categories.japan }}
               </div>
               <div class="card-info">
-                11,9 {{ $t('carbon-report categories co2') }}
+                11,9 {{ page.meta.carbonReport.categories.co2 }}
               </div>
             </div>
           </div>
@@ -262,10 +262,10 @@
             <div class="category-card-data">
               <div class="card-value">30%</div>
               <div class="card-description">
-                {{ $t('carbon-report categories infrastructure') }}
+                {{ page.meta.carbonReport.categories.infrastructure }}
               </div>
               <div class="card-info">
-                7,7 {{ $t('carbon-report categories co2') }}
+                7,7 {{ page.meta.carbonReport.categories.co2 }}
               </div>
             </div>
           </div>
@@ -281,10 +281,10 @@
             <div class="category-card-data">
               <div class="card-value">60%</div>
               <div class="card-description">
-                {{ $t('carbon-report categories infrastructure') }}
+                {{ page.meta.carbonReport.categories.infrastructure }}
               </div>
               <div class="card-info">
-                8.98 {{ $t('carbon-report categories co2') }}
+                8.98 {{ page.meta.carbonReport.categories.co2 }}
               </div>
             </div>
           </div>
@@ -297,10 +297,10 @@
             <div class="category-card-data">
               <div class="card-value">16%</div>
               <div class="card-description">
-                {{ $t('carbon-report categories food') }}
+                {{ page.meta.carbonReport.categories.food }}
               </div>
               <div class="card-info">
-                1,9 {{ $t('carbon-report categories co2') }}
+                1,9 {{ page.meta.carbonReport.categories.co2 }}
               </div>
             </div>
           </div>
@@ -309,14 +309,16 @@
     </div>
 
     <div class="section evolution">
-      <h2 class="content-title">{{ $t('carbon-report evolution title') }}</h2>
+      <h2 class="content-title">
+        {{ page.meta.carbonReport.evolution.title }}
+      </h2>
       <div class="flexrow evolution-card">
         <div class="evolution-text">
-          <h2>{{ $t('carbon-report evolution cloud') }}</h2>
+          <h2>{{ page.meta.carbonReport.evolution.cloud }}</h2>
           <ul>
-            <li>{{ $t('carbon-report evolution cloud one') }}</li>
-            <li>{{ $t('carbon-report evolution cloud two') }}</li>
-            <li>{{ $t('carbon-report evolution cloud three') }}</li>
+            <li>{{ page.meta.carbonReport.evolution.cloudOne }}</li>
+            <li>{{ page.meta.carbonReport.evolution.cloudTwo }}</li>
+            <li>{{ page.meta.carbonReport.evolution.cloudThree }}</li>
           </ul>
         </div>
         <img
@@ -331,11 +333,11 @@
           alt="Cloud optimisation illustration"
         />
         <div class="evolution-text food">
-          <h2>{{ $t('carbon-report evolution food') }}</h2>
+          <h2>{{ page.meta.carbonReport.evolution.food }}</h2>
           <ul>
-            <li>{{ $t('carbon-report evolution food one') }}</li>
-            <li>{{ $t('carbon-report evolution food two') }}</li>
-            <li>{{ $t('carbon-report evolution food three') }}</li>
+            <li>{{ page.meta.carbonReport.evolution.foodOne }}</li>
+            <li>{{ page.meta.carbonReport.evolution.foodTwo }}</li>
+            <li>{{ page.meta.carbonReport.evolution.foodThree }}</li>
           </ul>
         </div>
       </div>
@@ -344,7 +346,7 @@
     <div class="anticipation">
       <div class="section">
         <h2 class="content-title">
-          {{ $t('carbon-report anticipation title') }}
+          {{ page.meta.carbonReport.anticipation.title }}
         </h2>
 
         <div class="event-cards">
@@ -357,10 +359,10 @@
             </div>
             <div class="card-content">
               <h3 class="event-title">
-                {{ $t('carbon-report anticipation meetup') }}
+                {{ page.meta.carbonReport.anticipation.meetup }}
               </h3>
               <p class="event-details">
-                {{ $t('carbon-report anticipation meetup-details') }}
+                {{ page.meta.carbonReport.anticipation.meetupDetails }}
               </p>
               <div class="carbon-footprint">
                 14,5 <span class="unit">tCO₂e</span>
@@ -377,10 +379,10 @@
             </div>
             <div class="card-content">
               <h3 class="event-title">
-                {{ $t('carbon-report anticipation travel') }}
+                {{ page.meta.carbonReport.anticipation.travel }}
               </h3>
               <p class="event-details">
-                {{ $t('carbon-report anticipation travel-details') }}
+                {{ page.meta.carbonReport.anticipation.travelDetails }}
               </p>
               <div class="carbon-footprint">
                 8,5 <span class="unit">tCO₂e</span>
@@ -397,10 +399,10 @@
             </div>
             <div class="card-content">
               <h3 class="event-title">
-                {{ $t('carbon-report anticipation travelus') }}
+                {{ page.meta.carbonReport.anticipation.travelus }}
               </h3>
               <p class="event-details">
-                {{ $t('carbon-report anticipation travel-details') }}
+                {{ page.meta.carbonReport.anticipation.travelDetails }}
               </p>
               <div class="carbon-footprint">
                 5,6 <span class="unit">tCO₂e</span>
@@ -410,21 +412,21 @@
         </div>
 
         <p class="emission-warning">
-          {{ $t('carbon-report anticipation warning') }}
+          {{ page.meta.carbonReport.anticipation.warning }}
         </p>
       </div>
     </div>
 
     <div class="section conclusion">
       <h2 class="content-title">
-        {{ $t('carbon-report conclusion title') }}
+        {{ page.meta.carbonReport.conclusion.title }}
       </h2>
       <p class="content-description">
-        {{ $t('carbon-report conclusion explanation') }}
+        {{ page.meta.carbonReport.conclusion.explanation }}
       </p>
 
       <NuxtLink class="btn btn-primary" :to="$localePath('about')">
-        {{ $t('carbon-report conclusion button') }}
+        {{ page.meta.carbonReport.conclusion.button }}
       </NuxtLink>
     </div>
 
@@ -434,6 +436,15 @@
 
 <script setup>
 const { locale } = useI18n()
+const slug = ref('carbon-report')
+
+const { pageQuery } = usePage(locale, slug)
+
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
 
 usePageHead({
   title: 'CGWire | ' + useI18n().t('carbon-report title'),

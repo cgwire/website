@@ -1,0 +1,59 @@
+{
+  "title": "Découvrez l'avenir de la collaboration créative",
+  "slug": "kitsu-summit",
+  "hero": {
+    "title": "Découvrez l'avenir de la collaboration créative",
+    "date": "12 février 2026",
+    "location": "Paris, France",
+    "conferences": "12 conférences",
+    "registerCta": "Acheter votre billet"
+  },
+  "about": {
+    "title": "À propos du Kitsu Summit 2026",
+    "description": "Le tout premier Kitsu Summit rassemble des professionnels de la production, des directeurs techniques et des directeurs de studio pour partager leurs expériences d'utilisation de Kitsu pour l'animation, les effets spéciaux, et le jeu vidéo.",
+    "stats": {
+      "conferences": "Conférences d'experts",
+      "attendees": "Participants attendus",
+      "rooms": "Salles",
+      "duration": "Événement sur une journée complète"
+    },
+    "sponsorsTitle": "Ils soutiennent l'événement"
+  },
+  "conferences": {
+    "title": "Programme de la conférence",
+    "description": "12 présentations inspirantes de leaders du secteur présentant des applications concrètes de Kitsu dans différents types de production. Deux discours d'ouverture accompagneront les fondateurs de Kitsu."
+  },
+  "schedule": {
+    "title": "Programme de la conférence",
+    "description": "Planifiez votre journée grâce à notre programme détaillé des conférences.",
+    "time": "Heure",
+    "room": "Salle"
+  },
+  "registration": {
+    "title": "Réservez votre place",
+    "description": "Rejoignez-nous pour une journée inoubliable d'apprentissage, de réseautage et de découverte sur l'avenir de la collaboration créative.",
+    "benefits": {
+      "access": "Accès aux 12 conférences",
+      "lunch": "Petit-déjeuner, déjeuner et cocktail de clôture",
+      "swag": "Produits exclusifs Kitsu Summit",
+      "networking": "Opportunités de réseautage avec des pairs de l'industrie"
+    },
+    "price": {
+      "label": "Tarif Early Bird"
+    },
+    "food": {
+      "title": "Traiteur",
+      "note": "La nourriture sera servie par Marie Julien Cuisine. Un buffet gourmet vous sera proposé avec des options végétariennes."
+    }
+  },
+  "access": {
+    "title": "Comment accéder au lieu",
+    "description": "Le lieu est situé en plein cœur de Paris, à proximité des gares de l'Est et du Nord. Il est facilement accessible en transports en commun.",
+    "recommendedHotels": "Hôtels recommandés",
+    "night": "nuit"
+  },
+  "cta": {
+    "title": "Prêt à transformer votre production ?",
+    "description": "Ne manquez pas cette occasion unique d'apprendre des meilleurs et de vous connecter avec vos pairs du secteur."
+  }
+}

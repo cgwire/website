@@ -4,10 +4,10 @@
 
     <section class="section mt8 pt0">
       <div class="section-subtitle has-text-centered">
-        {{ $t('integrations subtitle dcc') }}
+        {{ page.meta.integrations.subtitleDcc }}
       </div>
       <h2 class="section-title has-text-centered">
-        {{ $t('integrations title dcc') }}
+        {{ page.meta.integrations.titleDcc }}
       </h2>
 
       <div class="flexrow mt2">
@@ -42,6 +42,7 @@
           />
         </a>
       </div>
+
       <div class="flexrow mt2 mb4 has-text-centered">
         <a
           href="https://github.com/EmberLightVFX/Kitsu-for-Prism"
@@ -53,7 +54,7 @@
             alt="Prism Logo"
           />
           <span class="made-by-community">
-            {{ $t('community contribution') }}
+            {{ page.meta.communityContribution }}
           </span>
         </a>
         <a
@@ -66,17 +67,18 @@
             alt="Ayon Logo"
           />
           <span class="made-by-community">
-            {{ $t('community contribution') }}
+            {{ page.meta.communityContribution }}
           </span>
         </a>
       </div>
 
       <div class="section-subtitle has-text-centered mt4">
-        {{ $t('integrations subtitle chats') }}
+        {{ page.meta.integrations.subtitleChats }}
       </div>
       <h2 class="section-title has-text-centered">
-        {{ $t('integrations title chats') }}
+        {{ page.meta.integrations.titleChats }}
       </h2>
+
       <div class="flexrow mt2 mb4">
         <a
           href="https://kitsu.cg-wire.com/slack/"
@@ -111,11 +113,12 @@
       </div>
 
       <div class="section-subtitle has-text-centered mt4">
-        {{ $t('integrations subtitle software') }}
+        {{ page.meta.integrations.subtitleSoftware }}
       </div>
       <h2 class="section-title has-text-centered">
-        {{ $t('integrations title software') }}
+        {{ page.meta.integrations.titleSoftware }}
       </h2>
+
       <div class="flexrow mt2">
         <a href="https://gazu.cg-wire.com" class="software flexrow-item">
           <img
@@ -142,6 +145,17 @@
 </template>
 
 <script setup>
+const { locale } = useI18n()
+const slug = ref('software-integrations')
+
+const { pageQuery } = usePage(locale, slug)
+
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
+
 usePageHead({
   title:
     'CGWire | Kitsu / ' + useI18n().t('software-integrations header tagline'),

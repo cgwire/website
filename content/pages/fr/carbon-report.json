@@ -1,0 +1,53 @@
+{
+  "title": "Carbone",
+  "slug": "carbon-report",
+  "carbonReport": {
+    "title": "Carbone",
+    "subtitle": "Mesure de notre empreinte environnementale",
+    "explanationOne": "Chez CG Wire, nous avons mesuré l'impact de notre activité sur l'environnement. Ce rapport 2024 met en lumière nos principaux postes d'émission, nos marges de progrès, et les actions concrètes que nous engageons pour réduire notre empreinte.",
+    "consumption": {
+      "title": "Notre consommation carbone",
+      "explanation": "Nos voyages d'affaires en avion représente 50% de l'émission totale, pour mieux observer la répartition des autres catégories, vous pouvez les retirer des calculs.",
+      "withFlights": "Avec les voyages en avion",
+      "withoutFlights": "Sans les voyages en avion",
+      "total": "Au total",
+      "perEmployee": "Par employé",
+      "perEmployeeInfo": "Moyenne nationale:",
+      "per1000e": "Par 1000€ de CA",
+      "per1000eInfo": "Moyenne du secteur:"
+    },
+    "categories": {
+      "title": "Notre bilan par catégories",
+      "explanation": "Les résultats montrent la répartition de nos émissions, le transport avec le voyage au Japon représente plus de 50% de nos émissions totales.",
+      "japan": "Voyage au Japon",
+      "infrastructure": "Infrastructure Cloud",
+      "food": "Alimentation",
+      "co2": "tonnes d'équivalent CO2"
+    },
+    "evolution": {
+      "title": "Nos pistes d'évolution pour réduire notre impact",
+      "cloud": "Optimisation des hébergements",
+      "cloudOne": "Optimiser les process de calcul vidéos",
+      "cloudTwo": "Réduire le poids des médias (images, vidéos, etc.)",
+      "cloudThree": "Privilégier des serveurs français alimentés par des énergies bas-carbone",
+      "food": "Initiatives internes",
+      "foodOne": "Réduire les déplacements en avion au strict minimum",
+      "foodTwo": "Restauration éco-responsable : inciter les employés à manger végétarien plus souvent",
+      "foodThree": "Privilégier du matériel de qualité pour une conservation plus longue"
+    },
+    "anticipation": {
+      "title": "Nos projets pour 2026 : Anticiper pour mieux réduire notre impact",
+      "meetup": "Meet up à Paris",
+      "meetupDetails": "100 invités, 5 speakers US",
+      "travel": "Voyage au Japon",
+      "travelus": "Voyage aux USA",
+      "travelDetails": "2 personnes sur 7 jours",
+      "warning": "+57% d'émissions potentielles en 2026 si aucune action n'est menée"
+    },
+    "conclusion": {
+      "title": "Nous sommes une entreprise du secteur des industries culturelles et créatives",
+      "explanation": "Nous permettons aux studios créatifs de mieux collaborer pour faire de meilleures réalisations. Pour que cet apport soit durable, nous nous efforçons d'appliquer au mieux les bonnes pratiques de vie en communauté sur tous les plans: logiciel open-source, transparence comptable et analyse de notre impact environnemental. Note but est d'inclure au mieux notre entreprise dans notre société et notre environnement.",
+      "button": "En savoir plus sur nous"
+    }
+  }
+}

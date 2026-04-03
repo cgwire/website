@@ -1,0 +1,12 @@
+{
+  "title": "Our Contact Information",
+  "slug": "contact",
+  "contact": {
+    "tagline": "Our Contact Information",
+    "emails": "Contact Emails",
+    "sales": "Sales",
+    "support": "Support",
+    "address": "Address",
+    "companyIdentifier": "Company Identifier"
+  }
+}

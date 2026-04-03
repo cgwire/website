@@ -2,14 +2,14 @@
   <div class="pricing-page">
     <section class="section content pricing">
       <div class="section-subtitle has-text-centered">
-        {{ $t('pricing kitsu subtitle') }}
+        {{ page.meta.pricing.kitsu.subtitle }}
       </div>
       <h2 class="section-title has-text-centered">
-        {{ $t('pricing kitsu title') }}
+        {{ page.meta.pricing.kitsu.title }}
       </h2>
 
       <p class="has-text-centered mt1">
-        {{ $t('pricing cloud explanation') }}
+        {{ page.meta.pricing.cloud.explanation }}
       </p>
 
       <div class="has-text-centered mt1">
@@ -24,13 +24,13 @@
         :monthly="!yearly"
         :per-user="true"
         user-range="1 - 20"
-        :storage="100 + $t('pricing features gbstorage')"
-        :use-case-label="$t('pricing usecase agency')"
+        :storage="100 + page.meta.pricing.features.gbstorage"
+        :use-case-label="page.meta.pricing.usecase.agency"
         :features="[
-          $t('pricing features tiny support'),
-          $t('pricing features small four'),
-          $t('pricing features common four'),
-          $t('pricing features mutualize')
+          page.meta.pricing.features.tinySupport,
+          page.meta.pricing.features.smallFour,
+          page.meta.pricing.features.commonFour,
+          page.meta.pricing.features.mutualize
         ]"
       />
 
@@ -41,18 +41,18 @@
         :monthly="!yearly"
         :per-user="true"
         user-range="1 - 100"
-        :storage="3 + $t('pricing features tbstorage')"
-        :use-case-label="$t('pricing usecase production')"
+        :storage="3 + page.meta.pricing.features.tbstorage"
+        :use-case-label="page.meta.pricing.usecase.production"
         :features="[
-          $t('pricing features common two'),
-          $t('pricing features medium four'),
-          $t('pricing features medium five'),
-          $t('pricing features common three'),
-          $t('pricing features common four'),
-          $t('pricing features medium two'),
-          $t('pricing features training'),
-          $t('pricing features common searchengine'),
-          $t('pricing features common playlistbuilder')
+          page.meta.pricing.features.commonTwo,
+          page.meta.pricing.features.mediumFour,
+          page.meta.pricing.features.mediumFive,
+          page.meta.pricing.features.commonThree,
+          page.meta.pricing.features.commonFour,
+          page.meta.pricing.features.mediumTwo,
+          page.meta.pricing.features.training,
+          page.meta.pricing.features.commonSearchengine,
+          page.meta.pricing.features.commonPlaylistbuilder
         ]"
       />
 
@@ -62,66 +62,50 @@
         :monthly="!yearly"
         :per-user="true"
         user-range="1 - 300"
-        :storage="10 + $t('pricing features tbstorage')"
-        :use-case-label="$t('pricing usecase studio')"
+        :storage="10 + page.meta.pricing.features.tbstorage"
+        :use-case-label="page.meta.pricing.usecase.studio"
         :features="[
-          $t('pricing features large two'),
-          $t('pricing features large four'),
-          $t('pricing features large six'),
-          $t('pricing features common three'),
-          $t('pricing features common four'),
-          $t('pricing features medium two'),
-          $t('pricing features training'),
-          $t('pricing features common searchengine'),
-          $t('pricing features common playlistbuilder')
+          page.meta.pricing.features.largeTwo,
+          page.meta.pricing.features.largeFour,
+          page.meta.pricing.features.largeSix,
+          page.meta.pricing.features.commonThree,
+          page.meta.pricing.features.commonFour,
+          page.meta.pricing.features.mediumTwo,
+          page.meta.pricing.features.training,
+          page.meta.pricing.features.commonSearchengine,
+          page.meta.pricing.features.commonPlaylistbuilder
         ]"
       />
 
       <div class="pricing-block">
         <div class="pricing-title">
-          {{ $t('pricing title partner') }}
+          {{ page.meta.pricing.title.partner }}
         </div>
         <div class="pricing-price">
           <span class="pricing-value">
-            {{ $t('pricing title quote') }}
+            {{ page.meta.pricing.title.quote }}
           </span>
         </div>
         <div class="for-info">
-          {{ $t('pricing usecase partner') }}
+          {{ page.meta.pricing.usecase.partner }}
         </div>
         <div class="pricing-features">
           <ul>
-            <li>
-              {{ $t('pricing features partner one') }}
-            </li>
-            <li>
-              {{ $t('pricing features partner onpremise') }}
-            </li>
-            <li>
-              {{ $t('pricing features partner unlimited') }}
-            </li>
-            <li>
-              {{ $t('pricing features partner contract') }}
-            </li>
+            <li>{{ page.meta.pricing.features.partnerOne }}</li>
+            <li>{{ page.meta.pricing.features.partnerOnpremise }}</li>
+            <li>{{ page.meta.pricing.features.partnerUnlimited }}</li>
+            <li>{{ page.meta.pricing.features.partnerContract }}</li>
             <li>Single Sign On</li>
             <li>Contractor Synchronization</li>
-            <li>
-              {{ $t('pricing features partner four') }}
-            </li>
-            <li>
-              {{ $t('pricing features partner three') }}
-            </li>
-            <li>
-              {{ $t('pricing features partner six') }}
-            </li>
-            <li>
-              {{ $t('pricing features partner encryption') }}
-            </li>
+            <li>{{ page.meta.pricing.features.partnerFour }}</li>
+            <li>{{ page.meta.pricing.features.partnerThree }}</li>
+            <li>{{ page.meta.pricing.features.partnerSix }}</li>
+            <li>{{ page.meta.pricing.features.partnerEncryption }}</li>
           </ul>
         </div>
         <div class="pricing-cta">
           <a href="mailto:sales@cg-wire.com" class="button is-outlined">
-            {{ $t('pricing button contactcta') }}
+            {{ page.meta.pricing.button.contactcta }}
           </a>
         </div>
       </div>
@@ -129,15 +113,15 @@
 
     <section class="section content pricing">
       <p class="has-text-centered pricing-details mt1">
-        {{ $t('pricing discount details') }}
+        {{ page.meta.pricing.discount.details }}
       </p>
 
       <div class="extra-block alinea infos">
         <div class="section-subtitle has-text-centered">
-          {{ $t('pricing school title') }}
+          {{ page.meta.pricing.school.title }}
         </div>
         <p class="has-text-centered">
-          {{ $t('pricing school details') }}
+          {{ page.meta.pricing.school.details }}
         </p>
       </div>
 
@@ -146,10 +130,10 @@
       <PriceEstimator />
 
       <div class="section-subtitle has-text-centered">
-        {{ $t('pricing faq subtitle') }}
+        {{ page.meta.pricing.faq.subtitle }}
       </div>
       <h2 class="section-title has-text-centered">
-        {{ $t('pricing faq title') }}
+        {{ page.meta.pricing.faq.title }}
       </h2>
       <div class="faq">
         <Faq
@@ -170,6 +154,17 @@
 <script setup>
 const yearly = ref(true)
 const isExpanded = reactive({})
+
+const { locale } = useI18n()
+const slug = ref('pricing')
+
+const { pageQuery } = usePage(locale, slug)
+
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
 
 usePageHead({
   title: 'CGWire | ' + useI18n().t('pricing title'),

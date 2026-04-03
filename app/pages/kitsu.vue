@@ -2,9 +2,9 @@
   <div class="kitsu-page content">
     <div class="kitsu-header flexrow">
       <div class="main-title">
-        <span>{{ $t('kitsu title') }}</span>
+        <span>{{ page.meta.kitsu.title }}</span>
         <div class="kitsu-explanation">
-          {{ $t('kitsu description') }}
+          {{ page.meta.kitsu.description }}
         </div>
       </div>
     </div>
@@ -24,37 +24,37 @@
     <section>
       <template v-if="currentTab === '2D'">
         <TextBlock
-          :subtitle="$t('kitsu modules subtitle')"
-          :title="$t('kitsu 2d title')"
-          :content="$t('kitsu 2d content')"
+          :subtitle="page.meta.kitsu.modules.subtitle"
+          :title="page.meta.kitsu['2d'].title"
+          :content="page.meta.kitsu['2d'].content"
         />
       </template>
       <template v-if="currentTab === '3D'">
         <TextBlock
-          :subtitle="$t('kitsu modules subtitle')"
-          :title="$t('kitsu 3d title')"
-          :content="$t('kitsu 3d content')"
+          :subtitle="page.meta.kitsu.modules.subtitle"
+          :title="page.meta.kitsu['3d'].title"
+          :content="page.meta.kitsu['3d'].content"
         />
       </template>
       <template v-if="currentTab === 'VFX'">
         <TextBlock
-          :subtitle="$t('kitsu modules subtitle')"
-          :title="$t('kitsu vfx title')"
-          :content="$t('kitsu vfx content')"
+          :subtitle="page.meta.kitsu.modules.subtitle"
+          :title="page.meta.kitsu.vfx.title"
+          :content="page.meta.kitsu.vfx.content"
         />
       </template>
       <template v-if="currentTab === 'Games'">
         <TextBlock
-          :subtitle="$t('kitsu modules subtitle')"
-          :title="$t('kitsu games title')"
-          :content="$t('kitsu games content')"
+          :subtitle="page.meta.kitsu.modules.subtitle"
+          :title="page.meta.kitsu.games.title"
+          :content="page.meta.kitsu.games.content"
         />
       </template>
       <template v-if="currentTab === 'Schools'">
         <TextBlock
-          :subtitle="$t('kitsu modules subtitle')"
-          :title="$t('kitsu schools title')"
-          :content="$t('kitsu schools content')"
+          :subtitle="page.meta.kitsu.modules.subtitle"
+          :title="page.meta.kitsu.schools.title"
+          :content="page.meta.kitsu.schools.content"
         />
       </template>
 
@@ -66,13 +66,13 @@
 
       <div data-aos="fade-up">
         <div class="section-subtitle has-text-centered">
-          {{ $t('kitsu services subtitle') }}
+          {{ page.meta.kitsu.services.subtitle }}
         </div>
         <h2 class="section-title has-text-centered">
-          {{ $t('kitsu services title') }}
+          {{ page.meta.kitsu.services.title }}
         </h2>
         <div class="section-explanation">
-          {{ $t('kitsu services description') }}
+          {{ page.meta.kitsu.services.description }}
         </div>
       </div>
 
@@ -111,9 +111,9 @@
 
       <div data-aos="fade-up" v-if="['2D', '3D', 'VFX'].includes(currentTab)">
         <TextBlock
-          :subtitle="$t('kitsu stories subtitle')"
-          :title="$t('kitsu stories title')"
-          :content="$t('kitsu stories description')"
+          :subtitle="page.meta.kitsu.stories.subtitle"
+          :title="page.meta.kitsu.stories.title"
+          :content="page.meta.kitsu.stories.description"
         />
       </div>
 
@@ -177,6 +177,17 @@
 <script setup>
 const router = useRouter()
 const route = useRoute()
+
+const { locale } = useI18n()
+const slug = ref('kitsu')
+
+const { pageQuery } = usePage(locale, slug)
+
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
 
 usePageHead({
   title: 'CGWire | Kitsu',
