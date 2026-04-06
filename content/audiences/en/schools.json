@@ -1,0 +1,82 @@
+{
+  "slug": "schools",
+  "i18n": {
+    "title": "Student Projects",
+    "metaTitle": "Kitsu For Your School",
+    "metaDescription": "Student Projects"
+  },
+  "hero": {
+    "subtitle": "Student Projects",
+    "title": "Kitsu For Your School"
+  },
+  "quote": {
+    "text": "Kitsu is the exact solution we were looking for to manage our students projects.",
+    "author": "Carlos de Carvalho, Director of studies at Pôle 3D",
+    "avatar": "carlosdecarvalho.png"
+  },
+  "video": {
+    "vimeoId": "465411602",
+    "partnerName": "Gobelins",
+    "partnerUrl": "https://www.gobelins.fr/"
+  },
+  "panels": [
+    {
+      "id": "students",
+      "avatar": "avatar-4.svg",
+      "title": "For a Student",
+      "descriptions": [
+        "Students need a central place to collaborate with each other and their teachers. Kitsu provides a dedicated workspace for sharing information.",
+        "Kitsu provides a framework for students to organize and receive feedback from their teachers. Thanks to the notification system (in-app, email, or Slack), they are always informed about any required changes.",
+        "Your students will learn how to use a production tracker utilized in real studios. They will gain an early understanding of prioritization and the basics of professional communication."
+      ]
+    },
+    {
+      "id": "directors",
+      "avatar": "avatar-7.svg",
+      "title": "For a Teacher",
+      "descriptions": [
+        "Teachers can stay focused on their areas of expertise. They won't miss any requests for feedback or new previews. They will also be able to identify which student groups require assistance.",
+        "Movie reviews are seamless thanks to the playlist module, which allows comparing different versions at different stages of production.",
+        "Kitsu serves as a dedicated place to store the entire project history, capturing how decisions were made."
+      ]
+    },
+    {
+      "id": "teachers",
+      "avatar": "avatar-9.svg",
+      "title": "For an Academic Director",
+      "descriptions": [
+        "Academic Directors can monitor final student projects, easily understand how assignments are progressing, and quickly identify issues.",
+        "Academic Directors can quickly determine the status of a project and evaluate the appropriateness of task assignments. Through the schedules, they will have a comprehensive overview of the major milestones of the project."
+      ]
+    }
+  ],
+  "reasons": {
+    "title": "Why you should use Kitsu for your Education Program",
+    "items": [
+      "Preparing students for industry-standard production management",
+      "Playlist makes reviews easy for teachers",
+      "Efficient student interactions with built-in comment system"
+    ],
+    "cta": "Try it for free",
+    "ctaUrl": "https://account.cg-wire.com/signup"
+  },
+  "studios": [
+    "gobelins",
+    "rubika",
+    "esra",
+    "georges-melies",
+    "ecv",
+    "iim",
+    "lanimea",
+    "lidem",
+    "hslu",
+    "atelier-de-sevres",
+    "creative-seeds",
+    "ynov",
+    "ina-campus",
+    "make-animation-school",
+    "nextgen-academy",
+    "parallel14",
+    "ritcs"
+  ]
+}

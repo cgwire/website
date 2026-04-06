@@ -1,0 +1,82 @@
+{
+  "slug": "schools",
+  "i18n": {
+    "titleKey": "学校向けのKitsu",
+    "metaTitleKey": "学校向けのKitsu",
+    "metaDescriptionKey": "生徒のプロジェクト"
+  },
+  "hero": {
+    "subtitleKey": "生徒のプロジェクト",
+    "titleKey": "学校向けのKitsu"
+  },
+  "quote": {
+    "textKey": "Kitsuは、生徒のプロジェクトを管理するためにまさに私たちが探していたソリューションです。",
+    "authorKey": "Pôle 3D学長、Carlos de Carvalho氏",
+    "avatar": "carlosdecarvalho.png"
+  },
+  "video": {
+    "vimeoId": "465411602",
+    "partnerName": "Gobelins",
+    "partnerUrl": "__https://www.gobelins.fr/__"
+  },
+  "panels": [
+    {
+      "id": "students",
+      "avatar": "avatar-4.svg",
+      "titleKey": "生徒向け",
+      "descriptionKeys": [
+        "生徒は、お互いや教師と共同作業するための中心的な場所を必要としています。Kitsuは、情報を共有するための専用のワークスペースを提供します。",
+        "Kitsuは、生徒が教師からのフィードバックを整理して受け取るためのフレームワークを提供します。通知システム（アプリ内、メール、またはSlack）のおかげで、必要な変更については常に通知されます。",
+        "生徒は、実際のスタジオで使用されている制作トラッカーの使用方法を学びます。優先順位付けとプロフェッショナルなコミュニケーションの基礎を、早期に理解することができます。"
+      ]
+    },
+    {
+      "id": "directors",
+      "avatar": "avatar-7.svg",
+      "titleKey": "教師向け",
+      "descriptionKeys": [
+        "教師は自分の専門分野に集中できます。フィードバックや新しいプレビューのリクエストを見逃すことはありません。また、どの生徒グループに支援が必要かを特定することもできます。",
+        "映画のレビューは、プレイリストモジュールのおかげでシームレスに実行でき、制作のさまざまな段階でさまざまなバージョンを比較することができます。",
+        "Kitsuは、プロジェクトの履歴全体を保存し、決定がどのように行われたかを記録するための専用場所として機能します。"
+      ]
+    },
+    {
+      "id": "teachers",
+      "avatar": "avatar-9.svg",
+      "titleKey": "アカデミックディレクター向け",
+      "descriptionKeys": [
+        "アカデミックディレクターは、生徒の最終プロジェクトを監視し、課題の進捗状況を簡単に把握し、問題をすばやく特定することができます。",
+        "アカデミックディレクターは、プロジェクトの状況をすばやく判断し、タスク割り当ての適切さを評価できます。スケジュールを通じて、プロジェクトの主要なマイルストーンを包括的に把握することができます。"
+      ]
+    }
+  ],
+  "reasons": {
+    "titleKey": "教育プログラムにKitsuを使用する理由",
+    "items": [
+      "業界標準の制作管理に向けて生徒を準備",
+      "プレイリストにより教師のレビューが簡単になります",
+      "組み込みのコメントシステムで生徒とのやり取りを効率化"
+    ],
+    "ctaKey": "無料で試す",
+    "ctaUrl": "__https://account.cg-wire.com/signup__"
+  },
+  "studios": [
+    "gobelins",
+    "rubika",
+    "esra",
+    "georges-melies",
+    "ecv",
+    "iim",
+    "lanimea",
+    "lidem",
+    "hslu",
+    "atelier-de-sevres",
+    "creative-seeds",
+    "ynov",
+    "ina-campus",
+    "make-animation-school",
+    "nextgen-academy",
+    "parallel14",
+    "ritcs"
+  ]
+}

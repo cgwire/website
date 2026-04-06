@@ -3,10 +3,10 @@
     <section class="section content use-case">
       <h2>
         <span class="section-subtitle">
-          {{ t(audiencePage.hero.subtitleKey) }}
+          {{ audiencePage.hero.subtitle }}
         </span>
         <span class="section-title">
-          {{ t(audiencePage.hero.titleKey) }}
+          {{ audiencePage.hero.title }}
         </span>
       </h2>
 
@@ -27,17 +27,17 @@
               @click="selectPanel(item.id)"
             >
               <NuxtImg :src="`/images/avatars/${item.avatar}`" alt="" />
-              {{ t(item.titleKey) }}
+              {{ item.title }}
             </a>
           </li>
         </ul>
 
         <div v-for="tab in audiencePage.panels" :key="tab.id">
           <div class="js-tabcontent" v-if="panel === tab.id">
-            <h3>{{ t(tab.titleKey) }}</h3>
+            <h3>{{ tab.title }}</h3>
 
-            <p v-for="desc in tab.descriptionKeys" :key="desc">
-              {{ t(desc) }}
+            <p v-for="desc in tab.descriptions" :key="desc">
+              {{ desc }}
             </p>
           </div>
         </div>
@@ -48,14 +48,14 @@
       <section>
         <blockquote class="quote-text">
           <p>
-            {{ t(audiencePage.quote.textKey) }}
+            {{ audiencePage.quote.text }}
           </p>
           <footer class="quote-author">
             <NuxtImg
               class="quote-avatar"
               :src="'/images/testimonials/' + audiencePage.quote.avatar"
             />
-            {{ t(audiencePage.quote.authorKey) }}
+            {{ audiencePage.quote.author }}
           </footer>
         </blockquote>
       </section>
@@ -63,12 +63,12 @@
 
     <section class="section">
       <h2 class="title">
-        {{ t(audiencePage.reasons.titleKey) }}
+        {{ audiencePage.reasons.title }}
       </h2>
 
       <ul class="check-list">
         <li v-for="reason in audiencePage.reasons.items" :key="reason">
-          {{ t(reason) }}
+          {{ reason }}
         </li>
       </ul>
 
@@ -77,7 +77,7 @@
           class="button button--alt is-large"
           :href="audiencePage.reasons.ctaUrl"
         >
-          {{ t(audiencePage.reasons.ctaKey) }}
+          {{ audiencePage.reasons.cta }}
         </a>
       </p>
     </section>
@@ -86,7 +86,7 @@
       <ul class="customers">
         <CustomerLogoBlock
           v-for="studio in studios"
-          :key="studio.elementKey"
+          :key="studio.element"
           :name="studio.name"
           :element-key="studio.elementKey"
           :link="studio.link"
@@ -157,7 +157,10 @@ let { slug } = await useI18NSlug()
 
 const { data: audience } = await useAsyncData(
   slug,
-  () => queryCollection('pages').path(`/pages/audiences/${slug.value}`).first(),
+  () =>
+    queryCollection('audiences')
+      .path(`/audiences/${locale.value}/${slug.value}`)
+      .first(),
   { watch: [slug, locale] }
 )
 
@@ -166,14 +169,15 @@ const audiencePage = audience.value.meta
 let type = computed(() => slug.value)
 
 const { buildStudiosQuery } = useStudios(locale, type)
+
 var { data: studios, error } = await useAsyncData(
   () => `studios-${type.value}-${locale.value}`,
   buildStudiosQuery,
   { watch: [locale, type] }
 )
 
-const title = `CGWire | Kitsu / ${t(audiencePage.i18n.titleKey)}`
-const description = t(audiencePage.i18n.metaDescriptionKey)
+const title = `CGWire | Kitsu / ${audiencePage.i18n.title}`
+const description = audiencePage.i18n.metaDescription
 const path = localePath(route.name)
 const url = `https://www.cg-wire.com${path}`
 

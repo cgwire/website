@@ -1,0 +1,131 @@
+{
+  "slug": "shorts",
+  "i18n": {
+    "title": "Trailers, Ads, Docs, Music Clips, Youtube",
+    "metaTitle": "Kitsu for your Short Movies",
+    "metaDescription": "Trailers, Ads, Docs, Music Clips, Youtube"
+  },
+  "hero": {
+    "subtitle": "Trailers, Ads, Docs, Music Clips, Youtube",
+    "title": "Kitsu for your Short Movies"
+  },
+  "quote": {
+    "text": "Kitsu is a very artist-friendly tool for planning and tracking your project. The UI is clean and easy to understand. We received a lot of positive feedback from the team.",
+    "author": "Christian Zehetmeier, Head of Production at Woodblock",
+    "avatar": "christian.png"
+  },
+  "video": {
+    "vimeoId": "896197533",
+    "partnerName": "Miyu Productions",
+    "partnerUrl": "https://miyu-prod.cg-wire.com/"
+  },
+  "panels": [
+    {
+      "id": "productionmanager",
+      "avatar": "avatar-10.svg",
+      "title": "For Production Managers",
+      "descriptions": [
+        "As a Production Manager, you need to track production costs and know what has been reviewed and how many times it required a retake.",
+        "Kitsu provides efficient timesheets where you can see the number of hours spent per artist over a day, week, or month. You can access the details by production.",
+        "For each shot or asset, you can see the overall time spent on it. This helps identify entities that are too costly. You can set estimates for each task and compare them to the actual time spent.",
+        "The statistics page allows you to write your producer report faster. You don't have to chase down information. You can simply report the data and track the progress of the project throughout its lifetime.",
+        "You don't need to spend time gathering files for daily or weekly reviews. With the playlist page, you can set up reviews with a single click and ensure nothing is missed."
+      ]
+    },
+    {
+      "id": "director",
+      "avatar": "avatar-6.svg",
+      "title": "For Directors",
+      "descriptions": [
+        "Directors need an efficient way to review pending tasks and stay informed about production progress. This allows them to react quickly and prevent the team from wasting time due to incorrect directions.",
+        "To achieve this, Kitsu provides a playlist system, allowing the Director to review multiple shots consecutively. This can include pending reviews or the entire movie. Kitsu also offers editing functions such as changing the shot order or switching versions on the fly. This enables the Director to be more precise about what they want to see.",
+        "The Director can monitor activities via the news feed, allowing for quick reactions when something goes wrong. There is no need to wait until the end of the week to respond."
+      ]
+    },
+    {
+      "id": "supervisor",
+      "avatar": "avatar-2.svg",
+      "title": "For Supervisors",
+      "descriptions": [
+        "Supervisors work on multiple productions simultaneously. They need to act quickly and stay up to date.",
+        "Thanks to its real-time capabilities, Kitsu always displays the latest data. Additionally, dashboards and task lists emphasize the most important information.",
+        "Supervisors can save their most-used filters, making it easy for them to find their retakes or pending reviews.",
+        "Task assignments, mentions, and comments ensure that information is always sent to the right person, giving supervisors everything they need to make informed decisions."
+      ]
+    },
+    {
+      "id": "artist",
+      "avatar": "avatar-12.svg",
+      "title": "For Artists",
+      "descriptions": [
+        "Artists need quick access to their tasks and a simple way to communicate about their work by posting comments and previews.",
+        "When artists log in, they land on their to-do list. At a glance, they see which tasks to work on. Related data is displayed: entity, task type, estimation, due date, and the most recent comment."
+      ]
+    }
+  ],
+  "reasons": {
+    "title": "Why you should use Kitsu for your Short Movie production",
+    "items": [
+      "Communicate easily with your Artists and keep the history",
+      "Schedule and manage several projects at the same time",
+      "Send reviews and final projects through the client gateway"
+    ],
+    "cta": "Try it for free",
+    "ctaUrl": "https://account.cg-wire.com/signup"
+  },
+  "studios": [
+    "blender",
+    "lofi-studio",
+    "supamonks",
+    "miyu",
+    "polycat",
+    "mikrofilm",
+    "bart",
+    "enclume",
+    "nki",
+    "woodblock",
+    "stim",
+    "viridian",
+    "dirty-looks",
+    "heckler",
+    "rabbitsfoot",
+    "animaskin",
+    "animaltank",
+    "floatingrock",
+    "novanima",
+    "squarefilms",
+    "wizz",
+    "warriorsvfx",
+    "imagovfx",
+    "outlookvfx",
+    "tetsuo",
+    "holybird",
+    "3dar",
+    "atelier-vfx",
+    "emberlight",
+    "nfb",
+    "pikkukala",
+    "pyjama",
+    "circle",
+    "busgroup",
+    "les-films-du-poisson-rouge",
+    "karendash",
+    "aparat",
+    "odee",
+    "monkeys",
+    "rockinvfx",
+    "cousin-bizarre",
+    "signos",
+    "naive",
+    "werlen-meyer",
+    "niko-picto",
+    "abduct",
+    "welab",
+    "pole-nord",
+    "impossible-objects",
+    "amopix",
+    "nocroma",
+    "silverspoon",
+    "manic-monday"
+  ]
+}

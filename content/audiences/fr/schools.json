@@ -1,0 +1,82 @@
+{
+  "slug": "schools",
+  "i18n": {
+    "titleKey": "Projets étudiants",
+    "metaTitleKey": "Kitsu pour les écoles",
+    "metaDescriptionKey": "Projets étudiants"
+  },
+  "hero": {
+    "subtitleKey": "Projets étudiants",
+    "titleKey": "Kitsu pour les écoles"
+  },
+  "quote": {
+    "textKey": "Kitsu correspond exactement à ce qu'on cherchait pour nos projets étudiants !",
+    "authorKey": "Carlos de Carvalho, Responsable Pédagogique à Pôle 3D",
+    "avatar": "carlosdecarvalho.png"
+  },
+  "video": {
+    "vimeoId": "465411602",
+    "partnerName": "Gobelins",
+    "partnerUrl": "https://www.gobelins.fr/"
+  },
+  "panels": [
+    {
+      "id": "students",
+      "avatar": "avatar-4.svg",
+      "titleKey": "Étudiants",
+      "descriptionKeys": [
+        "Les étudiants ont besoin d'un point central pour communiquer ensemble et avec leurs professeurs. Avec Kitsu, ils ont un endroit dédié où ils peuvent partager l'information et le travail.",
+        "Kitsu leur donne un cadre pour s'organiser où ils reçoivent les informations de leur professeurs. Grâce au système de notifications (in-app, email ou Slack), ils sont toujours informés quand un retour leur a été envoyé.",
+        "Enfin, ils apprennent à utiliser un production tracker qui tourne dans de vrais studios. Cela leur donne un bon sens des priorités et les bases pour une bonne communication professionnelle."
+      ]
+    },
+    {
+      "id": "directors",
+      "avatar": "avatar-7.svg",
+      "titleKey": "Professeur",
+      "descriptionKeys": [
+        "Les professeurs souhaitent se focaliser sur leur spécialité. Grâce à Kitsu, ils ne manqueront plus les demandes de retour ou de validation. Ils pourront aussi rapidement voir si un groupe a besoin d'aide.",
+        "Les validation sont plus faciles que jamais avec le système de playlists qui permet aussi de comparer les différentes versions des vidéos (d'une même étape ou d'une étape précédente).",
+        "Kitsu conserve l'historique des discussions. Ce qui permet de toujours se souvenir de pourquoi les décisions ont été prises."
+      ]
+    },
+    {
+      "id": "teachers",
+      "avatar": "avatar-9.svg",
+      "titleKey": "Responsable Pédagogique",
+      "descriptionKeys": [
+        "Le Responsable Pédagogique suit les projets de fin d'étude. Il veut savoir comment les projets se passent et s'il y a des problèmes. ",
+        "Avec Kitsu, il sera capable de connaitre l'état du projet en un regard. Via les assignations de tâches et leurs estimations, il pourra jauger la charge de travail. Avec les plannings, il aura une vue globale des échéances principales."
+      ]
+    }
+  ],
+  "reasons": {
+    "titleKey": "Pourquoi vous devriez utiliser Kitsu dans votre école",
+    "items": [
+      "Préparez les étudiants aux standards de la gestion de production",
+      "Rendez les revues faciles pour les enseignants avec les playlists",
+      "Ayez une communication efficace avec le système de commentaires"
+    ],
+    "ctaKey": "Essayez gratuitement",
+    "ctaUrl": "https://account.cg-wire.com/signup"
+  },
+  "studios": [
+    "gobelins",
+    "rubika",
+    "esra",
+    "georges-melies",
+    "ecv",
+    "iim",
+    "lanimea",
+    "lidem",
+    "hslu",
+    "atelier-de-sevres",
+    "creative-seeds",
+    "ynov",
+    "ina-campus",
+    "make-animation-school",
+    "nextgen-academy",
+    "parallel14",
+    "ritcs"
+  ]
+}

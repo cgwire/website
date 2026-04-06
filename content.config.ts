@@ -15,6 +15,10 @@ export default defineContentConfig({
       type: 'page',
       source: 'alternatives/**/*.json'
     }),
+    audiences: defineCollection({
+      type: 'page',
+      source: 'audiences/**/*.json'
+    }),
     studios: defineCollection({
       type: 'page',
       source: 'studios/**/*.json',
