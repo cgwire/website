@@ -1,0 +1,42 @@
+{
+  "name": "Production Tracker",
+  "slug": "production-tracker",
+  "image": "production-tracker.png",
+  "header": {
+    "tagline": "Production Tracker",
+    "subtitle": "Stay in control and anticipate problems",
+    "metrics": "Over 1,000 productions have already been tracked with Kitsu!",
+    "explanation": "With Kitsu, schedule each task, track time spent, and set quotas. Use indicators to anticipate problems and build clear production reports. Always have an overview of your production, both at a high and granular level."
+  },
+  "features": [
+    {
+      "title": "Gain a 360° view of your data",
+      "subtitle": "Production reports",
+      "content": "With Kitsu, you can view statistics on your projects progress. It provides high-level reports for a quick overview of what is happening. Exports are available for sending reports to third parties.",
+      "image": "kitsu-report.png",
+      "colored": true
+    },
+    {
+      "title": "Schedule your work",
+      "subtitle": "Planning",
+      "content": "In the schedule module, you can set the main duration and milestones of your project. This allows you to see resource allocation and plan your production more effectively.",
+      "image": "kitsu-tables.png",
+      "reverted": true
+    },
+    {
+      "title": "Set your expectations",
+      "subtitle": "Quotas",
+      "content": "Monitor the productivity of your artists and ensure that no one is blocked. Set productivity goals and ensure quotas are met.",
+      "image": "kitsu-quotas.png",
+      "colored": true,
+      "gradient": true
+    }
+  ],
+  "customerStory": {
+    "studioName": "Fost studio",
+    "storyKey": "fost",
+    "interviewee": "Céline Durieux, Head Of Studio",
+    "imagePath": "photo-customer-story-fost.png",
+    "storyUrl": "https://blog.cg-wire.com/customer-story-fost-studio/"
+  }
+}

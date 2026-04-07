@@ -295,6 +295,9 @@
   "tabs VFX": "VFX",
   "tabs Games": "Jeux Vidéos",
   "tabs Schools": "Écoles",
+  "features": "fonctionnalités",
+  "for": "pour",
+  "faq": "questions-frequentes",
   "search": {
     "open": "Open Search Modal",
     "placeholder": "Search",

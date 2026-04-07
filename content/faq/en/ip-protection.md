@@ -1,5 +1,6 @@
 ---
 title: "\"We Can't Put Our IP In The Cloud\""
+slug: "ip-protection"
 subtitle: "How Kitsu Handles Security & Data Control For IP Protection"
 image: "security-kitsu-cloud.png"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "\"Notre équipe n'adoptera pas un autre outil\""
+slug: "change-management"
 subtitle: "Comment Kitsu vous aide avec la formation et l'adoption"
 image: "change-management-kitsu.png"
 ---

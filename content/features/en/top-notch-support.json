@@ -1,0 +1,39 @@
+{
+  "name": "Top Notch Support",
+  "slug": "top-notch-support",
+  "image": "top-notch-support.png",
+  "header": {
+    "tagline": "Top-Notch Support",
+    "subtitle": "We are always here to help you",
+    "metrics": "top-notch-support header metrics",
+    "explanation": "Benefit from the industry's fastest response time via in-app chat. All discussions are saved and can be supplemented with a ticketing system. Most importantly, you talk with production experts, not chatbots."
+  },
+  "isVideo": true,
+  "features": [
+    {
+      "key": "fast",
+      "title": "Fast response time",
+      "subtitle": "Fast response-time",
+      "content": "On average we respond in 30 minutes. We are always very reactive and eager to answer your questions whether you are looking for a specific Kitsu menu, or want to discuss workflows.",
+      "image": "kitsu-fast.png",
+      "colored": true
+    },
+    {
+      "key": "chat",
+      "title": "Support when you need it",
+      "subtitle": "Chat, screen-sharing, conference",
+      "content": "Our support is easily accessible, whether in-app, via Discord, or Zoom. We are always available to assist you with Kitsu.",
+      "image": "kitsu-chat.png",
+      "reverted": true
+    },
+    {
+      "key": "experts",
+      "title": "Assisted by experts",
+      "subtitle": "Former production managers",
+      "content": "Our support team consists of production veterans who understand the challenges you face because they've experienced them too. We ensure you utilize Kitsu's full potential and can even collaborate with you to add new features to the software.",
+      "image": "kitsu-experts.png",
+      "colored": true,
+      "gradient": true
+    }
+  ]
+}

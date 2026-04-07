@@ -1,0 +1,39 @@
+{
+  "name": "Elite Hosting",
+  "slug": "elite-hosting",
+  "image": "elite-hosting.png",
+  "header": {
+    "tagline": "Elite hosting",
+    "subtitle": "Your data is always available and secure",
+    "metrics": "elite-hosting header metrics",
+    "explanation": "Our operation team provides you with the highest standards of the cloud industry. With decades of experience, we ensure that your installation is always up and that your data are always secured. All our installations are safely isolated ensuring performance and confidentiality."
+  },
+  "features": [
+    {
+      "key": "security",
+      "title": "Keep your data secure",
+      "subtitle": "SSL, Secret Management, Restricted Access",
+      "content": "We adhere to the highest security standards, using only secure transmissions for accessing our up-to-date installations. All secrets are managed through secure vaults, and our employees are screened. A security document is available upon request.",
+      "image": "kitsu-security.png",
+      "colored": true
+    },
+    {
+      "key": "availability",
+      "title": "Your Kitsu is always up",
+      "subtitle": "99% uptime",
+      "content": "We closely monitor all activity on your instance and receive alerts for any suspicious or problematic events. This enables us to resolve issues as quickly as possible.",
+      "image": "kitsu-availability.png",
+      "reverted": true
+    },
+    {
+      "key": "performance",
+      "title": "Fast access to your data",
+      "subtitle": "Speed and reliability",
+      "content": "Your installation is isolated from others and is set up near your location. All videos processing is run on a dedicated machine, allowing you to build large playlists.",
+      "image": "kitsu-performance.png",
+      "colored": true,
+      "gradient": true,
+      "shadow": false
+    }
+  ]
+}

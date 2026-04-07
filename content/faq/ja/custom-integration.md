@@ -1,5 +1,6 @@
 ---
 title: "\"パイプラインに統合できますか？\""
+slug: "custom-integration"
 subtitle: "Kitsuの統合方法"
 image: "custom-integration-kitsu.png"
 ---

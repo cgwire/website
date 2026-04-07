@@ -1,0 +1,37 @@
+{
+  "name": "Studio Database",
+  "slug": "studio-database",
+  "image": "studio-database.png",
+  "header": {
+    "tagline": "studio-database header tagline",
+    "subtitle": "studio-database header subtitle",
+    "metrics": "studio-database header metrics",
+    "explanation": "studio-database header explanation"
+  },
+  "features": [
+    {
+      "title": "studio-database boost title",
+      "subtitle": "studio-database boost subtitle",
+      "content": "studio-database boost content",
+      "image": "kitsu-boost.png",
+      "colored": true,
+      "shadow": false
+    },
+    {
+      "title": "studio-database api title",
+      "subtitle": "studio-database api subtitle",
+      "content": "studio-database api content",
+      "image": "kitsu-api.png",
+      "reverted": true,
+      "shadow": false
+    },
+    {
+      "title": "studio-database python title",
+      "subtitle": "studio-database python subtitle",
+      "content": "studio-database python content",
+      "image": "kitsu-python.png",
+      "colored": true,
+      "gradient": true
+    }
+  ]
+}

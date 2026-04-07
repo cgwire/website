@@ -1,5 +1,6 @@
 ---
 title: "\"自社のIPをクラウドに置けない\""
+slug: "ip-protection"
 subtitle: "KitsuがIPを守るためにセキュリティとデータ管理をどのように実現しているか"
 image: "security-kitsu-cloud.png"
 ---

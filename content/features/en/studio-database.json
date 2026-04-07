@@ -1,0 +1,37 @@
+{
+  "name": "Studio Database",
+  "slug": "studio-database",
+  "image": "studio-database.png",
+  "header": {
+    "tagline": "Studio Database",
+    "subtitle": "A hub for your production",
+    "metrics": "More than 100,000 API calls are made to the Kitsu API every day!",
+    "explanation": "Kitsu exposes an HTTP API that allows you to centralize and access all your data. Your tools connect to it and query the data from your production, enhancing the artists' tools and helping them focus on the artistic side of their work."
+  },
+  "features": [
+    {
+      "title": "Boost your pipeline",
+      "subtitle": "Automated workflow",
+      "content": "Store your production data in a single place. Synchronize your data, publish previews directly from your tools, and run custom scripts when events occur. Every action can be automated.",
+      "image": "kitsu-boost.png",
+      "colored": true,
+      "shadow": false
+    },
+    {
+      "title": "Share your data with the entire studio",
+      "subtitle": "HTTP API",
+      "content": "Building a movie involves a lot of data: assets, shots, casting, task assignments, file locations, and more. All this information must be shared among all departments. The Kitsu API provides central storage for all this data, which can be queried from anywhere.",
+      "image": "kitsu-api.png",
+      "reverted": true,
+      "shadow": false
+    },
+    {
+      "title": "Enjoy a simple Python API",
+      "subtitle": "Python client",
+      "content": "Take advantage of intuitive functions to fetch production data. It also offers a raw client to handle more complex requests. An integrated cache system ensures faster response times. The entire package is available on PyPi.org.",
+      "image": "kitsu-python.png",
+      "colored": true,
+      "gradient": true
+    }
+  ]
+}

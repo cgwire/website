@@ -3,7 +3,7 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 310"
-      v-if="colored"
+      v-if="feature.colored"
     >
       <path
         fill="#f4f8ff"
@@ -14,9 +14,9 @@
   </div>
   <section
     :class="{
-      'block-colored': colored,
-      gradient,
-      block: !colored
+      'block-colored': feature.colored,
+      gradient: feature.gradient,
+      block: !feature.colored
     }"
   >
     <section class="section">
@@ -24,21 +24,21 @@
         :class="{
           tile: true,
           'flex-aic': true,
-          content: !reverted,
-          'content-reverse': reverted
+          content: !feature.reverted,
+          'content-reverse': feature.reverted
         }"
       >
         <div class="tile is-5 is-child content" data-aos="fade-up">
           <h2>
             <span class="section-subtitle">
-              {{ $t(`${sectionKey} ${featureKey} subtitle`) }}
+              {{ feature.subtitle }}
             </span>
             <span class="section-title">
-              {{ $t(`${sectionKey} ${featureKey} title`) }}
+              {{ feature.title }}
             </span>
           </h2>
           <p>
-            {{ $t(`${sectionKey} ${featureKey} content`) }}
+            {{ feature.content }}
           </p>
         </div>
         <div
@@ -47,17 +47,21 @@
           data-aos-delay="200"
         >
           <NuxtImg
-            :class="{ screenshot: shadow }"
-            :src="'/images/screenshots/kitsu-' + featureKey + '.png'"
+            :class="{ screenshot: feature.shadow }"
+            :src="'/images/screenshots/' + feature.image"
             format="webp"
           />
         </div>
       </div>
     </section>
   </section>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" v-if="colored">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1440 320"
+    v-if="feature.colored"
+  >
     <path
-      :fill="gradient ? '#F9F6FD' : '#f4f8ff'"
+      :fill="feature.gradient ? '#F9F6FD' : '#f4f8ff'"
       fill-opacity="1"
       d="M0,32L80,58.7C160,85,320,139,480,138.7C640,139,800,85,960,90.7C1120,96,1280,160,1360,192L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
     ></path>
@@ -66,25 +70,10 @@
 
 <script setup>
 const props = defineProps({
-  sectionKey: String,
-  featureKey: String,
-  colored: {
-    type: Boolean,
-    default: false
-  },
-  gradient: {
-    type: Boolean,
-    default: false
-  },
-  reverted: {
-    type: Boolean,
-    default: false
-  },
-  shadow: {
-    type: Boolean,
-    default: true
-  }
+  feature: Object
 })
+
+const feature = props.feature
 </script>
 
 <style lang="stylus" scoped>

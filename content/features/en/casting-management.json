@@ -1,0 +1,42 @@
+{
+  "name": "Casting Management",
+  "slug": "casting-management",
+  "image": "casting-management.png",
+  "header": {
+    "tagline": "Casting Management",
+    "subtitle": "Set and share your breakdowns",
+    "metrics": "More than 200 000 assets have been managed with Kitsu!",
+    "explanation": "Create breakdowns and access casting information from anywhere. Add as many asset occurrences as needed and record relevant metadata. This way, you'll know when your shots are ready to be built."
+  },
+  "features": [
+    {
+      "title": "List your breakdown",
+      "subtitle": "Link assets to shots",
+      "content": "Build breakdown tables showing the casted assets for each shot, organized by type. Add metadata directly to every shot, providing information for your scene builder.",
+      "image": "kitsu-tables.png",
+      "colored": true
+    },
+    {
+      "title": "Link assets together",
+      "subtitle": "Set populating",
+      "content": "Connect assets for specific representation. Populate sets, link props to characters, or anything fitting your workflow.",
+      "image": "kitsu-asset-links.png",
+      "reverted": true
+    },
+    {
+      "title": "Export your casting",
+      "subtitle": "CSV files and API",
+      "content": "Export all casting information as a flat .csv file or a column representation. Connect your tools to our API to enhance your scene builder.",
+      "image": "kitsu-export.png",
+      "colored": true,
+      "gradient": true
+    }
+  ],
+  "customerStory": {
+    "studioName": "Autour De Minuit",
+    "storyKey": "adm",
+    "interviewee": "Fiona Cohen, Production Manager",
+    "imagePath": "photo-customer-story-adm.jpg",
+    "storyUrl": "https://blog.cg-wire.com/customer-story-autour-de-minuit/"
+  }
+}

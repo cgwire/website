@@ -1,0 +1,39 @@
+{
+  "name": "Elite Hosting",
+  "slug": "elite-hosting",
+  "image": "elite-hosting.png",
+  "header": {
+    "tagline": "elite-hosting header tagline",
+    "subtitle": "elite-hosting header subtitle",
+    "metrics": "elite-hosting header metrics",
+    "explanation": "elite-hosting header explanation"
+  },
+  "features": [
+    {
+      "key": "security",
+      "title": "elite-hosting security title",
+      "subtitle": "elite-hosting security subtitle",
+      "content": "elite-hosting security content",
+      "image": "kitsu-security.png",
+      "colored": true
+    },
+    {
+      "key": "availability",
+      "title": "elite-hosting availability title",
+      "subtitle": "elite-hosting availability subtitle",
+      "content": "elite-hosting availability content",
+      "image": "kitsu-availability.png",
+      "reverted": true
+    },
+    {
+      "key": "performance",
+      "title": "elite-hosting performance title",
+      "subtitle": "elite-hosting performance subtitle",
+      "content": "elite-hosting performance content",
+      "image": "kitsu-performance.png",
+      "colored": true,
+      "gradient": true,
+      "shadow": false
+    }
+  ]
+}

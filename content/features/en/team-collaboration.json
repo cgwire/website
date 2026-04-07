@@ -1,0 +1,45 @@
+{
+  "name": "Team Collaboration",
+  "slug": "team-collaboration",
+  "image": "team-collaboration.png",
+  "header": {
+    "tagline": "Team Collaboration",
+    "subtitle": "Keep everyone connected",
+    "metrics": "More than 5,000,000 comments have already been posted on Kitsu!",
+    "explanation": "Kitsu enhances communication among all stakeholders, simplifying collaboration across different sites and for remote work. Artists know their tasks and can deliver movies and images directly to the Director. Supervisors and Producers stay informed and can easily give instructions."
+  },
+  "features": [
+    {
+      "key": "tasks",
+      "title": "Deliver seamlessly",
+      "subtitle": "Tasks, comments and previews",
+      "content": "Assign tasks to artists, who can publish their work in Kitsu for review once completed. Producers, Supervisors, and Directors can iterate directly through the platform. Thanks to our real-time engine, everyone is instantly notified when a change occurs.",
+      "image": "kitsu-tasks.png",
+      "colored": true
+    },
+    {
+      "key": "todos",
+      "title": "Keep everyone on the same page",
+      "subtitle": "Todos",
+      "content": "Your artists know what is expected of them and can share their progress. This keeps everyone on the same page at all times, allowing artists to be more autonomous and focus more on the their art.",
+      "image": "kitsu-todos.png",
+      "reverted": true
+    },
+    {
+      "key": "news",
+      "title": "Never miss anything",
+      "subtitle": "Newsfeed",
+      "content": "Thanks to the news feed, you will never miss any comments or new previews. Everyone in the studio stays informed about ongoing activities, making it easier to anticipate problems.",
+      "image": "kitsu-news.png",
+      "colored": true,
+      "gradient": true
+    }
+  ],
+  "customerStory": {
+    "studioName": "Miyu studio",
+    "storyKey": "miyu",
+    "interviewee": "Carole Faure, Production Manager",
+    "imagePath": "photo-customer-story-miyu.png",
+    "storyUrl": "https://blog.cg-wire.com/customer-story-miyu-studio/"
+  }
+}

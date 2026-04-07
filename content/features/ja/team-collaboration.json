@@ -1,0 +1,45 @@
+{
+  "name": "Team Collaboration",
+  "slug": "team-collaboration",
+  "image": "team-collaboration.png",
+  "header": {
+    "tagline": "team-collaboration header tagline",
+    "subtitle": "team-collaboration header subtitle",
+    "metrics": "team-collaboration header metrics",
+    "explanation": "team-collaboration header explanation"
+  },
+  "features": [
+    {
+      "key": "tasks",
+      "title": "team-collaboration tasks title",
+      "subtitle": "team-collaboration tasks subtitle",
+      "content": "team-collaboration tasks content",
+      "image": "kitsu-tasks.png",
+      "colored": true
+    },
+    {
+      "key": "todos",
+      "title": "team-collaboration todos title",
+      "subtitle": "team-collaboration todos subtitle",
+      "content": "team-collaboration todos content",
+      "image": "kitsu-todos.png",
+      "reverted": true
+    },
+    {
+      "key": "news",
+      "title": "team-collaboration news title",
+      "subtitle": "team-collaboration news subtitle",
+      "content": "team-collaboration news content",
+      "image": "kitsu-news.png",
+      "colored": true,
+      "gradient": true
+    }
+  ],
+  "customerStory": {
+    "studioName": "Miyu studio",
+    "storyKey": "miyu",
+    "interviewee": "Carole Faure, Production Manager",
+    "imagePath": "photo-customer-story-miyu.png",
+    "storyUrl": "https://blog.cg-wire.com/customer-story-miyu-studio/"
+  }
+}

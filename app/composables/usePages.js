@@ -65,6 +65,44 @@ export function usePages(locale) {
     return res
   }
 
+  async function getFeatures() {
+    let res = await queryCollection('features')
+      .where('path', 'LIKE', `/features/${locale.value}/%`)
+      .all()
+
+    res = res.map(p => {
+      return {
+        title: p.title,
+        path:
+          locale.value == 'en'
+            ? `/features/${p.meta.slug}`
+            : `/${locale.value}/${t('features')}/${t(`slugs.${p.meta.slug}`)}`,
+        text: extractAllFields(p.meta)
+      }
+    })
+
+    return res
+  }
+
+  async function getAudiences() {
+    let res = await queryCollection('audiences')
+      .where('path', 'LIKE', `/audiences/${locale.value}/%`)
+      .all()
+
+    res = res.map(p => {
+      return {
+        title: p.title,
+        path:
+          locale.value == 'en'
+            ? `/for-${p.meta.slug}`
+            : `/${locale.value}/${t('for')}-${t(`slugs.${p.meta.slug}`)}`,
+        text: extractAllFields(p.meta)
+      }
+    })
+
+    return res
+  }
+
   async function getPages() {
     let res = await queryCollection('pages')
       .where('path', 'LIKE', `/pages/${locale.value}/%`)
@@ -87,11 +125,33 @@ export function usePages(locale) {
     return res
   }
 
+  async function getFAQs() {
+    let res = await queryCollection('faq')
+      .where('path', 'LIKE', `/faq/${locale.value}/%`)
+      .all()
+
+    res = res.map(p => {
+      return {
+        title: p.title,
+        path:
+          locale.value == 'en'
+            ? `/faq/${p.meta.slug}`
+            : `/${locale.value}/${t('faq')}/${t(`slugs.${p.meta.slug}`)}`,
+        text: stripMarkdown(p.body)
+      }
+    })
+
+    return res
+  }
+
   async function pagesQuery() {
     const alternatives = await getAlternatives()
     const pages = await getPages()
+    const features = await getFeatures()
+    const audiences = await getAudiences()
+    const faqs = await getFAQs()
 
-    return [...alternatives, ...pages]
+    return [...alternatives, ...pages, ...features, ...audiences, ...faqs]
   }
 
   return { pagesQuery }

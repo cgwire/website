@@ -798,6 +798,9 @@
   "kitsu-summit conference bigcompany description": "3D技術を使用してゼロから2Dパイプラインを作成する",
   "kitsu-summit conference lenovo title": "レノボのワークステーションとAI",
   "kitsu-summit conference lenovo description": "AI開発に適したワークステーションの選び方",
+  "features": "機能",
+  "for": "業界別",
+  "faq": "よくある質問",
   "search": {
     "open": "Open Search Modal",
     "placeholder": "Search",

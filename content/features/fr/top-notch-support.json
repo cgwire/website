@@ -1,0 +1,39 @@
+{
+  "name": "Top Notch Support",
+  "slug": "top-notch-support",
+  "image": "top-notch-support.png",
+  "header": {
+    "tagline": "top-notch-support header tagline",
+    "subtitle": "top-notch-support header subtitle",
+    "metrics": "top-notch-support header metrics",
+    "explanation": "top-notch-support header explanation"
+  },
+  "isVideo": true,
+  "features": [
+    {
+      "key": "fast",
+      "title": "top-notch-support fast title",
+      "subtitle": "top-notch-support fast subtitle",
+      "content": "top-notch-support fast content",
+      "image": "kitsu-fast.png",
+      "colored": true
+    },
+    {
+      "key": "chat",
+      "title": "top-notch-support chat title",
+      "subtitle": "top-notch-support chat subtitle",
+      "content": "top-notch-support chat content",
+      "image": "kitsu-chat.png",
+      "reverted": true
+    },
+    {
+      "key": "experts",
+      "title": "top-notch-support experts title",
+      "subtitle": "top-notch-support experts subtitle",
+      "content": "top-notch-support experts content",
+      "image": "kitsu-experts.png",
+      "colored": true,
+      "gradient": true
+    }
+  ]
+}

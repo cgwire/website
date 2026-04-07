@@ -1,0 +1,42 @@
+{
+  "name": "Review Engine",
+  "slug": "review-engine",
+  "image": "review-engine.png",
+  "header": {
+    "tagline": "Review Engine",
+    "subtitle": "Provide feedback on every submission",
+    "metrics": "Over 2 000 000 videos were already reviewed with Kitsu!",
+    "explanation": "Create playlists to review your shots and assets consecutively, for yourself or your client. Set up review sessions to provide feedback efficiently. Maintain access to all preview versions to compare with earlier deliveries."
+  },
+  "features": [
+    {
+      "title": "Review consecutive shots",
+      "subtitle": "Playlists",
+      "content": "Quickly build review playlists and comment on all shots consecutively. You can add comments and annotations directly from the playlist. Share playlists with your clients or review them with your team.",
+      "image": "kitsu-playlists.png",
+      "colored": true
+    },
+    {
+      "title": "Compare with any version",
+      "subtitle": "Side by side or overlay",
+      "content": "Compare any preview with an earlier or related version. View them side by side or as a stacked overlay.",
+      "image": "kitsu-compare.png",
+      "reverted": true
+    },
+    {
+      "title": "Perform team reviews",
+      "subtitle": "Real-time synchronization",
+      "content": "Review playlists in sync with your team, allowing everyone to view the same footage and stay on the same page.",
+      "image": "kitsu-room.png",
+      "colored": true,
+      "gradient": true
+    }
+  ],
+  "customerStory": {
+    "studioName": "Makuta VFX (RRR Movie)",
+    "storyKey": "makuta",
+    "interviewee": "Pete Draper, Head of VFX",
+    "imagePath": "photo-customer-story-makuta.png",
+    "storyUrl": "https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
+  }
+}

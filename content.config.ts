@@ -7,6 +7,10 @@ export default defineContentConfig({
       type: 'page',
       source: 'pages/**/*.{md,json}'
     }),
+    features: defineCollection({
+      type: 'page',
+      source: 'features/**/*.json'
+    }),
     faq: defineCollection({
       type: 'page',
       source: 'faq/**/*.md'

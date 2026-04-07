@@ -1,5 +1,6 @@
 ---
 title: "\"Est-ce compatible avec notre pipeline ?\""
+slug: "custom-integration"
 subtitle: "Comment intégrer Kitsu"
 image: "custom-integration-kitsu.png"
 ---

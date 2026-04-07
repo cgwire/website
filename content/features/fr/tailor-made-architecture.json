@@ -1,0 +1,41 @@
+{
+  "name": "Tailor-Made Architecture",
+  "slug": "tailor-made-architecture",
+  "image": "tailor-made-architecture.png",
+  "header": {
+    "tagline": "tailor-made-architecture header tagline",
+    "subtitle": "tailor-made-architecture header subtitle",
+    "metrics": "tailor-made-architecture header metrics",
+    "explanation": "tailor-made-architecture header explanation"
+  },
+  "features": [
+    {
+      "key": "onpremise",
+      "title": "tailor-made-architecture onpremise title",
+      "subtitle": "tailor-made-architecture onpremise subtitle",
+      "content": "tailor-made-architecture onpremise content",
+      "image": "kitsu-onpremise.png",
+      "colored": true,
+      "shadow": false
+    },
+    {
+      "key": "multiinstance",
+      "title": "tailor-made-architecture multiinstance title",
+      "subtitle": "tailor-made-architecture multiinstance subtitle",
+      "content": "tailor-made-architecture multiinstance content",
+      "image": "kitsu-multiinstance.png",
+      "reverted": true,
+      "shadow": false
+    },
+    {
+      "key": "extra",
+      "title": "tailor-made-architecture extra title",
+      "subtitle": "tailor-made-architecture extra subtitle",
+      "content": "tailor-made-architecture extra content",
+      "image": "kitsu-extra.png",
+      "colored": true,
+      "gradient": true,
+      "shadow": false
+    }
+  ]
+}
