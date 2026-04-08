@@ -1,0 +1,36 @@
+{
+  "pages": {
+    "about": {},
+    "carbon-report": {},
+    "community": {},
+    "contact": {},
+    "customer-stories": {},
+    "index": {},
+    "kitsu": {},
+    "kitsu-submit": {},
+    "pricing": {},
+    "software-integrations": {},
+    "spreadsheets": {}
+  },
+  "features": {
+    "casting-management": {},
+    "elite-hosting": {},
+    "production-tracker": {},
+    "review-engine": {},
+    "studio-database": {},
+    "tailor-made-architecture": {},
+    "team-collaboration": {},
+    "top-notch-support": {}
+  },
+  "alternatives": {
+    "ftrack": {},
+    "shotgrid": {}
+  },
+  "audiences": {
+    "feature-films": {},
+    "schools": {},
+    "shorts": {},
+    "tvshows": {},
+    "video-games": {}
+  }
+}

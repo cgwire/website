@@ -156,12 +156,14 @@ import { ref } from 'vue'
 let { slug } = await useI18NSlug()
 
 const { data: audience } = await useAsyncData(
-  slug,
+  () => `audience-${locale.value}-${slug.value}`,
   () =>
-    queryCollection('audiences')
-      .path(`/audiences/${locale.value}/${slug.value}`)
+    queryCollection('jsonPages')
+      .where('lang', '=', locale.value)
+      .where('pageType', '=', 'audiences')
+      .where('slug', '=', slug.value)
       .first(),
-  { watch: [slug, locale] }
+  { watch: [locale, slug] }
 )
 
 const audiencePage = audience.value.meta

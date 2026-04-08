@@ -1,6 +1,6 @@
 <template>
   <div v-if="page" :class="`kitsu-page ${pageKey}`">
-    <SolutionHeaderBlock :pageKey="page.meta.slug" :header="page.meta.header" />
+    <SolutionHeaderBlock :pageKey="page.slug" :header="page.meta.header" />
 
     <FeatureBlock
       v-for="(feature, index) in page.meta.features"
@@ -31,14 +31,16 @@ let { slug } = await useI18NSlug()
 const { data: page } = await useAsyncData(
   () => `features-${locale.value}-${slug.value}`,
   () =>
-    queryCollection('features')
-      .path(`/features/${locale.value}/${slug.value}`)
+    queryCollection('jsonPages')
+      .where('lang', '=', locale.value)
+      .where('pageType', '=', 'features')
+      .where('slug', '=', slug.value)
       .first(),
   { watch: [locale, slug] }
 )
 
 const name = page.value.meta.name
-const pageKey = page.value.meta.slug
+const pageKey = page.value.slug
 const customerStory = page.value.meta.customerStory
 
 const title = 'CGWire | Kitsu / ' + t(`${pageKey} header tagline`)

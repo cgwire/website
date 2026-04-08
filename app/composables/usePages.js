@@ -47,15 +47,16 @@ export function usePages(locale) {
   const { t } = useI18n()
 
   async function getAlternatives() {
-    let res = await queryCollection('alternatives')
-      .where('path', 'LIKE', `/alternatives/${locale.value}/%`)
+    let res = await queryCollection('jsonPages')
+      .where('lang', '=', locale.value)
+      .where('pageType', '=', 'alternatives')
       .all()
 
     res = res.map(p => ({
       title: p.title,
       path: localePath({
         name: 'slug-alternative',
-        params: { slug: t(`slugs.${p.meta.slug}`) }
+        params: { slug: t(`slugs.${p.slug}`) }
       }),
       text: p.meta.sections
         .map(section => `${section.title}\n${section.content.join('\n')}`)
@@ -66,8 +67,9 @@ export function usePages(locale) {
   }
 
   async function getFeatures() {
-    let res = await queryCollection('features')
-      .where('path', 'LIKE', `/features/${locale.value}/%`)
+    let res = await queryCollection('jsonPages')
+      .where('lang', '=', locale.value)
+      .where('pageType', '=', 'features')
       .all()
 
     res = res.map(p => {
@@ -75,8 +77,8 @@ export function usePages(locale) {
         title: p.title,
         path:
           locale.value == 'en'
-            ? `/features/${p.meta.slug}`
-            : `/${locale.value}/${t('features')}/${t(`slugs.${p.meta.slug}`)}`,
+            ? `/features/${p.slug}`
+            : `/${locale.value}/${t('features')}/${t(`slugs.${p.slug}`)}`,
         text: extractAllFields(p.meta)
       }
     })
@@ -85,8 +87,9 @@ export function usePages(locale) {
   }
 
   async function getAudiences() {
-    let res = await queryCollection('audiences')
-      .where('path', 'LIKE', `/audiences/${locale.value}/%`)
+    let res = await queryCollection('jsonPages')
+      .where('lang', '=', locale.value)
+      .where('pageType', '=', 'audiences')
       .all()
 
     res = res.map(p => {
@@ -94,8 +97,8 @@ export function usePages(locale) {
         title: p.title,
         path:
           locale.value == 'en'
-            ? `/for-${p.meta.slug}`
-            : `/${locale.value}/${t('for')}-${t(`slugs.${p.meta.slug}`)}`,
+            ? `/for-${p.slug}`
+            : `/${locale.value}/${t('for')}-${t(`slugs.${p.slug}`)}`,
         text: extractAllFields(p.meta)
       }
     })
@@ -104,8 +107,9 @@ export function usePages(locale) {
   }
 
   async function getPages() {
-    let res = await queryCollection('pages')
-      .where('path', 'LIKE', `/pages/${locale.value}/%`)
+    let res = await queryCollection('jsonPages')
+      .where('lang', '=', locale.value)
+      .where('pageType', '=', 'pages')
       .all()
 
     res = res.map(p => {
@@ -113,8 +117,8 @@ export function usePages(locale) {
         title: p.title,
         path:
           locale.value == 'en'
-            ? p.meta.slug
-            : `/${locale.value}/${t(`slugs.${p.meta.slug}`)}`,
+            ? p.slug
+            : `/${locale.value}/${t(`slugs.${p.slug}`)}`,
         text:
           p.extension === 'json'
             ? extractAllFields(p.meta)
