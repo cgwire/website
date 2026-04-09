@@ -406,6 +406,12 @@
     "software-integrations": {
       "title": "Integrations",
       "slug": "software-integrations",
+      "header": {
+        "tagline": "Software integrations",
+        "subtitle": "Connect all your tools",
+        "metrics": "More than 200 000 assets have been managed with Kitsu!",
+        "explanation": "Your data flows throughout your entire pipeline. That's why we provide integrations to facilitate communication between your tools. We enable your artists to publish from their tools, allow your team to send notifications to your chat applications, and offer API clients for extending your workflow."
+      },
       "integrations": {
         "subtitleDcc": "Quickly send previews",
         "titleDcc": "Publish from your Favorite Digital Content Creation Tools",

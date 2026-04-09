@@ -1,6 +1,6 @@
 <template>
   <div class="kitsu-page software-integrations integrations">
-    <SolutionHeaderBlock page-key="software-integrations" />
+    <SolutionHeaderBlock :pageKey="page.slug" :header="page.meta.header" />
 
     <section class="section mt8 pt0">
       <div class="section-subtitle has-text-centered">
