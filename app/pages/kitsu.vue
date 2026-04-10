@@ -58,11 +58,31 @@
         />
       </template>
 
-      <KitsuTwoD v-if="currentTab === '2D'" />
-      <KitsuThreeD v-if="currentTab === '3D'" />
-      <KitsuVFX v-if="currentTab === 'VFX'" />
-      <KitsuVideoGames v-if="currentTab === 'Games'" />
-      <KitsuSchools v-if="currentTab === 'Schools'" />
+      <KitsuTwoD
+        v-if="currentTab === '2D'"
+        :supporters="page.meta.kitsu.supporters"
+        :features="page.meta.kitsu.features"
+      />
+      <KitsuThreeD
+        v-if="currentTab === '3D'"
+        :supporters="page.meta.kitsu.supporters"
+        :features="page.meta.kitsu.features"
+      />
+      <KitsuVFX
+        v-if="currentTab === 'VFX'"
+        :supporters="page.meta.kitsu.supporters"
+        :features="page.meta.kitsu.features"
+      />
+      <KitsuVideoGames
+        v-if="currentTab === 'Games'"
+        :supporters="page.meta.kitsu.supporters"
+        :features="page.meta.kitsu.features"
+      />
+      <KitsuSchools
+        v-if="currentTab === 'Schools'"
+        :supporters="page.meta.kitsu.supporters"
+        :features="page.meta.kitsu.features"
+      />
 
       <div data-aos="fade-up">
         <div class="section-subtitle has-text-centered">
@@ -189,12 +209,10 @@ let { data: page } = await useAsyncData(
   { watch: [slug, locale] }
 )
 
-usePageHead({
-  title: 'CGWire | Kitsu',
-  titleKey: 'kitsu title',
-  descriptionKey: 'kitsu description',
-  path: 'kitsu',
-  image: 'teaser.d579992c.png'
+useSEO({
+  title: 'CGWire | ' + page.value.title,
+  description: page.value.meta.kitsu.description,
+  imagePath: 'teaser.png'
 })
 
 onMounted(() => {

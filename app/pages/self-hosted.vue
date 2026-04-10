@@ -14,12 +14,13 @@ import { features, supportFeatures } from '~/data/self-hosted-features'
 const { locale } = useI18n()
 const slug = ref('self-hosted')
 
-const { pageQuery } = usePage(locale, slug)
-
-let { data: page } = await useAsyncData(
-  `${slug.value}-${locale.value}`,
-  pageQuery,
-  { watch: [slug, locale] }
+const { data: page } = await useAsyncData(
+  `self-hosted-${locale.value}`,
+  () =>
+    queryCollection('markdownPages')
+      .path(`/pages/${locale.value}/self-hosted`)
+      .first(),
+  { watch: [locale] }
 )
 
 const data = ref({
@@ -29,10 +30,9 @@ const data = ref({
   supportFeatures
 })
 
-usePageHead({
-  title: 'CGWire | Cloud vs Self-Hosted',
-  titleKey: 'comparison selfhosted title',
-  descriptionKey: 'comparison selfhosted subtitle',
-  path: 'self-hosted'
+useSEO({
+  title: 'CGWire | ' + page.value.title,
+  description:
+    'Kitsu is free and open-source software, meaning you can install and use it at no cost.'
 })
 </script>

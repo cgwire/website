@@ -351,7 +351,7 @@
               src="~/assets/images/community/le-robinet-dor.jpg"
             /><br />
             Le Robinet Dor - 200€ /
-            {{ $t('kitsu-summit access night') }}
+            {{ page.meta.access.night }}
           </a>
           <a href="https://staygenerator.com/hostels/paris" target="_blank">
             <img
@@ -359,7 +359,7 @@
               src="~/assets/images/community/generator.jpg"
             /><br />
             Generator Hostel - 20€-100€ /
-            {{ $t('kitsu-summit access night') }}
+            {{ page.meta.access.night }}
           </a>
         </div>
       </div>
@@ -396,8 +396,6 @@
 </template>
 
 <script setup>
-import { getConferences, getSchedule } from '~/data/summit'
-
 const { t } = useI18n()
 
 const { locale } = useI18n()
@@ -411,22 +409,13 @@ let { data: page } = await useAsyncData(
   { watch: [slug, locale] }
 )
 
-definePageMeta({
-  layout: 'default',
-  title: 'Kitsu Summit 2026 - Paris',
-  description:
-    'Join us for the first Kitsu Summit in Paris on February 12, 2026. 12 conferences showcasing real-world experiences using Kitsu for animation and video game production.'
-})
+const conferences = page.value.meta.conferences
+const schedule = page.value.meta.schedule
 
-const conferences = ref(getConferences(t))
-const schedule = ref(getSchedule(t))
-
-usePageHead({
-  title: 'CGWire | Kitsu',
-  titleKey: 'kitsu-summit title',
-  descriptionKey: 'kitsu-summit description',
-  path: 'kitsu-summit',
-  image: 'kitsu-summit.c5cf3542.png'
+useSEO({
+  title: 'CGWire | ' + page.value.title,
+  description: page.value.meta.about.description,
+  imagePath: 'kitsu-summit.png'
 })
 </script>
 

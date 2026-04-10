@@ -20,7 +20,7 @@
             {{ studioName }}
           </h2>
           <p>
-            <em> "{{ $t('main customer story ' + storyKey) }}" </em><br />
+            <em> "{{ quote }}" </em><br />
           </p>
           <p class="mt1">
             {{ interviewee }}
@@ -37,6 +37,7 @@ const props = defineProps({
   interviewee: String,
   studioName: String,
   storyKey: String,
+  quote: String,
   imagePath: String
 })
 </script>

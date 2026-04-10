@@ -1,7 +1,7 @@
 <template>
   <div class="slider-container">
     <span class="slider-value">
-      {{ modelValue }} {{ $t(label, modelValue) }}
+      {{ modelValue }} {{ label.split('|')[modelValue > 1 ? 1 : 0] }}
     </span>
     <input
       class="slider"

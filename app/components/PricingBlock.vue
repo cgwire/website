@@ -6,27 +6,27 @@
     }"
   >
     <div class="pricing-title">
-      {{ $t(title) }}
+      {{ title }}
     </div>
     <div class="pricing-price">
       <span class="pricing-value monthly" v-if="monthly">€{{ price }}</span>
       <span class="pricing-value yearly" v-else>€{{ price }}</span>
       <span v-if="perUser">
-        {{ $t('pricing value month') }} / {{ $t('pricing features user') }}
+        {{ pricing.value.month }} / {{ pricing.features.user }}
       </span>
       <span v-else>
-        {{ $t('pricing value month') }}
+        {{ pricing.value.month }}
       </span>
     </div>
     <div class="pricing-price-info">
-      {{ monthly ? '&nbsp;' : $t('pricing billed annualy') }}
+      {{ monthly ? '&nbsp;' : pricing.billed.annualy }}
     </div>
     <div class="for-info">
       {{ useCaseLabel }}
     </div>
     <div class="pricing-features">
       <ul>
-        <li>{{ userRange }} {{ $t('pricing features users') }}</li>
+        <li>{{ userRange }} {{ pricing.features.users }}</li>
         <li v-for="(feature, index) in features" :key="index">
           {{ feature }}
         </li>
@@ -40,7 +40,7 @@
         :href="`https://account.cg-wire.com/signup?locale=${$i18n.locale}`"
         class="button is-outlined"
       >
-        {{ $t('pricing button cta') }}
+        {{ pricing.button.cta }}
       </a>
     </div>
   </div>
@@ -48,6 +48,7 @@
 
 <script setup>
 const props = defineProps({
+  pricing: Object,
   title: {
     type: String,
     required: true

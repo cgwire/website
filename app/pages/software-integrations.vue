@@ -156,12 +156,9 @@ let { data: page } = await useAsyncData(
   { watch: [slug, locale] }
 )
 
-usePageHead({
-  title:
-    'CGWire | Kitsu / ' + useI18n().t('software-integrations header tagline'),
-  titleKey: 'software-integrations header tagline',
-  descriptionKey: 'software-integrations header explanation',
-  path: 'software-integrations',
-  image: 'software-integrations.f91a84a5.png'
+useSEO({
+  title: 'CGWire | Kitsu / ' + page.value.meta.header.tagline,
+  description: page.value.meta.header.explanation,
+  imagePath: 'software-integrations.png'
 })
 </script>

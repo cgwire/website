@@ -19,7 +19,8 @@
 
     <div class="pricings">
       <PricingBlock
-        title="pricing title agency"
+        :title="page.meta.pricing.title_plans.agency"
+        :pricing="page.meta.pricing"
         :price="yearly ? 20 : 25"
         :monthly="!yearly"
         :per-user="true"
@@ -27,15 +28,16 @@
         :storage="100 + page.meta.pricing.features.gbstorage"
         :use-case-label="page.meta.pricing.usecase.agency"
         :features="[
-          page.meta.pricing.features.tinySupport,
-          page.meta.pricing.features.smallFour,
-          page.meta.pricing.features.commonFour,
+          page.meta.pricing.features.tiny.support,
+          page.meta.pricing.features.small.four,
+          page.meta.pricing.features.common.four,
           page.meta.pricing.features.mutualize
         ]"
       />
 
       <PricingBlock
-        title="pricing title production"
+        :title="page.meta.pricing.title_plans.production"
+        :pricing="page.meta.pricing"
         :emphasize="true"
         :price="yearly ? 30 : 36"
         :monthly="!yearly"
@@ -44,20 +46,21 @@
         :storage="3 + page.meta.pricing.features.tbstorage"
         :use-case-label="page.meta.pricing.usecase.production"
         :features="[
-          page.meta.pricing.features.commonTwo,
-          page.meta.pricing.features.mediumFour,
-          page.meta.pricing.features.mediumFive,
-          page.meta.pricing.features.commonThree,
-          page.meta.pricing.features.commonFour,
-          page.meta.pricing.features.mediumTwo,
+          page.meta.pricing.features.common.two,
+          page.meta.pricing.features.medium.four,
+          page.meta.pricing.features.medium.five,
+          page.meta.pricing.features.common.three,
+          page.meta.pricing.features.common.four,
+          page.meta.pricing.features.medium.two,
           page.meta.pricing.features.training,
-          page.meta.pricing.features.commonSearchengine,
-          page.meta.pricing.features.commonPlaylistbuilder
+          page.meta.pricing.features.common.searchengine,
+          page.meta.pricing.features.common.playlistbuilder
         ]"
       />
 
       <PricingBlock
-        title="pricing title studio"
+        :title="page.meta.pricing.title_plans.studio"
+        :pricing="page.meta.pricing"
         :price="yearly ? 35 : 45"
         :monthly="!yearly"
         :per-user="true"
@@ -65,15 +68,15 @@
         :storage="10 + page.meta.pricing.features.tbstorage"
         :use-case-label="page.meta.pricing.usecase.studio"
         :features="[
-          page.meta.pricing.features.largeTwo,
-          page.meta.pricing.features.largeFour,
-          page.meta.pricing.features.largeSix,
-          page.meta.pricing.features.commonThree,
-          page.meta.pricing.features.commonFour,
-          page.meta.pricing.features.mediumTwo,
+          page.meta.pricing.features.large.two,
+          page.meta.pricing.features.large.four,
+          page.meta.pricing.features.large.six,
+          page.meta.pricing.features.common.three,
+          page.meta.pricing.features.common.four,
+          page.meta.pricing.features.medium.two,
           page.meta.pricing.features.training,
-          page.meta.pricing.features.commonSearchengine,
-          page.meta.pricing.features.commonPlaylistbuilder
+          page.meta.pricing.features.common.searchengine,
+          page.meta.pricing.features.common.playlistbuilder
         ]"
       />
 
@@ -91,16 +94,16 @@
         </div>
         <div class="pricing-features">
           <ul>
-            <li>{{ page.meta.pricing.features.partnerOne }}</li>
-            <li>{{ page.meta.pricing.features.partnerOnpremise }}</li>
-            <li>{{ page.meta.pricing.features.partnerUnlimited }}</li>
-            <li>{{ page.meta.pricing.features.partnerContract }}</li>
+            <li>{{ page.meta.pricing.features.partner.one }}</li>
+            <li>{{ page.meta.pricing.features.partner.onpremise }}</li>
+            <li>{{ page.meta.pricing.features.partner.unlimited }}</li>
+            <li>{{ page.meta.pricing.features.partner.contract }}</li>
             <li>Single Sign On</li>
             <li>Contractor Synchronization</li>
-            <li>{{ page.meta.pricing.features.partnerFour }}</li>
-            <li>{{ page.meta.pricing.features.partnerThree }}</li>
-            <li>{{ page.meta.pricing.features.partnerSix }}</li>
-            <li>{{ page.meta.pricing.features.partnerEncryption }}</li>
+            <li>{{ page.meta.pricing.features.partner.four }}</li>
+            <li>{{ page.meta.pricing.features.partner.three }}</li>
+            <li>{{ page.meta.pricing.features.partner.six }}</li>
+            <li>{{ page.meta.pricing.features.partner.encryption }}</li>
           </ul>
         </div>
         <div class="pricing-cta">
@@ -127,7 +130,7 @@
 
       <UserLogos :with-title="false" />
 
-      <PriceEstimator />
+      <PriceEstimator :pricing="page.meta.pricing" />
 
       <div class="section-subtitle has-text-centered">
         {{ page.meta.pricing.faq.subtitle }}
@@ -143,6 +146,8 @@
           @unexpand="isExpanded['faq' + (i + 1)] = false"
           v-for="i in Array.from(Array(10).keys())"
           :key="i"
+          :question="page.meta.pricing.faq[`question${i + 1}`]"
+          :answer="page.meta.pricing.faq[`answer${i + 1}`]"
         />
       </div>
     </section>
@@ -166,11 +171,9 @@ let { data: page } = await useAsyncData(
   { watch: [slug, locale] }
 )
 
-usePageHead({
-  title: 'CGWire | ' + useI18n().t('pricing title'),
-  titleKey: 'pricing kitsu title',
-  descriptionKey: 'pricing cloud explanation',
-  path: 'pricing'
+useSEO({
+  title: 'CGWire | ' + page.value.title,
+  description: page.value.meta.pricing.cloud.explanation
 })
 
 function setExpanded(index) {

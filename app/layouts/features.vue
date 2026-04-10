@@ -15,6 +15,7 @@
       :interviewee="customerStory.interviewee"
       :image-path="customerStory.imagePath"
       :story-url="customerStory.storyUrl"
+      :quote="customerStory.quote"
     />
 
     <Trial />
@@ -43,11 +44,12 @@ const name = page.value.meta.name
 const pageKey = page.value.slug
 const customerStory = page.value.meta.customerStory
 
-const title = 'CGWire | Kitsu / ' + t(`${pageKey} header tagline`)
-const description = t(`${pageKey} header explanation`)
+const title = 'CGWire | Kitsu / ' + name
+const description = page.value.meta.header.explanation
 const path = localePath(route.name)
 const url = `https://www.cg-wire.com${path}`
 const imgPath = page.value.meta.image
+
 useHead({
   title,
   meta: [

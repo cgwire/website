@@ -45,6 +45,44 @@
         "team": {
           "title": "Who we are",
           "intro": "We are a passionate team based in France with extensive experience in software development, production management, and product development.",
+          "team": {
+            "frank": {
+              "name": "Frank Rousseau",
+              "key": "frank",
+              "role": "Marketing and Communication Manager",
+              "description": "Before CGWire, Frank worked for studios and co-founded a startup. He has 15 years of experience in tech companies. Today, he nurtures the CGWire and Kitsu brands and gathers the right people to build them."
+            },
+            "gwen": {
+              "name": "Gwenaëlle Dupré",
+              "key": "gwen",
+              "role": "Product and Sales Manager",
+              "description": "Gwenaëlle has over 10 years of experience as a production manager with distributed teams. At CGWire, she handles all product management and sales aspects, ensuring the success of every Kitsu implementation."
+            },
+            "nicolas": {
+              "name": "Nicolas Ledez",
+              "key": "nicolas",
+              "role": "Hosting Infrastructure Manager",
+              "description": "Nicolas is one of the most renowned French System Administrators and a speaker at many tech events. He manages our cloud and on-premise infrastructures, ensuring your Kitsu instance is always up and running."
+            },
+            "nicolaspennec": {
+              "name": "Nicolas Pennec",
+              "key": "nicolaspennec",
+              "role": "Frontend Software Manager",
+              "description": "Nicolas is an experienced JavaScript developer with 15 years of experience at companies such as OVH and Orange. He frequently speaks at conferences about frontend technologies and is in charge of all Kitsu UIs."
+            },
+            "evan": {
+              "name": "Evan Blaudy",
+              "key": "evan",
+              "role": "Backend Software Manager",
+              "description": "Evan is an experienced Python Software Engineer involved in open-source projects. At CGWire, he maintains and improves the Kitsu API and DCC integrations."
+            },
+            "elsa": {
+              "name": "Elsa Chevallier",
+              "key": "elsa",
+              "role": "Finance Manager",
+              "description": "Elsa has worked for 15 years in the movie industry as a Chief Financial Officer in studios and organizations promoting cinema. She is responsible for the financial aspects at CGWire."
+            }
+          },
           "advisors": "Our advisors",
           "ev": {
             "id": "Ev Henke",
@@ -176,6 +214,13 @@
       "customerStories": {
         "header": {
           "title": "Customer Stories"
+        },
+        "quotes": {
+          "tant-mieux": "Communication with remote studios have been simplified. We can discuss a specific asset or task without exchanging 10 emails. If we have any doubts, we can rely on what is indicated on the platform.",
+          "miyu": "A few days are enough to understand all the features required to run a production. Everyone in the studio starts quickly, especially artists who really enjoy Kitsu. We didn't notice this enthusiasm with the previous tools we used.",
+          "fost": "With Kitsu, people think first about the time saved but what matters more to me is the serenity you get by having everything in order. It gave you more space in your brain to focus on other elements of your production.",
+          "adm": "We needed a tool to link tasks and visual deliveries. We wanted practical and pleasant software for the teams. Especially for Filmmakers, who had to access the shots end-to-end at any moment. And of course, all while allowing production managers to track the progress with ease.",
+          "makuta": "Kitsu has pretty much unified everything and is forcing neater communication not only between artists but from production, management, and clients."
         }
       }
     },
@@ -277,7 +322,70 @@
           "subtitle": "Testimonials",
           "title": "Read our customer stories",
           "description": "See how our customers implemented Kitsu in their studios for any kind of productions."
-        }
+        },
+        "features": {
+          "api": {
+            "content": "Use our Python API to integrate Kitsu into your tools. Pull data from Kitsu and update it from your tools.",
+            "title": "Python API"
+          },
+          "assets": {
+            "content": "Organize your assets and keep track of their versions. Assign related tasks to your team and follow their progress.",
+            "title": "Asset Management"
+          },
+          "breakdown": {
+            "content": "Kitsu allows you to list which asset belongs to which shot. It gives you extra statistics about each shot ready status",
+            "title": "Breakdown List"
+          },
+          "forecast": {
+            "content": "Test scenarios and see how current costs compare to your budget previsions. Anticipate any issues and make sure you stay on track.",
+            "title": "Budget Forecasting"
+          },
+          "timesheets": {
+            "content": "Let artists track their time and get a detailed overview of your how much time each artist has worked. Aggregate data on assets and shots.",
+            "title": "Time tracking"
+          },
+          "news": {
+            "content": "Follow the activity of your production in real-time. Subscribe to key tasks and be notified when their status change.",
+            "title": "Activity feed"
+          },
+          "report": {
+            "content": "Via dashboards, you can build reports about your production progress. Your partners will know exactly where you are and what to do.",
+            "title": "Production Reports"
+          },
+          "review": {
+            "content": "Create playlists to review your shots and assets consecutively. Provide feedback efficiently and keep access to all preview versions to compare with earlier deliveries.",
+            "title": "Review engine"
+          },
+          "review-assets": {
+            "content": "Create playlists to review your assets consecutively. Provide feedback efficiently and keep access to all preview versions to compare with earlier deliveries.",
+            "title": "Review engine"
+          },
+          "schedule": {
+            "content": "Kitsu helps you manage your workload. You can schedule your tasks, assign them to artists, and balance them efficiently.",
+            "title": "Schedule and planning"
+          },
+          "search": {
+            "content": "Quickly find assets by searching for keywords. Use tags and metadata to allow for more advanced searches.",
+            "title": "Search engine"
+          },
+          "track": {
+            "content": "List and dispatch tasks for all your steps. Set statuses and run discussion directly with your team.",
+            "title": "Task tracking"
+          },
+          "library": {
+            "content": "Build your own library of assets and reuse them in your shots and assets. Avoid duplicating assets and keep your team on the same page.",
+            "title": "Asset library"
+          }
+        },
+        "supporters": {
+          "content": "Productions tracked with Kitsu won all the major awards: Oscars, Emmys, Cannes Palme d'Or, Annecy Cristal, César, and more.",
+          "games": "Video Games productions tracked with Kitsu are among the most played in the world.",
+          "schools": "The best French animation schools already use Kitsu to train their students.",
+          "subtitle": "Fullfill your ambitions",
+          "title": "Kitsu is the biggest supporter of your success",
+          "vfx": "VFX Productions tracked with Kitsu met great success in theaters. We will back you up to achieve the same."
+        },
+        "cta": "Interested in using Kitsu?"
       }
     },
     "kitsu-submit": {
@@ -337,69 +445,575 @@
       "cta": {
         "title": "Ready to Transform Your Production?",
         "description": "Don't miss this unique opportunity to learn from the best and connect with your industry peers."
-      }
+      },
+      "conferences": [
+        {
+          "time": "09:45",
+          "speaker": "Audrey Tondre",
+          "company": "Remembers",
+          "title": "Producing a first feature film and get the Annecy Cristal",
+          "description": "Learn how Remembers used Kitsu to manage their first feature film production and achieve recognition at Annecy.",
+          "category": "animation2d",
+          "categoryLabel": "2D",
+          "file": "audrey.jpg"
+        },
+        {
+          "time": "12:00",
+          "speaker": "Pete Draper",
+          "company": "VFX Supervisor",
+          "title": "Managing hundreds of projects with ease",
+          "description": "Scaling VFX production management across hundreds of projects using Kitsu's powerful organizational tools.",
+          "category": "vfx",
+          "categoryLabel": "VFX",
+          "file": "pete.webp"
+        },
+        {
+          "time": "12:45",
+          "speaker": "Chris Unterberg",
+          "company": "Tetsuo",
+          "title": "Quickdraw always wins",
+          "description": "A case for everyone to give visual feedback, no matter how they draw and no matter their role.",
+          "category": "vfx",
+          "categoryLabel": "VFX",
+          "file": "chris.png"
+        },
+        {
+          "time": "14:00",
+          "speaker": "Flavio Perez",
+          "company": "Les Fées Spéciales",
+          "description": "Exploring advanced 2D/3D production techniques and pipeline optimization.",
+          "title": "Dealing with 2D/3D production workflows",
+          "category": "animation3d",
+          "categoryLabel": "3D",
+          "file": "flavio.jpg"
+        },
+        {
+          "time": "15:30",
+          "title": "Reinventing 3D asset management",
+          "speaker": "Axel Tillement",
+          "company": "Cube Creative",
+          "description": "Simplified approach to 3D asset management.",
+          "category": "animation3d",
+          "categoryLabel": "3D",
+          "file": "axel.jpg"
+        },
+        {
+          "time": "17:00",
+          "title": "Using production management at the service of creativity",
+          "speaker": "Cléa Gonnay",
+          "company": "Miyu",
+          "description": "How Miyu balances creative freedom with production efficiency.",
+          "category": "animation2d",
+          "categoryLabel": "2D",
+          "file": "clea.jpg"
+        },
+        {
+          "time": "17:45",
+          "title": "Growing with Kitsu",
+          "speaker": "Céline Durieux",
+          "company": "Fost",
+          "description": "How Fost has used Kitsu to grow their studio and how Kitsu was improved by them.",
+          "category": "animation2d",
+          "categoryLabel": "2D",
+          "file": "celine.png"
+        },
+        {
+          "time": "17:45",
+          "title": "A full open-source pipeline for a TV Series",
+          "speaker": "Félix David",
+          "company": "Normaal",
+          "description": "Setting up a full open-source pipeline to maximize productivity.",
+          "category": "animation2d",
+          "categoryLabel": "2D",
+          "file": "felix.jpg"
+        },
+        {
+          "time": "17:45",
+          "title": "Leveraging Blender with Kitsu",
+          "speaker": "Mario Hawat",
+          "company": "Autour De Minuit",
+          "description": "How Blender can be used with Kitsu to handle diverse styles of animation.",
+          "category": "animation3d",
+          "categoryLabel": "3D",
+          "file": "mario.png"
+        },
+        {
+          "time": "17:45",
+          "title": "Automate and simplify an hybrid pipeline",
+          "speaker": "Guilhem Compain",
+          "company": "Wizz",
+          "description": "How to make 2D and 3D easy to mix.",
+          "category": "animation2d",
+          "categoryLabel": "2D",
+          "file": "guilhem.png"
+        },
+        {
+          "time": "17:45",
+          "title": "AI in the Hands of Artists",
+          "speaker": "Arthur Aloyan",
+          "company": "Mastodon Production",
+          "description": "Where AI can support production workflows where human craft must remain central",
+          "category": "ai",
+          "categoryLabel": "AI",
+          "file": "artur.png"
+        },
+        {
+          "time": "17:45",
+          "title": "The best from 3D applied to 2D",
+          "speaker": "Tristan Languebien",
+          "company": "Big Company",
+          "description": "Creating a 2D pipeline from scratch using 3D techniques",
+          "category": "2d",
+          "categoryLabel": "2D",
+          "file": "tristan.png"
+        },
+        {
+          "time": "17:45",
+          "title": "Astérix, head in the clouds",
+          "speaker": "Anne-Laure Armand / Laurent Dijoux / Dominique Coco",
+          "company": "Ranch Computing & TAT Production",
+          "description": "Cloud Render Farm for Astérix TV series by TAT Production",
+          "category": "vfx",
+          "categoryLabel": "VFX",
+          "file": "anne-laure.jpg"
+        },
+        {
+          "time": "18:00",
+          "title": "Why Kitsu",
+          "speaker": "Frank Rousseau",
+          "company": "CGWire CEO",
+          "description": "Kitsu origins, achievements, and vision.",
+          "category": "kitsu",
+          "categoryLabel": "Kitsu",
+          "file": "frank.jpg"
+        },
+        {
+          "time": "18:00",
+          "title": "The future of Kitsu",
+          "speaker": "Gwénaëlle Dupré",
+          "company": "CGWire CPO",
+          "description": "Roadmap for the next year.",
+          "category": "kitsu",
+          "categoryLabel": "Kitsu",
+          "file": "gwen.png"
+        }
+      ],
+      "schedule": [
+        {
+          "time": "09:00",
+          "type": "break",
+          "label": "Breakfast",
+          "room1": [],
+          "room2": []
+        },
+        {
+          "time": "09:30",
+          "room1": [
+            {
+              "company": "CGWire",
+              "speaker": "Frank Rousseau",
+              "title": "Why Kitsu"
+            }
+          ],
+          "room2": []
+        },
+        {
+          "time": "10:00",
+          "room1": [
+            {
+              "company": "Autour De Minuit",
+              "speaker": "Mario Hawat",
+              "title": "Leveraging Blender with Kitsu"
+            }
+          ],
+          "room2": [
+            {
+              "company": "Wizz",
+              "speaker": "Guilhem Compain",
+              "title": "Automate and simplify an hybrid pipeline"
+            }
+          ]
+        },
+        {
+          "time": "10:45",
+          "room1": [
+            {
+              "company": "Les Fées Spéciales",
+              "speaker": "Flavio Perez",
+              "title": "Dealing with 2D/3D production workflows"
+            }
+          ],
+          "room2": [
+            {
+              "company": "Cube Creative",
+              "speaker": "Axel Tillement",
+              "title": "Reinventing 3D asset management"
+            }
+          ]
+        },
+        {
+          "time": "11:30",
+          "room1": [
+            {
+              "company": "Magic Studio",
+              "speaker": "Arthur Aloyan",
+              "title": "AI in the Hands of Artists"
+            }
+          ],
+          "room2": [
+            {
+              "company": "Remembers",
+              "speaker": "Audrey Tondre",
+              "title": "Producing a first feature film and get the Annecy Cristal"
+            }
+          ]
+        },
+        {
+          "time": "12:15",
+          "room1": [
+            {
+              "company": "Ranch Computing & TAT Production",
+              "speaker": "Anne-Laure Armand / Laurent Dijoux / Dominique Coco",
+              "title": "Astérix, head in the clouds"
+            }
+          ],
+          "room2": []
+        },
+        {
+          "time": "12:40",
+          "room1": [
+            {
+              "company": "Lenovo",
+              "speaker": "Mesa Takaoka",
+              "title": "Lenovo Workstations and AI"
+            }
+          ],
+          "room2": []
+        },
+        {
+          "time": "13:00",
+          "type": "break",
+          "label": "Lunch Break",
+          "room1": [],
+          "room2": []
+        },
+        {
+          "time": "14:00",
+          "room1": [
+            {
+              "company": "CGWire",
+              "speaker": "Gwénaëlle Dupré",
+              "title": "The future of Kitsu"
+            }
+          ],
+          "room2": []
+        },
+        {
+          "time": "14:30",
+          "room1": [
+            {
+              "company": "Ryff",
+              "speaker": "Pete Draper",
+              "title": "Managing hundreds of projects with ease"
+            }
+          ],
+          "room2": [
+            {
+              "company": "Miyu",
+              "speaker": "Cléa Gonnay",
+              "title": "Using production management at the service of creativity"
+            }
+          ]
+        },
+        {
+          "time": "15:15",
+          "room1": [
+            {
+              "company": "Tetsuo",
+              "speaker": "Chris Unterberg",
+              "title": "Quickdraw always wins"
+            }
+          ],
+          "room2": [
+            {
+              "company": "Fost",
+              "speaker": "Céline Durieux",
+              "title": "Growing with Kitsu"
+            }
+          ]
+        },
+        {
+          "time": "16:00",
+          "room1": [
+            {
+              "company": "Normaal",
+              "speaker": "Félix David",
+              "title": "A full open-source pipeline for a TV Series"
+            }
+          ],
+          "room2": [
+            {
+              "company": "Big Company",
+              "speaker": "Tristan Languebien",
+              "title": "The best from 3D applied to 2D"
+            }
+          ]
+        },
+        {
+          "time": "16:45",
+          "room1": [
+            {
+              "company": "CGWire",
+              "speaker": "Frank Rousseau",
+              "title": "Closing and Thanks"
+            }
+          ],
+          "room2": []
+        },
+        {
+          "time": "17:00",
+          "type": "break",
+          "label": "Ending Cocktail 🥳",
+          "room1": [],
+          "room2": []
+        }
+      ]
     },
     "pricing": {
       "title": "Kitsu Cloud plans for studios of all sizes",
       "slug": "pricing",
       "pricing": {
-        "kitsu": {
-          "subtitle": "Connect your teams and tools",
-          "title": "Kitsu Cloud plans for studios of all sizes"
+        "billed": {
+          "annualy": "billed annually"
+        },
+        "button": {
+          "contactcta": "Contact us",
+          "cta": "Try it for free"
+        },
+        "calculator": {
+          "subtitle": "Calculate your subscription cost",
+          "title": "Price calculator",
+          "discount": "Discount",
+          "peruser": "Price per user",
+          "permonth": "Price per month",
+          "total": "Total cost",
+          "users": "user | users",
+          "months": "month | months"
         },
         "cloud": {
           "explanation": "We provide a cloud installation with user support, trainings, extra features, plugins deployment, and contractor synchronization."
         },
+        "contact": {
+          "explanation": "We can adapt our offer to your specific needs and propose professional services",
+          "introduction": "Do you need a quote?"
+        },
+        "discount": {
+          "details": "All plans come with a two weeks trial"
+        },
+        "explanation": {
+          "one": "Pricing plans for Kitsu hosting"
+        },
+        "faq": {
+          "answer1": "We accept credit cards only for monthly payments. For yearly subscriptions, you can pay via credit card, wire transfer or with a SEPA payment.",
+          "answer10": "Monthly subscriptions can be canceled through your account page. For yearly subscription please contact our team, and we will set the cancelation in our billing system.",
+          "answer11": "Yes, we can provide tailor-made plans that fit your production.",
+          "answer2": "All the API features are included in your subscription: REST routes, event stream, and full-text search.",
+          "answer3": "Every feature is included in the free trial with unlimited user access. But Kitsu will run on low-end hardware. To try it with stronger hardware please contact our team.",
+          "answer4": "It corresponds to your installation of Kitsu. It runs on its own domain name (yourstudio.cg-wire.com). You will have a different account on it and your team will interact with this installation.",
+          "answer5": "Yes, this is what we name On-Premise hosting. We manage Kitsu on your server like if it was on the cloud.",
+          "answer6": "We set the disk limitation to make sure you don't feel constrained by. If you have a very intensive load of previews please contact us to estimate extra costs. As a rule of thumb, a 50x11' TV series will require 200GB.",
+          "answer7": "You can change it at any time. You will pay the remaining period at pro-rata rates. If you downgrade, your subscription a credit note will be submitted for future renewals.",
+          "answer8": "If you run a monthly subscription, you can change it directly through your account page. For yearly subscriptions, you have to contact our sales team. We will operate the change in our billing system.",
+          "answer9": "A yearly subscription means that you pay for 12 months upfront. By showing your commitment, you benefit from a 20% discount compared to the monthly rate.",
+          "question1": "What forms of payment do you accept?",
+          "question10": "How do I cancel my subscription?",
+          "question11": "My production will run on X months. Can you provide a subscription for this?",
+          "question2": "Do I have access to the API with my subscription?",
+          "question3": "What is included in the free trial?",
+          "question4": "What is a Kitsu instance?",
+          "question5": "Can I make Kitsu run on my servers?",
+          "question6": "Is the disk space provided enough for my needs?",
+          "question7": "Can I change my subscription once it has started?",
+          "question8": "How do I change my subscription?",
+          "question9": "What is a yearly subscription?",
+          "subtitle": "Additional information",
+          "title": "Frequently Asked Questions"
+        },
         "features": {
+          "common": {
+            "searchengine": "Search engine",
+            "playlistbuilder": "Playlist builder",
+            "four": "Strong security",
+            "one": "On-boarding",
+            "three": "High availability",
+            "two": "Premium Support"
+          },
+          "enterprise": {
+            "seven": "SOC 1 & 2 Security",
+            "six": "Dedicated database"
+          },
+          "large": {
+            "five": "Software integrations",
+            "four": "< 12h response time",
+            "one": "1 - 200 users",
+            "six": "Intense activity support",
+            "three": "10TB storage",
+            "two": "Diamond support"
+          },
+          "singlecore": "Single Core VM",
+          "mutualize": "Mutualized hosting",
+          "community": "Community support",
+          "users": "users",
+          "user": "user",
           "gbstorage": "GB storage",
           "tbstorage": "TB storage",
-          "tinySupport": "Basic support",
-          "smallFour": "< 48h response time",
-          "commonFour": "Strong security",
-          "mutualize": "Mutualized hosting",
-          "commonTwo": "Premium Support",
-          "mediumFour": "< 24h response time",
-          "mediumFive": "High activity support",
-          "commonThree": "High availability",
-          "mediumTwo": "Priority for bug fixes",
-          "training": "Training session",
-          "commonSearchengine": "Search engine",
-          "commonPlaylistbuilder": "Playlist builder",
-          "largeTwo": "Diamond support",
-          "largeFour": "< 12h response time",
-          "largeSix": "Intense activity support",
-          "partnerOne": "Everything in Studio",
-          "partnerOnpremise": "On-premise installation",
-          "partnerUnlimited": "Unlimited users",
-          "partnerContract": "Custom contract",
-          "partnerFour": "Multiple instances",
-          "partnerThree": "Multiple regions",
-          "partnerSix": "Staging environment",
-          "partnerEncryption": "Media encryption"
+          "medium": {
+            "five": "High activity support",
+            "four": "< 24h response time",
+            "one": "1 - 80 users",
+            "three": "3TB storage",
+            "two": "Priority for bug fixes"
+          },
+          "partner": {
+            "onpremise": "On-premise installation",
+            "eight": "Local video computing cluster",
+            "five": "AD/LDAP integration",
+            "four": "Multiple instances",
+            "one": "Everything in Studio",
+            "unlimited": "Unlimited users",
+            "seven": "Local object storage",
+            "six": "Staging environment",
+            "three": "Multiple regions",
+            "two": "On-premise",
+            "encryption": "Media encryption",
+            "gpu": "GPU video processing",
+            "contract": "Custom contract"
+          },
+          "small": {
+            "five": "1 x Dual Core VM",
+            "four": "< 48h response time",
+            "three": "1TB storage",
+            "two": "Unlimited projects"
+          },
+          "agency": {
+            "one": "1 - 30 users"
+          },
+          "successpack": {
+            "five": "Pipeline Assistance",
+            "four": "Training",
+            "one": "Workflow audit",
+            "six": "Software Integrations",
+            "three": "Data Migration",
+            "two": "Configuration"
+          },
+          "team": {
+            "storage": "500GB storage",
+            "support": "Light Support",
+            "supporttime": "< 72h response time",
+            "users": "1 - 10 users"
+          },
+          "tiny": {
+            "five": "1 x Single Core VM",
+            "support": "Basic support"
+          },
+          "tinyplus": {
+            "one": "1 - 80 users",
+            "three": "1TB storage",
+            "two": "Unlimited projects"
+          },
+          "training": "Training session"
         },
+        "firsteps": {
+          "cta1": "Book a meeting or a demo",
+          "cta2": "Join our Discord community  ",
+          "cta3": "Signup for a trial",
+          "question1": "Schedule a meeting with a member of our team. Together, we'll explore how Kitsu can improve your workflow and empower your business.",
+          "question2": "Then join our Discord community to get in touch with other users and talk about pipelines and workflows.",
+          "question3": "Register to access your Kitsu Cloud installation free for two weeks. All features are included, allowing you to test it's full potential.",
+          "subttile": "Starting with Kitsu",
+          "ttile": "First steps"
+        },
+        "install": {
+          "cta": "Install it"
+        },
+        "metadata": "See how we can help you to migrate to Kitsu and discover our hosting plans (cloud or on-premise).",
+        "monthly": "monthly",
+        "opensource": {
+          "details": "Kitsu is free and open-source, allowing your team to freely use and modify it on your infrastructure.",
+          "install": "Installation instructions",
+          "title": "Free and Open-Source"
+        },
+        "price": {
+          "free": "Free"
+        },
+        "ranch": {
+          "title": "Render Farm discount",
+          "explanation": "Our subscriptions come with free credits from our partner Ranch Computing! Contact us for details."
+        },
+        "school": {
+          "details": "We offer a unique price of 3999€ a year for Artist Schools (up to 100 students).",
+          "title": "Pricing For Schools"
+        },
+        "tagline": "The right plan for your studio",
+        "sucesspack": {
+          "explanation": "Our team will help you to define and run a tailor-made implementation of Kitsu into your studio.",
+          "subtitle": "Drive a successful implementation with our help",
+          "title": "Success packs"
+        },
+        "support": {
+          "license": {
+            "ad": "Active Directory compatibility",
+            "details": "We can install Kitsu on your servers, handling setup, upgrades, backups, and monitoring. You receive the same level of support as with the cloud version.",
+            "directory": "User Directory",
+            "domain": "Needs: Domain name",
+            "ldap": "Sync users and passwords from an LDAP directory",
+            "migation": {
+              "onpremise": "Retrieve productions from a Kitsu local instance"
+            },
+            "migration": {
+              "cloud": "Retrieve productions from a Kitsu cloud instance"
+            },
+            "ports": "Needs: standard ports open (80/443)",
+            "setup": "Setup cost",
+            "ssh": "Needs: SSH access",
+            "subtitle": "A full offer on your servers",
+            "title": "On-Premise extras",
+            "ubuntu": "Needs: Ubuntu 20.04"
+          },
+          "onpremise": {
+            "title": "Add-ons"
+          }
+        },
+        "kitsu": {
+          "subtitle": "Connect your teams and tools",
+          "title": "Kitsu Cloud plans for studios of all sizes"
+        },
+        "title": "Pricing",
         "usecase": {
           "agency": "For shorts, commercials, and light productions",
           "production": "For TV series, feature films, and video games",
           "studio": "For studios running multiple productions",
           "partner": "For large studios or TPN compliance"
         },
-        "title": {
+        "value": {
+          "month": " / month",
+          "user": "/ user"
+        },
+        "yearly": "yearly",
+        "title_plans": {
+          "agency": "Agency",
+          "big": "Big",
+          "bronze": "Bronze",
+          "enterprise": "Enterprise",
+          "freelancer": "Freelancer",
+          "gold": "Gold",
           "partner": "Partner",
-          "quote": "On Quote"
-        },
-        "button": {
-          "contactcta": "Contact us"
-        },
-        "discount": {
-          "details": "All plans come with a two weeks trial"
-        },
-        "school": {
-          "title": "Pricing For Schools",
-          "details": "We offer a unique price of 3999€ a year for Artist Schools (up to 100 students)."
-        },
-        "faq": {
-          "subtitle": "Additional information",
-          "title": "Frequently Asked Questions"
+          "production": "Production",
+          "quote": "On Quote",
+          "silver": "Silver",
+          "studio": "Studio",
+          "team": "Team",
+          "tinyplus": "Tiny+"
         }
       }
     },
@@ -432,6 +1046,15 @@
         "tvshowPlanningTitle": "Set up your schedule (TV Show)",
         "breakdownTitle": "Manage your casting",
         "retakeTitle": "Retake tracking"
+      }
+    },
+    "studios": {
+      "title": "Creative Studios and Schools",
+      "slug": "studios",
+      "subtitle": "Kitsu is used all over the world",
+      "productions": {
+        "title": "Productions",
+        "subtitle": "Tracked and reviewed with Kitsu"
       }
     }
   },
@@ -474,6 +1097,7 @@
         "studioName": "Autour De Minuit",
         "storyKey": "adm",
         "interviewee": "Fiona Cohen, Production Manager",
+        "quote": "We needed a tool to link tasks and visual deliveries. We wanted practical and pleasant software for the teams. Especially for Filmmakers, who had to access the shots end-to-end at any moment. And of course, all while allowing production managers to track the progress with ease.",
         "imagePath": "photo-customer-story-adm.jpg",
         "storyUrl": "https://blog.cg-wire.com/customer-story-autour-de-minuit/"
       }
@@ -556,7 +1180,8 @@
         "storyKey": "fost",
         "interviewee": "Céline Durieux, Head Of Studio",
         "imagePath": "photo-customer-story-fost.png",
-        "storyUrl": "https://blog.cg-wire.com/customer-story-fost-studio/"
+        "storyUrl": "https://blog.cg-wire.com/customer-story-fost-studio/",
+        "quote": "With Kitsu, people think first about the time saved but what matters more to me is the serenity you get by having everything in order. It gave you more space in your brain to focus on other elements of your production."
       }
     },
     "review-engine": {
@@ -598,7 +1223,8 @@
         "storyKey": "makuta",
         "interviewee": "Pete Draper, Head of VFX",
         "imagePath": "photo-customer-story-makuta.png",
-        "storyUrl": "https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
+        "storyUrl": "https://blog.cg-wire.com/customer-story-makuta-vfx-studio/",
+        "quote": "Kitsu has pretty much unified everything and is forcing neater communication not only between artists but from production, management, and clients."
       }
     },
     "studio-database": {
@@ -721,7 +1347,8 @@
         "storyKey": "miyu",
         "interviewee": "Carole Faure, Production Manager",
         "imagePath": "photo-customer-story-miyu.png",
-        "storyUrl": "https://blog.cg-wire.com/customer-story-miyu-studio/"
+        "storyUrl": "https://blog.cg-wire.com/customer-story-miyu-studio/",
+        "quote": "A few days are enough to understand all the features required to run a production. Everyone in the studio starts quickly, especially artists who really enjoy Kitsu. We didn't notice this enthusiasm with the previous tools we used."
       }
     },
     "top-notch-support": {

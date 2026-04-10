@@ -175,12 +175,10 @@ let { data: page } = await useAsyncData(
   { watch: [slug, locale] }
 )
 
-usePageHead({
-  title: 'CGWire | ' + useI18n().t('header title community'),
-  titleKey: 'community header tagline',
-  descriptionKey: 'casting-management explanation one',
-  path: 'community',
-  image: 'meetup.af7c0c6c.jpg'
+useSEO({
+  title: 'CGWire | ' + page.value.meta.community.tagline,
+  description: page.value.meta.community.explanationOne,
+  image: 'meetup.jpg'
 })
 </script>
 

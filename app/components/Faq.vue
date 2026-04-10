@@ -3,12 +3,12 @@
     class="question"
     @click="isExpanded ? $emit('unexpand', index) : $emit('expand', index)"
   >
-    {{ $t('pricing faq question' + index) }}
+    {{ question }}
     <span class="contract" v-if="isExpanded"> - </span>
     <span class="contract" v-if="!isExpanded"> + </span>
   </p>
   <p class="answer" v-show="isExpanded">
-    {{ $t('pricing faq answer' + index) }}
+    {{ answer }}
   </p>
 </template>
 
@@ -21,7 +21,9 @@ const props = defineProps({
   isExpanded: {
     type: Boolean,
     default: false
-  }
+  },
+  question: String,
+  answer: String
 })
 
 const emit = defineEmits(['expand', 'unexpand'])

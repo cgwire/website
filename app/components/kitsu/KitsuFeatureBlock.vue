@@ -5,10 +5,10 @@
   >
     <div class="kitsu-feature-block-content">
       <h1>
-        {{ $t(`kitsu feature ${featureKey} title`) }}
+        {{ feature.title }}
       </h1>
       <p>
-        {{ $t(`kitsu feature ${featureKey} content`) }}
+        {{ feature.content }}
       </p>
     </div>
     <div>
@@ -25,6 +25,7 @@
 
 <script setup>
 const props = defineProps({
+  feature: Object,
   featureKey: String,
   direction: String,
   color: {

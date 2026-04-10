@@ -143,16 +143,16 @@
     </p>
 
     <div class="tile is-ancestor" data-aos="fade-up">
-      <TeamMember member-key="frank" />
-      <TeamMember member-key="gwen" />
+      <TeamMember :member="page.meta.about.team.team.frank" />
+      <TeamMember :member="page.meta.about.team.team.gwen" />
     </div>
     <div class="tile is-ancestor" data-aos="fade-up">
-      <TeamMember member-key="nicolas" />
-      <TeamMember member-key="nicolaspennec" />
+      <TeamMember :member="page.meta.about.team.team.nicolas" />
+      <TeamMember :member="page.meta.about.team.team.nicolaspennec" />
     </div>
     <div class="tile is-ancestor" data-aos="fade-up">
-      <TeamMember member-key="evan" />
-      <TeamMember member-key="elsa" />
+      <TeamMember :member="page.meta.about.team.team.evan" />
+      <TeamMember :member="page.meta.about.team.team.elsa" />
     </div>
 
     <p>&nbsp;</p>
@@ -242,12 +242,10 @@ let { data: page } = await useAsyncData(
   pageQuery,
   { watch: [slug, locale] }
 )
-usePageHead({
-  title: 'CGWire | ' + useI18n().t('about tagline'),
-  titleKey: 'about tagline',
-  descriptionKey: 'about explanation one',
-  path: 'about',
-  image: 'about.107a8a01.png'
+useSEO({
+  title: 'CGWire | ' + page.value.meta.about.tagline,
+  descriptionKey: page.value.meta.about.explanation.one,
+  imagePath: 'about.png'
 })
 </script>
 

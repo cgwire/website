@@ -41,11 +41,9 @@ let { data: page } = await useAsyncData(
   { watch: [slug, locale] }
 )
 
-usePageHead({
-  title: 'CGWire | ' + useI18n().t('footers link contact'),
-  titleKey: 'contact tagline',
-  descriptionKey: 'contact tagline',
-  path: 'contact',
-  image: 'assets/images/logo.png'
+useSEO({
+  title: 'CGWire | ' + page.value.title,
+  description: page.value.title,
+  imagePath: 'assets/images/logo.png'
 })
 </script>

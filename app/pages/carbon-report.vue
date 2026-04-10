@@ -446,12 +446,10 @@ let { data: page } = await useAsyncData(
   { watch: [slug, locale] }
 )
 
-usePageHead({
-  title: 'CGWire | ' + useI18n().t('carbon-report title'),
-  titleKey: 'carbon-report title',
-  descriptionKey: 'carbon-report explanation one',
-  path: 'carbon-report',
-  image: 'carbon.107a8a01.png'
+useSEO({
+  title: 'CGWire | ' + page.value.meta.carbonReport.title,
+  description: page.value.meta.carbonReport.explanationOne,
+  imagePath: 'carbon.png'
 })
 
 const dataWithFlights = ref(true)
