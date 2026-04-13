@@ -242,6 +242,7 @@ let { data: page } = await useAsyncData(
   pageQuery,
   { watch: [slug, locale] }
 )
+
 useSEO({
   title: 'CGWire | ' + page.value.meta.about.tagline,
   descriptionKey: page.value.meta.about.explanation.one,

@@ -409,8 +409,8 @@ let { data: page } = await useAsyncData(
   { watch: [slug, locale] }
 )
 
-const conferences = page.value.meta.conferences
-const schedule = page.value.meta.schedule
+const conferences = page.value.meta.conferences.conferences
+const schedule = page.value.meta.schedule.schedule
 
 useSEO({
   title: 'CGWire | ' + page.value.title,

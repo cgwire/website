@@ -45,6 +45,7 @@ const pagesSource = defineCollectionSource({
     const slug = filename.replace('.json', '')
     const data = await loadPages(lang)
     const page = data[collection]?.[slug]
+
     const res = {
       ...page,
       localizedSlug: page.slug,

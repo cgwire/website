@@ -2,7 +2,7 @@
   "pages": {
     "about": {
       "title": "CGWireについて",
-      "slug": "企業情報",
+      "slug": "about",
       "about": {
         "subtitle": "弊社を原動力",
         "tagline": "弊社の使命",
@@ -46,6 +46,44 @@
           "title": "弊社について",
           "intro": "弊社はフランスを拠点とする情熱的なチームで、ソフトウェア開発、プロダクション管理、製品開発において豊富な経験を持っています。",
           "advisors": "弊社のアドバイザー",
+          "team": {
+            "frank": {
+              "name": "Frank Rousseau（フランク・ルソー）",
+              "key": "frank",
+              "role": "マーケティングおよびコミュニケーションマネージャー",
+              "description": "CGWireに入社する前、Frankはスタジオに勤務し、スタートアップを共同設立しました。技術系企業で15年の経験があります。現在、彼はCGWireとKitsuブランドの育成を行い、それらを構築するために適切な人材を集めています。"
+            },
+            "gwen": {
+              "name": "Gwenaëlle Dupré（グウェナエル・デュプレ）",
+              "key": "gwen",
+              "role": "製品および営業マネージャー",
+              "description": "Gwenaëlleは、分散チームのプロダクションマネージャーとして10年以上の経験があります。CGWireでは、すべての製品管理と営業面を担当し、あらゆるKitsu実装の成功を確実にしています。"
+            },
+            "nicolas": {
+              "name": "Nicolas Ledez（ニコラ・レデス）",
+              "key": "nicolas",
+              "role": "ホスティングインフラストラクチャマネージャー",
+              "description": "Nicolasは、フランスで最も著名なシステム管理者の一人で、多くの技術イベントで講演を行っています。彼は弊社のクラウドおよびオンプレミスのインフラストラクチャーを管理し、Kitsuインスタンスが常に稼働し続けるようにしています。"
+            },
+            "nicolaspennec": {
+              "name": "Nicolas Pennec（ニコラ・ペネック）",
+              "key": "nicolaspennec",
+              "role": "フロントエンドソフトウェアマネージャー",
+              "description": "Nicolasは、OVHやOrangeなどの企業で15年の経験を持つ熟練のJavaScript開発者です。フロントエンド技術について頻繁にカンファレンスで講演しており、すべてのKitsu UIの管理を行っています。"
+            },
+            "evan": {
+              "name": "Evan Blaudy（エヴァン・ブラウディ）",
+              "key": "evan",
+              "role": "バックエンドソフトウェアマネージャー",
+              "description": "Evanは、オープンソースプロジェクトに携わる経験豊富なPythonソフトウェアエンジニアです。CGWireでは、Kitsu APIとDCC統合の保守と改善を担当しています。"
+            },
+            "elsa": {
+              "name": "Elsa Chevallier（エルサ・シュヴァリエ）",
+              "key": "elsa",
+              "role": "ファイナンスマネージャー",
+              "description": "Elsaは映画業界で15年間、映画を促進するスタジオや組織で最高財務責任者として働いてきました。彼女はCGWireの財務面を担当しています。"
+            }
+          },
           "ev": {
             "id": "Ev Henke（エヴ・ヘンケ）",
             "role": "シニアUXデザイナー"
@@ -74,7 +112,7 @@
     },
     "carbon-report": {
       "title": "カーボン・レポート",
-      "slug": "炭素排出報告",
+      "slug": "carbon-report",
       "carbonReport": {
         "title": "カーボン・レポート",
         "subtitle": "環境フットプリント",
@@ -127,7 +165,7 @@
     },
     "community": {
       "title": "コミュニティのタイトル",
-      "slug": "利用者コミュニティ",
+      "slug": "community",
       "community": {
         "subtitle": "仲間に加わろう",
         "tagline": "コミュニティの紹介",
@@ -172,10 +210,17 @@
     },
     "customer-stories": {
       "title": "お客様のストーリー",
-      "slug": "導入事例",
+      "slug": "customer-stories",
       "customerStories": {
         "header": {
           "title": "お客様のストーリー"
+        },
+        "quotes": {
+          "tant-mieux": "遠隔地のスタジオとのコミュニケーションが簡素化された。具体的なアセットやタスクについて、10通のメールをやり取りすることなく話し合うことができる。疑問があれば、プラットフォームに表示されていることを頼りにすることができます。",
+          "miyu": "プロダクションの運営に必要なすべての機能を理解するには、数日もあれば十分です。スタジオの誰もがすぐに使い始め、特にアーティストたちはKitsuを心から楽しんでいます。以前使っていたツールでは、このような熱意は見られませんでした。",
+          "fost": "Kitsuを使うと、人々はまず時間の節約を考えますが、私にとってもっと重要なのは、すべてが整っていることで得られる安心感です。これにより、脳にゆとりができプロダクションの他の要素に集中できました。",
+          "adm": "私たちには、タスクとビジュアル納品物をリンクさせるツールが必要でした。チームにとって実用的で快適なソフトウェアを求めていたのです。特に映画制作者には、いつでもショットをエンドツーエンドでアクセスできる必要がありました。そしてもちろん、プロダクションマネージャーが進捗状況を簡単に追跡できることも重要です。",
+          "makuta": "Kitsuはほぼすべてを統一し、アーティストだけでなく、プロダクション、管理、クライアントとの間のコミュニケーションをより整然としたものにしています。"
         }
       }
     },
@@ -277,7 +322,70 @@
           "subtitle": "お客様の声",
           "title": "お客様のストーリーを読む",
           "description": "Kitsuをどのようにスタジオに導入したかをご覧ください。"
-        }
+        },
+        "features": {
+          "api": {
+            "content": "Python APIを使用して、Kitsuをツールに統合できます。Kitsuからデータを取得し、ツールから更新できます。",
+            "title": "Python API"
+          },
+          "assets": {
+            "content": "アセットを整理し、バージョン管理をしましょう。関連するタスクをチームに割り当て、進捗状況を追跡しましょう。",
+            "title": "資産運用管理"
+          },
+          "breakdown": {
+            "content": "Kitsuを使用すると、どのアセットがどのショットに属しているかを一覧表示できます。また、各ショットの準備状況に関する追加の統計情報も表示されます。",
+            "title": "内訳リスト"
+          },
+          "forecast": {
+            "content": "シナリオをテストし、現在のコストと予算の見通しを比較します。問題を予測し、計画通りに進めましょう。",
+            "title": "予算予測"
+          },
+          "timesheets": {
+            "content": "アーティストが作業時間を追跡し、各アーティストの作業時間を詳細に把握できるようにします。アセットとショットのデータを集約します。",
+            "title": "時間追跡"
+          },
+          "news": {
+            "content": "生産活動をリアルタイムで追跡できます。重要なタスクを登録して、ステータスが変更されたときに通知を受け取ることができます。",
+            "title": "アクティビティフィード"
+          },
+          "report": {
+            "content": "ダッシュボードから、生産の進捗状況に関するレポートを作成できます。パートナーは、あなたの進捗状況とすべきことを正確に把握できます。",
+            "title": "生産レポート"
+          },
+          "review": {
+            "content": "プレイリストを作成して、ショットやアセットを連続的にレビューできます。効率的にフィードバックを提供し、すべてのプレビューバージョンにアクセスして以前の納品物と比較できます。",
+            "title": "レビューエンジン"
+          },
+          "review-assets": {
+            "content": "プレイリストを作成して、アセットを連続的にレビューしましょう。効率的にフィードバックを提供し、すべてのプレビューバージョンにアクセスして以前の納品物と比較できます。",
+            "title": "レビューエンジン"
+          },
+          "schedule": {
+            "content": "Kitsuはワークロード管理に役立ちます。タスクのスケジュール管理、アーティストへの割り当て、そして効率的なバランス調整が可能です。",
+            "title": "スケジュールと計画"
+          },
+          "search": {
+            "content": "キーワード検索でアセットを素早く見つけられます。タグとメタデータを使えば、より高度な検索も可能です。",
+            "title": "検索エンジン"
+          },
+          "track": {
+            "content": "すべてのステップのタスクをリストアップして割り当てます。ステータスを設定し、チームと直接ディスカッションできます。",
+            "title": "タスク追跡"
+          },
+          "library": {
+            "content": "独自のアセットライブラリを構築し、ショットやアセットで再利用しましょう。アセットの重複を避け、チーム内での連携を万全に保ちましょう。",
+            "title": "アセットライブラリ"
+          }
+        },
+        "supporters": {
+          "content": "Kitsu で追跡された作品は、アカデミー賞、エミー賞、カンヌ パルム ドール、アヌシー クリスタル、セザール賞など、主要な賞をすべて受賞しました。",
+          "games": "Kitsu で追跡されたビデオ ゲーム作品は、世界で最も多くプレイされている作品の 1 つです。",
+          "schools": "フランスのトップクラスのアニメーション学校ではすでに Kitsu を使用して学生をトレーニングしています。",
+          "subtitle": "あなたの野望を実現する",
+          "title": "キツはあなたの成功の最大のサポーターです",
+          "vfx": "Kitsuと共同制作したVFXプロダクションは、劇場で大成功を収めました。あなたも同様の成功を収められるよう、私たちは全力でサポートいたします。"
+        },
+        "cta": "Interested in using Kitsu?"
       }
     },
     "kitsu-submit": {
@@ -303,13 +411,345 @@
       },
       "conferences": {
         "title": "会議プログラム",
-        "description": "業界リーダーによる12の刺激的なプレゼンテーションでは、様々な制作形態におけるKitsuの実例が紹介されます。さらに、Kitsuの創設者による基調講演が2件行われます。"
+        "description": "業界リーダーによる12の刺激的なプレゼンテーションでは、様々な制作形態におけるKitsuの実例が紹介されます。さらに、Kitsuの創設者による基調講演が2件行われます。",
+        "conferences": [
+          {
+            "time": "09:45",
+            "speaker": "Audrey Tondre",
+            "company": "Remembers",
+            "title": "初の長編映画を制作し、アヌシー・クリスタル賞を受賞",
+            "description": "Remembers が Kitsu を使用して初の長編映画制作を管理し、アヌシーで認知を獲得した方法について学びます。",
+            "category": "animation2d",
+            "categoryLabel": "2D",
+            "file": "audrey.jpg"
+          },
+          {
+            "time": "12:00",
+            "speaker": "Pete Draper",
+            "company": "VFX Supervisor",
+            "title": "数百のプロジェクトを簡単に管理",
+            "description": "Kitsu の強力な組織ツールを使用して、数百のプロジェクトにわたって VFX 制作管理を拡張します。",
+            "category": "vfx",
+            "categoryLabel": "VFX",
+            "file": "pete.webp"
+          },
+          {
+            "time": "12:45",
+            "speaker": "Chris Unterberg",
+            "company": "Tetsuo",
+            "title": "クイックドローの常勝",
+            "description": "どのように描いても、どのような役割であっても、誰もが視覚的なフィードバックを与えられるケース。",
+            "category": "vfx",
+            "categoryLabel": "VFX",
+            "file": "chris.png"
+          },
+          {
+            "time": "14:00",
+            "speaker": "Flavio Perez",
+            "company": "Les Fées Spéciales",
+            "title": "2D/3D制作ワークフローへの対応",
+            "description": "高度な 2D/3D 制作技術とパイプラインの最適化を探ります。",
+            "category": "animation3d",
+            "categoryLabel": "3D",
+            "file": "flavio.jpg"
+          },
+          {
+            "time": "15:30",
+            "speaker": "Axel Tillement",
+            "company": "Cube Creative",
+            "title": "3Dアセット管理の改革",
+            "description": "3D アセット管理への簡素化されたアプローチ。",
+            "category": "animation3d",
+            "categoryLabel": "3D",
+            "file": "axel.jpg"
+          },
+          {
+            "time": "17:00",
+            "speaker": "Cléa Gonnay",
+            "company": "Miyu",
+            "title": "生産管理を創造性に役立てる",
+            "description": "Miyu が創造の自由と制作効率のバランスをとる方法。",
+            "category": "animation2d",
+            "categoryLabel": "2D",
+            "file": "clea.jpg"
+          },
+          {
+            "time": "17:45",
+            "speaker": "Céline Durieux",
+            "company": "Fost",
+            "title": "キツとともに成長する",
+            "description": "フォストがスタジオを成長させるためにキツをどのように使い、キツがどのように改良されたのか。",
+            "category": "animation2d",
+            "categoryLabel": "2D",
+            "file": "celine.png"
+          },
+          {
+            "time": "17:45",
+            "speaker": "Félix David",
+            "company": "Normaal",
+            "title": "テレビシリーズのための完全なオープンソースパイプライン",
+            "description": "生産性を最大化するために完全なオープンソース パイプラインを設定します。",
+            "category": "animation2d",
+            "categoryLabel": "2D",
+            "file": "felix.jpg"
+          },
+          {
+            "time": "17:45",
+            "speaker": "Mario Hawat",
+            "company": "Autour De Minuit",
+            "title": "KitsuでBlenderを活用する",
+            "description": "Blender を Kitsu と組み合わせて使用し、さまざまなスタイルのアニメーションを処理する方法を説明します。",
+            "category": "animation3d",
+            "categoryLabel": "3D",
+            "file": "mario.png"
+          },
+          {
+            "time": "17:45",
+            "speaker": "Guilhem Compain",
+            "company": "Wizz",
+            "title": "ハイブリッドパイプラインの自動化と簡素化",
+            "description": "2Dと3Dを簡単にミックスする方法。",
+            "category": "animation2d",
+            "categoryLabel": "2D",
+            "file": "guilhem.png"
+          },
+          {
+            "time": "17:45",
+            "speaker": "Arthur Aloyan",
+            "company": "Mastodon Production",
+            "title": "アーティストの手の中のAI",
+            "description": "人間の技術が中心となるべき生産ワークフローをAIがサポートできる場所",
+            "category": "ai",
+            "categoryLabel": "AI",
+            "file": "artur.png"
+          },
+          {
+            "time": "17:45",
+            "speaker": "Tristan Languebien",
+            "company": "Big Company",
+            "title": "3Dの最高のものを2Dに適用",
+            "description": "3D技術を使用してゼロから2Dパイプラインを作成する",
+            "category": "2d",
+            "categoryLabel": "2D",
+            "file": "tristan.png"
+          },
+          {
+            "time": "17:45",
+            "speaker": "Anne-Laure Armand / Laurent Dijoux / Dominique Coco",
+            "company": "Ranch Computing & TAT Production",
+            "title": "アステリックス、雲の上の存在",
+            "description": "TATプロダクションによる『アステリックス』TVシリーズのクラウドレンダーファーム",
+            "category": "vfx",
+            "categoryLabel": "VFX",
+            "file": "anne-laure.jpg"
+          },
+          {
+            "time": "18:00",
+            "speaker": "Frank Rousseau",
+            "company": "CGWire CEO",
+            "title": "なぜキツなのか",
+            "description": "Kitsuの起源、実績、そしてビジョン。",
+            "category": "kitsu",
+            "categoryLabel": "Kitsu",
+            "file": "frank.jpg"
+          },
+          {
+            "time": "18:00",
+            "speaker": "Gwénaëlle Dupré",
+            "company": "CGWire CPO",
+            "title": "キツの未来",
+            "description": "来年のロードマップ。",
+            "category": "kitsu",
+            "categoryLabel": "Kitsu",
+            "file": "gwen.png"
+          }
+        ]
       },
       "schedule": {
         "title": "会議スケジュール",
         "description": "詳細な会議スケジュールで一日を計画しましょう",
         "time": "時間",
-        "room": "部屋"
+        "room": "部屋",
+        "schedule": [
+          {
+            "time": "09:00",
+            "type": "break",
+            "label": "朝食",
+            "room1": [],
+            "room2": []
+          },
+          {
+            "time": "09:30",
+            "room1": [
+              {
+                "company": "CGWire",
+                "speaker": "Frank Rousseau",
+                "title": "なぜキツなのか"
+              }
+            ],
+            "room2": []
+          },
+          {
+            "time": "10:00",
+            "room1": [
+              {
+                "company": "Autour De Minuit",
+                "speaker": "Mario Hawat",
+                "title": "KitsuでBlenderを活用する"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Wizz",
+                "speaker": "Guilhem Compain",
+                "title": "ハイブリッドパイプラインの自動化と簡素化"
+              }
+            ]
+          },
+          {
+            "time": "10:45",
+            "room1": [
+              {
+                "company": "Les Fées Spéciales",
+                "speaker": "Flavio Perez",
+                "title": "2D/3D制作ワークフローへの対応"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Cube Creative",
+                "speaker": "Axel Tillement",
+                "title": "3Dアセット管理の改革"
+              }
+            ]
+          },
+          {
+            "time": "11:30",
+            "room1": [
+              {
+                "company": "Magic Studio",
+                "speaker": "Arthur Aloyan",
+                "title": "アーティストの手の中のAI"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Remembers",
+                "speaker": "Audrey Tondre",
+                "title": "初の長編映画を制作し、アヌシー・クリスタル賞を受賞"
+              }
+            ]
+          },
+          {
+            "time": "12:15",
+            "room1": [
+              {
+                "company": "Ranch Computing & TAT Production",
+                "speaker": "Anne-Laure Armand / Laurent Dijoux / Dominique Coco",
+                "title": "アステリックス、雲の上の存在"
+              }
+            ],
+            "room2": []
+          },
+          {
+            "time": "12:40",
+            "room1": [
+              {
+                "company": "Lenovo",
+                "speaker": "Mesa Takaoka",
+                "title": "レノボのワークステーションとAI"
+              }
+            ],
+            "room2": []
+          },
+          {
+            "time": "13:00",
+            "type": "break",
+            "label": "お昼休み",
+            "room1": [],
+            "room2": []
+          },
+          {
+            "time": "14:00",
+            "room1": [
+              {
+                "company": "CGWire",
+                "speaker": "Gwénaëlle Dupré",
+                "title": "キツの未来"
+              }
+            ],
+            "room2": []
+          },
+          {
+            "time": "14:30",
+            "room1": [
+              {
+                "company": "Ryff",
+                "speaker": "Pete Draper",
+                "title": "数百のプロジェクトを簡単に管理"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Miyu",
+                "speaker": "Cléa Gonnay",
+                "title": "生産管理を創造性に役立てる"
+              }
+            ]
+          },
+          {
+            "time": "15:15",
+            "room1": [
+              {
+                "company": "Tetsuo",
+                "speaker": "Chris Unterberg",
+                "title": "クイックドローの常勝"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Fost",
+                "speaker": "Céline Durieux",
+                "title": "キツとともに成長する"
+              }
+            ]
+          },
+          {
+            "time": "16:00",
+            "room1": [
+              {
+                "company": "Normaal",
+                "speaker": "Félix David",
+                "title": "テレビシリーズのための完全なオープンソースパイプライン"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Big Company",
+                "speaker": "Tristan Languebien",
+                "title": "3Dの最高のものを2Dに適用"
+              }
+            ]
+          },
+          {
+            "time": "16:45",
+            "room1": [
+              {
+                "company": "CGWire",
+                "speaker": "Frank Rousseau",
+                "title": "終わりと感謝"
+              }
+            ],
+            "room2": []
+          },
+          {
+            "time": "17:00",
+            "type": "break",
+            "label": "エンディングカクテル 🥳",
+            "room1": [],
+            "room2": []
+          }
+        ]
       },
       "registration": {
         "title": "場所を確保",
@@ -341,65 +781,239 @@
     },
     "pricing": {
       "title": "あらゆる規模のスタジオ向けのKitsu Cloudプラン",
-      "slug": "料金体系",
+      "slug": "pricing",
       "pricing": {
-        "kitsu": {
-          "subtitle": "チームとツールをつなぐ",
-          "title": "あらゆる規模のスタジオ向けのKitsu Cloudプラン"
+        "billed": {
+          "annualy": "年払い"
+        },
+        "button": {
+          "contactcta": "お問い合わせ",
+          "cta": "無料で試す"
+        },
+        "calculator": {
+          "subtitle": "購読料金の計算",
+          "title": "価格計算機",
+          "discount": "割引",
+          "peruser": "1ユーザーあたりの価格",
+          "permonth": "月額料金",
+          "total": "総費用",
+          "users": "ユーザー | ユーザー",
+          "months": "month | months"
         },
         "cloud": {
           "explanation": "私たちは、ユーザーサポート、トレーニング、追加機能、プラグインの展開、請負業者の同期化を備えたクラウドインストールを提供します。"
         },
+        "contact": {
+          "explanation": "弊社はお客様の具体的なニーズに応じてオファーを調整し、専門的なサービスを提案します",
+          "introduction": "お見積もりが必要ですか？"
+        },
+        "discount": {
+          "details": "全プラン2週間のトライアル付き"
+        },
+        "explanation": {
+          "one": "Kitsuホスティングの料金プラン"
+        },
+        "faq": {
+          "answer1": "月額料金のお支払いはクレジットカードのみで承っております。年間サブスクリプションの場合は、クレジット カード、電信送金、またはSEPA決済でのお支払いが可能です。",
+          "answer10": "月額サブスクリプションは、アカウントページからキャンセルすることができます。年間サブスクリプションの場合は、弊社のチームにご連絡いただければ、請求システムでキャンセル手続きを行います。",
+          "answer11": "はい、お客様のプロダクションに合わせたカスタマイズプランをご提供いたします。",
+          "answer2": "すべてのAPI機能がサブスクリプションに含まれています：RESTルート、イベントストリーム、全文検索。",
+          "answer3": "無料トライアルにはすべての機能が含まれており、ユーザーは無制限にアクセスすることができます。ただし、Kitsuはローエンドのハードウェア上で動作します。より強力なハードウェアでの試用をご希望の場合は、弊社のチームまでお問い合わせください。",
+          "answer4": "これは、お客様のKitsuインストールに対応しており、専用のドメイン名（yourstudio.cg-wire.com）で実行されます。お客様は別のアカウントを持ち、お客様のチームがこのインストールとやり取りを行います。",
+          "answer5": "はい、これをオンプレミスホスティングと呼んでいます。弊社は、まるでクラウド上で運用しているかのように、お客様のサーバー上でKitsuを管理します。",
+          "answer6": "私たちは、お客様が制約を感じないようにディスクの制限を設定します。プレビューの負荷が非常に高い場合は、追加費用をお見積もりいたしますので、お問い合わせください。目安として、50x11'のTVシリーズで200GBが必要です。",
+          "answer7": "いつでも変更できます。残りの期間は日割り計算でお支払いいただきます。サブスクリプションをダウングレードした場合、将来の更新のためにクレジットノートが発行されます。",
+          "answer8": "月額サブスクリプションをご利用の場合は、アカウントページから直接変更できます。年間サブスクリプションの場合は、弊社の営業チームにお問い合わせいただく必要があります。変更手続きを弊社の請求システムで行います。",
+          "answer9": "年間サブスクリプションとは、12か月分を前払いすることを意味します。お客様のコミットメントを示すことで、月額料金に比べて20%の割引が受けられます。",
+          "question1": "どのような支払い方法を受け付けていますか？",
+          "question10": "サブスクリプションをキャンセルするにはどうすればよいですか？",
+          "question11": "私のプロダクションはXか月間続きます。この期間に合ったサブスクリプションを提供してもらえますか？",
+          "question2": "サブスクリプションでAPIにアクセスできますか？",
+          "question3": "無料トライアルには何が含まれていますか？",
+          "question4": "Kitsuインスタンスとは何ですか？",
+          "question5": "Kitsuを自分のサーバー上で実行できますか？",
+          "question6": "提供されるディスク容量は私のニーズに十分ですか？",
+          "question7": "開始したサブスクリプションを変更できますか？",
+          "question8": "サブスクリプションを変更するにはどうすればよいですか？",
+          "question9": "年間サブスクリプションとは何ですか？",
+          "subtitle": "追加情報",
+          "title": "よくある質問"
+        },
         "features": {
+          "common": {
+            "searchengine": "検索エンジン",
+            "playlistbuilder": "プレイリストビルダー",
+            "four": "強固なセキュリティ",
+            "one": "オンボーディング",
+            "three": "高可用性",
+            "two": "プレミアムサポート"
+          },
+          "enterprise": {
+            "seven": "SOC 1 & 2 セキュリティ",
+            "six": "専用データベース"
+          },
+          "large": {
+            "five": "ソフトウェア統合",
+            "four": "12時間未満の応答時間",
+            "one": "1 - 200 ユーザー",
+            "six": "激しい活動をサポート",
+            "three": "10TBストレージ",
+            "two": "ダイヤモンドサポート"
+          },
+          "singlecore": "シングルコアVM",
+          "mutualize": "相互ホスティング",
+          "community": "コミュニティサポート",
+          "users": "ユーザー",
+          "user": "ユーザー",
           "gbstorage": "GBストレージ",
           "tbstorage": "TBストレージ",
-          "tinySupport": "基本サポート",
-          "smallFour": "48時間未満の応答時間",
-          "commonFour": "強固なセキュリティ",
-          "mutualize": "相互ホスティング",
-          "commonTwo": "プレミアムサポート",
-          "mediumFour": "24時間未満の応答時間",
-          "mediumFive": "高いアクティビティのサポート",
-          "commonThree": "高可用性",
-          "mediumTwo": "バグ修正の優先対応",
-          "training": "トレーニングセッション",
-          "commonSearchengine": "検索エンジン",
-          "commonPlaylistbuilder": "プレイリストビルダー",
-          "largeTwo": "ダイヤモンドサポート",
-          "largeFour": "12時間未満の応答時間",
-          "largeSix": "激しい活動をサポート",
-          "partnerOne": "スタジオプランのすべての機能",
-          "partnerOnpremise": "オンプレミス設置",
-          "partnerUnlimited": "ユーザー数無制限",
-          "partnerContract": "カスタム契約",
-          "partnerFour": "複数インスタンス",
-          "partnerThree": "複数の地域",
-          "partnerSix": "ステージング環境",
-          "partnerEncryption": "メディア暗号化"
+          "medium": {
+            "five": "高いアクティビティのサポート",
+            "four": "24時間未満の応答時間",
+            "one": "1 - 80 ユーザー",
+            "three": "3TBストレージ",
+            "two": "バグ修正の優先対応"
+          },
+          "partner": {
+            "onpremise": "オンプレミス設置",
+            "eight": "ローカルビデオコンピューティングクラスター",
+            "five": "AD/LDAP統合",
+            "four": "複数インスタンス",
+            "one": "スタジオプランのすべての機能",
+            "unlimited": "ユーザー数無制限",
+            "seven": "ローカルオブジェクトストレージ",
+            "six": "ステージング環境",
+            "three": "複数の地域",
+            "two": "オンプレミス",
+            "encryption": "メディア暗号化",
+            "gpu": "GPUビデオ処理",
+            "contract": "カスタム契約"
+          },
+          "small": {
+            "five": "1 x デュアルコアVM",
+            "four": "48時間未満の応答時間",
+            "three": "1TBストレージ",
+            "two": "無制限のプロジェクト"
+          },
+          "agency": {
+            "one": "1〜30人のユーザー"
+          },
+          "successpack": {
+            "five": "パイプラインアシスタンス",
+            "four": "トレーニング",
+            "one": "ワークフロー監査",
+            "six": "ソフトウェア統合",
+            "three": "データ移行",
+            "two": "構成"
+          },
+          "team": {
+            "storage": "500GBストレージ",
+            "support": "ライトサポート",
+            "supporttime": "72時間未満の応答時間",
+            "users": "1〜10人のユーザー"
+          },
+          "tiny": {
+            "five": "1 x シングルコアVM",
+            "support": "基本サポート"
+          },
+          "tinyplus": {
+            "one": "1 - 80 ユーザー",
+            "three": "1TBストレージ",
+            "two": "無制限のプロジェクト"
+          },
+          "training": "トレーニングセッション"
         },
+        "firsteps": {
+          "cta1": "ミーティングまたはデモの予約",
+          "cta2": "Discordコミュニティに参加",
+          "cta3": "トライアルにサインアップ",
+          "question1": "弊社チームのメンバーとのミーティングをスケジュールしてください。一緒に、Kitsuがどのようにワークフローを改善し、ビジネスを強化できるかを探っていきましょう。",
+          "question2": "その後、Discordコミュニティに参加して他のユーザーと連絡を取り、パイプラインやワークフローについて話しましょう。",
+          "question3": "登録すると、2週間無料でKitsu Cloudのインストールにアクセスできます。すべての機能が含まれており、その可能性をフルに試すことができます。",
+          "subttile": "Kitsuから始める",
+          "ttile": "最初のステップ"
+        },
+        "install": {
+          "cta": "インストールする"
+        },
+        "metadata": "弊社がKitsuへの移行をどのようにサポートできるかをご確認いただき、ホスティングプラン（クラウドまたはオンプレミス）をご覧ください。",
+        "monthly": "毎月",
+        "opensource": {
+          "details": "Kitsuは無料かつオープンソースなので、チームは自分たちのインフラストラクチャ上で自由に使用したり、変更したりすることができます。",
+          "install": "インストール手順",
+          "title": "無料かつオープンソース"
+        },
+        "price": {
+          "free": "無料"
+        },
+        "ranch": {
+          "title": "レンダーファームの割引",
+          "explanation": "弊社のサブスクリプションには、パートナーであるRanch Computingからの無料クレジットが含まれています！ 詳細については、お問い合わせください。"
+        },
+        "school": {
+          "details": "アーティストスクール向けに、年間3999ユーロという特別料金を提供しています（最大100名の学生まで）。",
+          "title": "学校向け料金設定"
+        },
+        "tagline": "お客様のスタジオに最適なプラン",
+        "sucesspack": {
+          "explanation": "弊社チームは、お客様のスタジオに合わせてKitsuをカスタマイズして導入するお手伝いをいたします。",
+          "subtitle": "弊社のサポートにより、導入を成功に導きます",
+          "title": "成功パック"
+        },
+        "support": {
+          "license": {
+            "ad": "Active Directoryとの互換性",
+            "details": "弊社がKitsuをお客様のサーバーにインストールし、セットアップ、アップグレード、バックアップ、および監視を行います。クラウド版と同じレベルのサポートを受けることができます。",
+            "directory": "ユーザーディレクトリ",
+            "domain": "必要条件：ドメイン名",
+            "ldap": "LDAPディレクトリからユーザーとパスワードを同期",
+            "migation": {
+              "onpremise": "Kitsuローカルインスタンスからのプロダクションを取得"
+            },
+            "migration": {
+              "cloud": "Kitsu Cloudインスタンスからプロダクションを取得"
+            },
+            "ports": "必要条件：標準ポートオープン（80/443）",
+            "setup": "セットアップ費用",
+            "ssh": "必要条件：SSHアクセス",
+            "subtitle": "お客様のサーバーでの完全オファー",
+            "title": "オンプレミスの追加機能",
+            "ubuntu": "必要条件：Ubuntu 20.04"
+          },
+          "onpremise": {
+            "title": "アドオン"
+          }
+        },
+        "kitsu": {
+          "subtitle": "チームとツールをつなぐ",
+          "title": "あらゆる規模のスタジオ向けのKitsu Cloudプラン"
+        },
+        "title": "料金設定",
         "usecase": {
           "agency": "ショートフィルム、コマーシャル、ライトプロダクション用",
           "production": "テレビシリーズ、長編映画、ビデオゲーム用",
           "studio": "複数のプロダクションを運営するスタジオ向け",
           "partner": "大規模スタジオまたはTPN対応"
         },
-        "title": {
+        "value": {
+          "month": "/月",
+          "user": "/ユーザー"
+        },
+        "yearly": "毎年",
+        "title_plans": {
+          "agency": "エージェンシー",
+          "big": "ビッグ",
+          "bronze": "ブロンズ",
+          "enterprise": "エンタープライズ",
+          "freelancer": "フリーランサー",
+          "gold": "ゴールド",
           "partner": "パートナー",
-          "quote": "見積もり"
-        },
-        "button": {
-          "contactcta": "お問い合わせ"
-        },
-        "discount": {
-          "details": "全プラン2週間のトライアル付き"
-        },
-        "school": {
-          "title": "学校向け料金設定",
-          "details": "アーティストスクール向けに、年間3999ユーロという特別料金を提供しています（最大100名の学生まで）。"
-        },
-        "faq": {
-          "subtitle": "追加情報",
-          "title": "よくある質問"
+          "production": "プロダクション",
+          "quote": "見積もり",
+          "silver": "シルバー",
+          "studio": "スタジオ",
+          "team": "チーム",
+          "tinyplus": "Tiny+"
         }
       }
     },
@@ -432,6 +1046,15 @@
         "tvshowPlanningTitle": "スケジュールの設定 （TV番組)",
         "breakdownTitle": "キャスティングを管理",
         "retakeTitle": "リテイクの追跡"
+      }
+    },
+    "studios": {
+      "title": "クリエイティブスタジオと学校",
+      "slug": "studios",
+      "subtitle": "Kitsuは世界中で使用されています",
+      "productions": {
+        "title": "制作",
+        "subtitle": "Kitsuで追跡およびレビュー"
       }
     }
   },
@@ -472,10 +1095,11 @@
       ],
       "customerStory": {
         "studioName": "Autour De Minuit",
-        "storyKey": "adm",
+        "story": "adm",
         "interviewee": "Fiona Cohen, Production Manager",
         "imagePath": "photo-customer-story-adm.jpg",
-        "storyUrl": "https://blog.cg-wire.com/customer-story-autour-de-minuit/"
+        "storyUrl": "https://blog.cg-wire.com/customer-story-autour-de-minuit/",
+        "quote": "私たちには、タスクとビジュアル納品物をリンクさせるツールが必要でした。チームにとって実用的で快適なソフトウェアを求めていたのです。特に映画制作者には、いつでもショットをエンドツーエンドでアクセスできる必要がありました。そしてもちろん、プロダクションマネージャーが進捗状況を簡単に追跡できることも重要です。"
       }
     },
     "elite-hosting": {
@@ -556,10 +1180,11 @@
       ],
       "customerStory": {
         "studioName": "Fost studio",
-        "storyKey": "fost",
+        "story": "fost",
         "interviewee": "Céline Durieux, Head Of Studio",
         "imagePath": "photo-customer-story-fost.png",
-        "storyUrl": "https://blog.cg-wire.com/customer-story-fost-studio/"
+        "storyUrl": "https://blog.cg-wire.com/customer-story-fost-studio/",
+        "quote": "Kitsuを使うと、人々はまず時間の節約を考えますが、私にとってもっと重要なのは、すべてが整っていることで得られる安心感です。これにより、脳にゆとりができプロダクションの他の要素に集中できました。"
       }
     },
     "review-engine": {
@@ -598,10 +1223,11 @@
       ],
       "customerStory": {
         "studioName": "Makuta VFX (RRR Movie)",
-        "storyKey": "makuta",
+        "story": "makuta",
         "interviewee": "Pete Draper, Head of VFX",
         "imagePath": "photo-customer-story-makuta.png",
-        "storyUrl": "https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
+        "storyUrl": "https://blog.cg-wire.com/customer-story-makuta-vfx-studio/",
+        "quote": "Kitsuはほぼすべてを統一し、アーティストだけでなく、プロダクション、管理、クライアントとの間のコミュニケーションをより整然としたものにしています。"
       }
     },
     "studio-database": {
@@ -721,10 +1347,11 @@
       ],
       "customerStory": {
         "studioName": "Miyu studio",
-        "storyKey": "miyu",
+        "story": "miyu",
         "interviewee": "Carole Faure, Production Manager",
         "imagePath": "photo-customer-story-miyu.png",
-        "storyUrl": "https://blog.cg-wire.com/customer-story-miyu-studio/"
+        "storyUrl": "https://blog.cg-wire.com/customer-story-miyu-studio/",
+        "quote": "プロダクションの運営に必要なすべての機能を理解するには、数日もあれば十分です。スタジオの誰もがすぐに使い始め、特にアーティストたちはKitsuを心から楽しんでいます。以前使っていたツールでは、このような熱意は見られませんでした。"
       }
     },
     "top-notch-support": {
@@ -989,17 +1616,17 @@
     "schools": {
       "slug": "schools",
       "i18n": {
-        "titleKey": "学校向けのKitsu",
-        "metaTitleKey": "学校向けのKitsu",
-        "metaDescriptionKey": "生徒のプロジェクト"
+        "title": "学校向けのKitsu",
+        "metaTitle": "学校向けのKitsu",
+        "metaDescription": "生徒のプロジェクト"
       },
       "hero": {
-        "subtitleKey": "生徒のプロジェクト",
-        "titleKey": "学校向けのKitsu"
+        "subtitle": "生徒のプロジェクト",
+        "title": "学校向けのKitsu"
       },
       "quote": {
-        "textKey": "Kitsuは、生徒のプロジェクトを管理するためにまさに私たちが探していたソリューションです。",
-        "authorKey": "Pôle 3D学長、Carlos de Carvalho氏",
+        "text": "Kitsuは、生徒のプロジェクトを管理するためにまさに私たちが探していたソリューションです。",
+        "author": "Pôle 3D学長、Carlos de Carvalho氏",
         "avatar": "carlosdecarvalho.png"
       },
       "video": {
@@ -1011,8 +1638,8 @@
         {
           "id": "students",
           "avatar": "avatar-4.svg",
-          "titleKey": "生徒向け",
-          "descriptionKeys": [
+          "title": "生徒向け",
+          "descriptions": [
             "生徒は、お互いや教師と共同作業するための中心的な場所を必要としています。Kitsuは、情報を共有するための専用のワークスペースを提供します。",
             "Kitsuは、生徒が教師からのフィードバックを整理して受け取るためのフレームワークを提供します。通知システム（アプリ内、メール、またはSlack）のおかげで、必要な変更については常に通知されます。",
             "生徒は、実際のスタジオで使用されている制作トラッカーの使用方法を学びます。優先順位付けとプロフェッショナルなコミュニケーションの基礎を、早期に理解することができます。"
@@ -1021,8 +1648,8 @@
         {
           "id": "directors",
           "avatar": "avatar-7.svg",
-          "titleKey": "教師向け",
-          "descriptionKeys": [
+          "title": "教師向け",
+          "descriptions": [
             "教師は自分の専門分野に集中できます。フィードバックや新しいプレビューのリクエストを見逃すことはありません。また、どの生徒グループに支援が必要かを特定することもできます。",
             "映画のレビューは、プレイリストモジュールのおかげでシームレスに実行でき、制作のさまざまな段階でさまざまなバージョンを比較することができます。",
             "Kitsuは、プロジェクトの履歴全体を保存し、決定がどのように行われたかを記録するための専用場所として機能します。"
@@ -1031,21 +1658,21 @@
         {
           "id": "teachers",
           "avatar": "avatar-9.svg",
-          "titleKey": "アカデミックディレクター向け",
-          "descriptionKeys": [
+          "title": "アカデミックディレクター向け",
+          "descriptions": [
             "アカデミックディレクターは、生徒の最終プロジェクトを監視し、課題の進捗状況を簡単に把握し、問題をすばやく特定することができます。",
             "アカデミックディレクターは、プロジェクトの状況をすばやく判断し、タスク割り当ての適切さを評価できます。スケジュールを通じて、プロジェクトの主要なマイルストーンを包括的に把握することができます。"
           ]
         }
       ],
       "reasons": {
-        "titleKey": "教育プログラムにKitsuを使用する理由",
+        "title": "教育プログラムにKitsuを使用する理由",
         "items": [
           "業界標準の制作管理に向けて生徒を準備",
           "プレイリストにより教師のレビューが簡単になります",
           "組み込みのコメントシステムで生徒とのやり取りを効率化"
         ],
-        "ctaKey": "無料で試す",
+        "cta": "無料で試す",
         "ctaUrl": "__https://account.cg-wire.com/signup__"
       },
       "studios": [
@@ -1071,17 +1698,17 @@
     "shorts": {
       "slug": "shorts",
       "i18n": {
-        "titleKey": "予告編、広告、ドキュメント、ミュージッククリップ、YouTube",
-        "metaTitleKey": "ショートムービー向けのKitsu",
-        "metaDescriptionKey": "予告編、広告、ドキュメント、ミュージッククリップ、YouTube"
+        "title": "予告編、広告、ドキュメント、ミュージッククリップ、YouTube",
+        "metaTitle": "ショートムービー向けのKitsu",
+        "metaDescription": "予告編、広告、ドキュメント、ミュージッククリップ、YouTube"
       },
       "hero": {
-        "subtitleKey": "予告編、広告、ドキュメント、ミュージッククリップ、YouTube",
-        "titleKey": "ショートムービー向けのKitsu"
+        "subtitle": "予告編、広告、ドキュメント、ミュージッククリップ、YouTube",
+        "title": "ショートムービー向けのKitsu"
       },
       "quote": {
-        "textKey": "Kitsuは、プロジェクトの計画と追跡に非常に役立つ、アーティストに優しいツールです。UIはすっきりしていてわかりやすいです。チームからは、多くの肯定的なフィードバックをもらいました。",
-        "authorKey": "Woodblock制作責任者、Christian Zehetmeier氏",
+        "text": "Kitsuは、プロジェクトの計画と追跡に非常に役立つ、アーティストに優しいツールです。UIはすっきりしていてわかりやすいです。チームからは、多くの肯定的なフィードバックをもらいました。",
+        "author": "Woodblock制作責任者、Christian Zehetmeier氏",
         "avatar": "christian.png"
       },
       "video": {
@@ -1093,8 +1720,8 @@
         {
           "id": "productionmanager",
           "avatar": "avatar-10.svg",
-          "titleKey": "制作マネージャー向け",
-          "descriptionKeys": [
+          "title": "制作マネージャー向け",
+          "descriptions": [
             "プロダクションマネージャーは、制作コストを追跡し、レビューされた内容と、何回リテイクが必要になったかを把握する必要があります。",
             "Kitsuは、アーティストごとに1日、1週間、1か月の経過時間を確認できる効率的なタイムシートを提供します。制作ごとに詳細にアクセスすることができます。",
             "ショットまたはアセットごとに、それに費やされた全体的な時間を確認できます。これにより、コストがかかりすぎるエンティティを特定できます。タスクごとに見積もりを設定し、実際の経過時間と比較することができます。",
@@ -1105,8 +1732,8 @@
         {
           "id": "director",
           "avatar": "avatar-6.svg",
-          "titleKey": "ディレクター向け",
-          "descriptionKeys": [
+          "title": "ディレクター向け",
+          "descriptions": [
             "ディレクターは、保留中のタスクを確認し、制作の進捗状況を把握するための効率的な方法を必要としています。これにより、ディレクターは迅速に対応し、間違った指示によってチームが時間を無駄にすることを防ぐことができます。",
             "これを実現するために、Kitsuはプレイリストシステムを提供し、ディレクターが複数のショットを連続してレビューできるようにします。これには、保留中のレビューや映画全体が含まれます。またKitsuには、ショットの順序を変更したり、バージョンを臨機応変に切り替えたりする編集機能もあります。これによりディレクターは、見たいものについてより正確に把握することができます。",
             "ディレクターはニュースフィードを介してアクティビティを監視できるため、何か問題が発生したときにすばやく対応できます。対応するために週末まで待つ必要はありません。"
@@ -1115,8 +1742,8 @@
         {
           "id": "supervisor",
           "avatar": "avatar-2.svg",
-          "titleKey": "スーパーバイザー向け",
-          "descriptionKeys": [
+          "title": "スーパーバイザー向け",
+          "descriptions": [
             "スーパーバイザーは複数の制作に同時に取り組みます。スーパーバイザーは迅速に行動し、最新の情報を把握する必要があります。",
             "リアルタイム機能により、Kitsuは常に最新のデータを表示します。さらに、ダッシュボードとタスクリストでは最も重要な情報が強調表示されます。",
             "スーパーバイザーは最もよく使用するフィルターを保存できるため、リテイクや保留中のレビューを簡単に見つけることができます。",
@@ -1126,21 +1753,21 @@
         {
           "id": "artist",
           "avatar": "avatar-12.svg",
-          "titleKey": "アーティスト向け",
-          "descriptionKeys": [
+          "title": "アーティスト向け",
+          "descriptions": [
             "アーティストは、自分のタスクにすばやくアクセスし、コメントやプレビューを投稿して自分の作品について簡単にコミュニケーションできる必要があります。",
             "アーティストがログインすると、ToDoリストが表示されます。一目で、どのタスクに取り組むべきかがわかります。また関連データとして、エンティティ、タスクタイプ、見積もり、期日、最新のコメントが表示されます。"
           ]
         }
       ],
       "reasons": {
-        "titleKey": "ショートムービーの制作にKitsuを使用する理由",
+        "title": "ショートムービーの制作にKitsuを使用する理由",
         "items": [
           "アーティストと簡単にコミュニケーションを取り、履歴を保持",
           "複数のプロジェクトを同時にスケジュールして管理",
           "レビューと最終プロジェクトをクライアントゲートウェイ経由で送信"
         ],
-        "ctaKey": "無料で試す",
+        "cta": "無料で試す",
         "ctaUrl": "__https://account.cg-wire.com/signup__"
       },
       "studios": [
@@ -1202,17 +1829,17 @@
     "tvshows": {
       "slug": "tvshows",
       "i18n": {
-        "titleKey": "TVシリーズ用のKitsu",
-        "metaTitleKey": "TVシリーズ用のKitsu",
-        "metaDescriptionKey": "2Dおよび3Dテレビ番組"
+        "title": "TVシリーズ用のKitsu",
+        "metaTitle": "TVシリーズ用のKitsu",
+        "metaDescription": "2Dおよび3Dテレビ番組"
       },
       "hero": {
-        "subtitleKey": "2Dおよび3Dテレビ番組",
-        "titleKey": "TVシリーズ用のKitsu"
+        "subtitle": "2Dおよび3Dテレビ番組",
+        "title": "TVシリーズ用のKitsu"
       },
       "quote": {
-        "textKey": "52x11'シリーズの仕事をする場合、非常に多くの納品物に対応しなければならない。幸いなことに、キツではすべてがスムーズに運んだ。",
-        "authorKey": "Cube Creativeスタジオ責任者、Cécile Hergaux氏",
+        "text": "52x11'シリーズの仕事をする場合、非常に多くの納品物に対応しなければならない。幸いなことに、キツではすべてがスムーズに運んだ。",
+        "author": "Cube Creativeスタジオ責任者、Cécile Hergaux氏",
         "avatar": "cecilehergaux.png"
       },
       "video": {
@@ -1224,8 +1851,8 @@
         {
           "id": "producer",
           "avatar": "avatar-5.svg",
-          "titleKey": "プロデューサー向け",
-          "descriptionKeys": [
+          "title": "プロデューサー向け",
+          "descriptions": [
             "プロデューサーは制作を包括的に把握できます。クライアントまたは請負業者からの情報を確認することができます。",
             "Kitsuを使用すると、プロデューサーはお金が費やされた場所と理由を含む制作の財務状況を確認できます。最もコストのかかるショットまたはアセットを特定できます。チャートのおかげで、制作の進行状況を常に把握することができます。",
             "プロデューサーは、番組の進行状況を確認するために他の人に頼る必要はありません。誰も更新情報を提供するために作業を中断する必要はありません。プロデューサーは、シーケンスの進行状況をリアルタイムで独自に確認することができます。"
@@ -1234,8 +1861,8 @@
         {
           "id": "productionmanager",
           "avatar": "avatar-1.svg",
-          "titleKey": "制作マネージャー向け",
-          "descriptionKeys": [
+          "title": "制作マネージャー向け",
+          "descriptions": [
             "プロダクションマネージャーは、制作コストを追跡し、レビューされた内容とリテイクの回数を把握する必要があります。",
             "Kitsuは、すべての制作で各アーティストが1日、1週間、または1か月に費やした時間数を確認できる効率的なタイムシートを提供します。",
             "ショットまたはアセットごとに、それに費やされた全体的な時間を確認できます。これにより、コストがかかりすぎるエンティティを特定できます。各タスクの見積もりを設定し、実際の時間と比較することができます。",
@@ -1246,8 +1873,8 @@
         {
           "id": "director",
           "avatar": "avatar-6.svg",
-          "titleKey": "ディレクター向け",
-          "descriptionKeys": [
+          "title": "ディレクター向け",
+          "descriptions": [
             "ディレクターは、保留中のタスクを効率的に確認し、制作で何が起こっているかを把握できます。これにより、ディレクターは迅速に対応し、間違った指示によってチームが時間を無駄にすることを避けることができます。",
             "Kitsuはプレイリストシステムを提供します。ディレクターは、保留中のレビューでも映画全体でも、複数のショットを連続して確認できます。Kitsuにはショットの順序を変更したり、バージョンをその場で切り替えたりする編集機能が含まれており、ディレクターは見たいものをより正確に見ることができます。"
           ]
@@ -1255,8 +1882,8 @@
         {
           "id": "supervisor",
           "avatar": "avatar-2.svg",
-          "titleKey": "スーパーバイザー向け",
-          "descriptionKeys": [
+          "title": "スーパーバイザー向け",
+          "descriptions": [
             "スーパーバイザーは、いつでも情報に即座にアクセスできる必要があります。コメントする適切なスプレッドシートやファイルを探す必要はありません。",
             "幸いなことにKitsuを使用すると、すべてが1か所にまとめられます。スーパーバイザーは、他の人が何をすべきかを知るのを待つ必要はありません。常に何をレビューし、どのリテイクを行う必要があるかがを把握することができます。",
             "タスクの割り当て、メンション、コメントにより、情報は常に適切な人に効率的に送信されます。最終的に、スーパーバイザーは適切な決定を下し、共有するために必要なすべてを手にすることができます。"
@@ -1265,8 +1892,8 @@
         {
           "id": "artist",
           "avatar": "avatar-3.svg",
-          "titleKey": "アーティスト向け",
-          "descriptionKeys": [
+          "title": "アーティスト向け",
+          "descriptions": [
             "アーティストは、自分のタスクにすばやくアクセスし、コメントやプレビューを投稿して自分の作品について簡単にコミュニケーションをとる必要があります。",
             "アーティストがログインすると、ToDoリストが表示されます。一目で、完了する必要があるタスクがわかります。",
             "すべてのタスクは、期日、見積もり、優先度、現在のステータス、最新のコメントなど、適切に詳細化されています。",
@@ -1275,30 +1902,30 @@
         }
       ],
       "reasons": {
-        "titleKey": "TVシリーズの制作にKitsuを使用する理由",
+        "title": "TVシリーズの制作にKitsuを使用する理由",
         "items": [
           "すべてのエピソードの進行状況の概要を取得",
           "外部の協力者と1つのプレイリストでエピソード全体のレビューを実行",
           "リテイク数を追跡し、レポートを簡単に作成"
         ],
-        "ctaKey": "無料で試す",
+        "cta": "無料で試す",
         "ctaUrl": "https://account.cg-wire.com/signup"
       }
     },
     "video-games": {
       "slug": "video-games",
       "i18n": {
-        "titleKey": "ビデオゲーム用キツ",
-        "metaTitleKey": "ビデオゲーム用キツ",
-        "metaDescriptionKey": "クリエイティブ・アセット、予告編、シネマティクス"
+        "title": "ビデオゲーム用キツ",
+        "metaTitle": "ビデオゲーム用キツ",
+        "metaDescription": "クリエイティブ・アセット、予告編、シネマティクス"
       },
       "hero": {
-        "subtitleKey": "クリエイティブ・アセット、予告編、シネマティクス",
-        "titleKey": "ビデオゲーム用キツ"
+        "subtitle": "クリエイティブ・アセット、予告編、シネマティクス",
+        "title": "ビデオゲーム用キツ"
       },
       "quote": {
-        "textKey": "キツの別の機能を知るたびに、よりパワフルなツールになっていく。キツは驚きに満ちている。これからも学び、適応させ、拡張していくだろうから、常に提供できるものがある！",
-        "authorKey": "アリエル・マッケイ 、MDHR制作アシスタント",
+        "text": "キツの別の機能を知るたびに、よりパワフルなツールになっていく。キツは驚きに満ちている。これからも学び、適応させ、拡張していくだろうから、常に提供できるものがある！",
+        "author": "アリエル・マッケイ 、MDHR制作アシスタント",
         "avatar": "arielmckay.png"
       },
       "video": {
@@ -1310,8 +1937,8 @@
         {
           "id": "supervisor",
           "avatar": "avatar-2.svg",
-          "titleKey": "監督者向け",
-          "descriptionKeys": [
+          "title": "監督者向け",
+          "descriptions": [
             "上司はいつでも情報に即座にアクセスする必要がある。彼らは、コメントするのに適切なスプレッドシートやファイルを探したくないのです。",
             "Kitsuでは、すべてが1つの場所にあります。上司は、何をすべきか他の人が知るのを待つ必要はありません。何を見直すべきか常に把握し、簡単にフィードバックを送ることができます。",
             "プレイリスト・システムを使えば、すべてを一度に見直すことができる。一人でやることもできるし、チーム全員をレビューに招待することもできる。",
@@ -1321,8 +1948,8 @@
         {
           "id": "artist",
           "avatar": "avatar-3.svg",
-          "titleKey": "アーティスト向け",
-          "descriptionKeys": [
+          "title": "アーティスト向け",
+          "descriptions": [
             "アーティストは、自分のタスクに素早くアクセスし、コメントやプレビューを投稿して作品についてコミュニケーションをとるシンプルな方法を必要としている。",
             "KitsuのTodoリストを通じて、進捗状況を効率的に報告し、納品をプッシュすることができます。彼らはタイムシートを取得し、あなたのスタジオのために働いた時間を申告します。",
             "すべてのタスクは適切に詳細化されている。アーティストは明確なフィードバックを得ることができ、自分の仕事がいつ評価されたかを知ることができます。",
@@ -1333,8 +1960,8 @@
         {
           "id": "productionmanager",
           "avatar": "avatar-1.svg",
-          "titleKey": "プロジェクトマネージャー向け",
-          "descriptionKeys": [
+          "title": "プロジェクトマネージャー向け",
+          "descriptions": [
             "Kitsuは効率的なタスク管理とスケジューリング機能を提供します。各アーティストに適切な仕事量を設定し、プロジェクトの全体像を把握することができます。",
             "各資産について、その資産に費やされた全体的な労力を見ることができる。これは、コストがかかりすぎる要素を特定するのに役立ちます。そして、履歴全体にアクセスし、ボトルネックを特定することができる。",
             "また、シンプルなタイムシートシステムを介してあなたのフリーランサーによって請求された時間を追跡することができます.すべてのデータは、週と月のレベルで集計することができます."
@@ -1342,13 +1969,13 @@
         }
       ],
       "reasons": {
-        "titleKey": "ゲーム制作にKitsuを使うべき理由",
+        "title": "ゲーム制作にKitsuを使うべき理由",
         "items": [
           "すべてのゲーム内アセットのライブラリを構築し、バージョン管理する。",
           "アーティストが明確な指示を受け、納品物を送るために最適化されたデザイン",
           "クリエイティブチームに特化したコラボレーション機能、KitsuはアーティストのためのJiraのようなもの。"
         ],
-        "ctaKey": "無料体験",
+        "cta": "無料体験",
         "ctaUrl": "https://account.cg-wire.com/signup"
       }
     }

@@ -411,13 +411,345 @@
       },
       "conferences": {
         "title": "Conference Program",
-        "description": "12 inspiring presentations from industry leaders showcasing real-world implementations of Kitsu across different production types. In addition, there will be two keynote speeches from the founders of Kitsu."
+        "description": "12 inspiring presentations from industry leaders showcasing real-world implementations of Kitsu across different production types. In addition, there will be two keynote speeches from the founders of Kitsu.",
+        "conferences": [
+          {
+            "time": "09:45",
+            "speaker": "Audrey Tondre",
+            "company": "Remembers",
+            "title": "Producing a first feature film and get the Annecy Cristal",
+            "description": "Learn how Remembers used Kitsu to manage their first feature film production and achieve recognition at Annecy.",
+            "category": "animation2d",
+            "categoryLabel": "2D",
+            "file": "audrey.jpg"
+          },
+          {
+            "time": "12:00",
+            "speaker": "Pete Draper",
+            "company": "VFX Supervisor",
+            "title": "Managing hundreds of projects with ease",
+            "description": "Scaling VFX production management across hundreds of projects using Kitsu's powerful organizational tools.",
+            "category": "vfx",
+            "categoryLabel": "VFX",
+            "file": "pete.webp"
+          },
+          {
+            "time": "12:45",
+            "speaker": "Chris Unterberg",
+            "company": "Tetsuo",
+            "title": "Quickdraw always wins",
+            "description": "A case for everyone to give visual feedback, no matter how they draw and no matter their role.",
+            "category": "vfx",
+            "categoryLabel": "VFX",
+            "file": "chris.png"
+          },
+          {
+            "time": "14:00",
+            "speaker": "Flavio Perez",
+            "company": "Les Fées Spéciales",
+            "description": "Exploring advanced 2D/3D production techniques and pipeline optimization.",
+            "title": "Dealing with 2D/3D production workflows",
+            "category": "animation3d",
+            "categoryLabel": "3D",
+            "file": "flavio.jpg"
+          },
+          {
+            "time": "15:30",
+            "title": "Reinventing 3D asset management",
+            "speaker": "Axel Tillement",
+            "company": "Cube Creative",
+            "description": "Simplified approach to 3D asset management.",
+            "category": "animation3d",
+            "categoryLabel": "3D",
+            "file": "axel.jpg"
+          },
+          {
+            "time": "17:00",
+            "title": "Using production management at the service of creativity",
+            "speaker": "Cléa Gonnay",
+            "company": "Miyu",
+            "description": "How Miyu balances creative freedom with production efficiency.",
+            "category": "animation2d",
+            "categoryLabel": "2D",
+            "file": "clea.jpg"
+          },
+          {
+            "time": "17:45",
+            "title": "Growing with Kitsu",
+            "speaker": "Céline Durieux",
+            "company": "Fost",
+            "description": "How Fost has used Kitsu to grow their studio and how Kitsu was improved by them.",
+            "category": "animation2d",
+            "categoryLabel": "2D",
+            "file": "celine.png"
+          },
+          {
+            "time": "17:45",
+            "title": "A full open-source pipeline for a TV Series",
+            "speaker": "Félix David",
+            "company": "Normaal",
+            "description": "Setting up a full open-source pipeline to maximize productivity.",
+            "category": "animation2d",
+            "categoryLabel": "2D",
+            "file": "felix.jpg"
+          },
+          {
+            "time": "17:45",
+            "title": "Leveraging Blender with Kitsu",
+            "speaker": "Mario Hawat",
+            "company": "Autour De Minuit",
+            "description": "How Blender can be used with Kitsu to handle diverse styles of animation.",
+            "category": "animation3d",
+            "categoryLabel": "3D",
+            "file": "mario.png"
+          },
+          {
+            "time": "17:45",
+            "title": "Automate and simplify an hybrid pipeline",
+            "speaker": "Guilhem Compain",
+            "company": "Wizz",
+            "description": "How to make 2D and 3D easy to mix.",
+            "category": "animation2d",
+            "categoryLabel": "2D",
+            "file": "guilhem.png"
+          },
+          {
+            "time": "17:45",
+            "title": "AI in the Hands of Artists",
+            "speaker": "Arthur Aloyan",
+            "company": "Mastodon Production",
+            "description": "Where AI can support production workflows where human craft must remain central",
+            "category": "ai",
+            "categoryLabel": "AI",
+            "file": "artur.png"
+          },
+          {
+            "time": "17:45",
+            "title": "The best from 3D applied to 2D",
+            "speaker": "Tristan Languebien",
+            "company": "Big Company",
+            "description": "Creating a 2D pipeline from scratch using 3D techniques",
+            "category": "2d",
+            "categoryLabel": "2D",
+            "file": "tristan.png"
+          },
+          {
+            "time": "17:45",
+            "title": "Astérix, head in the clouds",
+            "speaker": "Anne-Laure Armand / Laurent Dijoux / Dominique Coco",
+            "company": "Ranch Computing & TAT Production",
+            "description": "Cloud Render Farm for Astérix TV series by TAT Production",
+            "category": "vfx",
+            "categoryLabel": "VFX",
+            "file": "anne-laure.jpg"
+          },
+          {
+            "time": "18:00",
+            "title": "Why Kitsu",
+            "speaker": "Frank Rousseau",
+            "company": "CGWire CEO",
+            "description": "Kitsu origins, achievements, and vision.",
+            "category": "kitsu",
+            "categoryLabel": "Kitsu",
+            "file": "frank.jpg"
+          },
+          {
+            "time": "18:00",
+            "title": "The future of Kitsu",
+            "speaker": "Gwénaëlle Dupré",
+            "company": "CGWire CPO",
+            "description": "Roadmap for the next year.",
+            "category": "kitsu",
+            "categoryLabel": "Kitsu",
+            "file": "gwen.png"
+          }
+        ]
       },
       "schedule": {
         "title": "Conference Schedule",
         "description": "Plan your day with our detailed schedule of conferences",
         "time": "Time",
-        "room": "Room"
+        "room": "Room",
+        "schedule": [
+          {
+            "time": "09:00",
+            "type": "break",
+            "label": "Breakfast",
+            "room1": [],
+            "room2": []
+          },
+          {
+            "time": "09:30",
+            "room1": [
+              {
+                "company": "CGWire",
+                "speaker": "Frank Rousseau",
+                "title": "Why Kitsu"
+              }
+            ],
+            "room2": []
+          },
+          {
+            "time": "10:00",
+            "room1": [
+              {
+                "company": "Autour De Minuit",
+                "speaker": "Mario Hawat",
+                "title": "Leveraging Blender with Kitsu"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Wizz",
+                "speaker": "Guilhem Compain",
+                "title": "Automate and simplify an hybrid pipeline"
+              }
+            ]
+          },
+          {
+            "time": "10:45",
+            "room1": [
+              {
+                "company": "Les Fées Spéciales",
+                "speaker": "Flavio Perez",
+                "title": "Dealing with 2D/3D production workflows"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Cube Creative",
+                "speaker": "Axel Tillement",
+                "title": "Reinventing 3D asset management"
+              }
+            ]
+          },
+          {
+            "time": "11:30",
+            "room1": [
+              {
+                "company": "Magic Studio",
+                "speaker": "Arthur Aloyan",
+                "title": "AI in the Hands of Artists"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Remembers",
+                "speaker": "Audrey Tondre",
+                "title": "Producing a first feature film and get the Annecy Cristal"
+              }
+            ]
+          },
+          {
+            "time": "12:15",
+            "room1": [
+              {
+                "company": "Ranch Computing & TAT Production",
+                "speaker": "Anne-Laure Armand / Laurent Dijoux / Dominique Coco",
+                "title": "Astérix, head in the clouds"
+              }
+            ],
+            "room2": []
+          },
+          {
+            "time": "12:40",
+            "room1": [
+              {
+                "company": "Lenovo",
+                "speaker": "Mesa Takaoka",
+                "title": "Lenovo Workstations and AI"
+              }
+            ],
+            "room2": []
+          },
+          {
+            "time": "13:00",
+            "type": "break",
+            "label": "Lunch Break",
+            "room1": [],
+            "room2": []
+          },
+          {
+            "time": "14:00",
+            "room1": [
+              {
+                "company": "CGWire",
+                "speaker": "Gwénaëlle Dupré",
+                "title": "The future of Kitsu"
+              }
+            ],
+            "room2": []
+          },
+          {
+            "time": "14:30",
+            "room1": [
+              {
+                "company": "Ryff",
+                "speaker": "Pete Draper",
+                "title": "Managing hundreds of projects with ease"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Miyu",
+                "speaker": "Cléa Gonnay",
+                "title": "Using production management at the service of creativity"
+              }
+            ]
+          },
+          {
+            "time": "15:15",
+            "room1": [
+              {
+                "company": "Tetsuo",
+                "speaker": "Chris Unterberg",
+                "title": "Quickdraw always wins"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Fost",
+                "speaker": "Céline Durieux",
+                "title": "Growing with Kitsu"
+              }
+            ]
+          },
+          {
+            "time": "16:00",
+            "room1": [
+              {
+                "company": "Normaal",
+                "speaker": "Félix David",
+                "title": "A full open-source pipeline for a TV Series"
+              }
+            ],
+            "room2": [
+              {
+                "company": "Big Company",
+                "speaker": "Tristan Languebien",
+                "title": "The best from 3D applied to 2D"
+              }
+            ]
+          },
+          {
+            "time": "16:45",
+            "room1": [
+              {
+                "company": "CGWire",
+                "speaker": "Frank Rousseau",
+                "title": "Closing and Thanks"
+              }
+            ],
+            "room2": []
+          },
+          {
+            "time": "17:00",
+            "type": "break",
+            "label": "Ending Cocktail 🥳",
+            "room1": [],
+            "room2": []
+          }
+        ]
       },
       "registration": {
         "title": "Secure Your Spot",
@@ -445,339 +777,7 @@
       "cta": {
         "title": "Ready to Transform Your Production?",
         "description": "Don't miss this unique opportunity to learn from the best and connect with your industry peers."
-      },
-      "conferences": [
-        {
-          "time": "09:45",
-          "speaker": "Audrey Tondre",
-          "company": "Remembers",
-          "title": "Producing a first feature film and get the Annecy Cristal",
-          "description": "Learn how Remembers used Kitsu to manage their first feature film production and achieve recognition at Annecy.",
-          "category": "animation2d",
-          "categoryLabel": "2D",
-          "file": "audrey.jpg"
-        },
-        {
-          "time": "12:00",
-          "speaker": "Pete Draper",
-          "company": "VFX Supervisor",
-          "title": "Managing hundreds of projects with ease",
-          "description": "Scaling VFX production management across hundreds of projects using Kitsu's powerful organizational tools.",
-          "category": "vfx",
-          "categoryLabel": "VFX",
-          "file": "pete.webp"
-        },
-        {
-          "time": "12:45",
-          "speaker": "Chris Unterberg",
-          "company": "Tetsuo",
-          "title": "Quickdraw always wins",
-          "description": "A case for everyone to give visual feedback, no matter how they draw and no matter their role.",
-          "category": "vfx",
-          "categoryLabel": "VFX",
-          "file": "chris.png"
-        },
-        {
-          "time": "14:00",
-          "speaker": "Flavio Perez",
-          "company": "Les Fées Spéciales",
-          "description": "Exploring advanced 2D/3D production techniques and pipeline optimization.",
-          "title": "Dealing with 2D/3D production workflows",
-          "category": "animation3d",
-          "categoryLabel": "3D",
-          "file": "flavio.jpg"
-        },
-        {
-          "time": "15:30",
-          "title": "Reinventing 3D asset management",
-          "speaker": "Axel Tillement",
-          "company": "Cube Creative",
-          "description": "Simplified approach to 3D asset management.",
-          "category": "animation3d",
-          "categoryLabel": "3D",
-          "file": "axel.jpg"
-        },
-        {
-          "time": "17:00",
-          "title": "Using production management at the service of creativity",
-          "speaker": "Cléa Gonnay",
-          "company": "Miyu",
-          "description": "How Miyu balances creative freedom with production efficiency.",
-          "category": "animation2d",
-          "categoryLabel": "2D",
-          "file": "clea.jpg"
-        },
-        {
-          "time": "17:45",
-          "title": "Growing with Kitsu",
-          "speaker": "Céline Durieux",
-          "company": "Fost",
-          "description": "How Fost has used Kitsu to grow their studio and how Kitsu was improved by them.",
-          "category": "animation2d",
-          "categoryLabel": "2D",
-          "file": "celine.png"
-        },
-        {
-          "time": "17:45",
-          "title": "A full open-source pipeline for a TV Series",
-          "speaker": "Félix David",
-          "company": "Normaal",
-          "description": "Setting up a full open-source pipeline to maximize productivity.",
-          "category": "animation2d",
-          "categoryLabel": "2D",
-          "file": "felix.jpg"
-        },
-        {
-          "time": "17:45",
-          "title": "Leveraging Blender with Kitsu",
-          "speaker": "Mario Hawat",
-          "company": "Autour De Minuit",
-          "description": "How Blender can be used with Kitsu to handle diverse styles of animation.",
-          "category": "animation3d",
-          "categoryLabel": "3D",
-          "file": "mario.png"
-        },
-        {
-          "time": "17:45",
-          "title": "Automate and simplify an hybrid pipeline",
-          "speaker": "Guilhem Compain",
-          "company": "Wizz",
-          "description": "How to make 2D and 3D easy to mix.",
-          "category": "animation2d",
-          "categoryLabel": "2D",
-          "file": "guilhem.png"
-        },
-        {
-          "time": "17:45",
-          "title": "AI in the Hands of Artists",
-          "speaker": "Arthur Aloyan",
-          "company": "Mastodon Production",
-          "description": "Where AI can support production workflows where human craft must remain central",
-          "category": "ai",
-          "categoryLabel": "AI",
-          "file": "artur.png"
-        },
-        {
-          "time": "17:45",
-          "title": "The best from 3D applied to 2D",
-          "speaker": "Tristan Languebien",
-          "company": "Big Company",
-          "description": "Creating a 2D pipeline from scratch using 3D techniques",
-          "category": "2d",
-          "categoryLabel": "2D",
-          "file": "tristan.png"
-        },
-        {
-          "time": "17:45",
-          "title": "Astérix, head in the clouds",
-          "speaker": "Anne-Laure Armand / Laurent Dijoux / Dominique Coco",
-          "company": "Ranch Computing & TAT Production",
-          "description": "Cloud Render Farm for Astérix TV series by TAT Production",
-          "category": "vfx",
-          "categoryLabel": "VFX",
-          "file": "anne-laure.jpg"
-        },
-        {
-          "time": "18:00",
-          "title": "Why Kitsu",
-          "speaker": "Frank Rousseau",
-          "company": "CGWire CEO",
-          "description": "Kitsu origins, achievements, and vision.",
-          "category": "kitsu",
-          "categoryLabel": "Kitsu",
-          "file": "frank.jpg"
-        },
-        {
-          "time": "18:00",
-          "title": "The future of Kitsu",
-          "speaker": "Gwénaëlle Dupré",
-          "company": "CGWire CPO",
-          "description": "Roadmap for the next year.",
-          "category": "kitsu",
-          "categoryLabel": "Kitsu",
-          "file": "gwen.png"
-        }
-      ],
-      "schedule": [
-        {
-          "time": "09:00",
-          "type": "break",
-          "label": "Breakfast",
-          "room1": [],
-          "room2": []
-        },
-        {
-          "time": "09:30",
-          "room1": [
-            {
-              "company": "CGWire",
-              "speaker": "Frank Rousseau",
-              "title": "Why Kitsu"
-            }
-          ],
-          "room2": []
-        },
-        {
-          "time": "10:00",
-          "room1": [
-            {
-              "company": "Autour De Minuit",
-              "speaker": "Mario Hawat",
-              "title": "Leveraging Blender with Kitsu"
-            }
-          ],
-          "room2": [
-            {
-              "company": "Wizz",
-              "speaker": "Guilhem Compain",
-              "title": "Automate and simplify an hybrid pipeline"
-            }
-          ]
-        },
-        {
-          "time": "10:45",
-          "room1": [
-            {
-              "company": "Les Fées Spéciales",
-              "speaker": "Flavio Perez",
-              "title": "Dealing with 2D/3D production workflows"
-            }
-          ],
-          "room2": [
-            {
-              "company": "Cube Creative",
-              "speaker": "Axel Tillement",
-              "title": "Reinventing 3D asset management"
-            }
-          ]
-        },
-        {
-          "time": "11:30",
-          "room1": [
-            {
-              "company": "Magic Studio",
-              "speaker": "Arthur Aloyan",
-              "title": "AI in the Hands of Artists"
-            }
-          ],
-          "room2": [
-            {
-              "company": "Remembers",
-              "speaker": "Audrey Tondre",
-              "title": "Producing a first feature film and get the Annecy Cristal"
-            }
-          ]
-        },
-        {
-          "time": "12:15",
-          "room1": [
-            {
-              "company": "Ranch Computing & TAT Production",
-              "speaker": "Anne-Laure Armand / Laurent Dijoux / Dominique Coco",
-              "title": "Astérix, head in the clouds"
-            }
-          ],
-          "room2": []
-        },
-        {
-          "time": "12:40",
-          "room1": [
-            {
-              "company": "Lenovo",
-              "speaker": "Mesa Takaoka",
-              "title": "Lenovo Workstations and AI"
-            }
-          ],
-          "room2": []
-        },
-        {
-          "time": "13:00",
-          "type": "break",
-          "label": "Lunch Break",
-          "room1": [],
-          "room2": []
-        },
-        {
-          "time": "14:00",
-          "room1": [
-            {
-              "company": "CGWire",
-              "speaker": "Gwénaëlle Dupré",
-              "title": "The future of Kitsu"
-            }
-          ],
-          "room2": []
-        },
-        {
-          "time": "14:30",
-          "room1": [
-            {
-              "company": "Ryff",
-              "speaker": "Pete Draper",
-              "title": "Managing hundreds of projects with ease"
-            }
-          ],
-          "room2": [
-            {
-              "company": "Miyu",
-              "speaker": "Cléa Gonnay",
-              "title": "Using production management at the service of creativity"
-            }
-          ]
-        },
-        {
-          "time": "15:15",
-          "room1": [
-            {
-              "company": "Tetsuo",
-              "speaker": "Chris Unterberg",
-              "title": "Quickdraw always wins"
-            }
-          ],
-          "room2": [
-            {
-              "company": "Fost",
-              "speaker": "Céline Durieux",
-              "title": "Growing with Kitsu"
-            }
-          ]
-        },
-        {
-          "time": "16:00",
-          "room1": [
-            {
-              "company": "Normaal",
-              "speaker": "Félix David",
-              "title": "A full open-source pipeline for a TV Series"
-            }
-          ],
-          "room2": [
-            {
-              "company": "Big Company",
-              "speaker": "Tristan Languebien",
-              "title": "The best from 3D applied to 2D"
-            }
-          ]
-        },
-        {
-          "time": "16:45",
-          "room1": [
-            {
-              "company": "CGWire",
-              "speaker": "Frank Rousseau",
-              "title": "Closing and Thanks"
-            }
-          ],
-          "room2": []
-        },
-        {
-          "time": "17:00",
-          "type": "break",
-          "label": "Ending Cocktail 🥳",
-          "room1": [],
-          "room2": []
-        }
-      ]
+      }
     },
     "pricing": {
       "title": "Kitsu Cloud plans for studios of all sizes",

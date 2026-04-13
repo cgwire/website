@@ -82,11 +82,11 @@
 
       <div class="pricing-block">
         <div class="pricing-title">
-          {{ page.meta.pricing.title.partner }}
+          {{ page.meta.pricing.title_plans.partner }}
         </div>
         <div class="pricing-price">
           <span class="pricing-value">
-            {{ page.meta.pricing.title.quote }}
+            {{ page.meta.pricing.title_plans.quote }}
           </span>
         </div>
         <div class="for-info">
