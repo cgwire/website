@@ -1,6 +1,6 @@
 <template>
   <div v-if="page" :class="`kitsu-page ${pageKey}`">
-    <SolutionHeaderBlock :pageKey="page.slug" :header="page.meta.header" />
+    <SolutionHeaderBlock :page-key="page.slug" :header="page.meta.header" />
 
     <FeatureBlock
       v-for="(feature, index) in page.meta.features"
@@ -23,11 +23,11 @@
 </template>
 
 <script setup>
-const { t, locale } = useI18n()
+const { locale } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
 
-let { slug } = await useI18NSlug()
+const { slug } = await useI18NSlug()
 
 const { data: page } = await useAsyncData(
   () => `features-${locale.value}-${slug.value}`,

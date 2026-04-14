@@ -396,14 +396,12 @@
 </template>
 
 <script setup>
-const { t } = useI18n()
-
 const { locale } = useI18n()
 const slug = ref('kitsu-summit')
 
 const { pageQuery } = usePage(locale, slug)
 
-let { data: page } = await useAsyncData(
+const { data: page } = await useAsyncData(
   `${slug.value}-${locale.value}`,
   pageQuery,
   { watch: [slug, locale] }

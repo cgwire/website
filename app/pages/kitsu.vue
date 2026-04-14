@@ -203,7 +203,7 @@ const slug = ref('kitsu')
 
 const { pageQuery } = usePage(locale, slug)
 
-let { data: page } = await useAsyncData(
+const { data: page } = await useAsyncData(
   `${slug.value}-${locale.value}`,
   pageQuery,
   { watch: [slug, locale] }

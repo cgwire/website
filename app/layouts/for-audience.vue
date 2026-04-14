@@ -153,7 +153,7 @@ const localePath = useLocalePath()
 
 import { ref } from 'vue'
 
-let { slug } = await useI18NSlug()
+const { slug } = await useI18NSlug()
 
 const { data: audience } = await useAsyncData(
   () => `audience-${locale.value}-${slug.value}`,
@@ -168,11 +168,11 @@ const { data: audience } = await useAsyncData(
 
 const audiencePage = audience.value.meta
 
-let type = computed(() => slug.value)
+const type = computed(() => slug.value)
 
 const { buildStudiosQuery } = useStudios(locale, type)
 
-var { data: studios, error } = await useAsyncData(
+const { data: studios } = await useAsyncData(
   () => `studios-${type.value}-${locale.value}`,
   buildStudiosQuery,
   { watch: [locale, type] }

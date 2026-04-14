@@ -34,11 +34,11 @@
 </template>
 
 <script setup>
-const { t, locale } = useI18n()
+const { locale } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
 
-let { slug } = await useI18NSlug()
+const { slug } = await useI18NSlug()
 
 const { data: comparison } = await useAsyncData(
   () => `alternatives-${locale.value}-${slug.value}`,

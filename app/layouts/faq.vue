@@ -24,11 +24,11 @@
 </template>
 
 <script setup>
-const { t, locale } = useI18n()
+const { locale } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
 
-let { slug } = await useI18NSlug()
+const { slug } = await useI18NSlug()
 
 const { data: page } = await useAsyncData(
   `faq-${locale.value}-${slug.value}`,

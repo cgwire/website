@@ -246,8 +246,6 @@
 <script setup>
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-const { locales } = useI18n()
-
 const name = 'Header'
 
 const navOn = ref(false)

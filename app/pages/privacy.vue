@@ -8,7 +8,6 @@
 
 <script setup>
 const { locale } = useI18n()
-const slug = ref('privacy')
 
 const { data: page } = await useAsyncData(
   `privacy-${locale.value}`,

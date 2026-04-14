@@ -43,7 +43,7 @@ const { t, locale } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
 
-let { slug } = await useI18NSlug()
+const { slug } = await useI18NSlug()
 
 const { data } = await useAsyncData(
   `studio-${locale.value}-${slug.value}`,
@@ -54,7 +54,6 @@ const { data } = await useAsyncData(
 )
 
 const studio = data.value
-const content = data.value
 
 const path = localePath(route.name)
 const url = `https://www.cg-wire.com${path}`

@@ -12,7 +12,6 @@
 import { features, supportFeatures } from '~/data/self-hosted-features'
 
 const { locale } = useI18n()
-const slug = ref('self-hosted')
 
 const { data: page } = await useAsyncData(
   `self-hosted-${locale.value}`,

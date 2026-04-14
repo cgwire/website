@@ -1,6 +1,6 @@
 <template>
   <div class="kitsu-page software-integrations integrations">
-    <SolutionHeaderBlock :pageKey="page.slug" :header="page.meta.header" />
+    <SolutionHeaderBlock :page-key="page.slug" :header="page.meta.header" />
 
     <section class="section mt8 pt0">
       <div class="section-subtitle has-text-centered">
@@ -150,7 +150,7 @@ const slug = ref('software-integrations')
 
 const { pageQuery } = usePage(locale, slug)
 
-let { data: page } = await useAsyncData(
+const { data: page } = await useAsyncData(
   `${slug.value}-${locale.value}`,
   pageQuery,
   { watch: [slug, locale] }

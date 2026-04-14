@@ -1,13 +1,14 @@
 <template>
-  <NuxtLink
-    v-if="isReady"
-    v-for="loc in locales"
-    :key="loc.code"
-    :to="$switchLocalePath(loc.code)"
-    class="flexrow-item navbar-lang-item"
-  >
-    {{ loc.code.toUpperCase() }}
-  </NuxtLink>
+  <template v-if="isReady">
+    <NuxtLink
+      v-for="loc in locales"
+      :key="loc.code"
+      :to="$switchLocalePath(loc.code)"
+      class="flexrow-item navbar-lang-item"
+    >
+      {{ loc.code.toUpperCase() }}
+    </NuxtLink>
+  </template>
 </template>
 
 <script setup>

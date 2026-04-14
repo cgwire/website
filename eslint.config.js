@@ -54,6 +54,8 @@ export default defineConfig([
         watch: 'readonly',
         onMounted: 'readonly',
         watchEffect: 'readonly',
+        nextTick: 'readonly',
+        toValue: 'readonly',
         // Nuxt
         defineNuxtPlugin: 'readonly',
         definePageMeta: 'readonly',
@@ -66,9 +68,18 @@ export default defineConfig([
         // i18n
         useI18n: 'readonly',
         useLocaleHead: 'readonly',
+        useLocalePath: 'readonly',
+        useSetI18nParams: 'readonly',
         // Project utils (auto-imported)
         buildPageMeta: 'readonly',
-        usePageHead: 'readonly'
+        usePageHead: 'readonly',
+        usePage: 'readonly',
+        usePages: 'readonly',
+        useSEO: 'readonly',
+        useI18NSlug: 'readonly',
+        useStudio: 'readonly',
+        useStudios: 'readonly',
+        useMarkdownPage: 'readonly'
       }
     },
     rules: {

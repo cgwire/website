@@ -76,7 +76,7 @@ export function usePages(locale) {
       return {
         title: p.title,
         path:
-          locale.value == 'en'
+          locale.value === 'en'
             ? `/features/${p.slug}`
             : `/${locale.value}/${t('features')}/${t(`slugs.${p.slug}`)}`,
         text: extractAllFields(p.meta)
@@ -96,7 +96,7 @@ export function usePages(locale) {
       return {
         title: p.title,
         path:
-          locale.value == 'en'
+          locale.value === 'en'
             ? `/for-${p.slug}`
             : `/${locale.value}/${t('for')}-${t(`slugs.${p.slug}`)}`,
         text: extractAllFields(p.meta)
@@ -116,7 +116,7 @@ export function usePages(locale) {
       return {
         title: p.title,
         path:
-          locale.value == 'en'
+          locale.value === 'en'
             ? p.slug
             : `/${locale.value}/${t(`slugs.${p.slug}`)}`,
         text:
@@ -138,7 +138,7 @@ export function usePages(locale) {
       return {
         title: p.title,
         path:
-          locale.value == 'en'
+          locale.value === 'en'
             ? `/faq/${p.meta.slug}`
             : `/${locale.value}/${t('faq')}/${t(`slugs.${p.meta.slug}`)}`,
         text: stripMarkdown(p.body)

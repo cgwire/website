@@ -69,7 +69,7 @@ import { productions } from '~/data/productions'
 const { locale } = useI18n()
 const slug = ref('studios')
 const { pageQuery } = usePage(locale, slug)
-let { data: page } = await useAsyncData(
+const { data: page } = await useAsyncData(
   `${slug.value}-${locale.value}`,
   pageQuery,
   { watch: [slug, locale] }
