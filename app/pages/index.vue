@@ -20,6 +20,7 @@
             :poster="videoPoster"
             loop
             muted
+            playsinline
             preload="none"
             width="800"
             height="800"
