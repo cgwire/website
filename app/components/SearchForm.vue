@@ -1,24 +1,95 @@
-<script setup lang="ts">
+<template>
+  <button
+    class="search-trigger"
+    :aria-label="t('search.open')"
+    @click="openModal"
+  >
+    <search :size="18" />
+  </button>
+
+  <Teleport to="body">
+    <Transition name="modal">
+      <div v-if="isOpen" class="search-backdrop" @click.self="closeModal">
+        <div class="search-modal" role="dialog" aria-modal="true">
+          <div class="search-modal__header">
+            <search :size="20" class="search-modal__icon" />
+            <input
+              ref="inputRef"
+              v-model="query"
+              class="search-modal__input"
+              :placeholder="t('search.placeholder')"
+              type="search"
+              autocomplete="off"
+            />
+            <button
+              class="search-modal__close"
+              :aria-label="t('search.close')"
+              @click="closeModal"
+            >
+              <x :size="18" />
+            </button>
+          </div>
+
+          <div class="search-modal__body">
+            <template v-if="trimmedQuery && displayResults.length">
+              <div class="search-results-meta">
+                {{ displayResults.length }}
+                {{ t('search.resultsCount', displayResults.length) }}
+              </div>
+              <ul class="search-results">
+                <NuxtLink
+                  v-for="r in displayResults"
+                  :key="r.item.id"
+                  class="search-result"
+                  :to="r.item.path"
+                >
+                  <span class="search-result__icon"
+                    ><file-text :size="16"
+                  /></span>
+                  <div class="search-result__content">
+                    <strong class="search-result__title">{{
+                      r.item.title
+                    }}</strong>
+                    <p
+                      v-if="r.firstSnippet"
+                      class="search-result__snippet"
+                      v-html="r.firstSnippet"
+                    />
+                  </div>
+                  <chevron-right :size="16" class="search-result__arrow" />
+                </NuxtLink>
+              </ul>
+            </template>
+
+            <div v-else-if="trimmedQuery" class="search-empty">
+              {{ t('search.hint', { query }) }}
+            </div>
+
+            <div v-else class="search-hint">
+              {{ t('search.hint') }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </Transition>
+  </Teleport>
+</template>
+
+<script setup>
 import Fuse from 'fuse.js'
 import { Search, X, FileText, ChevronRight } from 'lucide-vue-next'
 
 const { locale, t } = useI18n()
-const perPage = 1000
-const currentPage = ref('0')
-const isOpen = ref(false)
-const query = ref('')
-const inputRef = ref<HTMLInputElement | null>(null)
-
 const { pagesQuery } = usePages(locale)
 
-const { data: posts, error } = await useAsyncData(
+const isOpen = ref(false)
+const query = ref('')
+const inputRef = ref(null)
+
+const { data: posts } = await useAsyncData(
   `search-data-${locale.value}`,
   pagesQuery,
-  {
-    watch: [locale],
-    server: false,
-    lazy: true
-  }
+  { watch: [locale], server: false, lazy: true }
 )
 
 const fuse = computed(
@@ -33,9 +104,15 @@ const fuse = computed(
     })
 )
 
+const trimmedQuery = computed(() => query.value.trim())
 const result = computed(() => fuse.value.search(toValue(query)))
 
-function getHighlightedSnippets(value, indices, padding = 80, minMatchLen = 3) {
+const getHighlightedSnippets = (
+  value,
+  indices,
+  padding = 80,
+  minMatchLen = 3
+) => {
   if (!value || !indices?.length) return []
   const meaningful = indices.filter(([s, e]) => e - s + 1 >= minMatchLen)
   if (!meaningful.length) return []
@@ -81,39 +158,31 @@ function getHighlightedSnippets(value, indices, padding = 80, minMatchLen = 3) {
   })
 }
 
-// Only the FIRST matching snippet per result
-const displayResults = computed(() => {
-  // console.log(result.value)
-  return result.value.flatMap(r => {
-    let firstSnippet: string | null = null
-    for (const match of r.matches ?? []) {
-      const highlights = getHighlightedSnippets(
-        match.value,
-        match.indices,
+const displayResults = computed(() =>
+  result.value.flatMap(r => {
+    for (const m of r.matches ?? []) {
+      const [firstSnippet] = getHighlightedSnippets(
+        m.value,
+        m.indices,
         80,
-        query.value.length // ← dynamic min match length
+        query.value.length
       )
-      if (highlights.length) {
-        firstSnippet = highlights[0]
-        break
-      }
+      if (firstSnippet) return [{ item: r.item, firstSnippet }]
     }
-    if (!firstSnippet) return []
-    return [{ item: r.item, firstSnippet }]
+    return []
   })
-})
+)
 
-function openModal() {
+const openModal = () => {
   isOpen.value = true
   nextTick(() => inputRef.value?.focus())
 }
 
-function closeModal() {
+const closeModal = () => {
   isOpen.value = false
   query.value = ''
 }
 
-// Close on Escape
 onMounted(() => {
   window.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeModal()
@@ -121,97 +190,19 @@ onMounted(() => {
 })
 </script>
 
-<template>
-  <button
-    class="search-trigger"
-    @click="openModal"
-    :aria-label="t('search.open')"
-  >
-    <Search :size="18" />
-    <span class="search-trigger__label">{{ t('search.placeholder') }}</span>
-  </button>
-
-  <Teleport to="body">
-    <Transition name="modal">
-      <div v-if="isOpen" class="search-backdrop" @click.self="closeModal">
-        <div class="search-modal" role="dialog" aria-modal="true">
-          <div class="search-modal__header">
-            <Search :size="20" class="search-modal__icon" />
-            <input
-              ref="inputRef"
-              v-model="query"
-              class="search-modal__input"
-              :placeholder="t('search.placeholder')"
-              type="search"
-              autocomplete="off"
-            />
-            <button
-              class="search-modal__close"
-              @click="closeModal"
-              :aria-label="t('search.close')"
-            >
-              <X :size="18" />
-            </button>
-          </div>
-
-          <div class="search-modal__body">
-            <template v-if="query.trim() && displayResults.length">
-              <div class="search-results-meta">
-                {{ displayResults.length }}
-                {{ t('search.resultsCount', displayResults.length) }}
-              </div>
-              <ul class="search-results">
-                <NuxtLink
-                  v-for="r in displayResults"
-                  :key="r.item.id"
-                  class="search-result"
-                  :to="r.item.path"
-                >
-                  <span class="search-result__icon">
-                    <FileText :size="16" />
-                  </span>
-                  <div class="search-result__content">
-                    <strong class="search-result__title">{{
-                      r.item.title
-                    }}</strong>
-                    <p
-                      v-if="r.firstSnippet"
-                      class="search-result__snippet"
-                      v-html="r.firstSnippet"
-                    />
-                  </div>
-                  <ChevronRight :size="16" class="search-result__arrow" />
-                </NuxtLink>
-              </ul>
-            </template>
-
-            <div
-              v-else-if="query.trim() && !displayResults.length"
-              class="search-empty"
-            >
-              {{ t('search.hint', { query }) }}
-            </div>
-
-            <div v-else class="search-hint">
-              {{ t('search.hint') }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </Transition>
-  </Teleport>
-</template>
-
 <style scoped>
 .search-trigger {
-  display: inline-flex;
   align-items: center;
+  border-radius: 8px;
+  display: inline-flex;
   gap: 8px;
   padding: 8px 14px;
-  background: var(--color-surface, #f4f4f5);
-  border: 1px solid var(--color-border, #e4e4e7);
-  border-radius: 8px;
+  background: transparent;
+  border: none;
   color: var(--color-muted, #71717a);
+  margin-top: 0.8em;
+  height: 50px;
+  width: 50px;
   font-size: 0.875rem;
   cursor: pointer;
   transition:
@@ -219,7 +210,7 @@ onMounted(() => {
     background 0.15s;
 }
 .search-trigger:hover {
-  background: var(--color-surface-hover, #e4e4e7);
+  background: #f4f4f4;
   border-color: var(--color-border-strong, #a1a1aa);
   color: var(--color-text, #18181b);
 }
