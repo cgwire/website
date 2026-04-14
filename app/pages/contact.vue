@@ -1,20 +1,20 @@
 <template>
   <section class="section content narrower">
     <h2 class="subtitle">
-      {{ $t('contact tagline') }}
+      {{ page.meta.contact.tagline }}
     </h2>
 
-    <h3 class="strong">{{ $t('contact emails') }}</h3>
+    <h3 class="strong">{{ page.meta.contact.emails }}</h3>
     <p>
-      {{ $t('contact sales') }}:
+      {{ page.meta.contact.sales }}:
       <a href="mailto:sales@cg-wire.com">sales@cg-wire.com</a>
     </p>
     <p>
-      {{ $t('contact support') }}:
+      {{ page.meta.contact.support }}:
       <a href="mailto:support@cg-wire.com">support@cg-wire.com</a>
     </p>
 
-    <h3 class="strong">{{ $t('contact address') }}</h3>
+    <h3 class="strong">{{ page.meta.contact.address }}</h3>
     <p>
       CGWire<br />
       84 avenue de la République<br />
@@ -22,7 +22,7 @@
       France
     </p>
 
-    <h3 class="strong">{{ $t('contact company identifier') }}</h3>
+    <h3 class="strong">{{ page.meta.contact.companyIdentifier }}</h3>
     <p>N° RCS: Paris 831 995 303</p>
   </section>
 
@@ -30,11 +30,20 @@
 </template>
 
 <script setup>
-usePageHead({
-  title: 'CGWire | ' + useI18n().t('footers link contact'),
-  titleKey: 'contact tagline',
-  descriptionKey: 'contact tagline',
-  path: 'contact',
-  image: 'assets/images/logo.png'
+const { locale } = useI18n()
+const slug = ref('contact')
+
+const { pageQuery } = usePage(locale, slug)
+
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
+
+useSEO({
+  title: 'CGWire | ' + page.value.title,
+  description: page.value.title,
+  imagePath: 'assets/images/logo.png'
 })
 </script>

@@ -3,10 +3,10 @@
     <section class="section">
       <h2>
         <span class="section-subtitle">
-          {{ $t('studios subtitle') }}
+          {{ page.meta.subtitle }}
         </span>
         <span class="section-title">
-          {{ $t('studios tagline') }}
+          {{ page.title }}
         </span>
       </h2>
     </section>
@@ -41,10 +41,10 @@
     <section class="section productions">
       <h2>
         <span class="section-subtitle">
-          {{ $t('studios productions subtitle') }}
+          {{ page.meta.productions.subtitle }}
         </span>
         <span class="section-title">
-          {{ $t('studios productions title') }}
+          {{ page.meta.productions.title }}
         </span>
       </h2>
 
@@ -66,10 +66,17 @@
 <script setup>
 import { productions } from '~/data/productions'
 
-usePageHead({
-  title: 'CGWire | Kitsu / ' + useI18n().t('studios tagline'),
-  titleKey: 'studios subtitle',
-  descriptionKey: 'studios tagline',
+const { locale } = useI18n()
+const slug = ref('studios')
+const { pageQuery } = usePage(locale, slug)
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
+useSEO({
+  title: 'CGWire | Kitsu / ' + page.value.title,
+  description: page.value.title,
   path: 'studios'
 })
 </script>

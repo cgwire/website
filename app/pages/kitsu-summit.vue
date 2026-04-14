@@ -15,17 +15,17 @@
               <span class="badge-text">KITSU SUMMIT 2026</span>
             </div>
             <h1 class="hero-title">
-              {{ $t('kitsu-summit hero title') }}
+              {{ page.meta.hero.title }}
             </h1>
             <div class="hero-details">
               <div class="detail-item">
-                <span>{{ $t('kitsu-summit date') }}</span>
+                <span>{{ page.meta.hero.date }}</span>
               </div>
               <div class="detail-item">
-                <span>{{ $t('kitsu-summit location') }}</span>
+                <span>{{ page.meta.hero.location }}</span>
               </div>
               <div class="detail-item">
-                <span>{{ $t('kitsu-summit conferences') }}</span>
+                <span>{{ page.meta.hero.conferences }}</span>
               </div>
             </div>
             <div class="hero-cta">
@@ -33,7 +33,7 @@
                 class="btn-primary btn-green"
                 href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
               >
-                {{ $t('kitsu-summit register cta') }}
+                {{ page.meta.hero.registerCta }}
               </a>
             </div>
           </div>
@@ -45,32 +45,32 @@
     <section class="about-section">
       <div class="container">
         <div class="section-header">
-          <h2>{{ $t('kitsu-summit about title') }}</h2>
-          <p>{{ $t('kitsu-summit about description') }}</p>
+          <h2>{{ page.meta.about.title }}</h2>
+          <p>{{ page.meta.about.description }}</p>
         </div>
         <div class="stats-grid">
           <div class="stat-item">
             <div class="stat-number">12</div>
             <div class="stat-label">
-              {{ $t('kitsu-summit stat conferences') }}
+              {{ page.meta.about.stats.conferences }}
             </div>
           </div>
           <div class="stat-item">
             <div class="stat-number">100+</div>
             <div class="stat-label">
-              {{ $t('kitsu-summit stat attendees') }}
+              {{ page.meta.about.stats.attendees }}
             </div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">2 {{ $t('kitsu-summit stat rooms') }}</div>
+            <div class="stat-number">2 {{ page.meta.about.stats.rooms }}</div>
             <div class="stat-label">
-              {{ $t('kitsu-summit stat duration') }}
+              {{ page.meta.about.stats.duration }}
             </div>
           </div>
         </div>
         <div class="section-header sponsors-title">
           <h2>
-            {{ $t('kitsu-summit sponsors title') }}
+            {{ page.meta.about.sponsorsTitle }}
           </h2>
         </div>
         <div class="sponsors-grid">
@@ -100,8 +100,8 @@
     <section class="conferences-section">
       <div class="container">
         <div class="section-header">
-          <h2>{{ $t('kitsu-summit conferences title') }}</h2>
-          <p>{{ $t('kitsu-summit conferences description') }}</p>
+          <h2>{{ page.meta.conferences.title }}</h2>
+          <p>{{ page.meta.conferences.description }}</p>
         </div>
 
         <div class="conferences-grid mt1">
@@ -139,20 +139,20 @@
     <section class="schedule-section">
       <div class="container">
         <div class="section-header">
-          <h2>{{ $t('kitsu-summit schedule title') }}</h2>
-          <p>{{ $t('kitsu-summit schedule description') }}</p>
+          <h2>{{ page.meta.schedule.title }}</h2>
+          <p>{{ page.meta.schedule.description }}</p>
         </div>
 
         <div class="schedule-container">
           <div class="schedule-header">
             <div class="schedule-time-header">
-              {{ $t('kitsu-summit schedule time') }}
+              {{ page.meta.schedule.time }}
             </div>
             <div class="schedule-room-header">
-              {{ $t('kitsu-summit schedule room') }} 1 🇬🇧
+              {{ page.meta.schedule.room }} 1 🇬🇧
             </div>
             <div class="schedule-room-header">
-              {{ $t('kitsu-summit schedule room') }} 2 🇫🇷
+              {{ page.meta.schedule.room }} 2 🇫🇷
             </div>
           </div>
 
@@ -225,30 +225,30 @@
       <div class="container">
         <div class="registration-content">
           <div class="registration-info">
-            <h2>{{ $t('kitsu-summit registration title') }}</h2>
-            <p>{{ $t('kitsu-summit registration description') }}</p>
+            <h2>{{ page.meta.registration.title }}</h2>
+            <p>{{ page.meta.registration.description }}</p>
             <div class="registration-benefits">
               <div class="benefit-item">
                 <span class="icon">•</span>
-                <span>{{ $t('kitsu-summit benefit access') }}</span>
+                <span>{{ page.meta.registration.benefits.access }}</span>
               </div>
               <div class="benefit-item">
                 <span class="icon">•</span>
-                <span>{{ $t('kitsu-summit benefit lunch') }}</span>
+                <span>{{ page.meta.registration.benefits.lunch }}</span>
               </div>
               <div class="benefit-item">
                 <span class="icon">•</span>
-                <span>{{ $t('kitsu-summit benefit swag') }}</span>
+                <span>{{ page.meta.registration.benefits.swag }} </span>
               </div>
               <div class="benefit-item">
                 <span class="icon">•</span>
-                <span>{{ $t('kitsu-summit benefit networking') }}</span>
+                <span>{{ page.meta.registration.benefits.networking }} </span>
               </div>
             </div>
             <div class="registration-price">
-              <span class="price-label">{{
-                $t('kitsu-summit price label')
-              }}</span>
+              <span class="price-label"
+                >{{ page.meta.registration.price.label }}
+              </span>
               <span class="price-amount">100€</span>
               <span class="price-info">+ taxes</span>
             </div>
@@ -260,16 +260,16 @@
                 class="btn-primary btn-green"
                 href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
               >
-                {{ $t('kitsu-summit register cta') }}
+                {{ page.meta.hero.registerCta }}
               </a>
             </div>
             <div class="food">
-              <h2>{{ $t('kitsu-summit food title') }}</h2>
+              <h2>{{ page.meta.registration.food.title }}</h2>
               <div>
                 <a href="https://www.instagram.com/mariejuliencuisine/">
                   <img src="~/assets/images/summit/food.jpg" />
                 </a>
-                <span>{{ $t('kitsu-summit food note') }}</span>
+                <span>{{ page.meta.registration.food.note }}</span>
               </div>
             </div>
           </div>
@@ -288,8 +288,8 @@
     <section class="access-section">
       <div class="container">
         <div class="section-header">
-          <h2>{{ $t('kitsu-summit access title') }}</h2>
-          <p>{{ $t('kitsu-summit access description') }}</p>
+          <h2>{{ page.meta.access.title }}</h2>
+          <p>{{ page.meta.access.description }}</p>
         </div>
 
         <div class="access-venue access-venue-info">
@@ -333,7 +333,7 @@
         </div>
 
         <h2 class="small">
-          {{ $t('kitsu-summit access recommended hotels') }}
+          {{ page.meta.access.recommendedHotels }}
         </h2>
 
         <div class="access-hotels">
@@ -343,7 +343,7 @@
               src="~/assets/images/community/citizen.jpg"
             /><br />
             Citizen Hotel - 100€ /
-            {{ $t('kitsu-summit access night') }}
+            {{ page.meta.access.night }}
           </a>
           <a href="https://www.lerobinetdor.com/" target="_blank">
             <img
@@ -351,7 +351,7 @@
               src="~/assets/images/community/le-robinet-dor.jpg"
             /><br />
             Le Robinet Dor - 200€ /
-            {{ $t('kitsu-summit access night') }}
+            {{ page.meta.access.night }}
           </a>
           <a href="https://staygenerator.com/hostels/paris" target="_blank">
             <img
@@ -359,7 +359,7 @@
               src="~/assets/images/community/generator.jpg"
             /><br />
             Generator Hostel - 20€-100€ /
-            {{ $t('kitsu-summit access night') }}
+            {{ page.meta.access.night }}
           </a>
         </div>
       </div>
@@ -373,14 +373,14 @@
     <section class="cta-section">
       <div class="container">
         <div class="cta-content">
-          <h2>{{ $t('kitsu-summit cta title') }}</h2>
-          <p>{{ $t('kitsu-summit cta description') }}</p>
+          <h2>{{ page.meta.cta.title }}</h2>
+          <p>{{ page.meta.cta.description }}</p>
           <div class="cta-buttons">
             <a
               class="btn-primary btn-green"
               href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
             >
-              {{ $t('kitsu-summit register cta') }}
+              {{ page.meta.hero.registerCta }}
             </a>
           </div>
         </div>
@@ -396,26 +396,26 @@
 </template>
 
 <script setup>
-import { getConferences, getSchedule } from '~/data/summit'
-
 const { t } = useI18n()
 
-definePageMeta({
-  layout: 'default',
-  title: 'Kitsu Summit 2026 - Paris',
-  description:
-    'Join us for the first Kitsu Summit in Paris on February 12, 2026. 12 conferences showcasing real-world experiences using Kitsu for animation and video game production.'
-})
+const { locale } = useI18n()
+const slug = ref('kitsu-summit')
 
-const conferences = ref(getConferences(t))
-const schedule = ref(getSchedule(t))
+const { pageQuery } = usePage(locale, slug)
 
-usePageHead({
-  title: 'CGWire | Kitsu',
-  titleKey: 'kitsu-summit title',
-  descriptionKey: 'kitsu-summit description',
-  path: 'kitsu-summit',
-  image: 'kitsu-summit.c5cf3542.png'
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
+
+const conferences = page.value.meta.conferences.conferences
+const schedule = page.value.meta.schedule.schedule
+
+useSEO({
+  title: 'CGWire | ' + page.value.title,
+  description: page.value.meta.about.description,
+  imagePath: 'kitsu-summit.png'
 })
 </script>
 

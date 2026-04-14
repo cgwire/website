@@ -1,13 +1,22 @@
 <template>
-  <KitsuFeatureBlock feature-key="schedule" />
-  <KitsuFeatureBlock feature-key="track" direction="right" color="purple" />
-  <KitsuFeatureBlock feature-key="review" color="blue" />
+  <KitsuFeatureBlock feature-key="schedule" :feature="features['schedule']" />
+  <KitsuFeatureBlock
+    feature-key="track"
+    direction="right"
+    color="purple"
+    :feature="features['track']"
+  />
+  <KitsuFeatureBlock
+    feature-key="review"
+    color="blue"
+    :feature="features['review']"
+  />
 
   <div data-aos="fade-up" class="best-supporter">
     <TextBlock
-      :subtitle="$t('kitsu supporter subtitle')"
-      :title="$t('kitsu supporter title')"
-      :content="$t('kitsu supporter schools')"
+      :subtitle="supporters.subtitle"
+      :title="supporters.title"
+      :content="supporters.schools"
     />
 
     <div class="successes">
@@ -17,12 +26,29 @@
     </div>
   </div>
 
-  <KitsuFeatureBlock feature-key="breakdown" />
-  <KitsuFeatureBlock feature-key="news" direction="right" color="purple" />
-  <KitsuFeatureBlock feature-key="api" color="blue" />
+  <KitsuFeatureBlock feature-key="breakdown" :feature="features['breakdown']" />
+  <KitsuFeatureBlock
+    feature-key="news"
+    direction="right"
+    color="purple"
+    :feature="features['news']"
+  />
+  <KitsuFeatureBlock
+    feature-key="api"
+    color="blue"
+    :feature="features['api']"
+  />
 </template>
 
-<script></script>
+<script setup>
+const props = defineProps({
+  features: Object,
+  supporters: Object
+})
+
+const features = props.features
+const supporters = props.supporters
+</script>
 
 <style scoped lang="stylus">
 body .successes

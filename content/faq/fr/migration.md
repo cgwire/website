@@ -1,5 +1,6 @@
 ---
 title: "\"Changer d'outil de suivi de production semble risqué\""
+slug: "migration"
 subtitle: "Comment Kitsu vous aide à migrer vos données"
 image: "migration-kitsu-cloud.png"
 ---

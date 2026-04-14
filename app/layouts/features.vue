@@ -1,15 +1,11 @@
 <template>
-  <div v-if="featurePage" :class="`kitsu-page ${pageKey}`">
-    <SolutionHeaderBlock :page-key="pageKey" />
+  <div v-if="page" :class="`kitsu-page ${pageKey}`">
+    <SolutionHeaderBlock :pageKey="page.slug" :header="page.meta.header" />
 
     <FeatureBlock
-      v-for="(feature, index) in features"
+      v-for="(feature, index) in page.meta.features"
       :key="index"
-      :section-key="pageKey"
-      :feature-key="feature.key"
-      :colored="feature.colored"
-      :reverted="feature.reverted"
-      :gradient="feature.gradient"
+      :feature="feature"
     />
 
     <CustomerStoryBlock
@@ -19,6 +15,7 @@
       :interviewee="customerStory.interviewee"
       :image-path="customerStory.imagePath"
       :story-url="customerStory.storyUrl"
+      :quote="customerStory.quote"
     />
 
     <Trial />
@@ -32,23 +29,27 @@ const route = useRoute()
 
 let { slug } = await useI18NSlug()
 
-const { data } = await useAsyncData(
-  slug.value,
-  () => queryCollection('pages').path(`/pages/features/${slug.value}`).first(),
+const { data: page } = await useAsyncData(
+  () => `features-${locale.value}-${slug.value}`,
+  () =>
+    queryCollection('jsonPages')
+      .where('lang', '=', locale.value)
+      .where('pageType', '=', 'features')
+      .where('slug', '=', slug.value)
+      .first(),
   { watch: [locale, slug] }
 )
-const featurePage = data.value.meta
 
-const name = featurePage.name
-const pageKey = featurePage.pageKey
-const customerStory = featurePage.customerStory
-const features = featurePage.features
+const name = page.value.meta.name
+const pageKey = page.value.slug
+const customerStory = page.value.meta.customerStory
 
-const title = 'CGWire | Kitsu / ' + t(`${pageKey} header tagline`)
-const description = t(`${pageKey} header explanation`)
+const title = 'CGWire | Kitsu / ' + name
+const description = page.value.meta.header.explanation
 const path = localePath(route.name)
 const url = `https://www.cg-wire.com${path}`
-const imgPath = featurePage.image
+const imgPath = page.value.meta.image
+
 useHead({
   title,
   meta: [

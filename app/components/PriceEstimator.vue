@@ -1,23 +1,23 @@
 <template>
   <div class="estimator">
     <div class="section-subtitle has-text-centered">
-      {{ $t('pricing calculator subtitle') }}
+      {{ pricing.calculator.subtitle }}
     </div>
     <h2 class="section-title has-text-centered">
-      {{ $t('pricing calculator title') }}
+      {{ pricing.calculator.title }}
     </h2>
 
     <div class="flexrow">
       <div class="settings">
         <Slider
-          label="pricing calculator users"
+          :label="pricing.calculator.users"
           :min="1"
           :max="300"
           v-model="nbUsers"
         />
 
         <Slider
-          label="pricing calculator months"
+          :label="pricing.calculator.users"
           :min="1"
           :max="36"
           v-model="nbMonths"
@@ -28,25 +28,25 @@
     <div class="pricing-table">
       <div class="pricing-row">
         <span class="pricing-label">
-          {{ $t('pricing calculator discount') }}
+          {{ pricing.calculator.discount }}
         </span>
         <span class="pricing-value">{{ discount }} %</span>
       </div>
       <div class="pricing-row">
         <span class="pricing-label">
-          {{ $t('pricing calculator peruser') }}
+          {{ pricing.calculator.peruser }}
         </span>
         <span class="pricing-value">{{ perUserPrice }} €</span>
       </div>
       <div class="pricing-row">
         <span class="pricing-label">
-          {{ $t('pricing calculator permonth') }}
+          {{ pricing.calculator.permonth }}
         </span>
         <span class="pricing-value">{{ price }} €</span>
       </div>
       <div class="pricing-row total">
         <span class="pricing-label">
-          {{ $t('pricing calculator total') }}
+          {{ pricing.calculator.total }}
         </span>
         <span class="pricing-value">{{ price * nbMonths }} €</span>
       </div>
@@ -55,6 +55,10 @@
 </template>
 
 <script setup>
+const props = defineProps({
+  pricing: Object
+})
+
 const name = 'PriceEstimator'
 
 const nbUsers = ref(50)

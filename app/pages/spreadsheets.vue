@@ -1,10 +1,10 @@
 <template>
   <section class="section content">
     <h2 class="subtitle">
-      {{ $t('spreadsheets tagline') }}
+      {{ page.meta.spreadsheets.tagline }}
     </h2>
     <p>
-      {{ $t('spreadsheets explanation one') }}
+      {{ page.meta.spreadsheets.explanationOne }}
     </p>
   </section>
 
@@ -15,7 +15,7 @@
 
   <section class="section content">
     <h2 class="subtitle">
-      {{ $t('spreadsheets short planning title') }}
+      {{ page.meta.spreadsheets.shortPlanningTitle }}
     </h2>
     <p class="has-text-centered">
       <a
@@ -49,7 +49,7 @@
     <p class="mt2">&nbsp;</p>
 
     <h2 class="subtitle">
-      {{ $t('spreadsheets tvshow planning title') }}
+      {{ page.meta.spreadsheets.tvshowPlanningTitle }}
     </h2>
     <p class="has-text-centered">
       <a
@@ -83,7 +83,7 @@
     <p class="mt2">&nbsp;</p>
 
     <h2 class="subtitle">
-      {{ $t('spreadsheets breakdown title') }}
+      {{ page.meta.spreadsheets.breakdownTitle }}
     </h2>
     <p class="has-text-centered">
       <a
@@ -116,7 +116,7 @@
     <p class="mt2">&nbsp;</p>
 
     <h2 class="subtitle">
-      {{ $t('spreadsheets retake title') }}
+      {{ page.meta.spreadsheets.retakeTitle }}
     </h2>
     <p class="has-text-centered">
       <a
@@ -150,11 +150,20 @@
 </template>
 
 <script setup>
-usePageHead({
-  title: 'CGWire | Kitsu / ' + useI18n().t('studios title'),
-  titleKey: 'spreadsheets tagline',
-  descriptionKey: 'spreadsheets explanation one',
-  path: 'spreadsheets',
-  image: 'spreadsheet-planning-short.1f30ad66.png'
+const { locale } = useI18n()
+const slug = ref('spreadsheets')
+
+const { pageQuery } = usePage(locale, slug)
+
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
+
+useSEO({
+  title: 'CGWire | Kitsu / ' + page.value.title,
+  description: page.value.meta.spreadsheets.explanationOne,
+  imagePath: 'spreadsheet-planning-short.png'
 })
 </script>

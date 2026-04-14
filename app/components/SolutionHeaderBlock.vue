@@ -4,17 +4,17 @@
       <div class="tile is-6 is-child content">
         <h2 class="solution-title">
           <span class="section-subtitle mt2">
-            {{ $t(pageKey + ' header subtitle') }}
+            {{ header.subtitle }}
           </span>
           <span class="section-title">
-            {{ $t(pageKey + ' header tagline') }}
+            {{ header.tagline }}
           </span>
         </h2>
         <p>
-          {{ $t(pageKey + ' header explanation') }}
+          {{ header.explanation }}
         </p>
         <p class="solution-metrics">
-          {{ $t(pageKey + ' header metrics') }}
+          {{ header.metrics }}
         </p>
       </div>
       <div class="is-6">
@@ -38,6 +38,7 @@
 
 <script setup>
 const props = defineProps({
+  header: Object,
   imagePath: String,
   isVideo: Boolean,
   pageKey: String

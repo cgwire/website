@@ -7,20 +7,20 @@
     <div class="tile has-text-centered">
       <div class="pa2 is-child mt2">
         <h2>
-          <span class="section-subtitle">{{ $t('about subtitle') }}</span>
-          <span class="section-title">{{ $t('about tagline') }}</span>
+          <span class="section-subtitle">{{ page.meta.about.subtitle }}</span>
+          <span class="section-title">{{ page.meta.about.tagline }}</span>
         </h2>
         <p>
-          {{ $t('about explanation one') }}
+          {{ page.meta.about.explanation.one }}
         </p>
         <p>
-          {{ $t('about explanation two') }}
+          {{ page.meta.about.explanation.two }}
         </p>
         <p>
-          {{ $t('about explanation three') }}
+          {{ page.meta.about.explanation.three }}
         </p>
         <p>
-          {{ $t('about explanation four') }}
+          {{ page.meta.about.explanation.four }}
         </p>
       </div>
     </div>
@@ -30,7 +30,7 @@
     <section class="section">
       <h2>
         <span class="section-title has-text-centered">{{
-          $t('about values title')
+          page.meta.about.values.title
         }}</span>
       </h2>
       <ul class="section-list tile is-ancestor">
@@ -43,10 +43,10 @@
             />
           </div>
           <h3 class="section-item-title">
-            {{ $t('about values title one') }}
+            {{ page.meta.about.values.one.title }}
           </h3>
           <p class="section-item-text">
-            {{ $t('about values text one') }}
+            {{ page.meta.about.values.one.text }}
           </p>
         </li>
         <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
@@ -58,10 +58,10 @@
             />
           </div>
           <h3 class="section-item-title">
-            {{ $t('about values title two') }}
+            {{ page.meta.about.values.two.title }}
           </h3>
           <p class="section-item-text">
-            {{ $t('about values text two') }}
+            {{ page.meta.about.values.two.text }}
           </p>
         </li>
         <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
@@ -73,16 +73,16 @@
             />
           </div>
           <h3 class="section-item-title">
-            {{ $t('about values title three') }}
+            {{ page.meta.about.values.three.title }}
           </h3>
           <p class="section-item-text">
-            {{ $t('about values text three') }}
+            {{ page.meta.about.values.three.text }}
           </p>
         </li>
       </ul>
       <h2 data-aos="fade-up">
         <span class="section-title has-text-centered">
-          {{ $t('about work title') }}
+          {{ page.meta.about.work.title }}
         </span>
       </h2>
 
@@ -92,10 +92,10 @@
             <NuxtImg src="/images/illustration-open.png" alt="" format="webp" />
           </div>
           <h3 class="section-item-title">
-            {{ $t('about work title one') }}
+            {{ page.meta.about.work.one.title }}
           </h3>
           <p class="section-item-text">
-            {{ $t('about work text one') }}
+            {{ page.meta.about.work.one.text }}
           </p>
         </li>
         <li class="section-item tile is-4 is-vertical">
@@ -107,10 +107,10 @@
             />
           </div>
           <h3 class="section-item-title">
-            {{ $t('about work title two') }}
+            {{ page.meta.about.work.two.title }}
           </h3>
           <p class="section-item-text">
-            {{ $t('about work text two') }}
+            {{ page.meta.about.work.two.text }}
           </p>
         </li>
         <li class="section-item tile is-4 is-vertical">
@@ -122,10 +122,10 @@
             />
           </div>
           <h3 class="section-item-title">
-            {{ $t('about work title three') }}
+            {{ page.meta.about.work.three.title }}
           </h3>
           <p class="section-item-text">
-            {{ $t('about work text three') }}
+            {{ page.meta.about.work.three.text }}
           </p>
         </li>
       </ul>
@@ -135,30 +135,30 @@
   <section class="section content about mt8">
     <h2 data-aos="fade-up">
       <span class="section-title has-text-centered">
-        {{ $t('about team title') }}
+        {{ page.meta.about.team.title }}
       </span>
     </h2>
     <p class="has-text-centered" data-aos="fade-up">
-      {{ $t('about team intro') }}
+      {{ page.meta.about.team.intro }}
     </p>
 
     <div class="tile is-ancestor" data-aos="fade-up">
-      <TeamMember member-key="frank" />
-      <TeamMember member-key="gwen" />
+      <TeamMember :member="page.meta.about.team.team.frank" />
+      <TeamMember :member="page.meta.about.team.team.gwen" />
     </div>
     <div class="tile is-ancestor" data-aos="fade-up">
-      <TeamMember member-key="nicolas" />
-      <TeamMember member-key="nicolaspennec" />
+      <TeamMember :member="page.meta.about.team.team.nicolas" />
+      <TeamMember :member="page.meta.about.team.team.nicolaspennec" />
     </div>
     <div class="tile is-ancestor" data-aos="fade-up">
-      <TeamMember member-key="evan" />
-      <TeamMember member-key="elsa" />
+      <TeamMember :member="page.meta.about.team.team.evan" />
+      <TeamMember :member="page.meta.about.team.team.elsa" />
     </div>
 
     <p>&nbsp;</p>
 
     <h2 class="section-title has-text-centered mt4" data-aos="fade-up">
-      {{ $t('about team advisors') }}
+      {{ page.meta.about.team.advisors }}
     </h2>
     <div class="tile is-ancestor advisors mt2" data-aos="fade-up">
       <div class="tile is-3 is-vertical ppl">
@@ -166,8 +166,8 @@
           <NuxtImg src="/images/team/ev.jpg" alt="" format="webp" />
         </div>
         <div class="ppl-id">
-          <h3 class="ppl-id-name">{{ $t('about team id ev') }}</h3>
-          <p class="ppl-id-role">{{ $t('about team role ev') }}</p>
+          <h3 class="ppl-id-name">{{ page.meta.about.team.ev.id }}</h3>
+          <p class="ppl-id-role">{{ page.meta.about.team.ev.role }}</p>
         </div>
       </div>
       <div class="tile is-3 is-vertical ppl">
@@ -175,8 +175,8 @@
           <NuxtImg src="/images/team/jc.jpg" alt="" format="webp" />
         </div>
         <div class="ppl-id">
-          <h3 class="ppl-id-name">{{ $t('about team id jc') }}</h3>
-          <p class="ppl-id-role">{{ $t('about team role jc') }}</p>
+          <h3 class="ppl-id-name">{{ page.meta.about.team.jc.id }}</h3>
+          <p class="ppl-id-role">{{ page.meta.about.team.jc.role }}</p>
         </div>
       </div>
       <div class="tile is-3 is-vertical ppl">
@@ -185,10 +185,10 @@
         </div>
         <div class="ppl-id">
           <h3 class="ppl-id-name">
-            {{ $t('about team id frank2') }}
+            {{ page.meta.about.team.frank2.id }}
           </h3>
           <p class="ppl-id-role">
-            {{ $t('about team role frank2') }}
+            {{ page.meta.about.team.frank2.role }}
           </p>
         </div>
       </div>
@@ -198,10 +198,10 @@
         </div>
         <div class="ppl-id">
           <h3 class="ppl-id-name">
-            {{ $t('about team id matthieu') }}
+            {{ page.meta.about.team.matthieu.id }}
           </h3>
           <p class="ppl-id-role">
-            {{ $t('about team role matthieu') }}
+            {{ page.meta.about.team.matthieu.role }}
           </p>
         </div>
       </div>
@@ -210,13 +210,13 @@
     <div class="has-text-centered">
       <div class="pa2 is-child mt2">
         <h2>
-          <span class="section-title">{{ $t('about design title') }}</span>
+          <span class="section-title">{{ page.meta.about.design.title }}</span>
         </h2>
         <p>
-          {{ $t('about design information') }}
+          {{ page.meta.about.design.information }}
         </p>
         <p>
-          {{ $t('about blender information') }}
+          {{ page.meta.about.blender.information }}
         </p>
       </div>
     </div>
@@ -232,12 +232,21 @@
 </template>
 
 <script setup>
-usePageHead({
-  title: 'CGWire | ' + useI18n().t('about tagline'),
-  titleKey: 'about tagline',
-  descriptionKey: 'about explanation one',
-  path: 'about',
-  image: 'about.107a8a01.png'
+const { locale } = useI18n()
+const slug = ref('about')
+
+const { pageQuery } = usePage(locale, slug)
+
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
+
+useSEO({
+  title: 'CGWire | ' + page.value.meta.about.tagline,
+  descriptionKey: page.value.meta.about.explanation.one,
+  imagePath: 'about.png'
 })
 </script>
 

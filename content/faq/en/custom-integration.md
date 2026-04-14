@@ -1,5 +1,6 @@
 ---
 title: "\"Will It Fit Into Our Pipeline?\""
+slug: "custom-integration"
 subtitle: "How To Integrate Kitsu"
 image: "custom-integration-kitsu.png"
 ---

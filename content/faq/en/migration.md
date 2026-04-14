@@ -1,5 +1,6 @@
 ---
 title: "\"Switching Production Tracking Tools Sounds Risky\""
+slug: "migration"
 subtitle: "How Kitsu Helps You Migrate Your Data"
 image: "migration-kitsu-cloud.png"
 ---

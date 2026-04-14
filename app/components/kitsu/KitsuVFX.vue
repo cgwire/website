@@ -1,13 +1,22 @@
 <template>
-  <KitsuFeatureBlock feature-key="schedule" />
-  <KitsuFeatureBlock feature-key="forecast" direction="right" color="purple" />
-  <KitsuFeatureBlock feature-key="track" color="blue" />
+  <KitsuFeatureBlock feature-key="schedule" :feature="features['schedule']" />
+  <KitsuFeatureBlock
+    feature-key="forecast"
+    direction="right"
+    color="purple"
+    :feature="features['forecast']"
+  />
+  <KitsuFeatureBlock
+    feature-key="track"
+    color="blue"
+    :feature="features['track']"
+  />
 
   <div data-aos="fade-up" class="best-supporter">
     <TextBlock
-      :subtitle="$t('kitsu supporter subtitle')"
-      :title="$t('kitsu supporter title')"
-      :content="$t('kitsu supporter vfx')"
+      :subtitle="supporters.subtitle"
+      :title="supporters.title"
+      :content="supporters.vfx"
     />
     <div class="successes">
       <NuxtImg src="/images/kitsu/les-trois-mousquetaires.png" format="webp" />
@@ -16,15 +25,28 @@
     </div>
   </div>
 
-  <KitsuFeatureBlock feature-key="review" />
+  <KitsuFeatureBlock feature-key="review" :feature="features['review']" />
   <KitsuFeatureBlock
     feature-key="timesheets"
     direction="right"
     color="purple"
+    :feature="features['timesheets']"
   />
-  <KitsuFeatureBlock feature-key="news" color="blue" />
+  <KitsuFeatureBlock
+    feature-key="news"
+    color="blue"
+    :feature="features['news']"
+  />
 </template>
 
-<script></script>
+<script setup>
+const props = defineProps({
+  features: Object,
+  supporters: Object
+})
+
+const features = props.features
+const supporters = props.supporters
+</script>
 
 <style lang="stylus" scoped></style>

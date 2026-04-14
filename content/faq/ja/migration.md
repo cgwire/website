@@ -1,5 +1,6 @@
 ---
 title: "\"制作管理ツールの切り替えはリスクが高そう\""
+slug: "migration"
 subtitle: "Kitsuがデータ移行をサポートする方法"
 image: "migration-kitsu-cloud.png"
 ---

@@ -7,14 +7,14 @@
       <div class="flexrow-item">
         <h2>
           <span class="section-subtitle">
-            {{ $t('community subtitle') }}
+            {{ page.meta.community.subtitle }}
           </span>
           <span class="section-title">
-            {{ $t('community tagline') }}
+            {{ page.meta.community.tagline }}
           </span>
         </h2>
         <p>
-          {{ $t('community explanation one') }}
+          {{ page.meta.community.explanationOne }}
         </p>
       </div>
     </div>
@@ -25,20 +25,20 @@
       <div class="flexrow-item description flexrow-filler">
         <h2>
           <span class="section-subtitle">
-            {{ $t('community chat subtitle') }}
+            {{ page.meta.community.chat.subtitle }}
           </span>
           <span class="section-title">
-            {{ $t('community chat title') }}
+            {{ page.meta.community.chat.title }}
           </span>
         </h2>
         <p>
           <a href="https://discord.gg/kitsu-community">
-            {{ $t('community slack explanation') }}
+            {{ page.meta.community.chat.explanation }}
           </a>
         </p>
         <p class="community-cta">
           <a class="community-link" href="https://discord.com/invite/VbCxtKN">
-            {{ $t('community slack cta') }} <span> &#8594;</span>
+            {{ page.meta.community.chat.cta }} <span> &#8594;</span>
           </a>
         </p>
       </div>
@@ -54,62 +54,25 @@
     </div>
   </section>
 
-  <!--section class="section content community community-info">
-  <div
-    class="flexrow"
-    data-aos="fade-up"
-  >
-    <div class="flexrow-item description flexrow-filler">
-      <h2>
-        <span class="section-subtitle">
-          {{ $t('community meetup subtitle') }}
-        </span>
-        <span class="section-title">
-          {{ $t('community meetup title') }}
-        </span>
-      </h2>
-      <p>
-        <a href="https://www.meetup.com/Infrastructure-et-film-danimation/">
-          {{ $t('community meetup explanation') }}
-        </a>
-      </p>
-      <p class="community-cta">
-        <a class="community-link" href="https://www.meetup.com/Infrastructure-et-film-danimation/">
-          {{ $t('community meetup cta') }} <span> &#8594;</span>
-        </a>
-      </p>
-    </div>
-    <div class="flexrow-item illustration">
-      <a class="" href="https://www.meetup.com/Infrastructure-et-film-danimation/">
-        <NuxtImg src="/images/community/meetupcom.png" alt="Meetup.com Group" /><br />
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section content community community-info">
-  <hr />
-</section-->
-
   <section class="section content community community-info" data-aos="fade-up">
     <div class="flexrow">
       <div class="flexrow-item description flexrow-filler">
         <h2>
           <span class="section-subtitle">
-            {{ $t('community github subtitle') }}
+            {{ page.meta.community.github.subtitle }}
           </span>
           <span class="section-title">
-            {{ $t('community github title') }}
+            {{ page.meta.community.github.title }}
           </span>
         </h2>
         <p>
           <a href="https://github.com/cgwire/kitsu">
-            {{ $t('community github explanation') }}
+            {{ page.meta.community.github.explanation }}
           </a>
         </p>
         <p class="community-cta">
           <a class="community-link" href="https://github.com/cgwire/kitsu">
-            {{ $t('community github cta') }}<span> &#8594;</span>
+            {{ page.meta.community.github.cta }}<span> &#8594;</span>
           </a>
         </p>
       </div>
@@ -130,20 +93,20 @@
       <div class="flexrow-item description flexrow-filler">
         <h2>
           <span class="section-subtitle">
-            {{ $t('community feedback subtitle') }}
+            {{ page.meta.community.feedback.subtitle }}
           </span>
           <span class="section-title">
-            {{ $t('community feedback title') }}
+            {{ page.meta.community.feedback.title }}
           </span>
         </h2>
         <p>
           <a href="https://cgwire.canny.io">
-            {{ $t('community feedback explanation') }}
+            {{ page.meta.community.feedback.explanation }}
           </a>
         </p>
         <p class="community-cta">
           <a class="community-link" href="https://cgwire.canny.io">
-            {{ $t('community feedback cta') }} <span> &#8594;</span>
+            {{ page.meta.community.feedback.cta }} <span> &#8594;</span>
           </a>
         </p>
       </div>
@@ -164,15 +127,15 @@
       <div class="flexrow-item description flexrow-filler">
         <h2>
           <span class="section-subtitle">
-            {{ $t('community translate subtitle') }}
+            {{ page.meta.community.translate.subtitle }}
           </span>
           <span class="section-title">
-            {{ $t('community translate title') }}
+            {{ page.meta.community.translate.title }}
           </span>
         </h2>
         <p>
           <a href="https://github.com/cgwire/kitsu">
-            {{ $t('community translate explanation') }}
+            {{ page.meta.community.translate.explanation }}
           </a>
         </p>
         <p class="community-cta">
@@ -180,7 +143,7 @@
             class="community-link"
             href="https://poeditor.com/join/project?hash=fpUejpWDVo"
           >
-            {{ $t('community translate cta') }}
+            {{ page.meta.community.translate.cta }}
             <span> &#8594;</span>
           </a>
         </p>
@@ -201,12 +164,21 @@
 </template>
 
 <script setup>
-usePageHead({
-  title: 'CGWire | ' + useI18n().t('header title community'),
-  titleKey: 'community header tagline',
-  descriptionKey: 'casting-management explanation one',
-  path: 'community',
-  image: 'meetup.af7c0c6c.jpg'
+const { locale } = useI18n()
+const slug = ref('community')
+
+const { pageQuery } = usePage(locale, slug)
+
+let { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
+
+useSEO({
+  title: 'CGWire | ' + page.value.meta.community.tagline,
+  description: page.value.meta.community.explanationOne,
+  image: 'meetup.jpg'
 })
 </script>
 

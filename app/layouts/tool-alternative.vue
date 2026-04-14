@@ -40,11 +40,13 @@ const route = useRoute()
 
 let { slug } = await useI18NSlug()
 
-let { data: comparison } = await useAsyncData(
-  `comparison-${locale.value}-${slug.value}`,
+const { data: comparison } = await useAsyncData(
+  () => `alternatives-${locale.value}-${slug.value}`,
   () =>
-    queryCollection('alternatives')
-      .path(`/alternatives/${locale.value}/${slug.value}`)
+    queryCollection('jsonPages')
+      .where('lang', '=', locale.value)
+      .where('pageType', '=', 'alternatives')
+      .where('slug', '=', slug.value)
       .first(),
   { watch: [locale, slug] }
 )

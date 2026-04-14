@@ -1,5 +1,6 @@
 ---
 title: "\"チームは新しいツールを導入しない\""
+slug: "change-management"
 subtitle: "Kitsuがトレーニングと導入をサポートする方法"
 image: "change-management-kitsu.png"
 ---
