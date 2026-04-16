@@ -1,72 +1,102 @@
 ---
-title: "\"We Can't Put Our IP In The Cloud\""
+title: "\"We Can’t Put Our IP In The Cloud\""
 slug: "ip-protection"
-subtitle: "How Kitsu Handles Security & Data Control For IP Protection"
+subtitle: "A Practical Look At How Kitsu Protects Your Work Without Slowing You Down"
 image: "security-kitsu-cloud.png"
 ---
 
-## Data Ownership
+Every studio has had this conversation.
 
-You own 100% of your data. Always. Your projects, assets, comments, previews, and production metadata remain your exclusive property when using Kitsu Cloud.
+A producer suggests moving production tracking to the cloud. Someone raises the concern immediately: what about our IP?
 
-We never claim ownership over your content, never reuse it, and never analyze it for commercial purposes. Your IP stays yours — contractually and technically.
+It is a valid concern. In animation and VFX, your data is the production. Losing control over it is not an option.
 
-At any time, you can export your data. No lock-in. No barriers. Full portability.
+Kitsu was built by people who have worked in production. The goal is not to push you into a system, but to give you control without adding friction to your pipeline.
 
-## Infrastructure & Hosting (France-Based Servers)
+## You Keep Ownership.
 
-Kitsu Cloud is operated by CGWire and hosted in France on secure infrastructure provided by OVHcloud.
+With Kitsu, your data is not part of someone else’s ecosystem. It stays yours.
 
-Hosting in France means your data benefits from strong European privacy protections and GDPR compliance standards.
+Everything you create in production lives inside your project space: assets, shots, comments, reviews, schedules, and time logs are all tied to your studio.
 
-Our infrastructure follows modern cloud best practices for reliability, redundancy, and isolation. Data is encrypted in transit via HTTPS and encrypted at rest on secure servers.
+If you need to leave, you export your data. No negotiation, no proprietary format that locks you in.
 
-By hosting within France and the European Union, we ensure high standards of data sovereignty, privacy, and regulatory protection.
+This matters more than it sounds. Many studios only realize the cost of lock in when they try to switch tools mid production.
 
-## Access Control & Permissions
+## Cloud Does Not Mean Loss Of Control
 
-Kitsu provides granular role-based permissions, allowing you to control exactly who can view, edit, review, or export production data.
+The fear usually comes from not knowing where the data lives or who can access it.
 
-You can define permissions per project, per department, or per user role — ensuring that sensitive client projects remain compartmentalized.
+Kitsu Cloud is hosted in France under strict European data protection regulations. Data is encrypted, both in transit and at rest. Access is controlled and monitored.
 
-Strong password policies and secure authentication flows are enforced to prevent unauthorized access.
+More importantly, Kitsu lets you define who sees what.
 
-## Cloud or On-Premise — Your Choice
+You can restrict access per project, per department, or per role. For example, you can keep a client project fully isolated so only the assigned team can see it. At the same time, your internal R&D assets can remain accessible to a different group.
 
-Kitsu is open-source. That means full transparency. You can audit the codebase and understand exactly how your data is handled.
+This is how most studios already think about production. Kitsu simply enforces it at the system level.
 
-If your studio requires complete internal hosting, Kitsu can be deployed on-premise with minimal overhead.
+## If You Need Full Isolation, You Have It
 
-Kitsu Cloud is ideal for distributed teams who want zero infrastructure maintenance. On-premise is ideal for studios with strict internal policies. The choice is yours.
+Some studios cannot use cloud solutions at all. This is common with broadcasters or high profile IP.
 
-## Backups & Disaster Recovery
+Kitsu does not force a compromise here.
 
-Automated backups are performed regularly to protect your production data.
+You can run it on your own infrastructure. Same tool, same workflow, fully inside your network. The CGWire team can handle deployment and monitoring if needed, or your internal team can manage it.
 
-Redundant systems reduce the risk of downtime and data loss.
+Because Kitsu is open source, there is no black box. Your technical team can inspect how everything works, integrate it into your pipeline, and adapt it if required.
 
-Our disaster recovery processes are designed to restore services quickly in the unlikely event of infrastructure failure.
+This is a key difference from closed production trackers where you have to trust what you cannot see.
 
-## IP Protection & Confidential Productions
+## Security That Fits Production Reality
 
-We understand the realities of animation and VFX production: NDAs, broadcaster requirements, and high-value intellectual property.
+Security is not only about servers. It's also about how people actually work.
 
-CGWire applies strict internal security practices, including secure SSH key management, encrypted communication channels, restricted production access, and infrastructure monitoring.
+Artists need to publish quickly. Supervisors need to review shots without friction. Production needs real time visibility.
 
-Your client’s trust is critical. Our security approach is built to help you maintain it.
+Kitsu is designed so security does not slow any of that down.
 
-## Compliance & Best Practices
+Artists can publish previews directly from their DCC tools. Reviews happen inside structured playlists with clear access control. Feedback stays attached to the right version.
 
-Our France-based hosting ensures compliance with European data protection regulations (GDPR), among the strictest privacy frameworks in the world.
+At the same time, role-based permissions ensure that only the right people can access sensitive shots or assets.
 
-We follow industry-standard security best practices in infrastructure management, encryption, and operational security.
+Rather than adding extra steps, we help you replace informal and risky workflows with something structured.
 
-Security is not a marketing checkbox for us — it is part of how we design, host, and operate Kitsu Cloud every day.
+## Backups And Recovery Without Extra Work
 
-## Why Studios Trust Kitsu Cloud
+Every studio has a backup strategy. Not every studio tests it.
 
-Kitsu is developed and maintained by CGWire, a company specialized in production tracking solutions for animation and VFX studios.
+With Kitsu Cloud, backups are automatic and handled at the infrastructure level. If something goes wrong, recovery processes are already in place.
 
-Because Kitsu is open-source, there is no black box. No hidden processes. No proprietary lock-in.
+For on premise setups, the same logic applies. You can integrate Kitsu into your existing backup systems and keep full control over how redundancy is handled.
 
-You get the flexibility of open software with the reliability of a managed cloud service hosted in France under strong privacy protections.
+This removes a common weak point where production data is scattered across multiple tools without a consistent safety net.
+
+## Built By People Who Understand The Stakes
+
+CGWire is not a generic software vendor. It is a small team focused entirely on production workflows for animation, VFX, and games.
+
+That focus shows in how Kitsu is designed.
+
+The platform isn't just a database. It is a live hub where tasks, assets, reviews, schedules, and communication are connected. That centralization reduces the number of places where sensitive data is duplicated or lost.
+
+Studios in more than 50 countries use Kitsu in real production environments. Not as an experiment, but as a core part of their pipeline.
+
+## The Takeaway
+
+If your concern is losing control of your IP, avoiding the cloud entirely is not the only solution.
+
+What matters is:
+
+* who owns the data
+* where it is hosted
+* how access is controlled
+* whether you can leave without friction
+* whether the tool adapts to your pipeline
+
+Kitsu addresses these points directly.
+
+You can use it in the cloud with strong safeguards and no infrastructure overhead. Or you can run it fully on premise with complete isolation.
+
+Either way, you are not giving up control.
+
+And in production, that usually makes the difference between a system that slows the team down and one that actually helps the work move forward.

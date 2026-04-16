@@ -132,6 +132,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       failOnError: false
+      // routes: ['/pages.json']
     }
   },
   experimental: {
