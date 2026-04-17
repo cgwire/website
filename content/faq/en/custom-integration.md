@@ -9,7 +9,7 @@ image: "custom-integration-kitsu.png"
 
 Let’s address the real concern behind this question.
 
-You are not just choosing a tool. You are protecting a pipeline that your team has built over time. It includes your habits, your tools, your shortcuts, and all the small decisions that kept production moving throughout the years.
+Adopting a new tool implies protecting a pipeline that your team has built over time. It includes your habits, your tools, your shortcuts, and all the small decisions that kept production moving throughout the years.
 
 Kitsu is not here to replace that.
 
@@ -25,32 +25,30 @@ Kitsu centralizes that knowledge and makes it fully accessible through a REST AP
 
 Everything you manage in the interface is available programmatically:
 
-* Projects, episodes, sequences
-* Assets and shots with their relationships
-* Tasks, statuses, and assignments
-* Comments, previews, and review notes
-* Time tracking, budget, and production metrics
+- Projects, episodes, sequences
+- Assets and shots with their relationships
+- Tasks, statuses, and assignments
+- Comments, previews, and review notes
+- Time tracking, budget, and production metrics
 
 Your team can focus on automating real production tasks instead of manually syncing data.
-
-For example, generating live production reports for clients without exporting data, or connecting your render farm to automatically update task statuses when jobs complete.
 
 ## Python Integration That Fits Pipeline Reality
 
 Most animation pipelines already rely heavily on Python.
 
-Kitsu provides a dedicated Python client that allows your technical team to interact with production data in an efficient way.
+Kitsu provides a dedicated Python SDK client that allows your technical team to interact with production data in an efficient way.
 
 Instead of writing custom HTTP requests, your TDs can:
 
-* Create and organize assets and shots directly from pipeline tools
-* Update task statuses based on pipeline events
-* Sync data between Kitsu and internal systems
-* Build custom automation for reviews, publishes, or reporting
+- Create and organize assets and shots directly from pipeline tools
+- Update task statuses based on pipeline events
+- Sync data between Kitsu and internal systems
+- Build custom automation for reviews, publishes, or reporting
 
 This reduces the amount of glue code your team has to maintain and makes integrations easier to scale as your production grows.
 
-The best part? Our developer tools are well documented.
+Our developer tools are well documented.
 
 ## Connect Without Disrupting Artists
 
@@ -58,10 +56,10 @@ One of the biggest risks when introducing a new system is disrupting artists.
 
 Kitsu avoids that by integrating with Digital Content Creation tools instead of replacing them:
 
-* Artists can publish work directly from their software
-* Renders and previews can be linked automatically to the right tasks
-* Versions are tracked without additional manual steps
-* Status updates can be triggered by pipeline actions
+- Artists can publish work directly from their software
+- Renders and previews can be linked automatically to the right tasks
+- Versions are tracked without additional manual steps
+- Status updates can be triggered by pipeline actions
 
 Artists stay focused on their work, and your production stays consistent and traceable.
 
@@ -69,24 +67,24 @@ Artists stay focused on their work, and your production stays consistent and tra
 
 A production tracker should not feel like extra work.
 
-Kitsu acts as a live collaboration hub where updates happen as part of the workflow:
+Kitsu is a live collaboration hub:
 
-* Task changes trigger notifications automatically
-* Comments and previews are attached to the right context
-* The activity feed shows what is happening across the production in real time
+- Task changes trigger notifications automatically
+- Comments and previews are attached to the right context
+- The activity feed shows what is happening across the production in real time
 
-For a distributed team, this replaces a lot of back and forth and reduces the need to constantly check multiple tools.
+For a distributed team, it cuts a lot of back and forth between multiple tools.
 
 ## Automation That Matches Production Needs
 
 As productions scale, manual steps become a bottleneck.
 
-Kitsu allows you to automate key events using webhooks and API integrations. For example:
+Kitsu allows you to automate key events using webhooks and API integrations:
 
-* Trigger a review process when a task reaches a specific status
-* Notify supervisors when new versions are available
-* Sync approved shots with downstream departments
-* Update dashboards and budget forecasts in real time
+- Trigger a review process when a task reaches a specific status
+- Notify supervisors when new versions are available
+- Sync approved shots with downstream departments
+- Update dashboards and budget forecasts in real time
 
 ## Flexible Enough for Different Studio Structures
 
@@ -94,14 +92,14 @@ Every studio organizes work differently.
 
 Kitsu reflects that by allowing you to configure:
 
-* Task types and workflows per department
-* Status pipelines that match your validation process
-* Resource allocation and scheduling
-* Time tracking and productivity monitoring
+- Task types and workflows per department
+- Status pipelines that match your validation process
+- Resource allocation and scheduling
+- Time tracking and productivity monitoring
 
 You are not forced into a rigid structure. You adapt the tool to your production logic.
 
-For studios that need more advanced setups, Kitsu can be extended through its API rather than modified at its core to keep your system maintainable over time.
+For studios that need more advanced setups, Kitsu can be extended through its API instead of modifying its core to keep your system maintainable over time.
 
 ## Transparent and Reliable by Design
 
@@ -115,6 +113,6 @@ At the same time, CGWire provides managed cloud hosting and custom infrastructur
 
 Kitsu is used by hundreds of studios across different sizes and production types. Some use it out of the box to organize tasks and reviews. Others build advanced pipelines on top of it using its API and integrations.
 
-In both cases, the approach stays the same. You do not rebuild your pipeline. You connect your pipeline to a system that centralizes data, improves visibility, and reduces friction between departments.
+In both cases, the approach stays the same. You do not rebuild your pipeline. You connect it to a system that centralizes data, improves visibility, and reduces friction between departments.
 
 That is what makes Kitsu fit.

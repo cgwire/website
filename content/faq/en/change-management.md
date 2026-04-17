@@ -9,9 +9,7 @@ image: "change-management-kitsu.png"
 
 Most studios fail at making new tools stick. Artists ignore the tracker and keep notes locally. Supervisors give feedback in chat instead of a centralized system. Producers rebuild reports in spreadsheets. New hires learn three different workflows instead of sticking to one.  
 
-The problem is fragmentation.
-
-Kitsu was built to solve that exact issue by creating a system people actually want to use without being told to do so.
+Kitsu solves fragmentation with a system people actually want to use without being told to do so.
 
 ## Built for the Way Animation Teams Actually Work
 
@@ -41,9 +39,7 @@ An animator finishes a shot. They upload directly from their DCC tool. The super
 
 Every role in a studio interacts with production differently.
 
-Kitsu takes that into account.
-
-Instead of generic training, onboarding is aligned with real responsibilities in your studio:
+Instead of generic training, Kitsu's onboarding is aligned with real responsibilities in your studio:
 
 - Producers learn planning, scheduling, and budget forecasting  
 - Supervisors focus on reviews, approvals, and team coordination  
@@ -56,7 +52,7 @@ We help each person become productive quickly.
 
 Switching everything overnight rarely works.
 
-Studios that succeed with Kitsu usually take a pragmatic approach:
+Studios that succeed with Kitsu take a pragmatic approach:
 
 - Start with one production or a pilot project  
 - Introduce it to a single department  
@@ -86,7 +82,7 @@ Adoption does not stop after onboarding.
 
 Studios evolve. Teams change. New people join.
 
-Kitsu supports that with:
+Kitsu prevents knowledge silos with:
 
 - Clear documentation and practical examples  
 - A searchable knowledge base  
@@ -98,7 +94,7 @@ New hires can get up to speed without relying entirely on senior staff to reduce
 
 Every studio has its own way of working.
 
-Kitsu is designed to fit into that:
+Kitsu enables pipeline artists to extend the core features:
 
 - Use the Python API to automate repetitive tasks  
 - Connect your DCC tools to publish directly into the system  
