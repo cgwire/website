@@ -1,100 +1,112 @@
 ---
 title: "\"Switching Production Tracking Tools Sounds Risky\""
 slug: "migration"
-subtitle: "How Kitsu Helps You Migrate Your Data"
+subtitle: "A Practical Approach to Moving Your Studio to Kitsu"
 image: "migration-kitsu-cloud.png"
 ---
 
-## Switching Without Disruption
+## Switching Without Slowing Down Production
 
-Changing your production tracking system can feel dangerous. Deadlines are tight. Teams are busy. The last thing you need is operational chaos.
+Every studio hesitates before changing its production tracker. You have deadlines, artists in the middle of shots, and producers relying on stable data every day.
 
-Kitsu migrations are designed to avoid disruption. We help you transition progressively, project by project if needed, so your team keeps delivering while the system changes underneath — safely and smoothly.
+A poorly handled migration can create confusion and cost real money.
 
-No big-bang switch. No frozen production weeks.
+Kitsu is built with that reality in mind. 
 
-## Structured Migration Plan
+We do not force a sudden change. We let studios transition at their own pace while production goes on. 
 
-We don’t just give you documentation and wish you luck.
+You can move one project at a time, or even one department at a time, without interrupting deliveries.
 
-Every migration follows a structured plan:
+## A Migration Plan That Matches How Studios Actually Work
 
-1. Audit your current setup (projects, workflows, user roles).
-2. Map your pipeline to Kitsu’s structure.
-3. Import data and validate integrity.
-4. Train production leads and supervisors.
-5. Roll out to artists.
-6. Monitor and adjust.
+You are not expected to figure everything out alone. Migration can be handled in collaboration between your team and CGWire.
 
-This process typically takes days or a few weeks depending on studio size — not months.
+The process is grounded in real production workflows:
 
-## Importing Your Existing Data
+1. We review your current setup including projects, task structures, and roles
+2. We translate your pipeline into Kitsu without forcing unnecessary changes
+3. We import your data and verify that everything is usable
+4. We train supervisors first so they can guide their teams
+5. We roll out to artists with clear and simple task views
+6. We adjust your instance based on real usage, not assumptions
 
-Your historical data matters. We help you preserve it.
+For most studios, it takes days to a few weeks depending on complexity.
 
-Kitsu supports structured imports (CSV and API-based imports), making it possible to migrate:
+## Keeping Your Data Intact and Usable
 
-- Projects and episodes
-- Shots and assets
-- Task structures
-- Statuses and assignments
-- Comments and notes
+Your production data is your history, your decisions, your communication.
 
-If you are migrating from another production tracking solution, we help you extract and transform your data so nothing critical is lost.
+Kitsu allows you to import structured data through CSV or API, so you can bring over:
 
-## Parallel Run (If You Want It)
+- Projects, sequences, episodes
+- Team members and clients
+- Assets and shots with their versions
+- Task structures and assignments
+- Status workflows
+- Comments and production notes
 
-For studios that prefer zero risk, we can support a parallel phase.
+If you are coming from another tool, Kitsu helps you extract and reorganize that data so it fits cleanly.
 
-Run your old system alongside Kitsu for a short transition period. Validate reports. Compare outputs. Ensure producers are comfortable.
+## Running Both Systems If You Need Reassurance
 
-Once your team is confident, you switch fully — with no surprises.
+Some studios prefer to validate everything before committing.
 
-## Training That Accelerates Adoption
+You can run your existing system alongside Kitsu for a short period. During that time, your producers can compare progress reports, task updates, artist assignments, and time tracking data. It gives your team confidence that nothing is missing or misaligned. 
 
-Most resistance to switching tools comes from fear of complexity.
+Once everything matches expectations, switching fully is an easy decision.
 
-Kitsu is designed to be intuitive for artists and production teams. Still, we provide:
+## Training That Respects Each Role
 
-- Live onboarding sessions
-- Role-based training (producers, supervisors, artists)
-- Documentation and video tutorials
-- Direct support during rollout
+Adoption usually fails when tools feel disconnected from daily work.
 
-The goal is simple: everyone should feel comfortable from day one.
+Kitsu avoids that by focusing on how different roles actually operate:
 
-## Pipeline & API Support
+- Artists get clear task lists and simple update workflows
+- Supervisors focus on reviews, annotations, and approvals
+- Producers track schedules, quotas, and budgets
 
-If your studio has a Pipeline TD or technical team, Kitsu’s REST API and Python client make integration straightforward.
+Training is adapted to each role with live sessions, practical examples, and direct support during rollout. We make sure each person understands how Kitsu helps them do their job faster.
 
-We assist in connecting Kitsu to:
+## Integration Without Rebuilding Your Pipeline
 
-- DCC tools
-- Render farm systems
-- Internal asset management
-- Custom review pipelines
+Most studios already have a working pipeline. Their concern is whether a new tool will force a rebuild.
 
-You don’t need to rebuild your pipeline. Kitsu adapts to it.
+Kitsu is designed to fit in, not replace.
 
-## No Vendor Lock-In
+With its REST API and Python client, your technical team can connect it to:
 
-Because Kitsu is open-source, you are never trapped.
+- DCC tools for publishing previews directly
+- Asset pipelines for production management
+- Render farm systems for tracking outputs
+- Internal asset systems if you already have one
+- Review workflows already used by supervisors
 
-You can export your data at any time. You can move to on-premise hosting if your policies change. You can audit the codebase.
+An artist can publish a playblast from their DCC tool and have it automatically appear in Kitsu with the correct task and version without manual upload.
 
-Switching to Kitsu should reduce risk — not create new dependency.
+## Open Source Means Control, Not Dependency
 
-## Designed for Real Studios
+Switching tools should not create a new dependency.
 
-We understand animation and VFX production constraints: delivery pressure, distributed teams, tight budgets.
+Kitsu being open source gives you options:
 
-That’s why our migration approach prioritizes:
+- You can host it in the cloud or on your own infrastructure
+- You can access and audit your data at any time
+- You can adapt it if your pipeline evolves
 
-- Stability
-- Predictability
-- Clear timelines
-- Human support
+This is particularly important for studios working with clients who require strict data control or specific infrastructure setups.
 
-Switching production management tools doesn’t have to be painful.
+## Built by People Who Understand Production Reality
 
-With Kitsu, it’s structured, supported, and safe.
+CGWire is not a generic software vendor. The team combines software development with production experience and works closely with studios across different sizes and pipelines.
+
+We operate transparently, improve the product continuously, and focus on making production management less complex.
+
+## A Safer Way to Move Forward
+
+Switching production tracking tools always carries some level of risk. The difference comes from how that risk is managed.
+
+With Kitsu, you can move progressively, keep production running, preserve your data, and we keep on supporting your team at every step.
+
+Keep in mind that if your current system is creating friction between departments, staying with it also has a cost.
+
+Migrating to Kitsu is not about changing tools for the sake of it: we give your studio a system that scales with your projects and supports your team without adding unnecessary complexity.

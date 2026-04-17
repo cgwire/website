@@ -1,122 +1,118 @@
 ---
 title: "\"Will It Fit Into Our Pipeline?\""
 slug: "custom-integration"
-subtitle: "How To Integrate Kitsu"
+subtitle: "How Kitsu Adapts to Real Production Pipelines"
 image: "custom-integration-kitsu.png"
 ---
 
-## Built for Pipeline Teams
+## Built to Work With How You Actually Produce
 
-Kitsu is not a closed production tracker.
+Let’s address the real concern behind this question.
 
-It is built with technical teams in mind — Pipeline TDs, CTOs, and technical directors who need structure, flexibility, and clean access to production data.
+Adopting a new tool implies protecting a pipeline that your team has built over time. It includes your habits, your tools, your shortcuts, and all the small decisions that kept production moving throughout the years.
 
-Whether you are running a lightweight pipeline or a fully automated production environment, Kitsu is designed to integrate — not replace everything you have built.
+Kitsu is not here to replace that.
 
----
+It is designed to sit at the center of your production as a shared source of truth while letting your existing tools continue to do their job.
 
-## A Clean, Well-Documented REST API
+Whether you run a lightweight setup or a structured pipeline with automation, you can keep what works. But we'll add what is missing.
 
-Kitsu provides a fully documented REST API that exposes all core production data:
+## Your Production Data, Fully Accessible
 
-- Projects
-- Episodes and sequences
-- Shots and assets
-- Tasks and statuses
-- Assignments
-- Comments and previews
-- Time logs
+In many studios, production data ends up fragmented across spreadsheets, tracking tools, and internal scripts.
 
-Everything available in the UI is accessible via API.
+Kitsu centralizes that knowledge and makes it fully accessible through a REST API.
 
-This allows you to automate reporting, trigger render jobs, sync with internal databases, or build custom dashboards.
+Everything you manage in the interface is available programmatically:
 
----
+- Projects, episodes, sequences
+- Assets and shots with their relationships
+- Tasks, statuses, and assignments
+- Comments, previews, and review notes
+- Time tracking, budget, and production metrics
 
-## Python Client for Fast Integration
+Your team can focus on automating real production tasks instead of manually syncing data.
 
-For technical teams working in Python-based environments, Kitsu provides a dedicated Python client.
+## Python Integration That Fits Pipeline Reality
 
-This makes it easy to:
+Most animation pipelines already rely heavily on Python.
 
-- Query production data
-- Update task statuses automatically
-- Create shots and assets programmatically
-- Connect render farms or review systems
-- Synchronize with internal tools
+Kitsu provides a dedicated Python SDK client that allows your technical team to interact with production data in an efficient way.
 
-Instead of building raw HTTP calls, your TDs can work with a clean, production-ready interface.
+Instead of writing custom HTTP requests, your TDs can:
 
----
+- Create and organize assets and shots directly from pipeline tools
+- Update task statuses based on pipeline events
+- Sync data between Kitsu and internal systems
+- Build custom automation for reviews, publishes, or reporting
 
-## Designed to Connect With Your DCC Tools
+This reduces the amount of glue code your team has to maintain and makes integrations easier to scale as your production grows.
 
-Kitsu can be integrated with the tools your artists already use.
+Our developer tools are well documented.
 
-Typical integrations include:
+## Connect Without Disrupting Artists
 
-- Sending publishes from DCC software
-- Linking render outputs to tasks automatically
-- Updating statuses based on pipeline events
-- Syncing versions with internal asset management systems
+One of the biggest risks when introducing a new system is disrupting artists.
 
-Kitsu becomes the central production database — while your creative tools remain unchanged.
+Kitsu avoids that by integrating with Digital Content Creation tools instead of replacing them:
 
----
+- Artists can publish work directly from their software
+- Renders and previews can be linked automatically to the right tasks
+- Versions are tracked without additional manual steps
+- Status updates can be triggered by pipeline actions
 
-## Webhooks & Automation
+Artists stay focused on their work, and your production stays consistent and traceable.
 
-Need real-time triggers?
+## Real-Time Collaboration Without Extra Overhead
 
-Kitsu supports webhooks to notify your systems when something changes:
+A production tracker should not feel like extra work.
 
-- A task moves to “Approved”
-- A new version is uploaded
-- A comment is added
-- A shot is created
+Kitsu is a live collaboration hub:
 
-This enables automated workflows and event-driven pipelines without manual intervention.
+- Task changes trigger notifications automatically
+- Comments and previews are attached to the right context
+- The activity feed shows what is happening across the production in real time
 
----
+For a distributed team, it cuts a lot of back and forth between multiple tools.
 
-## Flexible Workflow Configuration
+## Automation That Matches Production Needs
 
-Every studio works differently.
+As productions scale, manual steps become a bottleneck.
 
-Kitsu allows you to define:
+Kitsu allows you to automate key events using webhooks and API integrations:
 
-- Custom task types
-- Custom statuses
-- Department structures
-- Validation workflows
+- Trigger a review process when a task reaches a specific status
+- Notify supervisors when new versions are available
+- Sync approved shots with downstream departments
+- Update dashboards and budget forecasts in real time
 
-You can adapt Kitsu to your production methodology without writing heavy custom code.
+## Flexible Enough for Different Studio Structures
 
-For highly specialized pipelines, your technical team can extend behavior through API integrations rather than modifying the core system.
+Every studio organizes work differently.
 
----
+Kitsu reflects that by allowing you to configure:
 
-## Open-Source Transparency
+- Task types and workflows per department
+- Status pipelines that match your validation process
+- Resource allocation and scheduling
+- Time tracking and productivity monitoring
 
-Kitsu is open-source.
+You are not forced into a rigid structure. You adapt the tool to your production logic.
 
-That means:
+For studios that need more advanced setups, Kitsu can be extended through its API instead of modifying its core to keep your system maintainable over time.
 
-- You can audit the code.
-- You can understand exactly how the database works.
-- You are never dependent on hidden proprietary logic.
-- You can host on-premise if required.
+## Transparent and Reliable by Design
 
-For technical decision-makers, this transparency removes uncertainty and long-term risk.
+Kitsu is open-source, which changes the relationship you have with your production software.
 
----
+You can understand how your data is structured, audit how the system works, host it on your own infrastructure if needed, and avoid being locked into opaque systems.
 
-## Works for Small and Structured Teams Alike
+At the same time, CGWire provides managed cloud hosting and custom infrastructure setups if you prefer a fully supported solution.
 
-If you have no Pipeline TD, Kitsu works out of the box.
+## A Practical Fit for Real Studios
 
-If you have a dedicated pipeline team, Kitsu gives them the tools to build advanced automation on top of it.
+Kitsu is used by hundreds of studios across different sizes and production types. Some use it out of the box to organize tasks and reviews. Others build advanced pipelines on top of it using its API and integrations.
 
-You don’t need to rebuild your pipeline to adopt Kitsu.
+In both cases, the approach stays the same. You do not rebuild your pipeline. You connect it to a system that centralizes data, improves visibility, and reduces friction between departments.
 
-You simply connect it.
+That is what makes Kitsu fit.

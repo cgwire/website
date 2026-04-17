@@ -1,140 +1,136 @@
 ---
 title: "\"Our Team Won’t Adopt Another Tool\""
 slug: "change-management"
-subtitle: "How Kitsu Helps You With Training & Adoption"
+subtitle: "How Kitsu Makes Adoption Work in Real Productions"
 image: "change-management-kitsu.png"
 ---
 
-## The Real Risk Isn’t the Software. It’s Adoption.
+## The Real Risk Isn’t the Tool. It’s Whether People Use It.
 
-Most production tracking failures don’t happen because of missing features.
+Most studios fail at making new tools stick. Artists ignore the tracker and keep notes locally. Supervisors give feedback in chat instead of a centralized system. Producers rebuild reports in spreadsheets. New hires learn three different workflows instead of sticking to one.  
 
-They happen because:
+Kitsu solves fragmentation with a system people actually want to use without being told to do so.
 
-- Artists don’t use the tool.
-- Supervisors revert to spreadsheets.
-- Producers maintain parallel systems.
-- Training was rushed or unclear.
+## Built for the Way Animation Teams Actually Work
 
-Kitsu is designed to reduce resistance — not create it.
+Kitsu is not a generic project management tool adapted to animation. It's designed specifically for animation, VFX, and game production.
 
----
+Instead of forcing your team to adapt, it reflects workflows they already understand:
 
-## Designed for Artists, Not Just Producers
+- Shots, assets, and sequences are structured the way productions are organized  
+- Tasks follow real pipeline steps, from modeling to lighting to compositing  
+- Reviews, playlists, and approvals match how supervisors already give feedback  
 
-Kitsu focuses on clarity and usability.
+For an artist, this means opening Kitsu and immediately understanding what needs to be done.
 
-- Clean, readable interfaces  
-- Simple task views  
-- Clear status workflows  
-- Minimal configuration overhead  
+## Adoption Starts With Clarity
 
-Artists should understand what to do in seconds — not after a 2-hour onboarding session.
+People resist tools when they create friction.
 
-When a tool feels intuitive, adoption happens naturally.
+Kitsu removes that friction by focusing on clarity:
 
----
+- Artists get simple, prioritized task lists instead of cluttered dashboards  
+- Supervisors review directly in playlists with annotations and comparisons  
+- Producers track progress, time, and budget in one place instead of juggling tools  
 
-## Structured Onboarding for Every Role
+An animator finishes a shot. They upload directly from their DCC tool. The supervisor reviews it in a playlist, adds frame-accurate feedback, and validates or requests changes. The producer sees progress updated instantly in reports and forecasts.
 
-We don’t treat “the studio” as one block.
+## Structured Onboarding That Matches Your Team
 
-Different roles need different training:
+Every role in a studio interacts with production differently.
 
-- Producers: project structure, reporting, planning  
-- Supervisors: review flows, validation, approvals  
-- Artists: task updates, uploads, feedback loops  
-- Technical teams: API and automation  
+Instead of generic training, Kitsu's onboarding is aligned with real responsibilities in your studio:
 
-We provide live onboarding sessions and role-based guidance to ensure everyone knows exactly what matters to them.
+- Producers learn planning, scheduling, and budget forecasting  
+- Supervisors focus on reviews, approvals, and team coordination  
+- Artists focus on tasks, uploads, and feedback loops  
+- Pipeline TDs integrate pipelines through the Python API and REST endpoints  
 
----
+We help each person become productive quickly.
 
-## Progressive Rollout
+## Start Small, Scale Naturally
 
-Adoption improves when change is staged.
+Switching everything overnight rarely works.
 
-Instead of switching everything overnight, many studios:
+Studios that succeed with Kitsu take a pragmatic approach:
 
-- Start with one project  
-- Pilot with one department  
-- Train team leads first  
-- Expand gradually  
+- Start with one production or a pilot project  
+- Introduce it to a single department  
+- Train leads first so they can support their teams  
+- Expand once workflows are validated  
 
-This approach builds internal champions who help the rest of the team transition smoothly.
+Because Kitsu centralizes data and communication, even a small rollout quickly shows value: teams see fewer mistakes, clearer feedback, and less time spent searching for information.
 
----
+## A Single Source of Truth for the Whole Studio
 
-## Documentation That People Actually Use
+One of the biggest causes of resistance is duplication.
 
-Training doesn’t end after onboarding.
+When people have to enter the same information in multiple places, they drop off.
 
-Kitsu provides:
+Kitsu eliminates that by acting as a flexible central hub:
 
-- Clear written documentation  
-- Searchable knowledge base  
-- Tutorial videos  
-- Practical examples  
+- Tasks, assets, and shots are all connected  
+- Time tracking feeds directly into production reports and budget forecasts  
+- Reviews, comments, and approvals live with the work itself  
+- Activity feeds keep everyone aligned in real time  
 
-New hires can onboard themselves without requiring senior staff to repeat explanations.
+Instead of replacing one tool with another, you replace several disconnected tools with one coherent system.
 
----
+## Documentation and Autonomy
 
-## Support During the Transition
+Adoption does not stop after onboarding.
 
-Change creates questions.
+Studios evolve. Teams change. New people join.
 
-During rollout, we remain available to:
+Kitsu prevents knowledge silos with:
 
-- Answer workflow questions  
-- Adjust configurations  
-- Clarify best practices  
-- Help production leads refine processes  
+- Clear documentation and practical examples  
+- A searchable knowledge base  
+- A consistent interface across all projects  
 
-The goal is not just to install software — it’s to stabilize usage.
+New hires can get up to speed without relying entirely on senior staff to reduce onboarding time and keep production moving.
 
----
+## Flexible Enough for Your Pipeline
 
-## Reducing Fear of Change
+Every studio has its own way of working.
 
-When teams resist new tools, it’s usually because they fear:
+Kitsu enables pipeline artists to extend the core features:
 
-- Losing time  
-- Breaking their workflow  
-- Being monitored  
-- Increased complexity  
+- Use the Python API to automate repetitive tasks  
+- Connect your DCC tools to publish directly into the system  
+- Integrate notifications into chat tools like Slack or Discord  
+- Choose between cloud, on-premise, or custom infrastructure setups  
 
-Kitsu is structured around clarity and collaboration — not control.
+Whether your team is fully remote or working on-site, the system adapts to your environment.
 
-It centralizes communication, reduces email noise, and eliminates spreadsheet duplication.
+## Removing Pain Points
 
-Most teams feel relief once the transition is complete.
+When teams push back against new tools, it usually comes down to a few concerns:
 
----
+- It will slow them down  
+- It will complicate their workflow  
+- It will add unnecessary oversight  
 
-## Adoption Is a Design Principle
+Kitsu addresses these as well: it reduces manual updates, removes the need for parallel tracking, and makes communication clearer. The goal is not to monitor people, but to help them focus on their work.
 
-Kitsu was built specifically for animation and VFX studios.
+Most teams notice the difference quickly with less noise, fewer misunderstandings, and more time spent actually producing.
 
-That means:
+## Adoption Is Not an Afterthought
 
-- Familiar production structures  
-- Clear shot and asset hierarchies  
-- Real-world workflow logic  
-- Focused feature set (not overwhelming toolboxes)  
+Kitsu was created by people who understand both software and production.
 
-The result: faster learning curves and higher adoption rates.
+As a small, focused team, CGWire works closely with studios and continuously improves the product based on real-world usage. The platform is open source, widely used across dozens of countries, and trusted by hundreds of studios.
 
----
+That experience shows in one key area: adoption is treated as a core design principle.
 
-## A Tool Everyone Actually Uses
+## A Tool That Your Team Will Actually Use
 
-The return on investment of a production tracker only happens when everyone uses it.
+A production tracker only delivers value if everyone relies on it.
 
-Our goal is simple:
+With Kitsu:
 
-From artist to producer to supervisor — everyone should feel comfortable on day one.
+- Artists know what to do without friction  
+- Supervisors can review efficiently  
+- Producers can make decisions based on real data  
 
-Change doesn’t have to be painful.
-
-With the right structure, it becomes an upgrade.
+Change is always a risk, but the right tool will bring your animation studio to the top!
