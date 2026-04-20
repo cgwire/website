@@ -60,7 +60,7 @@ defineEmits(['update:modelValue'])
 .slider-value {
   font-size: 1.6rem;
   font-weight: 600;
-  min-width: 140px;
+  min-width: 180px;
   color: #0f172a;
 }
 

@@ -17,7 +17,7 @@
         />
 
         <Slider
-          :label="pricing.calculator.users"
+          :label="pricing.calculator.months"
           :min="1"
           :max="36"
           v-model="nbMonths"
