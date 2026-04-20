@@ -1,18 +1,18 @@
 <template>
   <div class="partners-page">
     <section class="partners-stage">
-      <article class="v1-paper">
-        <span class="v1-tag">
+      <article class="partners-paper">
+        <span class="partners-tag">
           A letter to our self-hosted community
         </span>
 
-        <h1 class="v1-title">
+        <h1 class="partners-title">
           Kitsu is yours.
 Help keep it
 open source.
         </h1>
 
-        <div class="v1-body">
+        <div class="partners-body">
           <p>
           Kitsu has been open source since day one, and it will stay that way. Hundreds of studios around the world run it self-hosted, fully autonomously, owing us nothing. That's exactly what we set out to build, and we're not changing that.
           </p>
@@ -23,7 +23,7 @@ But keeping Kitsu at the level you rely on (releases, bug fixes, docs, integrati
           Recent years have shown what happens when open-source companies can't sustain this kind of imbalance. Some change their license. Some strip features from the free version. Some go closed source entirely. We've all seen it happen with projects we relied on.
 We don't want to go down that road. 
           </p>
-          <p class="v1-emph">
+          <p class="partners-emph">
 That's why we're launching the <strong>Kitsu Studio Partners program</strong>.
 It's for studios who want to contribute to the long-term sustainability of the
 tool they depend on, and take a seat in the circle of studios that keep it
@@ -31,10 +31,10 @@ alive. It is our way of keeping things open while making the economics work.
           </p>
         </div>
 
-        <div class="v1-deal">
-          <div class="v1-deal-col">
-            <p class="v1-deal-lbl">What you get</p>
-            <ul class="v1-list">
+        <div class="partners-deal">
+          <div class="partners-deal-col">
+            <p class="partners-deal-lbl">What you get</p>
+            <ul class="partners-list">
               <li v-for="(benefit, i) in benefits" :key="i">
                 <svg
                   width="18"
@@ -54,29 +54,29 @@ alive. It is our way of keeping things open while making the economics work.
             </ul>
           </div>
 
-          <div class="v1-deal-col">
-            <p class="v1-deal-lbl">Annual contribution</p>
-            <div class="v1-prices">
+          <div class="partners-deal-col">
+            <p class="partners-deal-lbl">Annual contribution</p>
+            <div class="partners-prices">
               <div
                 v-for="(tier, i) in tiers"
                 :key="i"
                 :class="[
-                  'v1-price',
-                  { 'v1-price--featured': tier.featured }
+                  'partners-price',
+                  { 'partners-price--featured': tier.featured }
                 ]"
               >
-                <div class="v1-price-name">{{ tier.name }}</div>
-                <div class="v1-price-num">
+                <div class="partners-price-name">{{ tier.name }}</div>
+                <div class="partners-price-num">
                   {{ tier.price }} <span>{{ tier.period }}</span>
                 </div>
               </div>
             </div>
-            <p class="v1-deal-sub">
+            <p class="partners-deal-sub">
               Annual, renewable. No auto-renewal clause.
             </p>
 
-            <p class="v1-deal-lbl v1-deal-lbl--spaced">What it's not</p>
-            <ul class="v1-nots">
+            <p class="partners-deal-lbl partners-deal-lbl--spaced">What it's not</p>
+            <ul class="partners-nots">
               <li v-for="(n, i) in nots" :key="i">
                 <strong>Not {{ n.title.toLowerCase() }}.</strong>
                 {{ n.body }}
@@ -85,23 +85,23 @@ alive. It is our way of keeping things open while making the economics work.
           </div>
         </div>
 
-        <div class="v1-signoff">
+        <div class="partners-signoff">
           <p>
             If you want to be part of it, click below, tell us about your studio, and we'll write back within two days.
           </p>
-          <div class="v1-cta">
+          <div class="partners-cta">
             <a :href="mailto" class="partners-btn">
               Become a Kitsu Studio Partner →
             </a>
-            <a :href="mailto" class="v1-cta-alt">
+            <a :href="mailto" class="partners-cta-alt">
               or just reply to our email
             </a>
           </div>
-          <div class="v1-sig">
-            <div class="v1-sig-names">
+          <div class="partners-sig">
+            <div class="partners-sig-names">
               <span>The CGWire Team</span>
             </div>
-            <div class="v1-sig-line">
+            <div class="partners-sig-line">
               Paris, still five of us, still building.
             </div>
           </div>
@@ -126,7 +126,7 @@ const benefits = [
   'The ability to commission custom development',
   "Visibility into what's coming, with your needs heard",
   'Public mention as a Kitsu Studio Partner',
-  'Founding Partner status — for studios joining early'
+  'Founding Partner status for studios joining early'
 ]
 
 const tiers = [
@@ -151,13 +151,13 @@ const nots = [
 ]
 
 useHead({
-  title: 'Kitsu Studio Partners Program — CGWire',
+  title: 'Kitsu Studio Partners Program',
   meta: [
     { name: 'robots', content: 'noindex, nofollow' },
     {
       name: 'description',
       content:
-        'An invitation to self-hosted Kitsu studios — take a seat in the circle that keeps Kitsu open source.'
+        'Kitsu is yours. Help keep it open source.'
     }
   ],
   link: [
@@ -186,7 +186,7 @@ paper-bg = #EFEEEA
   padding 40px 24px 80px
 
 // === V1 · Founder's note ===
-.v1-paper
+.partners-paper
   background #fff
   border-radius 16px
   padding 56px 64px 48px
@@ -197,7 +197,7 @@ paper-bg = #EFEEEA
   line-height 1.55
   font-family 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
 
-.v1-tag
+.partners-tag
   display inline-flex
   align-items center
   gap 8px
@@ -216,7 +216,7 @@ paper-bg = #EFEEEA
   border-radius 50%
   background cgwire-green
 
-.v1-title
+.partners-title
   font-size 2.4rem
   font-weight 900
   line-height 1.1
@@ -224,13 +224,13 @@ paper-bg = #EFEEEA
   margin 0 0 22px
   text-wrap pretty
 
-.v1-body p
+.partners-body p
   font-size 1.06rem
   color #2b2b34
   margin 0 0 14px
   line-height 1.65
 
-.v1-emph
+.partners-emph
   font-size 1.15rem !important
   padding 18px 22px
   background #F4FFF8
@@ -241,7 +241,7 @@ paper-bg = #EFEEEA
   strong
     color cgwire-green-dark
 
-.v1-deal
+.partners-deal
   margin-top 36px
   display grid
   grid-template-columns 1fr 1fr
@@ -249,7 +249,7 @@ paper-bg = #EFEEEA
   padding-top 32px
   border-top 1px dashed #E0DED6
 
-.v1-deal-lbl
+.partners-deal-lbl
   font-size 0.7rem
   font-weight 800
   letter-spacing 0.22em
@@ -257,10 +257,10 @@ paper-bg = #EFEEEA
   color cgwire-green
   margin 0 0 14px
 
-.v1-deal-lbl--spaced
+.partners-deal-lbl--spaced
   margin-top 24px
 
-.v1-list
+.partners-list
   list-style none
   padding 0
   margin 0
@@ -280,12 +280,12 @@ paper-bg = #EFEEEA
       margin-top 3px
       color cgwire-green
 
-.v1-prices
+.partners-prices
   display flex
   flex-direction column
   gap 8px
 
-.v1-price
+.partners-price
   display flex
   justify-content space-between
   align-items baseline
@@ -294,16 +294,16 @@ paper-bg = #EFEEEA
   border-radius 10px
   background #FBFAF6
 
-.v1-price--featured
+.partners-price--featured
   border-color cgwire-green
   background #F4FFF8
 
-.v1-price-name
+.partners-price-name
   font-size 0.9rem
   color #555
   font-weight 600
 
-.v1-price-num
+.partners-price-num
   font-weight 900
   font-size 1.15rem
   font-variant-numeric tabular-nums
@@ -314,12 +314,12 @@ paper-bg = #EFEEEA
     color #888
     font-size 0.82rem
 
-.v1-deal-sub
+.partners-deal-sub
   font-size 0.82rem
   color #888
   margin 10px 0 0
 
-.v1-nots
+.partners-nots
   list-style none
   padding 0
   margin 0
@@ -337,7 +337,7 @@ paper-bg = #EFEEEA
   strong
     color #1F1F28
 
-.v1-signoff
+.partners-signoff
   margin-top 36px
   padding-top 32px
   border-top 1px solid #EEE
@@ -347,7 +347,7 @@ paper-bg = #EFEEEA
     margin 0 0 22px
     color #2b2b34
 
-.v1-cta
+.partners-cta
   display flex
   align-items center
   gap 18px
@@ -377,7 +377,7 @@ paper-bg = #EFEEEA
   &:active
     transform translateY(0)
 
-.v1-cta-alt
+.partners-cta-alt
   color #888
   font-size 0.9rem
   text-decoration underline
@@ -385,11 +385,11 @@ paper-bg = #EFEEEA
   &:hover
     color cgwire-green
 
-.v1-sig
+.partners-sig
   padding-top 20px
   border-top 1px dashed #E0DED6
 
-.v1-sig-names
+.partners-sig-names
   font-family 'Caveat', 'Lato', cursive
   font-size 1.8rem
   font-weight 700
@@ -399,25 +399,25 @@ paper-bg = #EFEEEA
   align-items baseline
   font-style italic
 
-.v1-sig-sep
+.partners-sig-sep
   color #ccc
   font-size 1rem
   font-style normal
   font-weight 400
 
-.v1-sig-line
+.partners-sig-line
   color #999
   font-size 0.88rem
   margin-top 4px
 
 @media (max-width: 900px)
-  .v1-paper
+  .partners-paper
     padding 32px 24px
 
-  .v1-title
+  .partners-title
     font-size 1.8rem
 
-  .v1-deal
+  .partners-deal
     grid-template-columns 1fr
     gap 28px
 </style>
