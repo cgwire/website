@@ -89,6 +89,14 @@ export default defineContentConfig({
         case_study: z.union([z.array(z.string()), z.string()]).default('')
       }),
       indexes: [{ columns: ['elementKey'] }]
+    }),
+    tools: defineCollection({
+      type: 'page',
+      source: 'tools/**/*.md',
+      schema: z.object({
+        title: z.string(),
+        slug: z.string()
+      })
     })
   }
 })
