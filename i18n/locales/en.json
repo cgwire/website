@@ -109,6 +109,12 @@
     "visitWebsite": "Visit Website",
     "viewCaseStudy": "View Case Study"
   },
+  "tools": {
+    "description": "Free online tools to add to your pipeline toolkit.",
+    "eyebrow": "CGWire Pipeline Toolkit",
+    "title": "Free Online Tools",
+    "cta": "Open tool →"
+  },
   "slugs": {
     "tailor-made-architecture": "tailor-made-architecture",
     "casting-management": "casting-management",
@@ -129,6 +135,8 @@
     "migration": "migration",
     "change-management": "change-management",
     "custom-integration": "custom-integration",
+    "glb-gltf-file-visualizer": "glb-gltf-file-visualizer",
+    "mp4-to-webm-file-converter": "mp4-to-webm-file-converter",
     "can-kitsu-scale-with-us": "can-kitsu-scale-with-us",
     "do-we-lose-control-over-our-production-pipeline": "do-we-lose-control-over-our-production-pipeline",
     "how-long-until-we-see-value": "how-long-until-we-see-value",

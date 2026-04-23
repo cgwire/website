@@ -73,6 +73,16 @@ export const routes = {
     en: '/faq/[slug]',
     fr: '/questions-frequentes/[slug]',
     ja: '/よくある質問/[slug]'
+  },
+  'free-tools': {
+    en: '/free-tools',
+    fr: '/outils-gratuits',
+    ja: '/無料ツール'
+  },
+  'free-tools-slug': {
+    en: '/free-tools/[slug]',
+    fr: '/outils-gratuits/[slug]',
+    ja: '/無料ツール/[slug]'
   }
 }
 

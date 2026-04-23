@@ -112,6 +112,12 @@
     "visitWebsite": "ウェブサイトを見る",
     "viewCaseStudy": "ケーススタディを見る"
   },
+  "tools": {
+    "description": "パイプラインツールキットに追加できる無料のオンラインツール。",
+    "eyebrow": "CGWire パイプラインツールキット",
+    "title": "無料オンラインツール",
+    "cta": "ツールを開く →"
+  },
   "slugs": {
     "index": "index",
     "contact": "contact",
@@ -175,6 +181,10 @@
     "移行": "migration",
     "変更管理": "change-management",
     "カスタム統合": "custom-integration",
+    "glb-gltf-file-visualizer": "glb-gltfファイルビジュアライザー",
+    "glb-gltfファイルビジュアライザー": "glb-gltf-file-visualizer",
+    "mp4-to-webm-file-converter": "mp4からwebmへのファイルコンバーター",
+    "mp4からwebmへのファイルコンバーター": "mp4-to-webm-file-converter",
     "can-kitsu-scale-with-us": "kitsuは私たちと共に成長できますか",
     "do-we-lose-control-over-our-production-pipeline": "制作パイプラインの管理を失いますか",
     "how-long-until-we-see-value": "価値を実感するまでどのくらいかかりますか",
