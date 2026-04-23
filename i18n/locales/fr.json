@@ -112,6 +112,12 @@
     "visitWebsite": "Visiter le site web",
     "viewCaseStudy": "Voir l'étude de cas"
   },
+  "tools": {
+    "description": "Outils en ligne gratuits à ajouter à votre boîte à outils de pipeline.",
+    "eyebrow": "Boîte à outils de pipeline CGWire",
+    "title": "Outils en ligne gratuits",
+    "cta": "Ouvrir l’outil →"
+  },
   "slugs": {
     "index": "index",
     "contact": "contact",
@@ -164,6 +170,10 @@
     "migration": "migration",
     "gestion-du-changement": "change-management",
     "integration-personnalisee": "custom-integration",
+    "glb-gltf-file-visualizer": "visualisateur-fichier-glb-gltf",
+    "visualisateur-fichier-glb-gltf": "glb-gltf-file-visualizer",
+    "mp4-to-webm-file-converter": "convertisseur-fichier-mp4-vers-webm",
+    "convertisseur-fichier-mp4-vers-webm": "mp4-to-webm-file-converter",
     "fost": "fost",
     "miyu": "miyu",
     "makuta": "makuta",

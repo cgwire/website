@@ -16,8 +16,7 @@
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
-
-const slug = computed(() => route.params.slug)
+const { slug } = await useI18NSlug()
 
 const { queryTool } = useTool(locale, slug)
 

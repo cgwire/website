@@ -8,26 +8,29 @@ const { data: tools } = await useAsyncData(
 )
 
 useSEO({
-  title: 'CGWire | Free Online Pipeline Tools',
-  description: 'Free online tools to add to your pipeline toolkit.'
+  title: `CGWire | ${$t('tools.title')}`,
+  description: $t('tools.description')
 })
 </script>
 
 <template>
   <div class="tools-page">
     <header class="tools-header">
-      <div class="header-eyebrow">CGWire Pipeline Toolkit</div>
-      <h1 class="header-title">Free Online Tools</h1>
-      <p class="header-desc">
-        Battle-tested utilities for your production pipeline.
-      </p>
+      <div class="header-eyebrow">{{ $t('tools.eyebrow') }}</div>
+      <h1 class="header-title">{{ $t('tools.title') }}</h1>
+      <p class="header-desc">{{ $t('tools.description') }}</p>
     </header>
 
     <div class="tools-grid">
       <NuxtLink
         v-for="tool in tools"
         :key="tool.id"
-        :to="`/tools/${tool.slug}`"
+        :to="
+          $localePath({
+            name: 'free-tools-slug',
+            params: { slug: $t(`slugs.${tool.slug}`) }
+          })
+        "
         class="tool-card"
       >
         <div class="tool-card-tags">
@@ -40,7 +43,7 @@ useSEO({
           {{ tool.description }}
         </p>
         <div class="tool-card-footer">
-          <span class="tool-card-cta">Open tool →</span>
+          <span class="tool-card-cta">{{ $t('tools.cta') }}</span>
         </div>
       </NuxtLink>
     </div>

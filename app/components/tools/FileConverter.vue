@@ -1,17 +1,17 @@
 <template>
   <div class="converter-wrapper">
     <div class="converter-card">
-      <!-- Header -->
       <div class="header">
         <div class="badge">Browser-native · No upload</div>
 
-        <h1 class="title">MP4 <span class="arrow">→</span> WebM</h1>
+        <h2 class="title">
+          {{ inputFormat }} <span class="arrow">→</span> {{ outputFormat }}
+        </h2>
         <p class="subtitle">
           Client-side conversion powered by mediabunny & WebCodecs
         </p>
       </div>
 
-      <!-- Drop Zone -->
       <div
         class="drop-zone"
         :class="{
@@ -29,12 +29,11 @@
         <input
           ref="fileInput"
           type="file"
-          accept="video/mp4,.mp4"
+          :accept="`video/${inputFormat},.${inputFormat}`"
           style="display: none"
           @change="onFileSelected"
         />
 
-        <!-- Idle / no file -->
         <template v-if="!selectedFile && status === 'idle'">
           <div class="drop-icon">
             <svg
@@ -61,11 +60,10 @@
               />
             </svg>
           </div>
-          <p class="drop-title">Drop your MP4 here</p>
+          <p class="drop-title">Drop your {{ inputFormat }} here</p>
           <p class="drop-hint">or click to browse</p>
         </template>
 
-        <!-- File selected, ready -->
         <template v-else-if="selectedFile && status === 'idle'">
           <div class="file-info">
             <div class="file-icon">
@@ -127,7 +125,6 @@
           <p class="drop-hint" style="margin-top: 8px">Click to change file</p>
         </template>
 
-        <!-- Converting -->
         <template v-else-if="status === 'converting'">
           <div class="converting-state">
             <div class="spinner-ring">
@@ -166,7 +163,6 @@
           </div>
         </template>
 
-        <!-- Done -->
         <template v-else-if="status === 'done'">
           <div class="done-state">
             <div class="check-circle">
@@ -196,7 +192,6 @@
           </div>
         </template>
 
-        <!-- Error -->
         <template v-else-if="status === 'error'">
           <div class="error-state">
             <div class="error-icon">
@@ -224,7 +219,6 @@
         </template>
       </div>
 
-      <!-- Actions -->
       <div class="actions">
         <button
           v-if="status === 'idle' && selectedFile"
@@ -242,7 +236,7 @@
               clip-rule="evenodd"
             />
           </svg>
-          Convert to WebM
+          Convert to {{ outputFormat }}
         </button>
 
         <template v-if="status === 'done'">
@@ -258,7 +252,7 @@
                 clip-rule="evenodd"
               />
             </svg>
-            Download WebM
+            Download {{ outputFormat }}
           </button>
           <button class="btn btn--ghost" @click="resetState">
             Convert another
@@ -272,7 +266,6 @@
         </template>
       </div>
 
-      <!-- Footer note -->
       <p class="footer-note">
         All processing happens locally in your browser — your file never leaves
         your device.
@@ -287,11 +280,16 @@ import {
   Input,
   Output,
   Conversion,
-  ALL_FORMATS,
   BlobSource,
-  WebMOutputFormat,
   BufferTarget,
-  MP4
+  MP4,
+  WEBM,
+  MATROSKA,
+  QTFF,
+  Mp4OutputFormat,
+  WebMOutputFormat,
+  MkvOutputFormat,
+  MovOutputFormat
 } from 'mediabunny'
 
 const props = defineProps({
@@ -299,7 +297,6 @@ const props = defineProps({
   outputFormat: String
 })
 
-// ── State ──────────────────────────────────────────────────────────────────
 const fileInput = ref(null)
 const selectedFile = ref(null)
 const status = ref('idle') // idle | converting | done | error
@@ -311,8 +308,11 @@ const isDragging = ref(false)
 
 const outputName = computed(() =>
   selectedFile.value
-    ? selectedFile.value.name.replace(/\.mp4$/i, '.webm')
-    : 'output.webm'
+    ? selectedFile.value.name.replace(
+        `.${props.inputFormat}`,
+        `.${props.outputFormat}`
+      )
+    : `output.${props.outputFormat}`
 )
 
 // ── Helpers ────────────────────────────────────────────────────────────────
@@ -348,7 +348,11 @@ function onFileSelected(e) {
 function onDrop(e) {
   isDragging.value = false
   const file = e.dataTransfer.files?.[0]
-  if (file && (file.type === 'video/mp4' || file.name.endsWith('.mp4'))) {
+  if (
+    file &&
+    (file.type === `video/${props.inputFormat}` ||
+      file.name.endsWith(`.${props.inputFormat}`))
+  ) {
     setFile(file)
   }
 }
@@ -359,6 +363,66 @@ function setFile(file) {
 }
 
 // ── Conversion ─────────────────────────────────────────────────────────────
+// Resolve input/output formats dynamically
+function getInputFormat(ext) {
+  switch (ext.toLowerCase()) {
+    case 'mp4':
+      return MP4
+    case 'webm':
+      return WEBM
+    case 'mkv':
+      return MATROSKA
+    case 'mov':
+      return QTFF
+    default:
+      throw new Error(`Unsupported input format: ${ext}`)
+  }
+}
+
+function getOutputFormat(ext) {
+  const opts = getOutputOptions(ext)
+  switch (ext.toLowerCase()) {
+    case 'mp4':
+      return new Mp4OutputFormat(opts)
+    case 'webm':
+      return new WebMOutputFormat(opts)
+    case 'mkv':
+      return new MkvOutputFormat(opts)
+    case 'mov':
+      return new MovOutputFormat(opts)
+    default:
+      throw new Error(`Unsupported output format: ${ext}`)
+  }
+}
+
+// Optional: basic codec presets per format
+function getOutputOptions(formatName) {
+  switch (formatName) {
+    case 'webm':
+      return {
+        video: { codec: 'vp9', crf: 30 },
+        audio: { codec: 'opus', bitrate: 96_000 }
+      }
+    case 'mp4':
+      return {
+        video: { codec: 'h264', crf: 23 },
+        audio: { codec: 'aac', bitrate: 128_000 }
+      }
+    case 'mkv':
+      return {
+        video: { codec: 'h264', crf: 23 },
+        audio: { codec: 'aac' }
+      }
+    case 'mov':
+      return {
+        video: { codec: 'prores' },
+        audio: { codec: 'pcm_s16le' }
+      }
+    default:
+      return {}
+  }
+}
+
 async function convert() {
   if (!selectedFile.value) return
 
@@ -368,21 +432,11 @@ async function convert() {
   try {
     const input = new Input({
       source: new BlobSource(selectedFile.value),
-      formats: [MP4]
+      formats: [getInputFormat(props.inputFormat)] // ← array of instances
     })
 
     const output = new Output({
-      format: new WebMOutputFormat({
-        video: {
-          codec: 'vp9',
-          crf: 0, // Quality (0=best, 63=worst). Default is often low compression
-          bitrate: 500_000 // e.g. 500kbps — omit if using CRF
-        },
-        audio: {
-          codec: 'opus',
-          bitrate: 96_000 // 96kbps
-        }
-      }),
+      format: getOutputFormat(props.outputFormat), // ← single instance with options
       target: new BufferTarget()
     })
 
@@ -395,13 +449,15 @@ async function convert() {
     await conversion.execute()
 
     const buffer = output.target.buffer
-    outputBlob.value = new Blob([buffer], { type: 'video/webm' })
+    outputBlob.value = new Blob([buffer], {
+      type: `video/${props.outputFormat}` // ← was bare `outputFormat` (undefined)
+    })
     outputSize.value = buffer.byteLength
     progress.value = 100
     status.value = 'done'
   } catch (err) {
     console.error('Conversion error:', err)
-    errorMessage.value = err?.message ?? 'An unexpected error occurred.'
+    errorMessage.value = err?.message ?? 'Conversion failed'
     status.value = 'error'
   }
 }

@@ -256,8 +256,34 @@ function showError(msg) {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@400;600&display=swap');
+/* ==========================================================================
+   VARIABLES (CGWire-inspired)
+   ========================================================================== */
+:root {
+  --cg-bg: #f4f8ff;
+  --cg-surface: #ffffff;
+  --cg-border: #e5e5e5;
+  --cg-text: #54656f;
+  --cg-text-light: #8a9aa5;
 
+  --cg-primary: #38c172;
+  --cg-primary-hover: #2fa360;
+  --cg-primary-soft: rgba(56, 193, 114, 0.1);
+
+  --cg-danger-bg: #fff5f5;
+  --cg-danger-border: #ffcccc;
+  --cg-danger-text: #cc4444;
+
+  --cg-radius: 12px;
+  --cg-radius-pill: 999px;
+
+  --cg-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --cg-shadow-soft: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -269,175 +295,194 @@ function showError(msg) {
   width: 100%;
   height: 100%;
   min-height: 480px;
-  background: #0d0d12;
-  font-family: 'Syne', sans-serif;
+
+  background: var(--cg-bg);
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: var(--cg-text);
+
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: var(--cg-radius);
 }
 
-/* ── canvas ── */
+/* ==========================================================================
+   CANVAS
+   ========================================================================== */
 .three-canvas {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* ── upload zone ── */
+/* ==========================================================================
+   UPLOAD ZONE
+   ========================================================================== */
 .upload-zone {
   position: absolute;
   inset: 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   z-index: 10;
-  background: #0d0d12;
+  background: var(--cg-bg);
+
   transition: background 0.2s;
 }
 
 .upload-zone.dragging {
-  background: #12122a;
+  background: #eafaf1;
 }
 
 .upload-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  padding: 48px;
-  border: 1.5px dashed #2a2a44;
-  border-radius: 16px;
-  text-align: center;
-  transition: border-color 0.2s;
-}
+  gap: 14px;
 
-.upload-zone.dragging .upload-inner {
-  border-color: #6655ee;
+  padding: 40px;
+
+  border: 2px dashed var(--cg-primary);
+  border-radius: var(--cg-radius);
+
+  background: var(--cg-surface);
+  box-shadow: var(--cg-shadow-soft);
+
+  text-align: center;
 }
 
 .icon svg {
   width: 48px;
   height: 48px;
-  color: #4a4a88;
+  color: var(--cg-primary);
 }
 
 .label {
-  color: #aaa;
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  color: var(--cg-text);
 }
+
 .label span {
-  color: #8877ff;
-  font-family: 'IBM Plex Mono', monospace;
+  color: var(--cg-primary);
 }
 
 .sublabel {
-  color: #555;
-  font-size: 0.8rem;
-}
-
-.browse-btn {
-  display: inline-block;
-  padding: 8px 20px;
-  background: #1e1e38;
-  color: #c8c0ff;
-  border: 1px solid #3a3a66;
-  border-radius: 8px;
-  cursor: pointer;
-  font-family: 'IBM Plex Mono', monospace;
   font-size: 0.85rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  transition:
-    background 0.15s,
-    border-color 0.15s;
-}
-.browse-btn:hover {
-  background: #2a2a50;
-  border-color: #6655ee;
+  color: var(--cg-text-light);
 }
 
-/* ── controls bar ── */
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+.browse-btn,
+.swap-btn {
+  padding: 0.6em 1.4em;
+
+  background: var(--cg-primary);
+  color: white;
+
+  border: 1px solid var(--cg-primary);
+  border-radius: var(--cg-radius-pill);
+
+  cursor: pointer;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  transition: all 0.15s ease;
+}
+
+.browse-btn:hover,
+.swap-btn:hover {
+  background: var(--cg-primary-hover);
+  border-color: var(--cg-primary-hover);
+}
+
+.reset-btn {
+  padding: 0.5em 1.2em;
+
+  background: white;
+  color: var(--cg-primary);
+
+  border: 1px solid var(--cg-primary);
+  border-radius: var(--cg-radius-pill);
+
+  cursor: pointer;
+  font-size: 0.8rem;
+
+  transition: all 0.15s ease;
+}
+
+.reset-btn:hover {
+  background: var(--cg-primary-soft);
+}
+
+/* ==========================================================================
+   CONTROLS BAR
+   ========================================================================== */
 .controls-bar {
   position: absolute;
   bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
+
   display: flex;
   align-items: center;
-  gap: 12px;
-  background: rgba(13, 13, 20, 0.85);
-  backdrop-filter: blur(12px);
-  border: 1px solid #2a2a44;
-  border-radius: 40px;
-  padding: 8px 16px;
+  gap: 10px;
+
+  padding: 8px 14px;
+
+  background: var(--cg-surface);
+  border: 1px solid var(--cg-border);
+  border-radius: var(--cg-radius-pill);
+
+  box-shadow: var(--cg-shadow);
+
   z-index: 10;
-  white-space: nowrap;
 }
 
 .filename {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.78rem;
-  color: #8877ff;
+  font-size: 0.8rem;
+  color: var(--cg-primary);
+
   max-width: 180px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.reset-btn,
-.swap-btn {
-  padding: 5px 14px;
-  border-radius: 20px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.75rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-
-.reset-btn {
-  background: #1e1e38;
-  color: #aaa;
-  border: 1px solid #2a2a44;
-}
-.reset-btn:hover {
-  background: #2a2a50;
-  color: #fff;
-}
-
-.swap-btn {
-  background: #2a1e55;
-  color: #c8c0ff;
-  border: 1px solid #6655ee;
-  display: inline-block;
-}
-.swap-btn:hover {
-  background: #3a2a70;
-}
-
-/* ── loading overlay ── */
+/* ==========================================================================
+   LOADING OVERLAY
+   ========================================================================== */
 .loading-overlay {
   position: absolute;
   inset: 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 14px;
-  background: rgba(13, 13, 18, 0.7);
+  gap: 12px;
+
+  background: rgba(255, 255, 255, 0.7);
+
   z-index: 20;
-  color: #888;
+
   font-size: 0.85rem;
-  letter-spacing: 0.06em;
-  font-family: 'IBM Plex Mono', monospace;
+  color: var(--cg-text-light);
 }
 
 .spinner {
-  width: 32px;
-  height: 32px;
-  border: 2px solid #222;
-  border-top-color: #8877ff;
+  width: 30px;
+  height: 30px;
+
+  border: 2px solid var(--cg-border);
+  border-top-color: var(--cg-primary);
+
   border-radius: 50%;
+
   animation: spin 0.7s linear infinite;
 }
 
@@ -447,28 +492,37 @@ function showError(msg) {
   }
 }
 
-/* ── error toast ── */
+/* ==========================================================================
+   ERROR TOAST
+   ========================================================================== */
 .error-toast {
   position: absolute;
   top: 16px;
   left: 50%;
   transform: translateX(-50%);
-  background: #2a0a0a;
-  border: 1px solid #aa3333;
-  color: #ff8888;
-  padding: 10px 20px;
+
+  padding: 10px 18px;
+
+  background: var(--cg-danger-bg);
+  border: 1px solid var(--cg-danger-border);
+
+  color: var(--cg-danger-text);
+
   border-radius: 8px;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.8rem;
+
+  font-size: 0.85rem;
+
   z-index: 30;
-  white-space: nowrap;
 }
 
-/* ── transitions ── */
+/* ==========================================================================
+   TRANSITIONS
+   ========================================================================== */
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.3s;
+  transition: opacity 0.25s;
 }
+
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
@@ -477,12 +531,13 @@ function showError(msg) {
 .slide-up-enter-active,
 .slide-up-leave-active {
   transition:
-    opacity 0.4s,
-    transform 0.4s;
+    opacity 0.3s,
+    transform 0.3s;
 }
+
 .slide-up-enter-from,
 .slide-up-leave-to {
   opacity: 0;
-  transform: translateX(-50%) translateY(16px);
+  transform: translateX(-50%) translateY(12px);
 }
 </style>
