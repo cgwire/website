@@ -4,6 +4,28 @@
       {{ page.meta.customerStories.header.title }}
     </div>
     <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
+      Advertisement
+    </div>
+    <CustomerStoryBlock
+      studio-name="Ryff"
+      story-key="ryff"
+      interviewee="Pete Draper, VFX Supervisor"
+      image-path="photo-customer-story-pete-draper.jpg"
+      :quote="page.meta.customerStories.quotes['ryff']"
+      story-url="https://blog.cg-wire.com/how-vfx-supervisor-manages-hundreds-of-projects-with-kitsu/"
+    />
+    <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
+      Feature Films (2D)
+    </div>
+    <CustomerStoryBlock
+      studio-name="Remembers"
+      story-key="remembers"
+      interviewee="Audrey Tondre, Production Director"
+      image-path="photo-customer-story-audrey-tondre.jpg"
+      :quote="page.meta.customerStories.quotes['remembers']"
+      story-url="https://blog.cg-wire.com/remembers-kitsu-arco-production"
+    />
+    <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
       TV Series (2D)
     </div>
     <CustomerStoryBlock
