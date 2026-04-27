@@ -1,5 +1,5 @@
 ---
-title: "\"How Long Does It Take To See Value?\""
+title: "How Long Does It Take To See Value?"
 slug: "how-long-until-we-see-value"
 subtitle: ""
 image: "change-management-kitsu.png"

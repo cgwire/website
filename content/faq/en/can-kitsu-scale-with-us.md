@@ -1,5 +1,5 @@
 ---
-title: "\"Can Kitsu Scale With Us?\""
+title: "Can Kitsu Scale With Us?"
 slug: "can-kitsu-scale-with-us"
 subtitle: ""
 image: "change-management-kitsu.png"

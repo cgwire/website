@@ -1,5 +1,5 @@
 ---
-title: "\"Will Kitsu Slow Us Down?\""
+title: "Will Kitsu Slow Us Down?"
 slug: "will-kitsu-slow-us-down"
 subtitle: ""
 image: "change-management-kitsu.png"

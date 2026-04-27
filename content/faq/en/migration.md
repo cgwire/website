@@ -1,5 +1,5 @@
 ---
-title: "\"Switching Production Tracking Tools Sounds Risky\""
+title: "Switching Production Tracking Tools Sounds Risky"
 slug: "migration"
 subtitle: "A Practical Approach to Moving Your Studio to Kitsu"
 image: "migration-kitsu-cloud.png"

@@ -1,5 +1,5 @@
 ---
-title: "\"Is Kitsu Worth the Cost?\""
+title: "Is Kitsu Worth the Cost?"
 slug: "is-kitsu-worth-the-cost"
 subtitle: ""
 image: "change-management-kitsu.png"

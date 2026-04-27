@@ -1,5 +1,5 @@
 ---
-title: "\"Our Team Won’t Adopt Another Tool\""
+title: "Our Team Won’t Adopt Another Tool"
 slug: "change-management"
 subtitle: "How Kitsu Makes Adoption Work in Real Productions"
 image: "change-management-kitsu.png"

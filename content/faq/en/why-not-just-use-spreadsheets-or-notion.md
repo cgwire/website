@@ -1,5 +1,5 @@
 ---
-title: "\"Why Not Just Keep Using Spreadsheets or Notion?\""
+title: "Why Not Just Keep Using Spreadsheets or Notion?"
 slug: "why-not-just-use-spreadsheets-or-notion"
 subtitle: ""
 image: "change-management-kitsu.png"

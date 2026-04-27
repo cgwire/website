@@ -1,5 +1,5 @@
 ---
-title: "\"What Happens If Something Breaks?\""
+title: "What Happens If Something Breaks?"
 slug: "what-happens-if-something-breaks"
 subtitle: ""
 image: "change-management-kitsu.png"

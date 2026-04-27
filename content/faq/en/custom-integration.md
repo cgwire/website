@@ -1,5 +1,5 @@
 ---
-title: "\"Will It Fit Into Our Pipeline?\""
+title: "Will It Fit Into Our Pipeline?"
 slug: "custom-integration"
 subtitle: "How Kitsu Adapts to Real Production Pipelines"
 image: "custom-integration-kitsu.png"

@@ -1,5 +1,5 @@
 ---
-title: "\"We Can’t Put Our IP In The Cloud\""
+title: "We Can’t Put Our IP In The Cloud"
 slug: "ip-protection"
 subtitle: "A Practical Look At How Kitsu Protects Your Work Without Slowing You Down"
 image: "security-kitsu-cloud.png"

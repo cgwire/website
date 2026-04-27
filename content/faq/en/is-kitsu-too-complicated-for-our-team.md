@@ -1,5 +1,5 @@
 ---
-title: "\"Is Kitsu Too Complicated For Our Team?\""
+title: "Is Kitsu Too Complicated For Our Team?"
 slug: "is-kitsu-too-complicated-for-our-team"
 subtitle: ""
 image: "change-management-kitsu.png"

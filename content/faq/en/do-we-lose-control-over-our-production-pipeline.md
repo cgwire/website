@@ -1,5 +1,5 @@
 ---
-title: "\"Do We Lose Control Over Our Production Pipeline?\""
+title: "Do We Lose Control Over Our Production Pipeline?"
 slug: "do-we-lose-control-over-our-production-pipeline"
 subtitle: ""
 image: "change-management-kitsu.png"

@@ -1,5 +1,5 @@
 ---
-title: "\"Who Else Is Using Kitsu?\""
+title: "Who Else Is Using Kitsu?"
 slug: "who-else-is-using-kitsu"
 subtitle: ""
 image: "change-management-kitsu.png"
