@@ -44,7 +44,7 @@
   "header title casting-management": "Casting Management",
   "header title changelog": "Changelog",
   "header title community": "Community",
-  "header title conferences": "header title conferences",
+  "header title conferences": "Conferences",
   "header title customer-stories": "Customer Stories",
   "header title docker": "Docker",
   "header title documentation": "Documentation",
@@ -98,6 +98,9 @@
   "top-notch-support chat title": "Support when you need it",
   "top-notch-support experts title": "Assisted by experts",
   "top-notch-support fast title": "Fast response time",
+  "for": "for",
+  "faq": "faq",
+  "features": "features",
   "search": {
     "open": "Open Search Modal",
     "placeholder": "Search",
