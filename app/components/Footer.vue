@@ -33,20 +33,7 @@
               <circle cx="4" cy="4" r="2" />
             </svg>
           </a>
-          <a href="https://twitter.com/cgwirekitsu" aria-label="Twitter / X">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-              />
-            </svg>
-          </a>
-          <a href="https://instagram.com/cgwire" aria-label="Instagram">
+        <a href="https://instagram.com/cgwire" aria-label="Instagram">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -79,38 +66,51 @@
         </div>
       </div>
 
-      <!-- Company Column -->
       <div class="footer-col">
-        <p class="footer-title">{{ $t('footers title company') }}</p>
+        <p class="footer-title">{{ $t('header title product') }}</p>
         <ul class="footer-links">
           <li>
-            <nuxt-link :to="$localePath('about')">{{
-              $t('footers link about')
+            <nuxt-link :to="$localePath('kitsu')">
+              Kitsu
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="$localePath('studios')">{{
+              $t('header title studios')
             }}</nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="$localePath('contact')">{{
-              $t('footers link contact')
+            <nuxt-link :to="$localePath('customer-stories')">{{
+              $t('header title customer-stories')
             }}</nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="$localePath('carbon-report')">{{
-              $t('footers link carbon')
-            }}</nuxt-link>
+            <nuxt-link
+              :to="
+                $localePath({
+                  name: 'features-slug',
+                  params: { slug: $t('slugs.production-tracker') }
+                })
+              "
+            >
+              {{ $t('header title production-tracker') }}
+            </nuxt-link>
           </li>
           <li>
-            <a href="https://metrics.cg-wire.com">{{
-              $t('footers link metrics')
-            }}</a>
+            <nuxt-link
+              :to="
+                $localePath({
+                  name: 'features-slug',
+                  params: { slug: $t('slugs.review-engine') }
+                })
+              "
+            >
+              {{ $t('header title review-engine') }}
+            </nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="$localePath('terms')">{{
-              $t('footers link terms')
-            }}</nuxt-link>
-          </li>
-          <li>
-            <nuxt-link :to="$localePath('privacy')">{{
-              $t('footers link privacy')
+            <nuxt-link :to="$localePath('software-integrations')">{{
+              $t('header title software-integrations')
             }}</nuxt-link>
           </li>
         </ul>
@@ -152,6 +152,42 @@
         </ul>
       </div>
 
+      <!-- Company Column -->
+      <div class="footer-col">
+        <p class="footer-title">{{ $t('footers title company') }}</p>
+        <ul class="footer-links">
+          <li>
+            <nuxt-link :to="$localePath('about')">{{
+              $t('footers link about')
+            }}</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="$localePath('contact')">{{
+              $t('footers link contact')
+            }}</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="$localePath('carbon-report')">{{
+              $t('footers link carbon')
+            }}</nuxt-link>
+          </li>
+          <li>
+            <a href="https://metrics.cg-wire.com">{{
+              $t('footers link metrics')
+            }}</a>
+          </li>
+          <li>
+            <nuxt-link :to="$localePath('terms')">{{
+              $t('footers link terms')
+            }}</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="$localePath('privacy')">{{
+              $t('footers link privacy')
+            }}</nuxt-link>
+          </li>
+        </ul>
+      </div>
       <!-- FAQ Column — second row, full width -->
       <div class="footer-col footer-col--faq">
         <p class="footer-title">{{ $t('pricing faq title') }}</p>
@@ -245,7 +281,7 @@ const { data: faqPages } = await useAsyncData(
 // Row 2: FAQ spanning all 3 columns
 .footer-main
   display grid
-  grid-template-columns 1fr 1fr 1fr
+  grid-template-columns 2fr 1fr 1fr 1fr
   grid-template-rows auto auto        // ← explicit rows
   column-gap 2rem
   row-gap 0                           // ← kill row gap; let padding handle spacing
