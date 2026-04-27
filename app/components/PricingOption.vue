@@ -1,7 +1,7 @@
 <template>
   <p class="flexrow">
     <input
-      class="is-checkradio flexrow-item is-success"
+      class="flexrow-item"
       type="checkbox"
       @change="updateValue"
       :checked="modelValue"

@@ -400,22 +400,4 @@ const { data: faqPages } = await useAsyncData(
   color mediumgrey
   font-size 0.78rem
   text-align center
-
-.footer-bottom-links
-  display flex
-  gap 0.5rem
-  align-items center
-  font-size 0.78rem
-
-  a
-    color mediumgrey
-    text-decoration none
-
-    &:hover
-      color cgwiregreen
-      text-decoration underline
-
-.footer-divider
-  color mediumgrey
-  user-select none
 </style>

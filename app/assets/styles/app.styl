@@ -9,7 +9,6 @@
   src: url("~/assets/fonts/lato.woff2");
   font-display: swap;
 
-
 html
 body
 div.body
@@ -26,22 +25,8 @@ div.body
 
     // Widths
 
-    .w120
-        width 120px
-
-    .w150
-        width 150px
-
     .w25pe
         width 25%
-
-    .w33pe
-        width 33%
-        max-width 33%
-
-    .w40pe
-        width 40%
-        max-width 40%
 
     .w50pe
         width 50%
@@ -49,28 +34,10 @@ div.body
     .w75pe
         width 75%
 
-    .w90pe
-        width 90%
-
     // Spacing
-
-    .pr0-5
-        padding-right .5rem
-
-    .pr1
-        padding-right 1rem
-
-    .pl0-5
-        padding-left .5rem
-
-    .pl1
-        padding-left 1rem
 
     .pt0
         padding-top 0rem
-
-    .mauto
-        margin auto
 
     .mt0
         margin-top 0rem
@@ -87,14 +54,8 @@ div.body
     .mt8
         margin-top 8rem
 
-    .mb0
-        margin-bottom 0rem
-
     .mb4
         margin-bottom 4rem
-
-    .filler
-        margin-bottom 14em
 
     // Flex
 
@@ -175,18 +136,11 @@ div.body
         &.narrower
             max-width calc(960px + 1.5rem * 2)
 
-        .intro-video
-            max-width 90%
-
         .block
             margin 4em 0 0 0
 
             h3
                 margin-top 1em
-
-            &.middle-block
-                margin-top 6em
-                margin-bottom 4em
 
         .screenshot
             border-radius 0.5em
@@ -261,29 +215,6 @@ div.body
     .block-colored--grey
         background-color lightgrey
 
-    .block-colored--dark
-        background-color darkgrey
-        color white
-
-        .section-subtitle
-        .section-title
-            color white
-
-        .button--alt
-        .button--alt:focus
-            color white
-            background-color transparent
-            border 1px solid white
-
-        .button--alt:hover
-            color darkgrey
-            background-color white
-            border-color white
-
-        .screenshot
-            box-shadow 0 0 6px 3px darkgrey - 10%
-            border 1px solid darkgrey
-
     // ========================================================================
     // BUTTONS & INPUTS
     // ========================================================================
@@ -312,17 +243,6 @@ div.body
         background-color alpha(cgwiregreen, .1)
         border-color cgwiregreen
 
-    .button--transparent
-    .button--transparent:focus
-        color cgwiregreen
-        background-color transparent
-        border 1px solid transparent
-
-    .button--transparent:hover
-        color cgwiregreen-alt
-        background-color transparent
-        border-color transparent
-
     .button--with-icon
         display inline-flex
         justify-content space-between
@@ -339,27 +259,6 @@ div.body
 
     .input:focus
         border 1px solid cgwiregreen-alt
-
-    .choice-wrapper
-        align-items stretch
-        margin-top 4em
-        margin-bottom 2em
-
-    .choice-tile
-        padding-right .5rem
-
-        & + &
-            padding-right 0
-            padding-left .5rem
-
-    .choice
-        display flex
-        flex-direction column
-        justify-content space-between
-        height 100%
-        border 1px solid cgwiregreen
-        border-radius 1.11rem
-        padding 2.4rem 1.2rem
 
     // ========================================================================
     // COMPONENTS
@@ -555,16 +454,6 @@ div.body
         border-radius 1rem
         margin 1em
 
-        &.only-name
-            height 5rem
-
-            a
-                color white
-                font-size 0.9em
-                font-weight bold
-                text-align center
-                text-transform uppercase
-
         &:hover
             transform scale(1.1)
             border-radius 1rem
@@ -597,10 +486,6 @@ div.body
             background-color rainbow-13
         &:nth-child(14n+14)
             background-color rainbow-14
-
-    .customers--spread
-        .customers-item
-            flex 1 1 9.95rem
 
     // --- Quotes ---
 
@@ -636,12 +521,6 @@ div.body
         flex 0 0 auto
         width 80px
         height 80px
-
-    .quote-text--alt
-        border-color rainbow-3
-
-        .quote-author
-            color rainbow-3
 
     // --- Check list ---
 
@@ -699,30 +578,9 @@ div.body
 
     // --- Announcement ---
 
-    .announcement
-        background #DEE0FF
-        border 1px solid #5e60ba
-        border-radius 1em
-        color #5e60ba
-        font-size 1.2em
-        font-weight bold
-        margin-top 1em
-        padding 0.5em
-        text-align center
-
-    .changelog-button
-        border 1px solid cgwiregreen
-        border-radius 10px
-        display block
-        font-size 1em
-        padding 0.5em
-
     // --- Calculator ---
 
     .calculator
-
-      .staffnumber
-        margin-right 10px
 
       input.input
         max-width 5em
@@ -796,7 +654,6 @@ div.body
                     margin 0
                     color grey
 
-
             .navbar-start
                 margin-left 1rem
                 margin-right 1em
@@ -829,7 +686,6 @@ div.body
                     .navbar-item-title
                         border-bottom-left-radius 0
                         border-bottom-right-radius 0
-
 
             .navbar-item.is-hoverable.has-dropdown
                 .navbar-item-title
@@ -934,10 +790,6 @@ div.body
     // ========================================================================
 
     section
-        .tutorial-links a
-            margin-top 1em
-            margin-right 1em
-
         &.introduction
             padding-top 5em
             padding-bottom 1em
@@ -1093,11 +945,6 @@ div.body
             padding 2em
             margin-right 0
 
-        .spec-link
-            border 1px solid cgwiregreen
-            border-radius 10px
-            padding .5em
-
     // ========================================================================
     // PAGE: COMMUNITY
     // ========================================================================
@@ -1107,13 +954,6 @@ div.body
             margin 0
 
         &.community-header
-        &.community-footer
-            max-width 1250px
-
-        &.community-code
-            p
-                margin-bottom 1.5em
-
         &.community-info
             max-width 1100px
 
@@ -1322,21 +1162,6 @@ div.body
     // ========================================================================
 
     .pricing-page
-        .first-steps
-            background lightblue
-            border-radius 20px
-            border 1px solid lightblue - 10%
-            padding 1em 2em
-
-            .section-subtitle
-                margin-top 0
-
-            p
-                margin-top .5em
-
-            .flexrow-item:last-child
-                flex 2
-
         section.section
             padding-bottom 0
 
@@ -1348,15 +1173,6 @@ div.body
         div.section-subtitle
             font-size 1.2rem
             margin-top 4em
-
-        .ranch-credits
-            box-shadow 0 4px 16px rgba(80, 0, 100, 0.4)
-            color purple
-            font-size 0.8em
-            letter-spacing 0.1em
-            padding .5em 1em
-            border-bottom-left-radius 1em
-            border-bottom-right-radius 1em
 
         .extra-block
             background lightgrey
@@ -1389,16 +1205,6 @@ div.body
             font-weight bold
             transition transform 0.3s ease
 
-        .frequence
-            padding 0.5em
-            height auto
-            background white
-            color cgwiregreen
-
-            &.active
-                background cgwiregreen
-                color white
-
     .pricings
         display flex
         flex-direction row
@@ -1426,9 +1232,6 @@ div.body
             padding 0.8em
 
         .pricing-price
-            .pricing-currency
-                font-size 0.9em
-
             .pricing-value
                 font-size 1.8em
 
@@ -1451,11 +1254,6 @@ div.body
                 color #888
                 border-bottom 1px solid #EEE
 
-        .pricing-text
-            align-items center
-            display flex
-            color mediumgrey
-
         .pricing-cta
             padding 1em
 
@@ -1472,13 +1270,6 @@ div.body
     .pricing-emphasize
         transform: scale(1.05)
         border 3px solid cgwiregreen-light
-
-    .school-details
-        box-shadow 0 4px 16px rgba(0, 50, 0, 0.2)
-        border-radius 5px
-        padding 0.6em
-        margin 0 1em
-        color text-medium
 
     .pricing-details
         color mediumgrey
@@ -1591,7 +1382,6 @@ div.body
                 p
                     max-width 100%
 
-
         .cookie-consent
             max-height 100%
             overflow-y auto
@@ -1621,7 +1411,6 @@ div.body
                 font-weight bold
                 font-size 2.6em
 
-
         pre
             padding 1em 0
             font-size 0.7em
@@ -1647,10 +1436,6 @@ div.body
             .introduction-text
                 margin-bottom 2em
 
-        .tutorial-links a
-            margin-right 0
-            font-size 0.8em
-
         .block
             flex-wrap wrap
 
@@ -1661,9 +1446,6 @@ div.body
                 min-width 300px
                 width 100%
                 margin-right 0
-
-            .level-item
-                width 100%
 
         .ppl
             flex-direction column
@@ -1716,12 +1498,6 @@ div.body
             background-position 90% bottom
             bottom -10px
 
-        .choice-tile
-            padding 0 0 1rem 0
-
-            & + &
-                padding 0 0 1rem 0
-
         .content-image
         .content-reverse .content-image
             padding 2rem 0 0 0
@@ -1732,7 +1508,6 @@ div.body
         .kitsu-page
             .section-title
                 font-size 2rem
-
 
         .kitsu-page
             .solution-title .section-title
@@ -1868,16 +1643,11 @@ div.body
                     margin-left 0
 
         .pricing-page
-            .first-steps
-                padding 1em
-                flex-direction column
-
         header .navbar-dropdown .columns
             flex-direction column
 
             .column:first-child
                 padding-bottom 0
-
 
             .hosting-solutions
                 margin-bottom 0
