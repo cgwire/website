@@ -1,16 +1,20 @@
 export function useStudios(locale, type) {
-  function buildStudiosQuery() {
-    const query = queryCollection('studios').where(
-      'path',
-      'LIKE',
-      `/studios/${locale.value}/%`
-    )
+  async function buildStudiosQuery() {
+    var res = await queryCollection('jsonPages')
+      .where('lang', '=', locale.value)
+      .where('pageType', '=', 'studios')
+      .all()
 
     if (type.value) {
-      query.where('type', 'LIKE', `%"${type.value}"%`)
+      res = res.filter(studio => {
+        return (
+          studio.meta.type == type.value ||
+          studio.meta.type.includes(type.value)
+        )
+      })
     }
 
-    return query.all()
+    return res
   }
 
   return { buildStudiosQuery }

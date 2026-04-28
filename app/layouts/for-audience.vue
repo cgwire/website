@@ -86,11 +86,11 @@
       <ul class="customers">
         <CustomerLogoBlock
           v-for="studio in studios"
-          :key="studio.element"
-          :name="studio.name"
-          :element-key="studio.elementKey"
-          :link="studio.link"
-          :case-study="studio.case_study"
+          :key="studio.meta.elementKey"
+          :name="studio.meta.name"
+          :element-key="studio.meta.elementKey"
+          :link="studio.meta.link"
+          :case-study="studio.meta.case_study"
         />
       </ul>
     </section>

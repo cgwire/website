@@ -44,13 +44,12 @@ const localePath = useLocalePath()
 const route = useRoute()
 
 const { slug } = await useI18NSlug()
+const { queryStudio } = useStudio(locale, slug)
 
-const { data } = await useAsyncData(
+const { data: studio } = await useAsyncData(
   `studio-${locale.value}-${slug.value}`,
-  () =>
-    queryCollection('studios')
-      .path(`/studios/${locale.value}/${slug.value}`)
-      .first()
+  queryStudio,
+  { watch: [locale, slug] }
 )
 
 const studio = data.value
