@@ -13,27 +13,27 @@ When you're evaluating a production management platform, the most important ques
 
 Kitsu is used by over 300 studios worldwide, from indie animation houses to large-scale VFX productions, spanning feature films, TV series, video games, and shorts. It's been shaped by years of feedback from the producers, supervisors, and artists who use it every day.
 
-## From Chaos to Clarity: A Real Production Story
+## From Chaos to Clarity: Real Production Stories
 
-Studio profile: 25-person team, TV series, tight delivery schedule, remote artists across 3 time zones.
+::customer-story-content-block{slug="remembers"}
+::
 
-Before Kitsu:
-- Shot statuses lived in spreadsheets manually updated by one coordinator
-- Artists missed feedback because review notes were scattered across email threads
-- The director had no reliable way to see overall production health without a weekly standup
-- Onboarding a new artist took 2–3 days of setup and explanation
+::customer-story-content-block{slug="tant-mieux"}
+::
 
-After Kitsu:
-- Every task, revision, and comment is tracked in a single live dashboard
-- Artists receive real-time notifications when their tasks are updated or reviewed
-- The director checks a production report every morning, no meeting required
-- New artists are autonomous within a few hours
-
-The result: The studio delivered the series on time and has since scaled to a second production running in parallel on Kitsu.
+::customer-story-content-block{slug="miyu"}
+::
 
 ## What Producers Are Saying
 
+::quote-content-block{slug="makuta2"}
+::
 
+::quote-content-block{slug="woodblock"}
+::
+
+::quote-content-block{slug="miyu"}
+::
 
 ## Built for the Whole Studio, Trusted at Every Level
 

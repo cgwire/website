@@ -2,17 +2,21 @@
   <div v-if="studio" class="studio-page">
     <section class="section content narrower">
       <div class="section-subtitle has-text-centered mt2">
-        {{ Array.isArray(studio.type) ? studio.type.join(', ') : studio.type }}
+        {{
+          Array.isArray(studio.meta.type)
+            ? studio.meta.type.join(', ')
+            : studio.meta.type
+        }}
       </div>
 
       <h2 class="section-title has-text-centered">
-        {{ studio.name }}
+        {{ studio.meta.name }}
       </h2>
 
       <div class="studio-links has-text-centered mt2">
         <a
-          v-if="studio.link"
-          :href="studio.link"
+          v-if="studio.meta.link"
+          :href="studio.meta.link"
           target="_blank"
           rel="noopener noreferrer"
           class="button is-primary"
@@ -21,12 +25,8 @@
         </a>
 
         <NuxtLink
-          v-if="studio.case_study"
-          :to="
-            Array.isArray(studio.case_study)
-              ? studio.case_study
-              : studio.case_study
-          "
+          v-if="studio.meta.case_study"
+          :to="studio.meta.case_study"
           class="button is-secondary ml2"
         >
           {{ t('studio.viewCaseStudy') }}
@@ -44,43 +44,16 @@ const localePath = useLocalePath()
 const route = useRoute()
 
 const { slug } = await useI18NSlug()
+const { queryStudio } = useStudio(slug, locale)
 
-const { data } = await useAsyncData(
+const { data: studio } = await useAsyncData(
   `studio-${locale.value}-${slug.value}`,
-  () =>
-    queryCollection('studios')
-      .path(`/studios/${locale.value}/${slug.value}`)
-      .first()
+  queryStudio,
+  { watch: [locale, slug] }
 )
 
-const studio = data.value
-
-const path = localePath(route.name)
-const url = `https://www.cg-wire.com${path}`
-
-const title = `${studio.name} | CGWire Studios`
-const description = `${studio.name} uses CGWire's Kitsu. Read the customer interview ->`
-
-useHead({
-  title,
-  meta: [
-    { name: 'description', content: description },
-    { name: 'og:description', content: description },
-    { name: 'og:title', content: title },
-    { name: 'og:type', content: 'website' },
-    { name: 'og:url', content: url },
-    // {
-    //   name: 'og:image',
-    //   content: 'https://www.cg-wire.com/_nuxt/' + imgPath
-    // },
-    { name: 'twitter:title', content: title },
-    { name: 'twitter:description', content: description },
-    { name: 'twitter:url', content: url },
-    // {
-    //   name: 'twitter:image',
-    //   content: 'https://www.cg-wire.com/_nuxt/' + imgPath
-    // },
-    { name: 'twitter:card', content: 'summary_large_image' }
-  ]
+useSEO({
+  title: `${studio.value.meta.name} | CGWire Studios`,
+  description: `${studio.value.meta.name} uses CGWire's Kitsu. Read the customer interview ->`
 })
 </script>

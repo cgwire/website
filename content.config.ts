@@ -11,7 +11,10 @@ const COLLECTIONS = [
   { key: 'pages' },
   { key: 'features' },
   { key: 'alternatives' },
-  { key: 'audiences' }
+  { key: 'audiences' },
+  { key: 'studios' },
+  { key: 'testimonials' },
+  { key: 'customer_stories' }
 ]
 
 const pageCache = new Map()
@@ -77,18 +80,6 @@ export default defineContentConfig({
     faq: defineCollection({
       type: 'page',
       source: 'faq/**/*.md'
-    }),
-    studios: defineCollection({
-      type: 'page',
-      source: 'studios/**/*.json',
-      schema: z.object({
-        name: z.string(),
-        elementKey: z.string(),
-        type: z.union([z.array(z.string()), z.string()]),
-        link: z.string(),
-        case_study: z.union([z.array(z.string()), z.string()]).default('')
-      }),
-      indexes: [{ columns: ['elementKey'] }]
     }),
     tools: defineCollection({
       type: 'page',
