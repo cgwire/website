@@ -1,10 +1,13 @@
 export function useTestimonial(slug, locale) {
-  function queryTestimonial() {
-    return queryCollection('jsonPages')
+  async function queryTestimonial() {
+    let res = await queryCollection('jsonPages')
       .where('lang', '=', locale.value)
       .where('pageType', '=', 'testimonials')
-      .where('slug', '=', slug.value)
-      .first()
+      .all()
+
+    res = res.filter(t => t.stem.split('/')[2] == slug.value)
+
+    return res[0]
   }
 
   return { queryTestimonial }

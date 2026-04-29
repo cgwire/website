@@ -14,7 +14,7 @@ const COLLECTIONS = [
   { key: 'audiences' },
   { key: 'studios' },
   { key: 'testimonials' },
-  { key: 'case-studies' }
+  { key: 'customer_stories' }
 ]
 
 const pageCache = new Map()

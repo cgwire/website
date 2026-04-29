@@ -2678,5 +2678,156 @@
       "name": "Zodiak Kids",
       "type": "tvshows"
     }
+  },
+  "testimonials": {
+    "makuta2": {
+      "studio": "Makuta VFX",
+      "interviewee": "Pete Draper",
+      "role": "Directeur de Production",
+      "image": "/images/testimonials/petedraper.png",
+      "quote": "Kitsu a pratiquement tout unifié et encourage une communication plus rigoureuse."
+    },
+    "woodblock": {
+      "studio": "Woodblock",
+      "interviewee": "Christian Zehetmeier",
+      "role": "Responsable de Production",
+      "image": "/images/testimonials/christian.png",
+      "quote": "Kitsu est un outil très convivial pour les artistes, conçu pour planifier et suivre vos projets. L'interface est claire et facile à comprendre. Nous avons reçu beaucoup de retours positifs de la part de l'équipe."
+    },
+    "mdhr": {
+      "studio": "MDHR",
+      "interviewee": "Ariel McKay",
+      "role": "Assistante de Production",
+      "image": "/images/testimonials/arielmckay.png",
+      "quote": "Chaque fois que je découvre une nouvelle fonctionnalité de Kitsu, l'outil devient encore plus puissant. C'est comme si Kitsu était plein de surprises. C'est une ressource solide que je sais que je continuerai à apprendre, à adapter et à enrichir — elle a toujours plus à offrir !"
+    },
+    "cube": {
+      "studio": "Cube Creative",
+      "interviewee": "Cécile Hergaux",
+      "role": "Directrice de Studio",
+      "image": "/images/testimonials/cecilehergaux.png",
+      "quote": "Quand on travaille sur une série de 52x11', on doit gérer une quantité folle de livraisons. Heureusement, avec Kitsu, tout s'est déroulé sans accroc."
+    },
+    "pole3d": {
+      "studio": "Pôle 3D",
+      "interviewee": "Carlos de Carvalho",
+      "role": "Directeur des études",
+      "image": "/images/testimonials/carlosdecarvalho.png",
+      "quote": "Kitsu est exactement la solution que nous recherchions pour gérer les projets de nos étudiants."
+    },
+    "tant-mieux": {
+      "studio": "Tant Mieux Prod",
+      "interviewee": "Tristan Mercier",
+      "role": "Directeur de Production",
+      "image": "/images/photo-customer-story-tant-mieux.png",
+      "quote": "La communication avec les studios distants a été simplifiée. Nous pouvons discuter d'un asset ou d'une tâche spécifique sans échanger 10 emails. En cas de doute, nous pouvons nous fier à ce qui est indiqué sur la plateforme."
+    },
+    "miyu": {
+      "studio": "MIYU Studio",
+      "interviewee": "Carole Faure",
+      "role": "Responsable de Production",
+      "image": "/images/photo-customer-story-miyu.png",
+      "quote": "Quelques jours suffisent pour comprendre toutes les fonctionnalités nécessaires au lancement d'une production. Tout le monde dans le studio démarre rapidement, en particulier les artistes qui apprécient vraiment Kitsu. Nous n'avions pas remarqué cet enthousiasme avec les outils précédemment utilisés."
+    },
+    "fost": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "Directrice de Studio",
+      "image": "/images/photo-customer-story-fost.png",
+      "quote": "Avec Kitsu, on pense d'abord au temps gagné, mais ce qui compte le plus pour moi, c'est la sérénité que l'on obtient en ayant tout en ordre. Ça libère de l'espace mental pour se concentrer sur d'autres aspects de la production."
+    },
+    "adm": {
+      "studio": "Autour de Minuit",
+      "interviewee": "Fiona Cohen",
+      "role": "Responsable de Production",
+      "image": "/images/photo-customer-story-adm.jpg",
+      "quote": "Nous avions besoin d'un outil pour relier les tâches et les livraisons visuelles. Nous voulions un logiciel pratique et agréable pour les équipes. Notamment pour les réalisateurs, qui devaient accéder aux plans de bout en bout à tout moment. Et bien sûr, tout en permettant aux responsables de production de suivre l'avancement facilement."
+    },
+    "makuta": {
+      "studio": "Makuta VFX",
+      "interviewee": "Pete Draper",
+      "role": "Responsable des Effets Visuels",
+      "image": "/images/photo-customer-story-makuta.png",
+      "quote": "Kitsu a pratiquement tout unifié et encourage une communication plus rigoureuse, non seulement entre les artistes, mais aussi entre la production, la direction et les clients."
+    },
+    "ryff": {
+      "studio": "Ryff",
+      "interviewee": "Pete Draper",
+      "role": "Superviseur des Effets Visuels",
+      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "quote": "Kitsu était simple et intuitif. Pas besoin d'un doctorat en informatique comme avec les alternatives."
+    },
+    "remembers": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "Directrice de Production",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "Je savais que si j'introduisais un nouvel outil, je devais répondre à un besoin qui n'avait pas encore été identifié par l'équipe en place. Le principal défi dès le départ était de ne pas les contraindre."
+    }
+  },
+  "customer_stories": {
+    "tant-mieux": {
+      "studio": "Tant Mieux Prod",
+      "interviewee": "Tristan Mercier",
+      "role": "Directeur de Production",
+      "link": "https://blog.cg-wire.com/customer-story-tant-mieux-prod/",
+      "image": "/images/photo-customer-story-tant-mieux.png",
+      "quote": "La communication avec les studios distants a été simplifiée. Nous pouvons discuter d'un asset ou d'une tâche spécifique sans échanger 10 emails. En cas de doute, nous pouvons nous fier à ce qui est indiqué sur la plateforme.",
+      "category": "Série TV (2D)"
+    },
+    "miyu": {
+      "studio": "MIYU Studio",
+      "interviewee": "Carole Faure",
+      "role": "Responsable de Production",
+      "link": "https://blog.cg-wire.com/customer-story-miyu-studio/",
+      "image": "/images/photo-customer-story-miyu.png",
+      "quote": "Quelques jours suffisent pour comprendre toutes les fonctionnalités nécessaires au lancement d'une production. Tout le monde dans le studio démarre rapidement, en particulier les artistes qui apprécient vraiment Kitsu. Nous n'avions pas remarqué cet enthousiasme avec les outils précédemment utilisés.",
+      "category": "Longs métrages, Courts métrages (2D)"
+    },
+    "fost": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "Directrice de Studio",
+      "link": "https://blog.cg-wire.com/customer-story-fost-studio/",
+      "image": "/images/photo-customer-story-fost.png",
+      "quote": "Avec Kitsu, on pense d'abord au temps gagné, mais ce qui compte le plus pour moi, c'est la sérénité que l'on obtient en ayant tout en ordre. Ça libère de l'espace mental pour se concentrer sur d'autres aspects de la production.",
+      "category": "Série TV (2D)"
+    },
+    "adm": {
+      "studio": "Autour de Minuit",
+      "interviewee": "Fiona Cohen",
+      "role": "Responsable de Production",
+      "link": "https://blog.cg-wire.com/customer-story-autour-de-minuit/",
+      "image": "/images/photo-customer-story-adm.jpg",
+      "quote": "Nous avions besoin d'un outil pour relier les tâches et les livraisons visuelles. Nous voulions un logiciel pratique et agréable pour les équipes. Notamment pour les réalisateurs, qui devaient accéder aux plans de bout en bout à tout moment. Et bien sûr, tout en permettant aux responsables de production de suivre l'avancement facilement.",
+      "category": "Séries TV, Longs métrages (2D, 3D)"
+    },
+    "makuta": {
+      "studio": "Makuta VFX",
+      "interviewee": "Pete Draper",
+      "role": "Responsable des Effets Visuels",
+      "link": "https://blog.cg-wire.com/customer-story-makuta-vfx-studio/",
+      "image": "/images/photo-customer-story-makuta.png",
+      "quote": "Kitsu a pratiquement tout unifié et encourage une communication plus rigoureuse, non seulement entre les artistes, mais aussi entre la production, la direction et les clients.",
+      "category": "Longs métrages (VFX)"
+    },
+    "ryff": {
+      "studio": "Ryff",
+      "interviewee": "Pete Draper",
+      "role": "Superviseur des Effets Visuels",
+      "link": "https://blog.cg-wire.com/how-vfx-supervisor-manages-hundreds-of-projects-with-kitsu/",
+      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "quote": "Kitsu était simple et intuitif. Pas besoin d'un doctorat en informatique comme avec les alternatives.",
+      "category": "Publicité"
+    },
+    "remembers": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "Directrice de Production",
+      "link": "https://blog.cg-wire.com/remembers-kitsu-arco-production",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "Je savais que si j'introduisais un nouvel outil, je devais répondre à un besoin qui n'avait pas encore été identifié par l'équipe en place. Le principal défi dès le départ était de ne pas les contraindre.",
+      "category": "Longs métrages (2D)"
+    }
   }
 }

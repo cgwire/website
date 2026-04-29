@@ -1,10 +1,13 @@
 export function useStudio(slug, locale) {
-  function queryStudio() {
-    return queryCollection('jsonPages')
+  async function queryStudio() {
+    let res = await queryCollection('jsonPages')
       .where('lang', '=', locale.value)
       .where('pageType', '=', 'studios')
-      .where('slug', '=', slug.value)
-      .first()
+      .all()
+
+    res = res.filter(t => t.stem.split('/')[2] == slug.value)
+
+    return res[0]
   }
 
   return { queryStudio }
