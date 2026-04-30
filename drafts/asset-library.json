@@ -1,0 +1,35 @@
+"asset-library": {
+    "name": "Asset Library",
+    "slug": "asset-library",
+    "image": "asset-library.png",
+    "header": {
+      "tagline": "Asset Library",
+      "subtitle": "Reuse, share and evolve your assets across productions",
+      "metrics": "Thousands of assets reused across productions with Kitsu!",
+      "explanation": "Build a central repository of all your studio's assets and reuse them across multiple productions. Track every version, eliminate duplication, and give your pipeline a single source of truth for every character, prop, set, and FX element your studio has ever created."
+    },
+    "features": [
+      {
+        "title": "One asset, many productions",
+        "subtitle": "Cross-production reuse",
+        "content": "Store assets once and reference them across any number of productions. When a character or prop is updated, every production using it stays in sync. No more copying files between projects or losing track of which version is canonical.",
+        "image": "kitsu-asset-library.png",
+        "colored": true
+      },
+      {
+        "title": "Eliminate redundant work",
+        "subtitle": "Deduplication",
+        "content": "Identify duplicate assets across your catalogue before they multiply. Kitsu flags similar entries and helps your team consolidate them into a single authoritative record, keeping your library clean and your artists focused on new work rather than recreating existing assets.",
+        "image": "kitsu-deduplication.png",
+        "reverted": true
+      },
+      {
+        "title": "Never lose a previous version",
+        "subtitle": "Full version history",
+        "content": "Every iteration of every asset is stored and accessible. Roll back to an earlier version, compare changes over time, or audit exactly who modified what and when. Your asset history is always complete.",
+        "image": "kitsu-version-history.png",
+        "colored": true,
+        "gradient": true
+      }
+    ]
+  },
