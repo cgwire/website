@@ -5,6 +5,9 @@ subtitle: "A Practical Approach to Moving Your Studio to Kitsu"
 image: "migration-kitsu-cloud.png"
 ---
 
+::user-logos{withTitle=false}
+::
+
 ## Switching Without Slowing Down Production
 
 Every studio hesitates before changing its production tracker. You have deadlines, artists in the middle of shots, and producers relying on stable data every day.
@@ -16,6 +19,9 @@ Kitsu is built with that reality in mind.
 We do not force a sudden change. We let studios transition at their own pace while production goes on. 
 
 You can move one project at a time, or even one department at a time, without interrupting deliveries.
+
+::customer-story-content-block{slug="miyu"}
+::
 
 ## A Migration Plan That Matches How Studios Actually Work
 
@@ -47,6 +53,9 @@ Kitsu allows you to import structured data through CSV or API, so you can bring 
 
 If you are coming from another tool, Kitsu helps you extract and reorganize that data so it fits cleanly.
 
+::quote-content-block{slug="tant-mieux"}
+::
+
 ## Running Both Systems If You Need Reassurance
 
 Some studios prefer to validate everything before committing.
@@ -67,6 +76,9 @@ Kitsu avoids that by focusing on how different roles actually operate:
 
 Training is adapted to each role with live sessions, practical examples, and direct support during rollout. We make sure each person understands how Kitsu helps them do their job faster.
 
+::quote-content-block{slug="woodblock"}
+::
+
 ## Integration Without Rebuilding Your Pipeline
 
 Most studios already have a working pipeline. Their concern is whether a new tool will force a rebuild.
@@ -82,6 +94,9 @@ With its REST API and Python client, your technical team can connect it to:
 - Review workflows already used by supervisors
 
 An artist can publish a playblast from their DCC tool and have it automatically appear in Kitsu with the correct task and version without manual upload.
+
+::customer-story-content-block{slug="makuta"}
+::
 
 ## Open Source Means Control, Not Dependency
 
@@ -110,3 +125,6 @@ With Kitsu, you can move progressively, keep production running, preserve your d
 Keep in mind that if your current system is creating friction between departments, staying with it also has a cost.
 
 Migrating to Kitsu is not about changing tools for the sake of it: we give your studio a system that scales with your projects and supports your team without adding unnecessary complexity.
+
+::customer-story-content-block{slug="fost"}
+::

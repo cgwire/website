@@ -11,6 +11,9 @@ Most production tools are built for producers, and then handed to artists who ju
 
 Kitsu was designed differently: each role gets exactly what they need.
 
+::customer-story-content-block{slug="remembers"}
+::
+
 ## What an Artist Actually Sees
 
 When an artist logs into Kitsu, they don't land on a dashboard of Gantt charts, budget modules, or studio-wide reports. They see their to-do list.
@@ -26,6 +29,9 @@ That's it.
 - ✅ Move on
 
 No training required. No manual to read. No settings to configure.
+
+::customer-story-content-block{slug="miyu"}
+::
 
 ## What a Producer Actually Sees
 
@@ -68,7 +74,13 @@ Every screen in Kitsu is designed around a single question: what does this perso
 
 There are no cluttered sidebars fighting for attention. No ten-step workflows to publish a preview. No buried menus where critical actions hide.
 
+::quote-content-block{slug="woodblock"}
+::
+
 ## Trusted by 300+ Studios in 50+ Countries
+
+::user-logos{withTitle=false}
+::
 
 Studios ranging from solo freelancers to large-scale feature film productions use Kitsu daily, including teams that had never used dedicated production software before.
 

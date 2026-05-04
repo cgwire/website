@@ -9,6 +9,9 @@ Switching tools always feels risky. You might wonder, "how long before it works 
 
 Your team can be tracking tasks, reviewing assets, and logging time within hours of signing up.
 
+::user-logos
+::
+
 ## Week 1 Looks Like This
 
 Day 1. You're live.
@@ -23,23 +26,25 @@ Upload a preview, leave timestamped annotations, compare versions side by side. 
 End of week 1. You have a production dashboard.
 Progress by task status, time logged per artist, asset readiness at a glance. The kind of report that used to take a producer half a day to compile manually.
 
+::quote-content-block{slug="miyu"}
+::
+
 ## What Makes This Fast
 
-Starter pipeline templates
-Pre-built task workflows for the most common production types. Pick one, customize later. You're not designing your pipeline from scratch.
+- Starter pipeline templates - Pre-built task workflows for the most common production types. Pick one, customize later. You're not designing your pipeline from scratch.
+- Flat learning curve for artists - The artist view is a simple task list with a preview upload button. If your team can use email, they can use Kitsu.
+- No IT project required - Cloud hosting means zero infrastructure work on your end. Kitsu handles SSL, uptime, backups, and video processing. You handle your production.
+- Data import tools - Bring in your asset lists and shot breakdowns from spreadsheets. Your existing tracking data doesn't go to waste.
 
-Flat learning curve for artists
-The artist view is a simple task list with a preview upload button. If your team can use email, they can use Kitsu.
-
-No IT project required
-Cloud hosting means zero infrastructure work on your end. Kitsu handles SSL, uptime, backups, and video processing. You handle your production.
-
-Data import tools
-Bring in your asset lists and shot breakdowns from spreadsheets. Your existing tracking data doesn't go to waste.
+::quote-content-block{slug="ryff"}
+::
 
 ## The Studios That Moved Fastest
 
 Studios across 50+ countries from small agencies to large VFX houses have made this switch without pausing a live production. The key was starting small: one project, one team, real work.
+
+::quote-content-block{slug="fost"}
+::
 
 ## Still Not Sure? Start Free.
 

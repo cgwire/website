@@ -5,6 +5,9 @@ subtitle: ""
 image: "change-management-kitsu.png"
 ---
 
+::user-logos{withTitle=false}
+::
+
 We get it. The tool you have is the one you know. But "good enough" has a price: overtime, missed deliveries, and burnout.
 
 ## The Honest Question
@@ -14,6 +17,9 @@ Every studio we talk to has tried to make it work with existing tools. Spreadshe
 Then production scales. Deadlines compress. The team doubles. And suddenly "good enough" becomes the thing slowing everything down.
 
 ## Where Generic Tools Break Down
+
+::customer-story-content-block{slug="adm"}
+::
 
 ### Spreadsheets: Built for Numbers, Not Pipelines
 
@@ -52,6 +58,9 @@ ShotGrid (or Shotgun, or Flow) is a legitimate production tool. But it comes wit
 
 ShotGrid was built for large VFX facilities with dedicated infrastructure teams. If that's you, it may serve you well. If it's not, you're paying enterprise prices for features you don't need, while wrestling with a UI that wasn't designed for your workflow.
 
+::customer-story-content-block{slug="ryff"}
+::
+
 ## The Hidden Costs of "Good Enough"
 
 The sticker price of free tools is never the real price. Consider what you're actually spending:
@@ -67,6 +76,9 @@ The sticker price of free tools is never the real price. Consider what you're ac
 
 All these costs show up as crunch, turnover, and blown budgets.
 
+::customer-story-content-block{slug="fost"}
+::
+
 ## The Specific Pain Points Kitsu Was Built to Solve
 
 - Versioning: Every preview upload in Kitsu is versioned automatically. Supervisors review the latest version. Artists always know which feedback applies to which iteration. There is no "wait, which file are we looking at?"
@@ -81,3 +93,6 @@ Because the cost of switching is finite, the cost of staying is ongoing.
 Migrating to Kitsu typically takes days, not months. The open-source version costs nothing to try. And because your data is exposed via a full REST and Python API, Kitsu integrates with whatever pipeline tools you already use.
 
 The studios that delay the switch do it because switching feels risky. We've built Kitsu to make that risk as small as possible.
+
+::quote-content-block{slug="mdhr"}
+::
