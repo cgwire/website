@@ -278,6 +278,9 @@
           "hoursSaved": "節約時間／日",
           "videoReviews": "kitsuスタッツビデオレビュー",
           "countries": "国名"
+        },
+        "testimonials": {
+          "title": "お客様の声"
         }
       },
       "about": {
@@ -2655,13 +2658,6 @@
     }
   },
   "testimonials": {
-    "makuta2": {
-      "studio": "Makuta VFX",
-      "interviewee": "Pete Draper",
-      "role": "プロダクションディレクター",
-      "image": "/images/testimonials/petedraper.png",
-      "quote": "Kitsuはほぼすべてを統合し、よりスムーズなコミュニケーションを促進しています。"
-    },
     "woodblock": {
       "studio": "Woodblock",
       "interviewee": "Christian Zehetmeier",

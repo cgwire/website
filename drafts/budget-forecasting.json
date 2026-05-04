@@ -1,0 +1,35 @@
+"budget-forecasting": {
+    "name": "Budget Forecasting",
+    "slug": "budget-forecasting",
+    "image": "budget-forecasting.png",
+    "header": {
+      "tagline": "Budget Forecasting",
+      "subtitle": "Anticipate costs before they become problems",
+      "metrics": "Stay ahead of overruns across every production stage.",
+      "explanation": "Model cost scenarios, track spending against your forecasts, and catch overruns before they happen. Kitsu brings your financial data alongside your production data so that producers and studio heads can make informed decisions at every stage of a project."
+    },
+    "features": [
+      {
+        "title": "Model your scenarios",
+        "subtitle": "Cost scenario testing",
+        "content": "Run what-if scenarios before committing to a schedule or headcount. Adjust task durations, team sizes, or rates and instantly see the budget impact. Make confident decisions backed by data rather than estimates.",
+        "image": "kitsu-scenarios.png",
+        "colored": true
+      },
+      {
+        "title": "Track spending in real time",
+        "subtitle": "Forecast vs. actuals",
+        "content": "Compare your original budget against actual time logged and costs incurred as the production progresses. Drill down by department, task type, or individual artist to understand exactly where your budget is going.",
+        "image": "kitsu-budget-tracking.png",
+        "reverted": true
+      },
+      {
+        "title": "Catch overruns early",
+        "subtitle": "Overrun alerts and reports",
+        "content": "Kitsu flags tasks and departments trending over budget so you can intervene before small variances become costly problems. Export detailed financial reports to share with stakeholders or finance teams at any point in the production.",
+        "image": "kitsu-overruns.png",
+        "colored": true,
+        "gradient": true
+      }
+    ]
+  },

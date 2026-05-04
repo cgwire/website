@@ -278,6 +278,9 @@
           "hoursSaved": "Heures économisées / jour",
           "videoReviews": "Vidéos validées / jour",
           "countries": "Pays"
+        },
+        "testimonials": {
+          "title": "Ce que disent nos clients"
         }
       },
       "about": {
@@ -2680,13 +2683,6 @@
     }
   },
   "testimonials": {
-    "makuta2": {
-      "studio": "Makuta VFX",
-      "interviewee": "Pete Draper",
-      "role": "Directeur de Production",
-      "image": "/images/testimonials/petedraper.png",
-      "quote": "Kitsu a pratiquement tout unifié et encourage une communication plus rigoureuse."
-    },
     "woodblock": {
       "studio": "Woodblock",
       "interviewee": "Christian Zehetmeier",

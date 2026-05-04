@@ -1,29 +1,23 @@
 <template>
   <ul class="customers">
     <CustomerLogoBlock
-      link="https://supercell.com/"
-      element-key="supercell"
-      name="Supercell"
-    />
-    <CustomerLogoBlock
-      link="https://studiomdhr.com/"
-      element-key="mdhr"
-      name="Studio MDHR"
-    />
-    <CustomerLogoBlock
-      link="https://metacoregames.com/"
-      element-key="metacore"
-      name="Metacore"
-    />
-    <CustomerLogoBlock
-      link="https://yuga.com/"
-      element-key="yuga-labs-invert"
-      name="Yuga Labs"
-    />
-    <CustomerLogoBlock
-      link="https://thetrailerfarm.com/"
-      element-key="trailer-farm"
-      name="The Trailer Farm"
+      v-for="studio in studios"
+      :link="studio.meta.link"
+      :element-key="studio.meta.elementKey"
+      :name="studio.meta.name"
     />
   </ul>
 </template>
+
+<script setup>
+const { locale } = useI18n()
+const type = ref('video-games')
+
+const { buildStudiosQuery } = useStudios(locale, type)
+
+const { data: studios } = await useAsyncData(
+  () => `studios-${type.value}-${locale.value}`,
+  buildStudiosQuery,
+  { watch: [locale, type] }
+)
+</script>

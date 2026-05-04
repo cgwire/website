@@ -1,11 +1,9 @@
-export function useTestimonials(locale, type) {
-  async function queryTestimonials() {
-    var res = await queryCollection('jsonPages')
+export function useTestimonials(locale) {
+  function queryTestimonials() {
+    return queryCollection('jsonPages')
       .where('lang', '=', locale.value)
       .where('pageType', '=', 'testimonials')
       .all()
-
-    return res
   }
 
   return { queryTestimonials }

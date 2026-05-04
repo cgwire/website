@@ -1,0 +1,35 @@
+"multi-studio-production": {
+    "name": "Multi-Studio / Multi-Production",
+    "slug": "multi-studio-production",
+    "image": "multi-studio-production.png",
+    "header": {
+      "tagline": "Multi-Studio / Multi-Production",
+      "subtitle": "Manage every production, across every studio, in one place",
+      "metrics": "Large studio groups trust Kitsu to coordinate productions at scale.",
+      "explanation": "When you are running several productions simultaneously — across one studio or many — you need more than a project management tool. Kitsu gives group-level visibility over all active productions while keeping each team focused on their own work. Coordinate resources, enforce consistent workflows, and stay informed without context-switching."
+    },
+    "features": [
+      {
+        "title": "See across all your productions",
+        "subtitle": "Group-level dashboard",
+        "content": "Get a consolidated view of every active production in your group from a single dashboard. Monitor overall progress, spot bottlenecks, and compare the health of projects at a glance — without having to dive into each one individually.",
+        "image": "kitsu-group-dashboard.png",
+        "colored": true
+      },
+      {
+        "title": "Share resources without the chaos",
+        "subtitle": "Cross-production resource management",
+        "content": "Assign artists to tasks across multiple productions and track their availability in one place. Understand who is over-allocated before it becomes a delivery risk, and rebalance workloads across your studio group with confidence.",
+        "image": "kitsu-resource-management.png",
+        "reverted": true
+      },
+      {
+        "title": "Keep every team aligned",
+        "subtitle": "Consistent workflows at scale",
+        "content": "Define task types, statuses, and pipeline conventions once and apply them across all productions in your group. Each production retains the flexibility it needs while the studio maintains the consistency required for reporting, quality control, and client communication.",
+        "image": "kitsu-workflows-scale.png",
+        "colored": true,
+        "gradient": true
+      }
+    ]
+  }

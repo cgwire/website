@@ -329,49 +329,58 @@
       </div>
     </section>
 
+    <section
+      class="section content testimonials-section mt8"
+      data-aos="fade-up"
+    >
+      <h2 class="subtitle main-tagline has-text-centered">
+        {{ page.meta.kitsu.testimonials.title }}
+      </h2>
+      <div class="testimonials-grid">
+        <div
+          v-for="testimonial in testimonials.slice(0, 5)"
+          :key="testimonial.stem"
+          class="testimonial-item"
+        >
+          <blockquote class="lean-quote-text">
+            <p>{{ testimonial.meta.quote }}</p>
+            <footer class="lean-quote-author">
+              <NuxtImg
+                class="lean-quote-avatar"
+                :src="testimonial.meta.image"
+                format="webp"
+              />
+              {{ testimonial.meta.interviewee }}, {{ testimonial.meta.role }} at
+              {{ testimonial.meta.studio }}
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
     <section class="flexcolumn landing-block mt8">
       <h2 class="subtitle main-tagline">
         {{ page.meta.kitsu.scale.stories }}
       </h2>
-      <p class="has-text-centered tagline-explanation" data-aos="fade-up">
+      <p class="has-text-centered tagline-explanation mb4" data-aos="fade-up">
         {{ page.meta.kitsu.scale.storiesText }}
       </p>
 
-      <div class="mt4 mb1" data-aos="fade-up">
+      <div
+        v-for="(pair, index) in pairedStudies"
+        :key="index"
+        class="mt1 mb1"
+        data-aos="fade-up"
+      >
         <div class="flexrow stories">
           <CustomerStorySmallBlock
-            studio-name="Miyu studio"
-            story-key="miyu"
-            image-path="photo-customer-story-miyu.png"
-            interviewee="Carole Faure, Production Manager"
-            story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
-          />
-
-          <CustomerStorySmallBlock
-            studio-name="Fost studio"
-            story-key="fost"
-            image-path="photo-customer-story-fost.png"
-            interviewee="Céline Durieux, Head Of Studio"
-            story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
-          />
-        </div>
-      </div>
-      <div class="mt1 mb4" data-aos="fade-up">
-        <div class="flexrow stories">
-          <CustomerStorySmallBlock
-            studio-name="Autour De Minuit"
-            story-key="adm"
-            interviewee="Fiona Cohen, Production Manager"
-            image-path="photo-customer-story-adm.jpg"
-            story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
-          />
-
-          <CustomerStorySmallBlock
-            studio-name="Makuta VFX"
-            story-key="makuta"
-            interviewee="Pete Draper, Head of VFX"
-            image-path="photo-customer-story-makuta.png"
-            story-url="https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
+            v-for="study in pair"
+            :key="study.stem.split('/')[2]"
+            :studio-name="study.meta.studio"
+            :story-key="study.stem.split('/')[2]"
+            :image-path="study.meta.image.split('/')[2]"
+            :interviewee="study.meta.interviewee"
+            :story-url="study.meta.link"
           />
         </div>
       </div>
@@ -518,6 +527,32 @@ const videoPoster = computed(() => {
 })
 
 const featureTab = ref('todos')
+
+const { queryCustomerStories } = useCustomerStories(locale)
+
+const { data: customerStories } = await useAsyncData(
+  `index-customer-stories-${locale.value}`,
+  queryCustomerStories,
+  { watch: [locale] }
+)
+
+const pairedStudies = computed(() =>
+  customerStories.value.reduce(
+    (rows, study, i) =>
+      i % 2 === 0
+        ? [...rows, [study]]
+        : [...rows.slice(0, -1), [...rows.at(-1), study]],
+    []
+  )
+)
+
+const { queryTestimonials } = useTestimonials(locale)
+
+const { data: testimonials } = await useAsyncData(
+  `index-testimonials-${locale.value}`,
+  queryTestimonials,
+  { watch: [locale] }
+)
 </script>
 
 <style lang="stylus" scoped>
@@ -689,4 +724,46 @@ video
 
 .introduction
   max-width 1200px
+
+.testimonials-grid
+    display grid
+    grid-template-columns 1fr 1fr
+    gap 2em
+    margin-top 2em
+
+    .testimonial-item:first-child
+        grid-column 1 / -1
+
+    .lean-quote-text
+        border-left 6px solid cgwiregreen
+        padding-left 1.5rem
+        line-height 1.3
+        font-size 1em
+        font-weight bold
+        color #54656F
+        p:before
+            content "\201C"
+        p:after
+            content "\201D"
+
+    .lean-quote-author
+        display flex
+        align-items center
+        margin-top .6rem
+        font-size 1rem
+        color cgwiregreen
+        font-weight normal
+
+    .lean-quote-avatar
+        border-radius 50%
+        margin-right .6rem
+        flex 0 0 auto
+        width 56px
+        height 56px
+
+    @media(max-width 800px)
+        grid-template-columns 1fr
+
+        .testimonial-item:first-child
+            grid-column auto
 </style>

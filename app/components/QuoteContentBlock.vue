@@ -1,5 +1,5 @@
 <template>
-  <div class="lean-quote">
+  <div v-if="quote" class="lean-quote">
     <section>
       <blockquote class="lean-quote-text">
         <p>

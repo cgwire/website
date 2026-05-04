@@ -1,0 +1,43 @@
+"concept-development": {
+  "name": "Concept Development",
+  "slug": "concept-development",
+  "image": "concept-development.png",
+  "header": {
+    "tagline": "Concept Development",
+    "subtitle": "From first ideas to production-ready assets",
+    "metrics": "Thousands of concepts brought to life with Kitsu!",
+    "explanation": "Kitsu supports the earliest creative stages of your production. Gather references, track concept iterations, and get approval on designs before they enter the pipeline. Keep your creative direction aligned and move into production with confidence."
+  },
+  "features": [
+    {
+      "title": "Track every iteration",
+      "subtitle": "Concept versioning",
+      "content": "Upload and compare concept art versions side by side as they evolve. Artists and directors can comment directly on each version, keeping all feedback in one place and making it easy to trace decisions back to their origin.",
+      "image": "kitsu-concept-versioning.png",
+      "colored": true
+    },
+    {
+      "title": "Get designs approved faster",
+      "subtitle": "Approval workflow",
+      "content": "Set up dedicated approval steps for concept art before assets enter production. Directors and supervisors can validate or request changes directly in Kitsu, reducing back-and-forth emails and keeping the creative process moving.",
+      "image": "kitsu-concept-approval.png",
+      "reverted": true
+    },
+    {
+      "title": "Connect concepts to production",
+      "subtitle": "Seamless handoff",
+      "content": "Once a concept is approved, link it directly to its corresponding asset or shot. The full concept history travels with the asset throughout production, giving modelers, riggers, and lighters the context they need.",
+      "image": "kitsu-concept-handoff.png",
+      "colored": true,
+      "gradient": true
+    }
+  ],
+  "customerStory": {
+    "studioName": "Example Studio",
+    "storyKey": "example",
+    "interviewee": "Jane Doe, Art Director",
+    "imagePath": "photo-customer-story-example.jpg",
+    "storyUrl": "https://blog.cg-wire.com/customer-story-example/",
+    "quote": "Having concept art, feedback, and approvals all in the same tool as our production tracking was a game changer. We stopped losing decisions in email threads and started moving much faster from design to final asset."
+  }
+}

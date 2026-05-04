@@ -33,7 +33,7 @@
               <circle cx="4" cy="4" r="2" />
             </svg>
           </a>
-        <a href="https://instagram.com/cgwire" aria-label="Instagram">
+          <a href="https://instagram.com/cgwire" aria-label="Instagram">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -70,9 +70,7 @@
         <p class="footer-title">{{ $t('header title product') }}</p>
         <ul class="footer-links">
           <li>
-            <nuxt-link :to="$localePath('kitsu')">
-              Kitsu
-            </nuxt-link>
+            <nuxt-link :to="$localePath('kitsu')"> Kitsu </nuxt-link>
           </li>
           <li>
             <nuxt-link :to="$localePath('studios')">{{
@@ -284,7 +282,7 @@ const { data: faqPages } = await useAsyncData(
   grid-template-columns 2fr 1fr 1fr 1fr
   grid-template-rows auto auto        // ← explicit rows
   column-gap 2rem
-  row-gap 0                           // ← kill row gap; let padding handle spacing
+  row-gap 2rem                           // ← kill row gap; let padding handle spacing
   max-width 1100px
   margin 0 auto
   padding 3rem 1.5rem 2rem
@@ -337,19 +335,15 @@ const { data: faqPages } = await useAsyncData(
 // FAQ column — second row, spans full grid width
 .footer-col--faq
   grid-column 1 / -1
-  grid-row 2                          // ← pin it to row 2 explicitly
+  grid-row auto
+  order 999
   border-top 1px solid bordercolor
-  padding-top 1.5rem
-  margin-top 2rem
 
   // Single-column links — no grid layout
   .footer-links
       display flex
       flex-wrap wrap
       gap 0.5rem 2rem
-
-  @media (max-width 560px)
-    grid-column 1
 
 // ── Titles ────────────────────────────────────────────────────────────────────
 .footer-title

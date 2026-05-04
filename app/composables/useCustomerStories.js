@@ -1,4 +1,4 @@
-export function useCustomerStories(locale, type) {
+export function useCustomerStories(locale) {
   async function queryCustomerStories() {
     var res = await queryCollection('jsonPages')
       .where('lang', '=', locale.value)
