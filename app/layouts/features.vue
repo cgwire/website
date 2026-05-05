@@ -2,6 +2,8 @@
   <div v-if="page" :class="`kitsu-page ${pageKey}`">
     <SolutionHeaderBlock :page-key="page.slug" :header="page.meta.header" />
 
+    <UserLogos />
+
     <FeatureBlock
       v-for="(feature, index) in page.meta.features"
       :key="index"

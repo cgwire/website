@@ -1069,32 +1069,54 @@
       "slug": "casting-management",
       "image": "casting-management.png",
       "header": {
-        "tagline": "Casting Management",
-        "subtitle": "Set and share your breakdowns",
+        "tagline": "Always know which shots are ready to build",
+        "subtitle": "Casting Management",
         "metrics": "More than 200 000 assets have been managed with Kitsu!",
-        "explanation": "Create breakdowns and access casting information from anywhere. Add as many asset occurrences as needed and record relevant metadata. This way, you'll know when your shots are ready to be built."
+        "explanation": "Chasing down casting information across spreadsheets and emails slows your whole pipeline. Kitsu gives every shot a structured breakdown so your scene builders always know exactly what's ready, what's missing, and what to do next."
       },
       "features": [
         {
           "title": "List your breakdown",
-          "subtitle": "Link assets to shots",
-          "content": "Build breakdown tables showing the casted assets for each shot, organized by type. Add metadata directly to every shot, providing information for your scene builder.",
+          "subtitle": "Stop guessing what belongs in each shot",
+          "content": "Build breakdown tables showing the cast assets for each shot, organized by type. Add metadata directly to every entry so your scene builder has everything they need before they even open a file.",
           "image": "kitsu-tables.png",
           "colored": true
         },
         {
           "title": "Link assets together",
-          "subtitle": "Set populating",
-          "content": "Connect assets for specific representation. Populate sets, link props to characters, or anything fitting your workflow.",
+          "subtitle": "No more manually tracking what goes with what",
+          "content": "Connect assets to define how they relate: populate sets, attach props to characters, or model any dependency that fits your workflow.",
           "image": "kitsu-asset-links.png",
           "reverted": true
         },
         {
           "title": "Export your casting",
-          "subtitle": "CSV files and API",
-          "content": "Export all casting information as a flat .csv file or a column representation. Connect your tools to our API to enhance your scene builder.",
+          "subtitle": "Your pipeline tools shouldn't have to wait on you",
+          "content": "Export casting data as a flat .csv or a column view in seconds. Or skip the manual step entirely and connect your scene builder directly to the API.",
           "image": "kitsu-export.png",
           "colored": true,
+          "gradient": true
+        },
+        {
+          "title": "Search and filter assets",
+          "subtitle": "Finding one asset in a large production shouldn't take minutes",
+          "content": "Search by keyword, tag, or metadata filter to instantly surface what you need. On productions with hundreds of assets, you'll never lose time scrolling through the wrong list again.",
+          "image": "kitsu-search.png",
+          "reverted": true
+        },
+        {
+          "title": "Track shot readiness",
+          "subtitle": "Know what's actually ready",
+          "content": "Get per-shot readiness statistics based on casting completeness. Spot the gaps before they become a bottleneck, and hand off to your scene builder with confidence.",
+          "image": "kitsu-readiness.png",
+          "colored": true
+        },
+        {
+          "title": "Reuse assets across productions",
+          "subtitle": "Duplicated work erodes your asset library",
+          "content": "Pull from a shared library to keep teams from recreating assets that already exist and have been validated. Everyone references the same source of truth.",
+          "image": "kitsu-library.png",
+          "reverted": true,
           "gradient": true
         }
       ],
@@ -1112,37 +1134,52 @@
       "slug": "elite-hosting",
       "image": "elite-hosting.png",
       "header": {
-        "tagline": "Elite hosting",
-        "subtitle": "Your data is always available and secure",
+        "tagline": "Downtime and data loss cost studios money. We make sure neither happens.",
+        "subtitle": "Elite hosting",
         "metrics": "elite-hosting header metrics",
-        "explanation": "Our operation team provides you with the highest standards of the cloud industry. With decades of experience, we ensure that your installation is always up and that your data are always secured. All our installations are safely isolated ensuring performance and confidentiality."
+        "explanation": "CGWire's operations team manages your Kitsu installation end to end. Security, uptime, performance, and updates are handled by specialists with decades of cloud infrastructure experience. Your team stays focused on production. We handle everything else."
       },
       "features": [
         {
           "key": "security",
-          "title": "Keep your data secure",
-          "subtitle": "SSL, Secret Management, Restricted Access",
+          "title": "Enterprise-grade security, fully managed",
+          "subtitle": "Stop worrying about breaches and compliance",
           "content": "We adhere to the highest security standards, using only secure transmissions for accessing our up-to-date installations. All secrets are managed through secure vaults, and our employees are screened. A security document is available upon request.",
           "image": "kitsu-security.png",
           "colored": true
         },
         {
           "key": "availability",
-          "title": "Your Kitsu is always up",
-          "subtitle": "99% uptime",
-          "content": "We closely monitor all activity on your instance and receive alerts for any suspicious or problematic events. This enables us to resolve issues as quickly as possible.",
+          "title": "99% uptime with proactive monitoring",
+          "subtitle": "Unplanned outages kill deadlines",
+          "content": "Every instance is monitored around the clock. Our team receives alerts before issues escalate and resolves them before they impact your production pipeline.",
           "image": "kitsu-availability.png",
           "reverted": true
         },
         {
           "key": "performance",
-          "title": "Fast access to your data",
-          "subtitle": "Speed and reliability",
-          "content": "Your installation is isolated from others and is set up near your location. All videos processing is run on a dedicated machine, allowing you to build large playlists.",
+          "title": "Isolated infrastructure, optimized for your location",
+          "subtitle": "Slow tools erode team productivity",
+          "content": "Your instance runs on dedicated resources, isolated from other studios. Servers are provisioned close to your team, and video processing runs on a separate machine so large playlists never slow down your workflow.",
           "image": "kitsu-performance.png",
           "colored": true,
           "gradient": true,
           "shadow": false
+        },
+        {
+          "title": "Fully dedicated instance",
+          "subtitle": "Shared infrastructure means unpredictable performance",
+          "content": "Your Kitsu runs on its own infrastructure. No shared resources, no noisy neighbors, no risk of another studio's workload affecting yours. Consistent performance and strict data isolation from day one.",
+          "image": "kitsu-isolated.png",
+          "reverted": true
+        },
+        {
+          "title": "Updates handled without interruption",
+          "subtitle": "Running outdated software is a security risk",
+          "content": "CGWire's team applies every update and security patch on your behalf. You stay on the latest version without scheduling maintenance windows or pulling engineers away from production work.",
+          "image": "kitsu-updates.png",
+          "colored": true,
+          "gradient": true
         }
       ]
     },
@@ -1151,31 +1188,46 @@
       "slug": "production-tracker",
       "image": "production-tracker.png",
       "header": {
-        "tagline": "Production Tracker",
-        "subtitle": "Stay in control and anticipate problems",
+        "tagline": "Deliver on time, on budget",
+        "subtitle": "Production Tracker",
         "metrics": "Over 1,000 productions have already been tracked with Kitsu!",
-        "explanation": "With Kitsu, schedule each task, track time spent, and set quotas. Use indicators to anticipate problems and build clear production reports. Always have an overview of your production, both at a high and granular level."
+        "explanation": "Most production issues are visible before they become critical. Kitsu gives you the scheduling, time tracking, quota monitoring, and budget forecasting tools to catch them early. Get a clear picture of your production at every level, and walk into every stakeholder meeting with accurate data."
       },
       "features": [
         {
-          "title": "Gain a 360° view of your data",
-          "subtitle": "Production reports",
-          "content": "With Kitsu, you can view statistics on your projects progress. It provides high-level reports for a quick overview of what is happening. Exports are available for sending reports to third parties.",
+          "title": "Stop guessing where your production stands",
+          "subtitle": "Gain a 360° view of your data",
+          "content": "Get accurate progress statistics across all your projects, from high-level summaries to task-level detail. Share reports with clients or producers directly from Kitsu with built-in export tools.",
           "image": "kitsu-report.png",
           "colored": true
         },
         {
           "title": "Schedule your work",
-          "subtitle": "Planning",
-          "content": "In the schedule module, you can set the main duration and milestones of your project. This allows you to see resource allocation and plan your production more effectively.",
+          "subtitle": "Resource conflicts happen when planning is vague",
+          "content": "Define project durations, set milestones, and see how work is distributed across your team. Spot overloads and gaps early so you can adjust before they slow production down.",
           "image": "kitsu-tables.png",
           "reverted": true
         },
         {
           "title": "Set your expectations",
-          "subtitle": "Quotas",
-          "content": "Monitor the productivity of your artists and ensure that no one is blocked. Set productivity goals and ensure quotas are met.",
+          "subtitle": "Productivity issues are invisible without the right data",
+          "content": "Set daily or weekly output targets for your artists and track progress against them. Identify who is blocked and who is ahead so you can act on it, not just report on it.",
           "image": "kitsu-quotas.png",
+          "colored": true,
+          "gradient": true
+        },
+        {
+          "title": "Track time spent",
+          "subtitle": "Budget overruns start with hours no one is tracking",
+          "content": "Artists log time directly in Kitsu. You get a clear breakdown by artist, asset, or shot so you always know where your production hours are actually going.",
+          "image": "kitsu-timesheets.png",
+          "reverted": true
+        },
+        {
+          "title": "Anticipate budget overruns",
+          "subtitle": "Financial risk grows when you find out too late",
+          "content": "Compare current spending against your budget at any point in production. Run cost scenarios before making decisions so you can course-correct while you still have options.",
+          "image": "kitsu-budget.png",
           "colored": true,
           "gradient": true
         }
@@ -1194,33 +1246,47 @@
       "slug": "review-engine",
       "image": "review-engine.png",
       "header": {
-        "tagline": "Review Engine",
-        "subtitle": "Provide feedback on every submission",
+        "tagline": "Ship approved work faster",
+        "subtitle": "Review Engine",
         "metrics": "Over 2 000 000 videos were already reviewed with Kitsu!",
-        "explanation": "Create playlists to review your shots and assets consecutively, for yourself or your client. Set up review sessions to provide feedback efficiently. Maintain access to all preview versions to compare with earlier deliveries."
+        "explanation": "Feedback cycles are where projects stall. Kitsu centralizes your review process so teams and clients can give precise, contextual feedback on every submission, without losing track of versions, decisions, or history. Less back-and-forth. Fewer missed notes. Faster sign-offs."
       },
       "features": [
         {
           "title": "Review consecutive shots",
-          "subtitle": "Playlists",
-          "content": "Quickly build review playlists and comment on all shots consecutively. You can add comments and annotations directly from the playlist. Share playlists with your clients or review them with your team.",
+          "subtitle": "Stop reviewing shots one email at a time",
+          "content": "Build review playlists and move through all shots in one continuous session. Add comments and annotations without leaving the player. Share playlists directly with clients or run them with your team in real time.",
           "image": "kitsu-playlists.png",
           "colored": true
         },
         {
-          "title": "Compare with any version",
-          "subtitle": "Side by side or overlay",
-          "content": "Compare any preview with an earlier or related version. View them side by side or as a stacked overlay.",
+          "title": "Compare any version",
+          "subtitle": "Catch what changed between versions",
+          "content": "Place any two versions side by side or stack them as an overlay. Spot regressions, confirm fixes, and validate revisions without hunting through separate files.",
           "image": "kitsu-compare.png",
           "reverted": true
         },
         {
           "title": "Perform team reviews",
-          "subtitle": "Real-time synchronization",
-          "content": "Review playlists in sync with your team, allowing everyone to view the same footage and stay on the same page.",
+          "subtitle": "End the problem of misaligned feedback",
+          "content": "Run synchronized review sessions so every participant watches the same frame at the same time. No more conflicting notes from people who reviewed different cuts.",
           "image": "kitsu-room.png",
           "colored": true,
           "gradient": true
+        },
+        {
+          "title": "Annotate directly on frames",
+          "subtitle": "Replace vague notes with precise direction",
+          "content": "Draw, highlight, and write directly on any frame. Annotations are pinned to the specific version and visible to the whole team, so nothing gets lost in translation.",
+          "image": "kitsu-annotations.png",
+          "colored": true
+        },
+        {
+          "title": "Full version history",
+          "subtitle": "Never lose track of what was delivered",
+          "content": "Every submitted preview is stored and accessible. Revisit any earlier version to track how a shot evolved, settle disputes, and confirm that previous feedback was addressed.",
+          "image": "kitsu-versions.png",
+          "reverted": true
         }
       ],
       "customerStory": {
@@ -1266,6 +1332,28 @@
           "image": "kitsu-python.png",
           "colored": true,
           "gradient": true
+        },
+        {
+          "title": "Publish straight from your DCC",
+          "subtitle": "DCC integrations",
+          "content": "Push previews to Kitsu directly from your Digital Content Creation tools without leaving your working environment. Keep artists focused on the artistic side of their work.",
+          "image": "kitsu-dcc.png",
+          "reverted": true
+        },
+        {
+          "title": "React to events automatically",
+          "subtitle": "Event-driven scripts",
+          "content": "Trigger custom scripts whenever a status changes, a preview is published, or a task is assigned. Automate repetitive pipeline steps and reduce manual overhead.",
+          "image": "kitsu-events.png",
+          "colored": true
+        },
+        {
+          "title": "Push notifications to your chat",
+          "subtitle": "Chat integrations",
+          "content": "Connect Kitsu to Slack or Discord to automatically deliver task updates and production alerts where your team already communicates.",
+          "image": "kitsu-slack.png",
+          "reverted": true,
+          "gradient": true
         }
       ]
     },
@@ -1307,6 +1395,21 @@
           "colored": true,
           "gradient": true,
           "shadow": false
+        },
+        {
+          "title": "Accelerate video processing",
+          "subtitle": "Local video cluster",
+          "content": "Deploy a dedicated GPU video computing cluster on your own hardware. Handle large playlists and heavy preview generation at full speed without relying on external resources.",
+          "image": "kitsu-videocluster.png",
+          "reverted": true
+        },
+        {
+          "title": "Keep your files on-site",
+          "subtitle": "Local object storage",
+          "content": "Store all production files and previews on your own object storage infrastructure. Maintain full control over where your data lives and how it is accessed.",
+          "image": "kitsu-storage.png",
+          "colored": true,
+          "gradient": true
         }
       ]
     },
@@ -1344,6 +1447,21 @@
           "content": "Thanks to the news feed, you will never miss any comments or new previews. Everyone in the studio stays informed about ongoing activities, making it easier to anticipate problems.",
           "image": "kitsu-news.png",
           "colored": true,
+          "gradient": true
+        },
+        {
+          "title": "Publish from your tools",
+          "subtitle": "DCC integrations",
+          "content": "Artists can submit previews directly from their DCC software. No context switching — work stays in the pipeline and deliveries land instantly in Kitsu for review.",
+          "image": "kitsu-dcc.png",
+          "colored": true
+        },
+        {
+          "title": "Stay informed via chat",
+          "subtitle": "Slack and Discord notifications",
+          "content": "Bring Kitsu activity into the tools your team uses daily. Notifications for comments, status changes, and new previews flow directly into your Slack or Discord channels.",
+          "image": "kitsu-slack.png",
+          "reverted": true,
           "gradient": true
         }
       ],
@@ -1390,6 +1508,21 @@
           "subtitle": "Former production managers",
           "content": "Our support team consists of production veterans who understand the challenges you face because they've experienced them too. We ensure you utilize Kitsu's full potential and can even collaborate with you to add new features to the software.",
           "image": "kitsu-experts.png",
+          "colored": true,
+          "gradient": true
+        },
+        {
+          "title": "Track your requests",
+          "subtitle": "Ticketing system",
+          "content": "All support conversations are saved and can be escalated through an integrated ticketing system. Nothing gets lost, and every issue is followed through to resolution.",
+          "image": "kitsu-tickets.png",
+          "reverted": true
+        },
+        {
+          "title": "Shape the product with us",
+          "subtitle": "Feature co-development",
+          "content": "Our team doesn't just solve problems — they collaborate with you to identify and build new features. Your feedback directly influences the roadmap of Kitsu.",
+          "image": "kitsu-roadmap.png",
           "colored": true,
           "gradient": true
         }
