@@ -86,7 +86,8 @@ export default defineNuxtConfig({
       }
     ],
     lazy: true,
-    langDir: 'locales/'
+    langDir: 'locales/',
+    detectBrowserLanguage: false
   },
   plugins: [
     { src: '~/plugins/youtube', mode: 'client', ssr: false },
