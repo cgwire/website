@@ -17,6 +17,9 @@ It is designed to sit at the center of your production as a shared source of tru
 
 Whether you run a lightweight setup or a structured pipeline with automation, you can keep what works. But we'll add what is missing.
 
+::customer-story-content-block{slug="fost"}
+::
+
 ## Your Production Data, Fully Accessible
 
 In many studios, production data ends up fragmented across spreadsheets, tracking tools, and internal scripts.
@@ -50,6 +53,9 @@ This reduces the amount of glue code your team has to maintain and makes integra
 
 Our developer tools are well documented.
 
+::quote-content-block{slug="mdhr"}
+::
+
 ## Connect Without Disrupting Artists
 
 One of the biggest risks when introducing a new system is disrupting artists.
@@ -62,6 +68,9 @@ Kitsu avoids that by integrating with Digital Content Creation tools instead of 
 - Status updates can be triggered by pipeline actions
 
 Artists stay focused on their work, and your production stays consistent and traceable.
+
+::quote-content-block{slug="adm"}
+::
 
 ## Real-Time Collaboration Without Extra Overhead
 
@@ -109,7 +118,13 @@ You can understand how your data is structured, audit how the system works, host
 
 At the same time, CGWire provides managed cloud hosting and custom infrastructure setups if you prefer a fully supported solution.
 
+::quote-content-block{slug="cube"}
+::
+
 ## A Practical Fit for Real Studios
+
+::user-logos
+::
 
 Kitsu is used by hundreds of studios across different sizes and production types. Some use it out of the box to organize tasks and reviews. Others build advanced pipelines on top of it using its API and integrations.
 

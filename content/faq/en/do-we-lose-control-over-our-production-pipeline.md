@@ -9,6 +9,9 @@ If your studio runs on spreadsheets, shared drives, or internal tools stitched t
 
 Here is how Kitsu addresses this concern.
 
+::user-logos
+::
+
 ## The Hidden Cost of "Familiar" Tools
 
 Spreadsheets feel controllable because you built them. But ask yourself: who actually knows how they work? When a producer leaves, does the logic leave with them?
@@ -16,6 +19,9 @@ Spreadsheets feel controllable because you built them. But ask yourself: who act
 This is a risk of siloed knowledge. And it's one of the most common ways studios lose control quietly over time: critical information lives in someone's head, a local file, or an inbox thread nobody can find.
 
 Kitsu turns implicit knowledge into structured, visible, searchable data, owned by your studio, not by any individual.
+
+::customer-story-content-block{slug="remembers"}
+::
 
 ## Permissions That Mirror Your Studio
 
@@ -26,6 +32,9 @@ Kitsu's role-based permissions let you define exactly who sees what and who can 
 - Artists see only their to-do list, their feedback, their deadlines
 
 No more "oops, someone edited the wrong thing." No more wondering who changed a status and when.
+
+::customer-story-content-block{slug="tant-mieux"}
+::
 
 ## Every Action Is Logged
 
@@ -41,6 +50,12 @@ Kitsu production reports and dashboards give you a 360° view across all active 
 
 Your managers stop being information brokers and make better decisions.
 
+::customer-story-content-block{slug="fost"}
+::
+
+::quote-content-block{slug="cube"}
+::
+
 ## Your Data, Your Way
 
 Kitsu is open-source. Your production data is exposed through a full REST API and Python client, so you can export, integrate, or migrate it at any time. There is no lock-in.
@@ -48,3 +63,6 @@ Kitsu is open-source. Your production data is exposed through a full REST API an
 Whether you choose cloud hosting, on-premise deployment on your own servers, or a custom self-hosted architecture tailored to your infrastructure, you stay in control of where your data lives.
 
 Control is about knowing what's happening, who did what, and what comes next. Kitsu gives your whole studio that clarity without depending on the one person who built the spreadsheet.
+
+::quote-content-block{slug="ryff"}
+::

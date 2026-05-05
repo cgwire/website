@@ -5,6 +5,9 @@ subtitle: ""
 image: "change-management-kitsu.png"
 ---
 
+::user-logos{withTitle=false}
+::
+
 Production doesn't pause for technical issues. When something goes wrong at 2 AM before a client review, the last thing you need is a support ticket disappearing into a void. 
 
 Here's exactly what you can count on with Kitsu.
@@ -16,6 +19,9 @@ CGWire is a focused team of specialists. When you reach out, you're talking to p
 - Dedicated support for cloud and on-premise customers, with clear response time commitments based on your plan
 - Direct access to the team. No tiered script-reading, no runaround
 - A community that's got your back. Kitsu is open source and backed by an active community of 300+ studios across 50+ countries. Chances are someone has already solved your problem.
+
+::customer-story-content-block{slug="ryff"}
+::
 
 ## Uptime You Can Actually Rely On
 
@@ -35,6 +41,9 @@ Getting set up and getting your whole team up to speed shouldn't require a consu
 - A full REST API and Python client with extensive documentation, so your pipeline team can integrate without guesswork
 - DCC integrations, chat integrations (Slack, Discord), and step-by-step guides for every major workflow
 
+::customer-story-content-block{slug="miyu"}
+::
+
 ## Open Source as a Safety Net
 
 Kitsu being open source is a practical guarantee. If CGWire ever ceased to exist tomorrow (it won't), you would still have full access to the codebase, your data, and a global community of developers who know the software inside out. You are never held hostage.
@@ -46,3 +55,6 @@ Something breaking is never zero-risk, with any tool.
 The real question is: who's there when it does? 
 
 With Kitsu, you have a dedicated ops team, a transparent company, a living community, and a codebase you can always inspect. That's a support structure most enterprise tools can't match.
+
+::customer-story-content-block{slug="fost"}
+::

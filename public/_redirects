@@ -9,6 +9,7 @@
 /shotgrid /shotgrid-alternative/
 /ftrack /ftrack-alternative/
 
+/fr /fr/
 /fr/about /fr/a-propos
 /fr/customer-stories /fr/temoignages-clients
 /fr/pricing /fr/tarifs
@@ -56,6 +57,7 @@
 /fr/kitsu.html                             /fr/kitsu/
 /fr/shotgrid/                              /fr/shotgrid-alternative/
 
+/ja /ja/
 /ja/about /ja/%E4%BC%81%E6%A5%AD%E6%83%85%E5%A0%B1/
 /ja/contact /ja/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/
 /ja/customer-stories /ja/%E5%B0%8E%E5%85%A5%E4%BA%8B%E4%BE%8B/

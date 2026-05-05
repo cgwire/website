@@ -7,6 +7,9 @@ image: "change-management-kitsu.png"
 
 Whether you're a 5-person studio wrapping up your first short film or a 200-person production house juggling three simultaneous series, Kitsu grows with you at every stage.
 
+::user-logos
+::
+
 ## Built for Where You Are and Where You're Going
 
 Most studios start small. They cobble together spreadsheets, shared drives, and chat threads. And it works, until it doesn't.
@@ -18,6 +21,9 @@ The platform scales in every direction:
 - Team size: from a handful of artists to hundreds across multiple departments
 - Project volume: manage one short or ten simultaneous productions from a single workspace
 - Pipeline complexity: simple task tracking on day one, full API and DCC integrations when you're ready
+
+::quote-content-block{slug="cube"}
+::
 
 ## Multi-Project Management, Without the Chaos
 
@@ -46,6 +52,9 @@ You move between these as your needs evolve. CGWire's ops team handles the trans
 Kitsu is open source. Your data is yours, the codebase is auditable, and you're never dependent on a vendor's pricing decisions or roadmap pivots.
 
 The platform has been tested at scale. We help studios in 50+ countries run Kitsu in production today, from boutique agencies to large-scale studios. 
+
+::customer-story-content-block{slug="remembers"}
+::
 
 ## One Tool. Every Stage.
 

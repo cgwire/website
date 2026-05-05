@@ -11,6 +11,9 @@ Most studios fail at making new tools stick. Artists ignore the tracker and keep
 
 Kitsu solves fragmentation with a system people actually want to use without being told to do so.
 
+::customer-story-content-block{slug="remembers"}
+::
+
 ## Built for the Way Animation Teams Actually Work
 
 Kitsu is not a generic project management tool adapted to animation. It's designed specifically for animation, VFX, and game production.
@@ -22,6 +25,9 @@ Instead of forcing your team to adapt, it reflects workflows they already unders
 - Reviews, playlists, and approvals match how supervisors already give feedback  
 
 For an artist, this means opening Kitsu and immediately understanding what needs to be done.
+
+::quote-content-block{slug="makuta"}
+::
 
 ## Adoption Starts With Clarity
 
@@ -47,6 +53,9 @@ Instead of generic training, Kitsu's onboarding is aligned with real responsibil
 - Pipeline TDs integrate pipelines through the Python API and REST endpoints  
 
 We help each person become productive quickly.
+
+::customer-story-content-block{slug="miyu"}
+::
 
 ## Start Small, Scale Naturally
 
@@ -76,6 +85,9 @@ Kitsu eliminates that by acting as a flexible central hub:
 
 Instead of replacing one tool with another, you replace several disconnected tools with one coherent system.
 
+::customer-story-content-block{slug="fost"}
+::
+
 ## Documentation and Autonomy
 
 Adoption does not stop after onboarding.
@@ -103,6 +115,9 @@ Kitsu enables pipeline artists to extend the core features:
 
 Whether your team is fully remote or working on-site, the system adapts to your environment.
 
+::quote-content-block{slug="mdhr"}
+::
+
 ## Removing Pain Points
 
 When teams push back against new tools, it usually comes down to a few concerns:
@@ -120,6 +135,9 @@ Most teams notice the difference quickly with less noise, fewer misunderstanding
 Kitsu was created by people who understand both software and production.
 
 As a small, focused team, CGWire works closely with studios and continuously improves the product based on real-world usage. The platform is open source, widely used across dozens of countries, and trusted by hundreds of studios.
+
+::user-logos
+::
 
 That experience shows in one key area: adoption is treated as a core design principle.
 
