@@ -2,6 +2,7 @@
 title: "Do We Lose Control Over Our Production Pipeline?"
 slug: "do-we-lose-control-over-our-production-pipeline"
 subtitle: ""
+summary: "Kitsu is designed to give studios more control over their production pipeline, not less — replacing fragile, person-dependent spreadsheets and siloed tools with structured, visible, and searchable data owned by the studio. Its role-based permissions ensure everyone sees exactly what they need at the project, department, or task level, while a complete audit trail logs every status change, comment, and upload with full attribution. Cross-project dashboards provide a 360° view of all active productions without manual file consolidation, and because Kitsu is open-source with a full REST API and Python client, studios retain complete ownership of their data with no lock-in — whether hosted in the cloud, on-premise, or in a custom self-hosted setup."
 image: "change-management-kitsu.png"
 ---
 

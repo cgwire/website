@@ -21,6 +21,8 @@
     />
 
     <Trial />
+
+    <FAQSection />
   </div>
 </template>
 

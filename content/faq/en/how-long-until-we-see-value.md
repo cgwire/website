@@ -2,6 +2,7 @@
 title: "How Long Does It Take To See Value?"
 slug: "how-long-until-we-see-value"
 subtitle: ""
+summary: "Teams can start tracking tasks, reviewing assets, and logging time within hours of signing up — with a live project, imported asset lists, and assigned tasks on Day 1 using pre-built pipeline templates for 2D, 3D, shorts, and game productions. By the end of Week 1, artists have personal to-do lists, the first review cycle has closed with timestamped annotations and version comparisons, and producers have a real-time dashboard that replaces hours of manual reporting. The speed comes from starter templates, a minimal learning curve for artists, cloud hosting that requires no IT setup, and spreadsheet import tools for existing data. Studios across 50+ countries — from small agencies to large VFX houses — have made the switch mid-production by starting with one project and one team. Kitsu is open source and free to self-host, with no sales call or lengthy implementation required."
 image: "change-management-kitsu.png"
 ---
 

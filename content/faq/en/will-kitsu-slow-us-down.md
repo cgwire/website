@@ -2,6 +2,7 @@
 title: "Will Kitsu Slow Us Down?"
 slug: "will-kitsu-slow-us-down"
 subtitle: ""
+summary: "Kitsu is designed to eliminate the hidden time costs of uncoordinated production workflows — the redundant status pings, manual spreadsheet updates, and scattered review notes that quietly drain hours every week. Its real-time activity feed and notification system keep the entire team automatically aligned the moment a task status changes, removing the need for check-in meetings or follow-up messages. The built-in review engine lets supervisors annotate directly on frames, compare versions side by side, and approve or request retakes from anywhere, compressing multi-day approval cycles into hours. Kitsu integrates seamlessly with DCCs, Slack, Discord, and custom pipelines via Python and REST APIs, letting artists stay in their existing tools while keeping production data centralized. Trusted by over 300 studios across 50+ countries, Kitsu was built by people who understand production pressure — and every feature ships only if it saves time."
 image: "change-management-kitsu.png"
 ---
 

@@ -100,6 +100,10 @@
   "top-notch-support fast title": "Fast response time",
   "for": "for",
   "faq": "faq",
+  "faq-section": {
+    "title": "Frequently Asked Questions",
+    "subtitle": ""
+  },
   "features": "features",
   "search": {
     "open": "Open Search Modal",

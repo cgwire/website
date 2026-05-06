@@ -2,6 +2,7 @@
 title: "What Happens If Something Breaks?"
 slug: "what-happens-if-something-breaks"
 subtitle: ""
+summary: "Kitsu and CGWire offer a robust support structure built for production realities: dedicated support with clear response-time commitments, direct access to the team that built the product, and a global open-source community of 300+ studios across 50+ countries. Cloud customers benefit from a 99% uptime SLA, isolated instances, and built-in SSL and video processing, while on-premise deployments are actively monitored by CGWire's ops team. Comprehensive documentation, onboarding support, a full REST API, and integrations with popular DCCs and chat tools mean your whole team can get up to speed without outside help. And because Kitsu is open source, you retain full access to the codebase and your data no matter what — a safety net most enterprise tools simply can't offer."
 image: "change-management-kitsu.png"
 ---
 

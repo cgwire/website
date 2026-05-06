@@ -2,6 +2,7 @@
 title: "Switching Production Tracking Tools Sounds Risky"
 slug: "migration"
 subtitle: "A Practical Approach to Moving Your Studio to Kitsu"
+summary: "Switching production tracking tools mid-production feels risky, but Kitsu is designed to make migration safe and gradual. Studios can transition one project or department at a time, import existing data via CSV or API, and even run both systems in parallel until confident. CGWire guides teams through the full process — from reviewing your current setup to role-specific training and pipeline integration — typically completing migration in days to a few weeks. As an open-source platform with a REST API and Python client, Kitsu fits into existing pipelines without forcing a rebuild, giving studios full control over their data and infrastructure."
 image: "migration-kitsu-cloud.png"
 ---
 
