@@ -1,122 +1,134 @@
 ---
-title: "\"Est-ce compatible avec notre pipeline ?\""
+title: "Est-ce compatible avec notre pipeline ?"
 slug: "custom-integration"
-subtitle: "Comment intégrer Kitsu"
+subtitle: "Comment Kitsu s'adapte aux pipelines de production réels"
+summary: "Kitsu est un outil de suivi de production flexible, conçu pour s'intégrer harmonieusement aux pipelines d'animation existants plutôt que de les remplacer. Il centralise les données de production — assets, plans, tâches, validations et métriques — via une API REST et un SDK Python, permettant aux studios d'automatiser les workflows, de synchroniser les outils et de réduire les tâches manuelles. Les artistes peuvent publier directement depuis leurs outils DCC tandis que les TDs de pipeline construisent des intégrations personnalisées sans perturber le travail créatif. Avec la prise en charge des webhooks, des workflows configurables, de la collaboration en temps réel et une transparence open-source, Kitsu s'adapte aux studios de toutes tailles et structures, servant de source de vérité partagée au cœur de la production."
 image: "custom-integration-kitsu.png"
 ---
 
-## Conçu pour les équipes pipeline
+## Conçu pour fonctionner selon votre façon de produire
 
-Kitsu n'est pas un outil de suivi de production fermé.
+Abordons la vraie préoccupation derrière cette question.
 
-Il est conçu avec les équipes techniques à l'esprit — Pipeline TDs, CTOs et directeurs techniques qui ont besoin de structure, de flexibilité et d'un accès propre aux données de production.
+Adopter un nouvel outil implique de protéger un pipeline que votre équipe a construit au fil du temps. Il comprend vos habitudes, vos outils, vos raccourcis et toutes les petites décisions qui ont maintenu la production en mouvement au fil des années.
 
-Que vous gériez un pipeline léger ou un environnement de production entièrement automatisé, Kitsu est conçu pour s'intégrer — et non pour remplacer tout ce que vous avez construit.
+Kitsu n'est pas là pour remplacer tout cela.
 
----
+Il est conçu pour se placer au centre de votre production en tant que source de vérité partagée, tout en permettant à vos outils existants de continuer à faire leur travail.
 
-## Une API REST claire et bien documentée
+Que vous disposiez d'une configuration légère ou d'un pipeline structuré avec automatisation, vous pouvez conserver ce qui fonctionne. Mais nous ajouterons ce qui manque.
 
-Kitsu fournit une API REST entièrement documentée qui expose toutes les données de production principales :
+::customer-story-content-block{slug="fost"}
+::
 
-- Projets
-- Épisodes et séquences
-- Plans et assets
-- Tâches et statuts
-- Assignations
-- Commentaires et aperçus
-- Journaux de temps
+## Vos données de production, entièrement accessibles
 
-Tout ce qui est disponible dans l'interface est accessible via l'API.
+Dans de nombreux studios, les données de production finissent par être fragmentées entre des feuilles de calcul, des outils de suivi et des scripts internes.
 
-Cela vous permet d'automatiser les rapports, de déclencher des rendus, de synchroniser avec des bases de données internes, ou de construire des tableaux de bord personnalisés.
+Kitsu centralise cette connaissance et la rend entièrement accessible via une API REST.
 
----
+Tout ce que vous gérez dans l'interface est disponible de manière programmatique :
 
-## Client Python pour une intégration rapide
+- Projets, épisodes, séquences
+- Assets et plans avec leurs relations
+- Tâches, statuts et assignations
+- Commentaires, aperçus et notes de validation
+- Suivi du temps, budget et métriques de production
 
-Pour les équipes techniques travaillant dans des environnements Python, Kitsu fournit un client Python dédié.
+Votre équipe peut se concentrer sur l'automatisation des véritables tâches de production plutôt que sur la synchronisation manuelle des données.
 
-Celui-ci permet facilement de :
+## Une intégration Python adaptée à la réalité des pipelines
 
-- Interroger les données de production
-- Mettre à jour les statuts des tâches automatiquement
-- Créer des plans et des assets par programmation
-- Connecter des fermes de rendu ou des systèmes de révision
-- Synchroniser avec des outils internes
+La plupart des pipelines d'animation s'appuient déjà massivement sur Python.
 
-Au lieu de construire des appels HTTP bruts, vos TDs peuvent travailler avec une interface propre et prête pour la production.
+Kitsu fournit un client SDK Python dédié qui permet à votre équipe technique d'interagir avec les données de production de manière efficace.
 
----
+Au lieu d'écrire des requêtes HTTP personnalisées, vos TDs peuvent :
 
-## Conçu pour s'connecter à vos outils DCC
+- Créer et organiser des assets et des plans directement depuis les outils de pipeline
+- Mettre à jour les statuts des tâches en fonction des événements du pipeline
+- Synchroniser les données entre Kitsu et les systèmes internes
+- Construire des automatisations personnalisées pour les validations, les publications ou les rapports
 
-Kitsu peut être intégré aux outils que vos artistes utilisent déjà.
+Cela réduit la quantité de code de liaison que votre équipe doit maintenir et facilite la mise à l'échelle des intégrations au fur et à mesure que la production se développe.
 
-Les intégrations typiques comprennent :
+Nos outils de développement sont bien documentés.
 
-- L'envoi de publications depuis les logiciels DCC
-- La liaison automatique des sorties de rendu aux tâches
-- La mise à jour des statuts en fonction des événements pipeline
-- La synchronisation des versions avec les systèmes internes de gestion des assets
+::quote-content-block{slug="mdhr"}
+::
 
-Kitsu devient la base de données de production centrale — tandis que vos outils créatifs restent inchangés.
+## Connectez sans perturber les artistes
 
----
+L'un des plus grands risques lors de l'introduction d'un nouveau système est de perturber les artistes.
 
-## Webhooks et automatisation
+Kitsu évite cela en s'intégrant aux outils de création de contenu numérique plutôt qu'en les remplaçant :
 
-Besoin de déclencheurs en temps réel ?
+- Les artistes peuvent publier leur travail directement depuis leur logiciel
+- Les rendus et les aperçus peuvent être liés automatiquement aux bonnes tâches
+- Les versions sont suivies sans étapes manuelles supplémentaires
+- Les mises à jour de statut peuvent être déclenchées par des actions du pipeline
 
-Kitsu prend en charge les webhooks pour notifier vos systèmes lorsque quelque chose change :
+Les artistes restent concentrés sur leur travail, et votre production reste cohérente et traçable.
 
-- Une tâche passe à « Approuvé »
-- Une nouvelle version est téléversée
-- Un commentaire est ajouté
-- Un plan est créé
+::quote-content-block{slug="adm"}
+::
 
-Cela permet des workflows automatisés et des pipelines pilotés par événements sans intervention manuelle.
+## Collaboration en temps réel sans surcharge supplémentaire
 
----
+Un outil de suivi de production ne devrait pas ressembler à du travail supplémentaire.
 
-## Configuration de workflow flexible
+Kitsu est un hub de collaboration en direct :
 
-Chaque studio fonctionne différemment.
+- Les changements de tâches déclenchent automatiquement des notifications
+- Les commentaires et les aperçus sont attachés au bon contexte
+- Le fil d'activité montre ce qui se passe dans la production en temps réel
 
-Kitsu vous permet de définir :
+Pour une équipe distribuée, cela réduit considérablement les allers-retours entre plusieurs outils.
 
-- Des types de tâches personnalisés
-- Des statuts personnalisés
-- Des structures de département
-- Des workflows de validation
+## Une automatisation adaptée aux besoins de la production
 
-Vous pouvez adapter Kitsu à votre méthodologie de production sans écrire de code personnalisé lourd.
+À mesure que les productions s'étendent, les étapes manuelles deviennent un goulot d'étranglement.
 
-Pour les pipelines hautement spécialisés, votre équipe technique peut étendre les comportements via des intégrations API plutôt qu'en modifiant le système principal.
+Kitsu vous permet d'automatiser les événements clés grâce aux webhooks et aux intégrations API :
 
----
+- Déclencher un processus de validation lorsqu'une tâche atteint un statut spécifique
+- Notifier les superviseurs lorsque de nouvelles versions sont disponibles
+- Synchroniser les plans approuvés avec les départements en aval
+- Mettre à jour les tableaux de bord et les prévisions budgétaires en temps réel
 
-## Transparence open-source
+## Suffisamment flexible pour différentes structures de studio
 
-Kitsu est open-source.
+Chaque studio organise son travail différemment.
 
-Cela signifie :
+Kitsu le reflète en vous permettant de configurer :
 
-- Vous pouvez auditer le code.
-- Vous pouvez comprendre exactement comment fonctionne la base de données.
-- Vous n'êtes jamais dépendant d'une logique propriétaire cachée.
-- Vous pouvez héberger en local si nécessaire.
+- Les types de tâches et les workflows par département
+- Les pipelines de statuts qui correspondent à votre processus de validation
+- L'allocation des ressources et la planification
+- Le suivi du temps et le monitoring de la productivité
 
-Pour les décideurs techniques, cette transparence élimine l'incertitude et les risques à long terme.
+Vous n'êtes pas contraint à une structure rigide. Vous adaptez l'outil à votre logique de production.
 
----
+Pour les studios qui ont besoin de configurations plus avancées, Kitsu peut être étendu via son API plutôt que de modifier son cœur, afin de garder votre système maintenable dans le temps.
 
-## Adapté aux petites équipes comme aux équipes structurées
+## Transparent et fiable par conception
 
-Si vous n'avez pas de Pipeline TD, Kitsu fonctionne immédiatement, sans configuration.
+Kitsu est open-source, ce qui change la relation que vous entretenez avec votre logiciel de production.
 
-Si vous avez une équipe pipeline dédiée, Kitsu lui donne les outils pour construire une automatisation avancée par-dessus.
+Vous pouvez comprendre comment vos données sont structurées, auditer le fonctionnement du système, l'héberger sur votre propre infrastructure si nécessaire, et éviter d'être enfermé dans des systèmes opaques.
 
-Vous n'avez pas besoin de reconstruire votre pipeline pour adopter Kitsu.
+Dans le même temps, CGWire propose un hébergement cloud géré et des configurations d'infrastructure personnalisées si vous préférez une solution entièrement supportée.
 
-Il suffit de le connecter.
+::quote-content-block{slug="cube"}
+::
+
+## Une adéquation pratique pour les studios réels
+
+::user-logos
+::
+
+Kitsu est utilisé par des centaines de studios de différentes tailles et types de production. Certains l'utilisent tel quel pour organiser les tâches et les validations. D'autres construisent des pipelines avancés par-dessus en utilisant son API et ses intégrations.
+
+Dans les deux cas, l'approche reste la même. Vous ne reconstruisez pas votre pipeline. Vous le connectez à un système qui centralise les données, améliore la visibilité et réduit les frictions entre les départements.
+
+C'est ce qui fait que Kitsu convient parfaitement.

@@ -100,6 +100,10 @@
   "top-notch-support fast title": "迅速な対応",
   "for": "業界別",
   "faq": "よくある質問",
+  "faq-section": {
+    "title": "よくある質問",
+    "subtitle": ""
+  },
   "features": "機能",
   "search": {
     "open": "Open Search Modal",
