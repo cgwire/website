@@ -1170,14 +1170,14 @@
           "title": "Fully dedicated instance",
           "subtitle": "Shared infrastructure means unpredictable performance",
           "content": "Your Kitsu runs on its own infrastructure. No shared resources, no noisy neighbors, no risk of another studio's workload affecting yours. Consistent performance and strict data isolation from day one.",
-          "image": "kitsu-isolated.png",
+          "image": "kitsu-onpremise.png",
           "reverted": true
         },
         {
           "title": "Updates handled without interruption",
           "subtitle": "Running outdated software is a security risk",
           "content": "CGWire's team applies every update and security patch on your behalf. You stay on the latest version without scheduling maintenance windows or pulling engineers away from production work.",
-          "image": "kitsu-updates.png",
+          "image": "kitsu-onpremise.png",
           "colored": true,
           "gradient": true
         }
@@ -1400,14 +1400,14 @@
           "title": "Local Video Cluster",
           "subtitle": "Preview generation is bottlenecking your reviews.",
           "content": "When your team is reviewing heavy sequences or processing large playlists, waiting on shared cloud resources slows everyone down. A dedicated GPU cluster on your own hardware handles video computing at full speed, on demand, without competing for external capacity.",
-          "image": "kitsu-videocluster.png",
+          "image": "kitsu-tutorials.svg",
           "reverted": true
         },
         {
           "title": "Local Object Storage",
           "subtitle": "Control where your production files actually live.",
           "content": "Storing production assets and previews in a third-party cloud means accepting their access policies, their retention rules, and their failure modes. With local object storage configured on your infrastructure, your studio owns the data and defines the access. Full control, no dependencies.",
-          "image": "kitsu-storage.png",
+          "image": "kitsu-onpremise.png",
           "colored": true,
           "gradient": true
         }
@@ -1515,7 +1515,7 @@
           "title": "Track your requests",
           "subtitle": "No issue gets forgotten or ignored",
           "content": "Every support conversation is saved and can be escalated through an integrated ticketing system. You always know where things stand, from first contact to resolution.",
-          "image": "kitsu-tickets.png",
+          "image": "illustration-handshake.png",
           "reverted": true
         },
         {

@@ -2,8 +2,12 @@
 title: "\"Pourquoi ne pas continuer à utiliser des tableurs ou Notion ?\""
 slug: "why-not-just-use-spreadsheets-or-notion"
 subtitle: ""
+summary: "Kitsu est un outil de gestion de production conçu pour remplacer l'assemblage hétéroclite d'outils génériques — tableurs, Notion et coûteuses licences ShotGrid — sur lesquels s'appuient habituellement les studios d'animation et de VFX. Alors que les tableurs manquent de suivi de statut en temps réel, de contrôle de version et de cartographie des dépendances, que Notion présente des lacunes en matière de révision de médias et de visibilité sur le pipeline en temps réel, ShotGrid implique des coûts de licence élevés et une grande complexité. Ces outils « gratuits » ou familiers engendrent des coûts cachés : heures supplémentaires des coordinateurs, mauvaise communication, dépendances manquées et workflows de révision chaotiques. Kitsu comble ces lacunes grâce au versionnage automatique, au suivi des dépendances entre assets et plans, à des workflows d'approbation structurés et à une visibilité adaptée à chaque rôle — le tout disponible en open source sans coût initial, avec une API complète pour l'intégration au pipeline."
 image: "change-management-kitsu.png"
 ---
+
+::user-logos{withTitle=false}
+::
 
 On comprend. L'outil que vous avez, c'est celui que vous connaissez. Mais « suffisamment bien » a un prix : heures supplémentaires, livraisons manquées et épuisement professionnel.
 
@@ -14,6 +18,9 @@ Chaque studio avec lequel nous discutons a essayé de s'en sortir avec les outil
 Puis la production prend de l'ampleur. Les délais se resserrent. L'équipe double. Et soudain, « suffisamment bien » devient ce qui freine tout.
 
 ## Là où les outils génériques atteignent leurs limites
+
+::customer-story-content-block{slug="adm"}
+::
 
 ### Les tableurs : conçus pour les chiffres, pas pour les pipelines
 
@@ -52,6 +59,9 @@ ShotGrid (ou Shotgun, ou Flow) est un véritable outil de production. Mais il s'
 
 ShotGrid a été conçu pour les grandes structures VFX disposant d'équipes d'infrastructure dédiées. Si c'est votre cas, il peut vous convenir. Sinon, vous payez des tarifs entreprise pour des fonctionnalités dont vous n'avez pas besoin, tout en vous débattant avec une interface qui n'a pas été pensée pour votre workflow.
 
+::customer-story-content-block{slug="ryff"}
+::
+
 ## Les coûts cachés du « suffisamment bien »
 
 Le prix affiché des outils gratuits n'est jamais le vrai prix. Réfléchissez à ce que vous dépensez réellement :
@@ -67,6 +77,9 @@ Le prix affiché des outils gratuits n'est jamais le vrai prix. Réfléchissez �
 
 Tous ces coûts se traduisent par du crunch, du turnover et des budgets explosés.
 
+::customer-story-content-block{slug="fost"}
+::
+
 ## Les problèmes spécifiques que Kitsu a été conçu pour résoudre
 
 - **Versioning** : Chaque aperçu téléversé dans Kitsu est versionné automatiquement. Les superviseurs révisent la dernière version. Les artistes savent toujours à quelle itération s'applique le retour. Il n'y a plus de « attends, on regarde quel fichier là ? »
@@ -81,3 +94,6 @@ Parce que le coût de la migration est fini, le coût du statu quo est permanent
 La migration vers Kitsu prend généralement des jours, pas des mois. La version open source ne coûte rien à essayer. Et parce que vos données sont exposées via une API REST et Python complète, Kitsu s'intègre aux outils de pipeline que vous utilisez déjà.
 
 Les studios qui retardent le changement le font parce que migrer leur semble risqué. Nous avons conçu Kitsu pour rendre ce risque aussi faible que possible.
+
+::quote-content-block{slug="mdhr"}
+::

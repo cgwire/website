@@ -2,6 +2,7 @@
 title: "\"Kitsu est-il trop complexe pour notre équipe ?\""
 slug: "is-kitsu-too-complicated-for-our-team"
 subtitle: ""
+summary: "Kitsu est un outil de gestion de production basé sur les rôles, conçu pour éliminer la complexité d'intégration qui affecte la plupart des logiciels de studio — les artistes se connectent pour voir uniquement leur liste de tâches, leurs références et leurs retours, tandis que les superviseurs, producteurs et clients bénéficient chacun d'une vue personnalisée adaptée à leurs responsabilités, afin que personne n'ait à naviguer dans la complexité d'un autre rôle. Avec une intégration qui ne prend que quelques minutes (un lien d'invitation, une liste de tâches et un premier téléversement), sans sessions de formation ni manuels requis, et une interface épurée construite autour d'une seule question — « de quoi cette personne a-t-elle besoin maintenant ? » — Kitsu prouve que des outils de production puissants n'ont pas à être compliqués, et est approuvé par plus de 300 studios dans plus de 50 pays pour le démontrer."
 image: "change-management-kitsu.png"
 ---
 Une crainte revient souvent lors de l'introduction d'un nouveau logiciel de production : « Mon équipe va résister. Ça va ralentir tout le monde. La courbe d'apprentissage n'en vaut pas la peine. »
@@ -9,6 +10,9 @@ Une crainte revient souvent lors de l'introduction d'un nouveau logiciel de prod
 La plupart des outils de production sont conçus pour les producteurs, puis remis à des artistes qui veulent juste dessiner, rigger, animer et rendre.
 
 Kitsu a été conçu différemment : chaque rôle obtient exactement ce dont il a besoin.
+
+::customer-story-content-block{slug="remembers"}
+::
 
 ## Ce qu'un artiste voit réellement
 
@@ -25,6 +29,9 @@ C'est tout.
 - ✅ Passer à la suite
 
 Aucune formation requise. Aucun manuel à lire. Aucun paramètre à configurer.
+
+::customer-story-content-block{slug="miyu"}
+::
 
 ## Ce qu'un producteur voit réellement
 
@@ -67,7 +74,13 @@ Chaque écran de Kitsu est conçu autour d'une seule question : de quoi cette pe
 
 Pas de barres latérales encombrées qui se disputent l'attention. Pas de workflows en dix étapes pour publier un aperçu. Pas de menus enfouis où se cachent les actions essentielles.
 
+::quote-content-block{slug="woodblock"}
+::
+
 ## Approuvé par plus de 300 studios dans plus de 50 pays
+
+::user-logos{withTitle=false}
+::
 
 Des studios allant du freelance solo aux productions de longs métrages à grande échelle utilisent Kitsu au quotidien, y compris des équipes qui n'avaient jamais utilisé de logiciel de production dédié auparavant.
 
