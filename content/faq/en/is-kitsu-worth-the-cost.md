@@ -70,5 +70,5 @@ The math usually resolves itself. How long can you afford to wait?
 ::customer-story-content-block{slug="miyu"}
 ::
 
-::user-logos{withTitle=false}
+::user-logos{:withTitle="false"}
 ::

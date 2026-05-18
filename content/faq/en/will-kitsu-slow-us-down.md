@@ -11,7 +11,7 @@ But Kitsu was built by people who've lived inside productions.
 
 The design principle is simple: if it doesn't save time, it doesn't ship.
 
-::user-logos{withTitle=false}
+::user-logos{:withTitle="false"}
 ::
 
 ## The Real Cost of Not Having a Shared System

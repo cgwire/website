@@ -5,7 +5,7 @@ subtitle: "A Practical Approach to Moving Your Studio to Kitsu"
 image: "migration-kitsu-cloud.png"
 ---
 
-::user-logos{withTitle=false}
+::user-logos{:withTitle="false"}
 ::
 
 ## Switching Without Slowing Down Production
