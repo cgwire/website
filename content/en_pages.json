@@ -1401,58 +1401,91 @@
       "tool": "Ftrack",
       "slug": "ftrack",
       "image": "vsftrack.png",
-      "title": "Kitsu compared to Ftrack",
-      "subtitle": "When to use Kitsu and Ftrack",
+      "title": "An open-source alternative to Ftrack",
+      "subtitle": "Open-source production tracker for animation and VFX studios, ready from day one.",
       "sections": [
         {
-          "title": "Target Audience",
+          "title": "Who Kitsu is for",
           "content": [
-            "Ftrack is aimed at large VFX facilities.",
-            "Kitsu is designed for smaller animation and VFX studios with distributed teams, especially those involved in productions across multiple studios, with a focus on TV series.",
-            "Our features and roadmaps are tailored to meet these distinct needs. Therefore, it’s important to consider this aspect when choosing your production management solution."
+            "Kitsu is used by animation and VFX studios from 10 to 500 users, on TV series, feature films, shorts, and video game productions. Productions often run with distributed teams or with several studios collaborating on the same show.",
+            "Ftrack and Kitsu sit on overlapping segments, so the question is rarely about raw capability. The actual difference is philosophy: how opinionated the tool is, how open the codebase is, and how fast a studio can get the team productive."
           ]
         },
         {
-          "title": "Resources Needed",
+          "title": "Productive from day one",
           "content": [
-            "Ftrack is an expansive toolbox. To get started with Ftrack, you must hire several people dedicated to customizing UIs, and integrating it into your pipeline. You will end up with something tailor-made, but it will require a lot of effort. These developments may also need significant maintenance in the future. Lastly, you will need internal training sessions for your customized version of Ftrack.",
-            "In contrast, Kitsu works great right out of the box. All UIs are designed with ease of use in mind, making it easy to get started. Our dedicated support team is available to assist with setup if needed. However, to fully integrate Kitsu with your pipeline and take advantage of its database, you may need a pipeline TD. While Kitsu provides flexibility to define different workflows, it may not be suitable for projects with highly specialized pipelines."
+            "Kitsu is opinionated. The workflow model (sequences, shots, assets, tasks, statuses) is fixed, the UI is the same for every role, and the assets and shots workflows are available the moment a project is created. Artists, supervisors, production, and IT all use the same interface.",
+            "Onboarding stays short: written documentation, tutorial videos, full-text search across the docs, and a support team that helps studios get started. New artists are productive within a day, not after a training cycle.",
+            "Variations between productions are handled at the project level: task types, statuses, asset categories, custom metadata, schedules. No UI rebuild, no consultants between the studio and the work."
           ]
         },
         {
-          "title": "Simplicity vs. Comprehensiveness",
+          "title": "Support and roadmap shaped by the people who use it",
           "content": [
-            "Ftrack is designed to work on any project at a fine-grain level. It's great at adapting to any situation, but it comes with a lot of complexity. As a result, the added time taken to learn and customize the system may counter the benefits gained from it. Moreover, projects that require this level of specificity are rare.",
-            "Kitsu focuses on animation and VFX projects. Through close collaboration with hundreds of studios, we have designed a system that is efficient yet flexible enough to adapt to most situations. Our goal is to ensure that everyone in the studio can use Kitsu from day one. While there may be some very specialized use cases that aren't suitable, you can be confident that everyone in the studio will be comfortable with Kitsu."
+            "Support is handled by industry professionals (former pipeline and production roles), based in Paris. Bugs and questions get answered in hours, not days.",
+            "The roadmap lives on a public Canny board where studios vote on what we build next. Current priorities (the permissions system, software integrations) come from there. Decisions are visible, and they can be discussed in the open before they ship.",
+            "An active Discord runs alongside, where the CGWire team participates daily. It is the same channel the team uses for incident heads-up, release notes, and discussion of upcoming work."
           ]
         },
         {
-          "title": "Review Engine",
+          "title": "Open source and transparency",
           "content": [
-            "Ftrack has a strong review engine that performs well when reviewing high-end shots online. Nevertheless, organising reviews and comparing versions is still challenging.",
-            "Kitsu offers a robust playlist system that allows you to view and compare all shots in your database easily in real-time."
+            "Kitsu is open source (AGPL, repository at github.com/cgwire/kitsu). The code can be read, audited, forked, and deployed by anyone. The changelog and the roadmap are public, so studios can see what is coming, what is in progress, and what is being decided.",
+            "For teams that want long-term visibility on the tools they depend on, this matters: no surprise pivot, no surprise pricing, no closed-door product decision."
           ]
         },
         {
-          "title": "Security",
+          "title": "Self-hosted, real and free",
           "content": [
-            "Ftrack qualifies for many security certifications and offers on-premise installations (at an additional cost). However, its code is proprietary, so there is no guarantee that features or functionality might change or break in the future.",
-            "Kitsu is open-source and can be fully audited and installed on-premise with very little extra cost. We ensure that your data remains private and secure. We take security very seriously and, while still waiting for certifications, we apply all best practices to keep your data safe.",
-            "CGWire engineers have a strong track record in cloud hosting and apply all protocols to ensure the security of your data (HTTPS, strict password management policies, strong SSH key management, background checks, etc.). It is only a matter of time before we qualify for the necessary security certifications."
+            "Around 200 studios run their own Kitsu instance today. Deployment is a Docker compose against a standard PostgreSQL database, which pipeline TDs and IT teams can query and back up with their usual tools.",
+            "Ftrack also offers an on-premise option, but it is a paid add-on and the setup involves more effort. With Kitsu, the self-hosted path is free, documented, and on the same feature level as the cloud build.",
+            "For studios subject to GDPR, IP protection clauses, or data residency requirements (common on European or Japanese productions), keeping the full stack inside your own infrastructure is a regular deployment, not a special tier."
           ]
         },
         {
-          "title": "Pricing",
+          "title": "Where Kitsu differs",
           "content": [
-            "Kitsu has similar pricing with Ftrack (~25$/user/month).",
-            "However, Kitsu offers a much better user experience with tutorials, beautiful UIs, and dedicated support. Because every stakeholder uses it effectively, the return on investment for Kitsu in animation or VFX production is significantly higher."
+            "A few areas where Kitsu ships features that are either absent from Ftrack or handled differently:",
+            {
+              "type": "list",
+              "items": [
+                "Casting management with integrated breakdown views, native in Kitsu.",
+                "Quotas tied to schedules and timesheets, useful for studios that plan charges per artist and per task type.",
+                "REST API and a documented Python client (gazu). Pipeline integration stays straightforward, without learning an event-driven API model.",
+                "Review engine with shareable playlist links: send a single URL to a reviewer and they can comment without a Kitsu account. Version comparison and drawing tools are included."
+              ]
+            },
+            "Ftrack has a recognized review tool and a wide range of DCC integrations. Kitsu acknowledges that, and stays focused on the everyday-use side of the studio workflow."
           ]
         },
         {
-          "title": "Documentation",
+          "title": "Cost",
           "content": [
-            "Ftrack provides documentation about its usage and its Python client.",
-            "Kitsu offers easy-to-follow documentation, a search engine, and tutorial videos. Training options for getting your team onboarded are also available. Finally, the Python client and the REST API are fully documented, making it much easier for a Pipeline TD to work with Kitsu."
+            "License pricing sits in the same range. The differences are around what comes included on hosting and what stays under the studio's control.",
+            {
+              "type": "table",
+              "caption": "Kitsu vs Ftrack, at a glance",
+              "headers": ["Item", "Kitsu", "Ftrack"],
+              "rows": [
+                ["User license", "€30 per user per month", "~€25 to €35 per user per month, depending on plan"],
+                ["Self-hosted", "Free, open source, ~200 active installations", "Available, as a paid add-on"],
+                ["Source code", "Open (AGPL, github.com/cgwire/kitsu)", "Proprietary"],
+                ["Public roadmap", "Yes (Canny board and GitHub issues)", "Internal"],
+                ["Support channel", "Discord, email, by industry professionals", "Editor support"]
+              ]
+            },
+            "Ftrack pricing varies by plan and region, so the numbers above are an order of magnitude. Studios doing a serious comparison should pull a current quote from ftrack.com."
+          ]
+        },
+        {
+          "title": "Migrating from Ftrack",
+          "content": [
+            "We help studios move from Ftrack to Kitsu, including productions running thousands of shots. The migration path (data export, schema mapping, history preservation, parallel operation) is well documented and well practised.",
+            {
+              "type": "cta",
+              "label": "Talk to us about migrating",
+              "href": "mailto:support@cg-wire.com?subject=Migrating to Kitsu"
+            }
           ]
         }
       ]
@@ -1462,7 +1495,7 @@
       "slug": "shotgrid",
       "image": "vsshotgrid.png",
       "title": "An open-source alternative to Autodesk Flow",
-      "subtitle": "Kitsu is a production tracker for animation and VFX studios. Self-hosted or cloud, from 10 to 500 users.",
+      "subtitle": "Open-source production tracker for animation and VFX studios, self-hosted or cloud.",
       "sections": [
         {
           "title": "Who Kitsu is for",
@@ -1496,37 +1529,7 @@
                 ["Hosting", "Included cloud, or self-hosted for free", "Cloud only since the end of standard on-premise"]
               ]
             },
-            "On the self-hosted side, the cost envelope we work with for open-source customers looks like this. Numbers assume a €500 per day technical rate (pipeline TD or senior IT) and a 40-week production calendar.",
-            {
-              "type": "table",
-              "caption": "Scenario A: 30 users, 1 production",
-              "headers": ["Item", "Min", "Max"],
-              "rows": [
-                ["Infrastructure (VM, storage, monitoring)", "€3,360", "€5,760"],
-                ["Initial setup, 3 days, amortized over 3 years", "€500", "€500"],
-                ["Updates and maintenance, 15 to 23 days per year", "€7,500", "€11,500"],
-                ["Internal user friction (1h per week, 40 weeks)", "€1,200", "€1,200"],
-                ["Production incident risk (0.5 day, 30 users, €300)", "-", "€4,500"],
-                ["Self-hosted Kitsu, total", "€12,560", "€23,460"]
-              ],
-              "emphasizeLast": true,
-              "note": "Cloud equivalent for the same studio: 30 users at €30 per month, all-in: €10,800 per year."
-            },
-            {
-              "type": "table",
-              "caption": "Scenario B: 120 users, 4 productions",
-              "headers": ["Item", "Min", "Max"],
-              "rows": [
-                ["Infrastructure (cluster, redundancy, storage)", "€12,000", "€18,000"],
-                ["Dedicated technical time, around 0.25 FTE", "€17,500", "€22,000"],
-                ["Internal user friction (4h per week, 40 weeks)", "€4,800", "€4,800"],
-                ["Production incident risk (1 day, 120 users, €300)", "-", "€18,000"],
-                ["Self-hosted Kitsu, total", "€34,300", "€62,800"]
-              ],
-              "emphasizeLast": true,
-              "note": "Cloud equivalent for the same studio: 120 users at €35 per month, all-in: €50,400 per year."
-            },
-            "Two takeaways. Self-hosting Kitsu stays a sane option at most scales, with a known cost envelope. And when comparing managed cloud to managed cloud, the gap with ShotGrid widens as the studio grows, driven by setup, custom development, and ongoing maintenance rather than by the license itself."
+            "License costs land in the same ballpark. The gap with ShotGrid widens as the studio grows, driven by setup, custom development, and ongoing maintenance rather than the license itself."
           ]
         },
         {
@@ -1566,7 +1569,7 @@
             {
               "type": "cta",
               "label": "Talk to us about migrating",
-              "href": "/contact"
+              "href": "mailto:support@cg-wire.com?subject=Migrating to Kitsu"
             }
           ]
         }
