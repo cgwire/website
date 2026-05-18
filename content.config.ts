@@ -1,9 +1,14 @@
+import { readFile } from 'node:fs/promises'
+import { resolve, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import {
   defineContentConfig,
   defineCollection,
   defineCollectionSource
 } from '@nuxt/content'
 import { z } from 'zod'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const LANGUAGES = ['en', 'fr', 'ja']
 
@@ -17,16 +22,10 @@ const COLLECTIONS = [
   { key: 'customer_stories' }
 ]
 
-const pageCache = new Map()
-
 const loadPages = async lang => {
-  if (!pageCache.has(lang)) {
-    const data = await import(`./content/${lang}_pages.json`).then(
-      m => m.default ?? m
-    )
-    pageCache.set(lang, data)
-  }
-  return pageCache.get(lang)
+  const filePath = resolve(__dirname, `content/${lang}_pages.json`)
+  const raw = await readFile(filePath, 'utf8')
+  return JSON.parse(raw)
 }
 
 const pagesSource = defineCollectionSource({
