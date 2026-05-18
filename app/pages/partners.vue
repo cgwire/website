@@ -106,6 +106,18 @@ alive. It is our way of keeping things open while making the economics work.
             </div>
           </div>
         </div>
+
+        <div class="partners-founders">
+          <p class="partners-deal-lbl">Founding Partners</p>
+          <p class="partners-founders-intro">
+            The studios who joined first and made this program real:
+          </p>
+          <ul class="partners-founders-list">
+            <li v-for="(studio, i) in foundingPartners" :key="i">
+              {{ studio }}
+            </li>
+          </ul>
+        </div>
       </article>
     </section>
   </div>
@@ -135,6 +147,12 @@ const tiers = [
   { name: '200+ users', price: '€7,000', period: '/ year' }
 ]
 
+const foundingPartners = [
+  'Cousin Bizarre',
+  'Terminus Studio',
+  'Normaal'
+]
+
 const nots = [
   {
     title: 'A support contract with an SLA',
@@ -150,15 +168,25 @@ const nots = [
   }
 ]
 
+const partnersTitle = 'Kitsu Studio Partners Program'
+const partnersDescription = 'Kitsu is yours. Help keep it open source.'
+const partnersUrl = 'https://www.cg-wire.com/partners'
+const partnersImage = 'https://www.cg-wire.com/teaser.png'
+
 useHead({
-  title: 'Kitsu Studio Partners Program',
+  title: partnersTitle,
   meta: [
-    { name: 'robots', content: 'noindex, nofollow' },
-    {
-      name: 'description',
-      content:
-        'Kitsu is yours. Help keep it open source.'
-    }
+    { name: 'robots', content: 'noindex' },
+    { name: 'description', content: partnersDescription },
+    { name: 'og:title', content: partnersTitle },
+    { name: 'og:description', content: partnersDescription },
+    { name: 'og:type', content: 'website' },
+    { name: 'og:url', content: partnersUrl },
+    { name: 'og:image', content: partnersImage },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: partnersTitle },
+    { name: 'twitter:description', content: partnersDescription },
+    { name: 'twitter:image', content: partnersImage }
   ],
   link: [
     {
@@ -336,6 +364,33 @@ paper-bg = #EFEEEA
 
   strong
     color #1F1F28
+
+.partners-founders
+  margin-top 36px
+  padding-top 32px
+  border-top 1px dashed #E0DED6
+
+.partners-founders-intro
+  font-size 0.95rem
+  color #555
+  margin 0 0 16px
+
+.partners-founders-list
+  list-style none
+  padding 0
+  margin 0
+  display flex
+  flex-wrap wrap
+  gap 10px
+
+  li
+    font-weight 700
+    font-size 1rem
+    color #1F1F28
+    background #F4FFF8
+    border 1px solid cgwire-green
+    padding 8px 16px
+    border-radius 999px
 
 .partners-signoff
   margin-top 36px
