@@ -214,6 +214,11 @@
               Kitsu vs Ftrack
             </NuxtLink>
           </li>
+          <li>
+            <nuxt-link :to="$localePath('self-hosted')">
+              Self-hosted, Partners or Cloud
+            </nuxt-link>
+          </li>
 
           <li v-for="faq in faqPages">
             <NuxtLink
@@ -226,11 +231,6 @@
             >
               {{ faq.title }}
             </NuxtLink>
-          </li>
-          <li>
-            <nuxt-link :to="$localePath('self-hosted')">
-              Cloud vs Self-Hosted
-            </nuxt-link>
           </li>
         </ul>
       </div>

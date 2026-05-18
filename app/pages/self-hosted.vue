@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import { features, supportFeatures } from '~/data/self-hosted-features'
+import { features } from '~/data/self-hosted-features'
 
 const { locale } = useI18n()
 
@@ -22,16 +22,11 @@ const { data: page } = await useAsyncData(
   { watch: [locale] }
 )
 
-const data = ref({
-  // features: JSON.stringify(features),
-  // supportFeatures: JSON.stringify(supportFeatures)
-  features,
-  supportFeatures
-})
+const data = ref({ features })
 
 useSEO({
   title: 'CGWire | ' + page.value.title,
   description:
-    'Kitsu is free and open-source software, meaning you can install and use it at no cost.'
+    'Run Kitsu the way it fits your studio: self-hosted free, Kitsu Studio Partners, or the managed cloud.'
 })
 </script>
