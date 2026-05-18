@@ -1,6 +1,6 @@
 export async function useI18NSlug() {
   const isReady = ref(false)
-  const { locale, t, loadLocaleMessages } = useI18n()
+  const { locale, t, te, loadLocaleMessages } = useI18n()
   const route = useRoute()
   const setI18nParams = useSetI18nParams()
   if (!route.params?.slug) {
@@ -12,14 +12,21 @@ export async function useI18NSlug() {
   const SUPPORTED_LOCALES = ['fr', 'ja']
   await Promise.all(SUPPORTED_LOCALES.map(loadLocaleMessages))
 
+  const translateSlug = (key, loc) => {
+    const fullKey = `slugs.${key}`
+    return te(fullKey, loc) ? t(fullKey, 1, { locale: loc }) : key
+  }
+
   const slug = computed(() =>
-    locale.value === 'en' ? route.params.slug : t(`slugs.${route.params.slug}`)
+    locale.value === 'en'
+      ? route.params.slug
+      : translateSlug(route.params.slug, locale.value)
   )
 
   const i18nParams = Object.fromEntries(
     SUPPORTED_LOCALES.map(loc => [
       loc,
-      { slug: t(`slugs.${slug.value}`, 1, { locale: loc }) }
+      { slug: translateSlug(slug.value, loc) }
     ])
   )
 
