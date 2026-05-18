@@ -1461,52 +1461,113 @@
       "tool": "Shotgrid",
       "slug": "shotgrid",
       "image": "vsshotgrid.png",
-      "title": "Kitsu compared to Autodesk Flow",
-      "subtitle": "When to use Kitsu and Autodesk Flow",
+      "title": "An open-source alternative to Autodesk Flow",
+      "subtitle": "Kitsu is a production tracker for animation and VFX studios. Self-hosted or cloud, from 10 to 500 users.",
       "sections": [
         {
-          "title": "Target audience",
+          "title": "Who Kitsu is for",
           "content": [
-            "The target audience of Shotgrid includes large VFX facilities, such as ILM, Weta, and Disney.",
-            "The target audience for Kitsu includes animation and VFX studios with distributed teams and productions involving multiple studios.",
-            "Our features and roadmaps are tailored to meet these distinct needs. Therefore, it’s important to consider this aspect when choosing your production management solution."
+            "Kitsu is used by animation and VFX studios from 10 to 500 users, on TV series, feature films, shorts, and video game productions. Productions often run with distributed teams, or with several studios collaborating on the same show.",
+            "Autodesk Flow (formerly ShotGrid) primarily targets very large VFX facilities such as ILM, Weta, or Disney. The two tools overlap, but with different centers of gravity. Picking the right one usually starts with this question."
           ]
         },
         {
-          "title": "Resource needed",
+          "title": "Hosting and data ownership",
           "content": [
-            "ShotGrid is an expansive toolbox. To get started with ShotGrid, you must hire several people dedicated to customizing UIs, and integrating it into your pipeline. You will end up with something tailor-made, but it will require a lot of effort. These developments may also need significant maintenance in the future. Lastly, you will need internal training sessions for your customized version of ShotGrid.",
-            "In contrast, Kitsu works great right out of the box. All UIs are designed with ease of use in mind, making it easy to get started. Our dedicated support team is available to assist with setup if needed. However, to fully integrate Kitsu with your pipeline and take advantage of its database, you may need a pipeline TD. While Kitsu provides flexibility to define different workflows, it may not be suitable for projects with highly specialized pipelines."
+            "Autodesk has discontinued its standard on-premise option for ShotGrid. Self-hosted deployments still exist, but go through a long approval process and carry a significant additional cost. The codebase remains proprietary, so the future of features is decided inside Autodesk.",
+            "Kitsu is open source (AGPL, repository at github.com/cgwire/kitsu). The code can be audited line by line, deployed with Docker, and operated without paying us anything. Around 200 studios run their own Kitsu instance today, in parallel with our hosted offering.",
+            "For studios subject to GDPR, IP protection clauses, or data residency requirements (common on European or Japanese productions), keeping the full stack inside your own infrastructure is a regular deployment, not a special tier.",
+            "The cloud version stays available for studios that prefer managed hosting, with the same feature set as the open-source build."
           ]
         },
         {
-          "title": "Simplicity vs Comprehensiveness",
+          "title": "What it actually costs",
           "content": [
-            "ShotGrid is designed to work on any project at a fine-grain level. It's great at adapting to any situation, but it comes with a lot of complexity. As a result, the added time taken to learn and customize the system may counter the benefits gained from it. Moreover, projects that require this level of specificity are rare.",
-            "Kitsu focuses on animation and VFX projects. Through close collaboration with hundreds of studios, we have designed a system that is efficient yet flexible enough to adapt to most situations. Our goal is to ensure that everyone in the studio can use Kitsu from day one. While there may be some very specialized use cases that aren't suitable, you can be confident that everyone in the studio will be comfortable with Kitsu."
+            "License pricing is broadly similar between Kitsu Cloud and ShotGrid, in the range of €30 to €50 per user per month, depending on plan. What changes the total cost of ownership is the work needed to make the tool fit your studio.",
+            {
+              "type": "table",
+              "caption": "Kitsu Cloud vs ShotGrid, item by item",
+              "headers": ["Item", "Kitsu Cloud", "ShotGrid"],
+              "rows": [
+                ["User license", "€30 per user per month", "€30 to €50 per user per month"],
+                ["Initial setup and customization", "Included, with onboarding support", "Several consultant days, valued at market rate"],
+                ["Custom development maintenance", "Not applicable (standard configuration)", "Recurring, to budget yearly"],
+                ["Internal training on a customized version", "Marginal (standard UI for everyone)", "Significant"],
+                ["Hosting", "Included cloud, or self-hosted for free", "Cloud only since the end of standard on-premise"]
+              ]
+            },
+            "On the self-hosted side, the cost envelope we work with for open-source customers looks like this. Numbers assume a €500 per day technical rate (pipeline TD or senior IT) and a 40-week production calendar.",
+            {
+              "type": "table",
+              "caption": "Scenario A: 30 users, 1 production",
+              "headers": ["Item", "Min", "Max"],
+              "rows": [
+                ["Infrastructure (VM, storage, monitoring)", "€3,360", "€5,760"],
+                ["Initial setup, 3 days, amortized over 3 years", "€500", "€500"],
+                ["Updates and maintenance, 15 to 23 days per year", "€7,500", "€11,500"],
+                ["Internal user friction (1h per week, 40 weeks)", "€1,200", "€1,200"],
+                ["Production incident risk (0.5 day, 30 users, €300)", "-", "€4,500"],
+                ["Self-hosted Kitsu, total", "€12,560", "€23,460"]
+              ],
+              "emphasizeLast": true,
+              "note": "Cloud equivalent for the same studio: 30 users at €30 per month, all-in: €10,800 per year."
+            },
+            {
+              "type": "table",
+              "caption": "Scenario B: 120 users, 4 productions",
+              "headers": ["Item", "Min", "Max"],
+              "rows": [
+                ["Infrastructure (cluster, redundancy, storage)", "€12,000", "€18,000"],
+                ["Dedicated technical time, around 0.25 FTE", "€17,500", "€22,000"],
+                ["Internal user friction (4h per week, 40 weeks)", "€4,800", "€4,800"],
+                ["Production incident risk (1 day, 120 users, €300)", "-", "€18,000"],
+                ["Self-hosted Kitsu, total", "€34,300", "€62,800"]
+              ],
+              "emphasizeLast": true,
+              "note": "Cloud equivalent for the same studio: 120 users at €35 per month, all-in: €50,400 per year."
+            },
+            "Two takeaways. Self-hosting Kitsu stays a sane option at most scales, with a known cost envelope. And when comparing managed cloud to managed cloud, the gap with ShotGrid widens as the studio grows, driven by setup, custom development, and ongoing maintenance rather than by the license itself."
           ]
         },
         {
-          "title": "Security",
+          "title": "Where Kitsu goes further",
           "content": [
-            "ShotGrid qualifies for many security certifications and although it offers an on-premise installations, there is a lengthy approval process and incredibly high additional cost. Its code is also proprietary, so there is no guarantee that features or functionality might change or break in the future.",
-            "Kitsu is open-source and can be fully audited and installed on-premise with very little extra cost. We ensure that your data remains private and secure. We take security very seriously and, while still waiting for certifications, we apply all best practices to keep your data safe.",
-            "CGWire engineers have a strong track record in cloud hosting and apply all protocols to ensure the security of your data (HTTPS, strict password management policies, strong SSH key management, background checks, etc.). It is only a matter of time before we qualify for the necessary security certifications."
+            "A few areas where Kitsu ships features that ShotGrid users typically build themselves or pay for as add-ons:",
+            {
+              "type": "list",
+              "items": [
+                "Casting management with integrated breakdown views, native in Kitsu.",
+                "Quotas and timesheets, built into the workflow rather than bolted on.",
+                "REST API and a documented Python client (gazu), so pipeline integration stays straightforward.",
+                "Collaborative review engine for video and image notes, with version comparison and drawing tools."
+              ]
+            },
+            "Each of these works out of the box, against a standard PostgreSQL database that pipeline TDs and IT teams can query and back up with their usual tools."
           ]
         },
         {
-          "title": "Pricing",
+          "title": "Adoption and configuration",
           "content": [
-            "Kitsu and Shotgrid have similar pricing.",
-            "However, our support is recognized for being much more responsive than Autodesk's, and we provide additional assistance for customized installations.",
-            "Note that Shotgrid will require to hire several consultants to make it work properly."
+            "Both tools can be configured, with different trade-offs. ShotGrid offers deep entity-level configuration, which explains why it works at very large facilities. The cost is that most studios need dedicated headcount to bring it to a usable state across the team.",
+            "Kitsu is opinionated. The workflow model (sequences, shots, assets, tasks, statuses) is fixed, and the UI is designed to be used by everyone in the studio from day one. Configuration happens at the project level: task types, statuses, asset categories, custom metadata, schedules. No external developers, no UI rebuild."
           ]
         },
         {
-          "title": "Documentation",
+          "title": "Community and transparency",
           "content": [
-            "Shotgrid provides user documentation for its app and Python client.",
-            "Kitsu provides easy-to-follow documentation, a search engine, and tutorial videos. Its Python client and REST API are fully documented, making it much easier for everyone to work with Kitsu."
+            "The codebase, roadmap, and changelog are public. Bug reports and feature requests are tracked on GitHub issues and on a public Canny board where studios vote on what to build next. Our Discord is active, with the CGWire team answering within the day on most threads.",
+            "The team is made of industry professionals (former pipeline and production roles), based in Paris. Support is handled by people who have worked on productions, not a generic tier-one queue."
+          ]
+        },
+        {
+          "title": "Migrating from ShotGrid",
+          "content": [
+            "We help studios move from ShotGrid to Kitsu, including productions running thousands of shots. The migration path (data export, schema mapping, history preservation, parallel operation) is well understood.",
+            {
+              "type": "cta",
+              "label": "Talk to us about migrating",
+              "href": "/contact"
+            }
           ]
         }
       ]
