@@ -9,7 +9,7 @@ Si votre studio fonctionne avec des tableurs, des dossiers partagés ou des outi
 
 Voici comment Kitsu répond à cette préoccupation.
 
-::user-logos
+::minimalist-user-logos
 ::
 
 ## Le coût caché des outils « familiers »

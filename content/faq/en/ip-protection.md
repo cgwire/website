@@ -90,7 +90,7 @@ The platform is a live hub where tasks, assets, reviews, schedules, and communic
 
 Studios in more than 50 countries use Kitsu in real production environments as a core part of their pipeline.
 
-::user-logos
+::minimalist-user-logos
 ::
 
 ## The Takeaway

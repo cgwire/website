@@ -11,7 +11,7 @@ Mais Kitsu a été conçu par des personnes qui ont vécu de l'intérieur les pr
 
 Le principe de conception est simple : si ça ne fait pas gagner du temps, ça ne sort pas.
 
-::user-logos{withTitle=false}
+::minimalist-user-logos
 ::
 
 ## Le vrai coût de l'absence d'un système partagé

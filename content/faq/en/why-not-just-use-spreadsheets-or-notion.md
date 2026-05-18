@@ -6,7 +6,7 @@ summary: "Kitsu is a production management tool designed to replace the patchwor
 image: "change-management-kitsu.png"
 ---
 
-::user-logos{withTitle=false}
+::minimalist-user-logos
 ::
 
 We get it. The tool you have is the one you know. But "good enough" has a price: overtime, missed deliveries, and burnout.

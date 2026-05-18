@@ -6,7 +6,7 @@ summary: "Kitsu est une plateforme de gestion de production utilisée par plus d
 image: "change-management-kitsu.png"
 ---
 
-::user-logos
+::minimalist-user-logos
 ::
 
 Vous n'avez pas à nous croire sur parole.
@@ -16,6 +16,9 @@ Lorsque vous évaluez une plateforme de gestion de production, la question la pl
 ## Plus de 300 studios ne peuvent pas se tromper
 
 Kitsu est utilisé par plus de 300 studios dans le monde entier, des maisons d'animation indépendantes aux productions VFX à grande échelle, couvrant les longs métrages, les séries télévisées, les jeux vidéo et les courts métrages. Il a été façonné au fil des années par les retours des producteurs, superviseurs et artistes qui l'utilisent au quotidien.
+
+::button-content-block{text="See All Studios" link="/studios"}
+::
 
 ## Du chaos à la clarté : une vraie histoire de production
 

@@ -6,7 +6,7 @@ summary: "Kitsu est un outil de gestion de production conçu pour remplacer l'as
 image: "change-management-kitsu.png"
 ---
 
-::user-logos{withTitle=false}
+::minimalist-user-logos
 ::
 
 On comprend. L'outil que vous avez, c'est celui que vous connaissez. Mais « suffisamment bien » a un prix : heures supplémentaires, livraisons manquées et épuisement professionnel.

@@ -12,7 +12,7 @@ image: "change-management-kitsu.png"
 
 設計の原則はシンプルです。時間を節約しないものはリリースしない。
 
-::user-logos{withTitle=false}
+::minimalist-user-logos
 ::
 
 ## 共有システムがない場合の本当のコスト

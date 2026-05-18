@@ -124,7 +124,7 @@ At the same time, CGWire provides managed cloud hosting and custom infrastructur
 
 ## A Practical Fit for Real Studios
 
-::user-logos
+::minimalist-user-logos
 ::
 
 Kitsu is used by hundreds of studios across different sizes and production types. Some use it out of the box to organize tasks and reviews. Others build advanced pipelines on top of it using its API and integrations.

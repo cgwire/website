@@ -10,7 +10,7 @@ Switching tools always feels risky. You might wonder, "how long before it works 
 
 Your team can be tracking tasks, reviewing assets, and logging time within hours of signing up.
 
-::user-logos
+::minimalist-user-logos
 ::
 
 ## Week 1 Looks Like This

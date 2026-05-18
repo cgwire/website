@@ -10,7 +10,7 @@ Changer d'outil comporte toujours une part de risque. Vous vous demandez peut-ê
 
 Votre équipe peut suivre des tâches, réviser des assets et enregistrer du temps en quelques heures seulement après l'inscription.
 
-::user-logos
+::minimalist-user-logos
 ::
 
 ## À quoi ressemble la première semaine

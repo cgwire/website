@@ -6,7 +6,7 @@ summary: "Kitsu and CGWire offer a robust support structure built for production
 image: "change-management-kitsu.png"
 ---
 
-::user-logos{withTitle=false}
+::minimalist-user-logos
 ::
 
 Production doesn't pause for technical issues. When something goes wrong at 2 AM before a client review, the last thing you need is a support ticket disappearing into a void. 

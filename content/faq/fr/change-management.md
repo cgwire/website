@@ -137,7 +137,7 @@ Kitsu a été créé par des personnes qui comprennent à la fois le logiciel et
 
 En tant que petite équipe focalisée, CGWire travaille en étroite collaboration avec les studios et améliore continuellement le produit sur la base d'une utilisation réelle. La plateforme est open source, largement utilisée dans des dizaines de pays et approuvée par des centaines de studios.
 
-::user-logos
+::minimalist-user-logos
 ::
 
 Cette expérience se manifeste dans un domaine clé : l'adoption est traitée comme un principe de conception fondamental.

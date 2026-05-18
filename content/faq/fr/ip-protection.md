@@ -90,7 +90,7 @@ La plateforme est un hub vivant où les tâches, les assets, les révisions, les
 
 Des studios dans plus de 50 pays utilisent Kitsu dans de vrais environnements de production, comme élément central de leur pipeline.
 
-::user-logos
+::minimalist-user-logos
 ::
 
 ## Ce qu'il faut retenir

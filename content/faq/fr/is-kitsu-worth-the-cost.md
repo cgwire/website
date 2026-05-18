@@ -70,5 +70,5 @@ Le calcul se résout généralement de lui-même. Combien de temps pouvez-vous v
 ::customer-story-content-block{slug="miyu"}
 ::
 
-::user-logos{withTitle=false}
+::minimalist-user-logos
 ::

@@ -1745,7 +1745,7 @@
         "30studio",
         "lesvalseurs",
         "parmi-les-lucioles",
-        "traumhaus-invert",
+        "traumhaus",
         "makuta",
         "alba-sotorra",
         "iiw"
@@ -2194,19 +2194,19 @@
     },
     "bart": {
       "link": "https://bartmaalderink.nl/",
-      "elementKey": "bart-invert",
+      "elementKey": "bart",
       "name": "Bart Maalderink",
       "type": "shorts"
     },
     "blender": {
       "link": "https://studio.blender.org/",
-      "elementKey": "blender-invert",
+      "elementKey": "blender",
       "name": "Blender",
       "type": "shorts"
     },
     "bobbypills": {
       "link": "https://www.bobbypills.com/",
-      "elementKey": "bobbypills-invert",
+      "elementKey": "bobbypills",
       "name": "Bobby Pills",
       "type": "tvshows"
     },
@@ -2236,7 +2236,7 @@
     },
     "cottonwood": {
       "link": "https://www.cottonwood.tv",
-      "elementKey": "cottonwood-invert",
+      "elementKey": "cottonwood",
       "name": "Cottonwood Media",
       "type": "tvshows"
     },
@@ -2290,7 +2290,7 @@
     },
     "enclume": {
       "link": "http://www.enclume-animation.com/",
-      "elementKey": "enclume-invert",
+      "elementKey": "enclume",
       "name": "Enclume",
       "type": "shorts"
     },
@@ -2399,7 +2399,7 @@
     },
     "les-fees-speciales": {
       "link": "https://les-fees-speciales.coop/",
-      "elementKey": "les-fees-speciales-invert",
+      "elementKey": "les-fees-speciales",
       "name": "Les Fées Spéciales",
       "type": "feature-films"
     },
@@ -2423,13 +2423,13 @@
     },
     "lofi-studio": {
       "link": "https://lofistudio.com/",
-      "elementKey": "lofi-studio-invert",
+      "elementKey": "lofi-studio",
       "name": "Lofi Studio",
       "type": "shorts"
     },
     "madlab": {
       "link": "https://madlab-animations.com",
-      "elementKey": "madlab-invert",
+      "elementKey": "madlab",
       "name": "Madlab",
       "type": "tvshows"
     },
@@ -2478,7 +2478,7 @@
     },
     "mikrofilm": {
       "link": "https://www.mikrofilm.no/",
-      "elementKey": "mikrofilm-invert",
+      "elementKey": "mikrofilm",
       "name": "Mikrofilm",
       "type": "shorts"
     },
@@ -2683,7 +2683,7 @@
     },
     "supamonks": {
       "link": "https://www.supamonks.com/",
-      "elementKey": "supamonks-invert",
+      "elementKey": "supamonks",
       "name": "Supamonks",
       "type": ["shorts", "feature-films"]
     },
@@ -2713,7 +2713,7 @@
     },
     "tnzpv": {
       "link": "https://nousvoir.com",
-      "elementKey": "tnzpv-invert",
+      "elementKey": "tnzpv",
       "name": "TNZPV",
       "type": "tvshows"
     },
@@ -2725,7 +2725,7 @@
     },
     "traumhaus": {
       "link": "https://traumhaus-studios.de/",
-      "elementKey": "traumhaus-invert",
+      "elementKey": "traumhaus",
       "name": "Traumhaus",
       "type": "feature-films"
     },
@@ -2779,7 +2779,7 @@
     },
     "yuga-labs": {
       "link": "https://yuga.com/",
-      "elementKey": "yuga-labs-invert",
+      "elementKey": "yuga-labs",
       "name": "Yuga Labs",
       "type": "video-games"
     },

@@ -7,7 +7,7 @@ image: "change-management-kitsu.png"
 ---
 5人のスタジオが初めての短編映画を仕上げているところでも、3本のシリーズを同時に抱える200人規模のプロダクションハウスでも、Kitsuはすべての段階でともに成長します。
 
-::user-logos
+::minimalist-user-logos
 ::
 
 ## 今いる場所と、向かう場所のために

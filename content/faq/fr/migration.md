@@ -6,7 +6,7 @@ summary: "Changer d'outil de suivi de production en cours de production semble r
 image: "migration-kitsu-cloud.png"
 ---
 
-::user-logos{withTitle=false}
+::minimalist-user-logos
 ::
 
 ## Changer d'outil sans ralentir la production

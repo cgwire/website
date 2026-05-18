@@ -6,7 +6,7 @@ summary: "Kitsu et CGWire offrent une structure de support robuste, conçue pour
 image: "change-management-kitsu.png"
 ---
 
-::user-logos{withTitle=false}
+::minimalist-user-logos
 ::
 
 La production ne s'arrête pas pour les problèmes techniques. Quand quelque chose déraille à 2h du matin avant une revue client, la dernière chose dont vous avez besoin, c'est qu'un ticket de support disparaisse dans le vide.

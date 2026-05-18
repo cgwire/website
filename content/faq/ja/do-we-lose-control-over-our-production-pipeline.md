@@ -10,7 +10,7 @@ image: "change-management-kitsu.png"
 
 ここでは、Kitsuがこの懸念にどう応えるかをご説明します。
 
-::user-logos
+::minimalist-user-logos
 ::
 
 ## 「使い慣れた」ツールに潜むコスト

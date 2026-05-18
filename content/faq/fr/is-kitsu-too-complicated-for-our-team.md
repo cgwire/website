@@ -79,7 +79,7 @@ Pas de barres latérales encombrées qui se disputent l'attention. Pas de workfl
 
 ## Approuvé par plus de 300 studios dans plus de 50 pays
 
-::user-logos{withTitle=false}
+::minimalist-user-logos
 ::
 
 Des studios allant du freelance solo aux productions de longs métrages à grande échelle utilisent Kitsu au quotidien, y compris des équipes qui n'avaient jamais utilisé de logiciel de production dédié auparavant.

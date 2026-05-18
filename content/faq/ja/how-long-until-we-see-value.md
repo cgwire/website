@@ -10,7 +10,7 @@ image: "change-management-kitsu.png"
 
 登録からわずか数時間で、チームはタスクの追跡、アセットのレビュー、作業時間の記録を開始できます。
 
-::user-logos
+::minimalist-user-logos
 ::
 
 ## 最初の1週間はこんな感じです
