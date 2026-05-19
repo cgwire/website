@@ -1,52 +1,65 @@
 ---
-"title": "Kitsu Cloud vs Auto-Hébergé"
+"title": "Comment faire tourner Kitsu"
 "slug": "self-hosted"
 ---
 
-<div class="section-subtitle has-text-centered">Quand souscrire à notre offre cloud</div>
+<div class="section-subtitle has-text-centered mt2">Comment faire tourner Kitsu</div>
 
-# Kitsu Cloud vs Auto-Hébergé
+<h2 class="section-title has-text-centered">Cloud, Partners, ou auto-hébergé</h2>
 
-### Quand utiliser notre version open-source
+Kitsu est open source et propose plusieurs options d'hébergement. La plupart de nos clients utilisent Kitsu Cloud, où nous gérons tout pour eux. Les studios qui ont besoin d'un contrôle total peuvent l'auto-héberger. Ci-dessous, les options, ce que chacune demande, et ce que nous prenons en charge.
 
-Kitsu est un logiciel gratuit et open-source, ce qui signifie que vous pouvez l'installer et l'utiliser sans frais. Ce modèle convient bien aux freelances, aux petits studios ou aux projets associatifs avec des budgets limités, vous permettant d'accéder aux bons outils le plus rapidement possible.
-Cependant, si vous êtes un studio plus important, vous aurez besoin d'assistance et de maintenance. Pour les projets critiques, votre studio ne peut pas se permettre la moindre interruption de service. Pour éviter tout problème, vous devez correctement maintenir une application web complexe, ce qui représente un travail à temps plein.
+### Kitsu Cloud
 
-### Hébergement
+Kitsu Cloud est la voie la plus rapide pour faire démarrer un studio sur Kitsu. Nous hébergeons l'application, nous gérons les mises à jour, les sauvegardes, le monitoring et la file de traitement vidéo. Vous obtenez un environnement opérationnel en quelques heures, pas en semaines.
 
-C'est pourquoi nous proposons une version payante de Kitsu, où nous nous occupons de tout pour vous. Nous fournissons le support utilisateur, la maintenance et l'hébergement, vous garantissant une utilisation réussie de Kitsu dès le départ et évitant tout problème pendant la production. Nous pouvons même mettre en place des accords de service sur mesure si nécessaire.
+Le support est direct : vous parlez à l'équipe CGWire, les mêmes personnes qui construisent le produit. L'onboarding est inclus. Les nouvelles fonctionnalités arrivent sur votre instance dès qu'elles sortent, sans travail de mise à jour de votre côté.
 
-Dans cet [article](https://blog.cg-wire.com/deep-dive-into-our-hosting-infrastructure/), nous listons tout le travail nécessaire pour faire fonctionner correctement une installation Kitsu, vous donnant une idée des responsabilités requises pour opérer une installation Kitsu.
+L'infrastructure tourne en Europe. La sécurité, les patchs et la réponse aux incidents font partie de notre travail continu. Nous avons publié un compte-rendu détaillé sur le blog : [a deep dive into our hosting infrastructure](https://blog.cg-wire.com/deep-dive-into-our-hosting-infrastructure/).
 
-### Support Utilisateur
+Cloud convient aux studios qui préfèrent se concentrer sur leur production plutôt que sur leur infrastructure. C'est la voie par défaut pour la majorité de nos clients.
 
-Notre version open-source n'offre qu'un support communautaire. Cela signifie que vous dépendez de la communauté pour obtenir de l'aide lorsque des membres sont disponibles. Cependant, une réponse rapide ne peut être garantie, ni l'exactitude du traitement du problème.
+### Kitsu Studio Partners
 
-Avec un abonnement Kitsu, vous avez accès à notre support utilisateur, vous aidant à résoudre vos problèmes et à répondre à vos questions. Nous mettons également à disposition un canal Discord dédié pour la communication. Si vous rencontrez un bug qui bloque votre production, nous pouvons le corriger pour vous.
+Le programme Partners est une contribution annuelle qui finance le développement de Kitsu, en échange d'un lien direct avec l'équipe CGWire : un Discord privé, notre disponibilité quand quelque chose se passe mal sur votre instance, la possibilité de commander du développement custom, et une voix sur la roadmap. Ce n'est pas un contrat de support avec SLA, et ce n'est pas une condition pour utiliser Kitsu.
 
-De plus, nous pouvons proposer à votre équipe des sessions de formation pour les aider à démarrer. Notre équipe dispose d'une vaste expérience en production et peut offrir des conseils et des bonnes pratiques pour améliorer votre flux de travail.
+Le programme est en phase de lancement, et les premiers studios qui rejoignent le façonnent. Vous pouvez encore faire partie de la promotion fondatrice.
 
-Nous sommes ouverts au développement de nouvelles fonctionnalités basées sur les retours des utilisateurs. Si vous identifiez des axes d'amélioration dans Kitsu, nous pouvons travailler ensemble pour les concrétiser.
+Les paliers annuels et les détails sont sur la page Partners.
 
-Enfin, nous pouvons aider vos TDs à exploiter Kitsu pour votre pipeline. L'API Kitsu est très riche et nécessite quelques connaissances pour être utilisée à son plein potentiel.
+<p class="has-text-centered compare-cta">
+  <a href="/partners" class="button is-large">Découvrir le programme Partners</a>
+</p>
 
-### Installation On-Premise
+### Auto-hébergement de Kitsu
 
-Nous comprenons que pour certaines productions, vous pouvez avoir besoin d'héberger Kitsu sur vos propres serveurs. Dans ces cas, nous pouvons vous fournir une installation on-premise, offrant le même support et la même maintenance que la version cloud.
-Les installations on-premise sont plus coûteuses que la version cloud car nous devons maintenir une infrastructure dédiée pour vous. Cependant, elles peuvent être utiles si vous avez des exigences de sécurité spécifiques.
+Kitsu est libre et open source sous licence AGPL, avec un dépôt public sur github.com/cgwire/kitsu. Vous pouvez l'installer sur vos propres serveurs et le faire tourner sans nous payer quoi que ce soit. Environ 200 studios le font aujourd'hui.
 
-### Résumé
+L'installation est documentée étape par étape sur [dev.kitsu.cloud/self-hosting/setup.html](https://dev.kitsu.cloud/self-hosting/setup.html). La mise en place est manuelle (Python, Node, PostgreSQL, Redis, serveur web) et vous donne une instance Kitsu que vous contrôlez de bout en bout. La documentation couvre aussi les mises à jour, les sauvegardes et le monitoring.
 
-#### Hébergement
+Auto-héberger signifie que vous fournissez l'infrastructure, que vous gérez les sauvegardes et le monitoring, que vous sécurisez l'application et que vous mettez à jour à votre rythme. La charge dépend de la taille et des ambitions du studio, d'une attention à temps partiel pour une petite instance jusqu'à un poste technique dédié pour une grande. Notre communauté Discord est active et les self-hosters s'entraident souvent sur les questions techniques.
+
+L'auto-hébergement est la bonne voie pour les studios qui ont une capacité IT interne et veulent un contrôle total, ou pour les studios où la résidence des données ou des clauses de protection de la PI l'imposent. Pour les autres, le Cloud ou le managé on-premise sont en général un meilleur compromis.
+
+### On-premise managé : le meilleur des deux mondes
+
+Pour les studios qui doivent garder leurs données sur leur propre infrastructure mais veulent le confort opérationnel du cloud, nous proposons une option on-premise managée. CGWire installe et exploite Kitsu sur vos serveurs : le travail de sécurité, les mises à jour, les sauvegardes et le monitoring sont gérés par nous, mais la stack vit entièrement à l'intérieur de votre site.
+
+C'est l'option qui combine ce que l'auto-hébergement apporte côté souveraineté avec ce que le Cloud apporte côté opérations. C'est plus cher que le Cloud parce que nous maintenons une infrastructure dédiée à votre studio, mais c'est la bonne réponse pour les productions avec des clauses de résidence strictes qui veulent aussi une expérience managée.
+
+<p class="has-text-centered compare-cta">
+  <a href="mailto:support@cg-wire.com?subject=On-premise%20managé%20Kitsu" class="button is-large">Contactez-nous</a>
+</p>
+
+### Comparaison
 
 ::comparison-table{:features="features"}
 ::
 
-#### Support
-
-::comparison-table{:features="supportFeatures"}
-::
-
 ### Soutenir un projet indépendant
 
-CGWire est une entreprise indépendante engagée à maintenir Kitsu gratuit et open-source. En souscrivant à notre version cloud, vous soutenez le développement de Kitsu et garantissez son amélioration continue. Nous n'avons pas d'investisseurs afin de préserver notre indépendance décisionnelle, votre soutien est donc crucial pour que nous puissions continuer à maintenir Kitsu.
+CGWire est indépendante. Cinq personnes basées à Paris, sans investisseurs externes, sans objectifs trimestriels. Les choix que nous faisons sur Kitsu (open source, roadmap publique, tarifs lisibles) restent les nôtres, et ils le sont depuis notre lancement en 2018.
+
+L'indépendance a un coût, et ce coût est financé directement par les studios qui utilisent l'outil. Les abonnements Cloud et on-premise managé financent le développement continu. Les contributions Partners financent le temps que nous mettons dans le travail communautaire et dans les conversations qui orientent la roadmap. Les self-hosters maintiennent le code en bonne santé en remontant des bugs, en ouvrant des issues et en contribuant au code. Chaque option soutient Kitsu à sa façon, et ensemble elles nous permettent de rester petits, concentrés, et présents sur la durée.
+
+Quelle que soit l'option qui convient à votre studio, vous faites partie de la façon dont nous gardons Kitsu pérenne.

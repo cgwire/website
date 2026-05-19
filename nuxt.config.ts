@@ -1,8 +1,93 @@
+import { readFileSync, readdirSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'url'
 import i18nRoutes from './i18n/routes.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
+
+const PRERENDER_LANGS = ['en', 'fr', 'ja']
+const PRERENDER_DEFAULT_LANG = 'en'
+
+function readJson(relPath) {
+  return JSON.parse(readFileSync(resolve(__dirname, relPath), 'utf8'))
+}
+
+function readMdSlugs(relDir) {
+  try {
+    return readdirSync(resolve(__dirname, relDir))
+      .filter(f => f.endsWith('.md'))
+      .map(f => f.replace(/\.md$/, ''))
+  } catch {
+    return []
+  }
+}
+
+function buildPrerenderRoutes() {
+  const enPages = readJson('content/en_pages.json')
+  const locales = Object.fromEntries(
+    PRERENDER_LANGS.map(lang => [lang, readJson(`i18n/locales/${lang}.json`)])
+  )
+
+  const localeSlug = (lang, slug) =>
+    locales[lang]?.slugs?.[slug] || slug
+
+  const withPrefix = (lang, path) =>
+    lang === PRERENDER_DEFAULT_LANG ? path : `/${lang}${path}`
+
+  const routes = new Set()
+
+  // Studios: no i18n route entry, served at /studios/[slug] in all locales
+  for (const slug of Object.keys(enPages.studios || {})) {
+    for (const lang of PRERENDER_LANGS) {
+      routes.add(withPrefix(lang, `/studios/${slug}`))
+    }
+  }
+
+  // Collections with localized paths via i18n/routes.js + localized slugs
+  const jsonCollections = [
+    { collection: 'alternatives', routeKey: 'slug-alternative' },
+    { collection: 'features', routeKey: 'features-slug' },
+    { collection: 'audiences', routeKey: 'for-slug' }
+  ]
+
+  for (const { collection, routeKey } of jsonCollections) {
+    const patterns = i18nRoutes[routeKey]
+    if (!patterns) continue
+    const slugs = Object.keys(enPages[collection] || {})
+    for (const slug of slugs) {
+      for (const lang of PRERENDER_LANGS) {
+        const pattern = patterns[lang]
+        if (!pattern) continue
+        const path = pattern.replace('[slug]', localeSlug(lang, slug))
+        routes.add(withPrefix(lang, path))
+      }
+    }
+  }
+
+  // Markdown-backed collections (faq, tools)
+  const mdCollections = [
+    { folder: 'faq', routeKey: 'faq-slug' },
+    { folder: 'tools', routeKey: 'free-tools-slug' }
+  ]
+
+  for (const { folder, routeKey } of mdCollections) {
+    const patterns = i18nRoutes[routeKey]
+    if (!patterns) continue
+    const slugs = readMdSlugs(`content/${folder}/en`)
+    for (const slug of slugs) {
+      for (const lang of PRERENDER_LANGS) {
+        const pattern = patterns[lang]
+        if (!pattern) continue
+        const path = pattern.replace('[slug]', localeSlug(lang, slug))
+        routes.add(withPrefix(lang, path))
+      }
+    }
+  }
+
+  return Array.from(routes)
+}
+
+const prerenderRoutes = buildPrerenderRoutes()
 
 export default defineNuxtConfig({
   compatibilityDate: '2026-02-19',
@@ -132,8 +217,9 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      failOnError: false
-      // routes: ['/pages.json']
+      failOnError: true,
+      crawlLinks: true,
+      routes: prerenderRoutes
     }
   },
   experimental: {
