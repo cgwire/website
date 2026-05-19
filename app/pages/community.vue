@@ -122,7 +122,7 @@
     </div>
   </section>
 
-  <section class="section content community community-info" data-aos="fade-up">
+  <!-- <section class="section content community community-info" data-aos="fade-up">
     <div class="flexrow">
       <div class="flexrow-item description flexrow-filler">
         <h2>
@@ -158,7 +158,7 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <Trial class="mt4" :cta="false" />
 </template>

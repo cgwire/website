@@ -100,6 +100,10 @@
   "top-notch-support fast title": "Obtenez les réponses à vos questions",
   "for": "pour",
   "faq": "questions-frequentes",
+  "faq-section": {
+    "title": "Questions Fréquentes",
+    "subtitle": ""
+  },
   "features": "fonctionnalités",
   "search": {
     "open": "Open Search Modal",

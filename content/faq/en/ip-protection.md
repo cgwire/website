@@ -1,7 +1,8 @@
 ---
-title: "We Can’t Put Our IP In The Cloud"
+title: "Can We Put Our IP In The Cloud?"
 slug: "ip-protection"
 subtitle: "A Practical Look At How Kitsu Protects Your Work Without Slowing You Down"
+summary: "Studios don't have to choose between cloud convenience and IP control. Kitsu gives studios full data ownership, encrypted hosting under European data protection laws, granular role-based access controls, and the option to self-host on-premise for complete network isolation. Because it's open source, there's no black box — and leaving is always friction-free."
 image: "security-kitsu-cloud.png"
 ---
 
@@ -89,7 +90,7 @@ The platform is a live hub where tasks, assets, reviews, schedules, and communic
 
 Studios in more than 50 countries use Kitsu in real production environments as a core part of their pipeline.
 
-::user-logos
+::minimalist-user-logos
 ::
 
 ## The Takeaway

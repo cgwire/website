@@ -2,6 +2,7 @@
 title: "Is Kitsu Worth the Cost?"
 slug: "is-kitsu-worth-the-cost"
 subtitle: ""
+summary: "Studios relying on spreadsheets, email threads, and Slack for production tracking face hidden costs that compound fast — from coordinators spending 4–8 hours weekly chasing status updates, to rework from version confusion, slow freelancer onboarding, and departmental miscommunication that wastes up to 20% of team capacity. Kitsu replaces this fragmented workflow with a single source of truth: real-time dashboards, playlist review tools, automated notifications, and DCC integrations that eliminate entire categories of overhead. Conservative estimates put monthly hidden costs at €1,700–€2,500+, making Kitsu's subscription cost easy to justify — studios can calculate their own ROI by tallying coordination hours, rework time, and the cost of a single missed deadline."
 image: "change-management-kitsu.png"
 ---
 
@@ -70,5 +71,5 @@ The math usually resolves itself. How long can you afford to wait?
 ::customer-story-content-block{slug="miyu"}
 ::
 
-::user-logos{:withTitle="false"}
+::minimalist-user-logos
 ::

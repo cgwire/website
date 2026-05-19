@@ -1,35 +1,54 @@
-<template>
-  <p
-    class="question"
-    @click="isExpanded ? $emit('unexpand', index) : $emit('expand', index)"
-  >
-    {{ question }}
-    <span class="contract" v-if="isExpanded"> - </span>
-    <span class="contract" v-if="!isExpanded"> + </span>
-  </p>
-  <p class="answer" v-show="isExpanded">
-    {{ answer }}
-  </p>
-</template>
-
 <script setup>
-const props = defineProps({
-  index: {
-    type: Number,
-    required: true
-  },
-  isExpanded: {
-    type: Boolean,
-    default: false
-  },
-  question: String,
-  answer: String
-})
+import { ref } from 'vue'
+import { ChevronRight } from 'lucide-vue-next'
 
-const emit = defineEmits(['expand', 'unexpand'])
+const props = defineProps({
+  faq: Object
+})
 </script>
 
-<style lang="stylus" scoped>
-.question
-  cursor pointer
+<template>
+  <div class="faq-item">
+    <NuxtLink
+      class="question"
+      :to="
+        $localePath({
+          name: 'faq-slug',
+          params: { slug: $t(`slugs.${faq.meta.slug}`) }
+        })
+      "
+      target="_blank"
+    >
+      {{ faq.title }}
+      <ChevronRight class="chevron" />
+    </NuxtLink>
+  </div>
+</template>
+
+<style scoped>
+.faq-item {
+  max-width: 650px;
+  margin: auto;
+}
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 178, 66, 0.1);
+  border: 1px solid #ccdee f;
+  border-radius: 8px;
+  color: #333;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  padding: 0.8em;
+  padding-right: 1.6em;
+  position: relative;
+  cursor: pointer;
+}
+.chevron {
+  flex-shrink: 0;
+  width: 1.2em;
+  height: 1.2em;
+  color: #333;
+}
 </style>

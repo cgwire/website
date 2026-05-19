@@ -2,6 +2,7 @@
 title: "Will It Fit Into Our Pipeline?"
 slug: "custom-integration"
 subtitle: "How Kitsu Adapts to Real Production Pipelines"
+summary: "Kitsu is a flexible production tracking tool designed to integrate seamlessly into existing animation pipelines rather than replace them. It centralizes production data — assets, shots, tasks, reviews, and metrics — through a REST API and Python SDK, enabling studios to automate workflows, sync tools, and reduce manual overhead. Artists can publish directly from their DCC tools while pipeline TDs build custom integrations without disrupting creative work. With support for webhooks, configurable workflows, real-time collaboration, and open-source transparency, Kitsu adapts to studios of any size and structure, serving as a shared source of truth at the center of production."
 image: "custom-integration-kitsu.png"
 ---
 
@@ -123,7 +124,7 @@ At the same time, CGWire provides managed cloud hosting and custom infrastructur
 
 ## A Practical Fit for Real Studios
 
-::user-logos
+::minimalist-user-logos
 ::
 
 Kitsu is used by hundreds of studios across different sizes and production types. Some use it out of the box to organize tasks and reviews. Others build advanced pipelines on top of it using its API and integrations.

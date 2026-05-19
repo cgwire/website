@@ -2,10 +2,11 @@
 title: "Who Else Is Using Kitsu?"
 slug: "who-else-is-using-kitsu"
 subtitle: ""
+summary: "Kitsu is a production management platform trusted by over 300 studios worldwide — from indie animation houses to large-scale VFX productions across feature films, TV series, games, and shorts. Built on years of real-world feedback, it serves every role in the studio: producers tracking budgets and generating reports, directors and supervisors reviewing playlists and comparing versions, artists managing tasks directly from their DCC tools, and coordinators handling scheduling and resource allocation in one place. As open-source software, Kitsu is fully transparent — no lock-in, no black boxes, and your data stays yours."
 image: "change-management-kitsu.png"
 ---
 
-::user-logos
+::minimalist-user-logos
 ::
 
 You shouldn't have to take our word for it.
@@ -15,6 +16,9 @@ When you're evaluating a production management platform, the most important ques
 ## 300+ Studios Can't Be Wrong
 
 Kitsu is used by over 300 studios worldwide, from indie animation houses to large-scale VFX productions, spanning feature films, TV series, video games, and shorts. It's been shaped by years of feedback from the producers, supervisors, and artists who use it every day.
+
+::button-content-block{text="See All Studios" link="/studios"}
+::
 
 ## From Chaos to Clarity: Real Production Stories
 

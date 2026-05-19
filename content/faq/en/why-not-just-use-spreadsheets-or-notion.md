@@ -2,10 +2,11 @@
 title: "Why Not Just Keep Using Spreadsheets or Notion?"
 slug: "why-not-just-use-spreadsheets-or-notion"
 subtitle: ""
+summary: "Kitsu is a production management tool designed to replace the patchwork of generic tools—spreadsheets, Notion, and expensive ShotGrid licenses—that animation and VFX studios typically rely on. While spreadsheets lack live status tracking, version control, and dependency mapping, and Notion falls short on media review and real-time pipeline visibility, ShotGrid carries steep licensing costs and complexity. These \"free\" or familiar tools carry hidden costs in coordinator overtime, miscommunication, missed dependencies, and chaotic review workflows. Kitsu addresses these gaps with automatic versioning, asset-to-shot dependency tracking, structured approval workflows, and role-appropriate visibility—all available via open-source at no initial cost, with a full API for pipeline integration."
 image: "change-management-kitsu.png"
 ---
 
-::user-logos{:withTitle="false"}
+::minimalist-user-logos
 ::
 
 We get it. The tool you have is the one you know. But "good enough" has a price: overtime, missed deliveries, and burnout.

@@ -1,7 +1,8 @@
 ---
-title: "Our Team Won’t Adopt Another Tool"
+title: "Can Our Team Adopt Another Tool?"
 slug: "change-management"
 subtitle: "How Kitsu Makes Adoption Work in Real Productions"
+summary: "Kitsu is a production tracking tool built specifically for animation, VFX, and game studios that solves the common problem of team adoption by designing around real production workflows rather than forcing teams to adapt. It reduces friction for every role — artists get clear task lists, supervisors review directly in playlists, and producers track progress in one place — while acting as a single source of truth that replaces disconnected tools. With role-specific onboarding, a flexible API for pipeline integration, and a pragmatic rollout approach, Kitsu is built so that adoption isn't an afterthought but a core design principle."
 image: "change-management-kitsu.png"
 ---
 
@@ -136,7 +137,7 @@ Kitsu was created by people who understand both software and production.
 
 As a small, focused team, CGWire works closely with studios and continuously improves the product based on real-world usage. The platform is open source, widely used across dozens of countries, and trusted by hundreds of studios.
 
-::user-logos
+::minimalist-user-logos
 ::
 
 That experience shows in one key area: adoption is treated as a core design principle.
