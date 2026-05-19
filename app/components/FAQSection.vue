@@ -9,12 +9,7 @@
       </span>
     </h2>
 
-    <Faq
-      v-for="faq in faqs"
-      :question="faq.title"
-      :answer="faq.meta.summary"
-      isExpanded="true"
-    />
+    <Faq v-for="faq in faqs" :faq="faq" />
   </section>
 </template>
 

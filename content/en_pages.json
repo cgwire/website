@@ -1098,13 +1098,6 @@
           "gradient": true
         },
         {
-          "title": "Search and filter assets",
-          "subtitle": "Finding one asset in a large production shouldn't take minutes",
-          "content": "Search by keyword, tag, or metadata filter to instantly surface what you need. On productions with hundreds of assets, you'll never lose time scrolling through the wrong list again.",
-          "image": "kitsu-search.png",
-          "reverted": true
-        },
-        {
           "title": "Track shot readiness",
           "subtitle": "Know what's actually ready",
           "content": "Get per-shot readiness statistics based on casting completeness. Spot the gaps before they become a bottleneck, and hand off to your scene builder with confidence.",
@@ -1170,14 +1163,14 @@
           "title": "Fully dedicated instance",
           "subtitle": "Shared infrastructure means unpredictable performance",
           "content": "Your Kitsu runs on its own infrastructure. No shared resources, no noisy neighbors, no risk of another studio's workload affecting yours. Consistent performance and strict data isolation from day one.",
-          "image": "kitsu-onpremise.png",
+          "image": "kitsu-multiinstance.png",
           "reverted": true
         },
         {
           "title": "Updates handled without interruption",
           "subtitle": "Running outdated software is a security risk",
           "content": "CGWire's team applies every update and security patch on your behalf. You stay on the latest version without scheduling maintenance windows or pulling engineers away from production work.",
-          "image": "kitsu-onpremise.png",
+          "image": "kitsu-updates.png",
           "colored": true,
           "gradient": true
         }
@@ -1400,7 +1393,7 @@
           "title": "Local Video Cluster",
           "subtitle": "Preview generation is bottlenecking your reviews.",
           "content": "When your team is reviewing heavy sequences or processing large playlists, waiting on shared cloud resources slows everyone down. A dedicated GPU cluster on your own hardware handles video computing at full speed, on demand, without competing for external capacity.",
-          "image": "kitsu-tutorials.svg",
+          "image": "kitsu-video.png",
           "reverted": true
         },
         {
@@ -1448,13 +1441,6 @@
           "image": "kitsu-news.png",
           "colored": true,
           "gradient": true
-        },
-        {
-          "title": "DCC integrations",
-          "subtitle": "Context switching breaks artist flow and slows delivery",
-          "content": "Artists submit previews directly from their DCC software without leaving their working environment. Deliveries land instantly in Kitsu for review, keeping the pipeline clean and turnaround times short.",
-          "image": "kitsu-dcc.png",
-          "colored": true
         },
         {
           "title": "Slack and Discord notifications",
