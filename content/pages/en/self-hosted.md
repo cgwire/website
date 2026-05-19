@@ -9,6 +9,18 @@
 
 Kitsu is open source and runs on multiple hosting options. Most of our customers use Kitsu Cloud, where we run everything for them. Studios that need full control can self-host. Below are the options, what each one asks of you, and what we cover.
 
+### At a glance
+
+- **Cloud**: we run Kitsu for you. Fastest to start, direct support, €30 to €35 per user per month. The default path for most studios.
+- **Partners**: a yearly contribution that funds Kitsu development, with a private line to the CGWire team. For studios who want to support the project and have direct influence on the roadmap.
+- **Self-hosted**: you run Kitsu on your own infrastructure, free and open source. For teams with internal IT capacity and strict data control needs.
+- **Managed on-premise**: we run Kitsu on your servers. Combines cloud operations with on-site data residency. On quote.
+
+### Comparison
+
+::comparison-table{:features="features"}
+::
+
 ### Kitsu Cloud
 
 Kitsu Cloud is the fastest way to get a studio running on Kitsu. We host the application, handle updates, backups, monitoring, and the video processing queue. You get a working environment within hours, not weeks.
@@ -26,7 +38,7 @@ The Partners program is a yearly contribution that funds Kitsu development, in e
 The program is in its launch phase, and the first studios who join shape it. You
 can still be part of the founding batch.
 
-Annual tiers and details on the Partners page.
+Annual tiers depending on studio size. Full details on the Partners page.
 
 <p class="has-text-centered compare-cta">
   <a href="/partners" class="button is-large">See the Partners program</a>
@@ -51,11 +63,6 @@ This is the option that combines what self-hosting gives you on sovereignty with
 <p class="has-text-centered compare-cta">
   <a href="mailto:support@cg-wire.com?subject=Managed%20on-premise%20Kitsu" class="button is-large">Talk to us</a>
 </p>
-
-### Comparison
-
-::comparison-table{:features="features"}
-::
 
 ### Supporting an indie project
 

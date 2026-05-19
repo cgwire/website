@@ -5,18 +5,18 @@
         <tr>
           <th scope="col" class="feature-cell"></th>
           <th scope="col">Cloud</th>
-          <th scope="col">On-premise</th>
           <th scope="col">Partners</th>
           <th scope="col">Self-hosted</th>
+          <th scope="col">On-premise</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="feature in features" :key="feature.name">
           <th scope="row" class="feature-cell">{{ feature.name }}</th>
           <td>{{ feature.cloud }}</td>
-          <td>{{ feature.onpremise }}</td>
           <td>{{ feature.partners }}</td>
           <td>{{ feature.selfhosted }}</td>
+          <td>{{ feature.onpremise }}</td>
         </tr>
       </tbody>
     </table>

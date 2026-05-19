@@ -4,7 +4,7 @@
       <ContentRenderer v-if="page" :value="page" :data="data" />
     </section>
 
-    <Trial />
+    <Trial :cta="false" />
   </div>
 </template>
 
