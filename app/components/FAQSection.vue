@@ -9,7 +9,7 @@
       </span>
     </h2>
 
-    <Faq v-for="faq in faqs" :faq="faq" />
+    <FAQItem v-for="faq in faqs" :faq="faq" />
   </section>
 </template>
 

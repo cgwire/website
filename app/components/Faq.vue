@@ -1,27 +1,20 @@
 <script setup>
 import { ref } from 'vue'
-import { ChevronRight } from 'lucide-vue-next'
-
 const props = defineProps({
-  faq: Object
+  question: String,
+  answer: String
 })
+const isExpanded = ref(false)
 </script>
 
 <template>
   <div class="faq-item">
-    <NuxtLink
-      class="question"
-      :to="
-        $localePath({
-          name: 'faq-slug',
-          params: { slug: $t(`slugs.${faq.meta.slug}`) }
-        })
-      "
-      target="_blank"
-    >
-      {{ faq.title }}
-      <ChevronRight class="chevron" />
-    </NuxtLink>
+    <p class="question" @click="isExpanded = !isExpanded">
+      {{ question }}
+      <span class="expand" v-if="!isExpanded">+</span>
+      <span class="contract" v-else>−</span>
+    </p>
+    <p class="answer" v-show="isExpanded">{{ answer }}</p>
   </div>
 </template>
 
@@ -30,11 +23,9 @@ const props = defineProps({
   max-width: 650px;
   margin: auto;
 }
+
 .question {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: rgba(0, 178, 66, 0.1);
+  background: rgba(0, 178, 66, 0.1); /* lightblue */
   border: 1px solid #ccdee f;
   border-radius: 8px;
   color: #333;
@@ -45,10 +36,21 @@ const props = defineProps({
   position: relative;
   cursor: pointer;
 }
-.chevron {
-  flex-shrink: 0;
-  width: 1.2em;
-  height: 1.2em;
-  color: #333;
+
+.expand,
+.contract {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 16px;
+  width: 25px;
+  text-align: center;
+}
+
+.answer {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding: 0.5em;
+  font-size: 1rem;
 }
 </style>
