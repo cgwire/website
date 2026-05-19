@@ -65,12 +65,23 @@
           >
             <a :href="block.href" class="button is-large">{{ block.label }}</a>
           </p>
+
+          <div v-else-if="block.type === 'qa'" class="compare-qa">
+            <div
+              v-for="(qa, qi) in block.items"
+              :key="qi"
+              class="compare-qa-item"
+            >
+              <p class="compare-qa-q">{{ qa.q }}</p>
+              <p class="compare-qa-a">{{ qa.a }}</p>
+            </div>
+          </div>
         </template>
       </div>
     </section>
   </div>
 
-  <Trial />
+  <Trial :cta="false" />
 </template>
 
 <script setup>
@@ -153,4 +164,18 @@ table.table
 
   a.button
     font-weight 600
+
+.compare-qa
+  margin 1em 0
+
+  .compare-qa-item
+    margin-bottom 1.4em
+
+  .compare-qa-q
+    font-weight 700
+    margin-bottom .35em
+
+  .compare-qa-a
+    margin 0
+    color #2a2a2a
 </style>
