@@ -1170,7 +1170,7 @@
           "title": "完全に専用のインスタンス",
           "subtitle": "共有インフラストラクチャは予測不可能なパフォーマンスを意味する",
           "content": "KitsuはそのインフラストラクチャはKitsu専用です。共有リソースなし、ノイジーネイバーなし、他のスタジオのワークロードがあなたに影響するリスクなし。初日から一貫したパフォーマンスと厳格なデータ分離を実現します。",
-          "image": "kitsu-isolated.png",
+          "image": "kitsu-multiinstance.png",
           "reverted": true
         },
         {
@@ -1403,14 +1403,14 @@
           "title": "ローカルビデオクラスター",
           "subtitle": "プレビュー生成がレビューのボトルネックになっている。",
           "content": "チームが重いシーケンスをレビューしたり大きなプレイリストを処理したりするとき、共有クラウドリソースを待つことで全員が遅くなります。自社ハードウェア上の専用GPUクラスターが外部キャパシティを競うことなく、オンデマンドでフルスピードのビデオコンピューティングを処理します。",
-          "image": "kitsu-videocluster.png",
+          "image": "kitsu-video.png",
           "reverted": true
         },
         {
           "title": "ローカルオブジェクトストレージ",
           "subtitle": "プロダクションファイルが実際にどこに保存されるかをコントロールする。",
           "content": "プロダクションアセットとプレビューをサードパーティのクラウドに保存するということは、彼らのアクセスポリシー、保持ルール、障害モードを受け入れることを意味します。インフラストラクチャ上に設定されたローカルオブジェクトストレージを使用すると、スタジオがデータを所有し、アクセスを定義します。完全なコントロール、依存関係なし。",
-          "image": "kitsu-storage.png",
+          "image": "kitsu-onpremise.png",
           "colored": true,
           "gradient": true
         }
@@ -1518,7 +1518,7 @@
           "title": "リクエストを追跡する",
           "subtitle": "どんな問題も忘れられたり無視されたりしない",
           "content": "すべてのサポート会話が保存され、統合されたチケットシステムを通じてエスカレーションできます。最初のコンタクトから解決まで、常に状況を把握できます。",
-          "image": "kitsu-tickets.png",
+          "image": "illustration-handshake.png",
           "reverted": true
         },
         {
@@ -1605,11 +1605,7 @@
             {
               "type": "table",
               "caption": "Kitsu と Ftrack、一覧",
-              "headers": [
-                "項目",
-                "Kitsu",
-                "Ftrack"
-              ],
+              "headers": ["項目", "Kitsu", "Ftrack"],
               "rows": [
                 [
                   "ユーザー ライセンス",
@@ -1684,11 +1680,7 @@
             {
               "type": "table",
               "caption": "Kitsu Cloud と ShotGrid、項目ごとの比較",
-              "headers": [
-                "項目",
-                "Kitsu Cloud",
-                "ShotGrid"
-              ],
+              "headers": ["項目", "Kitsu Cloud", "ShotGrid"],
               "rows": [
                 [
                   "ユーザー ライセンス",
@@ -2242,10 +2234,7 @@
       "link": "https://www.3point0studio.com/",
       "elementKey": "30studio",
       "name": "3.0 Studio",
-      "type": [
-        "feature-films",
-        "shorts"
-      ]
+      "type": ["feature-films", "shorts"]
     },
     "3dar": {
       "link": "https://www.3dar.com/",
@@ -2287,10 +2276,7 @@
       "link": "https://www.ankama.com/fr/animations",
       "elementKey": "ankama",
       "name": "Ankama Animations",
-      "type": [
-        "tvshows",
-        "feature-films"
-      ]
+      "type": ["tvshows", "feature-films"]
     },
     "aparat": {
       "link": "https://www.aparat-studio.com/",
@@ -2447,10 +2433,7 @@
       "link": "https://fost.studio",
       "elementKey": "fost",
       "name": "Fost",
-      "type": [
-        "tvshows",
-        "feature-films"
-      ],
+      "type": ["tvshows", "feature-films"],
       "case_study": "https://blog.cg-wire.com/customer-story-fost-studio/"
     },
     "georges-melies": {
@@ -2626,10 +2609,7 @@
       "link": "https://www.miyu.fr/",
       "elementKey": "miyu",
       "name": "Miyu",
-      "type": [
-        "feature-films",
-        "shorts"
-      ],
+      "type": ["feature-films", "shorts"],
       "case_study": "https://blog.cg-wire.com/customer-story-miyu-studio/"
     },
     "monello": {
@@ -2816,10 +2796,7 @@
       "link": "https://www.supamonks.com/",
       "elementKey": "supamonks",
       "name": "Supamonks",
-      "type": [
-        "shorts",
-        "feature-films"
-      ]
+      "type": ["shorts", "feature-films"]
     },
     "supercell": {
       "link": "https://supercell.com/",

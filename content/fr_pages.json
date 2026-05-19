@@ -1170,7 +1170,7 @@
           "title": "Instance entièrement dédiée",
           "subtitle": "Une infrastructure partagée signifie des performances imprévisibles",
           "content": "Votre Kitsu fonctionne sur sa propre infrastructure. Aucune ressource partagée, aucun voisin bruyant, aucun risque que la charge de travail d'un autre studio affecte la vôtre. Des performances constantes et une isolation stricte des données dès le premier jour.",
-          "image": "kitsu-isolated.png",
+          "image": "kitsu-multiinstance.png",
           "reverted": true
         },
         {
@@ -1403,14 +1403,14 @@
           "title": "Cluster vidéo local",
           "subtitle": "La génération d'aperçus crée des goulots d'étranglement dans vos révisions.",
           "content": "Quand votre équipe révise des séquences lourdes ou traite de grandes playlists, attendre des ressources cloud partagées ralentit tout le monde. Un cluster GPU dédié sur votre propre matériel gère le calcul vidéo à pleine vitesse, à la demande, sans concurrencer pour une capacité externe.",
-          "image": "kitsu-videocluster.png",
+          "image": "kitsu-video.png",
           "reverted": true
         },
         {
           "title": "Stockage d'objets local",
           "subtitle": "Contrôlez où se trouvent réellement vos fichiers de production.",
           "content": "Stocker des assets de production et des aperçus dans un cloud tiers signifie accepter leurs politiques d'accès, leurs règles de rétention et leurs modes de défaillance. Avec un stockage d'objets local configuré sur votre infrastructure, votre studio possède les données et définit l'accès. Contrôle total, aucune dépendance.",
-          "image": "kitsu-storage.png",
+          "image": "kitsu-onpremise.png",
           "colored": true,
           "gradient": true
         }
@@ -1518,7 +1518,7 @@
           "title": "Suivez vos demandes",
           "subtitle": "Aucun problème n'est oublié ou ignoré",
           "content": "Chaque conversation de support est sauvegardée et peut être escaladée via un système de tickets intégré. Vous savez toujours où en sont les choses, du premier contact à la résolution.",
-          "image": "kitsu-tickets.png",
+          "image": "illustration-handshake.png",
           "reverted": true
         },
         {
@@ -1607,11 +1607,31 @@
               "caption": "Kitsu vs Ftrack, en un coup d'œil",
               "headers": ["Élément", "Kitsu", "Ftrack"],
               "rows": [
-                ["Licence utilisateur", "30 € par utilisateur et par mois", "~25 € à 35 € par utilisateur et par mois, selon le plan"],
-                ["Auto-hébergement", "Gratuit, open source, ~200 installations actives", "Disponible, en module payant"],
-                ["Code source", "Ouvert (AGPL, github.com/cgwire/kitsu)", "Propriétaire"],
-                ["Roadmap publique", "Oui (board Canny et issues GitHub)", "Interne"],
-                ["Canal de support", "Discord, e-mail, par des professionnels de l'industrie", "Support éditeur"]
+                [
+                  "Licence utilisateur",
+                  "30 € par utilisateur et par mois",
+                  "~25 € à 35 € par utilisateur et par mois, selon le plan"
+                ],
+                [
+                  "Auto-hébergement",
+                  "Gratuit, open source, ~200 installations actives",
+                  "Disponible, en module payant"
+                ],
+                [
+                  "Code source",
+                  "Ouvert (AGPL, github.com/cgwire/kitsu)",
+                  "Propriétaire"
+                ],
+                [
+                  "Roadmap publique",
+                  "Oui (board Canny et issues GitHub)",
+                  "Interne"
+                ],
+                [
+                  "Canal de support",
+                  "Discord, e-mail, par des professionnels de l'industrie",
+                  "Support éditeur"
+                ]
               ]
             },
             "Le tarif Ftrack varie selon le plan et la région, les chiffres ci-dessus sont des ordres de grandeur. Pour une comparaison sérieuse, demandez un devis à jour sur ftrack.com."
@@ -1662,11 +1682,31 @@
               "caption": "Kitsu Cloud vs ShotGrid, ligne par ligne",
               "headers": ["Élément", "Kitsu Cloud", "ShotGrid"],
               "rows": [
-                ["Licence utilisateur", "30 € par utilisateur et par mois", "30 € par utilisateur et par mois (50 € avec support)"],
-                ["Mise en place et personnalisation initiales", "Inclus, avec accompagnement", "Plusieurs jours de consulting, à valoriser au prix du marché"],
-                ["Maintenance des développements custom", "Sans objet (configuration standard)", "Récurrente, à budgéter annuellement"],
-                ["Formation interne sur une version personnalisée", "Marginale (interface standard pour tous)", "Importante"],
-                ["Hébergement", "Cloud inclus, ou auto-hébergé gratuit", "Cloud uniquement depuis la fin de l'on-premise standard"]
+                [
+                  "Licence utilisateur",
+                  "30 € par utilisateur et par mois",
+                  "30 € par utilisateur et par mois (50 € avec support)"
+                ],
+                [
+                  "Mise en place et personnalisation initiales",
+                  "Inclus, avec accompagnement",
+                  "Plusieurs jours de consulting, à valoriser au prix du marché"
+                ],
+                [
+                  "Maintenance des développements custom",
+                  "Sans objet (configuration standard)",
+                  "Récurrente, à budgéter annuellement"
+                ],
+                [
+                  "Formation interne sur une version personnalisée",
+                  "Marginale (interface standard pour tous)",
+                  "Importante"
+                ],
+                [
+                  "Hébergement",
+                  "Cloud inclus, ou auto-hébergé gratuit",
+                  "Cloud uniquement depuis la fin de l'on-premise standard"
+                ]
               ]
             },
             "Les coûts de licence se situent dans la même gamme. L'écart avec ShotGrid se creuse à mesure que le studio grandit, sous l'effet de la mise en place, des développements custom et de la maintenance continue, plutôt que de la licence elle-même."
