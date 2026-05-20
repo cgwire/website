@@ -1496,7 +1496,9 @@
           "subtitle": "返信を何日も待つのをやめる",
           "content": "平均30分以内に返答します。特定のメニューを見つける手助けが必要な場合でも、ワークフローを見直したい場合でも、チームが前進できるように迅速に明確な回答を提供します。",
           "image": "kitsu-fast.png",
-          "colored": true
+          "shadow": true,
+          "colored": true,
+          "gradient": 1
         },
         {
           "key": "chat",
@@ -1504,6 +1506,7 @@
           "subtitle": "あなたに合った方法でお問い合わせください",
           "content": "Kitsu内直接、Discord、またはZoom経由でサポートにアクセスします。問題に関わらず、あなたの状況に合ったチャンネルを通じてご利用いただけます。",
           "image": "kitsu-chat.png",
+          "shadow": true,
           "reverted": true
         },
         {
@@ -1512,8 +1515,9 @@
           "subtitle": "あなたの仕事を経験した人と話す",
           "content": "サポートチームは実際のパイプラインを管理したプロダクションのベテランで構成されています。あなたが置かれているプレッシャーを理解し、あなたの言葉で話し、Kitsuを最大限に活用できるよう助けます。",
           "image": "kitsu-experts.png",
+          "shadow": true,
           "colored": true,
-          "gradient": true
+          "gradient": 2
         },
         {
           "title": "リクエストを追跡する",
@@ -1527,8 +1531,9 @@
           "subtitle": "パイプラインのニーズがロードマップに影響する",
           "content": "Kitsuが特定のニーズをカバーしていない場合、私たちは単にチケットを記録するだけではありません。機能の範囲を定義して構築するためにあなたと一緒に取り組みます。あなたのプロダクション要件が次に構築されるものを直接形作ります。",
           "image": "kitsu-roadmap.png",
+          "shadow": true,
           "colored": true,
-          "gradient": true
+          "gradient": 3
         }
       ]
     }

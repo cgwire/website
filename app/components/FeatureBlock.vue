@@ -6,7 +6,7 @@
       v-if="feature.colored"
     >
       <path
-        fill="#f4f8ff"
+        :fill="topWaveColor"
         fill-opacity="1"
         d="M0,160L60,165.3C120,171,240,181,360,197.3C480,213,600,235,720,256C840,277,960,299,1080,288C1200,277,1320,235,1380,213.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
       ></path>
@@ -15,7 +15,8 @@
   <section
     :class="{
       'block-colored': feature.colored,
-      gradient: feature.gradient,
+      gradient: feature.gradient === true,
+      [`gradient-${gradientStep}`]: gradientStep,
       block: !feature.colored
     }"
   >
@@ -42,7 +43,7 @@
           </p>
         </div>
         <div
-          class="tile is-7 is-child content-image"
+          class="tile is-7 is-child content-image has-text-centered"
           data-aos="fade-up"
           data-aos-delay="200"
         >
@@ -61,7 +62,7 @@
     v-if="feature.colored"
   >
     <path
-      :fill="feature.gradient ? '#F9F6FD' : '#f4f8ff'"
+      :fill="bottomWaveColor"
       fill-opacity="1"
       d="M0,32L80,58.7C160,85,320,139,480,138.7C640,139,800,85,960,90.7C1120,96,1280,160,1360,192L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
     ></path>
@@ -69,11 +70,32 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+
 const props = defineProps({
   feature: Object
 })
 
 const feature = props.feature
+
+const gradientStep = computed(() => {
+  if (typeof feature.gradient === 'number') return feature.gradient
+  return null
+})
+
+const topWaveColor = computed(() => {
+  if (gradientStep.value === 2) return '#F6F7FE'
+  if (gradientStep.value === 3) return '#F7F7FE'
+  return '#F4F8FF'
+})
+
+const bottomWaveColor = computed(() => {
+  if (gradientStep.value === 1) return '#F6F7FE'
+  if (gradientStep.value === 2) return '#F7F7FE'
+  if (gradientStep.value === 3) return '#F9F6FD'
+  if (feature.gradient === true) return '#F9F6FD'
+  return '#F4F8FF'
+})
 </script>
 
 <style lang="stylus" scoped>
@@ -83,4 +105,16 @@ const feature = props.feature
 
 .block-colored.gradient
   background linear-gradient(0deg, rgba(249,246,253,1) 35%, rgba(244,248,255,1) 100%)
+
+.block-colored.gradient-1
+  background linear-gradient(0deg, #F6F7FE 0%, #F4F8FF 100%)
+
+.block-colored.gradient-2
+  background linear-gradient(0deg, #F7F7FE 0%, #F6F7FE 100%)
+
+.block-colored.gradient-3
+  background linear-gradient(0deg, #F9F6FD 0%, #F7F7FE 100%)
+
+.screenshot
+  border-radius 10px
 </style>

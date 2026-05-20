@@ -17,7 +17,7 @@
           {{ header.metrics }}
         </p>
       </div>
-      <div class="is-6">
+      <div class="tile is-6 is-child">
         <video
           :src="useAsset(pageKey + '.webm')"
           autoplay
@@ -57,6 +57,12 @@ function useAsset(path) {
 <style lang="stylus" scoped>
 video
   border-radius 2em
+  width 100%
+  height auto
+
+:deep(img)
+  width 100%
+  height auto
 
 section
   padding-bottom 0

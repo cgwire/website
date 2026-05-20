@@ -1479,7 +1479,9 @@
           "subtitle": "Stop waiting days for a reply",
           "content": "We respond in 30 minutes on average. Whether you need help finding a specific menu or want to rethink a workflow, you get a clear answer fast so your team can keep moving.",
           "image": "kitsu-fast.png",
-          "colored": true
+          "shadow": true,
+          "colored": true,
+          "gradient": 1
         },
         {
           "key": "chat",
@@ -1487,6 +1489,7 @@
           "subtitle": "Reach us where it works for you",
           "content": "Access support directly in Kitsu, on Discord, or over Zoom. Whatever the issue, we are available through the channel that fits your situation.",
           "image": "kitsu-chat.png",
+          "shadow": true,
           "reverted": true
         },
         {
@@ -1495,8 +1498,9 @@
           "subtitle": "Talk to people who have done your job",
           "content": "Our support team is made up of production veterans who have managed real pipelines. They understand the pressure you are under, speak your language, and help you get the most out of Kitsu.",
           "image": "kitsu-experts.png",
+          "shadow": true,
           "colored": true,
-          "gradient": true
+          "gradient": 2
         },
         {
           "title": "Track your requests",
@@ -1510,8 +1514,9 @@
           "subtitle": "Your pipeline needs influence the roadmap",
           "content": "When Kitsu does not cover a specific need, we do not just log a ticket. We work with you to scope and build the feature. Your production requirements directly shape what gets built next.",
           "image": "kitsu-roadmap.png",
+          "shadow": true,
           "colored": true,
-          "gradient": true
+          "gradient": 3
         }
       ]
     }

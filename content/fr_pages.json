@@ -1496,7 +1496,9 @@
           "subtitle": "Arrêtez d'attendre des jours pour une réponse",
           "content": "Nous répondons en 30 minutes en moyenne. Que vous ayez besoin d'aide pour trouver un menu spécifique ou que vous souhaitiez repenser un flux de travail, vous obtenez une réponse claire rapidement pour que votre équipe puisse continuer à avancer.",
           "image": "kitsu-fast.png",
-          "colored": true
+          "shadow": true,
+          "colored": true,
+          "gradient": 1
         },
         {
           "key": "chat",
@@ -1504,6 +1506,7 @@
           "subtitle": "Contactez-nous là où ça vous convient",
           "content": "Accédez au support directement dans Kitsu, sur Discord ou par Zoom. Quel que soit le problème, nous sommes disponibles via le canal qui convient à votre situation.",
           "image": "kitsu-chat.png",
+          "shadow": true,
           "reverted": true
         },
         {
@@ -1512,8 +1515,9 @@
           "subtitle": "Parlez à des personnes qui ont fait votre travail",
           "content": "Notre équipe de support est composée de vétérans de la production qui ont géré de vraies pipelines. Ils comprennent la pression sous laquelle vous vous trouvez, parlent votre langue et vous aident à tirer le meilleur parti de Kitsu.",
           "image": "kitsu-experts.png",
+          "shadow": true,
           "colored": true,
-          "gradient": true
+          "gradient": 2
         },
         {
           "title": "Suivez vos demandes",
@@ -1527,8 +1531,9 @@
           "subtitle": "Les besoins de votre pipeline influencent la feuille de route",
           "content": "Quand Kitsu ne couvre pas un besoin spécifique, nous ne nous contentons pas d'enregistrer un ticket. Nous travaillons avec vous pour définir et construire la fonctionnalité. Vos exigences de production façonnent directement ce qui sera construit ensuite.",
           "image": "kitsu-roadmap.png",
+          "shadow": true,
           "colored": true,
-          "gradient": true
+          "gradient": 3
         }
       ]
     }
