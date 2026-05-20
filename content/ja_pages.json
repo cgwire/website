@@ -1081,6 +1081,8 @@
           "subtitle": "各ショットに何が必要かを推測するのをやめる",
           "content": "各ショットのキャストアセットをタイプ別に整理したブレイクダウンテーブルを作成します。すべてのエントリに直接メタデータを追加することで、シーンビルダーがファイルを開く前から必要なものをすべて揃えられます。",
           "image": "kitsu-tables.png",
+          "gradient": 1,
+          "shadow": true,
           "colored": true
         },
         {
@@ -1088,6 +1090,7 @@
           "subtitle": "何と何が対応するかを手動で追跡するのはもう終わり",
           "content": "アセットを接続して関係を定義します。セットを構成したり、キャラクターにプロップを付けたり、ワークフローに合った依存関係をモデル化したりできます。",
           "image": "kitsu-asset-links.png",
+          "shadow": true,
           "reverted": true
         },
         {
@@ -1095,30 +1098,26 @@
           "subtitle": "パイプラインツールがあなたを待つ必要はないはず",
           "content": "キャスティングデータをフラットな.csvまたは列ビューとして数秒でエクスポートします。手動のステップを完全にスキップして、シーンビルダーをAPIに直接接続することもできます。",
           "image": "kitsu-export.png",
+          "shadow": true,
           "colored": true,
-          "gradient": true
-        },
-        {
-          "title": "アセットを検索・フィルタリングする",
-          "subtitle": "大規模なプロダクションで1つのアセットを見つけるのに数分もかけない",
-          "content": "キーワード、タグ、またはメタデータフィルターで検索して、必要なものを瞬時に見つけます。何百ものアセットがあるプロダクションでも、間違ったリストをスクロールして時間を無駄にすることはもうありません。",
-          "image": "kitsu-search.png",
-          "reverted": true
+          "gradient": 2
         },
         {
           "title": "ショットの準備状況を追跡する",
           "subtitle": "実際に何が準備できているかを把握する",
           "content": "キャスティングの完成度に基づいてショットごとの準備状況統計を取得します。ボトルネックになる前にギャップを見つけ、自信を持ってシーンビルダーに引き渡します。",
           "image": "kitsu-readiness.png",
-          "colored": true
+          "reverted": true,
+          "shadow": true
         },
         {
           "title": "プロダクション間でアセットを再利用する",
           "subtitle": "重複作業はアセットライブラリを損なう",
           "content": "共有ライブラリから取得して、既に存在し検証済みのアセットをチームが再作成しないようにします。全員が同じ信頼できる情報源を参照します。",
           "image": "kitsu-library.png",
-          "reverted": true,
-          "gradient": true
+          "colored": true,
+          "shadow": true,
+          "gradient": 3
         }
       ],
       "customerStory": {
@@ -1147,6 +1146,8 @@
           "subtitle": "侵害とコンプライアンスへの心配をやめる",
           "content": "最高のセキュリティ標準に準拠し、最新のインストールへのアクセスには安全な通信のみを使用します。すべてのシークレットはセキュアなボールトで管理され、従業員はスクリーニングされています。セキュリティドキュメントはリクエストに応じて提供されます。",
           "image": "kitsu-security.png",
+          "gradient": 1,
+          "shadow": true,
           "colored": true
         },
         {
@@ -1155,6 +1156,7 @@
           "subtitle": "計画外の停止は締め切りを台無しにする",
           "content": "すべてのインスタンスが24時間監視されています。私たちのチームは問題が拡大する前にアラートを受け取り、プロダクションパイプラインに影響を与える前に解決します。",
           "image": "kitsu-availability.png",
+          "shadow": true,
           "reverted": true
         },
         {
@@ -1164,7 +1166,7 @@
           "content": "インスタンスは専用リソース上で動作し、他のスタジオから分離されています。サーバーはチームの近くにプロビジョニングされ、ビデオ処理は別のマシンで実行されるため、大きなプレイリストがワークフローを遅くすることはありません。",
           "image": "kitsu-performance.png",
           "colored": true,
-          "gradient": true,
+          "gradient": 2,
           "shadow": false
         },
         {
@@ -1180,7 +1182,7 @@
           "content": "CGWireのチームが代わりにすべてのアップデートとセキュリティパッチを適用します。メンテナンスウィンドウのスケジュール設定や、エンジニアを本番作業から引き離すことなく、最新バージョンを維持できます。",
           "image": "kitsu-updates.png",
           "colored": true,
-          "gradient": true
+          "gradient": 3
         }
       ]
     },
@@ -1188,6 +1190,7 @@
       "name": "Production Tracker",
       "slug": "production-tracker",
       "image": "production-tracker.png",
+      "shadow": true,
       "header": {
         "tagline": "期限通り、予算通りに納品する",
         "subtitle": "プロダクショントラッカー",
@@ -1201,6 +1204,8 @@
           "subtitle": "データの360度ビューを獲得する",
           "content": "すべてのプロジェクトにわたって、ハイレベルなサマリーからタスクレベルの詳細まで、正確な進捗統計を取得します。組み込みのエクスポートツールを使用して、Kitsuから直接クライアントやプロデューサーとレポートを共有します。",
           "image": "kitsu-report.png",
+          "gradient": 1,
+          "shadow": true,
           "colored": true
         },
         {
@@ -1209,6 +1214,7 @@
           "subtitle": "計画が曖昧なときにリソースの競合が発生する",
           "content": "プロジェクト期間を定義し、マイルストーンを設定し、チーム全体に作業がどのように分散しているかを確認します。過負荷とギャップを早期に発見して、プロダクションを遅らせる前に調整できます。",
           "image": "kitsu-tables.png",
+          "shadow": true,
           "reverted": true
         },
         {
@@ -1217,14 +1223,16 @@
           "subtitle": "適切なデータなしでは生産性の問題は見えない",
           "content": "アーティストの日次または週次の出力目標を設定し、それに対する進捗を追跡します。誰がブロックされていて誰が先行しているかを特定して、報告するだけでなく対処できるようにします。",
           "image": "kitsu-quotas.png",
+          "shadow": true,
           "colored": true,
-          "gradient": true
+          "gradient": 2
         },
         {
           "title": "費やした時間を追跡する",
           "subtitle": "予算超過は誰も追跡していない時間から始まる",
           "content": "アーティストはKitsuに直接時間を記録します。アーティスト、アセット、またはショット別の明確な内訳を取得して、プロダクション時間が実際にどこに使われているかを常に把握できます。",
           "image": "kitsu-timesheets.png",
+          "shadow": true,
           "reverted": true
         },
         {
@@ -1232,8 +1240,9 @@
           "subtitle": "遅すぎる段階で気づくと財務リスクが拡大する",
           "content": "プロダクションのあらゆる時点で現在の支出を予算と比較します。意思決定前にコストシナリオを実行して、まだ選択肢がある間に軌道修正できるようにします。",
           "image": "kitsu-budget.png",
+          "shadow": true,
           "colored": true,
-          "gradient": true
+          "gradient": 3
         }
       ],
       "customerStory": {
@@ -1249,6 +1258,7 @@
       "name": "Review Engine",
       "slug": "review-engine",
       "image": "review-engine.png",
+      "shadow": true,
       "header": {
         "tagline": "承認された作業をより速く納品する",
         "subtitle": "レビューエンジン",
@@ -1261,6 +1271,8 @@
           "subtitle": "1通のメールずつショットをレビューするのをやめる",
           "content": "レビュープレイリストを作成して、すべてのショットを1つの継続したセッションで進めます。プレーヤーから離れることなくコメントとアノテーションを追加します。プレイリストをクライアントと直接共有するか、チームとリアルタイムで実行します。",
           "image": "kitsu-playlists.png",
+          "gradient": 1,
+          "shadow": true,
           "colored": true
         },
         {
@@ -1268,6 +1280,7 @@
           "subtitle": "バージョン間で何が変わったかを捉える",
           "content": "2つのバージョンを並べて配置するか、オーバーレイとして重ねます。別々のファイルを探し回ることなく、リグレッションを見つけ、修正を確認し、リビジョンを検証します。",
           "image": "kitsu-compare.png",
+          "shadow": true,
           "reverted": true
         },
         {
@@ -1275,22 +1288,24 @@
           "subtitle": "ミスアラインしたフィードバックの問題を解決する",
           "content": "同期されたレビューセッションを実行して、すべての参加者が同じ時刻に同じフレームを見られるようにします。異なるカットをレビューした人からの矛盾したノートはもうありません。",
           "image": "kitsu-room.png",
+          "shadow": true,
           "colored": true,
-          "gradient": true
+          "gradient": 2
         },
         {
           "title": "フレームに直接アノテーションする",
           "subtitle": "曖昧なノートを正確な指示に置き換える",
           "content": "任意のフレームに直接描画、ハイライト、書き込みを行います。アノテーションは特定のバージョンに固定され、チーム全体に表示されるため、何も伝達に失われることはありません。",
           "image": "kitsu-annotations.png",
-          "colored": true
+          "reverted": true
         },
         {
           "title": "完全なバージョン履歴",
           "subtitle": "何が納品されたかを見失わない",
           "content": "提出されたすべてのプレビューが保存されてアクセス可能です。任意の以前のバージョンを再訪して、ショットがどのように進化したかを追跡し、論争を解決し、以前のフィードバックが対処されたことを確認します。",
           "image": "kitsu-versions.png",
-          "reverted": true
+          "gradient": 3,
+          "colored": true
         }
       ],
       "customerStory": {
@@ -1318,6 +1333,7 @@
           "subtitle": "パイプラインを手動でつなぎ合わせるのをやめる",
           "content": "プロダクションデータが1か所にあると、ダウンストリームのすべてを自動化できます。ツール間でデータを同期し、DCCから直接プレビューを公開し、任意のイベントでカスタムスクリプトをトリガーします。以前は手動での調整が必要だったことが自動で実行されます。",
           "image": "kitsu-boost.png",
+          "gradient": 1,
           "colored": true,
           "shadow": false
         },
@@ -1334,30 +1350,25 @@
           "subtitle": "独自のプロダクションデータを照会するためのボイラープレートを書くことはパイプライン時間を無駄にする",
           "content": "Kitsu Pythonクライアントは、毎回リクエストロジックを再構築することなくプロダクションデータを取得するための直感的な関数を提供します。ローリクライアントは必要に応じて複雑なクエリを処理し、組み込みキャッシュはレスポンスタイムを高速に保ちます。PyPIから直接インストールして作業を開始します。",
           "image": "kitsu-python.png",
+          "shadow": true,
           "colored": true,
-          "gradient": true
-        },
-        {
-          "title": "DCC統合",
-          "subtitle": "ツール間の切り替えはアーティストの集中を壊し納品を遅らせる",
-          "content": "アーティストはプレビューを公開したりタスクを更新したりするために作業環境を離れる必要はありません。Kitsuはデジタルコンテンツ制作ツールと直接統合されるため、コンテキストスイッチなしでコンテキスト内で提出が行われます。",
-          "image": "kitsu-dcc.png",
-          "reverted": true
+          "gradient": 2
         },
         {
           "title": "イベント駆動スクリプト",
           "subtitle": "人間の入力が必要な繰り返しのパイプラインステップはボトルネックになる",
           "content": "ステータスが変更されたとき、プレビューが公開されたとき、またはタスクがアサインされたときに何が起こるかを定義します。スクリプトは自動的に実行されます。以前は誰かが気づいて行動する必要があった繰り返しのパイプラインステップは、イベントが発生した瞬間に処理されます。",
           "image": "kitsu-events.png",
-          "colored": true
+          "reverted": true,
+          "shadow": true
         },
         {
           "title": "チャット統合",
           "subtitle": "誰もチェックしないトラッカーに埋もれたプロダクションの更新は遅延を引き起こす",
           "content": "KitsuをSlackまたはDiscordに接続し、チームがすでにコミュニケーションをとっている場所にタスクの更新とプロダクションアラートを配信します。重要な情報は、誰かが探しに行くことなく即座に適切な人々に届きます。",
           "image": "kitsu-slack.png",
-          "reverted": true,
-          "gradient": true
+          "colored": true,
+          "gradient": 3
         }
       ]
     },
@@ -1378,6 +1389,7 @@
           "subtitle": "データは私たちのサーバーではなく、あなたのサーバーに残ります。",
           "content": "厳格なデータ居住要件や遅延に敏感なパイプラインを持つスタジオは、外部クラウドインフラストラクチャに依存する余裕はありません。私たちはKitsuをハードウェアに直接デプロイし、クラウドと同じ基準で管理します。継続的な監視、定期的なアップデート、保証された稼働時間。Active Directoryの統合が含まれているため、既存のアクセスコントロールポリシーは初日から適用されます。",
           "image": "kitsu-onpremise.png",
+          "gradient": 1,
           "colored": true,
           "shadow": false
         },
@@ -1397,7 +1409,7 @@
           "content": "オブジェクトストレージ、ビデオコンピュート、監視、ディレクトリサービスの間で、エンタープライズデプロイメントには多くの可動部分があります。CGWireはプライベートインフラストラクチャ上で完全なスタックを設定するため、チームがそれをする必要はありません。すべてが連携して動作するように設定され、私たちが維持します。",
           "image": "kitsu-extra.png",
           "colored": true,
-          "gradient": true,
+          "gradient": 2,
           "shadow": false
         },
         {
@@ -1413,7 +1425,7 @@
           "content": "プロダクションアセットとプレビューをサードパーティのクラウドに保存するということは、彼らのアクセスポリシー、保持ルール、障害モードを受け入れることを意味します。インフラストラクチャ上に設定されたローカルオブジェクトストレージを使用すると、スタジオがデータを所有し、アクセスを定義します。完全なコントロール、依存関係なし。",
           "image": "kitsu-onpremise.png",
           "colored": true,
-          "gradient": true
+          "gradient": 3
         }
       ]
     },
@@ -1421,6 +1433,7 @@
       "name": "Team Collaboration",
       "slug": "team-collaboration",
       "image": "team-collaboration.png",
+      "shadow": true,
       "header": {
         "tagline": "調整の失敗を減らしてより速く納品する",
         "subtitle": "チームコラボレーション",
@@ -1434,6 +1447,7 @@
           "subtitle": "メールやチャットスレッドでフィードバックを失うのをやめる",
           "content": "アーティストにタスクをアサインし、レビュー準備ができたら作業をKitsuに直接公開させます。プロデューサー、スーパーバイザー、ディレクターは同じプラットフォームで反復し、すべてのコメントとバージョンがコンテキスト内で追跡されます。リアルタイム通知により、誰もすでに持っているべき情報を待つことはありません。",
           "image": "kitsu-tasks.png",
+          "shadow": true,
           "colored": true
         },
         {
@@ -1442,6 +1456,7 @@
           "subtitle": "優先順位を知らないアーティストはプロダクションをブロックする",
           "content": "各アーティストは自分に何がアサインされているか、どの順序で、どの段階かを正確に確認できます。スーパーバイザーに指示を求めることなく進捗を更新できます。やり取りが少なくなるということは、重要な作業に費やす時間が増えることを意味します。",
           "image": "kitsu-todos.png",
+          "shadow": true,
           "reverted": true
         },
         {
@@ -1450,21 +1465,16 @@
           "subtitle": "遅く検出された問題は修正にコストがかかる",
           "content": "ニュースフィードはリアルタイムでプロダクション全体のすべてのコメント、ステータス変更、新しいプレビューを表示します。スーパーバイザーとプロデューサーは問題が悪化する前に早期に発見します。誰かがメッセージを見逃したために何も見落とされることはありません。",
           "image": "kitsu-news.png",
+          "shadow": true,
           "colored": true,
           "gradient": true
-        },
-        {
-          "title": "DCC統合",
-          "subtitle": "コンテキストスイッチはアーティストのフローを壊し納品を遅らせる",
-          "content": "アーティストは作業環境を離れることなく、DCCソフトウェアから直接プレビューを提出します。納品物はレビューのためにKitsuに即座に届き、パイプラインをクリーンに保ちターンアラウンドタイムを短縮します。",
-          "image": "kitsu-dcc.png",
-          "colored": true
         },
         {
           "title": "SlackとDiscordの通知",
           "subtitle": "関連する更新は間違ったツールにある場合に埋もれてしまう",
           "content": "Kitsuのアクティビティをチームがすでに監視しているチャンネルにルーティングします。コメント、ステータス変更、新しいプレビューがSlackまたはDiscordに直接表示されるため、適切な人が別のプラットフォームをチェックすることなく対応できます。",
           "image": "kitsu-slack.png",
+          "shadow": true,
           "reverted": true,
           "gradient": true
         }
@@ -1482,6 +1492,7 @@
       "name": "Top Notch Support",
       "slug": "top-notch-support",
       "image": "top-notch-support.png",
+      "shadow": true,
       "header": {
         "tagline": "プロダクションを継続させるサポート",
         "subtitle": "トップノッチサポート",
@@ -1543,6 +1554,7 @@
       "tool": "Ftrack",
       "slug": "ftrack",
       "image": "vsftrack.png",
+      "shadow": true,
       "title": "Ftrack のオープンソース代替",
       "subtitle": "アニメーションと VFX スタジオ向けのオープンソース プロダクション トラッカー、初日から使える。",
       "sections": [
