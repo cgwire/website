@@ -9,7 +9,7 @@
     "
     v-if="link === ''"
   >
-    <img class="flexrow-item tablet" :src="'/icons/' + elementKey + '.svg'" />
+    <img class="flexrow-item tablet" :src="'/icons/' + elementKey + '.' + imageExt" />
     <div class="flexrow-item flexcolumn text">
       <span class="flexrow-item subnav-title">
         {{ $t('header title ' + elementKey) }}
@@ -25,7 +25,7 @@
     target="_blank"
     v-else
   >
-    <img class="flexrow-item tablet" :src="'/icons/' + elementKey + '.svg'" />
+    <img class="flexrow-item tablet" :src="'/icons/' + elementKey + '.' + imageExt" />
 
     <div class="flexrow-item flexcolumn text">
       <span class="flexrow-item subnav-title">
@@ -45,6 +45,10 @@ const props = defineProps({
   link: {
     type: String,
     default: ''
+  },
+  imageExt: {
+    type: String,
+    default: 'svg'
   }
 })
 </script>
@@ -65,6 +69,7 @@ img.flexrow-item
   min-width 48px
   min-height 48px
   margin-right 1rem
+  border-radius 0.75rem
 
 .flexrow-item.text
   align-items flex-start

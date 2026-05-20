@@ -88,6 +88,7 @@
                 <SubNavElement
                   path-object="features-slug"
                   element-key="team-collaboration"
+                  image-ext="png"
                 />
                 <SubNavElement
                   path-object="features-slug"
@@ -198,7 +199,7 @@
               link="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnJK6wKf2GIu964KsbqCqJ"
               v-if="$i18n.locale === 'fr'"
             />
-            <SubNavElement element-key="community" />
+            <SubNavElement element-key="community" image-ext="png" />
             <SubNavElement element-key="spreadsheets" />
           </div>
         </div>
