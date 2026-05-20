@@ -342,7 +342,7 @@
           :key="testimonial.stem"
           class="testimonial-item"
         >
-          <blockquote class="lean-quote-text">
+          <blockquote class="lean-quote-text block-colored">
             <p>{{ testimonial.meta.quote }}</p>
             <footer class="lean-quote-author">
               <NuxtImg
@@ -384,6 +384,14 @@
           />
         </div>
       </div>
+      <p class="has-text-centered mt2" data-aos="fade-up">
+        <nuxt-link
+          class="read-more-stories"
+          :to="$localePath('customer-stories')"
+        >
+          {{ page.meta.kitsu.scale.storiesReadMore }}
+        </nuxt-link>
+      </p>
     </section>
 
     <div class="production-success" id="mushmush" :style="mushmushBackground">
@@ -419,7 +427,7 @@
       {{ page.meta.kitsu.tracked }}
     </div>
 
-    <section class="section supporters mt8" data-aos="fade-up">
+    <section class="section supporters" data-aos="fade-up">
       <h2 class="subtitle tagline mb1">
         {{ page.meta.about.supporters.title }}
       </h2>
@@ -537,13 +545,22 @@ const { data: customerStories } = await useAsyncData(
 )
 
 const pairedStudies = computed(() =>
-  customerStories.value.reduce(
-    (rows, study, i) =>
-      i % 2 === 0
-        ? [...rows, [study]]
-        : [...rows.slice(0, -1), [...rows.at(-1), study]],
-    []
-  )
+  customerStories.value
+    .filter(story => {
+      return [
+        'Fost',
+        'Miyu',
+        'Ryff',
+        'Remembers',
+      ].includes(story.title)
+    })
+    .reduce(
+      (rows, study, i) =>
+        i % 2 === 0
+          ? [...rows, [study]]
+          : [...rows.slice(0, -1), [...rows.at(-1), study]],
+      []
+    )
 )
 
 const { queryTestimonials } = useTestimonials(locale)
@@ -570,6 +587,10 @@ div.body
 
     .tagline-explanation
         font-size 1.3em
+
+    .read-more-stories
+        font-size 1.1em
+        font-weight 600
 
     .tab-list
         margin auto
@@ -705,6 +726,9 @@ div.body
   max-width: 600px
 
 
+.section.supporters
+  margin-top 6rem
+
 .supporter-list
   .flexrow-item
     flex: 1
@@ -715,6 +739,7 @@ div.body
 
 .feature-img-wrapper img
   border: 10px solid #EEEEEE11
+  width 100%
 
 
 video
@@ -735,7 +760,9 @@ video
         grid-column 1 / -1
 
     .lean-quote-text
-        border-left 6px solid cgwiregreen
+        box-shadow 0 0 5px 0 #CCD6CC
+        border-left 6px solid transparent
+        border-radius 20px
         padding-left 1.5rem
         line-height 1.3
         font-size 1em

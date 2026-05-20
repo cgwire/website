@@ -270,7 +270,8 @@
           "reportsText": "Obtenez une vue 360° de vos productions et restez sous contrôle.",
           "apiText": "Boostez votre pipeline avec vos données de production.",
           "stories": "Lisez les histoires de nos clients",
-          "storiesText": "Regardez comment ils ont obtenu des croissances de 100 à 300% !"
+          "storiesText": "Regardez comment ils ont obtenu des croissances de 100 à 300% !",
+          "storiesReadMore": "Découvrir d'autres témoignages clients"
         },
         "stats": {
           "title": "Plus de 300 studios nous font confiance",

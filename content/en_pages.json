@@ -270,7 +270,8 @@
           "reportsText": "Have a 360° view on your productions and stay in control.",
           "apiText": "Integrate production data into your pipeline.",
           "stories": "Read stories from our customers",
-          "storiesText": "Discover how studios have used our products to enhance collaboration and successfully complete productions."
+          "storiesText": "Discover how studios have used our products to enhance collaboration and successfully complete productions.",
+          "storiesReadMore": "Read more customer stories"
         },
         "stats": {
           "title": "Trusted by 300+ studios",
