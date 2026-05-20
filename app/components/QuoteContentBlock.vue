@@ -1,7 +1,7 @@
 <template>
   <div v-if="quote" class="lean-quote">
     <section>
-      <blockquote class="lean-quote-text">
+      <blockquote class="lean-quote-text block-colored">
         <p>
           {{ quote.meta.quote }}
         </p>
@@ -34,10 +34,11 @@ const { data: quote } = await useAsyncData(
 
 <style lang="stylus" scoped>
 .lean-quote
-    background-color lightgrey
     padding 0rem
+
 .lean-quote-text
-    border-left 6px solid cgwiregreen
+    border-radius 20px
+    border 1px solid #dbe8ff
     padding-left 1.5rem
     line-height 1.3
     font-size 1em
@@ -47,21 +48,21 @@ const { data: quote } = await useAsyncData(
         content "\201C"
     p:after
         content "\201D"
+
 .lean-quote-author
     display flex
     align-items center
     margin-top .6rem
     font-size 1rem
-    color cgwiregreen
-    font-weight normal
+    font-style italic
+
 .lean-quote-avatar
     border-radius 50%
     margin-right .6rem
     flex 0 0 auto
     width 56px
     height 56px
+
 .lean-quote-text--alt
     border-color rainbow-3
-    .lean-quote-author
-        color rainbow-3
 </style>

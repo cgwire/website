@@ -1,41 +1,5 @@
 <template>
-  <section class="section content trusted pa1">
-    <div class="logos-container">
-      <div class="logo-div">
-        <NuxtImg src="/images/logo-miyu.png" format="webp" />
-      </div>
-      <div class="logo-div">
-        <NuxtImg src="/images/logo-fost.png" format="webp" />
-      </div>
-      <div class="logo-div">
-        <NuxtImg src="/images/studios/logo-bobbypills.png" format="webp" />
-      </div>
-      <div class="logo-div">
-        <NuxtImg src="/images/studios/logo-lofi-studio.png" format="webp" />
-      </div>
-      <div class="logo-div">
-        <NuxtImg src="/images/studios/logo-blender.png" format="webp" />
-      </div>
-      <div class="logo-div">
-        <NuxtImg src="/images/studios/logo-gobelins-black.png" format="webp" />
-      </div>
-      <div class="logo-div">
-        <NuxtImg src="/images/studios/logo-metacore-black.png" format="webp" />
-      </div>
-      <div class="logo-div">
-        <NuxtImg src="/images/studios/logo-mdhr-black.png" format="webp" />
-      </div>
-      <div class="logo-div">
-        <NuxtImg src="/images/studios/logo-yuga-labs.png" format="webp" />
-      </div>
-      <div class="logo-div">
-        <NuxtImg src="/images/studios/logo-miraculous.png" format="webp" />
-      </div>
-      <div class="logo-div">
-        <NuxtImg src="/images/studios/logo-zuru.png" format="webp" />
-      </div>
-    </div>
-  </section>
+  <!-- Hidden temporarily, awaiting decision on whether to keep -->
 </template>
 
 <script setup>

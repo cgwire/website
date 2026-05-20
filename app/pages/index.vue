@@ -760,9 +760,8 @@ video
         grid-column 1 / -1
 
     .lean-quote-text
-        box-shadow 0 0 5px 0 #CCD6CC
-        border-left 6px solid transparent
         border-radius 20px
+        border 1px solid #dbe8ff
         padding-left 1.5rem
         line-height 1.3
         font-size 1em
@@ -778,8 +777,7 @@ video
         align-items center
         margin-top .6rem
         font-size 1rem
-        color cgwiregreen
-        font-weight normal
+        font-style italic
 
     .lean-quote-avatar
         border-radius 50%
