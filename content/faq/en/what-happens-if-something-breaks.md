@@ -6,9 +6,6 @@ summary: "Kitsu and CGWire offer a robust support structure built for production
 image: "change-management-kitsu.png"
 ---
 
-::minimalist-user-logos
-::
-
 Production doesn't pause for technical issues. When something goes wrong at 2 AM before a client review, the last thing you need is a support ticket disappearing into a void. 
 
 Here's exactly what you can count on with Kitsu.
@@ -20,9 +17,6 @@ CGWire is a focused team of specialists. When you reach out, you're talking to p
 - Dedicated support for cloud and on-premise customers, with clear response time commitments based on your plan
 - Direct access to the team. No tiered script-reading, no runaround
 - A community that's got your back. Kitsu is open source and backed by an active community of 300+ studios across 50+ countries. Chances are someone has already solved your problem.
-
-::customer-story-content-block{slug="ryff"}
-::
 
 ## Uptime You Can Actually Rely On
 

@@ -33,11 +33,15 @@ Kitsu is used by over 300 studios worldwide, from indie animation houses to larg
 
 ## What Producers Are Saying
 
-::quote-content-block{slug="makuta2"}
+::quote-content-block{slug="cube"}
 ::
+
+---
 
 ::quote-content-block{slug="woodblock"}
 ::
+
+---
 
 ::quote-content-block{slug="miyu"}
 ::

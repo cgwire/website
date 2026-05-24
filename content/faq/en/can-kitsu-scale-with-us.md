@@ -54,9 +54,6 @@ Kitsu is open source. Your data is yours, the codebase is auditable, and you're 
 
 The platform has been tested at scale. We help studios in 50+ countries run Kitsu in production today, from boutique agencies to large-scale studios. 
 
-::customer-story-content-block{slug="remembers"}
-::
-
 ## One Tool. Every Stage.
 
 Kitsu can scale with you.

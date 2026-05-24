@@ -12,9 +12,6 @@ Most production tools are built for producers, and then handed to artists who ju
 
 Kitsu was designed differently: each role gets exactly what they need.
 
-::customer-story-content-block{slug="remembers"}
-::
-
 ## What an Artist Actually Sees
 
 When an artist logs into Kitsu, they don't land on a dashboard of Gantt charts, budget modules, or studio-wide reports. They see their to-do list.
@@ -31,14 +28,14 @@ That's it.
 
 No training required. No manual to read. No settings to configure.
 
-::customer-story-content-block{slug="miyu"}
-::
-
 ## What a Producer Actually Sees
 
 Producers get the full picture: schedules, progress reports, budget forecasts, resource allocation, and a real-time view of every shot and asset moving through the pipeline.
 
 The complexity lives where it belongs, with the people paid to manage it.
+
+::customer-story-content-block{slug="miyu"}
+::
 
 ## Role-Based by Design
 
@@ -75,9 +72,6 @@ Every screen in Kitsu is designed around a single question: what does this perso
 
 There are no cluttered sidebars fighting for attention. No ten-step workflows to publish a preview. No buried menus where critical actions hide.
 
-::quote-content-block{slug="woodblock"}
-::
-
 ## Trusted by 300+ Studios in 50+ Countries
 
 ::minimalist-user-logos
@@ -90,3 +84,6 @@ Studios ranging from solo freelancers to large-scale feature film productions us
 The best way to see that Kitsu isn't complicated? Let your team try it.
 
 Start with a free cloud trial or deploy the open-source version. No commitment.
+
+::quote-content-block{slug="woodblock"}
+::

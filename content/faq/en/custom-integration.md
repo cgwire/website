@@ -18,9 +18,6 @@ It is designed to sit at the center of your production as a shared source of tru
 
 Whether you run a lightweight setup or a structured pipeline with automation, you can keep what works. But we'll add what is missing.
 
-::customer-story-content-block{slug="fost"}
-::
-
 ## Your Production Data, Fully Accessible
 
 In many studios, production data ends up fragmented across spreadsheets, tracking tools, and internal scripts.
@@ -54,25 +51,6 @@ This reduces the amount of glue code your team has to maintain and makes integra
 
 Our developer tools are well documented.
 
-::quote-content-block{slug="mdhr"}
-::
-
-## Connect Without Disrupting Artists
-
-One of the biggest risks when introducing a new system is disrupting artists.
-
-Kitsu avoids that by integrating with Digital Content Creation tools instead of replacing them:
-
-- Artists can publish work directly from their software
-- Renders and previews can be linked automatically to the right tasks
-- Versions are tracked without additional manual steps
-- Status updates can be triggered by pipeline actions
-
-Artists stay focused on their work, and your production stays consistent and traceable.
-
-::quote-content-block{slug="adm"}
-::
-
 ## Real-Time Collaboration Without Extra Overhead
 
 A production tracker should not feel like extra work.
@@ -84,6 +62,9 @@ Kitsu is a live collaboration hub:
 - The activity feed shows what is happening across the production in real time
 
 For a distributed team, it cuts a lot of back and forth between multiple tools.
+
+::quote-content-block{slug="mdhr"}
+::
 
 ## Automation That Matches Production Needs
 
@@ -119,16 +100,13 @@ You can understand how your data is structured, audit how the system works, host
 
 At the same time, CGWire provides managed cloud hosting and custom infrastructure setups if you prefer a fully supported solution.
 
-::quote-content-block{slug="cube"}
-::
-
 ## A Practical Fit for Real Studios
-
-::minimalist-user-logos
-::
 
 Kitsu is used by hundreds of studios across different sizes and production types. Some use it out of the box to organize tasks and reviews. Others build advanced pipelines on top of it using its API and integrations.
 
 In both cases, the approach stays the same. You do not rebuild your pipeline. You connect it to a system that centralizes data, improves visibility, and reduces friction between departments.
 
 That is what makes Kitsu fit.
+
+::quote-content-block{slug="adm"}
+::

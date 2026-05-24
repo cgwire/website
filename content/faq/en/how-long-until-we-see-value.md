@@ -1,4 +1,5 @@
 ---
+
 title: "How Long Does It Take To See Value?"
 slug: "how-long-until-we-see-value"
 subtitle: ""
@@ -9,9 +10,6 @@ image: "change-management-kitsu.png"
 Switching tools always feels risky. You might wonder, "how long before it works for us?"
 
 Your team can be tracking tasks, reviewing assets, and logging time within hours of signing up.
-
-::minimalist-user-logos
-::
 
 ## Week 1 Looks Like This
 
@@ -37,14 +35,11 @@ Progress by task status, time logged per artist, asset readiness at a glance. Th
 - No IT project required - Cloud hosting means zero infrastructure work on your end. Kitsu handles SSL, uptime, backups, and video processing. You handle your production.
 - Data import tools - Bring in your asset lists and shot breakdowns from spreadsheets. Your existing tracking data doesn't go to waste.
 
-::quote-content-block{slug="ryff"}
-::
-
 ## The Studios That Moved Fastest
 
 Studios across 50+ countries from small agencies to large VFX houses have made this switch without pausing a live production. The key was starting small: one project, one team, real work.
 
-::quote-content-block{slug="fost"}
+::quote-content-block{slug="ryff"}
 ::
 
 ## Still Not Sure? Start Free.

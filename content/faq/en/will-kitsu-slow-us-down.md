@@ -12,9 +12,6 @@ But Kitsu was built by people who've lived inside productions.
 
 The design principle is simple: if it doesn't save time, it doesn't ship.
 
-::minimalist-user-logos
-::
-
 ## The Real Cost of Not Having a Shared System
 
 Consider what "no tool" actually looks like in practice:
@@ -26,9 +23,6 @@ Consider what "no tool" actually looks like in practice:
 
 This is the baseline.
 
-::customer-story-content-block{slug="tant-mieux"}
-::
-
 ## Real-Time Updates, Not Manual Syncing
 
 Kitsu's activity feed and notification system mean the moment a task status changes, everyone who needs to know is informed automatically. No follow-up message required, no end-of-day summary email, no "just checking in" ping.
@@ -37,8 +31,6 @@ Artists update their own task statuses directly. Supervisors see the change imme
 
 It'll replace recurring check-ins, status spreadsheets, and the informal "where are we on this?" conversations that quietly eat hours every week.
 
-::customer-story-content-block{slug="fost"}
-::
 
 ## Faster Approvals, Fewer Bottlenecks
 
@@ -47,9 +39,6 @@ The review loop is often where productions stall. A supervisor is traveling. Not
 Kitsu's review engine lets supervisors annotate directly on the frame, compare two versions side by side, and approve or request retakes in a single action from anywhere. Team review rooms allow synchronized playback so the whole team reacts together, in real time, without scheduling a screening.
 
 Approval cycles that used to take days can happen in hours because artists get precise, actionable feedback faster, and fewer shots need a third or fourth pass.
-
-::quote-content-block{slug="cube"}
-::
 
 ## Integrations That Remove Steps, Not Add Them
 
@@ -61,8 +50,6 @@ Kitsu connects to the tools studios already use: DCCs, Slack, Discord, and any p
 
 We make Kitsu invisible in the right places: present enough to keep everyone aligned, unobtrusive enough that artists stay in flow.
 
-::customer-story-content-block{slug="makuta"}
-::
 
 ## Built for Productions That Can't Afford to Slow Down
 
@@ -70,5 +57,6 @@ Over 300 studios across 50+ countries run their productions on Kitsu, from short
 
 They all adopted it because they didn't have time to spare!
 
-::customer-story-content-block{slug="ryff"}
+
+::quote-content-block{slug="cube"}
 ::

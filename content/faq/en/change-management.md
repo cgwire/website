@@ -27,9 +27,6 @@ Instead of forcing your team to adapt, it reflects workflows they already unders
 
 For an artist, this means opening Kitsu and immediately understanding what needs to be done.
 
-::quote-content-block{slug="makuta"}
-::
-
 ## Adoption Starts With Clarity
 
 People resist tools when they create friction.
@@ -54,9 +51,6 @@ Instead of generic training, Kitsu's onboarding is aligned with real responsibil
 - Pipeline TDs integrate pipelines through the Python API and REST endpoints  
 
 We help each person become productive quickly.
-
-::customer-story-content-block{slug="miyu"}
-::
 
 ## Start Small, Scale Naturally
 
@@ -86,7 +80,7 @@ Kitsu eliminates that by acting as a flexible central hub:
 
 Instead of replacing one tool with another, you replace several disconnected tools with one coherent system.
 
-::customer-story-content-block{slug="fost"}
+::customer-story-content-block{slug="miyu"}
 ::
 
 ## Documentation and Autonomy
@@ -136,9 +130,6 @@ Most teams notice the difference quickly with less noise, fewer misunderstanding
 Kitsu was created by people who understand both software and production.
 
 As a small, focused team, CGWire works closely with studios and continuously improves the product based on real-world usage. The platform is open source, widely used across dozens of countries, and trusted by hundreds of studios.
-
-::minimalist-user-logos
-::
 
 That experience shows in one key area: adoption is treated as a core design principle.
 

@@ -17,21 +17,9 @@ You're already spending:
 - Onboarding and knowledge loss - Every time a new freelancer joins, someone has to teach them where things live. Without a centralized system, that orientation eats 2–4 hours of a senior team member's time per hire.
 - Miscommunication between departments - When artists don't know their task priorities, and supervisors don't know what's blocked, work piles up in the wrong places. Studios report that unclear task visibility leads to 10–20% of capacity being spent on work that has to be redone or was deprioritized too late.
 
-::customer-story-content-block{slug="remembers"}
-::
-
 ## What Studios Actually Save
 
 These aren't assumptions. They're patterns we see consistently across studios that switched to Kitsu:
-
-::quote-content-block{slug="tant-mieux"}
-::
-
-::quote-content-block{slug="fost"}
-::
-
-::quote-content-block{slug="cube"}
-::
 
 ## A Simple ROI Framework
 
@@ -68,8 +56,6 @@ If you're building a business case for your studio head or finance team, here's 
 
 The math usually resolves itself. How long can you afford to wait?
 
-::customer-story-content-block{slug="miyu"}
+::quote-content-block{slug="tant-mieux"}
 ::
 
-::minimalist-user-logos
-::

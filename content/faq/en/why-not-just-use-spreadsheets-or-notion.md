@@ -6,9 +6,6 @@ summary: "Kitsu is a production management tool designed to replace the patchwor
 image: "change-management-kitsu.png"
 ---
 
-::minimalist-user-logos
-::
-
 We get it. The tool you have is the one you know. But "good enough" has a price: overtime, missed deliveries, and burnout.
 
 ## The Honest Question
@@ -16,11 +13,6 @@ We get it. The tool you have is the one you know. But "good enough" has a price:
 Every studio we talk to has tried to make it work with existing tools. Spreadsheets for shot lists. Notion for task boards. Maybe ShotGrid if you're large enough to afford the licensing and the IT team to maintain it. And for a while, it works.
 
 Then production scales. Deadlines compress. The team doubles. And suddenly "good enough" becomes the thing slowing everything down.
-
-## Where Generic Tools Break Down
-
-::customer-story-content-block{slug="adm"}
-::
 
 ### Spreadsheets: Built for Numbers, Not Pipelines
 
@@ -76,9 +68,6 @@ The sticker price of free tools is never the real price. Consider what you're ac
 | No audit trail | When a delivery goes wrong, there's no clear record of what happened and when |
 
 All these costs show up as crunch, turnover, and blown budgets.
-
-::customer-story-content-block{slug="fost"}
-::
 
 ## The Specific Pain Points Kitsu Was Built to Solve
 

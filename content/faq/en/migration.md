@@ -6,9 +6,6 @@ summary: "Switching production tracking tools mid-production feels risky, but Ki
 image: "migration-kitsu-cloud.png"
 ---
 
-::minimalist-user-logos
-::
-
 ## Switching Without Slowing Down Production
 
 Every studio hesitates before changing its production tracker. You have deadlines, artists in the middle of shots, and producers relying on stable data every day.
@@ -20,9 +17,6 @@ Kitsu is built with that reality in mind.
 We do not force a sudden change. We let studios transition at their own pace while production goes on. 
 
 You can move one project at a time, or even one department at a time, without interrupting deliveries.
-
-::customer-story-content-block{slug="miyu"}
-::
 
 ## A Migration Plan That Matches How Studios Actually Work
 
@@ -39,6 +33,9 @@ The process is grounded in real production workflows:
 
 For most studios, it takes days to a few weeks depending on complexity.
 
+::quote-content-block{slug="tant-mieux"}
+::
+
 ## Keeping Your Data Intact and Usable
 
 Your production data is your history, your decisions, your communication.
@@ -53,9 +50,6 @@ Kitsu allows you to import structured data through CSV or API, so you can bring 
 - Comments and production notes
 
 If you are coming from another tool, Kitsu helps you extract and reorganize that data so it fits cleanly.
-
-::quote-content-block{slug="tant-mieux"}
-::
 
 ## Running Both Systems If You Need Reassurance
 
@@ -96,9 +90,6 @@ With its REST API and Python client, your technical team can connect it to:
 
 An artist can publish a playblast from their DCC tool and have it automatically appear in Kitsu with the correct task and version without manual upload.
 
-::customer-story-content-block{slug="makuta"}
-::
-
 ## Open Source Means Control, Not Dependency
 
 Switching tools should not create a new dependency.
@@ -127,5 +118,6 @@ Keep in mind that if your current system is creating friction between department
 
 Migrating to Kitsu is not about changing tools for the sake of it: we give your studio a system that scales with your projects and supports your team without adding unnecessary complexity.
 
-::customer-story-content-block{slug="fost"}
+
+::customer-story-content-block{slug="makuta"}
 ::
