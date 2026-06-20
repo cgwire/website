@@ -170,6 +170,11 @@
             }}</nuxt-link>
           </li>
           <li>
+            <nuxt-link :to="$localePath('sustainable-ai-manifesto')">{{
+              $t('footers link manifesto')
+            }}</nuxt-link>
+          </li>
+          <li>
             <a href="https://metrics.cg-wire.com">{{
               $t('footers link metrics')
             }}</a>
