@@ -10,6 +10,7 @@ const head = useLocaleHead()
         <slot />
 
         <Footer />
+        <ExitIntentPopup />
         <CookieConsent />
       </Body>
     </Html>

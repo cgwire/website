@@ -123,6 +123,11 @@
     "title": "Outils en ligne gratuits",
     "cta": "Ouvrir l’outil →"
   },
+  "exit-popup": {
+    "badge": "Essai Gratuit",
+    "title": "Avant de partir...",
+    "description": "Prêt à améliorer votre flux de production ? Créez votre compte gratuit et accédez aux dernières fonctionnalités de Kitsu by CGWire."
+  },
   "slugs": {
     "index": "index",
     "contact": "contact",
