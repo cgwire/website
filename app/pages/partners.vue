@@ -3,39 +3,25 @@
     <section class="partners-stage">
       <article class="partners-paper">
         <span class="partners-tag">
-          A letter to our self-hosted community
+          {{ t.tag }}
         </span>
 
         <h1 class="partners-title">
-          Kitsu is yours.
-Help keep it
-open source.
+          {{ t.title }}
         </h1>
 
         <div class="partners-body">
-          <p>
-          Kitsu has been open source since day one, and it will stay that way. Hundreds of studios around the world run it self-hosted, fully autonomously, owing us nothing. That's exactly what we set out to build, and we're not changing that.
+          <p v-for="(para, i) in t.intro" :key="i">
+            {{ para }}
           </p>
-          <p>
-But keeping Kitsu at the level you rely on (releases, bug fixes, docs, integrations, community) takes a full-time team of five. Today, all of that is funded by our cloud customers. As more studios run Kitsu themselves, that balance gets harder to hold.
-          </p>
-          <p>
-          Recent years have shown what happens when open-source companies can't sustain this kind of imbalance. Some change their license. Some strip features from the free version. Some go closed source entirely. We've all seen it happen with projects we relied on.
-We don't want to go down that road. 
-          </p>
-          <p class="partners-emph">
-That's why we're launching the <strong>Kitsu Studio Partners program</strong>.
-It's for studios who want to contribute to the long-term sustainability of the
-tool they depend on, and take a seat in the circle of studios that keep it
-alive. It is our way of keeping things open while making the economics work.
-          </p>
+          <p class="partners-emph" v-html="t.emph" />
         </div>
 
         <div class="partners-deal">
           <div class="partners-deal-col">
-            <p class="partners-deal-lbl">What you get</p>
+            <p class="partners-deal-lbl">{{ t.getLabel }}</p>
             <ul class="partners-list">
-              <li v-for="(benefit, i) in benefits" :key="i">
+              <li v-for="(benefit, i) in t.benefits" :key="i">
                 <svg
                   width="18"
                   height="18"
@@ -55,10 +41,10 @@ alive. It is our way of keeping things open while making the economics work.
           </div>
 
           <div class="partners-deal-col">
-            <p class="partners-deal-lbl">Annual contribution</p>
+            <p class="partners-deal-lbl">{{ t.contributionLabel }}</p>
             <div class="partners-prices">
               <div
-                v-for="(tier, i) in tiers"
+                v-for="(tier, i) in t.tiers"
                 :key="i"
                 :class="[
                   'partners-price',
@@ -72,13 +58,15 @@ alive. It is our way of keeping things open while making the economics work.
               </div>
             </div>
             <p class="partners-deal-sub">
-              Annual, renewable. No auto-renewal clause.
+              {{ t.dealSub }}
             </p>
 
-            <p class="partners-deal-lbl partners-deal-lbl--spaced">What it's not</p>
+            <p class="partners-deal-lbl partners-deal-lbl--spaced">
+              {{ t.whatNotLabel }}
+            </p>
             <ul class="partners-nots">
-              <li v-for="(n, i) in nots" :key="i">
-                <strong>Not {{ n.title.toLowerCase() }}.</strong>
+              <li v-for="(n, i) in t.nots" :key="i">
+                <strong>{{ n.label }}</strong>
                 {{ n.body }}
               </li>
             </ul>
@@ -87,34 +75,36 @@ alive. It is our way of keeping things open while making the economics work.
 
         <div class="partners-signoff">
           <p>
-            If you want to be part of it, click below, tell us about your studio, and we'll write back within two days.
+            {{ t.signoff }}
           </p>
           <div class="partners-cta">
             <a :href="mailto" class="partners-btn">
-              Become a Kitsu Studio Partner →
+              {{ t.btn }}
             </a>
             <a :href="mailto" class="partners-cta-alt">
-              or just reply to our email
+              {{ t.ctaAlt }}
             </a>
           </div>
           <div class="partners-sig">
             <div class="partners-sig-names">
-              <span>The CGWire Team</span>
+              <span>{{ t.sigNames }}</span>
             </div>
             <div class="partners-sig-line">
-              Paris, still five of us, still building.
+              {{ t.sigLine }}
             </div>
           </div>
         </div>
 
         <div class="partners-founders">
-          <p class="partners-deal-lbl">Founding Partners</p>
+          <p class="partners-deal-lbl">{{ t.foundersLabel }}</p>
           <p class="partners-founders-intro">
-            The studios who joined first and made this program real:
+            {{ t.foundersIntro }}
           </p>
           <ul class="partners-founders-list">
             <li v-for="(studio, i) in foundingPartners" :key="i">
-              {{ studio }}
+              <a :href="studio.url" target="_blank" rel="noopener">
+                {{ studio.name }}
+              </a>
             </li>
           </ul>
         </div>
@@ -129,63 +119,160 @@ definePageMeta({
   robots: false
 })
 
+const { locale } = useI18n()
+
 const mailto =
   'mailto:partners@cg-wire.com?subject=Kitsu%20Studio%20Partners%20Program'
 
-const benefits = [
-  'A private Discord with the CGWire team',
-  'Our availability when things go wrong on your instance',
-  'The ability to commission custom development',
-  "Visibility into what's coming, with your needs heard",
-  'Public mention as a Kitsu Studio Partner',
-  'Founding Partner status for studios joining early'
-]
-
-const tiers = [
-  { name: 'Up to 15 users', price: '€1,500', period: '/ year' },
-  { name: '16 – 200 users', price: '€3,500', period: '/ year', featured: true },
-  { name: '200+ users', price: '€7,000', period: '/ year' }
-]
-
+// Studios are universal across locales, so this list stays shared.
 const foundingPartners = [
-  'Cousin Bizarre',
-  'Terminus Studio',
-  'Normaal'
+  { name: 'Cousin Bizarre', url: 'https://cousinbizarre.com/' },
+  { name: 'Normaal', url: 'https://normaal.fr/' },
+  { name: 'Terminus Studio', url: 'https://terminus-studio.com/' },
+  { name: 'TNZPV', url: 'https://www.tnzpv.com/' }
 ]
 
-const nots = [
-  {
-    title: 'A support contract with an SLA',
-    body: 'For managed infra or 24/7, ask about cloud or managed on-premise.'
+const content = {
+  en: {
+    tag: 'A letter to our self-hosted community',
+    title: 'Kitsu is yours. Help keep it open source.',
+    intro: [
+      "Kitsu has been open source since day one, and it will stay that way. Hundreds of studios around the world run it self-hosted, fully autonomously, owing us nothing. That's exactly what we set out to build, and we're not changing that.",
+      'But keeping Kitsu at the level you rely on (releases, bug fixes, docs, integrations, community) takes a full-time team of five. Today, all of that is funded by our cloud customers. As more studios run Kitsu themselves, that balance gets harder to hold.',
+      "Recent years have shown what happens when open-source companies can't sustain this kind of imbalance. Some change their license. Some strip features from the free version. Some go closed source entirely. We've all seen it happen with projects we relied on. We don't want to go down that road."
+    ],
+    emph:
+      "That's why we're launching the <strong>Kitsu Studio Partners program</strong>. It's for studios who want to contribute to the long-term sustainability of the tool they depend on, and take a seat in the circle of studios that keep it alive. It is our way of keeping things open while making the economics work.",
+    getLabel: 'What you get',
+    benefits: [
+      'A private Discord with the CGWire team',
+      'Our availability when things go wrong on your instance',
+      'The ability to commission custom development',
+      "Visibility into what's coming, with your needs heard",
+      'Public mention as a Kitsu Studio Partner',
+      'Founding Partner status for studios joining early'
+    ],
+    contributionLabel: 'Annual contribution',
+    tiers: [
+      { name: 'Up to 15 users', price: '€1,500', period: '/ year' },
+      {
+        name: '16 – 100 users',
+        price: '€3,500',
+        period: '/ year',
+        featured: true
+      },
+      { name: '100+ users', price: '€7,000', period: '/ year' }
+    ],
+    dealSub: 'Annual, renewable. No auto-renewal clause.',
+    whatNotLabel: "What it's not",
+    nots: [
+      {
+        label: 'Not a support contract with an SLA.',
+        body: 'For managed infra or 24/7, ask about cloud or managed on-premise.'
+      },
+      {
+        label: 'Not a condition for using Kitsu.',
+        body: 'Kitsu stays free and fully featured for anyone self-hosting.'
+      },
+      {
+        label: 'Not patronage.',
+        body: "You're buying sustainability and a direct line. It's tangible."
+      }
+    ],
+    signoff:
+      "If you want to be part of it, click below, tell us about your studio, and we'll write back within two days.",
+    btn: 'Become a Kitsu Studio Partner →',
+    ctaAlt: 'or just reply to our email',
+    sigNames: 'The CGWire Team',
+    sigLine: 'Paris, still five of us, still building.',
+    foundersLabel: 'Founding Partners',
+    foundersIntro:
+      'The studios who joined first and made this program real:',
+    seoTitle: 'Kitsu Studio Partners Program',
+    seoDescription: 'Kitsu is yours. Help keep it open source.'
   },
-  {
-    title: 'A condition for using Kitsu',
-    body: 'Kitsu stays free and fully featured for anyone self-hosting.'
-  },
-  {
-    title: 'Patronage',
-    body: "You're buying sustainability and a direct line. It's tangible."
+  fr: {
+    tag: 'Une lettre à notre communauté auto-hébergée',
+    title: 'Kitsu est à vous. Aidez-nous à le garder open source.',
+    intro: [
+      "Kitsu est open source depuis le premier jour, et le restera. Des centaines de studios partout dans le monde l'utilisent en auto-hébergement, en toute autonomie, sans rien nous devoir. C'est exactement ce que nous voulions construire, et nous n'y changerons rien.",
+      'Mais maintenir Kitsu au niveau sur lequel vous comptez (versions, corrections de bugs, documentation, intégrations, communauté) demande une équipe de cinq personnes à plein temps. Aujourd\'hui, tout cela est financé par nos clients cloud. À mesure que de plus en plus de studios font tourner Kitsu eux-mêmes, cet équilibre devient plus difficile à tenir.',
+      "Ces dernières années ont montré ce qui arrive quand les entreprises open source ne peuvent plus absorber ce déséquilibre. Certaines changent de licence. D'autres retirent des fonctionnalités de la version gratuite. D'autres passent entièrement en code fermé. Nous l'avons tous vu arriver à des projets dont nous dépendions. Nous ne voulons pas prendre ce chemin."
+    ],
+    emph:
+      "C'est pourquoi nous lançons le <strong>programme Kitsu Studio Partners</strong>. Il s'adresse aux studios qui veulent contribuer à la pérennité de l'outil dont ils dépendent, et prendre place dans le cercle des studios qui le maintiennent en vie. C'est notre façon de garder les choses ouvertes tout en équilibrant l'économie.",
+    getLabel: 'Ce que vous obtenez',
+    benefits: [
+      "Un Discord privé avec l'équipe CGWire",
+      'Notre disponibilité quand quelque chose tourne mal sur votre instance',
+      'La possibilité de commander des développements sur mesure',
+      'Une visibilité sur ce qui arrive, vos besoins étant écoutés',
+      'Une mention publique en tant que Kitsu Studio Partner',
+      'Le statut de Founding Partner pour les studios qui rejoignent tôt'
+    ],
+    contributionLabel: 'Contribution annuelle',
+    tiers: [
+      { name: "Jusqu'à 15 utilisateurs", price: '€1,500', period: '/ an' },
+      {
+        name: '16 à 100 utilisateurs',
+        price: '€3,500',
+        period: '/ an',
+        featured: true
+      },
+      { name: 'Plus de 100 utilisateurs', price: '€7,000', period: '/ an' }
+    ],
+    dealSub: 'Annuelle, renouvelable. Pas de clause de reconduction automatique.',
+    whatNotLabel: "Ce que ce n'est pas",
+    nots: [
+      {
+        label: 'Pas un contrat de support avec SLA.',
+        body: "Pour de l'infra gérée ou du 24/7, renseignez-vous sur le cloud ou l'on-premise géré."
+      },
+      {
+        label: 'Pas une condition pour utiliser Kitsu.',
+        body: "Kitsu reste gratuit et complet pour quiconque s'auto-héberge."
+      },
+      {
+        label: 'Pas du mécénat.',
+        body: "Vous achetez de la pérennité et une ligne directe. C'est concret."
+      }
+    ],
+    signoff:
+      'Si vous voulez en faire partie, cliquez ci-dessous, parlez-nous de votre studio, et nous vous répondrons sous deux jours.',
+    btn: 'Devenir Kitsu Studio Partner →',
+    ctaAlt: 'ou répondez simplement à notre email',
+    sigNames: "L'équipe CGWire",
+    sigLine: 'Paris, toujours cinq, toujours à construire.',
+    foundersLabel: 'Partenaires fondateurs',
+    foundersIntro:
+      'Les studios qui ont rejoint les premiers et ont rendu ce programme réel :',
+    seoTitle: 'Programme Kitsu Studio Partners',
+    seoDescription: 'Kitsu est à vous. Aidez-nous à le garder open source.'
   }
-]
+}
 
-const partnersTitle = 'Kitsu Studio Partners Program'
-const partnersDescription = 'Kitsu is yours. Help keep it open source.'
-const partnersUrl = 'https://www.cg-wire.com/partners'
+const t = computed(() => content[locale.value] || content.en)
+
 const partnersImage = 'https://www.cg-wire.com/teaser.png'
+const partnersUrl = computed(() =>
+  locale.value === 'en'
+    ? 'https://www.cg-wire.com/partners'
+    : `https://www.cg-wire.com/${locale.value}/partners`
+)
 
-useHead({
-  title: partnersTitle,
+useHead(() => ({
+  title: t.value.seoTitle,
   meta: [
     { name: 'robots', content: 'noindex' },
-    { name: 'description', content: partnersDescription },
-    { name: 'og:title', content: partnersTitle },
-    { name: 'og:description', content: partnersDescription },
+    { name: 'description', content: t.value.seoDescription },
+    { name: 'og:title', content: t.value.seoTitle },
+    { name: 'og:description', content: t.value.seoDescription },
     { name: 'og:type', content: 'website' },
-    { name: 'og:url', content: partnersUrl },
+    { name: 'og:url', content: partnersUrl.value },
     { name: 'og:image', content: partnersImage },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: partnersTitle },
-    { name: 'twitter:description', content: partnersDescription },
+    { name: 'twitter:title', content: t.value.seoTitle },
+    { name: 'twitter:description', content: t.value.seoDescription },
     { name: 'twitter:image', content: partnersImage }
   ],
   link: [
@@ -194,7 +281,7 @@ useHead({
       href: 'https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap'
     }
   ]
-})
+}))
 </script>
 
 <style lang="stylus" scoped>
@@ -383,7 +470,8 @@ paper-bg = #EFEEEA
   flex-wrap wrap
   gap 10px
 
-  li
+  li a
+    display inline-block
     font-weight 700
     font-size 1rem
     color #1F1F28
@@ -391,6 +479,13 @@ paper-bg = #EFEEEA
     border 1px solid cgwire-green
     padding 8px 16px
     border-radius 999px
+    text-decoration none
+    transition background .15s, color .15s, transform .12s ease
+
+    &:hover
+      background cgwire-green
+      color #fff
+      transform translateY(-1px)
 
 .partners-signoff
   margin-top 36px

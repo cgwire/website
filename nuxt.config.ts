@@ -84,6 +84,15 @@ function buildPrerenderRoutes() {
     }
   }
 
+  // Standalone landing pages that aren't linked from anywhere (noindex), so the
+  // crawler can't discover their localized variants. List them explicitly.
+  const standalonePages = [{ path: '/partners', langs: ['en', 'fr'] }]
+  for (const { path, langs } of standalonePages) {
+    for (const lang of langs) {
+      routes.add(withPrefix(lang, path))
+    }
+  }
+
   return Array.from(routes)
 }
 
