@@ -1228,12 +1228,21 @@
           "gradient": 2
         },
         {
+          "title": "誰が何を担当しているかを把握",
+          "subtitle": "チームが分断されるほど調整は難しくなる",
+          "content": "プロジェクトに割り当てられた部門内のすべてのアーティストのスケジュールを確認できます。誰に余裕があるのか、誰に負荷が集中しているのか、作業がチーム内でどのように分配されているのかを把握できます。確信を持って人員配置を決定し、予期せぬ問題を防ぎながら制作を円滑に進めましょう。",
+          "image": "kitsu-team-schedule.png",
+          "shadow": true,
+          "reverted": true,
+          "gradient": 2
+        },
+        {
           "title": "費やした時間を追跡する",
           "subtitle": "予算超過は誰も追跡していない時間から始まる",
           "content": "アーティストはKitsuに直接時間を記録します。アーティスト、アセット、またはショット別の明確な内訳を取得して、プロダクション時間が実際にどこに使われているかを常に把握できます。",
           "image": "kitsu-timesheets.png",
           "shadow": true,
-          "reverted": true
+          "colored": true
         },
         {
           "title": "予算超過を予測する",
@@ -1241,7 +1250,7 @@
           "content": "プロダクションのあらゆる時点で現在の支出を予算と比較します。意思決定前にコストシナリオを実行して、まだ選択肢がある間に軌道修正できるようにします。",
           "image": "kitsu-budget.png",
           "shadow": true,
-          "colored": true,
+          "reverted": true,
           "gradient": 3
         }
       ],
@@ -1293,11 +1302,19 @@
           "gradient": 2
         },
         {
+          "title": "レビュー用プレイリストを即座に共有",
+          "subtitle": "面倒なやり取りなしでクライアントにアクセスを提供",
+          "content": "任意のレビュー用プレイリストの共有リンクを生成し、クライアント、スーパーバイザー、または外部関係者に送信できます。全員が同じシーケンスを確認でき、フィードバック、バージョン管理、承認履歴はすべて一か所に集約されます。",
+          "image": "kitsu-playlists-share.png",
+          "shadow": true,
+          "reverted": true
+        },
+        {
           "title": "フレームに直接アノテーションする",
           "subtitle": "曖昧なノートを正確な指示に置き換える",
           "content": "任意のフレームに直接描画、ハイライト、書き込みを行います。アノテーションは特定のバージョンに固定され、チーム全体に表示されるため、何も伝達に失われることはありません。",
           "image": "kitsu-annotations.png",
-          "reverted": true
+          "colored": true
         },
         {
           "title": "完全なバージョン履歴",
@@ -1305,7 +1322,7 @@
           "content": "提出されたすべてのプレビューが保存されてアクセス可能です。任意の以前のバージョンを再訪して、ショットがどのように進化したかを追跡し、論争を解決し、以前のフィードバックが対処されたことを確認します。",
           "image": "kitsu-versions.png",
           "gradient": 3,
-          "colored": true
+          "reverted": true
         }
       ],
       "customerStory": {
@@ -1460,23 +1477,30 @@
           "reverted": true
         },
         {
+          "key": "supervision",
+          "title": "日次スーパービジョンタスク",
+          "subtitle": "スーパーバイザーにはページを行き来せずに全体像を把握できる環境が必要です",
+          "content": "スーパーバイザーは、日次スーパービジョンタスクページから部門全体の制作状況を即座に確認できます。Kitsu のどのページからでも、タスクタイプ名をクリックするだけで、その部門に関連するすべてのタスクの概要を表示できます。これにより、進捗状況の把握、ボトルネックの特定、優先順位の確認、そしてアーティストから個別に状況を収集することなく、制作を円滑に進めることができます。",
+          "image": "kitsu-supervision.png",
+          "shadow": true,
+          "colored": true
+        },
+        {
           "key": "news",
           "title": "ニュースフィード",
           "subtitle": "遅く検出された問題は修正にコストがかかる",
           "content": "ニュースフィードはリアルタイムでプロダクション全体のすべてのコメント、ステータス変更、新しいプレビューを表示します。スーパーバイザーとプロデューサーは問題が悪化する前に早期に発見します。誰かがメッセージを見逃したために何も見落とされることはありません。",
           "image": "kitsu-news.png",
           "shadow": true,
-          "colored": true,
-          "gradient": true
+          "reverted": true
         },
         {
           "title": "SlackとDiscordの通知",
           "subtitle": "関連する更新は間違ったツールにある場合に埋もれてしまう",
           "content": "Kitsuのアクティビティをチームがすでに監視しているチャンネルにルーティングします。コメント、ステータス変更、新しいプレビューがSlackまたはDiscordに直接表示されるため、適切な人が別のプラットフォームをチェックすることなく対応できます。",
           "image": "kitsu-slack.png",
-          "shadow": true,
-          "reverted": true,
-          "gradient": true
+          "colored": true,
+          "reverted": true
         }
       ],
       "customerStory": {
