@@ -124,6 +124,11 @@
     "title": "Free Online Tools",
     "cta": "Open tool →"
   },
+  "exit-popup": {
+    "badge": "Free Trial",
+    "title": "Before you go...",
+    "description": "Ready to level up your production workflow? Create your free account and get access to the latest features from CGWire's Kitsu."
+  },
   "slugs": {
     "tailor-made-architecture": "tailor-made-architecture",
     "casting-management": "casting-management",

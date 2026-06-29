@@ -124,6 +124,11 @@
     "title": "無料オンラインツール",
     "cta": "ツールを開く →"
   },
+  "exit-popup": {
+    "badge": "無料トライアル",
+    "title": "お待ちください...",
+    "description": "制作ワークフローをレベルアップする準備はできましたか？無料アカウントを作成して、CGWireのKitsuの最新機能にアクセスしましょう。"
+  },
   "slugs": {
     "index": "index",
     "contact": "contact",

@@ -1228,12 +1228,21 @@
           "gradient": 2
         },
         {
+          "title": "Voyez qui travaille sur quoi",
+          "subtitle": "La coordination devient plus complexe lorsque les équipes travaillent en silos",
+          "content": "Consultez le planning complet de chaque artiste de votre département affecté à votre projet. Identifiez les disponibilités, les surcharges de travail et la répartition des tâches au sein de l’équipe. Prenez vos décisions de staffing en toute confiance et maintenez la production sur les rails, sans mauvaises surprises.",
+          "image": "kitsu-team-schedule.png",
+          "shadow": true,
+          "reverted": true,
+          "gradient": 2
+        },
+        {
           "title": "Suivez le temps passé",
           "subtitle": "Les dépassements de budget commencent par des heures que personne ne suit",
           "content": "Les artistes enregistrent le temps directement dans Kitsu. Vous obtenez une répartition claire par artiste, asset ou plan pour savoir toujours où vont réellement vos heures de production.",
           "image": "kitsu-timesheets.png",
           "shadow": true,
-          "reverted": true
+          "colored": true
         },
         {
           "title": "Anticipez les dépassements de budget",
@@ -1241,7 +1250,7 @@
           "content": "Comparez les dépenses actuelles à votre budget à tout moment de la production. Effectuez des scénarios de coûts avant de prendre des décisions pour pouvoir corriger le tir tant que vous avez encore des options.",
           "image": "kitsu-budget.png",
           "shadow": true,
-          "colored": true,
+          "reverted": true,
           "gradient": 3
         }
       ],
@@ -1293,11 +1302,19 @@
           "gradient": 2
         },
         {
+          "title": "Partagez instantanément des playlists de révision",
+          "subtitle": "Donnez accès à vos clients sans allers-retours inutiles",
+          "content": "Générez un lien partageable pour n’importe quelle playlist de révision et envoyez-le à vos clients, superviseurs ou parties prenantes externes. Tout le monde consulte la même séquence, tandis que les retours, versions et validations sont centralisés au même endroit.",
+          "image": "kitsu-playlists-share.png",
+          "shadow": true,
+          "reverted": true
+        },
+        {
           "title": "Annotez directement sur les images",
           "subtitle": "Remplacez les notes vagues par des directions précises",
           "content": "Dessinez, surlignez et écrivez directement sur n'importe quelle image. Les annotations sont épinglées à la version spécifique et visibles par toute l'équipe, afin que rien ne se perde dans la traduction.",
           "image": "kitsu-annotations.png",
-          "reverted": true
+          "colored": true
         },
         {
           "title": "Historique complet des versions",
@@ -1305,7 +1322,7 @@
           "content": "Chaque aperçu soumis est stocké et accessible. Revisitez n'importe quelle version antérieure pour suivre l'évolution d'un plan, résoudre des litiges et confirmer que les retours précédents ont été pris en compte.",
           "image": "kitsu-versions.png",
           "gradient": 3,
-          "colored": true
+          "reverted": true
         }
       ],
       "customerStory": {
@@ -1460,13 +1477,22 @@
           "reverted": true
         },
         {
+          "key": "supervision",
+          "title": "Tâches quotidiennes de supervision",
+          "subtitle": "Les superviseurs ont besoin d’une vue d’ensemble claire sans naviguer entre plusieurs pages",
+          "content": "Les superviseurs peuvent accéder instantanément à une vue globale de la production à l’échelle du département grâce à la page des tâches quotidiennes de supervision. Depuis n’importe quelle page de Kitsu, il suffit de cliquer sur le nom d’un type de tâche pour afficher un aperçu de toutes les tâches associées dans votre département. Cela facilite le suivi de l’avancement, l’identification des goulots d’étranglement, la révision des priorités et le maintien du flux de production sans avoir à collecter manuellement les mises à jour auprès des artistes.",
+          "image": "kitsu-supervision.png",
+          "shadow": true,
+          "colored": true
+        },
+        {
           "key": "news",
           "title": "Fil d'actualité",
           "subtitle": "Les problèmes détectés tard coûtent plus cher à corriger",
           "content": "Le fil d'actualité fait remonter chaque commentaire, changement de statut et nouvel aperçu à travers la production en temps réel. Les superviseurs et les producteurs repèrent les problèmes tôt, avant qu'ils ne s'aggravent. Rien ne passe à travers les mailles car quelqu'un a manqué un message.",
           "image": "kitsu-news.png",
           "shadow": true,
-          "colored": true,
+          "reverted": true,
           "gradient": true
         },
         {
@@ -1474,9 +1500,8 @@
           "subtitle": "Les mises à jour pertinentes sont enfouies quand elles se trouvent dans le mauvais outil",
           "content": "Redirigez l'activité Kitsu vers les canaux que votre équipe surveille déjà. Les commentaires, changements de statut et nouveaux aperçus apparaissent directement dans Slack ou Discord pour que les bonnes personnes répondent sans avoir à consulter une plateforme séparée.",
           "image": "kitsu-slack.png",
-          "shadow": true,
-          "reverted": true,
-          "gradient": true
+          "colored": true,
+          "reverted": true
         }
       ],
       "customerStory": {
@@ -2942,7 +2967,387 @@
       "elementKey": "zodiak",
       "name": "Zodiak Kids",
       "type": "tvshows"
-    }
+    },
+    "20-stm": {
+    "link": "https://20stm.com/",
+    "elementKey": "20-stm",
+    "name": "20 STM",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "adrenalin-group": {
+    "link": "https://adrenalin.com.sg/",
+    "elementKey": "adrenalin-group",
+    "name": "Adrenalin Group",
+    "type": [
+      "shorts"
+    ]
+  },
+  "aixcreative": {
+    "link": "https://dayda.studio/",
+    "elementKey": "aixcreative",
+    "name": "AIxCreative",
+    "type": [
+      "shorts"
+    ]
+  },
+  "big-company": {
+    "link": "https://www.bigcompany.fr/",
+    "elementKey": "big-company",
+    "name": "Big Company",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "brainypixel": {
+    "link": "https://www.brainypixel.com/",
+    "elementKey": "brainypixel",
+    "name": "Brainy Pixel Productions",
+    "type": [
+      "shorts"
+    ]
+  },
+  "camello": {
+    "link": "https://www.camelloaudiovisual.com/",
+    "elementKey": "camello",
+    "name": "Camello AV",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "chromatik": {
+    "link": "https://www.chromatik-studio.fr/",
+    "elementKey": "chromatik",
+    "name": "Chromatik",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  
+  "darjeeling": {
+    "link": "https://www.darjeelingprod.com/",
+    "elementKey": "darjeeling",
+    "name": "Darjeeling",
+    "type": [
+      "feature-films", "shorts", "tvshows", "video-games"
+    ]
+  },
+
+  "doghouse": {
+    "link": "https://doghousefilms.eu/en/",
+    "elementKey": "doghouse",
+    "name": "Doghouse Films",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "enanimation": {
+    "link": "https://www.enanimation.it/",
+    "elementKey": "enanimation",
+    "name": "Enanimation Srl",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "filmakersmonkeys": {
+    "link": "https://filmakersmonkeys.com/",
+    "elementKey": "filmakersmonkeys",
+    "name": "Filmakers Monkeys",
+    "type": [
+      "feature-films", "shorts"
+    ]
+  },
+  "folimage": {
+    "link": "https://www.folimage.fr/en/",
+    "elementKey": "folimage",
+    "name": "Folimage Studio",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "gaoshan": {
+    "link": "https://www.gaoshanpictures.com/",
+    "elementKey": "gaoshan",
+    "name": "Gao Shan Pictures",
+    "type": [
+      "feature-films"
+    ]
+  },
+  "ecv": {
+    "link": "https://www.ecv.fr/en/",
+    "elementKey": "ecv",
+    "name": "ICA ECV",
+    "type": [
+      "schools"
+    ]
+  },
+  "illogic-studios": {
+    "link": "https://www.illogicstudios.com/",
+    "elementKey": "illogic-studios",
+    "name": "Illogic Studios",
+    "type": [
+      "shorts"
+    ]
+  },
+  "isart": {
+    "link": "https://www.isart.com/",
+    "elementKey": "isart",
+    "name": "ISART digital",
+    "type": [
+      "schools"
+    ]
+  },
+  "jaibo": {
+    "link": "https://jaibofilms.com/",
+    "elementKey": "jaibo",
+    "name": "Jaibo Films",
+    "type": [
+      "feature-films", "shorts"
+    ]
+  },
+  "kiddigraph": {
+    "link": "https://www.k3dvfx.com/",
+    "elementKey": "kiddigraph",
+    "name": "KIDDIGRAPH STUDIO",
+    "type": [
+      "feature-films", "shorts"
+    ]
+  },
+  "lacabane": {
+    "link": "https://lacabaneproductions.com/",
+    "elementKey": "lacabane",
+    "name": "LA CABANE PRODUCTIONS",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "lachouette": {
+    "link": "https://www.chouetteco.com/",
+    "elementKey": "lachouette",
+    "name": "La Chouette Compagnie",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "lamola": {
+    "link": "https://lamola.studio/en/",
+    "elementKey": "lamola",
+    "name": "LaMola",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "lesmonstres": {
+    "link": "https://www.les-monstres.com/",
+    "elementKey": "lesmonstres",
+    "name": "les monstres",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  
+  "magicalworld": {
+    "link": "https://www.youtube.com/@Magicalworldproductions",
+    "elementKey": "magicalworld",
+    "name": "Magical World Productions",
+    "type": [
+      "shorts"
+    ]
+  },
+  "mago": {
+    "link": "https://magoproduction.com/",
+    "elementKey": "mago",
+    "name": "Mago Productions",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "maur": {
+    "link": "https://www.maurfilm.com/en/",
+    "elementKey": "maur",
+    "name": "MAUR film",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "msf": {
+    "link": "https://megaspacefighter.com/en/",
+    "elementKey": "msf",
+    "name": "MegaSpaceFighter",
+    "type": [
+      "shorts"
+    ]
+  },
+  "melies": {
+    "link": "https://ecolegeorgesmelies.fr/en/",
+    "elementKey": "melies",
+    "name": "Melies",
+    "type": [
+      "schools"
+    ]
+  },
+  "mrmiyagi": {
+    "link": "https://www.instagram.com/miyagifilms/",
+    "elementKey": "mrmiyagi",
+    "name": "Mr Miyagi Films",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "nalu": {
+    "link": "https://www.naluanimation.com",
+    "elementKey": "nalu",
+    "name": "Nalu Animation",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "ocidental": {
+    "link": "https://www.instagram.com/ocidental_filmes/",
+    "elementKey": "ocidental",
+    "name": "Ocidental Filmes",
+    "type": [
+      "feature-films", "shorts", "tvshows"      
+    ]
+  },
+  "offensive": {
+    "link": "https://offensivegroup.com/",
+    "elementKey": "offensive",
+    "name": "Offensive Marketing Group",
+    "type": [
+      "shorts"
+    ]
+  },
+  "phanta": {
+    "link": "https://phanta-animation.com/",
+    "elementKey": "phanta",
+    "name": "Phanta Animation",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "polvo": {
+    "link": "https://www.polvoprod.com/",
+    "elementKey": "polvo",
+    "name": "Polvo Prod",
+    "type": [
+      "shorts"
+    ]
+  },
+  "ejt": {
+    "link": "https://www.ejt-labo.com/",
+    "elementKey": "ejt",
+    "name": "Promenons-nous dans les bois / Studio EJT-labo",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "rouge": {
+    "link": "https://withrouge.com/",
+    "elementKey": "rouge",
+    "name": "ROUGE Collective",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "scrawl": {
+    "link": "https://scrawlanimation.com/",
+    "elementKey": "scrawl",
+    "name": "Scrawl Animation",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "skjaldborn": {
+    "link": "https://www.skjaldborn.com/",
+    "elementKey": "skjaldborn",
+    "name": "Skjaldborn",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "snowcloud": {
+    "link": "https://www.snowcloud.se/",
+    "elementKey": "snowcloud",
+    "name": "Snowcloud Films AB",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  
+  "spindlehorse": {
+    "link": "https://spindlehorse.com/",
+    "elementKey": "spindlehorse",
+    "name": "Spindlehorse",
+    "type": [
+      "tvshows"
+    ]
+  },
+  "squarefish": {
+    "link": "https://squarefish.eu/",
+    "elementKey": "squarefish",
+    "name": "Squarefish",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "stay": {
+    "link": "https://stay-studio.net/",
+    "elementKey": "stay",
+    "name": "Stay株式会社",
+    "type": [
+      ""
+    ]
+  },
+  "101": {
+    "link": "https://wearestudio101.com/",
+    "elementKey": "101",
+    "name": "Studio 101",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "unagi": {
+    "link": "https://studio-unagi.com/",
+    "elementKey": "unagi",
+    "name": "Studio Unagi",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "terminus": {
+    "link": "https://terminus-studio.com/",
+    "elementKey": "terminus",
+    "name": "Terminus",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "thinkots": {
+    "link": "https://www.thinkots.com/",
+    "elementKey": "thinkots",
+    "name": "ThinkOTS",
+    "type": [
+      "video-games"
+    ]
+  },
+  "vfxtechnologies": {
+    "link": "https://www.vfxtechnologies.com/",
+    "elementKey": "vfxtechnologies",
+    "name": "VFX Technologies",
+    "type": [
+      "feature-films", "shorts", "tvshows"
+    ]
+  },
+  "eraseuneavez": {
+    "link": "https://www.instagram.com/eraseunavezfilms2019/",
+    "elementKey": "eraseuneavez",
+    "name": "Érase una vez films",
+    "type": [
+      "feature-films", "shorts"
+    ]
+  }
   },
   "testimonials": {
     "woodblock": {

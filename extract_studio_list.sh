@@ -1,0 +1,1 @@
+jq -r '.[].elementKey' existing.json > existing.md
