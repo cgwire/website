@@ -1,5 +1,5 @@
 <template>
-  <Teleport to="body">
+  <Teleport v-if="variant === 'variant_b'" to="body">
     <Transition name="modal">
       <div
         v-if="visible"
@@ -48,6 +48,11 @@
 
 <script setup>
 import { onMounted, onBeforeUnmount, ref } from "vue";
+
+const variant = useABTest('exit_intent_popup_test', [
+  { name: 'control', weight: 50 },
+  { name: 'variant_b', weight: 50 },
+])
 
 const visible = ref(false);
 const email = ref("");
