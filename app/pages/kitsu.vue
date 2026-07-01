@@ -3,9 +3,23 @@
     <div class="kitsu-header flexrow">
       <div class="main-title">
         <span>{{ page.meta.kitsu.title }}</span>
+        
         <div class="kitsu-explanation">
           {{ page.meta.kitsu.description }}
         </div>
+
+        <p class="has-text-centered">
+        <a
+          :class="{
+            button: true,
+            'is-large': true,
+            'is-big': true
+          }"
+          :href="`https://account.cg-wire.com/signup`"
+        >
+          {{ $t('main plans cta') }}
+        </a>
+      </p>
       </div>
     </div>
 
@@ -272,7 +286,8 @@ const toggleTab = tab => {
 
     .kitsu-explanation
         font-size 1.2em
-        margin-top 0.5em
+        margin-top 1em
+        margin-bottom 1em
 
     span
         flex 1
