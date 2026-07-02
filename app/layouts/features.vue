@@ -2,11 +2,20 @@
   <div v-if="page" :class="`kitsu-page ${pageKey}`">
     <SolutionHeaderBlock :page-key="page.slug" :header="page.meta.header" />
 
-    <FeatureBlock
+
+    <template
       v-for="(feature, index) in page.meta.features"
       :key="index"
-      :feature="feature"
-    />
+    >
+      <ThreeDFeatureBlock
+        v-if="feature.is3D"
+        :feature="feature"
+      />
+      <FeatureBlock
+        v-else
+        :feature="feature"
+      />
+    </template>
 
     <CustomerStoryBlock
       v-if="customerStory"
