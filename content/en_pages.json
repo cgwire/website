@@ -1461,7 +1461,8 @@
           "content": "Assign tasks to artists and have them publish their work directly in Kitsu when ready for review. Producers, supervisors, and directors iterate on the same platform, with every comment and version tracked in context. Real-time notifications mean no one is waiting on information they should already have.",
           "image": "kitsu-tasks.png",
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "is3D": true
         },
         {
           "key": "todos",
@@ -1470,7 +1471,8 @@
           "content": "Each artist sees exactly what is assigned to them, in what order, and at what stage. They can update progress without chasing a supervisor for instructions. Less back-and-forth means more time on the work that matters.",
           "image": "kitsu-todos.png",
           "shadow": true,
-          "reverted": true
+          "reverted": true,
+          "is3D": true
         },
         {
           "key": "supervision",
@@ -1479,7 +1481,8 @@
           "content": "Supervisors can instantly access a department-wide view of production through the Daily Supervision Tasks page. From any page in Kitsu, simply click on a task type name to see an overview of all related tasks across your department. This makes it easy to monitor progress, identify bottlenecks, review priorities, and ensure work keeps moving without manually collecting updates from artists.",
           "image": "kitsu-supervision.png",
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "is3D": true
         },
         {
           "key": "news",
@@ -1488,7 +1491,8 @@
           "content": "The newsfeed surfaces every comment, status change, and new preview across the production in real time. Supervisors and producers spot issues early, before they compound. Nothing falls through the cracks because someone missed a message.",
           "image": "kitsu-news.png",
           "shadow": true,
-          "reverted": true
+          "reverted": true,
+          "is3D": true
         },
         {
           "title": "Slack and Discord notifications",
