@@ -11,6 +11,7 @@ const head = useLocaleHead()
 
         <Footer />
         
+        <ExitIntentPopup/>
         <CookieConsent />
       </Body>
     </Html>
