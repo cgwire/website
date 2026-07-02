@@ -58,12 +58,12 @@ const visible = ref(false);
 const email = ref("");
 
 function showPopup() {
-  // const alreadySeen = localStorage.getItem("exit-popup");
+  const alreadySeen = sessionStorage.getItem("exit-popup");
 
-  // if (!alreadySeen) {
+  if (!alreadySeen) {
     visible.value = true;
-    // localStorage.setItem("exit-popup", "shown");
-  // }
+    sessionStorage.setItem("exit-popup", true);
+  }
 }
 
 function close() {
