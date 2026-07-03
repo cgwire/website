@@ -59,8 +59,6 @@ const props = defineProps({
   pricing: Object
 })
 
-const name = 'PriceEstimator'
-
 const nbUsers = ref(50)
 const nbMonths = ref(12)
 const price = ref(1500)
