@@ -53,6 +53,7 @@ export default defineConfig([
         computed: 'readonly',
         watch: 'readonly',
         onMounted: 'readonly',
+        onUnmounted: 'readonly',
         watchEffect: 'readonly',
         nextTick: 'readonly',
         toValue: 'readonly',

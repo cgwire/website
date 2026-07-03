@@ -183,10 +183,16 @@ const closeModal = () => {
   query.value = ''
 }
 
+const onKeydown = e => {
+  if (e.key === 'Escape') closeModal()
+}
+
 onMounted(() => {
-  window.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeModal()
-  })
+  window.addEventListener('keydown', onKeydown)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKeydown)
 })
 </script>
 
