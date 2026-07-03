@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxt generate",
+    "build": "node scripts/check-content-parity.mjs && nuxt generate",
+    "check:content": "node scripts/check-content-parity.mjs",
     "dev": "nuxt dev",
     "generate": "nuxi generate",
     "preview": "nuxt build && nuxt preview",
