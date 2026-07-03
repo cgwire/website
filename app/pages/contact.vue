@@ -44,6 +44,6 @@ const { data: page } = await useAsyncData(
 useSEO({
   title: 'CGWire | ' + page.value.title,
   description: page.value.title,
-  imagePath: 'assets/images/logo.png'
+  imagePath: 'logo.png'
 })
 </script>

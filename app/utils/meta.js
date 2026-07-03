@@ -7,8 +7,8 @@ export const buildPageMeta = (t, titleKey, descriptionKey, path, imgPath) => [
   {
     name: 'og:image',
     content: imgPath
-      ? 'https://www.cg-wire.com/_nuxt/' + imgPath
-      : 'https://www.cg-wire.com/_nuxt/team-collaboration.83584c91.png'
+      ? 'https://www.cg-wire.com/og/' + imgPath
+      : 'https://www.cg-wire.com/og/team-collaboration.png'
   },
   { name: 'twitter:title', content: t(titleKey) },
   { name: 'twitter:description', content: t(descriptionKey) },
@@ -16,8 +16,8 @@ export const buildPageMeta = (t, titleKey, descriptionKey, path, imgPath) => [
   {
     name: 'twitter:image',
     content: imgPath
-      ? 'https://www.cg-wire.com/_nuxt/' + imgPath
-      : 'https://www.cg-wire.com/_nuxt/team-collaboration.83584c91.png'
+      ? 'https://www.cg-wire.com/og/' + imgPath
+      : 'https://www.cg-wire.com/og/team-collaboration.png'
   },
   { name: 'twitter:card', content: 'summary_large_image' }
 ]

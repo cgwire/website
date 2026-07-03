@@ -4,6 +4,9 @@ export function useSEO({ title, description, imagePath }) {
 
   const path = localePath(route.name)
   const url = `https://www.cg-wire.com${path}`
+  const image = imagePath
+    ? `https://www.cg-wire.com/og/${imagePath}`
+    : 'https://www.cg-wire.com/og/team-collaboration.png'
 
   useHead({
     title,
@@ -15,14 +18,14 @@ export function useSEO({ title, description, imagePath }) {
       { name: 'og:url', content: url },
       {
         name: 'og:image',
-        content: 'https://www.cg-wire.com/_nuxt/' + imagePath
+        content: image
       },
       { name: 'twitter:title', content: title },
       { name: 'twitter:description', content: description },
       { name: 'twitter:url', content: url },
       {
         name: 'twitter:image',
-        content: 'https://www.cg-wire.com/_nuxt/' + imagePath
+        content: image
       },
       { name: 'twitter:card', content: 'summary_large_image' }
     ]

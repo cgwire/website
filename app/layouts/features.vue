@@ -48,7 +48,9 @@ const title = 'CGWire | Kitsu / ' + name
 const description = page.value.meta.header.explanation
 const path = localePath(route.name)
 const url = `https://www.cg-wire.com${path}`
-const imgPath = page.value.meta.image
+const image = page.value.meta.image
+  ? `https://www.cg-wire.com/og/${page.value.meta.image}`
+  : 'https://www.cg-wire.com/og/team-collaboration.png'
 
 useHead({
   title,
@@ -60,14 +62,14 @@ useHead({
     { name: 'og:url', content: url },
     {
       name: 'og:image',
-      content: 'https://www.cg-wire.com/_nuxt/' + imgPath
+      content: image
     },
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
     { name: 'twitter:url', content: url },
     {
       name: 'twitter:image',
-      content: 'https://www.cg-wire.com/_nuxt/' + imgPath
+      content: image
     },
     { name: 'twitter:card', content: 'summary_large_image' }
   ]
