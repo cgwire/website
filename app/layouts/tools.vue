@@ -26,6 +26,10 @@ const { data: page } = await useAsyncData(
   { watch: [locale, slug] }
 )
 
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Tool not found' })
+}
+
 const title = `CGWire | ${page.value.title}`
 const description = page.value.meta.subtitle
 const path = localePath(route.name)

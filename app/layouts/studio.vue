@@ -52,6 +52,10 @@ const { data: studio } = await useAsyncData(
   { watch: [locale, slug] }
 )
 
+if (!studio.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Studio not found' })
+}
+
 useSEO({
   title: `${studio.value.meta.name} | CGWire Studios`,
   description: `${studio.value.meta.name} uses CGWire's Kitsu. Read the customer interview ->`

@@ -166,6 +166,10 @@ const { data: audience } = await useAsyncData(
   { watch: [locale, slug] }
 )
 
+if (!audience.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Audience not found' })
+}
+
 const audiencePage = audience.value.meta
 
 const type = computed(() => slug.value)

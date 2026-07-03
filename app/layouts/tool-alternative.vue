@@ -102,6 +102,10 @@ const { data: comparison } = await useAsyncData(
   { watch: [locale, slug] }
 )
 
+if (!comparison.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Comparison not found' })
+}
+
 const title = `CGWire | Kitsu vs ${comparison.value.meta.tool}`
 const description = comparison.value.meta.subtitle
 const path = localePath(route.name)

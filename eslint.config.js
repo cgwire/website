@@ -66,6 +66,7 @@ export default defineConfig([
         useImage: 'readonly',
         useAsyncData: 'readonly',
         queryCollection: 'readonly',
+        createError: 'readonly',
         // i18n
         useI18n: 'readonly',
         useLocaleHead: 'readonly',

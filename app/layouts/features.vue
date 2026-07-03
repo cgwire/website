@@ -40,6 +40,10 @@ const { data: page } = await useAsyncData(
   { watch: [locale, slug] }
 )
 
+if (!page.value) {
+  throw createError({ statusCode: 404, statusMessage: 'Feature not found' })
+}
+
 const name = page.value.meta.name
 const pageKey = page.value.slug
 const customerStory = page.value.meta.customerStory
