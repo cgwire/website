@@ -1,6 +1,10 @@
 # CGWire Website
 
-This website is based on [Nuxt 4](https://nuxtjs.org).
+This website is based on [Nuxt 4](https://nuxtjs.org). It is statically
+generated (`nuxt generate`) and deployed to Cloudflare Workers and Netlify.
+
+For the full architecture and contributor guide (content system, i18n,
+prerendering, editorial and commit conventions), see [`CLAUDE.md`](./CLAUDE.md).
 
 ## Setup
 
@@ -47,3 +51,10 @@ Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/prese
 - Markdown-based content is in `/content/<content collection>/<locale>/<slug>.md` (long documents like terms, privacy, objection pages)
 - JSON-based content is in `/content/<locale>_pages.json` (general pages, programmatic content, data pages, etc.)
 - When to use i18n vs content: i18n = key-value translation, content = searchable, filterable, need metadata, etc.
+
+## Deployment
+
+- `npm run build` runs `nuxt generate` (output in `.output/public/`). It first runs `npm run check:content`, which fails the build if a prerendered EN slug/page has no FR/JA counterpart.
+- Cloudflare Workers: `npm run deploy` (`wrangler deploy`).
+- Netlify: zero-config, picks up `nuxt generate`.
+- Security response headers live in `public/_headers` (honored by both hosts).
