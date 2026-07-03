@@ -27,6 +27,8 @@ function stripMarkdown(body) {
     .trim()
 }
 
+// Recursively flatten Nuxt Content's minimark AST to plain text for the search
+// index, skipping custom component nodes (tags containing a dash).
 function walkMinimark(nodes) {
   if (!Array.isArray(nodes)) return ''
   return nodes

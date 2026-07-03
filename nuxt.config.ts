@@ -22,6 +22,9 @@ function readMdSlugs(relDir) {
   }
 }
 
+// Build the explicit list of routes to prerender. The native crawler misses
+// dynamic pages not linked from already-rendered pages (studios, partners…),
+// so we enumerate them from the content JSON + i18n slug maps.
 function buildPrerenderRoutes() {
   const enPages = readJson('content/en_pages.json')
   const locales = Object.fromEntries(

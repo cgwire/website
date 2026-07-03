@@ -107,6 +107,9 @@ const fuse = computed(
 const trimmedQuery = computed(() => query.value.trim())
 const result = computed(() => fuse.value.search(toValue(query)))
 
+// Build "…text <mark>match</mark> text…" snippets around fuzzy-match ranges:
+// merge matches within `padding` chars into clusters, then strip any HTML from
+// the source before re-inserting the <mark> tags (so the result is safe for v-html).
 const getHighlightedSnippets = (
   value,
   indices,
