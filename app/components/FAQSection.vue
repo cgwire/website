@@ -34,7 +34,6 @@ watchEffect(() => {
 })
 
 function selectPanel(section) {
-  console.log(section)
   panel.value = section
 }
 </script>
