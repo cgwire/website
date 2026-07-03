@@ -180,8 +180,6 @@
     "protection-ip": "ip-protection",
     "gestion-du-changement": "change-management",
     "integration-personnalisee": "custom-integration",
-    "glb-gltf-file-visualizer": "visualisateur-fichier-glb-gltf",
-    "visualisateur-fichier-glb-gltf": "glb-gltf-file-visualizer",
     "mp4-to-webm-file-converter": "convertisseur-fichier-mp4-vers-webm",
     "convertisseur-fichier-mp4-vers-webm": "mp4-to-webm-file-converter",
     "can-kitsu-scale-with-us": "kitsu-peut-il-evoluer-avec-nous",
