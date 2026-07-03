@@ -7,95 +7,17 @@
     <div class="brand-wheel-container">
       <div class="brand-wheel">
         <div class="brand-slide">
-          <div class="logo-div">
-            <NuxtImg src="/images/logo-miyu.png" width="40" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/logo-fost.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-bobbypills.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-lofi-studio.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-blender.png" format="webp" />
-          </div>
-          <div class="logo-div">
+          <div
+            v-for="(logo, i) in marqueeLogos"
+            :key="i"
+            class="logo-div"
+          >
             <NuxtImg
-              src="/images/studios/logo-gobelins-black.png"
+              :src="logo.src"
+              :alt="i < brands.length ? logo.name : ''"
+              :aria-hidden="i >= brands.length ? 'true' : null"
               format="webp"
             />
-          </div>
-          <div class="logo-div">
-            <NuxtImg
-              src="/images/studios/logo-supercell-black.png"
-              format="webp"
-            />
-          </div>
-          <div class="logo-div">
-            <NuxtImg
-              src="/images/studios/logo-metacore-black.png"
-              format="webp"
-            />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-mdhr-black.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-yuga-labs.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-miraculous.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-zuru.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/logo-miyu.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/logo-fost.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-bobbypills.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-lofi-studio.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-blender.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg
-              src="/images/studios/logo-gobelins-black.png"
-              format="webp"
-            />
-          </div>
-          <div class="logo-div">
-            <NuxtImg
-              src="/images/studios/logo-supercell-black.png"
-              format="webp"
-            />
-          </div>
-          <div class="logo-div">
-            <NuxtImg
-              src="/images/studios/logo-metacore-black.png"
-              format="webp"
-            />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-mdhr-black.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-yuga-labs.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-miraculous.png" format="webp" />
-          </div>
-          <div class="logo-div">
-            <NuxtImg src="/images/studios/logo-zuru.png" format="webp" />
           </div>
         </div>
       </div>
@@ -104,12 +26,32 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   withTitle: {
     type: Boolean,
     default: true
   }
 })
+
+// Studios shown in the "trusted by" marquee. The list is rendered twice so the
+// CSS translateX(-50%) animation loops seamlessly; the second pass is decorative
+// (alt="" + aria-hidden) to avoid double-announcing each logo to screen readers.
+const brands = [
+  { src: '/images/logo-miyu.png', name: 'Miyu' },
+  { src: '/images/logo-fost.png', name: 'Fost' },
+  { src: '/images/studios/logo-bobbypills.png', name: 'Bobbypills' },
+  { src: '/images/studios/logo-lofi-studio.png', name: 'Lofi Studio' },
+  { src: '/images/studios/logo-blender.png', name: 'Blender' },
+  { src: '/images/studios/logo-gobelins-black.png', name: 'Gobelins' },
+  { src: '/images/studios/logo-supercell-black.png', name: 'Supercell' },
+  { src: '/images/studios/logo-metacore-black.png', name: 'Metacore' },
+  { src: '/images/studios/logo-mdhr-black.png', name: 'Studio MDHR' },
+  { src: '/images/studios/logo-yuga-labs.png', name: 'Yuga Labs' },
+  { src: '/images/studios/logo-miraculous.png', name: 'Miraculous' },
+  { src: '/images/studios/logo-zuru.png', name: 'Zuru' }
+]
+
+const marqueeLogos = [...brands, ...brands]
 </script>
 
 <style lang="stylus" scoped>

@@ -3,6 +3,7 @@
     <a :href="url" class="production">
       <NuxtImg
         :src="'/images/productions/' + picture + '.png'"
+        :alt="title"
         format="webp"
         width="400"
       />

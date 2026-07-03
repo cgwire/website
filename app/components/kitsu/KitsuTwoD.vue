@@ -21,6 +21,7 @@
       />
       <NuxtImg
         src="/images/illustrations/success-supporter.png"
+        alt=""
         format="webp"
       />
     </div>

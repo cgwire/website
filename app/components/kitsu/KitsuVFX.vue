@@ -19,9 +19,13 @@
       :content="supporters.vfx"
     />
     <div class="successes">
-      <NuxtImg src="/images/kitsu/les-trois-mousquetaires.png" format="webp" />
-      <NuxtImg src="/images/kitsu/rrr.png" format="webp" />
-      <NuxtImg src="/images/kitsu/substance.png" format="webp" />
+      <NuxtImg
+        src="/images/kitsu/les-trois-mousquetaires.png"
+        alt="Les Trois Mousquetaires"
+        format="webp"
+      />
+      <NuxtImg src="/images/kitsu/rrr.png" alt="RRR" format="webp" />
+      <NuxtImg src="/images/kitsu/substance.png" alt="Substance" format="webp" />
     </div>
   </div>
 

@@ -6,7 +6,11 @@
           {{ quote.meta.quote }}
         </p>
         <footer class="lean-quote-author">
-          <NuxtImg class="lean-quote-avatar" :src="quote.meta.image" />
+          <NuxtImg
+            class="lean-quote-avatar"
+            :src="quote.meta.image"
+            :alt="quote.meta.interviewee"
+          />
           {{ quote.meta.interviewee }}, {{ quote.meta.role }} at
           {{ quote.meta.studio }}
         </footer>

@@ -50,6 +50,7 @@
           <NuxtImg
             :class="{ screenshot: feature.shadow }"
             :src="'/images/screenshots/' + feature.image"
+            :alt="feature.title"
             format="webp"
           />
         </div>

@@ -4,6 +4,7 @@
       <div class="has-text-centered">
         <NuxtImg
           :src="'/images/illustrations/' + sectionKey + '.png'"
+          :alt="$t(`${sectionKey} header tagline`)"
           format="webp"
         />
       </div>

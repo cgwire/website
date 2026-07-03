@@ -18,9 +18,9 @@
     :content="supporters.games"
   />
   <div class="successes">
-    <NuxtImg src="/images/kitsu/brawl-stars.png" format="webp" />
-    <NuxtImg src="/images/kitsu/merge-mansion.png" format="webp" />
-    <NuxtImg src="/images/kitsu/cuphead.png" format="webp" />
+    <NuxtImg src="/images/kitsu/brawl-stars.png" alt="Brawl Stars" format="webp" />
+    <NuxtImg src="/images/kitsu/merge-mansion.png" alt="Merge Mansion" format="webp" />
+    <NuxtImg src="/images/kitsu/cuphead.png" alt="Cuphead" format="webp" />
   </div>
 
   <KitsuFeatureBlock feature-key="search" :feature="features['search']" />
