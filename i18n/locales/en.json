@@ -116,13 +116,34 @@
   },
   "studio": {
     "visitWebsite": "Visit Website",
-    "viewCaseStudy": "View Case Study"
+    "viewCaseStudy": "View Case Study",
+    "metaDescription": "{name} uses CGWire's Kitsu. Read the customer interview."
+  },
+  "error": {
+    "notFound": "The page you were looking for could not be found...",
+    "generic": "An error occurred ({code})",
+    "home": "Go to home page"
   },
   "tools": {
     "description": "Free online tools to add to your pipeline toolkit.",
     "eyebrow": "CGWire Pipeline Toolkit",
     "title": "Free Online Tools",
-    "cta": "Open tool →"
+    "cta": "Open tool →",
+    "converter": {
+      "badge": "Browser-native · No upload",
+      "subtitle": "Client-side conversion powered by mediabunny & WebCodecs",
+      "dropTitle": "Drop your {format} here",
+      "dropBrowse": "or click to browse",
+      "changeFile": "Click to change file",
+      "converting": "Converting…",
+      "done": "Conversion complete!",
+      "failed": "Conversion failed",
+      "convertTo": "Convert to {format}",
+      "download": "Download {format}",
+      "convertAnother": "Convert another",
+      "tryAgain": "Try again",
+      "privacyNote": "All processing happens locally in your browser. Your file never leaves your device."
+    }
   },
   "exit-popup": {
     "badge": "Free Trial",

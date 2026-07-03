@@ -116,13 +116,34 @@
   },
   "studio": {
     "visitWebsite": "ウェブサイトを見る",
-    "viewCaseStudy": "ケーススタディを見る"
+    "viewCaseStudy": "ケーススタディを見る",
+    "metaDescription": "{name} は CGWire の Kitsu を利用しています。導入事例インタビューをご覧ください。"
+  },
+  "error": {
+    "notFound": "お探しのページは見つかりませんでした...",
+    "generic": "エラーが発生しました ({code})",
+    "home": "ホームに戻る"
   },
   "tools": {
     "description": "パイプラインツールキットに追加できる無料のオンラインツール。",
     "eyebrow": "CGWire パイプラインツールキット",
     "title": "無料オンラインツール",
-    "cta": "ツールを開く →"
+    "cta": "ツールを開く →",
+    "converter": {
+      "badge": "ブラウザ完結・アップロード不要",
+      "subtitle": "mediabunny と WebCodecs によるクライアントサイド変換",
+      "dropTitle": "{format} ファイルをここにドロップ",
+      "dropBrowse": "またはクリックして選択",
+      "changeFile": "クリックしてファイルを変更",
+      "converting": "変換中…",
+      "done": "変換が完了しました",
+      "failed": "変換に失敗しました",
+      "convertTo": "{format} に変換",
+      "download": "{format} をダウンロード",
+      "convertAnother": "別のファイルを変換",
+      "tryAgain": "再試行",
+      "privacyNote": "すべての処理はブラウザ内でローカルに実行されます。ファイルがデバイスの外に出ることはありません。"
+    }
   },
   "exit-popup": {
     "badge": "無料トライアル",

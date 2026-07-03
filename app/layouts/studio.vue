@@ -58,6 +58,6 @@ if (!studio.value) {
 
 useSEO({
   title: `${studio.value.meta.name} | CGWire Studios`,
-  description: `${studio.value.meta.name} uses CGWire's Kitsu. Read the customer interview ->`
+  description: t('studio.metaDescription', { name: studio.value.meta.name })
 })
 </script>

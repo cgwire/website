@@ -2,13 +2,13 @@
   <div class="converter-wrapper">
     <div class="converter-card">
       <div class="header">
-        <div class="badge">Browser-native · No upload</div>
+        <div class="badge">{{ $t('tools.converter.badge') }}</div>
 
         <h2 class="title">
           {{ inputFormat }} <span class="arrow">→</span> {{ outputFormat }}
         </h2>
         <p class="subtitle">
-          Client-side conversion powered by mediabunny & WebCodecs
+          {{ $t('tools.converter.subtitle') }}
         </p>
       </div>
 
@@ -60,8 +60,10 @@
               />
             </svg>
           </div>
-          <p class="drop-title">Drop your {{ inputFormat }} here</p>
-          <p class="drop-hint">or click to browse</p>
+          <p class="drop-title">
+            {{ $t('tools.converter.dropTitle', { format: inputFormat }) }}
+          </p>
+          <p class="drop-hint">{{ $t('tools.converter.dropBrowse') }}</p>
         </template>
 
         <template v-else-if="selectedFile && status === 'idle'">
@@ -122,7 +124,9 @@
               </svg>
             </button>
           </div>
-          <p class="drop-hint" style="margin-top: 8px">Click to change file</p>
+          <p class="drop-hint" style="margin-top: 8px">
+            {{ $t('tools.converter.changeFile') }}
+          </p>
         </template>
 
         <template v-else-if="status === 'converting'">
@@ -158,7 +162,7 @@
               </svg>
               <span class="progress-pct">{{ Math.round(progress) }}%</span>
             </div>
-            <p class="converting-label">Converting…</p>
+            <p class="converting-label">{{ $t('tools.converter.converting') }}</p>
             <p class="converting-sub">{{ selectedFile?.name }}</p>
           </div>
         </template>
@@ -185,7 +189,7 @@
                 />
               </svg>
             </div>
-            <p class="done-label">Conversion complete!</p>
+            <p class="done-label">{{ $t('tools.converter.done') }}</p>
             <p class="done-sub">
               {{ outputName }} · {{ formatSize(outputSize) }}
             </p>
@@ -213,7 +217,7 @@
                 />
               </svg>
             </div>
-            <p class="error-label">Conversion failed</p>
+            <p class="error-label">{{ $t('tools.converter.failed') }}</p>
             <p class="error-sub">{{ errorMessage }}</p>
           </div>
         </template>
@@ -236,7 +240,7 @@
               clip-rule="evenodd"
             />
           </svg>
-          Convert to {{ outputFormat }}
+          {{ $t('tools.converter.convertTo', { format: outputFormat }) }}
         </button>
 
         <template v-if="status === 'done'">
@@ -252,23 +256,22 @@
                 clip-rule="evenodd"
               />
             </svg>
-            Download {{ outputFormat }}
+            {{ $t('tools.converter.download', { format: outputFormat }) }}
           </button>
           <button class="btn btn--ghost" @click="resetState">
-            Convert another
+            {{ $t('tools.converter.convertAnother') }}
           </button>
         </template>
 
         <template v-if="status === 'error'">
           <button class="btn btn--primary" @click="resetState">
-            Try again
+            {{ $t('tools.converter.tryAgain') }}
           </button>
         </template>
       </div>
 
       <p class="footer-note">
-        All processing happens locally in your browser — your file never leaves
-        your device.
+        {{ $t('tools.converter.privacyNote') }}
       </p>
     </div>
   </div>

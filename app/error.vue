@@ -3,10 +3,10 @@
     <NuxtImg src="/images/404.png" width="900" format="webp" alt="" />
 
     <h1 class="mt4" v-if="error.statusCode === 404">
-      The page you were looking for could not be found...
+      {{ $t('error.notFound') }}
     </h1>
-    <h1 v-else>An error occurred - {{ error.statusCode }}</h1>
-    <NuxtLink class="home-link" to="/">Go to home page</NuxtLink>
+    <h1 v-else>{{ $t('error.generic', { code: error.statusCode }) }}</h1>
+    <NuxtLink class="home-link" to="/">{{ $t('error.home') }}</NuxtLink>
   </div>
 </template>
 

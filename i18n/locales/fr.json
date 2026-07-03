@@ -116,13 +116,34 @@
   },
   "studio": {
     "visitWebsite": "Visiter le site web",
-    "viewCaseStudy": "Voir l'étude de cas"
+    "viewCaseStudy": "Voir l'étude de cas",
+    "metaDescription": "{name} utilise Kitsu de CGWire. Lisez l’entretien client."
+  },
+  "error": {
+    "notFound": "La page que vous recherchez est introuvable...",
+    "generic": "Une erreur est survenue ({code})",
+    "home": "Retour à l’accueil"
   },
   "tools": {
     "description": "Outils en ligne gratuits à ajouter à votre boîte à outils de pipeline.",
     "eyebrow": "Boîte à outils de pipeline CGWire",
     "title": "Outils en ligne gratuits",
-    "cta": "Ouvrir l’outil →"
+    "cta": "Ouvrir l’outil →",
+    "converter": {
+      "badge": "100% navigateur · Sans envoi",
+      "subtitle": "Conversion côté client via mediabunny et WebCodecs",
+      "dropTitle": "Déposez votre fichier {format} ici",
+      "dropBrowse": "ou cliquez pour parcourir",
+      "changeFile": "Cliquez pour changer de fichier",
+      "converting": "Conversion en cours…",
+      "done": "Conversion terminée !",
+      "failed": "Échec de la conversion",
+      "convertTo": "Convertir en {format}",
+      "download": "Télécharger le {format}",
+      "convertAnother": "Convertir un autre fichier",
+      "tryAgain": "Réessayer",
+      "privacyNote": "Tout le traitement se fait localement dans votre navigateur. Votre fichier ne quitte jamais votre appareil."
+    }
   },
   "exit-popup": {
     "badge": "Essai Gratuit",
