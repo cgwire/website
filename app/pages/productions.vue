@@ -15,10 +15,11 @@
         rel="noopener"
       >
         <NuxtImg
-          :src="'/images/productions/' + production.picture + '.png'"
+          :src="'/images/productions/' + production.picture + '.jpg'"
           :alt="production.title"
           format="webp"
-          width="600"
+          width="900"
+          loading="lazy"
         />
         <span class="prod-card-title">{{ production.title }}</span>
       </a>
