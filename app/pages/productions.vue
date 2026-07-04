@@ -1,20 +1,8 @@
 <template>
   <div class="productions-page">
     <section class="prod-hero">
-      <div class="prod-hero-bg" aria-hidden="true">
-        <NuxtImg
-          v-for="p in heroStills"
-          :key="p.picture"
-          :src="'/images/productions/' + p.picture + '.png'"
-          format="webp"
-          width="300"
-          alt=""
-        />
-      </div>
-      <div class="prod-hero-inner">
-        <span class="prod-eyebrow">{{ $t('productions subtitle') }}</span>
-        <h1 class="prod-title">{{ $t('productions title') }}</h1>
-      </div>
+      <span class="prod-eyebrow">{{ $t('productions subtitle') }}</span>
+      <h1 class="prod-title">{{ $t('productions title') }}</h1>
     </section>
 
     <section class="prod-wall">
@@ -45,9 +33,6 @@ import { productions } from '~/data/productions'
 
 const { t } = useI18n()
 
-// A handful of stills power the soft blurred hero backdrop.
-const heroStills = productions.slice(0, 12)
-
 useSEO({
   title: 'CGWire | ' + t('productions title'),
   description: t('productions subtitle')
@@ -61,39 +46,8 @@ useSEO({
 
 // --- Hero ---
 .prod-hero
-  position relative
-  overflow hidden
-  min-height 300px
-  display flex
-  align-items center
-  justify-content center
-  padding 4.5rem 1.5rem
-
-.prod-hero-bg
-  position absolute
-  inset 0
-  display grid
-  grid-template-columns repeat(6, 1fr)
-  grid-auto-rows 1fr
-  transform scale(1.1)
-  filter blur(8px) brightness(1.05) saturate(1.12)
-
-  img
-    width 100%
-    height 100%
-    object-fit cover
-    display block
-
-.prod-hero::after
-  content ''
-  position absolute
-  inset 0
-  background linear-gradient(to bottom, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.85) 55%, #ffffff)
-
-.prod-hero-inner
-  position relative
-  z-index 1
   text-align center
+  padding 4.5rem 1.5rem 2.5rem
 
 .prod-eyebrow
   display block
@@ -160,13 +114,10 @@ useSEO({
 
 @media (max-width: 600px)
   .prod-hero
-    padding 3rem 1rem
+    padding 3rem 1rem 1.5rem
 
   .prod-title
     font-size 2rem
-
-  .prod-hero-bg
-    grid-template-columns repeat(3, 1fr)
 
   .prod-wall
     grid-template-columns repeat(auto-fill, minmax(170px, 1fr))
