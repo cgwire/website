@@ -18,12 +18,12 @@
 - [x] **ARCH-3** · 🟠 high · `app/utils/meta.js`, `useSEO.js`, `layouts/features.vue`, `pages/contact.vue` · effort: small
       Images OG codées en dur sur `/_nuxt/<hash>` (hash figé, en réalité **toutes cassées**) → aperçus sociaux cassés.
       ✅ Images OG servies depuis `public/og/` (chemins stables, 16 fichiers copiés) + défaut de marque. Vérifié : la sortie émet `/og/...`, plus aucun `/_nuxt/` OG. Build OK.
-- [ ] **ARCH-1** · 🟡 medium · `app/layouts/features.vue:1` (+ 5 pages/layouts) · effort: large
-      Inversion page↔layout : les pages dynamiques ne sont que des coquilles `<NuxtLayout name><NuxtPage/></NuxtLayout>`, la logique vit dans le layout ; `<NuxtPage/>` vestigial.
-      Fix : contenu dans la page + `definePageMeta({ layout })`, ou supprimer le `<NuxtPage/>`.
-- [ ] **ARCH-2** · 🟡 medium · `composables/useSEO.js`, `usePageHead.js`, `utils/meta.js`, `useHead` inline · effort: medium
-      Trois systèmes de méta/SEO concurrents → duplication et dérive.
-      Fix : un seul composable SEO couvrant tous les cas.
+- [x] **ARCH-1** · 🟡 medium · 6 pages/layouts · effort: large
+      Inversion page↔layout.
+      ✅ Contenu des 6 layouts nommés (features, tool-alternative, for-audience, studio, faq, tools) déplacé dans les pages ; layouts supprimés ; le layout `default` (Header/Footer) s'applique via `app.vue`. page → layout → composants devient page → composants. Vérifié : Header/Footer présents, 1360 routes.
+- [x] **ARCH-2** · 🟡 medium · `composables/useSEO.js` · effort: medium
+      Trois systèmes de méta/SEO concurrents → duplication.
+      ✅ `usePageHead.js` + `utils/meta.js` supprimés (0 appelant) ; les 5 layouts migrés vers `useSEO` (déjà utilisé par 17 pages). `partners.vue` garde son `useHead` (page noindex + police custom). Un seul système.
 - [ ] **ARCH-4** · ⚪ low · `app/composables/*.js` · effort: medium
       12 composables quasi identiques (un `queryCollection` chacun), incohérents.
       Fix : un helper générique `queryPages(pageType, {lang, slug})`.
@@ -91,15 +91,15 @@
 - [x] **PERF-2** · 🟡 medium · `app/assets/teaser.mp4`, `icons/team-collaboration.svg`, `icons/community.svg` · effort: quick
       ≈11 Mo d'assets morts (teaser.mp4 7,2 Mo non référencé ; « SVG » qui sont des rasters).
       ✅ 3 fichiers supprimés (~11,5 Mo). Vérifié : `team-collaboration`/`community` utilisent leurs jumeaux `.png` (`image-ext="png"`, Header.vue:90,202) ; `teaser` utilise `.webm`. Build OK (1366 routes).
-- [ ] **PERF-1** · 🟡 medium · `kitsu.vue:255`, `carbon-report.vue:526`, 7 `<img>` bruts · effort: medium
-      Sources images surdimensionnées ; backgrounds/`<img>` contournent NuxtImg.
-      Fix : compresser les sources ; passer par NuxtImg ou fournir des webp.
-- [ ] **PERF-5** · ⚪ low · `app/pages/index.vue:18` · effort: small
-      Vidéo héros autoplay ; `preload="none"`+`autoplay` contradictoire ; aucune priorité LCP.
-      Fix : cohérence preload/autoplay ; priorité sur les images LCP.
-- [ ] **PERF-3** · ⚪ low · `SearchForm.vue` / Nuxt Content client · effort: large
-      Recherche = SQLite WASM (192 Ko) + base de contenu téléchargés par chaque visiteur.
-      Fix : générer un index Fuse statique (JSON) au build.
+- [x] **PERF-1** · 🟡 medium · `kitsu.vue`, `about.vue`, `kitsu-summit.vue` · effort: medium
+      Images contournant NuxtImg.
+      ✅ Fond CSS `/kitsu` : PNG 545 Ko → webp 55 Ko (10×, via sharp) ; `<img>` bruts (about, summit food + logos) → `<NuxtImg>` (webp auto). NB : les images de contenu déjà servies via NuxtImg sont optimisées au build ; leurs sources volumineuses ne pèsent que sur le repo, pas sur l'octet servi.
+- [x] **PERF-5** · ⚪ low · `app/pages/index.vue` · effort: small
+      Vidéo héros + priorité LCP.
+      ✅ `preload="none"` (contradictoire avec autoplay) → `metadata` ; poster (LCP, webp 376 px) préchargé en `fetchpriority=high`.
+- [x] **PERF-3** · ⚪ low · `server/routes/search-index.json.get.js`, `SearchForm.vue` · effort: large
+      Recherche = SQLite WASM côté client.
+      ✅ Index prégénéré en JSON statique (`/search-index.json`, route serveur reproduisant l'ancienne logique `usePages`) fetché à la demande. **SQLite WASM retiré du client (0 chunk)**. Vérifié : 120/120 chemins résolvent vers de vraies pages ; corrige aussi le lien home (`index`→`/`). `usePages.js` supprimé.
 - [x] **PERF-4** · ⚪ low · visualiseurs · effort: ~~low~~
       ✅ `import * as THREE` sans tree-shaking — **obsolète** : visualiseurs supprimés, `three` retiré.
 
@@ -278,3 +278,19 @@ Choix utilisateur : **option 2 (migrer le sitemap pour suivre Nuxt)**.
 **Vérification** : `nuxt generate` → 0 erreur (1360 routes) · `npm run lint` → exit 0 · sitemaps localisés 156 URLs chacun · `/sitemap.xml` redirige toujours vers l'index · alias phantom absents.
 
 **Laissé** (churn/majeures) : `eslint`/`@eslint/js` 10, `stylus-loader` 9, `eslint-plugin-vue` 10.9, `prettier` 3.9 — passe lint dédiée si voulu.
+
+---
+
+## Journal — session 2026-07-04 (refactors ARCH-1/2 + PERF-1/3/5)
+
+| Commit | Item |
+|--------|------|
+| `[seo] Unify meta handling on a single useSEO composable` | **ARCH-2** : `usePageHead`/`meta.js` morts supprimés, 5 layouts → `useSEO`. |
+| `[chore] Inline named-layout content into pages, drop shell indirection` | **ARCH-1** : 6 layouts nommés fusionnés dans leurs pages. |
+| `[perf] Fix hero video preload and prioritize the LCP poster` | **PERF-5**. |
+| `[perf] Serve /kitsu hero background as webp, NuxtImg for raw images` | **PERF-1** : 545 Ko→55 Ko + `<img>`→`<NuxtImg>`. |
+| `[perf] Prebuild search index as static JSON, drop client SQLite WASM` | **PERF-3** : SQLite WASM retiré du client, index statique. |
+
+**Vérification globale** : `npm run lint` → exit 0 · `nuxt generate` → 0 erreur (1360 routes) · sitemaps 156 URLs · OG per-feature/défaut OK · 120/120 chemins de recherche résolvent · 0 chunk SQLite côté client.
+
+**Reste de l'audit** (non demandé) : ARCH-4 (composables), ARCH-6 (localePath), TEST-2 (vitest), CLEAN-4 (grosses pages), SEC-2 CSP, SEC-4, DEP-1 (audit fix), + les « ne pas toucher » (ARCH-7, BUG-6, SEC-5).
