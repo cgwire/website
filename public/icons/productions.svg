@@ -1,10 +1,10 @@
 <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="67" height="67" rx="10" fill="#ECFFD9"/>
-<ellipse cx="34.5" cy="52" rx="25.5" ry="10" fill="#00B242" fill-opacity="0.18"/>
+<rect width="67" height="67" rx="10" fill="#E6EEFF"/>
+<ellipse cx="34.5" cy="52" rx="25.5" ry="10" fill="#2C78FD" fill-opacity="0.18"/>
 <g transform="rotate(-5 33.5 33.5)">
-<rect x="14" y="27" width="39" height="22" rx="2.5" fill="#C7EF9D" stroke="#00B242" stroke-width="1.1"/>
-<path d="M39 38 L29 33 L29 43 Z" fill="#2C78FD"/>
-<rect x="14" y="18" width="39" height="9" rx="1.5" fill="#00B242" stroke="#00B242" stroke-width="1.1"/>
+<rect x="14" y="27" width="39" height="22" rx="2.5" fill="#BBD5FF" stroke="#2C78FD" stroke-width="1.1"/>
+<path d="M39 38 L29 33 L29 43 Z" fill="#00B242"/>
+<rect x="14" y="18" width="39" height="9" rx="1.5" fill="#2C78FD" stroke="#2C78FD" stroke-width="1.1"/>
 <g clip-path="url(#clipProdTop)">
 <path d="M6 27 L10 27 L19 18 L15 18 Z" fill="white"/>
 <path d="M15 27 L19 27 L28 18 L24 18 Z" fill="white"/>

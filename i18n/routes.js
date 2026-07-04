@@ -14,6 +14,11 @@ export const routes = {
     fr: '/tarifs',
     ja: '/料金体系'
   },
+  productions: {
+    en: '/productions',
+    fr: '/productions',
+    ja: '/制作作品'
+  },
   privacy: {
     en: '/privacy',
     fr: '/confidentialite',

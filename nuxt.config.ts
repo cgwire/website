@@ -96,6 +96,16 @@ function buildPrerenderRoutes() {
     }
   }
 
+  // Localized standalone pages declared in i18n/routes.js (linked from the nav).
+  for (const key of ['productions']) {
+    const patterns = i18nRoutes[key]
+    if (!patterns) continue
+    for (const lang of PRERENDER_LANGS) {
+      const pattern = patterns[lang]
+      if (pattern) routes.add(withPrefix(lang, pattern))
+    }
+  }
+
   return Array.from(routes)
 }
 
