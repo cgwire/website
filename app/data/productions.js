@@ -1,5 +1,30 @@
 export const productions = [
   {
+    picture: 'brave-cat',
+    title: 'Brave Cat',
+    url: 'https://www.imdb.com/fr/title/tt38772301/'
+  },
+  {
+    picture: 'la-fille-dans-les-nuages',
+    title: 'La Fille dans les Nuages',
+    url: 'https://www.imdb.com/fr/title/tt20259240/'
+  },
+  {
+    picture: 'in-waves',
+    title: 'In Waves',
+    url: 'https://www.imdb.com/fr/title/tt27672817/'
+  },
+  {
+    picture: 'wakfu-5',
+    title: 'Wakfu Season 5',
+    url: 'https://www.kickstarter.com/projects/ankamaanimations/wakfu-the-animated-series-season-5'
+  },
+  {
+    picture: 'decorado',
+    title: 'Decorado',
+    url: 'https://www.imdb.com/fr/title/tt26923383/'
+  },
+  {
     picture: 'substance',
     title: 'The Substance',
     url: 'https://www.imdb.com/fr/title/tt17526714/'
