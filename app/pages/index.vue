@@ -348,6 +348,7 @@
               <NuxtImg
                 class="lean-quote-avatar"
                 :src="testimonial.meta.image"
+                :alt="testimonial.meta.interviewee"
                 format="webp"
               />
               {{ testimonial.meta.interviewee }}, {{ testimonial.meta.role }} at

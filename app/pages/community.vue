@@ -2,7 +2,11 @@
   <section class="section content community community-header">
     <div class="flexrow community-header">
       <div class="flexrow-item illustration">
-        <NuxtImg src="/images/community/meetup.jpg" format="webp" />
+        <NuxtImg
+          src="/images/community/meetup.jpg"
+          alt="Kitsu community meetup"
+          format="webp"
+        />
       </div>
       <div class="flexrow-item">
         <h2>
