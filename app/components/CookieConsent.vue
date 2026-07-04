@@ -43,7 +43,7 @@ const { decided, accept, decline } = useCookieConsent()
 .cookie-text {
   margin: 0;
   font-size: 0.85em;
-  max-width: 640px;
+  max-width: 900px;
 }
 
 .cookie-actions {
