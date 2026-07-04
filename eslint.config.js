@@ -120,7 +120,13 @@ export default defineConfig([
       // Additional rules for Vue
       'vue/component-definition-name-casing': ['error', 'kebab-case'],
       'vue/component-name-in-template-casing': ['error', 'kebab-case'],
-      'vue/custom-event-name-casing': ['error', 'kebab-case'],
+      // kebab-case for our own custom events, but exempt the framework-defined
+      // v-model events (update:modelValue must stay camelCase).
+      'vue/custom-event-name-casing': [
+        'error',
+        'kebab-case',
+        { ignores: ['/^update:/'] }
+      ],
       'vue/eqeqeq': ['error', 'always', { null: 'ignore' }],
       'vue/no-unused-emit-declarations': 'error',
       'vue/prop-name-casing': ['error', 'camelCase'],
