@@ -21,7 +21,7 @@
             loop
             muted
             playsinline
-            preload="none"
+            preload="metadata"
             width="800"
             height="800"
             autoplay
@@ -533,6 +533,18 @@ const sevenbearsBackground = computed(() => {
 
 const videoPoster = computed(() => {
   return img('/teaser.png', { format: 'webp', width: 376, height: 376 })
+})
+
+// Preload the hero poster (the LCP element) with high priority.
+useHead({
+  link: [
+    {
+      rel: 'preload',
+      as: 'image',
+      href: videoPoster.value,
+      fetchpriority: 'high'
+    }
+  ]
 })
 
 const featureTab = ref('todos')
