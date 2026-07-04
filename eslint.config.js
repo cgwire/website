@@ -65,6 +65,7 @@ export default defineConfig([
         useRouter: 'readonly',
         useImage: 'readonly',
         useAsyncData: 'readonly',
+        useFetch: 'readonly',
         queryCollection: 'readonly',
         createError: 'readonly',
         // i18n
@@ -74,7 +75,6 @@ export default defineConfig([
         useSetI18nParams: 'readonly',
         // Project utils (auto-imported)
         usePage: 'readonly',
-        usePages: 'readonly',
         useSEO: 'readonly',
         useI18NSlug: 'readonly',
         useStudio: 'readonly',

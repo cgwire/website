@@ -231,7 +231,7 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: true,
       crawlLinks: true,
-      routes: prerenderRoutes,
+      routes: [...prerenderRoutes, '/search-index.json'],
       // Since Nuxt 4.4 the crawler discovers locale-prefixed sitemap aliases
       // (/fr/sitemap.xml, /ja/sitemap.xml) that @nuxtjs/sitemap does not serve
       // (they 500). The real localized sitemaps are /__sitemap__/<locale>.xml,

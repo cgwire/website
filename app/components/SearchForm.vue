@@ -80,17 +80,19 @@ import Fuse from 'fuse.js'
 import { Search, X, FileText, ChevronRight } from 'lucide-vue-next'
 
 const { locale, t } = useI18n()
-const { pagesQuery } = usePages(locale)
 
 const isOpen = ref(false)
 const query = ref('')
 const inputRef = ref(null)
 
-const { data: posts } = await useAsyncData(
-  `search-data-${locale.value}`,
-  pagesQuery,
-  { watch: [locale], server: false, lazy: true }
-)
+// Prebuilt at build time (/search-index.json), fetched on the client on demand.
+// Avoids running queryCollection in the browser (keeps the Content SQLite WASM
+// off the client bundle).
+const { data: searchIndex } = await useFetch('/search-index.json', {
+  server: false,
+  lazy: true
+})
+const posts = computed(() => searchIndex.value?.[locale.value] ?? [])
 
 const fuse = computed(
   () =>
