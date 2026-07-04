@@ -2272,6 +2272,12 @@
     }
   },
   "studios": {
+    "komposit": {
+      "link": "https://www.komposit.be/",
+      "elementKey": "komposit",
+      "name": "Komposit",
+      "type": ["shorts"]
+    },
     "30studio": {
       "link": "https://www.3point0studio.com/",
       "elementKey": "30studio",
@@ -3054,14 +3060,6 @@
     "name": "ICA ECV",
     "type": [
       "schools"
-    ]
-  },
-  "illogic-studios": {
-    "link": "https://www.illogicstudios.com/",
-    "elementKey": "illogic-studios",
-    "name": "Illogic Studios",
-    "type": [
-      "shorts"
     ]
   },
   "isart": {
