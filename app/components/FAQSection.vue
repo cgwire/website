@@ -9,7 +9,7 @@
       </span>
     </h2>
 
-    <FAQItem v-for="faq in faqs" :faq="faq" />
+    <FAQItem v-for="faq in faqs" :key="faq.id" :faq="faq" />
   </section>
 </template>
 
@@ -32,10 +32,6 @@ watchEffect(() => {
     panel.value = faqs.value[0].id
   }
 })
-
-function selectPanel(section) {
-  panel.value = section
-}
 </script>
 
 <style scoped>

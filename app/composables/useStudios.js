@@ -8,7 +8,7 @@ export function useStudios(locale, type) {
     if (type.value) {
       res = res.filter(studio => {
         return (
-          studio.meta.type == type.value ||
+          studio.meta.type === type.value ||
           studio.meta.type.includes(type.value)
         )
       })
