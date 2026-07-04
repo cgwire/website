@@ -128,9 +128,10 @@
 - [ ] **DEP-1** · 🟡 moderate · toolchain (dev) · effort: quick
       `npm audit` : 38 vulns mais quasi toutes en dev/build, non embarquées (impact prod ≈ nul).
       ⚠️ **Tenté et reverté** : `npm audit fix` (sans `--force`) réécrit tout le lockfile et **casse le build** (un outil de build bumpé n'analyse plus les JSON de locale). Lockfile restauré + `npm ci`, build re-vert. Comme rien n'atteint la prod, on laisse en l'état. À reprendre finement (fixer paquet par paquet) si besoin.
-- [ ] **DEP-3** · ⚪ low · `package.json` · effort: medium
+- [x] **DEP-3** · ⚪ low · `package.json`, `nuxt.config.ts` · effort: medium
       Retards de version.
-      ⚠️ **Tenté, non appliqué — bloqué par une incompatibilité réelle** : la montée de `nuxt` (même la mineure dans le range, 4.3.1→4.4.8, tirée par `npm update`) casse le prérendu des sitemaps localisés (`/fr/sitemap.xml`, `/ja/sitemap.xml` → 500, Nitro 2.13 vs `@nuxtjs/sitemap` 7). Il faut **épingler nuxt en 4.3.x** ou **migrer la config sitemap** pour 4.4. `npm audit fix` casse aussi le build (parse JSON). Un lot « runtime sûr » (mediabunny/sass/better-sqlite3/zod/wrangler) **builde** mais `npm install` re-résout les ranges `^` et fait dériver l'outillage de lint. → **nécessite un chantier dédié et testé** (pas un passage rapide), avec ton arbitrage nuxt-pin vs migration sitemap. Tout reverté, repo à l'état connu-bon.
+      ✅ **Fait (option 2 : migration sitemap pour Nuxt 4.4)**. `nuxt` 4.3→**4.4.8** + `@nuxtjs/sitemap` 7→**8** ; le blocage sitemap (les alias `/fr|ja/sitemap.xml` que Nitro 2.13 prérend et qui 500) est réglé par `nitro.prerender.ignore`. Puis bump des mineures : `@nuxt/content` 3.15, `@nuxtjs/i18n` 10.4, `vue-i18n` 11.4, `mediabunny` 1.50, `sass` 1.101, `better-sqlite3` 12.11, `zod` 4.4, `wrangler` 4.107, `consola` 3.4. **Build + lint verts, sitemaps localisés OK (156 URLs chacun).**
+      ⏳ **Laissé volontairement** : majeures `eslint`/`@eslint/js` 10, `stylus-loader` 9, et l'outillage lint mineur (`eslint-plugin-vue` 10.9, `prettier` 3.9) — bumper les linters reformate l'arbre et durcit des règles (churn), à faire dans une passe lint dédiée si souhaité.
 - [ ] **DEP-4** · ⚪ low · `package.json` · effort: quick
       Pinning hétérogène (`^` vs versions exactes).
       Fix : harmoniser.
@@ -257,3 +258,22 @@ Décisions utilisateur appliquées + hygiène rapide.
 **Montées de version (DEP-3) — BLOQUÉ, non appliqué** (voir DEP-3 ci-dessus) : nuxt 4.4 (même mineure) casse le prérendu des sitemaps localisés ; `npm audit fix` casse le parse JSON. Nécessite un chantier dédié (épingler nuxt 4.3.x ou migrer le sitemap). Repo laissé à l'état connu-bon (build + lint verts).
 
 **Reco** : maintenant que `npm run lint` est vert, l'ajouter à une CI (ou un hook pre-commit) pour éviter que la dette lint ne revienne.
+
+---
+
+## Journal — session 2026-07-04 (montée Nuxt 4.4 + sitemap — DÉBLOQUÉ)
+
+Choix utilisateur : **option 2 (migrer le sitemap pour suivre Nuxt)**.
+
+**Root cause trouvée** : sous Nuxt 4.4 (Nitro 2.13), le crawler prérend les alias i18n `/fr/sitemap.xml` et `/ja/sitemap.xml`. `@nuxtjs/sitemap` fournit `/sitemap.xml` comme **page de redirection** vers `/sitemap_index.xml`, mais pas ses variantes localisées → 500 → build avorté. Les vrais sitemaps (`/__sitemap__/<locale>.xml` + `/sitemap_index.xml`) sont, eux, corrects.
+
+**Fix** : `nitro.prerender.ignore: [/^\/(fr|ja)\/sitemap\.xml$/]` (commenté dans `nuxt.config.ts`).
+
+| Commit | Contenu |
+|--------|---------|
+| `[build] Upgrade to Nuxt 4.4 + sitemap 8, fix localized sitemap prerender` | nuxt 4.3→4.4.8, sitemap 7→8, ignore des alias phantom |
+| `[chore] Bump content, i18n, vue-i18n and runtime libs to latest minors` | content 3.15, i18n 10.4, vue-i18n 11.4, mediabunny 1.50, sass 1.101, better-sqlite3 12.11, zod 4.4, wrangler 4.107, consola 3.4 |
+
+**Vérification** : `nuxt generate` → 0 erreur (1360 routes) · `npm run lint` → exit 0 · sitemaps localisés 156 URLs chacun · `/sitemap.xml` redirige toujours vers l'index · alias phantom absents.
+
+**Laissé** (churn/majeures) : `eslint`/`@eslint/js` 10, `stylus-loader` 9, `eslint-plugin-vue` 10.9, `prettier` 3.9 — passe lint dédiée si voulu.
