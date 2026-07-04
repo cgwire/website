@@ -10,7 +10,7 @@ const head = useLocaleHead()
         <slot />
 
         <Footer />
-        
+
         <CookieConsent />
       </Body>
     </Html>

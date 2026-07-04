@@ -68,6 +68,7 @@ export default defineConfig([
         useFetch: 'readonly',
         useState: 'readonly',
         useRuntimeConfig: 'readonly',
+        useCookie: 'readonly',
         queryCollection: 'readonly',
         createError: 'readonly',
         // i18n
@@ -76,6 +77,7 @@ export default defineConfig([
         useLocalePath: 'readonly',
         useSetI18nParams: 'readonly',
         // Project utils (auto-imported)
+        useABTest: 'readonly',
         useCookieConsent: 'readonly',
         usePage: 'readonly',
         useSEO: 'readonly',

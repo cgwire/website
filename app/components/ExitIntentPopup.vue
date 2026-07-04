@@ -1,43 +1,34 @@
 <template>
   <Teleport v-if="variant === 'variant_b'" to="body">
     <Transition name="modal">
-      <div
-        v-if="visible"
-        class="overlay"
-        @click.self="close"
-      >
+      <div v-if="visible" class="overlay" @click.self="close">
         <div class="popup">
-          <button
-            class="close-btn"
-            @click="close"
-          >
-            ×
-          </button>
+          <button class="close-btn" @click="close">×</button>
 
           <div class="content">
             <div class="left">
-              <div class="badge">{{$t("exit-popup.badge")}}</div>
+              <div class="badge">{{ $t('exit-popup.badge') }}</div>
 
-              <h2>{{$t("exit-popup.title")}}</h2>
+              <h2>{{ $t('exit-popup.title') }}</h2>
 
-              <p>{{$t("exit-popup.description")}}</p>
+              <p>{{ $t('exit-popup.description') }}</p>
 
               <a
-                    class="navbar-item signup"
-                    :href="`https://account.cg-wire.com/signup?locale=${$i18n.locale}`"
-                >
-                    {{ $t('header sign up') }}
-                </a>
+                class="navbar-item signup"
+                :href="`https://account.cg-wire.com/signup?locale=${$i18n.locale}`"
+              >
+                {{ $t('header sign up') }}
+              </a>
             </div>
 
             <div class="right">
               <div class="illustration">
                 <NuxtImg
-                    src="/images/logo-kitsu.svg"
-                    alt="CGWire"
-                    width=150
+                  src="/images/logo-kitsu.svg"
+                  alt="CGWire"
+                  width="150"
                 />
-                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -47,57 +38,41 @@
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount, ref } from "vue";
+import { onMounted, onBeforeUnmount, ref } from 'vue'
 
 const variant = useABTest('exit_intent_popup_test', [
   { name: 'control', weight: 50 },
-  { name: 'variant_b', weight: 50 },
+  { name: 'variant_b', weight: 50 }
 ])
 
-const visible = ref(false);
-const email = ref("");
+const visible = ref(false)
 
 function showPopup() {
   // const alreadySeen = localStorage.getItem("exit-popup");
 
   // if (!alreadySeen) {
-    visible.value = true;
-    // localStorage.setItem("exit-popup", "shown");
+  visible.value = true
+  // localStorage.setItem("exit-popup", "shown");
   // }
 }
 
 function close() {
-  visible.value = false;
-}
-
-function submit() {
-  console.log("Email:", email.value);
-
-  close();
+  visible.value = false
 }
 
 function handleMouseLeave(e) {
-  if (
-    e.clientY <= 0 &&
-    !visible.value
-  ) {
-    showPopup();
+  if (e.clientY <= 0 && !visible.value) {
+    showPopup()
   }
 }
 
 onMounted(() => {
-  document.addEventListener(
-    "mouseleave",
-    handleMouseLeave
-  );
-});
+  document.addEventListener('mouseleave', handleMouseLeave)
+})
 
 onBeforeUnmount(() => {
-  document.removeEventListener(
-    "mouseleave",
-    handleMouseLeave
-  );
-});
+  document.removeEventListener('mouseleave', handleMouseLeave)
+})
 </script>
 
 <style scoped>
@@ -117,8 +92,7 @@ onBeforeUnmount(() => {
   background: #171c28;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
   position: relative;
 }
 
@@ -136,12 +110,7 @@ onBeforeUnmount(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:
-    linear-gradient(
-      135deg,
-      #2d4fff,
-      #596fff
-    );
+  background: linear-gradient(135deg, #2d4fff, #596fff);
 }
 
 .illustration {
@@ -184,7 +153,7 @@ input {
   color: white;
 }
 
-button[type="submit"] {
+button[type='submit'] {
   border: none;
   border-radius: 12px;
   padding: 14px 20px;
@@ -202,14 +171,14 @@ button[type="submit"] {
   height: 36px;
   border: none;
   border-radius: 50%;
-  background: rgba(255,255,255,.08);
+  background: rgba(255, 255, 255, 0.08);
   color: white;
   cursor: pointer;
 }
 
 .modal-enter-active,
 .modal-leave-active {
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
 
 .modal-enter-from,
@@ -219,7 +188,7 @@ button[type="submit"] {
 
 .modal-enter-from .popup,
 .modal-leave-to .popup {
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
 .popup {
@@ -227,8 +196,7 @@ button[type="submit"] {
   background: #fff;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
   position: relative;
 }
 
@@ -247,11 +215,7 @@ button[type="submit"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    135deg,
-    #2ecc71,
-    #27ae60
-  );
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
 }
 
 .illustration {
