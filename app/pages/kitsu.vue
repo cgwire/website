@@ -325,11 +325,6 @@ const toggleTab = tab => {
     display inline-flex
     margin-bottom 10px
 
-    &.2-modules
-        margin auto
-        text-align center
-        margin-bottom 10px
-
 .kitsu-header.flexrow
   padding: 2em
   margin: auto
