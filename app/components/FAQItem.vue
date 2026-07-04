@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import { ChevronRight } from 'lucide-vue-next'
 
 const props = defineProps({
@@ -20,7 +19,7 @@ const props = defineProps({
       target="_blank"
     >
       {{ faq.title }}
-      <ChevronRight class="chevron" />
+      <chevron-right class="chevron" />
     </NuxtLink>
   </div>
 </template>

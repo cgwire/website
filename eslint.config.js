@@ -81,7 +81,14 @@ export default defineConfig([
         useI18NSlug: 'readonly',
         useStudio: 'readonly',
         useStudios: 'readonly',
-        useMarkdownPage: 'readonly'
+        useMarkdownPage: 'readonly',
+        useCustomerStory: 'readonly',
+        useCustomerStories: 'readonly',
+        useTestimonial: 'readonly',
+        useTestimonials: 'readonly',
+        useTool: 'readonly',
+        useTools: 'readonly',
+        $t: 'readonly'
       }
     },
     rules: {

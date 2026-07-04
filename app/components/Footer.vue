@@ -225,7 +225,7 @@
             </nuxt-link>
           </li>
 
-          <li v-for="faq in faqPages">
+          <li v-for="faq in faqPages" :key="faq.meta.slug">
             <NuxtLink
               :to="
                 $localePath({

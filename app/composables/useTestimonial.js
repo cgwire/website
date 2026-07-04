@@ -5,7 +5,7 @@ export function useTestimonial(slug, locale) {
       .where('pageType', '=', 'testimonials')
       .all()
 
-    res = res.filter(t => t.stem.split('/')[2] == slug.value)
+    res = res.filter(t => t.stem.split('/')[2] === slug.value)
 
     return res[0]
   }

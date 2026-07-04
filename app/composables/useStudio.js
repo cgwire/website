@@ -5,7 +5,7 @@ export function useStudio(slug, locale) {
       .where('pageType', '=', 'studios')
       .all()
 
-    res = res.filter(t => t.stem.split('/')[2] == slug.value)
+    res = res.filter(t => t.stem.split('/')[2] === slug.value)
 
     return res[0]
   }

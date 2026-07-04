@@ -40,8 +40,6 @@
 
 <script setup>
 const { t, locale } = useI18n()
-const localePath = useLocalePath()
-const route = useRoute()
 
 const { slug } = await useI18NSlug()
 const { queryStudio } = useStudio(slug, locale)

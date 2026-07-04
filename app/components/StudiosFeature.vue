@@ -2,6 +2,7 @@
   <ul class="customers">
     <CustomerLogoBlock
       v-for="studio in studios"
+      :key="studio.meta.elementKey"
       :link="studio.meta.link"
       :element-key="studio.meta.elementKey"
       :name="studio.meta.name"
