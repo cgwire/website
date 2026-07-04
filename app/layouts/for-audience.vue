@@ -54,6 +54,7 @@
             <NuxtImg
               class="quote-avatar"
               :src="'/images/testimonials/' + audiencePage.quote.avatar"
+              :alt="audiencePage.quote.author"
             />
             {{ audiencePage.quote.author }}
           </footer>
@@ -195,17 +196,17 @@ useHead({
     { name: 'og:title', content: title },
     { name: 'og:type', content: 'website' },
     { name: 'og:url', content: url },
-    // {
-    //   name: 'og:image',
-    //   content: 'https://www.cg-wire.com/_nuxt/' + imgPath
-    // },
+    {
+      name: 'og:image',
+      content: 'https://www.cg-wire.com/og/team-collaboration.png'
+    },
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
     { name: 'twitter:url', content: url },
-    // {
-    //   name: 'twitter:image',
-    //   content: 'https://www.cg-wire.com/_nuxt/' + imgPath
-    // },
+    {
+      name: 'twitter:image',
+      content: 'https://www.cg-wire.com/og/team-collaboration.png'
+    },
     { name: 'twitter:card', content: 'summary_large_image' }
   ]
 })

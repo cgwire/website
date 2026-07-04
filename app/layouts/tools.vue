@@ -42,21 +42,17 @@ useHead({
     { name: 'og:title', content: title },
     { name: 'og:type', content: 'website' },
     { name: 'og:url', content: url },
-    // {
-    //   name: 'og:image',
-    //   content: imgPath
-    //     ? 'https://www.cg-wire.com/_nuxt/' + imgPath
-    //     : 'https://www.cg-wire.com/_nuxt/team-collaboration.83584c91.png'
-    // },
+    {
+      name: 'og:image',
+      content: 'https://www.cg-wire.com/og/team-collaboration.png'
+    },
     { name: 'twitter:title', content: title },
     { name: 'twitter:description', content: description },
     { name: 'twitter:url', content: url },
-    // {
-    //   name: 'twitter:image',
-    //   content: imgPath
-    //     ? 'https://www.cg-wire.com/_nuxt/' + imgPath
-    //     : 'https://www.cg-wire.com/_nuxt/team-collaboration.83584c91.png'
-    // },
+    {
+      name: 'twitter:image',
+      content: 'https://www.cg-wire.com/og/team-collaboration.png'
+    },
     { name: 'twitter:card', content: 'summary_large_image' }
   ]
 })
