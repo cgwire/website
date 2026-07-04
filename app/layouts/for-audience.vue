@@ -148,9 +148,7 @@
 </template>
 
 <script setup>
-const route = useRoute()
 const { t, locale } = useI18n()
-const localePath = useLocalePath()
 
 import { ref } from 'vue'
 
@@ -183,32 +181,9 @@ const { data: studios } = await useAsyncData(
   { watch: [locale, type] }
 )
 
-const title = `CGWire | Kitsu / ${audiencePage.i18n.title}`
-const description = audiencePage.i18n.metaDescription
-const path = localePath(route.name)
-const url = `https://www.cg-wire.com${path}`
-
-useHead({
-  title,
-  meta: [
-    { name: 'description', content: description },
-    { name: 'og:description', content: description },
-    { name: 'og:title', content: title },
-    { name: 'og:type', content: 'website' },
-    { name: 'og:url', content: url },
-    {
-      name: 'og:image',
-      content: 'https://www.cg-wire.com/og/team-collaboration.png'
-    },
-    { name: 'twitter:title', content: title },
-    { name: 'twitter:description', content: description },
-    { name: 'twitter:url', content: url },
-    {
-      name: 'twitter:image',
-      content: 'https://www.cg-wire.com/og/team-collaboration.png'
-    },
-    { name: 'twitter:card', content: 'summary_large_image' }
-  ]
+useSEO({
+  title: `CGWire | Kitsu / ${audiencePage.i18n.title}`,
+  description: audiencePage.i18n.metaDescription
 })
 
 const panel = ref(null)

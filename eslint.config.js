@@ -73,8 +73,6 @@ export default defineConfig([
         useLocalePath: 'readonly',
         useSetI18nParams: 'readonly',
         // Project utils (auto-imported)
-        buildPageMeta: 'readonly',
-        usePageHead: 'readonly',
         usePage: 'readonly',
         usePages: 'readonly',
         useSEO: 'readonly',
