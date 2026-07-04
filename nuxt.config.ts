@@ -203,6 +203,12 @@ export default defineNuxtConfig({
     useClassNames: false
   },
   image: {
+    // Force ipx so the provider is not auto-switched to `netlify` on Netlify
+    // builds. The Netlify provider emits /.netlify/images URLs that the static
+    // prerender crawler cannot fetch (404 -> failOnError aborts the build), and
+    // those runtime URLs would also 404 on the Cloudflare deploy. ipx keeps
+    // fully static /_ipx/ output on every target.
+    provider: 'ipx',
     dir: 'assets/',
     format: ['webp'],
     screens: {
