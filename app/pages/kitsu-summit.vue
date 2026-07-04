@@ -84,12 +84,20 @@
           </div>
           <div class="sponsor-item">
             <a href="https://lenovo.com/" target="_blank">
-              <img src="~/assets/images/summit/logo-lenovo.png" alt="Lenovo" />
+              <NuxtImg
+                src="/images/summit/logo-lenovo.png"
+                alt="Lenovo"
+                format="webp"
+              />
             </a>
           </div>
           <div class="sponsor-item tvpaint">
             <a href="https://tvpaint.com/" target="_blank">
-              <img src="~/assets/images/summit/logo-tvpaint.png" alt="Wizz" />
+              <NuxtImg
+                src="/images/summit/logo-tvpaint.png"
+                alt="Wizz"
+                format="webp"
+              />
             </a>
           </div>
         </div>
@@ -267,7 +275,7 @@
               <h2>{{ page.meta.registration.food.title }}</h2>
               <div>
                 <a href="https://www.instagram.com/mariejuliencuisine/">
-                  <img src="~/assets/images/summit/food.jpg" />
+                  <NuxtImg src="/images/summit/food.jpg" alt="" format="webp" />
                 </a>
                 <span>{{ page.meta.registration.food.note }}</span>
               </div>

@@ -1,7 +1,12 @@
 <template>
   <section class="section content about">
     <div class="has-text-centered">
-      <img alt="" src="~/assets/images/illustrations/about.png" width="600" />
+      <NuxtImg
+        alt=""
+        src="/images/illustrations/about.png"
+        width="600"
+        format="webp"
+      />
     </div>
 
     <div class="tile has-text-centered">

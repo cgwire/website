@@ -266,7 +266,7 @@ const toggleTab = tab => {
   padding-top 0
 
 .kitsu-header-wrapper
-  background-image url('~/assets/images/illustrations/kitsu-header.png')
+  background-image url('~/assets/images/illustrations/kitsu-header.webp')
   background-size 100%
   background-position: 0px 0px
   height 600px
