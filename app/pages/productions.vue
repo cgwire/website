@@ -30,7 +30,7 @@
           :src="'/images/productions/' + production.picture + '.png'"
           :alt="production.title"
           format="webp"
-          width="500"
+          width="600"
         />
         <span class="prod-card-title">{{ production.title }}</span>
       </a>
@@ -45,7 +45,7 @@ import { productions } from '~/data/productions'
 
 const { t } = useI18n()
 
-// A handful of stills power the blurred hero backdrop.
+// A handful of stills power the soft blurred hero backdrop.
 const heroStills = productions.slice(0, 12)
 
 useSEO({
@@ -56,8 +56,8 @@ useSEO({
 
 <style lang="stylus" scoped>
 .productions-page
-  background #101216
-  color #f3f4f6
+  background #ffffff
+  color #1b1e24
 
 // --- Hero ---
 .prod-hero
@@ -76,7 +76,7 @@ useSEO({
   grid-template-columns repeat(6, 1fr)
   grid-auto-rows 1fr
   transform scale(1.1)
-  filter blur(7px) brightness(0.45) saturate(1.15)
+  filter blur(8px) brightness(1.05) saturate(1.12)
 
   img
     width 100%
@@ -88,7 +88,7 @@ useSEO({
   content ''
   position absolute
   inset 0
-  background radial-gradient(ellipse at center, rgba(16, 18, 22, 0.5), rgba(16, 18, 22, 0.92))
+  background linear-gradient(to bottom, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.85) 55%, #ffffff)
 
 .prod-hero-inner
   position relative
@@ -100,32 +100,33 @@ useSEO({
   text-transform uppercase
   letter-spacing 0.22em
   font-size 0.95rem
-  color #9fb4d6
+  color #54656f
   margin-bottom 0.7rem
 
 .prod-title
   font-size 2.8rem
   font-weight bold
-  color white
+  color #14161a
   margin 0
   line-height 1.1
 
 // --- Poster wall ---
 .prod-wall
   display grid
-  grid-template-columns repeat(auto-fill, minmax(300px, 1fr))
-  gap 0.9rem
+  grid-template-columns repeat(auto-fill, minmax(400px, 1fr))
+  gap 1.1rem
   padding 1.75rem
-  max-width 1440px
+  max-width 1500px
   margin 0 auto
 
 .prod-card
   position relative
   display block
   overflow hidden
-  border-radius 12px
+  border-radius 14px
   aspect-ratio 460 / 260
-  background #1b1e24
+  background #e9ecf1
+  box-shadow 0 1px 4px rgba(0, 0, 0, 0.08)
 
   img
     width 100%
@@ -139,10 +140,10 @@ useSEO({
     left 0
     right 0
     bottom 0
-    padding 0.7rem 0.9rem
+    padding 0.8rem 1rem
     color white
     font-weight 600
-    font-size 0.95rem
+    font-size 1rem
     text-align left
     background linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0))
     transform translateY(0.4rem)
@@ -168,7 +169,7 @@ useSEO({
     grid-template-columns repeat(3, 1fr)
 
   .prod-wall
-    grid-template-columns repeat(auto-fill, minmax(150px, 1fr))
-    gap 0.5rem
+    grid-template-columns repeat(auto-fill, minmax(170px, 1fr))
+    gap 0.6rem
     padding 0.75rem
 </style>
