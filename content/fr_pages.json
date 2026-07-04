@@ -1070,15 +1070,15 @@
       "slug": "casting-management",
       "image": "casting-management.png",
       "header": {
-        "tagline": "Sachez toujours quels plans sont prêts à être construits",
-        "subtitle": "Gestion du casting",
+        "tagline": "Gestion du casting",
+        "subtitle": "Sachez quels plans sont prêts à être construits",
         "explanation": "Rechercher des informations de casting dans des tableurs et des e-mails ralentit toute votre pipeline. Kitsu donne à chaque plan une décomposition structurée afin que vos constructeurs de scènes sachent toujours exactement ce qui est prêt, ce qui manque et ce qu'ils doivent faire ensuite.",
         "metrics": "Plus de 200 000 assets ont été gérés avec Kitsu"
       },
       "features": [
         {
           "title": "Listez votre breakdown",
-          "subtitle": "Arrêtez de deviner ce qui appartient à chaque plan",
+          "subtitle": "Sachez ce qui appartient à chaque plan",
           "content": "Créez des tableaux de décomposition montrant les assets de casting pour chaque plan, organisés par type. Ajoutez des métadonnées directement à chaque entrée pour que votre constructeur de scènes dispose de tout ce dont il a besoin avant même d'ouvrir un fichier.",
           "image": "kitsu-tables.png",
           "gradient": 1,
@@ -1087,7 +1087,7 @@
         },
         {
           "title": "Liez vos assets entre-eux",
-          "subtitle": "Fini le suivi manuel de ce qui va avec quoi",
+          "subtitle": "Suivez automatiquement ce qui va avec quoi",
           "content": "Connectez les assets pour définir leurs relations : peuplez des décors, attachez des accessoires aux personnages ou modélisez toute dépendance adaptée à votre flux de travail.",
           "image": "kitsu-asset-links.png",
           "shadow": true,
@@ -1095,7 +1095,7 @@
         },
         {
           "title": "Exportez votre breakdown",
-          "subtitle": "Vos outils de pipeline ne devraient pas avoir à vous attendre",
+          "subtitle": "Rendez vos données portables",
           "content": "Exportez les données de casting en fichier .csv plat ou en vue colonnes en quelques secondes. Ou ignorez complètement l'étape manuelle et connectez votre constructeur de scènes directement à l'API.",
           "image": "kitsu-export.png",
           "shadow": true,
@@ -1104,7 +1104,7 @@
         },
         {
           "title": "Suivez la disponibilité des plans",
-          "subtitle": "Sachez ce qui est réellement prêt",
+          "subtitle": "Sachez quand les assets sont disponibles",
           "content": "Obtenez des statistiques de disponibilité par plan basées sur la complétude du casting. Repérez les lacunes avant qu'elles ne deviennent un goulot d'étranglement, et transmettez à votre constructeur de scènes en toute confiance.",
           "image": "kitsu-readiness.png",
           "reverted": true,
@@ -1112,7 +1112,7 @@
         },
         {
           "title": "Réutilisez les assets d'une production à l'autre",
-          "subtitle": "Le travail dupliqué érode votre bibliothèque d'assets",
+          "subtitle": "Optimisez la création d'assets",
           "content": "Puisez dans une bibliothèque partagée pour éviter que les équipes recréent des assets qui existent déjà et ont été validés. Tout le monde fait référence à la même source de vérité.",
           "image": "kitsu-library.png",
           "colored": true,
@@ -1192,16 +1192,16 @@
       "image": "production-tracker.png",
       "shadow": true,
       "header": {
-        "tagline": "Livrez dans les délais et dans le budget",
-        "subtitle": "Suivi de production",
+        "tagline": "Suivi de production",
+        "subtitle": "Livrez dans les délais et dans le budget",
         "explanation": "La plupart des problèmes de production sont visibles avant de devenir critiques. Kitsu vous donne les outils de planification, de suivi du temps, de surveillance des quotas et de prévision budgétaire pour les détecter tôt. Obtenez une image claire de votre production à chaque niveau, et entrez dans chaque réunion avec les parties prenantes avec des données précises.",
         "metrics": "Plus de 1 000 productions ont déjà été suivies avec Kitsu"
       },
       "features": [
         {
           "key": "report",
-          "title": "Arrêtez de deviner où en est votre production",
-          "subtitle": "Obtenez une vue à 360° de vos données",
+          "title": "Sachez où en est votre production",
+          "subtitle": "Une vue à 360° de vos données",
           "content": "Obtenez des statistiques de progression précises sur tous vos projets, des résumés de haut niveau aux détails au niveau des tâches. Partagez des rapports avec les clients ou les producteurs directement depuis Kitsu grâce aux outils d'exportation intégrés.",
           "image": "kitsu-report.png",
           "gradient": 1,
@@ -1211,7 +1211,7 @@
         {
           "key": "schedule",
           "title": "Planifiez votre travail",
-          "subtitle": "Les conflits de ressources surviennent quand la planification est vague",
+          "subtitle": "Détection des conflits",
           "content": "Définissez les durées des projets, fixez des jalons et voyez comment le travail est réparti dans votre équipe. Repérez les surcharges et les lacunes tôt pour pouvoir ajuster avant qu'elles ne ralentissent la production.",
           "image": "kitsu-tables.png",
           "shadow": true,
@@ -1220,7 +1220,7 @@
         {
           "key": "quotas",
           "title": "Définissez vos attentes",
-          "subtitle": "Les problèmes de productivité sont invisibles sans les bonnes données",
+          "subtitle": "Suivi de la productivité",
           "content": "Fixez des objectifs de production quotidiens ou hebdomadaires pour vos artistes et suivez les progrès. Identifiez qui est bloqué et qui est en avance pour pouvoir agir, pas seulement rendre compte.",
           "image": "kitsu-quotas.png",
           "shadow": true,
@@ -1238,15 +1238,15 @@
         },
         {
           "title": "Suivez le temps passé",
-          "subtitle": "Les dépassements de budget commencent par des heures que personne ne suit",
-          "content": "Les artistes enregistrent le temps directement dans Kitsu. Vous obtenez une répartition claire par artiste, asset ou plan pour savoir toujours où vont réellement vos heures de production.",
+          "subtitle": "Assurez-vous que chacun remplit sa feuille de temps",
+          "content": "Les artistes enregistrent le temps directement dans Kitsu. Vous obtenez une répartition claire par artiste, asset ou plan pour savoir toujours où vont réellement vos heures de production. Vous pouvez anticiper les dépassements de coûts.",
           "image": "kitsu-timesheets.png",
           "shadow": true,
           "colored": true
         },
         {
           "title": "Anticipez les dépassements de budget",
-          "subtitle": "Le risque financier augmente quand vous l'apprenez trop tard",
+          "subtitle": "Des problèmes de budget tardifs entraînent des risques financiers",
           "content": "Comparez les dépenses actuelles à votre budget à tout moment de la production. Effectuez des scénarios de coûts avant de prendre des décisions pour pouvoir corriger le tir tant que vous avez encore des options.",
           "image": "kitsu-budget.png",
           "shadow": true,
@@ -1294,7 +1294,7 @@
         },
         {
           "title": "Faites vos validations en équipe.",
-          "subtitle": "Mettez fin au problème des retours désalignés",
+          "subtitle": "Alignez les retours",
           "content": "Lancez des sessions de révision synchronisées pour que chaque participant regarde la même image au même moment. Plus de notes contradictoires de personnes qui ont révisé des coupes différentes.",
           "image": "kitsu-room.png",
           "shadow": true,
@@ -1311,14 +1311,14 @@
         },
         {
           "title": "Annotez directement sur les images",
-          "subtitle": "Remplacez les notes vagues par des directions précises",
+          "subtitle": "Donnez des directions précises",
           "content": "Dessinez, surlignez et écrivez directement sur n'importe quelle image. Les annotations sont épinglées à la version spécifique et visibles par toute l'équipe, afin que rien ne se perde dans la traduction.",
           "image": "kitsu-annotations.png",
           "colored": true
         },
         {
           "title": "Historique complet des versions",
-          "subtitle": "Ne perdez jamais la trace de ce qui a été livré",
+          "subtitle": "Gardez la trace de ce qui a été livré",
           "content": "Chaque aperçu soumis est stocké et accessible. Revisitez n'importe quelle version antérieure pour suivre l'évolution d'un plan, résoudre des litiges et confirmer que les retours précédents ont été pris en compte.",
           "image": "kitsu-versions.png",
           "gradient": 3,
@@ -1339,15 +1339,15 @@
       "slug": "studio-database",
       "image": "studio-database.png",
       "header": {
-        "tagline": "Une source de vérité unique pour toute votre production",
-        "subtitle": "Base de données studio",
+        "tagline": "Base de données studio",
+        "subtitle": "Une source de vérité unique",
         "explanation": "Les données de production dispersées dans des outils et des disques partagés nuisent à l'efficacité de la pipeline. Kitsu fournit une API HTTP centrale qui rend chaque asset, plan, tâche et assignation interrogeable depuis n'importe quel outil de votre studio. Votre pipeline ne parle qu'à un seul endroit, vos artistes restent concentrés sur le travail.",
         "metrics": "Plus de 100 000 appels à l'API de Kitsu sont effectués chaque jour"
       },
       "features": [
         {
           "title": "Workflow automatisé",
-          "subtitle": "Arrêtez d'assembler votre pipeline manuellement",
+          "subtitle": "Des automatisations basées sur de vraies données",
           "content": "Quand les données de production se trouvent au même endroit, tout ce qui est en aval peut être automatisé. Synchronisez les données entre les outils, publiez des aperçus directement depuis votre DCC et déclenchez des scripts personnalisés sur n'importe quel événement. Ce qui nécessitait auparavant une coordination manuelle fonctionne tout seul.",
           "image": "kitsu-boost.png",
           "gradient": 1,
@@ -1356,7 +1356,7 @@
         },
         {
           "title": "API HTTP",
-          "subtitle": "Des départements travaillant à partir de données différentes représente un risque de production",
+          "subtitle": "Gardez les départements synchronisés",
           "content": "Assets, plans, casting, assignations de tâches, emplacements de fichiers : chaque département a besoin de ces données, et elles doivent être les mêmes. L'API Kitsu donne à tout votre studio une source unique interrogeable pour les informations de production, accessible depuis n'importe quel outil, n'importe quelle machine, n'importe quel endroit.",
           "image": "kitsu-api.png",
           "reverted": true,
@@ -1364,7 +1364,7 @@
         },
         {
           "title": "SDK client Python",
-          "subtitle": "Écrire du code standard pour interroger vos propres données de production gaspille du temps de pipeline",
+          "subtitle": "Un code propre pour gagner du temps de développement",
           "content": "Le client Python Kitsu vous offre des fonctions intuitives pour récupérer les données de production sans reconstruire la logique de requête à chaque fois. Un client brut gère les requêtes complexes si nécessaire, et un cache intégré maintient des temps de réponse rapides. Installez-le directement depuis PyPI et commencez à travailler.",
           "image": "kitsu-python.png",
           "shadow": true,
@@ -1373,7 +1373,7 @@
         },
         {
           "title": "Scripts pilotés par événements",
-          "subtitle": "Les étapes de pipeline répétitives nécessitant une intervention humaine deviennent des goulots d'étranglement",
+          "subtitle": "Éliminez les actions répétitives de la pipeline",
           "content": "Définissez ce qui se passe quand un statut change, un aperçu est publié ou une tâche est assignée. Vos scripts s'exécutent automatiquement. Les étapes de pipeline répétitives qui nécessitaient auparavant que quelqu'un remarque et agisse sont traitées au moment où l'événement se produit.",
           "image": "kitsu-events.png",
           "reverted": true,
@@ -1452,16 +1452,16 @@
       "image": "team-collaboration.png",
       "shadow": true,
       "header": {
-        "tagline": "Livrez plus vite avec moins d'échecs de coordination",
-        "subtitle": "Collaboration d'équipe",
-        "explanation": "La mauvaise communication entre artistes, superviseurs et réalisateurs est l'une des causes les plus fréquentes de reprises de travail et de délais manqués. Kitsu centralise les tâches, les aperçus et les retours dans un flux de travail unique pour que chaque partie prenante sache ce qui se passe, ce qui nécessite de l'attention et ce qui est approuvé. Des studios sur site unique aux équipes distribuées, tout le monde travaille à partir de la même source de vérité.",
+        "tagline": "Collaboration d'équipe",
+        "subtitle": "Évitez les échecs de coordination",
+        "explanation": "La mauvaise communication entre artistes, superviseurs et réalisateurs est une cause fréquente de reprises de travail et de délais manqués. Kitsu centralise les tâches, les aperçus et les retours dans un flux de travail unique pour que chaque partie prenante sache ce qui se passe. Des studios sur site unique aux équipes distribuées, tout le monde travaille à partir de la même source de vérité.",
         "metrics": "Plus de 5 000 000 de commentaires ont déjà été postés sur Kitsu"
       },
       "features": [
         {
           "key": "tasks",
           "title": "Tâches, commentaires et aperçus",
-          "subtitle": "Arrêtez de perdre les retours dans les e-mails et les fils de discussion",
+          "subtitle": "Arrêtez de perdre les retours",
           "content": "Assignez des tâches aux artistes et faites-leur publier leur travail directement dans Kitsu quand il est prêt pour révision. Les producteurs, superviseurs et réalisateurs itèrent sur la même plateforme, avec chaque commentaire et version suivis en contexte. Les notifications en temps réel signifient que personne n'attend des informations qu'il devrait déjà avoir.",
           "image": "kitsu-tasks.png",
           "shadow": true,
@@ -1469,8 +1469,8 @@
         },
         {
           "key": "todos",
-          "title": "Tâches à faire",
-          "subtitle": "Les artistes qui ne connaissent pas leurs priorités bloquent la production",
+          "title": "Listes de tâches",
+          "subtitle": "Les artistes ont besoin de connaître leurs priorités",
           "content": "Chaque artiste voit exactement ce qui lui est assigné, dans quel ordre et à quelle étape. Ils peuvent mettre à jour leur progression sans courir après un superviseur pour obtenir des instructions. Moins d'allers-retours signifie plus de temps sur le travail qui compte.",
           "image": "kitsu-todos.png",
           "shadow": true,
@@ -1488,7 +1488,7 @@
         {
           "key": "news",
           "title": "Fil d'actualité",
-          "subtitle": "Les problèmes détectés tard coûtent plus cher à corriger",
+          "subtitle": "Détectez les problèmes tôt",
           "content": "Le fil d'actualité fait remonter chaque commentaire, changement de statut et nouvel aperçu à travers la production en temps réel. Les superviseurs et les producteurs repèrent les problèmes tôt, avant qu'ils ne s'aggravent. Rien ne passe à travers les mailles car quelqu'un a manqué un message.",
           "image": "kitsu-news.png",
           "shadow": true,
@@ -1497,7 +1497,7 @@
         },
         {
           "title": "Notifications Slack et Discord",
-          "subtitle": "Les mises à jour pertinentes sont enfouies quand elles se trouvent dans le mauvais outil",
+          "subtitle": "Faites ressortir les mises à jour pertinentes",
           "content": "Redirigez l'activité Kitsu vers les canaux que votre équipe surveille déjà. Les commentaires, changements de statut et nouveaux aperçus apparaissent directement dans Slack ou Discord pour que les bonnes personnes répondent sans avoir à consulter une plateforme séparée.",
           "image": "kitsu-slack.png",
           "colored": true,
