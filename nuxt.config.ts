@@ -231,7 +231,12 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: true,
       crawlLinks: true,
-      routes: prerenderRoutes
+      routes: prerenderRoutes,
+      // Since Nuxt 4.4 the crawler discovers locale-prefixed sitemap aliases
+      // (/fr/sitemap.xml, /ja/sitemap.xml) that @nuxtjs/sitemap does not serve
+      // (they 500). The real localized sitemaps are /__sitemap__/<locale>.xml,
+      // referenced from /sitemap_index.xml, so these aliases are safe to skip.
+      ignore: [/^\/(fr|ja)\/sitemap\.xml$/]
     }
   },
   experimental: {
