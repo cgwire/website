@@ -10,6 +10,14 @@
             width="100"
           />
         </nuxt-link>
+        <a
+          href="https://discord.gg/kitsu-community"
+          target="_blank"
+          class="discord-mobile"
+          aria-label="Discord"
+        >
+          <img width="26" src="~/assets/images/discord.svg" alt="Discord" />
+        </a>
         <div
           @click="() => toggleNav()"
           class="burger navbar-burger"
@@ -131,7 +139,13 @@
             'navbar-item': true,
             'has-dropdown': true,
             'is-hoverable': true,
-            active: isActivePage(['studios', 'shorts', 'tvshows', 'schools'])
+            active: isActivePage([
+              'studios',
+              'productions',
+              'shorts',
+              'tvshows',
+              'schools'
+            ])
           }"
           @mouseover="useCaseMenuOn = true"
           @mouseout="useCaseMenuOn = false"
@@ -149,6 +163,7 @@
             }"
           >
             <SubNavElement element-key="studios" />
+            <SubNavElement element-key="productions" />
             <SubNavElement element-key="customer-stories" />
             <hr />
             <SubNavElement path-object="for-slug" element-key="tvshows" />
@@ -294,6 +309,12 @@ html body header .navigation .navbar-menu .navbar-item.is-hoverable:focus .navba
   img
     margin-top 0.5rem
 
+// Discord link kept visible in the mobile header bar (next to the burger),
+// since the desktop .discord link lives in the collapsed menu.
+.discord-mobile
+  display none
+  align-items center
+
 html header .navbar .navbar-item.top.discord:hover .navbar-item-title,
 body header .navbar .navbar-item.top.discord:hover .navbar-item-title,
 div.body header .navbar .navbar-item.discord.top:hover .navbar-item-title
@@ -317,4 +338,12 @@ div.body header .navbar .navbar-item.discord.top:hover .navbar-item-title
 @media(max-width: 1024px)
   .discord
     display none
+
+  .discord-mobile
+    display flex
+    margin-left auto
+    padding 0 0.75rem
+
+  .navbar-brand .navbar-burger
+    margin-left 0
 </style>
