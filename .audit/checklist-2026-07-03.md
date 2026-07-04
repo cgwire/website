@@ -110,12 +110,12 @@
 - [x] **CLEAN-2** · 🟡 medium · `components/tools/FileConverter.vue`, `app/error.vue`, `layouts/studio.vue` · effort: medium
       i18n incomplet : parties interactives + page d'erreur en anglais codé en dur, servies aussi en FR/JA.
       ✅ `FileConverter` (13 chaînes), `error.vue` (404/erreur) et la description studio passés en `t()`/`$t()` avec clés `tools.converter.*`, `error.*`, `studio.metaDescription` traduites FR/JA (voix CGWire). Vérifié : la page convertisseur FR rend les chaînes traduites. Inclut BUG-7.
-- [~] **CLEAN-3** · ⚪ low · composants réutilisables · effort: quick
+- [x] **CLEAN-3** · ⚪ low · composants + pages · effort: quick
       `<NuxtImg>` sans `alt` (a11y).
-      ✅ Composants réutilisables traités : `UserLogos` (marquee → v-for + alts, doublons `aria-hidden`), `FeatureBlock`, `ModuleBlock`, `Production`, `QuoteContentBlock`, 5 composants `Kitsu*`, `error.vue` (décoratif `alt=""`). Lint + build OK. ⏳ Restant : images ponctuelles au niveau des pages (`index.vue`, `community.vue`, `for-audience.vue`) — sweep mineur.
-- [~] **CLEAN-5** · ⚪ low · `useCustomerStories.js:3`, `useStudios.js:3`, `layouts/faq.vue|tools.vue|for-audience.vue` · effort: quick
+      ✅ **Terminé** : composants réutilisables (`UserLogos`, `FeatureBlock`, `ModuleBlock`, `Production`, `QuoteContentBlock`, 5 `Kitsu*`, `error.vue`) **et** toutes les images de pages restantes (`community`, `index` testimonials, `for-audience` avatar, 4 screenshots `spreadsheets`). Scan multi-lignes : 0 `NuxtImg` sans alt.
+- [x] **CLEAN-5** · ⚪ low · composables + 3 layouts · effort: quick
       `var` au lieu de `const` ; consts mortes ; blocs de méta commentés (code mort).
-      ✅ Partiel : `var`→`const`/`let` (2 composables), `const name` mort supprimé (`PriceEstimator`). ⏳ Restant : blocs de méta commentés dans les 3 layouts (à faire avec ARCH-2, unification SEO). NB : `name` dans `features.vue` est en fait *utilisé* (rapport corrigé).
+      ✅ **Terminé** : `var`→`const`/`let`, `const name` mort supprimé, et les blocs de méta commentés (faq/tools/for-audience) remplacés par une vraie image OG par défaut (voir aussi la finition SEO).
 - [ ] **CLEAN-4** · ⚪ low · `pages/kitsu-summit.vue` (1209 l.), `carbon-report.vue` (956 l.) · effort: large
       Pages monofichier géantes mêlant contenu + gabarit + style inline.
       Fix : externaliser le contenu en collection, découper en sous-composants.
@@ -129,8 +129,8 @@
       `npm audit` : 38 vulns mais quasi toutes en dev/build, non embarquées (impact prod ≈ nul).
       ⚠️ **Tenté et reverté** : `npm audit fix` (sans `--force`) réécrit tout le lockfile et **casse le build** (un outil de build bumpé n'analyse plus les JSON de locale). Lockfile restauré + `npm ci`, build re-vert. Comme rien n'atteint la prod, on laisse en l'état. À reprendre finement (fixer paquet par paquet) si besoin.
 - [ ] **DEP-3** · ⚪ low · `package.json` · effort: medium
-      Retards de version sans danger (eslint 9→10, wrangler 4.67→4.107, nuxt 4.3→4.4…).
-      Fix : mise à jour groupée planifiée + test de build.
+      Retards de version.
+      ⚠️ **Tenté, non appliqué — bloqué par une incompatibilité réelle** : la montée de `nuxt` (même la mineure dans le range, 4.3.1→4.4.8, tirée par `npm update`) casse le prérendu des sitemaps localisés (`/fr/sitemap.xml`, `/ja/sitemap.xml` → 500, Nitro 2.13 vs `@nuxtjs/sitemap` 7). Il faut **épingler nuxt en 4.3.x** ou **migrer la config sitemap** pour 4.4. `npm audit fix` casse aussi le build (parse JSON). Un lot « runtime sûr » (mediabunny/sass/better-sqlite3/zod/wrangler) **builde** mais `npm install` re-résout les ranges `^` et fait dériver l'outillage de lint. → **nécessite un chantier dédié et testé** (pas un passage rapide), avec ton arbitrage nuxt-pin vs migration sitemap. Tout reverté, repo à l'état connu-bon.
 - [ ] **DEP-4** · ⚪ low · `package.json` · effort: quick
       Pinning hétérogène (`^` vs versions exactes).
       Fix : harmoniser.
@@ -237,3 +237,23 @@ Décisions utilisateur appliquées + hygiène rapide.
 - **Refactors structurels** : ARCH-1, ARCH-2, ARCH-4, PERF-1, PERF-3, PERF-5, CLEAN-4, TEST-2, DEP-3.
 - **Petits / différés** : ARCH-6 (URL localisées, test runtime requis), SEC-3 (couvert par SEC-2), SEC-2 CSP (test par tiers), DEP-1 (fin), DEP-4 (pinning), CLEAN-3 finition (images de pages), CLEAN-5 finition (blocs commentés).
 - **Dette lint pré-existante** : `FAQSection`, `useStudios`.
+
+---
+
+## Journal — session 2026-07-04 (finitions + montées de version)
+
+**Finitions — terminées, `npm run lint` désormais VERT sur tout `app/`** (il était en réalité rouge depuis longtemps, non appliqué faute de CI ; des pipes instables m'avaient donné de faux « clean »).
+
+| Commit | Contenu |
+|--------|---------|
+| `[seo] Set default OG image on faq, tools and audience pages` | CLEAN-5 : blocs commentés → image OG par défaut ; + alt avatar audience. |
+| `[a11y] Finish alt-text pass on remaining page images` | CLEAN-3 : community, testimonials index, 4 screenshots spreadsheets. |
+| `[chore] Clear pre-existing lint debt` | FAQSection (`selectPanel` mort + `:key`), `useStudios` `===`. |
+| `[chore] Fix all lint errors so npm run lint passes` | v-for keys (Footer + 5 Studios), `===` (3 composables), vars inutilisées, template root MinimalistUserLogos, globals ESLint (`useCustomerStory(ies)`, `useTestimonial(s)`, `useTool(s)`, `$t`). |
+| `[chore] Apply prettier formatting` | `eslint --fix` sur les fichiers signalés prettier. |
+
+**Vérification** : `npm run lint` → exit 0 · `nuxt generate` → 0 erreur.
+
+**Montées de version (DEP-3) — BLOQUÉ, non appliqué** (voir DEP-3 ci-dessus) : nuxt 4.4 (même mineure) casse le prérendu des sitemaps localisés ; `npm audit fix` casse le parse JSON. Nécessite un chantier dédié (épingler nuxt 4.3.x ou migrer le sitemap). Repo laissé à l'état connu-bon (build + lint verts).
+
+**Reco** : maintenant que `npm run lint` est vert, l'ajouter à une CI (ou un hook pre-commit) pour éviter que la dette lint ne revienne.
