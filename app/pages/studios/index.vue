@@ -40,6 +40,7 @@
 
     <section class="section productions">
       <h2>
+        <img class="section-icon" src="/icons/productions.svg" alt="" />
         <span class="section-subtitle">
           {{ page.meta.productions.subtitle }}
         </span>
@@ -82,6 +83,12 @@ useSEO({
 </script>
 
 <style lang="stylus" scoped>
+.section-icon
+  display block
+  width 64px
+  height 64px
+  margin 0 auto 0.75em
+
 .customers
   margin auto
 

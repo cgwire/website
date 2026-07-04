@@ -1059,8 +1059,8 @@
       "slug": "studios",
       "subtitle": "Kitsu est utilisé partout dans le monde",
       "productions": {
-        "title": "Productions",
-        "subtitle": "Suivies et validées avec Kitsu"
+        "title": "Productions réalisées avec Kitsu",
+        "subtitle": "Longs métrages, séries et courts métrages"
       }
     }
   },
@@ -2225,8 +2225,7 @@
         "zodiak",
         "philmcgi",
         "el-reino-infantil",
-        "eone",
-        "redefine"
+        "eone"
       ]
     },
     "video-games": {
@@ -2812,12 +2811,6 @@
       "name": "Rabbit's Foot",
       "type": "shorts"
     },
-    "redefine": {
-      "link": "https://redefine.co/fr/redefine-originals/",
-      "elementKey": "redefine",
-      "name": "Redefine Originals",
-      "type": "tvshows"
-    },
     "ritcs": {
       "link": "https://www.ritcs.be",
       "elementKey": "ritcs",
@@ -3288,14 +3281,6 @@
     "name": "Stay株式会社",
     "type": [
       ""
-    ]
-  },
-  "101": {
-    "link": "https://wearestudio101.com/",
-    "elementKey": "101",
-    "name": "Studio 101",
-    "type": [
-      "feature-films", "shorts", "tvshows"
     ]
   },
   "unagi": {

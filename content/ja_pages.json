@@ -1059,8 +1059,8 @@
       "slug": "studios",
       "subtitle": "Kitsuは世界中で使用されています",
       "productions": {
-        "title": "制作",
-        "subtitle": "Kitsuで追跡およびレビュー"
+        "title": "Kitsuで制作された作品",
+        "subtitle": "長編映画、シリーズ、短編映画"
       }
     }
   },
@@ -2786,12 +2786,6 @@
       "name": "Rabbit's Foot",
       "type": "shorts"
     },
-    "redefine": {
-      "link": "https://redefine.co/fr/redefine-originals/",
-      "elementKey": "redefine",
-      "name": "Redefine Originals",
-      "type": "tvshows"
-    },
     "ritcs": {
       "link": "https://www.ritcs.be",
       "elementKey": "ritcs",
@@ -3262,14 +3256,6 @@
     "name": "Stay株式会社",
     "type": [
       ""
-    ]
-  },
-  "101": {
-    "link": "https://wearestudio101.com/",
-    "elementKey": "101",
-    "name": "Studio 101",
-    "type": [
-      "feature-films", "shorts", "tvshows"
     ]
   },
   "unagi": {
