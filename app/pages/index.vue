@@ -548,12 +548,7 @@ const { data: customerStories } = await useAsyncData(
 const pairedStudies = computed(() =>
   customerStories.value
     .filter(story => {
-      return [
-        'Fost',
-        'Miyu',
-        'Ryff',
-        'Remembers',
-      ].includes(story.title)
+      return ['Fost', 'Miyu', 'Ryff', 'Remembers'].includes(story.title)
     })
     .reduce(
       (rows, study, i) =>

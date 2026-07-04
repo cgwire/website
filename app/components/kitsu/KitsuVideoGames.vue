@@ -18,8 +18,16 @@
     :content="supporters.games"
   />
   <div class="successes">
-    <NuxtImg src="/images/kitsu/brawl-stars.png" alt="Brawl Stars" format="webp" />
-    <NuxtImg src="/images/kitsu/merge-mansion.png" alt="Merge Mansion" format="webp" />
+    <NuxtImg
+      src="/images/kitsu/brawl-stars.png"
+      alt="Brawl Stars"
+      format="webp"
+    />
+    <NuxtImg
+      src="/images/kitsu/merge-mansion.png"
+      alt="Merge Mansion"
+      format="webp"
+    />
     <NuxtImg src="/images/kitsu/cuphead.png" alt="Cuphead" format="webp" />
   </div>
 

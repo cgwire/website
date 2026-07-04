@@ -162,7 +162,9 @@
               </svg>
               <span class="progress-pct">{{ Math.round(progress) }}%</span>
             </div>
-            <p class="converting-label">{{ $t('tools.converter.converting') }}</p>
+            <p class="converting-label">
+              {{ $t('tools.converter.converting') }}
+            </p>
             <p class="converting-sub">{{ selectedFile?.name }}</p>
           </div>
         </template>

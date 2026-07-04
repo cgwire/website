@@ -9,7 +9,10 @@
     "
     v-if="link === ''"
   >
-    <img class="flexrow-item tablet" :src="'/icons/' + elementKey + '.' + imageExt" />
+    <img
+      class="flexrow-item tablet"
+      :src="'/icons/' + elementKey + '.' + imageExt"
+    />
     <div class="flexrow-item flexcolumn text">
       <span class="flexrow-item subnav-title">
         {{ $t('header title ' + elementKey) }}
@@ -25,7 +28,10 @@
     target="_blank"
     v-else
   >
-    <img class="flexrow-item tablet" :src="'/icons/' + elementKey + '.' + imageExt" />
+    <img
+      class="flexrow-item tablet"
+      :src="'/icons/' + elementKey + '.' + imageExt"
+    />
 
     <div class="flexrow-item flexcolumn text">
       <span class="flexrow-item subnav-title">

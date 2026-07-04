@@ -25,7 +25,11 @@
         format="webp"
       />
       <NuxtImg src="/images/kitsu/rrr.png" alt="RRR" format="webp" />
-      <NuxtImg src="/images/kitsu/substance.png" alt="Substance" format="webp" />
+      <NuxtImg
+        src="/images/kitsu/substance.png"
+        alt="Substance"
+        format="webp"
+      />
     </div>
   </div>
 

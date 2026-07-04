@@ -141,8 +141,7 @@ const content = {
       'But keeping Kitsu at the level you rely on (releases, bug fixes, docs, integrations, community) takes a full-time team of five. Today, all of that is funded by our cloud customers. As more studios run Kitsu themselves, that balance gets harder to hold.',
       "Recent years have shown what happens when open-source companies can't sustain this kind of imbalance. Some change their license. Some strip features from the free version. Some go closed source entirely. We've all seen it happen with projects we relied on. We don't want to go down that road."
     ],
-    emph:
-      "That's why we're launching the <strong>Kitsu Studio Partners program</strong>. It's for studios who want to contribute to the long-term sustainability of the tool they depend on, and take a seat in the circle of studios that keep it alive. It is our way of keeping things open while making the economics work.",
+    emph: "That's why we're launching the <strong>Kitsu Studio Partners program</strong>. It's for studios who want to contribute to the long-term sustainability of the tool they depend on, and take a seat in the circle of studios that keep it alive. It is our way of keeping things open while making the economics work.",
     getLabel: 'What you get',
     benefits: [
       'A private Discord with the CGWire team',
@@ -186,8 +185,7 @@ const content = {
     sigNames: 'The CGWire Team',
     sigLine: 'Paris, still five of us, still building.',
     foundersLabel: 'Founding Partners',
-    foundersIntro:
-      'The studios who joined first and made this program real:',
+    foundersIntro: 'The studios who joined first and made this program real:',
     seoTitle: 'Kitsu Studio Partners Program',
     seoDescription: 'Kitsu is yours. Help keep it open source.'
   },
@@ -196,11 +194,10 @@ const content = {
     title: 'Kitsu est à vous. Aidez-nous à le garder open source.',
     intro: [
       "Kitsu est open source depuis le premier jour, et le restera. Des centaines de studios partout dans le monde l'utilisent en auto-hébergement, en toute autonomie, sans rien nous devoir. C'est exactement ce que nous voulions construire, et nous n'y changerons rien.",
-      'Mais maintenir Kitsu au niveau sur lequel vous comptez (versions, corrections de bugs, documentation, intégrations, communauté) demande une équipe de cinq personnes à plein temps. Aujourd\'hui, tout cela est financé par nos clients cloud. À mesure que de plus en plus de studios font tourner Kitsu eux-mêmes, cet équilibre devient plus difficile à tenir.',
+      "Mais maintenir Kitsu au niveau sur lequel vous comptez (versions, corrections de bugs, documentation, intégrations, communauté) demande une équipe de cinq personnes à plein temps. Aujourd'hui, tout cela est financé par nos clients cloud. À mesure que de plus en plus de studios font tourner Kitsu eux-mêmes, cet équilibre devient plus difficile à tenir.",
       "Ces dernières années ont montré ce qui arrive quand les entreprises open source ne peuvent plus absorber ce déséquilibre. Certaines changent de licence. D'autres retirent des fonctionnalités de la version gratuite. D'autres passent entièrement en code fermé. Nous l'avons tous vu arriver à des projets dont nous dépendions. Nous ne voulons pas prendre ce chemin."
     ],
-    emph:
-      "C'est pourquoi nous lançons le <strong>programme Kitsu Studio Partners</strong>. Il s'adresse aux studios qui veulent contribuer à la pérennité de l'outil dont ils dépendent, et prendre place dans le cercle des studios qui le maintiennent en vie. C'est notre façon de garder les choses ouvertes tout en équilibrant l'économie.",
+    emph: "C'est pourquoi nous lançons le <strong>programme Kitsu Studio Partners</strong>. Il s'adresse aux studios qui veulent contribuer à la pérennité de l'outil dont ils dépendent, et prendre place dans le cercle des studios qui le maintiennent en vie. C'est notre façon de garder les choses ouvertes tout en équilibrant l'économie.",
     getLabel: 'Ce que vous obtenez',
     benefits: [
       "Un Discord privé avec l'équipe CGWire",
@@ -221,7 +218,8 @@ const content = {
       },
       { name: 'Plus de 100 utilisateurs', price: '€7,000', period: '/ an' }
     ],
-    dealSub: 'Annuelle, renouvelable. Pas de clause de reconduction automatique.',
+    dealSub:
+      'Annuelle, renouvelable. Pas de clause de reconduction automatique.',
     whatNotLabel: "Ce que ce n'est pas",
     nots: [
       {

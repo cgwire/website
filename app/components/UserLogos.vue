@@ -7,11 +7,7 @@
     <div class="brand-wheel-container">
       <div class="brand-wheel">
         <div class="brand-slide">
-          <div
-            v-for="(logo, i) in marqueeLogos"
-            :key="i"
-            class="logo-div"
-          >
+          <div v-for="(logo, i) in marqueeLogos" :key="i" class="logo-div">
             <NuxtImg
               :src="logo.src"
               :alt="i < brands.length ? logo.name : ''"

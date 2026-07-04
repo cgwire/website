@@ -26,10 +26,7 @@
         <template v-for="(block, bIndex) in section.content" :key="bIndex">
           <p v-if="typeof block === 'string'">{{ block }}</p>
 
-          <div
-            v-else-if="block.type === 'table'"
-            class="compare-table-wrap"
-          >
+          <div v-else-if="block.type === 'table'" class="compare-table-wrap">
             <p v-if="block.caption" class="compare-table-caption">
               <strong>{{ block.caption }}</strong>
             </p>
