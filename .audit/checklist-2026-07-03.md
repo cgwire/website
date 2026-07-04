@@ -131,7 +131,8 @@
 - [x] **DEP-3** · ⚪ low · `package.json`, `nuxt.config.ts` · effort: medium
       Retards de version.
       ✅ **Fait (option 2 : migration sitemap pour Nuxt 4.4)**. `nuxt` 4.3→**4.4.8** + `@nuxtjs/sitemap` 7→**8** ; le blocage sitemap (les alias `/fr|ja/sitemap.xml` que Nitro 2.13 prérend et qui 500) est réglé par `nitro.prerender.ignore`. Puis bump des mineures : `@nuxt/content` 3.15, `@nuxtjs/i18n` 10.4, `vue-i18n` 11.4, `mediabunny` 1.50, `sass` 1.101, `better-sqlite3` 12.11, `zod` 4.4, `wrangler` 4.107, `consola` 3.4. **Build + lint verts, sitemaps localisés OK (156 URLs chacun).**
-      ⏳ **Laissé volontairement** : majeures `eslint`/`@eslint/js` 10, `stylus-loader` 9, et l'outillage lint mineur (`eslint-plugin-vue` 10.9, `prettier` 3.9) — bumper les linters reformate l'arbre et durcit des règles (churn), à faire dans une passe lint dédiée si souhaité.
+      ✅ **Linters mis à jour ensuite** : `eslint` 9→**10.6**, `@eslint/js` 10, `eslint-plugin-vue` **10.9**, `prettier` **3.9** (+ plugins/globals). Seule correction requise : exempter `/^update:/` (v-model) de `vue/custom-event-name-casing` (plugin-vue 10.9 flaggait `update:modelValue`). Aucun reformatage nécessaire. `stylus-loader` (webpack, mort) **supprimé**. **`npm outdated` est désormais vide** — tout est à jour, `npm run lint` + `nuxt generate` verts.
+      ⏳ Reste hors périmètre : DEP-4 (harmonisation du pinning `^` vs exact — cosmétique).
 - [ ] **DEP-4** · ⚪ low · `package.json` · effort: quick
       Pinning hétérogène (`^` vs versions exactes).
       Fix : harmoniser.
