@@ -1,7 +1,6 @@
 <template>
   <div class="studios">
     <section class="section productions has-text-centered">
-      <img class="section-icon" src="/icons/productions.svg" alt="" />
       <h2>
         <span class="section-subtitle">
           {{ $t('productions subtitle') }}
@@ -36,11 +35,3 @@ useSEO({
   description: t('productions subtitle')
 })
 </script>
-
-<style lang="stylus" scoped>
-.section-icon
-  display block
-  width 64px
-  height 64px
-  margin 0 auto 0.75em
-</style>
