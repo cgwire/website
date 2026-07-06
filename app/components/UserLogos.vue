@@ -39,12 +39,10 @@ const brands = [
   { src: '/images/studios/logo-lofi-studio.png', name: 'Lofi Studio' },
   { src: '/images/studios/logo-blender.png', name: 'Blender' },
   { src: '/images/studios/logo-gobelins-black.png', name: 'Gobelins' },
-  { src: '/images/studios/logo-supercell-black.png', name: 'Supercell' },
   { src: '/images/studios/logo-metacore-black.png', name: 'Metacore' },
   { src: '/images/studios/logo-mdhr-black.png', name: 'Studio MDHR' },
-  { src: '/images/studios/logo-yuga-labs.png', name: 'Yuga Labs' },
   { src: '/images/studios/logo-miraculous.png', name: 'Miraculous' },
-  { src: '/images/studios/logo-zuru.png', name: 'Zuru' }
+  { src: '/images/studios/logo-lachouette.png', name: 'La Chouette Compagnie' }
 ]
 
 const marqueeLogos = [...brands, ...brands]

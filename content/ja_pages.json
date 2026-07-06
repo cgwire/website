@@ -2076,7 +2076,6 @@
         "viridian",
         "dirty-looks",
         "heckler",
-        "rabbitsfoot",
         "animaskin",
         "animaltank",
         "floatingrock",
@@ -2220,9 +2219,9 @@
         "avatar": "arielmckay.png"
       },
       "video": {
-        "youtubeId": "Fik4Rp6S1Bs?si=s8CYqpf5MsyX1eZ0",
-        "partnerName": "Supercell",
-        "partnerUrl": "http://www.supercell.com/"
+        "youtubeId": "NN-9SQXoi50",
+        "partnerName": "MDHR",
+        "partnerUrl": "https://studiomdhr.com"
       },
       "panels": [
         {
@@ -2780,12 +2779,6 @@
       "name": "Pyjama Studios",
       "type": "shorts"
     },
-    "rabbitsfoot": {
-      "link": "https://rabbitsfootstudios.se/",
-      "elementKey": "rabbitsfoot",
-      "name": "Rabbit's Foot",
-      "type": "shorts"
-    },
     "ritcs": {
       "link": "https://www.ritcs.be",
       "elementKey": "ritcs",
@@ -2839,12 +2832,6 @@
       "elementKey": "supamonks",
       "name": "Supamonks",
       "type": ["shorts", "feature-films"]
-    },
-    "supercell": {
-      "link": "https://supercell.com/",
-      "elementKey": "supercell",
-      "name": "Supercell",
-      "type": "video-games"
     },
     "tant-mieux-prod": {
       "link": "https://www.tantmieuxprod.net/",
@@ -2929,12 +2916,6 @@
       "elementKey": "ynov",
       "name": "Ynov",
       "type": "schools"
-    },
-    "yuga-labs": {
-      "link": "https://yuga.com/",
-      "elementKey": "yuga-labs",
-      "name": "Yuga Labs",
-      "type": "video-games"
     },
     "zodiak": {
       "link": "https://www.banijay.com/company/zodiak-kids-family-studio-france/",

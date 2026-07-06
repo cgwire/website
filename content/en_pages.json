@@ -2106,7 +2106,6 @@
         "viridian",
         "dirty-looks",
         "heckler",
-        "rabbitsfoot",
         "animaskin",
         "animaltank",
         "floatingrock",
@@ -2324,10 +2323,8 @@
         "ctaUrl": "https://account.cg-wire.com/signup"
       },
       "studios": [
-        "supercell",
         "mdhr",
         "metacore",
-        "yuga-labs",
         "trailer-farm",
         "sparx",
         "tato"
@@ -2843,12 +2840,6 @@
       "name": "Pyjama Studios",
       "type": "shorts"
     },
-    "rabbitsfoot": {
-      "link": "https://rabbitsfootstudios.se/",
-      "elementKey": "rabbitsfoot",
-      "name": "Rabbit's Foot",
-      "type": "shorts"
-    },
     "ritcs": {
       "link": "https://www.ritcs.be",
       "elementKey": "ritcs",
@@ -2986,12 +2977,6 @@
       "elementKey": "ynov",
       "name": "Ynov",
       "type": "schools"
-    },
-    "yuga-labs": {
-      "link": "https://yuga.com/",
-      "elementKey": "yuga-labs",
-      "name": "Yuga Labs",
-      "type": "video-games"
     },
     "zodiak": {
       "link": "https://www.banijay.com/company/zodiak-kids-family-studio-france/",
