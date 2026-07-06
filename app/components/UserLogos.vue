@@ -42,7 +42,8 @@ const brands = [
   { src: '/images/studios/logo-metacore-black.png', name: 'Metacore' },
   { src: '/images/studios/logo-mdhr-black.png', name: 'Studio MDHR' },
   { src: '/images/studios/logo-miraculous.png', name: 'Miraculous' },
-  { src: '/images/studios/logo-lachouette.png', name: 'La Chouette Compagnie' }
+  { src: '/images/studios/logo-lachouette.png', name: 'La Chouette Compagnie' },
+  { src: '/images/studios/logo-ankama.png', name: 'Ankama Animations' }
 ]
 
 const marqueeLogos = [...brands, ...brands]
