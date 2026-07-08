@@ -19,7 +19,9 @@ const COLLECTIONS = [
   { key: 'audiences' },
   { key: 'studios' },
   { key: 'testimonials' },
-  { key: 'customer_stories' }
+  { key: 'customer_stories' },
+  { key: 'video_testimonials' },
+  { key: 'video_customer_stories' }
 ]
 
 const loadPages = async lang => {

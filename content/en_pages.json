@@ -3790,5 +3790,45 @@
       "quote": "I knew that if I brought in a new tool, I needed to address a need that hadn't been identified by the core team already in place. The main challenge right away was not to constrain them.",
       "category": "Feature Films (2D)"
     }
+  },
+  "video_testimonials": {
+    "wizz": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    },
+    "miyu-1": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    },
+    "miyu-2": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    },
+    "fees": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    },
+    "normaal": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    },
+    "remembers": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    }
+  },
+  "video_customer_stories": {
+    "wizz": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    },
+    "miyu-1": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    },
+    "miyu-2": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    },
+    "fees": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    },
+    "normaal": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    },
+    "remembers": {
+      "url": "https://www.youtube.com/embed/wLf0wgiQa1M?si=ZSBA1ty9aMhGV88U"
+    }
   }
 }
