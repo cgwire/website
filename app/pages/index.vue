@@ -32,6 +32,8 @@
 
     <UserLogos />
 
+    <VideoCustomerStory slug="miyu-1"/>
+
     <div class="production-success" id="flow" :style="flowBackground">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -488,6 +490,8 @@
 </template>
 
 <script setup>
+import VideoCustomerStory from '~/components/VideoCustomerStory.vue'
+
 const { locale } = useI18n()
 const slug = ref('index')
 
