@@ -441,12 +441,15 @@ $border-soft = #e4e9ef
   color: cgwiregreen
   margin-bottom: 1rem
 
+  &:first-child
+    margin-top 3em
+
 .hero-title
   font-size: 3rem
-  font-weight: 800
+  font-weight: 900
   line-height: 1.1
-  margin: 0 auto 1.5rem
-  max-width: 720px
+  margin: 2.5rem auto 1.5rem
+  white-space: nowrap
 
 .hero-lead
   font-size: 1.2rem
@@ -907,6 +910,7 @@ $border-soft = #e4e9ef
 
   .hero-title
     font-size: 2.2rem
+    white-space: normal
 
   .content-title
     font-size: 1.8rem

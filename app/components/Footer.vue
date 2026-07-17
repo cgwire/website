@@ -165,13 +165,13 @@
             }}</nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="$localePath('carbon-report')">{{
-              $t('footers link carbon')
+            <nuxt-link :to="$localePath('sustainable-ai-manifesto')">{{
+              $t('footers link manifesto')
             }}</nuxt-link>
           </li>
           <li>
-            <nuxt-link :to="$localePath('sustainable-ai-manifesto')">{{
-              $t('footers link manifesto')
+            <nuxt-link :to="$localePath('carbon-report')">{{
+              $t('footers link carbon')
             }}</nuxt-link>
           </li>
           <li>
