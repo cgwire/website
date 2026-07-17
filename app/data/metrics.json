@@ -1613,29 +1613,5 @@
     "Video": [
       "Youtube"
     ]
-  },
-  "updates": [
-    {
-      "title": "Build in public: June 2026",
-      "url": "https://blog.cg-wire.com/build-in-public-june-2026-update/"
-    },
-    {
-      "title": "Build in public: March 2026",
-      "url": "https://blog.cg-wire.com/build-in-public-march-2026"
-    }
-  ],
-  "why": [
-    {
-      "title": "To stay aligned with our mission",
-      "text": "Sharing our numbers keeps us honest about the decisions we make and the company we want to build."
-    },
-    {
-      "title": "To challenge ourselves",
-      "text": "Public metrics are a strong incentive to keep improving and to hold ourselves accountable."
-    },
-    {
-      "title": "To show it is possible",
-      "text": "A small, self-funded software company can be sustainable and open about how it works."
-    }
-  ]
+  }
 }

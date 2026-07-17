@@ -4,6 +4,11 @@ export const routes = {
     fr: '/a-propos',
     ja: '/企業情報'
   },
+  metrics: {
+    en: '/metrics',
+    fr: '/metrics',
+    ja: '/metrics'
+  },
   'customer-stories': {
     en: '/customer-stories',
     fr: '/temoignages-clients',

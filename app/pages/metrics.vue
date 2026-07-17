@@ -9,20 +9,15 @@
       }"
     >
       <div class="container">
-        <span class="eyebrow">Metrics and data</span>
-        <h1 class="hero-title">Our numbers, in full transparency</h1>
-        <p class="hero-lead">
-          We are part of the Open Company movement. Transparency helps build
-          trust with our clients, our team and our community, so this page
-          shares the main metrics of our company, focused mainly on the
-          accounting side.
-        </p>
+        <span class="eyebrow">{{ $t('metrics.hero.eyebrow') }}</span>
+        <h1 class="hero-title">{{ $t('metrics.hero.title') }}</h1>
+        <p class="hero-lead">{{ $t('metrics.hero.lead') }}</p>
         <div class="hero-cta">
           <NuxtLink class="btn btn-primary" :to="$localePath('about')"
-            >Learn more about us</NuxtLink
+            >{{ $t('metrics.hero.cta') }}</NuxtLink
           >
         </div>
-        <p class="hero-updated">Last update: {{ lastUpdate }}</p>
+        <p class="hero-updated">{{ $t('metrics.hero.lastUpdate', { date: lastUpdate }) }}</p>
       </div>
     </section>
     <div class="hero-fade">&nbsp;</div>
@@ -30,17 +25,17 @@
     <!-- LATEST UPDATES (placeholder: wire real blog articles) -->
     <section class="section">
       <div class="container">
-        <h2 class="kicker">Our latest updates</h2>
+        <h2 class="kicker">{{ $t('metrics.updates.title') }}</h2>
         <div class="update-cards">
           <a
-            v-for="u in metrics.updates"
+            v-for="u in updates"
             :key="u.title"
             class="update-card"
             :href="u.url"
           >
-            <span class="update-badge">Quarterly Report</span>
+            <span class="update-badge">{{ $t('metrics.updates.badge') }}</span>
             <span class="update-title">{{ u.title }}</span>
-            <span class="update-link">Read the article →</span>
+            <span class="update-link">{{ $t('metrics.updates.link') }}</span>
           </a>
         </div>
       </div>
@@ -49,10 +44,8 @@
     <!-- REVENUE -->
     <section class="section band-light">
       <div class="container">
-        <h2 class="content-title">Our revenue, what we bill</h2>
-        <p class="content-description">
-          The money we billed through issued invoices, before taxes.
-        </p>
+        <h2 class="content-title">{{ $t('metrics.revenue.title') }}</h2>
+        <p class="content-description">{{ $t('metrics.revenue.text') }}</p>
         <div class="toggle-buttons">
           <button
             v-for="p in revenuePeriods"
@@ -71,7 +64,7 @@
             :labels="revenue.labels"
             :series="revenue.values"
             unit="eur"
-            aria-label="Revenue billed over time"
+            :aria-label="$t('metrics.chart.revenueAria')"
           />
         </div>
       </div>
@@ -86,16 +79,12 @@
             :labels="metrics.hostingMRR.labels"
             :series="metrics.hostingMRR.values"
             unit="eur"
-            aria-label="Monthly recurring revenue"
+            :aria-label="$t('metrics.chart.mrrAria')"
           />
         </div>
         <div class="two-col-text">
-          <h2 class="content-title left">Our monthly recurring revenue</h2>
-          <p class="content-description left">
-            We mainly sell yearly subscriptions. This chart spreads them over 12
-            months to show the recurring revenue we can count on each month,
-            regardless of when a subscription starts.
-          </p>
+          <h2 class="content-title left">{{ $t('metrics.mrr.title') }}</h2>
+          <p class="content-description left">{{ $t('metrics.mrr.text') }}</p>
         </div>
       </div>
     </section>
@@ -103,23 +92,17 @@
     <!-- ACTIVE CUSTOMERS -->
     <section class="section band-light">
       <div class="container">
-        <h2 class="content-title">How many use Kitsu</h2>
+        <h2 class="content-title">{{ $t('metrics.customers.title') }}</h2>
         <div class="two-blocks">
           <div class="metric-block">
             <span class="metric-value">{{ latestCustomers }}</span>
-            <h2 class="metric-title">Active customers</h2>
-            <p class="metric-text">
-              Studios with a running subscription. Open source users are not
-              counted here.
-            </p>
+            <h2 class="metric-title">{{ $t('metrics.customers.activeTitle') }}</h2>
+            <p class="metric-text">{{ $t('metrics.customers.activeText') }}</p>
           </div>
           <div class="metric-block">
             <span class="metric-value">{{ metrics.selfHostedSetups }}</span>
-            <h2 class="metric-title">Active self-hosted setups</h2>
-            <p class="metric-text">
-              Teams running Kitsu on their own servers, independently from our
-              cloud offering.
-            </p>
+            <h2 class="metric-title">{{ $t('metrics.customers.selfhostedTitle') }}</h2>
+            <p class="metric-text">{{ $t('metrics.customers.selfhostedText') }}</p>
           </div>
         </div>
       </div>
@@ -129,26 +112,22 @@
     <section class="section">
       <div class="container two-col team">
         <div class="two-col-text">
-          <span class="eyebrow">The team</span>
-          <h2 class="content-title left">Our Salaries</h2>
-          <p class="content-description left">
-            We pay salaries at market level, as the French "net" amount before
-            taxes. Part-time is welcome: the fraction next to a role shows how
-            much of a full week it covers.
-          </p>
+          <span class="eyebrow">{{ $t('metrics.team.eyebrow') }}</span>
+          <h2 class="content-title left">{{ $t('metrics.team.title') }}</h2>
+          <p class="content-description left">{{ $t('metrics.team.text') }}</p>
           <div class="team-count">
             <span class="metric-value">{{ employeesCount }}</span>
-            <span class="team-count-label">people on the team</span>
+            <span class="team-count-label">{{ $t('metrics.team.count') }}</span>
           </div>
         </div>
 
         <div class="pay-panel">
-          <div class="pay-head">Net monthly salary</div>
+          <div class="pay-head">{{ $t('metrics.team.salaryHead') }}</div>
           <div v-for="s in metrics.salaries" :key="s.role" class="pay-row">
             <span class="pay-role">
               {{ s.role }}
               <span v-if="s.partTime" class="pay-badge"
-                >{{ s.partTime }} time</span
+                >{{ $t('metrics.team.partTime', { fraction: s.partTime }) }}</span
               >
             </span>
             <span class="pay-amount">{{ euro(s.netPerMonth) }}</span>
@@ -160,23 +139,21 @@
     <!-- CASH FLOW / MONEY IN BANK -->
     <section class="section">
       <div class="container">
-        <h2 class="content-title">
-          Our cash balance
-        </h2>
+        <h2 class="content-title">{{ $t('metrics.cashflow.title') }}</h2>
         <div class="toggle-buttons">
           <button
             class="btn"
             :class="!showBank ? 'btn-primary' : 'btn-secondary'"
             @click="showBank = false"
           >
-            Cash flow
+            {{ $t('metrics.cashflow.toggleFlow') }}
           </button>
           <button
             class="btn"
             :class="showBank ? 'btn-primary' : 'btn-secondary'"
             @click="showBank = true"
           >
-            Money in the bank
+            {{ $t('metrics.cashflow.toggleBank') }}
           </button>
         </div>
         <div class="chart-card">
@@ -186,7 +163,7 @@
             :labels="metrics.cashFlow.labels"
             :series="cashFlowSeries"
             unit="eur"
-            aria-label="Cash flow in and out"
+            :aria-label="$t('metrics.chart.cashflowAria')"
           />
           <MetricsChart
             v-else
@@ -194,7 +171,7 @@
             :labels="metrics.moneyInBank.labels"
             :series="metrics.moneyInBank.values"
             unit="eur"
-            aria-label="Money in the bank"
+            :aria-label="$t('metrics.chart.bankAria')"
           />
         </div>
       </div>
@@ -204,33 +181,29 @@
     <section class="section">
       <div class="container two-col">
         <div class="two-col-text">
-          <span class="eyebrow">Infrastructure</span>
-          <h2 class="content-title left">Our servers</h2>
-          <p class="content-description left">
-            Everything runs on the OVH public cloud, billed monthly and scaling
-            with what we use. Teams that self-host run on their own servers, not
-            on this bill.
-          </p>
+          <span class="eyebrow">{{ $t('metrics.servers.eyebrow') }}</span>
+          <h2 class="content-title left">{{ $t('metrics.servers.title') }}</h2>
+          <p class="content-description left">{{ $t('metrics.servers.text') }}</p>
           <a
             class="btn btn-outline"
             href="https://blog.cg-wire.com/deep-dive-into-our-hosting-infrastructure"
-            >Discover our infrastructure</a
+            >{{ $t('metrics.servers.cta') }}</a
           >
         </div>
 
         <div class="server-bill">
-          <span class="bill-label">Last month · infrastructure</span>
+          <span class="bill-label">{{ $t('metrics.servers.billLabel') }}</span>
           <div class="bill-value">
             {{ euro(metrics.servers.lastMonthCost)
-            }}<span class="bill-per">/month</span>
+            }}<span class="bill-per">{{ $t('metrics.servers.perMonth') }}</span>
           </div>
           <dl class="bill-rows">
             <div class="bill-row">
-              <dt>Provider</dt>
+              <dt>{{ $t('metrics.servers.provider') }}</dt>
               <dd>{{ metrics.servers.provider }}</dd>
             </div>
             <div class="bill-row">
-              <dt>Scale</dt>
+              <dt>{{ $t('metrics.servers.scale') }}</dt>
               <dd>{{ metrics.servers.vms }} VMs · {{ metrics.servers.storage }}</dd>
             </div>
           </dl>
@@ -242,8 +215,8 @@
     <!-- TOOLS -->
     <section class="section band-light">
       <div class="container">
-        <h2 class="content-title">Our tools</h2>
-        <p class="content-description">The products and services we run on.</p>
+        <h2 class="content-title">{{ $t('metrics.tools.title') }}</h2>
+        <p class="content-description">{{ $t('metrics.tools.text') }}</p>
         <div class="tools-grid">
           <div
             v-for="(list, category) in metrics.tools"
@@ -260,7 +233,7 @@
     <!-- FUNDING -->
     <section class="section">
       <div class="container">
-        <h2 class="content-title">Our funding structure</h2>
+        <h2 class="content-title">{{ $t('metrics.funding.title') }}</h2>
         <ul
           class="funding-list"
           :class="{
@@ -279,7 +252,7 @@
           class="btn btn-secondary see-all"
           @click="showAllFunding = !showAllFunding"
         >
-          {{ showAllFunding ? 'Show less' : 'See all' }}
+          {{ showAllFunding ? $t('metrics.funding.showLess') : $t('metrics.funding.seeAll') }}
         </button>
       </div>
     </section>
@@ -287,9 +260,7 @@
     <!-- CAP TABLE -->
     <section class="section band-light">
       <div class="container">
-        <h2 class="content-title">
-          How ownership is split between shareholders
-        </h2>
+        <h2 class="content-title">{{ $t('metrics.captable.title') }}</h2>
         <div class="data-cards captable">
           <div v-for="o in metrics.capTable" :key="o.name" class="data-card">
             <div class="card-value">{{ o.share }}%</div>
@@ -303,9 +274,9 @@
     <!-- WHY -->
     <section class="section">
       <div class="container">
-        <h2 class="content-title">Why we share our numbers</h2>
+        <h2 class="content-title">{{ $t('metrics.why.title') }}</h2>
         <div class="why-cards">
-          <div v-for="w in metrics.why" :key="w.title" class="why-card">
+          <div v-for="w in why" :key="w.title" class="why-card">
             <h3 class="why-title">{{ w.title }}</h3>
             <p class="why-text">{{ w.text }}</p>
           </div>
@@ -317,15 +288,10 @@
     <section class="section">
       <div class="container carbon-promo">
         <div class="carbon-promo-text">
-          <h2 class="content-title left">Discover our 2024 carbon report</h2>
-          <p class="content-description left">
-            Transparency is not only about money. We also measure and share the
-            environmental footprint of our activity. The 2024 report breaks down
-            our main emission sources, where we can still improve, and the
-            concrete actions we are taking to reduce our footprint.
-          </p>
+          <h2 class="content-title left">{{ $t('metrics.carbon.title') }}</h2>
+          <p class="content-description left">{{ $t('metrics.carbon.text') }}</p>
           <NuxtLink class="btn btn-primary" :to="$localePath('carbon-report')"
-            >Read the report</NuxtLink
+            >{{ $t('metrics.carbon.cta') }}</NuxtLink
           >
         </div>
         <img
@@ -345,48 +311,62 @@ import metrics from '~/data/metrics.json'
 import heroArtLeft from '~/assets/images/metrics/header-left.png'
 import heroArtRight from '~/assets/images/metrics/header-right.png'
 
+const { t, locale } = useI18n()
+
 useSEO({
-  title: 'CGWire | Metrics and Data',
-  description:
-    'Open company metrics for CGWire: revenue, customers, funding and more.'
+  title: t('metrics.seo.title'),
+  description: t('metrics.seo.description')
 })
 
-const MONTHS = [
-  'January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December'
-]
-
-const euro = n => '€' + Number(n).toLocaleString('en-US')
+const euro = n =>
+  new Intl.NumberFormat(locale.value, {
+    style: 'currency',
+    currency: 'EUR',
+    maximumFractionDigits: 0
+  }).format(n)
 
 const fundingDate = d => {
   const [y, m] = d.split('-')
-  return `${MONTHS[Number(m) - 1]} ${y}`
+  return new Date(Number(y), Number(m) - 1, 1).toLocaleDateString(locale.value, {
+    year: 'numeric',
+    month: 'long'
+  })
 }
 
-const lastUpdate = new Date(metrics.lastUpdate).toLocaleDateString('en-GB', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric'
-})
+const lastUpdate = computed(() =>
+  new Date(metrics.lastUpdate).toLocaleDateString(locale.value, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
+)
 
 const latestCustomers = metrics.customers.values.at(-1)
 const employeesCount = metrics.employees.values.at(-1)
 
 // Revenue period toggle
-const revenuePeriods = [
-  { key: 'monthly', label: 'Monthly' },
-  { key: 'quarterly', label: 'Quarterly' },
-  { key: 'yearly', label: 'Yearly' }
-]
+const revenuePeriods = computed(() => [
+  { key: 'monthly', label: t('metrics.period.monthly') },
+  { key: 'quarterly', label: t('metrics.period.quarterly') },
+  { key: 'yearly', label: t('metrics.period.yearly') }
+])
 const revenuePeriod = ref('quarterly')
 const revenue = computed(() => metrics.revenue[revenuePeriod.value])
 
 // Cash flow toggle
 const showBank = ref(true)
-const cashFlowSeries = [
-  { name: 'Incoming', color: '#00B242', data: metrics.cashFlow.incoming },
-  { name: 'Outgoing', color: '#E8833A', data: metrics.cashFlow.outgoing }
-]
+const cashFlowSeries = computed(() => [
+  {
+    name: t('metrics.cashflow.incoming'),
+    color: '#00B242',
+    data: metrics.cashFlow.incoming
+  },
+  {
+    name: t('metrics.cashflow.outgoing'),
+    color: '#E8833A',
+    data: metrics.cashFlow.outgoing
+  }
+])
 
 // Funding collapse
 const fundingLimit = 8
@@ -396,6 +376,18 @@ const visibleFunding = computed(() =>
   showAllFunding.value ? orderedFunding : orderedFunding.slice(0, fundingLimit)
 )
 
+// updates + why live in the locale files so titles (and blog URLs) can be
+// translated per language; proper nouns stay as data in metrics.json.
+const updates = computed(() => [
+  { title: t('metrics.updates.item1.title'), url: t('metrics.updates.item1.url') },
+  { title: t('metrics.updates.item2.title'), url: t('metrics.updates.item2.url') }
+])
+
+const why = computed(() => [
+  { title: t('metrics.why.item1.title'), text: t('metrics.why.item1.text') },
+  { title: t('metrics.why.item2.title'), text: t('metrics.why.item2.text') },
+  { title: t('metrics.why.item3.title'), text: t('metrics.why.item3.text') }
+])
 </script>
 
 <style lang="stylus" scoped>
