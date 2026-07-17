@@ -175,9 +175,9 @@
             }}</nuxt-link>
           </li>
           <li>
-            <a href="https://metrics.cg-wire.com">{{
+            <nuxt-link :to="$localePath('metrics')">{{
               $t('footers link metrics')
-            }}</a>
+            }}</nuxt-link>
           </li>
           <li>
             <nuxt-link :to="$localePath('terms')">{{
