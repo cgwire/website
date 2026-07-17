@@ -517,17 +517,16 @@ text-light = #868686
 // HERO SECTION
 // ========================================
 .hero-background
-  height: 100px
-  background: linear-gradient(180deg, light-green 0%, white 100%)
+  height: 1px
 
 .hero-section
   color: text-color
-  background-color: light-green
   background-image: url('/assets/images/carbon-report/carbon-header-left.png'),
-    url('/assets/images/carbon-report/carbon-header-right.png')
-  background-size: 16%, 16%
-  background-position: top left, top right
-  background-repeat: no-repeat, no-repeat
+    url('/assets/images/carbon-report/carbon-header-right.png'),
+    linear-gradient(180deg, light-green 0%, white 100%)
+  background-size: 16%, 16%, cover
+  background-position: top left, top right, center
+  background-repeat: no-repeat, no-repeat, no-repeat
   min-height: 700px
   padding: 4rem 0
   text-align: center
@@ -873,7 +872,7 @@ text-light = #868686
 // ========================================
 @media (max-width: 960px)
   .hero-section
-    background-image: none
+    background-image: linear-gradient(180deg, light-green 0%, white 100%)
 
     .hero-illustration
       display: block
