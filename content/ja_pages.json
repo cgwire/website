@@ -45,13 +45,12 @@
         "team": {
           "title": "弊社について",
           "intro": "弊社はフランスを拠点とする情熱的なチームで、ソフトウェア開発、プロダクション管理、製品開発において豊富な経験を持っています。",
-          "advisors": "弊社のアドバイザー",
           "team": {
             "frank": {
               "name": "Frank Rousseau（フランク・ルソー）",
               "key": "frank",
-              "role": "マーケティングおよびコミュニケーションマネージャー",
-              "description": "CGWireに入社する前、Frankはスタジオに勤務し、スタートアップを共同設立しました。技術系企業で15年の経験があります。現在、彼はCGWireとKitsuブランドの育成を行い、それらを構築するために適切な人材を集めています。"
+              "role": "コミュニケーション・戦略・バックエンドマネージャー",
+              "description": "CGWireに入社する前、Frankはスタジオに勤務し、スタートアップを共同設立しました。技術系企業で15年の経験があります。現在、彼はKitsu APIの保守と改善を担当し、CGWireとKitsuを構築するために適切な人材を集めています。"
             },
             "gwen": {
               "name": "Gwenaëlle Dupré（グウェナエル・デュプレ）",
@@ -71,11 +70,11 @@
               "role": "フロントエンドソフトウェアマネージャー",
               "description": "Nicolasは、OVHやOrangeなどの企業で15年の経験を持つ熟練のJavaScript開発者です。フロントエンド技術について頻繁にカンファレンスで講演しており、すべてのKitsu UIの管理を行っています。"
             },
-            "evan": {
-              "name": "Evan Blaudy（エヴァン・ブラウディ）",
-              "key": "evan",
-              "role": "バックエンドソフトウェアマネージャー",
-              "description": "Evanは、オープンソースプロジェクトに携わる経験豊富なPythonソフトウェアエンジニアです。CGWireでは、Kitsu APIとDCC統合の保守と改善を担当しています。"
+            "basile": {
+              "name": "Basile Salmel（バジル・サルメル）",
+              "key": "basile",
+              "role": "マーケティングエンジニア",
+              "description": "Basileは、ソフトウェアエンジニアリングとマーケティングの両方に取り組んでいます。CGWireのウェブサイトとマーケティングツールを開発し、製品知識をコンテンツに変えて、スタジオがKitsuと出会うきっかけを作っています。"
             },
             "elsa": {
               "name": "Elsa Chevallier（エルサ・シュヴァリエ）",
@@ -83,22 +82,6 @@
               "role": "ファイナンスマネージャー",
               "description": "Elsaは映画業界で15年間、映画を促進するスタジオや組織で最高財務責任者として働いてきました。彼女はCGWireの財務面を担当しています。"
             }
-          },
-          "ev": {
-            "id": "Ev Henke（エヴ・ヘンケ）",
-            "role": "シニアUXデザイナー"
-          },
-          "jc": {
-            "id": "Jean-Christophe Deperraz（ジャン＝クリストフ・デペラ）",
-            "role": "Datavenir 営業マネージャー"
-          },
-          "frank2": {
-            "id": "Frank Karlitschek（フランク・カーリチェック）",
-            "role": "Nextcloud 最高経営責任者（CEO）"
-          },
-          "matthieu": {
-            "id": "Matthieu Aubry（マチュー・オーブリー）",
-            "role": "Matomo 最高経営責任者（CEO）"
           }
         },
         "design": {
@@ -107,6 +90,19 @@
         },
         "blender": {
           "information": "スクリーンショットに示されているすべてのプロダクション画像は、「Sprite Fright」の制作中にBlender Studioによって作成されました。これらはクリエイティブ・コモンズに基づいてライセンスされています。"
+        },
+        "transparency": {
+          "title": "透明性",
+          "metrics": {
+            "title": "私たちのメトリクス",
+            "text": "収益、給与、資金調達。オープンカンパニーとして数字を公開しています。",
+            "link": "メトリクスを見る"
+          },
+          "carbon": {
+            "title": "カーボンレポート",
+            "text": "事業活動の環境負荷を測定し、その結果を公開しています。",
+            "link": "レポートを読む"
+          }
         }
       }
     },

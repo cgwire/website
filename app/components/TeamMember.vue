@@ -24,8 +24,7 @@ const props = defineProps({
 <style lang="stylus" scoped>
 .ppl
   background lightblue
-  border-radius 1.5em
-  border-radius 50px 50px 50px 50px / 25px 25px 25px 25px
+  border-radius 20px
   margin 1em
 
 img

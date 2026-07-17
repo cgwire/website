@@ -49,8 +49,8 @@
             "frank": {
               "name": "Frank Rousseau",
               "key": "frank",
-              "role": "Marketing and Communication Manager",
-              "description": "Before CGWire, Frank worked for studios and co-founded a startup. He has 15 years of experience in tech companies. Today, he nurtures the CGWire and Kitsu brands and gathers the right people to build them."
+              "role": "Communication, Strategy and Backend Manager",
+              "description": "Before CGWire, Frank worked for studios and co-founded a startup. He has 15 years of experience in tech companies. Today, he maintains and improves the Kitsu API and gathers the right people to build CGWire and Kitsu."
             },
             "gwen": {
               "name": "Gwenaëlle Dupré",
@@ -70,11 +70,11 @@
               "role": "Frontend Software Manager",
               "description": "Nicolas is an experienced JavaScript developer with 15 years of experience at companies such as OVH and Orange. He frequently speaks at conferences about frontend technologies and is in charge of all Kitsu UIs."
             },
-            "evan": {
-              "name": "Evan Blaudy",
-              "key": "evan",
-              "role": "Backend Software Manager",
-              "description": "Evan is an experienced Python Software Engineer involved in open-source projects. At CGWire, he maintains and improves the Kitsu API and DCC integrations."
+            "basile": {
+              "name": "Basile Salmel",
+              "key": "basile",
+              "role": "Marketing Engineer",
+              "description": "Basile combines software engineering and marketing. He builds the CGWire websites and marketing tooling, and turns product knowledge into content that helps studios discover Kitsu."
             },
             "elsa": {
               "name": "Elsa Chevallier",
@@ -82,23 +82,6 @@
               "role": "Finance Manager",
               "description": "Elsa has worked for 15 years in the movie industry as a Chief Financial Officer in studios and organizations promoting cinema. She is responsible for the financial aspects at CGWire."
             }
-          },
-          "advisors": "Our advisors",
-          "ev": {
-            "id": "Ev Henke",
-            "role": "Senior UX Designer"
-          },
-          "jc": {
-            "id": "Jean-Christophe Deperraz",
-            "role": "Sales Manager at Datavenir"
-          },
-          "frank2": {
-            "id": "Frank Karlitschek",
-            "role": "CEO at Nextcloud"
-          },
-          "matthieu": {
-            "id": "Matthieu Aubry",
-            "role": "CEO at Matomo"
           }
         },
         "design": {
@@ -107,6 +90,19 @@
         },
         "blender": {
           "information": "All production images shown in screenshots were created by Blender Studio during the production of Sprite Fright. They are licensed under Creative Commons."
+        },
+        "transparency": {
+          "title": "Transparency",
+          "metrics": {
+            "title": "Our metrics",
+            "text": "Revenue, salaries, funding: as an open company, we publish our numbers.",
+            "link": "See the metrics"
+          },
+          "carbon": {
+            "title": "Our carbon report",
+            "text": "We measure the environmental footprint of our activity and publish the results.",
+            "link": "Read the report"
+          }
         }
       }
     },
