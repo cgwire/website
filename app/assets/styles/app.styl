@@ -907,6 +907,9 @@ div.body
         z-index 2
         background transparent url('~/assets/images/footer.png') bottom center / contain no-repeat
         background-size auto 165px
+        // The bottom-anchored illustration is 165px tall: anything shorter
+        // clips its top with a hard white edge (visible on mobile).
+        min-height 175px
 
     // ========================================================================
     // PAGE: KITSU
