@@ -2,7 +2,7 @@
   <figure class="metrics-chart">
     <svg
       ref="svgEl"
-      :viewBox="`0 0 ${W} ${H}`"
+      :viewBox.attr="`0 0 ${W} ${H}`"
       class="chart-svg"
       preserveAspectRatio="none"
       role="img"
@@ -15,10 +15,10 @@
         <line
           v-for="(g, i) in gridlines"
           :key="'g' + i"
-          :x1="padL"
-          :y1="g.y"
-          :x2="W - padR"
-          :y2="g.y"
+          :x1.attr="padL"
+          :y1.attr="g.y"
+          :x2.attr="W - padR"
+          :y2.attr="g.y"
         />
       </g>
 
@@ -26,59 +26,63 @@
       <line
         v-if="hovered"
         class="hover-guide"
-        :x1="hovered.x"
-        :y1="plotTop"
-        :x2="hovered.x"
-        :y2="plotBottom"
+        :x1.attr="hovered.x"
+        :y1.attr="plotTop"
+        :x2.attr="hovered.x"
+        :y2.attr="plotBottom"
       />
 
+      <!-- Dynamic geometry uses g wrappers and .attr bindings: template
+           fragments inside <svg> lose the SVG namespace on patch, and Vue
+           then hits the read-only x/y/width/height DOM properties. -->
+
       <!-- area chart -->
-      <template v-if="type === 'area'">
-        <path :d="areaPath" class="area-fill" :style="{ fill: color }" />
-        <path :d="linePath" class="area-line" :style="{ stroke: color }" />
+      <g v-if="type === 'area'">
+        <path :d.attr="areaPath" class="area-fill" :style="{ fill: color }" />
+        <path :d.attr="linePath" class="area-line" :style="{ stroke: color }" />
         <circle
           v-if="hovered"
           class="hover-dot"
-          :cx="hovered.x"
-          :cy="hovered.y"
+          :cx.attr="hovered.x"
+          :cy.attr="hovered.y"
           r="4.5"
           :style="{ stroke: color }"
         />
-      </template>
+      </g>
 
       <!-- single-series bars -->
-      <template v-else-if="type === 'bar'">
+      <g v-else-if="type === 'bar'">
         <rect
           v-for="(v, i) in series"
           :key="'b' + i"
-          :x="barX(i)"
-          :y="yOf(v)"
-          :width="barW"
-          :height="Math.max(0, plotBottom - yOf(v))"
+          :x.attr="barX(i)"
+          :y.attr="yOf(v)"
+          :width.attr="barW"
+          :height.attr="Math.max(0, plotBottom - yOf(v))"
           rx="3"
           class="bar"
           :class="{ 'bar-active': i === hoverIndex }"
           :style="{ fill: color }"
         />
-      </template>
+      </g>
 
       <!-- grouped bars (e.g. cash in / out) -->
-      <template v-else>
-        <template v-for="(s, si) in series" :key="'s' + si">
+      <g v-else>
+        <g v-for="(s, si) in series" :key="'s' + si">
           <rect
             v-for="(v, i) in s.data"
             :key="'g' + si + '-' + i"
-            :x="barX(i) + si * (barW / series.length)"
-            :y="yOf(v)"
-            :width="barW / series.length"
-            :height="Math.max(0, plotBottom - yOf(v))"
+            :x.attr="barX(i) + si * (barW / series.length)"
+            :y.attr="yOf(v)"
+            :width.attr="barW / series.length"
+            :height.attr="Math.max(0, plotBottom - yOf(v))"
             rx="2"
             class="bar"
             :class="{ 'bar-active': i === hoverIndex }"
             :style="{ fill: s.color }"
           />
-        </template>
-      </template>
+        </g>
+      </g>
     </svg>
 
     <!-- hover tooltip -->
@@ -100,7 +104,7 @@
     </div>
 
     <!-- y-axis labels overlay (svg text would stretch under preserveAspectRatio=none) -->
-    <div class="y-axis">
+    <div v-if="!isNarrow" class="y-axis">
       <span
         v-for="(g, i) in gridlines"
         :key="'y' + i"
@@ -147,7 +151,6 @@ const props = defineProps({
 })
 
 const H = 320
-const padL = 48
 const padR = 12
 const padT = 14
 const padB = 6
@@ -170,21 +173,26 @@ onBeforeUnmount(() => ro && ro.disconnect())
 
 const W = computed(() => Math.max(240, width.value))
 
+// On narrow screens the y-axis labels eat too much plot width: drop them and
+// shrink the left padding. The values stay reachable through the hover tip.
+const isNarrow = computed(() => W.value < 520)
+const padL = computed(() => (isNarrow.value ? 10 : 48))
+
 const isGrouped = computed(() => props.type === 'grouped')
 const allValues = computed(() =>
   isGrouped.value ? props.series.flatMap(s => s.data) : props.series
 )
 const maxV = computed(() => Math.max(1, ...allValues.value))
 const n = computed(() => props.labels.length)
-const slotW = computed(() => (W.value - padL - padR) / n.value)
+const slotW = computed(() => (W.value - padL.value - padR) / n.value)
 const barW = computed(() => slotW.value * 0.72)
 
-const barX = i => padL + i * slotW.value + (slotW.value - barW.value) / 2
-const barCenterX = i => padL + (i + 0.5) * slotW.value
+const barX = i => padL.value + i * slotW.value + (slotW.value - barW.value) / 2
+const barCenterX = i => padL.value + (i + 0.5) * slotW.value
 const pointX = i =>
   n.value === 1
-    ? padL
-    : padL + (i / (n.value - 1)) * (W.value - padL - padR)
+    ? padL.value
+    : padL.value + (i / (n.value - 1)) * (W.value - padL.value - padR)
 const yOf = v => plotBottom - (v / maxV.value) * (plotBottom - plotTop)
 
 const fmt = v => {
@@ -229,7 +237,8 @@ const xTicks = computed(() => {
       out.push({ label: year, x: tickX(i) })
     }
   })
-  return out
+  // Narrow plots cannot fit a label per year without overlap.
+  return isNarrow.value ? out.filter((t, i) => i % 2 === 0) : out
 })
 
 const legend = computed(() => (isGrouped.value ? props.series : []))
@@ -238,13 +247,13 @@ const legend = computed(() => (isGrouped.value ? props.series : []))
 const hoverIndex = ref(-1)
 
 const nearestIndex = x => {
-  const cx = Math.max(padL, Math.min(W.value - padR, x))
+  const cx = Math.max(padL.value, Math.min(W.value - padR, x))
   let i
   if (props.type === 'area') {
-    const step = (W.value - padL - padR) / Math.max(1, n.value - 1)
-    i = Math.round((cx - padL) / step)
+    const step = (W.value - padL.value - padR) / Math.max(1, n.value - 1)
+    i = Math.round((cx - padL.value) / step)
   } else {
-    i = Math.floor((cx - padL) / slotW.value)
+    i = Math.floor((cx - padL.value) / slotW.value)
   }
   return Math.max(0, Math.min(n.value - 1, i))
 }
