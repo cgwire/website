@@ -411,10 +411,13 @@ $border-soft = #e4e9ef
   padding: 4.5rem 1rem
   text-align: center
 
+// Centered at any viewport: the global .section max-width caps the band, and
+// auto margins keep it centered where a fixed side margin would pin it left.
 .band-light
   background: $light-band
   border-radius: 32px
-  margin: 0 1.5rem
+  margin: 0 auto
+  width: calc(100% - 3rem)
 
 // --- HERO ---
 .hero
@@ -445,7 +448,8 @@ $border-soft = #e4e9ef
     margin-top 3em
 
 .hero-title
-  font-size: 3rem
+  // Fluid size so the single line never overflows between 860px and 1200px.
+  font-size: clamp(2.4rem, 4.3vw, 3rem)
   font-weight: 900
   line-height: 1.1
   margin: 2.5rem auto 1.5rem
@@ -898,47 +902,6 @@ $border-soft = #e4e9ef
   max-width: 260px
   height: auto
 
-// --- RESPONSIVE ---
-@media (max-width: 860px)
-  .hero
-    background-image: linear-gradient(180deg, $hero-top 0%, #fff 100%)
-    min-height: auto
-
-  .band-light
-    margin: 0 0.75rem
-    border-radius: 20px
-
-  .hero-title
-    font-size: 2.2rem
-    white-space: normal
-
-  .content-title
-    font-size: 1.8rem
-
-  .two-col,
-
-  .carbon-promo
-    flex-direction: column
-    gap: 1.5rem
-    text-align: center
-
-  .two-blocks
-    grid-template-columns: 1fr
-
-  .pay-panel
-    width: 100%
-
-  .left
-    text-align: center
-
-  .toggle-buttons
-    width: 100%
-
-  .funding-row
-    grid-template-columns: auto 1fr auto
-    gap: 0.6rem
-    padding: 0.85rem 1rem
-
 // --- TOGGLE ---
 .toggle-buttons
   display: inline-flex
@@ -951,4 +914,80 @@ $border-soft = #e4e9ef
 
   .btn
     padding: 0.7rem 1.5rem
+
+// --- RESPONSIVE ---
+// Keep this block last: at equal specificity the base rules above would
+// override it otherwise.
+@media (max-width: 860px)
+  .hero
+    background-image: linear-gradient(180deg, $hero-top 0%, #fff 100%)
+    background-size: cover
+    background-position: center
+    min-height: auto
+    padding: 3.5rem 1rem 2.5rem
+
+  .band-light
+    width: calc(100% - 1.5rem)
+    border-radius: 20px
+
+  .container
+    padding: 0 1.25rem
+
+  .hero-title
+    font-size: 2.2rem
+    white-space: normal
+
+  .content-title
+    font-size: 1.8rem
+
+  .two-col,
+  .carbon-promo
+    flex-direction: column
+    gap: 1.5rem
+    text-align: center
+
+  .carbon-promo
+    padding-bottom 2em
+    padding-top 3em
+
+  .two-blocks
+    grid-template-columns: 1fr
+
+  .pay-panel
+    width: 100%
+    text-align: left
+
+  .left
+    text-align: center
+
+  .toggle-buttons
+    display: flex
+    width: 100%
+
+    .btn
+      flex: 1
+      min-width: 0
+      padding: 0.7rem 0.4rem
+      font-size: 0.85rem
+
+  .tools-category
+    flex-basis: 100%
+    min-width: 0
+
+  // One card per funding event: date and amount on top, label wrapping below.
+  .funding-row
+    grid-template-columns: 1fr auto
+    grid-template-areas: 'date amount' 'label label'
+    gap: 0.3rem 1rem
+    padding: 0.9rem 1.1rem
+
+  .funding-date
+    grid-area: date
+
+  .funding-amount
+    grid-area: amount
+
+  .funding-label
+    grid-area: label
+    white-space: normal
 </style>
