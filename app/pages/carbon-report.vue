@@ -182,25 +182,25 @@
               <img
                 class="big-graph"
                 src="~/assets/images/carbon-report/graph-without-plane-travels.png"
-                alt="Graph showing carbon emissions by category with flights"
+                alt="Graph showing carbon emissions by category without flights"
                 v-show="locale === 'fr'"
               />
               <img
                 class="big-graph"
                 src="~/assets/images/carbon-report/graph-without-plane-travels-en.png"
-                alt="Graph showing carbon emissions by category with flights"
+                alt="Graph showing carbon emissions by category without flights"
                 v-show="locale === 'en'"
               />
               <img
                 class="small-graph"
                 src="~/assets/images/carbon-report/small-graph-without-plane-travels.png"
-                alt="Graph showing carbon emissions by category with flights"
+                alt="Graph showing carbon emissions by category without flights"
                 v-show="locale === 'fr'"
               />
               <img
                 class="small-graph"
                 src="~/assets/images/carbon-report/small-graph-without-plane-travels-en.png"
-                alt="Graph showing carbon emissions by category with flights"
+                alt="Graph showing carbon emissions by category without flights"
                 v-show="locale === 'en'"
               />
             </template>
@@ -276,7 +276,7 @@
             <img
               class="card-big-icon"
               src="~/assets/images/carbon-report/cloud-small.png"
-              alt="Japan icon"
+              alt="Cloud icon"
             />
             <div class="category-card-data">
               <div class="card-value">60%</div>
@@ -292,7 +292,7 @@
             <img
               class="card-big-icon"
               src="~/assets/images/carbon-report/food-small.png"
-              alt="Cloud icon"
+              alt="Food icon"
             />
             <div class="category-card-data">
               <div class="card-value">16%</div>
@@ -330,7 +330,7 @@
       <div class="flexrow evolution-card">
         <img
           src="~/assets/images/carbon-report/optimisation-food.png"
-          alt="Cloud optimisation illustration"
+          alt="Food optimisation illustration"
         />
         <div class="evolution-text food">
           <h2>{{ page.meta.carbonReport.evolution.food }}</h2>
@@ -498,6 +498,7 @@ light-green = #ECFFD9
 light-blue = #D4E5F7
 light-purple = #F9F6FD
 border-purple = #C5A9E8
+border-blue = #79ADE5
 text-color = #363636
 text-light = #868686
 
@@ -540,17 +541,15 @@ text-light = #868686
     display: flex
     font-size: 18px
     gap: 1rem
-    margin: auto
-    margin-bottom: 2rem
-    margin-top: 100px
+    margin: 100px auto 2rem
     justify-content: center
-    letter-spacing: 12%
+    letter-spacing: 0.12em
     text-transform: uppercase
 
   .section-title
     font-weight: 700
     font-size: 58px
-    line-height: 75px
+    line-height: 1.25
     max-width: 80%
     margin: auto
 
@@ -581,16 +580,14 @@ text-light = #868686
 // ========================================
 .toggle-buttons
   display: flex
-  justify-content: stretch
   gap: 1rem
-  margin: auto
-  margin-bottom: 4rem
+  margin: 0 auto 4rem
   border-radius: 50px
   border: 2px solid light-grey
   padding: 4px
   background: white
-  font-weight: 300
-  width: 552px
+  width: 100%
+  max-width: 552px
 
 .btn
   padding: 1rem 2rem
@@ -605,9 +602,6 @@ text-light = #868686
     background: cgwiregreen
     color: white
     border-radius: 50px
-
-    &.active
-      background: cgwiregreen
 
   &.btn-secondary
     background: white
@@ -632,15 +626,15 @@ text-light = #868686
   padding: 30px
   text-align: left
   background: white
-  transition: transform 0.3s ease
+  transition: transform 0.2s ease
 
   &:hover
-    transform: translateY(-5px)
+    transform: translateY(-4px)
 
   &.category-card
     display: flex
     align-items: center
-    border-color: #79ADE5
+    border-color: border-blue
 
 .data-card-header
   display: flex
@@ -689,7 +683,7 @@ text-light = #868686
 
 .card-info
   font-size: 0.9rem
-  color: text-medium
+  color: text-light
   font-style: italic
 
 // ========================================
@@ -697,7 +691,8 @@ text-light = #868686
 // ========================================
 .carbon-categories
   background-color: light-blue
-  padding: 4rem 0
+  border-radius: 32px
+  margin: 0 1.5rem
 
 .big-graph
   display: inline-block
@@ -707,7 +702,7 @@ text-light = #868686
 
 .chart-legend
   display: flex
-  justify-content: space-between
+  justify-content: center
   align-items: center
   margin-top: 2rem
 
@@ -788,10 +783,8 @@ text-light = #868686
 // ========================================
 .anticipation
   background: light-purple
-  padding: 2rem 0
-
-  .content-title
-    font-size: 40px
+  border-radius: 32px
+  margin: 0 1.5rem
 
   .event-cards
     display: flex
@@ -806,11 +799,11 @@ text-light = #868686
     border: 1px solid border-purple
     border-radius: 20px
     overflow: hidden
-    transition: transform 0.3s ease
+    transition: transform 0.2s ease
     padding: 12px
 
     &:hover
-      transform: translateY(-5px)
+      transform: translateY(-4px)
 
   .card-illustration
     background: light-blue
@@ -861,8 +854,7 @@ text-light = #868686
 // CONCLUSION SECTION
 // ========================================
 .conclusion
-  padding: 2em
-  padding-top: 4em
+  padding: 4rem 2rem 2rem
 
   .content-title
     font-size: 28px
@@ -872,7 +864,22 @@ text-light = #868686
 // ========================================
 @media (max-width: 960px)
   .hero-section
+    // Single background layer: reset the multi-layer size/position too,
+    // otherwise the gradient inherits the 16% width of the corner art.
     background-image: linear-gradient(180deg, light-green 0%, white 100%)
+    background-size: cover
+    background-position: center
+    min-height: auto
+    padding: 6rem 0 2rem
+
+    .carbon-title
+      margin-top: 2rem
+
+    .section-title
+      font-size: 2.4rem
+      line-height: 1.3
+      max-width: 100%
+      padding: 0 1.5rem
 
     .hero-illustration
       display: block
