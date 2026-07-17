@@ -43,11 +43,10 @@ const props = defineProps({
 
 .feature-img-wrapper
   border-radius: 20px
-  box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.2)
   max-width: 600px
   margin: 0 auto
   background-color: #c2f0ab
-  padding: 40px 40px
+  padding: 6px
 
   &.purple
     background-color: #e9e1ec
@@ -59,6 +58,7 @@ const props = defineProps({
     border: 10px solid #ffffff66
     border-radius: 20px
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
+    margin 0
 
 .flexrow-reverse
   flex-direction: row-reverse
