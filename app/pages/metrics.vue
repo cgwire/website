@@ -411,13 +411,15 @@ $border-soft = #e4e9ef
   padding: 4.5rem 1rem
   text-align: center
 
-// Centered at any viewport: the global .section max-width caps the band, and
-// auto margins keep it centered where a fixed side margin would pin it left.
+// Centered at any viewport; auto margins keep the band centered where a
+// fixed side margin would pin it left. The 1400px cap overrides the global
+// .section max-width, shared with the about and carbon bands.
 .band-light
   background: $light-band
   border-radius: 32px
   margin: 0 auto
   width: calc(100% - 3rem)
+  max-width: 1400px
 
 // --- HERO ---
 .hero

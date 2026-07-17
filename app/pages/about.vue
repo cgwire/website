@@ -278,7 +278,7 @@ $hero-top = #f1eafa
   border-radius 32px
   margin 0 auto
   width calc(100% - 3rem)
-  max-width calc(1200px + 3rem)
+  max-width 1400px
 
 .values
   img

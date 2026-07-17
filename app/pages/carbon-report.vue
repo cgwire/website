@@ -312,33 +312,39 @@
       <h2 class="content-title">
         {{ page.meta.carbonReport.evolution.title }}
       </h2>
-      <div class="flexrow evolution-card">
-        <div class="evolution-text">
-          <h2>{{ page.meta.carbonReport.evolution.cloud }}</h2>
-          <ul>
-            <li>{{ page.meta.carbonReport.evolution.cloudOne }}</li>
-            <li>{{ page.meta.carbonReport.evolution.cloudTwo }}</li>
-            <li>{{ page.meta.carbonReport.evolution.cloudThree }}</li>
-          </ul>
+      <div class="evolution-cards">
+        <div class="evolution-card">
+          <div class="evolution-illustration">
+            <img
+              src="~/assets/images/carbon-report/optimisation-cloud.png"
+              alt="Cloud optimisation illustration"
+            />
+          </div>
+          <div class="evolution-content">
+            <h3>{{ page.meta.carbonReport.evolution.cloud }}</h3>
+            <ul>
+              <li>{{ page.meta.carbonReport.evolution.cloudOne }}</li>
+              <li>{{ page.meta.carbonReport.evolution.cloudTwo }}</li>
+              <li>{{ page.meta.carbonReport.evolution.cloudThree }}</li>
+            </ul>
+          </div>
         </div>
-        <img
-          src="~/assets/images/carbon-report/optimisation-cloud.png"
-          alt="Cloud optimisation illustration"
-        />
-      </div>
 
-      <div class="flexrow evolution-card">
-        <img
-          src="~/assets/images/carbon-report/optimisation-food.png"
-          alt="Food optimisation illustration"
-        />
-        <div class="evolution-text food">
-          <h2>{{ page.meta.carbonReport.evolution.food }}</h2>
-          <ul>
-            <li>{{ page.meta.carbonReport.evolution.foodOne }}</li>
-            <li>{{ page.meta.carbonReport.evolution.foodTwo }}</li>
-            <li>{{ page.meta.carbonReport.evolution.foodThree }}</li>
-          </ul>
+        <div class="evolution-card">
+          <div class="evolution-illustration is-green">
+            <img
+              src="~/assets/images/carbon-report/optimisation-food.png"
+              alt="Food optimisation illustration"
+            />
+          </div>
+          <div class="evolution-content">
+            <h3>{{ page.meta.carbonReport.evolution.food }}</h3>
+            <ul>
+              <li>{{ page.meta.carbonReport.evolution.foodOne }}</li>
+              <li>{{ page.meta.carbonReport.evolution.foodTwo }}</li>
+              <li>{{ page.meta.carbonReport.evolution.foodThree }}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -689,10 +695,13 @@ text-light = #868686
 // ========================================
 // CARBON CATEGORIES SECTION
 // ========================================
+// Same max width as the bands on the metrics and about pages, centered.
 .carbon-categories
   background-color: light-blue
   border-radius: 32px
-  margin: 0 1.5rem
+  margin: 0 auto
+  width: calc(100% - 3rem)
+  max-width: 1400px
 
 .big-graph
   display: inline-block
@@ -745,38 +754,71 @@ text-light = #868686
 // EVOLUTION SECTION
 // ========================================
 .evolution
-  .flexrow
+  // Same width as the anticipation event cards below.
+  .evolution-cards
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 1.5rem
+    max-width: 1200px
+    margin: 3rem auto 0
+
+  .evolution-card
+    background: white
+    border: 1px solid light-grey
+    border-radius: 20px
+    padding: 12px
+    text-align: left
+    box-shadow: 0 4px 18px rgba(20, 30, 50, 0.05)
+    transition: transform 0.2s ease
+
+    &:hover
+      transform: translateY(-4px)
+
+  // Each panel matches the flat background baked into its artwork
+  // (cloud: light-blue, food: light-green) so the plate blends in.
+  .evolution-illustration
     display: flex
     align-items: center
-    justify-content: space-between
-    max-width: 960px
-    margin: auto
-    margin-top: 4rem
+    justify-content: center
+    background: light-blue
+    border-radius: 20px
+    min-height: 220px
+    padding: 1.5rem
 
-    h2
-      font-size: 26px
-      font-weight: 700
-      color: text-color
-      margin-bottom: 1rem
-
-    .evolution-text
-      width: 50%
-      text-align: left
-      padding-right: 2rem
-
-      &.food
-        padding-left: 2rem
+    &.is-green
+      background: light-green
 
     img
-      width: 50%
+      width: 100%
+      max-width: 280px
+      height: auto
 
-    p
-      margin-bottom: 1rem
+  .evolution-content
+    padding: 1.5rem
+
+    h3
+      font-size: 1.35rem
+      font-weight: 700
+      color: text-color
+      margin-bottom: 0.9rem
 
     ul
-      list-style-type: disc
-      padding-left: 1rem
-      text-align: left
+      list-style: none
+      padding: 0
+      margin: 0
+
+    li
+      position: relative
+      padding-left: 1.6rem
+      margin-bottom: 0.6rem
+      line-height: 1.5
+
+      &:before
+        content: '✓'
+        position: absolute
+        left: 0
+        color: cgwiregreen
+        font-weight: 700
 
 // ========================================
 // ANTICIPATION SECTION
@@ -784,7 +826,9 @@ text-light = #868686
 .anticipation
   background: light-purple
   border-radius: 32px
-  margin: 0 1.5rem
+  margin: 0 auto
+  width: calc(100% - 3rem)
+  max-width: 1400px
 
   .event-cards
     display: flex
@@ -933,30 +977,13 @@ text-light = #868686
       max-width: 400px
       margin: 0 auto
 
+  .carbon-categories,
+  .anticipation
+    width: calc(100% - 1.5rem)
+    border-radius: 20px
+
   .evolution
-    .flexrow
-      flex-direction: column
-      text-align: center
-
-      &.evolution-card:nth-child(2)
-        flex-direction: column-reverse
-
-        img
-          margin-bottom: 2rem
-
-      .evolution-text
-        width: 100%
-        padding: 0 0 2rem 0
-        text-align: center
-
-        &.food
-          padding: 2rem 0 0 0
-
-        ul
-          margin: auto
-
-      img
-        width: 100%
-        max-width: 400px
-        margin: 0 auto
+    .evolution-cards
+      grid-template-columns: 1fr
+      max-width: 400px
 </style>
