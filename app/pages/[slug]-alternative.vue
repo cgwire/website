@@ -103,7 +103,9 @@ if (!comparison.value) {
 
 useSEO({
   title: `CGWire | Kitsu vs ${comparison.value.meta.tool}`,
-  description: comparison.value.meta.subtitle
+  // description carries the SEO wording; the visible subtitle stays free of
+  // it. On page collections, description is a top-level column, not meta.
+  description: comparison.value.description || comparison.value.meta.subtitle
 })
 </script>
 

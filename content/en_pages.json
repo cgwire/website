@@ -1576,7 +1576,8 @@
       "image": "vsftrack.png",
       "shadow": true,
       "title": "An open-source alternative to Ftrack",
-      "subtitle": "The open-source Ftrack alternative: a production tracker for animation and VFX studios, ready from day one.",
+      "subtitle": "Open-source production tracker for animation and VFX studios, ready from day one.",
+      "description": "The open-source Ftrack alternative: a production tracker for animation and VFX studios, ready from day one.",
       "sections": [
         {
           "title": "Who Kitsu is for",

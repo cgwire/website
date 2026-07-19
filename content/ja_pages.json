@@ -1580,7 +1580,8 @@
       "image": "vsftrack.png",
       "shadow": true,
       "title": "Ftrack のオープンソース代替",
-      "subtitle": "Ftrack のオープンソース代替。アニメーションと VFX スタジオ向けのプロダクション トラッカー、初日から使える。",
+      "subtitle": "アニメーションと VFX スタジオ向けのオープンソース プロダクション トラッカー、初日から使える。",
+      "description": "Ftrack のオープンソース代替。アニメーションと VFX スタジオ向けのプロダクション トラッカー、初日から使える。",
       "sections": [
         {
           "title": "Kitsu の対象ユーザー",
