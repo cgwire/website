@@ -121,7 +121,7 @@ export default defineNuxtConfig({
         {
           name: 'keywords',
           content:
-            'production management pipeline cg cg blender nuke 3dsmax maya animation movie vfx tracking shotgun alternative 2D 3D'
+            'production management pipeline cg cg blender nuke 3dsmax maya animation movie vfx tracking shotgun alternative ftrack alternative 2D 3D'
         },
         {
           name: 'og:title',

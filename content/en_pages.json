@@ -1576,7 +1576,7 @@
       "image": "vsftrack.png",
       "shadow": true,
       "title": "An open-source alternative to Ftrack",
-      "subtitle": "Open-source production tracker for animation and VFX studios, ready from day one.",
+      "subtitle": "The open-source Ftrack alternative: a production tracker for animation and VFX studios, ready from day one.",
       "sections": [
         {
           "title": "Who Kitsu is for",
@@ -1589,7 +1589,7 @@
           "title": "What Kitsu covers",
           "content": [
             "A production tracker covers a well-known set of needs: sequences, shots, assets, tasks, statuses, schedules, time tracking, reviews, casting, permissions, a documented API, and DCC integrations. Kitsu covers this scope, the same as Ftrack does. The difference is in how the pieces are presented and how the studio interacts with them.",
-            "One area where Ftrack pushes further is its DCC integration footprint via Ftrack Connect. Kitsu's integration story is leaner and relies on the open-source ecosystem: dedicated tools like Prism or Ayon integrate with Kitsu and cover the deep DCC pipeline work, while Kitsu stays focused on the tracking and review workflow."
+            "One area where Ftrack pushes further is its DCC integration footprint via Ftrack Connect. Kitsu's integration story is leaner and relies on the open-source ecosystem: a dedicated tool like Prism integrates with Kitsu and covers the deep DCC pipeline work, while Kitsu stays focused on the tracking and review workflow."
           ]
         },
         {
@@ -1616,7 +1616,7 @@
             "Kitsu is open source (AGPL, repository at github.com/cgwire/kitsu). The code can be read, audited, forked, and deployed by anyone. The changelog and the roadmap are public, so studios can see what is coming, what is in progress, and what is being decided.",
             "For teams that want long-term visibility on the tools they depend on, this matters: no surprise pivot, no surprise pricing, no closed-door product decision.",
             "CGWire is an independent company, five people based in Paris, with no external investors. The choices we make on Kitsu (open source, public roadmap, pricing) are ours to keep.",
-            "Ftrack is proprietary software, owned by Backbone. The roadmap and codebase stay inside the editor."
+            "Ftrack is proprietary software, owned by Backlight since 2022. The roadmap and codebase stay inside the editor."
           ]
         },
         {
@@ -1659,7 +1659,7 @@
                 ["Support channel", "Discord, email, by industry professionals", "Editor support"]
               ]
             },
-            "Ftrack pricing varies by plan and region, so the numbers above are an order of magnitude. Studios doing a serious comparison should pull a current quote from ftrack.com."
+            "Ftrack pricing varies by plan and region, so the numbers above are an order of magnitude. Studios doing a serious comparison should request an up-to-date quote from the vendor."
           ]
         },
         {
@@ -1670,7 +1670,7 @@
               "items": [
                 {
                   "q": "Ftrack is very configurable. Isn't a fixed workflow limiting?",
-                  "a": "Configurability has a cost: it postpones the moment when the team becomes productive. Standardization also pays off in everyday collaboration: a fixed structure means no 'where do I post the retake?' moments, the same shape applies everywhere, and a new artist or coordinator picks up where the last one left off. Kitsu's standard workflow is the result of years of iteration with studios and is flexible enough to cover 2D, 3D, shorts, feature films, series, video games, VR, AR, and stop motion. Most productions fit it without modification. Studios that need a deeply custom pipeline are usually better served by Ftrack or by combining Kitsu with a pipeline-specific tool like Prism or Ayon."
+                  "a": "Configurability has a cost: it postpones the moment when the team becomes productive. Standardization also pays off in everyday collaboration: a fixed structure means no 'where do I post the retake?' moments, the same shape applies everywhere, and a new artist or coordinator picks up where the last one left off. Kitsu's standard workflow is the result of years of iteration with studios and is flexible enough to cover 2D, 3D, shorts, feature films, series, video games, VR, AR, and stop motion. Most productions fit it without modification. Studios that need a deeply custom pipeline are usually better served by Ftrack or by combining Kitsu with a pipeline-specific tool like Prism."
                 },
                 {
                   "q": "Ftrack Review is a strong tool. Does Kitsu cover the same ground?",
@@ -1678,7 +1678,7 @@
                 },
                 {
                   "q": "What about DCC integrations? Ftrack Connect is comprehensive.",
-                  "a": "Kitsu exposes a REST API with a documented Python client (gazu). For deep DCC pipeline work, Prism and Ayon integrate with Kitsu and cover the territory Ftrack Connect addresses. Many studios run that combination today."
+                  "a": "Kitsu exposes a REST API with a documented Python client (gazu). For deep DCC pipeline work, Prism integrates with Kitsu and covers the territory Ftrack Connect addresses. Many studios run that combination today."
                 },
                 {
                   "q": "Open source sounds risky for a production-critical tool.",

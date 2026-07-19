@@ -1581,7 +1581,7 @@
       "image": "vsftrack.png",
       "shadow": true,
       "title": "Une alternative open source à Ftrack",
-      "subtitle": "Suivi de production open source pour les studios d'animation et VFX, prêt dès le premier jour.",
+      "subtitle": "L'alternative open source à Ftrack : un suivi de production pour les studios d'animation et VFX, prêt dès le premier jour.",
       "sections": [
         {
           "title": "Pour qui Kitsu est conçu",
@@ -1614,7 +1614,7 @@
             "Kitsu est open source (AGPL, dépôt sur github.com/cgwire/kitsu). Le code peut être lu, audité, forké et déployé par quiconque. Le changelog et la roadmap sont publics, les studios voient ce qui arrive, ce qui est en cours et ce qui se décide.",
             "Pour les équipes qui veulent une visibilité long terme sur les outils dont elles dépendent, c'est important : pas de pivot surprise, pas de surprise tarifaire, pas de décision produit prise à huis clos.",
             "CGWire est une entreprise indépendante, cinq personnes basées à Paris, sans investisseurs externes. Les choix que nous faisons sur Kitsu (open source, roadmap publique, tarifs) restent les nôtres.",
-            "Ftrack est un logiciel propriétaire, détenu par Backbone. La roadmap et le code restent à l'intérieur de l'éditeur."
+            "Ftrack est un logiciel propriétaire, détenu par Backlight depuis 2022. La roadmap et le code restent à l'intérieur de l'éditeur."
           ]
         },
         {
