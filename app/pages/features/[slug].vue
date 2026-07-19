@@ -6,6 +6,7 @@
       v-for="(feature, index) in page.meta.features"
       :key="index"
       :feature="feature"
+      :last="index === page.meta.features.length - 1"
     />
 
     <CustomerStoryBlock

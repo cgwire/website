@@ -17,7 +17,8 @@
       'block-colored': feature.colored,
       gradient: feature.gradient === true,
       [`gradient-${gradientStep}`]: gradientStep,
-      block: !feature.colored
+      block: !feature.colored,
+      'block-last': last && !feature.colored
     }"
   >
     <section class="section">
@@ -74,10 +75,12 @@
 import { computed } from 'vue'
 
 const props = defineProps({
-  feature: Object
+  feature: Object,
+  last: Boolean
 })
 
 const feature = props.feature
+const last = props.last
 
 const gradientStep = computed(() => {
   if (typeof feature.gradient === 'number') return feature.gradient
@@ -115,6 +118,12 @@ const bottomWaveColor = computed(() => {
 
 .block-colored.gradient-3
   background linear-gradient(0deg, #F9F6FD 0%, #F7F7FE 100%)
+
+// A closing wave gives colored blocks a tall visual outro. When the page ends
+// on a plain block there is no wave, so it gets an explicit bottom margin.
+// Doubled class to outweigh the global "div.body .block { margin 0 }" rule.
+.block.block-last
+  margin-bottom 16rem
 
 .screenshot
   border-radius 10px
