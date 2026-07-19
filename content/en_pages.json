@@ -1723,7 +1723,7 @@
           "title": "What Kitsu covers",
           "content": [
             "A production tracker covers a well-known set of needs: sequences, shots, assets, tasks, statuses, schedules, time tracking, reviews, casting, permissions, a documented API, and DCC integrations. Kitsu covers this scope, the same as ShotGrid does. The difference is in how the pieces are presented and how the studio interacts with them.",
-            "One exception is worth naming: ShotGrid Toolkit, the deep DCC pipeline layer that ships with ShotGrid. Kitsu takes a different approach: pipeline integration is delegated to dedicated open-source tools that integrate with Kitsu, such as Prism or Ayon. They focus exclusively on DCC pipeline work and typically go further than a tracker-bundled module would."
+            "One exception is worth naming: ShotGrid Toolkit, the deep DCC pipeline layer that ships with ShotGrid. Kitsu takes a different approach: pipeline integration is delegated to dedicated open-source tools that integrate with Kitsu, such as Prism, which focuses exclusively on DCC pipeline work and typically goes further than a tracker-bundled module would."
           ]
         },
         {
@@ -1799,7 +1799,7 @@
                 },
                 {
                   "q": "What about the DCC integrations we rely on?",
-                  "a": "Kitsu exposes a REST API and ships a documented Python client (gazu) that makes building integrations with Maya, Nuke, Houdini, Blender, and others straightforward. For deeper pipeline work, Prism and Ayon are dedicated open-source tools that integrate with Kitsu and cover the ground ShotGrid Toolkit covers, with a sharper focus."
+                  "a": "Kitsu exposes a REST API and ships a documented Python client (gazu) that makes building integrations with Maya, Nuke, Houdini, Blender, and others straightforward. For deeper pipeline work, Prism is a dedicated open-source tool that integrates with Kitsu and covers the ground ShotGrid Toolkit covers, with a sharper focus."
                 },
                 {
                   "q": "Is Kitsu only for small studios?",
