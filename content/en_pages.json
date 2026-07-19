@@ -1130,16 +1130,16 @@
       "slug": "elite-hosting",
       "image": "elite-hosting.png",
       "header": {
-        "tagline": "Downtime and data loss cost studios money. We make sure neither happens.",
-        "subtitle": "Elite hosting",
+        "tagline": "Elite hosting",
+        "subtitle": "Your system is always up",
         "metrics": "elite-hosting header metrics",
         "explanation": "CGWire's operations team manages your Kitsu installation end to end. Security, uptime, performance, and updates are handled by specialists with decades of cloud infrastructure experience. Your team stays focused on production. We handle everything else."
       },
       "features": [
         {
           "key": "security",
-          "title": "Enterprise-grade security, fully managed",
-          "subtitle": "Stop worrying about breaches and compliance",
+          "subtitle": "Enterprise-grade security",
+          "title": "Stop worrying about breaches and compliance",
           "content": "We adhere to the highest security standards, using only secure transmissions for accessing our up-to-date installations. All secrets are managed through secure vaults, and our employees are screened. A security document is available upon request.",
           "image": "kitsu-security.png",
           "shadow": true,
@@ -1148,8 +1148,8 @@
         },
         {
           "key": "availability",
-          "title": "99% uptime with proactive monitoring",
-          "subtitle": "Unplanned outages kill deadlines",
+          "subtitle": "Proactive monitoring",
+          "title": "Avoid unplanned outages that kill deadlines",
           "content": "Every instance is monitored around the clock. Our team receives alerts before issues escalate and resolves them before they impact your production pipeline.",
           "image": "kitsu-availability.png",
           "shadow": true,
@@ -1157,8 +1157,8 @@
         },
         {
           "key": "performance",
-          "title": "Isolated infrastructure, optimized for your location",
-          "subtitle": "Slow tools erode team productivity",
+          "subtitle": "Optimized access",
+          "title": "Enjoy fast services",
           "content": "Your instance runs on dedicated resources, isolated from other studios. Servers are provisioned close to your team, and video processing runs on a separate machine so large playlists never slow down your workflow.",
           "image": "kitsu-performance.png",
           "colored": true,
@@ -1166,16 +1166,16 @@
           "shadow": false
         },
         {
-          "title": "Fully dedicated instance",
-          "subtitle": "Shared infrastructure means unpredictable performance",
+          "subtitle": "Isolated setup",
+          "title": "Get a dedicated infrastructure",
           "content": "Your Kitsu runs on its own infrastructure. No shared resources, no noisy neighbors, no risk of another studio's workload affecting yours. Consistent performance and strict data isolation from day one.",
           "image": "kitsu-multiinstance.png",
           "reverted": true
         },
         {
-          "title": "Updates handled without interruption",
-          "subtitle": "Running outdated software is a security risk",
-          "content": "CGWire's team applies every update and security patch on your behalf. You stay on the latest version without scheduling maintenance windows or pulling engineers away from production work.",
+          "subtitle": "Updates without interruption",
+          "title": "Always stay up to date",
+          "content": "CGWire's team applies every update and security patch on your behalf, for Kitsu and the entire operating stack. You stay on the latest version without scheduling maintenance windows or pulling engineers away from production work.",
           "image": "kitsu-updates.png",
           "colored": true,
           "gradient": 3
@@ -1386,17 +1386,17 @@
       "slug": "tailor-made-architecture",
       "image": "tailor-made-architecture.png",
       "header": {
-        "tagline": "Enterprise Infrastructure, Without the Compromise",
-        "subtitle": "Tailor-Made Architecture",
+        "tagline": "Tailor-Made Architecture",
+        "subtitle": "Enterprise Infrastructure, Without the Compromise",
         "metrics": "tailor-made-architecture header metrics",
-        "explanation": "Large studios have requirements that standard cloud deployments cannot meet: data sovereignty, network performance, strict access control, and production isolation. CGWire deploys and manages Kitsu directly on your hardware, giving you the security and control of on-premise infrastructure with the same uptime, monitoring, and update guarantees as our cloud. No internal DevOps burden. No compromises on your pipeline."
+        "explanation": "Large studios have strong requirements: data sovereignty, network performance, strict access control, and production isolation. CGWire deploys and manages Kitsu directly on your hardware or on an isolated cloud, giving you security, uptime, monitoring, and frequent updates while you keep control."
       },
       "features": [
         {
           "key": "onpremise",
-          "title": "On-Premise Installation",
-          "subtitle": "Your data stays on your servers, not ours.",
-          "content": "Studios with strict data residency requirements or latency-sensitive pipelines cannot afford to depend on external cloud infrastructure. We deploy Kitsu directly on your hardware and manage it with the same standards as our cloud: continuous monitoring, regular updates, and guaranteed uptime. Active Directory integration is included so your existing access control policies apply from day one.",
+          "subtitle": "On-Premise Installation",
+          "title": "Keep your data on your servers, not ours",
+          "content": "Studios with strict data residency requirements or latency-sensitive pipelines cannot afford to depend on external cloud infrastructure. We deploy Kitsu directly on your hardware and manage it with the same standards as our cloud. Active Directory and SSO integrations are included.",
           "image": "kitsu-onpremise.png",
           "colored": true,
           "gradient": 1,
@@ -1404,17 +1404,17 @@
         },
         {
           "key": "multiinstance",
-          "title": "Multi-Instance Setup",
-          "subtitle": "Stop letting productions bleed into each other.",
-          "content": "Running multiple productions on a single instance creates real risks: a pipeline change for one project can break another, and data separation becomes hard to enforce. With isolated Kitsu instances per production, each project runs its own environment. Separate pipelines, separate data, separate access. No interference, no shortcuts.",
+          "subtitle": "Multi-Instance Setup",
+          "title": "Let your productions work independently",
+          "content": "Running multiple productions on a single instance creates real risks: a pipeline change for one project can break another, and data separation becomes hard to enforce. With isolated Kitsu instances per production, each project runs its own environment.",
           "image": "kitsu-multiinstance.png",
           "reverted": true,
           "shadow": false
         },
         {
           "key": "extra",
-          "title": "Full Infrastructure Stack",
-          "subtitle": "One partner to configure and manage your entire setup.",
+          "subtitle": "Full Infrastructure Stack",
+          "title": "Let a single partner manage your entire setup",
           "content": "Between object storage, video compute, monitoring, and directory services, enterprise deployments involve a lot of moving parts. CGWire configures the complete stack on your private infrastructure so your team does not have to. Everything is set up to work together, and we keep it running.",
           "image": "kitsu-extra.png",
           "colored": true,
@@ -1422,15 +1422,15 @@
           "shadow": false
         },
         {
-          "title": "Local Video Cluster",
-          "subtitle": "Preview generation is bottlenecking your reviews.",
+          "subtitle": "Local Video Cluster",
+          "title": "Industrialize your preview generation",
           "content": "When your team is reviewing heavy sequences or processing large playlists, waiting on shared cloud resources slows everyone down. A dedicated GPU cluster on your own hardware handles video computing at full speed, on demand, without competing for external capacity.",
           "image": "kitsu-video.png",
           "reverted": true
         },
         {
-          "title": "Local Object Storage",
-          "subtitle": "Control where your production files actually live.",
+          "subtitle": "Local Object Storage",
+          "title": "Benefit from elastic storage",
           "content": "Storing production assets and previews in a third-party cloud means accepting their access policies, their retention rules, and their failure modes. With local object storage configured on your infrastructure, your studio owns the data and defines the access. Full control, no dependencies.",
           "image": "kitsu-onpremise.png",
           "colored": true,
@@ -1510,8 +1510,8 @@
       "image": "top-notch-support.png",
       "shadow": true,
       "header": {
-        "tagline": "Support That Keeps Production Moving",
-        "subtitle": "Top-Notch Support",
+        "tagline": "Top-Notch Support",
+        "subtitle": "Support That Keeps Production Moving",
         "metrics": "top-notch-support header metrics",
         "explanation": "Production problems do not wait for business hours. Get answers in under 30 minutes via in-app chat, from a team of former production managers who know your workflows firsthand. Every conversation is saved and tracked, so nothing falls through the cracks."
       },
@@ -1519,8 +1519,8 @@
       "features": [
         {
           "key": "fast",
-          "title": "Fast response time",
-          "subtitle": "Stop waiting days for a reply",
+          "title": "Stop waiting days for a reply",
+          "subtitle": "Fast response time",
           "content": "We respond in 30 minutes on average. Whether you need help finding a specific menu or want to rethink a workflow, you get a clear answer fast so your team can keep moving.",
           "image": "kitsu-fast.png",
           "shadow": true,
@@ -1529,8 +1529,8 @@
         },
         {
           "key": "chat",
-          "title": "Support when you need it",
-          "subtitle": "Reach us where it works for you",
+          "title": "Reach us where it works for you",
+          "subtitle": "Support when you need it",
           "content": "Access support directly in Kitsu, on Discord, or over Zoom. Whatever the issue, we are available through the channel that fits your situation.",
           "image": "kitsu-chat.png",
           "shadow": true,
@@ -1538,8 +1538,8 @@
         },
         {
           "key": "experts",
-          "title": "Assisted by experts",
-          "subtitle": "Talk to people who have done your job",
+          "subtitle": "Expert assistance",
+          "title": "Talk to people who have done your job",
           "content": "Our support team is made up of production veterans who have managed real pipelines. They understand the pressure you are under, speak your language, and help you get the most out of Kitsu.",
           "image": "kitsu-experts.png",
           "shadow": true,
@@ -1548,14 +1548,14 @@
         },
         {
           "title": "Track your requests",
-          "subtitle": "No issue gets forgotten or ignored",
+          "subtitle": "No issue forgotten",
           "content": "Every support conversation is saved and can be escalated through an integrated ticketing system. You always know where things stand, from first contact to resolution.",
           "image": "illustration-handshake.png",
           "reverted": true
         },
         {
           "title": "Shape the product with us",
-          "subtitle": "Your pipeline needs influence the roadmap",
+          "subtitle": "Roadmap influence",
           "content": "When Kitsu does not cover a specific need, we do not just log a ticket. We work with you to scope and build the feature. Your production requirements directly shape what gets built next.",
           "image": "kitsu-roadmap.png",
           "shadow": true,
