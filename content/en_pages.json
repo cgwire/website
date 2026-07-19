@@ -1234,7 +1234,8 @@
           "content": "Artists log time directly in Kitsu. You get a clear breakdown by artist, asset, or shot so you always know where your production hours are actually going. You can anticipate overspendings.",
           "image": "kitsu-timesheets.png",
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "gradient": 3
         },
         {
           "title": "Anticipate budget overruns",
@@ -1457,7 +1458,8 @@
           "content": "Assign tasks to artists and have them publish their work directly in Kitsu when ready for review. Producers, supervisors, and directors iterate on the same platform, with every comment and version tracked in context. Real-time notifications mean no one is waiting on information they should already have.",
           "image": "kitsu-tasks.png",
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "gradient": 1
         },
         {
           "key": "todos",
@@ -1475,7 +1477,8 @@
           "content": "Supervisors can instantly access a department-wide view of production through the Daily Supervision Tasks page. From any page in Kitsu, simply click on a task type name to see an overview of all related tasks across your department. This makes it easy to monitor progress, identify bottlenecks, review priorities, and ensure work keeps moving without manually collecting updates from artists.",
           "image": "kitsu-supervision.png",
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "gradient": 2
         },
         {
           "key": "news",
@@ -1492,7 +1495,8 @@
           "content": "Route Kitsu activity into the channels your team already monitors. Comments, status changes, and new previews appear directly in Slack or Discord so the right people respond without having to check a separate platform.",
           "image": "kitsu-slack.png",
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "gradient": 3
         }
       ],
       "customerStory": {

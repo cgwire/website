@@ -1238,7 +1238,8 @@
           "content": "Les artistes enregistrent le temps directement dans Kitsu. Vous obtenez une répartition claire par artiste, asset ou plan pour savoir toujours où vont réellement vos heures de production. Vous pouvez anticiper les dépassements de coûts.",
           "image": "kitsu-timesheets.png",
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "gradient": 3
         },
         {
           "title": "Anticipez les dépassements de budget",
@@ -1461,7 +1462,8 @@
           "content": "Assignez des tâches aux artistes et faites-leur publier leur travail directement dans Kitsu quand il est prêt pour révision. Les producteurs, superviseurs et réalisateurs itèrent sur la même plateforme, avec chaque commentaire et version suivis en contexte. Les notifications en temps réel signifient que personne n'attend des informations qu'il devrait déjà avoir.",
           "image": "kitsu-tasks.png",
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "gradient": 1
         },
         {
           "key": "todos",
@@ -1479,7 +1481,8 @@
           "content": "Les superviseurs peuvent accéder instantanément à une vue globale de la production à l’échelle du département grâce à la page des tâches quotidiennes de supervision. Depuis n’importe quelle page de Kitsu, il suffit de cliquer sur le nom d’un type de tâche pour afficher un aperçu de toutes les tâches associées dans votre département. Cela facilite le suivi de l’avancement, l’identification des goulots d’étranglement, la révision des priorités et le maintien du flux de production sans avoir à collecter manuellement les mises à jour auprès des artistes.",
           "image": "kitsu-supervision.png",
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "gradient": 2
         },
         {
           "key": "news",
@@ -1497,6 +1500,7 @@
           "content": "Redirigez l'activité Kitsu vers les canaux que votre équipe surveille déjà. Les commentaires, changements de statut et nouveaux aperçus apparaissent directement dans Slack ou Discord pour que les bonnes personnes répondent sans avoir à consulter une plateforme séparée.",
           "image": "kitsu-slack.png",
           "colored": true,
+          "gradient": 3,
           "reverted": true
         }
       ],
