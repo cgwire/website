@@ -1626,7 +1626,7 @@
         {
           "title": "Auto-hébergé, vraiment et gratuit",
           "content": [
-            "Environ 200 studios font tourner leur propre instance Kitsu aujourd'hui. Le déploiement se fait contre une base PostgreSQL standard, que les pipeline TDs et les équipes IT peuvent interroger et sauvegarder avec leurs outils habituels.",
+            "Environ 400 studios font tourner leur propre instance Kitsu aujourd'hui. Le déploiement se fait contre une base PostgreSQL standard, que les pipeline TDs et les équipes IT peuvent interroger et sauvegarder avec leurs outils habituels.",
             "Ftrack propose aussi une option on-premise sous forme de module payant, séparé de l'abonnement standard. Avec Kitsu, la voie auto-hébergée est gratuite, documentée, et au même niveau fonctionnel que la version cloud.",
             "Pour les studios soumis au RGPD, à des clauses de protection de la PI ou à des exigences de résidence des données (fréquentes sur les productions européennes ou japonaises), garder toute la stack à l'intérieur de votre propre infrastructure est un déploiement normal, pas une formule à part."
           ]
@@ -1663,7 +1663,7 @@
                 ],
                 [
                   "Auto-hébergement",
-                  "Gratuit, open source, ~200 installations actives",
+                  "Gratuit, open source, ~400 installations actives",
                   "Disponible, en module payant"
                 ],
                 [
@@ -1781,7 +1781,7 @@
           "title": "Hébergement et souveraineté des données",
           "content": [
             "Autodesk a arrêté son offre on-premise standard pour ShotGrid. Les déploiements auto-hébergés existent toujours, mais ils passent par un long processus d'approbation et impliquent un coût additionnel significatif. Le code reste propriétaire, donc le futur des fonctionnalités se décide à l'intérieur d'Autodesk.",
-            "Kitsu est open source. Le code peut être audité ligne par ligne, déployé sur vos serveurs et exploité de manière autonome. Environ 200 studios font tourner leur propre instance Kitsu aujourd'hui, en parallèle de notre offre hébergée.",
+            "Kitsu est open source. Le code peut être audité ligne par ligne, déployé sur vos serveurs et exploité de manière autonome. Environ 400 studios font tourner leur propre instance Kitsu aujourd'hui, en parallèle de notre offre hébergée.",
             "Pour les studios soumis au RGPD, à des clauses de protection de la PI ou à des exigences de résidence des données (fréquentes sur les productions européennes ou japonaises), garder toute la stack à l'intérieur de votre propre infrastructure est un déploiement normal, pas une formule à part.",
             "La version cloud reste disponible pour les studios qui préfèrent l'hébergement managé, avec le même périmètre de fonctionnalités que la version open source."
           ]

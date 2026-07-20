@@ -1628,7 +1628,7 @@
         {
           "title": "Self-hosted, real and free",
           "content": [
-            "Around 200 studios run their own Kitsu instance today. Deployment is a Docker compose against a standard PostgreSQL database, which pipeline TDs and IT teams can query and back up with their usual tools.",
+            "Around 400 studios run their own Kitsu instance today. Deployment is a Docker compose against a standard PostgreSQL database, which pipeline TDs and IT teams can query and back up with their usual tools.",
             "Ftrack offers an on-premise deployment option as a paid add-on, separate from the standard subscription. With Kitsu, the self-hosted path is free, documented, and at the same feature level as the cloud build.",
             "For studios subject to GDPR, IP protection clauses, or data residency requirements (common on European or Japanese productions), keeping the full stack inside your own infrastructure is a regular deployment, not a special tier."
           ]
@@ -1659,7 +1659,7 @@
               "headers": ["Item", "Kitsu", "Ftrack"],
               "rows": [
                 ["User license", "€30 per user per month", "~€25 to €35 per user per month, depending on plan"],
-                ["Self-hosted", "Free, open source, ~200 active installations", "Available, as a paid add-on"],
+                ["Self-hosted", "Free, open source, ~400 active installations", "Available, as a paid add-on"],
                 ["Source code", "Open (AGPL, github.com/cgwire/kitsu)", "Proprietary"],
                 ["Public roadmap", "Yes (Canny board and GitHub issues)", "Internal"],
                 ["Support channel", "Discord, email, by industry professionals", "Editor support"]
@@ -1780,7 +1780,7 @@
           "title": "Hosting and data ownership",
           "content": [
             "Autodesk has discontinued its standard on-premise option for ShotGrid. Self-hosted deployments still exist, but go through a long approval process and carry a significant additional cost. The codebase remains proprietary, so the future of features is decided inside Autodesk.",
-            "Kitsu is open source. The code can be audited line by line, deployed on your servers, and operated autonomously. Around 200 studios run their own Kitsu instance today, in parallel with our hosted offering.",
+            "Kitsu is open source. The code can be audited line by line, deployed on your servers, and operated autonomously. Around 400 studios run their own Kitsu instance today, in parallel with our hosted offering.",
             "For studios subject to GDPR, IP protection clauses, or data residency requirements (common on European or Japanese productions), keeping the full stack inside your own infrastructure is a regular deployment, not a special tier.",
             "The cloud version stays available for studios that prefer managed hosting, with the same feature set as the open-source build."
           ]
