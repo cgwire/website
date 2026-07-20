@@ -315,7 +315,8 @@ const { t, locale } = useI18n()
 
 useSEO({
   title: t('metrics.seo.title'),
-  description: t('metrics.seo.description')
+  description: t('metrics.seo.description'),
+  imagePath: 'metrics.png'
 })
 
 const euro = n =>
