@@ -19,7 +19,7 @@
       :quote="customerStory.quote"
     />
 
-    <Trial />
+    <Trial :contact="hasContactCta" />
   </div>
 </template>
 
@@ -45,6 +45,15 @@ if (!page.value) {
 
 const pageKey = page.value.slug
 const customerStory = page.value.meta.customerStory
+
+// Pages selling the managed service and the human relationship close on a
+// contact CTA rather than the signup form.
+const CONTACT_CTA_PAGES = [
+  'elite-hosting',
+  'tailor-made-architecture',
+  'top-notch-support'
+]
+const hasContactCta = CONTACT_CTA_PAGES.includes(pageKey)
 
 useSEO({
   title: 'CGWire | Kitsu / ' + page.value.meta.name,

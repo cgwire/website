@@ -5,7 +5,20 @@
         {{ $t('kitsu cta') }}
       </h2>
       <p class="has-text-centered">
+        <NuxtLink
+          v-if="contact"
+          :class="{
+            button: true,
+            'is-large': true,
+            'is-big': isBig,
+            hidden: !cta
+          }"
+          :to="$localePath('contact')"
+        >
+          {{ $t('trial.talk') }}
+        </NuxtLink>
         <a
+          v-else
           :class="{
             button: true,
             'is-large': true,
@@ -29,7 +42,10 @@ const props = defineProps({
   cta: {
     type: Boolean,
     default: true
-  }
+  },
+  // Managed-service pages pitch the human relationship: their closing CTA
+  // links to the contact page instead of the signup form.
+  contact: Boolean
 })
 </script>
 

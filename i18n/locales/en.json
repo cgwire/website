@@ -191,6 +191,9 @@
     "makuta": "makuta",
     "autour-de-minuit": "autour-de-minuit"
   },
+  "trial": {
+    "talk": "Talk to us"
+  },
   "metrics": {
     "seo": {
       "title": "CGWire | Metrics and Data",

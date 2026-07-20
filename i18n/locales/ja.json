@@ -244,6 +244,9 @@
     "makuta": "makuta",
     "autour-de-minuit": "autour-de-minuit"
   },
+  "trial": {
+    "talk": "お問い合わせ"
+  },
   "metrics": {
     "seo": {
       "title": "CGWire | メトリクスとデータ",

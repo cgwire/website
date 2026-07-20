@@ -232,6 +232,9 @@
     "makuta": "makuta",
     "autour-de-minuit": "autour-de-minuit"
   },
+  "trial": {
+    "talk": "Contactez-nous"
+  },
   "metrics": {
     "seo": {
       "title": "CGWire | Métriques et données",
