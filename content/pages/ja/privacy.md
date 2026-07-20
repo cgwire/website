@@ -1,6 +1,6 @@
 ---
-"title": "プライバシーポリシー"
-"slug": "privacy"
+title: "プライバシーポリシー"
+slug: "privacy"
 ---
 
 # プライバシーポリシー

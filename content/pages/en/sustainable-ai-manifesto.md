@@ -1,6 +1,6 @@
 ---
-"title": "Sustainable AI Manifesto"
-"slug": "sustainable-ai-manifesto"
+title: "Sustainable AI Manifesto"
+slug: "sustainable-ai-manifesto"
 ---
 
 # Sustainable AI Manifesto

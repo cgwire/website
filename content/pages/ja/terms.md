@@ -1,6 +1,6 @@
 ---
-"title": "利用規約"
-"slug": "terms"
+title: "利用規約"
+slug: "terms"
 ---
 
 # 利用規約

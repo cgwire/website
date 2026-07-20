@@ -1,6 +1,6 @@
 ---
-"title": "Kitsu の動かし方"
-"slug": "self-hosted"
+title: "Kitsu の動かし方"
+slug: "self-hosted"
 ---
 
 <div class="section-subtitle has-text-centered mt2">Kitsu の動かし方</div>

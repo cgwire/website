@@ -1,6 +1,6 @@
 ---
-"title": "Politique de confidentialité"
-"slug": "privacy"
+title: "Politique de confidentialité"
+slug: "privacy"
 ---
 
 # Politique de confidentialité

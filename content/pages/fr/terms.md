@@ -1,6 +1,6 @@
 ---
-"title": "Conditions d'utilisation"
-"slug": "terms"
+title: "Conditions d'utilisation"
+slug: "terms"
 ---
 
 # Conditions d'utilisation

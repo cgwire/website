@@ -1,6 +1,6 @@
 ---
-"title": "Privacy Policy"
-"slug": "privacy"
+title: "Privacy Policy"
+slug: "privacy"
 ---
 
 # Privacy Policy

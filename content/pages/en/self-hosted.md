@@ -1,6 +1,6 @@
 ---
-"title": "How to run Kitsu"
-"slug": "self-hosted"
+title: "How to run Kitsu"
+slug: "self-hosted"
 ---
 
 <div class="section-subtitle has-text-centered mt2">How to run Kitsu</div>
