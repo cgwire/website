@@ -3326,6 +3326,69 @@
   }
   },
   "testimonials": {
+    "wizz-1": {
+      "studio": "Wizz",
+      "interviewee": "Guilhem Compain",
+      "role": "Développeur principal",
+      "image": "/images/testimonials/guilhem.png",
+      "quote": "Kitsu nous donne la souveraineté sur nos données. Tout notre pipeline repose dessus."
+    },
+    "wizz-2": {
+      "studio": "Wizz",
+      "interviewee": "Guilhem Compain",
+      "role": "Développeur principal",
+      "image": "/images/testimonials/guilhem.png",
+      "quote": "Nul besoin d'utiliser toutes les fonctionnalités de Kitsu pour en tirer de la valeur."
+    },
+    "wizz-3": {
+      "studio": "Wizz",
+      "interviewee": "Guilhem Compain",
+      "role": "Développeur principal",
+      "image": "/images/testimonials/guilhem.png",
+      "quote": "Wizz utilise avant tout Kitsu comme couche de visualisation et de suivi, et cela suffit déjà à apporter un bénéfice important aux coordinateurs et aux réalisateurs."
+    },
+    "wizz-4": {
+      "studio": "Wizz",
+      "interviewee": "Guilhem Compain",
+      "role": "Développeur principal",
+      "image": "/images/testimonials/guilhem.png",
+      "quote": "La valeur de Kitsu s'accroît à mesure qu'il devient la source de données de référence pour les outils en aval."
+    },
+    "wizz-5": {
+      "studio": "Wizz",
+      "interviewee": "Guilhem Compain",
+      "role": "Développeur principal",
+      "image": "/images/testimonials/guilhem.png",
+      "quote": "Tout ce que vous enregistrez dans Kitsu peut servir à configurer, valider et automatiser le travail ailleurs dans le pipeline."
+    },
+    "normaal-1": {
+      "studio": "Normaal",
+      "interviewee": "Félix David",
+      "role": "Responsable Pipeline",
+      "image": "/images/testimonials/david.png",
+      "quote": "Pour le suivi de production, l'équipe a choisi Kitsu."
+    },
+    "normaal-2": {
+      "studio": "Normaal",
+      "interviewee": "Félix David",
+      "role": "Responsable Pipeline",
+      "image": "/images/testimonials/david.png",
+      "quote": "On ne peut pas anticiper tous les besoins que l'on va rencontrer. Utiliser un outil comme Kitsu, déjà éprouvé et développé, vous aide, car la plupart des cas d'usage auxquels vous serez confronté ont déjà été résolus."
+    },
+    "normaal-3": {
+      "studio": "Normaal",
+      "interviewee": "Félix David",
+      "role": "Responsable Pipeline",
+      "image": "/images/testimonials/david.png",
+      "quote": "Quand un plan est assigné à un artiste, le pipeline peut lire le breakdown pour déterminer quels personnages et décors apparaissent dans ce plan, puis pré-synchroniser tous les fichiers concernés vers le poste de l'artiste avant même qu'il n'ouvre la tâche."
+    },
+    "normaal-4": {
+      "studio": "Normaal",
+      "interviewee": "Félix David",
+      "role": "Responsable Pipeline",
+      "image": "/images/testimonials/david.png",
+      "quote": "Automatiser notre pipeline, c'était choisir des outils comme Kitsu qui avaient déjà absorbé des années de savoir communautaire, pour que l'équipe puisse se concentrer sur les problèmes réellement propres à la production."
+    },
     "woodblock": {
       "studio": "Woodblock",
       "interviewee": "Christian Zehetmeier",
@@ -3368,12 +3431,103 @@
       "image": "/images/photo-customer-story-miyu.png",
       "quote": "Quelques jours suffisent pour comprendre toutes les fonctionnalités nécessaires au lancement d'une production. Tout le monde dans le studio démarre rapidement, en particulier les artistes qui apprécient vraiment Kitsu. Nous n'avions pas remarqué cet enthousiasme avec les outils précédemment utilisés."
     },
+    "miyu-2": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "Directrice Technique",
+      "image": "/images/testimonials/clea.png",
+      "quote": "La première et la plus importante des forces de Kitsu, c'est la simplicité."
+    },
+    "miyu-3": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "Directrice Technique",
+      "image": "/images/testimonials/clea.png",
+      "quote": "Kitsu a fait le pari de rester accessible au départ et de n'ajouter de la complexité que lorsque les utilisateurs la demandent."
+    },
+    "miyu-4": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "Directrice Technique",
+      "image": "/images/testimonials/clea.png",
+      "quote": "L'outil le plus puissant du monde n'a aucune valeur si l'équipe refuse de l'utiliser. Kitsu est conçu pour être adopté par les artistes."
+    },
+    "miyu-5": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "Directrice Technique",
+      "image": "/images/testimonials/clea.png",
+      "quote": "Un outil qui nécessite un spécialiste pour le faire tourner et que tous les autres évitent n'est pas, dans les faits, un outil qui fonctionne."
+    },
+    "miyu-6": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "Directrice Technique",
+      "image": "/images/testimonials/clea.png",
+      "quote": "L'architecture de Kitsu, construite autour des notions de plans et d'assets, est assez souple pour s'adapter à des workflows véritablement atypiques."
+    },
+    "miyu-7": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "Directrice Technique",
+      "image": "/images/testimonials/clea.png",
+      "quote": "Kitsu offre à toutes les équipes une visibilité en temps réel sur l'avancement des autres."
+    },
+    "miyu-8": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "Directrice Technique",
+      "image": "/images/testimonials/clea.png",
+      "quote": "En 30 minutes, le projet était entièrement restauré, car le journal d'événements de Kitsu capture toutes les modifications en temps réel."
+    },
     "fost": {
       "studio": "FOST Studio",
       "interviewee": "Céline Durieux",
       "role": "Directrice de Studio",
       "image": "/images/photo-customer-story-fost.png",
       "quote": "Avec Kitsu, on pense d'abord au temps gagné, mais ce qui compte le plus pour moi, c'est la sérénité que l'on obtient en ayant tout en ordre. Ça libère de l'espace mental pour se concentrer sur d'autres aspects de la production."
+    },
+    "fost-2": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "Directrice de Studio",
+      "image": "/images/testimonials/celine.png",
+      "quote": "Nous sommes passés à Kitsu en 2020. Spoiler : nous ne sommes jamais revenus en arrière."
+    },
+    "fost-3": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "Directrice de Studio",
+      "image": "/images/testimonials/celine.png",
+      "quote": "Kitsu n'est pas seulement un outil de suivi de production, c'est aussi la couche de données centrale de tout le pipeline du studio."
+    },
+    "fost-4": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "Directrice de Studio",
+      "image": "/images/testimonials/celine.png",
+      "quote": "Kitsu est la source unique de vérité dans laquelle chaque département et chaque outil peut lire et écrire."
+    },
+    "fost-5": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "Directrice de Studio",
+      "image": "/images/testimonials/celine.png",
+      "quote": "L'API et la documentation de Kitsu ne sont pas un cauchemar à parcourir, ce qui est rare pour les outils du secteur."
+    },
+    "fost-6": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "Directrice de Studio",
+      "image": "/images/testimonials/celine.png",
+      "quote": "Le résultat de l'adoption de Kitsu, c'est un studio passé de 60 à 150 personnes sur une seule production tout en gardant le cap."
+    },
+    "fost-7": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "Directrice de Studio",
+      "image": "/images/testimonials/celine.png",
+      "quote": "Ce type de collaboration continue entre un studio et un éditeur de logiciel est rare dans les logiciels de production d'animation. Cela reflète à la fois la nature open source de Kitsu et le fait que le modèle économique de CGWire dépend de la réussite réelle des studios avec l'outil."
     },
     "adm": {
       "studio": "Autour de Minuit",
@@ -3396,12 +3550,124 @@
       "image": "/images/photo-customer-story-pete-draper.jpg",
       "quote": "Kitsu était simple et intuitif. Pas besoin d'un doctorat en informatique comme avec les alternatives."
     },
+    "ryff-2": {
+      "studio": "Ryff",
+      "interviewee": "Pete Draper",
+      "role": "Superviseur des Effets Visuels",
+      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "quote": "Kitsu est simple et direct. Pas seulement pour les équipes de production, mais aussi pour les artistes. Nul besoin d'un diplôme en informatique pour l'utiliser."
+    },
+    "ryff-3": {
+      "studio": "Ryff",
+      "interviewee": "Pete Draper",
+      "role": "Superviseur des Effets Visuels",
+      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "quote": "Un outil de suivi de production ne fonctionne que si tout le monde l'utilise, ce qui suppose qu'il soit accessible aux artistes, pas seulement aux superviseurs. Kitsu a réussi ce test dès le premier jour."
+    },
     "remembers": {
       "studio": "Remembers",
       "interviewee": "Audrey Tondre",
       "role": "Directrice de Production",
       "image": "/images/photo-customer-story-audrey-tondre.jpg",
       "quote": "Je savais que si j'introduisais un nouvel outil, je devais répondre à un besoin qui n'avait pas encore été identifié par l'équipe en place. Le principal défi dès le départ était de ne pas les contraindre."
+    },
+    "remembers-2": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "Directrice de Production",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "Kitsu se prend en main très, très facilement. On peut cliquer partout, on voit les images du film, on voit tous les départements et séquences susceptibles de concerner le sien."
+    },
+    "remembers-3": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "Directrice de Production",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "Naviguer dans Kitsu est aussi agréable et motivant. Ce n'est pas « oh non, je dois publier ma dernière version »."
+    },
+    "remembers-4": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "Directrice de Production",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "On comprend bien qu'entre Kitsu et un tableur, nous avons déjà fait un pas énorme en tant que studio. Et il ne s'agit pas seulement de productivité, c'est aussi plus agréable."
+    },
+    "remembers-5": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "Directrice de Production",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "La démo d'essai m'a beaucoup rassurée. Nous cherchions évidemment quelque chose de très intuitif : comme je m'adressais à des personnes qui ne demandaient pas d'outils, il fallait qu'elles puissent le prendre en main et embarquer très naturellement."
+    },
+    "remembers-6": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "Directrice de Production",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "Kitsu rend la communication entre départements rapide et facile. Même pour de petites retouches, des choses passées entre les mailles parce que les plans avaient déjà été validés."
+    },
+    "remembers-7": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "Directrice de Production",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "Toutes les données utiles au suivi de production existent déjà dans Kitsu."
+    },
+    "cube-1": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "Superviseur CG",
+      "image": "/images/testimonials/axel.png",
+      "quote": "Kitsu est la mémoire collective du projet."
+    },
+    "cube-2": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "Superviseur CG",
+      "image": "/images/testimonials/axel.png",
+      "quote": "Kitsu connaît le statut de chaque asset, de chaque plan, ainsi que l'état global de la production."
+    },
+    "cube-3": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "Superviseur CG",
+      "image": "/images/testimonials/axel.png",
+      "quote": "Pour Cube, Kitsu est la source unique de vérité."
+    },
+    "cube-4": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "Superviseur CG",
+      "image": "/images/testimonials/axel.png",
+      "quote": "Avec Kitsu, les artistes n'ont pas à deviner où se trouve quelque chose."
+    },
+    "cube-5": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "Superviseur CG",
+      "image": "/images/testimonials/axel.png",
+      "quote": "Kitsu aide énormément sur l'infrastructure et l'extensibilité, grâce à son architecture flexible et à sa nature open source."
+    },
+    "tetsuo-1": {
+      "studio": "Tetsuo Animation",
+      "interviewee": "Chris Unterberg",
+      "role": "Fondateur et superviseur d'animation",
+      "image": "/images/testimonials/chris.png",
+      "quote": "On peut organiser une réunion avec plusieurs utilisateurs de Kitsu tous sur la même playlist, et ils peuvent tous dessiner sur la même image. Cela permet de parler de points très précis à un moment très précis."
+    },
+    "tetsuo-2": {
+      "studio": "Tetsuo Animation",
+      "interviewee": "Chris Unterberg",
+      "role": "Fondateur et superviseur d'animation",
+      "image": "/images/testimonials/chris.png",
+      "quote": "Dès lors que l'on amène tout le monde à donner un retour visuel, l'équipe s'approprie les plans et l'on construit un outil de communication, un langage que toute l'équipe partage."
+    },
+    "tetsuo-3": {
+      "studio": "Tetsuo Animation",
+      "interviewee": "Chris Unterberg",
+      "role": "Fondateur et superviseur d'animation",
+      "image": "/images/testimonials/chris.png",
+      "quote": "Invitez tout le monde à dessiner sur l'image. Invitez vos clients, invitez vos parties prenantes."
     }
   },
   "customer_stories": {

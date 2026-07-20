@@ -3301,6 +3301,69 @@
   }
   },
   "testimonials": {
+    "wizz-1": {
+      "studio": "Wizz",
+      "interviewee": "Guilhem Compain",
+      "role": "リードデベロッパー",
+      "image": "/images/testimonials/guilhem.png",
+      "quote": "Kitsuは私たちにデータの主権を与えてくれます。私たちのパイプライン全体がKitsuに依存しています。"
+    },
+    "wizz-2": {
+      "studio": "Wizz",
+      "interviewee": "Guilhem Compain",
+      "role": "リードデベロッパー",
+      "image": "/images/testimonials/guilhem.png",
+      "quote": "Kitsuのすべての機能を使わなくても、十分に価値を引き出せます。"
+    },
+    "wizz-3": {
+      "studio": "Wizz",
+      "interviewee": "Guilhem Compain",
+      "role": "リードデベロッパー",
+      "image": "/images/testimonials/guilhem.png",
+      "quote": "Wizzは主にKitsuを可視化とトラッキングのレイヤーとして使っており、それだけでもコーディネーターやディレクターに大きなメリットをもたらしています。"
+    },
+    "wizz-4": {
+      "studio": "Wizz",
+      "interviewee": "Guilhem Compain",
+      "role": "リードデベロッパー",
+      "image": "/images/testimonials/guilhem.png",
+      "quote": "Kitsuが下流のツールにとって信頼できるデータソースになるほど、その価値は高まっていきます。"
+    },
+    "wizz-5": {
+      "studio": "Wizz",
+      "interviewee": "Guilhem Compain",
+      "role": "リードデベロッパー",
+      "image": "/images/testimonials/guilhem.png",
+      "quote": "Kitsuに記録したものはすべて、パイプラインの他の場所での作業の設定、検証、自動化に活用できます。"
+    },
+    "normaal-1": {
+      "studio": "Normaal",
+      "interviewee": "Félix David",
+      "role": "パイプラインヘッド",
+      "image": "/images/testimonials/david.png",
+      "quote": "制作のトラッキングには、チームはKitsuを選びました。"
+    },
+    "normaal-2": {
+      "studio": "Normaal",
+      "interviewee": "Félix David",
+      "role": "パイプラインヘッド",
+      "image": "/images/testimonials/david.png",
+      "quote": "遭遇するすべてのニーズを事前に予測することはできません。Kitsuのように、すでにテストされ開発が進んだツールを使うことが助けになります。直面する使用ケースのほとんどは、すでに解決されているからです。"
+    },
+    "normaal-3": {
+      "studio": "Normaal",
+      "interviewee": "Félix David",
+      "role": "パイプラインヘッド",
+      "image": "/images/testimonials/david.png",
+      "quote": "ショットがアーティストに割り当てられると、パイプラインはブレイクダウンを読み取り、そのショットにどのキャラクターやセットが登場するかを判断します。そして、アーティストがタスクを開く前に、関連するすべてのファイルをそのワークステーションに事前同期できます。"
+    },
+    "normaal-4": {
+      "studio": "Normaal",
+      "interviewee": "Félix David",
+      "role": "パイプラインヘッド",
+      "image": "/images/testimonials/david.png",
+      "quote": "私たちのパイプラインを自動化するということは、Kitsuのように何年ものコミュニティの知見をすでに取り込んだツールを選ぶことでした。おかげでチームは、その制作に本当に固有の課題に集中できました。"
+    },
     "woodblock": {
       "studio": "Woodblock",
       "interviewee": "Christian Zehetmeier",
@@ -3343,12 +3406,103 @@
       "image": "/images/photo-customer-story-miyu.png",
       "quote": "制作に必要なすべての機能を理解するのに、数日もあれば十分です。スタジオ全員がすぐに使いこなせるようになり、特にアーティストたちはKitsuをとても気に入っています。以前使用していたツールでは、このような熱意は見られませんでした。"
     },
+    "miyu-2": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "テクニカルディレクター",
+      "image": "/images/testimonials/clea.png",
+      "quote": "Kitsuの第一の、そして最も重要な強みはシンプルさです。"
+    },
+    "miyu-3": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "テクニカルディレクター",
+      "image": "/images/testimonials/clea.png",
+      "quote": "Kitsuは、まずアクセスしやすい状態から始め、ユーザーが求めたときにだけ複雑さを加えるという賭けに出ました。"
+    },
+    "miyu-4": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "テクニカルディレクター",
+      "image": "/images/testimonials/clea.png",
+      "quote": "どれほど高機能なツールでも、チームが使うのを拒めば価値はゼロです。Kitsuはアーティストに使ってもらえるように作られています。"
+    },
+    "miyu-5": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "テクニカルディレクター",
+      "image": "/images/testimonials/clea.png",
+      "quote": "動かすのに専門家が必要で、他のみんなから敬遠されるツールは、実際には機能しているツールとは言えません。"
+    },
+    "miyu-6": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "テクニカルディレクター",
+      "image": "/images/testimonials/clea.png",
+      "quote": "ショットとアセットという概念を中心に構築されたKitsuのアーキテクチャは、本当に特殊なワークフローにも対応できるだけの柔軟性があります。"
+    },
+    "miyu-7": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "テクニカルディレクター",
+      "image": "/images/testimonials/clea.png",
+      "quote": "Kitsuは、すべてのチームに互いの進捗をリアルタイムで把握できる可視性を提供します。"
+    },
+    "miyu-8": {
+      "studio": "MIYU Studio",
+      "interviewee": "Cléa Gonay",
+      "role": "テクニカルディレクター",
+      "image": "/images/testimonials/clea.png",
+      "quote": "Kitsuのイベントログがすべての変更をリアルタイムで記録しているため、30分でプロジェクトを完全に復元できました。"
+    },
     "fost": {
       "studio": "FOST Studio",
       "interviewee": "Céline Durieux",
       "role": "スタジオヘッド",
       "image": "/images/photo-customer-story-fost.png",
       "quote": "Kitsuを使うと、まず時間の節約を思い浮かべますが、私にとってより重要なのは、すべてが整理されることで得られる安心感です。制作の他の要素に集中するための心の余裕が生まれます。"
+    },
+    "fost-2": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "スタジオヘッド",
+      "image": "/images/testimonials/celine.png",
+      "quote": "私たちは2020年にKitsuに切り替えました。ネタバレすると、二度と元には戻っていません。"
+    },
+    "fost-3": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "スタジオヘッド",
+      "image": "/images/testimonials/celine.png",
+      "quote": "Kitsuは単なる制作トラッキングツールではなく、スタジオのパイプライン全体の中心的なデータレイヤーでもあります。"
+    },
+    "fost-4": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "スタジオヘッド",
+      "image": "/images/testimonials/celine.png",
+      "quote": "Kitsuは、あらゆる部門とあらゆるツールが読み書きできる唯一の信頼できる情報源です。"
+    },
+    "fost-5": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "スタジオヘッド",
+      "image": "/images/testimonials/celine.png",
+      "quote": "KitsuのAPIとドキュメントは、たどるのが悪夢のようではありません。これは業界のツールとしては珍しいことです。"
+    },
+    "fost-6": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "スタジオヘッド",
+      "image": "/images/testimonials/celine.png",
+      "quote": "Kitsuを導入した結果、スタジオは一つの制作で60人から150人へと規模を拡大しながら、針路を保つことができました。"
+    },
+    "fost-7": {
+      "studio": "FOST Studio",
+      "interviewee": "Céline Durieux",
+      "role": "スタジオヘッド",
+      "image": "/images/testimonials/celine.png",
+      "quote": "スタジオとソフトウェアベンダーの間でこのような継続的な協力関係が生まれるのは、アニメーション制作ソフトの分野では珍しいことです。それは、Kitsuのオープンソースという性質と、CGWireのビジネスモデルがスタジオのツールでの真の成功に依存しているという事実の両方を反映しています。"
     },
     "adm": {
       "studio": "Autour de Minuit",
@@ -3371,12 +3525,124 @@
       "image": "/images/photo-customer-story-pete-draper.jpg",
       "quote": "Kitsuはわかりやすくシンプルでした。他のツールのようにコンピューターサイエンスの学位は必要ありません。"
     },
+    "ryff-2": {
+      "studio": "Ryff",
+      "interviewee": "Pete Draper",
+      "role": "VFXスーパーバイザー",
+      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "quote": "Kitsuは分かりやすく、シンプルです。制作チームだけでなく、アーティストにとっても同じです。使うのにコンピューターサイエンスの学位は必要ありません。"
+    },
+    "ryff-3": {
+      "studio": "Ryff",
+      "interviewee": "Pete Draper",
+      "role": "VFXスーパーバイザー",
+      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "quote": "制作トラッキングツールは全員が使ってこそ機能します。つまり、スーパーバイザーだけでなくアーティストにとっても親しみやすくなければなりません。Kitsuは初日からそのテストに合格しました。"
+    },
     "remembers": {
       "studio": "Remembers",
       "interviewee": "Audrey Tondre",
       "role": "プロダクションディレクター",
       "image": "/images/photo-customer-story-audrey-tondre.jpg",
       "quote": "新しいツールを導入するなら、既存のチームがまだ気づいていないニーズに応えるものでなければならないと分かっていました。最初の課題は、チームを制約しないことでした。"
+    },
+    "remembers-2": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "プロダクションディレクター",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "Kitsuはとても、とても簡単に使い始められます。どこでもクリックでき、作品の画像が見え、自分に関係しそうなすべての部門やシーケンスが見えます。"
+    },
+    "remembers-3": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "プロダクションディレクター",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "Kitsuの中を見て回るのは楽しく、やる気も出ます。「ああ、最新版をアップしなきゃ」という感じではありません。"
+    },
+    "remembers-4": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "プロダクションディレクター",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "Kitsuとスプレッドシートを比べれば、スタジオとしてすでに大きな一歩を踏み出したことが分かるはずです。しかも生産性だけの話ではなく、より楽しくもあります。"
+    },
+    "remembers-5": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "プロダクションディレクター",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "トライアルのデモには大いに安心させられました。私たちが求めていたのは当然ながらとても直感的なものでした。ツールを求めていなかった人たちに向き合っていたので、彼らがごく自然に使い始めて溶け込める必要があったからです。"
+    },
+    "remembers-6": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "プロダクションディレクター",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "Kitsuは部門間のコミュニケーションを素早く簡単にします。ショットがすでに承認済みだったために見落とされていた、ちょっとした修正でさえもです。"
+    },
+    "remembers-7": {
+      "studio": "Remembers",
+      "interviewee": "Audrey Tondre",
+      "role": "プロダクションディレクター",
+      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "quote": "制作トラッキングに役立つデータは、すべてすでにKitsuの中にあります。"
+    },
+    "cube-1": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "CGスーパーバイザー",
+      "image": "/images/testimonials/axel.png",
+      "quote": "Kitsuはプロジェクトの集合的な記憶です。"
+    },
+    "cube-2": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "CGスーパーバイザー",
+      "image": "/images/testimonials/axel.png",
+      "quote": "Kitsuは、すべてのアセット、すべてのショットのステータス、そして制作全体の状況を把握しています。"
+    },
+    "cube-3": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "CGスーパーバイザー",
+      "image": "/images/testimonials/axel.png",
+      "quote": "Cubeにとって、Kitsuは唯一の信頼できる情報源です。"
+    },
+    "cube-4": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "CGスーパーバイザー",
+      "image": "/images/testimonials/axel.png",
+      "quote": "Kitsuがあれば、アーティストは何がどこにあるかを推測する必要がありません。"
+    },
+    "cube-5": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "CGスーパーバイザー",
+      "image": "/images/testimonials/axel.png",
+      "quote": "Kitsuは、その柔軟なアーキテクチャとオープンソースという性質のおかげで、インフラと拡張性の面で非常に役立ちます。"
+    },
+    "tetsuo-1": {
+      "studio": "Tetsuo Animation",
+      "interviewee": "Chris Unterberg",
+      "role": "創業者兼アニメーションスーパーバイザー",
+      "image": "/images/testimonials/chris.png",
+      "quote": "複数のKitsuユーザーが同じプレイリストを見ながらミーティングを行い、全員が同じ画像に描き込むことができます。つまり、ごく具体的な内容を、ごく具体的なタイミングで話し合えるのです。"
+    },
+    "tetsuo-2": {
+      "studio": "Tetsuo Animation",
+      "interviewee": "Chris Unterberg",
+      "role": "創業者兼アニメーションスーパーバイザー",
+      "image": "/images/testimonials/chris.png",
+      "quote": "関係者全員がビジュアルでフィードバックを出せるようになると、チームがショットに対する当事者意識を持ち、チーム全体で共有するコミュニケーションツール、いわば共通の言語が生まれます。"
+    },
+    "tetsuo-3": {
+      "studio": "Tetsuo Animation",
+      "interviewee": "Chris Unterberg",
+      "role": "創業者兼アニメーションスーパーバイザー",
+      "image": "/images/testimonials/chris.png",
+      "quote": "みんなをフレームへの描き込みに招きましょう。クライアントを招き、関係者を招きましょう。"
     }
   },
   "customer_stories": {
