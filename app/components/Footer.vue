@@ -138,7 +138,7 @@
             <a href="https://cgwire.canny.io/changelog">Changelog</a>
           </li>
           <li>
-            <a href="https://poeditor.com/join/project?hash=fpUejpWDVo">{{
+            <a href="https://github.com/cgwire/kitsu">{{
               $t('header title translations')
             }}</a>
           </li>

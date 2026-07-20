@@ -183,12 +183,6 @@
           "title": "Give feedback",
           "explanation": "Post feedback and comments. Vote for existing feature requests. See what is under development and help shape the future of Kitsu with the community.",
           "cta": "Vote for new features"
-        },
-        "translate": {
-          "subtitle": "POEditor",
-          "title": "Translate Kitsu",
-          "explanation": "Kitsu is already available in 6 languages. With your help, we can go further. Translate Kitsu in your language and allow more people to access our open-source technologies.",
-          "cta": "Become a Kitsu translator"
         }
       }
     },

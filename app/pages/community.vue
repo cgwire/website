@@ -126,44 +126,6 @@
     </div>
   </section>
 
-  <!-- <section class="section content community community-info" data-aos="fade-up">
-    <div class="flexrow">
-      <div class="flexrow-item description flexrow-filler">
-        <h2>
-          <span class="section-subtitle">
-            {{ page.meta.community.translate.subtitle }}
-          </span>
-          <span class="section-title">
-            {{ page.meta.community.translate.title }}
-          </span>
-        </h2>
-        <p>
-          <a href="https://github.com/cgwire/kitsu">
-            {{ page.meta.community.translate.explanation }}
-          </a>
-        </p>
-        <p class="community-cta">
-          <a
-            class="community-link"
-            href="https://poeditor.com/join/project?hash=fpUejpWDVo"
-          >
-            {{ page.meta.community.translate.cta }}
-            <span> &#8594;</span>
-          </a>
-        </p>
-      </div>
-      <div class="flexrow-item illustration">
-        <a class="" href="https://poeditor.com/join/project?hash=fpUejpWDVo">
-          <NuxtImg
-            src="/images/community/poeditor.png"
-            alt="POEditor project"
-            format="webp"
-          /><br />
-        </a>
-      </div>
-    </div>
-  </section> -->
-
   <Trial class="mt4" :cta="false" />
 </template>
 

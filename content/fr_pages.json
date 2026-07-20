@@ -183,12 +183,6 @@
           "title": "Faites vos retours",
           "explanation": "Envoyez vos demandes de fonctionnalités ou votez pour celles déjà existantes. Suivez les développements en cours et participez au futur de Kitsu !",
           "cta": "Votez pour des fonctionnalités"
-        },
-        "translate": {
-          "subtitle": "POEditor",
-          "title": "Traduisez Kitsu",
-          "explanation": "Kitsu est déjà disponible en six langues. Avec votre aide, nous pouvons aller plus loin. Traduisez Kitsu dans votre langue et permettez à plus de monde d'accéder à nos technologies open source !",
-          "cta": "Devenez un traducteur de Kitsu"
         }
       }
     },
