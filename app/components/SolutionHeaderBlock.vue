@@ -19,9 +19,6 @@
             <span class="stat-label">{{ s.label }}</span>
           </li>
         </ul>
-        <p class="solution-metrics">
-          {{ header.metrics }}
-        </p>
       </div>
       <div class="tile is-6 is-child">
         <video
@@ -72,9 +69,6 @@ video
 
 section
   padding-bottom 0
-
-.solution-metrics
-  display none
 
 // Measured figures shown under the header text (uptime goal, backups...).
 // Doubled selector to outweigh the global Bulma .content ul margins.

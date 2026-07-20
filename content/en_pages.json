@@ -1025,7 +1025,6 @@
       "header": {
         "tagline": "Software integrations",
         "subtitle": "Connect all your tools",
-        "metrics": "More than 200 000 assets have been managed with Kitsu!",
         "explanation": "Your data flows throughout your entire pipeline. That's why we provide integrations to facilitate communication between your tools. We enable your artists to publish from their tools, allow your team to send notifications to your chat applications, and offer API clients for extending your workflow."
       },
       "integrations": {
@@ -1068,7 +1067,6 @@
       "header": {
         "subtitle": "Know which shots are ready to build",
         "tagline": "Casting Management",
-        "metrics": "More than 200 000 assets have been managed with Kitsu!",
         "explanation": "Chasing down casting information across spreadsheets and emails slows your whole pipeline. Kitsu gives every shot a structured breakdown so your scene builders always know exactly what's ready, what's missing, and what to do next."
       },
       "features": [
@@ -1137,7 +1135,6 @@
           { "value": "Daily", "label": "backups" },
           { "value": "30 min", "label": "average support response" }
         ],
-        "metrics": "elite-hosting header metrics",
         "explanation": "Our managed cloud gives each studio a dedicated Kitsu instance, hosted on OVH in the European Union (or in your region) and operated end to end by CGWire. Security, uptime, performance, and updates are handled for you, so your team stays focused on production. Need on-premise or an isolated cloud? That is our tailor-made architecture offer."
       },
       "features": [
@@ -1195,7 +1192,6 @@
       "header": {
         "tagline": "Production Tracker",
         "subtitle": "Deliver on time and on budget",
-        "metrics": "Over 1,000 productions have already been tracked with Kitsu!",
         "explanation": "Most production issues are visible before they become critical. Kitsu gives you the scheduling, time tracking, quota monitoring, and budget forecasting tools to catch them early. Get a clear picture of your production at every level, and walk into every stakeholder meeting with accurate data."
       },
       "features": [
@@ -1268,7 +1264,6 @@
       "header": {
         "tagline": "Ship approved work faster",
         "subtitle": "Review Engine",
-        "metrics": "Over 2 000 000 videos were already reviewed with Kitsu!",
         "explanation": "Feedback cycles are where projects stall. Kitsu centralizes your review process so teams and clients can give precise, contextual feedback on every submission, without losing track of versions, decisions, or history. Less back-and-forth. Fewer missed notes. Faster sign-offs."
       },
       "features": [
@@ -1339,7 +1334,6 @@
       "header": {
         "tagline": "Studio Database",
         "subtitle": "A single source of truth",
-        "metrics": "More than 100,000 API calls are made to the Kitsu API every day!",
         "explanation": "Production data scattered across tools and shared drives kills pipeline efficiency. Kitsu provides a central HTTP API that makes every asset, shot, task, and assignment queryable from any tool in your studio. Your pipeline talks to one place, your artists stay focused on the work."
       },
       "features": [
@@ -1394,7 +1388,6 @@
       "header": {
         "tagline": "Tailor-Made Architecture",
         "subtitle": "Enterprise Infrastructure, Without the Compromise",
-        "metrics": "tailor-made-architecture header metrics",
         "explanation": "Large studios have strong requirements: data sovereignty, network performance, strict access control, and production isolation. CGWire deploys and manages Kitsu directly on your hardware or on an isolated cloud, giving you security, uptime, monitoring, and frequent updates while you keep control."
       },
       "features": [
@@ -1452,7 +1445,6 @@
       "header": {
         "tagline": "Team Collaboration",
         "subtitle": "Avoid coordination failures",
-        "metrics": "More than 5,000,000 comments have already been posted on Kitsu!",
         "explanation": "Miscommunication between artists, supervisors, and directors is a common cause of rework and missed deadlines. Kitsu centralizes tasks, previews, and feedback in a single workflow so every stakeholder knows what is happening. From single-site studios to distributed teams, everyone works from the same source of truth."
       },
       "features": [
@@ -1521,7 +1513,6 @@
       "header": {
         "tagline": "Top-Notch Support",
         "subtitle": "Support That Keeps Production Moving",
-        "metrics": "top-notch-support header metrics",
         "explanation": "When production is blocked, every hour counts. Get answers in 30 minutes on average via in-app chat, from a team of former production managers who know your workflows firsthand. Every conversation is saved and tracked, so nothing falls through the cracks."
       },
       "isVideo": true,

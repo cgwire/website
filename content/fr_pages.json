@@ -1025,7 +1025,6 @@
       "header": {
         "tagline": "Connectez tous vos outils",
         "subtitle": "Intégrations logiciels",
-        "metrics": "More than 200 000 assets have been managed with Kitsu!",
         "explanation": "Vos données circulent dans tout votre pipeline. C'est pourquoi nous proposons des intégrations pour faciliter la communication entre vos outils. Les artistes publient ainsi leurs livrables depuis leurs outils et les équipes peuvent envoyer des notifications dans vos applications de chats. Et enfin, vous pouvez requêter notre API directement depuis votre code."
       },
       "integrations": {
@@ -1068,8 +1067,7 @@
       "header": {
         "tagline": "Gestion du casting",
         "subtitle": "Sachez quels plans sont prêts à être construits",
-        "explanation": "Rechercher des informations de casting dans des tableurs et des e-mails ralentit toute votre pipeline. Kitsu donne à chaque plan une décomposition structurée afin que vos constructeurs de scènes sachent toujours exactement ce qui est prêt, ce qui manque et ce qu'ils doivent faire ensuite.",
-        "metrics": "Plus de 200 000 assets ont été gérés avec Kitsu"
+        "explanation": "Rechercher des informations de casting dans des tableurs et des e-mails ralentit toute votre pipeline. Kitsu donne à chaque plan une décomposition structurée afin que vos constructeurs de scènes sachent toujours exactement ce qui est prêt, ce qui manque et ce qu'ils doivent faire ensuite."
       },
       "features": [
         {
@@ -1137,8 +1135,7 @@
           { "value": "Quotidiennes", "label": "sauvegardes" },
           { "value": "30 min", "label": "réponse support en moyenne" }
         ],
-        "explanation": "Notre cloud managé donne à chaque studio une instance Kitsu dédiée, hébergée chez OVH dans l'Union européenne (ou dans votre région) et opérée de bout en bout par CGWire. Sécurité, disponibilité, performances et mises à jour sont prises en charge pour vous, votre équipe reste concentrée sur la production. Besoin d'une installation sur site ou d'un cloud isolé ? C'est notre offre d'architecture sur mesure.",
-        "metrics": "elite-hosting header metrics"
+        "explanation": "Notre cloud managé donne à chaque studio une instance Kitsu dédiée, hébergée chez OVH dans l'Union européenne (ou dans votre région) et opérée de bout en bout par CGWire. Sécurité, disponibilité, performances et mises à jour sont prises en charge pour vous, votre équipe reste concentrée sur la production. Besoin d'une installation sur site ou d'un cloud isolé ? C'est notre offre d'architecture sur mesure."
       },
       "features": [
         {
@@ -1195,8 +1192,7 @@
       "header": {
         "tagline": "Suivi de production",
         "subtitle": "Livrez dans les délais et dans le budget",
-        "explanation": "La plupart des problèmes de production sont visibles avant de devenir critiques. Kitsu vous donne les outils de planification, de suivi du temps, de surveillance des quotas et de prévision budgétaire pour les détecter tôt. Obtenez une image claire de votre production à chaque niveau, et entrez dans chaque réunion avec les parties prenantes avec des données précises.",
-        "metrics": "Plus de 1 000 productions ont déjà été suivies avec Kitsu"
+        "explanation": "La plupart des problèmes de production sont visibles avant de devenir critiques. Kitsu vous donne les outils de planification, de suivi du temps, de surveillance des quotas et de prévision budgétaire pour les détecter tôt. Obtenez une image claire de votre production à chaque niveau, et entrez dans chaque réunion avec les parties prenantes avec des données précises."
       },
       "features": [
         {
@@ -1273,8 +1269,7 @@
       "header": {
         "tagline": "Livrez les travaux approuvés plus rapidement",
         "subtitle": "Moteur de validation",
-        "explanation": "Les cycles de feedback sont là où les projets s'enlisent. Kitsu centralise votre processus de révision pour que les équipes et les clients puissent donner des retours précis et contextuels sur chaque soumission, sans perdre la trace des versions, des décisions ou de l'historique. Moins d'allers-retours. Moins de notes manquées. Des validations plus rapides.",
-        "metrics": "Plus de 2 000 000 de vidéos ont déjà été examinées avec Kitsu !"
+        "explanation": "Les cycles de feedback sont là où les projets s'enlisent. Kitsu centralise votre processus de révision pour que les équipes et les clients puissent donner des retours précis et contextuels sur chaque soumission, sans perdre la trace des versions, des décisions ou de l'historique. Moins d'allers-retours. Moins de notes manquées. Des validations plus rapides."
       },
       "features": [
         {
@@ -1343,8 +1338,7 @@
       "header": {
         "tagline": "Base de données studio",
         "subtitle": "Une source de vérité unique",
-        "explanation": "Les données de production dispersées dans des outils et des disques partagés nuisent à l'efficacité de la pipeline. Kitsu fournit une API HTTP centrale qui rend chaque asset, plan, tâche et assignation interrogeable depuis n'importe quel outil de votre studio. Votre pipeline ne parle qu'à un seul endroit, vos artistes restent concentrés sur le travail.",
-        "metrics": "Plus de 100 000 appels à l'API de Kitsu sont effectués chaque jour"
+        "explanation": "Les données de production dispersées dans des outils et des disques partagés nuisent à l'efficacité de la pipeline. Kitsu fournit une API HTTP centrale qui rend chaque asset, plan, tâche et assignation interrogeable depuis n'importe quel outil de votre studio. Votre pipeline ne parle qu'à un seul endroit, vos artistes restent concentrés sur le travail."
       },
       "features": [
         {
@@ -1398,8 +1392,7 @@
       "header": {
         "tagline": "Architecture sur mesure",
         "subtitle": "Infrastructure d'entreprise, sans compromis",
-        "explanation": "Les grands studios ont des exigences fortes : souveraineté des données, performance réseau, contrôle d'accès strict et isolation de production. CGWire déploie et gère Kitsu directement sur votre matériel ou sur un cloud isolé, avec la sécurité, la disponibilité, la surveillance et des mises à jour fréquentes, tout en vous laissant le contrôle.",
-        "metrics": "tailor-made-architecture header metrics"
+        "explanation": "Les grands studios ont des exigences fortes : souveraineté des données, performance réseau, contrôle d'accès strict et isolation de production. CGWire déploie et gère Kitsu directement sur votre matériel ou sur un cloud isolé, avec la sécurité, la disponibilité, la surveillance et des mises à jour fréquentes, tout en vous laissant le contrôle."
       },
       "features": [
         {
@@ -1456,8 +1449,7 @@
       "header": {
         "tagline": "Collaboration d'équipe",
         "subtitle": "Évitez les échecs de coordination",
-        "explanation": "La mauvaise communication entre artistes, superviseurs et réalisateurs est une cause fréquente de reprises de travail et de délais manqués. Kitsu centralise les tâches, les aperçus et les retours dans un flux de travail unique pour que chaque partie prenante sache ce qui se passe. Des studios sur site unique aux équipes distribuées, tout le monde travaille à partir de la même source de vérité.",
-        "metrics": "Plus de 5 000 000 de commentaires ont déjà été postés sur Kitsu"
+        "explanation": "La mauvaise communication entre artistes, superviseurs et réalisateurs est une cause fréquente de reprises de travail et de délais manqués. Kitsu centralise les tâches, les aperçus et les retours dans un flux de travail unique pour que chaque partie prenante sache ce qui se passe. Des studios sur site unique aux équipes distribuées, tout le monde travaille à partir de la même source de vérité."
       },
       "features": [
         {
@@ -1526,8 +1518,7 @@
       "header": {
         "tagline": "Support de premier plan",
         "subtitle": "Un support qui maintient la production en mouvement",
-        "explanation": "Quand la production est bloquée, chaque heure compte. Obtenez des réponses en 30 minutes en moyenne via le chat intégré à l'application, auprès d'une équipe d'anciens chefs de production qui connaissent vos flux de travail de première main. Chaque conversation est sauvegardée et suivie, pour que rien ne passe à travers les mailles.",
-        "metrics": "top-notch-support header metrics"
+        "explanation": "Quand la production est bloquée, chaque heure compte. Obtenez des réponses en 30 minutes en moyenne via le chat intégré à l'application, auprès d'une équipe d'anciens chefs de production qui connaissent vos flux de travail de première main. Chaque conversation est sauvegardée et suivie, pour que rien ne passe à travers les mailles."
       },
       "isVideo": true,
       "features": [
