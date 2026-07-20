@@ -1349,7 +1349,7 @@
       "features": [
         {
           "title": "Workflow automatisé",
-          "subtitle": "Des automatisations basées sur de vraies données",
+          "subtitle": "Une pipeline nourrie de vraies données",
           "content": "Quand les données de production se trouvent au même endroit, tout ce qui est en aval peut être automatisé. Synchronisez les données entre les outils, publiez des aperçus directement depuis votre DCC et déclenchez des scripts personnalisés sur n'importe quel événement. Ce qui nécessitait auparavant une coordination manuelle fonctionne tout seul.",
           "image": "kitsu-boost.png",
           "gradient": 1,
@@ -1357,16 +1357,16 @@
           "shadow": false
         },
         {
-          "title": "API HTTP",
-          "subtitle": "Gardez les départements synchronisés",
+          "subtitle": "API HTTP",
+          "title": "Gardez les départements synchronisés",
           "content": "Assets, plans, casting, assignations de tâches, emplacements de fichiers : chaque département a besoin de ces données, et elles doivent être les mêmes. L'API Kitsu donne à tout votre studio une source unique interrogeable pour les informations de production, accessible depuis n'importe quel outil, n'importe quelle machine, n'importe quel endroit.",
           "image": "kitsu-api.png",
           "reverted": true,
           "shadow": false
         },
         {
-          "title": "SDK client Python",
-          "subtitle": "Un code propre pour gagner du temps de développement",
+          "subtitle": "SDK client Python",
+          "title": "Gagnez du temps de développement avec une API propre",
           "content": "Le client Python Kitsu vous offre des fonctions intuitives pour récupérer les données de production sans reconstruire la logique de requête à chaque fois. Un client brut gère les requêtes complexes si nécessaire, et un cache intégré maintient des temps de réponse rapides. Installez-le directement depuis PyPI et commencez à travailler.",
           "image": "kitsu-python.png",
           "shadow": true,
@@ -1374,16 +1374,16 @@
           "gradient": 2
         },
         {
-          "title": "Scripts pilotés par événements",
-          "subtitle": "Éliminez les actions répétitives de la pipeline",
+          "subtitle": "Scripts pilotés par événements",
+          "title": "Rendez votre pipeline réactive",
           "content": "Définissez ce qui se passe quand un statut change, un aperçu est publié ou une tâche est assignée. Vos scripts s'exécutent automatiquement. Les étapes de pipeline répétitives qui nécessitaient auparavant que quelqu'un remarque et agisse sont traitées au moment où l'événement se produit.",
           "image": "kitsu-events.png",
           "reverted": true,
           "shadow": true
         },
         {
-          "title": "Intégrations de messagerie",
-          "subtitle": "Les mises à jour de production enfouies dans un tracker que personne ne consulte créent des retards",
+          "subtitle": "Intégrations de messagerie",
+          "title": "Partagez vos mises à jour de production",
           "content": "Connectez Kitsu à Slack ou Discord et transmettez les mises à jour de tâches et les alertes de production là où votre équipe communique déjà. Les informations critiques atteignent les bonnes personnes immédiatement, sans que personne n'ait à les chercher.",
           "image": "kitsu-slack.png",
           "colored": true,
@@ -1434,7 +1434,7 @@
         {
           "title": "Industrialisez la génération de vos aperçus",
           "subtitle": "Cluster vidéo local",
-          "content": "Quand votre équipe révise des séquences lourdes ou traite de grandes playlists, attendre des ressources cloud partagées ralentit tout le monde. Un cluster GPU dédié sur votre propre matériel gère le calcul vidéo à pleine vitesse, à la demande, sans concurrencer pour une capacité externe.",
+          "content": "Quand votre équipe révise des séquences lourdes ou traite de grandes playlists, attendre des ressources cloud partagées ralentit tout le monde. Un cluster dédié sur votre propre matériel gère le calcul vidéo à pleine vitesse, à la demande, sans concurrencer pour une capacité externe.",
           "image": "kitsu-video.png",
           "reverted": true
         },
@@ -1526,7 +1526,7 @@
       "header": {
         "tagline": "Support de premier plan",
         "subtitle": "Un support qui maintient la production en mouvement",
-        "explanation": "Les problèmes de production n'attendent pas les heures de bureau. Obtenez des réponses en moins de 30 minutes via le chat intégré à l'application, auprès d'une équipe d'anciens chefs de production qui connaissent vos flux de travail de première main. Chaque conversation est sauvegardée et suivie, pour que rien ne passe à travers les mailles.",
+        "explanation": "Quand la production est bloquée, chaque heure compte. Obtenez des réponses en 30 minutes en moyenne via le chat intégré à l'application, auprès d'une équipe d'anciens chefs de production qui connaissent vos flux de travail de première main. Chaque conversation est sauvegardée et suivie, pour que rien ne passe à travers les mailles.",
         "metrics": "top-notch-support header metrics"
       },
       "isVideo": true,

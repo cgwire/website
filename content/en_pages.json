@@ -1345,7 +1345,7 @@
       "features": [
         {
           "title": "Automated workflow",
-          "subtitle": "Automations with real data",
+          "subtitle": "Pipeline with real data",
           "content": "When production data lives in one place, everything downstream can be automated. Synchronize data across tools, publish previews directly from your DCC, and trigger custom scripts on any event. What used to require manual coordination runs on its own.",
           "image": "kitsu-boost.png",
           "colored": true,
@@ -1353,16 +1353,16 @@
           "shadow": false
         },
         {
-          "title": "HTTP API",
-          "subtitle": "Keep departments synchronized",
+          "subtitle": "HTTP API",
+          "title": "Keep departments synchronized",
           "content": "Assets, shots, casting, task assignments, file locations: every department needs this data, and it needs to be the same data. The Kitsu API gives your entire studio a single queryable source for production information, accessible from any tool, any machine, any location.",
           "image": "kitsu-api.png",
           "reverted": true,
           "shadow": false
         },
         {
-          "title": "Python client SDK",
-          "subtitle": "Clean code to save development time",
+          "subtitle": "Python client SDK",
+          "title": "Save development time with a clean API",
           "content": "The Kitsu Python client gives you intuitive functions to fetch production data without rebuilding request logic every time. A raw client handles complex queries when needed, and a built-in cache keeps response times fast. Install it directly from PyPI and start working.",
           "image": "kitsu-python.png",
           "shadow": true,
@@ -1370,16 +1370,16 @@
           "gradient": 2
         },
         {
-          "title": "Event-driven scripts",
-          "subtitle": "Remove repetitive pipeline actions",
+          "subtitle": "Event-driven scripts",
+          "title": "Make your pipeline reactive",
           "content": "Define what happens when a status changes, a preview is published, or a task is assigned. Your scripts run automatically. Repetitive pipeline steps that used to require someone to notice and act are handled the moment the event fires.",
           "image": "kitsu-events.png",
           "shadow": true,
           "reverted": true
         },
         {
-          "title": "Chat integrations",
-          "subtitle": "Production updates buried in a tracker no one checks create delays",
+          "subtitle": "Chat integrations",
+          "title": "Share your production update",
           "content": "Connect Kitsu to Slack or Discord and deliver task updates and production alerts where your team already communicates. Critical information reaches the right people immediately, without anyone having to go look for it.",
           "image": "kitsu-slack.png",
           "colored": true,
@@ -1430,7 +1430,7 @@
         {
           "subtitle": "Local Video Cluster",
           "title": "Industrialize your preview generation",
-          "content": "When your team is reviewing heavy sequences or processing large playlists, waiting on shared cloud resources slows everyone down. A dedicated GPU cluster on your own hardware handles video computing at full speed, on demand, without competing for external capacity.",
+          "content": "When your team is reviewing heavy sequences or processing large playlists, waiting on shared cloud resources slows everyone down. A dedicated cluster on your own hardware handles video computing at full speed, on demand, without competing for external capacity.",
           "image": "kitsu-video.png",
           "reverted": true
         },
@@ -1522,7 +1522,7 @@
         "tagline": "Top-Notch Support",
         "subtitle": "Support That Keeps Production Moving",
         "metrics": "top-notch-support header metrics",
-        "explanation": "Production problems do not wait for business hours. Get answers in under 30 minutes via in-app chat, from a team of former production managers who know your workflows firsthand. Every conversation is saved and tracked, so nothing falls through the cracks."
+        "explanation": "When production is blocked, every hour counts. Get answers in 30 minutes on average via in-app chat, from a team of former production managers who know your workflows firsthand. Every conversation is saved and tracked, so nothing falls through the cracks."
       },
       "isVideo": true,
       "features": [
