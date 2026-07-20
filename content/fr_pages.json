@@ -1132,7 +1132,12 @@
       "header": {
         "tagline": "Hébergement Elite",
         "subtitle": "Votre système est toujours disponible",
-        "explanation": "L'équipe opérationnelle de CGWire gère votre installation Kitsu de bout en bout. La sécurité, la disponibilité, les performances et les mises à jour sont gérées par des spécialistes ayant des décennies d'expérience en infrastructure cloud. Votre équipe reste concentrée sur la production. Nous gérons tout le reste.",
+        "stats": [
+          { "value": "99,99 %", "label": "objectif de disponibilité" },
+          { "value": "Quotidiennes", "label": "sauvegardes" },
+          { "value": "30 min", "label": "réponse support en moyenne" }
+        ],
+        "explanation": "Notre cloud managé donne à chaque studio une instance Kitsu dédiée, hébergée chez OVH dans l'Union européenne (ou dans votre région) et opérée de bout en bout par CGWire. Sécurité, disponibilité, performances et mises à jour sont prises en charge pour vous, votre équipe reste concentrée sur la production. Besoin d'une installation sur site ou d'un cloud isolé ? C'est notre offre d'architecture sur mesure.",
         "metrics": "elite-hosting header metrics"
       },
       "features": [
@@ -1140,7 +1145,7 @@
           "key": "security",
           "title": "Arrêtez de vous inquiéter des violations et de la conformité",
           "subtitle": "Sécurité de niveau entreprise",
-          "content": "Nous adhérons aux normes de sécurité les plus strictes, en utilisant uniquement des transmissions sécurisées pour accéder à nos installations à jour. Tous les secrets sont gérés via des coffres-forts sécurisés, et nos employés sont filtrés. Un document de sécurité est disponible sur demande.",
+          "content": "Tous les accès à votre instance passent par des connexions chiffrées, les secrets vivent dans un coffre-fort dédié, et les installations sont maintenues à jour. Vous savez exactement qui opère votre infrastructure : une petite équipe identifiée, pas un service anonyme. Un document de sécurité est disponible sur demande.",
           "image": "kitsu-security.png",
           "gradient": 1,
           "shadow": true,
@@ -1150,7 +1155,7 @@
           "key": "availability",
           "title": "Évitez les pannes imprévues qui tuent les délais",
           "subtitle": "Surveillance proactive",
-          "content": "Chaque instance est surveillée 24 h/24. Notre équipe reçoit des alertes avant que les problèmes ne s'aggravent et les résout avant qu'ils n'impactent votre pipeline de production.",
+          "content": "Chaque instance est surveillée en continu par un monitoring automatisé qui alerte l'équipe dès qu'un indicateur dérive. La plupart des incidents sont résolus avant d'atteindre votre pipeline de production. Les instances sont sauvegardées quotidiennement, et une restauration complète prend en général quelques heures, selon la gravité de l'incident.",
           "image": "kitsu-availability.png",
           "shadow": true,
           "reverted": true
@@ -1159,7 +1164,7 @@
           "key": "performance",
           "title": "Profitez de services rapides",
           "subtitle": "Accès optimisé",
-          "content": "Votre instance s'exécute sur des ressources dédiées, isolées des autres studios. Les serveurs sont provisionnés près de votre équipe, et le traitement vidéo s'exécute sur une machine séparée pour que les grandes playlists ne ralentissent jamais votre flux de travail.",
+          "content": "Votre instance s'exécute sur des ressources dédiées, isolées des autres studios, dans les datacenters OVH de l'Union européenne (ou dans votre région) : vos données de production restent sous juridiction européenne. Le traitement vidéo s'exécute sur une machine séparée pour que les grandes playlists ne ralentissent jamais votre flux de travail.",
           "image": "kitsu-performance.png",
           "colored": true,
           "gradient": 2,

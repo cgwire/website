@@ -13,6 +13,12 @@
         <p>
           {{ header.explanation }}
         </p>
+        <ul v-if="header.stats" class="header-stats">
+          <li v-for="s in header.stats" :key="s.label">
+            <span class="stat-value">{{ s.value }}</span>
+            <span class="stat-label">{{ s.label }}</span>
+          </li>
+        </ul>
         <p class="solution-metrics">
           {{ header.metrics }}
         </p>
@@ -69,4 +75,29 @@ section
 
 .solution-metrics
   display none
+
+// Measured figures shown under the header text (uptime goal, backups...).
+// Doubled selector to outweigh the global Bulma .content ul margins.
+ul.header-stats
+  display flex
+  flex-wrap wrap
+  gap 1.5rem 2.5rem
+  list-style none
+  margin 1.8rem 0 0
+  padding 0
+
+  li
+    display flex
+    flex-direction column
+    margin 0
+
+  .stat-value
+    font-size 1.7rem
+    font-weight 800
+    color cgwiregreen
+    line-height 1.2
+
+  .stat-label
+    font-size 0.85rem
+    color mediumgrey
 </style>

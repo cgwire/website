@@ -1132,15 +1132,20 @@
       "header": {
         "tagline": "Elite hosting",
         "subtitle": "Your system is always up",
+        "stats": [
+          { "value": "99.99%", "label": "uptime goal" },
+          { "value": "Daily", "label": "backups" },
+          { "value": "30 min", "label": "average support response" }
+        ],
         "metrics": "elite-hosting header metrics",
-        "explanation": "CGWire's operations team manages your Kitsu installation end to end. Security, uptime, performance, and updates are handled by specialists with decades of cloud infrastructure experience. Your team stays focused on production. We handle everything else."
+        "explanation": "Our managed cloud gives each studio a dedicated Kitsu instance, hosted on OVH in the European Union (or in your region) and operated end to end by CGWire. Security, uptime, performance, and updates are handled for you, so your team stays focused on production. Need on-premise or an isolated cloud? That is our tailor-made architecture offer."
       },
       "features": [
         {
           "key": "security",
           "subtitle": "Enterprise-grade security",
           "title": "Stop worrying about breaches and compliance",
-          "content": "We adhere to the highest security standards, using only secure transmissions for accessing our up-to-date installations. All secrets are managed through secure vaults, and our employees are screened. A security document is available upon request.",
+          "content": "All access to your instance goes through encrypted connections, secrets live in a dedicated vault, and installations are kept up to date. You know exactly who operates your infrastructure: a small, named team, not an anonymous department. A security document is available upon request.",
           "image": "kitsu-security.png",
           "shadow": true,
           "colored": true,
@@ -1150,7 +1155,7 @@
           "key": "availability",
           "subtitle": "Proactive monitoring",
           "title": "Avoid unplanned outages that kill deadlines",
-          "content": "Every instance is monitored around the clock. Our team receives alerts before issues escalate and resolves them before they impact your production pipeline.",
+          "content": "Automated monitoring watches every instance continuously and alerts the team as soon as a metric drifts. Most issues are resolved before they reach your production pipeline. Instances are backed up daily, and a full restore typically takes a few hours, depending on the severity of the incident.",
           "image": "kitsu-availability.png",
           "shadow": true,
           "reverted": true
@@ -1159,7 +1164,7 @@
           "key": "performance",
           "subtitle": "Optimized access",
           "title": "Enjoy fast services",
-          "content": "Your instance runs on dedicated resources, isolated from other studios. Servers are provisioned close to your team, and video processing runs on a separate machine so large playlists never slow down your workflow.",
+          "content": "Your instance runs on dedicated resources, isolated from other studios, in OVH data centers in the European Union (or in your region). Video processing runs on a separate machine so large playlists never slow down your workflow.",
           "image": "kitsu-performance.png",
           "colored": true,
           "gradient": 2,
