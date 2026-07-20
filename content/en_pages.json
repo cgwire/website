@@ -1071,7 +1071,7 @@
       },
       "features": [
         {
-          "title": "List your breakdown",
+          "title": "Breakdown list",
           "subtitle": "Know what belongs to each shot",
           "content": "Build breakdown tables showing the cast assets for each shot, organized by type. Add metadata directly to every entry so your scene builder has everything they need before they even open a file.",
           "image": "kitsu-tables.png",
@@ -1080,7 +1080,7 @@
           "gradient": 1
         },
         {
-          "title": "Link assets together",
+          "title": "Assets linking",
           "subtitle": "Automatically track what goes with what",
           "content": "Connect assets to define how they relate: populate sets, attach props to characters, or model any dependency that fits your workflow.",
           "image": "kitsu-asset-links.png",
@@ -1088,7 +1088,7 @@
           "reverted": true
         },
         {
-          "title": "Export your casting",
+          "title": "Casting export",
           "subtitle": "Make your data portable",
           "content": "Export casting data as a flat .csv or a column view in seconds. Or skip the manual step entirely and connect your scene builder directly to the API.",
           "image": "kitsu-export.png",
@@ -1097,7 +1097,7 @@
           "gradient": 2
         },
         {
-          "title": "Track shot readiness",
+          "title": "Shot readiness indicators",
           "subtitle": "Know when assets are available",
           "content": "Get per-shot readiness statistics based on casting completeness. Spot the gaps before they become a bottleneck, and hand off to your scene builder with confidence.",
           "image": "kitsu-readiness.png",
@@ -1105,7 +1105,7 @@
           "reverted": true
         },
         {
-          "title": "Reuse assets across productions",
+          "title": "Assets library",
           "subtitle": "Optimise your asset creations",
           "content": "Pull from a shared library to keep teams from recreating assets that already exist and have been validated. Everyone references the same source of truth.",
           "image": "kitsu-library.png",

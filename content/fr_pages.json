@@ -1071,7 +1071,7 @@
       },
       "features": [
         {
-          "title": "Listez votre breakdown",
+          "title": "Liste de breakdown",
           "subtitle": "Sachez ce qui appartient à chaque plan",
           "content": "Créez des tableaux de décomposition montrant les assets de casting pour chaque plan, organisés par type. Ajoutez des métadonnées directement à chaque entrée pour que votre constructeur de scènes dispose de tout ce dont il a besoin avant même d'ouvrir un fichier.",
           "image": "kitsu-tables.png",
@@ -1080,7 +1080,7 @@
           "colored": true
         },
         {
-          "title": "Liez vos assets entre-eux",
+          "title": "Liaison des assets",
           "subtitle": "Suivez automatiquement ce qui va avec quoi",
           "content": "Connectez les assets pour définir leurs relations : peuplez des décors, attachez des accessoires aux personnages ou modélisez toute dépendance adaptée à votre flux de travail.",
           "image": "kitsu-asset-links.png",
@@ -1088,7 +1088,7 @@
           "reverted": true
         },
         {
-          "title": "Exportez votre breakdown",
+          "title": "Export du casting",
           "subtitle": "Rendez vos données portables",
           "content": "Exportez les données de casting en fichier .csv plat ou en vue colonnes en quelques secondes. Ou ignorez complètement l'étape manuelle et connectez votre constructeur de scènes directement à l'API.",
           "image": "kitsu-export.png",
@@ -1097,7 +1097,7 @@
           "gradient": 2
         },
         {
-          "title": "Suivez la disponibilité des plans",
+          "title": "Indicateurs de disponibilité des plans",
           "subtitle": "Sachez quand les assets sont disponibles",
           "content": "Obtenez des statistiques de disponibilité par plan basées sur la complétude du casting. Repérez les lacunes avant qu'elles ne deviennent un goulot d'étranglement, et transmettez à votre constructeur de scènes en toute confiance.",
           "image": "kitsu-readiness.png",
@@ -1105,7 +1105,7 @@
           "shadow": true
         },
         {
-          "title": "Réutilisez les assets d'une production à l'autre",
+          "title": "Bibliothèque d'assets",
           "subtitle": "Optimisez la création d'assets",
           "content": "Puisez dans une bibliothèque partagée pour éviter que les équipes recréent des assets qui existent déjà et ont été validés. Tout le monde fait référence à la même source de vérité.",
           "image": "kitsu-library.png",
