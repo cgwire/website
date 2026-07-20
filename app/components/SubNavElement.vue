@@ -15,10 +15,10 @@
     />
     <div class="flexrow-item flexcolumn text">
       <span class="flexrow-item subnav-title">
-        {{ $t('header title ' + elementKey) }}
+        {{ $t('header.title.' + elementKey) }}
       </span>
       <span class="flexrow-item subnav-text">
-        {{ $t('header text ' + elementKey) }}
+        {{ $t('header.text.' + elementKey) }}
       </span>
     </div>
   </nuxt-link>
@@ -35,10 +35,10 @@
 
     <div class="flexrow-item flexcolumn text">
       <span class="flexrow-item subnav-title">
-        {{ $t('header title ' + elementKey) }}
+        {{ $t('header.title.' + elementKey) }}
       </span>
       <span class="flexrow-item subnav-text">
-        {{ $t('header text ' + elementKey) }}
+        {{ $t('header.text.' + elementKey) }}
       </span>
     </div>
   </a>

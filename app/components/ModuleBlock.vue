@@ -4,22 +4,22 @@
       <div class="has-text-centered">
         <NuxtImg
           :src="'/images/illustrations/' + sectionKey + '.png'"
-          :alt="$t(`${sectionKey} header tagline`)"
+          :alt="$t(`${sectionKey}.header.tagline`)"
           format="webp"
         />
       </div>
       <h2>
-        {{ $t(`${sectionKey} header tagline`) }}
+        {{ $t(`${sectionKey}.header.tagline`) }}
       </h2>
       <ul>
         <li class="module-description">
-          {{ $t(`${sectionKey} ${feature1Key} title`) }}
+          {{ $t(`${sectionKey}.${feature1Key}.title`) }}
         </li>
         <li class="module-description">
-          {{ $t(`${sectionKey} ${feature2Key} title`) }}
+          {{ $t(`${sectionKey}.${feature2Key}.title`) }}
         </li>
         <li class="module-description">
-          {{ $t(`${sectionKey} ${feature3Key} title`) }}
+          {{ $t(`${sectionKey}.${feature3Key}.title`) }}
         </li>
       </ul>
     </section>

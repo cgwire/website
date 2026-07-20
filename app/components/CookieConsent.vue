@@ -6,13 +6,13 @@
     role="dialog"
     aria-live="polite"
   >
-    <p class="cookie-text">{{ $t('main cookies consent') }}</p>
+    <p class="cookie-text">{{ $t('main.cookies.consent') }}</p>
     <div class="cookie-actions">
       <button id="cookie-ko" class="cookie-button decline" @click="decline">
-        {{ $t('main cookies decline') }}
+        {{ $t('main.cookies.decline') }}
       </button>
       <button id="cookie-ok" class="cookie-button accept" @click="accept">
-        {{ $t('main cookies accept') }}
+        {{ $t('main.cookies.accept') }}
       </button>
     </div>
   </div>

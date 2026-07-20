@@ -10,7 +10,7 @@
       :key="tab"
       @click="toggleTab(tab)"
     >
-      {{ $t('tabs ' + tab) }}
+      {{ $t('tabs.' + tab) }}
     </button>
   </div>
 </template>

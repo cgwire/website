@@ -1,97 +1,159 @@
 {
-  "footers link about": "About",
-  "footers link contact": "Contact",
-  "footers link carbon": "Carbon",
-  "footers link manifesto": "AI Manifesto",
-  "footers link metrics": "Metrics ",
-  "footers link privacy": "Privacy",
-  "footers link terms": "Terms",
-  "footers title company": "Company",
-  "header sign in": "Sign in",
-  "header sign up": "Try it for free",
-  "header text blog": "Read about production best practices",
-  "header text casting-management": "Create your breakdown and know when shots are ready",
-  "header text changelog": "Feed of our most recent features",
-  "header text community": "Places to contribute and meet other users",
-  "header text conferences": "Conferences about best practices",
-  "header text customer-stories": "Learn about our users success stories",
-  "header text documentation": "Comprehensive guides for using Kitsu",
-  "header text elite-hosting": "Robust security, high uptime, and automatic updates",
-  "header text feature-films": "Keep your vendors aligned for high-quality results",
-  "header text production-tracker": "Schedule projects, track progress and build production reports",
-  "header text review-engine": "Collect previews and run collaborative feedback sessions",
-  "header text schools": "Enhancing your students' training",
-  "header text shorts": "Managing multiple high-end short projects",
-  "header text software-integrations": "Bridge your production data with your main tools.",
-  "header text spreadsheets": "Templates for your spreadsheets",
-  "header text studio-database": "Integrate production data directly into your pipeline",
-  "header text studios": "Studios and productions enjoying Kitsu",
-  "header text tailor-made-architecture": "Multi-instances, authentication integrations, and object storage",
-  "header text team-collaboration": "Assign tasks, share statuses and communicate with artists",
-  "header text top-notch-support": "Expert user support from industry professionals",
-  "header text tutorials": "Short videos to help you use Kitsu",
-  "header text tvshows": "Managing the demands of TV series production",
-  "header text video-games": "Streamline your asset creation with artists all over the world",
-  "header title dev": "Developer Documentation",
-  "header title blog": "Blog",
-  "header title casting-management": "Casting Management",
-  "header title changelog": "Changelog",
-  "header title community": "Community",
-  "header title conferences": "Conferences",
-  "header title customer-stories": "Customer Stories",
-  "header title docker": "Docker",
-  "header title documentation": "Documentation",
-  "header title elite-hosting": "Elite Hosting",
-  "header title feature-films": "Feature Films",
-  "header title pricing": "Pricing",
-  "header title product": "Product",
-  "header title production-tracker": "Production Tracker",
-  "header title resources": "Resources",
-  "header title review-engine": "Review Engine",
-  "header title schools": "Animation Schools",
-  "header title shorts": "Shorts & Commercials",
-  "header title software-integrations": "Software Integrations",
-  "header title solutions": "Solutions",
-  "header title spreadsheets": "Spreadsheets",
-  "header title studio-database": "Studio Database",
-  "header title studios": "Who Uses Kitsu",
-  "header title productions": "Productions",
-  "header text productions": "Films and series tracked with Kitsu",
-  "productions title": "Productions tracked with Kitsu",
-  "productions subtitle": "Feature films, series and shorts",
-  "header title tailor-made-architecture": "Tailor-Made Architectures",
-  "header title team-collaboration": "Team Collaboration",
-  "header title top-notch-support": "Top-Notch Support",
-  "header title translations": "Translations",
-  "header title tutorials": "Tutorials",
-  "header title tvshows": "TV Shows",
-  "header title usecase": "Use Cases",
-  "header title video-games": "Video Games",
-  "main cookies consent": "We use cookies for our support chat (Crisp) and anonymous analytics (Matomo). Do you accept?",
-  "main cookies accept": "Accept",
-  "main cookies decline": "Decline",
-  "main plans cta": "Try Kitsu Now",
-  "main explanation trusted": "Trusted by studios and schools all over the world",
-  "pricing faq title": "Frequently Asked Questions",
-  "kitsu cta": "Interested in using Kitsu?",
-  "usecase demo": "Tracked with Kitsu by",
-  "tabs 2D": "2D",
-  "tabs 3D": "3D",
-  "tabs VFX": "VFX",
-  "tabs Games": "Games",
-  "tabs Schools": "Schools",
-  "tailor-made-architecture header tagline": "Tailor-Made Architecture",
-  "tailor-made-architecture onpremise title": "Setup Kitsu on your servers",
-  "tailor-made-architecture multiinstance title": "Isolate all your productions",
-  "tailor-made-architecture extra title": "Customize Your Installation",
-  "elite-hosting header tagline": "Elite hosting",
-  "elite-hosting security title": "Keep your data secure",
-  "elite-hosting performance title": "Fast access to your data",
-  "elite-hosting availability title": "Your Kitsu is always up",
-  "top-notch-support header tagline": "Top-Notch Support",
-  "top-notch-support chat title": "Support when you need it",
-  "top-notch-support experts title": "Assisted by experts",
-  "top-notch-support fast title": "Fast response time",
+  "footers": {
+    "link": {
+      "about": "About",
+      "contact": "Contact",
+      "carbon": "Carbon",
+      "manifesto": "AI Manifesto",
+      "metrics": "Metrics ",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "title": {
+      "company": "Company"
+    }
+  },
+  "header": {
+    "signIn": "Sign in",
+    "signUp": "Try it for free",
+    "text": {
+      "blog": "Read about production best practices",
+      "casting-management": "Create your breakdown and know when shots are ready",
+      "changelog": "Feed of our most recent features",
+      "community": "Places to contribute and meet other users",
+      "conferences": "Conferences about best practices",
+      "customer-stories": "Learn about our users success stories",
+      "documentation": "Comprehensive guides for using Kitsu",
+      "elite-hosting": "Robust security, high uptime, and automatic updates",
+      "feature-films": "Keep your vendors aligned for high-quality results",
+      "production-tracker": "Schedule projects, track progress and build production reports",
+      "review-engine": "Collect previews and run collaborative feedback sessions",
+      "schools": "Enhancing your students' training",
+      "shorts": "Managing multiple high-end short projects",
+      "software-integrations": "Bridge your production data with your main tools.",
+      "spreadsheets": "Templates for your spreadsheets",
+      "studio-database": "Integrate production data directly into your pipeline",
+      "studios": "Studios and productions enjoying Kitsu",
+      "tailor-made-architecture": "Multi-instances, authentication integrations, and object storage",
+      "team-collaboration": "Assign tasks, share statuses and communicate with artists",
+      "top-notch-support": "Expert user support from industry professionals",
+      "tutorials": "Short videos to help you use Kitsu",
+      "tvshows": "Managing the demands of TV series production",
+      "video-games": "Streamline your asset creation with artists all over the world",
+      "productions": "Films and series tracked with Kitsu"
+    },
+    "title": {
+      "dev": "Developer Documentation",
+      "blog": "Blog",
+      "casting-management": "Casting Management",
+      "changelog": "Changelog",
+      "community": "Community",
+      "conferences": "Conferences",
+      "customer-stories": "Customer Stories",
+      "docker": "Docker",
+      "documentation": "Documentation",
+      "elite-hosting": "Elite Hosting",
+      "feature-films": "Feature Films",
+      "pricing": "Pricing",
+      "product": "Product",
+      "production-tracker": "Production Tracker",
+      "resources": "Resources",
+      "review-engine": "Review Engine",
+      "schools": "Animation Schools",
+      "shorts": "Shorts & Commercials",
+      "software-integrations": "Software Integrations",
+      "solutions": "Solutions",
+      "spreadsheets": "Spreadsheets",
+      "studio-database": "Studio Database",
+      "studios": "Who Uses Kitsu",
+      "productions": "Productions",
+      "tailor-made-architecture": "Tailor-Made Architectures",
+      "team-collaboration": "Team Collaboration",
+      "top-notch-support": "Top-Notch Support",
+      "translations": "Translations",
+      "tutorials": "Tutorials",
+      "tvshows": "TV Shows",
+      "usecase": "Use Cases",
+      "video-games": "Video Games"
+    }
+  },
+  "productions": {
+    "title": "Productions tracked with Kitsu",
+    "subtitle": "Feature films, series and shorts"
+  },
+  "main": {
+    "cookies": {
+      "consent": "We use cookies for our support chat (Crisp) and anonymous analytics (Matomo). Do you accept?",
+      "accept": "Accept",
+      "decline": "Decline"
+    },
+    "plans": {
+      "cta": "Try Kitsu Now"
+    },
+    "explanation": {
+      "trusted": "Trusted by studios and schools all over the world"
+    }
+  },
+  "pricing": {
+    "faq": {
+      "title": "Frequently Asked Questions"
+    }
+  },
+  "kitsu": {
+    "cta": "Interested in using Kitsu?"
+  },
+  "usecase": {
+    "demo": "Tracked with Kitsu by"
+  },
+  "tabs": {
+    "2D": "2D",
+    "3D": "3D",
+    "VFX": "VFX",
+    "Games": "Games",
+    "Schools": "Schools"
+  },
+  "tailor-made-architecture": {
+    "header": {
+      "tagline": "Tailor-Made Architecture"
+    },
+    "onpremise": {
+      "title": "Setup Kitsu on your servers"
+    },
+    "multiinstance": {
+      "title": "Isolate all your productions"
+    },
+    "extra": {
+      "title": "Customize Your Installation"
+    }
+  },
+  "elite-hosting": {
+    "header": {
+      "tagline": "Elite hosting"
+    },
+    "security": {
+      "title": "Keep your data secure"
+    },
+    "performance": {
+      "title": "Fast access to your data"
+    },
+    "availability": {
+      "title": "Your Kitsu is always up"
+    }
+  },
+  "top-notch-support": {
+    "header": {
+      "tagline": "Top-Notch Support"
+    },
+    "chat": {
+      "title": "Support when you need it"
+    },
+    "experts": {
+      "title": "Assisted by experts"
+    },
+    "fast": {
+      "title": "Fast response time"
+    }
+  },
   "faq-section": {
     "title": "Frequently Asked Questions",
     "subtitle": ""

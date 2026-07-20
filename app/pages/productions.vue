@@ -1,8 +1,8 @@
 <template>
   <div class="productions-page">
     <section class="prod-hero">
-      <span class="prod-eyebrow">{{ $t('productions subtitle') }}</span>
-      <h1 class="prod-title">{{ $t('productions title') }}</h1>
+      <span class="prod-eyebrow">{{ $t('productions.subtitle') }}</span>
+      <h1 class="prod-title">{{ $t('productions.title') }}</h1>
     </section>
 
     <section class="prod-wall">
@@ -35,8 +35,8 @@ import { productions } from '~/data/productions'
 const { t } = useI18n()
 
 useSEO({
-  title: 'CGWire | ' + t('productions title'),
-  description: t('productions subtitle')
+  title: 'CGWire | ' + t('productions.title'),
+  description: t('productions.subtitle')
 })
 </script>
 

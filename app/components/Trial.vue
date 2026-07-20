@@ -2,7 +2,7 @@
   <div class="trial">
     <section class="section content trial-content">
       <h2 class="subtitle has-text-centered" :class="{ hidden: !cta }">
-        {{ $t('kitsu cta') }}
+        {{ $t('kitsu.cta') }}
       </h2>
       <p class="has-text-centered">
         <NuxtLink
@@ -27,7 +27,7 @@
           }"
           :href="`https://account.cg-wire.com/signup`"
         >
-          {{ $t('main plans cta') }}
+          {{ $t('main.plans.cta') }}
         </a>
       </p>
       <p class="has-text-centered" v-if="!cta">&nbsp;</p>

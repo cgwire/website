@@ -1,97 +1,159 @@
 {
-  "footers link about": "A propos",
-  "footers link contact": "Contact",
-  "footers link carbon": "Carbone",
-  "footers link manifesto": "Manifeste IA",
-  "footers link metrics": "Métriques ",
-  "footers link privacy": "Vie privée",
-  "footers link terms": "CGU / CGV",
-  "footers title company": "Société",
-  "header sign in": "Se connecter",
-  "header sign up": "Essayez gratuitement",
-  "header text blog": "Bonnes pratiques pour pipelines et productions",
-  "header text casting-management": "Faites votre breakdown et soyez informé(e) quand vos plans sont prêts",
-  "header text changelog": "Les dernières fonctionnialités implémentées",
-  "header text community": "Un endroit pour contribuer et rencontrer d'autres utilisateurs",
-  "header text conferences": "Conférences métier en vidéos",
-  "header text customer-stories": "Ils partagent leur retour d'expérience",
-  "header text documentation": "Le guide pour utiliser Kitsu",
-  "header text elite-hosting": "Forte sécurité, haute disponibilité et mises à jour automatiques",
-  "header text feature-films": "Suivez efficacement tous vos fournisseurs",
-  "header text production-tracker": "Plannifiez les projets, suivez les progrè et constituez les rapports de production",
-  "header text review-engine": "Récupérez les previews et faîtes des sessions de validations collectives",
-  "header text schools": "Améliorez la formation des étudiants",
-  "header text shorts": "Gérer des courts métrages et des publicités",
-  "header text software-integrations": "Branchez votre production tracker avec vos outils de création",
-  "header text spreadsheets": "Templates de feuilles de calcul",
-  "header text studio-database": "Boostez votre pipeline avec vos données de production",
-  "header text studios": "Les studios et productions utilisant Kitsu",
-  "header text tailor-made-architecture": "Multi-instances, intégrations LDAP/AD et stockage objet",
-  "header text team-collaboration": "Assigner les tâches, partagez les statuts et communiquez avec les artistes",
-  "header text top-notch-support": "Un support rapide assuré par des experts de la production",
-  "header text tutorials": "Vidéos courtes pour vous aider avec Kitsu",
-  "header text tvshows": "Supporter la charge d'une série télé",
-  "header text video-games": "Fluidifiez la création d'assets avec des artistes partout autour du globe",
-  "header title dev": "Documentation Développeur",
-  "header title blog": "Blog",
-  "header title casting-management": "Gestion du Casting",
-  "header title changelog": "Changelog",
-  "header title community": "Communauté",
-  "header title conferences": "Conférences",
-  "header title customer-stories": "Nos clients racontent",
-  "header title docker": "Docker",
-  "header title documentation": "Documentation",
-  "header title elite-hosting": "Hébergement d'Élite",
-  "header title feature-films": "Longs métrages",
-  "header title pricing": "Tarifs",
-  "header title product": "Produit",
-  "header title production-tracker": "Suivi de Production",
-  "header title resources": "Ressources",
-  "header title review-engine": "Moteur de Validations",
-  "header title schools": "Écoles",
-  "header title shorts": "Films courts",
-  "header title software-integrations": "Intégrations Logicielles",
-  "header title solutions": "Solutions",
-  "header title spreadsheets": "Spreadsheets",
-  "header title studio-database": "Base de Données Studio",
-  "header title studios": "Studios et productions",
-  "header title productions": "Productions",
-  "header text productions": "Films et séries suivis avec Kitsu",
-  "productions title": "Productions suivies avec Kitsu",
-  "productions subtitle": "Longs métrages, séries et courts métrages",
-  "header title tailor-made-architecture": "Architecture sur-mesure",
-  "header title team-collaboration": "Collaboration des Équipes",
-  "header title top-notch-support": "Support de Premier Plan",
-  "header title translations": "Traductions",
-  "header title tutorials": "Tutoriels",
-  "header title tvshows": "Séries Télé",
-  "header title usecase": "Études de cas",
-  "header title video-games": "Jeux vidéos",
-  "main cookies consent": "Nous utilisons des cookies pour notre chat de support (Crisp) et des statistiques anonymes (Matomo). Acceptez-vous ?",
-  "main cookies accept": "Accepter",
-  "main cookies decline": "Refuser",
-  "main plans cta": "Essayez gratuitement",
-  "main explanation trusted": "Rejoignez plus de 80 studios et écoles",
-  "pricing faq title": "Questions Fréquentes",
-  "kitsu cta": "Intéressé(e) par Kitsu ?",
-  "usecase demo": "Suivi avec Kitsu par",
-  "tabs 2D": "2D",
-  "tabs 3D": "3D",
-  "tabs VFX": "VFX",
-  "tabs Games": "Jeux Vidéos",
-  "tabs Schools": "Écoles",
-  "tailor-made-architecture header tagline": "Architecture Sur-Mesure",
-  "tailor-made-architecture onpremise title": "Déployez Kitsu sur vos serveurs",
-  "tailor-made-architecture multiinstance title": "Isolez toutes vos productions",
-  "tailor-made-architecture extra title": "Rendez votre installation on-premise unique",
-  "elite-hosting header tagline": "Hébergement d'Élite",
-  "elite-hosting security title": "Gardez vos données sécurisées",
-  "elite-hosting performance title": "Accédez rapidement à vos productions",
-  "elite-hosting availability title": "Nous faisons en sorte que votre Kitsu est toujours en ligne.",
-  "top-notch-support header tagline": "Support de premier plan",
-  "top-notch-support chat title": "Accédez à notre équipe facilement",
-  "top-notch-support experts title": "Des experts vous assistent",
-  "top-notch-support fast title": "Obtenez les réponses à vos questions",
+  "footers": {
+    "link": {
+      "about": "A propos",
+      "contact": "Contact",
+      "carbon": "Carbone",
+      "manifesto": "Manifeste IA",
+      "metrics": "Métriques ",
+      "privacy": "Vie privée",
+      "terms": "CGU / CGV"
+    },
+    "title": {
+      "company": "Société"
+    }
+  },
+  "header": {
+    "signIn": "Se connecter",
+    "signUp": "Essayez gratuitement",
+    "text": {
+      "blog": "Bonnes pratiques pour pipelines et productions",
+      "casting-management": "Faites votre breakdown et soyez informé(e) quand vos plans sont prêts",
+      "changelog": "Les dernières fonctionnialités implémentées",
+      "community": "Un endroit pour contribuer et rencontrer d'autres utilisateurs",
+      "conferences": "Conférences métier en vidéos",
+      "customer-stories": "Ils partagent leur retour d'expérience",
+      "documentation": "Le guide pour utiliser Kitsu",
+      "elite-hosting": "Forte sécurité, haute disponibilité et mises à jour automatiques",
+      "feature-films": "Suivez efficacement tous vos fournisseurs",
+      "production-tracker": "Plannifiez les projets, suivez les progrè et constituez les rapports de production",
+      "review-engine": "Récupérez les previews et faîtes des sessions de validations collectives",
+      "schools": "Améliorez la formation des étudiants",
+      "shorts": "Gérer des courts métrages et des publicités",
+      "software-integrations": "Branchez votre production tracker avec vos outils de création",
+      "spreadsheets": "Templates de feuilles de calcul",
+      "studio-database": "Boostez votre pipeline avec vos données de production",
+      "studios": "Les studios et productions utilisant Kitsu",
+      "tailor-made-architecture": "Multi-instances, intégrations LDAP/AD et stockage objet",
+      "team-collaboration": "Assigner les tâches, partagez les statuts et communiquez avec les artistes",
+      "top-notch-support": "Un support rapide assuré par des experts de la production",
+      "tutorials": "Vidéos courtes pour vous aider avec Kitsu",
+      "tvshows": "Supporter la charge d'une série télé",
+      "video-games": "Fluidifiez la création d'assets avec des artistes partout autour du globe",
+      "productions": "Films et séries suivis avec Kitsu"
+    },
+    "title": {
+      "dev": "Documentation Développeur",
+      "blog": "Blog",
+      "casting-management": "Gestion du Casting",
+      "changelog": "Changelog",
+      "community": "Communauté",
+      "conferences": "Conférences",
+      "customer-stories": "Nos clients racontent",
+      "docker": "Docker",
+      "documentation": "Documentation",
+      "elite-hosting": "Hébergement d'Élite",
+      "feature-films": "Longs métrages",
+      "pricing": "Tarifs",
+      "product": "Produit",
+      "production-tracker": "Suivi de Production",
+      "resources": "Ressources",
+      "review-engine": "Moteur de Validations",
+      "schools": "Écoles",
+      "shorts": "Films courts",
+      "software-integrations": "Intégrations Logicielles",
+      "solutions": "Solutions",
+      "spreadsheets": "Spreadsheets",
+      "studio-database": "Base de Données Studio",
+      "studios": "Studios et productions",
+      "productions": "Productions",
+      "tailor-made-architecture": "Architecture sur-mesure",
+      "team-collaboration": "Collaboration des Équipes",
+      "top-notch-support": "Support de Premier Plan",
+      "translations": "Traductions",
+      "tutorials": "Tutoriels",
+      "tvshows": "Séries Télé",
+      "usecase": "Études de cas",
+      "video-games": "Jeux vidéos"
+    }
+  },
+  "productions": {
+    "title": "Productions suivies avec Kitsu",
+    "subtitle": "Longs métrages, séries et courts métrages"
+  },
+  "main": {
+    "cookies": {
+      "consent": "Nous utilisons des cookies pour notre chat de support (Crisp) et des statistiques anonymes (Matomo). Acceptez-vous ?",
+      "accept": "Accepter",
+      "decline": "Refuser"
+    },
+    "plans": {
+      "cta": "Essayez gratuitement"
+    },
+    "explanation": {
+      "trusted": "Rejoignez plus de 80 studios et écoles"
+    }
+  },
+  "pricing": {
+    "faq": {
+      "title": "Questions Fréquentes"
+    }
+  },
+  "kitsu": {
+    "cta": "Intéressé(e) par Kitsu ?"
+  },
+  "usecase": {
+    "demo": "Suivi avec Kitsu par"
+  },
+  "tabs": {
+    "2D": "2D",
+    "3D": "3D",
+    "VFX": "VFX",
+    "Games": "Jeux Vidéos",
+    "Schools": "Écoles"
+  },
+  "tailor-made-architecture": {
+    "header": {
+      "tagline": "Architecture Sur-Mesure"
+    },
+    "onpremise": {
+      "title": "Déployez Kitsu sur vos serveurs"
+    },
+    "multiinstance": {
+      "title": "Isolez toutes vos productions"
+    },
+    "extra": {
+      "title": "Rendez votre installation on-premise unique"
+    }
+  },
+  "elite-hosting": {
+    "header": {
+      "tagline": "Hébergement d'Élite"
+    },
+    "security": {
+      "title": "Gardez vos données sécurisées"
+    },
+    "performance": {
+      "title": "Accédez rapidement à vos productions"
+    },
+    "availability": {
+      "title": "Nous faisons en sorte que votre Kitsu est toujours en ligne."
+    }
+  },
+  "top-notch-support": {
+    "header": {
+      "tagline": "Support de premier plan"
+    },
+    "chat": {
+      "title": "Accédez à notre équipe facilement"
+    },
+    "experts": {
+      "title": "Des experts vous assistent"
+    },
+    "fast": {
+      "title": "Obtenez les réponses à vos questions"
+    }
+  },
   "faq-section": {
     "title": "Questions Fréquentes",
     "subtitle": ""

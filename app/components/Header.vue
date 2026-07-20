@@ -82,7 +82,7 @@
         >
           <a class="navbar-link" @click="solutionMenuOn = !solutionMenuOn">
             <span class="navbar-item-title">
-              {{ $t('header title solutions') }}
+              {{ $t('header.title.solutions') }}
             </span>
           </a>
           <div
@@ -152,7 +152,7 @@
         >
           <a class="navbar-link" @click="useCaseMenuOn = !useCaseMenuOn">
             <span class="navbar-item-title">
-              {{ $t('header title usecase') }}
+              {{ $t('header.title.usecase') }}
             </span>
           </a>
 
@@ -186,7 +186,7 @@
         >
           <a class="navbar-link" @click="resourceMenuOn = !resourceMenuOn">
             <span class="navbar-item-title">
-              {{ $t('header title resources') }}
+              {{ $t('header.title.resources') }}
             </span>
           </a>
 
@@ -228,7 +228,7 @@
           :to="$localePath('pricing')"
         >
           <span class="navbar-item-title">
-            {{ $t('header title pricing') }}
+            {{ $t('header.title.pricing') }}
           </span>
         </nuxt-link>
 
@@ -239,13 +239,13 @@
             class="navbar-item top signin"
             :href="`https://account.cg-wire.com/signin?locale=${$i18n.locale}`"
           >
-            {{ $t('header sign in') }}
+            {{ $t('header.signIn') }}
           </a>
           <a
             class="navbar-item signup"
             :href="`https://account.cg-wire.com/signup?locale=${$i18n.locale}`"
           >
-            {{ $t('header sign up') }}
+            {{ $t('header.signUp') }}
           </a>
         </div>
       </div>

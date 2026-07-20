@@ -67,19 +67,19 @@
       </div>
 
       <div class="footer-col">
-        <p class="footer-title">{{ $t('header title product') }}</p>
+        <p class="footer-title">{{ $t('header.title.product') }}</p>
         <ul class="footer-links">
           <li>
             <nuxt-link :to="$localePath('kitsu')"> Kitsu </nuxt-link>
           </li>
           <li>
             <nuxt-link :to="$localePath('studios')">{{
-              $t('header title studios')
+              $t('header.title.studios')
             }}</nuxt-link>
           </li>
           <li>
             <nuxt-link :to="$localePath('customer-stories')">{{
-              $t('header title customer-stories')
+              $t('header.title.customer-stories')
             }}</nuxt-link>
           </li>
           <li>
@@ -91,7 +91,7 @@
                 })
               "
             >
-              {{ $t('header title production-tracker') }}
+              {{ $t('header.title.production-tracker') }}
             </nuxt-link>
           </li>
           <li>
@@ -103,12 +103,12 @@
                 })
               "
             >
-              {{ $t('header title review-engine') }}
+              {{ $t('header.title.review-engine') }}
             </nuxt-link>
           </li>
           <li>
             <nuxt-link :to="$localePath('software-integrations')">{{
-              $t('header title software-integrations')
+              $t('header.title.software-integrations')
             }}</nuxt-link>
           </li>
         </ul>
@@ -116,35 +116,35 @@
 
       <!-- Resources Column -->
       <div class="footer-col">
-        <p class="footer-title">{{ $t('header title resources') }}</p>
+        <p class="footer-title">{{ $t('header.title.resources') }}</p>
         <ul class="footer-links">
           <li>
             <a
               href="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnQgZ4TCrAt7smxesaDo29"
             >
-              {{ $t('header title tutorials') }}
+              {{ $t('header.title.tutorials') }}
             </a>
           </li>
           <li><a href="https://blog.cg-wire.com">Blog</a></li>
           <li>
             <a href="https://kitsu.cg-wire.com">{{
-              $t('header title documentation')
+              $t('header.title.documentation')
             }}</a>
           </li>
           <li>
-            <a href="https://dev.kitsu.cloud">{{ $t('header title dev') }}</a>
+            <a href="https://dev.kitsu.cloud">{{ $t('header.title.dev') }}</a>
           </li>
           <li>
             <a href="https://cgwire.canny.io/changelog">Changelog</a>
           </li>
           <li>
             <a href="https://github.com/cgwire/kitsu">{{
-              $t('header title translations')
+              $t('header.title.translations')
             }}</a>
           </li>
           <li>
             <a href="https://hub.docker.com/r/cgwire/cgwire">{{
-              $t('header title docker')
+              $t('header.title.docker')
             }}</a>
           </li>
         </ul>
@@ -152,48 +152,48 @@
 
       <!-- Company Column -->
       <div class="footer-col">
-        <p class="footer-title">{{ $t('footers title company') }}</p>
+        <p class="footer-title">{{ $t('footers.title.company') }}</p>
         <ul class="footer-links">
           <li>
             <nuxt-link :to="$localePath('about')">{{
-              $t('footers link about')
+              $t('footers.link.about')
             }}</nuxt-link>
           </li>
           <li>
             <nuxt-link :to="$localePath('contact')">{{
-              $t('footers link contact')
+              $t('footers.link.contact')
             }}</nuxt-link>
           </li>
           <li>
             <nuxt-link :to="$localePath('sustainable-ai-manifesto')">{{
-              $t('footers link manifesto')
+              $t('footers.link.manifesto')
             }}</nuxt-link>
           </li>
           <li>
             <nuxt-link :to="$localePath('carbon-report')">{{
-              $t('footers link carbon')
+              $t('footers.link.carbon')
             }}</nuxt-link>
           </li>
           <li>
             <nuxt-link :to="$localePath('metrics')">{{
-              $t('footers link metrics')
+              $t('footers.link.metrics')
             }}</nuxt-link>
           </li>
           <li>
             <nuxt-link :to="$localePath('terms')">{{
-              $t('footers link terms')
+              $t('footers.link.terms')
             }}</nuxt-link>
           </li>
           <li>
             <nuxt-link :to="$localePath('privacy')">{{
-              $t('footers link privacy')
+              $t('footers.link.privacy')
             }}</nuxt-link>
           </li>
         </ul>
       </div>
       <!-- FAQ Column — second row, full width -->
       <div class="footer-col footer-col--faq">
-        <p class="footer-title">{{ $t('pricing faq title') }}</p>
+        <p class="footer-title">{{ $t('pricing.faq.title') }}</p>
         <ul class="footer-links">
           <li>
             <nuxt-link

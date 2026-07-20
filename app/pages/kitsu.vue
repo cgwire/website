@@ -17,7 +17,7 @@
             }"
             :href="`https://account.cg-wire.com/signup`"
           >
-            {{ $t('main plans cta') }}
+            {{ $t('main.plans.cta') }}
           </a>
         </p>
       </div>

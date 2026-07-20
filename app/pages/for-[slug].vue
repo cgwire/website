@@ -133,7 +133,7 @@
 
           <div class="flex-item video-text">
             <p>
-              {{ t('usecase demo') }}
+              {{ t('usecase.demo') }}
               <a :href="audiencePage.video.partnerUrl">
                 {{ audiencePage.video.partnerName }}
               </a>

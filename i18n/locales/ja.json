@@ -1,97 +1,159 @@
 {
-  "footers link about": "会社概要",
-  "footers link contact": "連絡先",
-  "footers link carbon": "カーボン",
-  "footers link manifesto": "AIマニフェスト",
-  "footers link metrics": "指標",
-  "footers link privacy": "プライバシー",
-  "footers link terms": "利用規約",
-  "footers title company": "会社",
-  "header sign in": "サインイン",
-  "header sign up": "無料で試す",
-  "header text blog": "プロダクションに関するベストプラクティスを読む",
-  "header text casting-management": "ブレイクダウンを作成し、ショットの準備完了時期を把握する",
-  "header text changelog": "最新機能のフィード",
-  "header text community": "貢献し、他のユーザーと出会える場所",
-  "header text conferences": "ベストプラクティスに関するカンファレンス",
-  "header text customer-stories": "ユーザーの成功ストーリーについて学ぶ",
-  "header text documentation": "Kitsuを使用するための包括的なガイド",
-  "header text elite-hosting": "堅牢なセキュリティ、高い稼働率、自動更新",
-  "header text feature-films": "高品質な結果を得るためにベンダーの連携を維持",
-  "header text production-tracker": "プロジェクトをスケジュール設定し、進捗状況を追跡し、プロダクションレポートを作成",
-  "header text review-engine": "プレビューを収集し、共同フィードバックセッションを実行",
-  "header text schools": "学生のトレーニングを強化",
-  "header text shorts": "複数のハイエンド短編プロジェクトの管理",
-  "header text software-integrations": "プロダクションデータを主要ツールと連携させる。",
-  "header text spreadsheets": "スプレッドシート用テンプレート",
-  "header text studio-database": "プロダクションデータをパイプラインに直接統合",
-  "header text studios": "Kitsuの活用を享受するスタジオとプロダクション",
-  "header text tailor-made-architecture": "マルチインスタンス、認証統合、オブジェクトストレージ",
-  "header text team-collaboration": "タスクの割り当て、ステータスの共有、アーティストとのコミュニケーション",
-  "header text top-notch-support": "業界のプロフェッショナルによる専門的なユーザーサポート",
-  "header text tutorials": "Kitsuを使いこなすための短いビデオ",
-  "header text tvshows": "TVシリーズプロダクションにおける要求の管理",
-  "header text video-games": "世界中のアーティストとアセット制作を効率化",
-  "header title dev": "開発者ドキュメント",
-  "header title blog": "ブログ",
-  "header title casting-management": "キャスティング管理",
-  "header title changelog": "変更履歴",
-  "header title community": "コミュニティ",
-  "header title conferences": "カンファレンス",
-  "header title customer-stories": "お客様のストーリー",
-  "header title docker": "Docker",
-  "header title documentation": "ドキュメント",
-  "header title elite-hosting": "エリートホスティング",
-  "header title feature-films": "長編映画",
-  "header title pricing": "料金設定",
-  "header title product": "製品",
-  "header title production-tracker": "プロダクショントラッカー",
-  "header title resources": "リソース",
-  "header title review-engine": "レビューエンジン",
-  "header title schools": "アニメーション学校",
-  "header title shorts": "短編映画とコマーシャル",
-  "header title software-integrations": "ソフトウェア統合",
-  "header title solutions": "ソリューション",
-  "header title spreadsheets": "スプレッドシート",
-  "header title studio-database": "スタジオデータベース",
-  "header title studios": "Kitsuの利用者",
-  "header title productions": "制作作品",
-  "header text productions": "Kitsuで管理された映画やシリーズ",
-  "productions title": "Kitsuで管理された作品",
-  "productions subtitle": "長編映画、シリーズ、短編映画",
-  "header title tailor-made-architecture": "カスタマイズされたアーキテクチャ",
-  "header title team-collaboration": "チームコラボレーション",
-  "header title top-notch-support": "一流のサポート",
-  "header title translations": "翻訳",
-  "header title tutorials": "チュートリアル",
-  "header title tvshows": "TV番組",
-  "header title usecase": "ユースケース",
-  "header title video-games": "ビデオゲーム",
-  "main cookies consent": "サポートチャット（Crisp）と匿名のアクセス解析（Matomo）のためにCookieを使用しています。許可しますか？",
-  "main cookies accept": "許可する",
-  "main cookies decline": "拒否する",
-  "main plans cta": "今すぐKitsuを試す",
-  "main explanation trusted": "世界中のスタジオや学校から信頼されています",
-  "pricing faq title": "よくある質問",
-  "kitsu cta": "Kitsuの利用に興味がありますか？",
-  "usecase demo": "Kitsu追跡",
-  "tabs 2D": "2D",
-  "tabs 3D": "3D",
-  "tabs VFX": "ビジュアルエフェクト",
-  "tabs Games": "ゲーム",
-  "tabs Schools": "学校",
-  "tailor-made-architecture header tagline": "テーラーメイドのアーキテクチャ",
-  "tailor-made-architecture onpremise title": "サーバーにKitsuをセットアップ",
-  "tailor-made-architecture multiinstance title": "すべての制作を分離",
-  "tailor-made-architecture extra title": "インストールのカスタマイズ",
-  "elite-hosting header tagline": "エリートホスティング",
-  "elite-hosting security title": "データを安全に保つ",
-  "elite-hosting performance title": "データへの迅速なアクセス",
-  "elite-hosting availability title": "あなたのキツは常にアップ",
-  "top-notch-support header tagline": "一流のサポート",
-  "top-notch-support chat title": "必要な時のサポート",
-  "top-notch-support experts title": "専門家によるアシスト",
-  "top-notch-support fast title": "迅速な対応",
+  "footers": {
+    "link": {
+      "about": "会社概要",
+      "contact": "連絡先",
+      "carbon": "カーボン",
+      "manifesto": "AIマニフェスト",
+      "metrics": "指標",
+      "privacy": "プライバシー",
+      "terms": "利用規約"
+    },
+    "title": {
+      "company": "会社"
+    }
+  },
+  "header": {
+    "signIn": "サインイン",
+    "signUp": "無料で試す",
+    "text": {
+      "blog": "プロダクションに関するベストプラクティスを読む",
+      "casting-management": "ブレイクダウンを作成し、ショットの準備完了時期を把握する",
+      "changelog": "最新機能のフィード",
+      "community": "貢献し、他のユーザーと出会える場所",
+      "conferences": "ベストプラクティスに関するカンファレンス",
+      "customer-stories": "ユーザーの成功ストーリーについて学ぶ",
+      "documentation": "Kitsuを使用するための包括的なガイド",
+      "elite-hosting": "堅牢なセキュリティ、高い稼働率、自動更新",
+      "feature-films": "高品質な結果を得るためにベンダーの連携を維持",
+      "production-tracker": "プロジェクトをスケジュール設定し、進捗状況を追跡し、プロダクションレポートを作成",
+      "review-engine": "プレビューを収集し、共同フィードバックセッションを実行",
+      "schools": "学生のトレーニングを強化",
+      "shorts": "複数のハイエンド短編プロジェクトの管理",
+      "software-integrations": "プロダクションデータを主要ツールと連携させる。",
+      "spreadsheets": "スプレッドシート用テンプレート",
+      "studio-database": "プロダクションデータをパイプラインに直接統合",
+      "studios": "Kitsuの活用を享受するスタジオとプロダクション",
+      "tailor-made-architecture": "マルチインスタンス、認証統合、オブジェクトストレージ",
+      "team-collaboration": "タスクの割り当て、ステータスの共有、アーティストとのコミュニケーション",
+      "top-notch-support": "業界のプロフェッショナルによる専門的なユーザーサポート",
+      "tutorials": "Kitsuを使いこなすための短いビデオ",
+      "tvshows": "TVシリーズプロダクションにおける要求の管理",
+      "video-games": "世界中のアーティストとアセット制作を効率化",
+      "productions": "Kitsuで管理された映画やシリーズ"
+    },
+    "title": {
+      "dev": "開発者ドキュメント",
+      "blog": "ブログ",
+      "casting-management": "キャスティング管理",
+      "changelog": "変更履歴",
+      "community": "コミュニティ",
+      "conferences": "カンファレンス",
+      "customer-stories": "お客様のストーリー",
+      "docker": "Docker",
+      "documentation": "ドキュメント",
+      "elite-hosting": "エリートホスティング",
+      "feature-films": "長編映画",
+      "pricing": "料金設定",
+      "product": "製品",
+      "production-tracker": "プロダクショントラッカー",
+      "resources": "リソース",
+      "review-engine": "レビューエンジン",
+      "schools": "アニメーション学校",
+      "shorts": "短編映画とコマーシャル",
+      "software-integrations": "ソフトウェア統合",
+      "solutions": "ソリューション",
+      "spreadsheets": "スプレッドシート",
+      "studio-database": "スタジオデータベース",
+      "studios": "Kitsuの利用者",
+      "productions": "制作作品",
+      "tailor-made-architecture": "カスタマイズされたアーキテクチャ",
+      "team-collaboration": "チームコラボレーション",
+      "top-notch-support": "一流のサポート",
+      "translations": "翻訳",
+      "tutorials": "チュートリアル",
+      "tvshows": "TV番組",
+      "usecase": "ユースケース",
+      "video-games": "ビデオゲーム"
+    }
+  },
+  "productions": {
+    "title": "Kitsuで管理された作品",
+    "subtitle": "長編映画、シリーズ、短編映画"
+  },
+  "main": {
+    "cookies": {
+      "consent": "サポートチャット（Crisp）と匿名のアクセス解析（Matomo）のためにCookieを使用しています。許可しますか？",
+      "accept": "許可する",
+      "decline": "拒否する"
+    },
+    "plans": {
+      "cta": "今すぐKitsuを試す"
+    },
+    "explanation": {
+      "trusted": "世界中のスタジオや学校から信頼されています"
+    }
+  },
+  "pricing": {
+    "faq": {
+      "title": "よくある質問"
+    }
+  },
+  "kitsu": {
+    "cta": "Kitsuの利用に興味がありますか？"
+  },
+  "usecase": {
+    "demo": "Kitsu追跡"
+  },
+  "tabs": {
+    "2D": "2D",
+    "3D": "3D",
+    "VFX": "ビジュアルエフェクト",
+    "Games": "ゲーム",
+    "Schools": "学校"
+  },
+  "tailor-made-architecture": {
+    "header": {
+      "tagline": "テーラーメイドのアーキテクチャ"
+    },
+    "onpremise": {
+      "title": "サーバーにKitsuをセットアップ"
+    },
+    "multiinstance": {
+      "title": "すべての制作を分離"
+    },
+    "extra": {
+      "title": "インストールのカスタマイズ"
+    }
+  },
+  "elite-hosting": {
+    "header": {
+      "tagline": "エリートホスティング"
+    },
+    "security": {
+      "title": "データを安全に保つ"
+    },
+    "performance": {
+      "title": "データへの迅速なアクセス"
+    },
+    "availability": {
+      "title": "あなたのキツは常にアップ"
+    }
+  },
+  "top-notch-support": {
+    "header": {
+      "tagline": "一流のサポート"
+    },
+    "chat": {
+      "title": "必要な時のサポート"
+    },
+    "experts": {
+      "title": "専門家によるアシスト"
+    },
+    "fast": {
+      "title": "迅速な対応"
+    }
+  },
   "faq-section": {
     "title": "よくある質問",
     "subtitle": ""

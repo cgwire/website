@@ -1,7 +1,7 @@
 <template>
   <section class="section content trusted pa1">
     <h4 class="section-subtitle has-text-centered" v-if="withTitle">
-      {{ $t('main explanation trusted') }}
+      {{ $t('main.explanation.trusted') }}
     </h4>
 
     <div class="brand-wheel-container">

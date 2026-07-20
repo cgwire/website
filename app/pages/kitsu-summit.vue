@@ -261,7 +261,7 @@
               <span class="price-info">+ taxes</span>
             </div>
             <!--div>
-              <span class="price-label">{{ $t('kitsu-summit price availability') }}</span>
+              <span class="price-label">{{ $t('kitsu-summit.price.availability') }}</span>
             </div-->
             <div class="registration-buttons mt1">
               <a

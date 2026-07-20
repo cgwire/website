@@ -13,27 +13,27 @@
 
     <section class="section mt0">
       <h2 class="section-subtitle has-text-centered user-title">
-        {{ $t('header title tvshows') }}
+        {{ $t('header.title.tvshows') }}
       </h2>
       <StudiosTVShows />
 
       <h2 class="section-subtitle has-text-centered user-title">
-        {{ $t('header title feature-films') }}
+        {{ $t('header.title.feature-films') }}
       </h2>
       <StudiosFeature />
 
       <h2 class="section-subtitle has-text-centered user-title">
-        {{ $t('header title shorts') }}
+        {{ $t('header.title.shorts') }}
       </h2>
       <StudiosShorts />
 
       <h2 class="section-subtitle has-text-centered user-title">
-        {{ $t('header title video-games') }}
+        {{ $t('header.title.video-games') }}
       </h2>
       <StudiosVideoGames />
 
       <h2 class="section-subtitle has-text-centered user-title">
-        {{ $t('header title schools') }}
+        {{ $t('header.title.schools') }}
       </h2>
       <StudiosSchools />
     </section>

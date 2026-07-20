@@ -17,7 +17,7 @@
                 class="navbar-item signup"
                 :href="`https://account.cg-wire.com/signup?locale=${$i18n.locale}`"
               >
-                {{ $t('header sign up') }}
+                {{ $t('header.signUp') }}
               </a>
             </div>
 
