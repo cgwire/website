@@ -1334,7 +1334,16 @@
       "header": {
         "tagline": "Studio Database",
         "subtitle": "A single source of truth",
-        "explanation": "Production data scattered across tools and shared drives kills pipeline efficiency. Kitsu provides a central HTTP API that makes every asset, shot, task, and assignment queryable from any tool in your studio. Your pipeline talks to one place, your artists stay focused on the work."
+        "stats": [
+          { "value": "80k", "label": "downloads" },
+          { "value": "500", "label": "running instances" },
+          { "value": "10 years", "label": "in production" }
+        ],
+        "explanation": "Production data scattered across tools and shared drives kills pipeline efficiency. Kitsu provides a central HTTP API that makes every asset, shot, task, and assignment queryable from any tool in your studio. Your pipeline talks to one place, your artists stay focused on the work.",
+        "docsCta": {
+          "label": "Read the API docs",
+          "url": "https://dev.kitsu.cloud"
+        }
       },
       "features": [
         {
@@ -1349,7 +1358,7 @@
         {
           "subtitle": "HTTP API",
           "title": "Keep departments synchronized",
-          "content": "Assets, shots, casting, task assignments, file locations: every department needs this data, and it needs to be the same data. The Kitsu API gives your entire studio a single queryable source for production information, accessible from any tool, any machine, any location.",
+          "content": "Assets, shots, casting, task assignments, file locations: every department needs this data, and it needs to be the same data. The Kitsu API gives your entire studio a single queryable source for production information, accessible from any tool, any machine, any location. AI assistants can reach the same data through our MCP server.",
           "image": "kitsu-api.png",
           "reverted": true,
           "shadow": false
@@ -1357,7 +1366,7 @@
         {
           "subtitle": "Python client SDK",
           "title": "Save development time with a clean API",
-          "content": "The Kitsu Python client gives you intuitive functions to fetch production data without rebuilding request logic every time. A raw client handles complex queries when needed, and a built-in cache keeps response times fast. Install it directly from PyPI and start working.",
+          "content": "The Kitsu Python client, gazu, gives you intuitive functions to fetch production data without rebuilding request logic every time. A raw client handles complex queries when needed, and a built-in cache keeps response times fast. Install it directly from PyPI and start working.",
           "image": "kitsu-python.png",
           "shadow": true,
           "colored": true,
@@ -1388,6 +1397,11 @@
       "header": {
         "tagline": "Tailor-Made Architecture",
         "subtitle": "Enterprise Infrastructure, Without the Compromise",
+        "stats": [
+          { "value": "140 VMs · 30 TB", "label": "operated" },
+          { "value": "500 users", "label": "on the largest instances" },
+          { "value": "99.99%", "label": "uptime goal" }
+        ],
         "explanation": "Large studios have strong requirements: data sovereignty, network performance, strict access control, and production isolation. CGWire deploys and manages Kitsu directly on your hardware or on an isolated cloud, giving you security, uptime, monitoring, and frequent updates while you keep control."
       },
       "features": [
@@ -1513,6 +1527,15 @@
       "header": {
         "tagline": "Top-Notch Support",
         "subtitle": "Support That Keeps Production Moving",
+        "stats": [
+          { "value": "30 min", "label": "average response" },
+          { "value": "800", "label": "conversations a year" },
+          { "value": "2,100", "label": "Discord members" }
+        ],
+        "docsCta": {
+          "label": "Read the documentation",
+          "url": "https://kitsu.cg-wire.com"
+        },
         "explanation": "When production is blocked, every hour counts. Get answers in 30 minutes on average via in-app chat, from a team of former production managers who know your workflows firsthand. Every conversation is saved and tracked, so nothing falls through the cracks."
       },
       "isVideo": true,

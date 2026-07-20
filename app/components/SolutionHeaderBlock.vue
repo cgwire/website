@@ -19,6 +19,9 @@
             <span class="stat-label">{{ s.label }}</span>
           </li>
         </ul>
+        <a v-if="header.docsCta" class="docs-cta" :href="header.docsCta.url">
+          {{ header.docsCta.label }}
+        </a>
       </div>
       <div class="tile is-6 is-child">
         <video
@@ -69,6 +72,22 @@ video
 
 section
   padding-bottom 0
+
+// Secondary CTA under the header (e.g. "Read the API docs"). Outline style so
+// it never competes with the primary Try Kitsu button at the page bottom.
+.docs-cta
+  display inline-block
+  margin-top 1.8rem
+  padding 0.8rem 1.6rem
+  border 2px solid cgwiregreen
+  border-radius 2em
+  background white
+  color cgwiregreen
+  font-weight bold
+  transition background 0.2s ease
+
+  &:hover
+    background lightblue
 
 // Measured figures shown under the header text (uptime goal, backups...).
 // Doubled selector to outweigh the global Bulma .content ul margins.

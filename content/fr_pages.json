@@ -1338,6 +1338,15 @@
       "header": {
         "tagline": "Base de données studio",
         "subtitle": "Une source de vérité unique",
+        "stats": [
+          { "value": "80k", "label": "téléchargements" },
+          { "value": "500", "label": "instances actives" },
+          { "value": "10 ans", "label": "en production" }
+        ],
+        "docsCta": {
+          "label": "Lire la doc API",
+          "url": "https://dev.kitsu.cloud"
+        },
         "explanation": "Les données de production dispersées dans des outils et des disques partagés nuisent à l'efficacité de la pipeline. Kitsu fournit une API HTTP centrale qui rend chaque asset, plan, tâche et assignation interrogeable depuis n'importe quel outil de votre studio. Votre pipeline ne parle qu'à un seul endroit, vos artistes restent concentrés sur le travail."
       },
       "features": [
@@ -1353,7 +1362,7 @@
         {
           "subtitle": "API HTTP",
           "title": "Gardez les départements synchronisés",
-          "content": "Assets, plans, casting, assignations de tâches, emplacements de fichiers : chaque département a besoin de ces données, et elles doivent être les mêmes. L'API Kitsu donne à tout votre studio une source unique interrogeable pour les informations de production, accessible depuis n'importe quel outil, n'importe quelle machine, n'importe quel endroit.",
+          "content": "Assets, plans, casting, assignations de tâches, emplacements de fichiers : chaque département a besoin de ces données, et elles doivent être les mêmes. L'API Kitsu donne à tout votre studio une source unique interrogeable pour les informations de production, accessible depuis n'importe quel outil, n'importe quelle machine, n'importe quel endroit. Les assistants IA accèdent aux mêmes données via notre serveur MCP.",
           "image": "kitsu-api.png",
           "reverted": true,
           "shadow": false
@@ -1361,7 +1370,7 @@
         {
           "subtitle": "SDK client Python",
           "title": "Gagnez du temps de développement avec une API propre",
-          "content": "Le client Python Kitsu vous offre des fonctions intuitives pour récupérer les données de production sans reconstruire la logique de requête à chaque fois. Un client brut gère les requêtes complexes si nécessaire, et un cache intégré maintient des temps de réponse rapides. Installez-le directement depuis PyPI et commencez à travailler.",
+          "content": "Le client Python de Kitsu, gazu, vous offre des fonctions intuitives pour récupérer les données de production sans reconstruire la logique de requête à chaque fois. Un client brut gère les requêtes complexes si nécessaire, et un cache intégré maintient des temps de réponse rapides. Installez-le directement depuis PyPI et commencez à travailler.",
           "image": "kitsu-python.png",
           "shadow": true,
           "colored": true,
@@ -1392,6 +1401,11 @@
       "header": {
         "tagline": "Architecture sur mesure",
         "subtitle": "Infrastructure d'entreprise, sans compromis",
+        "stats": [
+          { "value": "140 VMs · 30 TB", "label": "en production" },
+          { "value": "500 utilisateurs", "label": "sur les plus grosses instances" },
+          { "value": "99,99 %", "label": "objectif de disponibilité" }
+        ],
         "explanation": "Les grands studios ont des exigences fortes : souveraineté des données, performance réseau, contrôle d'accès strict et isolation de production. CGWire déploie et gère Kitsu directement sur votre matériel ou sur un cloud isolé, avec la sécurité, la disponibilité, la surveillance et des mises à jour fréquentes, tout en vous laissant le contrôle."
       },
       "features": [
@@ -1518,6 +1532,15 @@
       "header": {
         "tagline": "Support de premier plan",
         "subtitle": "Un support qui maintient la production en mouvement",
+        "stats": [
+          { "value": "30 min", "label": "réponse moyenne" },
+          { "value": "800", "label": "conversations par an" },
+          { "value": "2 100", "label": "membres Discord" }
+        ],
+        "docsCta": {
+          "label": "Consulter la documentation",
+          "url": "https://kitsu.cg-wire.com"
+        },
         "explanation": "Quand la production est bloquée, chaque heure compte. Obtenez des réponses en 30 minutes en moyenne via le chat intégré à l'application, auprès d'une équipe d'anciens chefs de production qui connaissent vos flux de travail de première main. Chaque conversation est sauvegardée et suivie, pour que rien ne passe à travers les mailles."
       },
       "isVideo": true,
