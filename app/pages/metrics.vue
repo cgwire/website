@@ -9,15 +9,15 @@
       }"
     >
       <div class="container">
-        <span class="eyebrow">{{ $t('metrics.hero.eyebrow') }}</span>
-        <h1 class="hero-title">{{ $t('metrics.hero.title') }}</h1>
-        <p class="hero-lead">{{ $t('metrics.hero.lead') }}</p>
+        <span class="eyebrow">{{ m.hero.eyebrow }}</span>
+        <h1 class="hero-title">{{ m.hero.title }}</h1>
+        <p class="hero-lead">{{ m.hero.lead }}</p>
         <div class="hero-cta">
           <NuxtLink class="btn btn-primary" :to="$localePath('about')"
-            >{{ $t('metrics.hero.cta') }}</NuxtLink
+            >{{ m.hero.cta }}</NuxtLink
           >
         </div>
-        <p class="hero-updated">{{ $t('metrics.hero.lastUpdate', { date: lastUpdate }) }}</p>
+        <p class="hero-updated">{{ m.hero.lastUpdate.replace('{date}', lastUpdate) }}</p>
       </div>
     </section>
     <div class="hero-fade">&nbsp;</div>
@@ -25,7 +25,7 @@
     <!-- LATEST UPDATES (placeholder: wire real blog articles) -->
     <section class="section">
       <div class="container">
-        <h2 class="kicker">{{ $t('metrics.updates.title') }}</h2>
+        <h2 class="kicker">{{ m.updates.title }}</h2>
         <div class="update-cards">
           <a
             v-for="u in updates"
@@ -33,9 +33,9 @@
             class="update-card"
             :href="u.url"
           >
-            <span class="update-badge">{{ $t('metrics.updates.badge') }}</span>
+            <span class="update-badge">{{ m.updates.badge }}</span>
             <span class="update-title">{{ u.title }}</span>
-            <span class="update-link">{{ $t('metrics.updates.link') }}</span>
+            <span class="update-link">{{ m.updates.link }}</span>
           </a>
         </div>
       </div>
@@ -44,8 +44,8 @@
     <!-- REVENUE -->
     <section class="section band-light">
       <div class="container">
-        <h2 class="content-title">{{ $t('metrics.revenue.title') }}</h2>
-        <p class="content-description">{{ $t('metrics.revenue.text') }}</p>
+        <h2 class="content-title">{{ m.revenue.title }}</h2>
+        <p class="content-description">{{ m.revenue.text }}</p>
         <div class="toggle-buttons">
           <button
             v-for="p in revenuePeriods"
@@ -64,7 +64,7 @@
             :labels="revenue.labels"
             :series="revenue.values"
             unit="eur"
-            :aria-label="$t('metrics.chart.revenueAria')"
+            :aria-label="m.chart.revenueAria"
           />
         </div>
       </div>
@@ -79,12 +79,12 @@
             :labels="metrics.hostingMRR.labels"
             :series="metrics.hostingMRR.values"
             unit="eur"
-            :aria-label="$t('metrics.chart.mrrAria')"
+            :aria-label="m.chart.mrrAria"
           />
         </div>
         <div class="two-col-text">
-          <h2 class="content-title left">{{ $t('metrics.mrr.title') }}</h2>
-          <p class="content-description left">{{ $t('metrics.mrr.text') }}</p>
+          <h2 class="content-title left">{{ m.mrr.title }}</h2>
+          <p class="content-description left">{{ m.mrr.text }}</p>
         </div>
       </div>
     </section>
@@ -92,17 +92,17 @@
     <!-- ACTIVE CUSTOMERS -->
     <section class="section band-light">
       <div class="container">
-        <h2 class="content-title">{{ $t('metrics.customers.title') }}</h2>
+        <h2 class="content-title">{{ m.customers.title }}</h2>
         <div class="two-blocks">
           <div class="metric-block">
             <span class="metric-value">{{ latestCustomers }}</span>
-            <h2 class="metric-title">{{ $t('metrics.customers.activeTitle') }}</h2>
-            <p class="metric-text">{{ $t('metrics.customers.activeText') }}</p>
+            <h2 class="metric-title">{{ m.customers.activeTitle }}</h2>
+            <p class="metric-text">{{ m.customers.activeText }}</p>
           </div>
           <div class="metric-block">
             <span class="metric-value">{{ metrics.selfHostedSetups }}</span>
-            <h2 class="metric-title">{{ $t('metrics.customers.selfhostedTitle') }}</h2>
-            <p class="metric-text">{{ $t('metrics.customers.selfhostedText') }}</p>
+            <h2 class="metric-title">{{ m.customers.selfhostedTitle }}</h2>
+            <p class="metric-text">{{ m.customers.selfhostedText }}</p>
           </div>
         </div>
       </div>
@@ -112,22 +112,22 @@
     <section class="section">
       <div class="container two-col team">
         <div class="two-col-text">
-          <span class="eyebrow">{{ $t('metrics.team.eyebrow') }}</span>
-          <h2 class="content-title left">{{ $t('metrics.team.title') }}</h2>
-          <p class="content-description left">{{ $t('metrics.team.text') }}</p>
+          <span class="eyebrow">{{ m.team.eyebrow }}</span>
+          <h2 class="content-title left">{{ m.team.title }}</h2>
+          <p class="content-description left">{{ m.team.text }}</p>
           <div class="team-count">
             <span class="metric-value">{{ employeesCount }}</span>
-            <span class="team-count-label">{{ $t('metrics.team.count') }}</span>
+            <span class="team-count-label">{{ m.team.count }}</span>
           </div>
         </div>
 
         <div class="pay-panel">
-          <div class="pay-head">{{ $t('metrics.team.salaryHead') }}</div>
+          <div class="pay-head">{{ m.team.salaryHead }}</div>
           <div v-for="s in metrics.salaries" :key="s.role" class="pay-row">
             <span class="pay-role">
               {{ s.role }}
               <span v-if="s.partTime" class="pay-badge"
-                >{{ $t('metrics.team.partTime', { fraction: s.partTime }) }}</span
+                >{{ m.team.partTime.replace('{fraction}', s.partTime) }}</span
               >
             </span>
             <span class="pay-amount">{{ euro(s.netPerMonth) }}</span>
@@ -139,21 +139,21 @@
     <!-- CASH FLOW / MONEY IN BANK -->
     <section class="section">
       <div class="container">
-        <h2 class="content-title">{{ $t('metrics.cashflow.title') }}</h2>
+        <h2 class="content-title">{{ m.cashflow.title }}</h2>
         <div class="toggle-buttons">
           <button
             class="btn"
             :class="!showBank ? 'btn-primary' : 'btn-secondary'"
             @click="showBank = false"
           >
-            {{ $t('metrics.cashflow.toggleFlow') }}
+            {{ m.cashflow.toggleFlow }}
           </button>
           <button
             class="btn"
             :class="showBank ? 'btn-primary' : 'btn-secondary'"
             @click="showBank = true"
           >
-            {{ $t('metrics.cashflow.toggleBank') }}
+            {{ m.cashflow.toggleBank }}
           </button>
         </div>
         <div class="chart-card">
@@ -163,7 +163,7 @@
             :labels="metrics.cashFlow.labels"
             :series="cashFlowSeries"
             unit="eur"
-            :aria-label="$t('metrics.chart.cashflowAria')"
+            :aria-label="m.chart.cashflowAria"
           />
           <MetricsChart
             v-else
@@ -171,7 +171,7 @@
             :labels="metrics.moneyInBank.labels"
             :series="metrics.moneyInBank.values"
             unit="eur"
-            :aria-label="$t('metrics.chart.bankAria')"
+            :aria-label="m.chart.bankAria"
           />
         </div>
       </div>
@@ -181,29 +181,29 @@
     <section class="section">
       <div class="container two-col">
         <div class="two-col-text">
-          <span class="eyebrow">{{ $t('metrics.servers.eyebrow') }}</span>
-          <h2 class="content-title left">{{ $t('metrics.servers.title') }}</h2>
-          <p class="content-description left">{{ $t('metrics.servers.text') }}</p>
+          <span class="eyebrow">{{ m.servers.eyebrow }}</span>
+          <h2 class="content-title left">{{ m.servers.title }}</h2>
+          <p class="content-description left">{{ m.servers.text }}</p>
           <a
             class="btn btn-outline"
             href="https://blog.cg-wire.com/deep-dive-into-our-hosting-infrastructure"
-            >{{ $t('metrics.servers.cta') }}</a
+            >{{ m.servers.cta }}</a
           >
         </div>
 
         <div class="server-bill">
-          <span class="bill-label">{{ $t('metrics.servers.billLabel') }}</span>
+          <span class="bill-label">{{ m.servers.billLabel }}</span>
           <div class="bill-value">
             {{ euro(metrics.servers.lastMonthCost)
-            }}<span class="bill-per">{{ $t('metrics.servers.perMonth') }}</span>
+            }}<span class="bill-per">{{ m.servers.perMonth }}</span>
           </div>
           <dl class="bill-rows">
             <div class="bill-row">
-              <dt>{{ $t('metrics.servers.provider') }}</dt>
+              <dt>{{ m.servers.provider }}</dt>
               <dd>{{ metrics.servers.provider }}</dd>
             </div>
             <div class="bill-row">
-              <dt>{{ $t('metrics.servers.scale') }}</dt>
+              <dt>{{ m.servers.scale }}</dt>
               <dd>{{ metrics.servers.vms }} VMs · {{ metrics.servers.storage }}</dd>
             </div>
           </dl>
@@ -215,8 +215,8 @@
     <!-- TOOLS -->
     <section class="section band-light">
       <div class="container">
-        <h2 class="content-title">{{ $t('metrics.tools.title') }}</h2>
-        <p class="content-description">{{ $t('metrics.tools.text') }}</p>
+        <h2 class="content-title">{{ m.tools.title }}</h2>
+        <p class="content-description">{{ m.tools.text }}</p>
         <div class="tools-grid">
           <div
             v-for="(list, category) in metrics.tools"
@@ -233,7 +233,7 @@
     <!-- FUNDING -->
     <section class="section">
       <div class="container">
-        <h2 class="content-title">{{ $t('metrics.funding.title') }}</h2>
+        <h2 class="content-title">{{ m.funding.title }}</h2>
         <ul
           class="funding-list"
           :class="{
@@ -252,7 +252,7 @@
           class="btn btn-secondary see-all"
           @click="showAllFunding = !showAllFunding"
         >
-          {{ showAllFunding ? $t('metrics.funding.showLess') : $t('metrics.funding.seeAll') }}
+          {{ showAllFunding ? m.funding.showLess : m.funding.seeAll }}
         </button>
       </div>
     </section>
@@ -260,7 +260,7 @@
     <!-- CAP TABLE -->
     <section class="section band-light">
       <div class="container">
-        <h2 class="content-title">{{ $t('metrics.captable.title') }}</h2>
+        <h2 class="content-title">{{ m.captable.title }}</h2>
         <div class="data-cards captable">
           <div v-for="o in metrics.capTable" :key="o.name" class="data-card">
             <div class="card-value">{{ o.share }}%</div>
@@ -274,7 +274,7 @@
     <!-- WHY -->
     <section class="section">
       <div class="container">
-        <h2 class="content-title">{{ $t('metrics.why.title') }}</h2>
+        <h2 class="content-title">{{ m.why.title }}</h2>
         <div class="why-cards">
           <div v-for="w in why" :key="w.title" class="why-card">
             <h3 class="why-title">{{ w.title }}</h3>
@@ -288,10 +288,10 @@
     <section class="section">
       <div class="container carbon-promo">
         <div class="carbon-promo-text">
-          <h2 class="content-title left">{{ $t('metrics.carbon.title') }}</h2>
-          <p class="content-description left">{{ $t('metrics.carbon.text') }}</p>
+          <h2 class="content-title left">{{ m.carbon.title }}</h2>
+          <p class="content-description left">{{ m.carbon.text }}</p>
           <NuxtLink class="btn btn-primary" :to="$localePath('carbon-report')"
-            >{{ $t('metrics.carbon.cta') }}</NuxtLink
+            >{{ m.carbon.cta }}</NuxtLink
           >
         </div>
         <img
@@ -311,11 +311,19 @@ import metrics from '~/data/metrics.json'
 import heroArtLeft from '~/assets/images/metrics/header-left.png'
 import heroArtRight from '~/assets/images/metrics/header-right.png'
 
-const { t, locale } = useI18n()
+const { locale } = useI18n()
+const slug = ref('metrics')
+const { pageQuery } = usePage(locale, slug)
+const { data: page } = await useAsyncData(
+  `${slug.value}-${locale.value}`,
+  pageQuery,
+  { watch: [slug, locale] }
+)
+const m = computed(() => page.value.meta.metrics)
 
 useSEO({
-  title: t('metrics.seo.title'),
-  description: t('metrics.seo.description'),
+  title: m.value.seo.title,
+  description: m.value.seo.description,
   imagePath: 'metrics.png'
 })
 
@@ -327,8 +335,8 @@ const euro = n =>
   }).format(n)
 
 const fundingDate = d => {
-  const [y, m] = d.split('-')
-  return new Date(Number(y), Number(m) - 1, 1).toLocaleDateString(locale.value, {
+  const [y, mo] = d.split('-')
+  return new Date(Number(y), Number(mo) - 1, 1).toLocaleDateString(locale.value, {
     year: 'numeric',
     month: 'long'
   })
@@ -347,9 +355,9 @@ const employeesCount = metrics.employees.values.at(-1)
 
 // Revenue period toggle
 const revenuePeriods = computed(() => [
-  { key: 'monthly', label: t('metrics.period.monthly') },
-  { key: 'quarterly', label: t('metrics.period.quarterly') },
-  { key: 'yearly', label: t('metrics.period.yearly') }
+  { key: 'monthly', label: m.value.period.monthly },
+  { key: 'quarterly', label: m.value.period.quarterly },
+  { key: 'yearly', label: m.value.period.yearly }
 ])
 const revenuePeriod = ref('quarterly')
 const revenue = computed(() => metrics.revenue[revenuePeriod.value])
@@ -358,12 +366,12 @@ const revenue = computed(() => metrics.revenue[revenuePeriod.value])
 const showBank = ref(true)
 const cashFlowSeries = computed(() => [
   {
-    name: t('metrics.cashflow.incoming'),
+    name: m.value.cashflow.incoming,
     color: '#00B242',
     data: metrics.cashFlow.incoming
   },
   {
-    name: t('metrics.cashflow.outgoing'),
+    name: m.value.cashflow.outgoing,
     color: '#E8833A',
     data: metrics.cashFlow.outgoing
   }
@@ -377,17 +385,17 @@ const visibleFunding = computed(() =>
   showAllFunding.value ? orderedFunding : orderedFunding.slice(0, fundingLimit)
 )
 
-// updates + why live in the locale files so titles (and blog URLs) can be
+// updates + why live in the page content so titles (and blog URLs) can be
 // translated per language; proper nouns stay as data in metrics.json.
 const updates = computed(() => [
-  { title: t('metrics.updates.item1.title'), url: t('metrics.updates.item1.url') },
-  { title: t('metrics.updates.item2.title'), url: t('metrics.updates.item2.url') }
+  { title: m.value.updates.item1.title, url: m.value.updates.item1.url },
+  { title: m.value.updates.item2.title, url: m.value.updates.item2.url }
 ])
 
 const why = computed(() => [
-  { title: t('metrics.why.item1.title'), text: t('metrics.why.item1.text') },
-  { title: t('metrics.why.item2.title'), text: t('metrics.why.item2.text') },
-  { title: t('metrics.why.item3.title'), text: t('metrics.why.item3.text') }
+  { title: m.value.why.item1.title, text: m.value.why.item1.text },
+  { title: m.value.why.item2.title, text: m.value.why.item2.text },
+  { title: m.value.why.item3.title, text: m.value.why.item3.text }
 ])
 </script>
 
