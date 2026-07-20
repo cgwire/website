@@ -2847,6 +2847,12 @@
       "name": "Stim Studio",
       "type": "shorts"
     },
+    "sun-and-moon": {
+      "link": "https://sunandmoonstudios.co.uk/",
+      "elementKey": "sun-and-moon",
+      "name": "Sun & Moon Animation Studio",
+      "type": "tvshows"
+    },
     "supamonks": {
       "link": "https://www.supamonks.com/",
       "elementKey": "supamonks",
