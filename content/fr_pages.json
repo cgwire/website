@@ -114,106 +114,104 @@
     "about": {
       "title": "Notre mission",
       "slug": "about",
-      "about": {
-        "subtitle": "Ce qui nous porte",
-        "tagline": "Notre mission",
-        "explanation": {
-          "one": "Avec des productions plus complexes et des deadlines toujours plus serrées, le besoin d'un travail d'équipe efficace est allé en grandissant. La quantité de données à gérer a rendu les livraisons plus difficiles et a donné à tout le monde des horaires dingues. C'est pourquoi nous avons décidé de mettre un terme à cela. Chaque matin nous nous levons avec un but : vous permettre de produire des images haut de gamme tout en gardant de bonnes conditions de travail.",
-          "two": "Pour y arriver nous avons repensé la communication à l'intérieur et à l'extérieur du studio. Pour l'interne, nous avons transformé le production tracker en une plateforme collaborative. À travers elle, toutes les parties prenantes partagent les informations en temps réel. Tout le monde est plus autonome. Pour l'extérieur nous permettons à des talents de differents studios de se rencontrer et d'apprendre ensemble.",
-          "three": "A travers nos solutions, les artistes interagissent mieux avec les autres équipes. Ils apprennent aussi tout au long de leur carrière et passent un cap régulièrement. Les studios, de leur côté, passent à l'échelle sans remous. Ils libèrent leur potentiel et satisfont leurs ambitions.",
-          "four": "Ensemble, nous sommes tous gagnants."
+      "subtitle": "Ce qui nous porte",
+      "tagline": "Notre mission",
+      "explanation": {
+        "one": "Avec des productions plus complexes et des deadlines toujours plus serrées, le besoin d'un travail d'équipe efficace est allé en grandissant. La quantité de données à gérer a rendu les livraisons plus difficiles et a donné à tout le monde des horaires dingues. C'est pourquoi nous avons décidé de mettre un terme à cela. Chaque matin nous nous levons avec un but : vous permettre de produire des images haut de gamme tout en gardant de bonnes conditions de travail.",
+        "two": "Pour y arriver nous avons repensé la communication à l'intérieur et à l'extérieur du studio. Pour l'interne, nous avons transformé le production tracker en une plateforme collaborative. À travers elle, toutes les parties prenantes partagent les informations en temps réel. Tout le monde est plus autonome. Pour l'extérieur nous permettons à des talents de differents studios de se rencontrer et d'apprendre ensemble.",
+        "three": "A travers nos solutions, les artistes interagissent mieux avec les autres équipes. Ils apprennent aussi tout au long de leur carrière et passent un cap régulièrement. Les studios, de leur côté, passent à l'échelle sans remous. Ils libèrent leur potentiel et satisfont leurs ambitions.",
+        "four": "Ensemble, nous sommes tous gagnants."
+      },
+      "values": {
+        "title": "Nos valeurs",
+        "one": {
+          "title": "Simplicité",
+          "text": "Plus nos outils sont légers, plus nous sommes agiles. Notre esprit est libéré et les choses se font plus rapidement."
         },
-        "values": {
-          "title": "Nos valeurs",
-          "one": {
-            "title": "Simplicité",
-            "text": "Plus nos outils sont légers, plus nous sommes agiles. Notre esprit est libéré et les choses se font plus rapidement."
-          },
-          "two": {
-            "title": "Collaboration",
-            "text": "Quand les idées et le travail sont partagés, nous apprenons plus vite et nous réalisons plus."
-          },
-          "three": {
-            "title": "Artisanat",
-            "text": "Les choses bien faites durent plus longtemps. Nous sommes heureux de travailler dessus et nous obtenons de meilleurs logiciels."
-          }
+        "two": {
+          "title": "Collaboration",
+          "text": "Quand les idées et le travail sont partagés, nous apprenons plus vite et nous réalisons plus."
         },
-        "work": {
-          "title": "Comment nous travaillons",
-          "one": {
-            "title": "Société Ouverte",
-            "text": "Nous partageons la plupart des choses que nous faisons et apprenons. Nos KPIs sont en ligne aussi."
-          },
-          "two": {
-            "title": "Télétravail",
-            "text": "Nous travaillons de là où nous voulons, quand nous voulons. Seule la productivité compte."
-          },
-          "three": {
-            "title": "Auto-formation",
-            "text": "Nous avons toujours besoin de progresser. C'est pourquoi nous dédions une journée par semaine à l'auto-formation."
-          }
+        "three": {
+          "title": "Artisanat",
+          "text": "Les choses bien faites durent plus longtemps. Nous sommes heureux de travailler dessus et nous obtenons de meilleurs logiciels."
+        }
+      },
+      "work": {
+        "title": "Comment nous travaillons",
+        "one": {
+          "title": "Société Ouverte",
+          "text": "Nous partageons la plupart des choses que nous faisons et apprenons. Nos KPIs sont en ligne aussi."
         },
+        "two": {
+          "title": "Télétravail",
+          "text": "Nous travaillons de là où nous voulons, quand nous voulons. Seule la productivité compte."
+        },
+        "three": {
+          "title": "Auto-formation",
+          "text": "Nous avons toujours besoin de progresser. C'est pourquoi nous dédions une journée par semaine à l'auto-formation."
+        }
+      },
+      "team": {
+        "title": "Notre équipe",
+        "intro": "Nous sommes une équipe de gens passionnés basés à Paris. Nous avons une bonne expérience pour développer des logiciels, pour gérer des productions et pour faire des produits.",
         "team": {
-          "title": "Notre équipe",
-          "intro": "Nous sommes une équipe de gens passionnés basés à Paris. Nous avons une bonne expérience pour développer des logiciels, pour gérer des productions et pour faire des produits.",
-          "team": {
-            "frank": {
-              "name": "Frank Rousseau",
-              "key": "frank",
-              "role": "Responsable Communication, Stratégie et Backend",
-              "description": "Avant CGWire, Frank a travaillé pour des studios d'animation et a co-fondé une entreprise. Aujourd'hui il maintient et fait évoluer l'API de Kitsu et réunit les bonnes personnes pour construire CGWire et Kitsu."
-            },
-            "gwen": {
-              "name": "Gwenaëlle Dupré",
-              "key": "gwen",
-              "role": "Responsable Produit et Ventes",
-              "description": "Gwenaëlle Dupré a travaillé plus de 10 ans en tant que directrice de production. Chez CGWire, elle s'occupe de tous les aspects du produit et ventes. Elle s'assure que l'implémentation de Kitsu dans votre studio soit toujours un succès."
-            },
-            "nicolas": {
-              "name": "Nicolas Ledez",
-              "key": "nicolas",
-              "role": "Responsable Infrastructure",
-              "description": "Nicolas est un administrateur système reconnu dans le milieu du cloud. Il gère nos infrastructures cloud et on-premise. Grâce à lui votre instance Kitsu est toujours en état de fonctionnement."
-            },
-            "nicolaspennec": {
-              "name": "Nicolas Pennec",
-              "key": "nicolaspennec",
-              "role": "Responsable Développement Frontend",
-              "description": "Nicolas a 15 ans d'expérience en déveoppement Javascript. Il a travaillé pour des entreprises telles que OVH ou Orange. Il donne de nombreuses conférences sur les technologies frontend. Il est en charge de toutes les interfaces de Kitsu."
-            },
-            "basile": {
-              "name": "Basile Salmel",
-              "key": "basile",
-              "role": "Ingénieur Marketing",
-              "description": "Basile combine développement logiciel et marketing. Il construit les sites et les outils marketing de CGWire, et transforme sa connaissance du produit en contenus qui aident les studios à découvrir Kitsu."
-            },
-            "elsa": {
-              "name": "Elsa Chevallier",
-              "key": "elsa",
-              "role": "Responsable Finances",
-              "description": "Elsa a 15 ans d'expérience en tant que DAF dans des studios ou des organisations de promotion du cinéma français. À CGWire, elle gère l'ensemble des aspects comptables."
-            }
-          }
-        },
-        "design": {
-          "title": "Illustrations du site",
-          "information": "Tous les dessins présents sur ce site sont réalisés par Ev Style et le studio Naolito. Ces illustrations sont toutes sous license Creative Commons by-nc-sa."
-        },
-        "blender": {
-          "information": "Toutes les images affichées dans les copies d'écran ont été créées par le Blender Studio durant la production Sprite Fright. Ces images sont sous licence Creative Commons."
-        },
-        "transparency": {
-          "title": "Transparence",
-          "metrics": {
-            "title": "Nos métriques",
-            "text": "Revenus, salaires, financement : en tant qu'open company, nous publions nos chiffres.",
-            "link": "Voir les métriques"
+          "frank": {
+            "name": "Frank Rousseau",
+            "key": "frank",
+            "role": "Responsable Communication, Stratégie et Backend",
+            "description": "Avant CGWire, Frank a travaillé pour des studios d'animation et a co-fondé une entreprise. Aujourd'hui il maintient et fait évoluer l'API de Kitsu et réunit les bonnes personnes pour construire CGWire et Kitsu."
           },
-          "carbon": {
-            "title": "Notre bilan carbone",
-            "text": "Nous mesurons l'empreinte environnementale de notre activité et publions les résultats.",
-            "link": "Lire le rapport"
+          "gwen": {
+            "name": "Gwenaëlle Dupré",
+            "key": "gwen",
+            "role": "Responsable Produit et Ventes",
+            "description": "Gwenaëlle Dupré a travaillé plus de 10 ans en tant que directrice de production. Chez CGWire, elle s'occupe de tous les aspects du produit et ventes. Elle s'assure que l'implémentation de Kitsu dans votre studio soit toujours un succès."
+          },
+          "nicolas": {
+            "name": "Nicolas Ledez",
+            "key": "nicolas",
+            "role": "Responsable Infrastructure",
+            "description": "Nicolas est un administrateur système reconnu dans le milieu du cloud. Il gère nos infrastructures cloud et on-premise. Grâce à lui votre instance Kitsu est toujours en état de fonctionnement."
+          },
+          "nicolaspennec": {
+            "name": "Nicolas Pennec",
+            "key": "nicolaspennec",
+            "role": "Responsable Développement Frontend",
+            "description": "Nicolas a 15 ans d'expérience en déveoppement Javascript. Il a travaillé pour des entreprises telles que OVH ou Orange. Il donne de nombreuses conférences sur les technologies frontend. Il est en charge de toutes les interfaces de Kitsu."
+          },
+          "basile": {
+            "name": "Basile Salmel",
+            "key": "basile",
+            "role": "Ingénieur Marketing",
+            "description": "Basile combine développement logiciel et marketing. Il construit les sites et les outils marketing de CGWire, et transforme sa connaissance du produit en contenus qui aident les studios à découvrir Kitsu."
+          },
+          "elsa": {
+            "name": "Elsa Chevallier",
+            "key": "elsa",
+            "role": "Responsable Finances",
+            "description": "Elsa a 15 ans d'expérience en tant que DAF dans des studios ou des organisations de promotion du cinéma français. À CGWire, elle gère l'ensemble des aspects comptables."
           }
+        }
+      },
+      "design": {
+        "title": "Illustrations du site",
+        "information": "Tous les dessins présents sur ce site sont réalisés par Ev Style et le studio Naolito. Ces illustrations sont toutes sous license Creative Commons by-nc-sa."
+      },
+      "blender": {
+        "information": "Toutes les images affichées dans les copies d'écran ont été créées par le Blender Studio durant la production Sprite Fright. Ces images sont sous licence Creative Commons."
+      },
+      "transparency": {
+        "title": "Transparence",
+        "metrics": {
+          "title": "Nos métriques",
+          "text": "Revenus, salaires, financement : en tant qu'open company, nous publions nos chiffres.",
+          "link": "Voir les métriques"
+        },
+        "carbon": {
+          "title": "Notre bilan carbone",
+          "text": "Nous mesurons l'empreinte environnementale de notre activité et publions les résultats.",
+          "link": "Lire le rapport"
         }
       }
     },

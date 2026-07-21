@@ -1,9 +1,9 @@
 <template>
   <!-- HERO -->
   <section class="hero">
-    <span class="eyebrow">{{ page.meta.about.subtitle }}</span>
-    <h1 class="hero-title">{{ page.meta.about.tagline }}</h1>
-    <p class="hero-lead">{{ page.meta.about.explanation.one }}</p>
+    <span class="eyebrow">{{ page.meta.subtitle }}</span>
+    <h1 class="hero-title">{{ page.meta.tagline }}</h1>
+    <p class="hero-lead">{{ page.meta.explanation.one }}</p>
   </section>
 
   <!-- MISSION -->
@@ -18,13 +18,13 @@
     </div>
     <div class="has-text-centered mt2">
       <p>
-        {{ page.meta.about.explanation.two }}
+        {{ page.meta.explanation.two }}
       </p>
       <p>
-        {{ page.meta.about.explanation.three }}
+        {{ page.meta.explanation.three }}
       </p>
       <p>
-        {{ page.meta.about.explanation.four }}
+        {{ page.meta.explanation.four }}
       </p>
     </div>
   </section>
@@ -34,7 +34,7 @@
     <section class="section">
       <h2>
         <span class="section-title has-text-centered">{{
-          page.meta.about.values.title
+          page.meta.values.title
         }}</span>
       </h2>
       <ul class="section-list tile is-ancestor">
@@ -47,10 +47,10 @@
             />
           </div>
           <h3 class="section-item-title">
-            {{ page.meta.about.values.one.title }}
+            {{ page.meta.values.one.title }}
           </h3>
           <p class="section-item-text">
-            {{ page.meta.about.values.one.text }}
+            {{ page.meta.values.one.text }}
           </p>
         </li>
         <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
@@ -62,10 +62,10 @@
             />
           </div>
           <h3 class="section-item-title">
-            {{ page.meta.about.values.two.title }}
+            {{ page.meta.values.two.title }}
           </h3>
           <p class="section-item-text">
-            {{ page.meta.about.values.two.text }}
+            {{ page.meta.values.two.text }}
           </p>
         </li>
         <li class="section-item tile is-4 is-vertical" data-aos="fade-up">
@@ -77,10 +77,10 @@
             />
           </div>
           <h3 class="section-item-title">
-            {{ page.meta.about.values.three.title }}
+            {{ page.meta.values.three.title }}
           </h3>
           <p class="section-item-text">
-            {{ page.meta.about.values.three.text }}
+            {{ page.meta.values.three.text }}
           </p>
         </li>
       </ul>
@@ -91,7 +91,7 @@
   <section class="section values values-white">
     <h2 data-aos="fade-up">
       <span class="section-title has-text-centered">
-        {{ page.meta.about.work.title }}
+        {{ page.meta.work.title }}
       </span>
     </h2>
 
@@ -101,10 +101,10 @@
           <NuxtImg src="/images/illustration-open.png" alt="" format="webp" />
         </div>
         <h3 class="section-item-title">
-          {{ page.meta.about.work.one.title }}
+          {{ page.meta.work.one.title }}
         </h3>
         <p class="section-item-text">
-          {{ page.meta.about.work.one.text }}
+          {{ page.meta.work.one.text }}
         </p>
       </li>
       <li class="section-item tile is-4 is-vertical">
@@ -116,10 +116,10 @@
           />
         </div>
         <h3 class="section-item-title">
-          {{ page.meta.about.work.two.title }}
+          {{ page.meta.work.two.title }}
         </h3>
         <p class="section-item-text">
-          {{ page.meta.about.work.two.text }}
+          {{ page.meta.work.two.text }}
         </p>
       </li>
       <li class="section-item tile is-4 is-vertical">
@@ -131,10 +131,10 @@
           />
         </div>
         <h3 class="section-item-title">
-          {{ page.meta.about.work.three.title }}
+          {{ page.meta.work.three.title }}
         </h3>
         <p class="section-item-text">
-          {{ page.meta.about.work.three.text }}
+          {{ page.meta.work.three.text }}
         </p>
       </li>
     </ul>
@@ -144,34 +144,34 @@
   <section class="section content about">
     <h2 data-aos="fade-up">
       <span class="section-title has-text-centered">
-        {{ page.meta.about.team.title }}
+        {{ page.meta.team.title }}
       </span>
     </h2>
     <p class="has-text-centered" data-aos="fade-up">
-      {{ page.meta.about.team.intro }}
+      {{ page.meta.team.intro }}
     </p>
 
     <div class="tile is-ancestor" data-aos="fade-up">
-      <TeamMember :member="page.meta.about.team.team.frank" />
-      <TeamMember :member="page.meta.about.team.team.gwen" />
+      <TeamMember :member="page.meta.team.team.frank" />
+      <TeamMember :member="page.meta.team.team.gwen" />
     </div>
     <div class="tile is-ancestor" data-aos="fade-up">
-      <TeamMember :member="page.meta.about.team.team.nicolas" />
-      <TeamMember :member="page.meta.about.team.team.nicolaspennec" />
+      <TeamMember :member="page.meta.team.team.nicolas" />
+      <TeamMember :member="page.meta.team.team.nicolaspennec" />
     </div>
     <div class="tile is-ancestor" data-aos="fade-up">
-      <TeamMember :member="page.meta.about.team.team.basile" />
-      <TeamMember :member="page.meta.about.team.team.elsa" />
+      <TeamMember :member="page.meta.team.team.basile" />
+      <TeamMember :member="page.meta.team.team.elsa" />
     </div>
 
     <!-- CREDITS -->
     <div class="credits">
-      <h2 class="credits-title">{{ page.meta.about.design.title }}</h2>
+      <h2 class="credits-title">{{ page.meta.design.title }}</h2>
       <p>
-        {{ page.meta.about.design.information }}
+        {{ page.meta.design.information }}
       </p>
       <p>
-        {{ page.meta.about.blender.information }}
+        {{ page.meta.blender.information }}
       </p>
     </div>
   </section>
@@ -180,7 +180,7 @@
   <section class="section transparency">
     <h2>
       <span class="section-title has-text-centered">
-        {{ page.meta.about.transparency.title }}
+        {{ page.meta.transparency.title }}
       </span>
     </h2>
     <div class="transparency-tiles">
@@ -190,10 +190,10 @@
         data-aos="fade-up"
       >
         <div class="tile-text">
-          <h3>{{ page.meta.about.transparency.metrics.title }}</h3>
-          <p>{{ page.meta.about.transparency.metrics.text }}</p>
+          <h3>{{ page.meta.transparency.metrics.title }}</h3>
+          <p>{{ page.meta.transparency.metrics.text }}</p>
           <span class="tile-link">{{
-            page.meta.about.transparency.metrics.link
+            page.meta.transparency.metrics.link
           }}</span>
         </div>
         <img class="tile-img" :src="metricsArt" alt="" />
@@ -204,10 +204,10 @@
         data-aos="fade-up"
       >
         <div class="tile-text">
-          <h3>{{ page.meta.about.transparency.carbon.title }}</h3>
-          <p>{{ page.meta.about.transparency.carbon.text }}</p>
+          <h3>{{ page.meta.transparency.carbon.title }}</h3>
+          <p>{{ page.meta.transparency.carbon.text }}</p>
           <span class="tile-link">{{
-            page.meta.about.transparency.carbon.link
+            page.meta.transparency.carbon.link
           }}</span>
         </div>
         <img class="tile-img" :src="carbonArt" alt="" />
@@ -234,8 +234,8 @@ const { data: page } = await useAsyncData(
 )
 
 useSEO({
-  title: 'CGWire | ' + page.value.meta.about.tagline,
-  descriptionKey: page.value.meta.about.explanation.one,
+  title: 'CGWire | ' + page.value.meta.tagline,
+  descriptionKey: page.value.meta.explanation.one,
   imagePath: 'about.png'
 })
 </script>
