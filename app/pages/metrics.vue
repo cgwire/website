@@ -321,9 +321,10 @@ const { data: page } = await useAsyncData(
 )
 const m = computed(() => page.value.meta)
 
+// Nuxt Content promotes title/description/seo to the page root, not page.meta.
 useSEO({
-  title: m.value.seo.title,
-  description: m.value.seo.description,
+  title: page.value.seo.title,
+  description: page.value.seo.description,
   imagePath: 'metrics.png'
 })
 

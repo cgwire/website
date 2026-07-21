@@ -3,7 +3,7 @@
     <section class="hero-section">
       <div class="container">
         <div class="carbon-title">
-          <h1 class="main-title">{{ page.meta.title }}</h1>
+          <h1 class="main-title">{{ page.title }}</h1>
           <div class="year-selector">2024</div>
         </div>
 
@@ -453,7 +453,7 @@ const { data: page } = await useAsyncData(
 )
 
 useSEO({
-  title: 'CGWire | ' + page.value.meta.title,
+  title: 'CGWire | ' + page.value.title,
   description: page.value.meta.explanationOne,
   imagePath: 'carbon.png'
 })

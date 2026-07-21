@@ -2,10 +2,10 @@
   <div class="kitsu-page content">
     <div class="kitsu-header flexrow">
       <div class="main-title">
-        <span>{{ page.meta.title }}</span>
+        <span>{{ page.title }}</span>
 
         <div class="kitsu-explanation">
-          {{ page.meta.description }}
+          {{ page.description }}
         </div>
 
         <p class="has-text-centered">
@@ -225,7 +225,7 @@ const { data: page } = await useAsyncData(
 
 useSEO({
   title: 'CGWire | ' + page.value.title,
-  description: page.value.meta.description,
+  description: page.value.description,
   imagePath: 'teaser.png'
 })
 
