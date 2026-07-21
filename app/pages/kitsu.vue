@@ -2,10 +2,10 @@
   <div class="kitsu-page content">
     <div class="kitsu-header flexrow">
       <div class="main-title">
-        <span>{{ page.meta.kitsu.title }}</span>
+        <span>{{ page.meta.title }}</span>
 
         <div class="kitsu-explanation">
-          {{ page.meta.kitsu.description }}
+          {{ page.meta.description }}
         </div>
 
         <p class="has-text-centered">
@@ -38,75 +38,75 @@
     <section>
       <template v-if="currentTab === '2D'">
         <TextBlock
-          :subtitle="page.meta.kitsu.modules.subtitle"
-          :title="page.meta.kitsu['2d'].title"
-          :content="page.meta.kitsu['2d'].content"
+          :subtitle="page.meta.modules.subtitle"
+          :title="page.meta['2d'].title"
+          :content="page.meta['2d'].content"
         />
       </template>
       <template v-if="currentTab === '3D'">
         <TextBlock
-          :subtitle="page.meta.kitsu.modules.subtitle"
-          :title="page.meta.kitsu['3d'].title"
-          :content="page.meta.kitsu['3d'].content"
+          :subtitle="page.meta.modules.subtitle"
+          :title="page.meta['3d'].title"
+          :content="page.meta['3d'].content"
         />
       </template>
       <template v-if="currentTab === 'VFX'">
         <TextBlock
-          :subtitle="page.meta.kitsu.modules.subtitle"
-          :title="page.meta.kitsu.vfx.title"
-          :content="page.meta.kitsu.vfx.content"
+          :subtitle="page.meta.modules.subtitle"
+          :title="page.meta.vfx.title"
+          :content="page.meta.vfx.content"
         />
       </template>
       <template v-if="currentTab === 'Games'">
         <TextBlock
-          :subtitle="page.meta.kitsu.modules.subtitle"
-          :title="page.meta.kitsu.games.title"
-          :content="page.meta.kitsu.games.content"
+          :subtitle="page.meta.modules.subtitle"
+          :title="page.meta.games.title"
+          :content="page.meta.games.content"
         />
       </template>
       <template v-if="currentTab === 'Schools'">
         <TextBlock
-          :subtitle="page.meta.kitsu.modules.subtitle"
-          :title="page.meta.kitsu.schools.title"
-          :content="page.meta.kitsu.schools.content"
+          :subtitle="page.meta.modules.subtitle"
+          :title="page.meta.schools.title"
+          :content="page.meta.schools.content"
         />
       </template>
 
       <KitsuTwoD
         v-if="currentTab === '2D'"
-        :supporters="page.meta.kitsu.supporters"
-        :features="page.meta.kitsu.features"
+        :supporters="page.meta.supporters"
+        :features="page.meta.features"
       />
       <KitsuThreeD
         v-if="currentTab === '3D'"
-        :supporters="page.meta.kitsu.supporters"
-        :features="page.meta.kitsu.features"
+        :supporters="page.meta.supporters"
+        :features="page.meta.features"
       />
       <KitsuVFX
         v-if="currentTab === 'VFX'"
-        :supporters="page.meta.kitsu.supporters"
-        :features="page.meta.kitsu.features"
+        :supporters="page.meta.supporters"
+        :features="page.meta.features"
       />
       <KitsuVideoGames
         v-if="currentTab === 'Games'"
-        :supporters="page.meta.kitsu.supporters"
-        :features="page.meta.kitsu.features"
+        :supporters="page.meta.supporters"
+        :features="page.meta.features"
       />
       <KitsuSchools
         v-if="currentTab === 'Schools'"
-        :supporters="page.meta.kitsu.supporters"
-        :features="page.meta.kitsu.features"
+        :supporters="page.meta.supporters"
+        :features="page.meta.features"
       />
 
       <div data-aos="fade-up">
         <div class="section-subtitle has-text-centered">
-          {{ page.meta.kitsu.services.subtitle }}
+          {{ page.meta.services.subtitle }}
         </div>
         <h2 class="section-title has-text-centered">
-          {{ page.meta.kitsu.services.title }}
+          {{ page.meta.services.title }}
         </h2>
         <div class="section-explanation">
-          {{ page.meta.kitsu.services.description }}
+          {{ page.meta.services.description }}
         </div>
       </div>
 
@@ -145,9 +145,9 @@
 
       <div data-aos="fade-up" v-if="['2D', '3D', 'VFX'].includes(currentTab)">
         <TextBlock
-          :subtitle="page.meta.kitsu.stories.subtitle"
-          :title="page.meta.kitsu.stories.title"
-          :content="page.meta.kitsu.stories.description"
+          :subtitle="page.meta.stories.subtitle"
+          :title="page.meta.stories.title"
+          :content="page.meta.stories.description"
         />
       </div>
 
@@ -225,7 +225,7 @@ const { data: page } = await useAsyncData(
 
 useSEO({
   title: 'CGWire | ' + page.value.title,
-  description: page.value.meta.kitsu.description,
+  description: page.value.meta.description,
   imagePath: 'teaser.png'
 })
 

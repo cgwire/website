@@ -386,106 +386,103 @@
     "kitsu": {
       "title": "Donnez des Super-pouvoirs à Vos Équipes",
       "slug": "kitsu",
-      "kitsu": {
-        "title": "Donnez des Super-pouvoirs à Vos Équipes",
-        "description": "Kitsu est une plateforme de collaboration pour les studios d'animation, d'effets visuels et de jeux vidéo. Elle permet à vos équipes de livrer des contenus de meilleure qualité.",
-        "modules": {
-          "subtitle": "Conçu en tenant compte des cas d'usage en production"
+      "description": "Kitsu est une plateforme de collaboration pour les studios d'animation, d'effets visuels et de jeux vidéo. Elle permet à vos équipes de livrer des contenus de meilleure qualité.",
+      "modules": {
+        "subtitle": "Conçu en tenant compte des cas d'usage en production"
+      },
+      "2d": {
+        "title": "Kitsu pour l'animation 2D",
+        "content": "Les productions d'animation 2D nécessitent de livrer un grand nombre de plans en peu de temps, tout en garantissant une qualité optimale. Avec Kitsu, vous pouvez planifier, répartir et revoir vos plans facilement. Vous pouvez ainsi livrer votre meilleur travail dans les délais impartis."
+      },
+      "3d": {
+        "title": "Kitsu pour l'animation 3D",
+        "content": "Les productions d'animation 3D nécessitent des plans complexes impliquant de nombreux assets et itérations. Avec Kitsu, vous pouvez clarifier ce chaos. Vos équipes peuvent se concentrer sur la réalisation du meilleur travail possible."
+      },
+      "vfx": {
+        "title": "Kitsu pour les effets visuels",
+        "content": "Les productions d'effets visuels impliquent de nombreux plans modifiés avec des équipes distribuées. Avec Kitsu, vous pouvez organiser votre production de manière à éviter toute confusion et perte de temps. Vos équipes peuvent ainsi être pleinement productives."
+      },
+      "games": {
+        "title": "Kitsu pour les jeux vidéo",
+        "content": "Les productions de jeux vidéo nécessitent de gérer de nombreux assets lors de la création de cinématiques. Les artistes sont recrutés partout dans le monde et doivent pouvoir collaborer facilement. Avec Kitsu, il est facile de suivre tous les assets et itérations et de s'assurer que tout le monde est sur la même longueur d'onde."
+      },
+      "schools": {
+        "title": "Kitsu pour les écoles",
+        "content": "Les écoles doivent créer un lien entre l'école et les studios. Avec Kitsu, les étudiants peuvent travailler sur leurs projets dans un cadre similaire à celui de l'industrie. Ils peuvent exprimer leur vision artistique tout en travaillant en équipe. Les enseignants peuvent suivre leurs progrès et leur fournir un feedback efficace."
+      },
+      "services": {
+        "subtitle": "Une expérience utilisateur hors du commun",
+        "title": "De puissants services au service de votre production",
+        "description": "Une application web est utilisée à son plein potentiel seulement utilisé avec une vraie assistance. À travers nos offers, notre équipe est toujours là pour vous. Nous pouvons votre expérience plus sûr et plus fluide."
+      },
+      "stories": {
+        "subtitle": "Témoignages",
+        "title": "Nos clients racontent",
+        "description": "Découvrez comment nos clients implémentent Kitsu dans leur studio pour n'importe quel type de production: courts, séries télé, longs métrages, 2D, 3D ou VFX."
+      },
+      "features": {
+        "api": {
+          "content": "Utilisez notre API Python pour intégrer Kitsu à vos outils. Extrayez les données de Kitsu et mettez-les à jour depuis vos outils.",
+          "title": "API Python"
         },
-        "2d": {
-          "title": "Kitsu pour l'animation 2D",
-          "content": "Les productions d'animation 2D nécessitent de livrer un grand nombre de plans en peu de temps, tout en garantissant une qualité optimale. Avec Kitsu, vous pouvez planifier, répartir et revoir vos plans facilement. Vous pouvez ainsi livrer votre meilleur travail dans les délais impartis."
+        "assets": {
+          "content": "Organisez vos assets et suivez leurs versions. Attribuez des tâches à votre équipe et suivez leur progression.",
+          "title": "Gestion d'assets"
         },
-        "3d": {
-          "title": "Kitsu pour l'animation 3D",
-          "content": "Les productions d'animation 3D nécessitent des plans complexes impliquant de nombreux assets et itérations. Avec Kitsu, vous pouvez clarifier ce chaos. Vos équipes peuvent se concentrer sur la réalisation du meilleur travail possible."
+        "breakdown": {
+          "content": "Kitsu vous permet de lister les assets associées à chaque plan. Il vous fournit des statistiques supplémentaires sur l'état de préparation de chaque plan.",
+          "title": "Liste de répartition"
         },
-        "vfx": {
-          "title": "Kitsu pour les effets visuels",
-          "content": "Les productions d'effets visuels impliquent de nombreux plans modifiés avec des équipes distribuées. Avec Kitsu, vous pouvez organiser votre production de manière à éviter toute confusion et perte de temps. Vos équipes peuvent ainsi être pleinement productives."
+        "forecast": {
+          "content": "Testez des scénarios et comparez les coûts actuels à vos prévisions budgétaires. Anticipez les éventuels problèmes et assurez-vous de maintenir le cap.",
+          "title": "Prévisions budgétaires"
         },
-        "games": {
-          "title": "Kitsu pour les jeux vidéo",
-          "content": "Les productions de jeux vidéo nécessitent de gérer de nombreux assets lors de la création de cinématiques. Les artistes sont recrutés partout dans le monde et doivent pouvoir collaborer facilement. Avec Kitsu, il est facile de suivre tous les assets et itérations et de s'assurer que tout le monde est sur la même longueur d'onde."
+        "timesheets": {
+          "content": "Permettez aux artistes de suivre leur temps de travail et obtenez un aperçu détaillé du temps de travail de chacun. Regroupez les données sur les assets et les plans.",
+          "title": "Suivi du temps"
         },
-        "schools": {
-          "title": "Kitsu pour les écoles",
-          "content": "Les écoles doivent créer un lien entre l'école et les studios. Avec Kitsu, les étudiants peuvent travailler sur leurs projets dans un cadre similaire à celui de l'industrie. Ils peuvent exprimer leur vision artistique tout en travaillant en équipe. Les enseignants peuvent suivre leurs progrès et leur fournir un feedback efficace."
+        "news": {
+          "content": "Suivez l'activité de votre production en temps réel. Abonnez-vous aux tâches clés et soyez averti de leur évolution.",
+          "title": "Flux d'activité"
         },
-        "services": {
-          "subtitle": "Une expérience utilisateur hors du commun",
-          "title": "De puissants services au service de votre production",
-          "description": "Une application web est utilisée à son plein potentiel seulement utilisé avec une vraie assistance. À travers nos offers, notre équipe est toujours là pour vous. Nous pouvons votre expérience plus sûr et plus fluide."
+        "report": {
+          "content": "Grâce aux tableaux de bord, vous pouvez créer des rapports sur l'avancement de votre production. Vos partenaires sauront exactement où vous en êtes et ce qu'ils doivent faire.",
+          "title": "Rapports de production"
         },
-        "stories": {
-          "subtitle": "Témoignages",
-          "title": "Nos clients racontent",
-          "description": "Découvrez comment nos clients implémentent Kitsu dans leur studio pour n'importe quel type de production: courts, séries télé, longs métrages, 2D, 3D ou VFX."
+        "review": {
+          "content": "Créez des playlists pour visionner vos plans et vos assets en bout à bout. Fournissez des retours efficacement et conservez l'accès à toutes les versions de previews pour les comparer entre elles.",
+          "title": "Moteur de révision"
         },
-        "features": {
-          "api": {
-            "content": "Utilisez notre API Python pour intégrer Kitsu à vos outils. Extrayez les données de Kitsu et mettez-les à jour depuis vos outils.",
-            "title": "API Python"
-          },
-          "assets": {
-            "content": "Organisez vos assets et suivez leurs versions. Attribuez des tâches à votre équipe et suivez leur progression.",
-            "title": "Gestion d'assets"
-          },
-          "breakdown": {
-            "content": "Kitsu vous permet de lister les assets associées à chaque plan. Il vous fournit des statistiques supplémentaires sur l'état de préparation de chaque plan.",
-            "title": "Liste de répartition"
-          },
-          "forecast": {
-            "content": "Testez des scénarios et comparez les coûts actuels à vos prévisions budgétaires. Anticipez les éventuels problèmes et assurez-vous de maintenir le cap.",
-            "title": "Prévisions budgétaires"
-          },
-          "timesheets": {
-            "content": "Permettez aux artistes de suivre leur temps de travail et obtenez un aperçu détaillé du temps de travail de chacun. Regroupez les données sur les assets et les plans.",
-            "title": "Suivi du temps"
-          },
-          "news": {
-            "content": "Suivez l'activité de votre production en temps réel. Abonnez-vous aux tâches clés et soyez averti de leur évolution.",
-            "title": "Flux d'activité"
-          },
-          "report": {
-            "content": "Grâce aux tableaux de bord, vous pouvez créer des rapports sur l'avancement de votre production. Vos partenaires sauront exactement où vous en êtes et ce qu'ils doivent faire.",
-            "title": "Rapports de production"
-          },
-          "review": {
-            "content": "Créez des playlists pour visionner vos plans et vos assets en bout à bout. Fournissez des retours efficacement et conservez l'accès à toutes les versions de previews pour les comparer entre elles.",
-            "title": "Moteur de révision"
-          },
-          "review-assets": {
-            "content": "Créez des playlists pour valider vos assets consécutivement. Partagez efficacement vos commentaires et conservez l'accès à toutes les versions pour les comparer entre elles.",
-            "title": "Moteur de révision"
-          },
-          "schedule": {
-            "content": "Kitsu vous aide à gérer votre charge de travail. Vous pouvez planifier vos tâches, les assigner à des artistes et les équilibrer facilement.",
-            "title": "Plannings et scénarios"
-          },
-          "search": {
-            "content": "Trouvez rapidement des ressources en recherchant des mots-clés. Utilisez des balises et des métadonnées pour des recherches plus avancées.",
-            "title": "Moteur de recherche"
-          },
-          "track": {
-            "content": "Répertoriez et répartissez les tâches pour chaque étape. Définissez des statuts et discutez directement avec votre équipe.",
-            "title": "Suivi des tâches"
-          },
-          "library": {
-            "content": "Créez votre propre bibliothèque de ressources et réutilisez-les dans vos plans et vos ressources. Évitez la duplication et assurez la cohérence de votre équipe.",
-            "title": "Bibliothèque d'actifs"
-          }
+        "review-assets": {
+          "content": "Créez des playlists pour valider vos assets consécutivement. Partagez efficacement vos commentaires et conservez l'accès à toutes les versions pour les comparer entre elles.",
+          "title": "Moteur de révision"
         },
-        "supporters": {
-          "content": "Les productions suivies avec Kitsu ont remporté toutes les récompenses majeures : Oscars, Emmys, Palme d'Or de Cannes, Cristal d'Annecy, César, et bien d'autres.",
-          "games": "Les productions de jeux vidéo suivies avec Kitsu sont parmi les plus jouées au monde.",
-          "schools": "Les meilleures écoles d'animation françaises utilisent déjà Kitsu pour former leurs étudiants.",
-          "subtitle": "Réalisez vos ambitions",
-          "title": "Kitsu est le plus grand soutien de votre réussite",
-          "vfx": "Les productions d'effets visuels réalisées avec Kitsu ont rencontré un franc succès au cinéma. Nous vous accompagnerons pour atteindre le même objectif."
+        "schedule": {
+          "content": "Kitsu vous aide à gérer votre charge de travail. Vous pouvez planifier vos tâches, les assigner à des artistes et les équilibrer facilement.",
+          "title": "Plannings et scénarios"
         },
-        "cta": "Interested in using Kitsu?"
-      }
+        "search": {
+          "content": "Trouvez rapidement des ressources en recherchant des mots-clés. Utilisez des balises et des métadonnées pour des recherches plus avancées.",
+          "title": "Moteur de recherche"
+        },
+        "track": {
+          "content": "Répertoriez et répartissez les tâches pour chaque étape. Définissez des statuts et discutez directement avec votre équipe.",
+          "title": "Suivi des tâches"
+        },
+        "library": {
+          "content": "Créez votre propre bibliothèque de ressources et réutilisez-les dans vos plans et vos ressources. Évitez la duplication et assurez la cohérence de votre équipe.",
+          "title": "Bibliothèque d'actifs"
+        }
+      },
+      "supporters": {
+        "content": "Les productions suivies avec Kitsu ont remporté toutes les récompenses majeures : Oscars, Emmys, Palme d'Or de Cannes, Cristal d'Annecy, César, et bien d'autres.",
+        "games": "Les productions de jeux vidéo suivies avec Kitsu sont parmi les plus jouées au monde.",
+        "schools": "Les meilleures écoles d'animation françaises utilisent déjà Kitsu pour former leurs étudiants.",
+        "subtitle": "Réalisez vos ambitions",
+        "title": "Kitsu est le plus grand soutien de votre réussite",
+        "vfx": "Les productions d'effets visuels réalisées avec Kitsu ont rencontré un franc succès au cinéma. Nous vous accompagnerons pour atteindre le même objectif."
+      },
+      "cta": "Interested in using Kitsu?"
     },
     "kitsu-submit": {
       "title": "Découvrez l'avenir de la collaboration créative",
