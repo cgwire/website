@@ -1555,8 +1555,8 @@
       "features": [
         {
           "key": "tasks",
-          "title": "Tasks, comments and previews",
-          "subtitle": "Stop losing feedback",
+          "subtitle": "Tasks, comments and previews",
+          "title": "Make information flow",
           "content": "Assign tasks to artists and have them publish their work directly in Kitsu when ready for review. Producers, supervisors, and directors iterate on the same platform, with every comment and version tracked in context. Real-time notifications mean no one is waiting on information they should already have.",
           "image": "kitsu-tasks.png",
           "shadow": true,
@@ -1565,8 +1565,8 @@
         },
         {
           "key": "todos",
-          "title": "Todo-Lists",
-          "subtitle": "Artists need to know their priorities",
+          "subtitle": "Todo-Lists",
+          "title": "Set artist priorities",
           "content": "Each artist sees exactly what is assigned to them, in what order, and at what stage. They can update progress without chasing a supervisor for instructions. Less back-and-forth means more time on the work that matters.",
           "image": "kitsu-todos.png",
           "shadow": true,
@@ -1574,9 +1574,9 @@
         },
         {
           "key": "supervision",
-          "title": "Daily Supervision Tasks",
-          "subtitle": "Supervisors need a clear overview without jumping between pages",
-          "content": "Supervisors can instantly access a department-wide view of production through the Daily Supervision Tasks page. From any page in Kitsu, simply click on a task type name to see an overview of all related tasks across your department. This makes it easy to monitor progress, identify bottlenecks, review priorities, and ensure work keeps moving without manually collecting updates from artists.",
+          "subtitle": "Daily Supervision Tasks",
+          "title": "Give supervisors a clear overview",
+          "content": "Supervisors can instantly access a department-wide view of production through the Daily Supervision Tasks page. From any page in Kitsu, simply click on a task type name to see an overview of all related tasks across your department. This makes it easy to monitor progress and keep work moving without manually collecting updates from artists.",
           "image": "kitsu-supervision.png",
           "shadow": true,
           "colored": true,
@@ -1584,16 +1584,16 @@
         },
         {
           "key": "news",
-          "title": "Newsfeed",
-          "subtitle": "Catch problems early",
+          "subtitle": "Newsfeed",
+          "title": "Catch problems early",
           "content": "The newsfeed surfaces every comment, status change, and new preview across the production in real time. Supervisors and producers spot issues early, before they compound. Nothing falls through the cracks because someone missed a message.",
           "image": "kitsu-news.png",
           "shadow": true,
           "reverted": true
         },
         {
-          "title": "Slack and Discord notifications",
-          "subtitle": "Make relevant updates pop",
+          "subtitle": "Slack and Discord notifications",
+          "title": "Make relevant updates pop",
           "content": "Route Kitsu activity into the channels your team already monitors. Comments, status changes, and new previews appear directly in Slack or Discord so the right people respond without having to check a separate platform.",
           "image": "kitsu-slack.png",
           "shadow": true,
