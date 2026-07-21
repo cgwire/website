@@ -1,20 +1,20 @@
 <template>
   <section class="section content narrower">
     <h2 class="subtitle">
-      {{ page.meta.contact.tagline }}
+      {{ page.meta.tagline }}
     </h2>
 
-    <h3 class="strong">{{ page.meta.contact.emails }}</h3>
+    <h3 class="strong">{{ page.meta.emails }}</h3>
     <p>
-      {{ page.meta.contact.sales }}:
+      {{ page.meta.sales }}:
       <a href="mailto:sales@cg-wire.com">sales@cg-wire.com</a>
     </p>
     <p>
-      {{ page.meta.contact.support }}:
+      {{ page.meta.support }}:
       <a href="mailto:support@cg-wire.com">support@cg-wire.com</a>
     </p>
 
-    <h3 class="strong">{{ page.meta.contact.address }}</h3>
+    <h3 class="strong">{{ page.meta.address }}</h3>
     <p>
       CGWire<br />
       84 avenue de la République<br />
@@ -22,7 +22,7 @@
       France
     </p>
 
-    <h3 class="strong">{{ page.meta.contact.companyIdentifier }}</h3>
+    <h3 class="strong">{{ page.meta.companyIdentifier }}</h3>
     <p>N° RCS: Paris 831 995 303</p>
   </section>
 

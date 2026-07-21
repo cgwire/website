@@ -300,14 +300,12 @@
     "contact": {
       "title": "Contacts",
       "slug": "contact",
-      "contact": {
-        "tagline": "Nos informations de contact",
-        "emails": "Nos emails",
-        "sales": "Ventes",
-        "support": "Support",
-        "address": "Adresse",
-        "companyIdentifier": "Identifiant de société"
-      }
+      "tagline": "Nos informations de contact",
+      "emails": "Nos emails",
+      "sales": "Ventes",
+      "support": "Support",
+      "address": "Adresse",
+      "companyIdentifier": "Identifiant de société"
     },
     "customer-stories": {
       "title": "Nos clients racontent",

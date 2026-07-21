@@ -300,14 +300,12 @@
     "contact": {
       "title": "連絡先",
       "slug": "contact",
-      "contact": {
-        "tagline": "連絡先情報",
-        "emails": "連絡先メールアドレス",
-        "sales": "営業",
-        "support": "サポート",
-        "address": "住所",
-        "companyIdentifier": "会社ID"
-      }
+      "tagline": "連絡先情報",
+      "emails": "連絡先メールアドレス",
+      "sales": "営業",
+      "support": "サポート",
+      "address": "住所",
+      "companyIdentifier": "会社ID"
     },
     "customer-stories": {
       "title": "お客様のストーリー",
