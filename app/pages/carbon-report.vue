@@ -3,16 +3,16 @@
     <section class="hero-section">
       <div class="container">
         <div class="carbon-title">
-          <h1 class="main-title">{{ page.meta.carbonReport.title }}</h1>
+          <h1 class="main-title">{{ page.meta.title }}</h1>
           <div class="year-selector">2024</div>
         </div>
 
         <h2 class="section-title">
-          {{ page.meta.carbonReport.subtitle }}
+          {{ page.meta.subtitle }}
         </h2>
 
         <p class="hero-description">
-          {{ page.meta.carbonReport.explanationOne }}
+          {{ page.meta.explanationOne }}
         </p>
 
         <div class="hero-illustration">
@@ -29,11 +29,11 @@
     <section class="section">
       <div class="container">
         <h2 class="content-title">
-          {{ page.meta.carbonReport.consumption.title }}
+          {{ page.meta.consumption.title }}
         </h2>
 
         <p class="content-description">
-          {{ page.meta.carbonReport.consumption.explanation }}
+          {{ page.meta.consumption.explanation }}
         </p>
 
         <div class="toggle-buttons" @click="toggleData">
@@ -44,7 +44,7 @@
               'btn-secondary': !dataWithFlights
             }"
           >
-            {{ page.meta.carbonReport.consumption.withFlights }}
+            {{ page.meta.consumption.withFlights }}
           </button>
           <button
             class="btn"
@@ -53,7 +53,7 @@
               'btn-secondary': dataWithFlights
             }"
           >
-            {{ page.meta.carbonReport.consumption.withoutFlights }}
+            {{ page.meta.consumption.withoutFlights }}
           </button>
         </div>
 
@@ -66,7 +66,7 @@
                 alt="Globe icon"
               />
               <span class="card-label">{{
-                page.meta.carbonReport.consumption.total
+                page.meta.consumption.total
               }}</span>
             </div>
             <div class="card-value">
@@ -83,7 +83,7 @@
                 alt="Users icon"
               />
               <span class="card-label">{{
-                page.meta.carbonReport.consumption.perEmployee
+                page.meta.consumption.perEmployee
               }}</span>
             </div>
             <div class="card-value">
@@ -91,7 +91,7 @@
               <span class="card-unit">tCO₂e</span>
             </div>
             <div class="card-info">
-              {{ page.meta.carbonReport.consumption.perEmployeeInfo }} 1,4 - 3,9
+              {{ page.meta.consumption.perEmployeeInfo }} 1,4 - 3,9
               TCO₂e
             </div>
           </div>
@@ -104,7 +104,7 @@
                 alt="Dollar icon"
               />
               <span class="card-label">{{
-                page.meta.carbonReport.consumption.per1000e
+                page.meta.consumption.per1000e
               }}</span>
             </div>
             <div class="card-value">
@@ -112,7 +112,7 @@
               <span class="card-unit">kCO₂e</span>
             </div>
             <div class="card-info">
-              {{ page.meta.carbonReport.consumption.per1000eInfo }} 75 Kg / K€
+              {{ page.meta.consumption.per1000eInfo }} 75 Kg / K€
             </div>
           </div>
         </div>
@@ -123,11 +123,11 @@
       <section class="section">
         <div class="container">
           <h2 class="content-title">
-            {{ page.meta.carbonReport.categories.title }}
+            {{ page.meta.categories.title }}
           </h2>
 
           <p class="content-description">
-            {{ page.meta.carbonReport.categories.explanation }}
+            {{ page.meta.categories.explanation }}
           </p>
 
           <div class="toggle-buttons" @click="toggleData">
@@ -138,7 +138,7 @@
                 'btn-secondary': !dataWithFlights
               }"
             >
-              {{ page.meta.carbonReport.consumption.withFlights }}
+              {{ page.meta.consumption.withFlights }}
             </button>
             <button
               class="btn"
@@ -147,7 +147,7 @@
                 'btn-secondary': dataWithFlights
               }"
             >
-              {{ page.meta.carbonReport.consumption.withoutFlights }}
+              {{ page.meta.consumption.withoutFlights }}
             </button>
           </div>
 
@@ -246,10 +246,10 @@
             <div class="category-card-data">
               <div class="card-value">46%</div>
               <div class="card-description">
-                {{ page.meta.carbonReport.categories.japan }}
+                {{ page.meta.categories.japan }}
               </div>
               <div class="card-info">
-                11,9 {{ page.meta.carbonReport.categories.co2 }}
+                11,9 {{ page.meta.categories.co2 }}
               </div>
             </div>
           </div>
@@ -262,10 +262,10 @@
             <div class="category-card-data">
               <div class="card-value">30%</div>
               <div class="card-description">
-                {{ page.meta.carbonReport.categories.infrastructure }}
+                {{ page.meta.categories.infrastructure }}
               </div>
               <div class="card-info">
-                7,7 {{ page.meta.carbonReport.categories.co2 }}
+                7,7 {{ page.meta.categories.co2 }}
               </div>
             </div>
           </div>
@@ -281,10 +281,10 @@
             <div class="category-card-data">
               <div class="card-value">60%</div>
               <div class="card-description">
-                {{ page.meta.carbonReport.categories.infrastructure }}
+                {{ page.meta.categories.infrastructure }}
               </div>
               <div class="card-info">
-                8.98 {{ page.meta.carbonReport.categories.co2 }}
+                8.98 {{ page.meta.categories.co2 }}
               </div>
             </div>
           </div>
@@ -297,10 +297,10 @@
             <div class="category-card-data">
               <div class="card-value">16%</div>
               <div class="card-description">
-                {{ page.meta.carbonReport.categories.food }}
+                {{ page.meta.categories.food }}
               </div>
               <div class="card-info">
-                1,9 {{ page.meta.carbonReport.categories.co2 }}
+                1,9 {{ page.meta.categories.co2 }}
               </div>
             </div>
           </div>
@@ -310,7 +310,7 @@
 
     <div class="section evolution">
       <h2 class="content-title">
-        {{ page.meta.carbonReport.evolution.title }}
+        {{ page.meta.evolution.title }}
       </h2>
       <div class="evolution-cards">
         <div class="evolution-card">
@@ -321,11 +321,11 @@
             />
           </div>
           <div class="evolution-content">
-            <h3>{{ page.meta.carbonReport.evolution.cloud }}</h3>
+            <h3>{{ page.meta.evolution.cloud }}</h3>
             <ul>
-              <li>{{ page.meta.carbonReport.evolution.cloudOne }}</li>
-              <li>{{ page.meta.carbonReport.evolution.cloudTwo }}</li>
-              <li>{{ page.meta.carbonReport.evolution.cloudThree }}</li>
+              <li>{{ page.meta.evolution.cloudOne }}</li>
+              <li>{{ page.meta.evolution.cloudTwo }}</li>
+              <li>{{ page.meta.evolution.cloudThree }}</li>
             </ul>
           </div>
         </div>
@@ -338,11 +338,11 @@
             />
           </div>
           <div class="evolution-content">
-            <h3>{{ page.meta.carbonReport.evolution.food }}</h3>
+            <h3>{{ page.meta.evolution.food }}</h3>
             <ul>
-              <li>{{ page.meta.carbonReport.evolution.foodOne }}</li>
-              <li>{{ page.meta.carbonReport.evolution.foodTwo }}</li>
-              <li>{{ page.meta.carbonReport.evolution.foodThree }}</li>
+              <li>{{ page.meta.evolution.foodOne }}</li>
+              <li>{{ page.meta.evolution.foodTwo }}</li>
+              <li>{{ page.meta.evolution.foodThree }}</li>
             </ul>
           </div>
         </div>
@@ -352,7 +352,7 @@
     <div class="anticipation">
       <div class="section">
         <h2 class="content-title">
-          {{ page.meta.carbonReport.anticipation.title }}
+          {{ page.meta.anticipation.title }}
         </h2>
 
         <div class="event-cards">
@@ -365,10 +365,10 @@
             </div>
             <div class="card-content">
               <h3 class="event-title">
-                {{ page.meta.carbonReport.anticipation.meetup }}
+                {{ page.meta.anticipation.meetup }}
               </h3>
               <p class="event-details">
-                {{ page.meta.carbonReport.anticipation.meetupDetails }}
+                {{ page.meta.anticipation.meetupDetails }}
               </p>
               <div class="carbon-footprint">
                 14,5 <span class="unit">tCO₂e</span>
@@ -385,10 +385,10 @@
             </div>
             <div class="card-content">
               <h3 class="event-title">
-                {{ page.meta.carbonReport.anticipation.travel }}
+                {{ page.meta.anticipation.travel }}
               </h3>
               <p class="event-details">
-                {{ page.meta.carbonReport.anticipation.travelDetails }}
+                {{ page.meta.anticipation.travelDetails }}
               </p>
               <div class="carbon-footprint">
                 8,5 <span class="unit">tCO₂e</span>
@@ -405,10 +405,10 @@
             </div>
             <div class="card-content">
               <h3 class="event-title">
-                {{ page.meta.carbonReport.anticipation.travelus }}
+                {{ page.meta.anticipation.travelus }}
               </h3>
               <p class="event-details">
-                {{ page.meta.carbonReport.anticipation.travelDetails }}
+                {{ page.meta.anticipation.travelDetails }}
               </p>
               <div class="carbon-footprint">
                 5,6 <span class="unit">tCO₂e</span>
@@ -418,21 +418,21 @@
         </div>
 
         <p class="emission-warning">
-          {{ page.meta.carbonReport.anticipation.warning }}
+          {{ page.meta.anticipation.warning }}
         </p>
       </div>
     </div>
 
     <div class="section conclusion">
       <h2 class="content-title">
-        {{ page.meta.carbonReport.conclusion.title }}
+        {{ page.meta.conclusion.title }}
       </h2>
       <p class="content-description">
-        {{ page.meta.carbonReport.conclusion.explanation }}
+        {{ page.meta.conclusion.explanation }}
       </p>
 
       <NuxtLink class="btn btn-primary" :to="$localePath('about')">
-        {{ page.meta.carbonReport.conclusion.button }}
+        {{ page.meta.conclusion.button }}
       </NuxtLink>
     </div>
 
@@ -453,8 +453,8 @@ const { data: page } = await useAsyncData(
 )
 
 useSEO({
-  title: 'CGWire | ' + page.value.meta.carbonReport.title,
-  description: page.value.meta.carbonReport.explanationOne,
+  title: 'CGWire | ' + page.value.meta.title,
+  description: page.value.meta.explanationOne,
   imagePath: 'carbon.png'
 })
 
