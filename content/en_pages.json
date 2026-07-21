@@ -1384,16 +1384,16 @@
           "gradient": 2
         },
         {
-          "title": "Sharing links",
-          "subtitle": "Give clients access without the back-and-forth",
+          "title": "Give clients access without the back-and-forth",
+          "subtitle": "Sharing links",
           "content": "Generate a shareable link for any review playlist and send it to clients, supervisors, or external stakeholders. Everyone reviews the same sequence, with feedback, versions, and approvals kept in one place.",
           "image": "kitsu-playlists-share.png",
           "shadow": true,
           "reverted": true
         },
         {
-          "title": "Frame annotation",
-          "subtitle": "Set precise directions",
+          "title": "Set precise directions",
+          "subtitle": "Frame annotation",
           "content": "Draw, highlight, and write directly on any frame. Annotations are pinned to the specific version and visible to the whole team, so nothing gets lost in translation.",
           "image": "kitsu-annotations.png",
           "shadow": true,
@@ -1401,8 +1401,8 @@
           "gradient": 3
         },
         {
-          "title": "Full version history",
-          "subtitle": "Keep track of what was delivered",
+          "title": "Keep track of what was delivered",
+          "subtitle": "Full version history",
           "content": "Every submitted preview is stored and accessible. Revisit any earlier version to track how a shot evolved, settle disputes, and confirm that previous feedback was addressed.",
           "image": "kitsu-versions.png",
           "reverted": true

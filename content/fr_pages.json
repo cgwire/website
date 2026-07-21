@@ -1375,7 +1375,7 @@
           "reverted": true
         },
         {
-          "title": "Faites vos validations en équipe.",
+          "title": "Faites vos validations en équipe",
           "subtitle": "Salle de review en ligne",
           "content": "Lancez des sessions de révision synchronisées pour que chaque participant regarde la même image au même moment. Plus de notes contradictoires de personnes qui ont révisé des coupes différentes.",
           "image": "kitsu-room.png",
@@ -1384,16 +1384,16 @@
           "gradient": 2
         },
         {
-          "title": "Liens de partage",
-          "subtitle": "Donnez accès à vos clients sans allers-retours inutiles",
+          "title": "Donnez accès à vos clients sans allers-retours inutiles",
+          "subtitle": "Liens de partage",
           "content": "Générez un lien partageable pour n’importe quelle playlist de révision et envoyez-le à vos clients, superviseurs ou parties prenantes externes. Tout le monde consulte la même séquence, tandis que les retours, versions et validations sont centralisés au même endroit.",
           "image": "kitsu-playlists-share.png",
           "shadow": true,
           "reverted": true
         },
         {
-          "title": "Annotation d'image",
-          "subtitle": "Donnez des directions précises",
+          "title": "Donnez des directions précises",
+          "subtitle": "Annotation d'image",
           "content": "Dessinez, surlignez et écrivez directement sur n'importe quelle image. Les annotations sont épinglées à la version spécifique et visibles par toute l'équipe, afin que rien ne se perde dans la traduction.",
           "image": "kitsu-annotations.png",
           "shadow": true,
@@ -1401,8 +1401,8 @@
           "gradient": 3
         },
         {
-          "title": "Historique complet des versions",
-          "subtitle": "Gardez la trace de ce qui a été livré",
+          "title": "Gardez la trace de ce qui a été livré",
+          "subtitle": "Historique complet des versions",
           "content": "Chaque aperçu soumis est stocké et accessible. Revisitez n'importe quelle version antérieure pour suivre l'évolution d'un plan, résoudre des litiges et confirmer que les retours précédents ont été pris en compte.",
           "image": "kitsu-versions.png",
           "reverted": true
