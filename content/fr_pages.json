@@ -875,240 +875,238 @@
     "pricing": {
       "title": "Offres Kitsu Cloud pour tous les types de studios",
       "slug": "pricing",
-      "pricing": {
-        "billed": {
-          "annualy": "facturés annuellement"
+      "billed": {
+        "annualy": "facturés annuellement"
+      },
+      "kitsu": {
+        "subtitle": "Connectez vos équipes",
+        "title": "Offres Kitsu Cloud pour tous les types de studios"
+      },
+      "cloud": {
+        "explanation": "Nous fournsissons une installation cloud adaptée avec le support utilisateur et des fonctionnalités supplémentaires."
+      },
+      "features": {
+        "common": {
+          "searchengine": "Moteur de recherche",
+          "playlistbuilder": "Builder de playlists",
+          "four": "Sécurité forte",
+          "one": "Suivi des tâches",
+          "three": "Haute disponibilité",
+          "two": "Support premium"
         },
-        "kitsu": {
-          "subtitle": "Connectez vos équipes",
-          "title": "Offres Kitsu Cloud pour tous les types de studios"
+        "enterprise": {
+          "seven": "pricing features enterprise seven",
+          "six": "pricing features enterprise six"
         },
-        "cloud": {
-          "explanation": "Nous fournsissons une installation cloud adaptée avec le support utilisateur et des fonctionnalités supplémentaires."
+        "large": {
+          "five": "Intégrations logiciels",
+          "four": "Réponse < 12h",
+          "one": "1 - 300 utilisateurs",
+          "six": "Charge intense supportée",
+          "three": "Jusqu'à 10To",
+          "two": "Support diamant"
         },
-        "features": {
-          "common": {
-            "searchengine": "Moteur de recherche",
-            "playlistbuilder": "Builder de playlists",
-            "four": "Sécurité forte",
-            "one": "Suivi des tâches",
-            "three": "Haute disponibilité",
-            "two": "Support premium"
+        "singlecore": "VM single-core",
+        "mutualize": "Matériel mutualisé",
+        "community": "Support communautaire",
+        "users": "utilisateurs",
+        "user": "utilisateur",
+        "gbstorage": "Go de stockage",
+        "tbstorage": "To de stockage",
+        "medium": {
+          "five": "Charge haute supportée",
+          "four": "Réponse < 24h",
+          "one": "1 - 100 utilisateurs",
+          "three": "Jusqu'à 3To",
+          "two": "Résolution de bugs prioritaire"
+        },
+        "partner": {
+          "onpremise": "On-premise installation",
+          "eight": "Cluster de calcul vidéos local",
+          "five": "Intégration AD/LDAP",
+          "four": "Instances multiples",
+          "one": "Tout du plan Studio",
+          "unlimited": "Utilisateurs illimités",
+          "seven": "Object Storage local",
+          "six": "Environnement de staging",
+          "three": "Multi-régions",
+          "two": "Utilisateurs illimités",
+          "encryption": "Chiffrement des médias",
+          "gpu": "Traitement vidéo via GPU",
+          "contract": "Contrat sur mesure"
+        },
+        "small": {
+          "five": "1 x Dual Core",
+          "four": "Réponse < 48h",
+          "three": "Jusqu'à 1To",
+          "two": "Réponse < 48h"
+        },
+        "agency": {
+          "one": "1 - 30 utilisateurs"
+        },
+        "successpack": {
+          "five": "Développements",
+          "four": "Aide à l'import de données",
+          "one": "Support chat et Skype",
+          "six": "Gestion de projet",
+          "three": "Configuration",
+          "two": "Formation & Coaching"
+        },
+        "team": {
+          "storage": "Jusqu'à 500Go",
+          "support": "Support léger",
+          "supporttime": "Réponse < 72h",
+          "users": "1 - 10 utilisateurs"
+        },
+        "tiny": {
+          "five": "1 x Single Core",
+          "support": "Support basique"
+        },
+        "tinyplus": {
+          "one": "1 - 20 utilisateurs",
+          "three": "Jusqu'à 1To",
+          "two": "Projets Illimités"
+        },
+        "training": "Session de formation"
+      },
+      "usecase": {
+        "agency": "Pour les courts-métrages, publicités et productions légères",
+        "production": "Pour les séries TV, longs-métrages et jeux vidéo",
+        "studio": "Pour les studios gérant plusieurs productions",
+        "partner": "Pour les grands studios ou la conformité TPN"
+      },
+      "button": {
+        "contactcta": "Contactez nous",
+        "cta": "Démarrez"
+      },
+      "calculator": {
+        "subtitle": "Calculez le coût de votre abonnement",
+        "title": "Calculateur de prix",
+        "discount": "Remise",
+        "peruser": "Prix par utilisateur",
+        "permonth": "Prix par mois",
+        "total": "Coût total",
+        "users": "utilisateur | utilisateurs",
+        "months": "mois | mois"
+      },
+      "discount": {
+        "details": "Offre d'essai de deux semaines et réduction de 20% pour un abonnement annuel"
+      },
+      "school": {
+        "title": "Prix pour les Écoles d'Animation",
+        "details": "Nous proposons un prix unique de 3999€ par an pour les écoles d'animation 2D et 3D (jusqu'à 100 étudiants)."
+      },
+      "faq": {
+        "subtitle": "Informations supplémentaires",
+        "title": "Questions Fréquentes",
+        "answer1": "Pour les abonnements mensuels, nous acceptons les cartes et les prélèvements. Pour les abonnements annuels nous acceptons les paiements pas carte, par virement et par prélèvement.",
+        "answer10": "Les abonnement mensuels peuvent être annulés via l'interface. Pour les abonnements annuels, contactez nous, nous ferons l'ajustement dans le système de facturation.",
+        "answer11": "Oui, nous pouvons proposer des plans sur-mesure qui correspondent à votre production.",
+        "answer2": "Toutes les fonctionnalités de l'API sont inclues dans l'aboonnement: routes REST, flux d'événements et recherche full-text.",
+        "answer3": "Toutes les fonctionnalités sont inclues dans la période d'essai. Par contre Kitsu tourne sur un matériel d'entrée de gamme. Si vous avez besoin de faire des essais sur un matériel plus performant, veuillez nous contacter.",
+        "answer4": "Cela correspond à votre installation de Kitsu. Elle vit sur son propre domaine (votrestudio.cg-wire.com). Vous aurez différents comptes dessus et votre équipe interagira directement avec cette installation.",
+        "answer5": "Oui, c'est ce que nous appelons l'hébergement On-premise. Nous gérons votre installation pour que vous ayiez la même expérience que s'il était dans le cloud.",
+        "answer6": "Nos limites sont pensés de façon à ce que vous ne ressentiez pas de contraintes avec elles. Si vous pensez avoir une charge très importante de previews, contactez nous pour en discuter. Pour donner un ordre d'idée une série de 50 épisode de 11 minutes requiert 200Go de stockage.",
+        "answer7": "Vous pouvez le changer quand vous voulez. Pour les augmentations, le prix restant sera appliqué au pro-rata. Pour les diminutions, un avoir sera émis. Pour les abonnements annuels, la diminution doit être justifiée.",
+        "answer8": "Si vous avez un abonnement mensuel, vous pouvez vous connecter directement à votre compte pour le faire. Pour les abonnements annuels, vous pouvez contacter directement notre équipe de ventes. Nous ferons le changement pour vous dans notre système de facturation.",
+        "answer9": "Un abonnement annuel signifie que vous allez payer 12 mois directement. À travers cet engagement vous bénéficierez d'une réduction de 20% par rapport au prix mensuel.",
+        "question1": "Quelle types de paiement acceptez vous?",
+        "question10": "Comment est-ce que j'annule mon abonnement ?",
+        "question11": "Ma production va durer X mois, est-ce que vous pouvez me proposer quelque chose ?",
+        "question2": "Est-ce que l'accès à l'API est inclus dans l'abonnement ?",
+        "question3": "Qu'est-ce qui est inclus dans la période d'essai ?",
+        "question4": "Qu'est-ce qu'une instance Kitsu ?",
+        "question5": "Est-ce que je peux avoir mon instance de Kitsu sur mes propres serveurs ?",
+        "question6": "Est-ce que l'espace disque fourni est suffisant pour mes besoins ?",
+        "question7": "Est-ce que je peux changer mon abonnement une fois que j'ai démarré ?",
+        "question8": "Comment est-ce que je change mon abonnement ?",
+        "question9": "Que signifie un abonnement annuel ?"
+      },
+      "contact": {
+        "explanation": "Nous pouvons vous proposer une formule adaptée à vos besoins",
+        "introduction": "Vous souhaitez un devis ?"
+      },
+      "explanation": {
+        "one": "Voici les abonnements pour Kitsu. Ce qui inclut le suivi des tâches, les feuilles de temps, les playlists et l'API pour studios."
+      },
+      "firsteps": {
+        "cta1": "Réservez une démo",
+        "cta2": "Rejoignez notre communauté Discord",
+        "cta3": "Essayez gratuitement",
+        "question1": "Plannifiez un rendez-vous avec notre équipe. Nous vous montrerons comment Kitsu peut se caler dans votre workflow et ce que vous pouvez réaliser avec.",
+        "question2": "Rejoignez notre communauté pour rencontrer les autres utilisateurs et discuter de pipelines et workflows.",
+        "question3": "Enregistrez-vous et accédez à votre installation de Kitsu pendant deux semaines gratuitement. Toutes les fonctionnalités sont incluses, vous pourrez tout tester.",
+        "subttile": "Démarrer avec Kitsu",
+        "ttile": "Premiers pas"
+      },
+      "install": {
+        "cta": "Installation"
+      },
+      "metadata": "Regardez comment nous pouvons vous aider à migrer sous Kitsu et découvrez nos abonnements d'hébergement (cloud ou on-premise).",
+      "monthly": "mensuel",
+      "opensource": {
+        "details": "Kitsu est libre et open source, ce qui signifie qu'il peut être utilisé et modifié par vos équipes librement.",
+        "install": "Instructions d'installation",
+        "title": "Libre et Open Source"
+      },
+      "price": {
+        "free": "Gratuit"
+      },
+      "ranch": {
+        "title": "Render Farm",
+        "explanation": "Nos abonnements viennent avec des crédits gratuits de la part de notre partenaire Ranch Computing! Contactez nous pour plus de détails."
+      },
+      "tagline": "Tarifs Cloud",
+      "sucesspack": {
+        "explanation": "Notre équipe vous aidera à definir et démarrer une implémentation sur-mesure de Kitsu dans votre studio.",
+        "subtitle": "Réussissez votre mise en place avec notre aide",
+        "title": "Packs Succès"
+      },
+      "support": {
+        "license": {
+          "ad": "Compatibilité Active Directory",
+          "details": "Nous pouvons déployer Kitsu sur vos serveurs. Nous gérons l'installation, les mises à jour, les sauvegardes et le monitoring. Nous offrons le même niveau de support que la version cloud.",
+          "directory": "User Directory",
+          "domain": "Requis: nom de domaine",
+          "ldap": "Synchronisez utilisateurs et mots de passe depuis votre annuaire LDAP",
+          "migation": {
+            "onpremise": "Récupérez vos productions depuis une instance Kitsu locale"
           },
-          "enterprise": {
-            "seven": "pricing features enterprise seven",
-            "six": "pricing features enterprise six"
+          "migration": {
+            "cloud": "Récupérez vos productions depuis une instance cloud Kitsu"
           },
-          "large": {
-            "five": "Intégrations logiciels",
-            "four": "Réponse < 12h",
-            "one": "1 - 300 utilisateurs",
-            "six": "Charge intense supportée",
-            "three": "Jusqu'à 10To",
-            "two": "Support diamant"
-          },
-          "singlecore": "VM single-core",
-          "mutualize": "Matériel mutualisé",
-          "community": "Support communautaire",
-          "users": "utilisateurs",
-          "user": "utilisateur",
-          "gbstorage": "Go de stockage",
-          "tbstorage": "To de stockage",
-          "medium": {
-            "five": "Charge haute supportée",
-            "four": "Réponse < 24h",
-            "one": "1 - 100 utilisateurs",
-            "three": "Jusqu'à 3To",
-            "two": "Résolution de bugs prioritaire"
-          },
-          "partner": {
-            "onpremise": "On-premise installation",
-            "eight": "Cluster de calcul vidéos local",
-            "five": "Intégration AD/LDAP",
-            "four": "Instances multiples",
-            "one": "Tout du plan Studio",
-            "unlimited": "Utilisateurs illimités",
-            "seven": "Object Storage local",
-            "six": "Environnement de staging",
-            "three": "Multi-régions",
-            "two": "Utilisateurs illimités",
-            "encryption": "Chiffrement des médias",
-            "gpu": "Traitement vidéo via GPU",
-            "contract": "Contrat sur mesure"
-          },
-          "small": {
-            "five": "1 x Dual Core",
-            "four": "Réponse < 48h",
-            "three": "Jusqu'à 1To",
-            "two": "Réponse < 48h"
-          },
-          "agency": {
-            "one": "1 - 30 utilisateurs"
-          },
-          "successpack": {
-            "five": "Développements",
-            "four": "Aide à l'import de données",
-            "one": "Support chat et Skype",
-            "six": "Gestion de projet",
-            "three": "Configuration",
-            "two": "Formation & Coaching"
-          },
-          "team": {
-            "storage": "Jusqu'à 500Go",
-            "support": "Support léger",
-            "supporttime": "Réponse < 72h",
-            "users": "1 - 10 utilisateurs"
-          },
-          "tiny": {
-            "five": "1 x Single Core",
-            "support": "Support basique"
-          },
-          "tinyplus": {
-            "one": "1 - 20 utilisateurs",
-            "three": "Jusqu'à 1To",
-            "two": "Projets Illimités"
-          },
-          "training": "Session de formation"
+          "ports": "Requis: ports standards ouverts (80/443)",
+          "setup": "Installation",
+          "ssh": "Requis: accès SSH",
+          "subtitle": "Une offre complète sur vos serveurs",
+          "title": "Extras On-Premise",
+          "ubuntu": "Requis: Ubuntu 20.04"
         },
-        "usecase": {
-          "agency": "Pour les courts-métrages, publicités et productions légères",
-          "production": "Pour les séries TV, longs-métrages et jeux vidéo",
-          "studio": "Pour les studios gérant plusieurs productions",
-          "partner": "Pour les grands studios ou la conformité TPN"
-        },
-        "title": "Tarifs",
-        "button": {
-          "contactcta": "Contactez nous",
-          "cta": "Démarrez"
-        },
-        "calculator": {
-          "subtitle": "Calculez le coût de votre abonnement",
-          "title": "Calculateur de prix",
-          "discount": "Remise",
-          "peruser": "Prix par utilisateur",
-          "permonth": "Prix par mois",
-          "total": "Coût total",
-          "users": "utilisateur | utilisateurs",
-          "months": "mois | mois"
-        },
-        "discount": {
-          "details": "Offre d'essai de deux semaines et réduction de 20% pour un abonnement annuel"
-        },
-        "school": {
-          "title": "Prix pour les Écoles d'Animation",
-          "details": "Nous proposons un prix unique de 3999€ par an pour les écoles d'animation 2D et 3D (jusqu'à 100 étudiants)."
-        },
-        "faq": {
-          "subtitle": "Informations supplémentaires",
-          "title": "Questions Fréquentes",
-          "answer1": "Pour les abonnements mensuels, nous acceptons les cartes et les prélèvements. Pour les abonnements annuels nous acceptons les paiements pas carte, par virement et par prélèvement.",
-          "answer10": "Les abonnement mensuels peuvent être annulés via l'interface. Pour les abonnements annuels, contactez nous, nous ferons l'ajustement dans le système de facturation.",
-          "answer11": "Oui, nous pouvons proposer des plans sur-mesure qui correspondent à votre production.",
-          "answer2": "Toutes les fonctionnalités de l'API sont inclues dans l'aboonnement: routes REST, flux d'événements et recherche full-text.",
-          "answer3": "Toutes les fonctionnalités sont inclues dans la période d'essai. Par contre Kitsu tourne sur un matériel d'entrée de gamme. Si vous avez besoin de faire des essais sur un matériel plus performant, veuillez nous contacter.",
-          "answer4": "Cela correspond à votre installation de Kitsu. Elle vit sur son propre domaine (votrestudio.cg-wire.com). Vous aurez différents comptes dessus et votre équipe interagira directement avec cette installation.",
-          "answer5": "Oui, c'est ce que nous appelons l'hébergement On-premise. Nous gérons votre installation pour que vous ayiez la même expérience que s'il était dans le cloud.",
-          "answer6": "Nos limites sont pensés de façon à ce que vous ne ressentiez pas de contraintes avec elles. Si vous pensez avoir une charge très importante de previews, contactez nous pour en discuter. Pour donner un ordre d'idée une série de 50 épisode de 11 minutes requiert 200Go de stockage.",
-          "answer7": "Vous pouvez le changer quand vous voulez. Pour les augmentations, le prix restant sera appliqué au pro-rata. Pour les diminutions, un avoir sera émis. Pour les abonnements annuels, la diminution doit être justifiée.",
-          "answer8": "Si vous avez un abonnement mensuel, vous pouvez vous connecter directement à votre compte pour le faire. Pour les abonnements annuels, vous pouvez contacter directement notre équipe de ventes. Nous ferons le changement pour vous dans notre système de facturation.",
-          "answer9": "Un abonnement annuel signifie que vous allez payer 12 mois directement. À travers cet engagement vous bénéficierez d'une réduction de 20% par rapport au prix mensuel.",
-          "question1": "Quelle types de paiement acceptez vous?",
-          "question10": "Comment est-ce que j'annule mon abonnement ?",
-          "question11": "Ma production va durer X mois, est-ce que vous pouvez me proposer quelque chose ?",
-          "question2": "Est-ce que l'accès à l'API est inclus dans l'abonnement ?",
-          "question3": "Qu'est-ce qui est inclus dans la période d'essai ?",
-          "question4": "Qu'est-ce qu'une instance Kitsu ?",
-          "question5": "Est-ce que je peux avoir mon instance de Kitsu sur mes propres serveurs ?",
-          "question6": "Est-ce que l'espace disque fourni est suffisant pour mes besoins ?",
-          "question7": "Est-ce que je peux changer mon abonnement une fois que j'ai démarré ?",
-          "question8": "Comment est-ce que je change mon abonnement ?",
-          "question9": "Que signifie un abonnement annuel ?"
-        },
-        "contact": {
-          "explanation": "Nous pouvons vous proposer une formule adaptée à vos besoins",
-          "introduction": "Vous souhaitez un devis ?"
-        },
-        "explanation": {
-          "one": "Voici les abonnements pour Kitsu. Ce qui inclut le suivi des tâches, les feuilles de temps, les playlists et l'API pour studios."
-        },
-        "firsteps": {
-          "cta1": "Réservez une démo",
-          "cta2": "Rejoignez notre communauté Discord",
-          "cta3": "Essayez gratuitement",
-          "question1": "Plannifiez un rendez-vous avec notre équipe. Nous vous montrerons comment Kitsu peut se caler dans votre workflow et ce que vous pouvez réaliser avec.",
-          "question2": "Rejoignez notre communauté pour rencontrer les autres utilisateurs et discuter de pipelines et workflows.",
-          "question3": "Enregistrez-vous et accédez à votre installation de Kitsu pendant deux semaines gratuitement. Toutes les fonctionnalités sont incluses, vous pourrez tout tester.",
-          "subttile": "Démarrer avec Kitsu",
-          "ttile": "Premiers pas"
-        },
-        "install": {
-          "cta": "Installation"
-        },
-        "metadata": "Regardez comment nous pouvons vous aider à migrer sous Kitsu et découvrez nos abonnements d'hébergement (cloud ou on-premise).",
-        "monthly": "mensuel",
-        "opensource": {
-          "details": "Kitsu est libre et open source, ce qui signifie qu'il peut être utilisé et modifié par vos équipes librement.",
-          "install": "Instructions d'installation",
-          "title": "Libre et Open Source"
-        },
-        "price": {
-          "free": "Gratuit"
-        },
-        "ranch": {
-          "title": "Render Farm",
-          "explanation": "Nos abonnements viennent avec des crédits gratuits de la part de notre partenaire Ranch Computing! Contactez nous pour plus de détails."
-        },
-        "tagline": "Tarifs Cloud",
-        "sucesspack": {
-          "explanation": "Notre équipe vous aidera à definir et démarrer une implémentation sur-mesure de Kitsu dans votre studio.",
-          "subtitle": "Réussissez votre mise en place avec notre aide",
-          "title": "Packs Succès"
-        },
-        "support": {
-          "license": {
-            "ad": "Compatibilité Active Directory",
-            "details": "Nous pouvons déployer Kitsu sur vos serveurs. Nous gérons l'installation, les mises à jour, les sauvegardes et le monitoring. Nous offrons le même niveau de support que la version cloud.",
-            "directory": "User Directory",
-            "domain": "Requis: nom de domaine",
-            "ldap": "Synchronisez utilisateurs et mots de passe depuis votre annuaire LDAP",
-            "migation": {
-              "onpremise": "Récupérez vos productions depuis une instance Kitsu locale"
-            },
-            "migration": {
-              "cloud": "Récupérez vos productions depuis une instance cloud Kitsu"
-            },
-            "ports": "Requis: ports standards ouverts (80/443)",
-            "setup": "Installation",
-            "ssh": "Requis: accès SSH",
-            "subtitle": "Une offre complète sur vos serveurs",
-            "title": "Extras On-Premise",
-            "ubuntu": "Requis: Ubuntu 20.04"
-          },
-          "onpremise": {
-            "title": "Configurations additionnelles"
-          }
-        },
-        "value": {
-          "month": "/ mois",
-          "user": "/ utilisateur"
-        },
-        "yearly": "annuel",
-        "title_plans": {
-          "agency": "Agence",
-          "big": "Grand",
-          "bronze": "Bronze",
-          "enterprise": "Entreprise",
-          "freelancer": "Freelance",
-          "gold": "Or",
-          "partner": "Partenaire",
-          "production": "Production",
-          "quote": "Sur devis",
-          "silver": "Argent",
-          "studio": "Studio",
-          "team": "Équipe",
-          "tinyplus": "Minuscule +"
+        "onpremise": {
+          "title": "Configurations additionnelles"
         }
-      }
+      },
+      "value": {
+        "month": "/ mois",
+        "user": "/ utilisateur"
+      },
+      "yearly": "annuel",
+      "title_plans": {
+        "agency": "Agence",
+        "big": "Grand",
+        "bronze": "Bronze",
+        "enterprise": "Entreprise",
+        "freelancer": "Freelance",
+        "gold": "Or",
+        "partner": "Partenaire",
+        "production": "Production",
+        "quote": "Sur devis",
+        "silver": "Argent",
+        "studio": "Studio",
+        "team": "Équipe",
+        "tinyplus": "Minuscule +"
+      },
+      "heading": "Tarifs"
     },
     "software-integrations": {
       "title": "Integrations",
