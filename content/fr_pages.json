@@ -1297,14 +1297,14 @@
           "title": "Planifiez votre travail",
           "subtitle": "Détection des conflits",
           "content": "Définissez les durées des projets, fixez des jalons et voyez comment le travail est réparti dans votre équipe. Repérez les surcharges et les lacunes tôt pour pouvoir ajuster avant qu'elles ne ralentissent la production.",
-          "image": "kitsu-tables.png",
+          "image": "kitsu-schedule.png",
           "shadow": true,
           "reverted": true
         },
         {
-          "title": "Définissez vos attentes",
-          "subtitle": "Suivi de la productivité",
-          "content": "Fixez des objectifs de production quotidiens ou hebdomadaires pour vos artistes et suivez les progrès. Identifiez qui est bloqué et qui est en avance pour pouvoir agir, pas seulement rendre compte.",
+          "title": "Repérez qui a besoin d'aide avant de manquer le délai",
+          "subtitle": "Objectifs de production",
+          "content": "Fixez des objectifs de production quotidiens ou hebdomadaires pour que chacun partage le même plan. Quand quelqu'un commence à prendre du retard, vous le voyez tôt et pouvez lui apporter de l'aide ou rééquilibrer la charge, plutôt que de découvrir l'écart quand il est trop tard pour agir.",
           "image": "kitsu-quotas.png",
           "shadow": true,
           "colored": true,
@@ -1321,7 +1321,7 @@
         {
           "title": "Suivez le temps passé et les coûts",
           "subtitle": "Feuilles de temps",
-          "content": "Les artistes enregistrent le temps directement dans Kitsu. Vous obtenez une répartition claire par artiste, asset ou plan pour savoir toujours où vont réellement vos heures de production. Vous pouvez anticiper les dépassements de coûts.",
+          "content": "Les artistes enregistrent le temps directement dans Kitsu. Vous obtenez une répartition claire par artiste, asset ou plan pour savoir toujours où vont réellement vos heures de production, et vous pouvez anticiper les dépassements de coûts.",
           "image": "kitsu-timesheets.png",
           "shadow": true,
           "colored": true,

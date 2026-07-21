@@ -1297,14 +1297,14 @@
           "title": "Schedule your work",
           "subtitle": "Conflict detection",
           "content": "Define project durations, set milestones, and see how work is distributed across your team. Spot overloads and gaps early so you can adjust before they slow production down.",
-          "image": "kitsu-tables.png",
+          "image": "kitsu-schedule.png",
           "shadow": true,
           "reverted": true
         },
         {
-          "title": "Set your expectations",
-          "subtitle": "Productivity tracking",
-          "content": "Set daily or weekly output targets for your artists and track progress against them. Identify who is blocked and who is ahead so you can act on it, not just report on it.",
+          "title": "Spot who needs help before it costs you the deadline",
+          "subtitle": "Output targets",
+          "content": "Set daily or weekly output targets so everyone shares the same plan. When someone starts falling behind, you see it early and can step in with support or rebalance the workload, rather than discovering the gap when it is too late to act.",
           "image": "kitsu-quotas.png",
           "shadow": true,
           "colored": true,
@@ -1321,7 +1321,7 @@
         {
           "title": "Track time spent and costs",
           "subtitle": "Timesheets",
-          "content": "Artists log time directly in Kitsu. You get a clear breakdown by artist, asset, or shot so you always know where your production hours are actually going. You can anticipate overspendings.",
+          "content": "Artists log time directly in Kitsu. You get a clear breakdown by artist, asset, or shot so you always know where your production hours are actually going, and you can anticipate overspending.",
           "image": "kitsu-timesheets.png",
           "shadow": true,
           "colored": true,
