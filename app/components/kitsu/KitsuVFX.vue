@@ -23,12 +23,19 @@
         src="/images/kitsu/les-trois-mousquetaires.png"
         alt="Les Trois Mousquetaires"
         format="webp"
+        loading="lazy"
       />
-      <NuxtImg src="/images/kitsu/rrr.png" alt="RRR" format="webp" />
+      <NuxtImg
+        src="/images/kitsu/rrr.png"
+        alt="RRR"
+        format="webp"
+        loading="lazy"
+      />
       <NuxtImg
         src="/images/kitsu/substance.png"
         alt="Substance"
         format="webp"
+        loading="lazy"
       />
     </div>
   </div>

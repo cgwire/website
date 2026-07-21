@@ -17,6 +17,7 @@
           :src="'/images/kitsu/' + featureKey + '.png'"
           alt=""
           format="webp"
+          loading="lazy"
         />
       </div>
     </div>

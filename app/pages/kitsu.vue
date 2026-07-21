@@ -73,27 +73,27 @@
       </template>
 
       <KitsuTwoD
-        v-if="currentTab === '2D'"
+        v-show="currentTab === '2D'"
         :supporters="page.meta.supporters"
         :features="page.meta.features"
       />
       <KitsuThreeD
-        v-if="currentTab === '3D'"
+        v-show="currentTab === '3D'"
         :supporters="page.meta.supporters"
         :features="page.meta.features"
       />
       <KitsuVFX
-        v-if="currentTab === 'VFX'"
+        v-show="currentTab === 'VFX'"
         :supporters="page.meta.supporters"
         :features="page.meta.features"
       />
       <KitsuVideoGames
-        v-if="currentTab === 'Games'"
+        v-show="currentTab === 'Games'"
         :supporters="page.meta.supporters"
         :features="page.meta.features"
       />
       <KitsuSchools
-        v-if="currentTab === 'Schools'"
+        v-show="currentTab === 'Schools'"
         :supporters="page.meta.supporters"
         :features="page.meta.features"
       />
@@ -210,7 +210,6 @@
 
 <script setup>
 const router = useRouter()
-const route = useRoute()
 
 const { locale } = useI18n()
 const slug = ref('kitsu')
@@ -229,15 +228,21 @@ useSEO({
   imagePath: 'teaser.png'
 })
 
-onMounted(() => {
-  const tab = route.query.tab
-
-  if (tab) {
-    currentTab.value = tab
-  }
-})
-
+const route = useRoute()
 const currentTab = ref('2D')
+
+// The tab lives in the URL (?tab=VFX). On the statically generated build the
+// query is empty during the initial page setup and only becomes available once
+// the client router settles, so watch it rather than reading it once.
+watch(
+  () => route.query.tab,
+  tab => {
+    if (typeof tab === 'string' && tab) {
+      currentTab.value = tab
+    }
+  },
+  { immediate: true }
+)
 const toggleTab = tab => {
   currentTab.value = tab
   router.push({ query: { tab } })
