@@ -1159,8 +1159,8 @@
       },
       "features": [
         {
-          "title": "Liste de breakdown",
-          "subtitle": "Sachez ce qui appartient à chaque plan",
+          "title": "Sachez ce qui appartient à chaque plan",
+          "subtitle": "Liste de breakdown",
           "content": "Créez des tableaux de décomposition montrant les assets de casting pour chaque plan, organisés par type. Ajoutez des métadonnées directement à chaque entrée pour que votre constructeur de scènes dispose de tout ce dont il a besoin avant même d'ouvrir un fichier.",
           "image": "kitsu-tables.png",
           "gradient": 1,
@@ -1287,7 +1287,7 @@
         {
           "key": "report",
           "title": "Sachez où en est votre production",
-          "subtitle": "Une vue à 360° de vos données",
+          "subtitle": "Vue à 360° de vos données",
           "content": "Obtenez des statistiques de progression précises sur tous vos projets, des résumés de haut niveau aux détails au niveau des tâches. Partagez des rapports avec les clients ou les producteurs directement depuis Kitsu grâce aux outils d'exportation intégrés.",
           "image": "kitsu-report.png",
           "gradient": 1,
@@ -1315,7 +1315,7 @@
         },
         {
           "title": "Voyez qui travaille sur quoi",
-          "subtitle": "La coordination devient plus complexe lorsque les équipes travaillent en silos",
+          "subtitle": "Planning de l'équipe",
           "content": "Consultez le planning complet de chaque artiste de votre département affecté à votre projet. Identifiez les disponibilités, les surcharges de travail et la répartition des tâches au sein de l’équipe. Prenez vos décisions de staffing en toute confiance et maintenez la production sur les rails, sans mauvaises surprises.",
           "image": "kitsu-team-schedule.png",
           "shadow": true,
@@ -1323,8 +1323,8 @@
           "gradient": 2
         },
         {
-          "title": "Suivez le temps passé",
-          "subtitle": "Assurez-vous que chacun remplit sa feuille de temps",
+          "title": "Suivez le temps passé et les coûts",
+          "subtitle": "Feuilles de temps",
           "content": "Les artistes enregistrent le temps directement dans Kitsu. Vous obtenez une répartition claire par artiste, asset ou plan pour savoir toujours où vont réellement vos heures de production. Vous pouvez anticiper les dépassements de coûts.",
           "image": "kitsu-timesheets.png",
           "shadow": true,
@@ -1333,7 +1333,7 @@
         },
         {
           "title": "Anticipez les dépassements de budget",
-          "subtitle": "Des problèmes de budget tardifs entraînent des risques financiers",
+          "subtitle": "Prévisions",
           "content": "Comparez les dépenses actuelles à votre budget à tout moment de la production. Effectuez des scénarios de coûts avant de prendre des décisions pour pouvoir corriger le tir tant que vous avez encore des options.",
           "image": "kitsu-budget.png",
           "shadow": true,
@@ -1356,15 +1356,15 @@
       "image": "review-engine.png",
       "shadow": true,
       "header": {
-        "tagline": "Livrez les travaux approuvés plus rapidement",
-        "subtitle": "Moteur de validation",
+        "tagline": "Moteur de validation",
+        "subtitle": "Livrez les travaux approuvés plus rapidement",
         "explanation": "Les cycles de feedback sont là où les projets s'enlisent. Kitsu centralise votre processus de révision pour que les équipes et les clients puissent donner des retours précis et contextuels sur chaque soumission, sans perdre la trace des versions, des décisions ou de l'historique. Moins d'allers-retours. Moins de notes manquées. Des validations plus rapides.",
         "quote": "tetsuo-1"
       },
       "features": [
         {
           "title": "Révisez des plans consécutifs",
-          "subtitle": "Arrêtez de réviser les plans un e-mail à la fois",
+          "subtitle": "Système de playlists",
           "content": "Créez des playlists de révision et parcourez tous les plans en une session continue. Ajoutez des commentaires et des annotations sans quitter le lecteur. Partagez les playlists directement avec les clients ou exécutez-les avec votre équipe en temps réel.",
           "image": "kitsu-playlists.png",
           "gradient": 1,
@@ -1372,8 +1372,8 @@
           "colored": true
         },
         {
-          "title": "Comparez n'importe quelle version",
-          "subtitle": "Détectez ce qui a changé entre les versions",
+          "title": "Détectez ce qui a changé entre les versions",
+          "subtitle": "Comparaison de previews",
           "content": "Placez deux versions côte à côte ou superposez-les en surimpression. Repérez les régressions, confirmez les corrections et validez les révisions sans chercher dans des fichiers séparés.",
           "image": "kitsu-compare.png",
           "shadow": true,
@@ -1381,7 +1381,7 @@
         },
         {
           "title": "Faites vos validations en équipe.",
-          "subtitle": "Alignez les retours",
+          "subtitle": "Salle de review en ligne",
           "content": "Lancez des sessions de révision synchronisées pour que chaque participant regarde la même image au même moment. Plus de notes contradictoires de personnes qui ont révisé des coupes différentes.",
           "image": "kitsu-room.png",
           "shadow": true,
@@ -1389,7 +1389,7 @@
           "gradient": 2
         },
         {
-          "title": "Partagez instantanément des playlists de révision",
+          "title": "Liens de partage",
           "subtitle": "Donnez accès à vos clients sans allers-retours inutiles",
           "content": "Générez un lien partageable pour n’importe quelle playlist de révision et envoyez-le à vos clients, superviseurs ou parties prenantes externes. Tout le monde consulte la même séquence, tandis que les retours, versions et validations sont centralisés au même endroit.",
           "image": "kitsu-playlists-share.png",
@@ -1397,7 +1397,7 @@
           "reverted": true
         },
         {
-          "title": "Annotez directement sur les images",
+          "title": "Annotation d'image",
           "subtitle": "Donnez des directions précises",
           "content": "Dessinez, surlignez et écrivez directement sur n'importe quelle image. Les annotations sont épinglées à la version spécifique et visibles par toute l'équipe, afin que rien ne se perde dans la traduction.",
           "image": "kitsu-annotations.png",

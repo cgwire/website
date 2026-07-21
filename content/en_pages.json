@@ -1159,8 +1159,8 @@
       },
       "features": [
         {
-          "title": "Breakdown list",
-          "subtitle": "Know what belongs to each shot",
+          "subtitle": "Breakdown list",
+          "title": "Know what belongs to each shot",
           "content": "Build breakdown tables showing the cast assets for each shot, organized by type. Add metadata directly to every entry so your scene builder has everything they need before they even open a file.",
           "image": "kitsu-tables.png",
           "colored": true,
@@ -1286,7 +1286,7 @@
       "features": [
         {
           "title": "Know where your production stands",
-          "subtitle": "A 360° view of your data",
+          "subtitle": "360° view of your data",
           "content": "Get accurate progress statistics across all your projects, from high-level summaries to task-level detail. Share reports with clients or producers directly from Kitsu with built-in export tools.",
           "image": "kitsu-report.png",
           "shadow": true,
@@ -1312,15 +1312,15 @@
         },
         {
           "title": "See who's working on what",
-          "subtitle": "Coordination gets harder when teams work in silos",
+          "subtitle": "Team schedule",
           "content": "View the full schedule of every artist in your department assigned to your project. See who's available, who's overloaded, and how work is distributed across the team. Make staffing decisions with confidence and keep production moving without surprises.",
           "image": "kitsu-team-schedule.png",
           "shadow": true,
           "reverted": true
         },
         {
-          "title": "Track time spent",
-          "subtitle": "Make sure everyone fills their timesheet",
+          "title": "Track time spent and costs",
+          "subtitle": "Timesheets",
           "content": "Artists log time directly in Kitsu. You get a clear breakdown by artist, asset, or shot so you always know where your production hours are actually going. You can anticipate overspendings.",
           "image": "kitsu-timesheets.png",
           "shadow": true,
@@ -1329,7 +1329,7 @@
         },
         {
           "title": "Anticipate budget overruns",
-          "subtitle": "Late budget issues bring financial risks",
+          "subtitle": "Forecasting",
           "content": "Compare current spending against your budget at any point in production. Run cost scenarios before making decisions so you can course-correct while you still have options.",
           "image": "kitsu-budget.png",
           "shadow": true,
@@ -1351,15 +1351,15 @@
       "image": "review-engine.png",
       "shadow": true,
       "header": {
-        "tagline": "Ship approved work faster",
-        "subtitle": "Review Engine",
+        "subtitle": "Ship approved work faster",
+        "tagline": "Review Engine",
         "explanation": "Feedback cycles are where projects stall. Kitsu centralizes your review process so teams and clients can give precise, contextual feedback on every submission, without losing track of versions, decisions, or history. Less back-and-forth. Fewer missed notes. Faster sign-offs.",
         "quote": "tetsuo-1"
       },
       "features": [
         {
           "title": "Review consecutive shots",
-          "subtitle": "Stop reviewing shots one email at a time",
+          "subtitle": "Playlist system",
           "content": "Build review playlists and move through all shots in one continuous session. Add comments and annotations without leaving the player. Share playlists directly with clients or run them with your team in real time.",
           "image": "kitsu-playlists.png",
           "shadow": true,
@@ -1367,8 +1367,8 @@
           "gradient": 1
         },
         {
-          "title": "Compare any version",
-          "subtitle": "Catch what changed between versions",
+          "subtitle": "Preview comparison",
+          "title": "Catch what changed between versions",
           "content": "Place any two versions side by side or stack them as an overlay. Spot regressions, confirm fixes, and validate revisions without hunting through separate files.",
           "image": "kitsu-compare.png",
           "shadow": true,
@@ -1376,7 +1376,7 @@
         },
         {
           "title": "Perform team reviews",
-          "subtitle": "Align feedback",
+          "subtitle": "Live online review room",
           "content": "Run synchronized review sessions so every participant watches the same frame at the same time. No more conflicting notes from people who reviewed different cuts.",
           "image": "kitsu-room.png",
           "shadow": true,
@@ -1384,7 +1384,7 @@
           "gradient": 2
         },
         {
-          "title": "Share review playlists instantly",
+          "title": "Sharing links",
           "subtitle": "Give clients access without the back-and-forth",
           "content": "Generate a shareable link for any review playlist and send it to clients, supervisors, or external stakeholders. Everyone reviews the same sequence, with feedback, versions, and approvals kept in one place.",
           "image": "kitsu-playlists-share.png",
@@ -1392,7 +1392,7 @@
           "reverted": true
         },
         {
-          "title": "Annotate directly on frames",
+          "title": "Frame annotation",
           "subtitle": "Set precise directions",
           "content": "Draw, highlight, and write directly on any frame. Annotations are pinned to the specific version and visible to the whole team, so nothing gets lost in translation.",
           "image": "kitsu-annotations.png",
