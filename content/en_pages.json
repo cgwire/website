@@ -1167,7 +1167,7 @@
           "gradient": 1
         },
         {
-          "title": "Assets linking",
+          "title": "Asset linking",
           "subtitle": "Automatically track what goes with what",
           "content": "Connect assets to define how they relate: populate sets, attach props to characters, or model any dependency that fits your workflow.",
           "image": "kitsu-asset-links.png",
@@ -1192,8 +1192,8 @@
           "reverted": true
         },
         {
-          "title": "Assets library",
-          "subtitle": "Optimise your asset creations",
+          "title": "Asset library",
+          "subtitle": "Optimize asset creation",
           "content": "Pull from a shared library to keep teams from recreating assets that already exist and have been validated. Everyone references the same source of truth.",
           "image": "kitsu-library.png",
           "shadow": true,
