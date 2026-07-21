@@ -1154,7 +1154,8 @@
       "header": {
         "subtitle": "Know which shots are ready to build",
         "tagline": "Casting Management",
-        "explanation": "Chasing down casting information across spreadsheets and emails slows your whole pipeline. Kitsu gives every shot a structured breakdown so your scene builders always know exactly what's ready, what's missing, and what to do next."
+        "explanation": "Chasing down casting information across spreadsheets and emails slows your whole pipeline. Kitsu gives every shot a structured breakdown so your scene builders always know exactly what's ready, what's missing, and what to do next.",
+        "quote": "normaal-3"
       },
       "features": [
         {
@@ -1279,7 +1280,8 @@
       "header": {
         "tagline": "Production Tracker",
         "subtitle": "Deliver on time and on budget",
-        "explanation": "Most production issues are visible before they become critical. Kitsu gives you the scheduling, time tracking, quota monitoring, and budget forecasting tools to catch them early. Get a clear picture of your production at every level, and walk into every stakeholder meeting with accurate data."
+        "explanation": "Most production issues are visible before they become critical. Kitsu gives you the scheduling, time tracking, quota monitoring, and budget forecasting tools to catch them early. Get a clear picture of your production at every level, and walk into every stakeholder meeting with accurate data.",
+        "quote": "woodblock"
       },
       "features": [
         {
@@ -1351,7 +1353,8 @@
       "header": {
         "tagline": "Ship approved work faster",
         "subtitle": "Review Engine",
-        "explanation": "Feedback cycles are where projects stall. Kitsu centralizes your review process so teams and clients can give precise, contextual feedback on every submission, without losing track of versions, decisions, or history. Less back-and-forth. Fewer missed notes. Faster sign-offs."
+        "explanation": "Feedback cycles are where projects stall. Kitsu centralizes your review process so teams and clients can give precise, contextual feedback on every submission, without losing track of versions, decisions, or history. Less back-and-forth. Fewer missed notes. Faster sign-offs.",
+        "quote": "tetsuo-1"
       },
       "features": [
         {
@@ -1546,7 +1549,8 @@
       "header": {
         "tagline": "Team Collaboration",
         "subtitle": "Avoid coordination failures",
-        "explanation": "Miscommunication between artists, supervisors, and directors is a common cause of rework and missed deadlines. Kitsu centralizes tasks, previews, and feedback in a single workflow so every stakeholder knows what is happening. From single-site studios to distributed teams, everyone works from the same source of truth."
+        "explanation": "Miscommunication between artists, supervisors, and directors is a common cause of rework and missed deadlines. Kitsu centralizes tasks, previews, and feedback in a single workflow so every stakeholder knows what is happening. From single-site studios to distributed teams, everyone works from the same source of truth.",
+        "quote": "remembers-6"
       },
       "features": [
         {
@@ -3613,7 +3617,7 @@
       "studio": "FOST Studio",
       "interviewee": "Céline Durieux",
       "role": "Head of Studio",
-      "image": "/images/photo-customer-story-fost.png",
+      "image": "/images/testimonials/celine.png",
       "quote": "With Kitsu, people think first about the time saved but what matters more to me is the serenity you get by having everything in order. It gave you more space in your brain to focus on other elements of your production."
     },
     "fost-2": {
@@ -3669,77 +3673,77 @@
       "studio": "Makuta VFX",
       "interviewee": "Pete Draper",
       "role": "Head of VFX",
-      "image": "/images/photo-customer-story-makuta.png",
+      "image": "/images/testimonials/pete.png",
       "quote": "Kitsu has pretty much unified everything and is forcing neater communication not only between artists but from production, management, and clients."
     },
     "ryff": {
       "studio": "Ryff",
       "interviewee": "Pete Draper",
       "role": "VFX Supervisor",
-      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "image": "/images/testimonials/pete.png",
       "quote": "Kitsu was straightforward. It was simple. You didn't need a degree in computer science like you do with alternatives."
     },
     "ryff-2": {
       "studio": "Ryff",
       "interviewee": "Pete Draper",
       "role": "VFX Supervisor",
-      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "image": "/images/testimonials/pete.png",
       "quote": "Kitsu is straightforward. It's simple. Not just for the production guys, but also for the artists as well. You don't need a degree in computer science to use it."
     },
     "ryff-3": {
       "studio": "Ryff",
       "interviewee": "Pete Draper",
       "role": "VFX Supervisor",
-      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "image": "/images/testimonials/pete.png",
       "quote": "A production tracker only works if everyone uses it, and that means it has to be approachable for artists, not just supervisors. Kitsu passed that test from day one."
     },
     "remembers": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "Production Director",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "I knew that if I brought in a new tool, I needed to address a need that hadn't been identified by the core team already in place. The main challenge right away was not to constrain them."
     },
     "remembers-2": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "Production Director",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "Kitsu is something that's very, very easy to pick up. You can click anywhere, you see the film's images, you see all the departments and sequences that might relate to your own."
     },
     "remembers-3": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "Production Director",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "It's also enjoyable and motivating to browse around in Kitsu. It's not 'oh no, I have to post my latest version.'"
     },
     "remembers-4": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "Production Director",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "You can understand that between Kitsu and using a spreadsheet, we've already made an enormous step forward as a studio. And it's not just about productivity, it's more enjoyable too."
     },
     "remembers-5": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "Production Director",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "The trial demo reassured me greatly. We were obviously looking for something very intuitive, because since I was addressing people who weren't asking for tools, they needed to be able to pick it up and get on board very naturally."
     },
     "remembers-6": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "Production Director",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "Kitsu makes cross-department communication quick and easy. Even just small edits, things that slipped through because the shots had already been approved."
     },
     "remembers-7": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "Production Director",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "All the valuable data for production tracking already exists in Kitsu."
     },
     "cube-1": {

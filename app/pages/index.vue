@@ -338,7 +338,7 @@
       </h2>
       <div class="testimonials-grid">
         <div
-          v-for="testimonial in testimonials.slice(0, 5)"
+          v-for="testimonial in homeTestimonials.slice(0, 5)"
           :key="testimonial.stem"
           class="testimonial-item"
         >
@@ -578,6 +578,18 @@ const { data: testimonials } = await useAsyncData(
   queryTestimonials,
   { watch: [locale] }
 )
+
+// One quote per studio so the homepage stays varied: the collection is ordered
+// by stem, so without this a studio with many quotes (cube-1..5) would fill the
+// whole row.
+const homeTestimonials = computed(() => {
+  const seen = new Set()
+  return (testimonials.value || []).filter(t => {
+    if (seen.has(t.meta.studio)) return false
+    seen.add(t.meta.studio)
+    return true
+  })
+})
 </script>
 
 <style lang="stylus" scoped>

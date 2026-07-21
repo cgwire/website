@@ -1,6 +1,10 @@
 <template>
   <div v-if="page" :class="`kitsu-page ${pageKey}`">
-    <SolutionHeaderBlock :page-key="page.slug" :header="page.meta.header" />
+    <SolutionHeaderBlock
+      :page-key="page.slug"
+      :header="page.meta.header"
+      :quote="headerQuote"
+    />
 
     <FeatureBlock
       v-for="(feature, index) in page.meta.features"
@@ -45,6 +49,15 @@ if (!page.value) {
 
 const pageKey = page.value.slug
 const customerStory = page.value.meta.customerStory
+
+// Optional testimonial featured in the header, referenced by slug (header.quote).
+const quoteSlug = computed(() => page.value?.meta?.header?.quote || null)
+const { queryTestimonial } = useTestimonial(quoteSlug, locale)
+const { data: headerQuote } = await useAsyncData(
+  () => `feature-quote-${locale.value}-${slug.value}`,
+  () => (quoteSlug.value ? queryTestimonial() : null),
+  { watch: [locale, slug] }
+)
 
 // Pages selling the managed service and the human relationship close on a
 // contact CTA rather than the signup form.

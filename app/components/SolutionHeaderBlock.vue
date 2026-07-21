@@ -13,6 +13,22 @@
         <p>
           {{ header.explanation }}
         </p>
+        <figure v-if="quote" class="header-quote">
+          <blockquote class="header-quote-text">
+            {{ quote.meta.quote }}
+          </blockquote>
+          <figcaption class="header-quote-author">
+            <NuxtImg
+              :src="quote.meta.image"
+              :alt="quote.meta.interviewee"
+              format="webp"
+            />
+            <span>
+              <strong>{{ quote.meta.interviewee }}</strong>
+              {{ quote.meta.role }} at {{ quote.meta.studio }}
+            </span>
+          </figcaption>
+        </figure>
         <ul v-if="header.stats" class="header-stats">
           <li v-for="s in header.stats" :key="s.label">
             <span class="stat-value">{{ s.value }}</span>
@@ -47,7 +63,8 @@ const props = defineProps({
   header: Object,
   imagePath: String,
   isVideo: Boolean,
-  pageKey: String
+  pageKey: String,
+  quote: Object
 })
 
 function useAsset(path) {
@@ -113,4 +130,49 @@ ul.header-stats
   .stat-label
     font-size 0.85rem
     color mediumgrey
+
+// Featured testimonial in the header. A green accent bar echoes the brand
+// without competing with the tagline. The avatar rule below has to out-specify
+// the component's global `:deep(img) { width 100% }` used for the illustration.
+.header-quote
+  margin 2.2rem 0 0
+  padding 0.1rem 0 0.1rem 1.3rem
+  border-left 3px solid cgwiregreen
+  max-width 32rem
+
+  // Neutralise Bulma's .content blockquote box (whitesmoke bg + grey border)
+  // so only the figure's green accent bar remains.
+  .header-quote-text
+    margin 0
+    padding 0
+    background transparent
+    border-left 0
+    text-align left
+    font-size 1.05rem
+    line-height 1.55
+    font-style italic
+    color darkgrey
+
+  .header-quote-author
+    display flex
+    align-items center
+    justify-content flex-start
+    gap 0.7rem
+    margin-top 1rem
+    text-align left
+    font-size 0.85rem
+    line-height 1.35
+    color mediumgrey
+
+    strong
+      display block
+      color darkgrey
+      font-weight 700
+      font-style normal
+
+    :deep(img)
+      width 44px
+      height 44px
+      border-radius 50%
+      flex 0 0 auto
 </style>

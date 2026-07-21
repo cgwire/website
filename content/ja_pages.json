@@ -1154,7 +1154,8 @@
       "header": {
         "tagline": "キャスティング管理",
         "subtitle": "どのショットが制作準備完了かを把握する",
-        "explanation": "スプレッドシートやメールでキャスティング情報を追いかけることで、パイプライン全体が遅くなります。Kitsuはすべてのショットに構造化されたブレイクダウンを提供し、シーンビルダーが何が準備できているか、何が足りないか、次に何をすべきかを常に正確に把握できるようにします。"
+        "explanation": "スプレッドシートやメールでキャスティング情報を追いかけることで、パイプライン全体が遅くなります。Kitsuはすべてのショットに構造化されたブレイクダウンを提供し、シーンビルダーが何が準備できているか、何が足りないか、次に何をすべきかを常に正確に把握できるようにします。",
+        "quote": "normaal-3"
       },
       "features": [
         {
@@ -1279,7 +1280,8 @@
       "header": {
         "tagline": "プロダクショントラッカー",
         "subtitle": "期限通り、予算通りに納品する",
-        "explanation": "ほとんどのプロダクション問題は重大になる前に見えています。Kitsuはスケジューリング、時間追跡、クォータ監視、予算予測ツールを提供し、早期に問題を検出できるようにします。あらゆるレベルでプロダクションの全体像を把握し、正確なデータで全てのステークホルダーミーティングに臨みましょう。"
+        "explanation": "ほとんどのプロダクション問題は重大になる前に見えています。Kitsuはスケジューリング、時間追跡、クォータ監視、予算予測ツールを提供し、早期に問題を検出できるようにします。あらゆるレベルでプロダクションの全体像を把握し、正確なデータで全てのステークホルダーミーティングに臨みましょう。",
+        "quote": "woodblock"
       },
       "features": [
         {
@@ -1356,7 +1358,8 @@
       "header": {
         "tagline": "承認された作業をより速く納品する",
         "subtitle": "レビューエンジン",
-        "explanation": "フィードバックサイクルはプロジェクトが停滞する場所です。Kitsuはレビュープロセスを集中管理し、チームとクライアントがバージョン、決定、履歴を見失うことなく、すべての提出物に正確でコンテキストのあるフィードバックを与えられるようにします。やり取りを減らし、見落としのノートを減らし、承認を速めます。"
+        "explanation": "フィードバックサイクルはプロジェクトが停滞する場所です。Kitsuはレビュープロセスを集中管理し、チームとクライアントがバージョン、決定、履歴を見失うことなく、すべての提出物に正確でコンテキストのあるフィードバックを与えられるようにします。やり取りを減らし、見落としのノートを減らし、承認を速めます。",
+        "quote": "tetsuo-1"
       },
       "features": [
         {
@@ -1550,7 +1553,8 @@
       "header": {
         "tagline": "チームコラボレーション",
         "subtitle": "調整の失敗を回避する",
-        "explanation": "アーティスト、スーパーバイザー、ディレクター間のコミュニケーション不足は、手戻りや締め切りの見逃しのよくある原因です。Kitsuはタスク、プレビュー、フィードバックを単一のワークフローに集中管理し、すべてのステークホルダーが何が起こっているかを把握できるようにします。単一サイトのスタジオから分散チームまで、全員が同じ信頼できる情報源から作業します。"
+        "explanation": "アーティスト、スーパーバイザー、ディレクター間のコミュニケーション不足は、手戻りや締め切りの見逃しのよくある原因です。Kitsuはタスク、プレビュー、フィードバックを単一のワークフローに集中管理し、すべてのステークホルダーが何が起こっているかを把握できるようにします。単一サイトのスタジオから分散チームまで、全員が同じ信頼できる情報源から作業します。",
+        "quote": "remembers-6"
       },
       "features": [
         {
@@ -3552,7 +3556,7 @@
       "studio": "FOST Studio",
       "interviewee": "Céline Durieux",
       "role": "スタジオヘッド",
-      "image": "/images/photo-customer-story-fost.png",
+      "image": "/images/testimonials/celine.png",
       "quote": "Kitsuを使うと、まず時間の節約を思い浮かべますが、私にとってより重要なのは、すべてが整理されることで得られる安心感です。制作の他の要素に集中するための心の余裕が生まれます。"
     },
     "fost-2": {
@@ -3608,77 +3612,77 @@
       "studio": "Makuta VFX",
       "interviewee": "Pete Draper",
       "role": "VFXヘッド",
-      "image": "/images/photo-customer-story-makuta.png",
+      "image": "/images/testimonials/pete.png",
       "quote": "Kitsuはほぼすべてを統合し、アーティスト間だけでなく、制作・管理・クライアントとのコミュニケーションもよりスムーズにしています。"
     },
     "ryff": {
       "studio": "Ryff",
       "interviewee": "Pete Draper",
       "role": "VFXスーパーバイザー",
-      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "image": "/images/testimonials/pete.png",
       "quote": "Kitsuはわかりやすくシンプルでした。他のツールのようにコンピューターサイエンスの学位は必要ありません。"
     },
     "ryff-2": {
       "studio": "Ryff",
       "interviewee": "Pete Draper",
       "role": "VFXスーパーバイザー",
-      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "image": "/images/testimonials/pete.png",
       "quote": "Kitsuは分かりやすく、シンプルです。制作チームだけでなく、アーティストにとっても同じです。使うのにコンピューターサイエンスの学位は必要ありません。"
     },
     "ryff-3": {
       "studio": "Ryff",
       "interviewee": "Pete Draper",
       "role": "VFXスーパーバイザー",
-      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "image": "/images/testimonials/pete.png",
       "quote": "制作トラッキングツールは全員が使ってこそ機能します。つまり、スーパーバイザーだけでなくアーティストにとっても親しみやすくなければなりません。Kitsuは初日からそのテストに合格しました。"
     },
     "remembers": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "プロダクションディレクター",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "新しいツールを導入するなら、既存のチームがまだ気づいていないニーズに応えるものでなければならないと分かっていました。最初の課題は、チームを制約しないことでした。"
     },
     "remembers-2": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "プロダクションディレクター",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "Kitsuはとても、とても簡単に使い始められます。どこでもクリックでき、作品の画像が見え、自分に関係しそうなすべての部門やシーケンスが見えます。"
     },
     "remembers-3": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "プロダクションディレクター",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "Kitsuの中を見て回るのは楽しく、やる気も出ます。「ああ、最新版をアップしなきゃ」という感じではありません。"
     },
     "remembers-4": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "プロダクションディレクター",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "Kitsuとスプレッドシートを比べれば、スタジオとしてすでに大きな一歩を踏み出したことが分かるはずです。しかも生産性だけの話ではなく、より楽しくもあります。"
     },
     "remembers-5": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "プロダクションディレクター",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "トライアルのデモには大いに安心させられました。私たちが求めていたのは当然ながらとても直感的なものでした。ツールを求めていなかった人たちに向き合っていたので、彼らがごく自然に使い始めて溶け込める必要があったからです。"
     },
     "remembers-6": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "プロダクションディレクター",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "Kitsuは部門間のコミュニケーションを素早く簡単にします。ショットがすでに承認済みだったために見落とされていた、ちょっとした修正でさえもです。"
     },
     "remembers-7": {
-      "studio": "Remembers",
+      "studio": "Remembers (Arco)",
       "interviewee": "Audrey Tondre",
       "role": "プロダクションディレクター",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/testimonials/audrey.png",
       "quote": "制作トラッキングに役立つデータは、すべてすでにKitsuの中にあります。"
     },
     "cube-1": {
