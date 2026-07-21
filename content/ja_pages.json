@@ -1285,17 +1285,15 @@
       },
       "features": [
         {
-          "key": "report",
           "title": "プロダクションの現状を把握する",
           "subtitle": "データの360度ビュー",
           "content": "すべてのプロジェクトにわたって、ハイレベルなサマリーからタスクレベルの詳細まで、正確な進捗統計を取得します。組み込みのエクスポートツールを使用して、Kitsuから直接クライアントやプロデューサーとレポートを共有します。",
           "image": "kitsu-report.png",
-          "gradient": 1,
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "gradient": 1
         },
         {
-          "key": "schedule",
           "title": "作業をスケジュールする",
           "subtitle": "競合の検出",
           "content": "プロジェクト期間を定義し、マイルストーンを設定し、チーム全体に作業がどのように分散しているかを確認します。過負荷とギャップを早期に発見して、プロダクションを遅らせる前に調整できます。",
@@ -1304,7 +1302,6 @@
           "reverted": true
         },
         {
-          "key": "quotas",
           "title": "期待値を設定する",
           "subtitle": "生産性の追跡",
           "content": "アーティストの日次または週次の出力目標を設定し、それに対する進捗を追跡します。誰がブロックされていて誰が先行しているかを特定して、報告するだけでなく対処できるようにします。",
@@ -1319,8 +1316,7 @@
           "content": "プロジェクトに割り当てられた部門内のすべてのアーティストのスケジュールを確認できます。誰に余裕があるのか、誰に負荷が集中しているのか、作業がチーム内でどのように分配されているのかを把握できます。確信を持って人員配置を決定し、予期せぬ問題を防ぎながら制作を円滑に進めましょう。",
           "image": "kitsu-team-schedule.png",
           "shadow": true,
-          "reverted": true,
-          "gradient": 2
+          "reverted": true
         },
         {
           "title": "費やした時間とコストを追跡する",
@@ -1337,8 +1333,7 @@
           "content": "プロダクションのあらゆる時点で現在の支出を予算と比較します。意思決定前にコストシナリオを実行して、まだ選択肢がある間に軌道修正できるようにします。",
           "image": "kitsu-budget.png",
           "shadow": true,
-          "reverted": true,
-          "gradient": 3
+          "reverted": true
         }
       ],
       "customerStory": {
@@ -1367,13 +1362,13 @@
           "subtitle": "プレイリスト機能",
           "content": "レビュープレイリストを作成して、すべてのショットを1つの継続したセッションで進めます。プレーヤーから離れることなくコメントとアノテーションを追加します。プレイリストをクライアントと直接共有するか、チームとリアルタイムで実行します。",
           "image": "kitsu-playlists.png",
-          "gradient": 1,
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "gradient": 1
         },
         {
-          "title": "バージョン間で何が変わったかを捉える",
           "subtitle": "プレビュー比較",
+          "title": "バージョン間で何が変わったかを捉える",
           "content": "2つのバージョンを並べて配置するか、オーバーレイとして重ねます。別々のファイルを探し回ることなく、リグレッションを見つけ、修正を確認し、リビジョンを検証します。",
           "image": "kitsu-compare.png",
           "shadow": true,
@@ -1401,14 +1396,15 @@
           "subtitle": "正確な指示を与える",
           "content": "任意のフレームに直接描画、ハイライト、書き込みを行います。アノテーションは特定のバージョンに固定され、チーム全体に表示されるため、何も伝達に失われることはありません。",
           "image": "kitsu-annotations.png",
-          "colored": true
+          "shadow": true,
+          "colored": true,
+          "gradient": 3
         },
         {
           "title": "完全なバージョン履歴",
           "subtitle": "何が納品されたかを記録する",
           "content": "提出されたすべてのプレビューが保存されてアクセス可能です。任意の以前のバージョンを再訪して、ショットがどのように進化したかを追跡し、論争を解決し、以前のフィードバックが対処されたことを確認します。",
           "image": "kitsu-versions.png",
-          "gradient": 3,
           "reverted": true
         }
       ],
@@ -1600,9 +1596,9 @@
           "subtitle": "関連する更新を目立たせる",
           "content": "Kitsuのアクティビティをチームがすでに監視しているチャンネルにルーティングします。コメント、ステータス変更、新しいプレビューがSlackまたはDiscordに直接表示されるため、適切な人が別のプラットフォームをチェックすることなく対応できます。",
           "image": "kitsu-slack.png",
+          "shadow": true,
           "colored": true,
-          "gradient": 3,
-          "reverted": true
+          "gradient": 3
         }
       ],
       "customerStory": {

@@ -1285,17 +1285,15 @@
       },
       "features": [
         {
-          "key": "report",
           "title": "Sachez où en est votre production",
           "subtitle": "Vue à 360° de vos données",
           "content": "Obtenez des statistiques de progression précises sur tous vos projets, des résumés de haut niveau aux détails au niveau des tâches. Partagez des rapports avec les clients ou les producteurs directement depuis Kitsu grâce aux outils d'exportation intégrés.",
           "image": "kitsu-report.png",
-          "gradient": 1,
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "gradient": 1
         },
         {
-          "key": "schedule",
           "title": "Planifiez votre travail",
           "subtitle": "Détection des conflits",
           "content": "Définissez les durées des projets, fixez des jalons et voyez comment le travail est réparti dans votre équipe. Repérez les surcharges et les lacunes tôt pour pouvoir ajuster avant qu'elles ne ralentissent la production.",
@@ -1304,7 +1302,6 @@
           "reverted": true
         },
         {
-          "key": "quotas",
           "title": "Définissez vos attentes",
           "subtitle": "Suivi de la productivité",
           "content": "Fixez des objectifs de production quotidiens ou hebdomadaires pour vos artistes et suivez les progrès. Identifiez qui est bloqué et qui est en avance pour pouvoir agir, pas seulement rendre compte.",
@@ -1319,8 +1316,7 @@
           "content": "Consultez le planning complet de chaque artiste de votre département affecté à votre projet. Identifiez les disponibilités, les surcharges de travail et la répartition des tâches au sein de l’équipe. Prenez vos décisions de staffing en toute confiance et maintenez la production sur les rails, sans mauvaises surprises.",
           "image": "kitsu-team-schedule.png",
           "shadow": true,
-          "reverted": true,
-          "gradient": 2
+          "reverted": true
         },
         {
           "title": "Suivez le temps passé et les coûts",
@@ -1337,8 +1333,7 @@
           "content": "Comparez les dépenses actuelles à votre budget à tout moment de la production. Effectuez des scénarios de coûts avant de prendre des décisions pour pouvoir corriger le tir tant que vous avez encore des options.",
           "image": "kitsu-budget.png",
           "shadow": true,
-          "reverted": true,
-          "gradient": 3
+          "reverted": true
         }
       ],
       "customerStory": {
@@ -1367,13 +1362,13 @@
           "subtitle": "Système de playlists",
           "content": "Créez des playlists de révision et parcourez tous les plans en une session continue. Ajoutez des commentaires et des annotations sans quitter le lecteur. Partagez les playlists directement avec les clients ou exécutez-les avec votre équipe en temps réel.",
           "image": "kitsu-playlists.png",
-          "gradient": 1,
           "shadow": true,
-          "colored": true
+          "colored": true,
+          "gradient": 1
         },
         {
-          "title": "Détectez ce qui a changé entre les versions",
           "subtitle": "Comparaison de previews",
+          "title": "Détectez ce qui a changé entre les versions",
           "content": "Placez deux versions côte à côte ou superposez-les en surimpression. Repérez les régressions, confirmez les corrections et validez les révisions sans chercher dans des fichiers séparés.",
           "image": "kitsu-compare.png",
           "shadow": true,
@@ -1401,14 +1396,15 @@
           "subtitle": "Donnez des directions précises",
           "content": "Dessinez, surlignez et écrivez directement sur n'importe quelle image. Les annotations sont épinglées à la version spécifique et visibles par toute l'équipe, afin que rien ne se perde dans la traduction.",
           "image": "kitsu-annotations.png",
-          "colored": true
+          "shadow": true,
+          "colored": true,
+          "gradient": 3
         },
         {
           "title": "Historique complet des versions",
           "subtitle": "Gardez la trace de ce qui a été livré",
           "content": "Chaque aperçu soumis est stocké et accessible. Revisitez n'importe quelle version antérieure pour suivre l'évolution d'un plan, résoudre des litiges et confirmer que les retours précédents ont été pris en compte.",
           "image": "kitsu-versions.png",
-          "gradient": 3,
           "reverted": true
         }
       ],
@@ -1593,17 +1589,16 @@
           "content": "Le fil d'actualité fait remonter chaque commentaire, changement de statut et nouvel aperçu à travers la production en temps réel. Les superviseurs et les producteurs repèrent les problèmes tôt, avant qu'ils ne s'aggravent. Rien ne passe à travers les mailles car quelqu'un a manqué un message.",
           "image": "kitsu-news.png",
           "shadow": true,
-          "reverted": true,
-          "gradient": true
+          "reverted": true
         },
         {
           "title": "Notifications Slack et Discord",
           "subtitle": "Faites ressortir les mises à jour pertinentes",
           "content": "Redirigez l'activité Kitsu vers les canaux que votre équipe surveille déjà. Les commentaires, changements de statut et nouveaux aperçus apparaissent directement dans Slack ou Discord pour que les bonnes personnes répondent sans avoir à consulter une plateforme séparée.",
           "image": "kitsu-slack.png",
+          "shadow": true,
           "colored": true,
-          "gradient": 3,
-          "reverted": true
+          "gradient": 3
         }
       ],
       "customerStory": {
