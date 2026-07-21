@@ -1548,7 +1548,7 @@
       "shadow": true,
       "header": {
         "tagline": "Team Collaboration",
-        "subtitle": "Avoid coordination failures",
+        "subtitle": "Keep everyone in sync",
         "explanation": "Miscommunication between artists, supervisors, and directors is a common cause of rework and missed deadlines. Kitsu centralizes tasks, previews, and feedback in a single workflow so every stakeholder knows what is happening. From single-site studios to distributed teams, everyone works from the same source of truth.",
         "quote": "remembers-6"
       },
@@ -1576,7 +1576,7 @@
           "key": "supervision",
           "subtitle": "Daily Supervision Tasks",
           "title": "Give supervisors a clear overview",
-          "content": "Supervisors can instantly access a department-wide view of production through the Daily Supervision Tasks page. From any page in Kitsu, simply click on a task type name to see an overview of all related tasks across your department. This makes it easy to monitor progress and keep work moving without manually collecting updates from artists.",
+          "content": "Supervisors can instantly access a department-wide view of production through the Daily Supervision Tasks page. This makes it easy to monitor progress and keep work moving without manually collecting updates from artists.",
           "image": "kitsu-supervision.png",
           "shadow": true,
           "colored": true,
@@ -3737,7 +3737,7 @@
       "interviewee": "Audrey Tondre",
       "role": "Production Director",
       "image": "/images/testimonials/audrey.png",
-      "quote": "Kitsu makes cross-department communication quick and easy. Even just small edits, things that slipped through because the shots had already been approved."
+      "quote": "Kitsu makes cross-department communication quick and easy."
     },
     "remembers-7": {
       "studio": "Remembers (Arco)",

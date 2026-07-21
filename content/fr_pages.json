@@ -1548,7 +1548,7 @@
       "shadow": true,
       "header": {
         "tagline": "Collaboration d'équipe",
-        "subtitle": "Évitez les échecs de coordination",
+        "subtitle": "Gardez toute l'équipe synchronisée",
         "explanation": "La mauvaise communication entre artistes, superviseurs et réalisateurs est une cause fréquente de reprises de travail et de délais manqués. Kitsu centralise les tâches, les aperçus et les retours dans un flux de travail unique pour que chaque partie prenante sache ce qui se passe. Des studios sur site unique aux équipes distribuées, tout le monde travaille à partir de la même source de vérité.",
         "quote": "remembers-6"
       },
@@ -1576,7 +1576,7 @@
           "key": "supervision",
           "subtitle": "Tâches quotidiennes de supervision",
           "title": "Donnez à vos superviseurs une vue d'ensemble claire",
-          "content": "Les superviseurs peuvent accéder instantanément à une vue globale de la production à l’échelle du département grâce à la page des tâches quotidiennes de supervision. Depuis n’importe quelle page de Kitsu, il suffit de cliquer sur le nom d’un type de tâche pour afficher un aperçu de toutes les tâches associées dans votre département. Cela facilite le suivi de l’avancement et le maintien du flux de production sans avoir à collecter manuellement les mises à jour auprès des artistes.",
+          "content": "Les superviseurs peuvent accéder instantanément à une vue globale de la production à l’échelle du département grâce à la page des tâches quotidiennes de supervision. Cela facilite le suivi de l’avancement et le maintien du flux de production sans avoir à collecter manuellement les mises à jour auprès des artistes.",
           "image": "kitsu-supervision.png",
           "shadow": true,
           "colored": true,
@@ -3696,7 +3696,7 @@
       "interviewee": "Audrey Tondre",
       "role": "Directrice de Production",
       "image": "/images/testimonials/audrey.png",
-      "quote": "Kitsu rend la communication entre départements rapide et facile. Même pour de petites retouches, des choses passées entre les mailles parce que les plans avaient déjà été validés."
+      "quote": "Kitsu rend la communication entre départements rapide et facile."
     },
     "remembers-7": {
       "studio": "Remembers (Arco)",
