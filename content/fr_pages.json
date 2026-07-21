@@ -3,114 +3,112 @@
     "metrics": {
       "title": "Métriques ouvertes",
       "slug": "metrics",
-      "metrics": {
-        "seo": {
-          "title": "CGWire | Métriques ouvertes",
-          "description": "Les métriques principales de CGWire : revenus, clients, financement et plus."
+      "seo": {
+        "title": "CGWire | Métriques ouvertes",
+        "description": "Les métriques principales de CGWire : revenus, clients, financement et plus."
+      },
+      "hero": {
+        "eyebrow": "Métriques et données",
+        "title": "Nos chiffres, en toute transparence",
+        "lead": "Nous faisons partie du mouvement Open Company car nous considélons que la transparence renforce la confiance avec nos clients, notre équipe et notre communauté. Cette page partage donc les principales métriques de notre entreprise, principalement sur le plan comptable.",
+        "cta": "En savoir plus sur nous",
+        "lastUpdate": "Dernière mise à jour : {date}"
+      },
+      "updates": {
+        "title": "Nos dernières actualités",
+        "badge": "Rapport trimestriel",
+        "link": "Lire l'article →",
+        "item1": {
+          "title": "Build in public : juin 2026",
+          "url": "https://blog.cg-wire.com/build-in-public-june-2026-update/"
         },
-        "hero": {
-          "eyebrow": "Métriques et données",
-          "title": "Nos chiffres, en toute transparence",
-          "lead": "Nous faisons partie du mouvement Open Company car nous considélons que la transparence renforce la confiance avec nos clients, notre équipe et notre communauté. Cette page partage donc les principales métriques de notre entreprise, principalement sur le plan comptable.",
-          "cta": "En savoir plus sur nous",
-          "lastUpdate": "Dernière mise à jour : {date}"
-        },
-        "updates": {
-          "title": "Nos dernières actualités",
-          "badge": "Rapport trimestriel",
-          "link": "Lire l'article →",
-          "item1": {
-            "title": "Build in public : juin 2026",
-            "url": "https://blog.cg-wire.com/build-in-public-june-2026-update/"
-          },
-          "item2": {
-            "title": "Build in public : mars 2026",
-            "url": "https://blog.cg-wire.com/build-in-public-march-2026"
-          }
-        },
-        "revenue": {
-          "title": "Nos revenus, ce que nous facturons",
-          "text": "L'argent que nous avons facturé, hors taxes."
-        },
-        "period": {
-          "monthly": "Mensuel",
-          "quarterly": "Trimestriel",
-          "yearly": "Annuel"
-        },
-        "mrr": {
-          "title": "Nos revenus mensuels récurrents",
-          "text": "Nous vendons principalement des abonnements annuels. Ce graphique les répartit sur 12 mois pour montrer les revenus récurrents sur lesquels nous pouvons compter chaque mois, quel que soit le moment où un abonnement commence."
-        },
-        "customers": {
-          "title": "Combien utilisent Kitsu",
-          "activeTitle": "Clients actifs",
-          "activeText": "Les studios avec un abonnement en cours. Les utilisateurs open source ne sont pas comptés ici.",
-          "selfhostedTitle": "Installations auto-hébergées actives",
-          "selfhostedText": "Les équipes qui font tourner Kitsu sur leurs propres serveurs, indépendamment de notre offre cloud."
-        },
-        "team": {
-          "eyebrow": "L'équipe",
-          "title": "Nos salaires",
-          "text": "Nous versons des salaires au niveau du marché, exprimés en « net » français avant impôts. Le temps partiel est le bienvenu : la fraction à côté d'un poste indique la part d'une semaine complète qu'il couvre.",
-          "count": "personnes dans l'équipe",
-          "salaryHead": "Salaire net mensuel",
-          "partTime": "{fraction} temps"
-        },
-        "captable": {
-          "title": "La répartition du capital entre les actionnaires"
-        },
-        "cashflow": {
-          "title": "Notre trésorerie",
-          "toggleFlow": "Flux de trésorerie",
-          "toggleBank": "Argent en banque",
-          "incoming": "Entrées",
-          "outgoing": "Sorties"
-        },
-        "tools": {
-          "title": "Nos outils",
-          "text": "Les produits et services que nous utilisons."
-        },
-        "servers": {
-          "eyebrow": "Infrastructure",
-          "title": "Nos serveurs",
-          "text": "Tout tourne sur le cloud public OVH, facturé mensuellement et dimensionné selon notre usage. Les équipes qui s'auto-hébergent utilisent leurs propres serveurs, hors de cette facture.",
-          "cta": "Découvrir notre infrastructure",
-          "billLabel": "Le mois dernier · infrastructure",
-          "perMonth": "/mois",
-          "provider": "Fournisseur",
-          "scale": "Échelle"
-        },
-        "funding": {
-          "title": "Notre structure de financement",
-          "seeAll": "Voir tout",
-          "showLess": "Voir moins"
-        },
-        "why": {
-          "title": "Pourquoi nous partageons nos chiffres",
-          "item1": {
-            "title": "Pour rester fidèles à notre mission",
-            "text": "Partager nos chiffres nous oblige à rester honnêtes sur les décisions que nous prenons et l'entreprise que nous voulons construire."
-          },
-          "item2": {
-            "title": "Pour nous challenger",
-            "text": "Des métriques publiques sont une forte incitation à progresser et à nous responsabiliser."
-          },
-          "item3": {
-            "title": "Pour montrer que c'est possible",
-            "text": "Une petite entreprise de logiciels autofinancée peut être pérenne et transparente sur son fonctionnement."
-          }
-        },
-        "carbon": {
-          "title": "Découvrez notre bilan carbone 2024",
-          "text": "La transparence ne concerne pas que l'argent. Nous mesurons et partageons aussi l'empreinte environnementale de notre activité. Le rapport 2024 détaille nos principaux postes d'émission, nos marges de progrès et les actions concrètes que nous engageons pour réduire notre empreinte.",
-          "cta": "Lire le rapport"
-        },
-        "chart": {
-          "revenueAria": "Revenus facturés au fil du temps",
-          "mrrAria": "Revenus mensuels récurrents",
-          "cashflowAria": "Flux de trésorerie entrants et sortants",
-          "bankAria": "Argent en banque"
+        "item2": {
+          "title": "Build in public : mars 2026",
+          "url": "https://blog.cg-wire.com/build-in-public-march-2026"
         }
+      },
+      "revenue": {
+        "title": "Nos revenus, ce que nous facturons",
+        "text": "L'argent que nous avons facturé, hors taxes."
+      },
+      "period": {
+        "monthly": "Mensuel",
+        "quarterly": "Trimestriel",
+        "yearly": "Annuel"
+      },
+      "mrr": {
+        "title": "Nos revenus mensuels récurrents",
+        "text": "Nous vendons principalement des abonnements annuels. Ce graphique les répartit sur 12 mois pour montrer les revenus récurrents sur lesquels nous pouvons compter chaque mois, quel que soit le moment où un abonnement commence."
+      },
+      "customers": {
+        "title": "Combien utilisent Kitsu",
+        "activeTitle": "Clients actifs",
+        "activeText": "Les studios avec un abonnement en cours. Les utilisateurs open source ne sont pas comptés ici.",
+        "selfhostedTitle": "Installations auto-hébergées actives",
+        "selfhostedText": "Les équipes qui font tourner Kitsu sur leurs propres serveurs, indépendamment de notre offre cloud."
+      },
+      "team": {
+        "eyebrow": "L'équipe",
+        "title": "Nos salaires",
+        "text": "Nous versons des salaires au niveau du marché, exprimés en « net » français avant impôts. Le temps partiel est le bienvenu : la fraction à côté d'un poste indique la part d'une semaine complète qu'il couvre.",
+        "count": "personnes dans l'équipe",
+        "salaryHead": "Salaire net mensuel",
+        "partTime": "{fraction} temps"
+      },
+      "captable": {
+        "title": "La répartition du capital entre les actionnaires"
+      },
+      "cashflow": {
+        "title": "Notre trésorerie",
+        "toggleFlow": "Flux de trésorerie",
+        "toggleBank": "Argent en banque",
+        "incoming": "Entrées",
+        "outgoing": "Sorties"
+      },
+      "tools": {
+        "title": "Nos outils",
+        "text": "Les produits et services que nous utilisons."
+      },
+      "servers": {
+        "eyebrow": "Infrastructure",
+        "title": "Nos serveurs",
+        "text": "Tout tourne sur le cloud public OVH, facturé mensuellement et dimensionné selon notre usage. Les équipes qui s'auto-hébergent utilisent leurs propres serveurs, hors de cette facture.",
+        "cta": "Découvrir notre infrastructure",
+        "billLabel": "Le mois dernier · infrastructure",
+        "perMonth": "/mois",
+        "provider": "Fournisseur",
+        "scale": "Échelle"
+      },
+      "funding": {
+        "title": "Notre structure de financement",
+        "seeAll": "Voir tout",
+        "showLess": "Voir moins"
+      },
+      "why": {
+        "title": "Pourquoi nous partageons nos chiffres",
+        "item1": {
+          "title": "Pour rester fidèles à notre mission",
+          "text": "Partager nos chiffres nous oblige à rester honnêtes sur les décisions que nous prenons et l'entreprise que nous voulons construire."
+        },
+        "item2": {
+          "title": "Pour nous challenger",
+          "text": "Des métriques publiques sont une forte incitation à progresser et à nous responsabiliser."
+        },
+        "item3": {
+          "title": "Pour montrer que c'est possible",
+          "text": "Une petite entreprise de logiciels autofinancée peut être pérenne et transparente sur son fonctionnement."
+        }
+      },
+      "carbon": {
+        "title": "Découvrez notre bilan carbone 2024",
+        "text": "La transparence ne concerne pas que l'argent. Nous mesurons et partageons aussi l'empreinte environnementale de notre activité. Le rapport 2024 détaille nos principaux postes d'émission, nos marges de progrès et les actions concrètes que nous engageons pour réduire notre empreinte.",
+        "cta": "Lire le rapport"
+      },
+      "chart": {
+        "revenueAria": "Revenus facturés au fil du temps",
+        "mrrAria": "Revenus mensuels récurrents",
+        "cashflowAria": "Flux de trésorerie entrants et sortants",
+        "bankAria": "Argent en banque"
       }
     },
     "about": {

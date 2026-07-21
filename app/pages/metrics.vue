@@ -319,7 +319,7 @@ const { data: page } = await useAsyncData(
   pageQuery,
   { watch: [slug, locale] }
 )
-const m = computed(() => page.value.meta.metrics)
+const m = computed(() => page.value.meta)
 
 useSEO({
   title: m.value.seo.title,
