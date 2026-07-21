@@ -11,14 +11,14 @@
       <div class="flexrow-item">
         <h2>
           <span class="section-subtitle">
-            {{ page.meta.community.subtitle }}
+            {{ page.meta.subtitle }}
           </span>
           <span class="section-title">
-            {{ page.meta.community.tagline }}
+            {{ page.meta.tagline }}
           </span>
         </h2>
         <p>
-          {{ page.meta.community.explanationOne }}
+          {{ page.meta.explanationOne }}
         </p>
       </div>
     </div>
@@ -29,20 +29,20 @@
       <div class="flexrow-item description flexrow-filler">
         <h2>
           <span class="section-subtitle">
-            {{ page.meta.community.chat.subtitle }}
+            {{ page.meta.chat.subtitle }}
           </span>
           <span class="section-title">
-            {{ page.meta.community.chat.title }}
+            {{ page.meta.chat.title }}
           </span>
         </h2>
         <p>
           <a href="https://discord.gg/kitsu-community">
-            {{ page.meta.community.chat.explanation }}
+            {{ page.meta.chat.explanation }}
           </a>
         </p>
         <p class="community-cta">
           <a class="community-link" href="https://discord.com/invite/VbCxtKN">
-            {{ page.meta.community.chat.cta }} <span> &#8594;</span>
+            {{ page.meta.chat.cta }} <span> &#8594;</span>
           </a>
         </p>
       </div>
@@ -63,20 +63,20 @@
       <div class="flexrow-item description flexrow-filler">
         <h2>
           <span class="section-subtitle">
-            {{ page.meta.community.github.subtitle }}
+            {{ page.meta.github.subtitle }}
           </span>
           <span class="section-title">
-            {{ page.meta.community.github.title }}
+            {{ page.meta.github.title }}
           </span>
         </h2>
         <p>
           <a href="https://github.com/cgwire/kitsu">
-            {{ page.meta.community.github.explanation }}
+            {{ page.meta.github.explanation }}
           </a>
         </p>
         <p class="community-cta">
           <a class="community-link" href="https://github.com/cgwire/kitsu">
-            {{ page.meta.community.github.cta }}<span> &#8594;</span>
+            {{ page.meta.github.cta }}<span> &#8594;</span>
           </a>
         </p>
       </div>
@@ -97,20 +97,20 @@
       <div class="flexrow-item description flexrow-filler">
         <h2>
           <span class="section-subtitle">
-            {{ page.meta.community.feedback.subtitle }}
+            {{ page.meta.feedback.subtitle }}
           </span>
           <span class="section-title">
-            {{ page.meta.community.feedback.title }}
+            {{ page.meta.feedback.title }}
           </span>
         </h2>
         <p>
           <a href="https://cgwire.canny.io">
-            {{ page.meta.community.feedback.explanation }}
+            {{ page.meta.feedback.explanation }}
           </a>
         </p>
         <p class="community-cta">
           <a class="community-link" href="https://cgwire.canny.io">
-            {{ page.meta.community.feedback.cta }} <span> &#8594;</span>
+            {{ page.meta.feedback.cta }} <span> &#8594;</span>
           </a>
         </p>
       </div>
@@ -142,8 +142,8 @@ const { data: page } = await useAsyncData(
 )
 
 useSEO({
-  title: 'CGWire | ' + page.value.meta.community.tagline,
-  description: page.value.meta.community.explanationOne,
+  title: 'CGWire | ' + page.value.meta.tagline,
+  description: page.value.meta.explanationOne,
   image: 'meetup.jpg'
 })
 </script>
