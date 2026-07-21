@@ -72,31 +72,40 @@
         />
       </template>
 
-      <KitsuTwoD
-        v-show="currentTab === '2D'"
-        :supporters="page.meta.supporters"
-        :features="page.meta.features"
-      />
-      <KitsuThreeD
-        v-show="currentTab === '3D'"
-        :supporters="page.meta.supporters"
-        :features="page.meta.features"
-      />
-      <KitsuVFX
-        v-show="currentTab === 'VFX'"
-        :supporters="page.meta.supporters"
-        :features="page.meta.features"
-      />
-      <KitsuVideoGames
-        v-show="currentTab === 'Games'"
-        :supporters="page.meta.supporters"
-        :features="page.meta.features"
-      />
-      <KitsuSchools
-        v-show="currentTab === 'Schools'"
-        :supporters="page.meta.supporters"
-        :features="page.meta.features"
-      />
+      <!-- Every tab stays mounted (v-show, not v-if) so @nuxt/image prerenders
+           all of their images at build time. The v-show sits on a wrapper div
+           because KitsuVFX/VideoGames/Schools have multiple root nodes, and
+           v-show cannot apply display:none to a multi-root component. -->
+      <div v-show="currentTab === '2D'">
+        <KitsuTwoD
+          :supporters="page.meta.supporters"
+          :features="page.meta.features"
+        />
+      </div>
+      <div v-show="currentTab === '3D'">
+        <KitsuThreeD
+          :supporters="page.meta.supporters"
+          :features="page.meta.features"
+        />
+      </div>
+      <div v-show="currentTab === 'VFX'">
+        <KitsuVFX
+          :supporters="page.meta.supporters"
+          :features="page.meta.features"
+        />
+      </div>
+      <div v-show="currentTab === 'Games'">
+        <KitsuVideoGames
+          :supporters="page.meta.supporters"
+          :features="page.meta.features"
+        />
+      </div>
+      <div v-show="currentTab === 'Schools'">
+        <KitsuSchools
+          :supporters="page.meta.supporters"
+          :features="page.meta.features"
+        />
+      </div>
 
       <div data-aos="fade-up">
         <div class="section-subtitle has-text-centered">
