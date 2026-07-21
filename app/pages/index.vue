@@ -309,9 +309,9 @@
 
       <div class="flexrow number-blocks">
         <div class="flexcolumn flexrow-item number-block">
-          <p class="number-block-number">9,600+</p>
+          <p class="number-block-number">25,000+</p>
           <p class="number-block-title">
-            {{ page.meta.kitsu.stats.hoursSaved }}
+            {{ page.meta.kitsu.stats.activeUsers }}
           </p>
         </div>
         <div class="flexcolumn flexrow-item number-block">

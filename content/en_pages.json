@@ -366,7 +366,7 @@
         "stats": {
           "title": "Trusted by 500+ studios",
           "text": "Creatives from all over the world use Kitsu to manage their productions.",
-          "hoursSaved": "Hours saved / day",
+          "activeUsers": "Active users",
           "videoReviews": "Video reviews / day",
           "countries": "Countries"
         },

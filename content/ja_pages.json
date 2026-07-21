@@ -366,7 +366,7 @@
         "stats": {
           "title": "500以上のスタジオに信頼されている",
           "text": "世界中のクリエーターがKitsuを利用して制作物を管理している。",
-          "hoursSaved": "節約時間／日",
+          "activeUsers": "アクティブユーザー",
           "videoReviews": "kitsuスタッツビデオレビュー",
           "countries": "国名"
         },

@@ -366,7 +366,7 @@
         "stats": {
           "title": "Plus de 500 studios nous font confiance",
           "text": "Les créatifs du monde entiers utilisent Kitsu pour leurs productions",
-          "hoursSaved": "Heures économisées / jour",
+          "activeUsers": "Utilisateurs actifs",
           "videoReviews": "Vidéos validées / jour",
           "countries": "Pays"
         },
