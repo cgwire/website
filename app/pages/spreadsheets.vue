@@ -1,10 +1,10 @@
 <template>
   <section class="section content">
     <h2 class="subtitle">
-      {{ page.meta.spreadsheets.tagline }}
+      {{ page.meta.tagline }}
     </h2>
     <p>
-      {{ page.meta.spreadsheets.explanationOne }}
+      {{ page.meta.explanationOne }}
     </p>
   </section>
 
@@ -15,7 +15,7 @@
 
   <section class="section content">
     <h2 class="subtitle">
-      {{ page.meta.spreadsheets.shortPlanningTitle }}
+      {{ page.meta.shortPlanningTitle }}
     </h2>
     <p class="has-text-centered">
       <a
@@ -52,7 +52,7 @@
     <p class="mt2">&nbsp;</p>
 
     <h2 class="subtitle">
-      {{ page.meta.spreadsheets.tvshowPlanningTitle }}
+      {{ page.meta.tvshowPlanningTitle }}
     </h2>
     <p class="has-text-centered">
       <a
@@ -89,7 +89,7 @@
     <p class="mt2">&nbsp;</p>
 
     <h2 class="subtitle">
-      {{ page.meta.spreadsheets.breakdownTitle }}
+      {{ page.meta.breakdownTitle }}
     </h2>
     <p class="has-text-centered">
       <a
@@ -126,7 +126,7 @@
     <p class="mt2">&nbsp;</p>
 
     <h2 class="subtitle">
-      {{ page.meta.spreadsheets.retakeTitle }}
+      {{ page.meta.retakeTitle }}
     </h2>
     <p class="has-text-centered">
       <a
@@ -177,7 +177,7 @@ const { data: page } = await useAsyncData(
 
 useSEO({
   title: 'CGWire | Kitsu / ' + page.value.title,
-  description: page.value.meta.spreadsheets.explanationOne,
+  description: page.value.meta.explanationOne,
   imagePath: 'spreadsheet-planning-short.png'
 })
 </script>
