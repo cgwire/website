@@ -2,7 +2,7 @@
 title: "\"Kitsu va-t-il nous ralentir ?\""
 slug: "will-kitsu-slow-us-down"
 subtitle: ""
-summary: "Kitsu est conçu pour éliminer les coûts de temps cachés liés aux flux de production non coordonnés — les relances de statut redondantes, les mises à jour manuelles de tableurs et les notes de révision éparpillées qui grignotent silencieusement des heures chaque semaine. Son fil d'activité en temps réel et son système de notifications maintiennent toute l'équipe automatiquement synchronisée dès qu'un statut de tâche change, supprimant ainsi le besoin de réunions de suivi ou de messages de relance. Le moteur de révision intégré permet aux superviseurs d'annoter directement sur les images, de comparer les versions côte à côte, et d'approuver ou de demander des reprises depuis n'importe où, réduisant des cycles de validation de plusieurs jours à quelques heures. Kitsu s'intègre parfaitement aux DCCs, Slack, Discord et aux pipelines personnalisés via les API Python et REST, permettant aux artistes de rester dans leurs outils habituels tout en centralisant les données de production. Approuvé par plus de 300 studios dans plus de 50 pays, Kitsu a été conçu par des personnes qui comprennent la pression de la production — et chaque fonctionnalité n'est lancée que si elle fait gagner du temps."
+summary: "Kitsu est conçu pour éliminer les coûts de temps cachés liés aux flux de production non coordonnés — les relances de statut redondantes, les mises à jour manuelles de tableurs et les notes de révision éparpillées qui grignotent silencieusement des heures chaque semaine. Son fil d'activité en temps réel et son système de notifications maintiennent toute l'équipe automatiquement synchronisée dès qu'un statut de tâche change, supprimant ainsi le besoin de réunions de suivi ou de messages de relance. Le moteur de révision intégré permet aux superviseurs d'annoter directement sur les images, de comparer les versions côte à côte, et d'approuver ou de demander des reprises depuis n'importe où, réduisant des cycles de validation de plusieurs jours à quelques heures. Kitsu s'intègre parfaitement aux DCCs, Slack, Discord et aux pipelines personnalisés via les API Python et REST, permettant aux artistes de rester dans leurs outils habituels tout en centralisant les données de production. Approuvé par plus de 500 studios dans plus de 50 pays, Kitsu a été conçu par des personnes qui comprennent la pression de la production — et chaque fonctionnalité n'est lancée que si elle fait gagner du temps."
 image: "change-management-kitsu.png"
 ---
 Chaque nouvel outil comporte le risque d'introduire des frictions. Un login de plus, une réunion de statut supplémentaire, un endroit de plus à mettre à jour.
@@ -65,7 +65,7 @@ Nous rendons Kitsu invisible là où il le faut : suffisamment présent pour que
 
 ## Conçu pour les productions qui ne peuvent pas se permettre de ralentir
 
-Plus de 300 studios répartis dans plus de 50 pays gèrent leurs productions sur Kitsu, de l'animation courte aux longs métrages et aux pipelines de jeux vidéo.
+Plus de 500 studios répartis dans plus de 50 pays gèrent leurs productions sur Kitsu, de l'animation courte aux longs métrages et aux pipelines de jeux vidéo.
 
 Ils l'ont tous adopté parce qu'ils n'avaient pas de temps à perdre !
 

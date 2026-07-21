@@ -2,7 +2,7 @@
 title: "\"Kitsu est-il trop complexe pour notre équipe ?\""
 slug: "is-kitsu-too-complicated-for-our-team"
 subtitle: ""
-summary: "Kitsu est un outil de gestion de production basé sur les rôles, conçu pour éliminer la complexité d'intégration qui affecte la plupart des logiciels de studio — les artistes se connectent pour voir uniquement leur liste de tâches, leurs références et leurs retours, tandis que les superviseurs, producteurs et clients bénéficient chacun d'une vue personnalisée adaptée à leurs responsabilités, afin que personne n'ait à naviguer dans la complexité d'un autre rôle. Avec une intégration qui ne prend que quelques minutes (un lien d'invitation, une liste de tâches et un premier téléversement), sans sessions de formation ni manuels requis, et une interface épurée construite autour d'une seule question — « de quoi cette personne a-t-elle besoin maintenant ? » — Kitsu prouve que des outils de production puissants n'ont pas à être compliqués, et est approuvé par plus de 300 studios dans plus de 50 pays pour le démontrer."
+summary: "Kitsu est un outil de gestion de production basé sur les rôles, conçu pour éliminer la complexité d'intégration qui affecte la plupart des logiciels de studio — les artistes se connectent pour voir uniquement leur liste de tâches, leurs références et leurs retours, tandis que les superviseurs, producteurs et clients bénéficient chacun d'une vue personnalisée adaptée à leurs responsabilités, afin que personne n'ait à naviguer dans la complexité d'un autre rôle. Avec une intégration qui ne prend que quelques minutes (un lien d'invitation, une liste de tâches et un premier téléversement), sans sessions de formation ni manuels requis, et une interface épurée construite autour d'une seule question — « de quoi cette personne a-t-elle besoin maintenant ? » — Kitsu prouve que des outils de production puissants n'ont pas à être compliqués, et est approuvé par plus de 500 studios dans plus de 50 pays pour le démontrer."
 image: "change-management-kitsu.png"
 ---
 Une crainte revient souvent lors de l'introduction d'un nouveau logiciel de production : « Mon équipe va résister. Ça va ralentir tout le monde. La courbe d'apprentissage n'en vaut pas la peine. »
@@ -77,7 +77,7 @@ Pas de barres latérales encombrées qui se disputent l'attention. Pas de workfl
 ::quote-content-block{slug="woodblock"}
 ::
 
-## Approuvé par plus de 300 studios dans plus de 50 pays
+## Approuvé par plus de 500 studios dans plus de 50 pays
 
 ::minimalist-user-logos
 ::

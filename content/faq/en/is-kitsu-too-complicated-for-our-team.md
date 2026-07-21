@@ -2,7 +2,7 @@
 title: "How Easy Is It For Our Team To Use Kitsu?"
 slug: "is-kitsu-too-complicated-for-our-team"
 subtitle: ""
-summary: "Kitsu is a role-based production management tool designed to eliminate the onboarding complexity that plagues most studio software — artists log in to see only their task list, references, and feedback, while supervisors, producers, and clients each get a tailored view matched to their responsibilities, so no one has to navigate another role's complexity. With onboarding that takes minutes (an invite link, a task list, and a first upload), no training sessions or manuals required, and a clean UI built around a single question — \"what does this person need right now?\" — Kitsu proves that powerful production tools don't have to be complicated, and is trusted by 300+ studios across 50+ countries to prove it."
+summary: "Kitsu is a role-based production management tool designed to eliminate the onboarding complexity that plagues most studio software — artists log in to see only their task list, references, and feedback, while supervisors, producers, and clients each get a tailored view matched to their responsibilities, so no one has to navigate another role's complexity. With onboarding that takes minutes (an invite link, a task list, and a first upload), no training sessions or manuals required, and a clean UI built around a single question — \"what does this person need right now?\" — Kitsu proves that powerful production tools don't have to be complicated, and is trusted by 500+ studios across 50+ countries to prove it."
 image: "change-management-kitsu.png"
 ---
 
@@ -72,7 +72,7 @@ Every screen in Kitsu is designed around a single question: what does this perso
 
 There are no cluttered sidebars fighting for attention. No ten-step workflows to publish a preview. No buried menus where critical actions hide.
 
-## Trusted by 300+ Studios in 50+ Countries
+## Trusted by 500+ Studios in 50+ Countries
 
 ::minimalist-user-logos
 ::
