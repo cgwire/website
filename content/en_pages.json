@@ -317,11 +317,11 @@
       }
     },
     "index": {
-      "title": "We Connect Creative Minds",
+      "title": "Kitsu, Open-Source Production Tracker",
       "slug": "index",
       "main": {
         "title": "We Connect Creative Minds",
-        "subtitle": "CGWire develops Kitsu, a platform for animation, VFX, and video game studios that brings teams and tools together in a single place. Collaborate, manage deliveries, and perform reviews from anywhere.",
+        "subtitle": "CGWire develops Kitsu, the open-source production tracker for animation, VFX, and game studios that brings teams and tools together in a single place. Collaborate, manage deliveries, and perform reviews from anywhere.",
         "tagline": "Elevate Your Productions To The Next Level",
         "explanation": {
           "one": "With Kitsu, you can enable efficient collaboration between distributed teams, whether in the studio or from home. This results in better decision-making and faster deliveries.",

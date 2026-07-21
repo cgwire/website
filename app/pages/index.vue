@@ -500,7 +500,7 @@ const { data: page } = await useAsyncData(
 )
 
 useSEO({
-  title: 'CGWire | ' + page.value.meta.main.title,
+  title: 'CGWire | ' + page.value.title,
   description: page.value.meta.main.subtitle,
   imagePath: 'teaser.png'
 })
