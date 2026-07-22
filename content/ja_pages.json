@@ -1914,7 +1914,7 @@
       "i18n": {
         "title": "2D、3D、およびVFX",
         "metaTitle": "長編映画向けのKitsu",
-        "metaDescription": "2D、3D、およびVFX"
+        "metaDescription": "2D、3D、VFXの長編映画をプレビズから納品まで追跡。シーケンス単位の進捗、プレイリストによるレビュー、全ベンダーとの連絡をKitsuに集約します。"
       },
       "hero": {
         "subtitle": "2D、3D、およびVFX",
@@ -2016,7 +2016,7 @@
       "i18n": {
         "title": "学校向けのKitsu",
         "metaTitle": "学校向けのKitsu",
-        "metaDescription": "生徒のプロジェクト"
+        "metaDescription": "業界標準の制作管理ツールで学生プロジェクトを運営。Kitsuは教師にプレイリストレビュー、コメント機能、全タスクの進捗の可視化を提供します。"
       },
       "hero": {
         "subtitle": "生徒のプロジェクト",
@@ -2098,7 +2098,7 @@
       "i18n": {
         "title": "予告編、広告、ドキュメント、ミュージッククリップ、YouTube",
         "metaTitle": "ショートムービー向けのKitsu",
-        "metaDescription": "予告編、広告、ドキュメント、ミュージッククリップ、YouTube"
+        "metaDescription": "予告編、広告、ドキュメンタリー、ミュージッククリップ、YouTube向け作品。Kitsuは複数プロジェクトのスケジュール、レビュー、クライアント納品を一元管理します。"
       },
       "hero": {
         "subtitle": "予告編、広告、ドキュメント、ミュージッククリップ、YouTube",
@@ -2228,7 +2228,7 @@
       "i18n": {
         "title": "TVシリーズ用のKitsu",
         "metaTitle": "TVシリーズ用のKitsu",
-        "metaDescription": "2Dおよび3Dテレビ番組"
+        "metaDescription": "2D・3DのTVシリーズをエピソード単位で管理。Kitsuは全エピソードの進捗、1つのプレイリストでのレビュー、リテイク数の集計とレポート作成に対応します。"
       },
       "hero": {
         "subtitle": "2Dおよび3Dテレビ番組",
@@ -2314,7 +2314,7 @@
       "i18n": {
         "title": "ビデオゲーム用キツ",
         "metaTitle": "ビデオゲーム用キツ",
-        "metaDescription": "クリエイティブ・アセット、予告編、シネマティクス"
+        "metaDescription": "Kitsuはゲームスタジオのクリエイティブアセット、予告編、シネマティクスを管理。アセットライブラリのバージョン管理、明確な指示、レビューを一元化します。"
       },
       "hero": {
         "subtitle": "クリエイティブ・アセット、予告編、シネマティクス",

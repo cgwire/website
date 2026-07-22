@@ -1914,7 +1914,7 @@
       "i18n": {
         "title": "2D, 3D ou VFX",
         "metaTitle": "Kitsu pour les longs métrages",
-        "metaDescription": "2D, 3D ou VFX"
+        "metaDescription": "Suivez un long métrage 2D, 3D ou VFX de la previz à la livraison. Kitsu montre l'avancement par séquence, les revues en playlist et tous vos prestataires."
       },
       "hero": {
         "subtitle": "2D, 3D ou VFX",
@@ -2016,7 +2016,7 @@
       "i18n": {
         "title": "Projets étudiants",
         "metaTitle": "Kitsu pour les écoles",
-        "metaDescription": "Projets étudiants"
+        "metaDescription": "Faites travailler vos étudiants sur un outil de suivi de production professionnel. Kitsu offre revues en playlist, commentaires et suivi des tâches."
       },
       "hero": {
         "subtitle": "Projets étudiants",
@@ -2098,7 +2098,7 @@
       "i18n": {
         "title": "Trailers, Pubs, Docus, Clips et Youtube",
         "metaTitle": "Kitsu pour vos courts métrages",
-        "metaDescription": "Trailers, Pubs, Docus, Clips et Youtube"
+        "metaDescription": "Trailers, pubs, docus, clips ou vidéos YouTube : Kitsu gère les plannings, les retours aux artistes et les livraisons client de plusieurs projets à la fois."
       },
       "hero": {
         "subtitle": "Trailers, Pubs, Docus, Clips et Youtube",
@@ -2228,7 +2228,7 @@
       "i18n": {
         "title": "Séries en 2D, en 3D",
         "metaTitle": "Kitsu pour les Séries Télé",
-        "metaDescription": "Séries en 2D, en 3D"
+        "metaDescription": "Suivez vos séries 2D et 3D épisode par épisode. Kitsu donne l'avancement global, les revues d'épisode en une playlist et le décompte des retakes."
       },
       "hero": {
         "subtitle": "Séries en 2D, en 3D",
@@ -2338,7 +2338,7 @@
       "i18n": {
         "title": "Kitsu Pour les Jeux Vidéos",
         "metaTitle": "Kitsu Pour les Jeux Vidéos",
-        "metaDescription": "Assets créatifs, trailers et cinématiques"
+        "metaDescription": "Kitsu suit les assets créatifs, trailers et cinématiques des studios de jeux : bibliothèque d'assets versionnée, directives claires et revues au même endroit."
       },
       "hero": {
         "subtitle": "Assets créatifs, trailers et cinématiques",
