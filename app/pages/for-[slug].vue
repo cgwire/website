@@ -181,19 +181,11 @@ const { data: studios } = await useAsyncData(
   { watch: [locale, type] }
 )
 
-// ponytail: reuse of existing /og illustrations, swap for per-audience artwork when it exists
-const ogImages = {
-  'feature-films': 'review-engine.png',
-  schools: 'team-collaboration.png',
-  shorts: 'teaser.png',
-  tvshows: 'production-tracker.png',
-  'video-games': 'studio-database.png'
-}
-
 useSEO({
   title: `CGWire | Kitsu / ${audiencePage.i18n.title}`,
   description: audiencePage.i18n.metaDescription,
-  imagePath: ogImages[slug.value]
+  // public/og/<slug>.png is generated from the matching header icon in app/assets/icons
+  imagePath: `${slug.value}.png`
 })
 
 const panel = ref(null)
