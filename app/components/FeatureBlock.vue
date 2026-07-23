@@ -2,14 +2,10 @@
   <div class="first-wave">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 310"
+      viewBox="0 40 1440 160"
       v-if="feature.colored"
     >
-      <path
-        :fill="topWaveColor"
-        fill-opacity="1"
-        d="M0,160L60,165.3C120,171,240,181,360,197.3C480,213,600,235,720,256C840,277,960,299,1080,288C1200,277,1320,235,1380,213.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-      ></path>
+      <path :fill="topWaveColor" fill-opacity="1" :d="topPath"></path>
     </svg>
   </div>
   <section
@@ -60,14 +56,11 @@
   </section>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1440 320"
+    viewBox="0 40 1440 160"
+    :class="{ 'wave-last': last }"
     v-if="feature.colored"
   >
-    <path
-      :fill="bottomWaveColor"
-      fill-opacity="1"
-      d="M0,32L80,58.7C160,85,320,139,480,138.7C640,139,800,85,960,90.7C1120,96,1280,160,1360,192L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
-    ></path>
+    <path :fill="bottomWaveColor" fill-opacity="1" :d="bottomPath"></path>
   </svg>
 </template>
 
@@ -81,6 +74,30 @@ const props = defineProps({
 
 const feature = props.feature
 const last = props.last
+
+// Open curves, closed into a filled shape below (top wave) or above (bottom
+// wave). Consecutive blocks share a curve: the wave closing block N and the one
+// opening block N+1 are the same shape, so the white band between them keeps a
+// constant thickness and the two nest however close they get.
+const CURVES = [
+  'M0,84C110,116,210,176,360,192C520,208,740,150,960,104C1120,70,1280,48,1440,40',
+  'M0,40C160,44,320,72,480,104C700,148,900,192,1120,196C1240,198,1340,168,1440,140',
+  'M0,60C140,72,300,132,460,172C560,196,640,200,720,196C900,186,1160,104,1440,44',
+  'M0,52C180,60,360,100,540,132C760,172,1020,200,1240,198C1310,197,1380,180,1440,164'
+]
+
+const waveIndex = computed(() => {
+  const step = typeof feature.gradient === 'number' ? feature.gradient : 1
+  return step - 1
+})
+
+const topPath = computed(
+  () => CURVES[waveIndex.value % CURVES.length] + 'L1440,200L0,200Z'
+)
+
+const bottomPath = computed(
+  () => CURVES[(waveIndex.value + 1) % CURVES.length] + 'L1440,40L0,40Z'
+)
 
 const gradientStep = computed(() => {
   if (typeof feature.gradient === 'number') return feature.gradient
@@ -119,11 +136,15 @@ const bottomWaveColor = computed(() => {
 .block-colored.gradient-3
   background linear-gradient(0deg, #F9F6FD 0%, #F7F7FE 100%)
 
-// A closing wave gives colored blocks a tall visual outro. When the page ends
-// on a plain block there is no wave, so it gets an explicit bottom margin.
+// The last block of the page needs air before whatever section follows. A plain
+// block has no wave at all, a colored one has a wave cropped tight to its curve:
+// neither leaves any slack, so both get an explicit bottom margin.
 // Doubled class to outweigh the global "div.body .block { margin 0 }" rule.
 .block.block-last
   margin-bottom 16rem
+
+svg.wave-last
+  margin-bottom 8rem
 
 .screenshot
   border-radius 10px
