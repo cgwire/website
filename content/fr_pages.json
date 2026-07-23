@@ -1405,6 +1405,7 @@
           "subtitle": "Historique complet des versions",
           "content": "Chaque aperçu soumis est stocké et accessible. Revisitez n'importe quelle version antérieure pour suivre l'évolution d'un plan, résoudre des litiges et confirmer que les retours précédents ont été pris en compte.",
           "image": "kitsu-versions.png",
+          "shadow": true,
           "reverted": true
         }
       ],

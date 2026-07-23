@@ -1405,6 +1405,7 @@
           "subtitle": "Full version history",
           "content": "Every submitted preview is stored and accessible. Revisit any earlier version to track how a shot evolved, settle disputes, and confirm that previous feedback was addressed.",
           "image": "kitsu-versions.png",
+          "shadow": true,
           "reverted": true
         }
       ],
