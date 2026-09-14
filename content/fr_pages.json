@@ -1109,22 +1109,150 @@
       "heading": "Tarifs"
     },
     "software-integrations": {
-      "title": "Integrations",
+      "title": "Intégrations",
       "slug": "software-integrations",
       "header": {
-        "tagline": "Connectez tous vos outils",
-        "subtitle": "Intégrations logiciels",
-        "explanation": "Vos données circulent dans tout votre pipeline. C'est pourquoi nous proposons des intégrations pour faciliter la communication entre vos outils. Les artistes publient ainsi leurs livrables depuis leurs outils et les équipes peuvent envoyer des notifications dans vos applications de chats. Et enfin, vous pouvez requêter notre API directement depuis votre code."
+        "tagline": "Intégrations logicielles",
+        "subtitle": "Connectez tous vos outils",
+        "explanation": "Vos données circulent tout au long de votre pipeline. C'est pourquoi nous proposons des intégrations qui facilitent la communication entre vos outils. Vos artistes peuvent publier directement depuis leurs logiciels, votre équipe peut envoyer des notifications vers vos applications de messagerie, et nous fournissons des clients API pour étendre votre workflow."
       },
       "integrations": {
-        "subtitleDcc": "Envoyez des previews plus rapidement",
-        "titleDcc": "Publiez depuis vos outils de création",
-        "subtitleChats": "Gardez tout le monde à jour",
-        "titleChats": "Envoyez des notifications dans vos applications de chats",
-        "subtitleSoftware": "Utilisez les données de Kitsu dans vos outils",
-        "titleSoftware": "Intégrez Kitsu directement dans votre code"
+        "groups": [
+          {
+            "subtitle": "Envoyez vos previews rapidement",
+            "title": "Publiez depuis vos logiciels de création de contenu préférés",
+            "rows": [
+              [
+                {
+                  "alt": "Logo Blender",
+                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
+                  "image": "/images/integrations/logo-blender.png",
+                  "imageClass": "w75pe"
+                },
+                {
+                  "alt": "Logo Harmony",
+                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
+                  "image": "/images/integrations/logo-harmony.png",
+                  "imageClass": "w75pe"
+                },
+                {
+                  "alt": "Unreal Engine",
+                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
+                  "image": "/images/integrations/logo-unreal-engine.png",
+                  "imageClass": "w75pe"
+                }
+              ],
+              [
+                {
+                  "alt": "Logo Houdini",
+                  "href": "https://github.com/Chantology/kitsu-houdini-plugin",
+                  "image": "/images/integrations/houdini.png",
+                  "imageClass": "w75pe",
+                  "community": true,
+                  "authors": [
+                    {
+                      "username": "Chantology"
+                    }
+                  ]
+                },
+                {
+                  "alt": "Logo OpenRV",
+                  "href": "https://github.com/cgwire/openrv",
+                  "image": "/images/integrations/openrv.png",
+                  "imageClass": "w75pe"
+                },
+                {
+                  "alt": "Logo Blender",
+                  "href": "https://github.com/Chantology/kitsu-blender-plugin",
+                  "image": "/images/integrations/logo-blender.png",
+                  "imageClass": "w75pe",
+                  "community": true,
+                  "authors": [
+                    {
+                      "username": "Chantology"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "alt": "Logo Prism",
+                  "href": "https://github.com/EmberLightVFX/Kitsu-for-Prism",
+                  "image": "/images/integrations/logo-prism.png",
+                  "imageClass": "w75pe",
+                  "community": true,
+                  "authors": [
+                    {
+                      "username": "EmberLightVFX"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "alt": "Logo Maya",
+                  "href": "https://github.com/Chantology/kitsu-maya-plugin",
+                  "image": "/images/integrations/maya.png",
+                  "imageClass": "w75pe",
+                  "community": true,
+                  "authors": [
+                    {
+                      "username": "Chantology"
+                    }
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "subtitle": "Tenez votre équipe informée",
+            "title": "Envoyez des notifications vers vos applications de messagerie",
+            "rows": [
+              [
+                {
+                  "alt": "Logo Slack",
+                  "href": "https://kitsu.cg-wire.com/slack/",
+                  "image": "/images/integrations/logo-slack.png",
+                  "imageClass": "w75pe"
+                },
+                {
+                  "alt": "Logo Mattermost",
+                  "href": "https://kitsu.cg-wire.com/mattermost/",
+                  "image": "/images/integrations/logo-mattermost.png",
+                  "imageClass": "w75pe"
+                },
+                {
+                  "alt": "Logo Discord",
+                  "href": "https://kitsu.cg-wire.com/discord/",
+                  "image": "/images/integrations/logo-discord.png",
+                  "imageClass": "w75pe"
+                }
+              ]
+            ]
+          },
+          {
+            "subtitle": "Accédez aux données Kitsu depuis vos outils",
+            "title": "Intégrez Kitsu directement dans votre code",
+            "rows": [
+              [
+                {
+                  "alt": "Logo Python",
+                  "href": "https://gazu.cg-wire.com",
+                  "image": "/images/integrations/logo-python.png",
+                  "imageClass": "w50pe"
+                },
+                {
+                  "alt": "Logo Javascript",
+                  "href": "https://github.com/cgwire/kitsu-client-js",
+                  "image": "/images/integrations/logo-javascript.png",
+                  "imageClass": "w25pe"
+                }
+              ]
+            ]
+          }
+        ]
       },
-      "communityContribution": "Contribution communautaire"
+      "communityContribution": "Contribution de la communauté"
     },
     "spreadsheets": {
       "title": "Tableurs",
@@ -1219,9 +1347,18 @@
         "tagline": "Hébergement Elite",
         "subtitle": "Votre système est toujours disponible",
         "stats": [
-          { "value": "99,99 %", "label": "objectif de disponibilité" },
-          { "value": "Quotidiennes", "label": "sauvegardes" },
-          { "value": "30 min", "label": "réponse support en moyenne" }
+          {
+            "value": "99,99 %",
+            "label": "objectif de disponibilité"
+          },
+          {
+            "value": "Quotidiennes",
+            "label": "sauvegardes"
+          },
+          {
+            "value": "30 min",
+            "label": "réponse support en moyenne"
+          }
         ],
         "explanation": "Notre cloud managé donne à chaque studio une instance Kitsu dédiée, hébergée chez OVH dans l'Union européenne (ou dans votre région) et opérée de bout en bout par CGWire. Sécurité, disponibilité, performances et mises à jour sont prises en charge pour vous, votre équipe reste concentrée sur la production. Besoin d'une installation sur site ou d'un cloud isolé ? C'est notre offre d'architecture sur mesure."
       },
@@ -1426,9 +1563,18 @@
         "tagline": "Base de données studio",
         "subtitle": "Une source de vérité unique",
         "stats": [
-          { "value": "80k", "label": "téléchargements" },
-          { "value": "500", "label": "instances actives" },
-          { "value": "10 ans", "label": "en production" }
+          {
+            "value": "80k",
+            "label": "téléchargements"
+          },
+          {
+            "value": "500",
+            "label": "instances actives"
+          },
+          {
+            "value": "10 ans",
+            "label": "en production"
+          }
         ],
         "docsCta": {
           "label": "Lire la doc API",
@@ -1489,9 +1635,18 @@
         "tagline": "Architecture sur mesure",
         "subtitle": "Infrastructure d'entreprise, sans compromis",
         "stats": [
-          { "value": "200 VMs · 70 TB", "label": "en production" },
-          { "value": "500 utilisateurs", "label": "sur les plus grosses instances" },
-          { "value": "99,99 %", "label": "objectif de disponibilité" }
+          {
+            "value": "200 VMs · 70 TB",
+            "label": "en production"
+          },
+          {
+            "value": "500 utilisateurs",
+            "label": "sur les plus grosses instances"
+          },
+          {
+            "value": "99,99 %",
+            "label": "objectif de disponibilité"
+          }
         ],
         "explanation": "Les grands studios ont des exigences fortes : souveraineté des données, performance réseau, contrôle d'accès strict et isolation de production. CGWire déploie et gère Kitsu directement sur votre matériel ou sur un cloud isolé, avec la sécurité, la disponibilité, la surveillance et des mises à jour fréquentes, tout en vous laissant le contrôle."
       },
@@ -1620,9 +1775,18 @@
         "tagline": "Support de premier plan",
         "subtitle": "Un support qui maintient la production en mouvement",
         "stats": [
-          { "value": "30 min", "label": "réponse moyenne" },
-          { "value": "800", "label": "conversations par an" },
-          { "value": "2 100", "label": "membres Discord" }
+          {
+            "value": "30 min",
+            "label": "réponse moyenne"
+          },
+          {
+            "value": "800",
+            "label": "conversations par an"
+          },
+          {
+            "value": "2 100",
+            "label": "membres Discord"
+          }
         ],
         "docsCta": {
           "label": "Consulter la documentation",
@@ -1755,7 +1919,11 @@
             {
               "type": "table",
               "caption": "Kitsu vs Ftrack, en un coup d'œil",
-              "headers": ["Élément", "Kitsu", "Ftrack"],
+              "headers": [
+                "Élément",
+                "Kitsu",
+                "Ftrack"
+              ],
               "rows": [
                 [
                   "Licence utilisateur",
@@ -1830,7 +1998,11 @@
             {
               "type": "table",
               "caption": "Kitsu Cloud vs ShotGrid, ligne par ligne",
-              "headers": ["Élément", "Kitsu Cloud", "ShotGrid"],
+              "headers": [
+                "Élément",
+                "Kitsu Cloud",
+                "ShotGrid"
+              ],
               "rows": [
                 [
                   "Licence utilisateur",
@@ -2511,13 +2683,18 @@
       "link": "https://www.komposit.be/",
       "elementKey": "komposit",
       "name": "Komposit",
-      "type": ["shorts"]
+      "type": [
+        "shorts"
+      ]
     },
     "30studio": {
       "link": "https://www.3point0studio.com/",
       "elementKey": "30studio",
       "name": "3.0 Studio",
-      "type": ["feature-films", "shorts"]
+      "type": [
+        "feature-films",
+        "shorts"
+      ]
     },
     "abduct": {
       "link": "https://www.abduct.studio/",
@@ -2553,7 +2730,10 @@
       "link": "https://www.ankama.com/fr/animations",
       "elementKey": "ankama",
       "name": "Ankama Animations",
-      "type": ["tvshows", "feature-films"]
+      "type": [
+        "tvshows",
+        "feature-films"
+      ]
     },
     "aparat": {
       "link": "https://www.aparat-studio.com/",
@@ -2571,7 +2751,10 @@
       "link": "http://www.ateliervfx.com/",
       "elementKey": "atelier-vfx",
       "name": "Atelier VFX",
-      "type": ["shorts", "vfx"]
+      "type": [
+        "shorts",
+        "vfx"
+      ]
     },
     "autour-de-minuit": {
       "link": "https://www.autourdeminuit.com/",
@@ -2632,7 +2815,10 @@
       "link": "https://cousinbizarre.com/",
       "elementKey": "cousin-bizarre",
       "name": "Cousin Bizarre",
-      "type": ["shorts", "vfx"]
+      "type": [
+        "shorts",
+        "vfx"
+      ]
     },
     "creative-seeds": {
       "link": "https://creativeseeds.fr/",
@@ -2650,7 +2836,9 @@
       "link": "https://www.ecv.fr/en/",
       "elementKey": "ecv",
       "name": "ICA ECV",
-      "type": ["schools"]
+      "type": [
+        "schools"
+      ]
     },
     "ellipse": {
       "link": "https://www.ellipseanimation.com/",
@@ -2704,7 +2892,10 @@
       "link": "https://fost.studio",
       "elementKey": "fost",
       "name": "Fost",
-      "type": ["tvshows", "feature-films"],
+      "type": [
+        "tvshows",
+        "feature-films"
+      ],
       "case_study": "https://blog.cg-wire.com/customer-story-fost-studio/"
     },
     "georges-melies": {
@@ -2915,13 +3106,19 @@
       "link": "https://www.duskvfx.fr/",
       "elementKey": "dusk",
       "name": "Dusk",
-      "type": ["feature-films", "vfx"]
+      "type": [
+        "feature-films",
+        "vfx"
+      ]
     },
     "imagovfx": {
       "link": "https://www.imagovfx.com/",
       "elementKey": "imagovfx",
       "name": "Imago VFX",
-      "type": ["shorts", "vfx"]
+      "type": [
+        "shorts",
+        "vfx"
+      ]
     },
     "impossible-objects": {
       "link": "https://www.impossible-objects.co/",
@@ -2993,7 +3190,10 @@
       "link": "https://makutavfx.com/",
       "elementKey": "makuta",
       "name": "Makuta",
-      "type": ["feature-films", "vfx"],
+      "type": [
+        "feature-films",
+        "vfx"
+      ],
       "case_study": "https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
     },
     "malilart": {
@@ -3048,7 +3248,10 @@
       "link": "https://www.miyu.fr/",
       "elementKey": "miyu",
       "name": "Miyu",
-      "type": ["feature-films", "shorts"],
+      "type": [
+        "feature-films",
+        "shorts"
+      ],
       "case_study": "https://blog.cg-wire.com/customer-story-miyu-studio/"
     },
     "monello": {
@@ -3061,7 +3264,10 @@
       "link": "https://www.monkeys.tv/",
       "elementKey": "monkeys",
       "name": "Monkeys",
-      "type": ["shorts", "vfx"]
+      "type": [
+        "shorts",
+        "vfx"
+      ]
     },
     "naive": {
       "link": "https://naive.se/",
@@ -3127,7 +3333,10 @@
       "link": "https://www.ovfx.com/",
       "elementKey": "outlookvfx",
       "name": "Outlook VFX",
-      "type": ["shorts", "vfx"]
+      "type": [
+        "shorts",
+        "vfx"
+      ]
     },
     "parallel14": {
       "link": "https://parallel14.com/",
@@ -3175,7 +3384,10 @@
       "link": "https://rockinvfx.com/",
       "elementKey": "rockinvfx",
       "name": "Rockin VFX",
-      "type": ["shorts", "vfx"]
+      "type": [
+        "shorts",
+        "vfx"
+      ]
     },
     "rubika": {
       "link": "https://www.rubika-edu.com/",
@@ -3211,7 +3423,11 @@
       "link": "https://www.stimstudio.com/en/",
       "elementKey": "stim",
       "name": "Stim Studio",
-      "type": ["shorts", "feature-films", "vfx"]
+      "type": [
+        "shorts",
+        "feature-films",
+        "vfx"
+      ]
     },
     "sun-and-moon": {
       "link": "https://sunandmoonstudios.co.uk/",
@@ -3265,13 +3481,19 @@
       "link": "https://www.viridianfx.co.uk/",
       "elementKey": "viridian",
       "name": "ViridianVFX",
-      "type": ["shorts", "vfx"]
+      "type": [
+        "shorts",
+        "vfx"
+      ]
     },
     "warriorsvfx": {
       "link": "https://www.warriorsvfx.com.br/",
       "elementKey": "warriorsvfx",
       "name": "Warriors VFX",
-      "type": ["shorts", "vfx"]
+      "type": [
+        "shorts",
+        "vfx"
+      ]
     },
     "welab": {
       "link": "https://weloveabattle.com/",
@@ -3313,259 +3535,405 @@
       "link": "https://20stm.com/",
       "elementKey": "20-stm",
       "name": "20 STM",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "adrenalin-group": {
       "link": "https://adrenalin.com.sg/",
       "elementKey": "adrenalin-group",
       "name": "Adrenalin Group",
-      "type": ["shorts"]
+      "type": [
+        "shorts"
+      ]
     },
     "aixcreative": {
       "link": "https://dayda.studio/",
       "elementKey": "aixcreative",
       "name": "AIxCreative",
-      "type": ["shorts"]
+      "type": [
+        "shorts"
+      ]
     },
     "big-company": {
       "link": "https://www.bigcompany.fr/",
       "elementKey": "big-company",
       "name": "Big Company",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "brainypixel": {
       "link": "https://www.brainypixel.com/",
       "elementKey": "brainypixel",
       "name": "Brainy Pixel Productions",
-      "type": ["shorts"]
+      "type": [
+        "shorts"
+      ]
     },
     "camello": {
       "link": "https://www.camelloaudiovisual.com/",
       "elementKey": "camello",
       "name": "Camello AV",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "chromatik": {
       "link": "https://www.chromatik-studio.fr/",
       "elementKey": "chromatik",
       "name": "Chromatik",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "darjeeling": {
       "link": "https://www.darjeelingprod.com/",
       "elementKey": "darjeeling",
       "name": "Darjeeling",
-      "type": ["feature-films", "shorts", "tvshows", "video-games"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows",
+        "video-games"
+      ]
     },
     "doghouse": {
       "link": "https://doghousefilms.eu/en/",
       "elementKey": "doghouse",
       "name": "Doghouse Films",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "enanimation": {
       "link": "https://www.enanimation.it/",
       "elementKey": "enanimation",
       "name": "Enanimation Srl",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "filmakersmonkeys": {
       "link": "https://filmakersmonkeys.com/",
       "elementKey": "filmakersmonkeys",
       "name": "Filmakers Monkeys",
-      "type": ["feature-films", "shorts"]
+      "type": [
+        "feature-films",
+        "shorts"
+      ]
     },
     "folimage": {
       "link": "https://www.folimage.fr/en/",
       "elementKey": "folimage",
       "name": "Folimage Studio",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "gaoshan": {
       "link": "https://www.gaoshanpictures.com/",
       "elementKey": "gaoshan",
       "name": "Gao Shan Pictures",
-      "type": ["feature-films"]
+      "type": [
+        "feature-films"
+      ]
     },
     "isart": {
       "link": "https://www.isart.com/",
       "elementKey": "isart",
       "name": "ISART digital",
-      "type": ["schools"]
+      "type": [
+        "schools"
+      ]
     },
     "jaibo": {
       "link": "https://jaibofilms.com/",
       "elementKey": "jaibo",
       "name": "Jaibo Films",
-      "type": ["feature-films", "shorts"]
+      "type": [
+        "feature-films",
+        "shorts"
+      ]
     },
     "kiddigraph": {
       "link": "https://www.k3dvfx.com/",
       "elementKey": "kiddigraph",
       "name": "KIDDIGRAPH STUDIO",
-      "type": ["feature-films", "shorts"]
+      "type": [
+        "feature-films",
+        "shorts"
+      ]
     },
     "lacabane": {
       "link": "https://lacabaneproductions.com/",
       "elementKey": "lacabane",
       "name": "LA CABANE PRODUCTIONS",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "lachouette": {
       "link": "https://www.chouetteco.com/",
       "elementKey": "lachouette",
       "name": "La Chouette Compagnie",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "lamola": {
       "link": "https://lamola.studio/en/",
       "elementKey": "lamola",
       "name": "LaMola",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "lesmonstres": {
       "link": "https://www.les-monstres.com/",
       "elementKey": "lesmonstres",
       "name": "les monstres",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "magicalworld": {
       "link": "https://www.youtube.com/@Magicalworldproductions",
       "elementKey": "magicalworld",
       "name": "Magical World Productions",
-      "type": ["shorts"]
+      "type": [
+        "shorts"
+      ]
     },
     "mago": {
       "link": "https://magoproduction.com/",
       "elementKey": "mago",
       "name": "Mago Productions",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "maur": {
       "link": "https://www.maurfilm.com/en/",
       "elementKey": "maur",
       "name": "MAUR film",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "msf": {
       "link": "https://megaspacefighter.com/en/",
       "elementKey": "msf",
       "name": "MegaSpaceFighter",
-      "type": ["shorts"]
+      "type": [
+        "shorts"
+      ]
     },
     "mrmiyagi": {
       "link": "https://www.instagram.com/miyagifilms/",
       "elementKey": "mrmiyagi",
       "name": "Mr Miyagi Films",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "nalu": {
       "link": "https://www.naluanimation.com",
       "elementKey": "nalu",
       "name": "Nalu Animation",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "ocidental": {
       "link": "https://www.instagram.com/ocidental_filmes/",
       "elementKey": "ocidental",
       "name": "Ocidental Filmes",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "offensive": {
       "link": "https://offensivegroup.com/",
       "elementKey": "offensive",
       "name": "Offensive Marketing Group",
-      "type": ["shorts"]
+      "type": [
+        "shorts"
+      ]
     },
     "phanta": {
       "link": "https://phanta-animation.com/",
       "elementKey": "phanta",
       "name": "Phanta Animation",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "polvo": {
       "link": "https://www.polvoprod.com/",
       "elementKey": "polvo",
       "name": "Polvo Prod",
-      "type": ["shorts"]
+      "type": [
+        "shorts"
+      ]
     },
     "ejt": {
       "link": "https://www.ejt-labo.com/",
       "elementKey": "ejt",
       "name": "Promenons-nous dans les bois / Studio EJT-labo",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "rouge": {
       "link": "https://withrouge.com/",
       "elementKey": "rouge",
       "name": "ROUGE Collective",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "scrawl": {
       "link": "https://scrawlanimation.com/",
       "elementKey": "scrawl",
       "name": "Scrawl Animation",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "skjaldborn": {
       "link": "https://www.skjaldborn.com/",
       "elementKey": "skjaldborn",
       "name": "Skjaldborn",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "snowcloud": {
       "link": "https://www.snowcloud.se/",
       "elementKey": "snowcloud",
       "name": "Snowcloud Films AB",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "spindlehorse": {
       "link": "https://spindlehorse.com/",
       "elementKey": "spindlehorse",
       "name": "Spindlehorse",
-      "type": ["tvshows"]
+      "type": [
+        "tvshows"
+      ]
     },
     "squarefish": {
       "link": "https://squarefish.eu/",
       "elementKey": "squarefish",
       "name": "Squarefish",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "stay": {
       "link": "https://stay-studio.net/",
       "elementKey": "stay",
       "name": "Stay株式会社",
-      "type": [""]
+      "type": [
+        ""
+      ]
     },
     "unagi": {
       "link": "https://studio-unagi.com/",
       "elementKey": "unagi",
       "name": "Studio Unagi",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "terminus": {
       "link": "https://terminus-studio.com/",
       "elementKey": "terminus",
       "name": "Terminus",
-      "type": ["feature-films", "shorts", "tvshows"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows"
+      ]
     },
     "thinkots": {
       "link": "https://www.thinkots.com/",
       "elementKey": "thinkots",
       "name": "ThinkOTS",
-      "type": ["video-games"]
+      "type": [
+        "video-games"
+      ]
     },
     "vfxtechnologies": {
       "link": "https://www.vfxtechnologies.com/",
       "elementKey": "vfxtechnologies",
       "name": "VFX Technologies",
-      "type": ["feature-films", "shorts", "tvshows", "vfx"]
+      "type": [
+        "feature-films",
+        "shorts",
+        "tvshows",
+        "vfx"
+      ]
     },
     "eraseuneavez": {
       "link": "https://www.instagram.com/eraseunavezfilms2019/",
       "elementKey": "eraseuneavez",
       "name": "Érase una vez films",
-      "type": ["feature-films", "shorts"]
+      "type": [
+        "feature-films",
+        "shorts"
+      ]
     }
   },
   "testimonials": {

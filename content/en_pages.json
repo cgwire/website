@@ -1117,12 +1117,124 @@
         "explanation": "Your data flows throughout your entire pipeline. That's why we provide integrations to facilitate communication between your tools. We enable your artists to publish from their tools, allow your team to send notifications to your chat applications, and offer API clients for extending your workflow."
       },
       "integrations": {
-        "subtitleDcc": "Quickly send previews",
-        "titleDcc": "Publish from your Favorite Digital Content Creation Tools",
-        "subtitleChats": "Keep your team up to date",
-        "titleChats": "Push notifications to your chat applications",
-        "subtitleSoftware": "Access Kitsu data in your tools",
-        "titleSoftware": "Integrate Kitsu directly into Your Code"
+        "groups": [
+          {
+            "subtitle": "Quickly send previews",
+            "title": "Publish from your Favorite Digital Content Creation Tools",
+            "rows": [
+              [
+                {
+                  "alt": "Blender Logo",
+                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
+                  "image": "/images/integrations/logo-blender.png",
+                  "imageClass": "w75pe"
+                },
+                {
+                  "alt": "Harmony Logo",
+                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
+                  "image": "/images/integrations/logo-harmony.png",
+                  "imageClass": "w75pe"
+                },
+                {
+                  "alt": "Unreal Engine",
+                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
+                  "image": "/images/integrations/logo-unreal-engine.png",
+                  "imageClass": "w75pe"
+                }
+              ],
+              [
+                {
+                  "alt": "Houdini Logo",
+                  "href": "https://github.com/Chantology/kitsu-houdini-plugin",
+                  "image": "/images/integrations/houdini.png",
+                  "imageClass": "w75pe",
+                  "community": true,
+                  "authors": [{ "username": "Chantology" }]
+                },
+                {
+                  "alt": "OpenRV Logo",
+                  "href": "https://github.com/cgwire/openrv",
+                  "image": "/images/integrations/openrv.png",
+                  "imageClass": "w75pe"
+                },
+                {
+                  "alt": "Blender Logo",
+                  "href": "https://github.com/Chantology/kitsu-blender-plugin",
+                  "image": "/images/integrations/logo-blender.png",
+                  "imageClass": "w75pe",
+                  "community": true,
+                  "authors": [{ "username": "Chantology" }]
+                }
+              ],
+              [
+                {
+                  "alt": "Prism Logo",
+                  "href": "https://github.com/EmberLightVFX/Kitsu-for-Prism",
+                  "image": "/images/integrations/logo-prism.png",
+                  "imageClass": "w75pe",
+                  "community": true,
+                  "authors": [{ "username": "EmberLightVFX" }]
+                }
+              ],
+              [
+                {
+                  "alt": "Maya Logo",
+                  "href": "https://github.com/Chantology/kitsu-maya-plugin",
+                  "image": "/images/integrations/maya.png",
+                  "imageClass": "w75pe",
+                  "community": true,
+                  "authors": [{ "username": "Chantology" }]
+                }
+              ]
+            ]
+          },
+          {
+            "subtitle": "Keep your team up to date",
+            "title": "Push notifications to your chat applications",
+            "rows": [
+              [
+                {
+                  "alt": "Slack Logo",
+                  "href": "https://kitsu.cg-wire.com/slack/",
+                  "image": "/images/integrations/logo-slack.png",
+                  "imageClass": "w75pe"
+                },
+                {
+                  "alt": "Mattermost Logo",
+                  "href": "https://kitsu.cg-wire.com/mattermost/",
+                  "image": "/images/integrations/logo-mattermost.png",
+                  "imageClass": "w75pe"
+                },
+                {
+                  "alt": "Discord Logo",
+                  "href": "https://kitsu.cg-wire.com/discord/",
+                  "image": "/images/integrations/logo-discord.png",
+                  "imageClass": "w75pe"
+                }
+              ]
+            ]
+          },
+          {
+            "subtitle": "Access Kitsu data in your tools",
+            "title": "Integrate Kitsu directly into Your Code",
+            "rows": [
+              [
+                {
+                  "alt": "Python Logo",
+                  "href": "https://gazu.cg-wire.com",
+                  "image": "/images/integrations/logo-python.png",
+                  "imageClass": "w50pe"
+                },
+                {
+                  "alt": "Javascript Logo",
+                  "href": "https://github.com/cgwire/kitsu-client-js",
+                  "image": "/images/integrations/logo-javascript.png",
+                  "imageClass": "w25pe"
+                }
+              ]
+            ]
+          }
+        ]
       },
       "communityContribution": "Community contribution"
     },

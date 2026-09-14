@@ -3,141 +3,72 @@
     <SolutionHeaderBlock :page-key="page.slug" :header="page.meta.header" />
 
     <section class="section mt8 pt0">
-      <div class="section-subtitle has-text-centered">
-        {{ page.meta.integrations.subtitleDcc }}
-      </div>
-      <h2 class="section-title has-text-centered">
-        {{ page.meta.integrations.titleDcc }}
-      </h2>
+      <template
+        v-for="(group, gIndex) in groupedIntegrations"
+        :key="group.title"
+      >
+        <div
+          class="section-subtitle has-text-centered"
+          :class="{ mt4: gIndex > 0 }"
+        >
+          {{ group.subtitle }}
+        </div>
+        <h2 class="section-title has-text-centered">
+          {{ group.title }}
+        </h2>
 
-      <div class="flexrow mt2">
-        <a
-          href="https://github.com/cgwire/kitsu-publisher-next#readme"
-          class="software flexrow-item"
+        <!-- Official integrations -->
+        <div
+          class="software-grid mt2"
+          :class="{ mb4: !group.communityItems.length }"
         >
-          <img
-            class="w75pe"
-            src="~/assets/images/integrations/logo-blender.png"
-            alt="Blender Logo"
-          />
-        </a>
-        <a
-          href="https://github.com/cgwire/kitsu-publisher-next#readme"
-          class="software flexrow-item"
-        >
-          <img
-            class="w50pe"
-            src="~/assets/images/integrations/logo-harmony.png"
-            alt="Harmony Logo"
-          />
-        </a>
-        <a
-          href="https://github.com/cgwire/kitsu-publisher-next#readme"
-          class="software flexrow-item"
-        >
-          <img
-            class="w50pe"
-            src="~/assets/images/integrations/logo-unreal-engine.png"
-            alt="Unreal Engine"
-          />
-        </a>
-      </div>
+          <a
+            v-for="item in group.officialItems"
+            :key="item.alt"
+            :href="item.href"
+            class="software"
+            :class="item.linkClass"
+          >
+            <NuxtImg :src="item.image" :class="item.imageClass" :alt="item.alt" />
+          </a>
+        </div>
 
-      <div class="flexrow mt2 mb4 has-text-centered">
-        <a
-          href="https://github.com/EmberLightVFX/Kitsu-for-Prism"
-          class="software flexrow-item"
-        >
-          <img
-            class="w50pe"
-            src="~/assets/images/integrations/logo-prism.png"
-            alt="Prism Logo"
-          />
-          <span class="made-by-community">
+        <!-- Community integrations -->
+        <template v-if="group.communityItems.length">
+          <div class="section-subtitle has-text-centered community-subtitle mt4">
             {{ page.meta.communityContribution }}
-          </span>
-        </a>
-        <a
-          href="https://github.com/ynput/ayon-kitsu"
-          class="software flexrow-item openpype"
-        >
-          <img
-            class="w50pe openpype"
-            src="~/assets/images/integrations/logo-ayon.png"
-            alt="Ayon Logo"
-          />
-          <span class="made-by-community">
-            {{ page.meta.communityContribution }}
-          </span>
-        </a>
-      </div>
+          </div>
 
-      <div class="section-subtitle has-text-centered mt4">
-        {{ page.meta.integrations.subtitleChats }}
-      </div>
-      <h2 class="section-title has-text-centered">
-        {{ page.meta.integrations.titleChats }}
-      </h2>
-
-      <div class="flexrow mt2 mb4">
-        <a
-          href="https://kitsu.cg-wire.com/slack/"
-          class="software flexrow-item"
-        >
-          <img
-            class="w75pe"
-            src="~/assets/images/integrations/logo-slack.png"
-            alt="Slack Logo"
-          />
-        </a>
-        <a
-          href="https://kitsu.cg-wire.com/mattermost/"
-          class="software flexrow-item"
-        >
-          <img
-            class="w75pe"
-            src="~/assets/images/integrations/logo-mattermost.png"
-            alt="Mattermost Logo"
-          />
-        </a>
-        <a
-          href="https://kitsu.cg-wire.com/discord/"
-          class="software flexrow-item"
-        >
-          <NuxtImg
-            src="/images/integrations/logo-discord.png"
-            class="w75pe"
-            alt="Discord Logo"
-          />
-        </a>
-      </div>
-
-      <div class="section-subtitle has-text-centered mt4">
-        {{ page.meta.integrations.subtitleSoftware }}
-      </div>
-      <h2 class="section-title has-text-centered">
-        {{ page.meta.integrations.titleSoftware }}
-      </h2>
-
-      <div class="flexrow mt2">
-        <a href="https://gazu.cg-wire.com" class="software flexrow-item">
-          <img
-            class="w50pe"
-            src="~/assets/images/integrations/logo-python.png"
-            alt="Python Logo"
-          />
-        </a>
-        <a
-          href="https://github.com/cgwire/kitsu-client-js"
-          class="software flexrow-item"
-        >
-          <img
-            class="w25pe"
-            src="~/assets/images/integrations/logo-javascript.png"
-            alt="Javascript Logo"
-          />
-        </a>
-      </div>
+          <div class="software-grid mt2 mb4">
+            <a
+              v-for="item in group.communityItems"
+              :key="item.alt"
+              :href="item.href"
+              class="software"
+              :class="item.linkClass"
+            >
+              <NuxtImg :src="item.image" :class="item.imageClass" :alt="item.alt" />
+              <span v-if="item.authors?.length" class="authors">
+                <span
+                  v-for="author in item.authors"
+                  :key="author.username || author.name"
+                  class="author"
+                >
+                  <span class="author-name">by {{ author.username || author.name }}</span>
+                  <img
+                    class="author-avatar"
+                    :src="authorAvatar(author)"
+                    :alt="author.username || author.name"
+                    width="24"
+                    height="24"
+                    loading="lazy"
+                  />
+                </span>
+              </span>
+            </a>
+          </div>
+        </template>
+      </template>
     </section>
 
     <Trial />
@@ -156,9 +87,90 @@ const { data: page } = await useAsyncData(
   { watch: [slug, locale] }
 )
 
+const ROW_SIZE = 3
+
+const chunk = (items, size) => {
+  const rows = []
+  for (let i = 0; i < items.length; i += size) {
+    rows.push(items.slice(i, i + size))
+  }
+  return rows
+}
+
+const groupedIntegrations = computed(() => {
+  if (!page.value) return []
+
+  return page.value.meta.integrations.groups.map((group) => {
+    const items = group.rows.flat().filter((item) => item?.alt)
+
+    return {
+      ...group,
+      officialItems: items.filter((item) => !item.community),
+      communityItems: items.filter((item) => item.community)
+    }
+  })
+})
+
+const authorAvatar = (author) =>
+  author.avatar || `https://github.com/${author.username}.png?size=48`
+
 useSEO({
   title: 'CGWire | Kitsu / ' + page.value.meta.header.tagline,
   description: page.value.meta.header.explanation,
   imagePath: 'software-integrations.png'
 })
 </script>
+
+<style>
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.software {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  padding: 20px;
+}
+
+.software > img {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+.community-subtitle {
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+
+.authors {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.author {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+.author-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+</style>
