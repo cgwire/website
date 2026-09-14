@@ -32,6 +32,10 @@ watchEffect(() => {
     panel.value = faqs.value[0].id
   }
 })
+
+function selectPanel(section) {
+  panel.value = section
+}
 </script>
 
 <style scoped>

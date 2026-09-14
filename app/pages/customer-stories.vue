@@ -3,6 +3,9 @@
     <div class="section-title has-text-centered mt4 mb4">
       {{ page.meta.header.title }}
     </div>
+
+    <VideoCustomerStories/>
+
     <div class="section-subtitle has-text-centered mt4" data-aos="fade-up">
       Advertisement
     </div>
