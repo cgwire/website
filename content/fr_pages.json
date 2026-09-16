@@ -973,7 +973,7 @@
         "agency": "Pour les courts-métrages, publicités et productions légères",
         "production": "Pour les séries TV, longs-métrages et jeux vidéo",
         "studio": "Pour les studios gérant plusieurs productions",
-        "partner": "Pour les grands studios ou la conformité TPN"
+        "partner": "Pour les grandes entreprises ou la conformité TPN"
       },
       "button": {
         "contactcta": "Contactez nous",
@@ -1098,7 +1098,6 @@
         "enterprise": "Entreprise",
         "freelancer": "Freelance",
         "gold": "Or",
-        "partner": "Partenaire",
         "production": "Production",
         "quote": "Sur devis",
         "silver": "Argent",

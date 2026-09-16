@@ -1084,7 +1084,7 @@
         "agency": "For shorts, commercials, and light productions",
         "production": "For TV series, feature films, and video games",
         "studio": "For studios running multiple productions",
-        "partner": "For large studios or TPN compliance"
+        "partner": "For large companies or TPN compliance"
       },
       "value": {
         "month": " / month",
@@ -1098,7 +1098,6 @@
         "enterprise": "Enterprise",
         "freelancer": "Freelancer",
         "gold": "Gold",
-        "partner": "Partner",
         "production": "Production",
         "quote": "On Quote",
         "silver": "Silver",
