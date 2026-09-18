@@ -37,14 +37,18 @@ const slices = computed(() =>
     pct: Math.round((value / total.value) * 100)
   }))
 )
-// conic-gradient stops with a 0.4% white sliver between slices as the gap
+// conic-gradient stops with a 0.4% white sliver between slices as the gap.
+// Hard stops render aliased, so each edge blends over 2 * FEATHER instead.
+const GAP = 0.4
+const FEATHER = 0.15
 const gradient = computed(() => {
   let acc = 0
   return slices.value
     .map(s => {
       const start = acc
       acc += (s.value / total.value) * 100
-      return `${s.color} ${start}% ${acc - 0.4}%, #fff ${acc - 0.4}% ${acc}%`
+      const gap = acc - GAP
+      return `${s.color} ${start + FEATHER}% ${gap - FEATHER}%, #fff ${gap + FEATHER}% ${acc - FEATHER}%`
     })
     .join(', ')
 })
