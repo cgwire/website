@@ -111,6 +111,7 @@
             v-for="p in instancePies"
             :key="p.title"
             class="chart-card pie-card"
+            :class="{ 'pie-card-total': p.total }"
           >
             <h3 class="pie-title">{{ p.title }}</h3>
             <MetricsPie
@@ -387,6 +388,7 @@ const instancePies = computed(() => {
     },
     {
       title: c.sizeCombined,
+      total: true,
       labels: [...c.sizeBuckets, c.sizeSchools],
       // last 6 months self-hosted + cloud, bucket by bucket (schools are cloud only)
       counts: metrics.instances.cloud.counts.map(
@@ -724,6 +726,9 @@ $border-soft = #e4e9ef
 
 .pie-card
   padding: 1.5rem 1.75rem
+
+.pie-card-total
+  border: 2px solid cgwiregreen
 
 .pie-title
   font-size: 1.15rem
