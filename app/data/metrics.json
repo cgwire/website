@@ -3,7 +3,12 @@
   "currency": "EUR",
   "seriesStart": "2018-07",
   "note": "Snapshot imported from metrics.cg-wire.com. Amounts in EUR. Salaries are French net (taxes excluded).",
-  "selfHostedSetups": 446,
+  "selfHostedSetups": 507,
+  "instances": {
+    "allTime": { "counts": [113, 254, 86, 54], "biggestUsers": 1402, "activeUsers": 24910 },
+    "last6Months": { "counts": [61, 139, 49, 29], "biggestUsers": 530, "activeUsers": 13132 },
+    "cloud": { "counts": [34, 36, 8, 6, 15], "biggestUsers": 1000, "activeUsers": 5035 }
+  },
   "revenue": {
     "monthly": {
       "values": [
@@ -358,7 +363,8 @@
       96,
       96,
       96,
-      97
+      97,
+      99
     ]
   },
   "cashFlow": {

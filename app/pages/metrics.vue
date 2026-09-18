@@ -105,6 +105,28 @@
             <p class="metric-text">{{ m.customers.selfhostedText }}</p>
           </div>
         </div>
+        <h2 class="content-title pie-heading">{{ m.customers.sizeTitle }}</h2>
+        <div class="pie-cards">
+          <div
+            v-for="p in instancePies"
+            :key="p.title"
+            class="chart-card pie-card"
+          >
+            <h3 class="pie-title">{{ p.title }}</h3>
+            <MetricsPie
+              :labels="p.labels"
+              :values="p.counts"
+              :aria-label="p.title"
+            />
+            <p v-if="p.activeUsers" class="pie-foot">
+              <span v-if="p.biggestUsers"
+                >{{ m.customers.sizeBiggest }}:
+                <strong>{{ p.biggestUsers }}</strong> ·
+              </span>
+              {{ m.customers.sizeActiveUsers }}: <strong>{{ p.activeUsers }}</strong>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -353,6 +375,29 @@ const lastUpdate = computed(() =>
 
 const latestCustomers = metrics.customers.values.at(-1)
 const employeesCount = metrics.employees.values.at(-1)
+const instancePies = computed(() => {
+  const c = m.value.customers
+  return [
+    { title: c.sizeAllTime, labels: c.sizeBuckets, ...metrics.instances.allTime },
+    { title: c.sizeRecent, labels: c.sizeBuckets, ...metrics.instances.last6Months },
+    {
+      title: c.sizeCloud,
+      labels: [...c.sizeBuckets, c.sizeSchools],
+      ...metrics.instances.cloud
+    },
+    {
+      title: c.sizeCombined,
+      labels: [...c.sizeBuckets, c.sizeSchools],
+      // last 6 months self-hosted + cloud, bucket by bucket (schools are cloud only)
+      counts: metrics.instances.cloud.counts.map(
+        (v, i) => v + (metrics.instances.last6Months.counts[i] || 0)
+      ),
+      activeUsers:
+        metrics.instances.cloud.activeUsers +
+        metrics.instances.last6Months.activeUsers
+    }
+  ]
+})
 
 // Every time series starts at metrics.seriesStart: labels are derived from it
 // and the series length, so appending a value in the JSON needs no new label.
@@ -667,6 +712,29 @@ $border-soft = #e4e9ef
   gap: 1.5rem
   text-align: left
 
+.pie-cards
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 1.5rem
+  margin-top: 1.5rem
+  text-align: left
+
+.pie-heading
+  margin-top: 3rem
+
+.pie-card
+  padding: 1.5rem 1.75rem
+
+.pie-title
+  font-size: 1.15rem
+  font-weight: 700
+  margin-bottom: 1.25rem
+
+.pie-foot
+  margin: 1.25rem 0 0
+  font-size: 0.9rem
+  color: $text-light
+
 .metric-block
   background: #fff
   border: 1px solid $border-soft
@@ -950,6 +1018,9 @@ $border-soft = #e4e9ef
 // Keep this block last: at equal specificity the base rules above would
 // override it otherwise.
 @media (max-width: 860px)
+  .pie-cards
+    grid-template-columns: 1fr
+
   .hero
     background-image: linear-gradient(180deg, $hero-top 0%, #fff 100%)
     background-size: cover

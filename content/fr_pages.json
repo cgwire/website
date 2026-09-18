@@ -45,7 +45,16 @@
         "activeTitle": "Clients actifs",
         "activeText": "Les studios avec un abonnement en cours. Les utilisateurs open source ne sont pas comptés ici.",
         "selfhostedTitle": "Installations auto-hébergées actives",
-        "selfhostedText": "Les équipes qui font tourner Kitsu sur leurs propres serveurs, indépendamment de notre offre cloud."
+        "selfhostedText": "Les équipes qui font tourner Kitsu sur leurs propres serveurs, indépendamment de notre offre cloud.",
+        "sizeTitle": "Instances par taille d'équipe",
+        "sizeAllTime": "Auto-hébergées, depuis le début",
+        "sizeRecent": "Auto-hébergées, mises à jour sur les 6 derniers mois",
+        "sizeBuckets": ["1 à 10 utilisateurs", "10 à 50 utilisateurs", "50 à 100 utilisateurs", "100 utilisateurs et plus"],
+        "sizeBiggest": "Plus grande instance",
+        "sizeActiveUsers": "Utilisateurs actifs",
+        "sizeCloud": "Clients cloud, écoles à part",
+        "sizeSchools": "Écoles",
+        "sizeCombined": "Auto-hébergées mises à jour sur 6 mois plus clients cloud"
       },
       "team": {
         "eyebrow": "L'équipe",

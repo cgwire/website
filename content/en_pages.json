@@ -45,7 +45,16 @@
         "activeTitle": "Active customers",
         "activeText": "Studios with a running subscription. Open source users are not counted here.",
         "selfhostedTitle": "Active self-hosted setups",
-        "selfhostedText": "Teams running Kitsu on their own servers, independently from our cloud offering."
+        "selfhostedText": "Teams running Kitsu on their own servers, independently from our cloud offering.",
+        "sizeTitle": "Instances by team size",
+        "sizeAllTime": "Self-hosted, all time",
+        "sizeRecent": "Self-hosted, updated in the last 6 months",
+        "sizeBuckets": ["1 to 10 users", "10 to 50 users", "50 to 100 users", "100+ users"],
+        "sizeBiggest": "Largest instance",
+        "sizeActiveUsers": "Active users",
+        "sizeCloud": "Cloud customers, schools apart",
+        "sizeSchools": "Schools",
+        "sizeCombined": "Self-hosted updated in the last 6 months plus cloud customers"
       },
       "team": {
         "eyebrow": "The team",

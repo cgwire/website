@@ -45,7 +45,16 @@
         "activeTitle": "アクティブな顧客",
         "activeText": "有効なサブスクリプションを持つスタジオ。オープンソース利用者はここには含まれません。",
         "selfhostedTitle": "稼働中のセルフホスト環境",
-        "selfhostedText": "当社のクラウドとは別に、自社サーバーでKitsuを運用しているチーム。"
+        "selfhostedText": "当社のクラウドとは別に、自社サーバーでKitsuを運用しているチーム。",
+        "sizeTitle": "チーム規模別のインスタンス",
+        "sizeAllTime": "セルフホスト（累計）",
+        "sizeRecent": "セルフホスト（過去6か月に更新）",
+        "sizeBuckets": ["1〜10ユーザー", "10〜50ユーザー", "50〜100ユーザー", "100ユーザー以上"],
+        "sizeBiggest": "最大のインスタンス",
+        "sizeActiveUsers": "アクティブユーザー",
+        "sizeCloud": "クラウド顧客（学校は別枠）",
+        "sizeSchools": "学校",
+        "sizeCombined": "過去6か月に更新されたセルフホスト環境とクラウド顧客の合計"
       },
       "team": {
         "eyebrow": "チーム",
