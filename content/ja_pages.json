@@ -3014,6 +3014,12 @@
       "name": "Studio Liddell",
       "type": "tvshows"
     },
+    "redknuckles": {
+      "link": "https://www.redknuckles.co.uk/",
+      "elementKey": "redknuckles",
+      "name": "Red Knuckles",
+      "type": ["shorts", "vfx"]
+    },
     "caribara": {
       "link": "https://www.caribara-animation.com/",
       "elementKey": "caribara",
