@@ -126,6 +126,7 @@ const mailto =
 
 // Studios are universal across locales, so this list stays shared.
 const foundingPartners = [
+  { name: 'Caribara Animation', url: 'https://www.caribara-animation.com/' },
   { name: 'Cousin Bizarre', url: 'https://cousinbizarre.com/' },
   { name: 'Ellipse Animation', url: 'https://www.ellipseanimation.com/' },
   { name: 'Moon Studio', url: 'https://moon-studio.io/' },
