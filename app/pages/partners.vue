@@ -100,13 +100,20 @@
           <p class="partners-founders-intro">
             {{ t.foundersIntro }}
           </p>
-          <ul class="partners-founders-list">
-            <li v-for="(studio, i) in foundingPartners" :key="i">
-              <a :href="studio.url" target="_blank" rel="noopener">
-                {{ studio.name }}
-              </a>
-            </li>
-          </ul>
+          <div
+            v-for="tier in visibleTiers"
+            :key="tier.key"
+            :class="['partners-tier', `partners-tier--${tier.key}`]"
+          >
+            <p class="partners-tier-lbl">{{ t.tierNames[tier.key] }}</p>
+            <ul class="partners-founders-list">
+              <li v-for="(studio, i) in tier.studios" :key="i">
+                <a :href="studio.url" target="_blank" rel="noopener">
+                  {{ studio.name }}
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </article>
     </section>
@@ -124,17 +131,35 @@ const { locale } = useI18n()
 const mailto =
   'mailto:partners@cg-wire.com?subject=Kitsu%20Studio%20Partners%20Program'
 
-// Studios are universal across locales, so this list stays shared.
-const foundingPartners = [
-  { name: 'Caribara Animation', url: 'https://www.caribara-animation.com/' },
-  { name: 'Cousin Bizarre', url: 'https://cousinbizarre.com/' },
-  { name: 'Ellipse Animation', url: 'https://www.ellipseanimation.com/' },
-  { name: 'Moon Studio', url: 'https://moon-studio.io/' },
-  { name: 'Normaal', url: 'https://normaal.fr/' },
-  { name: 'Passion Pictures', url: 'https://www.passion-pictures.com/' },
-  { name: 'Terminus Studio', url: 'https://terminus-studio.com/' },
-  { name: 'TNZPV', url: 'https://www.tnzpv.com/' }
+// Studios are universal across locales, so these lists stay shared.
+// Tiers are rendered in this order; empty tiers are hidden.
+const partnerTiers = [
+  { key: 'platinum', studios: [] },
+  {
+    key: 'gold',
+    studios: [
+      {
+        name: 'Caribara Animation',
+        url: 'https://www.caribara-animation.com/'
+      },
+      { name: 'Cousin Bizarre', url: 'https://cousinbizarre.com/' },
+      { name: 'Ellipse Animation', url: 'https://www.ellipseanimation.com/' },
+      { name: 'Moon Studio', url: 'https://moon-studio.io/' },
+      { name: 'Normaal', url: 'https://normaal.fr/' },
+      { name: 'Passion Pictures', url: 'https://www.passion-pictures.com/' },
+      { name: 'TNZPV', url: 'https://www.tnzpv.com/' }
+    ]
+  },
+  {
+    key: 'silver',
+    studios: [
+      { name: 'Terminus Studio', url: 'https://terminus-studio.com/' },
+      { name: 'Zorba', url: 'https://zorba-group.com/' }
+    ]
+  }
 ]
+
+const visibleTiers = partnerTiers.filter(tier => tier.studios.length)
 
 const content = {
   en: {
@@ -190,6 +215,7 @@ const content = {
     sigLine: 'Paris, still five of us, still building.',
     foundersLabel: 'Founding Partners',
     foundersIntro: 'The studios who joined first and made this program real:',
+    tierNames: { platinum: 'Platinum', gold: 'Gold', silver: 'Silver' },
     seoTitle: 'Kitsu Studio Partners Program',
     seoDescription: 'Kitsu is yours. Help keep it open source.'
   },
@@ -248,6 +274,7 @@ const content = {
     foundersLabel: 'Partenaires fondateurs',
     foundersIntro:
       'Les studios qui ont rejoint les premiers et ont rendu ce programme réel :',
+    tierNames: { platinum: 'Platinum', gold: 'Gold', silver: 'Silver' },
     seoTitle: 'Programme Kitsu Studio Partners',
     seoDescription: 'Kitsu est à vous. Aidez-nous à le garder open source.'
   }
@@ -464,6 +491,20 @@ paper-bg = #EFEEEA
   color #555
   margin 0 0 16px
 
+.partners-tier
+  margin-top 18px
+
+  &:first-of-type
+    margin-top 0
+
+.partners-tier-lbl
+  font-size 0.72rem
+  font-weight 800
+  letter-spacing 0.18em
+  text-transform uppercase
+  margin 0 0 10px
+  color #777
+
 .partners-founders-list
   list-style none
   padding 0
@@ -477,17 +518,52 @@ paper-bg = #EFEEEA
     font-weight 700
     font-size 1rem
     color #1F1F28
-    background #F4FFF8
-    border 1px solid cgwire-green
+    background #FBFAF6
+    border 1px solid #D5D3CB
     padding 8px 16px
     border-radius 999px
     text-decoration none
-    transition background .15s, color .15s, transform .12s ease
+    transition background .15s, color .15s, border-color .15s, transform .12s ease
 
     &:hover
-      background cgwire-green
       color #fff
       transform translateY(-1px)
+
+.partners-tier--platinum
+  .partners-tier-lbl
+    color #4B5563
+
+  .partners-founders-list li a
+    background #F3F4F6
+    border-color #6B7280
+
+    &:hover
+      background #374151
+      border-color #374151
+
+.partners-tier--gold
+  .partners-tier-lbl
+    color #B7791F
+
+  .partners-founders-list li a
+    background #FFFBEB
+    border-color #D4A017
+
+    &:hover
+      background #D4A017
+      border-color #D4A017
+
+.partners-tier--silver
+  .partners-tier-lbl
+    color #6B7280
+
+  .partners-founders-list li a
+    background #F9FAFB
+    border-color #B0B4BC
+
+    &:hover
+      background #8B919B
+      border-color #8B919B
 
 .partners-signoff
   margin-top 36px
