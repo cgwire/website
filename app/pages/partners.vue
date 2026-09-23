@@ -108,8 +108,18 @@
             <p class="partners-tier-lbl">{{ t.tierNames[tier.key] }}</p>
             <ul class="partners-founders-list">
               <li v-for="(studio, i) in tier.studios" :key="i">
-                <a :href="studio.url" target="_blank" rel="noopener">
-                  {{ studio.name }}
+                <a
+                  :href="studio.url"
+                  target="_blank"
+                  rel="noopener"
+                  :title="studio.name"
+                >
+                  <img
+                    :src="`/images/partners/logo-${studio.logo}.png`"
+                    :alt="studio.name"
+                    :style="{ height: `${studio.height}px` }"
+                    loading="lazy"
+                  />
                 </a>
               </li>
             </ul>
@@ -139,25 +149,62 @@ const partnerTiers = [
     studios: [
       {
         name: 'Caribara Animation',
-        url: 'https://www.caribara-animation.com/'
+        url: 'https://www.caribara-animation.com/',
+        logo: 'caribara',
+        height: 42
       }
     ]
   },
   {
     key: 'gold',
     studios: [
-      { name: 'Cousin Bizarre', url: 'https://cousinbizarre.com/' },
-      { name: 'Ellipse Animation', url: 'https://www.ellipseanimation.com/' },
-      { name: 'Normaal', url: 'https://normaal.fr/' },
-      { name: 'Passion Pictures', url: 'https://www.passion-pictures.com/' },
-      { name: 'TNZPV', url: 'https://www.tnzpv.com/' }
+      {
+        name: 'Cousin Bizarre',
+        url: 'https://cousinbizarre.com/',
+        logo: 'cousin-bizarre',
+        height: 46
+      },
+      {
+        name: 'Ellipse Animation',
+        url: 'https://www.ellipseanimation.com/',
+        logo: 'ellipse',
+        height: 36
+      },
+      {
+        name: 'Normaal',
+        url: 'https://normaal.fr/',
+        logo: 'normaal',
+        height: 32
+      },
+      {
+        name: 'Passion Pictures',
+        url: 'https://www.passion-pictures.com/',
+        logo: 'passion-pictures',
+        height: 13
+      },
+      {
+        name: 'TNZPV',
+        url: 'https://www.tnzpv.com/',
+        logo: 'tnzpv',
+        height: 46
+      }
     ]
   },
   {
     key: 'silver',
     studios: [
-      { name: 'Moon Studio', url: 'https://moon-studio.io/' },
-      { name: 'Terminus Studio', url: 'https://terminus-studio.com/' }
+      {
+        name: 'Moon Studio',
+        url: 'https://moon-studio.io/',
+        logo: 'moon-studio',
+        height: 32
+      },
+      {
+        name: 'Terminus Studio',
+        url: 'https://terminus-studio.com/',
+        logo: 'terminus',
+        height: 22
+      }
     ]
   }
 ]
@@ -517,19 +564,25 @@ paper-bg = #EFEEEA
   gap 10px
 
   li a
-    display inline-block
-    font-weight 700
-    font-size 1rem
+    display inline-flex
+    align-items center
+    justify-content center
+    height 56px
     color #1F1F28
     background #FBFAF6
     border 1px solid #D5D3CB
-    padding 8px 16px
+    padding 0 20px
     border-radius 999px
     text-decoration none
-    transition background .15s, color .15s, border-color .15s, transform .12s ease
+    transition background .15s, border-color .15s, transform .12s ease
+
+    img
+      display block
+      width auto
+      max-width 240px
+      object-fit contain
 
     &:hover
-      color #fff
       transform translateY(-1px)
 
 .partners-tier--platinum
@@ -574,8 +627,8 @@ paper-bg = #EFEEEA
     border-color #D4A017
 
     &:hover
-      background #D4A017
-      border-color #D4A017
+      background #FEF3C7
+      border-color #B7791F
 
 .partners-tier--silver
   .partners-tier-lbl
@@ -586,8 +639,8 @@ paper-bg = #EFEEEA
     border-color #B0B4BC
 
     &:hover
-      background #8B919B
-      border-color #8B919B
+      background #E5E7EB
+      border-color #6B7280
 
 .partners-signoff
   margin-top 36px
