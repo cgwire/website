@@ -537,12 +537,35 @@ paper-bg = #EFEEEA
     color #4B5563
 
   .partners-founders-list li a
-    background #F3F4F6
-    border-color #6B7280
+    position relative
+    overflow hidden
+    font-size 1.12rem
+    padding 11px 22px
+    color #1F1F28
+    border 2px solid transparent
+    background linear-gradient(#FAFAFA, #FAFAFA) padding-box, linear-gradient(135deg, #C9CDD6, #F5F6F8 35%, #9AA1AD 60%, #E3E6EB) border-box
+    box-shadow 0 6px 16px rgba(31, 31, 40, 0.10), inset 0 1px 0 rgba(255, 255, 255, 0.9)
+
+    // Shine sweep on hover
+    &::after
+      content ''
+      position absolute
+      top 0
+      left -80%
+      width 60%
+      height 100%
+      background linear-gradient(110deg, transparent, rgba(255, 255, 255, 0.75), transparent)
+      transform skewX(-20deg)
+      transition left .5s ease
 
     &:hover
-      background #374151
-      border-color #374151
+      color #1F1F28
+      background linear-gradient(#FFFFFF, #FFFFFF) padding-box, linear-gradient(135deg, #9AA1AD, #FFFFFF 40%, #6B7280 70%, #D5D8DE) border-box
+      box-shadow 0 10px 24px rgba(31, 31, 40, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.9)
+      transform translateY(-2px)
+
+      &::after
+        left 120%
 
 .partners-tier--gold
   .partners-tier-lbl
