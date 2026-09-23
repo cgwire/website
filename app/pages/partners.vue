@@ -134,17 +134,20 @@ const mailto =
 // Studios are universal across locales, so these lists stay shared.
 // Tiers are rendered in this order; empty tiers are hidden.
 const partnerTiers = [
-  { key: 'platinum', studios: [] },
   {
-    key: 'gold',
+    key: 'platinum',
     studios: [
       {
         name: 'Caribara Animation',
         url: 'https://www.caribara-animation.com/'
-      },
+      }
+    ]
+  },
+  {
+    key: 'gold',
+    studios: [
       { name: 'Cousin Bizarre', url: 'https://cousinbizarre.com/' },
       { name: 'Ellipse Animation', url: 'https://www.ellipseanimation.com/' },
-      { name: 'Moon Studio', url: 'https://moon-studio.io/' },
       { name: 'Normaal', url: 'https://normaal.fr/' },
       { name: 'Passion Pictures', url: 'https://www.passion-pictures.com/' },
       { name: 'TNZPV', url: 'https://www.tnzpv.com/' }
@@ -153,8 +156,8 @@ const partnerTiers = [
   {
     key: 'silver',
     studios: [
-      { name: 'Terminus Studio', url: 'https://terminus-studio.com/' },
-      { name: 'Zorba', url: 'https://zorba-group.com/' }
+      { name: 'Moon Studio', url: 'https://moon-studio.io/' },
+      { name: 'Terminus Studio', url: 'https://terminus-studio.com/' }
     ]
   }
 ]
