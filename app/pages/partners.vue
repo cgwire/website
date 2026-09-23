@@ -526,6 +526,7 @@ paper-bg = #EFEEEA
   margin-top 36px
   padding-top 32px
   border-top 1px dashed #E0DED6
+  text-align center
 
 .partners-founders-intro
   font-size 0.95rem
@@ -533,17 +534,17 @@ paper-bg = #EFEEEA
   margin 0 0 16px
 
 .partners-tier
-  margin-top 18px
+  margin-top 36px
 
   &:first-of-type
-    margin-top 0
+    margin-top 28px
 
 .partners-tier-lbl
   font-size 0.72rem
   font-weight 800
   letter-spacing 0.18em
   text-transform uppercase
-  margin 0 0 10px
+  margin 0 0 14px
   color #777
 
 .partners-founders-list
@@ -552,6 +553,7 @@ paper-bg = #EFEEEA
   margin 0
   display flex
   flex-wrap wrap
+  justify-content center
   gap 10px
 
   li a
