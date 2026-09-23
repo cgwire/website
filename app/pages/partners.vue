@@ -539,8 +539,6 @@ paper-bg = #EFEEEA
   .partners-founders-list li a
     position relative
     overflow hidden
-    font-size 1.12rem
-    padding 11px 22px
     color #1F1F28
     border 2px solid transparent
     background linear-gradient(#FAFAFA, #FAFAFA) padding-box, linear-gradient(135deg, #C9CDD6, #F5F6F8 35%, #9AA1AD 60%, #E3E6EB) border-box
