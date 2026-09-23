@@ -117,7 +117,6 @@
                   <img
                     :src="`/images/partners/logo-${studio.logo}.png`"
                     :alt="studio.name"
-                    :style="{ height: `${studio.height}px` }"
                     loading="lazy"
                   />
                 </a>
@@ -150,8 +149,7 @@ const partnerTiers = [
       {
         name: 'Caribara Animation',
         url: 'https://www.caribara-animation.com/',
-        logo: 'caribara',
-        height: 42
+        logo: 'caribara'
       }
     ]
   },
@@ -161,32 +159,27 @@ const partnerTiers = [
       {
         name: 'Cousin Bizarre',
         url: 'https://cousinbizarre.com/',
-        logo: 'cousin-bizarre',
-        height: 46
+        logo: 'cousin-bizarre'
       },
       {
         name: 'Ellipse Animation',
         url: 'https://www.ellipseanimation.com/',
-        logo: 'ellipse',
-        height: 36
+        logo: 'ellipse'
       },
       {
         name: 'Normaal',
         url: 'https://normaal.fr/',
-        logo: 'normaal',
-        height: 32
+        logo: 'normaal'
       },
       {
         name: 'Passion Pictures',
         url: 'https://www.passion-pictures.com/',
-        logo: 'passion-pictures',
-        height: 13
+        logo: 'passion-pictures'
       },
       {
         name: 'TNZPV',
         url: 'https://www.tnzpv.com/',
-        logo: 'tnzpv',
-        height: 46
+        logo: 'tnzpv'
       }
     ]
   },
@@ -196,14 +189,12 @@ const partnerTiers = [
       {
         name: 'Moon Studio',
         url: 'https://moon-studio.io/',
-        logo: 'moon-studio',
-        height: 32
+        logo: 'moon-studio'
       },
       {
         name: 'Terminus Studio',
         url: 'https://terminus-studio.com/',
-        logo: 'terminus',
-        height: 22
+        logo: 'terminus'
       }
     ]
   }
@@ -567,19 +558,18 @@ paper-bg = #EFEEEA
     display inline-flex
     align-items center
     justify-content center
-    height 56px
     color #1F1F28
     background #FBFAF6
     border 1px solid #D5D3CB
-    padding 0 20px
+    padding 18px 32px
     border-radius 999px
     text-decoration none
     transition background .15s, border-color .15s, transform .12s ease
 
     img
       display block
-      width auto
-      max-width 240px
+      width 140px
+      height 40px
       object-fit contain
 
     &:hover
