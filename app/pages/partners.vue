@@ -534,10 +534,10 @@ paper-bg = #EFEEEA
   margin 0 0 16px
 
 .partners-tier
-  margin-top 36px
+  margin-top 52px
 
   &:first-of-type
-    margin-top 28px
+    margin-top 40px
 
 .partners-tier-lbl
   font-size 0.72rem
