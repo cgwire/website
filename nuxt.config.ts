@@ -147,11 +147,12 @@ export default defineNuxtConfig({
         }
       ],
       script: [
-        // Apply the saved theme before first paint to avoid a light flash.
+        // Apply the theme before first paint to avoid a light flash: the
+        // visitor's saved choice, else the browser's color scheme.
         // See app/components/ThemeToggle.vue.
         {
           innerHTML:
-            "try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('theme-dark')}catch(e){}"
+            "try{var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('theme-dark')}catch(e){}"
         }
       ],
       link: [{ rel: 'icon', href: '/favicon.png' }],

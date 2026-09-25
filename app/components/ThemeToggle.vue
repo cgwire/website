@@ -46,8 +46,8 @@
 
 <script setup>
 // The theme lives in the `theme-dark` class on <html>, set before first paint
-// by the inline script in nuxt.config.ts. Light is the default; the choice is
-// kept in localStorage.
+// by the inline script in nuxt.config.ts: it follows the browser's color
+// scheme until the visitor picks one here, which is kept in localStorage.
 function toggleTheme() {
   const isDark = document.documentElement.classList.toggle('theme-dark')
   try {
@@ -68,7 +68,8 @@ function toggleTheme() {
   border none
   color #BBB
   cursor pointer
-  padding 0 0.4rem
+  padding 0 0.5rem
+  margin-left 0.5rem
 
   svg
     width 18px
