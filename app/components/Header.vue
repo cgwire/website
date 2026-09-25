@@ -348,4 +348,12 @@ div.body header .navbar .navbar-item.discord.top:hover .navbar-item-title
 
   .navbar-brand .navbar-burger
     margin-left 0
+
+  // The desktop bar is 70px tall; on mobile only the 52px brand row shows,
+  // so fit the bar to it and shrink the spacer below the fixed header.
+  div.body header .navbar
+    height auto
+
+  div.body .header-padding
+    height 52px
 </style>
