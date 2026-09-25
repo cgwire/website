@@ -146,7 +146,14 @@ export default defineNuxtConfig({
           content: 'https://www.cg-wire.com/images/logo.svg'
         }
       ],
-      script: [],
+      script: [
+        // Apply the saved theme before first paint to avoid a light flash.
+        // See app/components/ThemeToggle.vue.
+        {
+          innerHTML:
+            "try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('theme-dark')}catch(e){}"
+        }
+      ],
       link: [{ rel: 'icon', href: '/favicon.png' }],
       style: [],
       noscript: [{ children: 'Javascript is required' }]

@@ -15,6 +15,7 @@
   },
   "header": {
     "signIn": "Se connecter",
+    "toggleTheme": "Basculer entre thème clair et sombre",
     "signUp": "Essayez gratuitement",
     "text": {
       "blog": "Bonnes pratiques pour pipelines et productions",

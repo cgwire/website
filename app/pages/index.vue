@@ -770,6 +770,10 @@ div.body
 .section.supporters
   margin-top 6rem
 
+  @media(max-width 800px)
+    margin-left 1em
+    margin-right 1em
+
 .supporter-list
   .flexrow-item
     flex: 1

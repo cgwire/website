@@ -15,6 +15,7 @@
   },
   "header": {
     "signIn": "Sign in",
+    "toggleTheme": "Switch light / dark theme",
     "signUp": "Try it for free",
     "text": {
       "blog": "Read about production best practices",

@@ -37,6 +37,7 @@
       >
         <div class="navbar-start flexrow locales">
           <LanguageSwitcher />
+          <ThemeToggle />
           <a
             href="https://discord.gg/kitsu-community"
             target="_blank"
