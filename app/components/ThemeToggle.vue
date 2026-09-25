@@ -84,6 +84,13 @@ function toggleTheme() {
 html.has-dark-mode .theme-toggle
   display flex
 
+// Mobile menu: the locales have their own line, keep the toggle at its end.
+// Selector matches the specificity of the header's .navbar-item.top margins.
+@media (max-width: 1023px)
+  html.has-dark-mode div.body header .navbar .navbar-item.top.theme-toggle
+    margin-left auto
+    margin-right 0.75rem
+
 html.theme-dark .theme-toggle
   .icon-sun
     display block

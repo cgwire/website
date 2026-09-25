@@ -46,6 +46,7 @@
               <img width="24" src="~/assets/images/discord.svg" alt="Discord" />
             </span>
           </a>
+          <ThemeToggle />
         </div>
 
         <nuxt-link
@@ -248,7 +249,6 @@
           >
             {{ $t('header.signUp') }}
           </a>
-          <ThemeToggle />
         </div>
       </div>
     </nav>
