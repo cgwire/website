@@ -155,7 +155,8 @@ export default defineNuxtConfig({
   css: [
     // "bulma",
     '~/assets/styles/app.styl',
-    '~/assets/styles/bulma.css'
+    '~/assets/styles/bulma.css',
+    '~/assets/styles/dark.styl'
     // { src: "~/assets/styles/app.styl", lang: "stylus" },
     // '~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'
   ],

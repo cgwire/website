@@ -276,9 +276,17 @@
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
+                  class="only-light"
                   src="/images/screenshots/kitsu-compare-light.png"
                   alt=""
                   format="webp"
+                />
+                <NuxtImg
+                  class="only-dark"
+                  src="/images/screenshots/kitsu-compare.png"
+                  alt=""
+                  format="webp"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -288,9 +296,17 @@
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
+                  class="only-light"
                   src="/images/screenshots/kitsu-python-light.png"
                   alt=""
                   format="webp"
+                />
+                <NuxtImg
+                  class="only-dark"
+                  src="/images/screenshots/kitsu-python.png"
+                  alt=""
+                  format="webp"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -504,6 +520,8 @@ useSEO({
   description: page.value.meta.main.subtitle,
   imagePath: 'teaser.png'
 })
+
+useDarkMode()
 
 const img = useImage()
 
