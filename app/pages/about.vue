@@ -241,11 +241,11 @@ useSEO({
 </script>
 
 <style lang="stylus" scoped>
-$hero-top = #f1eafa
+$hero-top = var(--pg-purple, #f1eafa)
 
 // --- HERO ---
 .hero
-  background linear-gradient(180deg, $hero-top 0%, #fff 100%)
+  background linear-gradient(180deg, $hero-top 0%, var(--pg-bg, #fff) 100%)
   padding 5rem 1.5rem 2.5rem
   text-align center
 
@@ -274,7 +274,7 @@ $hero-top = #f1eafa
 // Same max width as the metrics bands (capped by the global .section rule),
 // centered with auto margins at any viewport.
 .band-light
-  background lightblue
+  background var(--pg-blue, lightblue)
   border-radius 32px
   margin 0 auto
   width calc(100% - 3rem)
@@ -288,7 +288,7 @@ $hero-top = #f1eafa
 // tint it so the cards keep their shape outside the colored band.
 .values-white
   .section-item-img:before
-    background-color lightblue
+    background-color var(--pg-blue, lightblue)
 
 .about
   p
@@ -344,10 +344,10 @@ $hero-top = #f1eafa
 
 // Each tile takes the hue of the page it links to.
 .tile-metrics
-  background lightblue
+  background var(--pg-blue, lightblue)
 
 .tile-carbon
-  background #ecffd9
+  background var(--pg-green, #ecffd9)
 
 @media (max-width 860px)
   .band-light
@@ -362,7 +362,7 @@ $hero-top = #f1eafa
   margin 5rem auto 0
   max-width 640px
   text-align center
-  color mediumgrey
+  color var(--pg-text-light, mediumgrey)
   font-size 0.9rem
 
   p
@@ -373,6 +373,6 @@ $hero-top = #f1eafa
   font-weight 700
   letter-spacing 0.18em
   text-transform uppercase
-  color #54656f
+  color var(--pg-text-light, #54656f)
   margin-bottom 0.75rem
 </style>

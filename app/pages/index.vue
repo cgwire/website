@@ -521,8 +521,6 @@ useSEO({
   imagePath: 'teaser.png'
 })
 
-useDarkMode()
-
 const img = useImage()
 
 const flowBackground = computed(() => {

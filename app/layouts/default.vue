@@ -1,5 +1,6 @@
 <script setup>
 const head = useLocaleHead()
+useDarkMode()
 </script>
 
 <template>

@@ -359,7 +359,7 @@ useHead(() => ({
 cgwire-green = #00B242
 cgwire-green-alt = #67BE4B
 cgwire-green-dark = #008732
-paper-bg = #EFEEEA
+paper-bg = var(--pg-bg, #EFEEEA)
 
 .partners-page
   background paper-bg
@@ -372,12 +372,12 @@ paper-bg = #EFEEEA
 
 // === V1 · Founder's note ===
 .partners-paper
-  background #fff
+  background var(--pg-card, #fff)
   border-radius 16px
   padding 56px 64px 48px
   box-shadow 0 24px 60px rgba(31, 31, 40, 0.08), 0 2px 0 rgba(0, 0, 0, 0.02)
-  border 1px solid #ECEAE3
-  color #1F1F28
+  border 1px solid var(--pg-border, #ECEAE3)
+  color var(--pg-text, #1F1F28)
   font-size 17px
   line-height 1.55
   font-family 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
@@ -388,8 +388,8 @@ paper-bg = #EFEEEA
   gap 8px
   font-size 0.78rem
   font-weight 700
-  color #666
-  background #F6F8F4
+  color var(--pg-text-light, #666)
+  background var(--pg-card-alt, #F6F8F4)
   padding 6px 12px
   border-radius 999px
   margin-bottom 24px
@@ -411,14 +411,14 @@ paper-bg = #EFEEEA
 
 .partners-body p
   font-size 1.06rem
-  color #2b2b34
+  color var(--pg-text, #2b2b34)
   margin 0 0 14px
   line-height 1.65
 
 .partners-emph
   font-size 1.15rem !important
   padding 18px 22px
-  background #F4FFF8
+  background var(--pg-green, #F4FFF8)
   border-left 4px solid cgwire-green
   border-radius 0 10px 10px 0
   margin-top 20px !important
@@ -432,7 +432,7 @@ paper-bg = #EFEEEA
   grid-template-columns 1fr 1fr
   gap 40px
   padding-top 32px
-  border-top 1px dashed #E0DED6
+  border-top 1px dashed var(--pg-border, #E0DED6)
 
 .partners-deal-lbl
   font-size 0.7rem
@@ -475,33 +475,33 @@ paper-bg = #EFEEEA
   justify-content space-between
   align-items baseline
   padding 10px 14px
-  border 1px solid #ECEAE3
+  border 1px solid var(--pg-border, #ECEAE3)
   border-radius 10px
-  background #FBFAF6
+  background var(--pg-card-alt, #FBFAF6)
 
 .partners-price--featured
   border-color cgwire-green
-  background #F4FFF8
+  background var(--pg-green, #F4FFF8)
 
 .partners-price-name
   font-size 0.9rem
-  color #555
+  color var(--pg-text-mid, #555)
   font-weight 600
 
 .partners-price-num
   font-weight 900
   font-size 1.15rem
   font-variant-numeric tabular-nums
-  color #1F1F28
+  color var(--pg-text, #1F1F28)
 
   span
     font-weight 500
-    color #888
+    color var(--pg-text-light, #888)
     font-size 0.82rem
 
 .partners-deal-sub
   font-size 0.82rem
-  color #888
+  color var(--pg-text-light, #888)
   margin 10px 0 0
 
 .partners-nots
@@ -514,23 +514,23 @@ paper-bg = #EFEEEA
 
   li
     font-size 0.86rem
-    color #555
+    color var(--pg-text-mid, #555)
     line-height 1.5
     padding-left 14px
-    border-left 2px solid #E0DED6
+    border-left 2px solid var(--pg-border, #E0DED6)
 
   strong
-    color #1F1F28
+    color var(--pg-text, #1F1F28)
 
 .partners-founders
   margin-top 36px
   padding-top 32px
-  border-top 1px dashed #E0DED6
+  border-top 1px dashed var(--pg-border, #E0DED6)
   text-align center
 
 .partners-founders-intro
   font-size 0.95rem
-  color #555
+  color var(--pg-text-mid, #555)
   margin 0 0 16px
 
 .partners-tier
@@ -545,7 +545,7 @@ paper-bg = #EFEEEA
   letter-spacing 0.18em
   text-transform uppercase
   margin 0 0 14px
-  color #777
+  color var(--pg-text-light, #777)
 
 .partners-founders-list
   list-style none
@@ -624,7 +624,7 @@ paper-bg = #EFEEEA
 
 .partners-tier--silver
   .partners-tier-lbl
-    color #6B7280
+    color var(--pg-text-light, #6B7280)
 
   .partners-founders-list li a
     background #F9FAFB
@@ -637,12 +637,12 @@ paper-bg = #EFEEEA
 .partners-signoff
   margin-top 36px
   padding-top 32px
-  border-top 1px solid #EEE
+  border-top 1px solid var(--pg-border, #EEE)
 
   > p
     font-size 1.06rem
     margin 0 0 22px
-    color #2b2b34
+    color var(--pg-text, #2b2b34)
 
 .partners-cta
   display flex
@@ -675,7 +675,7 @@ paper-bg = #EFEEEA
     transform translateY(0)
 
 .partners-cta-alt
-  color #888
+  color var(--pg-text-light, #888)
   font-size 0.9rem
   text-decoration underline
 
@@ -684,7 +684,7 @@ paper-bg = #EFEEEA
 
 .partners-sig
   padding-top 20px
-  border-top 1px dashed #E0DED6
+  border-top 1px dashed var(--pg-border, #E0DED6)
 
 .partners-sig-names
   font-family 'Caveat', 'Lato', cursive
@@ -703,7 +703,7 @@ paper-bg = #EFEEEA
   font-weight 400
 
 .partners-sig-line
-  color #999
+  color var(--pg-text-light, #999)
   font-size 0.88rem
   margin-top 4px
 
