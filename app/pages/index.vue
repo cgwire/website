@@ -385,7 +385,7 @@
           />
         </div>
       </div>
-      <p class="has-text-centered mt2" data-aos="fade-up">
+      <p class="has-text-centered mt2 mb4" data-aos="fade-up">
         <nuxt-link
           class="read-more-stories"
           :to="$localePath('customer-stories')"
@@ -468,7 +468,7 @@
       </div>
     </section>
 
-    <section class="section content conclusion conclusion-text mt8">
+    <section class="section content conclusion conclusion-text">
       <h2 class="subtitle tagline" data-aos="fade-up">
         {{ page.meta.main.conclusion.tagline }}
       </h2>
@@ -607,6 +607,9 @@ div.body
 
     .tagline-explanation
         font-size 1.3em
+
+    .conclusion-text
+        margin-top 12rem
 
     .read-more-stories
         font-size 1.1em

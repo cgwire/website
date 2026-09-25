@@ -2660,7 +2660,6 @@
       },
       "studios": [
         "mdhr",
-        "metacore",
         "trailer-farm",
         "sparx",
         "tato"
@@ -3185,12 +3184,6 @@
       "link": "https://studiomdhr.com/",
       "elementKey": "mdhr",
       "name": "Studio MDHR",
-      "type": "video-games"
-    },
-    "metacore": {
-      "link": "https://metacoregames.com/",
-      "elementKey": "metacore",
-      "name": "Metacore",
       "type": "video-games"
     },
     "mikrofilm": {
