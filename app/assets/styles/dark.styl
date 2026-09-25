@@ -10,13 +10,22 @@
 // (ThemeToggle.vue). Pages that are not
 // reviewed yet stay light. Rules must stay scoped under that selector.
 
-dark-bg = #15161B
-dark-surface = #1E1F26
-dark-surface-alt = #262731
-dark-border = #34353F
-dark-text = #D4D5DC
-dark-text-strong = #F3F3F6
-dark-text-muted = #9A9BA8
+// Neutrals come from Kitsu's own dark theme so the site matches the product
+// screenshots. Tinted surfaces keep the hue of their light counterparts
+// (lightblue, lightpurple) instead of turning everything grey.
+dark-bg = #2F3136
+dark-chrome = #202225
+dark-surface = #36393F
+dark-surface-alt = #40444B
+dark-border = #4E5159
+dark-text = #DCDDDE
+dark-text-strong = #FFFFFF
+dark-text-muted = #A3A6AA
+
+dark-blue = #33455C
+dark-blue-border = #305077
+dark-purple-surface = #473E5C
+dark-purple-border = #584379
 dark-purple = #B592EC
 
 // Turns black logos white while keeping colored parts close to their hue.
@@ -79,10 +88,9 @@ html.has-dark-mode.theme-dark
         header .navbar
         header .navbar-menu
         header .navbar-brand
-            background-color dark-bg
+            background-color dark-chrome
 
         header
-            border-bottom 1px solid dark-border
 
             .main-logo
                 invert-logo()
@@ -106,7 +114,7 @@ html.has-dark-mode.theme-dark
             a.navbar-lang-item
                 color dark-text-muted
 
-            .theme-toggle
+            .navbar .navbar-item.top.theme-toggle
                 color dark-text-muted
 
                 &:hover
@@ -133,16 +141,22 @@ html.has-dark-mode.theme-dark
             .navbar-burger span
                 background-color dark-text-strong
 
+            // Keep the CTA green: the hover reset above would clear it.
             .navbar-item.signup
+            .navbar-item.signup:hover
+                background-color cgwiregreen
                 color white
+
+            .navbar-item.signup:hover
+                background-color cgwiregreen-alt
 
         // --- Trusted by marquee ---
 
         .brand-wheel::before
-            background-image linear-gradient(to right, dark-bg 0%, rgba(21, 22, 27, 0) 100%)
+            background-image linear-gradient(to right, dark-bg 0%, rgba(47, 49, 54, 0) 100%)
 
         .brand-wheel::after
-            background-image linear-gradient(to left, dark-bg 0%, rgba(21, 22, 27, 0) 100%)
+            background-image linear-gradient(to left, dark-bg 0%, rgba(47, 49, 54, 0) 100%)
 
         .brand-wheel img
         .supporter-list img
@@ -160,12 +174,12 @@ html.has-dark-mode.theme-dark
             fill dark-bg
 
         .production-type
-            background dark-surface
+            background dark-blue
             color dark-text
 
         .features .tabs
-            background dark-surface
-            border-color dark-border
+            background linear-gradient(0deg, dark-purple-surface 35%, dark-blue 100%)
+            border-color dark-purple-border
 
             .tab
                 color dark-purple
@@ -180,13 +194,13 @@ html.has-dark-mode.theme-dark
             color dark-text-muted
 
         .testimonials-grid .lean-quote-text
-            background-color dark-surface
-            border-color dark-border
+            background-color dark-blue
+            border-color dark-blue-border
             color dark-text
 
         .customer-story.landing-block
-            background dark-surface
-            border-color dark-border
+            background dark-purple-surface
+            border-color dark-purple-border
 
             .story-title
                 color dark-text-strong
@@ -206,7 +220,7 @@ html.has-dark-mode.theme-dark
         // --- Footer ---
 
         .footer
-            background dark-bg
+            background dark-chrome
             color dark-text
 
             .footer-logo

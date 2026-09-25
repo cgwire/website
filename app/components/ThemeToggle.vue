@@ -15,7 +15,7 @@
       height="20"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
+      stroke-width="1.75"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-hidden="true"
@@ -31,7 +31,7 @@
       height="20"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
+      stroke-width="1.75"
       stroke-linecap="round"
       stroke-linejoin="round"
       aria-hidden="true"
@@ -85,9 +85,14 @@ html.has-dark-mode .theme-toggle
   display flex
 
 // Mobile menu: the locales have their own line, keep the toggle at its end.
-// Selector matches the specificity of the header's .navbar-item margins.
+// Selector matches the specificity of the header's .navbar-item rules, which
+// would otherwise make the icon near black. Same grey as the locales.
 html.has-dark-mode div.body header .navbar .navbar-item.top.theme-toggle
   margin-right 0
+  color #BBB
+
+  &:hover
+    color #00B242
 
   @media (max-width: 1023px)
     margin-left auto
