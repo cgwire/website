@@ -19,20 +19,20 @@
   />
   <div class="successes">
     <NuxtImg
-      src="/images/kitsu/brawl-stars.png"
-      alt="Brawl Stars"
+      src="/images/kitsu/mdhr.png"
+      alt="Studio MDHR"
       format="webp"
       loading="lazy"
     />
     <NuxtImg
-      src="/images/kitsu/merge-mansion.png"
-      alt="Merge Mansion"
+      src="/images/kitsu/bloober.png"
+      alt="Bloober Team"
       format="webp"
       loading="lazy"
     />
     <NuxtImg
-      src="/images/kitsu/cuphead.png"
-      alt="Cuphead"
+      src="/images/kitsu/sparx.png"
+      alt="Virtuos Sparx"
       format="webp"
       loading="lazy"
     />
@@ -62,9 +62,9 @@ const features = props.features
 const supporters = props.supporters
 </script>
 
+
 <style lang="stylus" scoped>
 body .successes
   img
-    padding: 0
-    border-radius: 30px
+    box-shadow none
 </style>
