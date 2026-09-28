@@ -133,10 +133,10 @@ const bottomWaveColor = computed(() => {
 // Dark theme counterparts of the wave colors, matching the band gradients
 // defined in app/assets/styles/dark.styl.
 const DARK_WAVE_COLORS = {
-  '#F4F8FF': '#2E3A4A',
-  '#F6F7FE': '#32384A',
-  '#F7F7FE': '#363749',
-  '#F9F6FD': '#3A3549'
+  '#F4F8FF': '#2B4160',
+  '#F6F7FE': '#333E60',
+  '#F7F7FE': '#3C3A60',
+  '#F9F6FD': '#453760'
 }
 
 const waveStyle = (color) => ({
