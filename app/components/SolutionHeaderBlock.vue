@@ -86,6 +86,7 @@ video
 :deep(img)
   width 100%
   height auto
+  border-radius 2em
 
 section
   padding-bottom 0
