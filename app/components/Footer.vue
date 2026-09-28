@@ -268,6 +268,8 @@ const { data: faqPages } = await useAsyncData(
       .all(),
   { watch: [locale] }
 )
+
+console.log(faqPages.value)
 </script>
 
 <style lang="stylus" scoped>
