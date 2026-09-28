@@ -33,8 +33,8 @@ defineProps({
 // CSS translateX(-50%) animation loops seamlessly; the second pass is decorative
 // (alt="" + aria-hidden) to avoid double-announcing each logo to screen readers.
 const brands = [
-  { src: '/images/logo-miyu.png', name: 'Miyu' },
-  { src: '/images/logo-fost.png', name: 'Fost' },
+  { src: '/images/studios/logo-miyu.png', name: 'Miyu' },
+  { src: '/images/studios/logo-fost.png', name: 'Fost' },
   { src: '/images/studios/logo-bobbypills.png', name: 'Bobbypills' },
   { src: '/images/studios/logo-lofi-studio.png', name: 'Lofi Studio' },
   { src: '/images/studios/logo-blender.png', name: 'Blender' },

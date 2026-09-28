@@ -10,13 +10,13 @@
             target="_blank"
             class="button button--with-icon is-large watch-button"
           >
-            <NuxtImg src="/images/play.svg" alt="" format="webp" />
+            <NuxtImg src="/images/icons/play.svg" alt="" format="webp" />
             <span>{{ page.meta.kitsu.watch.cta }}</span>
           </a>
         </div>
         <div class="flexrow-item introduction-picture">
           <video
-            src="~/assets/teaser.webm"
+            src="~/assets/images/screenshots/teaser.webm"
             :poster="videoPoster"
             loop
             muted
@@ -395,7 +395,7 @@
             :key="study.stem.split('/')[2]"
             :studio-name="study.meta.studio"
             :story-key="study.stem.split('/')[2]"
-            :image-path="study.meta.image.split('/')[2]"
+            :image-path="study.meta.image.split('/').pop()"
             :interviewee="study.meta.interviewee"
             :story-url="study.meta.link"
           />
@@ -453,7 +453,7 @@
           <li class="flexrow-item mr0">
             <a href="https://www.cnc.fr">
               <NuxtImg
-                src="/images/logo-cnc.png"
+                src="/images/studios/logo-cnc.png"
                 alt="CNC"
                 format="webp"
                 width="180"
@@ -463,7 +463,7 @@
           <li class="flexrow-item mr0">
             <a href="https://www.unrealengine.com/en-US/megagrants">
               <NuxtImg
-                src="/images/logo-epic-games.png"
+                src="/images/studios/logo-epic-games.png"
                 alt="Epic Games"
                 format="webp"
                 width="200"
@@ -525,7 +525,7 @@ const img = useImage()
 
 const flowBackground = computed(() => {
   return {
-    background: `url('${img('/images/flow.png', { format: 'webp' })}')`,
+    background: `url('${img('/images/backgrounds/flow.png', { format: 'webp' })}')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center center'
   }
@@ -533,7 +533,7 @@ const flowBackground = computed(() => {
 
 const mushmushBackground = computed(() => {
   return {
-    background: `url('${img('/images/mushmush.jpg', { format: 'webp' })}')`,
+    background: `url('${img('/images/backgrounds/mushmush.jpg', { format: 'webp' })}')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center center'
   }
@@ -541,14 +541,14 @@ const mushmushBackground = computed(() => {
 
 const sevenbearsBackground = computed(() => {
   return {
-    background: `url('${img('/images/sevenbears.png', { format: 'webp' })}')`,
+    background: `url('${img('/images/backgrounds/sevenbears.png', { format: 'webp' })}')`,
     backgroundSize: 'cover',
     backgroundPosition: 'center center'
   }
 })
 
 const videoPoster = computed(() => {
-  return img('/teaser.png', { format: 'webp', width: 376, height: 376 })
+  return img('/images/screenshots/teaser.png', { format: 'webp', width: 376, height: 376 })
 })
 
 // Preload the hero poster (the LCP element) with high priority.

@@ -6,7 +6,7 @@
         <nuxt-link :to="$localePath('index')" class="footer-logo-link">
           <img
             class="footer-logo"
-            src="~/assets/images/logo.png"
+            src="~/assets/images/brand/logo.png"
             alt="CGWire logo"
             width="100"
           />

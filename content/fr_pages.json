@@ -1342,7 +1342,7 @@
         "studioName": "Autour De Minuit",
         "story": "adm",
         "interviewee": "Fiona Cohen, Production Manager",
-        "imagePath": "photo-customer-story-adm.jpg",
+        "imagePath": "adm.jpg",
         "storyUrl": "https://blog.cg-wire.com/customer-story-autour-de-minuit/",
         "quote": "Nous voulions un outil pour lier les tâches et les livrables visuels. Nous voulions quelque chose de simple et plaisant pour les équipes. Notamment pour les réalisateurs, qui devaient accéder aux bout-à-bout des plans tout le temps. Et bien sûr, tout en permettant aux chargés de production de faire leur suivi aisément."
       }
@@ -1485,7 +1485,7 @@
         "studioName": "Fost studio",
         "story": "fost",
         "interviewee": "Céline Durieux, Head Of Studio",
-        "imagePath": "photo-customer-story-fost.png",
+        "imagePath": "fost.png",
         "storyUrl": "https://blog.cg-wire.com/customer-story-fost-studio/",
         "quote": "On pense souvent au temps gagné avec Kitsu mais ce qui compte le plus pour moi c'est la sérénité qu'il fournit en ayant tout au clair. Cela soulage le cerveau et permet de se concentrer sur les autres éléments de la production."
       }
@@ -1558,7 +1558,7 @@
         "studioName": "Makuta VFX (RRR Movie)",
         "story": "makuta",
         "interviewee": "Pete Draper, Head of VFX",
-        "imagePath": "photo-customer-story-makuta.png",
+        "imagePath": "makuta.png",
         "storyUrl": "https://blog.cg-wire.com/customer-story-makuta-vfx-studio/",
         "quote": "Kitsu a unifié nos communications et a permis de les rendre plus claires, que ce soit pour les artistes, pour la production, pour les superviseurs ou les clients."
       }
@@ -1769,7 +1769,7 @@
         "studioName": "Miyu studio",
         "story": "miyu",
         "interviewee": "Carole Faure, Production Manager",
-        "imagePath": "photo-customer-story-miyu.png",
+        "imagePath": "miyu.png",
         "storyUrl": "https://blog.cg-wire.com/customer-story-miyu-studio/",
         "quote": "La prise en main pour gérer une production se fait en quelques jours. Tous les départements ont démarré rapidement, les artistes ont vraiment apprécié. Nous n'avions pas vu cet enthousiasme avec les outils que nous utilisions auparavant."
       }
@@ -4040,14 +4040,14 @@
       "studio": "Tant Mieux Prod",
       "interviewee": "Tristan Mercier",
       "role": "Directeur de Production",
-      "image": "/images/photo-customer-story-tant-mieux.png",
+      "image": "/images/customer-stories/tant-mieux.png",
       "quote": "La communication avec les studios distants a été simplifiée. Nous pouvons discuter d'un asset ou d'une tâche spécifique sans échanger 10 emails. En cas de doute, nous pouvons nous fier à ce qui est indiqué sur la plateforme."
     },
     "miyu": {
       "studio": "MIYU Studio",
       "interviewee": "Carole Faure",
       "role": "Responsable de Production",
-      "image": "/images/photo-customer-story-miyu.png",
+      "image": "/images/customer-stories/miyu.png",
       "quote": "Quelques jours suffisent pour comprendre toutes les fonctionnalités nécessaires au lancement d'une production. Tout le monde dans le studio démarre rapidement, en particulier les artistes qui apprécient vraiment Kitsu. Nous n'avions pas remarqué cet enthousiasme avec les outils précédemment utilisés."
     },
     "miyu-2": {
@@ -4152,7 +4152,7 @@
       "studio": "Autour de Minuit",
       "interviewee": "Fiona Cohen",
       "role": "Responsable de Production",
-      "image": "/images/photo-customer-story-adm.jpg",
+      "image": "/images/customer-stories/adm.jpg",
       "quote": "Nous avions besoin d'un outil pour relier les tâches et les livraisons visuelles. Nous voulions un logiciel pratique et agréable pour les équipes. Notamment pour les réalisateurs, qui devaient accéder aux plans de bout en bout à tout moment. Et bien sûr, tout en permettant aux responsables de production de suivre l'avancement facilement."
     },
     "makuta": {
@@ -4295,7 +4295,7 @@
       "interviewee": "Tristan Mercier",
       "role": "Directeur de Production",
       "link": "https://blog.cg-wire.com/customer-story-tant-mieux-prod/",
-      "image": "/images/photo-customer-story-tant-mieux.png",
+      "image": "/images/customer-stories/tant-mieux.png",
       "quote": "La communication avec les studios distants a été simplifiée. Nous pouvons discuter d'un asset ou d'une tâche spécifique sans échanger 10 emails. En cas de doute, nous pouvons nous fier à ce qui est indiqué sur la plateforme.",
       "category": "Série TV (2D)"
     },
@@ -4304,7 +4304,7 @@
       "interviewee": "Carole Faure",
       "role": "Responsable de Production",
       "link": "https://blog.cg-wire.com/customer-story-miyu-studio/",
-      "image": "/images/photo-customer-story-miyu.png",
+      "image": "/images/customer-stories/miyu.png",
       "quote": "Quelques jours suffisent pour comprendre toutes les fonctionnalités nécessaires au lancement d'une production. Tout le monde dans le studio démarre rapidement, en particulier les artistes qui apprécient vraiment Kitsu. Nous n'avions pas remarqué cet enthousiasme avec les outils précédemment utilisés.",
       "category": "Longs métrages, Courts métrages (2D)"
     },
@@ -4313,7 +4313,7 @@
       "interviewee": "Céline Durieux",
       "role": "Directrice de Studio",
       "link": "https://blog.cg-wire.com/customer-story-fost-studio/",
-      "image": "/images/photo-customer-story-fost.png",
+      "image": "/images/customer-stories/fost.png",
       "quote": "Avec Kitsu, on pense d'abord au temps gagné, mais ce qui compte le plus pour moi, c'est la sérénité que l'on obtient en ayant tout en ordre. Ça libère de l'espace mental pour se concentrer sur d'autres aspects de la production.",
       "category": "Série TV (2D)"
     },
@@ -4322,7 +4322,7 @@
       "interviewee": "Fiona Cohen",
       "role": "Responsable de Production",
       "link": "https://blog.cg-wire.com/customer-story-autour-de-minuit/",
-      "image": "/images/photo-customer-story-adm.jpg",
+      "image": "/images/customer-stories/adm.jpg",
       "quote": "Nous avions besoin d'un outil pour relier les tâches et les livraisons visuelles. Nous voulions un logiciel pratique et agréable pour les équipes. Notamment pour les réalisateurs, qui devaient accéder aux plans de bout en bout à tout moment. Et bien sûr, tout en permettant aux responsables de production de suivre l'avancement facilement.",
       "category": "Séries TV, Longs métrages (2D, 3D)"
     },
@@ -4331,7 +4331,7 @@
       "interviewee": "Pete Draper",
       "role": "Responsable des Effets Visuels",
       "link": "https://blog.cg-wire.com/customer-story-makuta-vfx-studio/",
-      "image": "/images/photo-customer-story-makuta.png",
+      "image": "/images/customer-stories/makuta.png",
       "quote": "Kitsu a pratiquement tout unifié et encourage une communication plus rigoureuse, non seulement entre les artistes, mais aussi entre la production, la direction et les clients.",
       "category": "Longs métrages (VFX)"
     },
@@ -4340,7 +4340,7 @@
       "interviewee": "Pete Draper",
       "role": "Superviseur des Effets Visuels",
       "link": "https://blog.cg-wire.com/how-vfx-supervisor-manages-hundreds-of-projects-with-kitsu/",
-      "image": "/images/photo-customer-story-pete-draper.jpg",
+      "image": "/images/customer-stories/pete-draper.jpg",
       "quote": "Kitsu était simple et intuitif. Pas besoin d'un doctorat en informatique comme avec les alternatives.",
       "category": "Publicité"
     },
@@ -4349,7 +4349,7 @@
       "interviewee": "Audrey Tondre",
       "role": "Directrice de Production",
       "link": "https://blog.cg-wire.com/remembers-kitsu-arco-production",
-      "image": "/images/photo-customer-story-audrey-tondre.jpg",
+      "image": "/images/customer-stories/audrey-tondre.jpg",
       "quote": "Je savais que si j'introduisais un nouvel outil, je devais répondre à un besoin qui n'avait pas encore été identifié par l'équipe en place. Le principal défi dès le départ était de ne pas les contraindre.",
       "category": "Longs métrages (2D)"
     }

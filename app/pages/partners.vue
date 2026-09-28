@@ -323,7 +323,7 @@ const content = {
 
 const t = computed(() => content[locale.value] || content.en)
 
-const partnersImage = 'https://www.cg-wire.com/teaser.png'
+const partnersImage = 'https://www.cg-wire.com/og/teaser.png'
 const partnersUrl = computed(() =>
   locale.value === 'en'
     ? 'https://www.cg-wire.com/partners'

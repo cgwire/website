@@ -13,7 +13,7 @@
       studio-name="Ryff"
       story-key="ryff"
       interviewee="Pete Draper, VFX Supervisor"
-      image-path="photo-customer-story-pete-draper.jpg"
+      image-path="pete-draper.jpg"
       :quote="page.meta.quotes['ryff']"
       story-url="https://blog.cg-wire.com/how-vfx-supervisor-manages-hundreds-of-projects-with-kitsu/"
     />
@@ -24,7 +24,7 @@
       studio-name="Remembers"
       story-key="remembers"
       interviewee="Audrey Tondre, Production Director"
-      image-path="photo-customer-story-audrey-tondre.jpg"
+      image-path="audrey-tondre.jpg"
       :quote="page.meta.quotes['remembers']"
       story-url="https://blog.cg-wire.com/remembers-kitsu-arco-production"
     />
@@ -35,7 +35,7 @@
       studio-name="Tant Mieux Prod"
       story-key="tant-mieux"
       interviewee="Tristan Mercier, Production Director"
-      image-path="photo-customer-story-tant-mieux.png"
+      image-path="tant-mieux.png"
       :quote="page.meta.quotes['tant-mieux']"
       story-url="https://blog.cg-wire.com/customer-story-tant-mieux-prod/"
     />
@@ -46,7 +46,7 @@
       studio-name="Miyu studio"
       story-key="miyu"
       interviewee="Carole Faure, Production Manager"
-      image-path="photo-customer-story-miyu.png"
+      image-path="miyu.png"
       :quote="page.meta.quotes['miyu']"
       story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
     />
@@ -57,7 +57,7 @@
       studio-name="Fost studio"
       story-key="fost"
       interviewee="Céline Durieux, Head Of Studio"
-      image-path="photo-customer-story-fost.png"
+      image-path="fost.png"
       :quote="page.meta.quotes['fost']"
       story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
     />
@@ -68,7 +68,7 @@
       studio-name="Autour De Minuit"
       story-key="adm"
       interviewee="Fiona Cohen, Production Manager"
-      image-path="photo-customer-story-adm.jpg"
+      image-path="adm.jpg"
       :quote="page.meta.quotes['adm']"
       story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
     />
@@ -79,7 +79,7 @@
       studio-name="Makuta VFX (RRR Movie)"
       story-key="makuta"
       interviewee="Pete Draper, Head of VFX"
-      image-path="photo-customer-story-makuta.png"
+      image-path="makuta.png"
       :quote="page.meta.quotes['makuta']"
       story-url="https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
     />

@@ -5,7 +5,7 @@
         <nuxt-link class="navbar-item" :to="$localePath('index')">
           <img
             class="main-logo"
-            src="~/assets/images/logo.png"
+            src="~/assets/images/brand/logo.png"
             alt="CGWire logo"
             width="100"
           />
@@ -16,7 +16,7 @@
           class="discord-mobile"
           aria-label="Discord"
         >
-          <img width="26" src="~/assets/images/discord.svg" alt="Discord" />
+          <img width="26" src="~/assets/images/icons/discord.svg" alt="Discord" />
         </a>
         <div
           @click="() => toggleNav()"
@@ -43,7 +43,7 @@
             class="navbar-item top discord desktop"
           >
             <span class="navbar-item-title">
-              <img width="24" src="~/assets/images/discord.svg" alt="Discord" />
+              <img width="24" src="~/assets/images/icons/discord.svg" alt="Discord" />
             </span>
           </a>
           <ThemeToggle />

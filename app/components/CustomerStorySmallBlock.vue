@@ -7,7 +7,7 @@
       <div class="flexcolumn">
         <div class="flexrow-item story-picture">
           <NuxtImg
-            :src="'/images/' + imagePath"
+            :src="'/images/customer-stories/' + imagePath"
             format="webp"
             :alt="studioName"
             width="320"

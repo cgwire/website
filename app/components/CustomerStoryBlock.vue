@@ -7,7 +7,7 @@
       <div class="flexrow reverse">
         <div class="flexrow-item landing-picture">
           <NuxtImg
-            :src="'/images/' + imagePath"
+            :src="'/images/customer-stories/' + imagePath"
             format="webp"
             width="320"
             height="240"

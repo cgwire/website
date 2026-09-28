@@ -11,7 +11,7 @@
   >
     <img
       class="flexrow-item tablet"
-      :src="'/icons/' + elementKey + '.' + imageExt"
+      :src="'/images/icons/' + elementKey + '.' + imageExt"
     />
     <div class="flexrow-item flexcolumn text">
       <span class="flexrow-item subnav-title">
@@ -30,7 +30,7 @@
   >
     <img
       class="flexrow-item tablet"
-      :src="'/icons/' + elementKey + '.' + imageExt"
+      :src="'/images/icons/' + elementKey + '.' + imageExt"
     />
 
     <div class="flexrow-item flexcolumn text">

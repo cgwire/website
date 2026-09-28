@@ -2,7 +2,7 @@
   <!-- .body matches app.vue so global and dark styles apply here too. -->
   <div class="body">
     <div class="section content has-text-centered mt4">
-      <NuxtImg src="/images/404.png" width="900" format="webp" alt="" />
+      <NuxtImg src="/images/illustrations/404.png" width="900" format="webp" alt="" />
 
       <h1 class="mt4" v-if="error.statusCode === 404">
         {{ $t('error.notFound') }}

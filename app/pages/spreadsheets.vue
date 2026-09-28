@@ -42,7 +42,7 @@
         target="_blank"
       >
         <NuxtImg
-          src="/images/spreadsheet-planning-short.png"
+          src="/images/spreadsheets/spreadsheet-planning-short.png"
           alt="Short film planning spreadsheet"
         />
         <br />
@@ -79,7 +79,7 @@
         target="_blank"
       >
         <NuxtImg
-          src="/images/spreadsheet-planning-tvshow.png"
+          src="/images/spreadsheets/spreadsheet-planning-tvshow.png"
           alt="TV show planning spreadsheet"
         />
         <br />
@@ -116,7 +116,7 @@
         target="_blank"
       >
         <NuxtImg
-          src="/images/spreadsheet-breakdown.png"
+          src="/images/spreadsheets/spreadsheet-breakdown.png"
           alt="Breakdown spreadsheet"
         />
         <br />
@@ -153,7 +153,7 @@
         target="_blank"
       >
         <NuxtImg
-          src="/images/spreadsheet-retake-list.png"
+          src="/images/spreadsheets/spreadsheet-retake-list.png"
           alt="Retake list spreadsheet"
         />
         <br />

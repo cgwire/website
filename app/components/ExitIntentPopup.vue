@@ -24,7 +24,7 @@
             <div class="right">
               <div class="illustration">
                 <NuxtImg
-                  src="/images/logo-kitsu.svg"
+                  src="/images/brand/logo-kitsu.svg"
                   alt="CGWire"
                   width="150"
                 />

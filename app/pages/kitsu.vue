@@ -169,7 +169,7 @@
           <CustomerStorySmallBlock
             studio-name="Tant mieux Prod"
             story-key="tant-mieux"
-            image-path="photo-customer-story-tant-mieux.png"
+            image-path="tant-mieux.png"
             interviewee="Tristan Mercier, Production Director"
             story-url="https://blog.cg-wire.com/customer-story-tant-mieux-prod/"
           />
@@ -177,7 +177,7 @@
           <CustomerStorySmallBlock
             studio-name="Fost studio"
             story-key="fost"
-            image-path="photo-customer-story-fost.png"
+            image-path="fost.png"
             interviewee="Céline Durieux, Head Of Studio"
             story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
           />
@@ -185,7 +185,7 @@
           <CustomerStorySmallBlock
             studio-name="Miyu studio"
             story-key="miyu"
-            image-path="photo-customer-story-miyu.png"
+            image-path="miyu.png"
             interviewee="Carole Faure, Production Manager"
             story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
           />
@@ -195,7 +195,7 @@
           <CustomerStorySmallBlock
             studio-name="Autour de minuit"
             story-key="adm"
-            image-path="photo-customer-story-adm.jpg"
+            image-path="adm.jpg"
             interviewee="Fiona Cohen, Production Manager"
             story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
           />
@@ -205,7 +205,7 @@
           <CustomerStorySmallBlock
             studio-name="Makuta VFX"
             story-key="makuta"
-            image-path="photo-customer-story-makuta.png"
+            image-path="makuta.png"
             interviewee="Pete Draper, Head of VFX"
             story-url="https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
           />

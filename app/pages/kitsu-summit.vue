@@ -7,7 +7,7 @@
           <div class="hero-content">
             <div class="hero-logo">
               <img
-                src="~/assets/images/logo-kitsu.png"
+                src="~/assets/images/brand/logo-kitsu.png"
                 alt="Kitsu Summit 2026"
               />
             </div>

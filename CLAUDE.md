@@ -22,6 +22,12 @@ app/
   layouts/           Page layouts (tool-alternative, studio, ...)
   pages/             Top-level routes; dynamic ones via [slug].vue patterns
   assets/styles/     Global Stylus and CSS
+  assets/images/     One folder per usage: brand, icons, illustrations, backgrounds,
+                     screenshots, customer-stories, spreadsheets, studios,
+                     studios-inverted, productions, team, summit... No loose files
+                     at the root; several components build paths dynamically from
+                     a key (SubNavElement, TeamMember, KitsuFeatureBlock,
+                     CustomerLogoBlock), so grep by folder before removing a file.
 
 content/
   {en,fr,ja}_pages.json    Main per-locale collections: pages, alternatives, features,
