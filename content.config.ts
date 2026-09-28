@@ -19,7 +19,9 @@ const COLLECTIONS = [
   { key: 'audiences' },
   { key: 'studios' },
   { key: 'testimonials' },
-  { key: 'customer_stories' }
+  { key: 'customer_stories' },
+  { key: 'video_testimonials' },
+  { key: 'video_customer_stories' }
 ]
 
 // Structural validation per pageType, enforced in getItem so a shape drift
