@@ -430,9 +430,9 @@ useSEO({
 // VARIABLES
 // ========================================
 accent-color = #FF6B35
-text-dark = #2C3E50
-text-light = #7F8C8D
-border-color = #E5E7EB
+text-dark = var(--pg-text, #2C3E50)
+text-light = var(--pg-text-light, #7F8C8D)
+border-color = var(--pg-border, #E5E7EB)
 shadow-light = 0 2px 10px rgba(0, 0, 0, 0.1)
 shadow-medium = 0 4px 20px rgba(0, 0, 0, 0.15)
 shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
@@ -465,7 +465,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 // BUTTONS
 // ========================================
 .btn-primary
-  color: #2C3E50
+  color: var(--pg-text, #2C3E50)
   border: none
   padding: 1rem 2rem
   border-radius: 8px
@@ -521,7 +521,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   backdrop-filter: blur(3px)
 
   .hero-logo
-    background: white
+    background: var(--pg-card, white)
     border-radius: 50%
     box-shadow: 0 4px 15px rgba(194, 240, 171, 0.3)
     width: 200px
@@ -555,8 +555,8 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
   .hero-badge
     display: inline-block
-    background: white
-    color: #2C3E50
+    background: var(--pg-card, white)
+    color: var(--pg-text, #2C3E50)
     padding: 1rem 1.5rem
     border-radius: 20px
     font-size: 3.5rem
@@ -606,7 +606,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
   a
     border: 3px solid cgwiregreen
-    background: white
+    background: var(--pg-card, white)
 
 
 // ========================================
@@ -622,7 +622,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
 .about-section
   padding: 6rem 0
-  background: white
+  background: var(--pg-card, white)
 
 .stats-grid
   display: grid
@@ -632,7 +632,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 .stat-item
   text-align: center
   padding: 2rem
-  background: lightblue
+  background: var(--pg-blue, lightblue)
   border-radius: 15px
   transition: transform 0.3s ease
 
@@ -654,7 +654,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 // ========================================
 .conferences-section
   padding: 6rem 0
-  background: #F8F9FA
+  background: var(--pg-card-alt, #F8F9FA)
 
 .conferences-grid
   display: grid
@@ -663,7 +663,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
 
 .conference-card
-  background: white
+  background: var(--pg-card, white)
   border-radius: 15px
   padding: 2rem
   box-shadow: shadow-light
@@ -746,23 +746,23 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
     &.animation2d
       color: #1976D2
-      background: #DBEAFE
+      background: var(--pg-blue, #DBEAFE)
 
     &.animation3d
       color: cgwiregreen
-      background: #E8F5E8
+      background: var(--pg-green, #E8F5E8)
 
     &.vfx
       color: text-dark
-      background: lightblue
+      background: var(--pg-blue, lightblue)
 
     &.ai
       color: cgwiregreen
-      background: #E8F5E8
+      background: var(--pg-green, #E8F5E8)
 
     &.kitsu
       color: #F57C00
-      background: #FFF3E0
+      background: var(--pg-warm, #FFF3E0)
 
 
 // ========================================
@@ -783,7 +783,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
 .registration-section
   padding: 6rem 0
-  background: white
+  background: var(--pg-card, white)
 
 .registration-content
   display: grid
@@ -826,7 +826,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     color: cgwiregreen
 
 .registration-form
-  background: lightblue
+  background: var(--pg-blue, lightblue)
   padding: 2rem
   border-radius: 15px
 
@@ -853,7 +853,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
 .access-section
   padding: 6rem 0
-  background: #F8F9FA
+  background: var(--pg-card-alt, #F8F9FA)
 
   p
     margin-bottom: 1rem
@@ -937,7 +937,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 // ========================================
 .cta-section
   padding: 4em 0 0 0
-  background: #d4e5f7
+  background: var(--pg-blue, #d4e5f7)
   text-align: center
 
   .cta-content
@@ -965,7 +965,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
       color: white
 
       &:hover
-        background: white
+        background: var(--pg-card, white)
         color: cgwiregreen
 
 
@@ -974,7 +974,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 // ========================================
 .schedule-section
   padding: 6rem 0
-  background: white
+  background: var(--pg-card, white)
 
 .schedule-container
   max-width: 1000px
@@ -986,7 +986,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 .schedule-header
   display: grid
   grid-template-columns: 120px 1fr 1fr
-  background: #e4e9ff
+  background: var(--pg-blue, #e4e9ff)
   color: #668
   font-weight: 700
   padding: 1.5rem
@@ -1011,7 +1011,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     border-bottom: none
 
   &:nth-child(even)
-    background: #FAFAFA
+    background: var(--pg-card-alt, #FAFAFA)
 
 .schedule-time
   font-weight: 700
@@ -1031,7 +1031,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     padding-left: 1rem
 
 .schedule-item
-  background: lightblue
+  background: var(--pg-blue, lightblue)
   padding: 1rem
   border-bottom-right-radius: 10px
   border-top-right-radius: 10px
@@ -1064,7 +1064,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   grid-column: 1 / -1
   text-align: center
   padding: 1.5rem
-  background: #F0F0F0
+  background: var(--pg-card-alt, #F0F0F0)
   border-bottom: 1px solid border-color
   font-weight: 700
   font-size: 1.1rem
@@ -1086,7 +1086,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     font-weight: 600
 
 .background-transition-section
-  background: linear-gradient(rgb(248, 249, 250), #d4e5f7)
+  background: linear-gradient(rgb(248, 249, 250), var(--pg-blue, #d4e5f7))
   height: 100px
 
 .food
@@ -1094,7 +1094,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   text-align left
 
   h2
-    color #999
+    color var(--pg-text-light, #999)
     font-size 0.9rem
     font-weight bold
     text-transform uppercase

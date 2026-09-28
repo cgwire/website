@@ -146,7 +146,15 @@ export default defineNuxtConfig({
           content: 'https://www.cg-wire.com/images/logo.svg'
         }
       ],
-      script: [],
+      script: [
+        // Apply the theme before first paint to avoid a light flash: the
+        // visitor's saved choice, else the browser's color scheme.
+        // See app/components/ThemeToggle.vue.
+        {
+          innerHTML:
+            "try{var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.classList.add('theme-dark')}catch(e){}"
+        }
+      ],
       link: [{ rel: 'icon', href: '/favicon.png' }],
       style: [],
       noscript: [{ children: 'Javascript is required' }]
@@ -155,7 +163,8 @@ export default defineNuxtConfig({
   css: [
     // "bulma",
     '~/assets/styles/app.styl',
-    '~/assets/styles/bulma.css'
+    '~/assets/styles/bulma.css',
+    '~/assets/styles/dark.styl'
     // { src: "~/assets/styles/app.styl", lang: "stylus" },
     // '~/node_modules/lite-youtube-embed/src/lite-yt-embed.css'
   ],

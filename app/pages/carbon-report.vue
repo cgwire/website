@@ -498,15 +498,15 @@ const toggleData = () => {
 // ========================================
 // VARIABLES
 // ========================================
-background-hover = #F8F9FA
-light-grey = #E5E5E5
-light-green = #ECFFD9
-light-blue = #D4E5F7
-light-purple = #F9F6FD
+background-hover = var(--pg-card-alt, #F8F9FA)
+light-grey = var(--pg-border, #E5E5E5)
+light-green = var(--pg-green, #ECFFD9)
+light-blue = var(--pg-blue, #D4E5F7)
+light-purple = var(--pg-purple, #F9F6FD)
 border-purple = #C5A9E8
 border-blue = #79ADE5
-text-color = #363636
-text-light = #868686
+text-color = var(--pg-text, #363636)
+text-light = var(--pg-text-light, #868686)
 
 // ========================================
 // LAYOUT COMPONENTS
@@ -530,7 +530,7 @@ text-light = #868686
   color: text-color
   background-image: url('/assets/images/carbon-report/carbon-header-left.png'),
     url('/assets/images/carbon-report/carbon-header-right.png'),
-    linear-gradient(180deg, light-green 0%, white 100%)
+    linear-gradient(180deg, light-green 0%, var(--pg-bg, white) 100%)
   background-size: 16%, 16%, cover
   background-position: top left, top right, center
   background-repeat: no-repeat, no-repeat, no-repeat
@@ -591,7 +591,7 @@ text-light = #868686
   border-radius: 50px
   border: 2px solid light-grey
   padding: 4px
-  background: white
+  background: var(--pg-card, white)
   width: 100%
   max-width: 552px
 
@@ -610,7 +610,7 @@ text-light = #868686
     border-radius: 50px
 
   &.btn-secondary
-    background: white
+    background: var(--pg-card, white)
     color: text-light
     border-radius: 50px
 
@@ -631,7 +631,7 @@ text-light = #868686
   border-radius: 20px
   padding: 30px
   text-align: left
-  background: white
+  background: var(--pg-card, white)
   transition: transform 0.2s ease
 
   &:hover
@@ -733,7 +733,7 @@ text-light = #868686
     margin-right: 0.5rem
 
   .chart-legend-color-meal
-    background-color: #D4E5F7
+    background-color: var(--pg-blue, #D4E5F7)
 
   .chart-legend-color-immobilisation
     background-color: #44BCC6
@@ -763,7 +763,7 @@ text-light = #868686
     margin: 3rem auto 0
 
   .evolution-card
-    background: white
+    background: var(--pg-card, white)
     border: 1px solid light-grey
     border-radius: 20px
     padding: 12px
@@ -839,7 +839,7 @@ text-light = #868686
 
   .event-card
     flex: 1
-    background: white
+    background: var(--pg-card, white)
     border: 1px solid border-purple
     border-radius: 20px
     overflow: hidden
@@ -910,7 +910,7 @@ text-light = #868686
   .hero-section
     // Single background layer: reset the multi-layer size/position too,
     // otherwise the gradient inherits the 16% width of the corner art.
-    background-image: linear-gradient(180deg, light-green 0%, white 100%)
+    background-image: linear-gradient(180deg, light-green 0%, var(--pg-bg, white) 100%)
     background-size: cover
     background-position: center
     min-height: auto

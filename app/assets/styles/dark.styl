@@ -1,0 +1,582 @@
+@import "./variables.styl"
+
+// ============================================================================
+// DARK MODE
+// ============================================================================
+//
+// The dark theme applies when both classes are on <html>: `has-dark-mode`,
+// set by the default layout and the error page (useDarkMode()), and
+// `theme-dark`, set from the browser's color scheme or the visitor's choice in
+// the header toggle (ThemeToggle.vue). Rules must stay scoped under that
+// selector. Page-specific rules live in the sections at the end of the file.
+
+// Neutrals come from Kitsu's own dark theme so the site matches the product
+// screenshots. Tinted surfaces keep the hue of their light counterparts
+// (lightblue, lightpurple) instead of turning everything grey.
+dark-bg = #2F3136
+dark-chrome = #202225
+dark-surface = #36393F
+dark-surface-alt = #40444B
+dark-border = #4E5159
+dark-text = #DCDDDE
+dark-text-strong = #FFFFFF
+dark-text-muted = #A3A6AA
+
+dark-blue = #2F4E7A
+dark-blue-border = #3F6FAE
+dark-purple-surface = #4E3D78
+dark-purple-border = #7452B0
+dark-purple = #C6A6F5
+
+dark-green-surface = #2E4B3F
+dark-green-border = #236340
+
+// Shadows on dark surfaces need to be dark, the light theme's grey glow
+// disappears on them.
+dark-shadow = 0 0 6px 3px rgba(0, 0, 0, 0.45)
+dark-border-soft = rgba(255, 255, 255, 0.12)
+
+// Large colored bands (feature pages) use lighter tints than cards. Keep in
+// sync with DARK_WAVE_COLORS in app/components/FeatureBlock.vue.
+dark-band-blue = #2B4160
+dark-band-mid1 = #333E60
+dark-band-mid2 = #3C3A60
+dark-band-purple = #453760
+
+// Turns black logos white while keeping colored parts close to their hue.
+invert-logo()
+    filter invert(1) hue-rotate(180deg)
+
+// Helpers to show a picture only in one of the two themes.
+html .only-dark
+    display none
+
+html.has-dark-mode.theme-dark
+    color-scheme dark
+    background-color dark-bg
+
+    // Read by SearchForm.vue (and anything else using these tokens).
+    --color-bg dark-surface
+    --color-surface dark-surface-alt
+    --color-border dark-border
+    --color-border-strong dark-text-muted
+    --color-text dark-text-strong
+    --color-muted dark-text-muted
+
+    // Read by pages whose styles use var(--pg-*, <light value>): about,
+    // metrics, carbon-report, kitsu-summit, partners.
+    --pg-bg dark-bg
+    --pg-card dark-surface
+    --pg-card-alt dark-surface-alt
+    --pg-text dark-text-strong
+    --pg-text-mid dark-text
+    --pg-text-light dark-text-muted
+    --pg-border dark-border
+    --pg-blue dark-blue
+    --pg-green dark-green-surface
+    --pg-purple dark-purple-surface
+    --pg-hero-blue dark-band-blue
+    --pg-warm #4A3F2E
+
+    .only-dark
+        display revert
+
+    .only-light
+        display none
+
+    body
+        background-color dark-bg
+        color dark-text
+
+    div.body
+        color dark-text
+
+        // --- Typography ---
+
+        strong
+        .title
+        .content h1
+        .content h2
+        .content h3
+        .content h4
+        .content h5
+        .content h6
+        h2.subtitle
+            color dark-text-strong
+
+        .subtitle
+        p
+            color dark-text
+
+        .section-subtitle
+            color dark-text-muted
+
+        section.introduction h2.main-subtitle
+            color dark-text
+
+        // --- Buttons ---
+
+        .button--alt
+        .button--alt:focus
+            background-color transparent
+
+        // --- Header ---
+
+        header
+        header .navbar
+        header .navbar-menu
+        header .navbar-brand
+            background-color dark-chrome
+
+        header
+
+            .main-logo
+                invert-logo()
+
+            .navbar-link
+            .navbar-item
+            .navbar-link:hover
+            .navbar-item:hover
+                color dark-text-strong
+
+            .navbar-link:hover
+            .navbar-item:hover
+            a.navbar-item:focus-within
+            .navbar-item.has-dropdown:hover .navbar-link
+                background-color transparent
+
+            .navbar .navbar-item.top:hover .navbar-item-title
+            .navbar .navbar-item.is-hoverable.has-dropdown:hover .navbar-link:first-child .navbar-item-title
+                background dark-surface-alt
+
+            a.navbar-lang-item
+                color dark-text-muted
+
+            .navbar .navbar-item.top.theme-toggle
+                color dark-text-muted
+
+                &:hover
+                    color cgwiregreen
+
+            .navbar-lang-item.active
+                color dark-text-strong
+
+            .navbar-dropdown
+                background-color dark-surface
+                border-color dark-border
+                box-shadow 0 8px 24px rgba(0, 0, 0, 0.4)
+
+                .hosting-solutions
+                    border-left-color dark-border
+
+            .navbar-item.subnav-element:hover
+                background-color dark-surface-alt
+
+            .navbar .navbar-item.subnav-element.flexcolumn .subnav-text
+            .subnav-text
+                color dark-text-muted
+
+            .navbar-burger span
+                background-color dark-text-strong
+
+            // Keep the CTA green: the hover reset above would clear it.
+            .navbar-item.signup
+            .navbar-item.signup:hover
+                background-color cgwiregreen
+                color white
+
+            .navbar-item.signup:hover
+                background-color cgwiregreen-alt
+
+        // --- Trusted by marquee ---
+
+        .brand-wheel::before
+            background-image linear-gradient(to right, dark-bg 0%, rgba(47, 49, 54, 0) 100%)
+
+        .brand-wheel::after
+            background-image linear-gradient(to left, dark-bg 0%, rgba(47, 49, 54, 0) 100%)
+
+        .brand-wheel img
+        .supporter-list img
+            invert-logo()
+
+        // --- Home ---
+
+        .introduction-picture video
+            border-radius 2em
+
+        .landing-picture img
+            border-radius 1em
+
+        .screenshot
+            border-color dark-border-soft
+            box-shadow dark-shadow
+
+        .production-success svg path
+            fill dark-bg
+
+        .production-type
+            background dark-blue
+            color dark-text
+
+        .features .tabs
+            background linear-gradient(0deg, dark-purple-surface 35%, dark-blue 100%)
+            border-color dark-purple-border
+
+            .tab
+                color dark-purple
+
+                &.selected
+                    border-bottom-color dark-purple
+
+            .tab-info img
+                box-shadow none
+
+        .number-block-title
+            color dark-text-muted
+
+        .testimonials-grid .lean-quote-text
+            background-color dark-blue
+            border-color dark-blue-border
+            color dark-text
+
+        .customer-story.landing-block
+            background dark-purple-surface
+            border-color dark-purple-border
+            color dark-text
+
+            .story-title
+            .section-subtitle
+                color dark-text-strong
+
+            p
+            p.interviewee
+                color dark-text
+
+            img
+                box-shadow none
+
+        .supporters
+            background dark-surface
+
+        section.conclusion.conclusion-picture img
+            box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.6)
+
+        // --- Footer ---
+
+        .footer
+            background dark-chrome
+            color dark-text
+
+            .footer-logo
+                invert-logo()
+
+            .footer-links a
+                color dark-text
+
+                &:hover
+                    color cgwiregreen
+
+            .footer-col--faq
+                border-top-color dark-border
+
+            .footer-mission
+            .footer-copyright
+            .footer-social a
+                color dark-text-muted
+
+        // ====================================================================
+        // SHARED ELEMENTS (Bulma and app.styl)
+        // ====================================================================
+
+        hr
+            background-color dark-border
+
+        code
+        pre
+            background-color dark-surface
+            color dark-text
+
+        .box
+            background-color dark-surface
+            color dark-text
+
+        .label
+            color dark-text-strong
+
+        .input
+        .textarea
+        .select select
+            background-color dark-surface
+            border-color dark-border
+            color dark-text-strong
+
+            &::placeholder
+                color dark-text-muted
+
+        .content blockquote
+            background-color dark-surface
+            border-left-color dark-border
+
+        .table
+            background-color transparent
+            color dark-text
+
+            th
+                color dark-text-strong
+
+            td
+            th
+                border-color dark-border
+
+        .block-colored
+            background-color dark-band-blue
+
+            .button--alt
+                background-color transparent
+
+        .block-colored--grey
+            background-color dark-surface
+
+        .section-item-img:before
+            background-color dark-surface
+
+        .modules .module-block
+            background dark-blue
+            border-color dark-blue-border
+
+            .module-description
+                color dark-text-muted
+
+        // Logos in these tiles are dark on light: keep light tiles.
+        .successes img
+        .best-supporter > img
+            background-color white
+            box-shadow dark-shadow
+
+        .js-tabs
+            .js-tablist__link
+                color dark-text
+
+            .js-tabcontent
+                background-color dark-surface
+
+        .quote
+        .video
+            background-color dark-surface
+
+        .quote-text
+        .video-text
+        .video-text a
+            color dark-text
+
+        .community-link:hover
+            background dark-green-surface
+
+        // --- FAQ (pricing page and others) ---
+
+        .content div.faq p.question
+            background dark-blue
+            border-color dark-blue-border
+            color dark-text
+
+        // --- Pricing ---
+
+        .pricing-page
+            .extra-block
+                background dark-surface
+
+            .infos
+                background dark-purple-surface
+                border-color dark-purple-border
+                color dark-purple
+
+        section.pricing .button.is-outlined
+        .pricing-block .pricing-cta .button.is-outlined
+            background transparent
+
+        .pricing-block
+            background dark-surface
+            box-shadow 0 4px 16px rgba(0, 0, 0, 0.35)
+
+            .pricing-features li
+                color dark-text-muted
+                border-bottom-color dark-border
+
+        // ====================================================================
+        // SHARED COMPONENTS (scoped styles)
+        // ====================================================================
+
+        // FeatureBlock.vue: feature pages bands and waves.
+        .block-colored.gradient
+            background linear-gradient(0deg, dark-band-purple 35%, dark-band-blue 100%)
+
+        .block-colored.gradient-1
+            background linear-gradient(0deg, dark-band-mid1 0%, dark-band-blue 100%)
+
+        .block-colored.gradient-2
+            background linear-gradient(0deg, dark-band-mid2 0%, dark-band-mid1 100%)
+
+        .block-colored.gradient-3
+            background linear-gradient(0deg, dark-band-purple 0%, dark-band-mid2 100%)
+
+        .feature-wave
+            fill var(--wave-dark)
+
+        // SolutionHeaderBlock.vue
+        .docs-cta
+            background transparent
+
+            &:hover
+                background dark-blue
+
+        .header-quote .header-quote-text
+            color dark-text
+
+        .header-quote .header-quote-author
+        ul.header-stats .stat-label
+            color dark-text-muted
+
+        // Tabs.vue (Kitsu page audience switcher)
+        .tabs:has(.btn)
+            background dark-surface
+            border-color dark-border
+
+            .btn.btn-secondary
+                background transparent
+                color dark-text-muted
+
+                &:hover
+                    background dark-surface-alt
+
+        // kitsu/KitsuFeatureBlock.vue
+        .kitsu-feature-block .feature-img-wrapper
+            background-color dark-green-surface
+
+            &.purple
+                background-color dark-purple-surface
+
+            &.blue
+                background-color dark-blue
+
+            img
+                border-color rgba(255, 255, 255, 0.08)
+
+        .kitsu-feature-block.flexrow-reverse .feature-img-wrapper
+            background-color dark-purple-surface
+
+        // ComparisonTable.vue and [slug]-alternative.vue
+        table.table
+            th
+                background dark-surface
+
+            .feature-cell
+                background dark-chrome
+
+            tr.is-emphasized td
+            tr.is-emphasized th
+                background dark-blue
+
+        .compare-table-note
+            color dark-text-muted
+
+        .compare-qa .compare-qa-a
+            color dark-text
+
+        // TeamMember.vue
+        .ppl
+            background dark-blue
+
+        // ToggleButton.vue
+        .toggle-label
+            color dark-text
+
+        .toggle-button:not(.is-active)
+            background-color dark-surface-alt
+
+        // Slider.vue
+        .slider-value
+            color dark-text-strong
+
+        .slider
+            background dark-surface-alt
+
+        // PriceEstimator.vue
+        .estimator
+            .pricing-table
+                background dark-surface
+
+            .pricing-label
+                color dark-text-muted
+
+            .pricing-value
+                color dark-text-strong
+
+            .pricing-row.total .pricing-label
+            .pricing-row.total .pricing-value
+                color cgwiregreen
+
+        // SearchForm.vue: the trigger hover is hard-coded light.
+        .search-trigger:hover
+            background dark-surface-alt
+
+        // ====================================================================
+        // PAGES
+        // ====================================================================
+
+        // --- Productions ---
+
+        .productions-page
+            background transparent
+            color dark-text
+
+            .prod-eyebrow
+                color dark-text-muted
+
+            .prod-title
+                color dark-text-strong
+
+            .prod-card
+                background dark-surface
+
+        // --- Free tools ---
+
+        .tools-page
+            .header-eyebrow
+            .tools-header .header-desc
+            .tool-card-desc
+                color dark-text-muted
+
+            .tool-card
+                background dark-surface
+                border-color dark-border
+                box-shadow 0 4px 16px rgba(0, 0, 0, 0.3)
+
+            .tool-card-footer
+                border-top-color dark-border
+
+            .tag
+                background-color dark-green-surface
+                border-color dark-green-border
+
+        // Page roots painted white in light mode.
+        .metrics-page
+            background dark-bg
+
+            .pay-badge
+                background dark-blue
+
+        // Images with dark text baked in: show them on a light card.
+        .carbon-report
+            .big-graph
+            .small-graph
+                background-color white
+                border-radius 1em
+                padding 1em
+
+        .kitsu-summit-page .sponsors-grid .sponsor-item img
+            background-color white
+
+        // Bulma striped tables.
+        .table.is-striped tbody tr:not(.is-selected):nth-child(even)
+            background-color dark-surface

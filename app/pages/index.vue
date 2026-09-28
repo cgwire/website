@@ -276,9 +276,17 @@
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
+                  class="only-light"
                   src="/images/screenshots/kitsu-compare-light.png"
                   alt=""
                   format="webp"
+                />
+                <NuxtImg
+                  class="only-dark"
+                  src="/images/screenshots/kitsu-compare.png"
+                  alt=""
+                  format="webp"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -288,9 +296,17 @@
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
+                  class="only-light"
                   src="/images/screenshots/kitsu-python-light.png"
                   alt=""
                   format="webp"
+                />
+                <NuxtImg
+                  class="only-dark"
+                  src="/images/screenshots/kitsu-python.png"
+                  alt=""
+                  format="webp"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -385,7 +401,7 @@
           />
         </div>
       </div>
-      <p class="has-text-centered mt2" data-aos="fade-up">
+      <p class="has-text-centered mt2 mb4" data-aos="fade-up">
         <nuxt-link
           class="read-more-stories"
           :to="$localePath('customer-stories')"
@@ -468,7 +484,7 @@
       </div>
     </section>
 
-    <section class="section content conclusion conclusion-text mt8">
+    <section class="section content conclusion conclusion-text">
       <h2 class="subtitle tagline" data-aos="fade-up">
         {{ page.meta.main.conclusion.tagline }}
       </h2>
@@ -607,6 +623,9 @@ div.body
 
     .tagline-explanation
         font-size 1.3em
+
+    .conclusion-text
+        margin-top 12rem
 
     .read-more-stories
         font-size 1.1em
@@ -748,6 +767,10 @@ div.body
 
 .section.supporters
   margin-top 6rem
+
+  @media(max-width 800px)
+    margin-left 1em
+    margin-right 1em
 
 .supporter-list
   .flexrow-item

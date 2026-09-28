@@ -467,15 +467,15 @@ const why = computed(() => [
 </script>
 
 <style lang="stylus" scoped>
-$text-color = #1b1e24
-$text-light = #54656f
-$light-green = #ecffd9
-$light-band = lightblue
-$hero-top = #e3eefc  // light tint of the CGWire blue
-$border-soft = #e4e9ef
+$text-color = var(--pg-text, #1b1e24)
+$text-light = var(--pg-text-light, #54656f)
+$light-green = var(--pg-green, #ecffd9)
+$light-band = var(--pg-blue, lightblue)
+$hero-top = var(--pg-hero-blue, #e3eefc)  // light tint of the CGWire blue
+$border-soft = var(--pg-border, #e4e9ef)
 
 .metrics-page
-  background: #fff
+  background: var(--pg-card, #fff)
   color: $text-color
 
 .container
@@ -499,7 +499,7 @@ $border-soft = #e4e9ef
 
 // --- HERO ---
 .hero
-  background-image: var(--art-left), var(--art-right), linear-gradient(180deg, $hero-top 0%, #fff 100%)
+  background-image: var(--art-left), var(--art-right), linear-gradient(180deg, $hero-top 0%, var(--pg-bg, #fff) 100%)
   background-repeat: no-repeat, no-repeat, no-repeat
   background-position: top left, top right, center
   // Size the corner art by a fixed HEIGHT (not width %): the images are tall, so a
@@ -536,7 +536,7 @@ $border-soft = #e4e9ef
 .hero-lead
   font-size: 1.2rem
   line-height: 1.6
-  color: #3a4149
+  color: var(--pg-text-mid, #3a4149)
   max-width: 720px
   margin: 0 auto 2rem
 
@@ -575,10 +575,10 @@ $border-soft = #e4e9ef
   color: $text-light
 
   &:hover
-    background: #fff
+    background: var(--pg-card, #fff)
 
 .btn-outline
-  background: #fff
+  background: var(--pg-card, #fff)
   color: cgwiregreen
   border: 2px solid cgwiregreen
 
@@ -601,7 +601,7 @@ $border-soft = #e4e9ef
 .content-description
   font-size: 1.15rem
   line-height: 1.6
-  color: #3a4149
+  color: var(--pg-text-mid, #3a4149)
   max-width: 720px
   margin: 0 auto 2.5rem
 
@@ -625,7 +625,7 @@ $border-soft = #e4e9ef
   padding: 1.5rem
   border: 1px solid $border-soft
   border-radius: 16px
-  background: #fff
+  background: var(--pg-card, #fff)
   text-align: left
   transition: transform 0.2s ease, box-shadow 0.2s ease
 
@@ -651,7 +651,7 @@ $border-soft = #e4e9ef
 
 // --- CHARTS ---
 .chart-card
-  background: #fff
+  background: var(--pg-card, #fff)
   border: 1px solid $border-soft
   border-radius: 20px
   padding: 1.5rem 1.25rem 1rem
@@ -684,7 +684,7 @@ $border-soft = #e4e9ef
   border: 1px solid $border-soft
   border-radius: 18px
   padding: 1.75rem
-  background: #fff
+  background: var(--pg-card, #fff)
   text-align: left
   transition: transform 0.2s ease
 
@@ -741,7 +741,7 @@ $border-soft = #e4e9ef
   color: $text-light
 
 .metric-block
-  background: #fff
+  background: var(--pg-card, #fff)
   border: 1px solid $border-soft
   border-radius: 18px
   padding: 2rem
@@ -781,7 +781,7 @@ $border-soft = #e4e9ef
 .pay-panel
   flex: 1.1
   min-width: 0
-  background: #fff
+  background: var(--pg-card, #fff)
   border: 1px solid $border-soft
   border-radius: 20px
   padding: 1rem 1.75rem
@@ -832,7 +832,7 @@ $border-soft = #e4e9ef
 .server-bill
   flex: 1
   min-width: 0
-  background: #fff
+  background: var(--pg-card, #fff)
   border: 1px solid $border-soft
   border-radius: 20px
   padding: 2rem
@@ -908,10 +908,10 @@ $border-soft = #e4e9ef
 .tool-pill
   padding: 0.35rem 0.85rem
   border-radius: 50px
-  background: #fff
+  background: var(--pg-card, #fff)
   border: 1px solid $border-soft
   font-size: 0.9rem
-  color: #3a4149
+  color: var(--pg-text-mid, #3a4149)
 
 // --- FUNDING ---
 .funding-list
@@ -928,7 +928,7 @@ $border-soft = #e4e9ef
     right: 0
     bottom: 0
     height: 150px
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff)
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--pg-bg, #fff))
     pointer-events: none
 
 .funding-row
@@ -938,7 +938,7 @@ $border-soft = #e4e9ef
   gap: 1rem
   padding: 1.1rem 1.5rem
   margin-bottom: 0.5rem
-  background: lightblue
+  background: var(--pg-blue, lightblue)
   border-radius: 10px
   text-align: left
 
@@ -960,7 +960,7 @@ $border-soft = #e4e9ef
   white-space: nowrap
 
 .see-all
-  background: #fff
+  background: var(--pg-card, #fff)
   border: 2px solid $border-soft
 
 // --- WHY ---
@@ -975,7 +975,7 @@ $border-soft = #e4e9ef
   padding: 1.5rem
   border: 1px solid $border-soft
   border-radius: 18px
-  background: #fff
+  background: var(--pg-card, #fff)
   text-align: center
 
 .why-title
@@ -1014,7 +1014,7 @@ $border-soft = #e4e9ef
   border-radius: 50px
   border: 2px solid $border-soft
   padding: 4px
-  background: #fff
+  background: var(--pg-card, #fff)
 
   .btn
     padding: 0.7rem 1.5rem
@@ -1027,7 +1027,7 @@ $border-soft = #e4e9ef
     grid-template-columns: 1fr
 
   .hero
-    background-image: linear-gradient(180deg, $hero-top 0%, #fff 100%)
+    background-image: linear-gradient(180deg, $hero-top 0%, var(--pg-bg, #fff) 100%)
     background-size: cover
     background-position: center
     min-height: auto

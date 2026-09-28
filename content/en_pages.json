@@ -482,7 +482,7 @@
       },
       "supporters": {
         "content": "Productions tracked with Kitsu won all the major awards: Oscars, Emmys, Cannes Palme d'Or, Annecy Cristal, César, and more.",
-        "games": "Video Games productions tracked with Kitsu are among the most played in the world.",
+        "games": "Game studios like Studio MDHR, Bloober Team and Virtuos Sparx track their productions with Kitsu.",
         "schools": "The best French animation schools already use Kitsu to train their students.",
         "subtitle": "Fulfill your ambitions",
         "title": "Kitsu is the biggest supporter of your success",
@@ -2660,7 +2660,6 @@
       },
       "studios": [
         "mdhr",
-        "metacore",
         "trailer-farm",
         "sparx",
         "tato"
@@ -3185,12 +3184,6 @@
       "link": "https://studiomdhr.com/",
       "elementKey": "mdhr",
       "name": "Studio MDHR",
-      "type": "video-games"
-    },
-    "metacore": {
-      "link": "https://metacoregames.com/",
-      "elementKey": "metacore",
-      "name": "Metacore",
       "type": "video-games"
     },
     "mikrofilm": {
