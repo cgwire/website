@@ -31,6 +31,11 @@ dark-purple = #C6A6F5
 dark-green-surface = #2E4B3F
 dark-green-border = #236340
 
+// Shadows on dark surfaces need to be dark, the light theme's grey glow
+// disappears on them.
+dark-shadow = 0 0 6px 3px rgba(0, 0, 0, 0.45)
+dark-border-soft = rgba(255, 255, 255, 0.12)
+
 // Large colored bands (feature pages) use lighter tints than cards. Keep in
 // sync with DARK_WAVE_COLORS in app/components/FeatureBlock.vue.
 dark-band-blue = #2B4160
@@ -202,6 +207,10 @@ html.has-dark-mode.theme-dark
 
         .landing-picture img
             border-radius 1em
+
+        .screenshot
+            border-color dark-border-soft
+            box-shadow dark-shadow
 
         .production-success svg path
             fill dark-bg
