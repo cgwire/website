@@ -99,6 +99,7 @@ onBeforeUnmount(() => window.removeEventListener('message', handleMessage))
   max-width: 720px; /* optional: caps how big it can grow, remove if you want truly full width */
   aspect-ratio: 9 / 16;
   overflow: hidden;
+  border-radius: 1rem;
   background: #000;
 }
 
