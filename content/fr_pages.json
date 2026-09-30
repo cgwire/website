@@ -2598,7 +2598,6 @@
         "ltt",
         "digikore",
         "stim",
-        "hogarth",
         "prpvfx",
         "cousin-bizarre",
         "the-marmalade",
@@ -2994,12 +2993,6 @@
       "link": "https://www.riodepost.com/",
       "elementKey": "riodepost",
       "name": "RIOdePost",
-      "type": "vfx"
-    },
-    "hogarth": {
-      "link": "https://www.hogarth.com/",
-      "elementKey": "hogarth",
-      "name": "Hogarth",
       "type": "vfx"
     },
     "jam-media": {
