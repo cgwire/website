@@ -76,13 +76,13 @@ const gradient = computed(() => {
     width: 96px
     height: 96px
     border-radius: 50%
-    background: #fff
+    background: var(--pg-card, #fff)
 
 .pie-total
   grid-area: 1 / 1
   font-size: 1.6rem
   font-weight: 800
-  color: #1b1e24
+  color: var(--pg-text, #1b1e24)
 
 .pie-legend
   display: flex
@@ -108,7 +108,7 @@ const gradient = computed(() => {
 .legend-val
   margin-left: auto
   padding-left: 1rem
-  color: #54656f
+  color: var(--pg-text-light, #54656f)
   font-variant-numeric: tabular-nums
   white-space: nowrap
 
