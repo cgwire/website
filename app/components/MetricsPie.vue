@@ -103,7 +103,7 @@ const gradient = computed(() => {
   border-radius: 3px
 
 .legend-name
-  color: #1b1e24
+  color: var(--pg-text, #1b1e24)
 
 .legend-val
   margin-left: auto
