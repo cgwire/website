@@ -300,7 +300,11 @@ div.body
         gap 1em
         margin-bottom 12em
 
+        // Equal flex basis: logos shrink from their intrinsic width otherwise,
+        // so a 500px source ends up larger than its 400px neighbours.
         img
+            flex 1 1 0
+            min-width 0
             max-width 280px
             border-radius 10px
             padding 0.5em
@@ -310,6 +314,10 @@ div.body
             flex-direction column
             align-items center
             gap 2em
+
+            img
+                flex none
+                width 100%
 
         // The Gobelins logo fills more of its canvas than the other school
         // logos: inset it so the three read at the same visual size.
