@@ -1,12 +1,12 @@
 {
-  "lastUpdate": "2026-08-01",
+  "lastUpdate": "2026-09-01",
   "currency": "EUR",
   "seriesStart": "2018-07",
   "note": "Snapshot imported from metrics.cg-wire.com. Amounts in EUR. Salaries are French net (taxes excluded).",
-  "selfHostedSetups": 507,
+  "selfHostedSetups": 519,
   "instances": {
-    "allTime": { "counts": [113, 254, 86, 54], "biggestUsers": 1402, "activeUsers": 24910 },
-    "last6Months": { "counts": [61, 139, 49, 29], "biggestUsers": 530, "activeUsers": 13132 },
+    "allTime": { "counts": [114, 261, 87, 57], "biggestUsers": 1402, "activeUsers": 25515 },
+    "last6Months": { "counts": [60, 143, 49, 32], "biggestUsers": 530, "activeUsers": 13535 },
     "cloud": { "counts": [34, 36, 8, 6, 15], "biggestUsers": 1000, "activeUsers": 5035 }
   },
   "revenue": {
@@ -109,7 +109,8 @@
         42004,
         44625,
         17097,
-        59614
+        59614,
+        162873
       ]
     },
     "quarterly": {
@@ -146,7 +147,7 @@
         124206,
         86263,
         105653,
-        76711
+        239584
       ]
     },
     "yearly": {
@@ -159,7 +160,7 @@
         460290,
         502242,
         516673,
-        268827
+        431700
       ]
     }
   },
@@ -262,7 +263,8 @@
       35721,
       33668,
       33788,
-      34273
+      34273,
+      36936
     ]
   },
   "customers": {
@@ -364,7 +366,8 @@
       96,
       96,
       97,
-      99
+      99,
+      101
     ]
   },
   "cashFlow": {
@@ -466,7 +469,8 @@
       124936,
       104296,
       33781,
-      23460
+      23460,
+      75609
     ],
     "outgoing": [
       8670,
@@ -566,7 +570,8 @@
       79436,
       75287,
       48784,
-      46782
+      46782,
+      58965
     ]
   },
   "moneyInBank": {
@@ -668,7 +673,8 @@
       179215,
       201823,
       186723,
-      163501
+      163501,
+      179155
     ]
   },
   "employees": {
@@ -735,6 +741,7 @@
       6,
       6,
       6,
+      5,
       5,
       5,
       5,
@@ -948,7 +955,7 @@
   ],
   "servers": {
     "provider": "OVH public cloud",
-    "lastMonthCost": 7182,
+    "lastMonthCost": 7325,
     "vms": 200,
     "storage": "70 TB"
   },
