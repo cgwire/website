@@ -83,7 +83,14 @@
       <div class="flexrow-item illustration">
         <a class="" href="https://github.com/cgwire/kitsu">
           <NuxtImg
+            class="light-shot"
             src="/images/community/github.png"
+            alt="Github repository"
+            format="webp"
+          />
+          <NuxtImg
+            class="dark-shot"
+            src="/images/community/github-dark.png"
             alt="Github repository"
             format="webp"
           /><br />
@@ -117,7 +124,14 @@
       <div class="flexrow-item illustration">
         <a class="" href="https://cgwire.canny.io">
           <NuxtImg
+            class="light-shot"
             src="/images/community/canny.png"
+            alt="Canny page"
+            format="webp"
+          />
+          <NuxtImg
+            class="dark-shot"
+            src="/images/community/canny-dark.png"
             alt="Canny page"
             format="webp"
           /><br />
@@ -151,4 +165,8 @@ useSEO({
 <style lang="stylus" scoped>
 .illustration
     flex 1
+
+// Dark screenshots, swapped in by dark.styl.
+html:not(.has-dark-mode.theme-dark) .dark-shot
+    display none
 </style>
