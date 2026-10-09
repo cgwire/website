@@ -989,6 +989,17 @@ div.body
                 font-size 1.5em
                 margin-bottom 0em
 
+        // The intro block leads the page: wider than the blocks below.
+        &.community-header
+            max-width 1300px
+            margin-top 3em
+
+            .illustration img
+                max-width 560px
+
+            .flexrow-item:not(.illustration)
+                padding-left 3em
+
         // Same frame as the feature pages screenshots (.screenshot).
         img
             border-radius 0.5em
@@ -1576,6 +1587,9 @@ div.body
             .community-header
                 img
                     margin-bottom 2em
+
+                .flexrow-item:not(.illustration)
+                    padding-left 0
 
             .illustration
                 width 100%
