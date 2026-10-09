@@ -2213,7 +2213,7 @@
       "video": {
         "vimeoId": "465411602",
         "partnerName": "Gobelins",
-        "partnerUrl": "__https://www.gobelins.fr/__"
+        "partnerUrl": "https://www.gobelins.fr/"
       },
       "panels": [
         {
@@ -2254,7 +2254,7 @@
           "組み込みのコメントシステムで生徒とのやり取りを効率化"
         ],
         "cta": "無料で試す",
-        "ctaUrl": "__https://account.cg-wire.com/signup__"
+        "ctaUrl": "https://account.cg-wire.com/signup"
       },
       "studios": [
         "gobelins",
@@ -2294,7 +2294,7 @@
       "video": {
         "vimeoId": "896197533",
         "partnerName": "Miyu Productions",
-        "partnerUrl": "__https://miyu-prod.cg-wire.com/__"
+        "partnerUrl": "https://miyu-prod.cg-wire.com/"
       },
       "panels": [
         {
@@ -2348,7 +2348,7 @@
           "レビューと最終プロジェクトをクライアントゲートウェイ経由で送信"
         ],
         "cta": "無料で試す",
-        "ctaUrl": "__https://account.cg-wire.com/signup__"
+        "ctaUrl": "https://account.cg-wire.com/signup"
       },
       "studios": [
         "blender",
