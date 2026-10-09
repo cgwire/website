@@ -128,6 +128,18 @@
             </p>
           </div>
         </div>
+        <h2 class="content-title pie-heading">{{ m.customers.regionTitle }}</h2>
+        <div class="pie-cards pie-cards-single">
+          <div class="chart-card pie-card">
+            <h3 class="pie-title">{{ m.customers.regionCard }}</h3>
+            <MetricsPie
+              :labels="m.customers.regions"
+              :values="metrics.revenueByRegion"
+              :aria-label="m.customers.regionTitle"
+              percent
+            />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -720,6 +732,10 @@ $border-soft = var(--pg-border, #e4e9ef)
   gap: 1.5rem
   margin-top: 1.5rem
   text-align: left
+
+.pie-cards-single
+  grid-template-columns: minmax(0, 560px)
+  justify-content: center
 
 .pie-heading
   margin-top: 3rem

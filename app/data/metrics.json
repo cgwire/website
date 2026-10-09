@@ -9,6 +9,7 @@
     "last6Months": { "counts": [60, 143, 49, 32], "biggestUsers": 530, "activeUsers": 13535 },
     "cloud": { "counts": [34, 36, 8, 6, 15], "biggestUsers": 1000, "activeUsers": 5035 }
   },
+  "revenueByRegion": [76.3, 13.9, 4.5, 2.4, 1.8, 1.1],
   "revenue": {
     "monthly": {
       "values": [

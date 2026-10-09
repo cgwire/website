@@ -54,7 +54,10 @@
         "sizeActiveUsers": "Utilisateurs actifs",
         "sizeCloud": "Clients cloud, écoles à part",
         "sizeSchools": "Écoles",
-        "sizeCombined": "Auto-hébergées mises à jour sur 6 mois plus clients cloud"
+        "sizeCombined": "Auto-hébergées mises à jour sur 6 mois plus clients cloud",
+        "regionTitle": "Chiffre d'affaires par région",
+        "regionCard": "Part du chiffre d'affaires clients",
+        "regions": ["Europe", "Amérique du Nord", "Asie", "Afrique", "Amérique du Sud", "Océanie"]
       },
       "team": {
         "eyebrow": "L'équipe",

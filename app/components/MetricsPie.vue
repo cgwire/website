@@ -6,13 +6,13 @@
       :aria-label="ariaLabel"
       :style="{ background: `conic-gradient(${gradient})` }"
     >
-      <span class="pie-total">{{ total }}</span>
+      <span v-if="!percent" class="pie-total">{{ total }}</span>
     </div>
     <figcaption class="pie-legend">
       <span v-for="(s, i) in slices" :key="i" class="legend-row">
         <span class="legend-swatch" :style="{ background: s.color }" />
         <span class="legend-name">{{ s.label }}</span>
-        <span class="legend-val">{{ s.value }} · {{ s.pct }}%</span>
+        <span class="legend-val">{{ percent ? `${s.value}%` : `${s.value} · ${s.pct}%` }}</span>
       </span>
     </figcaption>
   </figure>
@@ -22,11 +22,13 @@
 const props = defineProps({
   labels: { type: Array, required: true },
   values: { type: Array, required: true },
-  ariaLabel: { type: String, default: 'pie chart' }
+  ariaLabel: { type: String, default: 'pie chart' },
+  // values are already percentages: no center total, no recomputed share
+  percent: { type: Boolean, default: false }
 })
 
 // ponytail: sequential green ramp, buckets are ordinal (team size)
-const COLORS = ['#a8e6bf', '#4fcf7d', '#00B242', '#006b28', '#3f7fd6']
+const COLORS = ['#a8e6bf', '#4fcf7d', '#00B242', '#006b28', '#3f7fd6', '#9cc0ee']
 
 const total = computed(() => props.values.reduce((a, b) => a + b, 0))
 const slices = computed(() =>

@@ -54,7 +54,10 @@
         "sizeActiveUsers": "Active users",
         "sizeCloud": "Cloud customers, schools apart",
         "sizeSchools": "Schools",
-        "sizeCombined": "Self-hosted updated in the last 6 months plus cloud customers"
+        "sizeCombined": "Self-hosted updated in the last 6 months plus cloud customers",
+        "regionTitle": "Revenue by region",
+        "regionCard": "Share of customer revenue",
+        "regions": ["Europe", "North America", "Asia", "Africa", "South America", "Oceania"]
       },
       "team": {
         "eyebrow": "The team",

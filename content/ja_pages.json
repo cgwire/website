@@ -54,7 +54,10 @@
         "sizeActiveUsers": "アクティブユーザー",
         "sizeCloud": "クラウド顧客（学校は別枠）",
         "sizeSchools": "学校",
-        "sizeCombined": "過去6か月に更新されたセルフホスト環境とクラウド顧客の合計"
+        "sizeCombined": "過去6か月に更新されたセルフホスト環境とクラウド顧客の合計",
+        "regionTitle": "地域別の売上",
+        "regionCard": "顧客売上の割合",
+        "regions": ["ヨーロッパ", "北米", "アジア", "アフリカ", "南米", "オセアニア"]
       },
       "team": {
         "eyebrow": "チーム",
