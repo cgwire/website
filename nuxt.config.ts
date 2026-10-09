@@ -256,7 +256,19 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: true,
       crawlLinks: true,
-      routes: [...prerenderRoutes, '/search-index.json'],
+      routes: [
+        ...prerenderRoutes,
+        '/search-index.json',
+        // Homepage feature tabs are v-if: only the default tab's screenshot is
+        // in the prerendered HTML, so the crawler never emits the /_ipx/
+        // variants of the other tabs and they 404 on the static deploy.
+        ...[
+          'kitsu-schedule-light',
+          'kitsu-reports-light',
+          'kitsu-compare-light',
+          'kitsu-python-light'
+        ].map(name => `/_ipx/f_webp/images/screenshots/${name}.png`)
+      ],
       // Since Nuxt 4.4 the crawler discovers locale-prefixed sitemap aliases
       // (/fr/sitemap.xml, /ja/sitemap.xml) that @nuxtjs/sitemap does not serve
       // (they 500). The real localized sitemaps are /__sitemap__/<locale>.xml,
