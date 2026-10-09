@@ -160,8 +160,20 @@
                 v-show="locale === 'fr'"
               />
               <img
+                class="big-graph dark-graph"
+                src="~/assets/images/carbon-report/graph-with-plane-travels-dark.png"
+                alt="Graph showing carbon emissions by category with flights"
+                v-show="locale === 'fr'"
+              />
+              <img
                 class="big-graph"
                 src="~/assets/images/carbon-report/graph-with-plane-travels-en.png"
+                alt="Graph showing carbon emissions by category with flights"
+                v-show="locale === 'en'"
+              />
+              <img
+                class="big-graph dark-graph"
+                src="~/assets/images/carbon-report/graph-with-plane-travels-en-dark.png"
                 alt="Graph showing carbon emissions by category with flights"
                 v-show="locale === 'en'"
               />
@@ -172,8 +184,20 @@
                 v-show="locale === 'fr'"
               />
               <img
+                class="small-graph dark-graph"
+                src="~/assets/images/carbon-report/small-graph-with-plane-travels-dark.png"
+                alt="Graph showing carbon emissions by category with flights"
+                v-show="locale === 'fr'"
+              />
+              <img
                 class="small-graph"
                 src="~/assets/images/carbon-report/small-graph-with-plane-travels-en.png"
+                alt="Graph showing carbon emissions by category with flights"
+                v-show="locale === 'en'"
+              />
+              <img
+                class="small-graph dark-graph"
+                src="~/assets/images/carbon-report/small-graph-with-plane-travels-en-dark.png"
                 alt="Graph showing carbon emissions by category with flights"
                 v-show="locale === 'en'"
               />
@@ -186,8 +210,20 @@
                 v-show="locale === 'fr'"
               />
               <img
+                class="big-graph dark-graph"
+                src="~/assets/images/carbon-report/graph-without-plane-travels-dark.png"
+                alt="Graph showing carbon emissions by category without flights"
+                v-show="locale === 'fr'"
+              />
+              <img
                 class="big-graph"
                 src="~/assets/images/carbon-report/graph-without-plane-travels-en.png"
+                alt="Graph showing carbon emissions by category without flights"
+                v-show="locale === 'en'"
+              />
+              <img
+                class="big-graph dark-graph"
+                src="~/assets/images/carbon-report/graph-without-plane-travels-en-dark.png"
                 alt="Graph showing carbon emissions by category without flights"
                 v-show="locale === 'en'"
               />
@@ -198,8 +234,20 @@
                 v-show="locale === 'fr'"
               />
               <img
+                class="small-graph dark-graph"
+                src="~/assets/images/carbon-report/small-graph-without-plane-travels-dark.png"
+                alt="Graph showing carbon emissions by category without flights"
+                v-show="locale === 'fr'"
+              />
+              <img
                 class="small-graph"
                 src="~/assets/images/carbon-report/small-graph-without-plane-travels-en.png"
+                alt="Graph showing carbon emissions by category without flights"
+                v-show="locale === 'en'"
+              />
+              <img
+                class="small-graph dark-graph"
+                src="~/assets/images/carbon-report/small-graph-without-plane-travels-en-dark.png"
                 alt="Graph showing carbon emissions by category without flights"
                 v-show="locale === 'en'"
               />
@@ -708,6 +756,10 @@ text-light = var(--pg-text-light, #868686)
 
 .small-graph
   display: none
+
+// Light-text variants, swapped in by dark.styl.
+html:not(.has-dark-mode.theme-dark) .dark-graph
+  display: none !important
 
 .chart-legend
   display: flex

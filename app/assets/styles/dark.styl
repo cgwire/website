@@ -567,13 +567,11 @@ html.has-dark-mode.theme-dark
             .pay-badge
                 background dark-blue
 
-        // Images with dark text baked in: show them on a light card.
+        // Graphs have dark text baked in: swap to the -dark variants.
         .carbon-report
-            .big-graph
-            .small-graph
-                background-color white
-                border-radius 1em
-                padding 1em
+            .big-graph:not(.dark-graph)
+            .small-graph:not(.dark-graph)
+                display none !important
 
         .kitsu-summit-page .sponsors-grid .sponsor-item img
             background-color white
