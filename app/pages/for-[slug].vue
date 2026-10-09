@@ -110,7 +110,6 @@
               v-if="audiencePage.video.vimeoId"
             />
             <iframe
-              style="border-radius: 20px"
               width="640"
               height="480"
               :src="`https://www.youtube.com/embed/${audiencePage.video.youtubeId}`"
