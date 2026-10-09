@@ -124,14 +124,7 @@
       <div class="flexrow-item illustration">
         <a class="" href="https://cgwire.canny.io">
           <NuxtImg
-            class="light-shot"
             src="/images/community/canny.png"
-            alt="Canny page"
-            format="webp"
-          />
-          <NuxtImg
-            class="dark-shot"
-            src="/images/community/canny-dark.png"
             alt="Canny page"
             format="webp"
           /><br />
