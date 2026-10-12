@@ -118,6 +118,9 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        // The site has its own dark mode: stop Dark Reader based night modes
+        // (Firefox iOS) from recoloring it, they turn the SVG waves black.
+        { name: 'darkreader-lock' },
         {
           name: 'keywords',
           content:
