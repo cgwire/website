@@ -8,6 +8,7 @@
       <path
         class="feature-wave"
         :fill="topWaveColor"
+        :style="waveStyle(topWaveColor)"
         fill-opacity="1"
         :d="topPath"
       ></path>
@@ -68,6 +69,7 @@
     <path
       class="feature-wave"
       :fill="bottomWaveColor"
+      :style="waveStyle(bottomWaveColor)"
       fill-opacity="1"
       :d="bottomPath"
     ></path>
@@ -127,6 +129,20 @@ const bottomWaveColor = computed(() => {
   if (feature.gradient === true) return '#F9F6FD'
   return '#F4F8FF'
 })
+
+// Dark theme counterparts of the wave colors, matching the band gradients
+// defined in app/assets/styles/dark.styl.
+const DARK_WAVE_COLORS = {
+  '#F4F8FF': '#2B4160',
+  '#F6F7FE': '#333E60',
+  '#F7F7FE': '#3C3A60',
+  '#F9F6FD': '#453760'
+}
+
+const waveStyle = (color) => ({
+  '--wave-light': color,
+  '--wave-dark': DARK_WAVE_COLORS[color]
+})
 </script>
 
 <style lang="stylus" scoped>
@@ -159,4 +175,6 @@ svg.wave-last
 .screenshot
   border-radius 10px
 
+.feature-wave
+  fill var(--wave-light)
 </style>

@@ -36,8 +36,8 @@ dark-green-border = #236340
 dark-shadow = 0 0 6px 3px rgba(0, 0, 0, 0.45)
 dark-border-soft = rgba(255, 255, 255, 0.12)
 
-// Large colored bands (feature pages) use lighter tints than cards. The
-// .feature-wave rules map FeatureBlock.vue's light wave colors to these.
+// Large colored bands (feature pages) use lighter tints than cards. Keep in
+// sync with DARK_WAVE_COLORS in app/components/FeatureBlock.vue.
 dark-band-blue = #2B4160
 dark-band-mid1 = #333E60
 dark-band-mid2 = #3C3A60
@@ -425,17 +425,8 @@ html.has-dark-mode.theme-dark
         .block-colored.gradient-3
             background linear-gradient(0deg, dark-band-purple 0%, dark-band-mid2 100%)
 
-        // Matched on the light fill attribute: a CSS variable on the path
-        // rendered the waves black on iOS.
         .feature-wave
-            &[fill="#F4F8FF"]
-                fill dark-band-blue
-            &[fill="#F6F7FE"]
-                fill dark-band-mid1
-            &[fill="#F7F7FE"]
-                fill dark-band-mid2
-            &[fill="#F9F6FD"]
-                fill dark-band-purple
+            fill var(--wave-dark)
 
         // SolutionHeaderBlock.vue
         .docs-cta
