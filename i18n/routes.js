@@ -44,6 +44,11 @@ export const routes = {
     fr: '/rapport-carbone',
     ja: '/炭素排出報告'
   },
+  'carbon-report-year': {
+    en: '/carbon-report/[year]',
+    fr: '/rapport-carbone/[year]',
+    ja: '/炭素排出報告/[year]'
+  },
   community: {
     en: '/community',
     fr: '/communaute',

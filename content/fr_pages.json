@@ -271,6 +271,25 @@
         "travelDetails": "2 personnes sur 7 jours",
         "warning": "+57% d'émissions potentielles en 2026 si aucune action n'est menée"
       },
+      "report2025": {
+        "explanationOne": "Chez CG Wire, nous mesurons l'impact réel de notre activité sur l'environnement. Notre rapport 2025 montre une baisse de 40 % de nos émissions par rapport à 2024, principalement parce que nous avons moins pris l'avion. Il présente aussi nos principaux postes d'émission et les actions que nous menons pour réduire notre empreinte.",
+        "consumptionExplanation": "Nos voyages d'affaires en avion représentent 18 % de nos émissions 2025, contre 50 % en 2024. Vous pouvez les retirer des calculs pour comparer les autres catégories.",
+        "categoriesExplanation": "L'hébergement cloud est désormais notre premier poste d'émission, avec 56 % du total. Il a augmenté de 13 % car nous avons doublé notre stockage de sauvegarde en 2025.",
+        "legend": {
+          "cloud": "Infrastructure cloud",
+          "plane": "Transport (avion)",
+          "meal": "Repas",
+          "immobilisation": "Immobilisations (ordinateurs)",
+          "accommodation": "Hébergement",
+          "goods": "Achats de biens",
+          "other": "Autres"
+        },
+        "anticipationTitle": "Nos projets pour 2026 et 2027 : anticiper pour mieux réduire notre impact",
+        "pooling": "Mutualisation des serveurs",
+        "poolingDetails": "Serveurs clients partagés et cycle de vie des sauvegardes",
+        "poolingValue": "-1 à -3",
+        "warning": "+47 % d'émissions potentielles en 2026 si aucune action n'est menée"
+      },
       "conclusion": {
         "title": "Nous sommes une entreprise du secteur des industries culturelles et créatives",
         "explanation": "Nous permettons aux studios créatifs de mieux collaborer pour faire de meilleures réalisations. Pour que cet apport soit durable, nous nous efforçons d'appliquer au mieux les bonnes pratiques de vie en communauté sur tous les plans: logiciel open-source, transparence comptable et analyse de notre impact environnemental. Note but est d'inclure au mieux notre entreprise dans notre société et notre environnement.",

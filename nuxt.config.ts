@@ -106,6 +106,14 @@ function buildPrerenderRoutes() {
     }
   }
 
+  // Yearly carbon reports, one page per published year.
+  for (const year of ['2024', '2025']) {
+    for (const lang of PRERENDER_LANGS) {
+      const pattern = i18nRoutes['carbon-report-year'][lang]
+      routes.add(withPrefix(lang, pattern.replace('[year]', year)))
+    }
+  }
+
   return Array.from(routes)
 }
 

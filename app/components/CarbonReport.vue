@@ -4,7 +4,19 @@
       <div class="container">
         <div class="carbon-title">
           <h1 class="main-title">{{ page.title }}</h1>
-          <div class="year-selector">2024</div>
+          <div class="year-selector">
+            <NuxtLink
+              v-for="y in [2025, 2024]"
+              :key="y"
+              :class="{ active: year === y }"
+              :aria-current="year === y ? 'page' : undefined"
+              :to="
+                $localePath({ name: 'carbon-report-year', params: { year: y } })
+              "
+            >
+              {{ y }}
+            </NuxtLink>
+          </div>
         </div>
 
         <h2 class="section-title">
@@ -12,7 +24,7 @@
         </h2>
 
         <p class="hero-description">
-          {{ page.meta.explanationOne }}
+          {{ texts.explanationOne }}
         </p>
 
         <div class="hero-illustration">
@@ -33,7 +45,7 @@
         </h2>
 
         <p class="content-description">
-          {{ page.meta.consumption.explanation }}
+          {{ texts.consumptionExplanation }}
         </p>
 
         <div class="toggle-buttons" @click="toggleData">
@@ -65,12 +77,10 @@
                 src="~/assets/images/carbon-report/globe.png"
                 alt="Globe icon"
               />
-              <span class="card-label">{{
-                page.meta.consumption.total
-              }}</span>
+              <span class="card-label">{{ page.meta.consumption.total }}</span>
             </div>
             <div class="card-value">
-              {{ totalCarbonEmission }}
+              {{ figures.total }}
               <span class="card-unit">tCO₂e</span>
             </div>
           </div>
@@ -87,12 +97,11 @@
               }}</span>
             </div>
             <div class="card-value">
-              {{ perEmployeeCarbonEmission }}
+              {{ figures.perEmployee }}
               <span class="card-unit">tCO₂e</span>
             </div>
             <div class="card-info">
-              {{ page.meta.consumption.perEmployeeInfo }} 1,4 - 3,9
-              TCO₂e
+              {{ page.meta.consumption.perEmployeeInfo }} 1,4 - 3,9 TCO₂e
             </div>
           </div>
 
@@ -108,7 +117,7 @@
               }}</span>
             </div>
             <div class="card-value">
-              {{ per1000ECarbonEmission }}
+              {{ figures.per1000e }}
               <span class="card-unit">kCO₂e</span>
             </div>
             <div class="card-info">
@@ -127,7 +136,7 @@
           </h2>
 
           <p class="content-description">
-            {{ page.meta.categories.explanation }}
+            {{ texts.categoriesExplanation }}
           </p>
 
           <div class="toggle-buttons" @click="toggleData">
@@ -151,7 +160,48 @@
             </button>
           </div>
 
-          <p class="mt2">
+          <svg
+            v-if="year === 2025"
+            class="pie mt2"
+            viewBox="0 0 1200 540"
+            role="img"
+            :aria-label="page.meta.categories.title"
+          >
+            <g
+              v-for="slice in pie3d"
+              :key="slice.key"
+              :stroke="slice.edge"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            >
+              <path
+                v-for="(wall, index) in slice.walls"
+                :key="index"
+                :d="wall"
+                :fill="slice.side"
+              />
+              <path :d="slice.top" :fill="slice.color" />
+            </g>
+            <g
+              v-for="slice in pie3d.filter(slice => slice.label)"
+              :key="`label-${slice.key}`"
+              class="pie-label"
+            >
+              <polyline :points="slice.label.line" fill="none" />
+              <circle :cx="slice.label.dotX" :cy="slice.label.dotY" r="6" />
+              <text
+                class="pie-percent"
+                :x="slice.label.x"
+                :y="slice.label.y - 14"
+              >
+                {{ slice.percent.toFixed(1) }}%
+              </text>
+              <text class="pie-name" :x="slice.label.x" :y="slice.label.y + 34">
+                {{ page.meta.report2025.legend[slice.key] }}
+              </text>
+            </g>
+          </svg>
+          <p class="mt2" v-else>
             <template v-if="dataWithFlights">
               <img
                 class="big-graph"
@@ -255,7 +305,17 @@
           </p>
         </div>
 
-        <div class="chart-legend">
+        <div class="chart-legend" v-if="year === 2025">
+          <ul class="chart-legend-list">
+            <li v-for="slice in slices" :key="slice.key">
+              <span :style="{ backgroundColor: slice.color }"></span
+              >{{ slice.percent.toFixed(1) }}% -
+              {{ page.meta.report2025.legend[slice.key] }}
+            </li>
+          </ul>
+        </div>
+
+        <div class="chart-legend" v-else>
           <ul class="chart-legend-list">
             <li v-if="dataWithFlights">
               <span class="chart-legend-color-meal"></span>{{ mealValue }}% -
@@ -284,71 +344,20 @@
           </ul>
         </div>
 
-        <div class="data-cards" v-if="dataWithFlights">
-          <div class="data-card category-card">
-            <img
-              class="card-big-icon"
-              src="~/assets/images/carbon-report/japan-small.png"
-              alt="Japan icon"
-            />
+        <div class="data-cards">
+          <div
+            class="data-card category-card"
+            v-for="highlight in highlights"
+            :key="highlight.label"
+          >
+            <img class="card-big-icon" :src="highlight.icon" alt="" />
             <div class="category-card-data">
-              <div class="card-value">46%</div>
+              <div class="card-value">{{ highlight.percent }}%</div>
               <div class="card-description">
-                {{ page.meta.categories.japan }}
+                {{ highlight.label }}
               </div>
               <div class="card-info">
-                11,9 {{ page.meta.categories.co2 }}
-              </div>
-            </div>
-          </div>
-          <div class="data-card category-card">
-            <img
-              class="card-big-icon"
-              src="~/assets/images/carbon-report/cloud-small.png"
-              alt="Cloud icon"
-            />
-            <div class="category-card-data">
-              <div class="card-value">30%</div>
-              <div class="card-description">
-                {{ page.meta.categories.infrastructure }}
-              </div>
-              <div class="card-info">
-                7,7 {{ page.meta.categories.co2 }}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="data-cards" v-else>
-          <div class="data-card category-card">
-            <img
-              class="card-big-icon"
-              src="~/assets/images/carbon-report/cloud-small.png"
-              alt="Cloud icon"
-            />
-            <div class="category-card-data">
-              <div class="card-value">60%</div>
-              <div class="card-description">
-                {{ page.meta.categories.infrastructure }}
-              </div>
-              <div class="card-info">
-                8.98 {{ page.meta.categories.co2 }}
-              </div>
-            </div>
-          </div>
-          <div class="data-card category-card">
-            <img
-              class="card-big-icon"
-              src="~/assets/images/carbon-report/food-small.png"
-              alt="Food icon"
-            />
-            <div class="category-card-data">
-              <div class="card-value">16%</div>
-              <div class="card-description">
-                {{ page.meta.categories.food }}
-              </div>
-              <div class="card-info">
-                1,9 {{ page.meta.categories.co2 }}
+                {{ highlight.tonnes }} {{ page.meta.categories.co2 }}
               </div>
             </div>
           </div>
@@ -400,10 +409,31 @@
     <div class="anticipation">
       <div class="section">
         <h2 class="content-title">
-          {{ page.meta.anticipation.title }}
+          {{ texts.anticipationTitle }}
         </h2>
 
         <div class="event-cards">
+          <div class="event-card" v-if="year === 2025">
+            <div class="card-illustration">
+              <img
+                src="~/assets/images/carbon-report/optimisation-cloud.png"
+                alt="Server pooling"
+              />
+            </div>
+            <div class="card-content">
+              <h3 class="event-title">
+                {{ page.meta.report2025.pooling }}
+              </h3>
+              <p class="event-details">
+                {{ page.meta.report2025.poolingDetails }}
+              </p>
+              <div class="carbon-footprint is-saving">
+                {{ page.meta.report2025.poolingValue }}
+                <span class="unit">tCO₂e</span>
+              </div>
+            </div>
+          </div>
+
           <div class="event-card">
             <div class="card-illustration">
               <img
@@ -444,7 +474,7 @@
             </div>
           </div>
 
-          <div class="event-card">
+          <div class="event-card" v-if="year === 2024">
             <div class="card-illustration">
               <img
                 src="~/assets/images/carbon-report/usa.png"
@@ -466,7 +496,7 @@
         </div>
 
         <p class="emission-warning">
-          {{ page.meta.anticipation.warning }}
+          {{ texts.warning }}
         </p>
       </div>
     </div>
@@ -489,6 +519,11 @@
 </template>
 
 <script setup>
+import cloudIcon from '~/assets/images/carbon-report/cloud-small.png'
+import foodIcon from '~/assets/images/carbon-report/food-small.png'
+import japanIcon from '~/assets/images/carbon-report/japan-small.png'
+import usaIcon from '~/assets/images/carbon-report/usa.png'
+
 const { locale } = useI18n()
 const slug = ref('carbon-report')
 
@@ -500,22 +535,201 @@ const { data: page } = await useAsyncData(
   { watch: [slug, locale] }
 )
 
+const props = defineProps({
+  year: { type: Number, required: true }
+})
+const year = computed(() => props.year)
+
 useSEO({
-  title: 'CGWire | ' + page.value.title,
-  description: page.value.meta.explanationOne,
+  title: `CGWire | ${page.value.title} ${year.value}`,
+  description:
+    year.value === 2025
+      ? page.value.meta.report2025.explanationOne
+      : page.value.meta.explanationOne,
   imagePath: 'carbon.png'
 })
 
 const dataWithFlights = ref(true)
 
-const totalCarbonEmission = computed(() => {
-  return dataWithFlights.value ? 25.78 : 11.98
+// Source: HOLLI BEGES CG Wire 2025 (5 employees, 15 505 kgCO2e), revenue 527 kEUR (Pappers).
+const reports = {
+  2024: {
+    withFlights: { total: 25.78, perEmployee: 5.2, per1000e: 51 },
+    withoutFlights: { total: 11.98, perEmployee: 2.5, per1000e: 23 }
+  },
+  2025: {
+    withFlights: { total: 15.51, perEmployee: 3.1, per1000e: 29 },
+    withoutFlights: { total: 12.78, perEmployee: 2.6, per1000e: 24 }
+  }
+}
+const figures = computed(
+  () =>
+    reports[year.value][
+      dataWithFlights.value ? 'withFlights' : 'withoutFlights'
+    ]
+)
+
+const texts = computed(() => {
+  const meta = page.value.meta
+  if (year.value === 2025) return meta.report2025
+  return {
+    explanationOne: meta.explanationOne,
+    consumptionExplanation: meta.consumption.explanation,
+    categoriesExplanation: meta.categories.explanation,
+    anticipationTitle: meta.anticipation.title,
+    warning: meta.anticipation.warning
+  }
 })
-const perEmployeeCarbonEmission = computed(() => {
-  return dataWithFlights.value ? 5.2 : 2.5
+
+// Tonnes derived from the category shares of the 2025 total.
+const categories2025 = [
+  { key: 'cloud', tonnes: 8.67, color: '#79ADE5' },
+  { key: 'plane', tonnes: 2.73, color: '#E75927' },
+  { key: 'meal', tonnes: 2.02, color: '#C5A9E8' },
+  { key: 'immobilisation', tonnes: 0.82, color: '#44BCC6' },
+  { key: 'accommodation', tonnes: 0.7, color: '#8EBC76' },
+  { key: 'goods', tonnes: 0.47, color: '#E7D028' },
+  { key: 'other', tonnes: 0.11, color: '#BE9000' }
+]
+const slices = computed(() => {
+  const shown = categories2025.filter(
+    category => dataWithFlights.value || category.key !== 'plane'
+  )
+  const sum = shown.reduce((total, category) => total + category.tonnes, 0)
+  let offset = 0
+  return shown.map(category => {
+    const percent = (category.tonnes / sum) * 100
+    const slice = { ...category, percent, offset }
+    offset += percent
+    return slice
+  })
 })
-const per1000ECarbonEmission = computed(() => {
-  return dataWithFlights.value ? 51 : 23
+
+// Tilted 3D pie drawn like the 2024 export: the three biggest slices are
+// pulled out and labelled, slices are painted back to front.
+const PIE = { cx: 600, cy: 230, rx: 280, ry: 150, depth: 50, explode: 26 }
+const shade = (hex, factor) =>
+  '#' +
+  [1, 3, 5]
+    .map(i =>
+      Math.round(parseInt(hex.slice(i, i + 2), 16) * factor)
+        .toString(16)
+        .padStart(2, '0')
+    )
+    .join('')
+const pie3d = computed(() => {
+  const { cx, cy, rx, ry, depth, explode } = PIE
+  const labeled = [...slices.value]
+    .sort((a, b) => b.percent - a.percent)
+    .slice(0, 3)
+    .map(slice => slice.key)
+  // Center the first (biggest) slice at the back of the pie.
+  const start = -Math.PI / 2 - (slices.value[0].percent / 100) * Math.PI
+  return slices.value
+    .map(slice => {
+      const a0 = start + (slice.offset / 100) * 2 * Math.PI
+      const a1 = a0 + (slice.percent / 100) * 2 * Math.PI
+      const mid = (a0 + a1) / 2
+      const isLabeled = labeled.includes(slice.key)
+      const e = isLabeled ? explode : 0
+      const ox = cx + e * Math.cos(mid)
+      const oy = cy + e * (ry / rx) * Math.sin(mid)
+      const x = a => ox + rx * Math.cos(a)
+      const y = (a, dy = 0) => oy + ry * Math.sin(a) + dy
+      const pt = (a, dy = 0) => `${x(a)},${y(a, dy)}`
+      const large = a1 - a0 > Math.PI ? 1 : 0
+      const walls = []
+      // Radial walls, only the ones turned towards the viewer.
+      if (Math.cos(a0) < 0) {
+        walls.push(
+          `M${ox},${oy} L${pt(a0)} L${pt(a0, depth)} L${ox},${oy + depth} Z`
+        )
+      }
+      if (Math.cos(a1) > 0) {
+        walls.push(
+          `M${ox},${oy} L${pt(a1)} L${pt(a1, depth)} L${ox},${oy + depth} Z`
+        )
+      }
+      // Outer rim, only on the front half of the ellipse.
+      for (const k of [-2 * Math.PI, 0, 2 * Math.PI]) {
+        const s = Math.max(a0, k)
+        const t = Math.min(a1, k + Math.PI)
+        if (s < t) {
+          walls.push(
+            `M${pt(s)} A${rx},${ry} 0 0 1 ${pt(t)} L${pt(t, depth)} ` +
+              `A${rx},${ry} 0 0 0 ${pt(s, depth)} Z`
+          )
+        }
+      }
+      let label = null
+      if (isLabeled) {
+        const dotX = ox + 0.55 * rx * Math.cos(mid)
+        const dotY = oy + 0.55 * ry * Math.sin(mid)
+        const isLeft = Math.cos(mid) < 0
+        const labelY = Math.min(
+          Math.max(dotY + (Math.sin(mid) < 0 ? -90 : 90), 70),
+          450
+        )
+        const elbowX = isLeft ? cx - rx - 40 : cx + rx + 40
+        label = {
+          dotX,
+          dotY,
+          x: isLeft ? 110 : 900,
+          y: labelY,
+          line: `${dotX},${dotY} ${elbowX},${labelY} ${isLeft ? 110 : 1090},${labelY}`
+        }
+      }
+      return {
+        ...slice,
+        top: `M${ox},${oy} L${pt(a0)} A${rx},${ry} 0 ${large} 1 ${pt(a1)} Z`,
+        walls,
+        side: shade(slice.color, 0.8),
+        edge: shade(slice.color, 0.55),
+        label,
+        depthKey: Math.sin(mid)
+      }
+    })
+    .sort((a, b) => a.depthKey - b.depthKey)
+})
+
+const highlights = computed(() => {
+  const { categories, anticipation } = page.value.meta
+  const cloud = { icon: cloudIcon, label: categories.infrastructure }
+  const all = {
+    2024: {
+      withFlights: [
+        {
+          icon: japanIcon,
+          label: categories.japan,
+          percent: 46,
+          tonnes: '11,9'
+        },
+        { ...cloud, percent: 30, tonnes: '7,7' }
+      ],
+      withoutFlights: [
+        { ...cloud, percent: 60, tonnes: '8.98' },
+        { icon: foodIcon, label: categories.food, percent: 16, tonnes: '1,9' }
+      ]
+    },
+    2025: {
+      withFlights: [
+        { ...cloud, percent: 56, tonnes: '8,7' },
+        {
+          icon: usaIcon,
+          label: anticipation.travelus,
+          percent: 18,
+          tonnes: '2,7'
+        }
+      ],
+      withoutFlights: [
+        { ...cloud, percent: 68, tonnes: '8,7' },
+        { icon: foodIcon, label: categories.food, percent: 16, tonnes: '2,0' }
+      ]
+    }
+  }
+  return all[year.value][
+    dataWithFlights.value ? 'withFlights' : 'withoutFlights'
+  ]
 })
 
 const mealValue = computed(() => {
@@ -599,6 +813,20 @@ text-light = var(--pg-text-light, #868686)
     justify-content: center
     letter-spacing: 0.12em
     text-transform: uppercase
+
+  .year-selector
+    display: flex
+    gap: 0.5rem
+
+    a
+      border: 1px solid cgwiregreen
+      border-radius: 50px
+      color: cgwiregreen
+      padding: 0.2rem 0.9rem
+
+      &.active
+        background: cgwiregreen
+        color: white
 
   .section-title
     font-weight: 700
@@ -705,6 +933,7 @@ text-light = var(--pg-text-light, #868686)
   border-radius: 20px
   height: 138px
   margin-right: 20px
+  object-fit: contain
   width: 138px
 
 .card-label
@@ -756,6 +985,29 @@ text-light = var(--pg-text-light, #868686)
 
 .small-graph
   display: none
+
+.pie
+  display: block
+  margin: 0 auto
+  max-width: 1200px
+  width: 100%
+
+  .pie-label
+    fill: text-color
+    stroke: text-color
+
+    polyline
+      stroke-width: 2
+
+    text
+      stroke: none
+
+  .pie-percent
+    font-size: 34px
+    font-weight: 700
+
+  .pie-name
+    font-size: 26px
 
 // Light-text variants, swapped in by dark.styl.
 html:not(.has-dark-mode.theme-dark) .dark-graph
@@ -939,6 +1191,11 @@ html:not(.has-dark-mode.theme-dark) .dark-graph
       font-size: 0.9rem
       vertical-align: baseline
 
+    // "-1 to -3" is wider than the other single figures.
+    &.is-saving
+      color: cgwiregreen
+      font-size: 40px
+
   .emission-warning
     text-align: center
     color: text-color
@@ -1007,7 +1264,8 @@ html:not(.has-dark-mode.theme-dark) .dark-graph
   .data-card
     padding: 1.5rem
 
-  .big-graph
+  .big-graph,
+  .pie .pie-label
     display: none
 
   .small-graph

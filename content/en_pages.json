@@ -271,6 +271,25 @@
         "travelDetails": "2 people for 7 days",
         "warning": "+57% potential emissions in 2026 if no action is taken"
       },
+      "report2025": {
+        "explanationOne": "At CGWire, we measure the real impact of our activity on the environment. Our 2025 report shows a 40% drop in emissions compared to 2024, mostly because we flew less. It also covers our main emission sources and the actions we are taking to reduce our footprint.",
+        "consumptionExplanation": "Business flights represent 18% of our 2025 emissions, against 50% in 2024. You can remove them from the calculations to compare the other categories.",
+        "categoriesExplanation": "Cloud hosting is now our main source of emissions, at 56% of the total. It grew by 13% because we doubled our backup storage in 2025.",
+        "legend": {
+          "cloud": "Cloud infrastructure",
+          "plane": "Transport (plane)",
+          "meal": "Meal",
+          "immobilisation": "Immobilisation (computers)",
+          "accommodation": "Accommodation",
+          "goods": "Purchase of goods",
+          "other": "Other"
+        },
+        "anticipationTitle": "Our projects for 2026 and 2027: anticipate to reduce our impact",
+        "pooling": "Server pooling",
+        "poolingDetails": "Shared client servers and backup lifecycle",
+        "poolingValue": "-1 to -3",
+        "warning": "+47% potential emissions in 2026 if no action is taken"
+      },
       "conclusion": {
         "title": "We are a company in the cultural and creative industries sector",
         "explanation": "We allow studios to collaborate better to deliver better results. To make this contribution sustainable, we strive to apply the best practices of community life on all fronts: open-source software, transparent accounting, and environmental impact analysis. The goal is to include our company as much as possible in our society and our environment.",
