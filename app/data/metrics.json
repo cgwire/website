@@ -1,13 +1,13 @@
 {
-  "lastUpdate": "2026-09-01",
+  "lastUpdate": "2026-10-01",
   "currency": "EUR",
   "seriesStart": "2018-07",
   "note": "Snapshot imported from metrics.cg-wire.com. Amounts in EUR. Salaries are French net (taxes excluded).",
-  "selfHostedSetups": 519,
+  "selfHostedSetups": 534,
   "instances": {
-    "allTime": { "counts": [114, 261, 87, 57], "biggestUsers": 1402, "activeUsers": 25515 },
-    "last6Months": { "counts": [60, 143, 49, 32], "biggestUsers": 530, "activeUsers": 13535 },
-    "cloud": { "counts": [34, 36, 8, 6, 15], "biggestUsers": 1000, "activeUsers": 5035 }
+    "allTime": { "counts": [119, 266, 91, 58], "biggestUsers": 1402, "activeUsers": 26211 },
+    "last6Months": { "counts": [60, 143, 53, 32], "biggestUsers": 530, "activeUsers": 13942 },
+    "cloud": { "counts": [35, 35, 7, 5, 15], "biggestUsers": 205, "activeUsers": 3819 }
   },
   "revenueByRegion": [76.3, 13.9, 4.5, 2.4, 1.8, 1.1],
   "revenue": {
@@ -111,7 +111,8 @@
         44625,
         17097,
         59614,
-        162873
+        162873,
+        13944
       ]
     },
     "quarterly": {
@@ -148,7 +149,8 @@
         124206,
         86263,
         105653,
-        239584
+        239584,
+        13944
       ]
     },
     "yearly": {
@@ -161,7 +163,7 @@
         460290,
         502242,
         516673,
-        431700
+        445444
       ]
     }
   },
@@ -265,7 +267,8 @@
       33668,
       33788,
       34273,
-      36936
+      36936,
+      34615
     ]
   },
   "customers": {
@@ -368,7 +371,8 @@
       96,
       97,
       99,
-      101
+      101,
+      97
     ]
   },
   "cashFlow": {
@@ -471,7 +475,8 @@
       104296,
       33781,
       23460,
-      75609
+      75609,
+      107666
     ],
     "outgoing": [
       8670,
@@ -572,7 +577,8 @@
       75287,
       48784,
       46782,
-      58965
+      58965,
+      50649
     ]
   },
   "moneyInBank": {
@@ -675,7 +681,8 @@
       201823,
       186723,
       163501,
-      179155
+      179155,
+      231777
     ]
   },
   "employees": {
@@ -742,6 +749,7 @@
       6,
       6,
       6,
+      5,
       5,
       5,
       5,
@@ -956,7 +964,7 @@
   ],
   "servers": {
     "provider": "OVH public cloud",
-    "lastMonthCost": 7325,
+    "lastMonthCost": 7444,
     "vms": 200,
     "storage": "70 TB"
   },
