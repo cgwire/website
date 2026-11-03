@@ -207,6 +207,7 @@
               element-key="documentation"
               link="https://kitsu.cg-wire.com"
             />
+            <SubNavElement element-key="dev" link="https://dev.kitsu.cloud" />
             <SubNavElement
               element-key="changelog"
               link="https://cgwire.canny.io/changelog"
