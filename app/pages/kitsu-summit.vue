@@ -28,14 +28,6 @@
                 <span>{{ page.meta.hero.conferences }}</span>
               </div>
             </div>
-            <div class="hero-cta">
-              <a
-                class="btn-primary btn-green"
-                href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
-              >
-                {{ page.meta.hero.registerCta }}
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -263,14 +255,6 @@
             <!--div>
               <span class="price-label">{{ $t('kitsu-summit.price.availability') }}</span>
             </div-->
-            <div class="registration-buttons mt1">
-              <a
-                class="btn-primary btn-green"
-                href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
-              >
-                {{ page.meta.hero.registerCta }}
-              </a>
-            </div>
             <div class="food">
               <h2>{{ page.meta.registration.food.title }}</h2>
               <div>
@@ -383,14 +367,6 @@
         <div class="cta-content">
           <h2>{{ page.meta.cta.title }}</h2>
           <p>{{ page.meta.cta.description }}</p>
-          <div class="cta-buttons">
-            <a
-              class="btn-primary btn-green"
-              href="https://www.eventbrite.fr/e/kitsu-summit-tickets-1652069266649"
-            >
-              {{ page.meta.hero.registerCta }}
-            </a>
-          </div>
         </div>
         <div class="cta-image mt2">
           <img

@@ -330,7 +330,7 @@ section
   grid-template-columns: 4fr 9fr
   margin: 0 auto
   max-width: 1168px
-  padding: 5.5rem 1.5rem 0 1.5rem
+  padding: 8rem 1.5rem 0 1.5rem
 
   h1
     color: ink
@@ -667,7 +667,7 @@ li:last-child .s-slot
     grid-template-columns: 1fr
 
   .s-hero-inner
-    padding-top: 4rem
+    padding-top: 5.5rem
 
   .s-hero-inner h1
     font-size: clamp(2.1rem, 11vw, 5rem)
