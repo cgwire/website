@@ -518,7 +518,7 @@
       "hero": {
         "title": "Cette fois, en ligne",
         "date": "17 février 2027",
-        "format": "Événement en ligne",
+        "time": "14:00 à 18:30, heure de Paris",
         "talks": "6 présentations",
         "cta": "Suivre les annonces sur Discord"
       },
@@ -538,8 +538,6 @@
       "schedule": {
         "title": "Programme",
         "description": "Trois présentations par l'équipe CGWire et trois par des contributeurs externes. Plus de détails bientôt. Horaires à l'heure de Paris (UTC+1).",
-        "time": "Heure",
-        "talk": "Présentation",
         "schedule": [
           {
             "time": "14:00",
@@ -560,17 +558,18 @@
           },
           {
             "time": "15:30",
-            "company": "Contributeur externe",
+            "company": "Xilam - Université Paris 8",
             "speaker": "Swann Martinez",
             "title": "Sujet à venir",
-            "role": "Contributeur externe"
+            "role": "Xilam - Université Paris 8",
+            "file": "summit/swann.jpg"
           },
           {
             "time": "16:15",
             "company": "CGWire",
             "speaker": "Nicolas Ledez",
             "title": "Faire passer à l'échelle une infrastructure vidéo",
-            "subtitle": "Pics de charge, régions, cas limites et builds de films complets",
+            "subtitle": "Pics de charge, cas limites et builds de films complets",
             "role": "Responsable Infrastructure CGWire",
             "file": "team/nicolas.png"
           },
@@ -599,7 +598,6 @@
         "cta": "Lire le compte rendu",
         "photos": [
           "Le public remplit la salle principale de Cap Digital, certains debout au fond",
-          "Mario Hawat d'Autour de Minuit sur scène, présentant Blender et Kitsu",
           "Gwénaëlle Dupré de CGWire présentant les fonctionnalités de Kitsu sur scène",
           "Présentation d'un film d'animation au public dans la deuxième salle"
         ]

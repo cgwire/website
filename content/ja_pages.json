@@ -518,7 +518,7 @@
       "hero": {
         "title": "今回はオンラインで開催",
         "date": "2027年2月17日",
-        "format": "オンラインイベント",
+        "time": "パリ時間 14:00〜18:30",
         "talks": "6件の講演",
         "cta": "Discordで最新情報を確認"
       },
@@ -538,8 +538,6 @@
       "schedule": {
         "title": "スケジュール",
         "description": "CGWireチームによる3件の講演と、外部コントリビューターによる3件の講演を予定しています。詳細は近日公開します。時間はパリ時間（UTC+1）です。",
-        "time": "時間",
-        "talk": "講演",
         "schedule": [
           {
             "time": "14:00",
@@ -560,17 +558,18 @@
           },
           {
             "time": "15:30",
-            "company": "外部コントリビューター",
+            "company": "Xilam - パリ第8大学",
             "speaker": "Swann Martinez",
             "title": "テーマは近日公開",
-            "role": "外部コントリビューター"
+            "role": "Xilam - パリ第8大学",
+            "file": "summit/swann.jpg"
           },
           {
             "time": "16:15",
             "company": "CGWire",
             "speaker": "Nicolas Ledez",
             "title": "動画インフラのスケーリング",
-            "subtitle": "負荷の急増、リージョン、エッジケース、長編映画のビルド",
+            "subtitle": "負荷の急増、エッジケース、長編映画のビルド",
             "role": "CGWire ホスティングインフラストラクチャマネージャー",
             "file": "team/nicolas.png"
           },
@@ -599,7 +598,6 @@
         "cta": "開催レポートを読む",
         "photos": [
           "Cap Digitalのメイン会場を埋める参加者。後方で立ち見の方も",
-          "ステージでBlenderとKitsuについて発表するAutour de MinuitのMario Hawat",
           "ステージでKitsuの機能を紹介するCGWireのGwénaëlle Dupré",
           "第2会場でアニメーション作品を観客に見せる登壇者"
         ]

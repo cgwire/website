@@ -518,7 +518,7 @@
       "hero": {
         "title": "This time, online",
         "date": "February 17, 2027",
-        "format": "Online event",
+        "time": "14:00 to 18:30, Paris time",
         "talks": "6 talks",
         "cta": "Follow the news on Discord"
       },
@@ -538,8 +538,6 @@
       "schedule": {
         "title": "Schedule",
         "description": "Three talks by the CGWire team and three by external contributors. More details soon. Times are in Paris time (UTC+1).",
-        "time": "Time",
-        "talk": "Talk",
         "schedule": [
           {
             "time": "14:00",
@@ -560,17 +558,18 @@
           },
           {
             "time": "15:30",
-            "company": "External contributor",
+            "company": "Xilam - Paris 8 University",
             "speaker": "Swann Martinez",
             "title": "Topic to be announced",
-            "role": "External contributor"
+            "role": "Xilam - Paris 8 University",
+            "file": "summit/swann.jpg"
           },
           {
             "time": "16:15",
             "company": "CGWire",
             "speaker": "Nicolas Ledez",
             "title": "Scaling a video infrastructure",
-            "subtitle": "Spikes, Regions, Edge cases, and full movie builds",
+            "subtitle": "Spikes, Edge cases, and full movie builds",
             "role": "CGWire Hosting Infrastructure Manager",
             "file": "team/nicolas.png"
           },
@@ -599,7 +598,6 @@
         "cta": "Read the recap",
         "photos": [
           "Attendees filling the main room at Cap Digital, some standing at the back",
-          "Mario Hawat from Autour de Minuit on stage, presenting Blender and Kitsu",
           "Gwénaëlle Dupré from CGWire presenting Kitsu features on stage",
           "A speaker showing an animated film to the audience in the second room"
         ]
