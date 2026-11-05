@@ -512,6 +512,104 @@
       },
       "cta": "Interested in using Kitsu?"
     },
+    "kitsu-summit-2027": {
+      "title": "Kitsu Summit 2027",
+      "slug": "kitsu-summit-2027",
+      "hero": {
+        "title": "Cette fois, en ligne",
+        "date": "17 février 2027",
+        "format": "Événement en ligne",
+        "talks": "6 présentations",
+        "cta": "Suivre les annonces sur Discord"
+      },
+      "about": {
+        "title": "Le Kitsu Summit vient à vous",
+        "description": "Après une première édition à Paris, le Kitsu Summit passe en ligne. Participez depuis votre studio, où qu'il soit, sans avoir à vous déplacer.",
+        "videos": {
+          "intro": "Envie de voir à quoi ressemble le summit ? Des présentations de l'édition 2026 sont disponibles sur YouTube.",
+          "cta": "Voir les présentations de 2026"
+        },
+        "illustrationAlt": "Illustration du Kitsu Summit : des animaux sur scène et dans le public"
+      },
+      "speakers": {
+        "title": "Intervenants",
+        "description": "D'autres intervenants seront annoncés prochainement."
+      },
+      "schedule": {
+        "title": "Programme",
+        "description": "Trois présentations par l'équipe CGWire et trois par des contributeurs externes. Plus de détails bientôt. Horaires à l'heure de Paris (UTC+1).",
+        "time": "Heure",
+        "talk": "Présentation",
+        "schedule": [
+          {
+            "time": "14:00",
+            "company": "CGWire",
+            "speaker": "Frank Rousseau",
+            "title": "Keynote",
+            "role": "CGWire CEO",
+            "file": "summit/frank.jpg",
+            "subtitle": "Comment Kitsu prospère dans un monde en évolution rapide"
+          },
+          {
+            "time": "14:45",
+            "company": "Contributeur externe",
+            "speaker": "Intervenant à venir",
+            "title": "Sujet à venir",
+            "role": "Contributeur externe",
+            "initials": "?"
+          },
+          {
+            "time": "15:30",
+            "company": "Contributeur externe",
+            "speaker": "Swann Martinez",
+            "title": "Sujet à venir",
+            "role": "Contributeur externe"
+          },
+          {
+            "time": "16:15",
+            "company": "CGWire",
+            "speaker": "Nicolas Ledez",
+            "title": "Faire passer à l'échelle une infrastructure vidéo",
+            "subtitle": "Pics de charge, régions, cas limites et builds de films complets",
+            "role": "Responsable Infrastructure CGWire",
+            "file": "team/nicolas.png"
+          },
+          {
+            "time": "17:00",
+            "company": "Contributeur externe",
+            "speaker": "Intervenant à venir",
+            "title": "Sujet à venir",
+            "role": "Contributeur externe",
+            "initials": "?"
+          },
+          {
+            "time": "17:45",
+            "company": "CGWire",
+            "speaker": "Gwénaëlle Dupré",
+            "title": "Keynote",
+            "role": "CGWire CPO",
+            "file": "summit/gwen.png",
+            "subtitle": "L'avenir de Kitsu et sa feuille de route"
+          }
+        ]
+      },
+      "previous": {
+        "title": "Retour sur 2026",
+        "description": "Le premier Kitsu Summit a eu lieu le 12 février 2026 à Cap Digital, à Paris, avec plus de 70 participants.",
+        "cta": "Lire le compte rendu",
+        "photos": [
+          "Le public remplit la salle principale de Cap Digital, certains debout au fond",
+          "Mario Hawat d'Autour de Minuit sur scène, présentant Blender et Kitsu",
+          "Gwénaëlle Dupré de CGWire présentant les fonctionnalités de Kitsu sur scène",
+          "Présentation d'un film d'animation au public dans la deuxième salle"
+        ]
+      },
+      "next": {
+        "title": "Rendez-vous à Paris en 2028",
+        "date": "18 février 2028",
+        "description": "Le Kitsu Summit revient à Paris pour son édition 2028."
+      }
+    },
     "kitsu-submit": {
       "title": "Découvrez l'avenir de la collaboration créative",
       "slug": "kitsu-summit",

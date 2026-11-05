@@ -512,6 +512,104 @@
       },
       "cta": "Interested in using Kitsu?"
     },
+    "kitsu-summit-2027": {
+      "title": "Kitsu Summit 2027",
+      "slug": "kitsu-summit-2027",
+      "hero": {
+        "title": "This time, online",
+        "date": "February 17, 2027",
+        "format": "Online event",
+        "talks": "6 talks",
+        "cta": "Follow the news on Discord"
+      },
+      "about": {
+        "title": "The Kitsu Summit comes to you",
+        "description": "After a first edition in Paris, the Kitsu Summit moves online. Join from wherever your studio is, with no travel required.",
+        "videos": {
+          "intro": "Curious about what the summit looks like? Talks from the 2026 edition are available on YouTube.",
+          "cta": "Watch the 2026 talks"
+        },
+        "illustrationAlt": "Kitsu Summit illustration: animals on stage and in the audience"
+      },
+      "speakers": {
+        "title": "Speakers",
+        "description": "More speakers to be announced soon."
+      },
+      "schedule": {
+        "title": "Schedule",
+        "description": "Three talks by the CGWire team and three by external contributors. More details soon. Times are in Paris time (UTC+1).",
+        "time": "Time",
+        "talk": "Talk",
+        "schedule": [
+          {
+            "time": "14:00",
+            "company": "CGWire",
+            "speaker": "Frank Rousseau",
+            "title": "Keynote",
+            "role": "CGWire CEO",
+            "file": "summit/frank.jpg",
+            "subtitle": "How Kitsu Thrives in a Fast Evolving World"
+          },
+          {
+            "time": "14:45",
+            "company": "External contributor",
+            "speaker": "Speaker to be announced",
+            "title": "Topic to be announced",
+            "role": "External contributor",
+            "initials": "?"
+          },
+          {
+            "time": "15:30",
+            "company": "External contributor",
+            "speaker": "Swann Martinez",
+            "title": "Topic to be announced",
+            "role": "External contributor"
+          },
+          {
+            "time": "16:15",
+            "company": "CGWire",
+            "speaker": "Nicolas Ledez",
+            "title": "Scaling a video infrastructure",
+            "subtitle": "Spikes, Regions, Edge cases, and full movie builds",
+            "role": "CGWire Hosting Infrastructure Manager",
+            "file": "team/nicolas.png"
+          },
+          {
+            "time": "17:00",
+            "company": "External contributor",
+            "speaker": "Speaker to be announced",
+            "title": "Topic to be announced",
+            "role": "External contributor",
+            "initials": "?"
+          },
+          {
+            "time": "17:45",
+            "company": "CGWire",
+            "speaker": "Gwénaëlle Dupré",
+            "title": "Keynote",
+            "role": "CGWire CPO",
+            "file": "summit/gwen.png",
+            "subtitle": "Future of Kitsu and Roadmap"
+          }
+        ]
+      },
+      "previous": {
+        "title": "Looking back at 2026",
+        "description": "The first Kitsu Summit took place on February 12, 2026 at Cap Digital in Paris, with more than 70 attendees.",
+        "cta": "Read the recap",
+        "photos": [
+          "Attendees filling the main room at Cap Digital, some standing at the back",
+          "Mario Hawat from Autour de Minuit on stage, presenting Blender and Kitsu",
+          "Gwénaëlle Dupré from CGWire presenting Kitsu features on stage",
+          "A speaker showing an animated film to the audience in the second room"
+        ]
+      },
+      "next": {
+        "title": "See you in Paris in 2028",
+        "date": "February 18, 2028",
+        "description": "The Kitsu Summit is back in Paris for its 2028 edition."
+      }
+    },
     "kitsu-submit": {
       "title": "Join the Future of Production Collaboration",
       "slug": "kitsu-summit",

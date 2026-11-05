@@ -512,6 +512,104 @@
       },
       "cta": "Interested in using Kitsu?"
     },
+    "kitsu-summit-2027": {
+      "title": "Kitsu Summit 2027",
+      "slug": "kitsu-summit-2027",
+      "hero": {
+        "title": "今回はオンラインで開催",
+        "date": "2027年2月17日",
+        "format": "オンラインイベント",
+        "talks": "6件の講演",
+        "cta": "Discordで最新情報を確認"
+      },
+      "about": {
+        "title": "Kitsu Summitをオンラインで",
+        "description": "パリでの初開催に続き、Kitsu Summitはオンラインで開催します。移動の必要はなく、スタジオの所在地を問わずご参加いただけます。",
+        "videos": {
+          "intro": "Kitsu Summitの雰囲気を知りたい方へ。2026年の講演をYouTubeでご覧いただけます。",
+          "cta": "2026年の講演を見る"
+        },
+        "illustrationAlt": "Kitsu Summitのイラスト：ステージと客席の動物たち"
+      },
+      "speakers": {
+        "title": "登壇者",
+        "description": "他の登壇者は近日公開します。"
+      },
+      "schedule": {
+        "title": "スケジュール",
+        "description": "CGWireチームによる3件の講演と、外部コントリビューターによる3件の講演を予定しています。詳細は近日公開します。時間はパリ時間（UTC+1）です。",
+        "time": "時間",
+        "talk": "講演",
+        "schedule": [
+          {
+            "time": "14:00",
+            "company": "CGWire",
+            "speaker": "Frank Rousseau",
+            "title": "基調講演",
+            "role": "CGWire CEO",
+            "file": "summit/frank.jpg",
+            "subtitle": "変化の速い世界でKitsuが成長し続ける理由"
+          },
+          {
+            "time": "14:45",
+            "company": "外部コントリビューター",
+            "speaker": "登壇者は近日公開",
+            "title": "テーマは近日公開",
+            "role": "外部コントリビューター",
+            "initials": "?"
+          },
+          {
+            "time": "15:30",
+            "company": "外部コントリビューター",
+            "speaker": "Swann Martinez",
+            "title": "テーマは近日公開",
+            "role": "外部コントリビューター"
+          },
+          {
+            "time": "16:15",
+            "company": "CGWire",
+            "speaker": "Nicolas Ledez",
+            "title": "動画インフラのスケーリング",
+            "subtitle": "負荷の急増、リージョン、エッジケース、長編映画のビルド",
+            "role": "CGWire ホスティングインフラストラクチャマネージャー",
+            "file": "team/nicolas.png"
+          },
+          {
+            "time": "17:00",
+            "company": "外部コントリビューター",
+            "speaker": "登壇者は近日公開",
+            "title": "テーマは近日公開",
+            "role": "外部コントリビューター",
+            "initials": "?"
+          },
+          {
+            "time": "17:45",
+            "company": "CGWire",
+            "speaker": "Gwénaëlle Dupré",
+            "title": "基調講演",
+            "role": "CGWire CPO",
+            "file": "summit/gwen.png",
+            "subtitle": "Kitsuの未来とロードマップ"
+          }
+        ]
+      },
+      "previous": {
+        "title": "2026年の振り返り",
+        "description": "第1回Kitsu Summitは2026年2月12日にパリのCap Digitalで開催され、70名以上が参加しました。",
+        "cta": "開催レポートを読む",
+        "photos": [
+          "Cap Digitalのメイン会場を埋める参加者。後方で立ち見の方も",
+          "ステージでBlenderとKitsuについて発表するAutour de MinuitのMario Hawat",
+          "ステージでKitsuの機能を紹介するCGWireのGwénaëlle Dupré",
+          "第2会場でアニメーション作品を観客に見せる登壇者"
+        ]
+      },
+      "next": {
+        "title": "2028年はパリで",
+        "date": "2028年2月18日",
+        "description": "Kitsu Summitは2028年、再びパリで開催します。"
+      }
+    },
     "kitsu-submit": {
       "title": "制作コラボレーションの未来に参加しませんか",
       "slug": "kitsu-summit",

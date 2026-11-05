@@ -39,6 +39,11 @@ export const routes = {
     fr: '/conditions-generales',
     ja: '/利用規約'
   },
+  'kitsu-summit-2027': {
+    en: '/kitsu-summit-2027',
+    fr: '/kitsu-summit-2027',
+    ja: '/kitsu-summit-2027'
+  },
   'carbon-report': {
     en: '/carbon-report',
     fr: '/rapport-carbone',
