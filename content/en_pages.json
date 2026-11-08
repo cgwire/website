@@ -171,13 +171,13 @@
           "frank": {
             "name": "Frank Rousseau",
             "key": "frank",
-            "role": "Communication, Strategy and Backend Manager",
-            "description": "Before CGWire, Frank worked for studios and co-founded a startup. He has 15 years of experience in tech companies. Today, he maintains and improves the Kitsu API and gathers the right people to build CGWire and Kitsu."
+            "role": "Founder, Strategy & Backend Manager",
+            "description": "Frank has 20 years of experience building software companies and products. Before founding CGWire, he built production tools for animation studios and co-founded Cozy Cloud as CTO. Today, he sets CGWire's strategy and leads the development of the Kitsu API."
           },
           "gwen": {
             "name": "Gwenaëlle Dupré",
             "key": "gwen",
-            "role": "Product and Sales Manager",
+            "role": "Co-Founder, Product and Sales Manager",
             "description": "Gwenaëlle has over 10 years of experience as a production manager with distributed teams. At CGWire, she handles all product management and sales aspects, ensuring the success of every Kitsu implementation."
           },
           "nicolas": {
