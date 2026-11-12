@@ -16,8 +16,21 @@
         </div>
         <div class="flexrow-item introduction-picture">
           <video
+            class="only-light"
             src="~/assets/images/screenshots/teaser.webm"
             :poster="videoPoster"
+            loop
+            muted
+            playsinline
+            preload="metadata"
+            width="800"
+            height="800"
+            autoplay
+          />
+          <video
+            class="only-dark"
+            src="~/assets/images/screenshots/teaser-dark.webm"
+            :poster="videoPosterDark"
             loop
             muted
             playsinline
@@ -549,6 +562,10 @@ const sevenbearsBackground = computed(() => {
 
 const videoPoster = computed(() => {
   return img('/images/screenshots/teaser.png', { format: 'webp', width: 376, height: 376 })
+})
+
+const videoPosterDark = computed(() => {
+  return img('/images/screenshots/teaser-dark.png', { format: 'webp', width: 376, height: 376 })
 })
 
 // Preload the hero poster (the LCP element) with high priority.
