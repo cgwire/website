@@ -20,7 +20,15 @@
         :content="supporters.content"
       />
       <NuxtImg
+        class="only-light"
         src="/images/illustrations/success-supporter.png"
+        alt=""
+        format="webp"
+        loading="lazy"
+      />
+      <NuxtImg
+        class="only-dark"
+        src="/images/illustrations/success-supporter-dark.png"
         alt=""
         format="webp"
         loading="lazy"
