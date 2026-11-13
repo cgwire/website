@@ -200,7 +200,7 @@
             <SubNavElement element-key="blog" link="https://blog.cg-wire.com" />
             <SubNavElement
               element-key="tutorials"
-              link="https://www.youtube.com/playlist?list=PLp_1gB5ZBHXqnQgZ4TCrAt7smxesaDo29"
+              link="https://www.youtube.com/playlist?list=PLEkjmylVJeIU"
             />
             <SubNavElement
               element-key="documentation"
