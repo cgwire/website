@@ -1878,7 +1878,6 @@
           "title": "Faites ressortir les mises à jour pertinentes",
           "content": "Redirigez l'activité Kitsu vers les canaux que votre équipe surveille déjà. Les commentaires, changements de statut et nouveaux aperçus apparaissent directement dans Slack ou Discord pour que les bonnes personnes répondent sans avoir à consulter une plateforme séparée.",
           "image": "kitsu-slack.png",
-          "shadow": true,
           "colored": true,
           "gradient": 3
         }
@@ -1955,7 +1954,7 @@
           "title": "Suivez vos demandes",
           "subtitle": "Aucun problème oublié",
           "content": "Chaque conversation de support est sauvegardée et peut être escaladée via un système de tickets intégré. Vous savez toujours où en sont les choses, du premier contact à la résolution.",
-          "image": "illustration-handshake.png",
+          "image": "kitsu-issues.png",
           "reverted": true
         },
         {

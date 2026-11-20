@@ -1878,7 +1878,6 @@
           "title": "関連する更新を目立たせる",
           "content": "Kitsuのアクティビティをチームがすでに監視しているチャンネルにルーティングします。コメント、ステータス変更、新しいプレビューがSlackまたはDiscordに直接表示されるため、適切な人が別のプラットフォームをチェックすることなく対応できます。",
           "image": "kitsu-slack.png",
-          "shadow": true,
           "colored": true,
           "gradient": 3
         }
@@ -1955,7 +1954,7 @@
           "title": "リクエストを追跡する",
           "subtitle": "忘れられる問題はありません",
           "content": "すべてのサポート会話が保存され、統合されたチケットシステムを通じてエスカレーションできます。最初のコンタクトから解決まで、常に状況を把握できます。",
-          "image": "illustration-handshake.png",
+          "image": "kitsu-issues.png",
           "reverted": true
         },
         {

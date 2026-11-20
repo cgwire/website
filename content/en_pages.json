@@ -1835,7 +1835,6 @@
           "title": "Make relevant updates pop",
           "content": "Route Kitsu activity into the channels your team already monitors. Comments, status changes, and new previews appear directly in Slack or Discord so the right people respond without having to check a separate platform.",
           "image": "kitsu-slack.png",
-          "shadow": true,
           "colored": true,
           "gradient": 3
         }
@@ -1903,7 +1902,7 @@
           "title": "Track your requests",
           "subtitle": "No issue forgotten",
           "content": "Every support conversation is saved and can be escalated through an integrated ticketing system. You always know where things stand, from first contact to resolution.",
-          "image": "illustration-handshake.png",
+          "image": "kitsu-issues.png",
           "reverted": true
         },
         {
