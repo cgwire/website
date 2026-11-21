@@ -1411,8 +1411,8 @@
           "title": "Casting export",
           "subtitle": "Make your data portable",
           "content": "Export casting data as a flat .csv or a column view in seconds. Or skip the manual step entirely and connect your scene builder directly to the API.",
-          "image": "kitsu-export.png",
-          "shadow": true,
+          "image": "kitsu-export-animated.svg",
+          "imageDark": "kitsu-export-animated-dark.svg",
           "colored": true,
           "gradient": 2
         },

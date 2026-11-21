@@ -1427,8 +1427,8 @@
           "title": "キャスティングのエクスポート",
           "subtitle": "データを持ち運び可能にする",
           "content": "キャスティングデータをフラットな.csvまたは列ビューとして数秒でエクスポートします。手動のステップを完全にスキップして、シーンビルダーをAPIに直接接続することもできます。",
-          "image": "kitsu-export.png",
-          "shadow": true,
+          "image": "kitsu-export-animated.svg",
+          "imageDark": "kitsu-export-animated-dark.svg",
           "colored": true,
           "gradient": 2
         },

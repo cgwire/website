@@ -1427,8 +1427,8 @@
           "title": "Export du casting",
           "subtitle": "Rendez vos données portables",
           "content": "Exportez les données de casting en fichier .csv plat ou en vue colonnes en quelques secondes. Ou ignorez complètement l'étape manuelle et connectez votre constructeur de scènes directement à l'API.",
-          "image": "kitsu-export.png",
-          "shadow": true,
+          "image": "kitsu-export-animated.svg",
+          "imageDark": "kitsu-export-animated-dark.svg",
           "colored": true,
           "gradient": 2
         },
