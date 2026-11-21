@@ -1743,9 +1743,9 @@
           "subtitle": "イベント駆動スクリプト",
           "title": "パイプラインをリアクティブにする",
           "content": "ステータスが変更されたとき、プレビューが公開されたとき、またはタスクがアサインされたときに何が起こるかを定義します。スクリプトは自動的に実行されます。以前は誰かが気づいて行動する必要があった繰り返しのパイプラインステップは、イベントが発生した瞬間に処理されます。",
-          "image": "kitsu-events.png",
+          "image": "kitsu-events-animated.svg",
           "reverted": true,
-          "shadow": true
+          "imageDark": "kitsu-events-animated-dark.svg"
         },
         {
           "subtitle": "チャット統合",

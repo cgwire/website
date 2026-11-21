@@ -1743,9 +1743,9 @@
           "subtitle": "Scripts pilotés par événements",
           "title": "Rendez votre pipeline réactive",
           "content": "Définissez ce qui se passe quand un statut change, un aperçu est publié ou une tâche est assignée. Vos scripts s'exécutent automatiquement. Les étapes de pipeline répétitives qui nécessitaient auparavant que quelqu'un remarque et agisse sont traitées au moment où l'événement se produit.",
-          "image": "kitsu-events.png",
+          "image": "kitsu-events-animated.svg",
           "reverted": true,
-          "shadow": true
+          "imageDark": "kitsu-events-animated-dark.svg"
         },
         {
           "subtitle": "Intégrations de messagerie",

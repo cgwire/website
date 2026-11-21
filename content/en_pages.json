@@ -1709,8 +1709,8 @@
           "subtitle": "Event-driven scripts",
           "title": "Make your pipeline reactive",
           "content": "Define what happens when a status changes, a preview is published, or a task is assigned. Your scripts run automatically. Repetitive pipeline steps that used to require someone to notice and act are handled the moment the event fires.",
-          "image": "kitsu-events.png",
-          "shadow": true,
+          "image": "kitsu-events-animated.svg",
+          "imageDark": "kitsu-events-animated-dark.svg",
           "reverted": true
         },
         {

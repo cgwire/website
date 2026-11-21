@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 6 792 520" width="1440" height="945" font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#363636" role="img" aria-label="Kitsu activity logs: every event of the studio listed live, with its date, action, object and the production or shot it is about">
+  <!-- 9s loop: a status change then a new preview arrive at the top of the logs, the older events move down -->
+  <style>
+    .older { animation: older 9s ease-in-out infinite }
+    .first, .second { opacity: 0; animation: 9s ease-out infinite }
+    .first { animation-name: first } .second { animation-name: second }
+    .pulse { opacity: 0; animation: 9s ease-out infinite }
+    .first .pulse { animation-name: pulse1 } .second .pulse { animation-name: pulse2 }
+    .count { opacity: 0; animation: 9s linear infinite }
+    .c12 { animation-name: c12 } .c13 { animation-name: c13 } .c14 { animation-name: c14 }
+    @keyframes older { 0%, 18% { transform: translateY(0) } 23%, 50% { transform: translateY(30px) } 55%, 93% { transform: translateY(60px) } 100% { transform: translateY(0) } }
+    @keyframes first { 0%, 21% { opacity: 0; transform: translateY(-6px) } 26%, 50% { opacity: 1; transform: translateY(0) } 55%, 93% { opacity: 1; transform: translateY(30px) } 97%, 100% { opacity: 0; transform: translateY(30px) } }
+    @keyframes second { 0%, 53% { opacity: 0; transform: translateY(-6px) } 58%, 93% { opacity: 1; transform: translateY(0) } 97%, 100% { opacity: 0; transform: translateY(0) } }
+    @keyframes pulse1 { 0%, 25% { opacity: 0 } 27%, 38% { opacity: 1 } 50%, 100% { opacity: 0 } }
+    @keyframes pulse2 { 0%, 57% { opacity: 0 } 59%, 72% { opacity: 1 } 86%, 100% { opacity: 0 } }
+    @keyframes c12 { 0%, 22% { opacity: 1 } 23%, 96% { opacity: 0 } 97%, 100% { opacity: 1 } }
+    @keyframes c13 { 0%, 22% { opacity: 0 } 23%, 54% { opacity: 1 } 55%, 100% { opacity: 0 } }
+    @keyframes c14 { 0%, 54% { opacity: 0 } 55%, 96% { opacity: 1 } 97%, 100% { opacity: 0 } }
+    @media (prefers-reduced-motion: reduce) {
+      .older, .first, .second, .pulse, .count { animation: none }
+      .older { transform: translateY(60px) } .first { opacity: 1; transform: translateY(30px) } .second, .c14 { opacity: 1 }
+    }
+  </style>
+  <defs>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#363636" flood-opacity=".14"/></filter>
+    <filter id="sel-shadow" x="-20%" y="-40%" width="140%" height="180%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00b242" flood-opacity=".35"/></filter>
+    <clipPath id="clip-list"><rect x="16" y="168" width="768" height="324"/></clipPath>
+    <clipPath id="clip-avatar"><circle cx="30" cy="30" r="30"/></clipPath>
+    <symbol id="gwen" viewBox="0 0 60 60"><g clip-path="url(#clip-avatar)"><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAW9yTlQBz6J3mgAABgRJREFUSMdt1cuPVGkZgPHnO+c7t6pz6t7dRRWXbrpppIlDZwhIQwxq4ozG0YWZmBgXxhgTlyau3M3OhX+CxoULF2qMGTQ6E80kijGIKJChYaAbuoEuuu6nLqdOnbsLJkZnfHfv5nl3709c3Lqa8ZH50Xe/waWvfBW9VOXW7RvcvPMnRsMJec0iL2zcoUe7OySOIvJKijrq8bud9kczyP9etlYb/OD732Np8yIAh+0Oj/Z2CUIFVYkJhxGt/jM6/QFHSw6NxSKQoTeP8K1qlb/e3+HhOPx4/PLxCsWVIrfa+1zorfBk5zG7u9sEgY+tWnRcweCwhzuecPnsOufWTiAUlXkYkaYp8niD7nSG+azF3Q8PSIDNepHVjTV8VePxvQfsb+8SBXPsoo47GJNEEZ3WiINOj62zp7h0boOBO0EKAWlGEsVIQ2d9bZnt/X1WbZXdafIyfvncMTqxR07kOTwc4JuCOBPMOj6GJqgIi1a7S04KNk8t02r3uHv/IbOpR7NaZKFSphfFmDmHnJ3DSnx2pyDf3FxiXtMohilpomPrZfb2njKf+zRWHJRMMBtMGY8mfOG1yxiGzvWbd3je6YE/Ji8CQn/C/SdPMe0Kqq4y1OCKDvLhwKV0X2BKCz+ZYGsSZTpCqSR0BiG2MDhnLjJdqrLcbCAl2IaCiEIq5QqvnNmg1enzpN2lFsToFQ3NMZjkQ2QqNNyui65NcecxlXKexukqS/VFkjCiH71g8qBL3dIIvCn12jJXL25xcWOK73lYuoV5osSrp5/TcUcoBRVkQJBlyCyOyNKE0rEmm8eaaLbNo8cHfPnCF3l4730eDGLMIyHGWGE0GjJsW0yHY7rdLrpQOb62hkwVPrVxFrtQ5N1n15nOxxzN5ZHVRZNc02ShUsUbTfnNL9+hN5iQMzVevHhOpsVsLNcZtCfU9AU+uH+XRzv7LNbKOIUib//hGkoqkKrKcuMYkR4iVOibEYqyIunHHjuDRzx4+oTewCUj5o/vvUdrdEhsZDwYdvBLEk1VCcMAPWdgWAVM1cQQEi+OGc89/nL3Fq46Rbd0lmYa0u9GqBi0BgMmIw+naqBmKs1PLKHlJIqmM/EnFPMq/myGIuBYvYamaQxabfKJyizM8BWBsWoRCp+6a3LS15BOmkdNBO0wxdAFzVMOlm2AGuL7U4adPkKPqCqSkIAMgaXrKJpALUhmiQeKAnGKn1cIJzEfTMbcjlxknKQEIkNzVEQiIS+ZTjyaCyc588lLjMcjZuGQqgA71Tlo+cyCgMVyGSdnE85DvNDDdWA49LBQWckshG0i3WTIOJjhpSFV2+Zo6RSlZoE3vvRtxmMD23HImRa3fvsTlOk+lqmzvbvH3kGbNIUgmHPuc29SLnu88+7Pcawa1WKOJUNH+ezWVY426xypFnh19QxHGxLVGZNR5O+3/0nf7RNnCsvnP0+gOMg0pF4pEGcJL1yXRECm5ykaDUp5kwvNMgVNpX8wQv30Z2pvJbkMw05ojZ+yfbDDlfPfwTaOgCLx5z5pEpErLZJrniFFJZkNEZGPJSWVxiqFtU1Wjr+CVZpz7V+/pz+KSP0I9fyJyltPecEsmDGezvjmGz/kZP0Kewe7WKaFqkpy+TxhOCdTMrJSk9g+QjB1mQzaVDZfR8kV6XY63LjxNr3ulFhV2NQriItbV7MrWxPutOYs2StcOf91hhMXfx4y6HdxbIeF2gKLC3VGYxd3NKJUqyPSmNnhPs7RdZxCiWu/+hn37v4D2y7QNFMOYv3ly33+vsOoA57ls7P9Y1oH+yiArukIRSGKQuL4JQpkUKvWuPr61zi5eop779/BtnLcunmdKAnRiMnMGgAKwP4ETpcL5AwVRZVYVh5QUKXOPJgzD+Z82CUIA5493+f2zT8zHo0oOEV+/Yuf0h/2mA77nCw6tGLlf5nbmWc0jYiqptHLMlRNww98QGBZeVRFggCp+gRhwJ3bf0OoGsvLq3R6h6yXHBbrDQ6E+R9Dxf/Tf12LuNcbM80USqUqnjcinM+Q0iAMA7yZh1QVNKnTKJdYL2hsB9rH9P831XrHmKMfp/8AAAAASUVORK5CYII=" width="60" height="60" preserveAspectRatio="xMidYMid slice"/></g></symbol>
+  </defs>
+  <rect x="16" y="16" width="768" height="484" rx="12" fill="#fff" filter="url(#card-shadow)"/>
+
+  <!-- Tabs -->
+  <rect x="40" y="62" width="720" height="1" fill="#dbdbdb"/>
+  <text x="52" y="50" font-size="14" font-weight="600">Activity Logs</text>
+  <rect x="40" y="61" width="108" height="2" fill="#8f91eb"/>
+  <text x="172" y="50" font-size="14" fill="#7a7a7a">Login Logs</text>
+  <text x="270" y="50" font-size="14" fill="#7a7a7a">Preview Files</text>
+
+  <!-- Filters -->
+  <text x="40" y="88" font-size="10" font-weight="700" letter-spacing="1" fill="#7a7a7a">DATE RANGE</text>
+  <rect x="40.5" y="96.5" width="200" height="36" rx="8" fill="#fff" stroke="#dbdbdb"/>
+  <text x="54" y="119">2026-11-16 - 2026-11-20</text>
+  <text x="256" y="88" font-size="10" font-weight="700" letter-spacing="1" fill="#7a7a7a">USERS</text>
+  <rect x="256.5" y="96.5" width="240" height="36" rx="8" fill="#fff" stroke="#dbdbdb"/>
+  <text x="270" y="119" fill="#b0b0b0">All users</text>
+
+  <!-- Event count: one text per state -->
+  <g font-style="italic" fill="#7a7a7a">
+    <text class="count c12" x="52" y="160">846 events listed</text>
+    <text class="count c13" x="52" y="160">847 events listed</text>
+    <text class="count c14" x="52" y="160">848 events listed</text>
+  </g>
+
+  <!-- Events: the two arrivals, then the events already listed -->
+  <g clip-path="url(#clip-list)">
+    <g class="older">
+    <rect x="44" y="176" width="138" height="22" rx="4" fill="#f5f5f5"/><text x="113" y="191" text-anchor="middle" font-size="12" font-weight="600" fill="#4a4a4a">2026-11-20 17:39:26</text><rect x="190" y="176" width="128" height="22" rx="11" fill="#008a33" fill-opacity=".14"/><text x="254" y="191" text-anchor="middle" font-size="12" font-weight="600" fill="#008a33">new</text><rect x="326" y="176" width="96" height="22" rx="11" fill="#f5f5f5"/><text x="374" y="191" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">news</text><rect x="430" y="176" width="118" height="22" rx="11" fill="#f5f5f5"/><text x="489" y="191" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">Critter Evolved</text>
+    <rect x="44" y="206" width="138" height="22" rx="4" fill="#f5f5f5"/><text x="113" y="221" text-anchor="middle" font-size="12" font-weight="600" fill="#4a4a4a">2026-11-20 17:39:26</text><rect x="190" y="206" width="128" height="22" rx="11" fill="#4a62c0" fill-opacity=".14"/><text x="254" y="221" text-anchor="middle" font-size="12" font-weight="600" fill="#4a62c0">update</text><rect x="326" y="206" width="96" height="22" rx="11" fill="#f5f5f5"/><text x="374" y="221" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">task</text><rect x="430" y="206" width="118" height="22" rx="11" fill="#f5f5f5"/><text x="489" y="221" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">SH03</text>
+    <rect x="47" y="248" width="3" height="72" fill="#ccc"/><text x="62" y="265" font-weight="600">user</text><use href="#gwen" x="232" y="250" width="20" height="20"/><text x="260" y="265">Gwenaelle Dupré</text><text x="62" y="289" font-weight="600">project_id</text><text x="232" y="289">298971ec-bd44-4b65-aa28-f82cf98dd99f</text><text x="62" y="313" font-weight="600">task_id</text><text x="232" y="313">f9f1f6da-a649-42db-af93-088b496ff9aa</text>
+    <rect x="44" y="344" width="138" height="22" rx="4" fill="#f5f5f5"/><text x="113" y="359" text-anchor="middle" font-size="12" font-weight="600" fill="#4a4a4a">2026-11-20 17:39:25</text><rect x="190" y="344" width="128" height="22" rx="11" fill="#008a33" fill-opacity=".14"/><text x="254" y="359" text-anchor="middle" font-size="12" font-weight="600" fill="#008a33">new</text><rect x="326" y="344" width="96" height="22" rx="11" fill="#f5f5f5"/><text x="374" y="359" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">comment</text><rect x="430" y="344" width="118" height="22" rx="11" fill="#f5f5f5"/><text x="489" y="359" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">SH03</text>
+    <rect x="44" y="374" width="138" height="22" rx="4" fill="#f5f5f5"/><text x="113" y="389" text-anchor="middle" font-size="12" font-weight="600" fill="#4a4a4a">2026-11-20 17:31:04</text><rect x="190" y="374" width="128" height="22" rx="11" fill="#b86e00" fill-opacity=".14"/><text x="254" y="389" text-anchor="middle" font-size="12" font-weight="600" fill="#b86e00">annotation-update</text><rect x="326" y="374" width="96" height="22" rx="11" fill="#f5f5f5"/><text x="374" y="389" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">preview-file</text><rect x="430" y="374" width="118" height="22" rx="11" fill="#f5f5f5"/><text x="489" y="389" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">Critter Evolved</text>
+    <rect x="44" y="404" width="138" height="22" rx="4" fill="#f5f5f5"/><text x="113" y="419" text-anchor="middle" font-size="12" font-weight="600" fill="#4a4a4a">2026-11-20 17:24:47</text><rect x="190" y="404" width="128" height="22" rx="11" fill="#0e8a8a" fill-opacity=".14"/><text x="254" y="419" text-anchor="middle" font-size="12" font-weight="600" fill="#0e8a8a">assign</text><rect x="326" y="404" width="96" height="22" rx="11" fill="#f5f5f5"/><text x="374" y="419" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">task</text><rect x="430" y="404" width="118" height="22" rx="11" fill="#f5f5f5"/><text x="489" y="419" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">Critter Evolved</text>
+    <rect x="44" y="434" width="138" height="22" rx="4" fill="#f5f5f5"/><text x="113" y="449" text-anchor="middle" font-size="12" font-weight="600" fill="#4a4a4a">2026-11-20 17:24:12</text><rect x="190" y="434" width="128" height="22" rx="11" fill="#4a62c0" fill-opacity=".14"/><text x="254" y="449" text-anchor="middle" font-size="12" font-weight="600" fill="#4a62c0">update</text><rect x="326" y="434" width="96" height="22" rx="11" fill="#f5f5f5"/><text x="374" y="449" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">shot</text><rect x="430" y="434" width="118" height="22" rx="11" fill="#f5f5f5"/><text x="489" y="449" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">SH03</text>
+    <rect x="44" y="464" width="138" height="22" rx="4" fill="#f5f5f5"/><text x="113" y="479" text-anchor="middle" font-size="12" font-weight="600" fill="#4a4a4a">2026-11-20 17:18:30</text><rect x="190" y="464" width="128" height="22" rx="11" fill="#008a33" fill-opacity=".14"/><text x="254" y="479" text-anchor="middle" font-size="12" font-weight="600" fill="#008a33">new</text><rect x="326" y="464" width="96" height="22" rx="11" fill="#f5f5f5"/><text x="374" y="479" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">shot</text><rect x="430" y="464" width="118" height="22" rx="11" fill="#f5f5f5"/><text x="489" y="479" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">Critter Evolved</text>
+    </g>
+    <g class="first"><rect class="pulse" x="38" y="171" width="516" height="32" rx="8" fill="#fff" stroke="#00b242" stroke-width="1.5" filter="url(#sel-shadow)"/><rect x="44" y="176" width="138" height="22" rx="4" fill="#f5f5f5"/><text x="113" y="191" text-anchor="middle" font-size="12" font-weight="600" fill="#4a4a4a">2026-11-20 17:42:08</text><rect x="190" y="176" width="128" height="22" rx="11" fill="#d6359a" fill-opacity=".14"/><text x="254" y="191" text-anchor="middle" font-size="12" font-weight="600" fill="#d6359a">status-changed</text><rect x="326" y="176" width="96" height="22" rx="11" fill="#f5f5f5"/><text x="374" y="191" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">task</text><rect x="430" y="176" width="118" height="22" rx="11" fill="#f5f5f5"/><text x="489" y="191" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">SH03</text></g>
+    <g class="second"><rect class="pulse" x="38" y="171" width="516" height="32" rx="8" fill="#fff" stroke="#00b242" stroke-width="1.5" filter="url(#sel-shadow)"/><rect x="44" y="176" width="138" height="22" rx="4" fill="#f5f5f5"/><text x="113" y="191" text-anchor="middle" font-size="12" font-weight="600" fill="#4a4a4a">2026-11-20 17:42:09</text><rect x="190" y="176" width="128" height="22" rx="11" fill="#008a33" fill-opacity=".14"/><text x="254" y="191" text-anchor="middle" font-size="12" font-weight="600" fill="#008a33">new</text><rect x="326" y="176" width="96" height="22" rx="11" fill="#f5f5f5"/><text x="374" y="191" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">preview-file</text><rect x="430" y="176" width="118" height="22" rx="11" fill="#f5f5f5"/><text x="489" y="191" text-anchor="middle" font-size="12" font-weight="400" fill="#4a4a4a">Critter Evolved</text></g>
+  </g>
+</svg>
