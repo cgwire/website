@@ -1569,8 +1569,8 @@
           "title": "Anticipate budget overruns",
           "subtitle": "Forecasting",
           "content": "Compare current spending against your budget at any point in production. Run cost scenarios before making decisions so you can course-correct while you still have options.",
-          "image": "kitsu-budget.png",
-          "shadow": true,
+          "image": "kitsu-budget-animated.svg",
+          "imageDark": "kitsu-budget-animated-dark.svg",
           "reverted": true
         }
       ],

@@ -1594,8 +1594,8 @@
           "title": "予算超過を予測する",
           "subtitle": "予測",
           "content": "プロダクションのあらゆる時点で現在の支出を予算と比較します。意思決定前にコストシナリオを実行して、まだ選択肢がある間に軌道修正できるようにします。",
-          "image": "kitsu-budget.png",
-          "shadow": true,
+          "image": "kitsu-budget-animated.svg",
+          "imageDark": "kitsu-budget-animated-dark.svg",
           "reverted": true
         }
       ],

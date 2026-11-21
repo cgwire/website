@@ -1594,8 +1594,8 @@
           "title": "Anticipez les dépassements de budget",
           "subtitle": "Prévisions",
           "content": "Comparez les dépenses actuelles à votre budget à tout moment de la production. Effectuez des scénarios de coûts avant de prendre des décisions pour pouvoir corriger le tir tant que vous avez encore des options.",
-          "image": "kitsu-budget.png",
-          "shadow": true,
+          "image": "kitsu-budget-animated.svg",
+          "imageDark": "kitsu-budget-animated-dark.svg",
           "reverted": true
         }
       ],

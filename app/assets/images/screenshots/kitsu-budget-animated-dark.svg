@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 6 792 464" width="1440" height="844" font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" fill="#dcddde" role="img" aria-label="Kitsu budget page: monthly salaries per department, with the totals and the expense analytics updated when a new hire is added">
+  <!-- 8s loop: a new hire is added to the Animation department, the monthly totals, the grand total and the expense chart follow -->
+  <style>
+    .new-row { opacity: 0; animation: new-row 8s ease-in-out infinite }
+    .push { animation: push 8s ease-in-out infinite }
+    .leaving { animation: leaving 8s ease-in-out infinite }
+    .old { animation: old 8s ease-in-out infinite }
+    .new { opacity: 0; animation: new 8s ease-in-out infinite }
+    .grow { transform-box: fill-box; transform-origin: bottom; transform: scaleY(0); animation: grow 8s ease-in-out infinite }
+    .sel { opacity: 0; animation: sel 8s ease-in-out infinite }
+    @keyframes new-row { 0%, 14% { opacity: 0; transform: translateX(-14px) } 22%, 90% { opacity: 1; transform: translateX(0) } 97%, 100% { opacity: 0 } }
+    @keyframes push { 0%, 10% { transform: translateY(0) } 18%, 90% { transform: translateY(30px) } 98%, 100% { transform: translateY(0) } }
+    @keyframes leaving { 0%, 10% { opacity: 1 } 16%, 92% { opacity: 0 } 100% { opacity: 1 } }
+    @keyframes old { 0%, 30% { opacity: 1 } 35%, 92% { opacity: 0 } 98%, 100% { opacity: 1 } }
+    @keyframes new { 0%, 30% { opacity: 0 } 35%, 92% { opacity: 1 } 98%, 100% { opacity: 0 } }
+    @keyframes grow { 0%, 32% { transform: scaleY(0) } 40%, 92% { transform: scaleY(1) } 98%, 100% { transform: scaleY(0) } }
+    @keyframes sel { 0%, 16% { opacity: 0 } 22%, 84% { opacity: 1 } 90%, 100% { opacity: 0 } }
+    @media (prefers-reduced-motion: reduce) { .new-row, .push, .leaving, .old, .new, .grow, .sel { animation: none } }
+  </style>
+  <defs>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000000" flood-opacity=".45"/>
+    </filter>
+    <filter id="sel-shadow" x="-5%" y="-60%" width="110%" height="240%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00b242" flood-opacity=".22"/>
+    </filter>
+    <clipPath id="clip-avatar"><circle cx="23" cy="23" r="23"/></clipPath>
+    <clipPath id="clip-table"><rect x="44" y="108" width="516" height="318" rx="6"/></clipPath>
+    <symbol id="person-alicia" viewBox="0 0 46 46"><g clip-path="url(#clip-avatar)"><image href="data:image/png;base64,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" width="46" height="46" preserveAspectRatio="xMidYMid slice"/></g></symbol>
+    <symbol id="person-ann" viewBox="0 0 46 46"><g clip-path="url(#clip-avatar)"><image href="data:image/png;base64,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" width="46" height="46" preserveAspectRatio="xMidYMid slice"/></g></symbol>
+    <symbol id="person-brennan" viewBox="0 0 46 46"><g clip-path="url(#clip-avatar)"><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAIvElEQVRIx5WXWWyc5RWGn+9fZ7c9i8fjsR07jhMnOClNQgiBFgRCQl2IxB0htKq4qKClLeWiKlC6XND2oiXdQnuDqgoCEi1SKlCpkFBI2xSStGlCFsfYGdvxxIln7PFs/yz/8vVivCRNQPRcff/N957znve83/mFlFLyCeLgoSP8/sCrjJ48weVsFqeQI+Q38HVE8UcTDG3eyiNfeoj7P3vbJ7kO8XHAFavGj37zIn/Y/0sK2SlcT6J4Dn2dEW4f6aUn0Ua56XAhm2NyJke+3EBN9PPwo9/gmUe/Qijg//+AF0oVvrdvP6+88Cuq+RwCieO5hAMmX9yxjg3dQWKxDjxHki9aZC7NU6k7aJrOibFpMvNlArFuHv7at3ju24/dMIEbAn/5O9/nled/ipQSIUB6ElOR3LNtHdvXp2gPm4RCfgKhELaAxZJFoVAmM5XF9lSOnplmaq6CVDQeevK7vPjjZ68DVq7+sF2Xe/c8woGf/4TlfISUuJ7L1g299EQDuHYT6bg06k0s26Mr1U1/d4JkyE+8Iw5SMtgTpzNioArJSz97jnv3PILtuh8NvPeJpzj02kuAACQCBceVpGMR2k1BtVpFCImhCNpDQWpXZvng7bepTY4jilmqk+fQF3JEnDrDPXFiQR3hubz72svsfeKpa4C15cNXn32O11/YhxBiqdolcEUh1ebDj4NbruMueqg+MB2TwVSA3ts2kUwlsSoVRtZPUSqWyGQXOXRmBr+hoWoqtiv50/59fDPZyS+efnK1x2WrRu/aIarzOQAkEgXwUFGR3NwbYajdZOdwinX9UTRPklyzhq7hIUKJLhyp4DYb2IV55i9mOH92klfeOcWxixVqrsJcsYpQBKFYJ1Pjo0SCgRbVTz+/n0p+blVxCEAgpUvIEPhMhf50gnvu20XfTRtIbRxmcOdtBNKD2EoQ6ak4tQal+XnqzTqu46CpKgKJqYol8iSV/BWe2ffCao9ffuHXK6ArIl+i3DB9aKpKvCuGp+j4gp0E4msoVUC1VTShousahuknHEsRS6/BHwoT9vvQNZWm5yGQLR4lHPjd/laPDx46QvFydgVUCLFUNQhFwbYd8vkFOpMxFubnKY5lqTRtasVFdn5mB8l0ipnJaSbGxglFYhiBAJ5UUIRHvWZTrtlIqSBoJVCcneHgoSNoB14/uAKqKKsil4B0XYKGxh1DKRLRIIl4O5mxU8wWm0QNiVBAaCqjR4+RL9TRgkVU6dDWFsEwTaQncSQIAQIFiURKyYHXD6KdOn50iVlx3ZBLBLqusm1kENPvJ9W/ibvb4xSyeTTDT3JgCKchSaf78LfXyUxN09nmIxrrQFMm8ZsaXq2JIhQ8T4BoFXfq+FG04pKolsdIURSEEK1EpIM/HCDY3oFlNdB9UbrX9pPot7CtCp4tqBYL9AytY308xi6p0ajOM3phAikFhqFjOx6GruIJudLKxdwcWnkJeFlUVzuopgjyhTKW8BOxXZrFHI3FRbLnT2NEwgyMbKNeyJMrl0kNbgQ1QLPeID9XxnM0Gu5SZ6V3TXHl/BVU3ef/gdNsgJRwTY89NEWhVG1w9sIUn715CGUxx8SJoyRTXZSrFtlMhvMnT7MwO4NXKeBZJeayWc6NfkhThPj76BR110OIlguuFGSYKKFY52qPpWypeWX0PHRNJ5NdoNxwMIIe/miYmXyJYDhC4dIkpdwc6e5uquUa02fOMDUxRqEmOXwmQ75aRVMkUgqkFEuShXA8idLRmWzN7BLNy3YppUQKgSI8HKEwOjlL19BG1t9+BzXHodm06R0eoWttL+8eOYeI+Wnrb0NqJn98/0MOj2UwdAMP2TIksWzD0J7oRNmyfUeLZmiNk1jyaAFIBXABj7ELlxgfmwZNZefdd5IaWE97vJNEKs2d9+2ktzeNZbkcn15gfHYeUzcRrt0yXymXgFuxZfsOlD0P7F6hWgixRLEEqaAIgVA1kIKOtiAzk9NYxQqeaNJ0q9TrJfxhjUSqg6nxi5w+l+GtY2NYjkQV4AoNBQGKALkq3D0P7EbZfdcu2lI9VzkXqKqGqujYjo1Vq2OoKlsGe6jVq5w9N47pCxONJ0l09ZHoSjF7ZY73/n2aidlFag0XpEvTcVCEiiJWRSWEoK0rze67drWexb2Pfp3f/vBpQOC6LrZdA6A7lWTHjm1sWdvNcBdEAvC3YyepWg7rBvpR7CqXr8zzj3+dwqrWSHaE2HzTBgI9A0xnMuRz83hIQMUwDISAvY89vvosFqsWvQODlHOXiYRCbN26hYGBPm65dTvdnV0UMidJyxxr+ru4OJPj8JH/sFiooukadsMmGNDp6+mi3adxbE4hsPZThAI+LmQy/PPIexSLJS5mLxGKJ7k0lSEc8K/uXC++8Vfe//OrjNy0kd7eHoQicJwGluXQuDLBoHKZ9JoUtico5gqcOzNGvrBI0O8nHo0Q62ijXKpwphEnMrCZSNCHPxgEKZGey5tv/oVb73+Qxx984Ppl742jx2lmx7BtB4HA0FXqTQdr/hKp5jQ9UR2hGljlCkK6NKoNFksVhKbi0xWyix5XwkNEu9cQMDUQKrquYxgGanodn99+8413ri/s2I6M9+MzTUxDR1V1TF3FH4mTN7tYqAkcXBRdYNVsqvXG8pRSqdTIEyUQieM3NTTDxDRNdENHJvuvAb2u4uV468QHNKbPtlZb6WE7Dna9TmNhjv6OBlEsrGKRZsNCVU1st87lWoQpN0G6rw8z6ENRVDRFQe/bxOe2bbnu5VO4Qdz36c3EhrfjaD5M04/juGiageMLc2LOYLoMds1C1QzCHQESg1uZcNoIxzpoaw+jCIEjNKLDt9wQFK7aMv837tgwSGOwnyPnx9HFBKJcIBIMcvjYMSKb1hELVAj4BW3RBO9kmtQ9hXS6m5oWoL1/LXeObMTU1I+6/uP/na6Oc5fmGM1kEM0SNBokqqOkAw1OlqKcmLXYsnUn69euZaQn9Umu47/5awc2ws+n1gAAAABJRU5ErkJggg==" width="46" height="46" preserveAspectRatio="xMidYMid slice"/></g></symbol>
+    <symbol id="person-david" viewBox="0 0 46 46"><g clip-path="url(#clip-avatar)"><image href="data:image/png;base64,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" width="46" height="46" preserveAspectRatio="xMidYMid slice"/></g></symbol>
+  </defs>
+
+  <!-- Page card -->
+  <rect x="16" y="16" width="768" height="430" rx="12" fill="#36393f" filter="url(#card-shadow)"/>
+
+  <!-- Budget version and actions -->
+  <g fill="#36393f" stroke="#4e5159">
+    <rect x="44.5" y="34.5" width="168" height="34" rx="8"/>
+    <rect x="222.5" y="36.5" width="106" height="30" rx="6"/>
+    <rect x="450.5" y="36.5" width="110" height="30" rx="6"/>
+  </g>
+  <text x="56" y="56.5" font-size="14">v1 - Main budget</text>
+  <path d="M192 49.5l4.5 4.5 4.5-4.5" fill="none" stroke="#00b242" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="275.5" y="55.5" text-anchor="middle">Show real costs</text>
+  <path d="M464 51.5h10M469 46.5v10" stroke="#dcddde" stroke-width="1.4" stroke-linecap="round"/>
+  <text x="482" y="55.5">New version</text>
+
+  <!-- Table header -->
+  <g font-size="9" font-weight="700" letter-spacing="1.2" fill-opacity=".5">
+    <text x="52" y="99">DEPARTMENT</text>
+    <text x="356" y="99" text-anchor="end">SALARY</text>
+    <text x="405" y="99" text-anchor="end">MAR</text><text x="454" y="99" text-anchor="end">APR</text><text x="503" y="99" text-anchor="end">MAY</text><text x="552" y="99" text-anchor="end">JUN</text>
+  </g>
+
+  <!-- Table body -->
+  <g clip-path="url(#clip-table)" font-size="10.5">
+  <rect x="44" y="108" width="516" height="318" fill="#36393f"/>
+  <text x="56" y="127.5" font-size="11.5">Total</text>
+  <text x="405" y="127.5" text-anchor="end">55 780</text><text x="454" y="127.5" text-anchor="end" class="old">50 880</text><text x="503" y="127.5" text-anchor="end" class="old">34 400</text><text x="552" y="127.5" text-anchor="end" class="old">17 400</text><text x="454" y="127.5" text-anchor="end" class="new">55 080</text><text x="503" y="127.5" text-anchor="end" class="new">38 600</text><text x="552" y="127.5" text-anchor="end" class="new">21 600</text>
+
+  <rect x="312" y="138" width="248" height="28" fill="#75bcb4" fill-opacity=".38"/>
+  <rect x="44" y="138" width="268" height="28" fill="#75bcb4"/>
+  <path d="M55 149.5l4.5 4.5 4.5-4.5" fill="none" stroke="#fefefe" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="74" y="156.5" font-weight="700" fill="#fff">Animation</text>
+  <text x="405" y="156.5" text-anchor="end">14 400</text><text x="454" y="156.5" text-anchor="end" class="old">19 200</text><text x="503" y="156.5" text-anchor="end" class="old">14 000</text><text x="552" y="156.5" text-anchor="end" class="old">9 800</text><text x="454" y="156.5" text-anchor="end" class="new">23 400</text><text x="503" y="156.5" text-anchor="end" class="new">18 200</text><text x="552" y="156.5" text-anchor="end" class="new">14 000</text>
+
+  <g>
+    <text x="52" y="185.5">Artist</text><text x="122" y="185.5">Senior</text>
+    <use href="#person-alicia" x="172" y="171" width="20" height="20"/><text x="198" y="185.5">Alicia Cooper</text>
+    <text x="356" y="185.5" text-anchor="end">5 000</text>
+    <text x="405" y="185.5" text-anchor="end">5000</text><text x="454" y="185.5" text-anchor="end">5000</text><text x="503" y="185.5" text-anchor="end">5000</text><text x="552" y="185.5" text-anchor="end">5000</text>
+  </g>
+  <g><rect x="44" y="196" width="516" height="30" fill="#3a3d43"/>
+    <text x="52" y="215.5">Supervisor</text><text x="122" y="215.5">Mid</text>
+    <use href="#person-ann" x="172" y="201" width="20" height="20"/><text x="198" y="215.5">Ann Kennedy</text>
+    <text x="356" y="215.5" text-anchor="end">5 200</text>
+    <text x="405" y="215.5" text-anchor="end">5200</text><text x="454" y="215.5" text-anchor="end">5200</text>
+  </g>
+  <g>
+    <text x="52" y="245.5">Supervisor</text><text x="122" y="245.5">Junior</text>
+    <use href="#person-brennan" x="172" y="231" width="20" height="20"/><text x="198" y="245.5">Brennan Mason</text>
+    <text x="356" y="245.5" text-anchor="end">4 200</text>
+    <text x="405" y="245.5" text-anchor="end">4200</text><text x="454" y="245.5" text-anchor="end">4200</text><text x="503" y="245.5" text-anchor="end">4200</text>
+  </g>
+  <g><rect x="44" y="256" width="516" height="30" fill="#3a3d43"/>
+    <text x="52" y="275.5">Lead</text><text x="122" y="275.5">Junior</text>
+    <use href="#person-david" x="172" y="261" width="20" height="20"/><text x="198" y="275.5">David Penna</text>
+    <text x="356" y="275.5" text-anchor="end">4 800</text>
+    <text x="454" y="275.5" text-anchor="end">4800</text><text x="503" y="275.5" text-anchor="end">4800</text><text x="552" y="275.5" text-anchor="end">4800</text>
+  </g>
+  <path d="M44 196.5h516 M44 226.5h516 M44 256.5h516" stroke="#4e5159"/>
+
+  <!-- New hire, slides in -->
+  <g class="new-row" font-size="10.5">
+    <text x="52" y="305.5">Artist</text><text x="122" y="305.5">Junior</text>
+    <rect x="172" y="291" width="68" height="20" rx="4" fill="#5f626a"/>
+    <text x="206" y="305.0" font-size="9.5" text-anchor="middle">New hiring</text>
+    <text x="356" y="305.5" text-anchor="end">4 200</text>
+    <text x="454" y="305.5" text-anchor="end">4200</text><text x="503" y="305.5" text-anchor="end">4200</text><text x="552" y="305.5" text-anchor="end">4200</text>
+    <path d="M44 286.5h516" stroke="#4e5159"/>
+  </g>
+
+  <path d="M114.5 166V316 M166.5 166V316 M312.5 166V316" stroke="#4e5159"/>
+
+  <!-- Collapsed departments, pushed down by the new row: they cover the column lines below the entries -->
+  <g class="push">
+  <g>
+    <rect x="312" y="286" width="248" height="28" fill="#75a8dd" fill-opacity=".38"/>
+    <rect x="44" y="286" width="268" height="28" fill="#75a8dd"/>
+    <path d="M57 295.5l4.5 4.5-4.5 4.5" fill="none" stroke="#fefefe" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="74" y="304.5" font-weight="700" fill="#fff">Compositing</text>
+    <text x="405" y="304.5" text-anchor="end">7 600</text><text x="454" y="304.5" text-anchor="end">7 600</text><text x="503" y="304.5" text-anchor="end">7 600</text><text x="552" y="304.5" text-anchor="end">7 600</text>
+  </g>
+  <g>
+    <rect x="312" y="314" width="248" height="28" fill="#fac967" fill-opacity=".38"/>
+    <rect x="44" y="314" width="268" height="28" fill="#fac967"/>
+    <path d="M57 323.5l4.5 4.5-4.5 4.5" fill="none" stroke="#fefefe" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="74" y="332.5" font-weight="700" fill="#fff">FX</text>
+    <text x="503" y="332.5" text-anchor="end">12 800</text>
+  </g>
+  <g>
+    <rect x="312" y="342" width="248" height="28" fill="#c2dc9c" fill-opacity=".38"/>
+    <rect x="44" y="342" width="268" height="28" fill="#c2dc9c"/>
+    <path d="M57 351.5l4.5 4.5-4.5 4.5" fill="none" stroke="#fefefe" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="74" y="360.5" font-weight="700" fill="#fff">Layout</text>
+    <text x="405" y="360.5" text-anchor="end">22 000</text><text x="454" y="360.5" text-anchor="end">22 000</text>
+  </g>
+  <g>
+    <rect x="312" y="370" width="248" height="28" fill="#afbdc4" fill-opacity=".38"/>
+    <rect x="44" y="370" width="268" height="28" fill="#afbdc4"/>
+    <path d="M57 379.5l4.5 4.5-4.5 4.5" fill="none" stroke="#fefefe" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="74" y="388.5" font-weight="700" fill="#fff">Matte</text>
+    <text x="405" y="388.5" text-anchor="end">2 080</text><text x="454" y="388.5" text-anchor="end">2 080</text>
+  </g>
+  <g class="leaving">
+    <rect x="312" y="398" width="248" height="28" fill="#f89190" fill-opacity=".38"/>
+    <rect x="44" y="398" width="268" height="28" fill="#f89190"/>
+    <path d="M57 407.5l4.5 4.5-4.5 4.5" fill="none" stroke="#fefefe" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="74" y="416.5" font-weight="700" fill="#fff">Modeling</text>
+    <text x="405" y="416.5" text-anchor="end">9 700</text>
+  </g>
+  </g>
+  <path d="M312.5 108V456 M364.5 108V456 M413.5 108V456 M462.5 108V456 M511.5 108V456" stroke="#4e5159" stroke-opacity=".8"/>
+  <path d="M44 138.5h516" stroke="#4e5159"/>
+  </g>
+  <rect x="44.5" y="108.5" width="515" height="317" rx="6" fill="none" stroke="#4e5159"/>
+
+  <!-- Selection of the new entry, above the rows -->
+  <rect x="42" y="286" width="520" height="30" rx="6" fill="none" stroke="#00b242" stroke-width="1.5" filter="url(#sel-shadow)" class="sel"/>
+
+  <!-- Budget analytics -->
+  <rect x="576" y="34" width="180" height="392" rx="10" fill="#40444b"/>
+  <g text-anchor="middle">
+    <text x="666.0" y="76" font-size="19" font-weight="700" class="old">474 010 EUR</text>
+    <text x="666.0" y="76" font-size="19" font-weight="700" class="new">486 610 EUR</text>
+    <text x="666.0" y="96" font-size="8.5" class="old">10 Departments - 49 Entries - 18 Months</text>
+    <text x="666.0" y="96" font-size="8.5" class="new">10 Departments - 50 Entries - 18 Months</text>
+    <g font-size="8.5" font-weight="700" letter-spacing=".8">
+      <text x="666.0" y="132">EXPENSE BREAKDOWN</text>
+      <text x="666.0" y="262">EXPENSE EVOLUTION</text>
+    </g>
+  </g>
+  <g>
+    <path d="M666.0 186L666.00 142.00A44 44 0 0 1 691.86 221.60Z" fill="#1f9688" stroke="#40444b" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M666.0 186L691.86 221.60A44 44 0 0 1 647.27 225.81Z" fill="#1f7ad4" stroke="#40444b" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M666.0 186L647.27 225.81A44 44 0 0 1 635.88 218.07Z" fill="#a743c7" stroke="#40444b" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M666.0 186L635.88 218.07A44 44 0 0 1 630.40 211.86Z" fill="#f5a623" stroke="#40444b" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M666.0 186L630.40 211.86A44 44 0 0 1 622.09 183.24Z" fill="#9cc95a" stroke="#40444b" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M666.0 186L622.09 183.24A44 44 0 0 1 622.35 180.49Z" fill="#8fa0a8" stroke="#40444b" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M666.0 186L622.35 180.49A44 44 0 0 1 633.93 155.88Z" fill="#f44f4f" stroke="#40444b" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M666.0 186L633.93 155.88A44 44 0 0 1 652.40 144.15Z" fill="#f44f4f" stroke="#40444b" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M666.0 186L652.40 144.15A44 44 0 0 1 663.24 142.09Z" fill="#ef5f8f" stroke="#40444b" stroke-width="1.2" stroke-linejoin="round"/>
+    <path d="M666.0 186L663.24 142.09A44 44 0 0 1 666.00 142.00Z" fill="#f5e050" stroke="#40444b" stroke-width="1.2" stroke-linejoin="round"/>
+  </g>
+  <g font-size="7.5" text-anchor="end" fill-opacity=".7">
+    <text x="600" y="284.5">60000</text>
+    <text x="600" y="342.5">30000</text>
+    <text x="600" y="400.5">0</text>
+  </g>
+  <path d="M604 282.5h140M604 340.5h140M604 398.5h140" stroke="#4e5159"/>
+  <g>
+    <rect x="606.0" y="290.2" width="7" height="107.8" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <rect x="617.5" y="299.6" width="7" height="98.4" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <rect x="617.5" y="291.5" width="7" height="8.1" fill="#94afe1" stroke="#336ace" stroke-width=".8" class="grow"/>
+    <rect x="629.0" y="331.5" width="7" height="66.5" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <rect x="629.0" y="323.4" width="7" height="8.1" fill="#94afe1" stroke="#336ace" stroke-width=".8" class="grow"/>
+    <rect x="640.5" y="364.4" width="7" height="33.6" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <rect x="640.5" y="356.2" width="7" height="8.1" fill="#94afe1" stroke="#336ace" stroke-width=".8" class="grow"/>
+    <rect x="652.0" y="379.1" width="7" height="18.9" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <rect x="663.5" y="383.3" width="7" height="14.7" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <rect x="675.0" y="388.3" width="7" height="9.7" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <rect x="686.5" y="388.3" width="7" height="9.7" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <rect x="698.0" y="388.3" width="7" height="9.7" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <rect x="709.5" y="388.3" width="7" height="9.7" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <rect x="721.0" y="388.3" width="7" height="9.7" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <rect x="732.5" y="388.3" width="7" height="9.7" fill="#94afe1" stroke="#336ace" stroke-width=".8"/>
+    <text transform="translate(612.5 407) rotate(-45)" font-size="7.5" text-anchor="end" fill-opacity=".7">03/27</text>
+    <text transform="translate(635.5 407) rotate(-45)" font-size="7.5" text-anchor="end" fill-opacity=".7">05/27</text>
+    <text transform="translate(658.5 407) rotate(-45)" font-size="7.5" text-anchor="end" fill-opacity=".7">07/27</text>
+    <text transform="translate(681.5 407) rotate(-45)" font-size="7.5" text-anchor="end" fill-opacity=".7">09/27</text>
+    <text transform="translate(704.5 407) rotate(-45)" font-size="7.5" text-anchor="end" fill-opacity=".7">11/27</text>
+    <text transform="translate(727.5 407) rotate(-45)" font-size="7.5" text-anchor="end" fill-opacity=".7">01/28</text>
+  </g>
+</svg>
