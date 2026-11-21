@@ -1560,8 +1560,8 @@
           "title": "作業をスケジュールする",
           "subtitle": "競合の検出",
           "content": "プロジェクト期間を定義し、マイルストーンを設定し、チーム全体に作業がどのように分散しているかを確認します。過負荷とギャップを早期に発見して、プロダクションを遅らせる前に調整できます。",
-          "image": "kitsu-schedule.png",
-          "shadow": true,
+          "image": "kitsu-schedule-animated.svg",
+          "imageDark": "kitsu-schedule-animated-dark.svg",
           "reverted": true
         },
         {

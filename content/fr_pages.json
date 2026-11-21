@@ -1560,8 +1560,8 @@
           "title": "Planifiez votre travail",
           "subtitle": "Détection des conflits",
           "content": "Définissez les durées des projets, fixez des jalons et voyez comment le travail est réparti dans votre équipe. Repérez les surcharges et les lacunes tôt pour pouvoir ajuster avant qu'elles ne ralentissent la production.",
-          "image": "kitsu-schedule.png",
-          "shadow": true,
+          "image": "kitsu-schedule-animated.svg",
+          "imageDark": "kitsu-schedule-animated-dark.svg",
           "reverted": true
         },
         {
