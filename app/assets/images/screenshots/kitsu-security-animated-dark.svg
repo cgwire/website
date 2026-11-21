@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 6 792 436" width="1440" height="793" font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#dcddde" role="img" aria-label="SSL security report of a Kitsu instance: overall rating A+, with full scores for the certificate and the protocol support">
+  <!-- 8s loop: the four scores fill up one after the other, then the A+ rating appears -->
+  <style>
+    .bar { animation: 8s ease-out infinite }
+    .b1 { animation-name: b1 } .b2 { animation-name: b2 } .b3 { animation-name: b3 } .b4 { animation-name: b4 }
+    .grade { opacity: 0; animation: grade 8s ease-out infinite }
+    @keyframes b1 { 0%, 4% { transform: scaleX(0) } 14%, 95% { transform: scaleX(1) } 100% { transform: scaleX(0) } }
+    @keyframes b2 { 0%, 10% { transform: scaleX(0) } 20%, 95% { transform: scaleX(1) } 100% { transform: scaleX(0) } }
+    @keyframes b3 { 0%, 16% { transform: scaleX(0) } 26%, 95% { transform: scaleX(1) } 100% { transform: scaleX(0) } }
+    @keyframes b4 { 0%, 22% { transform: scaleX(0) } 32%, 95% { transform: scaleX(1) } 100% { transform: scaleX(0) } }
+    @keyframes grade { 0%, 34% { opacity: 0; transform: scale(.8) } 40%, 94% { opacity: 1; transform: scale(1) } 99%, 100% { opacity: 0; transform: scale(1) } }
+    @media (prefers-reduced-motion: reduce) { .bar, .grade { animation: none } .grade { opacity: 1 } }
+  </style>
+  <defs>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000000" flood-opacity=".45"/></filter>
+
+  </defs>
+  <rect x="16" y="16" width="768" height="400" rx="12" fill="#36393f" filter="url(#card-shadow)"/>
+  <text x="40" y="58" font-size="20" font-weight="700"><tspan fill-opacity=".6">SSL Report: </tspan>magic-studio.kitsu.cloud</text>
+  <text x="40" y="79" font-size="11" fill-opacity=".6"><tspan font-weight="700">Assessed on:</tspan> Thu, 19 Nov 2026 12:41:14 UTC</text>
+
+  <!-- Summary -->
+  <rect x="40.500" y="96.500" width="719" height="296" rx="6" fill="#36393f" stroke="#4e5159"/>
+  <path d="M41 137V102.500a5.500 5.500 0 0 1 5.500-5.500H753.500a5.500 5.500 0 0 1 5.500 5.500V137Z" fill="#40444b"/>
+  <path d="M40.500 137.500H759.500" stroke="#4e5159"/>
+  <text x="56" y="123" font-size="15" font-weight="700" fill-opacity=".6">Summary</text>
+
+  <text x="200" y="164" font-size="11" font-weight="700" fill-opacity=".6" text-anchor="middle">Overall Rating</text>
+  <rect x="156.500" y="176.500" width="87" height="87" rx="8" fill="#40444b" stroke="#4e5159"/>
+  <g transform="translate(200 220)"><g class="grade">
+    <rect x="-44" y="-44" width="88" height="88" rx="8" fill="#00b242"/>
+    <text y="16" fill="#fff" font-size="46" font-weight="700" text-anchor="middle">A+</text>
+  </g></g>
+
+  <text x="438" y="182" font-size="11" font-weight="700" text-anchor="end">Certificate</text><g transform="translate(448 168)"><rect class="bar b1" width="280" height="20" fill="#00b242"/></g>
+  <text x="438" y="212" font-size="11" font-weight="700" text-anchor="end">Protocol Support</text><g transform="translate(448 198)"><rect class="bar b2" width="280" height="20" fill="#00b242"/></g>
+  <text x="438" y="242" font-size="11" font-weight="700" text-anchor="end">Key Exchange</text><g transform="translate(448 228)"><rect class="bar b3" width="252" height="20" fill="#00b242"/></g>
+  <text x="438" y="272" font-size="11" font-weight="700" text-anchor="end">Cipher Strength</text><g transform="translate(448 258)"><rect class="bar b4" width="252" height="20" fill="#00b242"/></g>
+  <g fill="none" stroke="#4e5159"><path d="M448.500 162V286.500H734"/><path d="M728.500 162V286" stroke-dasharray="2 3"/><path d="M448.500 286v4"/><path d="M504.500 286v4"/><path d="M560.500 286v4"/><path d="M616.500 286v4"/><path d="M672.500 286v4"/><path d="M728.500 286v4"/></g>
+  <g font-size="10" fill-opacity=".6" text-anchor="middle"><text x="448" y="303">0</text><text x="504" y="303">20</text><text x="560" y="303">40</text><text x="616" y="303">60</text><text x="672" y="303">80</text><text x="728" y="303">100</text></g>
+
+  <rect x="56" y="322" width="688" height="26" rx="4" fill="#2e4b3f"/>
+  <rect x="56" y="354" width="688" height="26" rx="4" fill="#2e4b3f"/>
+  <g font-size="11.500" font-weight="700" text-anchor="middle">
+    <text x="400" y="339">HTTP Strict Transport Security (HSTS) with long duration deployed on this server.</text>
+    <text x="400" y="371">DNS Certification Authority Authorization (CAA) policy found for this domain.</text>
+  </g>
+</svg>

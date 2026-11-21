@@ -1473,8 +1473,8 @@
           "subtitle": "Enterprise-grade security",
           "title": "Stop worrying about breaches and compliance",
           "content": "All access to your instance goes through encrypted connections, secrets live in a dedicated vault, and installations are kept up to date. You know exactly who operates your infrastructure: a small, named team, not an anonymous department. A security document is available upon request.",
-          "image": "kitsu-security.png",
-          "shadow": true,
+          "image": "kitsu-security-animated.svg",
+          "imageDark": "kitsu-security-animated-dark.svg",
           "colored": true,
           "gradient": 1
         },

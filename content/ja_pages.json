@@ -1498,7 +1498,8 @@
           "title": "侵害やコンプライアンスの心配から解放されましょう",
           "subtitle": "エンタープライズグレードのセキュリティ",
           "content": "インスタンスへのアクセスはすべて暗号化された接続を経由し、シークレットは専用のボールトで管理され、インストールは常に最新に保たれます。誰がインフラストラクチャを運用しているかを正確に把握できます。匿名の部署ではなく、顔の見える少人数のチームです。セキュリティドキュメントはリクエストに応じて提供されます。",
-          "image": "kitsu-security.png",
+          "image": "kitsu-security-animated.svg",
+          "imageDark": "kitsu-security-animated-dark.svg",
           "gradient": 1,
           "shadow": true,
           "colored": true
