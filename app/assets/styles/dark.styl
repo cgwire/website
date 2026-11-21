@@ -556,9 +556,14 @@ html.has-dark-mode.theme-dark
             .community-subtitle
                 color dark-text-muted
 
-            // Logos are made for light backgrounds: keep light tiles.
+            // Logos are made for light backgrounds: keep light tiles, tinted
+            // with the site blue.
             .software
-                background-color #E3E5E8
+                background linear-gradient(160deg, #D3DFF2, #B4C7E6)
+                border-color dark-blue-border
+
+                &[href]:hover
+                    border-color #7FA6DD
 
         // --- Free tools ---
 
