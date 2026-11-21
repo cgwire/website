@@ -1955,8 +1955,8 @@
           "title": "私たちと一緒に製品を形作る",
           "subtitle": "ロードマップへの影響力",
           "content": "Kitsuが特定のニーズをカバーしていない場合、私たちは単にチケットを記録するだけではありません。機能の範囲を定義して構築するためにあなたと一緒に取り組みます。あなたのプロダクション要件が次に構築されるものを直接形作ります。",
-          "image": "kitsu-roadmap.png",
-          "shadow": true,
+          "image": "kitsu-roadmap-animated.svg",
+          "imageDark": "kitsu-roadmap-animated-dark.svg",
           "colored": true,
           "gradient": 3
         }

@@ -1903,8 +1903,8 @@
           "title": "Shape the product with us",
           "subtitle": "Roadmap influence",
           "content": "When Kitsu does not cover a specific need, we do not just log a ticket. We work with you to scope and build the feature. Your production requirements directly shape what gets built next.",
-          "image": "kitsu-roadmap.png",
-          "shadow": true,
+          "image": "kitsu-roadmap-animated.svg",
+          "imageDark": "kitsu-roadmap-animated-dark.svg",
           "colored": true,
           "gradient": 3
         }

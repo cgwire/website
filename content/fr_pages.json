@@ -1955,8 +1955,8 @@
           "title": "Façonnez le produit avec nous",
           "subtitle": "Influence sur la feuille de route",
           "content": "Quand Kitsu ne couvre pas un besoin spécifique, nous ne nous contentons pas d'enregistrer un ticket. Nous travaillons avec vous pour définir et construire la fonctionnalité. Vos exigences de production façonnent directement ce qui sera construit ensuite.",
-          "image": "kitsu-roadmap.png",
-          "shadow": true,
+          "image": "kitsu-roadmap-animated.svg",
+          "imageDark": "kitsu-roadmap-animated-dark.svg",
           "colored": true,
           "gradient": 3
         }
