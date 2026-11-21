@@ -51,10 +51,18 @@
           data-aos-delay="200"
         >
           <NuxtImg
-            :class="{ screenshot: feature.shadow }"
+            :class="{ screenshot: feature.shadow, 'only-light': feature.imageDark }"
             :src="'/images/screenshots/' + feature.image"
             :alt="feature.title"
-            format="webp"
+            :format="feature.image.endsWith('.svg') ? undefined : 'webp'"
+          />
+          <NuxtImg
+            class="only-dark"
+            :class="{ screenshot: feature.shadow }"
+            :src="'/images/screenshots/' + feature.imageDark"
+            :alt="feature.title"
+            :format="feature.imageDark.endsWith('.svg') ? undefined : 'webp'"
+            v-if="feature.imageDark"
           />
         </div>
       </div>

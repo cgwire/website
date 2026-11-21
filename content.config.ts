@@ -81,6 +81,7 @@ const PAGE_SCHEMAS = {
         subtitle: z.string(),
         content: z.string(),
         image: z.string(),
+        imageDark: z.string().optional(),
         colored: z.boolean().optional(),
         shadow: z.boolean().optional(),
         gradient: z.union([z.number(), z.boolean()]).optional(),

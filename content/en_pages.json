@@ -1807,8 +1807,8 @@
           "subtitle": "Todo-Lists",
           "title": "Set artist priorities",
           "content": "Each artist sees exactly what is assigned to them, in what order, and at what stage. They can update progress without chasing a supervisor for instructions. Less back-and-forth means more time on the work that matters.",
-          "image": "kitsu-todos.png",
-          "shadow": true,
+          "image": "kitsu-todos-animated.svg",
+          "imageDark": "kitsu-todos-animated-dark.svg",
           "reverted": true
         },
         {
@@ -1816,8 +1816,8 @@
           "subtitle": "Daily Supervision Tasks",
           "title": "Give supervisors a clear overview",
           "content": "Supervisors can instantly access a department-wide view of production through the Daily Supervision Tasks page. This makes it easy to monitor progress and keep work moving without manually collecting updates from artists.",
-          "image": "kitsu-supervision.png",
-          "shadow": true,
+          "image": "kitsu-supervision-animated.svg",
+          "imageDark": "kitsu-supervision-animated-dark.svg",
           "colored": true,
           "gradient": 2
         },

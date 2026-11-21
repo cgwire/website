@@ -1850,8 +1850,8 @@
           "subtitle": "Listes de tâches",
           "title": "Définissez les priorités des artistes",
           "content": "Chaque artiste voit exactement ce qui lui est assigné, dans quel ordre et à quelle étape. Ils peuvent mettre à jour leur progression sans courir après un superviseur pour obtenir des instructions. Moins d'allers-retours signifie plus de temps sur le travail qui compte.",
-          "image": "kitsu-todos.png",
-          "shadow": true,
+          "image": "kitsu-todos-animated.svg",
+          "imageDark": "kitsu-todos-animated-dark.svg",
           "reverted": true
         },
         {
@@ -1859,8 +1859,8 @@
           "subtitle": "Tâches quotidiennes de supervision",
           "title": "Donnez à vos superviseurs une vue d'ensemble claire",
           "content": "Les superviseurs peuvent accéder instantanément à une vue globale de la production à l’échelle du département grâce à la page des tâches quotidiennes de supervision. Cela facilite le suivi de l’avancement et le maintien du flux de production sans avoir à collecter manuellement les mises à jour auprès des artistes.",
-          "image": "kitsu-supervision.png",
-          "shadow": true,
+          "image": "kitsu-supervision-animated.svg",
+          "imageDark": "kitsu-supervision-animated-dark.svg",
           "colored": true,
           "gradient": 2
         },
