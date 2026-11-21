@@ -1747,7 +1747,7 @@
           "subtitle": "チャット統合",
           "title": "プロダクションの更新を共有する",
           "content": "KitsuをSlackまたはDiscordに接続し、チームがすでにコミュニケーションをとっている場所にタスクの更新とプロダクションアラートを配信します。重要な情報は、誰かが探しに行くことなく即座に適切な人々に届きます。",
-          "image": "kitsu-slack.png",
+          "image": "kitsu-slack-animated.svg",
           "colored": true,
           "gradient": 3
         }
@@ -1877,7 +1877,7 @@
           "subtitle": "SlackとDiscordの通知",
           "title": "関連する更新を目立たせる",
           "content": "Kitsuのアクティビティをチームがすでに監視しているチャンネルにルーティングします。コメント、ステータス変更、新しいプレビューがSlackまたはDiscordに直接表示されるため、適切な人が別のプラットフォームをチェックすることなく対応できます。",
-          "image": "kitsu-slack.png",
+          "image": "kitsu-slack-animated.svg",
           "colored": true,
           "gradient": 3
         }

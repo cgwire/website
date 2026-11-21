@@ -1713,7 +1713,7 @@
           "subtitle": "Chat integrations",
           "title": "Share your production update",
           "content": "Connect Kitsu to Slack or Discord and deliver task updates and production alerts where your team already communicates. Critical information reaches the right people immediately, without anyone having to go look for it.",
-          "image": "kitsu-slack.png",
+          "image": "kitsu-slack-animated.svg",
           "colored": true,
           "gradient": 3
         }
@@ -1834,7 +1834,7 @@
           "subtitle": "Slack and Discord notifications",
           "title": "Make relevant updates pop",
           "content": "Route Kitsu activity into the channels your team already monitors. Comments, status changes, and new previews appear directly in Slack or Discord so the right people respond without having to check a separate platform.",
-          "image": "kitsu-slack.png",
+          "image": "kitsu-slack-animated.svg",
           "colored": true,
           "gradient": 3
         }
