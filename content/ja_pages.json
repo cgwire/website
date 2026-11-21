@@ -1585,8 +1585,8 @@
           "title": "費やした時間とコストを追跡する",
           "subtitle": "タイムシート",
           "content": "アーティストはKitsuに直接時間を記録します。アーティスト、アセット、またはショット別の明確な内訳を取得して、プロダクション時間が実際にどこに使われているかを常に把握でき、支出超過を事前に予測できます。",
-          "image": "kitsu-timesheets.png",
-          "shadow": true,
+          "image": "kitsu-timesheets-animated.svg",
+          "imageDark": "kitsu-timesheets-animated-dark.svg",
           "colored": true,
           "gradient": 3
         },

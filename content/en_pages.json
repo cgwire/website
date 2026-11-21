@@ -1560,8 +1560,8 @@
           "title": "Track time spent and costs",
           "subtitle": "Timesheets",
           "content": "Artists log time directly in Kitsu. You get a clear breakdown by artist, asset, or shot so you always know where your production hours are actually going, and you can anticipate overspending.",
-          "image": "kitsu-timesheets.png",
-          "shadow": true,
+          "image": "kitsu-timesheets-animated.svg",
+          "imageDark": "kitsu-timesheets-animated-dark.svg",
           "colored": true,
           "gradient": 3
         },

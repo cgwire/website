@@ -1585,8 +1585,8 @@
           "title": "Suivez le temps passé et les coûts",
           "subtitle": "Feuilles de temps",
           "content": "Les artistes enregistrent le temps directement dans Kitsu. Vous obtenez une répartition claire par artiste, asset ou plan pour savoir toujours où vont réellement vos heures de production, et vous pouvez anticiper les dépassements de coûts.",
-          "image": "kitsu-timesheets.png",
-          "shadow": true,
+          "image": "kitsu-timesheets-animated.svg",
+          "imageDark": "kitsu-timesheets-animated-dark.svg",
           "colored": true,
           "gradient": 3
         },
