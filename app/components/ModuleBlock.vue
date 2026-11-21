@@ -8,9 +8,9 @@
           format="webp"
         />
       </div>
-      <h2>
+      <h3>
         {{ $t(`${sectionKey}.header.tagline`) }}
-      </h2>
+      </h3>
       <ul>
         <li class="module-description">
           {{ $t(`${sectionKey}.${feature1Key}.title`) }}
@@ -40,10 +40,18 @@ ul
   margin-left 0em
   list-style none
 
-ul li:before
-  content '✓ '
+li
+  padding-left 1.3em
+  position relative
 
-.module-block h2
-  margin-top 0.5em
+li:before
+  color cgwiregreen
+  content '✓'
+  font-weight bold
+  left 0
+  position absolute
+
+.module-block h3
   font-size 1.3rem
+  margin-top 0.5em
 </style>

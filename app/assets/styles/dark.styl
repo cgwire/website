@@ -350,8 +350,19 @@ html.has-dark-mode.theme-dark
             background dark-blue
             border-color dark-blue-border
 
+            &:hover
+            &:focus-visible
+                border-color dark-blue-border + 30%
+                box-shadow 0 8px 20px rgba(0, 0, 0, 0.2)
+
             .module-description
                 color dark-text-muted
+
+                &:before
+                    color cgwiregreen-light
+
+            img
+                background rgba(0, 0, 0, 0.18)
 
         // Logos in these tiles are dark on light: keep light tiles.
         .successes img

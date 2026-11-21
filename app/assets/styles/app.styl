@@ -267,26 +267,34 @@ div.body
     // --- Modules ---
 
     .modules
+        // .flexrow centers its items: stretch keeps the three tiles the same
+        // height when a locale wraps a line.
+        align-items stretch
+        gap 20px
         margin auto
         margin-bottom 10px
 
         .module-block
             flex 1
-            margin-right 10px
-            max-width 310px
+            max-width 320px
             background lightblue
             border-radius 1em
             border 1px solid lightblue - 10%
             padding 1em
             padding-bottom 1.1em
+            transition border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease
 
-            &:last-child
-                margin-right 0px
+            &:hover
+            &:focus-visible
+                border-color lightblue - 30%
+                box-shadow 0 8px 20px rgba(63, 111, 174, 0.18)
+                transform translateY(-3px)
 
             .module-description
                 color grey
 
             img
+                background white
                 border-radius 1em
                 width 100%
 
@@ -1691,7 +1699,6 @@ div.body
                     // top-notch-support one is smaller than the others.
                     width 100%
                     max-width 360px
-                    margin 0 0 1em 0
 
                 .customer-story.landing-block
                     margin 0 1em 1em 1em
