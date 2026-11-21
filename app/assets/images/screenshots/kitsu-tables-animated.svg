@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 6 792 440" width="1440" height="800" font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#363636" role="img" aria-label="Kitsu breakdown page: the assets cast in each shot, sorted by type, with the list of available assets on the side">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 6 792 530" width="1440" height="964" font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#363636" role="img" aria-label="Kitsu breakdown page: the assets cast in each shot, sorted by type, with the list of available assets on the side">
   <!-- 9s loop: shot 010_0030 is selected, the barbecue prop is picked in the available assets and added to its casting -->
   <style>
     .focus { opacity: 0; animation: focus 9s ease-in-out infinite }
@@ -8,10 +8,10 @@
     .count-b { opacity: 0; animation: count-b 9s infinite }
     @keyframes focus { 0%, 14% { opacity: 0 } 18%, 50% { opacity: 1 } 55%, 100% { opacity: 0 } }
     @keyframes fly {
-      0%, 30% { opacity: 0; transform: translate(595.6px, 224.0px) scale(1) }
-      32% { opacity: 1; transform: translate(595.6px, 224.0px) scale(1) }
-      44% { opacity: 1; transform: translate(339px, 378px) scale(.8) }
-      46%, 100% { opacity: 0; transform: translate(339px, 378px) scale(.8) }
+      0%, 30% { opacity: 0; transform: translate(606px, 254px) scale(1) }
+      32% { opacity: 1; transform: translate(606px, 254px) scale(1) }
+      44% { opacity: 1; transform: translate(346px, 451px) scale(1) }
+      46%, 100% { opacity: 0; transform: translate(346px, 451px) scale(1) }
     }
     @keyframes new { 0%, 43% { opacity: 0 } 46%, 92% { opacity: 1 } 96%, 100% { opacity: 0 } }
     @keyframes count-a { 0%, 44% { opacity: 1 } 45%, 94% { opacity: 0 } 95%, 100% { opacity: 1 } }
@@ -54,7 +54,7 @@
   </defs>
 
   <!-- Page card -->
-  <rect x="16" y="16" width="768" height="414" rx="12" fill="#fff" filter="url(#card-shadow)"/>
+  <rect x="16" y="16" width="768" height="504" rx="12" fill="#fff" filter="url(#card-shadow)"/>
 
   <!-- Toolbar -->
   <text x="44" y="49" font-size="9" font-weight="700" letter-spacing="1.2" fill-opacity=".5">FOR</text>
@@ -82,57 +82,57 @@
     <text x="416" y="132">SET</text>
   </g>
   <path d="M44 142.5h484" stroke="#dbdbdb"/>
-  <path d="M44 233.5h484M44 323.5h484M44 413.5h484" stroke="#e9e9e9"/>
-  <path d="M176.5 120v293" stroke="#dbdbdb"/>
-  <path d="M292.5 120v293M408.5 120v293" stroke="#e9e9e9"/>
+  <path d="M44 261.5h484M44 379.5h484M44 497.5h484" stroke="#e9e9e9"/>
+  <path d="M176.5 120v377" stroke="#dbdbdb"/>
+  <path d="M292.5 120v377M408.5 120v377" stroke="#e9e9e9"/>
   <use href="#shot-1" x="52" y="174" width="50" height="28"/><rect x="52" y="174" width="50" height="28" rx="3" fill="none" stroke="#dbdbdb"/>
   <text x="110" y="185" font-size="11" font-weight="700" fill-opacity=".8">010</text><text x="110" y="200" font-size="11" font-weight="700" fill-opacity=".8">010_0010</text>
   <text x="184" y="161" font-size="11">4 assets</text>
-  <rect x="184" y="169" width="33" height="24" rx="3" fill="#008732"/><rect x="184" y="169" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#c-bird" x="184" y="174.4" width="24" height="13.2"/><text transform="translate(212.6 181) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="223" y="169" width="33" height="24" rx="3" fill="#008732"/><rect x="223" y="169" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#c-butterfly" x="223" y="169.0" width="24" height="24.0"/><text transform="translate(251.6 181) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="184" y="198" width="33" height="24" rx="3" fill="#008732"/><rect x="184" y="198" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#c-sprite" x="184" y="198.0" width="24" height="24.0"/><text transform="translate(212.6 210) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="223" y="198" width="33" height="24" rx="3" fill="#008732"/><rect x="223" y="198" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#c-elder" x="223" y="198.0" width="24" height="24.0"/><text transform="translate(251.6 210) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
+  <rect x="184" y="169" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-bird" x="184" y="178.0" width="40" height="22.0"/>
+  <rect x="230" y="169" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-butterfly" x="230" y="169.0" width="40" height="40.0"/>
+  <rect x="184" y="215" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-sprite" x="184" y="215.0" width="40" height="40.0"/>
+  <rect x="230" y="215" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-elder" x="230" y="215.0" width="40" height="40.0"/>
   <text x="300" y="161" font-size="11">4 assets</text>
-  <rect x="300" y="169" width="33" height="24" rx="3" fill="#008732"/><rect x="300" y="169" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-backpack" x="300" y="169.0" width="24" height="24.0"/><text transform="translate(328.6 181) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="339" y="169" width="33" height="24" rx="3" fill="#008732"/><rect x="339" y="169" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-cans" x="339" y="169.0" width="24" height="24.0"/><text transform="translate(367.6 181) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="300" y="198" width="33" height="24" rx="3" fill="#008732"/><rect x="300" y="198" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-slug" x="300" y="203.4" width="24" height="13.2"/><text transform="translate(328.6 210) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="339" y="198" width="33" height="24" rx="3" fill="#008732"/><rect x="339" y="198" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-oil" x="339" y="198.0" width="24" height="24.0"/><text transform="translate(367.6 210) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
+  <rect x="300" y="169" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-backpack" x="300" y="169.0" width="40" height="40.0"/>
+  <rect x="346" y="169" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-cans" x="346" y="169.0" width="40" height="40.0"/>
+  <rect x="300" y="215" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-slug" x="300" y="224.0" width="40" height="22.0"/>
+  <rect x="346" y="215" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-oil" x="346" y="215.0" width="40" height="40.0"/>
   <text x="416" y="161" font-size="11">2 assets</text>
-  <rect x="416" y="169" width="33" height="24" rx="3" fill="#008732"/><rect x="416" y="169" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#s-forest" x="416" y="176.2" width="24" height="9.6"/><text transform="translate(444.6 181) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="455" y="169" width="33" height="24" rx="3" fill="#008732"/><rect x="455" y="169" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#s-night" x="455" y="176.2" width="24" height="9.6"/><text transform="translate(483.6 181) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <use href="#shot-2" x="52" y="264" width="50" height="28"/><rect x="52" y="264" width="50" height="28" rx="3" fill="none" stroke="#dbdbdb"/>
-  <text x="110" y="275" font-size="11" font-weight="700" fill-opacity=".8">010</text><text x="110" y="290" font-size="11" font-weight="700" fill-opacity=".8">010_0020</text>
-  <text x="184" y="251" font-size="11">4 assets</text>
-  <rect x="184" y="259" width="33" height="24" rx="3" fill="#008732"/><rect x="184" y="259" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#c-butterfly" x="184" y="259.0" width="24" height="24.0"/><text transform="translate(212.6 271) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="223" y="259" width="33" height="24" rx="3" fill="#008732"/><rect x="223" y="259" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#c-sprite" x="223" y="259.0" width="24" height="24.0"/><text transform="translate(251.6 271) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="184" y="288" width="33" height="24" rx="3" fill="#008732"/><rect x="184" y="288" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#c-elder" x="184" y="288.0" width="24" height="24.0"/><text transform="translate(212.6 300) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="223" y="288" width="33" height="24" rx="3" fill="#008732"/><rect x="223" y="288" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#c-jay" x="223" y="293.4" width="24" height="13.2"/><text transform="translate(251.6 300) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <text x="300" y="251" font-size="11">4 assets</text>
-  <rect x="300" y="259" width="33" height="24" rx="3" fill="#008732"/><rect x="300" y="259" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-backpack" x="300" y="259.0" width="24" height="24.0"/><text transform="translate(328.6 271) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="339" y="259" width="33" height="24" rx="3" fill="#008732"/><rect x="339" y="259" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-cans" x="339" y="259.0" width="24" height="24.0"/><text transform="translate(367.6 271) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="300" y="288" width="33" height="24" rx="3" fill="#008732"/><rect x="300" y="288" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-tongs" x="300" y="288.0" width="24" height="24.0"/><text transform="translate(328.6 300) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="339" y="288" width="33" height="24" rx="3" fill="#008732"/><rect x="339" y="288" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-chips" x="339" y="288.0" width="24" height="24.0"/><text transform="translate(367.6 300) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <text x="416" y="251" font-size="11">1 asset</text>
-  <rect x="416" y="259" width="33" height="24" rx="3" fill="#008732"/><rect x="416" y="259" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#s-forest" x="416" y="266.2" width="24" height="9.6"/><text transform="translate(444.6 271) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <use href="#shot-3" x="52" y="354" width="50" height="28"/><rect x="52" y="354" width="50" height="28" rx="3" fill="none" stroke="#dbdbdb"/>
-  <text x="110" y="365" font-size="11" font-weight="700" fill-opacity=".8">010</text><text x="110" y="380" font-size="11" font-weight="700" fill-opacity=".8">010_0030</text>
-  <text x="184" y="341" font-size="11">3 assets</text>
-  <rect x="184" y="349" width="33" height="24" rx="3" fill="#008732"/><rect x="184" y="349" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#c-sprite" x="184" y="349.0" width="24" height="24.0"/><text transform="translate(212.6 361) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="223" y="349" width="33" height="24" rx="3" fill="#008732"/><rect x="223" y="349" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#c-elder" x="223" y="349.0" width="24" height="24.0"/><text transform="translate(251.6 361) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="184" y="378" width="33" height="24" rx="3" fill="#008732"/><rect x="184" y="378" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#c-ladybug" x="184" y="378.0" width="24" height="24.0"/><text transform="translate(212.6 390) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <text x="300" y="341" font-size="11" class="count-a">3 assets</text><text x="300" y="341" font-size="11" class="count-b">4 assets</text>
-  <rect x="300" y="349" width="33" height="24" rx="3" fill="#008732"/><rect x="300" y="349" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-backpack" x="300" y="349.0" width="24" height="24.0"/><text transform="translate(328.6 361) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="339" y="349" width="33" height="24" rx="3" fill="#008732"/><rect x="339" y="349" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-cans" x="339" y="349.0" width="24" height="24.0"/><text transform="translate(367.6 361) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <rect x="300" y="378" width="33" height="24" rx="3" fill="#008732"/><rect x="300" y="378" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-slug" x="300" y="383.4" width="24" height="13.2"/><text transform="translate(328.6 390) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <text x="416" y="341" font-size="11">1 asset</text>
-  <rect x="416" y="349" width="33" height="24" rx="3" fill="#008732"/><rect x="416" y="349" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#s-night" x="416" y="356.2" width="24" height="9.6"/><text transform="translate(444.6 361) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text>
-  <g class="new"><rect x="339" y="378" width="33" height="24" rx="3" fill="#008732"/><rect x="339" y="378" width="24" height="24" rx="3" fill="#eeeeee"/><use href="#p-grill" x="339" y="378.0" width="24" height="24.0"/><text transform="translate(367.6 390) rotate(-90)" text-anchor="middle" dy="2" font-size="5.6" fill="#fff">animate</text></g>
+  <rect x="416" y="169" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#s-forest" x="416" y="181.0" width="40" height="16.0"/>
+  <rect x="462" y="169" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#s-night" x="462" y="181.0" width="40" height="16.0"/>
+  <use href="#shot-2" x="52" y="292" width="50" height="28"/><rect x="52" y="292" width="50" height="28" rx="3" fill="none" stroke="#dbdbdb"/>
+  <text x="110" y="303" font-size="11" font-weight="700" fill-opacity=".8">010</text><text x="110" y="318" font-size="11" font-weight="700" fill-opacity=".8">010_0020</text>
+  <text x="184" y="279" font-size="11">4 assets</text>
+  <rect x="184" y="287" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-butterfly" x="184" y="287.0" width="40" height="40.0"/>
+  <rect x="230" y="287" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-sprite" x="230" y="287.0" width="40" height="40.0"/>
+  <rect x="184" y="333" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-elder" x="184" y="333.0" width="40" height="40.0"/>
+  <rect x="230" y="333" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-jay" x="230" y="342.0" width="40" height="22.0"/>
+  <text x="300" y="279" font-size="11">4 assets</text>
+  <rect x="300" y="287" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-backpack" x="300" y="287.0" width="40" height="40.0"/>
+  <rect x="346" y="287" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-cans" x="346" y="287.0" width="40" height="40.0"/>
+  <rect x="300" y="333" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-tongs" x="300" y="333.0" width="40" height="40.0"/>
+  <rect x="346" y="333" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-chips" x="346" y="333.0" width="40" height="40.0"/>
+  <text x="416" y="279" font-size="11">1 asset</text>
+  <rect x="416" y="287" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#s-forest" x="416" y="299.0" width="40" height="16.0"/>
+  <use href="#shot-3" x="52" y="410" width="50" height="28"/><rect x="52" y="410" width="50" height="28" rx="3" fill="none" stroke="#dbdbdb"/>
+  <text x="110" y="421" font-size="11" font-weight="700" fill-opacity=".8">010</text><text x="110" y="436" font-size="11" font-weight="700" fill-opacity=".8">010_0030</text>
+  <text x="184" y="397" font-size="11">3 assets</text>
+  <rect x="184" y="405" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-sprite" x="184" y="405.0" width="40" height="40.0"/>
+  <rect x="230" y="405" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-elder" x="230" y="405.0" width="40" height="40.0"/>
+  <rect x="184" y="451" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-ladybug" x="184" y="451.0" width="40" height="40.0"/>
+  <text x="300" y="397" font-size="11" class="count-a">3 assets</text><text x="300" y="397" font-size="11" class="count-b">4 assets</text>
+  <rect x="300" y="405" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-backpack" x="300" y="405.0" width="40" height="40.0"/>
+  <rect x="346" y="405" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-cans" x="346" y="405.0" width="40" height="40.0"/>
+  <rect x="300" y="451" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-slug" x="300" y="460.0" width="40" height="22.0"/>
+  <text x="416" y="397" font-size="11">1 asset</text>
+  <rect x="416" y="405" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#s-night" x="416" y="417.0" width="40" height="16.0"/>
+  <g class="new"><rect x="346" y="451" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-grill" x="346" y="451.0" width="40" height="40.0"/></g>
 
   <!-- Selected shot, drawn above the cells -->
-  <rect x="44" y="324" width="484" height="88" rx="6" fill="none" stroke="#00b242" stroke-width="1.6" filter="url(#sel-shadow)"/>
+  <rect x="44" y="380" width="484" height="116" rx="6" fill="none" stroke="#00b242" stroke-width="1.6" filter="url(#sel-shadow)"/>
 
   <!-- Available assets -->
-  <path d="M544.5 16v414" stroke="#dbdbdb"/>
+  <path d="M544.5 16v504" stroke="#dbdbdb"/>
   <text x="560" y="48" font-size="12" font-weight="700" letter-spacing="1.2" fill-opacity=".5">ALL AVAILABLE ASSETS</text>
   <rect x="560.5" y="62.5" width="176" height="28" rx="14" fill="#fff" stroke="#dbdbdb"/>
   <g fill="none" stroke="#363636" stroke-opacity=".6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -141,31 +141,31 @@
     <path d="M748.5 71.5h11l-4.2 5v4.5l-2.6 1.3v-5.8Z"/>
   </g>
   <text x="560" y="116" font-size="11" letter-spacing=".6" fill-opacity=".6">CHARACTERS</text><path d="M560 121.5h208" stroke="#dbdbdb"/>
-  <rect x="560.0" y="128.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#c-bird" x="560.0" y="134.75" width="30" height="16.5"/>
-  <rect x="595.6" y="128.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#c-butterfly" x="595.6" y="128.0" width="30" height="30.0"/>
-  <rect x="631.2" y="128.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#c-sprite" x="631.2" y="128.0" width="30" height="30.0"/>
-  <rect x="666.8" y="128.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#c-elder" x="666.8" y="128.0" width="30" height="30.0"/>
-  <rect x="702.4" y="128.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#c-jay" x="702.4" y="134.75" width="30" height="16.5"/>
-  <rect x="738.0" y="128.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#c-ladybug" x="738.0" y="128.0" width="30" height="30.0"/>
-  <rect x="560.0" y="163.6" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#c-victoria" x="560.0" y="163.6" width="30" height="30.0"/>
-  <text x="560" y="212" font-size="11" letter-spacing=".6" fill-opacity=".6">PROPS</text><path d="M560 217.5h208" stroke="#dbdbdb"/>
-  <rect x="560.0" y="224.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#p-backpack" x="560.0" y="224.0" width="30" height="30.0"/>
-  <rect x="595.6" y="224.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#p-grill" x="595.6" y="224.0" width="30" height="30.0"/>
-  <rect x="631.2" y="224.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#p-tongs" x="631.2" y="224.0" width="30" height="30.0"/>
-  <rect x="666.8" y="224.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#p-cans" x="666.8" y="224.0" width="30" height="30.0"/>
-  <rect x="702.4" y="224.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#p-rings" x="702.4" y="229.5" width="30" height="19.0"/>
-  <rect x="738.0" y="224.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#p-slug" x="738.0" y="230.75" width="30" height="16.5"/>
-  <rect x="560.0" y="259.6" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#p-oil" x="560.0" y="259.6" width="30" height="30.0"/>
-  <rect x="595.6" y="259.6" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#p-chips" x="595.6" y="259.6" width="30" height="30.0"/>
-  <text x="560" y="308" font-size="11" letter-spacing=".6" fill-opacity=".6">SET</text><path d="M560 313.5h208" stroke="#dbdbdb"/>
-  <rect x="560.0" y="320.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#s-forest" x="560.0" y="329.0" width="30" height="12.0"/>
-  <rect x="595.6" y="320.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#s-night" x="595.6" y="329.0" width="30" height="12.0"/>
-  <text x="560" y="370" font-size="11" letter-spacing=".6" fill-opacity=".6">LIBRARY</text><path d="M560 375.5h208" stroke="#dbdbdb"/>
-  <rect x="560.0" y="382.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#l-tree" x="560.0" y="382.0" width="30" height="30.0"/>
-  <rect x="595.6" y="382.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#l-props" x="595.6" y="391.0" width="30" height="12.0"/>
-  <rect x="631.2" y="382.0" width="30" height="30" rx="4" fill="#eeeeee"/><use href="#l-oak" x="631.2" y="382.0" width="30" height="30.0"/>
-  <rect x="593.6" y="222.0" width="34" height="34" rx="5" fill="none" stroke="#00b242" stroke-width="1.6" filter="url(#sel-shadow)" class="focus"/>
+  <rect x="560" y="128" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-bird" x="560" y="137.0" width="40" height="22.0"/>
+  <rect x="606" y="128" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-butterfly" x="606" y="128.0" width="40" height="40.0"/>
+  <rect x="652" y="128" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-sprite" x="652" y="128.0" width="40" height="40.0"/>
+  <rect x="698" y="128" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-elder" x="698" y="128.0" width="40" height="40.0"/>
+  <rect x="560" y="174" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-jay" x="560" y="183.0" width="40" height="22.0"/>
+  <rect x="606" y="174" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-ladybug" x="606" y="174.0" width="40" height="40.0"/>
+  <rect x="652" y="174" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#c-victoria" x="652" y="174.0" width="40" height="40.0"/>
+  <text x="560" y="242" font-size="11" letter-spacing=".6" fill-opacity=".6">PROPS</text><path d="M560 247.5h208" stroke="#dbdbdb"/>
+  <rect x="560" y="254" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-backpack" x="560" y="254.0" width="40" height="40.0"/>
+  <rect x="606" y="254" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-grill" x="606" y="254.0" width="40" height="40.0"/>
+  <rect x="652" y="254" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-tongs" x="652" y="254.0" width="40" height="40.0"/>
+  <rect x="698" y="254" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-cans" x="698" y="254.0" width="40" height="40.0"/>
+  <rect x="560" y="300" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-rings" x="560" y="307.33" width="40" height="25.33"/>
+  <rect x="606" y="300" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-slug" x="606" y="309.0" width="40" height="22.0"/>
+  <rect x="652" y="300" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-oil" x="652" y="300.0" width="40" height="40.0"/>
+  <rect x="698" y="300" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#p-chips" x="698" y="300.0" width="40" height="40.0"/>
+  <text x="560" y="368" font-size="11" letter-spacing=".6" fill-opacity=".6">SET</text><path d="M560 373.5h208" stroke="#dbdbdb"/>
+  <rect x="560" y="380" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#s-forest" x="560" y="392.0" width="40" height="16.0"/>
+  <rect x="606" y="380" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#s-night" x="606" y="392.0" width="40" height="16.0"/>
+  <text x="560" y="448" font-size="11" letter-spacing=".6" fill-opacity=".6">LIBRARY</text><path d="M560 453.5h208" stroke="#dbdbdb"/>
+  <rect x="560" y="460" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#l-tree" x="560" y="460.0" width="40" height="40.0"/>
+  <rect x="606" y="460" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#l-props" x="606" y="472.0" width="40" height="16.0"/>
+  <rect x="652" y="460" width="40" height="40" rx="5" fill="#eeeeee"/><use href="#l-oak" x="652" y="460.0" width="40" height="40.0"/>
+  <rect x="604" y="252" width="44" height="44" rx="7" fill="none" stroke="#00b242" stroke-width="1.6" filter="url(#sel-shadow)" class="focus"/>
 
   <!-- The picked asset travelling to the casting -->
-  <g class="fly"><rect width="30" height="30" rx="4" fill="#eeeeee" filter="url(#sel-shadow)"/><use href="#p-grill" x="0" y="0.0" width="30" height="30.0"/></g>
+  <g class="fly"><rect width="40" height="40" rx="4" fill="#eeeeee" filter="url(#sel-shadow)"/><use href="#p-grill" x="0" y="0.0" width="40" height="40.0"/></g>
 </svg>
