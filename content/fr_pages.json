@@ -1948,7 +1948,7 @@
           "title": "Suivez vos demandes",
           "subtitle": "Aucun problème oublié",
           "content": "Chaque conversation de support est sauvegardée et peut être escaladée via un système de tickets intégré. Vous savez toujours où en sont les choses, du premier contact à la résolution.",
-          "image": "kitsu-issues.png",
+          "image": "kitsu-issues-animated.svg",
           "reverted": true
         },
         {

@@ -1948,7 +1948,7 @@
           "title": "リクエストを追跡する",
           "subtitle": "忘れられる問題はありません",
           "content": "すべてのサポート会話が保存され、統合されたチケットシステムを通じてエスカレーションできます。最初のコンタクトから解決まで、常に状況を把握できます。",
-          "image": "kitsu-issues.png",
+          "image": "kitsu-issues-animated.svg",
           "reverted": true
         },
         {
