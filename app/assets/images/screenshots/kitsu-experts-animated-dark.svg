@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 6 792 520" width="1440" height="945" font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#dcddde" role="img" aria-label="Career of a CGWire support team member: head of production, production supervisor and technical director in animation studios">
+  <!-- 8s loop: the focus walks through the career, from the first production job to head of production -->
+  <style>
+    .step { opacity: 0; animation: 8s ease-in-out infinite }
+    .s1 { animation-name: s1 } .s2 { animation-name: s2 } .s3 { animation-name: s3 } .s4 { animation-name: s4 }
+    @keyframes s1 { 0%, 2% { opacity: 0 } 6%, 22% { opacity: 1 } 26%, 100% { opacity: 0 } }
+    @keyframes s2 { 0%, 24% { opacity: 0 } 28%, 46% { opacity: 1 } 50%, 100% { opacity: 0 } }
+    @keyframes s3 { 0%, 48% { opacity: 0 } 52%, 70% { opacity: 1 } 74%, 100% { opacity: 0 } }
+    @keyframes s4 { 0%, 72% { opacity: 0 } 76%, 96% { opacity: 1 } 100% { opacity: 0 } }
+    @media (prefers-reduced-motion: reduce) { .step { animation: none } .s4 { opacity: 1 } }
+  </style>
+  <defs>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000000" flood-opacity=".45"/></filter>
+    <filter id="sel-shadow" x="-20%" y="-40%" width="140%" height="180%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00b242" flood-opacity=".35"/></filter>
+    <clipPath id="clip-unit"><rect width="48" height="33" rx="3"/></clipPath>
+    <clipPath id="clip-zodiak"><rect width="46" height="46" rx="3"/></clipPath>
+    <clipPath id="clip-marathon"><rect width="48" height="48" rx="3"/></clipPath>
+    <symbol id="unit" viewBox="0 0 48 33"><g clip-path="url(#clip-unit)"><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAhCAAAAAC643dlAAABiElEQVQ4y+1Tvy9DURg9372v7702IYqig7QhQTBKjEaDxGTqJP4CiUXEYDeYxSCxWPwFDJiQYBAmDEiTSrXaalX73rufQfBevdYgFnG2e7/vnO/HPZdG8Msg8dsV/gLIexTMIFIgYv4I8bcKgqiurDeiR4sZdARvpOwqlyI2Q7ICp+264kPZVWAjN4tYanUimy3kk/eFUqrNLat5KFq4GWgKLp+cdTYH0vuPrTPX63q54p7CTSCGUoBx2rORKCqOHax3TZ/N17TtthKDyAJUfCW+dBlQRrcMw5B6wOM3b0sF7jdENLLWPndTJPvFcZTjCAsQypfAdLczfiwGtzKLI2OmrpkQeggOgM98SM+a1K4eszYXnu393sPz2PaFOXC01/DVBEDk+iT0NaXWGuSAiEH8voZaX7hb0sDMpiZtgDVFYLSRBaCFHT8CYbhcEdyX4FsCpjgtODyKB0CfTD77V5AlG6jy1RMggvkcwQlVMwD0dNVnmDozvt3XC7hYDVP+8R1I/lyjMV4BKTiGiMJdQ9QAAAAASUVORK5CYII=" width="48" height="33" preserveAspectRatio="xMidYMid slice"/></g></symbol>
+    <symbol id="zodiak" viewBox="0 0 46 46"><g clip-path="url(#clip-zodiak)"><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAIAAADY27xgAAAH60lEQVRYw61YTYtlVxVda+1zX72q6q6u7k5/aNudhE4boyEOEkGRfDhREkGJhiAOMnEcceAfceRMEMSRSBSjoBlIQEwyEJVI7IERElGjadru+uiud+/Zy8G571V1bEj6lZfD49bHO2efvddee+3N3Vf+vPXLV6Kvgg2nEBlg2gRx4Lnlh9s9PvhOM2nDSsrM0Oyuje7esxsPXiz3nEmAw1AlC13SAIFy7ccv6Td/nCoiDdBEJA2AMDj+13tPuu3DA0aZZsq9MswwbUYOs2n5z7Ej+tQDG08/0T1wd+9aqkgYBFE652RtZVXBWpspSgJ4r1Pu6GkXSKymEbAIYxUdTF/b2/75b6++9qeV557c+NLnkJnBQS5GUUKDEXCF6SEYpuhEcxzf3x3/awnBRAq1AHYkStJ22399bbq6dfP6d350/d+7x77x1AxVCNpFVaVKpi0SQcqCM6ilPWODBhM0CMiATdMkgAE5FG5o5foPf7F1av3I0084a0qq4V6wAMI0YNrtZnNf3/GinTLTZbDSlU7BSrp2tXY9o3JW8mho7/svDpffcggVsmCmmRkGmx0JJkzTJpZZI3RhjVcyYdrtzonJgDI4Sqxfubbzwq9VDadodpWyG8xpmc2bNk1wmTV/TIJsSUQEIFgIAojkYK9qJV97fXjnXRXJZAslzWYDxw/Sy+ZQw1izyzYBukUfcMogQYThon5rZ+eNv5LUmNUECJCmwRFuy2ezxxjBaFA12Cwime2yhhIgJ71v/OUd2wJ48MQxZ5anlFu80l4438+A3V5IwwbFLl2vbJHUPm148TF/8RKcMj9y/vXF4oE7ck6itpWjgQWcf5NALnw7JqQ+AOHfzikYjwLHKuCxhBiIbH8lGtEYOjoFUEY6MmyAEAEgR9jCt4bvg3sF84NBN/iz3Z1QRRIQEi1zuXZ603ahkYIJuRmBhnezEb+X8MriKwm125tkKtJMtBytTNnKqJOVyb0fBlkAVMIEbAODEIZsugVzGay0O8CM+WUMj+AlkgAQFZJrP2x/9PTpS+fZvBJGK1aEIyE0taB5hb1zrxDEyLZKyLBJ2swqVqHrIXuYxO7uze7Rh8rxo33NAhstPk4iRMj0Yr+l09qAYCwUmM1sXBeJDNcI785mFz9011OPZaaBksFBrGo+ZRVkAVV5KMmShIySTLkKCZhqzCFDKtdme7sn1jeffwanN1mzI4uSnaUkjUb2clpy4dIuaQCzYTfd5ABpspGFvX1zb/viqY1vPrv6yMfdDxmRRKk53OxnJQpqBaOS4QTc6uJyfmmIH5iDMnqWpK3B7uVaVE9t4tHPnv3qEzx3stZBEQMzgFLvPeWd7T0RNhw1EGnTRvvVco4xQCvNdGUmh1L64+vbZ49v3Hdh46FL3blTBvpaRQGYNGx6MPaAuLVUcM5Qh6iIEKCRwUFA424VcF8lsnGtSSMDvPra68O/ttjRrKxNzNJjcT5MhKyR4FCR7srK5nqc3OhObGrzSA+4DoUCKWMgI1H6H7yE312OLuhsWWPIdPg9PrmD5mNhjsCWC1XcWymzlZiePYVPXlr//CPlvvMVWQZYEEyxTEp0XbemgCsAaL6pvZzcH60yLAyijDCRxszu+/7y2zfeePM/v3pFX3n8xLNfgMjB7phwGYJgVoqJsVi0OsqmdJbESSN/JWgkRvQnoK4cQ/jqjevfffGfb7179ltf87QwDUIwwopKmqDcCMBqwv2A4PD7rX1pMjK4oRTabhbNcLDS6dmKjq5P13/26pXv/URka03UWo6mxaswyMlsimFUE/P9P4Av5osAmPQgV7nKKSeRNGE4MHgWubE6wQsvb7/6OkpkZqEtJ0wgaWiUuckUeJhsbtwy1p1RNzWJOaCIHjLFI7Nh66cvrz38MUQUU03rp0irJIhM7TcfS1vSVNooskcEgYBlEElWcsrS/+HN/h/vTO7+iNx6jAYVjn2YSY6gwbKLnovD1qeNedlkLkkg0o4Ybu7tXH6r6ZWx22nyEc2whSQ8xMNb9/BcYKbGnr5BIfq6/fYVk9oXr1x0C4duPm4bMI9UlYRBGaiAEAlc2WaTNwuU/d9OnUdi0YVg0eO18LXqQjZxWeuARfOB/fLn5fufg6FpkB8FWRPK48ZNfCxmBSRzbQJAmDez9iLpOB9sLCP357Fom7WxgOGxUQVIO2GYrdMwcezsSdsFI1BbIdxPJxrZ1MQSphBKp1jJNliZz3pagJRBhiNhqE6mq/fdTVILcUTjwMSn6YTleo/WeBiGkrSTHgJDuMqWM1wSSkOse3Xn/nPd/efT1rxNaSaMo6rmTi4boMbSMiJBQ4YSSnHEQEYd+nAG91zXv/hpHpnWmuIYoX2ZxLGHgZcszCPRmhhiLPWqKD3CqhKAvnPt1G/vDZ95YOPxRzyroDQfLwAYBys2lxf7C2tAoDVXbA7IUC/uRVQpGLnbb108c/T5Z7w+IRh0ScFBcMGGMJGEcKikbvNSmi7uhWJ1g6NqfQAQW/2NrU+cP/nt53ThTJ+pjgGUmrUlvUbkjgMZzd+X1LbzmhMmU6Ua1UMddpGzo9P88uNnvv5knNmotUKSMdClXDi39fvLNSsAshI0szKLR1ctM9RgSyKkDJCZEPfWSn/hDB+85/hjD08fvASjDnUIdkkyA8l69ebsb38fdm6Ior1omZWHw4vHQI+WldDJY5MTGzoyBZAeR+UHvf5f1N6KGBgUcwAAAAAASUVORK5CYII=" width="46" height="46" preserveAspectRatio="xMidYMid slice"/></g></symbol>
+    <symbol id="marathon" viewBox="0 0 48 48"><g clip-path="url(#clip-marathon)"><image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAgMAAAAqbBEUAAAADFBMVEXn4tyds8h4j6VWaHp0dmfGAAAAHklEQVQoz2NgoDpgDQWBgFEOKRyuVavW////ddhzALSPm2WDDUGgAAAAAElFTkSuQmCC" width="48" height="48" preserveAspectRatio="xMidYMid slice"/></g></symbol>
+  </defs>
+  <rect x="16" y="16" width="768" height="484" rx="12" fill="#36393f" filter="url(#card-shadow)"/>
+  <text x="170" y="62" font-size="18" font-weight="700">Experience</text>
+
+  <use href="#unit" x="170" y="86" width="48" height="33"/>
+  <text x="234" y="98" font-size="15" font-weight="700">UNIT IMAGE</text>
+  <text x="234" y="116" font-size="12.500">1 yr 7 mos</text>
+  <text x="234" y="133" font-size="12.500" fill-opacity=".6">Paris Region, France</text>
+  <path d="M194 166V214" stroke="#4e5159" stroke-width="1.500"/>
+  <circle cx="194" cy="162" r="4" fill="#72767d"/>
+  <circle cx="194" cy="218" r="4" fill="#72767d"/>
+  <text x="234" y="166" font-size="14.500" font-weight="700">Head of production</text>
+  <text x="234" y="184" font-size="12.500" fill-opacity=".6">Sep 2017 - May 2018 · 9 mos</text>
+  <text x="234" y="222" font-size="14.500" font-weight="700">Production Supervisor</text>
+  <text x="234" y="240" font-size="12.500" fill-opacity=".6">Nov 2016 - Aug 2017 · 10 mos</text>
+
+  <path d="M170 262.500H622" stroke="#4e5159"/>
+  <use href="#zodiak" x="171" y="278" width="46" height="46"/>
+  <text x="234" y="290" font-size="14.500" font-weight="700">Technical Director</text>
+  <text x="234" y="308" font-size="12.500">Zodiak Kids Studios</text>
+  <text x="234" y="325" font-size="12.500" fill-opacity=".6">Jan 2016 - Oct 2016 · 10 mos</text>
+  <text x="234" y="342" font-size="12.500" fill-opacity=".6">Neuilly-sur-Seine</text>
+
+  <path d="M170 360.500H622" stroke="#4e5159"/>
+  <use href="#marathon" x="170" y="376" width="48" height="48"/>
+  <text x="234" y="388" font-size="14.500" font-weight="700">Production Supervisor</text>
+  <text x="234" y="406" font-size="12.500">Marathon Media</text>
+  <text x="234" y="423" font-size="12.500" fill-opacity=".6">Apr 2014 - Jan 2016 · 1 yr 10 mos</text>
+  <text x="234" y="440" font-size="12.500" fill-opacity=".6">Paris Area, France</text>
+  <text x="234" y="462" font-size="12.500">Lolirock (seasons 1 &amp; 2), Get Blake</text>
+
+  <!-- Focus -->
+  <g fill="none" stroke="#00b242" stroke-width="1.600" filter="url(#sel-shadow)">
+    <rect class="step s1" x="158" y="366" width="476" height="110" rx="8"/>
+    <rect class="step s2" x="158" y="268" width="476" height="86" rx="8"/>
+    <rect class="step s3" x="222" y="202" width="412" height="50" rx="8"/>
+    <rect class="step s4" x="222" y="146" width="412" height="50" rx="8"/>
+  </g>
+</svg>

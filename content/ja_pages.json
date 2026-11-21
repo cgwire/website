@@ -1939,8 +1939,8 @@
           "title": "あなたの仕事を経験した人と話す",
           "subtitle": "専門家によるサポート",
           "content": "サポートチームは実際のパイプラインを管理したプロダクションのベテランで構成されています。あなたが置かれているプレッシャーを理解し、あなたの言葉で話し、Kitsuを最大限に活用できるよう助けます。",
-          "image": "kitsu-experts.png",
-          "shadow": true,
+          "image": "kitsu-experts-animated.svg",
+          "imageDark": "kitsu-experts-animated-dark.svg",
           "colored": true,
           "gradient": 2
         },

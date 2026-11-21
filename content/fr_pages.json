@@ -1939,8 +1939,8 @@
           "title": "Parlez à des personnes qui ont fait votre travail",
           "subtitle": "Assistance experte",
           "content": "Notre équipe de support est composée de vétérans de la production qui ont géré de vraies pipelines. Ils comprennent la pression sous laquelle vous vous trouvez, parlent votre langue et vous aident à tirer le meilleur parti de Kitsu.",
-          "image": "kitsu-experts.png",
-          "shadow": true,
+          "image": "kitsu-experts-animated.svg",
+          "imageDark": "kitsu-experts-animated-dark.svg",
           "colored": true,
           "gradient": 2
         },

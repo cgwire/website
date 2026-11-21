@@ -1887,8 +1887,8 @@
           "subtitle": "Expert assistance",
           "title": "Talk to people who have done your job",
           "content": "Our support team is made up of production veterans who have managed real pipelines. They understand the pressure you are under, speak your language, and help you get the most out of Kitsu.",
-          "image": "kitsu-experts.png",
-          "shadow": true,
+          "image": "kitsu-experts-animated.svg",
+          "imageDark": "kitsu-experts-animated-dark.svg",
           "colored": true,
           "gradient": 2
         },
