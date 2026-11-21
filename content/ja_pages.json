@@ -1419,8 +1419,8 @@
           "title": "アセットのリンク",
           "subtitle": "何と何が対応するかを自動で追跡する",
           "content": "アセットを接続して関係を定義します。セットを構成したり、キャラクターにプロップを付けたり、ワークフローに合った依存関係をモデル化したりできます。",
-          "image": "kitsu-asset-links.png",
-          "shadow": true,
+          "image": "kitsu-asset-links-animated.svg",
+          "imageDark": "kitsu-asset-links-animated-dark.svg",
           "reverted": true
         },
         {

@@ -1403,8 +1403,8 @@
           "title": "Asset linking",
           "subtitle": "Automatically track what goes with what",
           "content": "Connect assets to define how they relate: populate sets, attach props to characters, or model any dependency that fits your workflow.",
-          "image": "kitsu-asset-links.png",
-          "shadow": true,
+          "image": "kitsu-asset-links-animated.svg",
+          "imageDark": "kitsu-asset-links-animated-dark.svg",
           "reverted": true
         },
         {

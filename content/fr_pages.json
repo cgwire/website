@@ -1419,8 +1419,8 @@
           "title": "Liaison des assets",
           "subtitle": "Suivez automatiquement ce qui va avec quoi",
           "content": "Connectez les assets pour définir leurs relations : peuplez des décors, attachez des accessoires aux personnages ou modélisez toute dépendance adaptée à votre flux de travail.",
-          "image": "kitsu-asset-links.png",
-          "shadow": true,
+          "image": "kitsu-asset-links-animated.svg",
+          "imageDark": "kitsu-asset-links-animated-dark.svg",
           "reverted": true
         },
         {
