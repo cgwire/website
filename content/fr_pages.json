@@ -1278,6 +1278,16 @@
                   "alt": "Logo After Effects",
                   "image": "/images/integrations/logo-after-effects.png",
                   "comingSoon": true
+                },
+                {
+                  "alt": "Unreal Engine",
+                  "image": "/images/integrations/logo-unreal-engine.png",
+                  "comingSoon": true
+                },
+                {
+                  "alt": "Logo Harmony",
+                  "image": "/images/integrations/logo-harmony.png",
+                  "comingSoon": true
                 }
               ],
               [
