@@ -1509,8 +1509,8 @@
           "title": "Évitez les pannes imprévues qui tuent les délais",
           "subtitle": "Surveillance proactive",
           "content": "Chaque instance est surveillée en continu par un monitoring automatisé qui alerte l'équipe dès qu'un indicateur dérive. La plupart des incidents sont résolus avant d'atteindre votre pipeline de production. Les instances sont sauvegardées quotidiennement, et une restauration complète prend en général quelques heures, selon la gravité de l'incident.",
-          "image": "kitsu-availability.png",
-          "shadow": true,
+          "image": "kitsu-availability-animated.svg",
+          "imageDark": "kitsu-availability-animated-dark.svg",
           "reverted": true
         },
         {

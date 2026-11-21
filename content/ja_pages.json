@@ -1509,8 +1509,8 @@
           "title": "締め切りを脅かす計画外の停止を防ぎます",
           "subtitle": "プロアクティブな監視",
           "content": "自動監視がすべてのインスタンスを継続的に見守り、指標に異変があればすぐにチームへ通知します。ほとんどの問題は、プロダクションパイプラインに影響が及ぶ前に解決されます。インスタンスは毎日バックアップされ、完全な復元は通常、インシデントの深刻度に応じて数時間で完了します。",
-          "image": "kitsu-availability.png",
-          "shadow": true,
+          "image": "kitsu-availability-animated.svg",
+          "imageDark": "kitsu-availability-animated-dark.svg",
           "reverted": true
         },
         {

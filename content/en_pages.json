@@ -1483,8 +1483,8 @@
           "subtitle": "Proactive monitoring",
           "title": "Avoid unplanned outages that kill deadlines",
           "content": "Automated monitoring watches every instance continuously and alerts the team as soon as a metric drifts. Most issues are resolved before they reach your production pipeline. Instances are backed up daily, and a full restore typically takes a few hours, depending on the severity of the incident.",
-          "image": "kitsu-availability.png",
-          "shadow": true,
+          "image": "kitsu-availability-animated.svg",
+          "imageDark": "kitsu-availability-animated-dark.svg",
           "reverted": true
         },
         {
