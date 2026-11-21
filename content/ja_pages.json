@@ -1534,7 +1534,7 @@
           "title": "常に最新の状態を保てます",
           "subtitle": "中断のないアップデート",
           "content": "CGWireのチームが、Kitsuと運用スタック全体のすべてのアップデートとセキュリティパッチを代わりに適用します。メンテナンスウィンドウのスケジュール設定や、エンジニアを本番作業から引き離すことなく、最新バージョンを維持できます。",
-          "image": "kitsu-updates.png",
+          "image": "kitsu-updates-animated.svg",
           "colored": true,
           "gradient": 3
         }

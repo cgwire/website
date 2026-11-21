@@ -1509,7 +1509,7 @@
           "subtitle": "Updates without interruption",
           "title": "Always stay up to date",
           "content": "CGWire's team applies every update and security patch on your behalf, for Kitsu and the entire operating stack. You stay on the latest version without scheduling maintenance windows or pulling engineers away from production work.",
-          "image": "kitsu-updates.png",
+          "image": "kitsu-updates-animated.svg",
           "colored": true,
           "gradient": 3
         }

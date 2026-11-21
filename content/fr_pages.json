@@ -1534,7 +1534,7 @@
           "title": "Restez toujours à jour",
           "subtitle": "Mises à jour sans interruption",
           "content": "L'équipe de CGWire applique chaque mise à jour et correctif de sécurité à votre place, pour Kitsu et toute la pile logicielle. Vous restez sur la dernière version sans planifier de fenêtres de maintenance ni détourner des ingénieurs du travail de production.",
-          "image": "kitsu-updates.png",
+          "image": "kitsu-updates-animated.svg",
           "colored": true,
           "gradient": 3
         }
