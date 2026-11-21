@@ -1840,8 +1840,8 @@
           "subtitle": "Tâches, commentaires et aperçus",
           "title": "Faites circuler l'information",
           "content": "Assignez des tâches aux artistes et faites-leur publier leur travail directement dans Kitsu quand il est prêt pour révision. Les producteurs, superviseurs et réalisateurs itèrent sur la même plateforme, avec chaque commentaire et version suivis en contexte. Les notifications en temps réel signifient que personne n'attend des informations qu'il devrait déjà avoir.",
-          "image": "kitsu-tasks.png",
-          "shadow": true,
+          "image": "kitsu-tasks-animated.svg",
+          "imageDark": "kitsu-tasks-animated-dark.svg",
           "colored": true,
           "gradient": 1
         },
@@ -1869,8 +1869,8 @@
           "subtitle": "Fil d'actualité",
           "title": "Détectez les problèmes tôt",
           "content": "Le fil d'actualité fait remonter chaque commentaire, changement de statut et nouvel aperçu à travers la production en temps réel. Les superviseurs et les producteurs repèrent les problèmes tôt, avant qu'ils ne s'aggravent. Rien ne passe à travers les mailles car quelqu'un a manqué un message.",
-          "image": "kitsu-news.png",
-          "shadow": true,
+          "image": "kitsu-news-animated.svg",
+          "imageDark": "kitsu-news-animated-dark.svg",
           "reverted": true
         },
         {

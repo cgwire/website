@@ -1840,8 +1840,8 @@
           "subtitle": "タスク、コメント、プレビュー",
           "title": "情報をスムーズに流す",
           "content": "アーティストにタスクをアサインし、レビュー準備ができたら作業をKitsuに直接公開させます。プロデューサー、スーパーバイザー、ディレクターは同じプラットフォームで反復し、すべてのコメントとバージョンがコンテキスト内で追跡されます。リアルタイム通知により、誰もすでに持っているべき情報を待つことはありません。",
-          "image": "kitsu-tasks.png",
-          "shadow": true,
+          "image": "kitsu-tasks-animated.svg",
+          "imageDark": "kitsu-tasks-animated-dark.svg",
           "colored": true,
           "gradient": 1
         },
@@ -1869,8 +1869,8 @@
           "subtitle": "ニュースフィード",
           "title": "問題を早期に発見する",
           "content": "ニュースフィードはリアルタイムでプロダクション全体のすべてのコメント、ステータス変更、新しいプレビューを表示します。スーパーバイザーとプロデューサーは問題が悪化する前に早期に発見します。誰かがメッセージを見逃したために何も見落とされることはありません。",
-          "image": "kitsu-news.png",
-          "shadow": true,
+          "image": "kitsu-news-animated.svg",
+          "imageDark": "kitsu-news-animated-dark.svg",
           "reverted": true
         },
         {

@@ -91,15 +91,15 @@
       <text x="124" y="30.5" font-size="12" font-weight="700" fill-opacity=".75">Animation</text>
     </g>
     <g id="status-wfa" font-size="10" font-weight="700" letter-spacing=".8" text-anchor="middle">
-      <rect x="542" y="16" width="46" height="20" rx="10" fill="#ab26ff"/>
+      <rect x="542" y="16" width="46" height="20" rx="10" fill="#8c00ff"/>
       <text x="565.4" y="29.6" fill="#fff">WFA</text>
     </g>
     <g id="status-wip" font-size="10" font-weight="700" letter-spacing=".8" text-anchor="middle">
-      <rect x="542" y="16" width="46" height="20" rx="10" fill="#3273dc"/>
+      <rect x="542" y="16" width="46" height="20" rx="10" fill="#0045ca"/>
       <text x="565.4" y="29.6" fill="#fff">WIP</text>
     </g>
     <g id="status-todo" font-size="10" font-weight="700" letter-spacing=".8" text-anchor="middle">
-      <rect x="542" y="16" width="52" height="20" rx="10" fill="#4E5159"/>
+      <rect x="542" y="16" width="52" height="20" rx="10" fill="#5f626a"/>
       <text x="568.4" y="29.6">TODO</text>
     </g>
     <g id="comment-done">

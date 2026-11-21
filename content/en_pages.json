@@ -1797,8 +1797,8 @@
           "subtitle": "Tasks, comments and previews",
           "title": "Make information flow",
           "content": "Assign tasks to artists and have them publish their work directly in Kitsu when ready for review. Producers, supervisors, and directors iterate on the same platform, with every comment and version tracked in context. Real-time notifications mean no one is waiting on information they should already have.",
-          "image": "kitsu-tasks.png",
-          "shadow": true,
+          "image": "kitsu-tasks-animated.svg",
+          "imageDark": "kitsu-tasks-animated-dark.svg",
           "colored": true,
           "gradient": 1
         },
@@ -1826,8 +1826,8 @@
           "subtitle": "Newsfeed",
           "title": "Catch problems early",
           "content": "The newsfeed surfaces every comment, status change, and new preview across the production in real time. Supervisors and producers spot issues early, before they compound. Nothing falls through the cracks because someone missed a message.",
-          "image": "kitsu-news.png",
-          "shadow": true,
+          "image": "kitsu-news-animated.svg",
+          "imageDark": "kitsu-news-animated-dark.svg",
           "reverted": true
         },
         {
