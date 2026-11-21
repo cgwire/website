@@ -1502,7 +1502,7 @@
           "subtitle": "Isolated setup",
           "title": "Get a dedicated infrastructure",
           "content": "Your Kitsu runs on its own infrastructure. No shared resources, no noisy neighbors, no risk of another studio's workload affecting yours. Consistent performance and strict data isolation from day one.",
-          "image": "kitsu-multiinstance.png",
+          "image": "kitsu-multiinstance-animated.svg",
           "reverted": true
         },
         {

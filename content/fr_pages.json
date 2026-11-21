@@ -1528,7 +1528,7 @@
           "title": "Bénéficiez d'une infrastructure dédiée",
           "subtitle": "Installation isolée",
           "content": "Votre Kitsu fonctionne sur sa propre infrastructure. Aucune ressource partagée, aucun voisin bruyant, aucun risque que la charge de travail d'un autre studio affecte la vôtre. Des performances constantes et une isolation stricte des données dès le premier jour.",
-          "image": "kitsu-multiinstance.png",
+          "image": "kitsu-multiinstance-animated.svg",
           "reverted": true
         },
         {
