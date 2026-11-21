@@ -1920,8 +1920,8 @@
           "title": "Arrêtez d'attendre des jours pour une réponse",
           "subtitle": "Temps de réponse rapide",
           "content": "Nous répondons en 30 minutes en moyenne. Que vous ayez besoin d'aide pour trouver un menu spécifique ou que vous souhaitiez repenser un flux de travail, vous obtenez une réponse claire rapidement pour que votre équipe puisse continuer à avancer.",
-          "image": "kitsu-fast.png",
-          "shadow": true,
+          "image": "kitsu-fast-animated.svg",
+          "imageDark": "kitsu-fast-animated-dark.svg",
           "colored": true,
           "gradient": 1
         },

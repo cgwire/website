@@ -1920,8 +1920,8 @@
           "title": "返信を何日も待つのをやめる",
           "subtitle": "迅速な応答時間",
           "content": "平均30分以内に返答します。特定のメニューを見つける手助けが必要な場合でも、ワークフローを見直したい場合でも、チームが前進できるように迅速に明確な回答を提供します。",
-          "image": "kitsu-fast.png",
-          "shadow": true,
+          "image": "kitsu-fast-animated.svg",
+          "imageDark": "kitsu-fast-animated-dark.svg",
           "colored": true,
           "gradient": 1
         },

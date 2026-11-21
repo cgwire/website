@@ -1868,8 +1868,8 @@
           "title": "Stop waiting days for a reply",
           "subtitle": "Fast response time",
           "content": "We respond in 30 minutes on average. Whether you need help finding a specific menu or want to rethink a workflow, you get a clear answer fast so your team can keep moving.",
-          "image": "kitsu-fast.png",
-          "shadow": true,
+          "image": "kitsu-fast-animated.svg",
+          "imageDark": "kitsu-fast-animated-dark.svg",
           "colored": true,
           "gradient": 1
         },
