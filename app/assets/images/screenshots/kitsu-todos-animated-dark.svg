@@ -171,7 +171,7 @@
   <rect x="44.5" y="172.5" width="711" height="311" rx="8" fill="none" stroke="#4E5159"/>
 
   <!-- Task in progress, lifted above the list -->
-  <rect x="34" y="276" width="732" height="53" rx="8" fill="#40444B" stroke="#00b242" stroke-width="1.5" filter="url(#row-shadow)" class="focus"/>
+  <rect x="34" y="276" width="732" height="53" rx="8" fill="#40444B" filter="url(#row-shadow)" class="focus"/>
 
   <g transform="translate(0 172)">
     <use href="#prod-snow" x="55" y="9" width="34" height="34"/>
@@ -230,6 +230,8 @@
     <use href="#status-todo"/>
     <use href="#comment-empty-b"/>
   </g>
+
+  <rect x="34" y="276" width="732" height="53" rx="8" fill="none" stroke="#00b242" stroke-width="1.5" class="focus"/>
 
   <text x="400" y="508" font-size="12" font-style="italic" text-anchor="middle" fill-opacity=".7">6 tasks</text>
 </svg>
