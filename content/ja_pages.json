@@ -1410,9 +1410,9 @@
           "title": "各ショットに何が必要かを把握する",
           "subtitle": "ブレイクダウン一覧",
           "content": "各ショットのキャストアセットをタイプ別に整理したブレイクダウンテーブルを作成します。すべてのエントリに直接メタデータを追加することで、シーンビルダーがファイルを開く前から必要なものをすべて揃えられます。",
-          "image": "kitsu-tables.png",
+          "image": "kitsu-tables-animated.svg",
+          "imageDark": "kitsu-tables-animated-dark.svg",
           "gradient": 1,
-          "shadow": true,
           "colored": true
         },
         {

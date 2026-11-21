@@ -1410,9 +1410,9 @@
           "title": "Sachez ce qui appartient à chaque plan",
           "subtitle": "Liste de breakdown",
           "content": "Créez des tableaux de décomposition montrant les assets de casting pour chaque plan, organisés par type. Ajoutez des métadonnées directement à chaque entrée pour que votre constructeur de scènes dispose de tout ce dont il a besoin avant même d'ouvrir un fichier.",
-          "image": "kitsu-tables.png",
+          "image": "kitsu-tables-animated.svg",
+          "imageDark": "kitsu-tables-animated-dark.svg",
           "gradient": 1,
-          "shadow": true,
           "colored": true
         },
         {
