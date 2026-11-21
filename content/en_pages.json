@@ -1250,22 +1250,51 @@
             "rows": [
               [
                 {
+                  "alt": "OpenRV Logo",
+                  "href": "https://github.com/cgwire/openrv",
+                  "image": "/images/integrations/openrv.png"
+                },
+                {
                   "alt": "Blender Logo",
-                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-blender.png"
+                  "image": "/images/integrations/logo-blender.png",
+                  "comingSoon": true
                 },
                 {
-                  "alt": "Harmony Logo",
-                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-harmony.png"
+                  "alt": "TVPaint Logo",
+                  "image": "/images/integrations/logo-tvpaint.png",
+                  "comingSoon": true
                 },
                 {
-                  "alt": "Unreal Engine",
-                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-unreal-engine.png"
+                  "alt": "Krita Logo",
+                  "image": "/images/integrations/logo-krita.png",
+                  "comingSoon": true
+                },
+                {
+                  "alt": "Photoshop Logo",
+                  "image": "/images/integrations/logo-photoshop.png",
+                  "comingSoon": true
+                },
+                {
+                  "alt": "After Effects Logo",
+                  "image": "/images/integrations/logo-after-effects.png",
+                  "comingSoon": true
                 }
               ],
               [
+                {
+                  "alt": "Blender Logo",
+                  "href": "https://github.com/Chantology/kitsu-blender-plugin",
+                  "image": "/images/integrations/logo-blender.png",
+                  "community": true,
+                  "authors": [{ "username": "Chantology" }]
+                },
+                {
+                  "alt": "Maya Logo",
+                  "href": "https://github.com/Chantology/kitsu-maya-plugin",
+                  "image": "/images/integrations/maya.png",
+                  "community": true,
+                  "authors": [{ "username": "Chantology" }]
+                },
                 {
                   "alt": "Houdini Logo",
                   "href": "https://github.com/Chantology/kitsu-houdini-plugin",
@@ -1274,34 +1303,11 @@
                   "authors": [{ "username": "Chantology" }]
                 },
                 {
-                  "alt": "OpenRV Logo",
-                  "href": "https://github.com/cgwire/openrv",
-                  "image": "/images/integrations/openrv.png"
-                },
-                {
-                  "alt": "Blender Logo",
-                  "href": "https://github.com/Chantology/kitsu-blender-plugin",
-                  "image": "/images/integrations/logo-blender.png",
-                  "community": true,
-                  "authors": [{ "username": "Chantology" }]
-                }
-              ],
-              [
-                {
                   "alt": "Prism Logo",
                   "href": "https://github.com/EmberLightVFX/Kitsu-for-Prism",
                   "image": "/images/integrations/logo-prism.png",
                   "community": true,
                   "authors": [{ "username": "EmberLightVFX" }]
-                }
-              ],
-              [
-                {
-                  "alt": "Maya Logo",
-                  "href": "https://github.com/Chantology/kitsu-maya-plugin",
-                  "image": "/images/integrations/maya.png",
-                  "community": true,
-                  "authors": [{ "username": "Chantology" }]
                 }
               ]
             ]
@@ -1349,7 +1355,8 @@
           }
         ]
       },
-      "communityContribution": "Community contribution"
+      "communityContribution": "Community contribution",
+      "comingSoon": "Coming soon"
     },
     "spreadsheets": {
       "title": "Build your workflow with our spreadsheets",

@@ -1250,22 +1250,59 @@
             "rows": [
               [
                 {
+                  "alt": "Logo OpenRV",
+                  "href": "https://github.com/cgwire/openrv",
+                  "image": "/images/integrations/openrv.png"
+                },
+                {
                   "alt": "Logo Blender",
-                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-blender.png"
+                  "image": "/images/integrations/logo-blender.png",
+                  "comingSoon": true
                 },
                 {
-                  "alt": "Logo Harmony",
-                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-harmony.png"
+                  "alt": "Logo TVPaint",
+                  "image": "/images/integrations/logo-tvpaint.png",
+                  "comingSoon": true
                 },
                 {
-                  "alt": "Unreal Engine",
-                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-unreal-engine.png"
+                  "alt": "Logo Krita",
+                  "image": "/images/integrations/logo-krita.png",
+                  "comingSoon": true
+                },
+                {
+                  "alt": "Logo Photoshop",
+                  "image": "/images/integrations/logo-photoshop.png",
+                  "comingSoon": true
+                },
+                {
+                  "alt": "Logo After Effects",
+                  "image": "/images/integrations/logo-after-effects.png",
+                  "comingSoon": true
                 }
               ],
               [
+                {
+                  "alt": "Logo Blender",
+                  "href": "https://github.com/Chantology/kitsu-blender-plugin",
+                  "image": "/images/integrations/logo-blender.png",
+                  "community": true,
+                  "authors": [
+                    {
+                      "username": "Chantology"
+                    }
+                  ]
+                },
+                {
+                  "alt": "Logo Maya",
+                  "href": "https://github.com/Chantology/kitsu-maya-plugin",
+                  "image": "/images/integrations/maya.png",
+                  "community": true,
+                  "authors": [
+                    {
+                      "username": "Chantology"
+                    }
+                  ]
+                },
                 {
                   "alt": "Logo Houdini",
                   "href": "https://github.com/Chantology/kitsu-houdini-plugin",
@@ -1278,24 +1315,6 @@
                   ]
                 },
                 {
-                  "alt": "Logo OpenRV",
-                  "href": "https://github.com/cgwire/openrv",
-                  "image": "/images/integrations/openrv.png"
-                },
-                {
-                  "alt": "Logo Blender",
-                  "href": "https://github.com/Chantology/kitsu-blender-plugin",
-                  "image": "/images/integrations/logo-blender.png",
-                  "community": true,
-                  "authors": [
-                    {
-                      "username": "Chantology"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
                   "alt": "Logo Prism",
                   "href": "https://github.com/EmberLightVFX/Kitsu-for-Prism",
                   "image": "/images/integrations/logo-prism.png",
@@ -1303,19 +1322,6 @@
                   "authors": [
                     {
                       "username": "EmberLightVFX"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "alt": "Logo Maya",
-                  "href": "https://github.com/Chantology/kitsu-maya-plugin",
-                  "image": "/images/integrations/maya.png",
-                  "community": true,
-                  "authors": [
-                    {
-                      "username": "Chantology"
                     }
                   ]
                 }
@@ -1365,7 +1371,8 @@
           }
         ]
       },
-      "communityContribution": "Contribution de la communauté"
+      "communityContribution": "Contribution de la communauté",
+      "comingSoon": "Bientôt disponible"
     },
     "spreadsheets": {
       "title": "Tableurs",

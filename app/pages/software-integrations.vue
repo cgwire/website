@@ -20,13 +20,17 @@
           </div>
 
           <div class="software-grid">
-            <a
+            <component
+              :is="item.href ? 'a' : 'div'"
               v-for="item in section.items"
               :key="item.alt"
               :href="item.href"
               class="software"
             >
               <NuxtImg :src="item.image" :alt="item.alt" />
+              <span v-if="item.comingSoon" class="soon">
+                {{ page.meta.comingSoon }}
+              </span>
               <span v-if="item.authors?.length" class="authors">
                 <span
                   v-for="author in item.authors"
@@ -46,7 +50,7 @@
                   </span>
                 </span>
               </span>
-            </a>
+            </component>
           </div>
         </template>
       </div>

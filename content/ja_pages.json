@@ -1250,22 +1250,59 @@
             "rows": [
               [
                 {
+                  "alt": "OpenRV ロゴ",
+                  "href": "https://github.com/cgwire/openrv",
+                  "image": "/images/integrations/openrv.png"
+                },
+                {
                   "alt": "Blender ロゴ",
-                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-blender.png"
+                  "image": "/images/integrations/logo-blender.png",
+                  "comingSoon": true
                 },
                 {
-                  "alt": "Harmony ロゴ",
-                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-harmony.png"
+                  "alt": "TVPaint ロゴ",
+                  "image": "/images/integrations/logo-tvpaint.png",
+                  "comingSoon": true
                 },
                 {
-                  "alt": "Unreal Engine",
-                  "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-unreal-engine.png"
+                  "alt": "Krita ロゴ",
+                  "image": "/images/integrations/logo-krita.png",
+                  "comingSoon": true
+                },
+                {
+                  "alt": "Photoshop ロゴ",
+                  "image": "/images/integrations/logo-photoshop.png",
+                  "comingSoon": true
+                },
+                {
+                  "alt": "After Effects ロゴ",
+                  "image": "/images/integrations/logo-after-effects.png",
+                  "comingSoon": true
                 }
               ],
               [
+                {
+                  "alt": "Blender ロゴ",
+                  "href": "https://github.com/Chantology/kitsu-blender-plugin",
+                  "image": "/images/integrations/logo-blender.png",
+                  "community": true,
+                  "authors": [
+                    {
+                      "username": "Chantology"
+                    }
+                  ]
+                },
+                {
+                  "alt": "Maya ロゴ",
+                  "href": "https://github.com/Chantology/kitsu-maya-plugin",
+                  "image": "/images/integrations/maya.png",
+                  "community": true,
+                  "authors": [
+                    {
+                      "username": "Chantology"
+                    }
+                  ]
+                },
                 {
                   "alt": "Houdini ロゴ",
                   "href": "https://github.com/Chantology/kitsu-houdini-plugin",
@@ -1278,24 +1315,6 @@
                   ]
                 },
                 {
-                  "alt": "OpenRV ロゴ",
-                  "href": "https://github.com/cgwire/openrv",
-                  "image": "/images/integrations/openrv.png"
-                },
-                {
-                  "alt": "Blender ロゴ",
-                  "href": "https://github.com/Chantology/kitsu-blender-plugin",
-                  "image": "/images/integrations/logo-blender.png",
-                  "community": true,
-                  "authors": [
-                    {
-                      "username": "Chantology"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
                   "alt": "Prism ロゴ",
                   "href": "https://github.com/EmberLightVFX/Kitsu-for-Prism",
                   "image": "/images/integrations/logo-prism.png",
@@ -1303,19 +1322,6 @@
                   "authors": [
                     {
                       "username": "EmberLightVFX"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "alt": "Maya ロゴ",
-                  "href": "https://github.com/Chantology/kitsu-maya-plugin",
-                  "image": "/images/integrations/maya.png",
-                  "community": true,
-                  "authors": [
-                    {
-                      "username": "Chantology"
                     }
                   ]
                 }
@@ -1365,7 +1371,8 @@
           }
         ]
       },
-      "communityContribution": "コミュニティによる貢献"
+      "communityContribution": "コミュニティによる貢献",
+      "comingSoon": "近日公開"
     },
     "spreadsheets": {
       "title": "スプレッドシート",

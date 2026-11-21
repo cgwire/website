@@ -1100,7 +1100,8 @@ div.body
             transition border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease
             width 220px
 
-            &:hover
+            // Coming soon tiles are not links.
+            &[href]:hover
                 border-color purple
                 box-shadow 0 0 12px rgba(138, 83, 209, 0.4)
                 transform translateY(-2px)
@@ -1119,6 +1120,15 @@ div.body
                 justify-content center
                 margin-top 0.5rem
                 max-width 100%
+
+            .soon
+                background rgba(0, 0, 0, 0.07)
+                border-radius 999px
+                color darken(text-medium, 20%)
+                font-size 0.75rem
+                line-height 1
+                margin-top 0.5rem
+                padding 7px 10px
 
             // Tiles stay light in the dark theme, so the chip colors hold in both.
             .author
