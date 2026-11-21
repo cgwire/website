@@ -5991,7 +5991,7 @@ button.dropdown-item.is-active {
     color: #0a0a0a;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1216px) {
     .navbar.is-white .navbar-start > .navbar-item,
     .navbar.is-white .navbar-start .navbar-link,
     .navbar.is-white .navbar-end > .navbar-item,
@@ -6057,7 +6057,7 @@ button.dropdown-item.is-active {
     color: white;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1216px) {
     .navbar.is-black .navbar-start > .navbar-item,
     .navbar.is-black .navbar-start .navbar-link,
     .navbar.is-black .navbar-end > .navbar-item,
@@ -6123,7 +6123,7 @@ button.dropdown-item.is-active {
     color: rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1216px) {
     .navbar.is-light .navbar-start > .navbar-item,
     .navbar.is-light .navbar-start .navbar-link,
     .navbar.is-light .navbar-end > .navbar-item,
@@ -6189,7 +6189,7 @@ button.dropdown-item.is-active {
     color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1216px) {
     .navbar.is-dark .navbar-start > .navbar-item,
     .navbar.is-dark .navbar-start .navbar-link,
     .navbar.is-dark .navbar-end > .navbar-item,
@@ -6255,7 +6255,7 @@ button.dropdown-item.is-active {
     color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1216px) {
     .navbar.is-primary .navbar-start > .navbar-item,
     .navbar.is-primary .navbar-start .navbar-link,
     .navbar.is-primary .navbar-end > .navbar-item,
@@ -6321,7 +6321,7 @@ button.dropdown-item.is-active {
     color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1216px) {
     .navbar.is-link .navbar-start > .navbar-item,
     .navbar.is-link .navbar-start .navbar-link,
     .navbar.is-link .navbar-end > .navbar-item,
@@ -6387,7 +6387,7 @@ button.dropdown-item.is-active {
     color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1216px) {
     .navbar.is-info .navbar-start > .navbar-item,
     .navbar.is-info .navbar-start .navbar-link,
     .navbar.is-info .navbar-end > .navbar-item,
@@ -6453,7 +6453,7 @@ button.dropdown-item.is-active {
     color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1216px) {
     .navbar.is-success .navbar-start > .navbar-item,
     .navbar.is-success .navbar-start .navbar-link,
     .navbar.is-success .navbar-end > .navbar-item,
@@ -6519,7 +6519,7 @@ button.dropdown-item.is-active {
     color: rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1216px) {
     .navbar.is-warning .navbar-start > .navbar-item,
     .navbar.is-warning .navbar-start .navbar-link,
     .navbar.is-warning .navbar-end > .navbar-item,
@@ -6585,7 +6585,7 @@ button.dropdown-item.is-active {
     color: #fff;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1216px) {
     .navbar.is-danger .navbar-start > .navbar-item,
     .navbar.is-danger .navbar-start .navbar-link,
     .navbar.is-danger .navbar-end > .navbar-item,
@@ -6849,7 +6849,7 @@ a.navbar-item.is-active,
     margin: 0.5rem 0;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1215px) {
     .navbar > .container {
         display: block;
     }
@@ -6901,7 +6901,7 @@ a.navbar-item.is-active,
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1216px) {
     .navbar,
     .navbar-menu,
     .navbar-start,
@@ -11704,7 +11704,7 @@ a.has-text-danger-dark:focus {
     color: #0a0a0a;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1215px) {
     .hero.is-white .navbar-menu {
         background-color: white;
     }
@@ -11802,7 +11802,7 @@ a.has-text-danger-dark:focus {
     color: white;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1215px) {
     .hero.is-black .navbar-menu {
         background-color: #0a0a0a;
     }
@@ -11900,7 +11900,7 @@ a.has-text-danger-dark:focus {
     color: rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1215px) {
     .hero.is-light .navbar-menu {
         background-color: whitesmoke;
     }
@@ -11998,7 +11998,7 @@ a.has-text-danger-dark:focus {
     color: #fff;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1215px) {
     .hero.is-dark .navbar-menu {
         background-color: #363636;
     }
@@ -12096,7 +12096,7 @@ a.has-text-danger-dark:focus {
     color: #fff;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1215px) {
     .hero.is-primary .navbar-menu {
         background-color: #00d1b2;
     }
@@ -12194,7 +12194,7 @@ a.has-text-danger-dark:focus {
     color: #fff;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1215px) {
     .hero.is-link .navbar-menu {
         background-color: #485fc7;
     }
@@ -12292,7 +12292,7 @@ a.has-text-danger-dark:focus {
     color: #fff;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1215px) {
     .hero.is-info .navbar-menu {
         background-color: #3e8ed0;
     }
@@ -12390,7 +12390,7 @@ a.has-text-danger-dark:focus {
     color: #fff;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1215px) {
     .hero.is-success .navbar-menu {
         background-color: #48c78e;
     }
@@ -12488,7 +12488,7 @@ a.has-text-danger-dark:focus {
     color: rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1215px) {
     .hero.is-warning .navbar-menu {
         background-color: #ffe08a;
     }
@@ -12586,7 +12586,7 @@ a.has-text-danger-dark:focus {
     color: #fff;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1215px) {
     .hero.is-danger .navbar-menu {
         background-color: #f14668;
     }

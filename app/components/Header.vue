@@ -338,7 +338,7 @@ div.body header .navbar .navbar-item.discord.top:hover .navbar-item-title
     text-align center
     width 100%
 
-@media(max-width: 1024px)
+@media(max-width: 1215px)
   .discord
     display none
 
@@ -357,4 +357,11 @@ div.body header .navbar .navbar-item.discord.top:hover .navbar-item-title
 
   div.body .header-padding
     height 52px
+
+  // The header is fixed: an open menu taller than the screen must scroll
+  // inside itself, the page behind it does not move.
+  .navbar-menu.is-active
+    max-height calc(100dvh - 52px)
+    overflow-y auto
+    overscroll-behavior contain
 </style>

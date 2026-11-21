@@ -94,7 +94,7 @@ html.has-dark-mode div.body header .navbar .navbar-item.top.theme-toggle
   &:hover
     color #00B242
 
-  @media (max-width: 1023px)
+  @media (max-width: 1215px)
     margin-left auto
 
 html.theme-dark .theme-toggle

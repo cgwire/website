@@ -692,6 +692,24 @@ div.body
                 margin-left 1rem
                 margin-right 1em
 
+            // Tighter spacing on the desktop bar so its items fit the 1200px
+            // container from the navbar breakpoint (bulma.css, 1216px) up.
+            @media (min-width: 1216px)
+                .navbar-start
+                    margin-left 0.5rem
+                    margin-right 0.5em
+
+                .navbar-item.top
+                .navbar-item.signin
+                    padding-left 0.5rem
+                    padding-right 0.5rem
+
+                .navbar-item.has-dropdown span.navbar-item-title
+                    margin-left 0.25em
+
+                .navbar-link:not(.is-arrowless)
+                    padding-right 2em
+
             .navbar-link
             .navbar-item-title
                 font-size 16px
@@ -1610,7 +1628,7 @@ div.body
         header
             .navbar
                 .navbar-menu
-                    overflow scroll
+                    overflow-y auto
                 .navbar-dropdown
                     border 0
                     border-radius 0
