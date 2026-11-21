@@ -1735,8 +1735,7 @@
           "subtitle": "Pythonクライアント SDK",
           "title": "クリーンなAPIで開発時間を節約",
           "content": "Kitsu Pythonクライアント gazu は、毎回リクエストロジックを再構築することなくプロダクションデータを取得するための直感的な関数を提供します。生のクライアントは必要に応じて複雑なクエリを処理し、組み込みキャッシュはレスポンスタイムを高速に保ちます。PyPIから直接インストールして作業を開始します。",
-          "image": "kitsu-python.png",
-          "shadow": true,
+          "image": "kitsu-python-animated.svg",
           "colored": true,
           "gradient": 2
         },

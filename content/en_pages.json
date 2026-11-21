@@ -1701,8 +1701,7 @@
           "subtitle": "Python client SDK",
           "title": "Save development time with a clean API",
           "content": "The Kitsu Python client, gazu, gives you intuitive functions to fetch production data without rebuilding request logic every time. A raw client handles complex queries when needed, and a built-in cache keeps response times fast. Install it directly from PyPI and start working.",
-          "image": "kitsu-python.png",
-          "shadow": true,
+          "image": "kitsu-python-animated.svg",
           "colored": true,
           "gradient": 2
         },
