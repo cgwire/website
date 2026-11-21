@@ -1518,7 +1518,8 @@
           "title": "高速なサービスを利用できます",
           "subtitle": "最適化されたアクセス",
           "content": "インスタンスは専用リソース上で動作し、他のスタジオから分離され、欧州連合内（またはお客様の地域）のOVHデータセンターでホストされます。プロダクションデータは欧州の法域内に留まります。ビデオ処理は別のマシンで実行されるため、大きなプレイリストがワークフローを遅くすることはありません。",
-          "image": "kitsu-performance.png",
+          "image": "kitsu-performance-animated.svg",
+          "imageDark": "kitsu-performance-animated-dark.svg",
           "colored": true,
           "gradient": 2,
           "shadow": false

@@ -1492,7 +1492,8 @@
           "subtitle": "Optimized access",
           "title": "Enjoy fast services",
           "content": "Your instance runs on dedicated resources, isolated from other studios, in OVH data centers in the European Union (or in your region). Video processing runs on a separate machine so large playlists never slow down your workflow.",
-          "image": "kitsu-performance.png",
+          "image": "kitsu-performance-animated.svg",
+          "imageDark": "kitsu-performance-animated-dark.svg",
           "colored": true,
           "gradient": 2,
           "shadow": false

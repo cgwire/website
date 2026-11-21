@@ -1518,7 +1518,8 @@
           "title": "Profitez de services rapides",
           "subtitle": "Accès optimisé",
           "content": "Votre instance s'exécute sur des ressources dédiées, isolées des autres studios, dans les datacenters OVH de l'Union européenne (ou dans votre région) : vos données de production restent sous juridiction européenne. Le traitement vidéo s'exécute sur une machine séparée pour que les grandes playlists ne ralentissent jamais votre flux de travail.",
-          "image": "kitsu-performance.png",
+          "image": "kitsu-performance-animated.svg",
+          "imageDark": "kitsu-performance-animated-dark.svg",
           "colored": true,
           "gradient": 2,
           "shadow": false
