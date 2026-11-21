@@ -1428,8 +1428,8 @@
           "title": "Asset library",
           "subtitle": "Optimize asset creation",
           "content": "Pull from a shared library to keep teams from recreating assets that already exist and have been validated. Everyone references the same source of truth.",
-          "image": "kitsu-library.png",
-          "shadow": true,
+          "image": "kitsu-library-animated.svg",
+          "imageDark": "kitsu-library-animated-dark.svg",
           "colored": true,
           "gradient": 3
         }

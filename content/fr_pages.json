@@ -1444,9 +1444,9 @@
           "title": "Bibliothèque d'assets",
           "subtitle": "Optimisez la création d'assets",
           "content": "Puisez dans une bibliothèque partagée pour éviter que les équipes recréent des assets qui existent déjà et ont été validés. Tout le monde fait référence à la même source de vérité.",
-          "image": "kitsu-library.png",
+          "image": "kitsu-library-animated.svg",
+          "imageDark": "kitsu-library-animated-dark.svg",
           "colored": true,
-          "shadow": true,
           "gradient": 3
         }
       ],

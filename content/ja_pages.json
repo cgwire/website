@@ -1444,9 +1444,9 @@
           "title": "アセットライブラリ",
           "subtitle": "アセット制作を最適化する",
           "content": "共有ライブラリから取得して、既に存在し検証済みのアセットをチームが再作成しないようにします。全員が同じ信頼できる情報源を参照します。",
-          "image": "kitsu-library.png",
+          "image": "kitsu-library-animated.svg",
+          "imageDark": "kitsu-library-animated-dark.svg",
           "colored": true,
-          "shadow": true,
           "gradient": 3
         }
       ],
