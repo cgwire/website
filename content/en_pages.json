@@ -1684,7 +1684,7 @@
           "title": "Automated workflow",
           "subtitle": "Pipeline with real data",
           "content": "When production data lives in one place, everything downstream can be automated. Synchronize data across tools, publish previews directly from your DCC, and trigger custom scripts on any event. What used to require manual coordination runs on its own.",
-          "image": "kitsu-boost.png",
+          "image": "kitsu-boost-animated.svg",
           "colored": true,
           "gradient": 1,
           "shadow": false

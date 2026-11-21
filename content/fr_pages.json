@@ -1718,7 +1718,7 @@
           "title": "Workflow automatisé",
           "subtitle": "Une pipeline nourrie de vraies données",
           "content": "Quand les données de production se trouvent au même endroit, tout ce qui est en aval peut être automatisé. Synchronisez les données entre les outils, publiez des aperçus directement depuis votre DCC et déclenchez des scripts personnalisés sur n'importe quel événement. Ce qui nécessitait auparavant une coordination manuelle fonctionne tout seul.",
-          "image": "kitsu-boost.png",
+          "image": "kitsu-boost-animated.svg",
           "gradient": 1,
           "colored": true,
           "shadow": false
