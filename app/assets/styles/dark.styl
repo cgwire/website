@@ -549,9 +549,16 @@ html.has-dark-mode.theme-dark
 
         // --- Software integrations ---
 
-        // Logos are made for light backgrounds: keep light tiles.
-        .integrations .software
-            background-color #72767D
+        .integrations
+            .integration-group
+                background dark-surface
+
+            .community-subtitle
+                color dark-text-muted
+
+            // Logos are made for light backgrounds: keep light tiles.
+            .software
+                background-color #E3E5E8
 
         // --- Free tools ---
 

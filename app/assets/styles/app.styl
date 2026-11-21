@@ -1049,50 +1049,115 @@ div.body
     // ========================================================================
 
     .integrations
-        .flexrow
-            align-items stretch
-
-            .flexrow-item:last-child
-                margin-right 0
-
-        .software
-            background lightgrey
-            border 1px solid transparent
-            border-radius 10px
-            display flex
-            flex 1 1
-            justify-content center
-            padding 2em
-            position relative
+        .integration-group
+            background lightblue
+            border-radius 20px
+            margin-top 2rem
+            padding 3.5rem 2rem
             text-align center
-            transition all 0.5s ease
 
-            &.transparent
-              background transparent
-
-            &:hover
-              border 1px solid purple
-              box-shadow 0 0 12px rgba(138, 83, 209, 0.4)
-
-            .made-by-community
-              background purple + 80%
-              border-radius 16px
-              bottom 10px
-              color purple
-              font-size 0.6em
-              padding 0.2em 0.8em
-              position absolute
-              right 10px
+        .section-subtitle
+            margin-bottom 0.2em
 
         h2.section-title
             font-size 2em
 
-        .section-subtitle
-            margin-top 6em
-            margin-bottom 0.2em
+        .community-subtitle
+            align-items center
+            color text-medium
+            display flex
+            font-size 0.8rem
+            gap 1rem
+            letter-spacing .22em
+            margin 2.5rem auto 1.5rem
+            max-width 720px
+            text-transform uppercase
 
-            &:first-child
-                margin-top 1em
+            &::before
+            &::after
+                background currentColor
+                content ''
+                flex 1
+                height 1px
+                opacity 0.3
+
+        .software-grid
+            display flex
+            flex-wrap wrap
+            gap 1rem
+            justify-content center
+
+        .software
+            align-items center
+            background white
+            border 1px solid rgba(0, 0, 0, 0.06)
+            border-radius 12px
+            display flex
+            flex-direction column
+            gap 0.5rem
+            min-height 140px
+            padding 1rem
+            transition border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease
+            width 220px
+
+            &:hover
+                border-color purple
+                box-shadow 0 0 12px rgba(138, 83, 209, 0.4)
+                transform translateY(-2px)
+
+            // The logo files are trimmed to their artwork: this box gives
+            // wordmarks and square icons a similar visual weight.
+            > img
+                margin auto
+                max-height 72px
+                max-width 150px
+
+            .authors
+                display flex
+                flex-wrap wrap
+                gap 0.5rem
+                justify-content center
+                margin-top 0.5rem
+                max-width 100%
+
+            // Tiles stay light in the dark theme, so the chip colors hold in both.
+            .author
+                align-items center
+                background rgba(138, 83, 209, 0.12)
+                border-radius 999px
+                color darken(purple, 35%)
+                display inline-flex
+                font-size 0.75rem
+                gap 0.4rem
+                line-height 1
+                min-width 0
+                padding 3px 10px 3px 3px
+
+                strong
+                    color inherit
+                    font-weight 600
+
+            .author-name
+                overflow hidden
+                text-overflow ellipsis
+                white-space nowrap
+
+            .author-avatar
+                border-radius 50%
+                flex none
+                height 20px
+                width 20px
+
+        @media(max-width: 540px)
+            .integration-group
+                padding 2.5rem 1rem
+
+            .software
+                padding 0.75rem
+                width calc(50% - 0.5rem)
+
+                > img
+                    max-width 100%
 
     // ========================================================================
     // PAGE: STUDIOS
@@ -1646,22 +1711,6 @@ div.body
                 margin-top 0
                 padding-left .8em
                 padding-top 0
-
-        .integrations
-            .software
-                height 150px
-                img
-                    max-width 150px
-                    max-height 150px
-            .flexrow
-                flex-direction column
-
-                .flexrow-item
-                    margin-bottom 1em
-
-            .software
-                width 100%
-                padding 0.5em
 
         section.supporters
             text-align center

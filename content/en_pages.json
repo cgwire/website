@@ -1252,20 +1252,17 @@
                 {
                   "alt": "Blender Logo",
                   "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-blender.png",
-                  "imageClass": "w75pe"
+                  "image": "/images/integrations/logo-blender.png"
                 },
                 {
                   "alt": "Harmony Logo",
                   "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-harmony.png",
-                  "imageClass": "w75pe"
+                  "image": "/images/integrations/logo-harmony.png"
                 },
                 {
                   "alt": "Unreal Engine",
                   "href": "https://github.com/cgwire/kitsu-publisher-next#readme",
-                  "image": "/images/integrations/logo-unreal-engine.png",
-                  "imageClass": "w75pe"
+                  "image": "/images/integrations/logo-unreal-engine.png"
                 }
               ],
               [
@@ -1273,21 +1270,18 @@
                   "alt": "Houdini Logo",
                   "href": "https://github.com/Chantology/kitsu-houdini-plugin",
                   "image": "/images/integrations/houdini.png",
-                  "imageClass": "w75pe",
                   "community": true,
                   "authors": [{ "username": "Chantology" }]
                 },
                 {
                   "alt": "OpenRV Logo",
                   "href": "https://github.com/cgwire/openrv",
-                  "image": "/images/integrations/openrv.png",
-                  "imageClass": "w75pe"
+                  "image": "/images/integrations/openrv.png"
                 },
                 {
                   "alt": "Blender Logo",
                   "href": "https://github.com/Chantology/kitsu-blender-plugin",
                   "image": "/images/integrations/logo-blender.png",
-                  "imageClass": "w75pe",
                   "community": true,
                   "authors": [{ "username": "Chantology" }]
                 }
@@ -1297,7 +1291,6 @@
                   "alt": "Prism Logo",
                   "href": "https://github.com/EmberLightVFX/Kitsu-for-Prism",
                   "image": "/images/integrations/logo-prism.png",
-                  "imageClass": "w75pe",
                   "community": true,
                   "authors": [{ "username": "EmberLightVFX" }]
                 }
@@ -1307,7 +1300,6 @@
                   "alt": "Maya Logo",
                   "href": "https://github.com/Chantology/kitsu-maya-plugin",
                   "image": "/images/integrations/maya.png",
-                  "imageClass": "w75pe",
                   "community": true,
                   "authors": [{ "username": "Chantology" }]
                 }
@@ -1322,20 +1314,17 @@
                 {
                   "alt": "Slack Logo",
                   "href": "https://kitsu.cg-wire.com/slack/",
-                  "image": "/images/integrations/logo-slack.png",
-                  "imageClass": "w75pe"
+                  "image": "/images/integrations/logo-slack.png"
                 },
                 {
                   "alt": "Mattermost Logo",
                   "href": "https://kitsu.cg-wire.com/mattermost/",
-                  "image": "/images/integrations/logo-mattermost.png",
-                  "imageClass": "w75pe"
+                  "image": "/images/integrations/logo-mattermost.png"
                 },
                 {
                   "alt": "Discord Logo",
                   "href": "https://kitsu.cg-wire.com/discord/",
-                  "image": "/images/integrations/logo-discord.png",
-                  "imageClass": "w75pe"
+                  "image": "/images/integrations/logo-discord.png"
                 }
               ]
             ]
@@ -1348,14 +1337,12 @@
                 {
                   "alt": "Python Logo",
                   "href": "https://gazu.cg-wire.com",
-                  "image": "/images/integrations/logo-python.png",
-                  "imageClass": "w50pe"
+                  "image": "/images/integrations/logo-python.png"
                 },
                 {
                   "alt": "Javascript Logo",
                   "href": "https://github.com/cgwire/kitsu-client-js",
-                  "image": "/images/integrations/logo-javascript.png",
-                  "imageClass": "w25pe"
+                  "image": "/images/integrations/logo-javascript.png"
                 }
               ]
             ]

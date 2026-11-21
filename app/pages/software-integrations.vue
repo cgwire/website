@@ -3,72 +3,53 @@
     <SolutionHeaderBlock :page-key="page.slug" :header="page.meta.header" />
 
     <section class="section mt8 pt0">
-      <template
-        v-for="(group, gIndex) in groupedIntegrations"
+      <div
+        v-for="group in groupedIntegrations"
         :key="group.title"
+        class="integration-group"
       >
-        <div
-          class="section-subtitle has-text-centered"
-          :class="{ mt4: gIndex > 0 }"
-        >
-          {{ group.subtitle }}
-        </div>
-        <h2 class="section-title has-text-centered">
-          {{ group.title }}
-        </h2>
+        <div class="section-subtitle">{{ group.subtitle }}</div>
+        <h2 class="section-title">{{ group.title }}</h2>
 
-        <!-- Official integrations -->
-        <div
-          class="software-grid mt2"
-          :class="{ mb4: !group.communityItems.length }"
+        <template
+          v-for="section in group.sections"
+          :key="section.label || 'official'"
         >
-          <a
-            v-for="item in group.officialItems"
-            :key="item.alt"
-            :href="item.href"
-            class="software"
-            :class="item.linkClass"
-          >
-            <NuxtImg :src="item.image" :class="item.imageClass" :alt="item.alt" />
-          </a>
-        </div>
-
-        <!-- Community integrations -->
-        <template v-if="group.communityItems.length">
-          <div class="section-subtitle has-text-centered community-subtitle mt4">
-            {{ page.meta.communityContribution }}
+          <div v-if="section.label" class="community-subtitle">
+            {{ section.label }}
           </div>
 
-          <div class="software-grid mt2 mb4">
+          <div class="software-grid">
             <a
-              v-for="item in group.communityItems"
+              v-for="item in section.items"
               :key="item.alt"
               :href="item.href"
               class="software"
-              :class="item.linkClass"
             >
-              <NuxtImg :src="item.image" :class="item.imageClass" :alt="item.alt" />
+              <NuxtImg :src="item.image" :alt="item.alt" />
               <span v-if="item.authors?.length" class="authors">
                 <span
                   v-for="author in item.authors"
                   :key="author.username || author.name"
                   class="author"
                 >
-                  <span class="author-name">by {{ author.username || author.name }}</span>
                   <img
                     class="author-avatar"
                     :src="authorAvatar(author)"
-                    :alt="author.username || author.name"
-                    width="24"
-                    height="24"
+                    alt=""
+                    width="20"
+                    height="20"
                     loading="lazy"
                   />
+                  <span class="author-name">
+                    by <strong>{{ author.username || author.name }}</strong>
+                  </span>
                 </span>
               </span>
             </a>
           </div>
         </template>
-      </template>
+      </div>
     </section>
 
     <Trial />
@@ -87,31 +68,26 @@ const { data: page } = await useAsyncData(
   { watch: [slug, locale] }
 )
 
-const ROW_SIZE = 3
-
-const chunk = (items, size) => {
-  const rows = []
-  for (let i = 0; i < items.length; i += size) {
-    rows.push(items.slice(i, i + size))
-  }
-  return rows
-}
-
 const groupedIntegrations = computed(() => {
   if (!page.value) return []
 
-  return page.value.meta.integrations.groups.map((group) => {
-    const items = group.rows.flat().filter((item) => item?.alt)
+  return page.value.meta.integrations.groups.map(group => {
+    const items = group.rows.flat().filter(item => item?.alt)
 
     return {
       ...group,
-      officialItems: items.filter((item) => !item.community),
-      communityItems: items.filter((item) => item.community)
+      sections: [
+        { items: items.filter(item => !item.community) },
+        {
+          label: page.value.meta.communityContribution,
+          items: items.filter(item => item.community)
+        }
+      ].filter(section => section.items.length)
     }
   })
 })
 
-const authorAvatar = (author) =>
+const authorAvatar = author =>
   author.avatar || `https://github.com/${author.username}.png?size=48`
 
 useSEO({
@@ -120,57 +96,3 @@ useSEO({
   imagePath: 'software-integrations.png'
 })
 </script>
-
-<style>
-.software-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-.software {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 1 / 1;
-  padding: 20px;
-}
-
-.software > img {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  object-fit: contain;
-}
-
-.community-subtitle {
-  opacity: 0.7;
-  font-size: 0.9em;
-}
-
-.authors {
-  position: absolute;
-  bottom: 0.5rem;
-  right: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.author {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.8rem;
-  opacity: 0.75;
-}
-
-.author-avatar {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-}
-</style>
