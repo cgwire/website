@@ -11,10 +11,10 @@
     .focus1 { opacity: 0; animation: focus1 9s ease-in-out infinite }
     .add1 { opacity: 0; animation: add1 9s ease-in-out infinite }
     .ghost0, .ghost1 { transform-origin: 0 0 }
-    @keyframes ghost0 { 0%, 13.9% { opacity: 0; transform: translate(0, 0) scale(1) } 14% { opacity: 1; transform: translate(0, 0) scale(1) } 24% { opacity: 1; transform: translate(-388px, 88px) scale(0.769) } 24.1%, 100% { opacity: 0; transform: translate(-388px, 88px) scale(0.769) } }
+    @keyframes ghost0 { 0%, 13.9% { opacity: 0; transform: translate(0, 0) scale(1) } 14% { opacity: 1; transform: translate(0, 0) scale(1) } 24% { opacity: 1; transform: translate(-370px, 88px) scale(1.000) } 24.1%, 100% { opacity: 0; transform: translate(-370px, 88px) scale(1.000) } }
     @keyframes focus0 { 0%, 9% { opacity: 0 } 10%, 26% { opacity: 1 } 28%, 100% { opacity: 0 } }
     @keyframes add0 { 0%, 23.9% { opacity: 0 } 24%, 90% { opacity: 1 } 94%, 100% { opacity: 0 } }
-    @keyframes ghost1 { 0%, 43.9% { opacity: 0; transform: translate(0, 0) scale(1) } 44% { opacity: 1; transform: translate(0, 0) scale(1) } 54% { opacity: 1; transform: translate(-210px, -32px) scale(0.769) } 54.1%, 100% { opacity: 0; transform: translate(-210px, -32px) scale(0.769) } }
+    @keyframes ghost1 { 0%, 43.9% { opacity: 0; transform: translate(0, 0) scale(1) } 44% { opacity: 1; transform: translate(0, 0) scale(1) } 54% { opacity: 1; transform: translate(-370px, 42px) scale(1.000) } 54.1%, 100% { opacity: 0; transform: translate(-370px, 42px) scale(1.000) } }
     @keyframes focus1 { 0%, 39% { opacity: 0 } 40%, 56% { opacity: 1 } 58%, 100% { opacity: 0 } }
     @keyframes add1 { 0%, 53.9% { opacity: 0 } 54%, 90% { opacity: 1 } 94%, 100% { opacity: 0 } }
     @keyframes n0 { 0%, 23.9% { opacity: 1 } 24%, 93.9% { opacity: 0 } 94%, 100% { opacity: 1 } }
@@ -86,34 +86,34 @@
   <use href="#th-bird" x="36" y="143" width="64" height="28"/>
   <text x="110" y="161.5" font-weight="700" fill-opacity=".8">Birdspotting</text>
   <text x="212" y="141" font-size="12">5 assets</text>
-  <g transform="translate(212 148)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-25" x="0" y="7.30769" width="40" height="25.3846"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g transform="translate(270 148)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-02" x="0" y="1.53846" width="40" height="36.9231"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g transform="translate(328 148)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-15" x="0" y="0" width="40" height="40"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g transform="translate(386 148)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-60" x="0" y="1.92308" width="40" height="36.1538"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g transform="translate(444 148)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-72" x="0" y="0" width="40" height="40"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
+  <g transform="translate(212 148)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-25" x="0" y="7.30769" width="40" height="25.3846"/></g>
+  <g transform="translate(258 148)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-02" x="0" y="1.53846" width="40" height="36.9231"/></g>
+  <g transform="translate(304 148)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-15" x="0" y="0" width="40" height="40"/></g>
+  <g transform="translate(350 148)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-60" x="0" y="1.92308" width="40" height="36.1538"/></g>
+  <g transform="translate(396 148)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-72" x="0" y="0" width="40" height="40"/></g>
   <use href="#th-forest" x="36" y="215" width="64" height="28"/>
   <text x="110" y="233.5" font-weight="700" fill-opacity=".8">Forest</text>
-  <g transform="translate(212 220)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-10" x="0" y="9.23077" width="40" height="21.5385"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g transform="translate(270 220)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-43" x="0" y="4.61538" width="40" height="30.7692"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
+  <g transform="translate(212 220)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-10" x="0" y="9.23077" width="40" height="21.5385"/></g>
+  <g transform="translate(258 220)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-43" x="0" y="4.61538" width="40" height="30.7692"/></g>
   <use href="#th-path" x="36" y="287" width="64" height="28"/>
   <text x="110" y="305.5" font-weight="700" fill-opacity=".8">Forest path</text>
   <text x="212" y="285" font-size="12">4 assets</text>
-  <g transform="translate(212 292)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-43" x="0" y="4.61538" width="40" height="30.7692"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g transform="translate(270 292)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-12" x="0" y="0" width="40" height="40"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g transform="translate(328 292)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-25" x="0" y="7.30769" width="40" height="25.3846"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g transform="translate(386 292)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-63" x="0" y="0" width="40" height="40"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
+  <g transform="translate(212 292)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-43" x="0" y="4.61538" width="40" height="30.7692"/></g>
+  <g transform="translate(258 292)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-12" x="0" y="0" width="40" height="40"/></g>
+  <g transform="translate(304 292)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-25" x="0" y="7.30769" width="40" height="25.3846"/></g>
+  <g transform="translate(350 292)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-63" x="0" y="0" width="40" height="40"/></g>
   <use href="#th-haircut" x="36" y="359" width="64" height="28"/>
   <text x="110" y="377.5" font-weight="700" fill-opacity=".8">Haircut</text>
   <text x="212" y="357" font-size="12">4 assets</text>
-  <g transform="translate(212 364)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-43" x="0" y="4.61538" width="40" height="30.7692"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g transform="translate(270 364)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-05" x="0" y="0" width="40" height="40"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g transform="translate(328 364)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-14" x="0" y="7.30769" width="40" height="25.3846"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g transform="translate(386 364)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-15" x="0" y="0" width="40" height="40"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
+  <g transform="translate(212 364)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-43" x="0" y="4.61538" width="40" height="30.7692"/></g>
+  <g transform="translate(258 364)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-05" x="0" y="0" width="40" height="40"/></g>
+  <g transform="translate(304 364)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-14" x="0" y="7.30769" width="40" height="25.3846"/></g>
+  <g transform="translate(350 364)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-15" x="0" y="0" width="40" height="40"/></g>
   <text x="212" y="213" font-size="12" class="n0">2 assets</text>
   <text x="212" y="213" font-size="12" class="n1">3 assets</text>
   <text x="212" y="213" font-size="12" class="n2">4 assets</text>
-  <g class="add0" transform="translate(328 220)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-15" x="0" y="0" width="40" height="40"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
-  <g class="add1" transform="translate(386 220)"><rect x="26" width="28" height="40" rx="5" fill="#e67e22"/><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-64" x="0" y="0" width="40" height="40"/><text transform="translate(47 20) rotate(-90)" text-anchor="middle" y="2.5" font-size="7" fill="#fff">fixed</text></g>
+  <g class="add0" transform="translate(304 220)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-15" x="0" y="0" width="40" height="40"/></g>
+  <g class="add1" transform="translate(350 220)"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-64" x="0" y="0" width="40" height="40"/></g>
 
   <!-- Selected set, drawn above the rows -->
   <rect x="29" y="195" width="478" height="68" rx="7" fill="none" stroke="#00b242" stroke-width="1.5" filter="url(#sel-shadow)"/>
@@ -121,35 +121,35 @@
   <!-- Available assets -->
   <path d="M522.5 32v376" stroke="#4e5159"/>
   <text x="536" y="45" font-size="12" font-weight="700" letter-spacing="1.2" fill-opacity=".6">ALL AVAILABLE ASSETS</text>
-  <rect x="536.5" y="56.5" width="231" height="30" rx="15" fill="#36393f" stroke="#4e5159"/>
+  <rect x="536.5" y="56.5" width="223" height="30" rx="15" fill="#36393f" stroke="#4e5159"/>
   <g fill="none" stroke="#dcddde" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round">
     <circle cx="553" cy="70.5" r="5"/>
     <path d="M556.8 74.3l3.7 3.7"/>
   </g>
   <text x="536" y="116" font-size="14" fill-opacity=".6">PROPS</text>
-  <path d="M536 122.5h232" stroke="#4e5159"/>
-  <rect x="536" y="132" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-05" x="536" y="132" width="52" height="52"/>
-  <rect x="596" y="132" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-11" x="596" y="132" width="52" height="52"/>
-  <rect x="656" y="132" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-14" x="656" y="141.5" width="52" height="33"/>
-  <rect x="716" y="132" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-15" x="716" y="132" width="52" height="52"/>
-  <rect x="536" y="192" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-25" x="536" y="201.5" width="52" height="33"/>
-  <rect x="596" y="192" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-35" x="596" y="192" width="52" height="52"/>
-  <rect x="656" y="192" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-43" x="656" y="198" width="52" height="40"/>
-  <rect x="716" y="192" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-44" x="716" y="197.5" width="52" height="41"/>
-  <rect x="536" y="252" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-63" x="536" y="252" width="52" height="52"/>
-  <rect x="596" y="252" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-64" x="596" y="252" width="52" height="52"/>
-  <rect x="656" y="252" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-65" x="656" y="252" width="52" height="52"/>
-  <rect x="716" y="252" width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-72" x="716" y="252" width="52" height="52"/>
-  <text x="536" y="330" font-size="14" fill-opacity=".6">SET</text>
-  <path d="M536 336.5h232" stroke="#4e5159"/>
-  <rect x="536" y="346" width="52" height="52" rx="6" fill="#5e6169"/><use href="#set-s0" x="536" y="360" width="52" height="24"/>
-  <rect x="596" y="346" width="52" height="52" rx="6" fill="#5e6169"/><use href="#set-s1" x="596" y="360" width="52" height="24"/>
-  <rect x="656" y="346" width="52" height="52" rx="6" fill="#5e6169"/><use href="#set-s3" x="656" y="360" width="52" height="24"/>
-  <rect x="716" y="346" width="52" height="52" rx="6" fill="#5e6169"/><use href="#set-s4" x="716" y="360" width="52" height="24"/>
+  <path d="M536 122.5h224" stroke="#4e5159"/>
+  <rect x="536" y="132" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-05" x="536" y="132" width="40" height="40"/>
+  <rect x="582" y="132" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-11" x="582" y="132" width="40" height="40"/>
+  <rect x="628" y="132" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-14" x="628" y="139.308" width="40" height="25.3846"/>
+  <rect x="674" y="132" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-15" x="674" y="132" width="40" height="40"/>
+  <rect x="720" y="132" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-25" x="720" y="139.308" width="40" height="25.3846"/>
+  <rect x="536" y="178" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-35" x="536" y="178" width="40" height="40"/>
+  <rect x="582" y="178" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-43" x="582" y="182.615" width="40" height="30.7692"/>
+  <rect x="628" y="178" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-44" x="628" y="182.231" width="40" height="31.5385"/>
+  <rect x="674" y="178" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-63" x="674" y="178" width="40" height="40"/>
+  <rect x="720" y="178" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-64" x="720" y="178" width="40" height="40"/>
+  <rect x="536" y="224" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-65" x="536" y="224" width="40" height="40"/>
+  <rect x="582" y="224" width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-72" x="582" y="224" width="40" height="40"/>
+  <text x="536" y="288" font-size="14" fill-opacity=".6">SET</text>
+  <path d="M536 294.5h224" stroke="#4e5159"/>
+  <rect x="536" y="304" width="40" height="40" rx="5" fill="#5e6169"/><use href="#set-s0" x="536" y="314.769" width="40" height="18.4615"/>
+  <rect x="582" y="304" width="40" height="40" rx="5" fill="#5e6169"/><use href="#set-s1" x="582" y="314.769" width="40" height="18.4615"/>
+  <rect x="628" y="304" width="40" height="40" rx="5" fill="#5e6169"/><use href="#set-s3" x="628" y="314.769" width="40" height="18.4615"/>
+  <rect x="674" y="304" width="40" height="40" rx="5" fill="#5e6169"/><use href="#set-s4" x="674" y="314.769" width="40" height="18.4615"/>
 
   <!-- Focus on the picked prop and its flight to the casting -->
-  <rect x="715" y="131" width="54" height="54" rx="7" fill="none" stroke="#00b242" stroke-width="2" filter="url(#sel-shadow)" class="focus0"/>
-  <rect x="595" y="251" width="54" height="54" rx="7" fill="none" stroke="#00b242" stroke-width="2" filter="url(#sel-shadow)" class="focus1"/>
-  <g transform="translate(716 132)"><g class="ghost0"><rect width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-15" x="0" y="0" width="52" height="52"/></g></g>
-  <g transform="translate(596 252)"><g class="ghost1"><rect width="52" height="52" rx="6" fill="#5e6169"/><use href="#pr-64" x="0" y="0" width="52" height="52"/></g></g>
+  <rect x="673" y="131" width="42" height="42" rx="6" fill="none" stroke="#00b242" stroke-width="2" filter="url(#sel-shadow)" class="focus0"/>
+  <rect x="719" y="177" width="42" height="42" rx="6" fill="none" stroke="#00b242" stroke-width="2" filter="url(#sel-shadow)" class="focus1"/>
+  <g transform="translate(674 132)"><g class="ghost0"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-15" x="0" y="0" width="40" height="40"/></g></g>
+  <g transform="translate(720 178)"><g class="ghost1"><rect width="40" height="40" rx="5" fill="#5e6169"/><use href="#pr-64" x="0" y="0" width="40" height="40"/></g></g>
 </svg>
