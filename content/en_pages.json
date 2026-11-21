@@ -1526,8 +1526,8 @@
           "title": "Know where your production stands",
           "subtitle": "360° view of your data",
           "content": "Get accurate progress statistics across all your projects, from high-level summaries to task-level detail. Share reports with clients or producers directly from Kitsu with built-in export tools.",
-          "image": "kitsu-report.png",
-          "shadow": true,
+          "image": "kitsu-report-animated.svg",
+          "imageDark": "kitsu-report-animated-dark.svg",
           "colored": true,
           "gradient": 1
         },

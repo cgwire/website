@@ -1551,8 +1551,8 @@
           "title": "プロダクションの現状を把握する",
           "subtitle": "データの360度ビュー",
           "content": "すべてのプロジェクトにわたって、ハイレベルなサマリーからタスクレベルの詳細まで、正確な進捗統計を取得します。組み込みのエクスポートツールを使用して、Kitsuから直接クライアントやプロデューサーとレポートを共有します。",
-          "image": "kitsu-report.png",
-          "shadow": true,
+          "image": "kitsu-report-animated.svg",
+          "imageDark": "kitsu-report-animated-dark.svg",
           "colored": true,
           "gradient": 1
         },

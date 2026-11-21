@@ -1551,8 +1551,8 @@
           "title": "Sachez où en est votre production",
           "subtitle": "Vue à 360° de vos données",
           "content": "Obtenez des statistiques de progression précises sur tous vos projets, des résumés de haut niveau aux détails au niveau des tâches. Partagez des rapports avec les clients ou les producteurs directement depuis Kitsu grâce aux outils d'exportation intégrés.",
-          "image": "kitsu-report.png",
-          "shadow": true,
+          "image": "kitsu-report-animated.svg",
+          "imageDark": "kitsu-report-animated-dark.svg",
           "colored": true,
           "gradient": 1
         },
