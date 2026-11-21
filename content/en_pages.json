@@ -1878,8 +1878,8 @@
           "title": "Reach us where it works for you",
           "subtitle": "Support when you need it",
           "content": "Access support directly in Kitsu, on Discord, or over Zoom. Whatever the issue, we are available through the channel that fits your situation.",
-          "image": "kitsu-chat.png",
-          "shadow": true,
+          "image": "kitsu-chat-animated.svg",
+          "imageDark": "kitsu-chat-animated-dark.svg",
           "reverted": true
         },
         {

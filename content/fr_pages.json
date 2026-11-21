@@ -1930,8 +1930,8 @@
           "title": "Contactez-nous là où ça vous convient",
           "subtitle": "Support quand vous en avez besoin",
           "content": "Accédez au support directement dans Kitsu, sur Discord ou par Zoom. Quel que soit le problème, nous sommes disponibles via le canal qui convient à votre situation.",
-          "image": "kitsu-chat.png",
-          "shadow": true,
+          "image": "kitsu-chat-animated.svg",
+          "imageDark": "kitsu-chat-animated-dark.svg",
           "reverted": true
         },
         {

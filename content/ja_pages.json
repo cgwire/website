@@ -1930,8 +1930,8 @@
           "title": "あなたに合った方法でお問い合わせください",
           "subtitle": "必要なときのサポート",
           "content": "Kitsu内直接、Discord、またはZoom経由でサポートにアクセスします。問題に関わらず、あなたの状況に合ったチャンネルを通じてご利用いただけます。",
-          "image": "kitsu-chat.png",
-          "shadow": true,
+          "image": "kitsu-chat-animated.svg",
+          "imageDark": "kitsu-chat-animated-dark.svg",
           "reverted": true
         },
         {
