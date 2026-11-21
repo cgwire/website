@@ -1420,8 +1420,8 @@
           "title": "Shot readiness indicators",
           "subtitle": "Know when assets are available",
           "content": "Get per-shot readiness statistics based on casting completeness. Spot the gaps before they become a bottleneck, and hand off to your scene builder with confidence.",
-          "image": "kitsu-readiness.png",
-          "shadow": true,
+          "image": "kitsu-readiness-animated.svg",
+          "imageDark": "kitsu-readiness-animated-dark.svg",
           "reverted": true
         },
         {

@@ -1436,9 +1436,9 @@
           "title": "ショットの準備状況インジケーター",
           "subtitle": "アセットがいつ利用可能になるかを把握する",
           "content": "キャスティングの完成度に基づいてショットごとの準備状況統計を取得します。ボトルネックになる前にギャップを見つけ、自信を持ってシーンビルダーに引き渡します。",
-          "image": "kitsu-readiness.png",
-          "reverted": true,
-          "shadow": true
+          "image": "kitsu-readiness-animated.svg",
+          "imageDark": "kitsu-readiness-animated-dark.svg",
+          "reverted": true
         },
         {
           "title": "アセットライブラリ",

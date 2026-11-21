@@ -1436,9 +1436,9 @@
           "title": "Indicateurs de disponibilité des plans",
           "subtitle": "Sachez quand les assets sont disponibles",
           "content": "Obtenez des statistiques de disponibilité par plan basées sur la complétude du casting. Repérez les lacunes avant qu'elles ne deviennent un goulot d'étranglement, et transmettez à votre constructeur de scènes en toute confiance.",
-          "image": "kitsu-readiness.png",
-          "reverted": true,
-          "shadow": true
+          "image": "kitsu-readiness-animated.svg",
+          "imageDark": "kitsu-readiness-animated-dark.svg",
+          "reverted": true
         },
         {
           "title": "Bibliothèque d'assets",
