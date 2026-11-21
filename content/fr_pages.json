@@ -1568,8 +1568,8 @@
           "title": "Repérez qui a besoin d'aide avant de manquer le délai",
           "subtitle": "Objectifs de production",
           "content": "Fixez des objectifs de production quotidiens ou hebdomadaires pour que chacun partage le même plan. Quand quelqu'un commence à prendre du retard, vous le voyez tôt et pouvez lui apporter de l'aide ou rééquilibrer la charge, plutôt que de découvrir l'écart quand il est trop tard pour agir.",
-          "image": "kitsu-quotas.png",
-          "shadow": true,
+          "image": "kitsu-quotas-animated.svg",
+          "imageDark": "kitsu-quotas-animated-dark.svg",
           "colored": true,
           "gradient": 2
         },

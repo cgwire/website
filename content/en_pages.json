@@ -1543,8 +1543,8 @@
           "title": "Spot who needs help before it costs you the deadline",
           "subtitle": "Output targets",
           "content": "Set daily or weekly output targets so everyone shares the same plan. When someone starts falling behind, you see it early and can step in with support or rebalance the workload, rather than discovering the gap when it is too late to act.",
-          "image": "kitsu-quotas.png",
-          "shadow": true,
+          "image": "kitsu-quotas-animated.svg",
+          "imageDark": "kitsu-quotas-animated-dark.svg",
           "colored": true,
           "gradient": 2
         },

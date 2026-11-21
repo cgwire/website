@@ -1568,8 +1568,8 @@
           "title": "納期に遅れる前に、助けが必要な人を見つける",
           "subtitle": "出力目標",
           "content": "日次または週次の出力目標を設定し、全員が同じ計画を共有できるようにします。誰かが遅れ始めたら早い段階で気づき、手遅れになる前にサポートを提供したり作業量を再配分したりできます。",
-          "image": "kitsu-quotas.png",
-          "shadow": true,
+          "image": "kitsu-quotas-animated.svg",
+          "imageDark": "kitsu-quotas-animated-dark.svg",
           "colored": true,
           "gradient": 2
         },
