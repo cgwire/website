@@ -1577,8 +1577,8 @@
           "title": "誰が何を担当しているかを把握",
           "subtitle": "チームスケジュール",
           "content": "プロジェクトに割り当てられた部門内のすべてのアーティストのスケジュールを確認できます。誰に余裕があるのか、誰に負荷が集中しているのか、作業がチーム内でどのように分配されているのかを把握できます。確信を持って人員配置を決定し、予期せぬ問題を防ぎながら制作を円滑に進めましょう。",
-          "image": "kitsu-team-schedule.png",
-          "shadow": true,
+          "image": "kitsu-team-schedule-animated.svg",
+          "imageDark": "kitsu-team-schedule-animated-dark.svg",
           "reverted": true
         },
         {

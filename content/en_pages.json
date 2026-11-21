@@ -1552,8 +1552,8 @@
           "title": "See who's working on what",
           "subtitle": "Team schedule",
           "content": "View the full schedule of every artist in your department assigned to your project. See who's available, who's overloaded, and how work is distributed across the team. Make staffing decisions with confidence and keep production moving without surprises.",
-          "image": "kitsu-team-schedule.png",
-          "shadow": true,
+          "image": "kitsu-team-schedule-animated.svg",
+          "imageDark": "kitsu-team-schedule-animated-dark.svg",
           "reverted": true
         },
         {

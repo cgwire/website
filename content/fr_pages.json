@@ -1577,8 +1577,8 @@
           "title": "Voyez qui travaille sur quoi",
           "subtitle": "Planning de l'équipe",
           "content": "Consultez le planning complet de chaque artiste de votre département affecté à votre projet. Identifiez les disponibilités, les surcharges de travail et la répartition des tâches au sein de l’équipe. Prenez vos décisions de staffing en toute confiance et maintenez la production sur les rails, sans mauvaises surprises.",
-          "image": "kitsu-team-schedule.png",
-          "shadow": true,
+          "image": "kitsu-team-schedule-animated.svg",
+          "imageDark": "kitsu-team-schedule-animated-dark.svg",
           "reverted": true
         },
         {
