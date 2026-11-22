@@ -4,22 +4,30 @@
     :class="direction === 'right' ? 'flexrow-reverse' : ''"
   >
     <div class="kitsu-feature-block-content">
-      <h1>
-        {{ feature.title }}
-      </h1>
+      <h3>
+        <nuxt-link :to="featurePath">{{ feature.title }}</nuxt-link>
+      </h3>
       <p>
         {{ feature.content }}
       </p>
     </div>
     <div>
-      <div class="feature-img-wrapper" :class="color">
+      <!-- The title already links to the page: this copy of the link is for
+           mouse users, so it stays out of the tab order and the a11y tree. -->
+      <nuxt-link
+        class="feature-img-wrapper"
+        :class="color"
+        :to="featurePath"
+        tabindex="-1"
+        aria-hidden="true"
+      >
         <NuxtImg
           :src="'/images/kitsu/' + featureKey + '.png'"
-          alt=""
+          :alt="feature.title"
           format="webp"
           loading="lazy"
         />
-      </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -34,6 +42,32 @@ const props = defineProps({
     default: 'green'
   }
 })
+
+// Feature page that details each block.
+const FEATURE_PAGES = {
+  api: 'studio-database',
+  assets: 'production-tracker',
+  breakdown: 'casting-management',
+  forecast: 'production-tracker',
+  library: 'casting-management',
+  news: 'team-collaboration',
+  report: 'production-tracker',
+  review: 'review-engine',
+  'review-assets': 'review-engine',
+  schedule: 'production-tracker',
+  search: 'production-tracker',
+  timesheets: 'production-tracker',
+  track: 'team-collaboration'
+}
+
+const { t } = useI18n()
+const localePath = useLocalePath()
+const featurePath = computed(() =>
+  localePath({
+    name: 'features-slug',
+    params: { slug: t(`slugs.${FEATURE_PAGES[props.featureKey]}`) }
+  })
+)
 </script>
 
 <style scoped lang="stylus">
@@ -42,8 +76,20 @@ const props = defineProps({
   max-width: 400px
   width: 50%
 
+  // Same size as the h1 these titles used to be.
+  h3
+    font-size: 2em
+    margin-bottom: 0.5em
+
+    a
+      color: inherit
+
+      &:hover
+        color: cgwiregreen
+
 .feature-img-wrapper
   border-radius: 20px
+  display: block
   max-width: 600px
   margin: 0 auto
   background-color: #c2f0ab

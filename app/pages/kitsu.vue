@@ -2,7 +2,7 @@
   <div class="kitsu-page content">
     <div class="kitsu-header flexrow">
       <div class="main-title">
-        <span>{{ page.title }}</span>
+        <h1>{{ page.title }}</h1>
 
         <div class="kitsu-explanation">
           {{ page.description }}
@@ -303,12 +303,11 @@ const toggleTab = tab => {
         margin-top 1em
         margin-bottom 1em
 
-    span
-        flex 1
+    h1
         font-size 3em
         font-weight bold
         line-height 1.2em
-        margin-bottom 1em
+        margin-bottom 0
 
     .logo-wrapper
         min-width 150px
