@@ -4461,6 +4461,33 @@
       "image": "/images/customer-stories/audrey-tondre.jpg",
       "quote": "Je savais que si j'introduisais un nouvel outil, je devais répondre à un besoin qui n'avait pas encore été identifié par l'équipe en place. Le principal défi dès le départ était de ne pas les contraindre.",
       "category": "Longs métrages (2D)"
+    },
+    "cube": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "Superviseur CG",
+      "link": "https://blog.cg-wire.com/fr/cube-creative-kitsu",
+      "image": "/images/customer-stories/cube.jpg",
+      "quote": "Kitsu est la mémoire collective du projet.",
+      "category": "Série TV (3D)"
+    },
+    "normaal": {
+      "studio": "Normaal",
+      "interviewee": "Félix David",
+      "role": "Responsable Pipeline",
+      "link": "https://blog.cg-wire.com/fr/normaal-oss-pipeline-fr",
+      "image": "/images/customer-stories/normaal.jpg",
+      "quote": "Pour le suivi de production, l'équipe a choisi Kitsu.",
+      "category": "Série TV (3D)"
+    },
+    "sparx": {
+      "studio": "Virtuos Sparx",
+      "interviewee": "",
+      "role": "",
+      "link": "https://blog.cg-wire.com/how-sparx-built-a-production-infrastructure-that-could-keep-up-with-its-ambitions",
+      "image": "/images/customer-stories/sparx.jpg",
+      "quote": "",
+      "category": "Jeux vidéo"
     }
   },
   "video_testimonials": {

@@ -4437,6 +4437,33 @@
       "image": "/images/customer-stories/audrey-tondre.jpg",
       "quote": "新しいツールを導入するなら、既存のチームがまだ気づいていないニーズに応えるものでなければならないと分かっていました。最初の課題は、チームを制約しないことでした。",
       "category": "長編映画（2D）"
+    },
+    "cube": {
+      "studio": "Cube Creative",
+      "interviewee": "Axel Tillement",
+      "role": "CGスーパーバイザー",
+      "link": "https://blog.cg-wire.com/ja/cube-creative-kitsu",
+      "image": "/images/customer-stories/cube.jpg",
+      "quote": "Kitsuはプロジェクトの集合的な記憶です。",
+      "category": "TVシリーズ（3D）"
+    },
+    "normaal": {
+      "studio": "Normaal",
+      "interviewee": "Félix David",
+      "role": "パイプラインヘッド",
+      "link": "https://blog.cg-wire.com/ja/normaal-oss-pipeline-ja",
+      "image": "/images/customer-stories/normaal.jpg",
+      "quote": "制作のトラッキングには、チームはKitsuを選びました。",
+      "category": "TVシリーズ（3D）"
+    },
+    "sparx": {
+      "studio": "Virtuos Sparx",
+      "interviewee": "",
+      "role": "",
+      "link": "https://blog.cg-wire.com/how-sparx-built-a-production-infrastructure-that-could-keep-up-with-its-ambitions",
+      "image": "/images/customer-stories/sparx.jpg",
+      "quote": "",
+      "category": "ビデオゲーム"
     }
   },
   "video_testimonials": {

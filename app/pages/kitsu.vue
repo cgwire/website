@@ -152,7 +152,7 @@
 
       <!-- faq -->
 
-      <div data-aos="fade-up" v-if="['2D', '3D', 'VFX'].includes(currentTab)">
+      <div data-aos="fade-up" v-if="tabStories.length">
         <TextBlock
           :subtitle="page.meta.stories.subtitle"
           :title="page.meta.stories.title"
@@ -160,54 +160,20 @@
         />
       </div>
 
-      <div
-        class="mt4 mb1"
-        data-aos="fade-up"
-        v-if="['2D', '3D', 'VFX'].includes(currentTab)"
-      >
-        <div class="flexrow stories" v-if="currentTab === '2D'">
+      <div class="mt4 mb1" data-aos="fade-up" v-if="tabStories.length">
+        <div class="flexrow stories">
           <CustomerStorySmallBlock
-            studio-name="Tant mieux Prod"
-            story-key="tant-mieux"
-            image-path="tant-mieux.png"
-            interviewee="Tristan Mercier, Production Director"
-            story-url="https://blog.cg-wire.com/customer-story-tant-mieux-prod/"
-          />
-
-          <CustomerStorySmallBlock
-            studio-name="Fost studio"
-            story-key="fost"
-            image-path="fost.png"
-            interviewee="Céline Durieux, Head Of Studio"
-            story-url="https://blog.cg-wire.com/customer-story-fost-studio/"
-          />
-
-          <CustomerStorySmallBlock
-            studio-name="Miyu studio"
-            story-key="miyu"
-            image-path="miyu.png"
-            interviewee="Carole Faure, Production Manager"
-            story-url="https://blog.cg-wire.com/customer-story-miyu-studio/"
-          />
-        </div>
-
-        <div class="flexrow stories" v-if="currentTab === '3D'">
-          <CustomerStorySmallBlock
-            studio-name="Autour de minuit"
-            story-key="adm"
-            image-path="adm.jpg"
-            interviewee="Fiona Cohen, Production Manager"
-            story-url="https://blog.cg-wire.com/customer-story-autour-de-minuit/"
-          />
-        </div>
-
-        <div class="flexrow stories" v-if="currentTab === 'VFX'">
-          <CustomerStorySmallBlock
-            studio-name="Makuta VFX"
-            story-key="makuta"
-            image-path="makuta.png"
-            interviewee="Pete Draper, Head of VFX"
-            story-url="https://blog.cg-wire.com/customer-story-makuta-vfx-studio/"
+            v-for="story in tabStories"
+            :key="story.stem"
+            :studio-name="story.meta.studio"
+            :story-key="story.stem.split('/')[2]"
+            :image-path="story.meta.image.split('/').pop()"
+            :interviewee="
+              story.meta.interviewee
+                ? `${story.meta.interviewee}, ${story.meta.role}`
+                : story.meta.category
+            "
+            :story-url="story.meta.link"
           />
         </div>
       </div>
@@ -256,6 +222,31 @@ const toggleTab = tab => {
   currentTab.value = tab
   router.push({ query: { tab } })
 }
+
+// Customer stories shown under each tab, by key in the customer_stories
+// collection. A tab without stories hides the section.
+const TAB_STORIES = {
+  '2D': ['tant-mieux', 'fost', 'miyu'],
+  '3D': ['adm', 'cube', 'normaal'],
+  VFX: ['makuta'],
+  Games: ['sparx']
+}
+
+const { queryCustomerStories } = useCustomerStories(locale)
+
+const { data: customerStories } = await useAsyncData(
+  `kitsu-customer-stories-${locale.value}`,
+  queryCustomerStories,
+  { watch: [locale] }
+)
+
+const tabStories = computed(() =>
+  (TAB_STORIES[currentTab.value] || [])
+    .map(key =>
+      customerStories.value.find(story => story.stem.split('/')[2] === key)
+    )
+    .filter(Boolean)
+)
 </script>
 
 <style lang="stylus" scoped>
