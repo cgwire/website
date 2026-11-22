@@ -1637,8 +1637,7 @@
           "subtitle": "Comparaison de previews",
           "title": "Détectez ce qui a changé entre les versions",
           "content": "Placez deux versions côte à côte ou superposez-les en surimpression. Repérez les régressions, confirmez les corrections et validez les révisions sans chercher dans des fichiers séparés.",
-          "image": "kitsu-compare.png",
-          "shadow": true,
+          "image": "kitsu-compare-animated.svg",
           "reverted": true
         },
         {

@@ -1637,8 +1637,7 @@
           "subtitle": "プレビュー比較",
           "title": "バージョン間で何が変わったかを捉える",
           "content": "2つのバージョンを並べて配置するか、オーバーレイとして重ねます。別々のファイルを探し回ることなく、リグレッションを見つけ、修正を確認し、リビジョンを検証します。",
-          "image": "kitsu-compare.png",
-          "shadow": true,
+          "image": "kitsu-compare-animated.svg",
           "reverted": true
         },
         {

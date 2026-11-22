@@ -1612,8 +1612,7 @@
           "subtitle": "Preview comparison",
           "title": "Catch what changed between versions",
           "content": "Place any two versions side by side or stack them as an overlay. Spot regressions, confirm fixes, and validate revisions without hunting through separate files.",
-          "image": "kitsu-compare.png",
-          "shadow": true,
+          "image": "kitsu-compare-animated.svg",
           "reverted": true
         },
         {
