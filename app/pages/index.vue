@@ -336,26 +336,7 @@
         {{ page.meta.kitsu.stats.text }}
       </p>
 
-      <div class="flexrow number-blocks">
-        <div class="flexcolumn flexrow-item number-block">
-          <p class="number-block-number">25,000+</p>
-          <p class="number-block-title">
-            {{ page.meta.kitsu.stats.activeUsers }}
-          </p>
-        </div>
-        <div class="flexcolumn flexrow-item number-block">
-          <p class="number-block-number">10,000+</p>
-          <p class="number-block-title">
-            {{ page.meta.kitsu.stats.videoReviews }}
-          </p>
-        </div>
-        <div class="flexcolumn flexrow-item number-block">
-          <p class="number-block-number">30+</p>
-          <p class="number-block-title">
-            {{ page.meta.kitsu.stats.countries }}
-          </p>
-        </div>
-      </div>
+      <StatsBlock :stats="page.meta.kitsu.stats" />
     </section>
 
     <section
@@ -661,29 +642,6 @@ div.body
     .watch-button
         display none
 
-    .number-blocks
-        display grid
-        margin-top 4em
-        width 100%
-        grid-template-columns 1fr 1fr 1fr
-        gap 1em
-
-        .number-block
-            display flexcolumn
-            align-items center
-            justify-content center
-
-        .number-block-title
-            color #888
-            font-size 1.2em
-            text-transform uppercase
-            font-weight bold
-
-        .number-block-number
-            font-weight bold
-            font-size 3em
-            margin-bottom 0.2em
-
     @media(max-width 800px)
 
         .features
@@ -715,10 +673,6 @@ div.body
 
             section.customer-story
                 margin 0 1em 1em 1em
-
-        .number-blocks
-            grid-template-columns 1fr
-            gap 2em
 
         .tabs
             padding .5em

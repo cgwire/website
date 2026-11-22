@@ -148,9 +148,10 @@
 
       <!-- contenus -->
 
-      <!-- chiffres -->
-
-      <!-- faq -->
+      <div data-aos="fade-up">
+        <TextBlock :title="stats.title" :content="stats.text" />
+        <StatsBlock :stats="stats" />
+      </div>
 
       <div data-aos="fade-up" v-if="tabStories.length">
         <TextBlock
@@ -196,6 +197,15 @@ const { data: page } = await useAsyncData(
   pageQuery,
   { watch: [slug, locale] }
 )
+
+// The figures are the ones of the home page, kept in a single place.
+const { pageQuery: indexPageQuery } = usePage(locale, ref('index'))
+const { data: indexPage } = await useAsyncData(
+  `kitsu-stats-${locale.value}`,
+  indexPageQuery,
+  { watch: [locale] }
+)
+const stats = computed(() => indexPage.value.meta.kitsu.stats)
 
 useSEO({
   title: 'CGWire | ' + page.value.title,
