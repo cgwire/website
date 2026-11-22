@@ -116,9 +116,15 @@
       <div class="flexrow reverse">
         <div class="flexrow-item landing-picture">
           <NuxtImg
-            src="/images/illustrations/kitsu-everywhere.png"
+            class="only-light"
+            src="/images/illustrations/kitsu-everywhere-animated.svg"
             alt=""
-            format="webp"
+          />
+          <NuxtImg
+            class="only-dark"
+            src="/images/illustrations/kitsu-everywhere-animated-dark.svg"
+            alt=""
+            loading="lazy"
           />
         </div>
         <div class="flexrow-item landing-text">
