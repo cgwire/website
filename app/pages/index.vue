@@ -268,9 +268,15 @@
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
-                  src="/images/screenshots/kitsu-todos-light.png"
+                  class="only-light"
+                  src="/images/screenshots/kitsu-todos-animated.svg"
                   alt=""
-                  format="webp"
+                />
+                <NuxtImg
+                  class="only-dark"
+                  src="/images/screenshots/kitsu-todos-animated-dark.svg"
+                  alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -281,9 +287,15 @@
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
-                  src="/images/screenshots/kitsu-schedule-light.png"
+                  class="only-light"
+                  src="/images/screenshots/kitsu-schedule-animated.svg"
                   alt=""
-                  format="webp"
+                />
+                <NuxtImg
+                  class="only-dark"
+                  src="/images/screenshots/kitsu-schedule-animated-dark.svg"
+                  alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -294,9 +306,15 @@
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
-                  src="/images/screenshots/kitsu-reports-light.png"
+                  class="only-light"
+                  src="/images/screenshots/kitsu-report-animated.svg"
                   alt=""
-                  format="webp"
+                />
+                <NuxtImg
+                  class="only-dark"
+                  src="/images/screenshots/kitsu-report-animated-dark.svg"
+                  alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -307,17 +325,8 @@
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
-                  class="only-light"
-                  src="/images/screenshots/kitsu-compare-light.png"
+                  src="/images/screenshots/kitsu-compare-animated.svg"
                   alt=""
-                  format="webp"
-                />
-                <NuxtImg
-                  class="only-dark"
-                  src="/images/screenshots/kitsu-compare.png"
-                  alt=""
-                  format="webp"
-                  loading="lazy"
                 />
               </div>
             </div>
@@ -327,17 +336,8 @@
               </p>
               <div class="feature-img-wrapper">
                 <NuxtImg
-                  class="only-light"
-                  src="/images/screenshots/kitsu-python-light.png"
+                  src="/images/screenshots/kitsu-python-animated.svg"
                   alt=""
-                  format="webp"
-                />
-                <NuxtImg
-                  class="only-dark"
-                  src="/images/screenshots/kitsu-python.png"
-                  alt=""
-                  format="webp"
-                  loading="lazy"
                 />
               </div>
             </div>
@@ -646,9 +646,6 @@ div.body
     .tabs
         .tab-info
             width 100%
-            img
-                border-radius 1em
-                box-shadow 0 0 5px 0 #CCD6CC
 
     .watch-button
         display none
@@ -763,7 +760,6 @@ div.body
   justify-content center
 
 .feature-img-wrapper img
-  border: 10px solid #EEEEEE11
   width 100%
 
 
