@@ -1619,8 +1619,7 @@
           "title": "Perform team reviews",
           "subtitle": "Live online review room",
           "content": "Run synchronized review sessions so every participant watches the same frame at the same time. No more conflicting notes from people who reviewed different cuts.",
-          "image": "kitsu-room.png",
-          "shadow": true,
+          "image": "kitsu-room-animated.svg",
           "colored": true,
           "gradient": 2
         },

@@ -1644,8 +1644,7 @@
           "title": "チームレビューを実施する",
           "subtitle": "オンラインレビュールーム",
           "content": "同期されたレビューセッションを実行して、すべての参加者が同じ時刻に同じフレームを見られるようにします。異なるカットをレビューした人からの矛盾したノートはもうありません。",
-          "image": "kitsu-room.png",
-          "shadow": true,
+          "image": "kitsu-room-animated.svg",
           "colored": true,
           "gradient": 2
         },

@@ -1644,8 +1644,7 @@
           "title": "Faites vos validations en équipe",
           "subtitle": "Salle de review en ligne",
           "content": "Lancez des sessions de révision synchronisées pour que chaque participant regarde la même image au même moment. Plus de notes contradictoires de personnes qui ont révisé des coupes différentes.",
-          "image": "kitsu-room.png",
-          "shadow": true,
+          "image": "kitsu-room-animated.svg",
           "colored": true,
           "gradient": 2
         },
