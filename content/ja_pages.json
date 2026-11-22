@@ -419,23 +419,23 @@
         "subtitle": "プロダクションのユースケースを考慮して設計されています"
       },
       "2d": {
-        "title": "2Dアニメーションのキツ",
+        "title": "2DアニメーションのKitsu",
         "content": "2Dアニメーション制作では、短期間で多くのショットを高品質に保ちながら納品する必要があります。Kitsuを使えば、ショットのスケジュール管理、発送、レビューが簡単に行えます。これにより、最高の作品を期限通りに納品できます。"
       },
       "3d": {
-        "title": "3Dアニメーションのキツ",
+        "title": "3DアニメーションのKitsu",
         "content": "3Dアニメーション制作では、多くのアセットと反復作業を伴う複雑なショットの制作が求められます。Kitsuを使えば、こうした混乱を整理し、チームは最高の作品を提供することに集中できます。"
       },
       "vfx": {
-        "title": "VFXのキツ",
+        "title": "VFXのKitsu",
         "content": "VFXプロダクションでは、多くの修正ショットを何度も繰り返し、分散したチームで対応します。Kitsuを使えば、混乱や時間の浪費を避ける方法でプロダクションを整理することができます。チームは生産性をフルに発揮できます。"
       },
       "games": {
-        "title": "ビデオゲームのキツ",
+        "title": "ビデオゲームのKitsu",
         "content": "ビデオゲーム制作では、シネマティックスを制作しながら、多くのゲーム内アセットを扱う必要があります。アーティストは世界中から雇用されており、円滑なコラボレーションが求められます。Kitsuを使えば、すべてのアセットとイテレーションを簡単に追跡し、全員が同じ認識を共有できます。"
       },
       "schools": {
-        "title": "学校向けキツ",
+        "title": "学校向けKitsu",
         "content": "学校は、学校とスタジオの間に橋渡しをする必要があります。Kitsuを利用すれば、生徒たちは業界と同様の枠組みの中でプロジェクトに取り組むことができます。チームプレーヤーとして、自らの芸術的ビジョンを表現することができます。教師は生徒の進捗状況を把握し、効率的にフィードバックを提供することができます。"
       },
       "services": {
@@ -619,7 +619,7 @@
         "registerCta": "チケットを入手する"
       },
       "about": {
-        "title": "キツサミット2026について",
+        "title": "Kitsuサミット2026について",
         "description": "初の Kitsu サミットでは、制作のプロフェッショナル、テクニカル ディレクター、スタジオ マネージャーが集まり、アニメーションやビデオ ゲームの制作に Kitsu を使用した経験を共有します。",
         "stats": {
           "conferences": "専門家会議",
@@ -697,8 +697,8 @@
             "time": "17:45",
             "speaker": "Céline Durieux",
             "company": "Fost",
-            "title": "キツとともに成長する",
-            "description": "フォストがスタジオを成長させるためにキツをどのように使い、キツがどのように改良されたのか。",
+            "title": "Kitsuとともに成長する",
+            "description": "フォストがスタジオを成長させるためにKitsuをどのように使い、Kitsuがどのように改良されたのか。",
             "category": "animation2d",
             "categoryLabel": "2D",
             "file": "celine.png"
@@ -767,7 +767,7 @@
             "time": "18:00",
             "speaker": "Frank Rousseau",
             "company": "CGWire CEO",
-            "title": "なぜキツなのか",
+            "title": "なぜKitsuなのか",
             "description": "Kitsuの起源、実績、そしてビジョン。",
             "category": "kitsu",
             "categoryLabel": "Kitsu",
@@ -777,7 +777,7 @@
             "time": "18:00",
             "speaker": "Gwénaëlle Dupré",
             "company": "CGWire CPO",
-            "title": "キツの未来",
+            "title": "Kitsuの未来",
             "description": "来年のロードマップ。",
             "category": "kitsu",
             "categoryLabel": "Kitsu",
@@ -804,7 +804,7 @@
               {
                 "company": "CGWire",
                 "speaker": "Frank Rousseau",
-                "title": "なぜキツなのか"
+                "title": "なぜKitsuなのか"
               }
             ],
             "room2": []
@@ -895,7 +895,7 @@
               {
                 "company": "CGWire",
                 "speaker": "Gwénaëlle Dupré",
-                "title": "キツの未来"
+                "title": "Kitsuの未来"
               }
             ],
             "room2": []
@@ -930,7 +930,7 @@
               {
                 "company": "Fost",
                 "speaker": "Céline Durieux",
-                "title": "キツとともに成長する"
+                "title": "Kitsuとともに成長する"
               }
             ]
           },
@@ -977,7 +977,7 @@
         "benefits": {
           "access": "全12回の会議へのアクセス",
           "lunch": "朝食、昼食、そして閉会のカクテル",
-          "swag": "キツサミット限定商品",
+          "swag": "Kitsuサミット限定商品",
           "networking": "業界の同業者とのネットワーキングの機会"
         },
         "price": {
@@ -2526,7 +2526,7 @@
         "title": "TVシリーズ用のKitsu"
       },
       "quote": {
-        "text": "52x11'シリーズの仕事をする場合、非常に多くの納品物に対応しなければならない。幸いなことに、キツではすべてがスムーズに運んだ。",
+        "text": "52x11'シリーズの仕事をする場合、非常に多くの納品物に対応しなければならない。幸いなことに、Kitsuではすべてがスムーズに運んだ。",
         "author": "Cube Creativeスタジオ責任者、Cécile Hergaux氏",
         "avatar": "cecilehergaux.png"
       },
@@ -2712,16 +2712,16 @@
     "video-games": {
       "slug": "video-games",
       "i18n": {
-        "title": "ビデオゲーム用キツ",
-        "metaTitle": "ビデオゲーム用キツ",
+        "title": "ビデオゲーム用Kitsu",
+        "metaTitle": "ビデオゲーム用Kitsu",
         "metaDescription": "Kitsuはゲームスタジオのクリエイティブアセット、予告編、シネマティクスを管理。アセットライブラリのバージョン管理、明確な指示、レビューを一元化します。"
       },
       "hero": {
         "subtitle": "クリエイティブ・アセット、予告編、シネマティクス",
-        "title": "ビデオゲーム用キツ"
+        "title": "ビデオゲーム用Kitsu"
       },
       "quote": {
-        "text": "キツの別の機能を知るたびに、よりパワフルなツールになっていく。キツは驚きに満ちている。これからも学び、適応させ、拡張していくだろうから、常に提供できるものがある！",
+        "text": "Kitsuの別の機能を知るたびに、よりパワフルなツールになっていく。Kitsuは驚きに満ちている。これからも学び、適応させ、拡張していくだろうから、常に提供できるものがある！",
         "author": "アリエル・マッケイ 、MDHR制作アシスタント",
         "avatar": "arielmckay.png"
       },
