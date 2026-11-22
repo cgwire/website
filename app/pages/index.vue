@@ -98,9 +98,15 @@
         </div>
         <div class="flexrow-item landing-picture">
           <NuxtImg
-            src="/images/illustrations/kitsu-decisions.png"
+            class="only-light"
+            src="/images/illustrations/kitsu-decisions-animated.svg"
             alt=""
-            format="webp"
+          />
+          <NuxtImg
+            class="only-dark"
+            src="/images/illustrations/kitsu-decisions-animated-dark.svg"
+            alt=""
+            loading="lazy"
           />
         </div>
       </div>
