@@ -1,5 +1,5 @@
 ---
-title: "\"Kitsu va-t-il nous ralentir ?\""
+title: "Kitsu va-t-il nous ralentir ?"
 slug: "will-kitsu-slow-us-down"
 subtitle: ""
 summary: "Kitsu est conçu pour éliminer les coûts de temps cachés liés aux flux de production non coordonnés — les relances de statut redondantes, les mises à jour manuelles de tableurs et les notes de révision éparpillées qui grignotent silencieusement des heures chaque semaine. Son fil d'activité en temps réel et son système de notifications maintiennent toute l'équipe automatiquement synchronisée dès qu'un statut de tâche change, supprimant ainsi le besoin de réunions de suivi ou de messages de relance. Le moteur de révision intégré permet aux superviseurs d'annoter directement sur les images, de comparer les versions côte à côte, et d'approuver ou de demander des reprises depuis n'importe où, réduisant des cycles de validation de plusieurs jours à quelques heures. Kitsu s'intègre parfaitement aux DCCs, Slack, Discord et aux pipelines personnalisés via les API Python et REST, permettant aux artistes de rester dans leurs outils habituels tout en centralisant les données de production. Approuvé par plus de 400 studios dans plus de 30 pays, Kitsu a été conçu par des personnes qui comprennent la pression de la production — et chaque fonctionnalité n'est lancée que si elle fait gagner du temps."

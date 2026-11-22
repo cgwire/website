@@ -1,5 +1,5 @@
 ---
-title: "\"Que Se Passe-t-il Si Quelque Chose Tombe En Panne ?\""
+title: "Que Se Passe-t-il Si Quelque Chose Tombe En Panne ?"
 slug: "what-happens-if-something-breaks"
 subtitle: ""
 summary: "Kitsu et CGWire offrent une structure de support robuste, conçue pour les réalités de la production : un support dédié avec des engagements clairs sur les délais de réponse, un accès direct à l'équipe qui a développé le produit, et une communauté open source mondiale regroupant plus de 400 studios dans plus de 30 pays. Les clients cloud bénéficient d'un SLA de disponibilité à 99 %, d'instances isolées, ainsi que d'un SSL et d'un traitement vidéo intégrés, tandis que les déploiements sur site sont activement surveillés par l'équipe ops de CGWire. Une documentation complète, un accompagnement à l'onboarding, une API REST complète et des intégrations avec les DCC et outils de messagerie les plus populaires permettent à toute votre équipe de monter en compétence sans faire appel à une aide extérieure. Et parce que Kitsu est open source, vous conservez un accès total au code source et à vos données, quoi qu'il arrive — un filet de sécurité que la plupart des outils enterprise ne sont tout simplement pas en mesure d'offrir."

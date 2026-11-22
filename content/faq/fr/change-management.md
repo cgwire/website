@@ -1,5 +1,5 @@
 ---
-title: "\"Notre équipe n'adoptera pas un autre outil\""
+title: "Notre équipe n'adoptera pas un autre outil"
 slug: "change-management"
 subtitle: "Comment Kitsu vous aide avec la formation et l'adoption"
 summary: "Kitsu est un outil de suivi de production conçu spécifiquement pour les studios d'animation, de VFX et de jeux vidéo, qui résout le problème courant d'adoption par les équipes en s'articulant autour des flux de production réels plutôt qu'en forçant les équipes à s'adapter. Il réduit les frictions pour chaque rôle — les artistes disposent de listes de tâches claires, les superviseurs effectuent leurs révisions directement dans les playlists, et les producteurs suivent l'avancement en un seul endroit — tout en servant de source de vérité unique qui remplace les outils disparates. Grâce à une intégration adaptée à chaque rôle, une API flexible pour l'intégration dans le pipeline, et une approche de déploiement pragmatique, Kitsu est conçu de sorte que l'adoption ne soit pas une réflexion après coup, mais un principe de conception fondamental."
