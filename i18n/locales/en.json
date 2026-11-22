@@ -185,7 +185,7 @@
     "title": "Free Online Tools",
     "cta": "Open tool →",
     "converter": {
-      "badge": "Browser-native · No upload",
+      "badge": "Browser-native - No upload",
       "subtitle": "Client-side conversion powered by mediabunny & WebCodecs",
       "dropTitle": "Drop your {format} here",
       "dropBrowse": "or click to browse",

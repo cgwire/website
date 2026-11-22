@@ -12,7 +12,7 @@
       <span v-for="(s, i) in slices" :key="i" class="legend-row">
         <span class="legend-swatch" :style="{ background: s.color }" />
         <span class="legend-name">{{ s.label }}</span>
-        <span class="legend-val">{{ percent ? `${s.value}%` : `${s.value} · ${s.pct}%` }}</span>
+        <span class="legend-val">{{ percent ? `${s.value}%` : `${s.value} - ${s.pct}%` }}</span>
       </span>
     </figcaption>
   </figure>

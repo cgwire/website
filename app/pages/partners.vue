@@ -370,7 +370,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
   margin 0 auto
   padding 40px 24px 80px
 
-// === V1 · Founder's note ===
+// === V1 - Founder's note ===
 .partners-paper
   background var(--pg-card, #fff)
   border-radius 16px

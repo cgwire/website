@@ -122,7 +122,7 @@
             <p v-if="p.activeUsers" class="pie-foot">
               <span v-if="p.biggestUsers"
                 >{{ m.customers.sizeBiggest }}:
-                <strong>{{ p.biggestUsers }}</strong> ·
+                <strong>{{ p.biggestUsers }}</strong> -
               </span>
               {{ m.customers.sizeActiveUsers }}: <strong>{{ p.activeUsers }}</strong>
             </p>
@@ -239,7 +239,7 @@
             </div>
             <div class="bill-row">
               <dt>{{ m.servers.scale }}</dt>
-              <dd>{{ metrics.servers.vms }} VMs · {{ metrics.servers.storage }}</dd>
+              <dd>{{ metrics.servers.vms }} VMs - {{ metrics.servers.storage }}</dd>
             </div>
           </dl>
         </div>

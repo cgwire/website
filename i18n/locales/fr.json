@@ -185,7 +185,7 @@
     "title": "Outils en ligne gratuits",
     "cta": "Ouvrir l’outil →",
     "converter": {
-      "badge": "100% navigateur · Sans envoi",
+      "badge": "100% navigateur - Sans envoi",
       "subtitle": "Conversion côté client via mediabunny et WebCodecs",
       "dropTitle": "Déposez votre fichier {format} ici",
       "dropBrowse": "ou cliquez pour parcourir",

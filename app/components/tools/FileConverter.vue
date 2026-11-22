@@ -193,7 +193,7 @@
             </div>
             <p class="done-label">{{ $t('tools.converter.done') }}</p>
             <p class="done-sub">
-              {{ outputName }} · {{ formatSize(outputSize) }}
+              {{ outputName }} - {{ formatSize(outputSize) }}
             </p>
           </div>
         </template>

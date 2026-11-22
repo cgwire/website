@@ -30,22 +30,22 @@
   <circle cx="194" cy="162" r="4" fill="#b0b0b0"/>
   <circle cx="194" cy="218" r="4" fill="#b0b0b0"/>
   <text x="234" y="166" font-size="14.500" font-weight="700">Head of production</text>
-  <text x="234" y="184" font-size="12.500" fill-opacity=".6">Sep 2017 - May 2018 · 9 mos</text>
+  <text x="234" y="184" font-size="12.500" fill-opacity=".6">Sep 2017 - May 2018 - 9 mos</text>
   <text x="234" y="222" font-size="14.500" font-weight="700">Production Supervisor</text>
-  <text x="234" y="240" font-size="12.500" fill-opacity=".6">Nov 2016 - Aug 2017 · 10 mos</text>
+  <text x="234" y="240" font-size="12.500" fill-opacity=".6">Nov 2016 - Aug 2017 - 10 mos</text>
 
   <path d="M170 262.500H622" stroke="#e6e6e6"/>
   <use href="#zodiak" x="171" y="278" width="46" height="46"/>
   <text x="234" y="290" font-size="14.500" font-weight="700">Technical Director</text>
   <text x="234" y="308" font-size="12.500">Zodiak Kids Studios</text>
-  <text x="234" y="325" font-size="12.500" fill-opacity=".6">Jan 2016 - Oct 2016 · 10 mos</text>
+  <text x="234" y="325" font-size="12.500" fill-opacity=".6">Jan 2016 - Oct 2016 - 10 mos</text>
   <text x="234" y="342" font-size="12.500" fill-opacity=".6">Neuilly-sur-Seine</text>
 
   <path d="M170 360.500H622" stroke="#e6e6e6"/>
   <use href="#marathon" x="170" y="376" width="48" height="48"/>
   <text x="234" y="388" font-size="14.500" font-weight="700">Production Supervisor</text>
   <text x="234" y="406" font-size="12.500">Marathon Media</text>
-  <text x="234" y="423" font-size="12.500" fill-opacity=".6">Apr 2014 - Jan 2016 · 1 yr 10 mos</text>
+  <text x="234" y="423" font-size="12.500" fill-opacity=".6">Apr 2014 - Jan 2016 - 1 yr 10 mos</text>
   <text x="234" y="440" font-size="12.500" fill-opacity=".6">Paris Area, France</text>
   <text x="234" y="462" font-size="12.500">Lolirock (seasons 1 &amp; 2), Get Blake</text>
 

@@ -86,7 +86,7 @@
         "title": "Nos serveurs",
         "text": "Tout tourne sur le cloud public OVH, facturé mensuellement et dimensionné selon notre usage. Les équipes qui s'auto-hébergent utilisent leurs propres serveurs, hors de cette facture.",
         "cta": "Découvrir notre infrastructure",
-        "billLabel": "Le mois dernier · infrastructure",
+        "billLabel": "Le mois dernier - infrastructure",
         "perMonth": "/mois",
         "provider": "Fournisseur",
         "scale": "Échelle"
@@ -1761,7 +1761,7 @@
         "subtitle": "Infrastructure d'entreprise, sans compromis",
         "stats": [
           {
-            "value": "200 VMs · 70 TB",
+            "value": "200 VMs - 70 TB",
             "label": "en production"
           },
           {

@@ -86,7 +86,7 @@
         "title": "Our servers",
         "text": "Everything runs on the OVH public cloud, billed monthly and scaling with what we use. Teams that self-host run on their own servers, not on this bill.",
         "cta": "Discover our infrastructure",
-        "billLabel": "Last month · infrastructure",
+        "billLabel": "Last month - infrastructure",
         "perMonth": "/month",
         "provider": "Provider",
         "scale": "Scale"
@@ -1726,7 +1726,7 @@
         "tagline": "Tailor-Made Architecture",
         "subtitle": "Enterprise Infrastructure, Without the Compromise",
         "stats": [
-          { "value": "200 VMs · 70 TB", "label": "operated" },
+          { "value": "200 VMs - 70 TB", "label": "operated" },
           { "value": "500 users", "label": "on the largest instances" },
           { "value": "99.99%", "label": "uptime goal" }
         ],
