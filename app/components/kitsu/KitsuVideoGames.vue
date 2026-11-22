@@ -19,19 +19,43 @@
   />
   <div class="successes">
     <NuxtImg
+      class="only-light"
       src="/images/kitsu/mdhr.png"
       alt="Studio MDHR"
       format="webp"
       loading="lazy"
     />
     <NuxtImg
+      class="only-dark"
+      src="/images/kitsu/mdhr-dark.png"
+      alt="Studio MDHR"
+      format="webp"
+      loading="lazy"
+    />
+    <NuxtImg
+      class="only-light"
       src="/images/kitsu/bloober.png"
       alt="Bloober Team"
       format="webp"
       loading="lazy"
     />
     <NuxtImg
+      class="only-dark"
+      src="/images/kitsu/bloober-dark.png"
+      alt="Bloober Team"
+      format="webp"
+      loading="lazy"
+    />
+    <NuxtImg
+      class="only-light"
       src="/images/kitsu/sparx.png"
+      alt="Virtuos Sparx"
+      format="webp"
+      loading="lazy"
+    />
+    <NuxtImg
+      class="only-dark"
+      src="/images/kitsu/sparx-dark.png"
       alt="Virtuos Sparx"
       format="webp"
       loading="lazy"

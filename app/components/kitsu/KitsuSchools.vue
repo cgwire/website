@@ -21,19 +21,43 @@
 
     <div class="successes">
       <NuxtImg
+        class="only-light"
         src="/images/kitsu/gobelins.png"
         alt="Gobelins"
         format="webp"
         loading="lazy"
       />
       <NuxtImg
+        class="only-dark"
+        src="/images/kitsu/gobelins-dark.png"
+        alt="Gobelins"
+        format="webp"
+        loading="lazy"
+      />
+      <NuxtImg
+        class="only-light"
         src="/images/kitsu/rubika.png"
         alt="Rubika"
         format="webp"
         loading="lazy"
       />
       <NuxtImg
+        class="only-dark"
+        src="/images/kitsu/rubika-dark.png"
+        alt="Rubika"
+        format="webp"
+        loading="lazy"
+      />
+      <NuxtImg
+        class="only-light"
         src="/images/kitsu/melies.png"
+        alt="Méliès"
+        format="webp"
+        loading="lazy"
+      />
+      <NuxtImg
+        class="only-dark"
+        src="/images/kitsu/melies-dark.png"
         alt="Méliès"
         format="webp"
         loading="lazy"
