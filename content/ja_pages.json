@@ -1629,8 +1629,7 @@
           "title": "連続したショットをレビューする",
           "subtitle": "プレイリスト機能",
           "content": "レビュープレイリストを作成して、すべてのショットを1つの継続したセッションで進めます。プレーヤーから離れることなくコメントとアノテーションを追加します。プレイリストをクライアントと直接共有するか、チームとリアルタイムで実行します。",
-          "image": "kitsu-playlists.png",
-          "shadow": true,
+          "image": "kitsu-playlists-animated.svg",
           "colored": true,
           "gradient": 1
         },

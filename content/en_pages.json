@@ -1604,8 +1604,7 @@
           "title": "Review consecutive shots",
           "subtitle": "Playlist system",
           "content": "Build review playlists and move through all shots in one continuous session. Add comments and annotations without leaving the player. Share playlists directly with clients or run them with your team in real time.",
-          "image": "kitsu-playlists.png",
-          "shadow": true,
+          "image": "kitsu-playlists-animated.svg",
           "colored": true,
           "gradient": 1
         },
