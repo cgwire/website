@@ -53,12 +53,14 @@
   <g fill="none" stroke="#dcddde" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
     <path d="M740 105v10M736 111l4 4 4-4M734 119h12"/>
   </g>
-  <text x="58" y="117">All</text>
-  <text x="180" y="117">All</text>
-  <text x="302" y="117" class="v-pie">Pie charts</text>
-  <text x="302" y="117" class="v-bars">Stacked bars</text>
-  <text x="302" y="117" class="v-heat">Heatmap</text>
-  <text x="430" y="117">Counts</text>
+  <g font-size="11.5">
+    <text x="58" y="116.5">All</text>
+    <text x="180" y="116.5">All</text>
+    <text x="302" y="116.5" class="v-pie">Pie charts</text>
+    <text x="302" y="116.5" class="v-bars">Stacked bars</text>
+    <text x="302" y="116.5" class="v-heat">Heatmap</text>
+    <text x="430" y="116.5">Counts</text>
+  </g>
   <g fill="none" stroke="#00b242" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
     <path d="M134 110.5l4.5 4.5 4.5-4.5M256 110.5l4.5 4.5 4.5-4.5M384 110.5l4.5 4.5 4.5-4.5M496 110.5l4.5 4.5 4.5-4.5"/>
   </g>
