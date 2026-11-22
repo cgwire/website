@@ -1527,7 +1527,7 @@
           "title": "専用インフラストラクチャを利用できます",
           "subtitle": "分離されたセットアップ",
           "content": "KitsuはそのインフラストラクチャはKitsu専用です。共有リソースなし、ノイジーネイバーなし、他のスタジオのワークロードがあなたに影響するリスクなし。初日から一貫したパフォーマンスと厳格なデータ分離を実現します。",
-          "image": "kitsu-multiinstance-animated.svg",
+          "image": "kitsu-multiinstance.png",
           "reverted": true
         },
         {
