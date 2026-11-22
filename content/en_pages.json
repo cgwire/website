@@ -1634,8 +1634,7 @@
           "title": "Set precise directions",
           "subtitle": "Frame annotation",
           "content": "Draw, highlight, and write directly on any frame. Annotations are pinned to the specific version and visible to the whole team, so nothing gets lost in translation.",
-          "image": "kitsu-annotations.png",
-          "shadow": true,
+          "image": "kitsu-annotations-animated.svg",
           "colored": true,
           "gradient": 3
         },

@@ -1659,8 +1659,7 @@
           "title": "Donnez des directions précises",
           "subtitle": "Annotation d'image",
           "content": "Dessinez, surlignez et écrivez directement sur n'importe quelle image. Les annotations sont épinglées à la version spécifique et visibles par toute l'équipe, afin que rien ne se perde dans la traduction.",
-          "image": "kitsu-annotations.png",
-          "shadow": true,
+          "image": "kitsu-annotations-animated.svg",
           "colored": true,
           "gradient": 3
         },

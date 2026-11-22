@@ -1659,8 +1659,7 @@
           "title": "正確な指示を与える",
           "subtitle": "フレーム注釈",
           "content": "任意のフレームに直接描画、ハイライト、書き込みを行います。アノテーションは特定のバージョンに固定され、チーム全体に表示されるため、何も伝達に失われることはありません。",
-          "image": "kitsu-annotations.png",
-          "shadow": true,
+          "image": "kitsu-annotations-animated.svg",
           "colored": true,
           "gradient": 3
         },
