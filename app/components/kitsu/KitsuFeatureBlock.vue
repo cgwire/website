@@ -103,6 +103,8 @@ const featurePath = computed(() =>
 
   img
     border: 10px solid #ffffff66
+    // An inline image leaves a line descender gap under it.
+    display: block
     border-radius: 20px
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
     margin 0
