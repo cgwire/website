@@ -178,6 +178,8 @@
           />
         </div>
       </div>
+
+      <FAQSection :slugs="FAQ_SLUGS" />
     </section>
   </div>
 
@@ -206,6 +208,17 @@ const { data: indexPage } = await useAsyncData(
   { watch: [locale] }
 )
 const stats = computed(() => indexPage.value.meta.kitsu.stats)
+
+// Questions a studio asks when it evaluates the product. The footer lists
+// every question.
+const FAQ_SLUGS = [
+  'is-kitsu-too-complicated-for-our-team',
+  'why-not-just-use-spreadsheets-or-notion',
+  'how-long-until-we-see-value',
+  'can-kitsu-scale-with-us',
+  'migration',
+  'custom-integration'
+]
 
 useSEO({
   title: 'CGWire | ' + page.value.title,

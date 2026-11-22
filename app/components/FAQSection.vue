@@ -9,11 +9,19 @@
       </span>
     </h2>
 
-    <FAQItem v-for="faq in faqs" :key="faq.id" :faq="faq" />
+    <!-- Same wrapper as the pricing page FAQ, so both share one style. -->
+    <div class="faq">
+      <FAQItem v-for="faq in shownFaqs" :key="faq.id" :faq="faq" />
+    </div>
   </section>
 </template>
 
 <script setup>
+const props = defineProps({
+  // Slugs of the questions to show, in order. All of them when omitted.
+  slugs: Array
+})
+
 const { locale } = useI18n()
 
 const { data: faqs } = await useAsyncData(
@@ -23,6 +31,14 @@ const { data: faqs } = await useAsyncData(
       .where('path', 'LIKE', `/faq/${locale.value}/%`)
       .all(),
   { watch: [locale] }
+)
+
+const shownFaqs = computed(() =>
+  props.slugs
+    ? props.slugs
+        .map(slug => faqs.value?.find(faq => faq.meta.slug === slug))
+        .filter(Boolean)
+    : faqs.value
 )
 
 const panel = ref(null)
