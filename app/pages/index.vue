@@ -504,13 +504,6 @@
         {{ page.meta.main.conclusion.text }}
       </p>
     </section>
-
-    <section
-      class="section content has-text-centered conclusion conclusion-picture mb4"
-      data-aos="fade-up"
-    >
-      <NuxtImg src="/images/screenshots/kitsu-tasks.png" alt="" format="webp" />
-    </section>
   </div>
   <Trial class="mt4" :is-big="true" />
 </template>
