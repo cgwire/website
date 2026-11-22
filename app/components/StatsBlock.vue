@@ -1,7 +1,7 @@
 <template>
   <div class="flexrow number-blocks">
     <div class="flexcolumn flexrow-item number-block">
-      <p class="number-block-number">25,000+</p>
+      <p class="number-block-number">{{ activeUsers }}</p>
       <p class="number-block-title">
         {{ stats.activeUsers }}
       </p>
@@ -22,8 +22,22 @@
 </template>
 
 <script setup>
+import metrics from '~/data/metrics.json'
+
 const props = defineProps({
   stats: Object
+})
+
+const { locale } = useI18n()
+
+// Same basis as the total of the metrics page: cloud customers plus the
+// self-hosted setups updated in the last 6 months. Rounded down to the
+// thousand so the claim stays true between updates.
+const activeUsers = computed(() => {
+  const users =
+    metrics.instances.last6Months.activeUsers +
+    metrics.instances.cloud.activeUsers
+  return `${(Math.floor(users / 1000) * 1000).toLocaleString(locale.value)}+`
 })
 </script>
 
