@@ -23,13 +23,8 @@
       >
         <NuxtImg
           :class="{ 'only-light': dark }"
-          :src="
-            light
-              ? '/images/screenshots/' + light
-              : '/images/kitsu/' + featureKey + '.png'
-          "
+          :src="'/images/screenshots/' + light"
           :alt="feature.title"
-          :format="light ? undefined : 'webp'"
           loading="lazy"
         />
         <NuxtImg
@@ -72,10 +67,10 @@ const FEATURE_PAGES = {
   track: 'team-collaboration'
 }
 
-// Animated illustrations of the feature pages: light version, then dark one
-// when it exists. A block without an entry keeps its PNG screenshot.
+// Animated illustrations: light version, then dark one when it exists.
 const ILLUSTRATIONS = {
   api: ['kitsu-python-animated.svg'],
+  assets: ['kitsu-assets-animated.svg', 'kitsu-assets-animated-dark.svg'],
   breakdown: ['kitsu-tables-animated.svg', 'kitsu-tables-animated-dark.svg'],
   forecast: ['kitsu-budget-animated.svg', 'kitsu-budget-animated-dark.svg'],
   library: ['kitsu-library-animated.svg', 'kitsu-library-animated-dark.svg'],
@@ -84,13 +79,14 @@ const ILLUSTRATIONS = {
   review: ['kitsu-playlists-animated.svg'],
   'review-assets': ['kitsu-compare-animated.svg'],
   schedule: ['kitsu-schedule-animated.svg', 'kitsu-schedule-animated-dark.svg'],
+  search: ['kitsu-search-animated.svg', 'kitsu-search-animated-dark.svg'],
   timesheets: [
     'kitsu-timesheets-animated.svg',
     'kitsu-timesheets-animated-dark.svg'
   ],
   track: ['kitsu-tasks-animated.svg', 'kitsu-tasks-animated-dark.svg']
 }
-const [light, dark] = ILLUSTRATIONS[props.featureKey] || []
+const [light, dark] = ILLUSTRATIONS[props.featureKey]
 
 const { t } = useI18n()
 const localePath = useLocalePath()
