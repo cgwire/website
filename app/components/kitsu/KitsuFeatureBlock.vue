@@ -22,10 +22,22 @@
         aria-hidden="true"
       >
         <NuxtImg
-          :src="'/images/kitsu/' + featureKey + '.png'"
+          :class="{ 'only-light': dark }"
+          :src="
+            light
+              ? '/images/screenshots/' + light
+              : '/images/kitsu/' + featureKey + '.png'
+          "
           :alt="feature.title"
-          format="webp"
+          :format="light ? undefined : 'webp'"
           loading="lazy"
+        />
+        <NuxtImg
+          class="only-dark"
+          :src="'/images/screenshots/' + dark"
+          :alt="feature.title"
+          loading="lazy"
+          v-if="dark"
         />
       </nuxt-link>
     </div>
@@ -59,6 +71,26 @@ const FEATURE_PAGES = {
   timesheets: 'production-tracker',
   track: 'team-collaboration'
 }
+
+// Animated illustrations of the feature pages: light version, then dark one
+// when it exists. A block without an entry keeps its PNG screenshot.
+const ILLUSTRATIONS = {
+  api: ['kitsu-python-animated.svg'],
+  breakdown: ['kitsu-tables-animated.svg', 'kitsu-tables-animated-dark.svg'],
+  forecast: ['kitsu-budget-animated.svg', 'kitsu-budget-animated-dark.svg'],
+  library: ['kitsu-library-animated.svg', 'kitsu-library-animated-dark.svg'],
+  news: ['kitsu-news-animated.svg', 'kitsu-news-animated-dark.svg'],
+  report: ['kitsu-report-animated.svg', 'kitsu-report-animated-dark.svg'],
+  review: ['kitsu-playlists-animated.svg'],
+  'review-assets': ['kitsu-compare-animated.svg'],
+  schedule: ['kitsu-schedule-animated.svg', 'kitsu-schedule-animated-dark.svg'],
+  timesheets: [
+    'kitsu-timesheets-animated.svg',
+    'kitsu-timesheets-animated-dark.svg'
+  ],
+  track: ['kitsu-tasks-animated.svg', 'kitsu-tasks-animated-dark.svg']
+}
+const [light, dark] = ILLUSTRATIONS[props.featureKey] || []
 
 const { t } = useI18n()
 const localePath = useLocalePath()
@@ -103,8 +135,9 @@ const featurePath = computed(() =>
 
   img
     border: 10px solid #ffffff66
-    // An inline image leaves a line descender gap under it.
-    display: block
+    // An inline image on the baseline leaves a line descender gap under it.
+    // Not display block: it would override the only-light and only-dark rules.
+    vertical-align: top
     border-radius: 20px
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
     margin 0
