@@ -1,55 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 6 792 380" width="1440" height="691" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="17" fill="#adbac7" role="img" aria-label="Python script using gazu, the Kitsu client: it posts a comment, attaches a preview, sets it as main preview and marks the task as done">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 6 792 316" width="1440" height="575" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'DejaVu Sans Mono', 'Liberation Mono', monospace" font-size="17" fill="#adbac7" role="img" aria-label="Python script using gazu, the Kitsu client: it sets a task to work in progress with a comment, publishes a preview for approval, then marks the task as done">
   <!-- 9s loop: the script types itself line after line, stays, then fades out -->
   <style>
     .code { animation: code 9s linear infinite }
     .covers g, .covers g rect + rect { animation: 9s linear infinite }
     @keyframes code { 0% { opacity: 0 } 2%, 94% { opacity: 1 } 98%, 100% { opacity: 0 } }
-    @keyframes w1 { 0%, 4.00% { transform: translateX(0); animation-timing-function: steps(66) } 19.84%, 100% { transform: translateX(673.2px) } }
-    @keyframes k1 { 0%, 3.99% { opacity: 0 } 4.00%, 21.34% { opacity: 1 } 21.35%, 100% { opacity: 0 } }
-    @keyframes w2 { 0%, 21.34% { transform: translateX(0); animation-timing-function: steps(37) } 30.22%, 100% { transform: translateX(377.4px) } }
-    @keyframes k2 { 0%, 21.33% { opacity: 0 } 21.34%, 31.72% { opacity: 1 } 31.73%, 100% { opacity: 0 } }
-    @keyframes w3 { 0%, 31.72% { transform: translateX(0); animation-timing-function: steps(14) } 35.08%, 100% { transform: translateX(142.8px) } }
-    @keyframes k3 { 0%, 31.71% { opacity: 0 } 31.72%, 36.58% { opacity: 1 } 36.59%, 100% { opacity: 0 } }
-    @keyframes w4 { 0%, 36.58% { transform: translateX(0); animation-timing-function: steps(8) } 38.50%, 100% { transform: translateX(81.6px) } }
-    @keyframes k4 { 0%, 36.57% { opacity: 0 } 36.58%, 40.00% { opacity: 1 } 40.01%, 100% { opacity: 0 } }
-    @keyframes w5 { 0%, 40.00% { transform: translateX(0); animation-timing-function: steps(26) } 46.24%, 100% { transform: translateX(265.2px) } }
-    @keyframes k5 { 0%, 39.99% { opacity: 0 } 40.00%, 47.74% { opacity: 1 } 47.75%, 100% { opacity: 0 } }
-    @keyframes w6 { 0%, 47.74% { transform: translateX(0); animation-timing-function: steps(1) } 47.98%, 100% { transform: translateX(10.2px) } }
-    @keyframes k6 { 0%, 47.73% { opacity: 0 } 47.74%, 49.48% { opacity: 1 } 49.49%, 100% { opacity: 0 } }
-    @keyframes w7 { 0%, 49.48% { transform: translateX(0); animation-timing-function: steps(40) } 59.08%, 100% { transform: translateX(408px) } }
-    @keyframes k7 { 0%, 49.47% { opacity: 0 } 49.48%, 60.58% { opacity: 1 } 60.59%, 100% { opacity: 0 } }
-    @keyframes w8 { 0%, 60.58% { transform: translateX(0); animation-timing-function: steps(60) } 74.98%, 100% { transform: translateX(612px) } }
-    @keyframes k8 { 0%, 60.57% { opacity: 0 } 60.58%, 94.00% { opacity: 1 } 94.01%, 100% { opacity: 0 } }
+    @keyframes w1 { 0%, 4.00% { transform: translateX(0); animation-timing-function: steps(58) } 17.92%, 100% { transform: translateX(591.6px) } }
+    @keyframes k1 { 0%, 3.99% { opacity: 0 } 4.00%, 19.42% { opacity: 1 } 19.43%, 100% { opacity: 0 } }
+    @keyframes w2 { 0%, 19.42% { transform: translateX(0); animation-timing-function: steps(26) } 25.66%, 100% { transform: translateX(265.2px) } }
+    @keyframes k2 { 0%, 19.41% { opacity: 0 } 19.42%, 27.16% { opacity: 1 } 27.17%, 100% { opacity: 0 } }
+    @keyframes w3 { 0%, 27.16% { transform: translateX(0); animation-timing-function: steps(24) } 32.92%, 100% { transform: translateX(244.8px) } }
+    @keyframes k3 { 0%, 27.15% { opacity: 0 } 27.16%, 34.42% { opacity: 1 } 34.43%, 100% { opacity: 0 } }
+    @keyframes w4 { 0%, 34.42% { transform: translateX(0); animation-timing-function: steps(42) } 44.50%, 100% { transform: translateX(428.4px) } }
+    @keyframes k4 { 0%, 34.41% { opacity: 0 } 34.42%, 46.00% { opacity: 1 } 46.01%, 100% { opacity: 0 } }
+    @keyframes w5 { 0%, 46.00% { transform: translateX(0); animation-timing-function: steps(1) } 46.24%, 100% { transform: translateX(10.2px) } }
+    @keyframes k5 { 0%, 45.99% { opacity: 0 } 46.00%, 47.74% { opacity: 1 } 47.75%, 100% { opacity: 0 } }
+    @keyframes w6 { 0%, 47.74% { transform: translateX(0); animation-timing-function: steps(45) } 58.54%, 100% { transform: translateX(459px) } }
+    @keyframes k6 { 0%, 47.73% { opacity: 0 } 47.74%, 94.00% { opacity: 1 } 94.01%, 100% { opacity: 0 } }
     @media (prefers-reduced-motion: reduce) { .code { animation: none } .covers { display: none } }
   </style>
   <defs>
     <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#363636" flood-opacity=".14"/></filter>
-    <clipPath id="clip-card"><rect x="16" y="16" width="768" height="344" rx="12"/></clipPath>
+    <clipPath id="clip-card"><rect x="16" y="16" width="768" height="280" rx="12"/></clipPath>
   </defs>
-  <rect x="16" y="16" width="768" height="344" rx="12" fill="#22272e" filter="url(#card-shadow)"/>
+  <rect x="16" y="16" width="768" height="280" rx="12" fill="#22272e" filter="url(#card-shadow)"/>
   <!-- the filter shifts the card color by a notch: this plain copy is the surface the patches match -->
-  <rect x="16" y="16" width="768" height="344" rx="12" fill="#22272e"/>
+  <rect x="16" y="16" width="768" height="280" rx="12" fill="#22272e"/>
   <g class="code">
-    <text x="64" y="82" textLength="673.2" xml:space="preserve">comment<tspan fill="#6cb6ff"> = </tspan>gazu.task.<tspan fill="#dcbdfb">add_comment</tspan>(task_modeling, wfa, <tspan fill="#96d0ff">&quot;New preview&quot;</tspan>)</text>
-    <text x="64" y="114" textLength="377.4" xml:space="preserve">preview_file<tspan fill="#6cb6ff"> = </tspan>gazu.task.<tspan fill="#dcbdfb">add_preview</tspan>(</text>
-    <text x="104.8" y="146" textLength="142.8" xml:space="preserve">task_modeling,</text>
-    <text x="104.8" y="178" textLength="81.6" xml:space="preserve">comment,</text>
-    <text x="104.8" y="210" textLength="265.2" xml:space="preserve">file_paths_modeling[index]</text>
-    <text x="64" y="242" textLength="10.2" xml:space="preserve">)</text>
-    <text x="64" y="274" textLength="408" xml:space="preserve">gazu.task.<tspan fill="#dcbdfb">set_main_preview</tspan>(preview_file)</text>
-    <text x="64" y="306" textLength="612" xml:space="preserve">comment<tspan fill="#6cb6ff"> = </tspan>gazu.task.<tspan fill="#dcbdfb">add_comment</tspan>(task_modeling, done, <tspan fill="#96d0ff">&quot;Done&quot;</tspan>)</text>
+    <text x="64" y="82" textLength="591.6" xml:space="preserve">gazu.task.<tspan fill="#dcbdfb">add_comment</tspan>(task, wip, <tspan fill="#96d0ff">&quot;Starting the animation&quot;</tspan>)</text>
+    <text x="64" y="114" textLength="265.2" xml:space="preserve">gazu.task.<tspan fill="#dcbdfb">publish_preview</tspan>(</text>
+    <text x="104.8" y="146" textLength="244.8" xml:space="preserve">task, wfa, <tspan fill="#96d0ff">&quot;First pass&quot;</tspan>,</text>
+    <text x="104.8" y="178" textLength="428.4" xml:space="preserve">preview_file_path=<tspan fill="#96d0ff">&quot;sh020_animation_v1.mp4&quot;</tspan></text>
+    <text x="64" y="210" textLength="10.2" xml:space="preserve">)</text>
+    <text x="64" y="242" textLength="459" xml:space="preserve">gazu.task.<tspan fill="#dcbdfb">add_comment</tspan>(task, done, <tspan fill="#96d0ff">&quot;Approved&quot;</tspan>)</text>
   </g>
   <!-- each line is hidden by a patch of the card color that moves away one character at a time, with the cursor on its edge -->
   <g clip-path="url(#clip-card)">
     <g class="covers">
-    <g style="animation-name: w1"><rect x="62" y="59" width="679.2" height="32" fill="#22272e"/><rect style="animation-name: k1" x="64" y="66" width="8.7" height="20" fill="#adbac7"/></g>
-    <g style="animation-name: w2"><rect x="62" y="91" width="383.4" height="32" fill="#22272e"/><rect style="animation-name: k2" x="64" y="98" width="8.7" height="20" fill="#adbac7"/></g>
-    <g style="animation-name: w3"><rect x="102.8" y="123" width="148.8" height="32" fill="#22272e"/><rect style="animation-name: k3" x="104.8" y="130" width="8.7" height="20" fill="#adbac7"/></g>
-    <g style="animation-name: w4"><rect x="102.8" y="155" width="87.6" height="32" fill="#22272e"/><rect style="animation-name: k4" x="104.8" y="162" width="8.7" height="20" fill="#adbac7"/></g>
-    <g style="animation-name: w5"><rect x="102.8" y="187" width="271.2" height="32" fill="#22272e"/><rect style="animation-name: k5" x="104.8" y="194" width="8.7" height="20" fill="#adbac7"/></g>
-    <g style="animation-name: w6"><rect x="62" y="219" width="16.2" height="32" fill="#22272e"/><rect style="animation-name: k6" x="64" y="226" width="8.7" height="20" fill="#adbac7"/></g>
-    <g style="animation-name: w7"><rect x="62" y="251" width="414" height="32" fill="#22272e"/><rect style="animation-name: k7" x="64" y="258" width="8.7" height="20" fill="#adbac7"/></g>
-    <g style="animation-name: w8"><rect x="62" y="283" width="618" height="32" fill="#22272e"/><rect style="animation-name: k8" x="64" y="290" width="8.7" height="20" fill="#adbac7"/></g>
+    <g style="animation-name: w1"><rect x="62" y="59" width="597.6" height="32" fill="#22272e"/><rect style="animation-name: k1" x="64" y="66" width="8.7" height="20" fill="#adbac7"/></g>
+    <g style="animation-name: w2"><rect x="62" y="91" width="271.2" height="32" fill="#22272e"/><rect style="animation-name: k2" x="64" y="98" width="8.7" height="20" fill="#adbac7"/></g>
+    <g style="animation-name: w3"><rect x="102.8" y="123" width="250.8" height="32" fill="#22272e"/><rect style="animation-name: k3" x="104.8" y="130" width="8.7" height="20" fill="#adbac7"/></g>
+    <g style="animation-name: w4"><rect x="102.8" y="155" width="434.4" height="32" fill="#22272e"/><rect style="animation-name: k4" x="104.8" y="162" width="8.7" height="20" fill="#adbac7"/></g>
+    <g style="animation-name: w5"><rect x="62" y="187" width="16.2" height="32" fill="#22272e"/><rect style="animation-name: k5" x="64" y="194" width="8.7" height="20" fill="#adbac7"/></g>
+    <g style="animation-name: w6"><rect x="62" y="219" width="465" height="32" fill="#22272e"/><rect style="animation-name: k6" x="64" y="226" width="8.7" height="20" fill="#adbac7"/></g>
     </g>
   </g>
 </svg>
