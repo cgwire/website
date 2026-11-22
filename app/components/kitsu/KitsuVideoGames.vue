@@ -90,5 +90,6 @@ const supporters = props.supporters
 <style lang="stylus" scoped>
 body .successes
   img
-    box-shadow none
+    padding: 0
+    border-radius: 30px
 </style>
