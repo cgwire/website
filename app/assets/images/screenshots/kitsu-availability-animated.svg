@@ -1,5 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 6 792 520" width="1440" height="945" font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#363636" role="img" aria-label="Monitoring dashboard of a Kitsu instance: CPU, load, memory and disk gauges, uptime, and the CPU and memory charts of the last 24 hours">
-  <!-- 9s loop: a CPU peak shows up on the chart and the gauge, an alert is sent to the team, then the instance is back to normal -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="945" fill="#363636" aria-label="Monitoring dashboard of a Kitsu instance: CPU, load, memory and disk gauges, uptime, and the CPU and memory charts of the last 24 hours" font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" role="img" viewBox="4 6 792 520">
   <style>
     .calm { animation: calm 9s ease-out infinite }
     .busy { opacity: 0; animation: busy 9s ease-out infinite }
@@ -16,48 +15,120 @@
     @media (prefers-reduced-motion: reduce) { .calm, .busy, .spike, .quiet, .alert, .resolved { animation: none } .spike, .resolved { opacity: 1 } .quiet { opacity: 0 } }
   </style>
   <defs>
-    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#363636" flood-opacity=".14"/></filter>
-    <clipPath id="clip-cpu"><rect x="84" y="244" width="299" height="180"/></clipPath>
+    <clipPath id="clip-cpu">
+      <path d="M84 244h299v180H84z"/>
+    </clipPath>
+    <filter id="card-shadow" width="120%" height="125%" x="-10%" y="-10%">
+      <feDropShadow dx="0" dy="6" flood-color="#363636" flood-opacity=".14" stdDeviation="9"/>
+    </filter>
   </defs>
-  <rect x="16" y="16" width="768" height="484" rx="12" fill="#fff" filter="url(#card-shadow)"/>
-  <!-- Gauges -->
-  <path d="M42 39l4 4 4-4" fill="none" stroke="#363636" stroke-opacity=".7" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect width="768" height="484" x="16" y="16" fill="#fff" filter="url(#card-shadow)" rx="12"/>
+  <path fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".7" stroke-width="1.5" d="m42 39 4 4 4-4"/>
   <text x="58" y="46" font-weight="700">Quick CPU / Mem / Disk</text>
-  <g class="alert"><rect x="634" y="31" width="126" height="20" rx="10" fill="#ff3860"/><text x="697" y="44.6" fill="#fff" font-size="10" font-weight="700" letter-spacing=".8" text-anchor="middle">ALERT - CPU 92%</text></g>
-  <g class="resolved"><rect x="674" y="31" width="86" height="20" rx="10" fill="#22d160"/><text x="717" y="44.6" fill="#fff" font-size="10" font-weight="700" letter-spacing=".8" text-anchor="middle">RESOLVED</text></g>
-  <rect x="40.500" y="58.500" width="136" height="110" rx="6" fill="#f8f8f8" stroke="#e0e0e0"/><text x="108" y="79" font-size="11.500" font-weight="700" text-anchor="middle">CPU Busy</text><path d="M82.02 147.00A30 30 0 1 1 133.98 147.00" fill="none" stroke="#e6e6e6" stroke-width="8"/><g class="calm"><path d="M82.02 147.00A30 30 0 1 1 133.98 147.00" fill="none" stroke="#22d160" stroke-width="8" stroke-dasharray="6.0 200"/><text x="108.0" y="139" fill="#22d160" font-size="15" font-weight="700" text-anchor="middle">4.8%</text></g><g class="busy"><path d="M82.02 147.00A30 30 0 1 1 133.98 147.00" fill="none" stroke="#ff3860" stroke-width="8" stroke-dasharray="115.6 200"/><text x="108.0" y="139" fill="#ff3860" font-size="15" font-weight="700" text-anchor="middle">92%</text></g>
-  <rect x="186.500" y="58.500" width="136" height="110" rx="6" fill="#f8f8f8" stroke="#e0e0e0"/><text x="254" y="79" font-size="11.500" font-weight="700" text-anchor="middle">Sys Load (5m avg)</text><path d="M228.02 147.00A30 30 0 1 1 279.98 147.00" fill="none" stroke="#e6e6e6" stroke-width="8"/><g><path d="M228.02 147.00A30 30 0 1 1 279.98 147.00" fill="none" stroke="#22d160" stroke-width="8" stroke-dasharray="16.3 200"/><text x="254.0" y="139" fill="#22d160" font-size="15" font-weight="700" text-anchor="middle">13%</text></g>
-  <rect x="332.500" y="58.500" width="136" height="110" rx="6" fill="#f8f8f8" stroke="#e0e0e0"/><text x="400" y="79" font-size="11.500" font-weight="700" text-anchor="middle">RAM Used</text><path d="M374.02 147.00A30 30 0 1 1 425.98 147.00" fill="none" stroke="#e6e6e6" stroke-width="8"/><g><path d="M374.02 147.00A30 30 0 1 1 425.98 147.00" fill="none" stroke="#22d160" stroke-width="8" stroke-dasharray="84.2 200"/><text x="400.0" y="139" fill="#22d160" font-size="15" font-weight="700" text-anchor="middle">67%</text></g>
-  <rect x="478.500" y="58.500" width="136" height="110" rx="6" fill="#f8f8f8" stroke="#e0e0e0"/><text x="546" y="79" font-size="11.500" font-weight="700" text-anchor="middle">Root FS Used</text><path d="M520.02 147.00A30 30 0 1 1 571.98 147.00" fill="none" stroke="#e6e6e6" stroke-width="8"/><g><path d="M520.02 147.00A30 30 0 1 1 571.98 147.00" fill="none" stroke="#22d160" stroke-width="8" stroke-dasharray="75.0 200"/><text x="546.0" y="139" fill="#22d160" font-size="15" font-weight="700" text-anchor="middle">59.7%</text></g>
-  <rect x="624.500" y="58.500" width="136" height="110" rx="6" fill="#f8f8f8" stroke="#e0e0e0"/><text x="692" y="79" font-size="11.500" font-weight="700" text-anchor="middle">Uptime</text><text x="692" y="131" fill="#22d160" font-size="20" font-weight="700" text-anchor="middle">3.1 weeks</text>
-
-  <!-- Charts -->
-  <path d="M42 189l4 4 4-4" fill="none" stroke="#363636" stroke-opacity=".7" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="alert">
+    <rect width="126" height="20" x="634" y="31" fill="#ff3860" rx="10"/>
+    <text x="697" y="44.6" fill="#fff" font-size="10" font-weight="700" letter-spacing=".8" text-anchor="middle">ALERT - CPU 92%</text>
+  </g>
+  <g class="resolved">
+    <rect width="86" height="20" x="674" y="31" fill="#22d160" rx="10"/>
+    <text x="717" y="44.6" fill="#fff" font-size="10" font-weight="700" letter-spacing=".8" text-anchor="middle">RESOLVED</text>
+  </g>
+  <rect width="136" height="110" x="40.5" y="58.5" fill="#f8f8f8" stroke="#e0e0e0" rx="6"/>
+  <text x="108" y="79" font-size="11.5" font-weight="700" text-anchor="middle">CPU Busy</text>
+  <path fill="none" stroke="#e6e6e6" stroke-width="8" d="M82.02 147a30 30 0 1 1 51.96 0"/>
+  <g class="calm">
+    <path fill="none" stroke="#22d160" stroke-dasharray="6.0 200" stroke-width="8" d="M82.02 147a30 30 0 1 1 51.96 0"/>
+    <text x="108" y="139" fill="#22d160" font-size="15" font-weight="700" text-anchor="middle">4.8%</text>
+  </g>
+  <g class="busy">
+    <path fill="none" stroke="#ff3860" stroke-dasharray="115.6 200" stroke-width="8" d="M82.02 147a30 30 0 1 1 51.96 0"/>
+    <text x="108" y="139" fill="#ff3860" font-size="15" font-weight="700" text-anchor="middle">92%</text>
+  </g>
+  <rect width="136" height="110" x="186.5" y="58.5" fill="#f8f8f8" stroke="#e0e0e0" rx="6"/>
+  <text x="254" y="79" font-size="11.5" font-weight="700" text-anchor="middle">Sys Load (5m avg)</text>
+  <path fill="none" stroke="#e6e6e6" stroke-width="8" d="M228.02 147a30 30 0 1 1 51.96 0"/>
+  <g>
+    <path fill="none" stroke="#22d160" stroke-dasharray="16.3 200" stroke-width="8" d="M228.02 147a30 30 0 1 1 51.96 0"/>
+    <text x="254" y="139" fill="#22d160" font-size="15" font-weight="700" text-anchor="middle">13%</text>
+  </g>
+  <rect width="136" height="110" x="332.5" y="58.5" fill="#f8f8f8" stroke="#e0e0e0" rx="6"/>
+  <text x="400" y="79" font-size="11.5" font-weight="700" text-anchor="middle">RAM Used</text>
+  <path fill="none" stroke="#e6e6e6" stroke-width="8" d="M374.02 147a30 30 0 1 1 51.96 0"/>
+  <g>
+    <path fill="none" stroke="#22d160" stroke-dasharray="84.2 200" stroke-width="8" d="M374.02 147a30 30 0 1 1 51.96 0"/>
+    <text x="400" y="139" fill="#22d160" font-size="15" font-weight="700" text-anchor="middle">67%</text>
+  </g>
+  <rect width="136" height="110" x="478.5" y="58.5" fill="#f8f8f8" stroke="#e0e0e0" rx="6"/>
+  <text x="546" y="79" font-size="11.5" font-weight="700" text-anchor="middle">Root FS Used</text>
+  <path fill="none" stroke="#e6e6e6" stroke-width="8" d="M520.02 147a30 30 0 1 1 51.96 0"/>
+  <g>
+    <path fill="none" stroke="#22d160" stroke-dasharray="75.0 200" stroke-width="8" d="M520.02 147a30 30 0 1 1 51.96 0"/>
+    <text x="546" y="139" fill="#22d160" font-size="15" font-weight="700" text-anchor="middle">59.7%</text>
+  </g>
+  <rect width="136" height="110" x="624.5" y="58.5" fill="#f8f8f8" stroke="#e0e0e0" rx="6"/>
+  <text x="692" y="79" font-size="11.5" font-weight="700" text-anchor="middle">Uptime</text>
+  <text x="692" y="131" fill="#22d160" font-size="20" font-weight="700" text-anchor="middle">3.1 weeks</text>
+  <path fill="none" stroke="#363636" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".7" stroke-width="1.5" d="m42 189 4 4 4-4"/>
   <text x="58" y="196" font-weight="700">Basic CPU / Mem / Net / Disk</text>
-  <rect x="40.500" y="208.500" width="355" height="268" rx="6" fill="#f8f8f8" stroke="#e0e0e0"/>
-  <rect x="405.500" y="208.500" width="355" height="268" rx="6" fill="#f8f8f8" stroke="#e0e0e0"/>
-  <g font-size="11.500" font-weight="700" text-anchor="middle"><text x="218" y="229">CPU Basic</text><text x="583" y="229">Memory Basic</text></g>
-  <g stroke="#e0e0e0"><path d="M84 244.500H383"/><path d="M84 334.500H383"/><path d="M84 424.500H383"/><path d="M449 244.500H748"/><path d="M449 334.500H748"/><path d="M449 424.500H748"/></g>
-  <g font-size="10" fill-opacity=".6" text-anchor="end">
-    <text x="78" y="248">100%</text><text x="78" y="338">50%</text><text x="78" y="428">0%</text>
-    <text x="443" y="248">2 GiB</text><text x="443" y="338">1 GiB</text><text x="443" y="428">0</text>
+  <rect width="355" height="268" x="40.5" y="208.5" fill="#f8f8f8" stroke="#e0e0e0" rx="6"/>
+  <rect width="355" height="268" x="405.5" y="208.5" fill="#f8f8f8" stroke="#e0e0e0" rx="6"/>
+  <g font-size="11.5" font-weight="700" text-anchor="middle">
+    <text x="218" y="229">CPU Basic</text>
+    <text x="583" y="229">Memory Basic</text>
   </g>
-  <g font-size="10" fill-opacity=".6" text-anchor="middle"><text x="100" y="442">14:00</text><text x="465" y="442">14:00</text><text x="153" y="442">18:00</text><text x="518" y="442">18:00</text><text x="206" y="442">22:00</text><text x="571" y="442">22:00</text><text x="259" y="442">02:00</text><text x="624" y="442">02:00</text><text x="312" y="442">06:00</text><text x="677" y="442">06:00</text><text x="365" y="442">10:00</text><text x="730" y="442">10:00</text></g>
-
-  <path d="M84 280.0H383" stroke="#ff3860" stroke-opacity=".6" stroke-dasharray="4 4"/>
-  <g clip-path="url(#clip-cpu)" fill="none" stroke-width="1.600" stroke-linejoin="round">
-    <polyline points="84,416.8 122,415.0 128,370.0 132,415.0 180,416.8 184,407.8 188,416.8 202,415.0 206,362.8 210,415.0 250,416.8 254,404.2 258,416.8 298,415.0 302,380.8 306,415.0 320,416.8 346,415.0" stroke="#22d160"/>
-    <polyline class="quiet" points="346,415.0 383,416.8" stroke="#22d160"/>
-    <g class="spike"><polygon points="346,415.0 352,319.6 357,258.4 363,262.0 368,296.2 374,386.2 378,415.0 383,416.8 383,424 346,424" fill="#ff3860" fill-opacity=".15" stroke="none"/><polyline points="346,415.0 352,319.6 357,258.4 363,262.0 368,296.2 374,386.2 378,415.0 383,416.8" stroke="#ff3860"/></g>
+  <g stroke="#e0e0e0">
+    <path d="M84 244.5h299"/>
+    <path d="M84 334.5h299"/>
+    <path d="M84 424.5h299"/>
+    <path d="M449 244.5h299"/>
+    <path d="M449 334.5h299"/>
+    <path d="M449 424.5h299"/>
   </g>
-  <polygon points="449,424 449,325.0 537,325.0 539,321.4 543,325.0 609,325.0 611,330.4 615,325.0 699,325.0 703,319.6 748,321.4 748,424" fill="#22d160" fill-opacity=".22"/>
-  <polygon points="449,265.6 493,262.0 495,271.0 559,265.6 609,262.0 611,274.6 679,267.4 699,263.8 701,272.8 748,269.2 748,321.4 703,319.6 699,325.0 615,325.0 611,330.4 609,325.0 543,325.0 539,321.4 537,325.0 449,325.0" fill="#8f91eb" fill-opacity=".18"/>
-  <g fill="none" stroke-width="1.600" stroke-linejoin="round"><polyline points="449,325.0 537,325.0 539,321.4 543,325.0 609,325.0 611,330.4 615,325.0 699,325.0 703,319.6 748,321.4" stroke="#22d160"/><polyline points="449,265.6 493,262.0 495,271.0 559,265.6 609,262.0 611,274.6 679,267.4 699,263.8 701,272.8 748,269.2" stroke="#8f91eb"/></g>
-
-  <g font-size="10.500" fill-opacity=".75">
-    <rect x="56" y="456" width="12" height="3" fill="#22d160"/><text x="74" y="461.500">Busy</text>
-    <path d="M118 457.500h12" stroke="#ff3860" stroke-dasharray="4 2" fill="none"/><text x="136" y="461.500">Alert threshold</text>
-    <rect x="421" y="456" width="12" height="3" fill="#22d160"/><text x="439" y="461.500">RAM Used</text>
-    <rect x="504" y="456" width="12" height="3" fill="#8f91eb"/><text x="522" y="461.500">Cache + Buffer</text>
+  <g fill-opacity=".6" font-size="10" text-anchor="end">
+    <text x="78" y="248">100%</text>
+    <text x="78" y="338">50%</text>
+    <text x="78" y="428">0%</text>
+    <text x="443" y="248">2 GiB</text>
+    <text x="443" y="338">1 GiB</text>
+    <text x="443" y="428">0</text>
+  </g>
+  <g fill-opacity=".6" font-size="10" text-anchor="middle">
+    <text x="100" y="442">14:00</text>
+    <text x="465" y="442">14:00</text>
+    <text x="153" y="442">18:00</text>
+    <text x="518" y="442">18:00</text>
+    <text x="206" y="442">22:00</text>
+    <text x="571" y="442">22:00</text>
+    <text x="259" y="442">02:00</text>
+    <text x="624" y="442">02:00</text>
+    <text x="312" y="442">06:00</text>
+    <text x="677" y="442">06:00</text>
+    <text x="365" y="442">10:00</text>
+    <text x="730" y="442">10:00</text>
+  </g>
+  <path stroke="#ff3860" stroke-dasharray="4 4" stroke-opacity=".6" d="M84 280h299"/>
+  <g fill="none" stroke-linejoin="round" stroke-width="1.6" clip-path="url(#clip-cpu)">
+    <path stroke="#22d160" d="m84 416.8 38-1.8 6-45 4 45 48 1.8 4-9 4 9 14-1.8 4-52.2 4 52.2 40 1.8 4-12.6 4 12.6 40-1.8 4-34.2 4 34.2 14 1.8 26-1.8"/>
+    <path stroke="#22d160" d="m346 415 37 1.8" class="quiet"/>
+    <g class="spike">
+      <path fill="#ff3860" fill-opacity=".15" d="m346 415 6-95.4 5-61.2 6 3.6 5 34.2 6 90 4 28.8 5 1.8v7.2h-37z"/>
+      <path stroke="#ff3860" d="m346 415 6-95.4 5-61.2 6 3.6 5 34.2 6 90 4 28.8 5 1.8"/>
+    </g>
+  </g>
+  <path fill="#22d160" fill-opacity=".22" d="M449 424v-99h88l2-3.6 4 3.6h66l2 5.4 4-5.4h84l4-5.4 45 1.8V424z"/>
+  <path fill="#8f91eb" fill-opacity=".18" d="m449 265.6 44-3.6 2 9 64-5.4 50-3.6 2 12.6 68-7.2 20-3.6 2 9 47-3.6v52.2l-45-1.8-4 5.4h-84l-4 5.4-2-5.4h-66l-4-3.6-2 3.6h-88z"/>
+  <g fill="none" stroke-linejoin="round" stroke-width="1.6">
+    <path stroke="#22d160" d="M449 325h88l2-3.6 4 3.6h66l2 5.4 4-5.4h84l4-5.4 45 1.8"/>
+    <path stroke="#8f91eb" d="m449 265.6 44-3.6 2 9 64-5.4 50-3.6 2 12.6 68-7.2 20-3.6 2 9 47-3.6"/>
+  </g>
+  <g fill-opacity=".75" font-size="10.5">
+    <path fill="#22d160" d="M56 456h12v3H56z"/>
+    <text x="74" y="461.5">Busy</text>
+    <path fill="none" stroke="#ff3860" stroke-dasharray="4 2" d="M118 457.5h12"/>
+    <text x="136" y="461.5">Alert threshold</text>
+    <path fill="#22d160" d="M421 456h12v3h-12z"/>
+    <text x="439" y="461.5">RAM Used</text>
+    <path fill="#8f91eb" d="M504 456h12v3h-12z"/>
+    <text x="522" y="461.5">Cache + Buffer</text>
   </g>
 </svg>

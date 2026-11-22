@@ -26,7 +26,6 @@
   <defs>
     <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="125%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000" flood-opacity=".45"/></filter>
     <filter id="sel-shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00b242" flood-opacity=".45"/></filter>
-    <filter id="soft" x="-10%" y="-15%" width="120%" height="135%"><feDropShadow dx="0" dy="1" stdDeviation="2.5" flood-color="#000" flood-opacity=".3"/></filter>
     <clipPath id="clip-avatar"><circle cx="15" cy="15" r="15"/></clipPath>
     <clipPath id="clip-win"><rect width="376" height="224.4" rx="8"/></clipPath>
     <clipPath id="clip-bar"><rect y="199.4" width="376" height="8"/></clipPath>
