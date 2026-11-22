@@ -297,10 +297,12 @@ const tabStories = computed(() =>
   background-image url('~/assets/images/illustrations/kitsu-header.webp')
   background-size 100%
   background-position: 0px 0px
-  height 600px
+  // The box ends where the picture ends (2400 by 900), so the shadow sits
+  // right under it.
+  height 37.5vw
+  max-height 600px
   background-repeat: no-repeat
-  padding-bottom 3em
-  padding-top 3em
+  box-shadow 0 12px 14px -12px rgba(0, 0, 0, 0.35)
 
 .stories
   justify-content center
@@ -363,18 +365,6 @@ const tabStories = computed(() =>
 
 
 div.body
-  @media(max-width: 1200px)
-    .kitsu-header-wrapper
-      height 500px
-
-  @media(max-width: 500px)
-    .kitsu-header-wrapper
-      height 300px
-
-  @media(max-width: 600px)
-    .kitsu-header-wrapper
-      height 400px
-
   @media(max-width: 800px)
     section
       padding 1em
@@ -382,6 +372,8 @@ div.body
     .kitsu-header-wrapper
       background-size 200%
       background-position: 80%
+      height 75vw
+      max-height 500px
 
     .kitsu-header.flexrow
       flex-direction column
