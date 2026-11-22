@@ -395,7 +395,7 @@
           "storiesReadMore": "Read more customer stories"
         },
         "stats": {
-          "title": "Trusted by 500+ studios",
+          "title": "Trusted by 400+ studios",
           "text": "Creatives from all over the world use Kitsu to manage their productions.",
           "activeUsers": "Active users",
           "videoReviews": "Video reviews / day",
@@ -1665,7 +1665,7 @@
         "subtitle": "A single source of truth",
         "stats": [
           { "value": "80k", "label": "downloads" },
-          { "value": "500", "label": "running instances" },
+          { "value": "400", "label": "running instances" },
           { "value": "10 years", "label": "in production" }
         ],
         "explanation": "Production data scattered across tools and shared drives kills pipeline efficiency. Kitsu provides a central HTTP API that makes every asset, shot, task, and assignment queryable from any tool in your studio. Your pipeline talks to one place, your artists stay focused on the work.",

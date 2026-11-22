@@ -395,7 +395,7 @@
           "storiesReadMore": "Découvrir d'autres témoignages clients"
         },
         "stats": {
-          "title": "Plus de 500 studios nous font confiance",
+          "title": "Plus de 400 studios nous font confiance",
           "text": "Les créatifs du monde entiers utilisent Kitsu pour leurs productions",
           "activeUsers": "Utilisateurs actifs",
           "videoReviews": "Vidéos validées / jour",
@@ -1694,7 +1694,7 @@
             "label": "téléchargements"
           },
           {
-            "value": "500",
+            "value": "400",
             "label": "instances actives"
           },
           {

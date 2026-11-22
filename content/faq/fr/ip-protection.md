@@ -88,7 +88,7 @@ Cette concentration se reflète dans la façon dont Kitsu est conçu.
 
 La plateforme est un hub vivant où les tâches, les assets, les révisions, les plannings et les communications sont connectés. Cette centralisation réduit le nombre d'endroits où des données sensibles pourraient être dupliquées ou perdues.
 
-Des studios dans plus de 50 pays utilisent Kitsu dans de vrais environnements de production, comme élément central de leur pipeline.
+Des studios dans plus de 30 pays utilisent Kitsu dans de vrais environnements de production, comme élément central de leur pipeline.
 
 ::minimalist-user-logos
 ::

@@ -76,7 +76,7 @@ That focus shows in how Kitsu is designed.
 
 The platform is a live hub where tasks, assets, reviews, schedules, and communication are connected. The centralization reduces the number of places where sensitive data could be duplicated or lost.
 
-Studios in more than 50 countries use Kitsu in real production environments as a core part of their pipeline.
+Studios in more than 30 countries use Kitsu in real production environments as a core part of their pipeline.
 
 
 ## The Takeaway
