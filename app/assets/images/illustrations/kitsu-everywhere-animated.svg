@@ -61,7 +61,7 @@
       <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#00b242" flood-opacity=".22"/>
     </filter>
     <clipPath id="s-clip-prod"><circle cx="12" cy="12" r="12"/></clipPath>
-    <clipPath id="s-clip-timeline"><rect x="204" y="100" width="546" height="436"/></clipPath>
+    <clipPath id="s-clip-timeline"><rect x="204" y="100" width="546" height="452"/></clipPath>
     <symbol id="s-prod" viewBox="0 0 24 24"><g clip-path="url(#s-clip-prod)"><image href="data:image/png;base64,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" width="24" height="24" preserveAspectRatio="xMidYMid slice"/></g></symbol>
   
     <filter id="r-card-shadow" x="-10%" y="-10%" width="120%" height="125%">
@@ -69,7 +69,7 @@
     </filter>
     <clipPath id="r-clip-prod"><circle cx="13" cy="13" r="13"/></clipPath>
     <symbol id="r-prod" viewBox="0 0 26 26"><g clip-path="url(#r-clip-prod)"><image href="data:image/png;base64,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" width="26" height="26" preserveAspectRatio="xMidYMid slice"/></g></symbol>
-  <clipPath id="view-1"><rect width="768" height="440" rx="12"/></clipPath><clipPath id="view-2"><rect width="768" height="410" rx="12"/></clipPath><clipPath id="view-3"><rect width="768" height="440" rx="12"/></clipPath><filter id="pop-shadow" x="-10%" y="-100%" width="120%" height="300%"><feDropShadow dx="0" dy="8" stdDeviation="11" flood-color="#363636" flood-opacity=".2"/></filter></defs>
+  <clipPath id="view-1"><rect width="768" height="440" rx="12"/></clipPath><clipPath id="view-2"><rect width="768" height="426" rx="12"/></clipPath><clipPath id="view-3"><rect width="768" height="440" rx="12"/></clipPath><filter id="pop-shadow" x="-10%" y="-100%" width="120%" height="300%"><feDropShadow dx="0" dy="8" stdDeviation="11" flood-color="#363636" flood-opacity=".2"/></filter></defs>
     <g transform="translate(236 16) scale(0.56)">
     <rect width="768" height="440" rx="12" fill="#fff" filter="url(#n-card-shadow)"/>
     <g clip-path="url(#view-1)"><svg width="768" height="440" viewBox="16 16 768 440"><g font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#363636">
@@ -216,14 +216,14 @@
 </g></svg></g>
   </g>
   <g transform="translate(16 196) scale(0.56)">
-    <rect width="768" height="410" rx="12" fill="#fff" filter="url(#pop-shadow)"/>
-    <g clip-path="url(#view-2)"><svg width="768" height="410" viewBox="16 16 768 410"><g font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#363636">
+    <rect width="768" height="426" rx="12" fill="#fff" filter="url(#pop-shadow)"/>
+    <g clip-path="url(#view-2)"><svg width="768" height="426" viewBox="16 16 768 426"><g font-family="Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#363636">
   <!-- 8s loop: the end of the animation step is dragged 3 days later, then the rendering step is pushed back by 3 days -->
   
   
 
   <!-- Page card -->
-  <rect x="16" y="16" width="768" height="410" rx="12" fill="#fff" filter="url(#s-card-shadow)"/>
+  <rect x="16" y="16" width="768" height="426" rx="12" fill="#fff" filter="url(#s-card-shadow)"/>
 
   <!-- Header: production and page -->
   <use href="#s-prod" x="44" y="30" width="24" height="24"/>
@@ -237,7 +237,6 @@
     <text x="158" y="74">VERSION</text>
     <text x="380" y="74">ENTITIES</text>
     <text x="478" y="74">TASK TYPES</text>
-    <text x="640" y="74">ZOOM LEVEL</text>
   </g>
   <g fill="#fff" stroke="#dbdbdb">
     <rect x="44.5" y="80.5" width="100" height="30" rx="8"/>
@@ -245,104 +244,104 @@
     <rect x="334.5" y="80.5" width="30" height="30" rx="8"/>
     <rect x="378.5" y="80.5" width="86" height="30" rx="8"/>
     <rect x="476.5" y="80.5" width="86" height="30" rx="8"/>
-    <rect x="638.5" y="80.5" width="78" height="30" rx="8"/>
     <circle cx="741" cy="95.5" r="15"/>
   </g>
-  <text x="56" y="100">Forecast</text>
-  <text x="168" y="100">v2 - Client review</text>
-  <text x="390" y="100">Shots</text>
-  <text x="488" y="100">All</text>
-  <text x="650" y="100">1</text>
+  <g font-size="11.5">
+    <text x="56" y="99.5">Forecast</text>
+    <text x="168" y="99.5">v2 - Client review</text>
+    <text x="390" y="99.5">Shots</text>
+    <text x="488" y="99.5">All</text>
+  </g>
   <g fill="none" stroke="#363636" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
     <path d="M741 88.5v9M737.5 94l3.5 3.5 3.5-3.5M735.5 101.5h11"/>
     <rect x="343.5" y="89" width="12" height="12" rx="2"/>
     <path d="M343.5 92.5h12M346.5 87v3M352.5 87v3M349.5 94.5v4.5M347.25 96.75h4.5"/>
   </g>
   <g fill="none" stroke="#00b242" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M124 93.5l4.5 4.5 4.5-4.5M306 93.5l4.5 4.5 4.5-4.5M444 93.5l4.5 4.5 4.5-4.5M542 93.5l4.5 4.5 4.5-4.5M696 93.5l4.5 4.5 4.5-4.5"/>
+    <path d="M124 93.5l4.5 4.5 4.5-4.5M306 93.5l4.5 4.5 4.5-4.5M444 93.5l4.5 4.5 4.5-4.5M542 93.5l4.5 4.5 4.5-4.5"/>
   </g>
 
   <!-- Timeline -->
   <g clip-path="url(#s-clip-timeline)">
-    <rect x="274" y="128" width="14" height="274" fill="#f3f3f3"/>
-    <rect x="288" y="128" width="14" height="274" fill="#f3f3f3"/>
-    <rect x="372" y="128" width="14" height="274" fill="#f3f3f3"/>
-    <rect x="386" y="128" width="14" height="274" fill="#f3f3f3"/>
-    <rect x="470" y="128" width="14" height="274" fill="#f3f3f3"/>
-    <rect x="484" y="128" width="14" height="274" fill="#f3f3f3"/>
-    <rect x="568" y="128" width="14" height="274" fill="#f3f3f3"/>
-    <rect x="582" y="128" width="14" height="274" fill="#f3f3f3"/>
-    <rect x="666" y="128" width="14" height="274" fill="#f3f3f3"/>
-    <rect x="680" y="128" width="14" height="274" fill="#f3f3f3"/>
-    <rect x="274" y="128" width="14" height="274" fill="#ffc8ff" fill-opacity=".3"/>
-    <path d="M204.5 128V402M218.5 128V402M232.5 128V402M246.5 128V402M260.5 128V402M274.5 128V402M288.5 128V402M302.5 128V402M316.5 128V402M330.5 128V402M344.5 128V402M358.5 128V402M372.5 128V402M386.5 128V402M400.5 128V402M414.5 128V402M428.5 128V402M442.5 128V402M456.5 128V402M470.5 128V402M484.5 128V402M498.5 128V402M512.5 128V402M526.5 128V402M540.5 128V402M554.5 128V402M568.5 128V402M582.5 128V402M596.5 128V402M610.5 128V402M624.5 128V402M638.5 128V402M652.5 128V402M666.5 128V402M680.5 128V402M694.5 128V402M708.5 128V402M722.5 128V402M736.5 128V402" stroke="#e9e9e9"/>
-    <text x="208" y="122" font-size="8" font-weight="700" letter-spacing="1" fill-opacity=".6">NOVEMBER 2026</text>
-    <text x="418" y="122" font-size="8" font-weight="700" letter-spacing="1" fill-opacity=".6">DECEMBER 2026</text>
-    <path d="M414.5 110V402" stroke="#363636" stroke-opacity=".7"/>
+    <rect x="274" y="144" width="14" height="274" fill="#f3f3f3"/>
+    <rect x="288" y="144" width="14" height="274" fill="#f3f3f3"/>
+    <rect x="372" y="144" width="14" height="274" fill="#f3f3f3"/>
+    <rect x="386" y="144" width="14" height="274" fill="#f3f3f3"/>
+    <rect x="470" y="144" width="14" height="274" fill="#f3f3f3"/>
+    <rect x="484" y="144" width="14" height="274" fill="#f3f3f3"/>
+    <rect x="568" y="144" width="14" height="274" fill="#f3f3f3"/>
+    <rect x="582" y="144" width="14" height="274" fill="#f3f3f3"/>
+    <rect x="666" y="144" width="14" height="274" fill="#f3f3f3"/>
+    <rect x="680" y="144" width="14" height="274" fill="#f3f3f3"/>
+    <rect x="274" y="144" width="14" height="274" fill="#ffc8ff" fill-opacity=".3"/>
+    <path d="M204.5 144V418M218.5 144V418M232.5 144V418M246.5 144V418M260.5 144V418M274.5 144V418M288.5 144V418M302.5 144V418M316.5 144V418M330.5 144V418M344.5 144V418M358.5 144V418M372.5 144V418M386.5 144V418M400.5 144V418M414.5 144V418M428.5 144V418M442.5 144V418M456.5 144V418M470.5 144V418M484.5 144V418M498.5 144V418M512.5 144V418M526.5 144V418M540.5 144V418M554.5 144V418M568.5 144V418M582.5 144V418M596.5 144V418M610.5 144V418M624.5 144V418M638.5 144V418M652.5 144V418M666.5 144V418M680.5 144V418M694.5 144V418M708.5 144V418M722.5 144V418M736.5 144V418" stroke="#e9e9e9"/>
+    <text x="208" y="138" font-size="8" font-weight="700" letter-spacing="1" fill-opacity=".6">NOVEMBER 2026</text>
+    <text x="418" y="138" font-size="8" font-weight="700" letter-spacing="1" fill-opacity=".6">DECEMBER 2026</text>
+    <path d="M414.5 128V418" stroke="#363636" stroke-opacity=".7"/>
   <g font-size="7" text-anchor="middle" fill-opacity=".8">
-    <text x="211.0" y="139">16</text>
-    <text x="225.0" y="139">17</text>
-    <text x="239.0" y="139">18</text>
-    <text x="253.0" y="139">19</text>
-    <text x="267.0" y="139">20</text>
-    <text x="281.0" y="139" font-weight="700">21</text>
-    <text x="295.0" y="139">22</text>
-    <text x="309.0" y="139">23</text>
-    <text x="323.0" y="139">24</text>
-    <text x="337.0" y="139">25</text>
-    <text x="351.0" y="139">26</text>
-    <text x="365.0" y="139">27</text>
-    <text x="379.0" y="139">28</text>
-    <text x="393.0" y="139">29</text>
-    <text x="407.0" y="139">30</text>
-    <text x="421.0" y="139">01</text>
-    <text x="435.0" y="139">02</text>
-    <text x="449.0" y="139">03</text>
-    <text x="463.0" y="139">04</text>
-    <text x="477.0" y="139">05</text>
-    <text x="491.0" y="139">06</text>
-    <text x="505.0" y="139">07</text>
-    <text x="519.0" y="139">08</text>
-    <text x="533.0" y="139">09</text>
-    <text x="547.0" y="139">10</text>
-    <text x="561.0" y="139">11</text>
-    <text x="575.0" y="139">12</text>
-    <text x="589.0" y="139">13</text>
-    <text x="603.0" y="139">14</text>
-    <text x="617.0" y="139">15</text>
-    <text x="631.0" y="139">16</text>
-    <text x="645.0" y="139">17</text>
-    <text x="659.0" y="139">18</text>
-    <text x="673.0" y="139">19</text>
-    <text x="687.0" y="139">20</text>
-    <text x="701.0" y="139">21</text>
-    <text x="715.0" y="139">22</text>
-    <text x="729.0" y="139">23</text>
-    <text x="743.0" y="139">24</text>
+    <text x="211.0" y="155">16</text>
+    <text x="225.0" y="155">17</text>
+    <text x="239.0" y="155">18</text>
+    <text x="253.0" y="155">19</text>
+    <text x="267.0" y="155">20</text>
+    <text x="281.0" y="155" font-weight="700">21</text>
+    <text x="295.0" y="155">22</text>
+    <text x="309.0" y="155">23</text>
+    <text x="323.0" y="155">24</text>
+    <text x="337.0" y="155">25</text>
+    <text x="351.0" y="155">26</text>
+    <text x="365.0" y="155">27</text>
+    <text x="379.0" y="155">28</text>
+    <text x="393.0" y="155">29</text>
+    <text x="407.0" y="155">30</text>
+    <text x="421.0" y="155">01</text>
+    <text x="435.0" y="155">02</text>
+    <text x="449.0" y="155">03</text>
+    <text x="463.0" y="155">04</text>
+    <text x="477.0" y="155">05</text>
+    <text x="491.0" y="155">06</text>
+    <text x="505.0" y="155">07</text>
+    <text x="519.0" y="155">08</text>
+    <text x="533.0" y="155">09</text>
+    <text x="547.0" y="155">10</text>
+    <text x="561.0" y="155">11</text>
+    <text x="575.0" y="155">12</text>
+    <text x="589.0" y="155">13</text>
+    <text x="603.0" y="155">14</text>
+    <text x="617.0" y="155">15</text>
+    <text x="631.0" y="155">16</text>
+    <text x="645.0" y="155">17</text>
+    <text x="659.0" y="155">18</text>
+    <text x="673.0" y="155">19</text>
+    <text x="687.0" y="155">20</text>
+    <text x="701.0" y="155">21</text>
+    <text x="715.0" y="155">22</text>
+    <text x="729.0" y="155">23</text>
+    <text x="743.0" y="155">24</text>
   </g>
-    <path d="M204 150.5H750M204 186.5H750M204 222.5H750M204 258.5H750M204 294.5H750M204 330.5H750M204 366.5H750M204 402.5H750" stroke="#e9e9e9"/>
-    <rect x="121" y="159" width="236" height="18" rx="4" fill="#8d6e63"/>
-    <rect x="261" y="195" width="264" height="18" rx="4" fill="#78909c"/>
-    <rect x="331" y="231" width="236" height="18" rx="4" fill="#9ccc65"/>
-    <rect x="93" y="267" width="264" height="18" rx="4" fill="#43a047"/>
-    <rect x="359" y="303" width="292" height="18" rx="4" fill="#ff5252"/>
-    <rect x="643" y="303" width="42" height="18" fill="#ff5252" class="s-grow"/>
-    <rect x="639" y="303" width="12" height="18" rx="4" fill="#ff5252" class="s-cap"/>
-    <rect x="555" y="339" width="278" height="18" rx="4" fill="#f06292" class="s-push"/>
-    <rect x="667" y="375" width="278" height="18" rx="4" fill="#ff5252"/>
+    <path d="M204 166.5H750M204 202.5H750M204 238.5H750M204 274.5H750M204 310.5H750M204 346.5H750M204 382.5H750M204 418.5H750" stroke="#e9e9e9"/>
+    <rect x="121" y="175" width="236" height="18" rx="4" fill="#8d6e63"/>
+    <rect x="261" y="211" width="264" height="18" rx="4" fill="#78909c"/>
+    <rect x="331" y="247" width="236" height="18" rx="4" fill="#9ccc65"/>
+    <rect x="93" y="283" width="264" height="18" rx="4" fill="#43a047"/>
+    <rect x="359" y="319" width="292" height="18" rx="4" fill="#ff5252"/>
+    <rect x="643" y="319" width="42" height="18" fill="#ff5252" class="s-grow"/>
+    <rect x="639" y="319" width="12" height="18" rx="4" fill="#ff5252" class="s-cap"/>
+    <rect x="555" y="355" width="278" height="18" rx="4" fill="#f06292" class="s-push"/>
+    <rect x="667" y="391" width="278" height="18" rx="4" fill="#ff5252"/>
   </g>
 
   <!-- Task types -->
-  <path d="M54 156h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#8d6e63"/><path d="M57 164.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="172.5" fill="#fff" font-weight="700">Concept</text>
-  <path d="M54 192h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#78909c"/><path d="M57 200.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="208.5" fill="#fff" font-weight="700">Modeling</text>
-  <path d="M54 228h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#9ccc65"/><path d="M57 236.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="244.5" fill="#fff" font-weight="700">Rigging</text>
-  <path d="M54 264h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#43a047"/><path d="M57 272.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="280.5" fill="#fff" font-weight="700">Storyboard</text>
-  <path d="M54 300h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#ff5252"/><path d="M57 308.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="316.5" fill="#fff" font-weight="700">Animation</text>
-  <path d="M54 336h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#f06292"/><path d="M57 344.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="352.5" fill="#fff" font-weight="700">Rendering</text>
-  <path d="M54 372h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#ff5252"/><path d="M57 380.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="388.5" fill="#fff" font-weight="700">Compositing</text>
+  <path d="M54 172h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#8d6e63"/><path d="M57 180.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="188.5" fill="#fff" font-weight="700">Concept</text>
+  <path d="M54 208h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#78909c"/><path d="M57 216.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="224.5" fill="#fff" font-weight="700">Modeling</text>
+  <path d="M54 244h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#9ccc65"/><path d="M57 252.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="260.5" fill="#fff" font-weight="700">Rigging</text>
+  <path d="M54 280h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#43a047"/><path d="M57 288.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="296.5" fill="#fff" font-weight="700">Storyboard</text>
+  <path d="M54 316h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#ff5252"/><path d="M57 324.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="332.5" fill="#fff" font-weight="700">Animation</text>
+  <path d="M54 352h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#f06292"/><path d="M57 360.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="368.5" fill="#fff" font-weight="700">Rendering</text>
+  <path d="M54 388h140v24H54a10 10 0 0 1-10-10v-4a10 10 0 0 1 10-10Z" fill="#ff5252"/><path d="M57 396.5l3.5 3.5-3.5 3.5" fill="none" stroke="#fefefe" stroke-opacity=".8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><text x="72" y="404.5" fill="#fff" font-weight="700">Compositing</text>
 
   <!-- Selected step, green like the other illustrations, drawn above the rows -->
-  <rect x="40" y="296" width="720" height="32" rx="12" fill="none" stroke="#00b242" stroke-width="2" filter="url(#s-sel-shadow)" class="s-sel"/>
+  <rect x="40" y="312" width="720" height="32" rx="12" fill="none" stroke="#00b242" stroke-width="2" filter="url(#s-sel-shadow)" class="s-sel"/>
 </g></svg></g>
   </g>
   <g transform="translate(454 222) scale(0.56)">
@@ -382,12 +381,14 @@
   <g fill="none" stroke="#363636" stroke-opacity=".6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
     <path d="M740 105v10M736 111l4 4 4-4M734 119h12"/>
   </g>
-  <text x="58" y="117">All</text>
-  <text x="180" y="117">All</text>
-  <text x="302" y="117" class="r-v-pie">Pie charts</text>
-  <text x="302" y="117" class="r-v-bars">Stacked bars</text>
-  <text x="302" y="117" class="r-v-heat">Heatmap</text>
-  <text x="430" y="117">Counts</text>
+  <g font-size="11.5">
+    <text x="58" y="116.5">All</text>
+    <text x="180" y="116.5">All</text>
+    <text x="302" y="116.5" class="r-v-pie">Pie charts</text>
+    <text x="302" y="116.5" class="r-v-bars">Stacked bars</text>
+    <text x="302" y="116.5" class="r-v-heat">Heatmap</text>
+    <text x="430" y="116.5">Counts</text>
+  </g>
   <g fill="none" stroke="#00b242" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
     <path d="M134 110.5l4.5 4.5 4.5-4.5M256 110.5l4.5 4.5 4.5-4.5M384 110.5l4.5 4.5 4.5-4.5M496 110.5l4.5 4.5 4.5-4.5"/>
   </g>
