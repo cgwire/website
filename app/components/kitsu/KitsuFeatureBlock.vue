@@ -125,7 +125,8 @@ const featurePath = computed(() =>
   max-width: 600px
   margin: 0 auto
   background-color: #c2f0ab
-  padding: 6px
+  border: 10px solid #ffffff66
+  padding: 32px
 
   &.purple
     background-color: #e9e1ec
@@ -134,12 +135,10 @@ const featurePath = computed(() =>
     background-color: #e0e8ff
 
   img
-    border: 10px solid #ffffff66
     // An inline image on the baseline leaves a line descender gap under it.
     // Not display block: it would override the only-light and only-dark rules.
     vertical-align: top
     border-radius: 20px
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
     margin 0
 
 .flexrow-reverse
@@ -168,7 +167,7 @@ const featurePath = computed(() =>
     width: 100%
 
   .feature-img-wrapper
-    padding: 10px
+    padding: 16px
     width: 100%
 
   .flexrow-reverse
