@@ -34,15 +34,15 @@
     />
     <NuxtImg
       class="only-light"
-      src="/images/kitsu/bloober.png"
-      alt="Bloober Team"
+      src="/images/kitsu/metacore.png"
+      alt="Metacore"
       format="webp"
       loading="lazy"
     />
     <NuxtImg
       class="only-dark"
-      src="/images/kitsu/bloober-dark.png"
-      alt="Bloober Team"
+      src="/images/kitsu/metacore-dark.png"
+      alt="Metacore"
       format="webp"
       loading="lazy"
     />
