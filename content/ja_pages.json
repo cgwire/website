@@ -1652,8 +1652,7 @@
           "title": "面倒なやり取りなしでクライアントにアクセスを提供",
           "subtitle": "共有リンク",
           "content": "任意のレビュー用プレイリストの共有リンクを生成し、クライアント、スーパーバイザー、または外部関係者に送信できます。全員が同じシーケンスを確認でき、フィードバック、バージョン管理、承認履歴はすべて一か所に集約されます。",
-          "image": "kitsu-playlists-share.png",
-          "shadow": true,
+          "image": "kitsu-playlists-share-animated.svg",
           "reverted": true
         },
         {

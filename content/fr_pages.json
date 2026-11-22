@@ -1652,8 +1652,7 @@
           "title": "Donnez accès à vos clients sans allers-retours inutiles",
           "subtitle": "Liens de partage",
           "content": "Générez un lien partageable pour n’importe quelle playlist de révision et envoyez-le à vos clients, superviseurs ou parties prenantes externes. Tout le monde consulte la même séquence, tandis que les retours, versions et validations sont centralisés au même endroit.",
-          "image": "kitsu-playlists-share.png",
-          "shadow": true,
+          "image": "kitsu-playlists-share-animated.svg",
           "reverted": true
         },
         {

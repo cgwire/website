@@ -1627,8 +1627,7 @@
           "title": "Give clients access without the back-and-forth",
           "subtitle": "Sharing links",
           "content": "Generate a shareable link for any review playlist and send it to clients, supervisors, or external stakeholders. Everyone reviews the same sequence, with feedback, versions, and approvals kept in one place.",
-          "image": "kitsu-playlists-share.png",
-          "shadow": true,
+          "image": "kitsu-playlists-share-animated.svg",
           "reverted": true
         },
         {
