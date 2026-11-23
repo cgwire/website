@@ -79,13 +79,10 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   features: Object,
   supporters: Object
 })
-
-const features = props.features
-const supporters = props.supporters
 </script>
 
 <style lang="stylus" scoped>

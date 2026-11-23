@@ -85,9 +85,6 @@ const props = defineProps({
   last: Boolean
 })
 
-const feature = props.feature
-const last = props.last
-
 // Open curves, closed into a filled shape below (top wave) or above (bottom
 // wave). Consecutive blocks share a curve: the wave closing block N and the one
 // opening block N+1 are the same shape, so the white band between them keeps a
@@ -100,7 +97,8 @@ const CURVES = [
 ]
 
 const waveIndex = computed(() => {
-  const step = typeof feature.gradient === 'number' ? feature.gradient : 1
+  const step =
+    typeof props.feature.gradient === 'number' ? props.feature.gradient : 1
   return step - 1
 })
 
@@ -113,7 +111,7 @@ const bottomPath = computed(
 )
 
 const gradientStep = computed(() => {
-  if (typeof feature.gradient === 'number') return feature.gradient
+  if (typeof props.feature.gradient === 'number') return props.feature.gradient
   return null
 })
 
@@ -127,7 +125,7 @@ const bottomWaveColor = computed(() => {
   if (gradientStep.value === 1) return '#F6F7FE'
   if (gradientStep.value === 2) return '#F7F7FE'
   if (gradientStep.value === 3) return '#F9F6FD'
-  if (feature.gradient === true) return '#F9F6FD'
+  if (props.feature.gradient === true) return '#F9F6FD'
   return '#F4F8FF'
 })
 
