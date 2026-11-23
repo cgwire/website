@@ -22,7 +22,7 @@ const { data: page } = await useAsyncData(
   { watch: [locale] }
 )
 
-const data = ref({ features })
+const data = { features }
 
 useSEO({
   title: 'CGWire | ' + page.value.title,

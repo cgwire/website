@@ -98,7 +98,11 @@
     <ul class="section-list tile is-ancestor" data-aos="fade-up">
       <li class="section-item tile is-4 is-vertical">
         <div class="section-item-img">
-          <NuxtImg src="/images/illustrations/illustration-open.png" alt="" format="webp" />
+          <NuxtImg
+            src="/images/illustrations/illustration-open.png"
+            alt=""
+            format="webp"
+          />
         </div>
         <h3 class="section-item-title">
           {{ page.meta.work.one.title }}

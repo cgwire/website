@@ -40,18 +40,6 @@ const shownFaqs = computed(() =>
         .filter(Boolean)
     : faqs.value
 )
-
-const panel = ref(null)
-
-watchEffect(() => {
-  if (faqs?.value?.length > 0) {
-    panel.value = faqs.value[0].id
-  }
-})
-
-function selectPanel(section) {
-  panel.value = section
-}
 </script>
 
 <style scoped>

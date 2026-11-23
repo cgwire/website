@@ -149,8 +149,6 @@
 <script setup>
 const { t, locale } = useI18n()
 
-import { ref } from 'vue'
-
 const { slug } = await useI18NSlug()
 
 const { data: audience } = await useAsyncData(

@@ -64,7 +64,7 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   header: Object,
   imagePath: String,
   isVideo: Boolean,

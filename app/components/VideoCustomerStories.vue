@@ -20,12 +20,8 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-
 const { locale } = useI18n()
 
-// Assumes a plural counterpart to useVideoCustomerStory that returns
-// a list of { slug, ... } entries. Rename to match your actual composable.
 const { queryVideoCustomerStories } = useVideoCustomerStories(locale)
 
 const { data: stories, pending } = await useAsyncData(

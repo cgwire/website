@@ -252,9 +252,7 @@
 </template>
 
 <script setup>
-import { ref, watch } from 'vue'
-import { useRoute } from 'vue-router'
-const name = 'Header'
+const route = useRoute()
 
 const navOn = ref(false)
 const solutionMenuOn = ref(false)
@@ -262,15 +260,13 @@ const useCaseMenuOn = ref(false)
 const resourceMenuOn = ref(false)
 
 function isActivePage(pages) {
-  const route = useRoute()
   return pages.includes(route.name.substring(0, route.name.length - 5))
 }
 
-const toggleNav = async () => {
+const toggleNav = () => {
   navOn.value = !navOn.value
 }
 
-const route = useRoute()
 watch(
   () => route.path,
   () => {

@@ -24,7 +24,7 @@
 <script setup>
 import metrics from '~/data/metrics.json'
 
-const props = defineProps({
+defineProps({
   stats: Object
 })
 

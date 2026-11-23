@@ -533,45 +533,18 @@ useSEO({
 
 const img = useImage()
 
-const flowBackground = computed(() => {
-  return {
-    background: `url('${img('/images/backgrounds/flow.png', { format: 'webp' })}')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center'
-  }
+const cover = path => ({
+  background: `url('${img(path, { format: 'webp' })}')`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center center'
 })
+const flowBackground = cover('/images/backgrounds/flow.png')
+const mushmushBackground = cover('/images/backgrounds/mushmush.jpg')
+const sevenbearsBackground = cover('/images/backgrounds/sevenbears.png')
 
-const mushmushBackground = computed(() => {
-  return {
-    background: `url('${img('/images/backgrounds/mushmush.jpg', { format: 'webp' })}')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center'
-  }
-})
-
-const sevenbearsBackground = computed(() => {
-  return {
-    background: `url('${img('/images/backgrounds/sevenbears.png', { format: 'webp' })}')`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center center'
-  }
-})
-
-const videoPoster = computed(() => {
-  return img('/images/screenshots/teaser.png', {
-    format: 'webp',
-    width: 376,
-    height: 376
-  })
-})
-
-const videoPosterDark = computed(() => {
-  return img('/images/screenshots/teaser-dark.png', {
-    format: 'webp',
-    width: 376,
-    height: 376
-  })
-})
+const poster = path => img(path, { format: 'webp', width: 376, height: 376 })
+const videoPoster = poster('/images/screenshots/teaser.png')
+const videoPosterDark = poster('/images/screenshots/teaser-dark.png')
 
 // Preload the hero poster (the LCP element) with high priority.
 useHead({
@@ -579,7 +552,7 @@ useHead({
     {
       rel: 'preload',
       as: 'image',
-      href: videoPoster.value,
+      href: videoPoster,
       fetchpriority: 'high'
     }
   ]

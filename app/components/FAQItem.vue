@@ -1,7 +1,7 @@
 <script setup>
 import { ChevronRight } from 'lucide-vue-next'
 
-const props = defineProps({
+defineProps({
   faq: Object
 })
 </script>

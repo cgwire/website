@@ -55,73 +55,33 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   pricing: Object
 })
 
+// Per-user monthly price and discount by commitment length, longest first:
+// [min months, discount %, price for up to 20 / up to 100 / over 100 users].
+const TIERS = [
+  [33, 35, [16, 23, 29]],
+  [21, 30, [18, 26, 32]],
+  [10, 20, [20, 30, 35]],
+  [6, 10, [23, 32, 40]],
+  [0, 0, [25, 35, 44]]
+]
+
 const nbUsers = ref(50)
 const nbMonths = ref(12)
-const price = ref(1500)
-const discount = ref(30)
-const perUserPrice = ref(30)
 
-const updatePrice = () => {
-  const users = parseInt(nbUsers.value)
-  const months = parseInt(nbMonths.value)
-  let discountedPrice = 25
-  if (users > 100) {
-    discountedPrice = 44
-  } else if (users > 20) {
-    discountedPrice = 35
-  }
-
-  discount.value = 0
-  if (months >= 6 && months < 10) {
-    discount.value = 10
-    if (users > 20 && users <= 100) {
-      discountedPrice = 32
-    } else if (users > 100) {
-      discountedPrice = 40
-    } else {
-      discountedPrice = 23
-    }
-  } else if (months >= 10 && months < 21) {
-    discount.value = 20
-    if (users > 20 && users <= 100) {
-      discountedPrice = 30
-    } else if (users > 100) {
-      discountedPrice = 35
-    } else {
-      discountedPrice = 20
-    }
-  } else if (months >= 21 && months < 33) {
-    discount.value = 30
-    if (users > 20 && users <= 100) {
-      discountedPrice = 26
-    } else if (users > 100) {
-      discountedPrice = 32
-    } else {
-      discountedPrice = 18
-    }
-  } else if (months >= 33) {
-    discount.value = 35
-    if (users > 20 && users <= 100) {
-      discountedPrice = 23
-    } else if (users > 100) {
-      discountedPrice = 29
-    } else {
-      discountedPrice = 16
-    }
-  }
-
-  perUserPrice.value = discountedPrice
-  price.value = perUserPrice.value * users
-}
-
-watch(nbUsers, updatePrice)
-watch(nbMonths, updatePrice)
-
-updatePrice()
+const users = computed(() => parseInt(nbUsers.value))
+const tier = computed(
+  () => TIERS.find(([min]) => parseInt(nbMonths.value) >= min) ?? TIERS.at(-1)
+)
+const discount = computed(() => tier.value[1])
+const perUserPrice = computed(() => {
+  const size = users.value > 100 ? 2 : users.value > 20 ? 1 : 0
+  return tier.value[2][size]
+})
+const price = computed(() => perUserPrice.value * users.value)
 </script>
 
 <style lang="stylus" scoped>

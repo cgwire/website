@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps({
+defineProps({
   text: {
     type: String,
     default: 'Empty'

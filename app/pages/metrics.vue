@@ -13,11 +13,13 @@
         <h1 class="hero-title">{{ m.hero.title }}</h1>
         <p class="hero-lead">{{ m.hero.lead }}</p>
         <div class="hero-cta">
-          <NuxtLink class="btn btn-primary" :to="$localePath('about')"
-            >{{ m.hero.cta }}</NuxtLink
-          >
+          <NuxtLink class="btn btn-primary" :to="$localePath('about')">{{
+            m.hero.cta
+          }}</NuxtLink>
         </div>
-        <p class="hero-updated">{{ m.hero.lastUpdate.replace('{date}', lastUpdate) }}</p>
+        <p class="hero-updated">
+          {{ m.hero.lastUpdate.replace('{date}', lastUpdate) }}
+        </p>
       </div>
     </section>
     <div class="hero-fade">&nbsp;</div>
@@ -124,7 +126,8 @@
                 >{{ m.customers.sizeBiggest }}:
                 <strong>{{ p.biggestUsers }}</strong> -
               </span>
-              {{ m.customers.sizeActiveUsers }}: <strong>{{ p.activeUsers }}</strong>
+              {{ m.customers.sizeActiveUsers }}:
+              <strong>{{ p.activeUsers }}</strong>
             </p>
           </div>
         </div>
@@ -161,9 +164,9 @@
           <div v-for="s in metrics.salaries" :key="s.role" class="pay-row">
             <span class="pay-role">
               {{ s.role }}
-              <span v-if="s.partTime" class="pay-badge"
-                >{{ m.team.partTime.replace('{fraction}', s.partTime) }}</span
-              >
+              <span v-if="s.partTime" class="pay-badge">{{
+                m.team.partTime.replace('{fraction}', s.partTime)
+              }}</span>
             </span>
             <span class="pay-amount">{{ euro(s.netPerMonth) }}</span>
           </div>
@@ -239,13 +242,14 @@
             </div>
             <div class="bill-row">
               <dt>{{ m.servers.scale }}</dt>
-              <dd>{{ metrics.servers.vms }} VMs - {{ metrics.servers.storage }}</dd>
+              <dd>
+                {{ metrics.servers.vms }} VMs - {{ metrics.servers.storage }}
+              </dd>
             </div>
           </dl>
         </div>
       </div>
     </section>
-
 
     <!-- TOOLS -->
     <section class="section band-light">
@@ -275,8 +279,12 @@
             'is-collapsed':
               !showAllFunding && metrics.funding.length > fundingLimit
           }"
-        > 
-          <li v-for="f in visibleFunding" :key="f.date + f.label" class="funding-row">
+        >
+          <li
+            v-for="f in visibleFunding"
+            :key="f.date + f.label"
+            class="funding-row"
+          >
             <span class="funding-date">{{ fundingDate(f.date) }}</span>
             <span class="funding-label">{{ f.label }}</span>
             <span class="funding-amount">{{ euro(f.amount) }}</span>
@@ -325,7 +333,9 @@
         <div class="carbon-promo-text">
           <h2 class="content-title left">{{ m.carbon.title }}</h2>
           <p class="content-description left">{{ m.carbon.text }}</p>
-          <NuxtLink class="btn btn-primary" :to="$localePath('carbon-report')"
+          <NuxtLink
+            class="btn btn-primary"
+            :to="$localePath('carbon-report')"
             >{{ m.carbon.cta }}</NuxtLink
           >
         </div>
@@ -372,10 +382,13 @@ const euro = n =>
 
 const fundingDate = d => {
   const [y, mo] = d.split('-')
-  return new Date(Number(y), Number(mo) - 1, 1).toLocaleDateString(locale.value, {
-    year: 'numeric',
-    month: 'long'
-  })
+  return new Date(Number(y), Number(mo) - 1, 1).toLocaleDateString(
+    locale.value,
+    {
+      year: 'numeric',
+      month: 'long'
+    }
+  )
 }
 
 const lastUpdate = computed(() =>
@@ -391,8 +404,16 @@ const employeesCount = metrics.employees.values.at(-1)
 const instancePies = computed(() => {
   const c = m.value.customers
   return [
-    { title: c.sizeAllTime, labels: c.sizeBuckets, ...metrics.instances.allTime },
-    { title: c.sizeRecent, labels: c.sizeBuckets, ...metrics.instances.last6Months },
+    {
+      title: c.sizeAllTime,
+      labels: c.sizeBuckets,
+      ...metrics.instances.allTime
+    },
+    {
+      title: c.sizeRecent,
+      labels: c.sizeBuckets,
+      ...metrics.instances.last6Months
+    },
     {
       title: c.sizeCloud,
       labels: [...c.sizeBuckets, c.sizeSchools],
@@ -426,7 +447,8 @@ const quarterLabels = n =>
     const q = Math.floor((startMonth - 1) / 3) + i
     return `${startYear + Math.floor(q / 4)}-Q${(q % 4) + 1}`
   })
-const yearLabels = n => Array.from({ length: n }, (_, i) => String(startYear + i))
+const yearLabels = n =>
+  Array.from({ length: n }, (_, i) => String(startYear + i))
 
 // Revenue period toggle
 const revenuePeriods = computed(() => [
@@ -435,7 +457,11 @@ const revenuePeriods = computed(() => [
   { key: 'yearly', label: m.value.period.yearly }
 ])
 const revenuePeriod = ref('quarterly')
-const labelsFor = { monthly: monthLabels, quarterly: quarterLabels, yearly: yearLabels }
+const labelsFor = {
+  monthly: monthLabels,
+  quarterly: quarterLabels,
+  yearly: yearLabels
+}
 const revenue = computed(() => {
   const { values } = metrics.revenue[revenuePeriod.value]
   return { labels: labelsFor[revenuePeriod.value](values.length), values }

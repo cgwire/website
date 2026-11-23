@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   interviewee: String,
   imagePath: String,
   storyKey: String,

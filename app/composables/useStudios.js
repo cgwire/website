@@ -1,20 +1,13 @@
 export function useStudios(locale, type) {
   async function buildStudiosQuery() {
-    let res = await queryCollection('jsonPages')
+    const res = await queryCollection('jsonPages')
       .where('lang', '=', locale.value)
       .where('pageType', '=', 'studios')
       .all()
 
-    if (type.value) {
-      res = res.filter(studio => {
-        return (
-          studio.meta.type === type.value ||
-          studio.meta.type.includes(type.value)
-        )
-      })
-    }
-
-    return res
+    if (!type.value) return res
+    // meta.type is either a single type or an array of types
+    return res.filter(studio => studio.meta.type.includes(type.value))
   }
 
   return { buildStudiosQuery }

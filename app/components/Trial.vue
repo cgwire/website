@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   isBig: Boolean,
   cta: {
     type: Boolean,

@@ -58,8 +58,7 @@ const { data: page } = await useAsyncData(
 )
 useSEO({
   title: 'CGWire | Kitsu / ' + page.value.title,
-  description: page.value.title,
-  path: 'studios'
+  description: page.value.title
 })
 </script>
 

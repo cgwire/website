@@ -269,7 +269,7 @@
 </template>
 
 <script setup>
-import { ref, computed, useId } from 'vue'
+import { useId } from 'vue'
 import {
   Input,
   Output,
@@ -361,7 +361,6 @@ function setFile(file) {
 }
 
 // ── Conversion ─────────────────────────────────────────────────────────────
-// Resolve input/output formats dynamically
 function getInputFormat(ext) {
   switch (ext.toLowerCase()) {
     case 'mp4':
@@ -393,7 +392,6 @@ function getOutputFormat(ext) {
   }
 }
 
-// Optional: basic codec presets per format
 function getOutputOptions(formatName) {
   switch (formatName) {
     case 'webm':
@@ -430,11 +428,11 @@ async function convert() {
   try {
     const input = new Input({
       source: new BlobSource(selectedFile.value),
-      formats: [getInputFormat(props.inputFormat)] // ← array of instances
+      formats: [getInputFormat(props.inputFormat)]
     })
 
     const output = new Output({
-      format: getOutputFormat(props.outputFormat), // ← single instance with options
+      format: getOutputFormat(props.outputFormat),
       target: new BufferTarget()
     })
 
@@ -448,7 +446,7 @@ async function convert() {
 
     const buffer = output.target.buffer
     outputBlob.value = new Blob([buffer], {
-      type: `video/${props.outputFormat}` // ← was bare `outputFormat` (undefined)
+      type: `video/${props.outputFormat}`
     })
     outputSize.value = buffer.byteLength
     progress.value = 100

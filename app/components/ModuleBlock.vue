@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   sectionKey: String,
   feature1Key: String,
   feature2Key: String,

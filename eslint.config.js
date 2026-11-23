@@ -54,6 +54,7 @@ export default defineConfig([
         watch: 'readonly',
         onMounted: 'readonly',
         onUnmounted: 'readonly',
+        onBeforeUnmount: 'readonly',
         watchEffect: 'readonly',
         nextTick: 'readonly',
         toValue: 'readonly',
@@ -77,8 +78,8 @@ export default defineConfig([
         useLocalePath: 'readonly',
         useSetI18nParams: 'readonly',
         // Project utils (auto-imported)
-        useABTest: 'readonly',
         useCookieConsent: 'readonly',
+        useDarkMode: 'readonly',
         usePage: 'readonly',
         useSEO: 'readonly',
         useI18NSlug: 'readonly',
@@ -91,6 +92,8 @@ export default defineConfig([
         useTestimonials: 'readonly',
         useTool: 'readonly',
         useTools: 'readonly',
+        useVideoCustomerStory: 'readonly',
+        useVideoCustomerStories: 'readonly',
         $t: 'readonly'
       }
     },
@@ -107,7 +110,11 @@ export default defineConfig([
       'no-empty-pattern': ['error', { allowObjectPatternsAsParameters: true }],
       'no-unused-vars': [
         'error',
-        { args: 'none', caughtErrors: 'none', varsIgnorePattern: '^(props|emit|name)$' }
+        {
+          args: 'none',
+          caughtErrors: 'none',
+          varsIgnorePattern: '^(props|emit|name)$'
+        }
       ],
       'no-var': 'error',
       'prefer-const': ['error', { destructuring: 'all' }],

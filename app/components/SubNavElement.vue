@@ -32,7 +32,7 @@
 <script setup>
 import { NuxtLink } from '#components'
 
-const props = defineProps({
+defineProps({
   elementKey: String,
   pathObject: String,
   link: {
