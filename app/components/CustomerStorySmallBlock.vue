@@ -55,7 +55,6 @@ div.body .customer-story.landing-block
 
   p.interviewee
     color text-medium
-    font-size 0.9em
     font-style italic
     margin-bottom 0
     margin-top .3em

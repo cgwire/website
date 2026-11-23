@@ -91,7 +91,7 @@ useSEO({
 
 .tools-header .header-desc {
   font-size: 1.1em;
-  color: #6b7280; /* darkgrey equivalent */
+  color: #6b7280;
   line-height: 1.5em;
   margin-bottom: 2em;
   max-width: 600px;
@@ -132,7 +132,7 @@ useSEO({
 }
 
 .tool-card:hover {
-  border-color: #67b246; /* cgwiregreen */
+  border-color: #67b246;
   box-shadow: 0 0 12px rgba(103, 178, 70, 0.25);
   transform: translateY(-2px);
   color: inherit;
@@ -149,7 +149,7 @@ useSEO({
 
 .tag {
   display: inline-block;
-  background-color: #e8f5e0; /* alpha(cgwiregreen, .1) approximation */
+  background-color: #e8f5e0;
   color: #67b246;
   border: 1px solid #c6e2b0;
   border-radius: 2em;
@@ -195,7 +195,7 @@ useSEO({
 }
 
 .tool-card:hover .tool-card-cta {
-  color: #4e9a30; /* cgwiregreen-alt */
+  color: #4e9a30;
 }
 
 /* ============================================================================

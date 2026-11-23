@@ -285,9 +285,9 @@ const { data: faqPages } = await useAsyncData(
 .footer-main
   display grid
   grid-template-columns 2fr 1fr 1fr 1fr
-  grid-template-rows auto auto        // ← explicit rows
+  grid-template-rows auto auto
   column-gap 2rem
-  row-gap 2rem                           // ← kill row gap; let padding handle spacing
+  row-gap 2rem
   max-width 1100px
   margin 0 auto
   padding 3rem 1.5rem 2rem
@@ -337,18 +337,18 @@ const { data: faqPages } = await useAsyncData(
 .footer-col
   padding-top 0.25rem
 
-// FAQ column — second row, spans full grid width
+// FAQ column: second row, spans the full grid width
 .footer-col--faq
   grid-column 1 / -1
   grid-row auto
   order 999
   border-top 1px solid bordercolor
 
-  // Single-column links — no grid layout
+  // Links wrap on one line instead of stacking
   .footer-links
-      display flex
-      flex-wrap wrap
-      gap 0.5rem 2rem
+    display flex
+    flex-wrap wrap
+    gap 0.5rem 2rem
 
 // ── Titles ────────────────────────────────────────────────────────────────────
 .footer-title

@@ -480,7 +480,7 @@ const why = computed(() => [
 
 <style lang="stylus" scoped>
 $text-color = var(--pg-text, #1b1e24)
-$text-light = var(--pg-text-light, #54656f)
+$text-light = var(--pg-text-light, text-slate)
 $light-green = var(--pg-green, #ecffd9)
 $light-band = var(--pg-blue, lightblue)
 $hero-top = var(--pg-hero-blue, #e3eefc)  // light tint of the CGWire blue

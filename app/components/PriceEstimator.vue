@@ -126,7 +126,7 @@ updatePrice()
 
 <style lang="stylus" scoped>
 .estimator
-  padding: 0 2rem 0 2rem
+  padding: 0 2rem
   max-width: 800px
   margin: 0 auto
 
@@ -147,7 +147,6 @@ updatePrice()
   margin: 1rem 0
 
 .settings
-  align-items: left
   width: 100%
 
 .pricing-table

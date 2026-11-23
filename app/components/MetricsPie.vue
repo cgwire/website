@@ -110,7 +110,7 @@ const gradient = computed(() => {
 .legend-val
   margin-left: auto
   padding-left: 1rem
-  color: var(--pg-text-light, #54656f)
+  color: var(--pg-text-light, text-slate)
   font-variant-numeric: tabular-nums
   white-space: nowrap
 

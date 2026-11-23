@@ -33,7 +33,7 @@ useSEO({
   max-width 800px
 
 :deep(h1)
-  color #54656f
+  color text-slate
   margin-bottom 2em
   margin-top 2em
   text-align center
@@ -44,7 +44,7 @@ useSEO({
   text-align center
 
 :deep(a)
-  color #54656f
+  color text-slate
 
 // Nuxt Content wraps headings in self-anchor links (<h2><a href="#..."></a></h2>).
 // On the manifesto we want plain titles, not clickable links.

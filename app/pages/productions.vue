@@ -55,7 +55,7 @@ useSEO({
   text-transform uppercase
   letter-spacing 0.22em
   font-size 0.95rem
-  color #54656f
+  color text-slate
   margin-bottom 0.7rem
 
 .prod-title

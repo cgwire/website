@@ -405,13 +405,11 @@ useSEO({
 // ========================================
 // VARIABLES
 // ========================================
-accent-color = #FF6B35
 text-dark = var(--pg-text, #2C3E50)
 text-light = var(--pg-text-light, #7F8C8D)
 border-color = var(--pg-border, #E5E7EB)
 shadow-light = 0 2px 10px rgba(0, 0, 0, 0.1)
 shadow-medium = 0 4px 20px rgba(0, 0, 0, 0.15)
-shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
 // ========================================
 // LAYOUT COMPONENTS
@@ -436,54 +434,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     color: text-light
     max-width: 600px
     margin: 0 auto
-
-// ========================================
-// BUTTONS
-// ========================================
-.btn-primary
-  color: var(--pg-text, #2C3E50)
-  border: none
-  padding: 1rem 2rem
-  border-radius: 8px
-  font-weight: 600
-  cursor: pointer
-  transition: all 0.3s ease
-  text-decoration: none
-  display: inline-block
-  box-shadow: 0 4px 15px rgba(194, 240, 171, 0.3)
-
-  &.btn-green
-    background: cgwiregreen
-    color: white
-    box-shadow: 0 4px 15px rgba(194, 240, 171, 0.3)
-
-  &:hover
-    transform: translateY(-2px)
-    box-shadow: 0 6px 20px rgba(194, 240, 171, 0.4)
-
-.btn-secondary
-  background: transparent
-  color: cgwiregreen
-  border: 2px solid cgwiregreen
-  padding: 1rem 2rem
-  border-radius: 8px
-  font-weight: 600
-  cursor: pointer
-  transition: all 0.3s ease
-  text-decoration: none
-  display: inline-block
-
-  &:hover
-    background: cgwiregreen
-    color: white
-    transform: translateY(-2px)
-
-.btn-large
-  padding: 1.2rem 2.5rem
-  font-size: 1.1rem
-
-.btn-full
-  width: 100%
 
 // ========================================
 // HERO SECTION
@@ -513,16 +463,12 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     max-width: 800px
     width: 100%
 
-
   .blur-background
     background: rgba(10, 10, 10, 0.3)
-    padding: 2rem
     padding: 6rem 0
-
 
 .hero-content
   text-align: center
-
 
   .hero-logo
     img
@@ -552,13 +498,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     margin-bottom: 1.5rem
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7)
 
-  .hero-description
-    font-size: 1.3rem
-    color: white
-    line-height: 1.6
-    margin-bottom: 2rem
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8)
-
 .hero-details
   display: flex
   gap: 2rem
@@ -574,28 +513,9 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     color: white
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8)
 
-    .icon
-      font-size: 1.2rem
-
-.hero-cta
-  margin auto
-
-  a
-    border: 3px solid cgwiregreen
-    background: var(--pg-card, white)
-
-
 // ========================================
 // ABOUT SECTION
 // ========================================
-
-.about-description
-  font-size: 1.2rem
-  color: text-light
-  max-width: 600px
-  margin: 0 auto
-  text-align: center
-
 .about-section
   padding: 6rem 0
   background: var(--pg-card, white)
@@ -637,7 +557,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
   gap: 2rem
 
-
 .conference-card
   background: var(--pg-card, white)
   border-radius: 15px
@@ -647,42 +566,16 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
   position: relative
   overflow: hidden
 
-  img
-    margin: auto
-    display: block
-
-  .conference-content
-    .conference-speaker
-      text-align: center
-    .conference-company
-      text-align: center
-
   &:hover
     transform: translateY(-5px)
     box-shadow: shadow-medium
 
-  &.conference-cgwire
-    .conference-content
-      flex-direction: row
-
-      div:first-child
-        margin-right: 1rem
-
   img
+    margin: auto
+    display: block
     border-radius: 50%
     width: 150px
     height: 150px
-
-  .conference-time
-    position: absolute
-    top: 1rem
-    right: 1rem
-    background: cgwiregreen
-    color: white
-    padding: 0.5rem 1rem
-    border-radius: 20px
-    font-weight: 600
-    font-size: 0.9rem
 
   .conference-content
     margin-bottom: 1rem
@@ -697,10 +590,12 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
       margin-bottom: 0.5rem
 
     .conference-speaker
+      text-align: center
       font-weight: 600
       color: cgwiregreen
 
     .conference-company
+      text-align: center
       color: text-light
       font-size: 0.9rem
       margin-bottom: 1rem
@@ -739,7 +634,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     &.kitsu
       color: #F57C00
       background: var(--pg-warm, #FFF3E0)
-
 
 // ========================================
 // REGISTRATION SECTION
@@ -783,9 +677,7 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
       color: text-dark
       font-weight: 500
 
-
 .registration-content
-
   .price-label
     font-size: 1.2rem
     color: text-light
@@ -800,32 +692,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     font-size: 2.5rem
     font-weight: 800
     color: cgwiregreen
-
-.registration-form
-  background: var(--pg-blue, lightblue)
-  padding: 2rem
-  border-radius: 15px
-
-  .form-group
-    margin-bottom: 1.5rem
-
-    label
-      display: block
-      font-weight: 600
-      color: text-dark
-      margin-bottom: 0.5rem
-
-    input, select
-      width: 100%
-      padding: 0.75rem
-      border: 2px solid border-color
-      border-radius: 8px
-      font-size: 1rem
-      transition: border-color 0.3s ease
-
-      &:focus
-        outline: none
-        border-color: cgwiregreen
 
 .access-section
   padding: 6rem 0
@@ -878,7 +744,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     img
       border-radius: 15px
 
-
 .sponsors-title
   margin-top: 5rem
 
@@ -904,10 +769,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
       box-shadow: shadow-light
       border-radius: 15px
 
-  .tvpaint
-    img
-      border-radius: 15px
-
 // ========================================
 // CTA SECTION
 // ========================================
@@ -926,24 +787,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
       font-size: 1.2rem
       margin-bottom: 2rem
       opacity: 0.9
-
-  .cta-buttons
-    display: flex
-    gap: 1rem
-    justify-content: center
-
-    .btn-primary
-      font-size: 1.5rem
-      box-shadow: 0 4px 15px rgba(194, 240, 171, 0.3)
-
-    .btn-secondary
-      border-color: white
-      color: white
-
-      &:hover
-        background: var(--pg-card, white)
-        color: cgwiregreen
-
 
 // ========================================
 // SCHEDULE SECTION
@@ -1017,7 +860,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
   &:hover
     transform: translateX(5px)
-    box-shadow: shadow-light
 
 .schedule-company
   font-weight: 700
@@ -1097,10 +939,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     padding: 0 1rem
 
   .hero-section
-    .container
-      grid-template-columns: 1fr
-      gap: 2rem
-
     .hero-logo
       margin-top 4rem
 
@@ -1110,9 +948,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
     .hero-details
       flex-direction: column
       gap: 1rem
-
-    .hero-cta
-      flex-direction: column
 
     .detail-item
       span
@@ -1126,18 +961,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
   .registration-content
     grid-template-columns: 1fr
-
-  .cta-buttons
-    flex-direction: column
-
-  .conference-cgwire
-    .conference-content
-      display flex
-      flex-direction column
-      gap: 0.5rem
-
-      div
-        flex 1
 
   .access-section
     .access-venue-info
@@ -1176,7 +999,6 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
 @media (max-width: 600px)
   .hero-section
-
     .hero-badge
       font-size: 1.5rem
 
@@ -1189,5 +1011,4 @@ shadow-heavy = 0 8px 30px rgba(0, 0, 0, 0.2)
 
   .sponsors-grid
     grid-template-columns: 1fr
-    justify-items: center
 </style>

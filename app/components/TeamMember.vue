@@ -28,5 +28,5 @@ const props = defineProps({
   margin 1em
 
 img
-    box-shadow 0 0 4px #B4B8BF
+  box-shadow 0 0 4px #B4B8BF
 </style>

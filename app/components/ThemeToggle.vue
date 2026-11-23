@@ -76,7 +76,7 @@ function toggleTheme() {
     height 18px
 
   &:hover
-    color #00B242
+    color cgwiregreen
 
 .theme-toggle .icon-sun
   display none
@@ -92,7 +92,7 @@ html.has-dark-mode div.body header .navbar .navbar-item.top.theme-toggle
   color #BBB
 
   &:hover
-    color #00B242
+    color cgwiregreen
 
   @media (max-width: 1215px)
     margin-left auto

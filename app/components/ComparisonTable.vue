@@ -39,7 +39,7 @@ defineProps({
 
 table.table
   th
-    background #f5f5f5
+    background lightgrey
 
   .feature-cell
     width 18%

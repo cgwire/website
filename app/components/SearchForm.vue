@@ -225,23 +225,6 @@ onUnmounted(() => {
   border-color: var(--color-border-strong, #a1a1aa);
   color: var(--color-text, #18181b);
 }
-.search-trigger__label {
-  flex: 1;
-  text-align: left;
-  white-space: nowrap;
-}
-.search-trigger__kbd {
-  display: inline-flex;
-  align-items: center;
-  padding: 1px 6px;
-  background: var(--color-bg, #fff);
-  border: 1px solid var(--color-border, #e4e4e7);
-  border-radius: 4px;
-  font-size: 0.75rem;
-  font-family: inherit;
-  color: var(--color-muted, #71717a);
-  line-height: 1.6;
-}
 
 /* ── Backdrop ── */
 .search-backdrop {

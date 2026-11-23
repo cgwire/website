@@ -373,6 +373,6 @@ $hero-top = var(--pg-purple, #f1eafa)
   font-weight 700
   letter-spacing 0.18em
   text-transform uppercase
-  color var(--pg-text-light, #54656f)
+  color var(--pg-text-light, text-slate)
   margin-bottom 0.75rem
 </style>

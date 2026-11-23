@@ -38,7 +38,6 @@ const toggleTab = tab => {
 light-grey = #E5E5E5
 text-light = #868686
 
-
 .tabs
   display: flex
   justify-content: stretch
@@ -51,8 +50,7 @@ text-light = #868686
   background: white
   font-weight: 300
   max-width: 860px
-
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1)
 
 .btn
   padding: 1rem 2rem
@@ -67,9 +65,6 @@ text-light = #868686
     background: cgwiregreen
     color: white
     border-radius: 50px
-
-    &.active
-      background: cgwiregreen
 
   &.btn-secondary
     background: white

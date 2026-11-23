@@ -390,7 +390,7 @@ const hovered = computed(() => {
   flex: none
 
 .tip-name
-  color: #54656f
+  color: text-slate
 
 .tip-val
   font-weight: 700
@@ -408,7 +408,7 @@ const hovered = computed(() => {
   align-items: center
   gap: 0.4rem
   font-size: 0.9rem
-  color: #54656f
+  color: text-slate
 
 .legend-swatch
   width: 14px

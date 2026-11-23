@@ -356,8 +356,6 @@ useHead(() => ({
 
 <style lang="stylus" scoped>
 // Design tokens used only on this page
-cgwire-green = #00B242
-cgwire-green-alt = #67BE4B
 cgwire-green-dark = #008732
 paper-bg = var(--pg-bg, #EFEEEA)
 
@@ -377,7 +375,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
   padding 56px 64px 48px
   box-shadow 0 24px 60px rgba(31, 31, 40, 0.08), 0 2px 0 rgba(0, 0, 0, 0.02)
   border 1px solid var(--pg-border, #ECEAE3)
-  color var(--pg-text, #1F1F28)
+  color var(--pg-text, darkgrey)
   font-size 17px
   line-height 1.55
   font-family 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
@@ -393,13 +391,6 @@ paper-bg = var(--pg-bg, #EFEEEA)
   padding 6px 12px
   border-radius 999px
   margin-bottom 24px
-
-.dot
-  display inline-block
-  width 8px
-  height 8px
-  border-radius 50%
-  background cgwire-green
 
 .partners-title
   font-size 2.4rem
@@ -418,8 +409,8 @@ paper-bg = var(--pg-bg, #EFEEEA)
 .partners-emph
   font-size 1.15rem !important
   padding 18px 22px
-  background var(--pg-green, #F4FFF8)
-  border-left 4px solid cgwire-green
+  background var(--pg-green, lightgreen)
+  border-left 4px solid cgwiregreen
   border-radius 0 10px 10px 0
   margin-top 20px !important
 
@@ -439,7 +430,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
   font-weight 800
   letter-spacing 0.22em
   text-transform uppercase
-  color cgwire-green
+  color cgwiregreen
   margin 0 0 14px
 
 .partners-deal-lbl--spaced
@@ -463,7 +454,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
     svg
       flex 0 0 18px
       margin-top 3px
-      color cgwire-green
+      color cgwiregreen
 
 .partners-prices
   display flex
@@ -480,8 +471,8 @@ paper-bg = var(--pg-bg, #EFEEEA)
   background var(--pg-card-alt, #FBFAF6)
 
 .partners-price--featured
-  border-color cgwire-green
-  background var(--pg-green, #F4FFF8)
+  border-color cgwiregreen
+  background var(--pg-green, lightgreen)
 
 .partners-price-name
   font-size 0.9rem
@@ -492,7 +483,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
   font-weight 900
   font-size 1.15rem
   font-variant-numeric tabular-nums
-  color var(--pg-text, #1F1F28)
+  color var(--pg-text, darkgrey)
 
   span
     font-weight 500
@@ -520,7 +511,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
     border-left 2px solid var(--pg-border, #E0DED6)
 
   strong
-    color var(--pg-text, #1F1F28)
+    color var(--pg-text, darkgrey)
 
 .partners-founders
   margin-top 36px
@@ -560,7 +551,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
     display inline-flex
     align-items center
     justify-content center
-    color #1F1F28
+    color darkgrey
     background #FBFAF6
     border 1px solid #D5D3CB
     padding 18px 32px
@@ -584,7 +575,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
   .partners-founders-list li a
     position relative
     overflow hidden
-    color #1F1F28
+    color darkgrey
     border 2px solid transparent
     background linear-gradient(#FAFAFA, #FAFAFA) padding-box, linear-gradient(135deg, #C9CDD6, #F5F6F8 35%, #9AA1AD 60%, #E3E6EB) border-box
     box-shadow 0 6px 16px rgba(31, 31, 40, 0.10), inset 0 1px 0 rgba(255, 255, 255, 0.9)
@@ -602,7 +593,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
       transition left .5s ease
 
     &:hover
-      color #1F1F28
+      color darkgrey
       background linear-gradient(#FFFFFF, #FFFFFF) padding-box, linear-gradient(135deg, #9AA1AD, #FFFFFF 40%, #6B7280 70%, #D5D8DE) border-box
       box-shadow 0 10px 24px rgba(31, 31, 40, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.9)
       transform translateY(-2px)
@@ -661,14 +652,14 @@ paper-bg = var(--pg-bg, #EFEEEA)
   font-size 1.08rem
   padding 1em 2em
   border-radius 2em
-  background cgwire-green
+  background cgwiregreen
   color #fff !important
   text-decoration none
   transition transform .12s ease, background .15s, box-shadow .15s
   box-shadow 0 6px 18px rgba(0, 135, 50, 0.25)
 
   &:hover
-    background cgwire-green-alt
+    background cgwiregreen-alt
     transform translateY(-1px)
 
   &:active
@@ -680,7 +671,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
   text-decoration underline
 
   &:hover
-    color cgwire-green
+    color cgwiregreen
 
 .partners-sig
   padding-top 20px
@@ -695,12 +686,6 @@ paper-bg = var(--pg-bg, #EFEEEA)
   gap 10px
   align-items baseline
   font-style italic
-
-.partners-sig-sep
-  color #ccc
-  font-size 1rem
-  font-style normal
-  font-weight 400
 
 .partners-sig-line
   color var(--pg-text-light, #999)

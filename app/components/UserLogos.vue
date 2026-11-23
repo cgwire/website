@@ -62,9 +62,6 @@ const marqueeLogos = [...brands, ...brands]
   position relative
   height 80px
 
-  --animationspeed 95s
-  --animationdelay calc(var(--animationspeed) / 2)
-
 .brand-wheel::before
   position absolute
   background-image linear-gradient(
@@ -95,62 +92,39 @@ const marqueeLogos = [...brands, ...brands]
 .brand-slide
   flex-shrink 0
   position absolute
-  animation: scrolling 60s linear infinite
+  animation scrolling 60s linear infinite
   min-width 100%
   display flex
   justify-content space-around
 
-
-.brand-slide.delay
-  transform translateX(100%)
-  animation-name slidelogo2
-
-
 .brand-wheel:hover .brand-slide
   animation-play-state paused
-
 
 .logo-div
   display inline-flex
   align-self center
   animation fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards
-  padding 0 20px 0 20px
+  padding 0 20px
 
   img
     width 120px
     max-width 120px
     min-width 120px
 
-@keyframes scrolling {
-  from {
+@keyframes scrolling
+  from
     transform translateX(0%)
-  }
-  to {
+  to
     transform translateX(-50%)
-  }
-}
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
+@keyframes fade-in
+  0%
+    opacity 0
+  100%
+    opacity 1
 
 @media (max-width: 768px)
   .trusted
-      .section-subtitle
-          display none
+    .section-subtitle
+      display none
 </style>

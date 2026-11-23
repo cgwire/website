@@ -38,7 +38,7 @@ const { data: quote } = await useAsyncData(
 
 <style lang="stylus" scoped>
 .lean-quote
-    padding 0rem
+    padding 0
 
 .lean-quote-text
     border-radius 20px
@@ -47,7 +47,7 @@ const { data: quote } = await useAsyncData(
     line-height 1.3
     font-size 1em
     font-weight bold
-    color #54656F
+    color text-slate
     p:before
         content "\201C"
     p:after
@@ -66,7 +66,4 @@ const { data: quote } = await useAsyncData(
     flex 0 0 auto
     width 56px
     height 56px
-
-.lean-quote-text--alt
-    border-color rainbow-3
 </style>

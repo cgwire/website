@@ -180,18 +180,3 @@ function setExpanded(index) {
   isExpanded['faq' + index] = true
 }
 </script>
-
-<style lang="stylus" scoped>
-.ranch-link
-  color inherit
-  font-weight bold
-
-.users
-  font-size 1.8em
-  font-weight bold
-  margin-right 5px
-
-.price
-  font-size 1.6em
-  font-weight bold
-</style>

@@ -666,12 +666,10 @@ div.body
 
         .main-tagline-explanation
             margin-bottom 2em
+            font-size 1.1em
 
         h2.subtitle.tagline
             font-size 2em
-
-        .main-tagline-explanation
-            font-size 1.1em
 
         .tagline-explanation
             font-size 1.2em
@@ -698,18 +696,12 @@ div.body
                   min-width 98%
                   width 98%
 
-.modal-content
-    height 80vh
-
-.modal-close.close-video
-    top 80px
-
 .shadow
     filter drop-shadow(3px 3px 3px rgba(0, 0, 0, .3))
-    background-position: 0 -80px
+    background-position 0 -80px
 
 .shadow-up
-    filter drop-shadow(-0px -3px 3px rgba(0,0,0,0.3))
+    filter drop-shadow(0 -3px 3px rgba(0,0,0,0.3))
 
 @media(max-width 1120px)
     .production-type
@@ -718,7 +710,6 @@ div.body
 .second-wave
     position relative
     top 10px
-
 
 .production-type
     background lightblue
@@ -731,18 +722,14 @@ div.body
     right 1em
     top -80px
 
-
 .features
     min-height 300px
 
-
 .landing-text
-  flex: 1
-
+  flex 1
 
 .landing-picture
-  max-width: 600px
-
+  max-width 600px
 
 .section.supporters
   margin-top 6rem
@@ -753,7 +740,7 @@ div.body
 
 .supporter-list
   .flexrow-item
-    flex: 1
+    flex 1
 
 .feature-img-wrapper
   display flex
@@ -762,11 +749,10 @@ div.body
 .feature-img-wrapper img
   width 100%
 
-
 video
-   -webkit-filter: brightness(101.5%)
-   width: 100%
-   max-width: 550px
+  -webkit-filter brightness(101.5%)
+  width 100%
+  max-width 550px
 
 .introduction
   max-width 1200px
@@ -787,7 +773,7 @@ video
         line-height 1.3
         font-size 1em
         font-weight bold
-        color #54656F
+        color text-slate
         p:before
             content "\201C"
         p:after

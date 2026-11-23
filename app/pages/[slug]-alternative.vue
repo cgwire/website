@@ -126,12 +126,12 @@ useSEO({
 
 .compare-table-note
   font-size .9em
-  color #666
+  color text-medium
   margin-top .6em
 
 table.table
   th
-    background #f5f5f5
+    background lightgrey
 
   tr.is-emphasized
     td
