@@ -15,17 +15,17 @@
       <h2 class="section-subtitle has-text-centered user-title">
         {{ $t('header.title.tvshows') }}
       </h2>
-      <StudiosTVShows />
+      <StudiosList type="tvshows" />
 
       <h2 class="section-subtitle has-text-centered user-title">
         {{ $t('header.title.feature-films') }}
       </h2>
-      <StudiosFeature />
+      <StudiosList type="feature-films" />
 
       <h2 class="section-subtitle has-text-centered user-title">
         {{ $t('header.title.shorts') }}
       </h2>
-      <StudiosShorts />
+      <StudiosList type="shorts" />
 
       <h2 class="section-subtitle has-text-centered user-title">
         {{ $t('header.title.vfx') }}
@@ -35,12 +35,12 @@
       <h2 class="section-subtitle has-text-centered user-title">
         {{ $t('header.title.video-games') }}
       </h2>
-      <StudiosVideoGames />
+      <StudiosList type="video-games" />
 
       <h2 class="section-subtitle has-text-centered user-title">
         {{ $t('header.title.schools') }}
       </h2>
-      <StudiosSchools />
+      <StudiosList type="schools" />
     </section>
   </div>
 

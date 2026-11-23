@@ -11,8 +11,12 @@
 </template>
 
 <script setup>
+const props = defineProps({
+  type: { type: String, required: true }
+})
+
 const { locale } = useI18n()
-const type = ref('feature-films')
+const type = computed(() => props.type)
 
 const { buildStudiosQuery } = useStudios(locale, type)
 
