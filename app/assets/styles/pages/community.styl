@@ -67,3 +67,47 @@
 
 .community a:hover
     color inherit
+
+@media(max-width: 800px)
+    .community
+        .description
+            p
+                padding-left 0
+                padding-right 0
+
+    .community
+        .community-link
+            font-size 0.9em
+
+@media(max-width: 960px)
+    .community
+        img
+            width 100%
+
+        h2
+            .section-title
+                font-size 1.6em
+
+        .flexrow-item
+            margin 0
+
+        .flexrow
+            flex-direction column
+
+        &.community-info
+            .section-title
+                font-size 1.1em
+
+        .community-header
+            img
+                margin-bottom 2em
+
+            .flexrow-item:not(.illustration)
+                padding-left 0
+
+        .illustration
+            width 100%
+
+            img
+                margin-top 2em
+                max-width 600px
