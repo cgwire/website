@@ -135,14 +135,14 @@ export default defineNuxtConfig({
             'production management pipeline cg cg blender nuke 3dsmax maya animation movie vfx tracking shotgun alternative ftrack alternative 2D 3D'
         },
         {
-          name: 'og:title',
+          property: 'og:title',
           content:
             'CGWire - Collaboration Platform for Animation and VFX studios'
         },
-        { name: 'og:locale', content: 'en_US' },
-        { name: 'og:locale:alternate', content: 'fr_FR' },
+        { property: 'og:locale', content: 'en_US' },
+        { property: 'og:locale:alternate', content: 'fr_FR' },
         {
-          name: 'og:image',
+          property: 'og:image',
           content: 'https://www.cg-wire.com/images/logo.svg'
         },
         { name: 'twitter:card', content: 'summary' },
