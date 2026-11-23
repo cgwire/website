@@ -11,7 +11,7 @@
         {{ feature.content }}
       </p>
     </div>
-    <div>
+    <div class="kitsu-feature-block-image">
       <!-- The title already links to the page: this copy of the link is for
            mouse users, so it stays out of the tab order and the a11y tree. -->
       <nuxt-link
@@ -24,12 +24,14 @@
         <NuxtImg
           :class="{ 'only-light': dark }"
           :src="'/images/screenshots/' + light"
+          :style="ratio"
           :alt="feature.title"
           loading="lazy"
         />
         <NuxtImg
           class="only-dark"
           :src="'/images/screenshots/' + dark"
+          :style="ratio"
           :alt="feature.title"
           loading="lazy"
           v-if="dark"
@@ -68,25 +70,45 @@ const FEATURE_PAGES = {
 }
 
 // Animated illustrations: light version, then dark one when it exists.
+// Height of each file, for a width of 1440: the image keeps its place while
+// it loads. The light and dark files have the same size.
 const ILLUSTRATIONS = {
-  api: ['kitsu-python-animated.svg'],
-  assets: ['kitsu-assets-animated.svg', 'kitsu-assets-animated-dark.svg'],
-  breakdown: ['kitsu-tables-animated.svg', 'kitsu-tables-animated-dark.svg'],
-  forecast: ['kitsu-budget-animated.svg', 'kitsu-budget-animated-dark.svg'],
-  library: ['kitsu-library-animated.svg', 'kitsu-library-animated-dark.svg'],
-  news: ['kitsu-news-animated.svg', 'kitsu-news-animated-dark.svg'],
-  report: ['kitsu-report-animated.svg', 'kitsu-report-animated-dark.svg'],
-  review: ['kitsu-playlists-animated.svg'],
-  'review-assets': ['kitsu-compare-animated.svg'],
-  schedule: ['kitsu-schedule-animated.svg', 'kitsu-schedule-animated-dark.svg'],
-  search: ['kitsu-search-animated.svg', 'kitsu-search-animated-dark.svg'],
+  api: [575, 'kitsu-python-animated.svg'],
+  assets: [702, 'kitsu-assets-animated.svg', 'kitsu-assets-animated-dark.svg'],
+  breakdown: [
+    964,
+    'kitsu-tables-animated.svg',
+    'kitsu-tables-animated-dark.svg'
+  ],
+  forecast: [
+    844,
+    'kitsu-budget-animated.svg',
+    'kitsu-budget-animated-dark.svg'
+  ],
+  library: [
+    964,
+    'kitsu-library-animated.svg',
+    'kitsu-library-animated-dark.svg'
+  ],
+  news: [945, 'kitsu-news-animated.svg', 'kitsu-news-animated-dark.svg'],
+  report: [1080, 'kitsu-report-animated.svg', 'kitsu-report-animated-dark.svg'],
+  review: [998, 'kitsu-playlists-animated.svg'],
+  'review-assets': [894, 'kitsu-compare-animated.svg'],
+  schedule: [
+    822,
+    'kitsu-schedule-animated.svg',
+    'kitsu-schedule-animated-dark.svg'
+  ],
+  search: [880, 'kitsu-search-animated.svg', 'kitsu-search-animated-dark.svg'],
   timesheets: [
+    745,
     'kitsu-timesheets-animated.svg',
     'kitsu-timesheets-animated-dark.svg'
   ],
-  track: ['kitsu-tasks-animated.svg', 'kitsu-tasks-animated-dark.svg']
+  track: [909, 'kitsu-tasks-animated.svg', 'kitsu-tasks-animated-dark.svg']
 }
-const [light, dark] = ILLUSTRATIONS[props.featureKey]
+const [height, light, dark] = ILLUSTRATIONS[props.featureKey]
+const ratio = { aspectRatio: `auto 1440 / ${height}` }
 
 const { t } = useI18n()
 const localePath = useLocalePath()
@@ -115,6 +137,13 @@ const featurePath = computed(() =>
       &:hover
         color: cgwiregreen
 
+// The column and the image have a width that does not depend on the file, so
+// the panel has its final size before the image loads. The basis is the
+// max-width of the panel.
+.kitsu-feature-block-image
+  flex: 0 1 600px
+  min-width: 0
+
 .feature-img-wrapper
   border-radius: 20px
   display: block
@@ -136,6 +165,7 @@ const featurePath = computed(() =>
     vertical-align: top
     border-radius: 20px
     margin 0
+    width: 100%
 
 .flexrow-reverse
   flex-direction: row-reverse
@@ -152,6 +182,19 @@ const featurePath = computed(() =>
   padding: 1em
   margin-bottom: 8em
 
+// The page column is 1000px wide: on larger screens the rows go beyond it,
+// up to 1240px, so the screenshots stay readable.
+@media (min-width: 1100px)
+  .kitsu-feature-block
+    margin-left: calc((100% - min(1240px, 100vw - 4em)) / 2)
+    margin-right: calc((100% - min(1240px, 100vw - 4em)) / 2)
+
+  .kitsu-feature-block-image
+    flex-basis: 760px
+
+  .feature-img-wrapper
+    max-width: 760px
+
 @media (max-width: 768px)
   .kitsu-feature-block
     flex-direction: column-reverse
@@ -160,6 +203,10 @@ const featurePath = computed(() =>
     margin-right: 0
     margin-left: 0
     margin-top: 2em
+    width: 100%
+
+  .kitsu-feature-block-image
+    flex: none
     width: 100%
 
   .feature-img-wrapper
