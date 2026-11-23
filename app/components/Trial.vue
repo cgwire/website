@@ -4,34 +4,24 @@
       <h2 class="subtitle has-text-centered" :class="{ hidden: !cta }">
         {{ $t('kitsu.cta') }}
       </h2>
-      <p class="has-text-centered">
+      <p class="has-text-centered trial-action" :class="{ 'is-empty': !cta }">
         <NuxtLink
           v-if="contact"
-          :class="{
-            button: true,
-            'is-large': true,
-            'is-big': isBig,
-            hidden: !cta
-          }"
+          class="button is-large"
+          :class="{ 'is-big': isBig, hidden: !cta }"
           :to="$localePath('contact')"
         >
           {{ $t('trial.talk') }}
         </NuxtLink>
         <a
           v-else
-          :class="{
-            button: true,
-            'is-large': true,
-            'is-big': isBig,
-            hidden: !cta
-          }"
-          :href="`https://account.cg-wire.com/signup`"
+          class="button is-large"
+          :class="{ 'is-big': isBig, hidden: !cta }"
+          :href="`https://account.cg-wire.com/signup?locale=${$i18n.locale}`"
         >
           {{ $t('main.plans.cta') }}
         </a>
       </p>
-      <p class="has-text-centered" v-if="!cta">&nbsp;</p>
-      <p class="has-text-centered">&nbsp;</p>
     </section>
   </div>
 </template>
@@ -50,6 +40,13 @@ const props = defineProps({
 </script>
 
 <style lang="stylus" scoped>
+// Room below the button for the footer illustration.
+.trial-action
+  margin-bottom 2.5em
+
+  &.is-empty
+    margin-bottom 5em
+
 .button.is-large.is-big
   font-size 1.7em
   margin-bottom 4em

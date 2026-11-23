@@ -16,7 +16,6 @@ const props = defineProps({
           params: { slug: $t(`slugs.${faq.meta.slug}`) }
         })
       "
-      target="_blank"
     >
       {{ faq.title }}
       <chevron-right class="chevron" />

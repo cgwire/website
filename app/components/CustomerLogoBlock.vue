@@ -1,6 +1,12 @@
 <template>
   <li class="customers-item">
-    <a :href="caseStudy ? `/studios/${elementKey}` : link">
+    <a
+      :href="
+        caseStudy
+          ? $localePath({ name: 'studios-slug', params: { slug: elementKey } })
+          : link
+      "
+    >
       <NuxtImg
         :src="'/images/studios-inverted/logo-' + elementKey + '.png'"
         format="webp"
