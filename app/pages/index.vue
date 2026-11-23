@@ -647,6 +647,15 @@ div.body
         .tab-info
             width 100%
 
+    // Feature tabs: classes of <Transition name="fade">.
+    .fade-enter-active
+    .fade-leave-active
+        transition opacity 0.15s
+
+    .fade-enter-from
+    .fade-leave-to
+        opacity 0
+
     .watch-button
         display none
 
