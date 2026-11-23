@@ -6,9 +6,6 @@ summary: "Kitsu est une plateforme de gestion de production utilisée par plus d
 image: "change-management-kitsu.png"
 ---
 
-::minimalist-user-logos
-::
-
 Vous n'avez pas à nous croire sur parole.
 
 Lorsque vous évaluez une plateforme de gestion de production, la question la plus importante est : « est-ce que ça fonctionne vraiment pour des studios comme le mien ? » Nous le comprenons. Alors laissez ceux qui ont livré de vraies productions vous répondre.

@@ -6,9 +6,6 @@ summary: "Kitsuは、アニメーションおよびVFXスタジオが一般的�
 image: "change-management-kitsu.png"
 ---
 
-::minimalist-user-logos
-::
-
 わかります。使い慣れたツールが一番です。でも「これで十分」には代償があります――残業、納期遅延、そして燃え尽き症候群。
 
 ## 正直な問い

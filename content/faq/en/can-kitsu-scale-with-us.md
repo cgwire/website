@@ -8,9 +8,6 @@ image: "change-management-kitsu.png"
 
 Whether you're a 5-person studio wrapping up your first short film or a 200-person production house juggling three simultaneous series, Kitsu grows with you at every stage.
 
-::minimalist-user-logos
-::
-
 ## Built for Where You Are and Where You're Going
 
 Most studios start small. They cobble together spreadsheets, shared drives, and chat threads. And it works, until it doesn't.

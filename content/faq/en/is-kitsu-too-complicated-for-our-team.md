@@ -74,9 +74,6 @@ There are no cluttered sidebars fighting for attention. No ten-step workflows to
 
 ## Trusted by 400+ Studios in 30+ Countries
 
-::minimalist-user-logos
-::
-
 Studios ranging from solo freelancers to large-scale feature film productions use Kitsu daily, including teams that had never used dedicated production software before.
 
 ## Try It With Your Team

@@ -6,9 +6,6 @@ summary: "KitsuとCGWireは、制作現場の実情に即した強固なサポ�
 image: "change-management-kitsu.png"
 ---
 
-::minimalist-user-logos
-::
-
 本番環境は技術的な問題があっても止まりません。クライアントレビューの前夜2時に何か問題が起きたとき、サポートチケットが闇に消えていくのは最も困る事態です。
 
 Kitsuで何を頼りにできるか、具体的にお伝えします。

@@ -9,9 +9,6 @@ Si votre studio fonctionne avec des tableurs, des dossiers partagés ou des outi
 
 Voici comment Kitsu répond à cette préoccupation.
 
-::minimalist-user-logos
-::
-
 ## Le coût caché des outils « familiers »
 
 Les tableurs donnent un sentiment de contrôle parce que vous les avez construits. Mais posez-vous la question : qui sait vraiment comment ils fonctionnent ? Quand un producteur part, la logique part-elle avec lui ?

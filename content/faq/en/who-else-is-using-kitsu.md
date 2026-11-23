@@ -6,9 +6,6 @@ summary: "Kitsu is a production management platform trusted by over 400 studios 
 image: "change-management-kitsu.png"
 ---
 
-::minimalist-user-logos
-::
-
 You shouldn't have to take our word for it.
 
 When you're evaluating a production management platform, the most important question is "does it actually work for studios like mine?" We get it. So let the people who've shipped real productions answer that.

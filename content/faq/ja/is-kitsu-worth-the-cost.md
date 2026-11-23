@@ -71,6 +71,3 @@ Kitsuは単なるプロダクショントラッキングソフトウェアでは
 
 ::customer-story-content-block{slug="miyu"}
 ::
-
-::minimalist-user-logos
-::

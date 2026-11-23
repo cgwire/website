@@ -90,9 +90,6 @@ La plateforme est un hub vivant où les tâches, les assets, les révisions, les
 
 Des studios dans plus de 30 pays utilisent Kitsu dans de vrais environnements de production, comme élément central de leur pipeline.
 
-::minimalist-user-logos
-::
-
 ## Ce qu'il faut retenir
 
 Si votre préoccupation est de perdre le contrôle de votre IP, éviter complètement le cloud n'est pas la seule solution.

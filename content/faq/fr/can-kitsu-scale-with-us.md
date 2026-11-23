@@ -7,9 +7,6 @@ image: "change-management-kitsu.png"
 ---
 Que vous soyez un studio de 5 personnes en train de terminer votre premier court métrage ou une maison de production de 200 personnes jonglant avec trois séries simultanées, Kitsu évolue avec vous à chaque étape.
 
-::minimalist-user-logos
-::
-
 ## Conçu pour où vous êtes et où vous allez
 
 La plupart des studios commencent petit. Ils s'appuient sur des tableurs, des drives partagés et des fils de discussion. Et ça marche, jusqu'au moment où ça ne marche plus.

@@ -6,9 +6,6 @@ summary: "Changer d'outil de suivi de production en cours de production semble r
 image: "migration-kitsu-cloud.png"
 ---
 
-::minimalist-user-logos
-::
-
 ## Changer d'outil sans ralentir la production
 
 Chaque studio hésite avant de changer d'outil de suivi de production. Vous avez des délais à tenir, des artistes en plein milieu de leurs plans, et des producteurs qui s'appuient chaque jour sur des données stables.
