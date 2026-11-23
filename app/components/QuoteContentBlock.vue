@@ -39,31 +39,4 @@ const { data: quote } = await useAsyncData(
 <style lang="stylus" scoped>
 .lean-quote
     padding 0
-
-.lean-quote-text
-    border-radius 20px
-    border 1px solid #dbe8ff
-    padding-left 1.5rem
-    line-height 1.3
-    font-size 1em
-    font-weight bold
-    color text-slate
-    p:before
-        content "\201C"
-    p:after
-        content "\201D"
-
-.lean-quote-author
-    display flex
-    align-items center
-    margin-top .6rem
-    font-size 1rem
-    font-style italic
-
-.lean-quote-avatar
-    border-radius 50%
-    margin-right .6rem
-    flex 0 0 auto
-    width 56px
-    height 56px
 </style>
