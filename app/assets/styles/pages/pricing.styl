@@ -1,0 +1,117 @@
+// ========================================================================
+// PAGE: PRICING
+// ========================================================================
+
+.pricing-page
+    section.section
+        padding-bottom 0
+
+    h2.section-title
+        font-size 3rem
+        margin-bottom 1rem
+        margin-top 0
+
+    div.section-subtitle
+        font-size 1.2rem
+        margin-top 4em
+
+    .extra-block
+        background lightgrey
+        border-radius 1em
+        padding 1em
+        max-width 900px
+        margin 1em auto 2em auto
+
+        &.alinea
+            margin-top 2em
+
+        .section-subtitle
+            margin-top 0
+
+    .infos
+        background purple + 95%
+        border 1px solid purple + 85%
+        border-radius 1em
+        color purple
+        padding 1em
+
+section.pricing
+    max-width 1200px
+    padding-top 1em
+
+    .button.is-outlined
+        border 1px solid cgwiregreen-alt
+        background white
+        color cgwiregreen-alt
+        font-weight bold
+        transition transform 0.3s ease
+
+.pricings
+    display flex
+    flex-direction row
+    margin-top 2em
+    flex-wrap wrap
+    justify-content center
+
+.pricing-block
+    flex 1
+    text-align center
+    margin 1em
+    min-height 400px
+    min-width 240px
+    max-width 280px
+    box-shadow 0 4px 16px rgba(0, 100, 0, 0.2)
+    background white
+    border-radius 1em
+    display flex
+    flex-direction column
+
+    .pricing-title
+        font-size 1.3em
+        font-weight bold
+        color mediumgrey
+        padding 0.8em
+
+    .pricing-price
+        .pricing-value
+            font-size 1.8em
+
+    .pricing-price-info
+        font-size 0.8em
+        color mediumgrey
+        font-style italic
+
+    .pricing-features
+        flex 1
+        padding 1em
+
+        ul
+            margin 0
+            list-style-type none
+
+        li
+            padding 0.5em 0
+            font-size 0.9em
+            color #888
+            border-bottom 1px solid #EEE
+
+    .pricing-cta
+        padding 1em
+
+        .button.is-outlined
+            border 1px solid cgwiregreen-alt
+            background white
+            color cgwiregreen-alt
+            width 100%
+            transition transform 0.3s ease
+
+        .button.is-outlined:hover
+            transform scale(1.05)
+
+.pricing-emphasize
+    transform scale(1.05)
+    border 3px solid cgwiregreen-light
+
+.pricing-details
+    color mediumgrey
+    font-style italic

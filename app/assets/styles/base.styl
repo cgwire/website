@@ -1,0 +1,210 @@
+// ========================================================================
+// UTILITY CLASSES
+// ========================================================================
+
+.hidden
+    display none
+
+// Spacing
+
+.pt0
+    padding-top 0
+
+.mt0
+    margin-top 0
+
+.mt1
+    margin-top 1rem
+
+.mt2
+    margin-top 2rem
+
+.mt4
+    margin-top 4rem
+
+.mt8
+    margin-top 8rem
+
+.mb4
+    margin-bottom 4rem
+
+// Flex
+
+.flex
+    display flex
+
+.flexrow
+    display flex
+    align-items center
+
+.flexcolumn
+    display flex
+    align-items center
+    flex-direction column
+
+.flexrow-item
+    align-items center
+    margin-right 2em
+
+.flex-aic
+    align-items center
+
+// ========================================================================
+// BASE & TYPOGRAPHY
+// ========================================================================
+
+.header-padding
+    height 60px
+
+body
+    a
+        color cgwiregreen
+
+    a:hover
+        color cgwiregreen-alt
+
+h2.subtitle
+    margin-top 1em
+    margin-bottom 1em
+    font-size 1.5em
+    text-align center
+
+h2.subtitle.tagline
+    font-size 1.9em
+    line-height 1.3em
+    max-width 800px
+    margin auto
+    font-weight bold
+    margin-bottom 1em
+
+.section-title
+    display block
+    font-size 2.8rem
+    margin-bottom 2rem
+
+.section-subtitle
+    display block
+    margin-bottom .9rem
+    font-size 1.11rem
+    letter-spacing .22em
+    text-transform uppercase
+    color text-slate
+
+// ========================================================================
+// SECTIONS & LAYOUT
+// ========================================================================
+
+.section
+    max-width calc(1200px + 1.5rem * 2)
+    margin auto
+
+    &.narrower
+        max-width calc(960px + 1.5rem * 2)
+
+    .block
+        margin 4em 0 0 0
+
+        h3
+            margin-top 1em
+
+    .screenshot
+        border-radius 0.5em
+        border 1px solid #EEE
+        box-shadow 0 0 6px 3px #F1F1F1
+
+.section-list
+    list-style none
+    padding 0
+    margin 0
+
+.section-item
+    padding 1.5rem
+    text-align center
+
+.section-item-img
+    display flex
+    align-items center
+    justify-content center
+    position relative
+    min-height 10rem
+    margin-bottom 1rem
+
+    &:before
+        position absolute
+        z-index 1
+        top 50%
+        left 50%
+        transform translateX(-50%) translateY(-50%)
+        content ""
+        display block
+        width 10rem
+        height 10rem
+        background-color white
+        border-radius 50%
+
+    img
+        position relative
+        z-index 1
+
+.section-item-title
+    margin-bottom .5rem
+    font-size 1.5rem
+    font-weight bold
+
+.section-item-text
+    font-size 1.1rem
+
+// ========================================================================
+// BLOCKS (colored, dark, etc.)
+// ========================================================================
+
+.block,
+.block-colored
+    margin 0
+    padding-top 2em
+
+    svg
+        top -20px
+
+.block-colored
+    background-color lightblue
+
+    .button--alt
+        background-color lightblue
+
+// ========================================================================
+// BUTTONS & INPUTS
+// ========================================================================
+
+.button
+.button:focus
+    color white
+    background-color cgwiregreen
+    border 1px solid cgwiregreen
+    border-radius 2em
+    padding 1.2em
+
+.button:hover
+    color white
+    background-color cgwiregreen-alt
+    border 1px solid cgwiregreen-alt
+
+.button--alt
+.button--alt:focus
+    color cgwiregreen
+    background-color white
+    border 1px solid cgwiregreen
+
+.button--alt:hover
+    color cgwiregreen
+    background-color alpha(cgwiregreen, .1)
+    border-color cgwiregreen
+
+.button--with-icon
+    display inline-flex
+    justify-content space-between
+    img
+        margin-right .5rem
+
+.button.is-large
+    font-size 1.2em

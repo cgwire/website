@@ -1,0 +1,104 @@
+// ========================================================================
+// PAGE: INTRODUCTION / LANDING
+// ========================================================================
+
+section
+    &.introduction
+        padding-top 5em
+        padding-bottom 1em
+        width auto
+        max-width 1200px
+
+        h1.title
+            font-weight bold
+            font-size 3.2em
+            line-height 1.3em
+
+        h2.main-subtitle
+            font-size 1.1em
+            font-weight 400
+            color darkgrey
+            line-height 1.5em
+            margin-bottom 2em
+
+        a.button
+            font-weight bold
+            font-size 1.1em
+            border-radius 2em
+            padding 1.3em
+
+        .introduction-picture
+            flex-basis 57%
+            margin 0
+
+        .introduction-text
+            flex-basis 43%
+            padding 0 0.4em
+            margin 0
+
+    &.conclusion
+        padding-bottom 0
+        margin-bottom 0
+
+        &.conclusion-text.content
+            margin-bottom 0
+
+    &.use-case
+        h2.subtitle
+            text-align left
+
+    .tabs
+        align-items flex-start
+        background linear-gradient(0deg, rgba(249,246,253,1) 35%, rgba(244,248,255,1) 100%)
+        border-radius 1em
+        border 1px solid purple + 50%
+        max-width 900px
+        margin auto
+        padding 2em
+
+        .tab
+            border-bottom 3px solid transparent
+            cursor pointer
+            color purple - 10%
+            font-size 1.4em
+            font-weight bold
+            transition all .6s ease
+
+            &.selected
+                border-bottom 3px solid purple
+
+        .tab-list
+            padding-bottom 0.4em
+
+        .tab-info
+            padding-top 1em
+
+            p
+                font-size 1.3em
+                padding-bottom .3em
+
+// --- Trial / CTA ---
+
+.trial
+    position relative
+
+    &:after
+        content ''
+        position absolute
+        bottom -10px
+        left 0
+        right 0
+        height 30.5px
+        background transparent url('~/assets/images/backgrounds/footer-grass.png') bottom left repeat
+        background-size auto 100%
+        z-index 1
+
+.trial-content
+    position relative
+    bottom -10px
+    z-index 2
+    background transparent url('~/assets/images/backgrounds/footer.png') bottom center / contain no-repeat
+    background-size auto 165px
+    // The bottom-anchored illustration is 165px tall: anything shorter
+    // clips its top with a hard white edge (visible on mobile).
+    min-height 175px

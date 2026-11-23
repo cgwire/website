@@ -1,0 +1,69 @@
+// ========================================================================
+// PAGE: COMMUNITY
+// ========================================================================
+
+.community
+    .flexrow-item:last-child
+        margin 0
+
+    &.community-header
+    &.community-info
+        max-width 1100px
+
+        h2
+            margin-bottom 0.5em
+
+        .section-subtitle
+            font-size 0.52em
+            margin-bottom 0.5em
+
+        .section-title
+            font-size 1.5em
+            margin-bottom 0
+
+    // The intro block leads the page: wider than the blocks below.
+    &.community-header
+        max-width 1300px
+        margin-top 3em
+
+        .illustration img
+            max-width 560px
+
+        .flexrow-item:not(.illustration)
+            padding-left 3em
+
+    // Same frame as the feature pages screenshots (.screenshot).
+    img
+        border-radius 0.5em
+        border 1px solid #EEE
+        box-shadow 0 0 6px 3px #F1F1F1
+
+    .illustration
+        flex 0
+        img
+            max-width 420px
+
+    .community-cta
+        margin-top 1.5em
+
+    .community-link
+        border-radius 5em
+        border 2px solid cgwiregreen-light - 30%
+        color cgwiregreen-light - 30%
+        font-size 1.1em
+        font-weight 800
+        padding 0.5em 0.5em 0.5em 0.9em
+
+        &:hover
+            color cgwiregreen-light - 30%
+            background cgwiregreen-light + 95%
+
+        span
+            margin-left 0.5em
+            margin-right 0.5em
+
+.community a
+    color inherit
+
+.community a:hover
+    color inherit

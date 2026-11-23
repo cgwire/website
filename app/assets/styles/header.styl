@@ -1,0 +1,189 @@
+// ========================================================================
+// HEADER & NAVIGATION
+// ========================================================================
+
+header
+    background white
+    position fixed
+    width 100%
+    z-index 2000
+
+    .navbar
+        max-width 1200px
+        margin auto
+        font-size 1em
+        height 70px
+
+        .kitsu
+            padding-top 10px
+
+        .navbar-item
+            margin-right 6px
+
+        .navbar-item.subnav-element.flexcolumn
+            align-items flex-start
+            border-radius 5px
+            flex-wrap wrap
+            margin 5px
+            padding .5em .8em
+            text-align left
+            white-space initial
+            font-size 1em
+
+            .subnav-title
+                padding 0
+                margin 0
+                font-weight bold
+            .subnav-text
+                text-align left
+                padding 0
+                margin 0
+                color grey
+
+        .navbar-start
+            margin-left 1rem
+            margin-right 1em
+
+        // Tighter spacing on the desktop bar so its items fit the 1200px
+        // container from the navbar breakpoint (bulma.css, 1216px) up.
+        @media (min-width: 1216px)
+            .navbar-start
+                margin-left 0.5rem
+                margin-right 0.5em
+
+            .navbar-item.top
+            .navbar-item.signin
+                padding-left 0.5rem
+                padding-right 0.5rem
+
+            .navbar-item.has-dropdown span.navbar-item-title
+                margin-left 0.25em
+
+            .navbar-link:not(.is-arrowless)
+                padding-right 2em
+
+        .navbar-link
+        .navbar-item-title
+            font-size 16px
+            margin-top 2px
+            font-weight bold
+
+        .navbar-item.top
+            margin-left 4px
+
+            .navbar-item-title
+                padding .5em
+
+            &:active,
+            &:focus
+                background transparent
+
+            &:hover
+                background transparent
+
+                .navbar-item-title
+                    padding .5rem
+                    background #F4F4F4
+                    border-radius 5px
+
+            &.active:hover
+                .navbar-item-title
+                    border-bottom-left-radius 0
+                    border-bottom-right-radius 0
+
+        .navbar-item.is-hoverable.has-dropdown
+            .navbar-item-title
+                padding .5rem
+
+            &:hover
+                .navbar-link:first-child
+                    background transparent
+                    .navbar-item-title
+                        background #F4F4F4
+                        border-radius 5px
+
+            &.active:hover
+                .navbar-link:first-child
+                    .navbar-item-title
+                        border-bottom-left-radius 0
+                        border-bottom-right-radius 0
+
+        .navbar-item.signin
+            font-weight bold
+
+        .navbar-brand
+            .navbar-item
+                padding-left 0
+
+    a.navbar-lang-item
+        font-size 0.8em
+        margin 0.1em
+        padding-top 3px
+        width 30px
+        color #BBB
+
+    .navbar-link:after
+        border-color cgwiregreen-alt
+
+    .navbar-link
+        margin-left 0
+        padding-left 0
+
+    .navbar-link
+    .navbar-item
+        color darkgrey
+
+        img.icon
+            max-width 20px
+            margin-right 1em
+            color green
+
+    .navbar-link:hover
+    .navbar-item:hover
+        color darkgrey
+
+    .navbar-item.active
+        span.navbar-item-title
+            box-sizing border-box
+            box-shadow inset 0 -3px 0 0 cgwiregreen
+
+    .navbar-item.has-dropdown
+        span.navbar-item-title
+            margin-left 1em
+
+    .navbar-item.signup
+        border-radius 1em
+        background cgwiregreen
+        color white
+        margin 0.5em
+        padding 0.5em 1em
+
+    .navbar-dropdown
+        border 1px solid lightgrey - 5%
+        border-radius 1em
+        box-shadow 0 2px 4px rgba(10, 10, 10, 0.1)
+        margin-top 0
+        padding 0
+
+        .columns
+            display flex
+            flex-direction row
+
+            .column:first-child
+                padding-right 0
+
+            .hosting-solutions
+                margin-bottom 13px
+                margin-top 12px
+                padding-top 0
+                padding-left 0
+                border-left 1px solid #EEE
+
+    .navbar img
+        max-height 2.5em
+
+    .navbar-lang-item.active
+        color black
+
+    .navbar hr
+        margin 1em

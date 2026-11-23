@@ -1,0 +1,52 @@
+// ========================================================================
+// PAGE: STUDIOS
+// ========================================================================
+
+.studios
+    section:first-child
+        padding-bottom 0
+
+    h2:first-child
+        margin-top 2em
+        margin-bottom 0
+
+    .productions
+        img
+            border-radius 1em
+        ul
+            list-style none
+            margin 0
+            padding 0
+            display flex
+            align-items flex-start
+            flex-wrap wrap
+            justify-content center
+
+            .production
+                border-radius 1em
+                margin-left 1em
+                margin-right 1em
+                position relative
+                flex-direction column
+                display inline-flex
+                margin-top 2em
+                transition box-shadow 0.3s ease
+                width 365px
+
+                span
+                    background cgwiregreentransparent
+                    border-bottom-left-radius 1em
+                    border-bottom-right-radius 1em
+                    bottom 0
+                    color white
+                    left 0
+                    opacity 0
+                    padding 0.5em 1em
+                    position absolute
+                    right 0
+                    transition opacity 0.3s ease
+
+                &:hover
+                    box-shadow 0 0 5px 0 #AAA
+                    span
+                        opacity 1

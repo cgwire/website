@@ -1,0 +1,299 @@
+// ========================================================================
+// RESPONSIVE: MOBILE (max-width: 800px)
+// ========================================================================
+
+@media(max-width: 800px)
+    .main-logo
+        margin-left .5em
+        width 110px
+
+    header .navbar .navbar-item.subnav-element.flexcolumn
+        margin-left 1.5rem
+
+    .introduction-text
+        text-align center
+
+    .landing-block
+        margin-left .5em
+        margin-right .5em
+
+        .landing-text
+            h2.subtitle
+            p
+                max-width 100%
+
+    h1.title
+        font-size 1.6em
+        margin-bottom 0
+
+    h2.subtitle.tagline
+        font-size 1.4em
+
+    .section.content
+        padding 1em
+
+        h3
+            margin-top 0.2em
+
+        h2.section-title
+            font-weight bold
+            font-size 2.6em
+
+    pre
+        padding 1em 0
+        font-size 0.7em
+
+    header
+        a.navbar-lang-item
+            text-align center
+
+    .landing-block
+    .introduction
+        .flexrow
+            flex-direction column
+
+        .flexrow.reverse
+            flex-direction column-reverse
+
+        .flexrow-item
+            width 100%
+            margin-right 0
+
+        .landing-text
+        .landing-picture
+        .introduction-text
+            margin-bottom 2em
+
+    .block
+        flex-wrap wrap
+
+        &.flexrow
+            margin-bottom 0
+
+        .flexrow-item
+            min-width 300px
+            width 100%
+            margin-right 0
+
+    .ppl
+        flex-direction column
+
+        .flexrow-item
+            margin-right 0
+
+        .ppl-image
+            margin-bottom 1em
+
+    .content table
+        font-size 0.7em
+
+    .community
+        .description
+            p
+                padding-left 0
+                padding-right 0
+
+    .js-tabs
+        flex-direction column
+
+    .js-tablist
+        flex-basis 100%
+        display flex
+        flex-wrap wrap
+        padding 0
+
+    .video
+        padding 0
+        .flexrow
+            flex-direction column
+            align-items stretch
+
+        .flex-item:first-child
+            flex 1 1 100%
+
+        .flex-item:last-child
+            flex 1 1 100%
+            text-align center
+
+    .quote
+        padding 3em
+        font-size 0.6em
+
+    .quote-author
+        font-size 0.7em
+
+    .trial-content
+        background-position 90% bottom
+
+    .content-image
+    .content-reverse .content-image
+        padding 2rem 0 0 0
+
+    .quote-text
+        font-size 1.3em
+
+    .kitsu-page
+        .section-title
+            font-size 2rem
+
+        .solution-title .section-title
+            font-size 2.6rem
+
+    .button--alt.is-large
+        font-size 0.9em
+
+    .community
+        .community-link
+            font-size 0.9em
+
+    .studios
+        .section-title
+            font-size 2.8em
+            padding-right 1em
+
+        .section-subtitle
+            margin-bottom 0
+
+        .customers-item
+            width 7.95rem
+            height 7.95rem
+
+    header
+        .navbar
+            .navbar-menu
+                overflow-y auto
+            .navbar-dropdown
+                border 0
+                border-radius 0
+                box-shadow none
+
+            hr
+                display none
+
+// ========================================================================
+// RESPONSIVE: TABLET (max-width: 960px)
+// ========================================================================
+
+@media(max-width: 960px)
+    .subnav-text
+        display none
+
+    header .navbar .navbar-item.subnav-element.flexcolumn
+        padding-bottom 0.2em
+        margin-bottom 0
+        margin-top 0
+
+    header .navbar .navbar-item.subnav-element.flexcolumn .subnav-title
+        font-weight normal
+
+    header .navbar .navbar-link
+        padding-bottom 0
+
+    section.introduction
+        .flexrow
+            flex-direction column-reverse
+
+        .introduction-picture
+            flex-basis auto
+            text-align center
+            margin-top 2em
+            margin-bottom 2em
+
+        .introduction-text
+            flex-basis auto
+            max-width inherit
+            padding 1em
+
+        .flexrow-item
+            width 100%
+            margin-right 0
+
+    .community
+        img
+            width 100%
+
+        h2
+            .section-title
+                font-size 1.6em
+
+        .flexrow-item
+            margin 0
+
+        .flexrow
+            flex-direction column
+
+        &.community-info
+            .section-title
+                font-size 1.1em
+
+        .community-header
+            img
+                margin-bottom 2em
+
+            .flexrow-item:not(.illustration)
+                padding-left 0
+
+        .illustration
+            width 100%
+
+            img
+                margin-top 2em
+                max-width 600px
+
+    .kitsu-page
+        .modules
+            flex-direction column
+
+            .module-block
+                // The column centers its items: without an explicit width
+                // each card shrinks to its illustration, and the
+                // top-notch-support one is smaller than the others.
+                width 100%
+                max-width 360px
+
+            .customer-story.landing-block
+                margin 0 1em 1em 1em
+
+    .customer-story.landing-block
+        margin 1em
+        padding-top 2em
+        padding-bottom 0
+
+        img
+            width 100%
+            margin-left 1em
+
+        &.small-block
+            img
+                margin-left 0
+
+    .pricing-page
+    header .navbar-dropdown .columns
+        flex-direction column
+
+        .column:first-child
+            padding-bottom 0
+
+        .hosting-solutions
+            margin-bottom 0
+            margin-top 0
+            padding-left .8em
+            padding-top 0
+
+    section.supporters
+        text-align center
+
+        h2.subtitle.tagline
+            margin-bottom 2em
+
+        ul.flexrow.supporter-list
+            flex-direction column
+
+            li
+                display block
+                height 200px
+                margin-bottom 1em
+
+    .navbar-item.kitsu
+        padding-bottom 0
+        margin-left 3px
