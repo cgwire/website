@@ -20,6 +20,10 @@ export function useSEO({ title, description, imagePath }) {
         property: 'og:image',
         content: image
       },
+      // Every file of public/og has this size: with it, a first share shows
+      // the large card without waiting for the platform to fetch the image.
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
       { name: 'twitter:title', content: title },
       { name: 'twitter:description', content: description },
       { name: 'twitter:url', content: url },

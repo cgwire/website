@@ -102,7 +102,7 @@ const { data: page } = await useAsyncData(
 useSEO({
   title: 'CGWire | Kitsu / ' + page.value.meta.header.title,
   description: 'Feature Films, TV Series, VFX Studios',
-  imagePath: 'photo-customer-story-fost.png'
+  imagePath: 'photo-customer-story-fost.jpg'
 })
 </script>
 
