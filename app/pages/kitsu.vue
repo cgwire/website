@@ -203,7 +203,7 @@ const { data: page } = await useAsyncData(
 // The figures are the ones of the home page, kept in a single place.
 const { pageQuery: indexPageQuery } = usePage(locale, ref('index'))
 const { data: indexPage } = await useAsyncData(
-  `kitsu-stats-${locale.value}`,
+  `index-${locale.value}`,
   indexPageQuery,
   { watch: [locale] }
 )

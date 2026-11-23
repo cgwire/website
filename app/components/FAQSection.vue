@@ -25,7 +25,7 @@ const props = defineProps({
 const { locale } = useI18n()
 
 const { data: faqs } = await useAsyncData(
-  `faq-section-${locale.value}`,
+  `faq-footer-index-${locale.value}`,
   () =>
     queryCollection('faq')
       .where('path', 'LIKE', `/faq/${locale.value}/%`)
