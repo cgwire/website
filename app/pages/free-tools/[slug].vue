@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const { slug } = await useI18NSlug()
 
 const { queryTool } = useTool(locale, slug)
@@ -30,6 +30,6 @@ if (!page.value) {
 
 useSEO({
   title: `CGWire | ${page.value.title}`,
-  description: page.value.meta.subtitle
+  description: page.value.meta.subtitle || t('tools.description')
 })
 </script>

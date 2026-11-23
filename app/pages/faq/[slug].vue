@@ -85,9 +85,12 @@ const moreLinks = computed(() => [
     }))
 ])
 
+// Entries without a subtitle use the first sentence of their summary.
 useSEO({
   title: `CGWire | ${page.value.title}`,
-  description: page.value.meta.subtitle
+  description:
+    page.value.meta.subtitle ||
+    page.value.meta.summary?.match(/^.*?(?:[.!?](?=\s|$)|。)/)?.[0]
 })
 </script>
 
