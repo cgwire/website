@@ -379,8 +379,13 @@
                 :alt="testimonial.meta.interviewee"
                 format="webp"
               />
-              {{ testimonial.meta.interviewee }}, {{ testimonial.meta.role }} at
-              {{ testimonial.meta.studio }}
+              {{ testimonial.meta.interviewee }},
+              {{
+                $t('main.roleAt', {
+                  role: testimonial.meta.role,
+                  studio: testimonial.meta.studio
+                })
+              }}
             </footer>
           </blockquote>
         </div>
@@ -553,11 +558,19 @@ const sevenbearsBackground = computed(() => {
 })
 
 const videoPoster = computed(() => {
-  return img('/images/screenshots/teaser.png', { format: 'webp', width: 376, height: 376 })
+  return img('/images/screenshots/teaser.png', {
+    format: 'webp',
+    width: 376,
+    height: 376
+  })
 })
 
 const videoPosterDark = computed(() => {
-  return img('/images/screenshots/teaser-dark.png', { format: 'webp', width: 376, height: 376 })
+  return img('/images/screenshots/teaser-dark.png', {
+    format: 'webp',
+    width: 376,
+    height: 376
+  })
 })
 
 // Preload the hero poster (the LCP element) with high priority.

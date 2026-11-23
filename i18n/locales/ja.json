@@ -7,11 +7,13 @@
       "manifesto": "AIマニフェスト",
       "metrics": "指標",
       "privacy": "プライバシー",
-      "terms": "利用規約"
+      "terms": "利用規約",
+      "hosting": "セルフホスト、Partners、または Cloud"
     },
     "title": {
       "company": "会社"
-    }
+    },
+    "rights": "無断転載を禁じます。"
   },
   "header": {
     "signIn": "サインイン",
@@ -79,7 +81,9 @@
       "usecase": "ユースケース",
       "video-games": "ビデオゲーム",
       "vfx": "VFX"
-    }
+    },
+    "navigation": "メインナビゲーション",
+    "menu": "メニュー"
   },
   "productions": {
     "title": "Kitsuで管理された作品",
@@ -96,6 +100,15 @@
     },
     "explanation": {
       "trusted": "世界中のスタジオや学校から信頼されています"
+    },
+    "customerStory": "お客様のストーリー：",
+    "roleAt": "{studio} {role}",
+    "video": {
+      "loading": "お客様のストーリーを読み込み中…",
+      "empty": "お客様のストーリーはまだありません。",
+      "play": "動画を再生",
+      "pause": "動画を一時停止",
+      "player": "YouTube 動画プレーヤー"
     }
   },
   "pricing": {
@@ -197,7 +210,8 @@
       "download": "{format} をダウンロード",
       "convertAnother": "別のファイルを変換",
       "tryAgain": "再試行",
-      "privacyNote": "すべての処理はブラウザ内でローカルに実行されます。ファイルがデバイスの外に出ることはありません。"
+      "privacyNote": "すべての処理はブラウザ内でローカルに実行されます。ファイルがデバイスの外に出ることはありません。",
+      "removeFile": "ファイルを削除"
     }
   },
   "slugs": {

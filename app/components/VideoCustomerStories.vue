@@ -1,9 +1,11 @@
 <template>
   <div class="stories-section">
-    <div v-if="pending" class="stories-status">Loading customer stories…</div>
+    <div v-if="pending" class="stories-status">
+      {{ $t('main.video.loading') }}
+    </div>
 
     <div v-else-if="!stories?.length" class="stories-status">
-      No customer stories available yet.
+      {{ $t('main.video.empty') }}
     </div>
 
     <div v-else class="stories-grid">

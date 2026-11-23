@@ -7,11 +7,13 @@
       "manifesto": "AI Manifesto",
       "metrics": "Metrics ",
       "privacy": "Privacy",
-      "terms": "Terms"
+      "terms": "Terms",
+      "hosting": "Self-hosted, Partners or Cloud"
     },
     "title": {
       "company": "Company"
-    }
+    },
+    "rights": "All rights reserved."
   },
   "header": {
     "signIn": "Sign in",
@@ -79,7 +81,9 @@
       "usecase": "Use Cases",
       "video-games": "Video Games",
       "vfx": "VFX"
-    }
+    },
+    "navigation": "Main navigation",
+    "menu": "Menu"
   },
   "productions": {
     "title": "Productions tracked with Kitsu",
@@ -96,6 +100,15 @@
     },
     "explanation": {
       "trusted": "Trusted by studios and schools all over the world"
+    },
+    "customerStory": "Customer Story:",
+    "roleAt": "{role} at {studio}",
+    "video": {
+      "loading": "Loading customer stories…",
+      "empty": "No customer stories available yet.",
+      "play": "Play video",
+      "pause": "Pause video",
+      "player": "YouTube video player"
     }
   },
   "pricing": {
@@ -197,7 +210,8 @@
       "download": "Download {format}",
       "convertAnother": "Convert another",
       "tryAgain": "Try again",
-      "privacyNote": "All processing happens locally in your browser. Your file never leaves your device."
+      "privacyNote": "All processing happens locally in your browser. Your file never leaves your device.",
+      "removeFile": "Remove file"
     }
   },
   "slugs": {

@@ -4,9 +4,16 @@
       ref="playerRef"
       class="video-iframe"
       :src="videoUrl"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      :title="$t('main.video.player')"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
     ></iframe>
@@ -14,11 +21,15 @@
     <button
       class="play-pause-overlay"
       type="button"
-      :aria-label="isPlaying ? 'Pause video' : 'Play video'"
+      :aria-label="$t(isPlaying ? 'main.video.pause' : 'main.video.play')"
       @click="togglePlay"
     >
-      <svg v-if="!isPlaying" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" /></svg>
-      <svg v-else viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z" /></svg>
+      <svg v-if="!isPlaying" viewBox="0 0 24 24">
+        <path d="M8 5v14l11-7z" />
+      </svg>
+      <svg v-else viewBox="0 0 24 24">
+        <path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+      </svg>
     </button>
   </div>
 </template>
@@ -78,10 +89,14 @@ function handleMessage(event) {
   if (typeof event.data !== 'string') return
   try {
     const data = JSON.parse(event.data)
-    if (data.event === 'infoDelivery' && typeof data.info?.playerState === 'number') {
+    if (
+      data.event === 'infoDelivery' &&
+      typeof data.info?.playerState === 'number'
+    ) {
       // 1 = playing, 2 = paused, 0 = ended
       if (data.info.playerState === 1) isPlaying.value = true
-      else if (data.info.playerState === 2 || data.info.playerState === 0) isPlaying.value = false
+      else if (data.info.playerState === 2 || data.info.playerState === 0)
+        isPlaying.value = false
     }
   } catch {
     // ignore non-JSON messages from other sources

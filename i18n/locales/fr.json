@@ -7,11 +7,13 @@
       "manifesto": "Manifeste IA",
       "metrics": "Métriques ",
       "privacy": "Vie privée",
-      "terms": "CGU / CGV"
+      "terms": "CGU / CGV",
+      "hosting": "Auto-hébergé, Partners ou Cloud"
     },
     "title": {
       "company": "Société"
-    }
+    },
+    "rights": "Tous droits réservés."
   },
   "header": {
     "signIn": "Se connecter",
@@ -79,7 +81,9 @@
       "usecase": "Études de cas",
       "video-games": "Jeux vidéos",
       "vfx": "VFX"
-    }
+    },
+    "navigation": "Navigation principale",
+    "menu": "Menu"
   },
   "productions": {
     "title": "Productions suivies avec Kitsu",
@@ -96,6 +100,15 @@
     },
     "explanation": {
       "trusted": "Rejoignez plus de 80 studios et écoles"
+    },
+    "customerStory": "Témoignage client :",
+    "roleAt": "{role} chez {studio}",
+    "video": {
+      "loading": "Chargement des témoignages…",
+      "empty": "Aucun témoignage disponible pour le moment.",
+      "play": "Lire la vidéo",
+      "pause": "Mettre la vidéo en pause",
+      "player": "Lecteur vidéo YouTube"
     }
   },
   "pricing": {
@@ -197,7 +210,8 @@
       "download": "Télécharger le {format}",
       "convertAnother": "Convertir un autre fichier",
       "tryAgain": "Réessayer",
-      "privacyNote": "Tout le traitement se fait localement dans votre navigateur. Votre fichier ne quitte jamais votre appareil."
+      "privacyNote": "Tout le traitement se fait localement dans votre navigateur. Votre fichier ne quitte jamais votre appareil.",
+      "removeFile": "Retirer le fichier"
     }
   },
   "slugs": {

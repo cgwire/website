@@ -25,7 +25,12 @@
             />
             <span>
               <strong>{{ quote.meta.interviewee }}</strong>
-              {{ quote.meta.role }} at {{ quote.meta.studio }}
+              {{
+                $t('main.roleAt', {
+                  role: quote.meta.role,
+                  studio: quote.meta.studio
+                })
+              }}
             </span>
           </figcaption>
         </figure>

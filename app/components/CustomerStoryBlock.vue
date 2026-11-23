@@ -7,7 +7,7 @@
       <div class="flexrow reverse">
         <div class="flexrow-item landing-picture">
           <NuxtImg
-            :src="'/images/customer-stories/' + imagePath"
+            :src="image || '/images/customer-stories/' + imagePath"
             format="webp"
             width="320"
             height="240"
@@ -16,11 +16,11 @@
         </div>
         <div class="flexrow-item landing-text">
           <h2 class="section-subtitle">
-            Customer Story:<br />
+            {{ $t('main.customerStory') }}<br />
             {{ studioName }}
           </h2>
           <p>
-            <em> "{{ quote }}" </em><br />
+            <em> "{{ quote }}" </em>
           </p>
           <p class="mt1">
             {{ interviewee }}
@@ -38,7 +38,9 @@ const props = defineProps({
   studioName: String,
   storyKey: String,
   quote: String,
-  imagePath: String
+  imagePath: String,
+  // Full image path, for callers that already hold one (content collections).
+  image: String
 })
 </script>
 
