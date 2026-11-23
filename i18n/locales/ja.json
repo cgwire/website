@@ -290,6 +290,8 @@
     "who-else-is-using-kitsu": "他に誰がkitsuを使っていますか",
     "why-not-just-use-spreadsheets-or-notion": "なぜスプレッドシートやNotionを使わないのですか",
     "will-kitsu-slow-us-down": "kitsuは作業を遅くしますか",
+    "should-you-self-host": "自社運用すべきか",
+    "自社運用すべきか": "should-you-self-host",
     "kitsuは私たちと共に成長できますか": "can-kitsu-scale-with-us",
     "制作パイプラインの管理を失いますか": "do-we-lose-control-over-our-production-pipeline",
     "価値を実感するまでどのくらいかかりますか": "how-long-until-we-see-value",
