@@ -200,11 +200,6 @@
       "privacyNote": "All processing happens locally in your browser. Your file never leaves your device."
     }
   },
-  "exit-popup": {
-    "badge": "Free Trial",
-    "title": "Before you go...",
-    "description": "Ready to level up your production workflow? Create your free account and get access to the latest features from CGWire's Kitsu."
-  },
   "slugs": {
     "tailor-made-architecture": "tailor-made-architecture",
     "casting-management": "casting-management",

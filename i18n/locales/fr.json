@@ -200,11 +200,6 @@
       "privacyNote": "Tout le traitement se fait localement dans votre navigateur. Votre fichier ne quitte jamais votre appareil."
     }
   },
-  "exit-popup": {
-    "badge": "Essai Gratuit",
-    "title": "Avant de partir...",
-    "description": "Prêt à améliorer votre flux de production ? Créez votre compte gratuit et accédez aux dernières fonctionnalités de Kitsu by CGWire."
-  },
   "slugs": {
     "index": "index",
     "contact": "contact",
