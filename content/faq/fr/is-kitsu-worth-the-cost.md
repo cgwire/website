@@ -36,13 +36,13 @@ Ce ne sont pas des hypothèses. Ce sont des tendances que nous observons systém
 
 Pas besoin d'un diplôme en finance. Commencez ici :
 
-| Catégorie de gaspillage | Estimation | Votre studio |
-|---|---|---|
-| Heures coordinateur sur les mises à jour de statut (h/semaine × taux horaire) | ~6 h × 40 € = 240 €/semaine | |
-| Reprises dues aux erreurs de version (h/semaine × taux artiste) | ~4 h × 35 € = 140 €/semaine | |
-| Surcoût d'intégration des freelances (embauches/mois × temps senior) | 2 embauches × 3 h × 50 € = 300 €/mois | |
-| Pénalités pour retard de livraison ou reprises de tournage | Variable | |
-| Coût caché mensuel (estimation basse) | ~1 700 €–2 500 €+ | |
+| Catégorie de gaspillage | Estimation |
+|---|---|
+| Heures coordinateur sur les mises à jour de statut (h/semaine × taux horaire) | ~6 h × 40 € = 240 €/semaine |
+| Reprises dues aux erreurs de version (h/semaine × taux artiste) | ~4 h × 35 € = 140 €/semaine |
+| Surcoût d'intégration des freelances (embauches/mois × temps senior) | 2 embauches × 3 h × 50 € = 300 €/mois |
+| Pénalités pour retard de livraison ou reprises de tournage | Variable |
+| Coût caché mensuel (estimation basse) | ~1 700 €–2 500 €+ |
 
 Un abonnement Kitsu commence bien en dessous de ce chiffre, et les gains d'efficacité ont tendance à croître à mesure que votre équipe prend ses habitudes sur la plateforme.
 

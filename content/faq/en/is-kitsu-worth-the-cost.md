@@ -25,13 +25,13 @@ These aren't assumptions. They're patterns we see consistently across studios th
 
 You don't need a finance degree. Start here:
 
-| Waste Category | Estimate | Your Studio |
-|---|---|---|
-| Coordinator hours on status updates (hrs/week × hourly rate) | ~6 hrs × €40 = €240/week | |
-| Rework from version errors (hrs/week × artist rate) | ~4 hrs × €35 = €140/week | |
-| Freelancer onboarding overhead (hires/month × senior time) | 2 hires × 3 hrs × €50 = €300/month | |
-| Delayed delivery penalties or reshoots | Varies | |
-| Monthly hidden cost (conservative) | ~€1,700–€2,500+ | |
+| Waste Category | Estimate |
+|---|---|
+| Coordinator hours on status updates (hrs/week × hourly rate) | ~6 hrs × €40 = €240/week |
+| Rework from version errors (hrs/week × artist rate) | ~4 hrs × €35 = €140/week |
+| Freelancer onboarding overhead (hires/month × senior time) | 2 hires × 3 hrs × €50 = €300/month |
+| Delayed delivery penalties or reshoots | Varies |
+| Monthly hidden cost (conservative) | ~€1,700–€2,500+ |
 
 A Kitsu subscription starts well below that figure, and the efficiency gains tend to grow as your team builds habits around the platform.
 
