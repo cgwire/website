@@ -1,6 +1,6 @@
 <template>
   <div class="compare-page">
-    <section class="section content narrower">
+    <section class="section content narrower long-form">
       <div class="compare-hero-image has-text-centered">
         <NuxtImg
           :src="'/images/illustrations/' + comparison.meta.image"
@@ -52,7 +52,7 @@
             <p v-if="block.note" class="compare-table-note">{{ block.note }}</p>
           </div>
 
-          <ul v-else-if="block.type === 'list'" class="compare-list">
+          <ul v-else-if="block.type === 'list'">
             <li v-for="(item, li) in block.items" :key="li">{{ item }}</li>
           </ul>
 
@@ -130,20 +130,10 @@ useSEO({
   margin-top .6em
 
 table.table
-  th
-    background lightgrey
-
   tr.is-emphasized
     td
       font-weight 700
       background #f0f7ff
-
-.compare-list
-  margin 1em 0 1em 1.5em
-
-  li
-    margin-bottom .4em
-    list-style disc
 
 .compare-cta
   margin 2em 0

@@ -10,3 +10,53 @@
         font-size 2.3em
         margin-bottom 1.5em
         margin-top .2em
+
+// Long-form text shared by the alternative pages and the FAQ entries.
+.long-form
+    p
+    li
+        line-height 1.7
+
+    p
+        margin-bottom 1.25em
+
+    // Bullets on the left edge of the paragraphs, text indented after them.
+    ul
+    ol
+        margin 1em 0
+        padding-left 1.5em
+        list-style-position outside
+
+    ul
+        list-style-type disc
+
+    li
+        margin 0 0 .4em
+
+    // Rounded frame, tinted header row, striped body rows.
+    table
+        width 100%
+        margin 1.5rem 0
+        border 1px solid var(--pg-border, #dbdbdb)
+        border-collapse separate
+        border-spacing 0
+        border-radius 12px
+        overflow hidden
+        background transparent
+
+        th
+            background var(--pg-card, lightgrey)
+            color var(--pg-text, #363636)
+
+        th
+        td
+            padding .75em 1em
+            border 0
+            border-bottom 1px solid var(--pg-border, #dbdbdb)
+
+        tbody tr:nth-child(even)
+            background var(--pg-card, #fafafa)
+
+        tr:last-child td
+            border-bottom 0
+
