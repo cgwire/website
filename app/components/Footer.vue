@@ -342,7 +342,8 @@ const { data: faqPages } = await useAsyncData(
   grid-column 1 / -1
   grid-row auto
   order 999
-  border-top 1px solid bordercolor
+  border-top 1px solid #EEE
+  padding-top 1.5rem
 
   // Links wrap on one line instead of stacking
   .footer-links
