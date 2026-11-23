@@ -9,7 +9,6 @@
     <!-- Moon, shown in light theme -->
     <svg
       class="icon-moon"
-      xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       width="20"
       height="20"
@@ -25,7 +24,6 @@
     <!-- Sun, shown in dark theme -->
     <svg
       class="icon-sun"
-      xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       width="20"
       height="20"

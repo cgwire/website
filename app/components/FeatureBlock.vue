@@ -1,17 +1,12 @@
 <template>
-  <div class="first-wave">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 40 1440 160"
-      v-if="feature.colored"
-    >
+  <div class="first-wave" v-if="feature.colored">
+    <svg viewBox="0 40 1440 160">
       <path
         class="feature-wave"
         :fill="topWaveColor"
         :style="waveStyle(topWaveColor)"
-        fill-opacity="1"
         :d="topPath"
-      ></path>
+      />
     </svg>
   </div>
   <section
@@ -25,9 +20,8 @@
   >
     <section class="section">
       <div
+        class="tile flex-aic"
         :class="{
-          tile: true,
-          'flex-aic': true,
           content: !feature.reverted,
           'content-reverse': feature.reverted
         }"
@@ -51,7 +45,10 @@
           data-aos-delay="200"
         >
           <NuxtImg
-            :class="{ screenshot: feature.shadow, 'only-light': feature.imageDark }"
+            :class="{
+              screenshot: feature.shadow,
+              'only-light': feature.imageDark
+            }"
             :src="'/images/screenshots/' + feature.image"
             :alt="feature.title"
             :format="feature.image.endsWith('.svg') ? undefined : 'webp'"
@@ -69,7 +66,6 @@
     </section>
   </section>
   <svg
-    xmlns="http://www.w3.org/2000/svg"
     viewBox="0 40 1440 160"
     :class="{ 'wave-last': last }"
     v-if="feature.colored"
@@ -78,9 +74,8 @@
       class="feature-wave"
       :fill="bottomWaveColor"
       :style="waveStyle(bottomWaveColor)"
-      fill-opacity="1"
       :d="bottomPath"
-    ></path>
+    />
   </svg>
 </template>
 
@@ -147,7 +142,7 @@ const DARK_WAVE_COLORS = {
   '#F9F6FD': '#453760'
 }
 
-const waveStyle = (color) => ({
+const waveStyle = color => ({
   '--wave-light': color,
   '--wave-dark': DARK_WAVE_COLORS[color]
 })

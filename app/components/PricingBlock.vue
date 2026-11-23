@@ -1,16 +1,10 @@
 <template>
-  <div
-    :class="{
-      'pricing-block': true,
-      'pricing-emphasize': emphasize
-    }"
-  >
+  <div class="pricing-block" :class="{ 'pricing-emphasize': emphasize }">
     <div class="pricing-title">
       {{ title }}
     </div>
     <div class="pricing-price">
-      <span class="pricing-value monthly" v-if="monthly">€{{ price }}</span>
-      <span class="pricing-value yearly" v-else>€{{ price }}</span>
+      <span class="pricing-value">€{{ price }}</span>
       <span v-if="perUser">
         {{ pricing.value.month }} / {{ pricing.features.user }}
       </span>
