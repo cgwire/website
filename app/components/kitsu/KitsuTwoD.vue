@@ -1,56 +1,51 @@
 <template>
-  <div class="features">
-    <KitsuFeatureBlock feature-key="schedule" :feature="features['schedule']" />
-    <KitsuFeatureBlock
-      feature-key="track"
-      direction="right"
-      color="purple"
-      :feature="features['track']"
-    />
-    <KitsuFeatureBlock
-      feature-key="review"
-      color="blue"
-      :feature="features['review']"
-    />
+  <KitsuFeatureBlock feature-key="schedule" :feature="features['schedule']" />
+  <KitsuFeatureBlock
+    feature-key="track"
+    direction="right"
+    color="purple"
+    :feature="features['track']"
+  />
+  <KitsuFeatureBlock
+    feature-key="review"
+    color="blue"
+    :feature="features['review']"
+  />
 
-    <div data-aos="fade-up" class="best-supporter">
-      <TextBlock
-        :subtitle="supporters.subtitle"
-        :title="supporters.title"
-        :content="supporters.content"
-      />
-      <NuxtImg
-        class="only-light"
-        src="/images/illustrations/success-supporter.png"
-        alt=""
-        format="webp"
-        loading="lazy"
-      />
-      <NuxtImg
-        class="only-dark"
-        src="/images/illustrations/success-supporter-dark.png"
-        alt=""
-        format="webp"
-        loading="lazy"
-      />
-    </div>
-
-    <KitsuFeatureBlock
-      feature-key="breakdown"
-      :feature="features['breakdown']"
+  <div data-aos="fade-up" class="best-supporter">
+    <TextBlock
+      :subtitle="supporters.subtitle"
+      :title="supporters.title"
+      :content="supporters.content"
     />
-    <KitsuFeatureBlock
-      feature-key="report"
-      direction="right"
-      color="purple"
-      :feature="features['report']"
+    <NuxtImg
+      class="only-light"
+      src="/images/illustrations/success-supporter.png"
+      alt=""
+      format="webp"
+      loading="lazy"
     />
-    <KitsuFeatureBlock
-      feature-key="news"
-      color="blue"
-      :feature="features['news']"
+    <NuxtImg
+      class="only-dark"
+      src="/images/illustrations/success-supporter-dark.png"
+      alt=""
+      format="webp"
+      loading="lazy"
     />
   </div>
+
+  <KitsuFeatureBlock feature-key="breakdown" :feature="features['breakdown']" />
+  <KitsuFeatureBlock
+    feature-key="report"
+    direction="right"
+    color="purple"
+    :feature="features['report']"
+  />
+  <KitsuFeatureBlock
+    feature-key="news"
+    color="blue"
+    :feature="features['news']"
+  />
 </template>
 
 <script setup>
@@ -66,7 +61,4 @@ const supporters = props.supporters
 <style lang="stylus" scoped>
 .best-supporter
   margin-bottom: 8em
-
-.features
-  margin-top: 8em
 </style>

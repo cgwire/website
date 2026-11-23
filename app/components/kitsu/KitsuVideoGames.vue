@@ -12,54 +12,56 @@
     :feature="features['library']"
   />
 
-  <TextBlock
-    :subtitle="supporters.subtitle"
-    :title="supporters.title"
-    :content="supporters.games"
-  />
-  <div class="successes">
-    <NuxtImg
-      class="only-light"
-      src="/images/kitsu/mdhr.png"
-      alt="Studio MDHR"
-      format="webp"
-      loading="lazy"
+  <div data-aos="fade-up" class="best-supporter">
+    <TextBlock
+      :subtitle="supporters.subtitle"
+      :title="supporters.title"
+      :content="supporters.games"
     />
-    <NuxtImg
-      class="only-dark"
-      src="/images/kitsu/mdhr-dark.png"
-      alt="Studio MDHR"
-      format="webp"
-      loading="lazy"
-    />
-    <NuxtImg
-      class="only-light"
-      src="/images/kitsu/metacore.png"
-      alt="Metacore"
-      format="webp"
-      loading="lazy"
-    />
-    <NuxtImg
-      class="only-dark"
-      src="/images/kitsu/metacore-dark.png"
-      alt="Metacore"
-      format="webp"
-      loading="lazy"
-    />
-    <NuxtImg
-      class="only-light"
-      src="/images/kitsu/sparx.png"
-      alt="Virtuos Sparx"
-      format="webp"
-      loading="lazy"
-    />
-    <NuxtImg
-      class="only-dark"
-      src="/images/kitsu/sparx-dark.png"
-      alt="Virtuos Sparx"
-      format="webp"
-      loading="lazy"
-    />
+    <div class="successes">
+      <NuxtImg
+        class="only-light"
+        src="/images/kitsu/mdhr.png"
+        alt="Studio MDHR"
+        format="webp"
+        loading="lazy"
+      />
+      <NuxtImg
+        class="only-dark"
+        src="/images/kitsu/mdhr-dark.png"
+        alt="Studio MDHR"
+        format="webp"
+        loading="lazy"
+      />
+      <NuxtImg
+        class="only-light"
+        src="/images/kitsu/metacore.png"
+        alt="Metacore"
+        format="webp"
+        loading="lazy"
+      />
+      <NuxtImg
+        class="only-dark"
+        src="/images/kitsu/metacore-dark.png"
+        alt="Metacore"
+        format="webp"
+        loading="lazy"
+      />
+      <NuxtImg
+        class="only-light"
+        src="/images/kitsu/sparx.png"
+        alt="Virtuos Sparx"
+        format="webp"
+        loading="lazy"
+      />
+      <NuxtImg
+        class="only-dark"
+        src="/images/kitsu/sparx-dark.png"
+        alt="Virtuos Sparx"
+        format="webp"
+        loading="lazy"
+      />
+    </div>
   </div>
 
   <KitsuFeatureBlock feature-key="search" :feature="features['search']" />
@@ -85,7 +87,6 @@ const props = defineProps({
 const features = props.features
 const supporters = props.supporters
 </script>
-
 
 <style lang="stylus" scoped>
 body .successes
