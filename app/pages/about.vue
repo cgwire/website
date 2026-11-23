@@ -239,7 +239,7 @@ const { data: page } = await useAsyncData(
 
 useSEO({
   title: 'CGWire | ' + page.value.meta.tagline,
-  descriptionKey: page.value.meta.explanation.one,
+  description: page.value.meta.explanation.one,
   imagePath: 'about.png'
 })
 </script>
