@@ -270,11 +270,13 @@
                 <NuxtImg
                   class="only-light"
                   src="/images/screenshots/kitsu-todos-animated.svg"
+                  style="aspect-ratio: auto 792 / 552"
                   alt=""
                 />
                 <NuxtImg
                   class="only-dark"
                   src="/images/screenshots/kitsu-todos-animated-dark.svg"
+                  style="aspect-ratio: auto 792 / 552"
                   alt=""
                   loading="lazy"
                 />
@@ -289,11 +291,13 @@
                 <NuxtImg
                   class="only-light"
                   src="/images/screenshots/kitsu-schedule-animated.svg"
+                  style="aspect-ratio: auto 792 / 452"
                   alt=""
                 />
                 <NuxtImg
                   class="only-dark"
                   src="/images/screenshots/kitsu-schedule-animated-dark.svg"
+                  style="aspect-ratio: auto 792 / 452"
                   alt=""
                   loading="lazy"
                 />
@@ -308,11 +312,13 @@
                 <NuxtImg
                   class="only-light"
                   src="/images/screenshots/kitsu-report-animated.svg"
+                  style="aspect-ratio: auto 792 / 594"
                   alt=""
                 />
                 <NuxtImg
                   class="only-dark"
                   src="/images/screenshots/kitsu-report-animated-dark.svg"
+                  style="aspect-ratio: auto 792 / 594"
                   alt=""
                   loading="lazy"
                 />
@@ -326,6 +332,7 @@
               <div class="feature-img-wrapper">
                 <NuxtImg
                   src="/images/screenshots/kitsu-compare-animated.svg"
+                  style="aspect-ratio: auto 792 / 492"
                   alt=""
                 />
               </div>
@@ -337,6 +344,7 @@
               <div class="feature-img-wrapper">
                 <NuxtImg
                   src="/images/screenshots/kitsu-python-animated.svg"
+                  style="aspect-ratio: auto 792 / 316"
                   alt=""
                 />
               </div>
