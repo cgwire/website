@@ -30,7 +30,7 @@
         <div class="hero-illustration">
           <img
             src="~/assets/images/carbon-report/carbon-header-illustration.png"
-            alt="Carbon report illustration"
+            alt=""
           />
         </div>
       </div>
@@ -48,9 +48,12 @@
           {{ texts.consumptionExplanation }}
         </p>
 
-        <div class="toggle-buttons" @click="toggleData">
+        <div class="toggle-buttons">
           <button
+            type="button"
             class="btn"
+            :aria-pressed="dataWithFlights"
+            @click="dataWithFlights = true"
             :class="{
               'btn-primary': dataWithFlights,
               'btn-secondary': !dataWithFlights
@@ -59,7 +62,10 @@
             {{ page.meta.consumption.withFlights }}
           </button>
           <button
+            type="button"
             class="btn"
+            :aria-pressed="!dataWithFlights"
+            @click="dataWithFlights = false"
             :class="{
               'btn-primary': !dataWithFlights,
               'btn-secondary': dataWithFlights
@@ -75,7 +81,7 @@
               <img
                 class="card-icon"
                 src="~/assets/images/carbon-report/globe.png"
-                alt="Globe icon"
+                alt=""
               />
               <span class="card-label">{{ page.meta.consumption.total }}</span>
             </div>
@@ -90,7 +96,7 @@
               <img
                 class="card-icon"
                 src="~/assets/images/carbon-report/users.png"
-                alt="Users icon"
+                alt=""
               />
               <span class="card-label">{{
                 page.meta.consumption.perEmployee
@@ -110,7 +116,7 @@
               <img
                 class="card-icon"
                 src="~/assets/images/carbon-report/dollar-sign.png"
-                alt="Dollar icon"
+                alt=""
               />
               <span class="card-label">{{
                 page.meta.consumption.per1000e
@@ -139,9 +145,12 @@
             {{ texts.categoriesExplanation }}
           </p>
 
-          <div class="toggle-buttons" @click="toggleData">
+          <div class="toggle-buttons">
             <button
+              type="button"
               class="btn"
+              :aria-pressed="dataWithFlights"
+              @click="dataWithFlights = true"
               :class="{
                 'btn-primary': dataWithFlights,
                 'btn-secondary': !dataWithFlights
@@ -150,7 +159,10 @@
               {{ page.meta.consumption.withFlights }}
             </button>
             <button
+              type="button"
               class="btn"
+              :aria-pressed="!dataWithFlights"
+              @click="dataWithFlights = false"
               :class="{
                 'btn-primary': !dataWithFlights,
                 'btn-secondary': dataWithFlights
@@ -206,100 +218,100 @@
               <img
                 class="big-graph"
                 src="~/assets/images/carbon-report/graph-with-plane-travels.png"
-                alt="Graph showing carbon emissions by category with flights"
+                :alt="graphAlt"
                 v-show="locale === 'fr'"
               />
               <img
                 class="big-graph dark-graph"
                 src="~/assets/images/carbon-report/graph-with-plane-travels-dark.png"
-                alt="Graph showing carbon emissions by category with flights"
+                :alt="graphAlt"
                 v-show="locale === 'fr'"
               />
               <img
                 class="big-graph"
                 src="~/assets/images/carbon-report/graph-with-plane-travels-en.png"
-                alt="Graph showing carbon emissions by category with flights"
-                v-show="locale === 'en'"
+                :alt="graphAlt"
+                v-show="locale !== 'fr'"
               />
               <img
                 class="big-graph dark-graph"
                 src="~/assets/images/carbon-report/graph-with-plane-travels-en-dark.png"
-                alt="Graph showing carbon emissions by category with flights"
-                v-show="locale === 'en'"
+                :alt="graphAlt"
+                v-show="locale !== 'fr'"
               />
               <img
                 class="small-graph"
                 src="~/assets/images/carbon-report/small-graph-with-plane-travels.png"
-                alt="Graph showing carbon emissions by category with flights"
+                :alt="graphAlt"
                 v-show="locale === 'fr'"
               />
               <img
                 class="small-graph dark-graph"
                 src="~/assets/images/carbon-report/small-graph-with-plane-travels-dark.png"
-                alt="Graph showing carbon emissions by category with flights"
+                :alt="graphAlt"
                 v-show="locale === 'fr'"
               />
               <img
                 class="small-graph"
                 src="~/assets/images/carbon-report/small-graph-with-plane-travels-en.png"
-                alt="Graph showing carbon emissions by category with flights"
-                v-show="locale === 'en'"
+                :alt="graphAlt"
+                v-show="locale !== 'fr'"
               />
               <img
                 class="small-graph dark-graph"
                 src="~/assets/images/carbon-report/small-graph-with-plane-travels-en-dark.png"
-                alt="Graph showing carbon emissions by category with flights"
-                v-show="locale === 'en'"
+                :alt="graphAlt"
+                v-show="locale !== 'fr'"
               />
             </template>
             <template v-else>
               <img
                 class="big-graph"
                 src="~/assets/images/carbon-report/graph-without-plane-travels.png"
-                alt="Graph showing carbon emissions by category without flights"
+                :alt="graphAlt"
                 v-show="locale === 'fr'"
               />
               <img
                 class="big-graph dark-graph"
                 src="~/assets/images/carbon-report/graph-without-plane-travels-dark.png"
-                alt="Graph showing carbon emissions by category without flights"
+                :alt="graphAlt"
                 v-show="locale === 'fr'"
               />
               <img
                 class="big-graph"
                 src="~/assets/images/carbon-report/graph-without-plane-travels-en.png"
-                alt="Graph showing carbon emissions by category without flights"
-                v-show="locale === 'en'"
+                :alt="graphAlt"
+                v-show="locale !== 'fr'"
               />
               <img
                 class="big-graph dark-graph"
                 src="~/assets/images/carbon-report/graph-without-plane-travels-en-dark.png"
-                alt="Graph showing carbon emissions by category without flights"
-                v-show="locale === 'en'"
+                :alt="graphAlt"
+                v-show="locale !== 'fr'"
               />
               <img
                 class="small-graph"
                 src="~/assets/images/carbon-report/small-graph-without-plane-travels.png"
-                alt="Graph showing carbon emissions by category without flights"
+                :alt="graphAlt"
                 v-show="locale === 'fr'"
               />
               <img
                 class="small-graph dark-graph"
                 src="~/assets/images/carbon-report/small-graph-without-plane-travels-dark.png"
-                alt="Graph showing carbon emissions by category without flights"
+                :alt="graphAlt"
                 v-show="locale === 'fr'"
               />
               <img
                 class="small-graph"
                 src="~/assets/images/carbon-report/small-graph-without-plane-travels-en.png"
-                alt="Graph showing carbon emissions by category without flights"
-                v-show="locale === 'en'"
+                :alt="graphAlt"
+                v-show="locale !== 'fr'"
               />
               <img
                 class="small-graph dark-graph"
                 src="~/assets/images/carbon-report/small-graph-without-plane-travels-en-dark.png"
-                alt="Graph showing carbon emissions by category without flights"
-                v-show="locale === 'en'"
+                :alt="graphAlt"
+                v-show="locale !== 'fr'"
               />
             </template>
           </p>
@@ -319,27 +331,32 @@
           <ul class="chart-legend-list">
             <li v-if="dataWithFlights">
               <span class="chart-legend-color-meal"></span>{{ mealValue }}% -
-              Meal
+              {{ page.meta.report2025.legend.meal }}
             </li>
             <li>
               <span class="chart-legend-color-immobilisation"></span
-              >{{ immobilisationValue }}% - Immobilisation (computers)
+              >{{ immobilisationValue }}% -
+              {{ page.meta.report2025.legend.immobilisation }}
             </li>
             <li>
               <span class="chart-legend-color-commute"></span
-              >{{ commuteValue }}% - Commute
+              >{{ commuteValue }}% -
+              {{ page.meta.report2025.legend.commute }}
             </li>
             <li>
               <span class="chart-legend-color-accommodation"></span
-              >{{ accommodationValue }}% - Accommodation
+              >{{ accommodationValue }}% -
+              {{ page.meta.report2025.legend.accommodation }}
             </li>
             <li>
               <span class="chart-legend-color-purchase-of-goods"></span
-              >{{ purchaseOfGoodsValue }}% - Purchase of goods
+              >{{ purchaseOfGoodsValue }}% -
+              {{ page.meta.report2025.legend.goods }}
             </li>
             <li v-if="!dataWithFlights">
               <span class="chart-legend-color-transportation-train"></span
-              >{{ transportationTrainValue }}% - Transport (train)
+              >{{ transportationTrainValue }}% -
+              {{ page.meta.report2025.legend.train }}
             </li>
           </ul>
         </div>
@@ -351,7 +368,7 @@
             :key="highlight.label"
           >
             <img class="card-big-icon" :src="highlight.icon" alt="" />
-            <div class="category-card-data">
+            <div>
               <div class="card-value">{{ highlight.percent }}%</div>
               <div class="card-description">
                 {{ highlight.label }}
@@ -374,7 +391,7 @@
           <div class="evolution-illustration">
             <img
               src="~/assets/images/carbon-report/optimisation-cloud.png"
-              alt="Cloud optimisation illustration"
+              alt=""
             />
           </div>
           <div class="evolution-content">
@@ -391,7 +408,7 @@
           <div class="evolution-illustration is-green">
             <img
               src="~/assets/images/carbon-report/optimisation-food.png"
-              alt="Food optimisation illustration"
+              alt=""
             />
           </div>
           <div class="evolution-content">
@@ -417,7 +434,7 @@
             <div class="card-illustration">
               <img
                 src="~/assets/images/carbon-report/optimisation-cloud.png"
-                alt="Server pooling"
+                alt=""
               />
             </div>
             <div class="card-content">
@@ -436,10 +453,7 @@
 
           <div class="event-card">
             <div class="card-illustration">
-              <img
-                src="~/assets/images/carbon-report/france.png"
-                alt="Paris Meetup"
-              />
+              <img src="~/assets/images/carbon-report/france.png" alt="" />
             </div>
             <div class="card-content">
               <h3 class="event-title">
@@ -456,10 +470,7 @@
 
           <div class="event-card">
             <div class="card-illustration">
-              <img
-                src="~/assets/images/carbon-report/japan.png"
-                alt="Japan Travel"
-              />
+              <img src="~/assets/images/carbon-report/japan.png" alt="" />
             </div>
             <div class="card-content">
               <h3 class="event-title">
@@ -476,10 +487,7 @@
 
           <div class="event-card" v-if="year === 2024">
             <div class="card-illustration">
-              <img
-                src="~/assets/images/carbon-report/usa.png"
-                alt="USA Travel"
-              />
+              <img src="~/assets/images/carbon-report/usa.png" alt="" />
             </div>
             <div class="card-content">
               <h3 class="event-title">
@@ -579,6 +587,12 @@ const texts = computed(() => {
     anticipationTitle: meta.anticipation.title,
     warning: meta.anticipation.warning
   }
+})
+
+const graphAlt = computed(() => {
+  const { categories, consumption } = page.value.meta
+  const flights = dataWithFlights.value ? 'withFlights' : 'withoutFlights'
+  return `${categories.title} (${consumption[flights]})`
 })
 
 // Tonnes derived from the category shares of the 2025 total.
@@ -750,10 +764,6 @@ const purchaseOfGoodsValue = computed(() => {
 const transportationTrainValue = computed(() => {
   return dataWithFlights.value ? 0.4 : 0.7
 })
-
-const toggleData = () => {
-  dataWithFlights.value = !dataWithFlights.value
-}
 </script>
 
 <style lang="stylus" scoped>

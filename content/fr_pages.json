@@ -282,7 +282,9 @@
           "immobilisation": "Immobilisations (ordinateurs)",
           "accommodation": "Hébergement",
           "goods": "Achats de biens",
-          "other": "Autres"
+          "other": "Autres",
+          "commute": "Trajets domicile-travail",
+          "train": "Transport (train)"
         },
         "anticipationTitle": "Nos projets pour 2026 et 2027 : anticiper pour mieux réduire notre impact",
         "pooling": "Mutualisation des serveurs",

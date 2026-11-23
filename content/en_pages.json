@@ -282,7 +282,9 @@
           "immobilisation": "Immobilisation (computers)",
           "accommodation": "Accommodation",
           "goods": "Purchase of goods",
-          "other": "Other"
+          "other": "Other",
+          "commute": "Commute",
+          "train": "Transport (train)"
         },
         "anticipationTitle": "Our projects for 2026 and 2027: anticipate to reduce our impact",
         "pooling": "Server pooling",
