@@ -1,5 +1,8 @@
 <script setup>
 const head = useLocaleHead()
+// og:locale of the current language, for the pages that do not call
+// useSetI18nParams.
+useHead(() => ({ meta: head.value.meta }))
 useDarkMode()
 </script>
 
