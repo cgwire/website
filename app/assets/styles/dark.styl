@@ -120,169 +120,6 @@ html.has-dark-mode.theme-dark
         .button--alt:focus
             background-color transparent
 
-        // --- Header ---
-
-        header
-        header .navbar
-        header .navbar-menu
-        header .navbar-brand
-            background-color dark-chrome
-
-        header
-
-            .main-logo
-                invert-logo()
-
-            .navbar-link
-            .navbar-item
-            .navbar-link:hover
-            .navbar-item:hover
-                color dark-text-strong
-
-            .navbar-link:hover
-            .navbar-item:hover
-            a.navbar-item:focus-within
-            .navbar-item.has-dropdown:hover .navbar-link
-                background-color transparent
-
-            .navbar .navbar-item.top:hover .navbar-item-title
-            .navbar .navbar-item.is-hoverable.has-dropdown:hover .navbar-link:first-child .navbar-item-title
-                background dark-surface-alt
-
-            a.navbar-lang-item
-                color dark-text-muted
-
-            .navbar .navbar-item.top.theme-toggle
-                color dark-text-muted
-
-                &:hover
-                    color cgwiregreen
-
-            .navbar-lang-item.active
-                color dark-text-strong
-
-            .navbar-dropdown
-                background-color dark-surface
-                border-color dark-border
-                box-shadow 0 8px 24px rgba(0, 0, 0, 0.4)
-
-                .hosting-solutions
-                    border-left-color dark-border
-
-            .navbar-item.subnav-element:hover
-                background-color dark-surface-alt
-
-            .navbar .navbar-item.subnav-element.flexcolumn .subnav-text
-            .subnav-text
-                color dark-text-muted
-
-            .navbar-burger span
-                background-color dark-text-strong
-
-            // Keep the CTA green: the hover reset above would clear it.
-            .navbar-item.signup
-            .navbar-item.signup:hover
-                background-color cgwiregreen
-                color white
-
-            .navbar-item.signup:hover
-                background-color cgwiregreen-alt
-
-        // --- Trusted by marquee ---
-
-        .brand-wheel::before
-            background-image linear-gradient(to right, dark-bg 0%, rgba(dark-bg, 0) 100%)
-
-        .brand-wheel::after
-            background-image linear-gradient(to left, dark-bg 0%, rgba(dark-bg, 0) 100%)
-
-        .brand-wheel img
-        .supporter-list img
-            invert-logo()
-
-        // --- Home ---
-
-        .introduction-picture video
-            border-radius 2em
-
-        .landing-picture img
-            border-radius 1em
-
-        .screenshot
-        .community img
-            border-color dark-border-soft
-            box-shadow dark-shadow
-
-        .community .light-shot
-            display none
-
-        .production-success svg path
-            fill dark-bg
-
-        .production-type
-            background dark-blue
-            color dark-text
-
-        .features .tabs
-            background linear-gradient(0deg, dark-purple-surface 35%, dark-blue 100%)
-            border-color dark-purple-border
-
-            .tab
-                color dark-purple
-
-                &.selected
-                    border-bottom-color dark-purple
-
-        .number-block-title
-            color dark-text-muted
-
-        .testimonials-grid .lean-quote-text
-            background-color dark-blue
-            border-color dark-blue-border
-            color dark-text
-
-        .customer-story.landing-block
-            background dark-purple-surface
-            border-color dark-purple-border
-            color dark-text
-
-            .story-title
-            .section-subtitle
-                color dark-text-strong
-
-            p
-            p.interviewee
-                color dark-text
-
-            img
-                box-shadow none
-
-        .supporters
-            background dark-surface
-
-        // --- Footer ---
-
-        .footer
-            background dark-chrome
-            color dark-text
-
-            .footer-logo
-                invert-logo()
-
-            .footer-links a
-                color dark-text
-
-                &:hover
-                    color cgwiregreen
-
-            .footer-col--faq
-                border-top-color dark-border
-
-            .footer-mission
-            .footer-copyright
-            .footer-social a
-                color dark-text-muted
-
         // ====================================================================
         // SHARED ELEMENTS (Bulma and app.styl)
         // ====================================================================
@@ -365,12 +202,145 @@ html.has-dark-mode.theme-dark
         .community-link:hover
             background dark-green-surface
 
-        // --- FAQ (pricing page and others) ---
+        // --- Trusted by marquee ---
 
-        .content div.faq .question
+        .brand-wheel::before
+            background-image linear-gradient(to right, dark-bg 0%, rgba(dark-bg, 0) 100%)
+
+        .brand-wheel::after
+            background-image linear-gradient(to left, dark-bg 0%, rgba(dark-bg, 0) 100%)
+
+        .brand-wheel img
+        .supporter-list img
+            invert-logo()
+
+        // --- Header ---
+
+        header
+        header .navbar
+        header .navbar-menu
+        header .navbar-brand
+            background-color dark-chrome
+
+        header
+
+            .main-logo
+                invert-logo()
+
+            .navbar-link
+            .navbar-item
+            .navbar-link:hover
+            .navbar-item:hover
+                color dark-text-strong
+
+            .navbar-link:hover
+            .navbar-item:hover
+            a.navbar-item:focus-within
+            .navbar-item.has-dropdown:hover .navbar-link
+                background-color transparent
+
+            .navbar .navbar-item.top:hover .navbar-item-title
+            .navbar .navbar-item.is-hoverable.has-dropdown:hover .navbar-link:first-child .navbar-item-title
+                background dark-surface-alt
+
+            a.navbar-lang-item
+                color dark-text-muted
+
+            .navbar .navbar-item.top.theme-toggle
+                color dark-text-muted
+
+                &:hover
+                    color cgwiregreen
+
+            .navbar-lang-item.active
+                color dark-text-strong
+
+            .navbar-dropdown
+                background-color dark-surface
+                border-color dark-border
+                box-shadow 0 8px 24px rgba(0, 0, 0, 0.4)
+
+                .hosting-solutions
+                    border-left-color dark-border
+
+            .navbar-item.subnav-element:hover
+                background-color dark-surface-alt
+
+            .navbar .navbar-item.subnav-element.flexcolumn .subnav-text
+            .subnav-text
+                color dark-text-muted
+
+            .navbar-burger span
+                background-color dark-text-strong
+
+            // Keep the CTA green: the hover reset above would clear it.
+            .navbar-item.signup
+            .navbar-item.signup:hover
+                background-color cgwiregreen
+                color white
+
+            .navbar-item.signup:hover
+                background-color cgwiregreen-alt
+
+        // --- Home ---
+
+        .introduction-picture video
+            border-radius 2em
+
+        .landing-picture img
+            border-radius 1em
+
+        .screenshot
+        .community img
+            border-color dark-border-soft
+            box-shadow dark-shadow
+
+        .community .light-shot
+            display none
+
+        .production-success svg path
+            fill dark-bg
+
+        .production-type
             background dark-blue
+            color dark-text
+
+        .features .tabs
+            background linear-gradient(0deg, dark-purple-surface 35%, dark-blue 100%)
+            border-color dark-purple-border
+
+            .tab
+                color dark-purple
+
+                &.selected
+                    border-bottom-color dark-purple
+
+        .number-block-title
+            color dark-text-muted
+
+        .testimonials-grid .lean-quote-text
+            background-color dark-blue
             border-color dark-blue-border
             color dark-text
+
+        .customer-story.landing-block
+            background dark-purple-surface
+            border-color dark-purple-border
+            color dark-text
+
+            .story-title
+            .section-subtitle
+                color dark-text-strong
+
+            p
+            p.interviewee
+                color dark-text
+
+            img
+                box-shadow none
+
+        .supporters
+            background dark-surface
 
         // --- Pricing ---
 
@@ -394,6 +364,13 @@ html.has-dark-mode.theme-dark
             .pricing-features li
                 color dark-text-muted
                 border-bottom-color dark-border
+
+        // --- FAQ (pricing page and others) ---
+
+        .content div.faq .question
+            background dark-blue
+            border-color dark-blue-border
+            color dark-text
 
         // ====================================================================
         // SHARED COMPONENTS (scoped styles)
@@ -510,6 +487,29 @@ html.has-dark-mode.theme-dark
         // SearchForm.vue: the trigger hover is hard-coded light.
         .search-trigger:hover
             background dark-surface-alt
+
+        // --- Footer ---
+
+        .footer
+            background dark-chrome
+            color dark-text
+
+            .footer-logo
+                invert-logo()
+
+            .footer-links a
+                color dark-text
+
+                &:hover
+                    color cgwiregreen
+
+            .footer-col--faq
+                border-top-color dark-border
+
+            .footer-mission
+            .footer-copyright
+            .footer-social a
+                color dark-text-muted
 
         // ====================================================================
         // PAGES
