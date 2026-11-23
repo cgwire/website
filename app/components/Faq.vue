@@ -9,11 +9,16 @@ const isExpanded = ref(false)
 
 <template>
   <div class="faq-item">
-    <p class="question" @click="isExpanded = !isExpanded">
+    <button
+      type="button"
+      class="question"
+      :aria-expanded="isExpanded"
+      @click="isExpanded = !isExpanded"
+    >
       {{ question }}
       <span class="expand" v-if="!isExpanded">+</span>
       <span class="contract" v-else>−</span>
-    </p>
+    </button>
     <p class="answer" v-show="isExpanded">{{ answer }}</p>
   </div>
 </template>
@@ -22,6 +27,14 @@ const isExpanded = ref(false)
 .faq-item {
   max-width: 650px;
   margin: auto;
+}
+
+/* A real button for keyboard users: undo the native button look. */
+button.question {
+  display: block;
+  font: inherit;
+  text-align: left;
+  width: 100%;
 }
 
 .question {

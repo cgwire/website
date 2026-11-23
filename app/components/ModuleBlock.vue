@@ -1,28 +1,24 @@
 <template>
   <nuxt-link class="module-block" :to="$localePath(sectionKey)">
-    <section>
-      <div class="has-text-centered">
-        <NuxtImg
-          :src="'/images/illustrations/' + sectionKey + '.png'"
-          :alt="$t(`${sectionKey}.header.tagline`)"
-          format="webp"
-        />
-      </div>
-      <h3>
-        {{ $t(`${sectionKey}.header.tagline`) }}
-      </h3>
-      <ul>
-        <li class="module-description">
-          {{ $t(`${sectionKey}.${feature1Key}.title`) }}
-        </li>
-        <li class="module-description">
-          {{ $t(`${sectionKey}.${feature2Key}.title`) }}
-        </li>
-        <li class="module-description">
-          {{ $t(`${sectionKey}.${feature3Key}.title`) }}
-        </li>
-      </ul>
-    </section>
+    <div class="has-text-centered">
+      <NuxtImg
+        :src="'/images/illustrations/' + sectionKey + '.png'"
+        alt=""
+        format="webp"
+      />
+    </div>
+    <h3>
+      {{ $t(`${sectionKey}.header.tagline`) }}
+    </h3>
+    <ul>
+      <li
+        v-for="featureKey in [feature1Key, feature2Key, feature3Key]"
+        :key="featureKey"
+        class="module-description"
+      >
+        {{ $t(`${sectionKey}.${featureKey}.title`) }}
+      </li>
+    </ul>
   </nuxt-link>
 </template>
 

@@ -10,7 +10,12 @@
   <Teleport to="body">
     <Transition name="modal">
       <div v-if="isOpen" class="search-backdrop" @click.self="closeModal">
-        <div class="search-modal" role="dialog" aria-modal="true">
+        <div
+          class="search-modal"
+          role="dialog"
+          aria-modal="true"
+          :aria-label="t('search.placeholder')"
+        >
           <div class="search-modal__header">
             <search :size="20" class="search-modal__icon" />
             <input
@@ -37,27 +42,24 @@
                 {{ t('search.resultsCount', displayResults.length) }}
               </div>
               <ul class="search-results">
-                <NuxtLink
-                  v-for="r in displayResults"
-                  :key="r.item.id"
-                  class="search-result"
-                  :to="r.item.path"
-                >
-                  <span class="search-result__icon"
-                    ><file-text :size="16"
-                  /></span>
-                  <div class="search-result__content">
-                    <strong class="search-result__title">{{
-                      r.item.title
-                    }}</strong>
-                    <p
-                      v-if="r.firstSnippet"
-                      class="search-result__snippet"
-                      v-html="r.firstSnippet"
-                    />
-                  </div>
-                  <chevron-right :size="16" class="search-result__arrow" />
-                </NuxtLink>
+                <li v-for="r in displayResults" :key="r.item.id">
+                  <NuxtLink class="search-result" :to="r.item.path">
+                    <span class="search-result__icon"
+                      ><file-text :size="16"
+                    /></span>
+                    <div class="search-result__content">
+                      <strong class="search-result__title">{{
+                        r.item.title
+                      }}</strong>
+                      <p
+                        v-if="r.firstSnippet"
+                        class="search-result__snippet"
+                        v-html="r.firstSnippet"
+                      />
+                    </div>
+                    <chevron-right :size="16" class="search-result__arrow" />
+                  </NuxtLink>
+                </li>
               </ul>
             </template>
 

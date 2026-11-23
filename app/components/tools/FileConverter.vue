@@ -14,6 +14,8 @@
 
       <div
         class="drop-zone"
+        role="button"
+        tabindex="0"
         :class="{
           'drop-zone--active': isDragging,
           'drop-zone--has-file': selectedFile && status === 'idle',
@@ -24,23 +26,21 @@
         @dragover.prevent="isDragging = true"
         @dragleave.prevent="isDragging = false"
         @drop.prevent="onDrop"
-        @click="status !== 'converting' && $refs.fileInput.click()"
+        @click="openPicker"
+        @keydown.enter.self.prevent="openPicker"
+        @keydown.space.self.prevent="openPicker"
       >
         <input
           ref="fileInput"
           type="file"
           :accept="`video/${inputFormat},.${inputFormat}`"
-          style="display: none"
+          hidden
           @change="onFileSelected"
         />
 
         <template v-if="!selectedFile && status === 'idle'">
           <div class="drop-icon">
-            <svg
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg viewBox="0 0 48 48" fill="none">
               <rect
                 x="6"
                 y="10"
@@ -69,11 +69,7 @@
         <template v-else-if="selectedFile && status === 'idle'">
           <div class="file-info">
             <div class="file-icon">
-              <svg
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg viewBox="0 0 48 48" fill="none">
                 <rect
                   x="8"
                   y="4"
@@ -114,7 +110,12 @@
               <span class="file-name">{{ selectedFile.name }}</span>
               <span class="file-size">{{ formatSize(selectedFile.size) }}</span>
             </div>
-            <button class="remove-btn" @click.stop="resetState">
+            <button
+              type="button"
+              class="remove-btn"
+              :aria-label="$t('tools.converter.removeFile')"
+              @click.stop="resetState"
+            >
               <svg viewBox="0 0 20 20" fill="currentColor">
                 <path
                   fill-rule="evenodd"
@@ -124,105 +125,99 @@
               </svg>
             </button>
           </div>
-          <p class="drop-hint" style="margin-top: 8px">
+          <p class="drop-hint drop-hint--spaced">
             {{ $t('tools.converter.changeFile') }}
           </p>
         </template>
 
-        <template v-else-if="status === 'converting'">
-          <div class="converting-state">
-            <div class="spinner-ring">
-              <svg viewBox="0 0 56 56">
-                <circle
-                  cx="28"
-                  cy="28"
-                  r="24"
-                  stroke="#e2e8f0"
-                  stroke-width="4"
-                  fill="none"
-                />
-                <circle
-                  cx="28"
-                  cy="28"
-                  r="24"
-                  stroke="url(#grad)"
-                  stroke-width="4"
-                  fill="none"
-                  stroke-linecap="round"
-                  :stroke-dasharray="`${(2 * Math.PI * 24 * progress) / 100} ${2 * Math.PI * 24 * (1 - progress / 100)}`"
-                  stroke-dashoffset="37.7"
-                  style="transition: stroke-dasharray 0.3s ease"
-                />
-                <defs>
-                  <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#6366f1" />
-                    <stop offset="100%" stop-color="#8b5cf6" />
-                  </linearGradient>
-                </defs>
-              </svg>
-              <span class="progress-pct">{{ Math.round(progress) }}%</span>
-            </div>
-            <p class="converting-label">
-              {{ $t('tools.converter.converting') }}
-            </p>
-            <p class="converting-sub">{{ selectedFile?.name }}</p>
+        <div v-else-if="status === 'converting'" class="converting-state">
+          <div class="spinner-ring">
+            <svg viewBox="0 0 56 56">
+              <circle
+                cx="28"
+                cy="28"
+                r="24"
+                stroke="#e2e8f0"
+                stroke-width="4"
+                fill="none"
+              />
+              <circle
+                cx="28"
+                cy="28"
+                r="24"
+                :stroke="`url(#${gradId})`"
+                stroke-width="4"
+                fill="none"
+                stroke-linecap="round"
+                :stroke-dasharray="`${(2 * Math.PI * 24 * progress) / 100} ${2 * Math.PI * 24 * (1 - progress / 100)}`"
+                stroke-dashoffset="37.7"
+                class="progress-arc"
+              />
+              <defs>
+                <linearGradient :id="gradId" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#6366f1" />
+                  <stop offset="100%" stop-color="#8b5cf6" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span class="progress-pct">{{ Math.round(progress) }}%</span>
           </div>
-        </template>
+          <p class="converting-label">
+            {{ $t('tools.converter.converting') }}
+          </p>
+          <p class="converting-sub">{{ selectedFile?.name }}</p>
+        </div>
 
-        <template v-else-if="status === 'done'">
-          <div class="done-state">
-            <div class="check-circle">
-              <svg viewBox="0 0 48 48" fill="none">
-                <circle
-                  cx="24"
-                  cy="24"
-                  r="22"
-                  fill="#22c55e"
-                  fill-opacity="0.12"
-                  stroke="#22c55e"
-                  stroke-width="2.5"
-                />
-                <path
-                  d="M14 24l8 8 12-14"
-                  stroke="#22c55e"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <p class="done-label">{{ $t('tools.converter.done') }}</p>
-            <p class="done-sub">
-              {{ outputName }} - {{ formatSize(outputSize) }}
-            </p>
+        <div v-else-if="status === 'done'" class="done-state">
+          <div class="check-circle">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle
+                cx="24"
+                cy="24"
+                r="22"
+                fill="#22c55e"
+                fill-opacity="0.12"
+                stroke="#22c55e"
+                stroke-width="2.5"
+              />
+              <path
+                d="M14 24l8 8 12-14"
+                stroke="#22c55e"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
-        </template>
+          <p class="done-label">{{ $t('tools.converter.done') }}</p>
+          <p class="done-sub">
+            {{ outputName }} - {{ formatSize(outputSize) }}
+          </p>
+        </div>
 
-        <template v-else-if="status === 'error'">
-          <div class="error-state">
-            <div class="error-icon">
-              <svg viewBox="0 0 48 48" fill="none">
-                <circle
-                  cx="24"
-                  cy="24"
-                  r="22"
-                  fill="#ef4444"
-                  fill-opacity="0.10"
-                  stroke="#ef4444"
-                  stroke-width="2.5"
-                />
-                <path
-                  d="M24 15v10M24 31v2"
-                  stroke="#ef4444"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </div>
-            <p class="error-label">{{ $t('tools.converter.failed') }}</p>
-            <p class="error-sub">{{ errorMessage }}</p>
+        <div v-else-if="status === 'error'" class="error-state">
+          <div class="error-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle
+                cx="24"
+                cy="24"
+                r="22"
+                fill="#ef4444"
+                fill-opacity="0.10"
+                stroke="#ef4444"
+                stroke-width="2.5"
+              />
+              <path
+                d="M24 15v10M24 31v2"
+                stroke="#ef4444"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
           </div>
-        </template>
+          <p class="error-label">{{ $t('tools.converter.failed') }}</p>
+          <p class="error-sub">{{ errorMessage }}</p>
+        </div>
       </div>
 
       <div class="actions">
@@ -231,11 +226,7 @@
           class="btn btn--primary"
           @click="convert"
         >
-          <svg
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            style="width: 18px; height: 18px"
-          >
+          <svg viewBox="0 0 20 20" fill="currentColor">
             <path
               fill-rule="evenodd"
               d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
@@ -247,11 +238,7 @@
 
         <template v-if="status === 'done'">
           <button class="btn btn--primary" @click="downloadOutput">
-            <svg
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              style="width: 18px; height: 18px"
-            >
+            <svg viewBox="0 0 20 20" fill="currentColor">
               <path
                 fill-rule="evenodd"
                 d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
@@ -265,11 +252,13 @@
           </button>
         </template>
 
-        <template v-if="status === 'error'">
-          <button class="btn btn--primary" @click="resetState">
-            {{ $t('tools.converter.tryAgain') }}
-          </button>
-        </template>
+        <button
+          v-if="status === 'error'"
+          class="btn btn--primary"
+          @click="resetState"
+        >
+          {{ $t('tools.converter.tryAgain') }}
+        </button>
       </div>
 
       <p class="footer-note">
@@ -280,7 +269,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, useId } from 'vue'
 import {
   Input,
   Output,
@@ -302,7 +291,11 @@ const props = defineProps({
   outputFormat: String
 })
 
+// Unique per instance: two converters on one page must not share a gradient id.
+const gradId = useId()
 const fileInput = ref(null)
+const openPicker = () =>
+  status.value !== 'converting' && fileInput.value.click()
 const selectedFile = ref(null)
 const status = ref('idle') // idle | converting | done | error
 const progress = ref(0)
@@ -612,6 +605,14 @@ function downloadOutput() {
   margin: 0;
 }
 
+.drop-hint--spaced {
+  margin-top: 8px;
+}
+
+.progress-arc {
+  transition: stroke-dasharray 0.3s ease;
+}
+
 /* File info row */
 .file-info {
   display: flex;
@@ -801,6 +802,11 @@ function downloadOutput() {
   transition:
     opacity 0.15s,
     transform 0.1s;
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
 }
 
 .btn:active {

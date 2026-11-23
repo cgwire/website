@@ -332,7 +332,7 @@
         <img
           class="carbon-promo-img"
           src="~/assets/images/carbon-report/carbon-header-illustration.png"
-          alt="Carbon report illustration"
+          alt=""
         />
       </div>
     </section>

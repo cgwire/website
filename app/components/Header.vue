@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar" role="navigation" arial-label="dropdown navigation">
+    <nav class="navbar" :aria-label="$t('header.navigation')">
       <div class="navbar-brand">
         <nuxt-link class="navbar-item" :to="$localePath('index')">
           <img
@@ -13,59 +13,60 @@
         <a
           href="https://discord.gg/kitsu-community"
           target="_blank"
+          rel="noopener"
           class="discord-mobile"
           aria-label="Discord"
         >
-          <img width="26" src="~/assets/images/icons/discord.svg" alt="Discord" />
+          <img
+            width="26"
+            src="~/assets/images/icons/discord.svg"
+            alt="Discord"
+          />
         </a>
-        <div
-          @click="() => toggleNav()"
-          class="burger navbar-burger"
-          data-target="top-menu"
+        <button
+          type="button"
+          @click="toggleNav"
+          class="navbar-burger"
+          :aria-label="$t('header.menu')"
+          :aria-expanded="navOn"
+          aria-controls="top-menu"
         >
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </div>
-      <div
-        :class="{
-          'navbar-menu': true,
-          'is-active': navOn
-        }"
-        id="top-menu"
-      >
-        <div class="navbar-start flexrow locales">
+      <div class="navbar-menu" :class="{ 'is-active': navOn }" id="top-menu">
+        <div class="navbar-start flexrow">
           <LanguageSwitcher />
           <a
             href="https://discord.gg/kitsu-community"
             target="_blank"
-            class="navbar-item top discord desktop"
+            rel="noopener"
+            class="navbar-item top discord"
           >
             <span class="navbar-item-title">
-              <img width="24" src="~/assets/images/icons/discord.svg" alt="Discord" />
+              <img
+                width="24"
+                src="~/assets/images/icons/discord.svg"
+                alt="Discord"
+              />
             </span>
           </a>
           <ThemeToggle />
         </div>
 
         <nuxt-link
-          :class="{
-            'navbar-item': true,
-            kitsu: true,
-            top: true,
-            active: isActivePage(['kitsu'])
-          }"
+          class="navbar-item kitsu top"
+          :class="{ active: isActivePage(['kitsu']) }"
           :to="$localePath('kitsu')"
         >
           <span class="navbar-item-title"> Kitsu </span>
         </nuxt-link>
 
         <div
+          class="navbar-item has-dropdown is-hoverable"
           :class="{
-            'navbar-item': true,
-            'has-dropdown': true,
-            'is-hoverable': true,
             active: isActivePage([
               'team-collaboration',
               'production-tracker',
@@ -81,17 +82,17 @@
           @mouseover="solutionMenuOn = true"
           @mouseout="solutionMenuOn = false"
         >
-          <a class="navbar-link" @click="solutionMenuOn = !solutionMenuOn">
+          <button
+            type="button"
+            class="navbar-link"
+            :aria-expanded="solutionMenuOn"
+            @click="solutionMenuOn = !solutionMenuOn"
+          >
             <span class="navbar-item-title">
               {{ $t('header.title.solutions') }}
             </span>
-          </a>
-          <div
-            :class="{
-              'navbar-dropdown': true,
-              hidden: !solutionMenuOn
-            }"
-          >
+          </button>
+          <div class="navbar-dropdown" :class="{ hidden: !solutionMenuOn }">
             <div class="columns">
               <div class="column">
                 <SubNavElement
@@ -136,10 +137,8 @@
         </div>
 
         <div
+          class="navbar-item has-dropdown is-hoverable"
           :class="{
-            'navbar-item': true,
-            'has-dropdown': true,
-            'is-hoverable': true,
             active: isActivePage([
               'studios',
               'productions',
@@ -151,18 +150,18 @@
           @mouseover="useCaseMenuOn = true"
           @mouseout="useCaseMenuOn = false"
         >
-          <a class="navbar-link" @click="useCaseMenuOn = !useCaseMenuOn">
+          <button
+            type="button"
+            class="navbar-link"
+            :aria-expanded="useCaseMenuOn"
+            @click="useCaseMenuOn = !useCaseMenuOn"
+          >
             <span class="navbar-item-title">
               {{ $t('header.title.usecase') }}
             </span>
-          </a>
+          </button>
 
-          <div
-            :class="{
-              'navbar-dropdown': true,
-              hidden: !useCaseMenuOn
-            }"
-          >
+          <div class="navbar-dropdown" :class="{ hidden: !useCaseMenuOn }">
             <SubNavElement element-key="studios" />
             <SubNavElement element-key="productions" />
             <SubNavElement element-key="customer-stories" />
@@ -177,27 +176,25 @@
         </div>
 
         <div
+          class="navbar-item has-dropdown is-hoverable"
           :class="{
-            'navbar-item': true,
-            'has-dropdown': true,
-            'is-hoverable': true,
             active: isActivePage(['community', 'spreadsheets'])
           }"
           @mouseover="resourceMenuOn = true"
           @mouseout="resourceMenuOn = false"
         >
-          <a class="navbar-link" @click="resourceMenuOn = !resourceMenuOn">
+          <button
+            type="button"
+            class="navbar-link"
+            :aria-expanded="resourceMenuOn"
+            @click="resourceMenuOn = !resourceMenuOn"
+          >
             <span class="navbar-item-title">
               {{ $t('header.title.resources') }}
             </span>
-          </a>
+          </button>
 
-          <div
-            :class="{
-              'navbar-dropdown': true,
-              hidden: !resourceMenuOn
-            }"
-          >
+          <div class="navbar-dropdown" :class="{ hidden: !resourceMenuOn }">
             <SubNavElement element-key="blog" link="https://blog.cg-wire.com" />
             <SubNavElement
               element-key="tutorials"
@@ -223,11 +220,8 @@
         </div>
 
         <nuxt-link
-          :class="{
-            'navbar-item': true,
-            top: true,
-            active: isActivePage(['pricing'])
-          }"
+          class="navbar-item top"
+          :class="{ active: isActivePage(['pricing']) }"
           :to="$localePath('pricing')"
         >
           <span class="navbar-item-title">
@@ -253,11 +247,6 @@
         </div>
       </div>
     </nav>
-    <!--div class="summit-banner" v-if="!route.name.startsWith('kitsu-summit')">
-    <a href="https://cg-wire.com/kitsu-summit" class="has-text-centered summit-link">
-      Join the Kitsu Summit 2026 on February 12th!
-    </a>
-  </div-->
   </header>
   <div class="header-padding"></div>
 </template>
@@ -322,19 +311,15 @@ div.body header .navbar .navbar-item.discord.top:hover .navbar-item-title
     padding-bottom 0
     padding-top 0
 
-.summit-banner
-  background-color #ffdd57
-  color #363636
-  font-weight bold
-  padding 0.5rem
-  font-size 1rem
-  text-align center
-
-  .summit-link
-    color #363636
-    text-decoration underline
-    text-align center
-    width 100%
+// The dropdown triggers are buttons (keyboard reachable): drop the native
+// button look so they render like the Bulma navbar links they replace.
+button.navbar-link
+  appearance none
+  background none
+  border 0
+  font inherit
+  text-align left
+  width 100%
 
 @media(max-width: 1215px)
   .discord

@@ -1,17 +1,22 @@
 <template>
-  <nuxt-link
+  <component
+    :is="link ? 'a' : NuxtLink"
     class="navbar-item flexrow subnav-element"
-    :to="
-      $localePath({
-        name: pathObject ?? elementKey,
-        params: pathObject ? { slug: $t(`slugs.${elementKey}`) } : {}
-      })
+    v-bind="
+      link
+        ? { href: link, target: '_blank', rel: 'noopener' }
+        : {
+            to: $localePath({
+              name: pathObject ?? elementKey,
+              params: pathObject ? { slug: $t(`slugs.${elementKey}`) } : {}
+            })
+          }
     "
-    v-if="link === ''"
   >
     <img
-      class="flexrow-item tablet"
+      class="flexrow-item"
       :src="'/images/icons/' + elementKey + '.' + imageExt"
+      alt=""
     />
     <div class="flexrow-item flexcolumn text">
       <span class="flexrow-item subnav-title">
@@ -21,30 +26,12 @@
         {{ $t('header.text.' + elementKey) }}
       </span>
     </div>
-  </nuxt-link>
-  <a
-    class="navbar-item flexrow subnav-element"
-    :href="link"
-    target="_blank"
-    v-else
-  >
-    <img
-      class="flexrow-item tablet"
-      :src="'/images/icons/' + elementKey + '.' + imageExt"
-    />
-
-    <div class="flexrow-item flexcolumn text">
-      <span class="flexrow-item subnav-title">
-        {{ $t('header.title.' + elementKey) }}
-      </span>
-      <span class="flexrow-item subnav-text">
-        {{ $t('header.text.' + elementKey) }}
-      </span>
-    </div>
-  </a>
+  </component>
 </template>
 
 <script setup>
+import { NuxtLink } from '#components'
+
 const props = defineProps({
   elementKey: String,
   pathObject: String,

@@ -87,7 +87,7 @@
             <a href="https://tvpaint.com/" target="_blank">
               <NuxtImg
                 src="/images/summit/logo-tvpaint.png"
-                alt="Wizz"
+                alt="TVPaint"
                 format="webp"
               />
             </a>
@@ -113,7 +113,7 @@
             <div class="conference-content">
               <NuxtImg
                 :src="'/images/summit/' + conference.file"
-                :alt="conference.speaker + 'photo'"
+                :alt="conference.speaker"
                 v-if="conference.file"
               />
               <p class="conference-speaker">
@@ -333,6 +333,7 @@
             <img
               width="300"
               src="~/assets/images/community/citizen.jpg"
+              alt=""
             /><br />
             Citizen Hotel - 100€ /
             {{ page.meta.access.night }}
@@ -341,6 +342,7 @@
             <img
               width="300"
               src="~/assets/images/community/le-robinet-dor.jpg"
+              alt=""
             /><br />
             Le Robinet Dor - 200€ /
             {{ page.meta.access.night }}
@@ -349,6 +351,7 @@
             <img
               width="300"
               src="~/assets/images/community/generator.jpg"
+              alt=""
             /><br />
             Generator Hostel - 20€-100€ /
             {{ page.meta.access.night }}
