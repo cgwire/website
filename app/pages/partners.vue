@@ -406,6 +406,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
   margin 0 0 14px
   line-height 1.65
 
+// !important: ".partners-body p" above is more specific and sets both.
 .partners-emph
   font-size 1.15rem !important
   padding 18px 22px
@@ -653,7 +654,7 @@ paper-bg = var(--pg-bg, #EFEEEA)
   padding 1em 2em
   border-radius 2em
   background cgwiregreen
-  color #fff !important
+  color #fff
   text-decoration none
   transition transform .12s ease, background .15s, box-shadow .15s
   box-shadow 0 6px 18px rgba(0, 135, 50, 0.25)

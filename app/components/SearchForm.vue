@@ -216,13 +216,10 @@ onUnmounted(() => {
   width: 50px;
   font-size: 0.875rem;
   cursor: pointer;
-  transition:
-    border-color 0.15s,
-    background 0.15s;
+  transition: background 0.15s;
 }
 .search-trigger:hover {
   background: #f4f4f4;
-  border-color: var(--color-border-strong, #a1a1aa);
   color: var(--color-text, #18181b);
 }
 

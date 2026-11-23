@@ -1011,7 +1011,7 @@ text-light = var(--pg-text-light, #868686)
 
 // Light-text variants, swapped in by dark.styl.
 html:not(.has-dark-mode.theme-dark) .dark-graph
-  display: none !important
+  display: none
 
 .chart-legend
   display: flex
@@ -1037,7 +1037,7 @@ html:not(.has-dark-mode.theme-dark) .dark-graph
     margin-right: 0.5rem
 
   .chart-legend-color-meal
-    background-color: var(--pg-blue, #D4E5F7)
+    background-color: light-blue
 
   .chart-legend-color-immobilisation
     background-color: #44BCC6
@@ -1236,8 +1236,6 @@ html:not(.has-dark-mode.theme-dark) .dark-graph
 
     .hero-illustration
       display: block
-      margin-top: 2rem
-      margin-bottom: 2rem
       width: 100%
       max-width: 200px
       margin: auto

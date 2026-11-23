@@ -26,7 +26,6 @@ const isExpanded = ref(false)
 
 .question {
   background: rgba(0, 178, 66, 0.1);
-  border: 1px solid #ccdee f;
   border-radius: 8px;
   color: #333;
   font-size: 1em;

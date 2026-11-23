@@ -355,10 +355,6 @@ div.body
       .main-title
         padding 2em
 
-    .modules
-      .small-block
-        margin-bottom 1em
-
     .stories
         flex-direction column
 

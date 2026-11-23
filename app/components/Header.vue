@@ -297,8 +297,6 @@ watch(
 .hidden
   display none
 
-html body header .navigation .navbar-menu .navbar-item .navbar-dropdown.hidden,
-html body header .navigation .navbar-menu .navbar-item.is-hoverable:focus .navbar-dropdowon .navbar-dropdown.hidden,
 .navbar-item.is-active .navbar-dropdown.hidden,
 .navbar-item.is-hoverable:focus .navbar-dropdown.hidden,
 .navbar-item.is-hoverable:focus-within .navbar-dropdown.hidden,
