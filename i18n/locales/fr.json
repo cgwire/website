@@ -296,5 +296,14 @@
   },
   "trial": {
     "talk": "Contactez-nous"
+  },
+  "seo": {
+    "customerStories": "Comment des studios d'animation, de VFX et de jeu vidéo mènent leurs productions avec Kitsu, racontés par leurs producteurs, superviseurs et équipes pipeline.",
+    "contact": "Contactez l'équipe CGWire : adresses email des ventes et du support, adresse et identifiants de la société.",
+    "studios": "Studios d'animation, de VFX, de jeu vidéo et écoles qui mènent leurs productions avec Kitsu, partout dans le monde.",
+    "productions": "Longs métrages, séries et courts métrages réalisés avec Kitsu, le suivi de production développé par CGWire.",
+    "terms": "Les conditions d'utilisation qui s'appliquent au service d'hébergement Kitsu fourni par CGWire.",
+    "privacy": "Les données personnelles que CGWire collecte sur son site et ses services, leur usage, leur base légale et comment exercer vos droits.",
+    "selfHosted": "Faites tourner Kitsu comme il convient à votre studio : auto-hébergé gratuitement, Kitsu Studio Partners, ou le cloud géré."
   }
 }

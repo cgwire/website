@@ -36,7 +36,7 @@ const { t } = useI18n()
 
 useSEO({
   title: 'CGWire | ' + t('productions.title'),
-  description: t('productions.subtitle')
+  description: t('seo.productions')
 })
 </script>
 

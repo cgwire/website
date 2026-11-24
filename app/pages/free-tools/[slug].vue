@@ -30,6 +30,6 @@ if (!page.value) {
 
 useSEO({
   title: `CGWire | ${page.value.title}`,
-  description: page.value.meta.subtitle || t('tools.description')
+  description: page.value.description || t('tools.description')
 })
 </script>

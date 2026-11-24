@@ -69,7 +69,7 @@ const CONTACT_CTA_PAGES = [
 const hasContactCta = CONTACT_CTA_PAGES.includes(pageKey)
 
 useSEO({
-  title: 'CGWire | Kitsu / ' + page.value.meta.name,
+  title: 'CGWire | Kitsu / ' + page.value.meta.header.tagline,
   description: page.value.meta.header.explanation,
   imagePath: page.value.meta.image
 })

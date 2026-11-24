@@ -11,7 +11,7 @@
 <script setup>
 import { features } from '~/data/self-hosted-features'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const { data: page } = await useAsyncData(
   `self-hosted-${locale.value}`,
@@ -26,7 +26,6 @@ const data = { features }
 
 useSEO({
   title: 'CGWire | ' + page.value.title,
-  description:
-    'Run Kitsu the way it fits your studio: self-hosted free, Kitsu Studio Partners, or the managed cloud.'
+  description: t('seo.selfHosted')
 })
 </script>

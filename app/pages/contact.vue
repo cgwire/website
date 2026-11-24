@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const slug = ref('contact')
 
 const { pageQuery } = usePage(locale, slug)
@@ -43,7 +43,7 @@ const { data: page } = await useAsyncData(
 
 useSEO({
   title: 'CGWire | ' + page.value.title,
-  description: page.value.title,
+  description: t('seo.contact'),
   imagePath: 'logo.png'
 })
 </script>

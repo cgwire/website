@@ -254,5 +254,14 @@
   },
   "trial": {
     "talk": "Talk to us"
+  },
+  "seo": {
+    "customerStories": "How animation, VFX and game studios run their productions with Kitsu, told by their producers, supervisors and pipeline teams.",
+    "contact": "Contact the CGWire team: sales and support email addresses, company address and identifiers.",
+    "studios": "Animation, VFX and game studios and schools around the world that run their productions on Kitsu.",
+    "productions": "Feature films, series and shorts made with Kitsu, the production tracker built by CGWire.",
+    "terms": "The terms of service that apply when you use the Kitsu hosting service provided by CGWire.",
+    "privacy": "What personal data CGWire collects on its website and services, how it is used, on which legal basis, and how to exercise your rights.",
+    "selfHosted": "Run Kitsu the way it fits your studio: self-hosted free, Kitsu Studio Partners, or the managed cloud."
   }
 }

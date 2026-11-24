@@ -1,8 +1,8 @@
 <script setup>
 const head = useLocaleHead()
-// og:locale of the current language, for the pages that do not call
-// useSetI18nParams.
-useHead(() => ({ meta: head.value.meta }))
+// og:locale, canonical and hreflang for the pages that do not call
+// useSetI18nParams (same keys, so the dynamic pages override them).
+useHead(() => ({ meta: head.value.meta, link: head.value.link }))
 useDarkMode()
 </script>
 

@@ -88,7 +88,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const slug = ref('customer-stories')
 
 const { pageQuery } = usePage(locale, slug)
@@ -101,7 +101,7 @@ const { data: page } = await useAsyncData(
 
 useSEO({
   title: 'CGWire | Kitsu / ' + page.value.meta.header.title,
-  description: 'Feature Films, TV Series, VFX Studios',
+  description: t('seo.customerStories'),
   imagePath: 'photo-customer-story-fost.jpg'
 })
 </script>
