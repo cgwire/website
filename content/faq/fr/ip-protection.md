@@ -1,6 +1,7 @@
 ---
 title: "Peut-on mettre notre IP dans le cloud ?"
 slug: "ip-protection"
+description: "Comment Kitsu protège votre IP dans le cloud : propriété des données, hébergement chiffré sous droit européen, accès par rôle et auto-hébergement si besoin."
 subtitle: "Un regard pratique sur la façon dont Kitsu protège votre travail sans ralentir votre pipeline"
 summary: "Les studios n'ont pas à choisir entre la commodité du cloud et le contrôle de leur IP. Kitsu offre une pleine propriété des données, un hébergement chiffré soumis aux lois européennes de protection des données, des contrôles d'accès granulaires basés sur les rôles, ainsi que la possibilité d'un auto-hébergement sur site pour une isolation réseau complète. Étant open source, il n'y a aucune boîte noire — et partir reste toujours sans friction."
 image: "security-kitsu-cloud.png"

@@ -1,6 +1,7 @@
 ---
 title: "Changer d'outil de suivi de production semble risqué"
 slug: "migration"
+description: "Migrer votre studio vers Kitsu sans risque : un projet à la fois, import des données par CSV ou API, les deux outils en parallèle, avec l'aide de CGWire."
 subtitle: "Une approche pratique pour migrer votre studio vers Kitsu"
 summary: "Changer d'outil de suivi de production en cours de production semble risqué, mais Kitsu est conçu pour rendre la migration sûre et progressive. Les studios peuvent effectuer la transition projet par projet ou département par département, importer les données existantes via CSV ou API, et même faire fonctionner les deux systèmes en parallèle jusqu'à être pleinement confiants. CGWire accompagne les équipes tout au long du processus — de l'analyse de votre configuration actuelle à la formation par rôle et à l'intégration dans le pipeline — avec une migration qui se conclut généralement en quelques jours à quelques semaines. En tant que plateforme open source dotée d'une API REST et d'un client Python, Kitsu s'intègre dans vos pipelines existants sans imposer de refonte, laissant aux studios un contrôle total sur leurs données et leur infrastructure."
 image: "migration-kitsu-cloud.png"

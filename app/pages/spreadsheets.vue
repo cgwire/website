@@ -164,7 +164,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const slug = ref('spreadsheets')
 
 const { pageQuery } = usePage(locale, slug)
@@ -177,7 +177,7 @@ const { data: page } = await useAsyncData(
 
 useSEO({
   title: 'CGWire | Kitsu / ' + page.value.title,
-  description: page.value.meta.explanationOne,
+  description: t('seo.spreadsheets'),
   imagePath: 'spreadsheet-planning-short.png'
 })
 </script>

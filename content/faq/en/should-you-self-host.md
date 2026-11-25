@@ -1,6 +1,7 @@
 ---
 title: "Should You Self-Host?"
 slug: "should-you-self-host"
+description: "What self-hosting Kitsu really costs a 50-person studio over two years, the risks that averages hide, and which option fits your team."
 subtitle: ""
 summary: "For a 50-person studio, the question is not whether a competent IT person can keep Kitsu running on average. It is what happens in the bad weeks. Serious self-hosting at that size means two trained administrators, tested restores, planned upgrades, and storage monitoring: an estimated 300 to 600 hours of operations over two years, plus hardware. Kitsu Cloud on the Production plan costs €36,000 over the same period. Once those hours are valued at the real cost of qualified staff, a serious self-hosted setup usually costs more than the subscription. The cost of self-hosting lies less in the average than in the variance: a failed migration, a backup that was never restored, an administrator who leaves, a full preview disk, or an outage two weeks before delivery. The page documents these scenarios and gives a three-branch decision: no IT means Cloud; one administrator means Partners at minimum and an accepted dependency on that person; two administrators with documented processes make self-hosting viable, with Partners recommended. Cloud is insurance against variance, not a saving on IT hours."
 image: "self-hosting-cost-kitsu.png"

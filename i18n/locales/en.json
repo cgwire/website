@@ -262,6 +262,25 @@
     "productions": "Feature films, series and shorts made with Kitsu, the production tracker built by CGWire.",
     "terms": "The terms of service that apply when you use the Kitsu hosting service provided by CGWire.",
     "privacy": "What personal data CGWire collects on its website and services, how it is used, on which legal basis, and how to exercise your rights.",
-    "selfHosted": "Run Kitsu the way it fits your studio: self-hosted free, Kitsu Studio Partners, or the managed cloud."
+    "selfHosted": "Run Kitsu the way it fits your studio: self-hosted free, Kitsu Studio Partners, or the managed cloud.",
+    "home": "CGWire develops Kitsu, the open-source production tracker for animation, VFX, and game studios that brings teams and tools together in a single place.",
+    "kitsu": "Kitsu is a collaboration platform for animation, VFX, and game studios. It empowers your teams to deliver higher-quality content.",
+    "about": "CGWire builds Kitsu to help animation, VFX and game studios deliver high-end visuals while keeping production work enjoyable. Meet the team behind it.",
+    "community": "Join the Kitsu community: TDs and production managers from studios around the world share tips and best practices, online and in person.",
+    "spreadsheets": "Free, production-ready spreadsheet templates for animation studios, under a Creative Commons license. Use them to start your workflow or for a whole production.",
+    "integrations": "Connect Kitsu to your pipeline: publish from your artists' DCC tools, send notifications to your chat apps, and extend your workflow with the API clients.",
+    "summit": "The first Kitsu Summit: production professionals, technical directors and studio managers share how they use Kitsu on animation and game productions.",
+    "carbon2024": "CGWire's 2024 carbon report: our main emission sources, where we can still improve, and the concrete actions we are taking to reduce our footprint.",
+    "carbon2025": "CGWire's 2025 carbon report: emissions down 40% from 2024, mostly because we flew less, plus our main emission sources and the actions under way.",
+    "features": {
+      "casting-management": "Kitsu gives every shot a structured casting breakdown, so scene builders know what is ready, what is missing and what to do next, with no email digging.",
+      "elite-hosting": "A dedicated Kitsu instance hosted on OVH in the EU or your region, run end to end by CGWire: security, uptime, performance and updates handled for you.",
+      "production-tracker": "Scheduling, time tracking, quota monitoring and budget forecasting in Kitsu, to catch production issues early and bring accurate data to every meeting.",
+      "review-engine": "Centralize reviews in Kitsu: precise, contextual feedback on every submission from teams and clients, with versions, decisions and history kept together.",
+      "studio-database": "Kitsu's HTTP API makes every asset, shot, task and assignment queryable from any tool in your studio, so your pipeline talks to a single place.",
+      "tailor-made-architecture": "CGWire deploys and runs Kitsu on your hardware or an isolated cloud, for studios that need data sovereignty, strict access control and production isolation.",
+      "team-collaboration": "Kitsu brings tasks, previews and feedback into one workflow, so artists, supervisors and directors work from the same source of truth, on site or remote.",
+      "top-notch-support": "Answers in 30 minutes on average through in-app chat, from a team of former production managers. Every conversation is saved and tracked."
+    }
   }
 }

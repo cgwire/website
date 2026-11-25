@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 
 const { slug } = await useI18NSlug()
 
@@ -70,7 +70,7 @@ const hasContactCta = CONTACT_CTA_PAGES.includes(pageKey)
 
 useSEO({
   title: 'CGWire | Kitsu / ' + page.value.meta.header.tagline,
-  description: page.value.meta.header.explanation,
+  description: t(`seo.features.${pageKey}`),
   imagePath: page.value.meta.image
 })
 </script>

@@ -1,6 +1,7 @@
 ---
 title: "Can Kitsu Scale With Us?"
 slug: "can-kitsu-scale-with-us"
+description: "Kitsu grows with your studio, from a small team on a first short to several series at once, with cross-project dashboards, permissions and custom workflows."
 subtitle: ""
 summary: "Kitsu is a production management platform built to scale with animation studios at every stage of growth — from small teams on their first short film to large studios running multiple simultaneous series. It eliminates the need for cobbled-together spreadsheets and chat threads by offering clean task tracking for small teams and advanced features like multi-project dashboards, granular permissions, custom workflows, and API/DCC integrations for larger productions. A cross-project view helps producers track progress, spot bottlenecks, and reallocate resources without switching tools. Studios can choose from self-hosted, cloud (SaaS), or on-premise deployment, and move between them as needs evolve with support from CGWire's ops team. As an open-source platform with no vendor lock-in, Kitsu is trusted by studios in 30+ countries — making it a single tool that grows alongside any production pipeline."
 image: "change-management-kitsu.png"

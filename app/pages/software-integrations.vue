@@ -61,7 +61,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const slug = ref('software-integrations')
 
 const { pageQuery } = usePage(locale, slug)
@@ -96,7 +96,7 @@ const authorAvatar = author =>
 
 useSEO({
   title: 'CGWire | Kitsu / ' + page.value.meta.header.tagline,
-  description: page.value.meta.header.explanation,
+  description: t('seo.integrations'),
   imagePath: 'software-integrations.png'
 })
 </script>

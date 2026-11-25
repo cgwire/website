@@ -1,6 +1,7 @@
 ---
 title: "Can Our Team Adopt Another Tool?"
 slug: "change-management"
+description: "How Kitsu gets adopted in real productions: a view for each role, onboarding by role, and a gradual rollout that does not stop the work in progress."
 subtitle: "How Kitsu Makes Adoption Work in Real Productions"
 summary: "Kitsu is a production tracking tool built specifically for animation, VFX, and game studios that solves the common problem of team adoption by designing around real production workflows rather than forcing teams to adapt. It reduces friction for every role — artists get clear task lists, supervisors review directly in playlists, and producers track progress in one place — while acting as a single source of truth that replaces disconnected tools. With role-specific onboarding, a flexible API for pipeline integration, and a pragmatic rollout approach, Kitsu is built so that adoption isn't an afterthought but a core design principle."
 image: "change-management-kitsu.png"

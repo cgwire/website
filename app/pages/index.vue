@@ -522,7 +522,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const slug = ref('index')
 
 const { pageQuery } = usePage(locale, slug)
@@ -535,7 +535,7 @@ const { data: page } = await useAsyncData(
 
 useSEO({
   title: 'CGWire | ' + page.value.title,
-  description: page.value.meta.main.subtitle,
+  description: t('seo.home'),
   imagePath: 'teaser.png'
 })
 

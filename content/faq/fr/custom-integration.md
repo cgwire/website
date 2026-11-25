@@ -1,6 +1,7 @@
 ---
 title: "Est-ce compatible avec notre pipeline ?"
 slug: "custom-integration"
+description: "Kitsu s'intègre à votre pipeline existant : API REST, SDK Python, webhooks et publication depuis vos logiciels, sans reconstruire ce qui fonctionne déjà."
 subtitle: "Comment Kitsu s'adapte aux pipelines de production réels"
 summary: "Kitsu est un outil de suivi de production flexible, conçu pour s'intégrer harmonieusement aux pipelines d'animation existants plutôt que de les remplacer. Il centralise les données de production — assets, plans, tâches, validations et métriques — via une API REST et un SDK Python, permettant aux studios d'automatiser les workflows, de synchroniser les outils et de réduire les tâches manuelles. Les artistes peuvent publier directement depuis leurs outils DCC tandis que les TDs de pipeline construisent des intégrations personnalisées sans perturber le travail créatif. Avec la prise en charge des webhooks, des workflows configurables, de la collaboration en temps réel et une transparence open-source, Kitsu s'adapte aux studios de toutes tailles et structures, servant de source de vérité partagée au cœur de la production."
 image: "custom-integration-kitsu.png"

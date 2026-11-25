@@ -1,6 +1,7 @@
 ---
 title: "Pourquoi ne pas continuer à utiliser des tableurs ou Notion ?"
 slug: "why-not-just-use-spreadsheets-or-notion"
+description: "Là où les tableurs et Notion atteignent leurs limites en animation et VFX, des statuts à la review des médias, et ce qu'apporte un outil dédié comme Kitsu."
 subtitle: ""
 summary: "Kitsu est un outil de gestion de production conçu pour remplacer l'assemblage hétéroclite d'outils génériques — tableurs, Notion et coûteuses licences ShotGrid — sur lesquels s'appuient habituellement les studios d'animation et de VFX. Alors que les tableurs manquent de suivi de statut en temps réel, de contrôle de version et de cartographie des dépendances, que Notion présente des lacunes en matière de révision de médias et de visibilité sur le pipeline en temps réel, ShotGrid implique des coûts de licence élevés et une grande complexité. Ces outils « gratuits » ou familiers engendrent des coûts cachés : heures supplémentaires des coordinateurs, mauvaise communication, dépendances manquées et workflows de révision chaotiques. Kitsu comble ces lacunes grâce au versionnage automatique, au suivi des dépendances entre assets et plans, à des workflows d'approbation structurés et à une visibilité adaptée à chaque rôle — le tout disponible en open source sans coût initial, avec une API complète pour l'intégration au pipeline."
 image: "change-management-kitsu.png"

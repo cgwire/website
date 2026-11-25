@@ -1,6 +1,7 @@
 ---
 title: "Kitsu peut-il évoluer avec nous ?"
 slug: "can-kitsu-scale-with-us"
+description: "Kitsu grandit avec votre studio, d'une petite équipe sur un premier court à plusieurs séries en parallèle : tableaux de bord multi-projets, droits, workflows."
 subtitle: ""
 summary: "Kitsu est une plateforme de gestion de production conçue pour évoluer avec les studios d'animation à chaque étape de leur croissance — des petites équipes travaillant sur leur premier court métrage aux grands studios gérant plusieurs séries simultanées. Elle élimine le recours aux tableurs de fortune et aux fils de discussion en proposant un suivi des tâches simple pour les petites équipes, ainsi que des fonctionnalités avancées telles que des tableaux de bord multi-projets, des permissions granulaires, des workflows personnalisés et des intégrations API/DCC pour les productions de plus grande envergure. Une vue inter-projets permet aux producteurs de suivre l'avancement, d'identifier les goulots d'étranglement et de réallouer les ressources sans changer d'outil. Les studios peuvent choisir entre un déploiement auto-hébergé, cloud (SaaS) ou sur site, et passer de l'un à l'autre selon l'évolution de leurs besoins, avec le soutien de l'équipe ops de CGWire. En tant que plateforme open source sans dépendance à un fournisseur, Kitsu est utilisé par des studios dans plus de 30 pays — en faisant un outil unique qui grandit aux côtés de tout pipeline de production."
 image: "change-management-kitsu.png"

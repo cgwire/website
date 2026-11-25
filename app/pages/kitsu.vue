@@ -189,7 +189,7 @@
 <script setup>
 const router = useRouter()
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const slug = ref('kitsu')
 
 const { pageQuery } = usePage(locale, slug)
@@ -222,7 +222,7 @@ const FAQ_SLUGS = [
 
 useSEO({
   title: 'CGWire | ' + page.value.title,
-  description: page.value.description,
+  description: t('seo.kitsu'),
   imagePath: 'teaser.png'
 })
 

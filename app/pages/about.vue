@@ -226,7 +226,7 @@
 import metricsArt from '~/assets/images/metrics/header-right.png'
 import carbonArt from '~/assets/images/carbon-report/carbon-header-illustration.png'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const slug = ref('about')
 
 const { pageQuery } = usePage(locale, slug)
@@ -239,7 +239,7 @@ const { data: page } = await useAsyncData(
 
 useSEO({
   title: 'CGWire | ' + page.value.meta.tagline,
-  description: page.value.meta.explanation.one,
+  description: t('seo.about'),
   imagePath: 'about.png'
 })
 </script>

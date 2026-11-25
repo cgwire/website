@@ -532,7 +532,7 @@ import foodIcon from '~/assets/images/carbon-report/food-small.png'
 import japanIcon from '~/assets/images/carbon-report/japan-small.png'
 import usaIcon from '~/assets/images/carbon-report/usa.png'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const slug = ref('carbon-report')
 
 const { pageQuery } = usePage(locale, slug)
@@ -550,10 +550,7 @@ const year = computed(() => props.year)
 
 useSEO({
   title: `CGWire | ${page.value.title} ${year.value}`,
-  description:
-    year.value === 2025
-      ? page.value.meta.report2025.explanationOne
-      : page.value.meta.explanationOne,
+  description: t(`seo.carbon${year.value}`),
   imagePath: 'carbon.png'
 })
 

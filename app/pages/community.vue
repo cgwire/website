@@ -137,7 +137,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const slug = ref('community')
 
 const { pageQuery } = usePage(locale, slug)
@@ -150,7 +150,7 @@ const { data: page } = await useAsyncData(
 
 useSEO({
   title: 'CGWire | ' + page.value.meta.tagline,
-  description: page.value.meta.explanationOne,
+  description: t('seo.community'),
   imagePath: 'meetup.jpg'
 })
 </script>

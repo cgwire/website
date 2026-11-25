@@ -383,7 +383,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n()
+const { locale, t } = useI18n()
 const slug = ref('kitsu-summit')
 
 const { pageQuery } = usePage(locale, slug)
@@ -399,7 +399,7 @@ const schedule = page.value.meta.schedule.schedule
 
 useSEO({
   title: 'CGWire | ' + page.value.title,
-  description: page.value.meta.about.description,
+  description: t('seo.summit'),
   imagePath: 'kitsu-summit.png'
 })
 </script>
