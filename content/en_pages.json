@@ -79,7 +79,8 @@
       },
       "tools": {
         "title": "Our tools",
-        "text": "The products and services we run on."
+        "text": "The products and services we run on.",
+        "cta": "See what they cost us"
       },
       "servers": {
         "eyebrow": "Infrastructure",

@@ -266,6 +266,13 @@
             <span v-for="t in list" :key="t" class="tool-pill">{{ t }}</span>
           </div>
         </div>
+        <p class="has-text-centered mt-5">
+          <a
+            class="btn btn-outline"
+            href="https://cgwire.notion.site/Costs-of-the-software-we-use-4923ba5443d143cc91ecfeed4c8ac846"
+            >{{ m.tools.cta }}</a
+          >
+        </p>
       </div>
     </section>
 
