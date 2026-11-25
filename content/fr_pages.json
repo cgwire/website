@@ -80,7 +80,8 @@
       "tools": {
         "title": "Nos outils",
         "text": "Les produits et services que nous utilisons.",
-        "cta": "Voir ce qu’ils nous coûtent"
+        "cta": "Voir ce qu’ils nous coûtent",
+        "columns": { "name": "Outil", "type": "Usage", "company": "Type d’entreprise", "monthly": "Mensuel", "yearly": "Annuel", "total": "Total" }
       },
       "servers": {
         "eyebrow": "Infrastructure",

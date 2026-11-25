@@ -1019,5 +1019,43 @@
     "Video": [
       "Youtube"
     ]
-  }
+  },
+  "softwareCosts": [
+    {"name":"Claude","type":"Tech","company":"VC Backed","yearly":6480},
+    {"name":"Chargebee","type":"Accounting","company":"VC Backed","yearly":4500},
+    {"name":"Payfit","type":"Accounting","company":"VC Backed","yearly":2640},
+    {"name":"Qonto","type":"Banking","company":"VC Backed","yearly":1500},
+    {"name":"Crisp","type":"Support","company":"Indie","yearly":1200},
+    {"name":"Discord","type":"Community","company":"VC Backed","yearly":1200},
+    {"name":"Chatgpt","type":"Tech","company":"VC Backed","yearly":1200},
+    {"name":"Pipedrive","type":"Sales","company":"VC Backed","yearly":1080},
+    {"name":"Canny","type":"Product","company":"Indie","yearly":1044},
+    {"name":"Notion","type":"Collaboration","company":"VC Backed","yearly":960},
+    {"name":"Docker","type":"Tech","company":"VC Backed","yearly":920},
+    {"name":"Slack","type":"Collaboration","company":"VC Backed","yearly":792},
+    {"name":"Netlify","type":"Tech","company":"VC Backed","yearly":600},
+    {"name":"Heroku","type":"Tech","company":"Public","yearly":600},
+    {"name":"Ghost","type":"Communication","company":"Indie","yearly":512},
+    {"name":"Fastmail","type":"Collaboration","company":"Indie","yearly":480},
+    {"name":"Grammarly","type":"Communication","company":"VC Backed","yearly":480},
+    {"name":"Buffer","type":"Communication","company":"Indie","yearly":460},
+    {"name":"Mailgun","type":"Tech","company":"VC Backed","yearly":420},
+    {"name":"Mailerlite","type":"Marketing","company":"Indie","yearly":414},
+    {"name":"BNP","type":"Banking","company":"Public","yearly":360},
+    {"name":"Yousign","type":"Legal","company":"VC Backed","yearly":260},
+    {"name":"Bump","type":"Tech","company":"VC Backed","yearly":260},
+    {"name":"1password","type":"Security","company":"VC Backed","yearly":240},
+    {"name":"Meetup","type":"Community","company":"VC Backed","yearly":200},
+    {"name":"Zoom","type":"Support / Sales","company":"VC Backed","yearly":144},
+    {"name":"Blender studio","type":"Learning","company":"Non-Profit","yearly":120},
+    {"name":"Discourse","type":"Community","company":"Indie","yearly":120},
+    {"name":"Innocraft","type":"Marketing","company":"Indie","yearly":108},
+    {"name":"Calendly","type":"Sales","company":"VC Backed","yearly":96},
+    {"name":"Slides","type":"Communication","company":"Indie","yearly":76},
+    {"name":"Pcloud","type":"Security","company":"VC Backed","yearly":36},
+    {"name":"Github","type":"Tech","company":"Public","yearly":0},
+    {"name":"Gitlab","type":"Tech","company":"VC Backed","yearly":0},
+    {"name":"Kitsu","type":"Collaboration","company":"Indie","yearly":0},
+    {"name":"Nextcloud","type":"Collaboration","company":"Indie","yearly":0}
+  ]
 }

@@ -80,7 +80,8 @@
       "tools": {
         "title": "私たちのツール",
         "text": "私たちが利用している製品とサービス。",
-        "cta": "各ツールの費用を見る"
+        "cta": "各ツールの費用を見る",
+        "columns": { "name": "ツール", "type": "用途", "company": "企業形態", "monthly": "月額", "yearly": "年額", "total": "合計" }
       },
       "servers": {
         "eyebrow": "インフラ",

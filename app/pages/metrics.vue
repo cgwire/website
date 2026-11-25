@@ -267,12 +267,46 @@
           </div>
         </div>
         <p class="has-text-centered mt-5">
-          <a
+          <button
             class="btn btn-outline"
-            href="https://cgwire.notion.site/Costs-of-the-software-we-use-4923ba5443d143cc91ecfeed4c8ac846"
-            >{{ m.tools.cta }}</a
+            :aria-expanded="showCosts"
+            aria-controls="software-costs"
+            @click="showCosts = !showCosts"
           >
+            {{ m.tools.cta }}
+          </button>
         </p>
+        <div v-if="showCosts" id="software-costs" class="costs-wrapper">
+          <table class="costs-table">
+            <thead>
+              <tr>
+                <th>{{ m.tools.columns.name }}</th>
+                <th>{{ m.tools.columns.type }}</th>
+                <th>{{ m.tools.columns.company }}</th>
+                <th class="num">{{ m.tools.columns.monthly }}</th>
+                <th class="num">{{ m.tools.columns.yearly }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="s in metrics.softwareCosts" :key="s.name">
+                <td class="cost-name">{{ s.name }}</td>
+                <td>
+                  <span class="cost-type">{{ s.type }}</span>
+                </td>
+                <td class="cost-muted">{{ s.company }}</td>
+                <td class="num cost-muted">{{ euro(s.yearly / 12) }}</td>
+                <td class="num cost-yearly">{{ euro(s.yearly) }}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th colspan="3">{{ m.tools.columns.total }}</th>
+                <td class="num">{{ euro(costsTotal / 12) }}</td>
+                <td class="num">{{ euro(costsTotal) }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -406,6 +440,8 @@ const lastUpdate = computed(() =>
   })
 )
 
+const showCosts = ref(false)
+const costsTotal = metrics.softwareCosts.reduce((t, s) => t + s.yearly, 0)
 const latestCustomers = metrics.customers.values.at(-1)
 const employeesCount = metrics.employees.values.at(-1)
 const instancePies = computed(() => {
@@ -961,6 +997,67 @@ $border-soft = var(--pg-border, #e4e9ef)
   border: 1px solid $border-soft
   font-size: 0.9rem
   color: var(--pg-text-mid, #3a4149)
+
+.costs-wrapper
+  max-width: 900px
+  margin: 2rem auto 0
+  overflow-x: auto
+  background: var(--pg-card, #fff)
+  border: 1px solid $border-soft
+  border-radius: 20px
+  box-shadow: 0 4px 18px rgba(20, 30, 50, 0.05)
+
+.costs-table
+  width: 100%
+  border-collapse: collapse
+  text-align: left
+
+  th, td
+    padding: 0.75rem 1.25rem
+    color: $text-color
+
+  thead th
+    padding-top: 1.25rem
+    font-size: 0.75rem
+    text-transform: uppercase
+    letter-spacing: 0.08em
+    color: $text-light
+    border-bottom: 1px solid $border-soft
+
+  tbody tr + tr td
+    border-top: 1px solid $border-soft
+
+  tbody tr:hover td
+    background: var(--pg-card-alt, #f7f9fb)
+
+  tfoot th, tfoot td
+    padding-block: 1.25rem
+    font-weight: 800
+    border-top: 2px solid $border-soft
+
+  tfoot td:last-child
+    font-size: 1.25rem
+    color: cgwiregreen
+
+  .num
+    text-align: right
+    white-space: nowrap
+
+.cost-name
+  font-weight: 700
+
+.cost-muted
+  color: $text-light !important
+
+.cost-type
+  padding: 0.2rem 0.65rem
+  border-radius: 50px
+  border: 1px solid $border-soft
+  font-size: 0.8rem
+  white-space: nowrap
+
+.cost-yearly
+  font-weight: 700
 
 // --- FUNDING ---
 .funding-list
